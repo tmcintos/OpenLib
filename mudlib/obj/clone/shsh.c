@@ -24,26 +24,42 @@
  ***	  Updated: 10/08/1993 by Watcher@TMI-2 to allow extra \n option
  ***	      toggle for window scrolling.
  ***
+ ***      Updated: 10/28/1995 by Tim@ULTRAlib to make it more portable by
+ ***          adding some #defines for common mudlib functions
+ ***
  ***/
  
 #include <mudlib.h>
+#include <dirs.h>
 #include <net/daemons.h>
-#include <config.h>
+#include <net/config.h>
 #include <net/socket.h>
 
-inherit BASE;
+inherit OBJECT;
  
 #define ESC	""
 #define CSI	ESC + "["
 #define BEEP	""
  
 #define WHOM 	environment(this_object())
-#define NAME	capitalize((string)this_player()->query("name"))
+#define NAME	capitalize((string)WHOM->query_name())
 #define TIME	extract(ctime(time() + (time_mod * 60)), 4, 15)
 #define HISTORY	(string *)environment()->query_history()
+
+// setup def's added by Tim
+#define QUERY_NAME    query_name()
+#define SHORT         short()
+#define TP_HOME_DIR   (string)WHOM->query_connection()->query_home_dir()+"/"
+#define TP_CWD        (string)WHOM->query_cwd()
+#define QUERY_INVIS   query_invisible()
+#define QUERY_BUSY    query_busy()
+#define SET_IDS(arr)  set_ids(arr)
+#define SET_SHORT(x)  set_short(x)
+#define SET_LONG(x)   set_long(x)
+#define SET_PREVENT_DROP(x) set_prevent_drop(x)
  
 #define NULL		({ })		/** Null empty building array **/
-#define SVERSION	"4.6"		/** Shadow Shell version number **/
+#define SVERSION	"4.61"		/** Shadow Shell version number **/
 #define COMMCHAR	"/"		/** Precharacter for commands **/
 #define RCFILE		".ssrc"		/** RC save file name **/
 #define	RCDEF		0		/** Default toggle of RCFILE save **/
@@ -101,14 +117,28 @@ static object old_room;
 static mixed *sweep, *socket, *buff_pos;
 static string prompt, time, dir, *BUFFER, *TMP_BUFFER;
 static int Status, scheck, vis, busy, HOME, help;
- 
+
+// Temp patch --Tim
+varargs mixed * exclude_array(mixed *arr...)
+{
+  mixed* theArray = arr[0];
+  mixed item;
+
+  arr -= arr[0];
+  foreach(item in arr) {
+    theArray -= ({ item });
+  }
+
+  return theArray;
+}
+
 create() {
  
-	set("id", ({"shadow shell", "shell", "shsh"}) );
-	set("short", "Shadow shell");
-	set("long", "This is Watcher's Shadow Shell System [Version " +
+	SET_IDS( ({"shadow shell", "shell", "shsh"}) );
+	SET_SHORT("Shadow shell");
+	SET_LONG("This is Watcher's Shadow Shell System [Version " +
 		SVERSION + "]\nType \"help shell\" for shell commands.\n");
-	set("prevent_drop", 1);
+	SET_PREVENT_DROP(1);
  
         MAX = 24;                        /** Default Screen Length **/
         HOME = 1;                        /** Default Home Window **/
@@ -191,9 +221,7 @@ int clean_up() {  return 1;  }		// Prevent inadvertant clean_up
 static string get_home_path() {
    string name;
  
-   name = (string) WHOM->query("name");
-
-return "/u/" + extract(name,0,0) + "/" + name + "/"; }
+return TP_HOME_DIR; }
  
 //	Locate path to user's ssrc save file
  
@@ -317,8 +345,8 @@ return scheck; }
  
 /** Status Function checks **/
  
-static vis_ck() { return (int)WHOM->query("invisible");  }
-static busy_ck() { return (int)WHOM->query("busy");  }
+static vis_ck() { return (int)WHOM->QUERY_INVIS;  }
+static busy_ck() { return (int)WHOM->QUERY_BUSY;  }
  
  
 /**
@@ -492,8 +520,8 @@ return; }
  **	 - Called from receive_message() in user object
  **/
  
-receive_message(string class, string msg) {
-  return write_window(0, msg, class);  }
+receive_message(string msgclass, string msg) {
+  return write_window(0, msg, msgclass);  }
  
 //	Cycling refresh system for updating status window
  
@@ -530,15 +558,15 @@ refresh_status() {
    restore_position();  }
  
    if(environment(WHOM) == old_room &&
-      (string)environment()->query("cwd") == dir)  return;
+      TP_CWD == dir)  return;
    old_room = environment(WHOM);
-   dir = (string)environment()->query("cwd");
+   dir = TP_CWD;
  
    save_position();
    new_pos(window[0]);
    erase_line(window[0]);
    Talk("["+file_name(environment(WHOM))+"]  ");
-   Talk(invert((string)environment(WHOM)->query("short")));
+   Talk(invert((string)environment(WHOM)->SHORT));
    size = strlen(" [Cwd: " + process_dir(dir) + "] ");
    Talk(CSI + "0;" + (81-size) + "H [Cwd: " + process_dir(dir) + "] ");
    restore_position();
@@ -675,7 +703,7 @@ static change_colour(string str) {
 	if(loop < sizeof(COLOUR[0])-1) hold += ", ";
 	if(loop == sizeof(COLOUR[0])-2) hold += "and ";  }
  
-   write(wrap(hold + ".") + "\n");
+   write(hold + "." + "\n");
    write("  [Please Note:  Not all terminals support all above colours]\n\n");
  
    write("  Cursor [" + cursor[0] + "] : ");
@@ -883,7 +911,7 @@ static rcfile_choice(string str) {
    else if(str == "no" || str == "n" || str == "N") rcflag = 0;
  
    if(rcflag && (where = define_user_path()) != "") {
-   if(file_size(where + SAVE_EXTENSION) > -1)
+   if(file_size(where + __SAVE_EXTENSION__) > -1)
      write("  Updating shell \"" + RCFILE + "\" file.\n");
    else write("  Creating shell \"" + RCFILE + "\" file.\n");
    save_rcfile(); }
@@ -1030,7 +1058,7 @@ static add_window(string str) {
    int num;
  
    notify_fail("Usage: add window\n");
-   if(str != "window" && sscanf(str,"window %d", num) != 1)  return 0;
+   if(str && str != "window" && sscanf(str,"window %d", num) != 1)  return 0;
  
    if(!Status) {
    write("You must be in shell mode to add a new window.\n");
@@ -1392,42 +1420,42 @@ static int display_assign() {
 return 1; }
  
 static int assign_comm(string str) {
-   string class;
+   string msgclass;
    int where, num;
 
    notify_fail("Usage: " + query_verb() + " [class] to [window]\n");
    if(!str || str == "") {  display_assign();  return 0;  }
  
-   if(sscanf(str,"%s to nul", class) == 1)  where = -1;
-   else if(sscanf(str,"%s to comm", class) == 1)  where = 0;
-   else if(sscanf(str,"%s to %d", class, where) != 2)  return 0;
+   if(sscanf(str,"%s to nul", msgclass) == 1)  where = -1;
+   else if(sscanf(str,"%s to comm", msgclass) == 1)  where = 0;
+   else if(sscanf(str,"%s to %d", msgclass, where) != 2)  return 0;
  
    if(where > sizeof(window)/2-2 || where < -1) {
    write("Illegal window assignment. Must be an open window.\n");
    return 1; }
  
-   num = member_array(class, ASSIGN[0]);
+   num = member_array(msgclass, ASSIGN[0]);
  
    if(num == -1) {
  
 	if(where > 0)
-	write("Class " + class + " communication assigned to window " + 
+	write("Class " + msgclass + " communication assigned to window " + 
 	      where + ".\n");
 	else if(!where)
-	write("Class " + class + " communication assigned to " +
+	write("Class " + msgclass + " communication assigned to " +
 	      "communication window.\n");
-	else write("Class " + class + " communication ignored.\n");
+	else write("Class " + msgclass + " communication ignored.\n");
 
-   ASSIGN[0] += ({ class });  ASSIGN[1] += ({ where });
+   ASSIGN[0] += ({ msgclass });  ASSIGN[1] += ({ where });
    save_rcfile();
    return 1; }
  
    if(where == -1)
-   write("Class " + class + " communication ignored.\n");
+   write("Class " + msgclass + " communication ignored.\n");
    else if(!where)
-   write("Class " + class + " communication reassigned to " +
+   write("Class " + msgclass + " communication reassigned to " +
 	 "communication window.\n");
-   else write("Class " + class + " communication reassigned to window " +
+   else write("Class " + msgclass + " communication reassigned to window " +
 	 where + ".\n");
 
    ASSIGN[1][num] = where;
@@ -1581,7 +1609,7 @@ static mixed *process_choice(string str) {
  
    //	Obtain user's present active directory
  
-   file = resolv_path("cwd", str);
+   file = RESOLVE_PATH(str);
  
    //	Obtain the requested file's root path
  
@@ -1802,11 +1830,11 @@ int connect_window(string str) {
  
    //	Check for mud name match in host name server
  
-   mudlist = DNS_MASTER->query_mud_info(str);
+   mudname = INTERMUD_D->GetMudName(str);
  
-   if(mudlist && mudlist["HOST"] && mudlist["PORT"]) {
-	mudname = capitalize(str);
-	str = mudlist["HOST"] + " " + mudlist["PORT"];
+   if(mudname) {
+     mudlist = INTERMUD_D->GetMudList();
+     str = mudlist[mudname][1] + " " + mudlist[mudname][2];
    }
  
    write("Trying : " + str + "\n");
@@ -2134,9 +2162,14 @@ return 1; }
 string process_dir(string str) {
    string tmp1, tmp2;
  
-   if(sscanf(str, HOME_DIRS + "%s/%s", tmp1, tmp2) == 2)
-	return "~" + tmp2 + "/";
- 
+   if(!str || str == "/") return "/";
+   else if(str +"/" == get_home_path())
+     return "~/";
+   else if(sscanf(str, get_home_path() + "%s", tmp1) == 1)
+     return "~/"+ tmp1 +"/";
+   else if(sscanf(str, USER_DIR"/" + "%s/%s", tmp1, tmp2) == 2)
+     return "~" + tmp2 + "/";
+
 return str + "/"; }
  
 //  This function allows the user to toggle an extra carriage

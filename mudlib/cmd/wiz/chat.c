@@ -6,6 +6,9 @@ main(string str)
 {
   string chan, msg;
 
+if(!str){
+     return notify_fail("chat <channel>:<message>\n"); }
+
   if(sscanf(str, "%s:%s", chan, msg) != 2)
     return notify_fail("chat <channel>:<message>\n");
 

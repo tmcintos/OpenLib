@@ -8,6 +8,7 @@
 
 #include <mudlib.h>
 #include <object_types.h>
+#include <move.h>
 #include <money.h>
 
 inherit OBJECT;
@@ -66,15 +67,18 @@ long(int flag)
 int
 move(mixed dest)
 {
+  int ret;
+
 // If we move to a living object, we increment their money supply & destruct
-  if(object::move(dest)) {
+  if((ret = object::move(dest)) >= 1) {
     if(dest->query_object_class() & OBJECT_LIVING) {
       dest->add_money(coins);
-      remove();
-      return 1;
+      destruct(this_object());
+      return ret;                   // move success, and living dest
     } else {
-      return 1;
+      return ret;                   // move success, and non-living dest
     }
+  } else {
+    return ret;   // move failed
   }
-  return 0;
 }

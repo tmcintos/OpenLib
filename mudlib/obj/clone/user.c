@@ -18,20 +18,21 @@
 #include <uid.h>
 #include <daemons.h>
 #include <object_types.h>
-#include "user/more.c"
 
 inherit LIVING;
 
 private string title;                  // our title
 private string current_dir;            // current working directory
 private string term;                   // terminal type
-static mapping aliases = ([]);         // our aliases
+private mapping aliases = ([]);         // our aliases
 private function Hook;
-static object connection;              // user's connection object
+private static object connection;              // user's connection object
 
 // search path, take out later
 private string path = "/cmd/player:/adm/cmd/wiz:/adm/cmd/adm:"
                       "/cmd/wiz:/adm/cmd/player:/cmd/adm";
+
+#include "user/more.c"
 
 string query_cwd() { return current_dir; }
 string query_term() { return term; }
@@ -45,6 +46,18 @@ create()
   living::create();
   living::set_object_class(query_object_class() | OBJECT_PLAYER);
   seteuid(0);                       // so logind can export_uid() to us
+  aliases = (["n"   :  "north",
+	      "s"   :  "south",
+	      "e"   :  "east",
+	      "w"   :  "west",
+	      "ne"  :  "northeast",
+	      "nw"  :  "northwest",
+	      "se"  :  "southeast",
+	      "sw"  :  "southwest",
+	      "i"   :  "inventory",
+	      "l"   :  "look",
+	      "sc"  :  "score",
+	      ]);
 }
 
 // Overload of living::short()
@@ -60,7 +73,7 @@ remove()
   CHAT_D->eventRemoveMember(({ "mud", "intercre", "intergossip",
 				 "foundation", "chat" }));
   if(connection)
-    destruct(connection);
+    efun::destruct(connection);
   living::remove();
 }
 
@@ -74,6 +87,16 @@ set_name(string username)
   if(geteuid(previous_object()) != ROOT_UID)
     return 0;
   living::set_name(username);
+}
+
+int
+set_title(string ttl)
+{
+  if(ttl) {
+    title = ttl;
+  }
+  write("You are now "+ short() +".\n");
+  return 1;
 }
 
 int
@@ -101,18 +124,9 @@ set_cwd(string cwd)
 int
 set_connection(object ob)
 {
+  ob->set_active();       // so it won't be destructed so easily
   connection = ob;
   return 1;
-}
-
-string
-process_input(string arg)
-{
-  // possible to modify player input here before driver parses it.
-  if(member_array(arg, keys(aliases)) == -1)
-    return 0;
-  
-  return aliases[arg];
 }
 
 // path_resolve: (Tim) resolve_path is an efun;  This is player specific...
@@ -121,6 +135,84 @@ string
 path_resolve(string path)
 {
   return resolve_path(query_cwd(), path);
+}
+
+// possible to modify player input here before driver parses it.
+
+string
+process_input(string arg)
+{
+  mixed* words;
+  int i;
+
+  if(!arg || arg == "") return 0;
+  if(arg[0] == '\\') return arg[1..];
+
+  words = explode(arg, " ");
+
+  if(member_array(words[0], keys(aliases)) != -1) {
+    words[0] = aliases[words[0]];
+  }
+
+  if(strsrch(arg, '*') != -1) {
+    boolean fail;
+
+    for(i=1; i < sizeof(words); i++) {
+
+      if(words[i] == "*") {
+	string tmp;
+	if((tmp = query_cwd()) == "/")
+	  words[i] = implode(get_dir(tmp), " ");
+	else
+	  words[i] = implode(get_dir(tmp + "/"), " ");
+
+      } else if(strsrch(words[i], '*') != -1) {
+	int j, k;
+	string* path;
+	string prepath;
+
+	words[i] = path_resolve(words[i]);
+	path = explode(words[i], "/");
+
+	for(j=0; j < sizeof(path)-1; j++) {
+	  string *tmp;
+	  if(sizeof(tmp = get_dir("/"+implode(path[0..j], "/"))) == 1) {
+	    path[j] = tmp[0];
+	  } else {
+	    printf("Ambiguous: /%s\n", implode(path[0..j], "/"));
+	    fail = TRUE;
+	    break;
+	  }
+	}
+
+	if(fail) break;
+
+	if(j) {
+	  prepath = "/" + implode(path[0..j-1], "/");
+	} else {
+	  prepath = "";
+	}
+
+	if(words[i][<1] == '/')
+	  words[i] = get_dir(prepath + "/" + path[j] + "/");
+	else
+	  words[i] = get_dir(prepath + "/" + path[j]);
+
+	if(!sizeof(words[i])) {
+	  printf("%s: no match.\n", arg);
+	  fail = TRUE;
+	  break;
+	}
+
+	for(k = 0; k < sizeof(words[i]); k++)
+	  words[i][k] = prepath +"/"+ words[i][k];
+
+	words[i] = implode(words[i], " ");
+      }
+    } 
+  }
+
+  return implode(words, " ");
 }
 
 //  Save the values to the playerfile
@@ -170,17 +262,6 @@ setup(string username)
   CHAT_D->eventRegisterMember(({ "mud", "intercre", "intergossip",
 				 "foundation", "chat" }));
   if(!title) title = "the utter mudlib hacker";
-  aliases = (["n"   :  "north",
-	      "s"   :  "south",
-	      "e"   :  "east",
-	      "w"   :  "west",
-	      "ne"  :  "northeast",
-	      "nw"  :  "northwest",
-	      "se"  :  "southeast",
-	      "sw"  :  "southwest",
-	      "i"   :  "inventory",
-	      "l"   :  "look",
-	      ]);
 }
 
 // (Tim) don't know if this should be here...but I'm doing it anyway for now
@@ -199,10 +280,13 @@ commandHook(string arg)
 {
     string *cmd_paths;
     string verb = query_verb();
-    int i;
+    int i, j;
     object cobj;
+    string aliastmp1;
+  string emote_file;
+  string tmp_emote = arg;
 
-    if(Hook) return evaluate(Hook, arg);
+    if(arg == "") arg = 0;
 
 //  Get this out of the player....LATER!!!  (Tim)
     switch(verb) {
@@ -215,7 +299,14 @@ commandHook(string arg)
       term = arg;
       return 1;
     case "alias":
-      write(dump_variable(aliases) +"\n");
+      if(!arg) { write(dump_variable(aliases) +"\n"); return 1; }
+      if(arg && sscanf(arg, "%s %s", aliastmp1, arg) == 2) {
+	aliases += ([ aliastmp1 : arg ]);
+      } else {
+	if(member_array(arg, keys(aliases)) != -1)
+	  map_delete(aliases, arg);
+      }
+
       return 1;
     }
 
@@ -228,11 +319,16 @@ commandHook(string arg)
     }
 
     if (cobj) {
-		return (int)cobj->main(arg);
+      return (int)cobj->main(arg);
     } else {
-		// maybe call an emote/soul daemon here
+    emote_file="/cmd/emotes/"+verb;
+    if(file_size(emote_file)>0) {
+      tmp_emote="emote "+verb;
+      if(arg) { tmp_emote += " " + arg; }
+      this_player()->force_me(tmp_emote);
+    return 1;
     }
-	return 0;
+    }
 }
 
 // init: called by the driver to give the object a chance to add some
@@ -273,7 +369,7 @@ net_dead()
   ed_cmd("Q");
 #endif
 
-  tell_room(environment(), query_name() + " is link-dead.\n");
+  tell_room(environment(), query_cap_name() + " is link-dead.\n");
 }
 
 // reconnect: called by the login.c object when a netdead player reconnects.

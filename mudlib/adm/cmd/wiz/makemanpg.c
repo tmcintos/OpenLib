@@ -39,13 +39,13 @@ write_manpg(mapping cmdinfo)
   string line;
   string outfile;
 
-  outfile = RESOLVE_PATH(name +"."+ section);
+  outfile = RESOLVE_PATH(name +"."+ section + ".nroff");
 
   write_file(outfile, ".\\\""+ short_desc +"\n", 1);
   write_file(outfile, ".TH "+ name +" "+ section + " \"" + date +
 	     "\" Ultralib \""+ sections[section-1] +"\"\n\n");
   write_file(outfile, ".SH NAME\n");
-  write_file(outfile, name + " - " + short_desc + "\n\n");
+  write_file(outfile, short_desc + "\n\n");
   write_file(outfile, ".SH SYNOPSIS\n");
   foreach(line in synopsis)
     write_file(outfile, line +"\n");
@@ -77,7 +77,7 @@ main(string arg)
     return notify_fail(USAGE +"\n");
 
   cmdinfo["section"] = atoi(arg);
-  write("Command Name: ");
+  write("File Name (don't use parens): ");
   input_to("get_cmd_name", 0, cmdinfo);
   return 1;
 }
@@ -86,7 +86,7 @@ void
 get_cmd_name(string input, mapping cmdinfo)
 {
   cmdinfo["name"] = input;
-  write("Enter short description (less than 1 line):\n");
+  write("Enter NAME line--short descrip--not usage (less than 1 line):\n");
   input_to("get_short_desc", 0, cmdinfo);
 }
 

@@ -8,6 +8,9 @@ inherit ROOM;
 void
 create()
 {
+
+  ::create();
+
   set_light(1);
   set_short("This is the town square of Crysanth, the capital of\n"+
          "Crysanthium.\n");

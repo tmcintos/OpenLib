@@ -3,7 +3,8 @@ name "casper"
 password "sbArt//hcFQw."
 real_name 0
 email_addr 0
-home_dir 0
+home_dir "/u/c/casper"
 body "/obj/clone/user/human"
-login_time 813731117
-login_from "netcom23.netcom.com"
+login_time 815017662
+login_from "192.100.81.113"
+active 0

@@ -1,0 +1,12 @@
+exp() (3)            - find e to the power of a float
+find_call_out() (3)  - find a call out scheduled to be called next
+find_living() (3)    - find a living object matching a given id
+find_object() (3)    - find an object by file name
+find_player() (3)    - find a player by name
+function_exists() (3) - find the file containing a given func tion in an object
+load_object() (3)    - find or load an object by file name
+object_name (4)      - called by the driver to find out an object's name
+pow() (3)            - find an exponent of a float
+present() (3)        - find an object by id
+query_ed_mode() (3)  - find out the status of the current ed session
+resolve_path() (2)   - find a full file path given a current and relative path

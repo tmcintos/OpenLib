@@ -8,6 +8,9 @@ inherit ROOM;
 void
 create()
 {
+
+  ::create();
+
   set_light(1);
   set_short("This is the generic Wizard's workroom.\n");
   set_long("This is where, as a wizard, you will do the enormous\n"+

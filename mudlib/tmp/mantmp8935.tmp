@@ -1,2 +1,0 @@
-commands() (3)       - returns some information about actions the user can take
-init (4)             - function in an object called by move_object() to initialize verb/actions

@@ -10,6 +10,7 @@ main(string what)
 {
   string from, short;
   object ob, source;
+  int err;
 
   if(!what || what == "")
     return notify_fail("Get what??\n");
@@ -41,7 +42,9 @@ main(string what)
 // don't know if we'll want to do a ob->on_get() or just do all in init()
 
   short = ob->short();            // ob not guaranteed to exist after move
-  ob->move(this_player());
+
+  if(err = ob->move(this_player()) < 1)
+    return notify_fail("You fail.\n");      // add error detection later
 
   if(source && source != environment(this_player()))
     say(sprintf("%s gets %s from %s.\n",

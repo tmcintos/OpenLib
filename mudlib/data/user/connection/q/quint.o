@@ -1,9 +1,10 @@
 #obj/clone/connection.c
 name "quint"
-password "tF2.nJcr484ko"
+password "gWFUBuF7qTdlA"
 real_name "Scott Jackson"
-email_addr 0
+email_addr "quint@Dysfunctional Mud"
 home_dir "/u/q/quint"
 body "/obj/clone/user/human"
-login_time 813613733
-login_from "localhost"
+login_time 815042061
+login_from "azstarnet.com"
+active 0

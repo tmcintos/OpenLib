@@ -7,6 +7,7 @@ int main(string str)
   object victim;
   int foo;
  
+//return notify_fail("Don't use this 'til combatd is fixed--Tim\n");
   if(!str)
     return notify_fail("Kill what?\n");
   if(!(victim = present(str,environment(this_player()))))

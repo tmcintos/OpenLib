@@ -1,8 +1,13 @@
-/*    /daemon/services/finger.c
+/*  -*- LPC -*-
+ *    /daemon/services/finger.c
  *    from the Nightmare IV LPC Library
  *    Intermud 3 finger service implementation
  *    created by Descartes of Borg 950624
+ *
+ *  10.23.95  Tim changed to fit this mudlib
  */
+
+#define SERVICE_FINGER
 
 #include <daemons.h>
 #include <net/daemons.h>
@@ -28,18 +33,25 @@ void eventReceiveFingerReply(mixed *packet) {
     if( file_name(previous_object()) != INTERMUD_D ) return;
     if( !(ob = find_player(convert_name(packet[5]))) ) return;
     fing = "Finger information on " + packet[6] + " from " + packet[2] + ":\n";
-    fing += packet[7] + " (" + packet[8] + ")\n";
+    if( packet[7] && packet[8] ) fing += packet[7] + " (" + packet[8] + ")\n";
+    else if( packet[8] ) fing += packet[6] + " (" + packet[8] + ")\n";
+    else if( packet[7] ) fing += packet[7] + "\n";
+    else fing += packet[6] + "\n";
     fing += "Email: " + (packet[9] ? packet[9] : "Confidential") + "\n";
-    fing += (packet[10] ? "On since: " + packet[10] + "\n" : "\n");
-    fing += "Site: " + (packet[11] ? packet[11] : "Confidential") + "\n";
-    fing += (packet[13] ? packet[13] : "");
+    fing += ((packet[11] != -1) ? "On since: " + packet[10]  : 
+	     "Last logged in: " + packet[10]);
+    if( packet[11] != -1 ) fing += " (idle " + packet[11] + " seconds)\n";
+    else fing += "\n";
+    fing += "Site: " + (packet[12] ? packet[12] : "Confidential") + "\n";
+    fing += (packet[14] ? packet[14] : "");
     message("system", fing, ob);
 }
 
 void eventSendFingerRequest(string who, string where) {
     string pl;
 
-    if( !(pl = (string)this_player(1)->GetName()) ) return;
+    if( !(pl = (string)this_player(1)->query_cap_name()) ) return;
     INTERMUD_D->eventWrite( ({ "finger-req", 5, mud_name(), pl, where, 0, 
 			       who }) );
 }
+

@@ -1,3 +1,4 @@
+/*  -*- LPC -*-  */
 /* ftpdconf.h: ftpd configuration */
 
 #ifndef _FTPDCONF_H
@@ -55,7 +56,7 @@
 #define BLOCK_SIZE 1024
 
 /* who to send bug reports to */
-#define FTP_BUGS_EMAIL "mud@knapp38.res.iastate.edu"
+#define FTP_BUGS_EMAIL ADMIN_EMAIL
 
 /*
 -----------------------------------------------
@@ -67,7 +68,7 @@
 #define ANONYMOUS_FTP
 
 /* define this to allow guest wizards (without home directories) to login */
-#define GUEST_WIZARD_FTP
+#undef GUEST_WIZARD_FTP
 
 /* define this to support advisory file locking */
 #undef FILE_LOCKING
@@ -76,7 +77,7 @@
 #undef CHECK_SITE
 
 /* define this to support .message files sent to user when they "cd" */
-#undef MESSAGE_FILES
+#define MESSAGE_FILES
 
 #if 0
 /*
@@ -104,20 +105,21 @@
 #endif
 
 /* define as (ie set to) one of the flags above */
-#define WRITE_LEVEL (RESTRICTED_WRITE)
+#define WRITE_LEVEL (VALID_WRITE)
 
 /* define the following public dirs that you'll limit access to
  * for RESTRICTED_READ and/or RESTRICTED_WRITE; undefine any for which
  * the directory doesn't exist on your system
  */
-#define PUB_DIR "/open/"
-#define FTP_DIR "/ftp/"
+#define PUB_DIR "/pub/"
+#define FTP_DIR "/pub/ftp/"
 
 /* define this array as the only set of users permitted to use ftp
  * Example:
  *   #define FTP_USERS ({ "buddha", "mobydick", "watcher" })
  */
-#define FTP_USERS ({ "tim", "casper", "kyricc" })
+//#define FTP_USERS ({ "tim", "casper", "kyricc", "lol", "hamnsnock" })
+#undef FTP_USERS
 
 /*
 -----------------------------------------------
@@ -138,19 +140,19 @@
 */
 
 /* undefine this to disable all logging */
-#undef LOGGING
+#define LOGGING
 
 #ifdef LOGGING
 /* define this to log all connections */
-#define LOG_CONNECT
+#define LOG_CONNECT    "net/ftp_connect"
 /* define this to determine where to log all file xfers */
-#define LOG_FILE        "FTPD"
+#define LOG_FILE       "net/xferlog"
 /* define this to put a time stamp before all log entries */
-#define LOG_TIME
+#undef LOG_TIME
 /* define this to log cd's, time stamp, and file size commands */
-#define LOG_CD_SIZE
+#undef LOG_CD_SIZE
 /* define this to log failed connections */
-#define LOG_NO_CONNECT
+#define LOG_NO_CONNECT "net/ftp_fails"
 
 #else
 

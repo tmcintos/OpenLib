@@ -1,5 +1,6 @@
 /*  -*- LPC -*-  */
 // initial connection for logging in
+#pragma no_inherit
 
 #include <mudlib.h>
 #include <login.h>
@@ -16,11 +17,17 @@ private string home_dir;         // user's home directory
 private string body;             // user's body file
 private int    login_time;       // time() when user logged in
 private string login_from;       // ip_name from which user connected
+private boolean active;          // TRUE if this is an active connection ob
 
-void
-create()
+// override of object::remove
+
+int
+remove()
 {
-  seteuid(getuid(this_object()));
+  if(active)
+    return -1;
+  else
+    return 1;
 }
 
 void
@@ -68,6 +75,12 @@ string query_home_dir() { return home_dir; }
 string query_body() { return body; }
 int    query_login_time() { return login_time; }
 string query_login_from() { return login_from; }
+
+void
+set_active()
+{
+  active == TRUE;
+}
 
 int
 set_name(string arg)

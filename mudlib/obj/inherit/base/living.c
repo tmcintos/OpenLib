@@ -5,8 +5,11 @@
 // 10/11/95     Tim:  Changed to inherit OBJECT, removed and changed some funcs
 //                    as a result of this change.
 // 10/14/95     Casper:  Including a generic race body for use with monsters.
-// 10/14/95     Tim: added weight and money funcs.
-//
+// 10/14/95     Tim:  added weight and money funcs.
+// 10/16/95     Tim:  started adding support for DEATH >evil grin<
+
+#pragma save_binary
+#pragma no_clone
 
 #include <mudlib.h>
 #include <object_types.h>
@@ -19,6 +22,8 @@ inherit OBJECT;
 // Global Variables
 private string name = "";              // our name
 private int *coins;                    // our money
+private int hit_points, spell_points;  // our HP/SP
+private int sex;                       // 1=male -1=female 0=neutral
 
 // Function Prototypes
 void create();
@@ -28,11 +33,13 @@ int get();
 varargs mixed long(int flag);
 void fix_weight();                     // re-init the weight of this obj
 int add_weight(int weight);            // add weight to living (if we can)
+void die();
 
 // Query functions
 string query_name() { return name; }
 string query_cap_name() { return capitalize(name); }
 int *  query_money() { return coins; }
+int query_sex() { return sex; }
 
 int
 query_stat(string stat)
@@ -43,7 +50,21 @@ query_stat(string stat)
 
 int recieve_damage(int damage)
 {
-  tell_object(this_object(),sprintf("You took %i damage.\n",damage));
+  write(sprintf("You took %i damage.\n",damage));
+
+  if(!hit_points)
+    return 0;
+
+  hit_points -= damage;
+
+  if(hit_points < 0)
+    hit_points = 0;
+
+// don't die if we're a player right now -- Tim
+  if(!(query_object_class() & OBJECT_PLAYER))
+    if(!hit_points)
+      call_out((: die :), 2);
+
   return damage;
 }
 
@@ -61,6 +82,9 @@ create()
 {
   object::create();
   object::set_object_class(OBJECT_LIVING | OBJECT_CONTAINER);
+
+  set_weight(this_object()->query_base_weight());
+
   coins = allocate(COIN_TYPES);
   for(int i = 0; i < COIN_TYPES; i++)
     coins[i] = 0;
@@ -69,6 +93,8 @@ create()
   set_heart_beat(1);         // enable heart beat
 
   combat::create();
+
+  hit_points = 100;       // temporary! for testing death
 }
 
 // set_name:  Set the name of this living object
@@ -81,8 +107,16 @@ set_name(string namestr)
   return 1;
 }
 
+nomask
+void
+set_sex(int s)
+{
+  sex = s;
+}
+
 // add money to living -- returns 1 if the money was received successfully
 
+nomask
 int
 add_money(int *money)
 {
@@ -101,11 +135,12 @@ add_money(int *money)
     coins[i] += money[i];
   }
 
-  fix_weight();
   return 1;
 }
 
-//remove money from living
+// remove money from living--makes change
+
+nomask
 int
 remove_money(int *money)
 {
@@ -190,7 +225,7 @@ long(int flag)
   if(!flag) {
     write(short() +"\n" +
 	  (long_desc ? long_desc : "") +
-	  "He/She/It is carrying:\n");
+	  capitalize(pronoun(this_object())) + " is carrying:\n");
     
     foreach(ob in all_inventory(this_object())) {
       string tmp;
@@ -218,29 +253,20 @@ long(int flag)
   }
 }
 
-// re-init the player's weight
+// overload of object::query_weight()
 
-void
-fix_weight()
+int
+query_weight()
 {
-  int my_weight;
-  object ob;
+  int my_weight = object::query_weight();          // body wt. + inventory wt.
 
-// My base body weight
-  my_weight = this_object()->query_base_weight();
-
-// weight added by each object I'm carrying
-  foreach(ob in all_inventory(this_object())) {
-    my_weight += ob->query_weight();
-  }
-
-// weight from coins
+// weight of coins
   my_weight += coins[SILVER] / 18;
   my_weight += coins[GOLD] / 6;
 
-  set_weight(my_weight);
+  return my_weight;
 }
-
+  
 boolean
 add_weight(int pounds)
 {
@@ -251,3 +277,31 @@ add_weight(int pounds)
 
   return TRUE;
 }
+
+// Death :)
+// Need to override this for players
+
+void
+die()
+{
+  object corpse, ob;
+
+  tell_object(this_object(), "You die.\n"
+	  "You see your own dead body from above.\n");
+
+  tell_room(environment(), sprintf("%s hits the ground with a thud.\n"
+	      "Some mist rises from the body.\n", query_cap_name()));
+
+  corpse = new(CLONE_DIR "/corpse");
+  corpse->set_short(short());
+
+  foreach(ob in all_inventory(this_object())) {
+    if(ob->drop())
+      ob->move(corpse);
+  }
+
+  corpse->move(environment(this_object()));
+
+  destruct(this_object());
+}
+

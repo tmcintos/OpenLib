@@ -7,6 +7,7 @@ _main(string file, int argc, string *argv, string *flags)
 {
   object ob;
   string tmp;
+  int err;
   boolean optn = flag(flags, "n");
 
   if (!file) {
@@ -23,9 +24,15 @@ _main(string file, int argc, string *argv, string *flags)
   tmp = ob->short();
 
   if(ob->get() && !optn)
-    ob->move(this_player());
+    err = ob->move(this_player());
   else
-    ob->move(environment(this_player()));
+    err = ob->move(environment(this_player()));
+
+  if(err < 1) {
+    if(ob) ob->remove();
+    if(ob) destruct(ob);
+    return notify_fail("You fail.\n");
+  }
 
   printf("You clone %s.\n", tmp);
   say(sprintf("%s pulls %s out of thin air!\n",

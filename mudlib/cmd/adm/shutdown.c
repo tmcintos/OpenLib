@@ -1,8 +1,12 @@
+/*  -*- LPC -*-  */
 #include <command.h>
 
 int
 main(string arg)
 {
-	shutdown(0);
-	return 1;
+  write("Shutting down imediately...\n");
+  log_file("shutdown",
+	   sprintf("mud shut down by %s", this_player()->query_cap_name()));
+  shutdown(0);
+  return 1;
 }

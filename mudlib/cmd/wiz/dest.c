@@ -21,9 +21,12 @@ main(string arg)
 		return 0;
 	}
 	if(obj->short())
+              {
 	  say(sprintf("%s crushes %s into oblivion!\n",
 		      this_player()->query_cap_name(),
 		      obj->short()));
+              write(sprintf("You just destroyed %s!\n",obj->short()));
+           }
 	obj->remove();
 	if (obj) {
 		destruct(obj);

@@ -1,5 +1,7 @@
 /*  -*- LPC -*-  */
-//  logind.c
+//  logind.c:  handles logins to the mud
+//
+//  Orig written by Tim the regional LPC guru.
 //
 //  CHANGES:
 //    05/05/95  Tim McIntosh:  changed minor details
@@ -7,7 +9,7 @@
 //    08/26/95                 put in password type stuff
 //    somedate                 <did a major rewrite>
 //    09/14/95                 put public definitions into logind.h
-//                             
+//    sometime                 <another major rewrite...no more logind.h>
 
 #include <mudlib.h>
 #include <login.h>      // login related defines
@@ -32,8 +34,6 @@ varargs void get_new_password(string password, int verify, object conn,
 			      string lastpass);
 void player_enter_world(object conn, int new_char);
 int valid_name(string username);
-
-// Needed to get any output on our screen!!
 
 void
 create()
@@ -165,9 +165,11 @@ player_enter_world(object conn, int new_char)
       destruct(conn);
       return;
     }
-    body->query_connection()->remove();
+    if(body->query_connection())              // remove old connection ob
+      efun::destruct(body->query_connection());
     body->set_connection(conn);
     exec(body, conn);
+    conn->move(body);
     body->reconnect();
     return;
   }
@@ -183,7 +185,10 @@ player_enter_world(object conn, int new_char)
     body = new(USER_OB);
   }
 
+  if(!conn->query_home_dir())
+    conn->set_home_dir(user_cwd(username));
   conn->set_login_time(time());
+
   conn->save_connection(username);
   body->set_connection(conn);
   conn->move(body);            // move into body
@@ -227,8 +232,8 @@ valid_name(string username)
   if(username == "" || !username)
     return 0;
 
-  if(strlen(username) > 8 || strlen(username) < 3) {
-    write("Username must be between 3 and 8 characters in length.\n");
+  if(strlen(username) > 10 || strlen(username) < 3) {
+    write("Username must be between 3 and 10 characters in length.\n");
     return 0;                                         // Too long or short
   }
 

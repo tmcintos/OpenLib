@@ -1,0 +1,15 @@
+.\"query_host_port() - returns the login port of the mud
+.TH query_host_port 2 "Oct 18 1995" Ultralib "Simulated Efuns"
+
+.SH NAME
+query_host_port() - returns the login port of the mud
+
+.SH SYNOPSIS
+int query_host_port( void );
+
+.SH DESCRIPTION
+query_host_port() returns the port on which the mud is currently accepting
+logins.
+
+.SH SEE ALSO
+query_host_name(3)

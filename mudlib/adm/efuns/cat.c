@@ -23,7 +23,7 @@ varargs int cat( string path, int start, int num )
         num = CAT_LINES_MAXIMUM;
         trun = 1;
     }
-    seteuid( geteuid( previous_object() ) );
+
     if( text = read_file( path, start, num ) )
     {
         if( trun && ( strlen( text ) < file_size( path ) ) )

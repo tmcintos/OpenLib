@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------
-Dysfunctional Mud (MudOS v21.7b1) starting up on Linux - Fri Oct 13 12:20:22 1995
+Dysfunctional Mud (MudOS v21.7b1) starting up on Linux - Mon Oct 30 23:04:13 1995
 
 
 Can't find "driver", ignoring old binaries.
@@ -10,18 +10,256 @@ Loading preloaded files ...
 Initializations complete.
 
 Accepting connections on port 4444.
-Double call to remove_interactive()
-SIGPIPE received.
-System Error: flush_message: write:Broken pipe
-Broken connection during add_message.
-Double call to remove_interactive()
-Heart beat in obj/examples/monster turned off.
-Heart beat in obj/examples/monster turned off.
-SIGPIPE received.
-System Error: flush_message: write:Broken pipe
-Broken connection during add_message.
-Double call to remove_interactive()
-SIGPIPE received.
-System Error: flush_message: write:Broken pipe
-Broken connection during add_message.
-Double call to remove_interactive()
+Error in error handler: *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+program: /adm/simul_efun.c, object: /adm/simul_efun, file: /adm/efuns/tell_object.c:3
+'eventReadCallback' in 'adm/obj/inherit/client.c' ('obj/daemon/net/intermud') /adm/obj/inherit/client.c:56
+arguments were (0,({ /* sizeof() == 9 */
+  "channel-m",
+  5,
+  "Lima Bean",
+  "rust",
+  0,
+  0,
+  "imud_gossip",
+  "Rust",
+  "isn't there a WWW page for majordomo??"
+}))
+'      eventRead' in 'obj/daemon/net/intermud.c' ('obj/daemon/net/intermud') /obj/daemon/net/intermud.c:110
+arguments were (({ /* sizeof() == 9 */
+  "channel-m",
+  5,
+  "Lima Bean",
+  "rust",
+  0,
+  0,
+  "imud_gossip",
+  "Rust",
+  "isn't there a WWW page for majordomo??"
+}))
+locals were: 0,0,0,0,0,0
+'eventReceiveChannelMessage' in 'obj/daemon/net/services.c' ('obj/daemon/net/services') /obj/daemon/net/services/channel.c:66
+arguments were (({ /* sizeof() == 9 */
+  "channel-m",
+  5,
+  "Lima Bean",
+  "rust",
+  0,
+  0,
+  "imud_gossip",
+  "Rust",
+  "isn't there a WWW page for majordomo??"
+}))
+'eventSendChannel' in '   obj/daemon/chat.c' ('     obj/daemon/chat') /obj/daemon/chat.c:154
+arguments were ("Rust@Lima Bean","intergossip","Rust@Lima Bean %^MAGENTA%^<intergossip>%^RESET%^: isn't there a WWW page for majordomo??
+",0,0,0)
+locals were: 0,0
+'  error_handler' in 'adm/obj/daemon/master.c' ('adm/obj/daemon/master') /adm/obj/daemon/master.c:147
+arguments were (([ /* sizeof() == 6 */
+  "line" : 154,
+  "file" : "obj/daemon/chat.c",
+  "trace" : ({ /* sizeof() == 4 */
+      ([ /* sizeof() == 7 */
+        "locals" : ({ }),
+        "arguments" : ({ /* sizeof() == 2 */
+            0,
+            ({ /* sizeof() == 9 */
+              "channel-m",
+              5,
+              "Lima Bean",
+              "rust",
+              0,
+              0,
+              "imud_gossip",
+              "Rust",
+              "isn't there a WWW page for majordomo??"
+            })
+          }),
+        "line" : 56,
+        "file" : "adm/obj/inherit/client.c",
+        "object" : obj/daemon/net/intermud,
+        "program" : "adm/obj/inherit/client.c",
+        "function" : "eventReadCallback",
+      ]),
+      ([ /* sizeof() == 7 */
+        "locals" : ({ /* sizeof() == 6 */
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          }),
+        "arguments" : ({ /* sizeof() == 1 */
+            ({ /* sizeof() == 9 */
+              "channel-m",
+              5,
+              "Lima Bean",
+              "rust",
+              0,
+              0,
+              "imud_gossip",
+              "Rust",
+              "isn't there a WWW page for majordomo??"
+            })
+          }),
+        "line" : 110,
+        "file" : "obj/daemon/net/intermud.c",
+        "object" : obj/daemon/net/intermud,
+        "program" : "obj/daemon/net/intermud.c",
+        "function" : "eventRead",
+      ]),
+      ([ /* sizeof() == 7 */
+        "locals" : ({ }),
+        "arguments" : ({ /* sizeof() == 1 */
+            ({ /* sizeof() == 9 */
+              "channel-m",
+              5,
+              "Lima Bean",
+              "rust",
+              0,
+              0,
+              "imud_gossip",
+              "Rust",
+              "isn't there a WWW page for majordomo??"
+            })
+          }),
+        "line" : 66,
+        "file" : "obj/daemon/net/services/channel.c",
+        "object" : obj/daemon/net/services,
+        "program" : "obj/daemon/net/services.c",
+        "function" : "eventReceiveChannelMessage",
+      ]),
+      ([ /* sizeof() == 7 */
+        "locals" : ({ /* sizeof() == 2 */
+            0,
+            0
+          }),
+        "arguments" : ({ /* sizeof() == 6 */
+            "Rust@Lima Bean",
+            "intergossip",
+            "Rust@Lima Bean %^MAGENTA%^<intergossip>%^RESET%^: isn't there a WWW page for majordomo??
+",
+            0,
+            0,
+            0
+          }),
+        "line" : 154,
+        "file" : "obj/daemon/chat.c",
+        "object" : obj/daemon/chat,
+        "program" : "obj/daemon/chat.c",
+        "function" : "eventSendChannel",
+      ])
+    }),
+  "object" : obj/daemon/chat,
+  "program" : "obj/daemon/chat.c",
+  "error" : "*Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+",
+]))
+locals were: "
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (obj/daemon/chat)
+  file: obj/daemon/chat.c:154
+  prgm: obj/daemon/chat.c
+  func: eventSendChannel
+  args: ( "Rust@Lima Bean"intergossipRust@Lima Bean %^MAGENTA%^<intergossip>%^RESET%^: isn't there a WWW page for majordomo??
+000, )
+",({ /* sizeof() == 4 */
+  ([ /* sizeof() == 7 */
+    "locals" : ({ }),
+    "arguments" : ({ /* sizeof() == 2 */
+        0,
+        ({ /* sizeof() == 9 */
+          "channel-m",
+          5,
+          "Lima Bean",
+          "rust",
+          0,
+          0,
+          "imud_gossip",
+          "Rust",
+          "isn't there a WWW page for majordomo??"
+        })
+      }),
+    "line" : 56,
+    "file" : "adm/obj/inherit/client.c",
+    "object" : obj/daemon/net/intermud,
+    "program" : "adm/obj/inherit/client.c",
+    "function" : "eventReadCallback",
+  ]),
+  ([ /* sizeof() == 7 */
+    "locals" : ({ /* sizeof() == 6 */
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      }),
+    "arguments" : ({ /* sizeof() == 1 */
+        ({ /* sizeof() == 9 */
+          "channel-m",
+          5,
+          "Lima Bean",
+          "rust",
+          0,
+          0,
+          "imud_gossip",
+          "Rust",
+          "isn't there a WWW page for majordomo??"
+        })
+      }),
+    "line" : 110,
+    "file" : "obj/daemon/net/intermud.c",
+    "object" : obj/daemon/net/intermud,
+    "program" : "obj/daemon/net/intermud.c",
+    "function" : "eventRead",
+  ]),
+  ([ /* sizeof() == 7 */
+    "locals" : ({ }),
+    "arguments" : ({ /* sizeof() == 1 */
+        ({ /* sizeof() == 9 */
+          "channel-m",
+          5,
+          "Lima Bean",
+          "rust",
+          0,
+          0,
+          "imud_gossip",
+          "Rust",
+          "isn't there a WWW page for majordomo??"
+        })
+      }),
+    "line" : 66,
+    "file" : "obj/daemon/net/services/channel.c",
+    "object" : obj/daemon/net/services,
+    "program" : "obj/daemon/net/services.c",
+    "function" : "eventReceiveChannelMessage",
+  ]),
+  ([ /* sizeof() == 7 */
+    "locals" : ({ /* sizeof() == 2 */
+        0,
+        0
+      }),
+    "arguments" : ({ /* sizeof() == 6 */
+        "Rust@Lima Bean",
+        "intergossip",
+        "Rust@Lima Bean %^MAGENTA%^<intergossip>%^RESET%^: isn't there a WWW page for majordomo??
+",
+        0,
+        0,
+        0
+      }),
+    "line" : 154,
+    "file" : "obj/daemon/chat.c",
+    "object" : obj/daemon/chat,
+    "program" : "obj/daemon/chat.c",
+    "function" : "eventSendChannel",
+  ])
+})
+'    tell_object' in '    adm/simul_efun.c' ('      adm/simul_efun') /adm/efuns/tell_object.c:3
+arguments were (0,"error: file: obj/daemon/chat.c:154;  *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+")

@@ -13,6 +13,7 @@ create()
   set_name("beavis");
   set_short("Beavis");
   set_long("A scrawny, stupid looking high school kid.\n");
+  set_sex(MALE);
   set_move_around(15);
   set_talk(5, ({"This sucks!",
 	     "Hey Butthead!  You suck!",

@@ -1,7 +1,12 @@
 #obj/clone/user/human.c
 name "quint"
-title "the utter mudlib hacker"
+coins ({0,0,})
+hit_points 100
+spell_points 0
+sex 0
+title "the greatest test character of all"
 current_dir "/u/q/quint"
-term "ansi"
+term "vt100"
+aliases (["n":"north","s":"south","e":"east","w":"west","ne":"northeast","nw":"northwest","se":"southeast","sw":"southwest","i":"inventory","l":"look","sc":"score",])
 Hook 0
 path "/cmd/player:/adm/cmd/wiz:/adm/cmd/adm:/cmd/wiz:/adm/cmd/player:/cmd/adm"

@@ -15,10 +15,11 @@ main(string arg)
   if (find_object(TFILE))
     destruct(find_object(TFILE));
 
-  write_file(TFILE ".c",
-	     "#include <mudlib.h>\n"
-	     "#include <daemons.h>\n"
-	     "mixed eval() { "+arg+"; }\n");
+  write_file(TFILE ".c", sprintf("#include <mudlib.h>\n"
+				 "#include <daemons.h>\n"
+				 "mixed eval() { \n"
+				 "  object me = this_player();\n"
+				 "  %s; }\n", arg));
   printf("Result = %O\n", TFILE->eval());
   return 1;
 }

@@ -8,7 +8,7 @@
  
 void set_ac(int *new_ac);
 void set_armour(int new_armours);
-
+ 
 private static int *ac,armours,free_hands, combating;
 private static mixed *weapon_info; 
  
@@ -21,23 +21,24 @@ void create()
   weapon_info = ({});
   while(i--)
     weapon_info += ({this_object()->query_unarmed(i)});
+  combating = 0;
 }
 int query_num_attacks()
 {
 //This just patches combat so we CAN fight.  Fix over later.  Casper.
   return 1;
 }
-
+ 
 void set_combating(int foo)
 {
   combating = foo;
 }
-
+ 
 int query_combating()
 {
   return combating;
 }
-
+ 
 void set_ac(int *new_ac)
 {
   if(ac)
@@ -48,7 +49,7 @@ void set_ac(int *new_ac)
   else
     ac = new_ac;
   if(combating)
-    COMBAT_D->set_ac(ac);
+    COMBAT_D->update_ac(this_object(),ac);
 }
 int *query_ac()
 {
@@ -84,7 +85,7 @@ void set_weapon_info(mixed *new_weapon_info)
 {
   weapon_info = new_weapon_info;
   if(combating)
-    COMBAT_D->set_wc(weapon_info);
+    COMBAT_D->update_wc(this_object(), weapon_info);
 }
  
 //These next 4 functions handle the wearing & removing of 
@@ -125,8 +126,8 @@ varargs int do_unwield(object weapon, int make_noise)
   set_free_hands(hands_info);
   set_weapon_info(weapon_info);
   weapon->set_wielded(0);
-  write("You unwield "+weapon->short()+".\n");
-  say(this_object()->query_cap_name()+" unwields "+ weapon->short()+".\n");
+  this_object()->write("You unwield "+weapon->short()+".\n");
+  this_object()->say(this_object()->query_cap_name()+" unwields "+ weapon->short()+".\n");
   return 1;
 }
  
@@ -171,8 +172,8 @@ varargs int do_wield(object weapon, int hands_used, int make_noise)
  
   if(make_noise)
   {
-    write("You wield "+weapon->short()+".\n");
-    say(this_object()->query_cap_name()+" wields "+weapon->short()+".\n");
+    this_object()->write("You wield "+weapon->short()+".\n");
+    this_object()->say(this_object()->query_cap_name()+" wields "+weapon->short()+".\n");
   }
   weapon->set_wielded(1);
   weapon->set_wield_info(this_weapon_info);
@@ -206,8 +207,8 @@ varargs int do_wear(object armour, int make_noise)
   armour->set_worn(j,this_object()->query_armour_locations()[i]);
   if(make_noise)
   {
-    write("You wear "+armour->short(1)+".\n");
-    say(this_object()->query_cap_name()+" wears "+armour->short(1)+".\n");
+    this_object()->write("You wear "+armour->short(1)+".\n");
+    this_object()->say(this_object()->query_cap_name()+" wears "+armour->short(1)+".\n");
   }
   return 1;
 }
@@ -226,7 +227,7 @@ void do_remove(object armour, int make_noise)
   armour->set_worn(0,"");
   if(make_noise)
   {
-  write("You remove "+ armour->short()+".\n");
-  say(this_object()->query_cap_name()+" removes "+armour->short()+".\n");
+  this_object()->write("You remove "+ armour->short()+".\n");
+  this_object()->say(this_object()->query_cap_name()+" removes "+armour->short()+".\n");
   }
 }

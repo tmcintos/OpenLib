@@ -1,14 +1,17 @@
-/*    /lib/server.c
+/*  -*- LPC -*-
+ *    /lib/server.c
  *    from the Nightmare IV LPC Library
  *    a TCP server object
  *    created by Descartes of Borg 950429
+ *
+ *  10.23.95  Tim modified for this mudlib
  */
 
-#include <lib.h>
-#include <network.h>
+#include <mudlib.h>
+#include <net/network.h>
 #include "server.h"
 
-inherit LIB_DAEMON;
+inherit DAEMON;
 
 private static int DestructOnClose;
 private static function Read;
@@ -135,11 +138,8 @@ static void eventClose(class server sock) {
 static void eventSocketClosed(int fd) { }
 
 int eventDestruct() {
-    if( daemon::eventDestruct() ) {
-	eventClose(Listen);
-	return 1;
-    }
-    else return 0;
+  eventClose(Listen);
+  return 1;
 }
 
 static void eventNewConnection(int fd) {

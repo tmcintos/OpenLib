@@ -1,5 +1,6 @@
 /*  -*- LPC -*-  */
 // goto.c:  Another hastily written command by Tim McIntosh
+//   10/15/95     Tim: added 'noise' to it
 
 #include <command.h>
 #define USAGE "goto <roomfile> or goto <object>"
@@ -7,9 +8,10 @@
 int
 main(string dest)
 {
-  object ob, me;
+  object ob, me, from;
 
   me = this_player();
+  from = environment(me);
   ob = 0;
 
   if(!dest)
@@ -19,27 +21,41 @@ main(string dest)
   if(file_size(RESOLVE_PATH(dest)) > 0 ||
      file_size(RESOLVE_PATH(dest+".c")) > 0) {
     ob = load_object(RESOLVE_PATH(dest));
-    me->move(ob);
-    me->force_me("look");
-    return 1;
   }
 
 //  Check for room object
 
-  if(ob = find_object(dest)) {
-    me->move(ob);
-    me->force_me("look");
-    return 1;
+  if(!ob) {
+    if(ob = find_object(dest))
+      ob = environment(ob);
   }
 
 //  Otherwise check for player
 
-  if(ob = find_player(dest)) {
-    me->move(environment(ob));
-    me->force_me("look");
-    return 1;
+  if(!ob) {
+    if(ob = find_player(dest))
+      ob = environment(ob);
+  }
+
+//  Otherwise check for living
+  if(!ob) {
+    if(ob = find_living(dest))
+      ob = environment(ob);
   }
 
 //  Didn't find anything
-  return notify_fail("goto: cannot find specified object\n");
+  if(!ob)
+    return notify_fail("goto: cannot find specified object\n");
+
+
+  me->move(ob);
+  me->force_me("look");
+
+  tell_room(ob, sprintf("%s falls from the sky and lands on his head.\n",
+			me->query_cap_name()), ({ me }));
+
+  tell_room(from, sprintf("%s vanishes in a puff of smoke.\n",
+			  me->query_cap_name()));
+
+  return 1;
 }

@@ -20,3 +20,5 @@
 #include "extract.c"
 #include "log_file.c"
 #include "distinct_array.c"
+#include "destruct.c"
+#include "pronoun.c"

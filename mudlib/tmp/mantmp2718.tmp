@@ -1,7 +1,0 @@
-disable_commands() (3) - makes a living object non-living
-find_living() (3)    - find a living object matching a given id
-living() (3)         - detects whether or not a given object is "liv ing"
-livings() (3)        - return an array of all living objects
-message() (3)        - deliver messages to "living" objects
-set_living_name() (3) - set a living name for a living object
-shout() (3)          - sends a message to all living objects

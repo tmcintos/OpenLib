@@ -125,6 +125,9 @@ init_groups()
    */
   groups = map_mapping(groups, (: expand_subgroups($2) :));
 
+// Ended up having to call this 2x to make sure it got them all
+  groups = map_mapping(groups, (: expand_subgroups($2) :));
+
   /* 
    * now remove double elements
    */

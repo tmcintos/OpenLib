@@ -1,0 +1,12 @@
+#obj/clone/user/human.c
+name "hamnsnock"
+coins ({50,12,})
+hit_points 0
+spell_points 0
+sex 0
+title "the great magician of patagonia"
+current_dir "/u/h/hamnsnock/stuff"
+term "ansi"
+aliases (["sc":"score","l":"look","i":"inventory","sw":"southwest","se":"southeast","nw":"northwest","ne":"northeast","w":"west","e":"east","s":"south","n":"north",])
+Hook 0
+path "/cmd/player:/adm/cmd/wiz:/adm/cmd/adm:/cmd/wiz:/adm/cmd/player:/cmd/adm"

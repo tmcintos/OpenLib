@@ -1,0 +1,10 @@
+#obj/clone/user.c
+name "hamnsnock"
+coins ({0,0,})
+hit_points 100
+spell_points 0
+title "the utter mudlib hacker"
+current_dir "/u/h/hamnsnock"
+term 0
+Hook 0
+path "/cmd/player:/adm/cmd/wiz:/adm/cmd/adm:/cmd/wiz:/adm/cmd/player:/cmd/adm"

@@ -120,7 +120,7 @@ int cmdChannel(string verb, string str) {
 //        if( !(name = (string)this_player()->GetCapName()) )
 //          name = capitalize((string)this_player()->GetKeyName());
 //    }
-    else name = (string)this_player()->query_name();
+    else name = (string)this_player()->query_cap_name();
     eventSendChannel(name, verb, str, emote, 0, 0);
     if( rc != verb ) 
       SERVICES_D->eventSendChannel(name, rc, str, emote, 0, 0);
@@ -163,7 +163,7 @@ string *GetChannelList(string ch) {
     else if( origin() != ORIGIN_LOCAL ) return ({});
     if( !Channels[ch] ) return ({});
     return map(filter(Channels[ch], (: $1 && !((int)$1->GetInvis()) :)), 
-		      (: (string)$1->query_name() :));
+		      (: (string)$1->query_cap_name() :));
 }
 
 string GetLocalChannel(string ch) {

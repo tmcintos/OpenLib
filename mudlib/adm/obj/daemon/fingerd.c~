@@ -8,6 +8,7 @@
 #include <time.h>
 
 inherit DAEMON;
+inherit INHERIT_DIR "/time";
 
 string GetFinger(string username);
 
@@ -117,10 +118,11 @@ mixed *GetRemoteFinger(string who)
 // modifies: nothing
 // post: returns a finger packet for Intermud3
 {
-  string RealName, CapName, HomeDir, Email, Level;
+  string RealName, CapName, HomeDir, Email,
+         Project = user_path(who) + ".project";
   int LoginTime;
   mixed *tmp;
-  object conn;
+  object conn, player;
 
   conn = new(CONNECTION_OB);
 
@@ -130,10 +132,18 @@ mixed *GetRemoteFinger(string who)
     HomeDir = conn->query_home_dir();
     LoginTime = conn->query_login_time();
     Email = conn->query_email_addr();
-    Level = 0;
+
+    if(file_exists(Project))
+      Project = "Project: " + read_file(Project, 1, 1);
+    else
+      Project = 0;
+
+    player = find_player(who);
 
     tmp = ({ CapName, CapName, RealName, Email, ctime(LoginTime),
-	     "Not dealing here", Level, "\n" });
+	     (player ? query_idle(player) : -1), 0, 0, Project});
     return tmp;
+  } else {
+    return 0;
   }
 }

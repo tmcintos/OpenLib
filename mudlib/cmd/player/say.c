@@ -3,9 +3,13 @@
 int
 main(string arg)
 {
-	say((string)this_player()->query_name()
-		+ " says: " +  arg + "\n");
-	write("You say: "+ arg +"\n");
+  if(!arg)
+    return notify_fail("usage:  say <text>\n");
 
-	return 1;
+  say(capitalize(this_player()->query_name())
+      + " says, \""+capitalize(arg)+"\"\n");
+
+  write("You say, \""+arg+"\"\n");
+
+  return 1;
 }

@@ -1,0 +1,14 @@
+.\"dump_variable() - returns a printable representation of any variable
+.TH dump_variable 2 "Oct 18 1995" Ultralib "Simulated Efuns"
+
+.SH NAME
+dump_variable() - returns a printable representation of any variable
+
+.SH SYNOPSIS
+string dump_variable( mixed arg );
+
+.SH DESCRIPTION
+dump_variable() returns a string representing any variable that is passed
+to it.  This is helpful for debugging purposes.
+
+.SH SEE ALSO

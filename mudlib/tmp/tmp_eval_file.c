@@ -1,3 +1,5 @@
 #include <mudlib.h>
 #include <daemons.h>
-mixed eval() { return this_player()->query_weight(); }
+mixed eval() { 
+  object me = this_player();
+  return objects(); }

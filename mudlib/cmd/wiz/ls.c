@@ -2,34 +2,64 @@
 // ls.c: 05/05/95:  Tim McIntosh (astasia@iastate.edu)
 //                  Supports flags -alF (single or combos)
 //       08/26/95:  T.M   Added wildcard support
-//       08/27/95:  T.M.  Fixed so files are listed alphabetically in columns
+//       08/27/95:  T.M   Fixed so files are listed alphabetically in columns
 //       10/10/95:  T.M   Fixed the -F flag (had indexing bug in it)
 //       10/12/95:  T.M   Added -c flag for COLORizing ls (not with -l though)
+//       10/30/95:  T.M   Broke into 2 funcs, now allows for unlimited command
+//                        line arguments.
 
 #include <command.h>
 #include <cmdline.h>
 
 #define WIDTH 80
 
+void do_ls(string dir, string* flags, int optc, int optF);
+
 int
-_main(string dir, int argc, string *argv, string *flags)
+_main(string cmdline, int argc, string *argv, string *flags)
 {
+  string* filez;
+  string file;
+  int optc, optF;
+
+  optc = (this_player()->query_term()=="ansi" || this_player()->query_term()=="vt102");
+  optF = flag(flags, "F");
+
+  if(!cmdline) {
+    do_ls(0, flags, optc, optF);
+    write("\n");
+    return 1;
+  }
+
+  filez = filter_array(argv - ({argv[0]}),
+		       function(string item) {
+			 return item[0] != '-';
+		       }
+		       );
+ 
+  foreach(file in filez) {
+    do_ls(file, flags, optc, optF);
+    write("\n");
+  }
+
+  return 1;
+}
+
+void
+do_ls(string dir, string* flags, int optc, int optF) {
   string *files, printstr;
   string spaces;
   int max_fname_len, columns, col_len;
   int is_dir;
   int i, j;
-  int optc, optF;
-
   spaces = "                                                                 ";
-
-  optc = (this_player()->query_term()=="ansi" || this_player()->query_term()=="vt102");
-  optF = flag(flags, "F");
 
   if(!dir)
     dir = RESOLVE_PATH(".");
   else
     dir = RESOLVE_PATH(dir);
+
+  printf("%s:\n", dir);
 
   if(file_size(dir) == -2) {                  //  directory
     if(dir[strlen(dir)-1] != '/')
@@ -42,7 +72,7 @@ _main(string dir, int argc, string *argv, string *flags)
       printf("   %24-s   %6-d   %30-s\n", dir, tmp[0], ctime(tmp[1]));
     } else
       write(dir + "\n");
-    return 1;
+    return;
   }
     
 /* ----------------------------- Long Format ------------------------------ */
@@ -55,7 +85,7 @@ _main(string dir, int argc, string *argv, string *flags)
     }
     
     if(!is_dir && sizeof(files) == 0)
-      return notify_fail("ls: no such file or directory.\n");
+      return write("ls: no such file or directory.\n");
 
     for(i=0;i < sizeof(files);i++) {
       string tmp;
@@ -64,7 +94,7 @@ _main(string dir, int argc, string *argv, string *flags)
       printf("   %18-s   %6-s   %30-s\n",
 	     files[i][0], tmp, ctime(files[i][2]));
     }
-    return 1;
+    return;
   }   // END of Long Format
 
 
@@ -79,7 +109,7 @@ _main(string dir, int argc, string *argv, string *flags)
   }    
 
   if(!is_dir && sizeof(files) == 0)
-    return notify_fail("ls: no such file or directory.\n");
+    return write("ls: no such file or directory.\n");
 
 // get longest filename and setup columns
   max_fname_len = 0;
@@ -132,7 +162,7 @@ _main(string dir, int argc, string *argv, string *flags)
     }
     write(printstr +"\n");
   }
-  return 1;
+  return;
 }
 
 int

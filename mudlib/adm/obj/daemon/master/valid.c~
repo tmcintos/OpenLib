@@ -83,6 +83,9 @@ valid_write(string file, mixed user, string func)
   string *dir;
   object *stack, ob;
 
+// I'll fix this crap later..Tim.
+  return 1;
+
   dir = explode(file, "/");
 
   stack = call_stack(1);

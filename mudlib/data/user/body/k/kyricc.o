@@ -1,5 +1,8 @@
-#obj/clone/user/default.c
+#obj/clone/user/human.c
 name "kyricc"
+coins ({30,10,})
+hit_points 100
+spell_points 0
 title "the utter mudlib hacker"
 current_dir "/u/k/kyricc"
 term "ansi"

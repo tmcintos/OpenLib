@@ -1,8 +1,13 @@
-/*    /daemon/services/channel.c
+/*  -*- LPC -*-
+ *    /daemon/services/channel.c
  *    from the Nightmare IV LPC Library
  *    handles intermud channels using the Intermud 3 protocols
  *    created by Descartes of Borg 950625
+ *
+ *  10.23.95  Tim modified for this mudlib
  */
+
+#define SERVICE_CHANNEL
 
 #include <daemons.h>
 #include <net/daemons.h>
@@ -15,12 +20,12 @@ void eventReceiveChannelWhoReply(mixed *packet) {
     packet[6] = (string)CHAT_D->GetLocalChannel(packet[6]);
     if( !sizeof(packet[7]) ) {
 	message("system", "No one is listening to " + packet[6] + " at " +
-		packet[2] + ".", ob);
+		packet[2] + ".\n", ob);
 	return;
     }
-    message("system", "Listening to " + packet[6] + " at " + packet[2] + ":",
+    message("system", "Listening to " + packet[6] + " at " + packet[2] + ":\n",
 	    ob);
-    message("system", implode(packet[7], "   "), ob);
+    message("system", implode(packet[7], "   ")+"\n", ob);
 }
 
 void eventReceiveChannelWhoRequest(mixed *packet) {
@@ -44,8 +49,8 @@ void eventReceiveChannelUserRequest(mixed *packet) {
 				     "player.", packet }) );
 	return;
     }
-    visname = (string)ob->GetName();
-    switch( (string)ob->GetGender() ) {
+    visname = (string)ob->query_cap_name();
+    switch( (string)ob->query_gender() ) {
 	case "male": gender = 0; break;
         case "female": gender = 1; break;
         default: gender = 2; break;
@@ -66,12 +71,9 @@ void eventReceiveChannelEmote(mixed *packet) {
 
     if( file_name(previous_object()) != INTERMUD_D ) return;
     if( packet[2] == mud_name() ) return;
-    if( !packet[11] ) return;
-    if( packet[7] == mud_name() ) target = packet[8];
-    else if( !packet[7] ) target = 0;
-    else target = capitalize(packet[8]) + "@" + packet[7];
-    CHAT_D->eventSendChannel(packet[11] + "@" + packet[2], packet[6],
-			     packet[9], 1, target, packet[10]);
+    if( !packet[7] ) return;
+    CHAT_D->eventSendChannel(packet[7] + "@" + packet[2], packet[6],
+			     packet[8], 1, 0, 0);
 }
 
 varargs void eventSendChannel(string who, string ch, string msg, int emote,
@@ -87,7 +89,7 @@ varargs void eventSendChannel(string who, string ch, string msg, int emote,
 	}
 	else targpl = where = targmsg = 0;
 	packet = ({ "channel-e", 5, mud_name(), convert_name(who), 0, 0, ch, 
-		    where, targpl, msg, targmsg, who });
+                    who, msg });
     }
     else packet = ({ "channel-m", 5, mud_name(), convert_name(who), 0, 0, ch, 
 		     who, msg });
@@ -114,7 +116,7 @@ void eventRegisterChannels(mapping list) {
 	    INTERMUD_D->eventWrite(({ "channel-listen", 5, mud_name(), 0, ns, 
 				      0, channel, 0 }));
 	    log_file("channels", "New channel: " + channel + " recognized " +
-		     ctime(time()) + "\nValue: " + identify(val) + "\n\n");
+		     ctime(time()) + "\nValue: " + identify(val));
 	}
 	else INTERMUD_D->eventWrite(({ "channel-listen", 5, mud_name(), 0, ns,
 				       0, channel, 1 }));

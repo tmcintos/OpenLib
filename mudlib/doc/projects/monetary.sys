@@ -1,3 +1,5 @@
+last update: 10/22/95
+-------------------------------------------------------------------------------
 There are two types of coins: Silver and Gold.
 Exchange rate is 50:1
 
@@ -23,8 +25,8 @@ This, however, won't usually be important.
   The amount of coins that a living object has in its inventory may be
 determined by calling
 	int * query_money();  
-in the living object, which
-will return the money array as its supply of money.
+in the living object, which will return the money array as its supply of money.
+
   To add/remove money to a living's inventory, use the functions 
 	boolean add_money(int *money);
 	boolean remove_money(int *money);
@@ -44,6 +46,7 @@ set succeeded.
   This object automatically adds to a living object's money supply and self
 destructs when it is moved into any living object.  When moved into any other
 object, it behaves normally.
+
   This object weighs as much as the coins contained therein.
 silver coin: 1/18 lb.
 gold coin: 1/6 lb.

@@ -1,0 +1,3176 @@
+Mon Oct 23 20:41:06 1995:  
+[ERROR] *Bad argument 2 to foreach
+Expected: mapping Got: "mud@knapp38.res.iastate.edu".
+  obj : (adm/cmd/player/mudlist)
+  file: adm/cmd/player/mudlist.c:75
+  prgm: adm/cmd/player/mudlist.c
+  func: main
+  args: ( "dysfunctionalmud", )
+Mon Oct 23 20:44:56 1995:  
+[ERROR] *Bad argument 2 to foreach
+Expected: mapping Got: "mud@knapp38.res.iastate.edu".
+  obj : (adm/cmd/player/mudlist)
+  file: adm/cmd/player/mudlist.c:75
+  prgm: adm/cmd/player/mudlist.c
+  func: main
+  args: ( "dysfunctionalmud", )
+Mon Oct 23 20:48:20 1995:  
+[ERROR] *Indexing a string with an illegal type.
+  obj : (adm/cmd/player/mudlist)
+  file: adm/cmd/player/mudlist.c:87
+  prgm: adm/cmd/player/mudlist.c
+  func: main
+  args: ( "dysfunctionalmud", )
+Mon Oct 23 20:57:16 1995:  
+[ERROR] *Error in loading object '/cmd/player/locate'
+  obj : (obj/clone/user/human#2)
+  file: obj/clone/user.c:234
+  prgm: obj/clone/user.c
+  func: commandHook
+  args: ( "tim", )
+Mon Oct 23 20:59:27 1995:  
+[ERROR] *Error in loading object '/cmd/player/locate'
+  obj : (obj/clone/user/human#2)
+  file: obj/clone/user.c:234
+  prgm: obj/clone/user.c
+  func: commandHook
+  args: ( 0, )
+Mon Oct 23 21:02:24 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "return object()", )
+Mon Oct 23 21:54:16 1995:  
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0Kyricc creamates you with his/her/it's death spike, hitting with unbelievable force!
+, )
+Mon Oct 23 22:07:28 1995:  
+[ERROR] *Bad argument 1 to find_player()
+Expected: string Got: 0.
+  obj : (cmd/wiz/echoto)
+  file: cmd/wiz/echoto.c:6
+  prgm: cmd/wiz/echoto.c
+  func: main
+  args: ( 00, )
+Mon Oct 23 22:42:01 1995:  
+[ERROR] *Error in loading object '/adm/simul_efun'
+  obj : (adm/simul_efun)
+  file: adm/efuns/destruct.c:10
+  prgm: adm/simul_efun.c
+  func: destruct
+  args: ( 0, )
+Mon Oct 23 23:28:20 1995:  
+[ERROR] *Error in loading object '/adm/simul_efun'
+  obj : (adm/simul_efun)
+  file: adm/efuns/destruct.c:10
+  prgm: adm/simul_efun.c
+  func: destruct
+  args: ( 0, )
+Mon Oct 23 23:33:52 1995:  
+[ERROR] *Error in loading object '/obj/inherit/base/living'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Tue Oct 24 00:11:58 1995:  
+[ERROR] *Printable strings limited to length of 8192.
+  obj : (obj/clone/user/human#144)
+  file: obj/clone/user.c:281
+  prgm: obj/clone/user.c
+  func: receive_message
+  args: ( "write"#obj/daemon/net/intermud.c
+no_clean 1
+Password 13786
+MudList (/38032,(["Sodden Earth":({-1,"140.247.187.95",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["who":1,"emoteto":1,"http":3995,"ftp":3999,"channel":1,"tell":1,"rcp":3990,"locate":1,"finger":1,]),0,}),"ghojmoH":({0,"130.89.227.77",5555,5558,0,"Tmi-2","Tmi-2","MudOS v21","LPmud","Mudlib Development","unknown",(["tell":1,"who":1,"locate":1,"ftp":5554,"finger":1,"channel":1,0:1,]),0,}),"Holy Ground":({-1,"205.138.138.1",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["who":1,"emoteto":1,"http":3995,"ftp":3999,"channel":1,"tell":1,"rcp":3990,"locate":1,"finger":1,]),0,}),"Development":({0,"137.215.31.23",3333,3338,3341,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["who":1,"emoteto":1,"http":3328,"ftp":3332,"channel":1,"tell":1,"rcp":3323,"locate":1,"finger":1,]),0,}),"SammyMud":({0,"130.238.251.203",4000,4005,4008,"Nightmare IV","Nightmare IV","MudOS v21.4","LPMud","open for public","unknown",(["tell":1,"who":1,"rcp":3990,"http":3995,"locate":1,"ftp":3999,"finger":1,"channel":1,]),0,}),"Lua Test":({-1,"204.182.47.15",5000,5001,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"Red Dragon":({-1,"205.164.80.15",4000,4001,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","Guild, Race dev.","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"The Mystik Isles":({0,"153.64.19.124",5000,5001,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"ReFlux":({0,"141.219.20.113",4000,4005,4008,"Nightmare IV","Nightmare IV","MudOS v21.4","LPMud","open for public","unknown",(["tell":1,"who":1,"rcp":3990,"http":3995,"locate":1,"ftp":3999,"finger":1,"channel":1,]),0,}),"The Mangoria Project":({0,"198.53.206.116",4000,4005,4008,"Nightmare IV","Nightmare IV","MudOS v21.4","LPMud","open for public","unknown",(["tell":1,"who":1,"rcp":3990,"http":3995,"locate":1,"ftp":3999,"finger":1,"channel":1,]),0,}),"Farbridge":({0,"128.193.5.165",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["who":1,"emoteto":1,"http":3995,"ftp":3999,"channel":1,"tell":1,"rcp":3990,"locate":1,"finger":1,]),0,}),"Blahm":({0,"204.238.216.51",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"emoteto":1,"ftp":3999,"http":3995,"who":1,"tell":1,"finger":1,"rcp":3990,"locate":1,]),0,}),"Nightmare":({-1,"199.199.122.10",4000,4005,4008,"Nightmare IVr2","Nightmare IVr2","MudOS v21.7b2","LPMud","mudlib development","nightmare-admin@imaginary.com",(["http":3995,"ftp":3999,"who":1,"emoteto":1,"amcp":"1.1","channel":1,"tell":1,"finger":1,"rcp":3990,"locate":1,]),([]),}),"Dysfunctional Mud":({-1,"129.186.85.38",4444,4449,4452,"UltraLib 0.1","UltraLib 0.1","MudOS v21.7b1","LPMud","alpha development","mud@knapp38.res.iastate.edu",(["http":4439,"ftp":4443,"who":1,"emoteto":1,"channel":1,"amcp":"1.1","rcp":4434,"tell":1,"locate":1,"finger":1,]),([]),}),"MISL":({-1,"198.70.148.9",5555,5556,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"Nol MUD":({-1,"202.37.179.86",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["who":1,"emoteto":1,"http":3995,"ftp":3999,"channel":1,"tell":1,"rcp":3990,"locate":1,"finger":1,]),0,}),"Craic":({0,"141.219.20.113",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"emoteto":1,"ftp":3999,"http":3995,"who":1,"tell":1,"finger":1,"rcp":3990,"locate":1,]),0,}),"Mystik Isles":({0,"153.64.19.124",5000,5001,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["tell":1,"who":1,"finger":1,"locate":1,"channel":1,]),0,}),"DeadMUD-Lima-Test":({0,"141.218.40.180",2345,2346,0,"Lima 0.9r3 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["tell":1,"who":1,"finger":1,"locate":1,"channel":1,]),0,}),"CHRONICLES":({0,"198.213.192.13",2112,2113,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","Insertion Development","unknown",(["tell":1,"who":1,"finger":1,"locate":1,"channel":1,]),0,}),"IdeaExchange":({-1,"199.199.122.10",7890,7895,7898,"Foundation IIr1","Foundation IIr1","MudOS v21.6b7","LPMud","open to public","beek@imaginary.com",(["who":1,"emoteto":1,"http":7885,"amcp":"1.1","ftp":7889,"channel":1,"tell":1,"rcp":7880,"locate":1,"finger":1,]),([]),}),"PRIVATE IDAHO":({-1,"204.132.120.1",8888,8889,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"Time Killer":({0,"204.238.216.51",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"emoteto":1,"ftp":3999,"http":3995,"who":1,"tell":1,"finger":1,"rcp":3990,"locate":1,]),0,}),"Alpha Complex":({0,"131.215.18.60",9999,10000,0,"Lima 0.9r3 (pre-alpha)","Lima","MudOS v21.7a3","LP","mudlib development","unknown",(["finger":1,"channel":1,"locate":1,"who":1,"tell":1,]),0,}),"Vortex":({-1,"156.46.216.2",4500,4505,4508,"Nightmare IV","Nightmare IV","MudOS v21.4","LPMud","open for public","unknown",(["tell":1,"who":1,"rcp":4490,"http":4495,"locate":1,"ftp":4499,"finger":1,"channel":1,]),0,}),"Realms of Time":({-1,"204.157.9.29",5000,5005,5008,"Nightmare 3.3.2","Nightmare 3.3.2","MudOS v21.5","LPMud","Unknown, whee","root@rot.com",(["who":1,"emoteto":1,"http":4995,"amcp":"1.1","ftp":4999,"channel":1,"tell":1,"rcp":4988,"locate":1,"finger":1,]),([]),}),"Shattered Empire":({-1,"204.71.144.66",3000,3005,3008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.7b2","LPMud","mudlib development","unknown",(["http":2995,"ftp":2999,"who":1,"emoteto":1,"channel":1,"rcp":2990,"tell":1,"locate":1,"finger":1,]),0,}),"Trek Worlds":({0,"130.89.233.61",1701,1702,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["tell":1,"who":1,"finger":1,"locate":1,"channel":1,]),0,}),"CeltiQuest":({-1,"204.157.201.239",7778,7783,7786,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["who":1,"emoteto":1,"http":7773,"ftp":7777,"channel":1,"tell":1,"rcp":7768,"locate":1,"finger":1,]),0,}),"Forgotten Realms":({0,"129.93.1.24",1678,1679,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"Mist Mountain":({0,"204.246.64.39",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["who":1,"emoteto":1,"http":3995,"ftp":3999,"channel":1,"tell":1,"rcp":3990,"locate":1,"finger":1,]),0,}),"Enulal":({-1,"163.143.125.117",2222,2227,0,"CustomiseD","CustomiseD","AD.04.02","CDlib","Open to players.","genesis@enulal.u-aizu.ac.jp",(["who":1,"ftp":2223,"emoteto":1,"channel":1,"http":2224,"finger":1,"mail":1,"locate":1,"tell":1,]),(["www-dir":"/",]),}),"Viruni":({0,"137.204.72.8",7878,7879,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["tell":1,"who":1,"finger":1,"locate":1,"channel":1,]),0,}),"Eyrie":({-1,"128.243.152.246",4000,4005,4008,"Nightmare IV","Nightmare IV","MudOS v21.5","LPMud","open for public","unknown",(["tell":1,"who":1,"rcp":3990,"http":3995,"locate":1,"ftp":3999,"finger":1,"channel":1,]),0,}),"test":({0,"128.2.22.34",4444,4449,4452,"Nightmare IVr1","Nightmare IVr1","MudOS v21.5","LPMud","mudlib development","unknown",(["channel":1,"emoteto":1,"ftp":4443,"http":4439,"who":1,"finger":1,"tell":1,"locate":1,"rcp":4434,]),0,}),"Earthdawn":({0,"136.142.80.102",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"emoteto":1,"ftp":3999,"http":3995,"who":1,"finger":1,"tell":1,"locate":1,"rcp":3990,]),0,}),"Phantasie":({0,"134.129.129.11",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"emoteto":1,"ftp":3999,"http":3995,"who":1,"tell":1,"finger":1,"rcp":3990,"locate":1,]),0,}),"Lands of Celaria":({0,"129.237.225.100",4000,4005,4008,"Nightmare IV","Nightmare IV","MudOS v21.4","LPMud","open for public","unknown",(["tell":1,"who":1,"rcp":3990,"http":3995,"locate":1,"ftp":3999,"finger":1,"channel":1,]),0,}),"Nightmare-IV":({0,"137.215.102.162",5555,5560,5563,"Nightmare IV","Nightmare IV","MudOS v21.6","LPMud","open for public","unknown",(["channel":1,"finger":1,"ftp":5554,"locate":1,"http":5550,"rcp":5545,"who":1,"tell":1,]),0,}),"Castalia":({-1,"204.243.186.2",7000,7005,7008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["who":1,"emoteto":1,"http":6995,"ftp":6999,"channel":1,"tell":1,"rcp":6990,"locate":1,"finger":1,]),0,}),"Chronicles":({-1,"198.213.192.13",2112,2113,0,"Lima 0.9r4 (pre alpha)","Lima","MudOS v21.7a10","LP","guild/class development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"Akuma":({0,"198.60.253.63",666,671,674,"Nightmare IV","Nightmare IV","MudOS v21.4","LPMud","open for public","unknown",(["tell":1,"who":1,"rcp":656,"http":661,"locate":1,"ftp":665,"finger":1,"channel":1,]),0,}),"ArcadiaF":({-1,"199.120.150.7",9999,10000,0,"Lima 0.9r4","Lima","MudOS v21.7a10","LP","Mudlib Development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"Utter Chaos":({0,"204.57.174.131",5000,5001,0,"Lima 0.9r3 (pre-alpha)","Lima","MudOS v21.7a3","LP","mudlib development","unknown",(["tell":1,"who":1,"locate":1,"channel":1,"finger":1,]),0,}),"Foundation II":({-1,"128.2.22.34",2222,2227,2230,"Nightmare IVr1","Nightmare IVr1","MudOS v21.5","LPMud","mudlib development","unknown",(["who":1,"emoteto":1,"http":2217,"ftp":2221,"channel":1,"tell":1,"rcp":2212,"locate":1,"finger":1,]),0,}),"Jamaica MUD":({0,"128.205.222.66",7777,7782,7785,"Nightmare IV","Nightmare IV","MudOS v21.4","LPMud","open for public","unknown",(["channel":1,"finger":1,"ftp":7776,"locate":1,"http":7772,"rcp":7767,"who":1,"tell":1,]),0,}),"Elenium":({0,"137.215.31.23",2222,2227,2230,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"emoteto":1,"ftp":2221,"http":2217,"who":1,"finger":1,"tell":1,"locate":1,"rcp":2212,]),0,}),"dp":({0,"205.218.118.5",6666,6669,0,"Tmi-2","Tmi-2","MudOS v21c2","LPmud","Mudlib Development","unknown",(["tell":1,"who":1,"locate":1,"ftp":6665,"finger":1,"channel":1,]),0,}),"DDA - F":({0,"128.103.65.122",4000,4005,4008,"Foundation IIr1","Foundation IIr1","MudOS v21.5","LPMud","under development","unknown",(["channel":1,"emoteto":1,"ftp":3999,"http":3995,"who":1,"tell":1,"finger":1,"rcp":3990,"locate":1,]),0,}),"Eodon":({0,"131.174.124.32",5555,5558,0,"Eodon's MudLib","Tmi-2 1.2","MudOS v21.5","LPmud","Mudlib Development","unknown",(["channel":1,"finger":1,"ftp":5554,"locate":1,"who":1,"tell":1,]),0,}),"ZorkMUD":({0,"198.92.143.9",7890,7891,0,"Lima 0.9r3 (pre-alpha)","Lima","MudOS v21.7a8","LP","mud development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"Mangoria Project":({0,"198.53.206.114",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["who":1,"emoteto":1,"http":3995,"ftp":3999,"channel":1,"tell":1,"rcp":3990,"locate":1,"finger":1,]),0,}),"Nameless":({0,"203.8.161.50",4000,4005,4008,"Nightmare IV","Nightmare IV","MudOS v21.4","LPMud","open for public","unknown",(["channel":1,"finger":1,"ftp":3999,"locate":1,"http":3995,"rcp":3990,"who":1,"tell":1,]),0,}),"KPlace Test Mud":({0,"199.89.234.17",7878,7879,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["tell":1,"who":1,"locate":1,"finger":1,"channel":1,]),0,}),"Rusted Reality":({-1,"205.199.81.96",10000,10005,10008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","mud@jam.rust.net",(["who":1,"emoteto":1,"http":9995,"amcp":"1.1","ftp":9999,"channel":1,"tell":1,"rcp":9990,"locate":1,"finger":1,]),([]),}),"UnderDark":({0,"205.219.116.122",2222,2227,2230,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"emoteto":1,"ftp":2221,"http":2217,"who":1,"tell":1,"finger":1,"rcp":2212,"locate":1,]),0,}),"Koko Wa Mud":({-1,"204.182.49.82",4000,4001,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"ZakkMUD":({-1,"205.218.122.11",3500,3502,0,"BogLegLIB 0.01a","BogLegLIB","MudOS v21.7a8","LP","Mudlib Development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"Quendor":({0,"198.92.143.9",4734,9010,0,"Lima 0.9r1 pre-alpha","Lima","MudOS v21.6a10","LP","Open for the public","unknown",(["finger":1,"channel":1,"locate":1,"who":1,"tell":1,]),0,}),"Underdark":({0,"205.219.116.122",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"emoteto":1,"ftp":3999,"http":3995,"who":1,"tell":1,"finger":1,"rcp":3990,"locate":1,]),0,}),"Unnamed III":({0,"137.215.102.162",5555,5560,5563,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"emoteto":1,"ftp":5554,"http":5550,"who":1,"finger":1,"tell":1,"locate":1,"rcp":5545,]),0,}),"Starbird":({0,"129.240.30.28",4000,4005,4008,"Foundation II","Foundation II","MudOS v21.4","LPMud","open for public","unknown",(["channel":1,"finger":1,"ftp":3999,"locate":1,"http":3995,"rcp":3990,"who":1,"tell":1,]),0,}),"Team-Aye":({-1,"130.89.226.53",5555,5558,0,"Tmi-2","Tmi-2","MudOS v21","LPmud","Mudlib Development","unknown",(["tell":1,"who":1,"locate":1,"ftp":5554,"finger":1,"channel":1,0:1,]),0,}),"Styx":({-1,"128.123.8.116",3000,3005,3008,"Shitlib .02","Shitlib .02","MudOS v21.4","LPMud","Open for business","unknown",(["tell":1,"who":1,"rcp":2990,"http":2995,"locate":1,"ftp":2999,"finger":1,"channel":1,]),0,}),"Psycho Thriller":({0,"205.197.26.2",2469,2470,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","early death development","unknown",(["tell":1,"who":1,"finger":1,"locate":1,"channel":1,]),0,}),"GrandMUD":({0,"204.174.223.1",2001,2006,2009,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"emoteto":1,"ftp":2000,"http":1996,"who":1,"finger":1,"tell":1,"locate":1,"rcp":1991,]),0,}),"Rewted Operator":({0,"198.142.2.21",6969,6970,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["tell":1,"who":1,"finger":1,"locate":1,"channel":1,]),0,}),"Imajica":({-1,"140.160.192.111",5000,5005,5008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["who":1,"emoteto":1,"http":4995,"ftp":4999,"channel":1,"tell":1,"rcp":4990,"locate":1,"finger":1,]),0,}),"Realms Lore":({0,"129.93.1.24",1678,1679,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"Orion":({-1,"205.218.118.5",2000,1999,1998,"OrionLib v0.5","OrionLib","MudOS v21.6","LP","Mudlib Development","cowl@orion.tyler.net",(["tell":1,"who":1,"locate":1,"channel":1,"http":2080,]),([]),}),"Fury of the Dragon":({0,"204.182.47.15",7000,7001,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["tell":1,"who":1,"finger":1,"locate":1,"channel":1,]),0,}),"Lima Bean":({-1,"198.92.143.9",7878,7879,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","Open for the public","rust@virginia.edu or gstein@svpal.org",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),]),/)
+ChannelList (/8,(["l":({"PRIVATE IDAHO",0,}),"imud_gossip":({"*",0,}),"intermud":({"EotL",0,}),"imud_code":({"*",0,}),"mud":({"Red Dragon",0,}),"misl":({"MISL",0,}),]),/)
+Banned ([])
+Nameservers ({({"*gjs","199.199.122.10 9000",}),})
+, )
+Tue Oct 24 00:25:41 1995:  
+[ERROR] *Error in loading object '/cmd/wiz/summon'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Tue Oct 24 00:26:43 1995:  
+[ERROR] *Error in loading object '/cmd/wiz/summon'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Tue Oct 24 00:27:57 1995:  
+[ERROR] *Error in loading object '/cmd/wiz/summon'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Tue Oct 24 00:28:52 1995:  
+[ERROR] *Error in loading object '/cmd/wiz/summon'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Tue Oct 24 00:30:06 1995:  
+[ERROR] *Error in loading object '/cmd/wiz/summon'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Tue Oct 24 00:38:19 1995:  
+[ERROR] *Error in loading object '/cmd/wiz/summon'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Tue Oct 24 00:39:05 1995:  
+[ERROR] *Error in loading object '/cmd/wiz/summon'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Tue Oct 24 00:39:35 1995:  
+[ERROR] *Error in loading object '/cmd/wiz/summon'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Tue Oct 24 00:40:24 1995:  
+[ERROR] *Error in loading object '/cmd/wiz/summon'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Tue Oct 24 00:41:52 1995:  
+[ERROR] *Error in loading object '/cmd/wiz/summon'
+  obj : (obj/clone/user/human#151)
+  file: obj/clone/user.c:244
+  prgm: obj/clone/user.c
+  func: commandHook
+  args: ( 0, )
+Tue Oct 24 00:42:56 1995:  
+[ERROR] *Error in loading object '/cmd/wiz/summon'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Tue Oct 24 00:44:29 1995:  
+[ERROR] *Error in loading object '/cmd/wiz/summon'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Tue Oct 24 00:46:34 1995:  
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (cmd/wiz/summon)
+  file: cmd/wiz/summon.c:15
+  prgm: cmd/wiz/summon.c
+  func: main
+  args: ( "dsf", )
+Tue Oct 24 00:52:57 1995:  
+[ERROR] *call_other() couldn't find object
+  obj : (cmd/wiz/summon)
+  file: cmd/wiz/summon.c:18
+  prgm: cmd/wiz/summon.c
+  func: main
+  args: ( "tim", )
+Tue Oct 24 01:09:43 1995:  
+[ERROR] *call_other() couldn't find object
+  obj : (obj/clone/user/human#151)
+  file: obj/inherit/base/object.c:70
+  prgm: obj/inherit/base/object.c
+  func: move
+  args: ( "/u/h/hamnsnock/pata/timbers2.c", )
+Tue Oct 24 01:18:51 1995:  
+[ERROR] *Bad argument 1 to find_player()
+Expected: string Got: 0.
+  obj : (cmd/wiz/echoto)
+  file: cmd/wiz/echoto.c:6
+  prgm: cmd/wiz/echoto.c
+  func: main
+  args: ( 00, )
+Tue Oct 24 01:25:49 1995:  
+[ERROR] *Error in loading object '/cmd/wiz/echoto'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Tue Oct 24 01:50:36 1995:  
+[ERROR] *Error in loading object '/cmd/wiz/test'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Tue Oct 24 02:00:44 1995:  
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0hi
+, )
+Tue Oct 24 02:03:27 1995:  
+[ERROR] *Error in loading object '/cmd/wiz/echoto'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Tue Oct 24 02:04:14 1995:  
+[ERROR] *call_other() couldn't find object
+  obj : (cmd/wiz/echoto)
+  file: cmd/wiz/echoto.c:14
+  prgm: cmd/wiz/echoto.c
+  func: main
+  args: ( "hamnsnock hi", )
+Tue Oct 24 02:30:52 1995:  
+[ERROR] *Illegal to move or destruct an object defining actions from a verb function which returns zero.
+  obj : (0)
+  file: :0
+  prgm: 0
+Tue Oct 24 02:37:22 1995:  
+[ERROR] *Illegal to move or destruct an object defining actions from a verb function which returns zero.
+  obj : (0)
+  file: :0
+  prgm: 0
+Tue Oct 24 02:39:45 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "destruct(This_player())", )
+Tue Oct 24 02:49:52 1995:  
+[ERROR] *Illegal to move or destruct an object defining actions from a verb function which returns zero.
+  obj : (0)
+  file: :0
+  prgm: 0
+Tue Oct 24 02:52:21 1995:  
+[ERROR] *Illegal to move or destruct an object defining actions from a verb function which returns zero.
+  obj : (0)
+  file: :0
+  prgm: 0
+Tue Oct 24 02:52:39 1995:  
+[ERROR] *Illegal to move or destruct an object defining actions from a verb function which returns zero.
+  obj : (0)
+  file: :0
+  prgm: 0
+Tue Oct 24 02:54:07 1995:  
+[ERROR] *Illegal to move or destruct an object defining actions from a verb function which returns zero.
+  obj : (0)
+  file: :0
+  prgm: 0
+Tue Oct 24 06:49:34 1995:  
+[ERROR] *Error in loading object '/u/h/hamnsnock/post'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Tue Oct 24 07:38:21 1995:  
+[ERROR] *Error in loading object '/u/h/hamnsnock/stuff/mbutton'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Tue Oct 24 07:39:03 1995:  
+[ERROR] *Error in loading object '/u/h/hamnsnock/stuff/mbutton'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Tue Oct 24 07:49:12 1995:  
+[ERROR] *Error in loading object '/u/h/hamnsnock/stuff/mbutton'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Tue Oct 24 07:51:33 1995:  
+[ERROR] *Error in loading object '/u/h/hamnsnock/stuff/mbutton'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Tue Oct 24 07:54:38 1995:  
+[ERROR] *Bad argument 1 to interactive()
+Expected: object Got: 0.
+  obj : (u/h/hamnsnock/stuff/mbutton#229)
+  file: u/h/hamnsnock/stuff/mbutton.c:43
+  prgm: u/h/hamnsnock/stuff/mbutton.c
+  func: short
+  args: ( , )
+Tue Oct 24 07:56:53 1995:  
+[ERROR] *Bad argument 1 to interactive()
+Expected: object Got: 0.
+  obj : (u/h/hamnsnock/stuff/mbutton#230)
+  file: u/h/hamnsnock/stuff/mbutton.c:43
+  prgm: u/h/hamnsnock/stuff/mbutton.c
+  func: short
+  args: ( , )
+Tue Oct 24 08:05:55 1995:  
+[ERROR] *Bad argument 1 to interactive()
+Expected: object Got: 0.
+  obj : (u/h/hamnsnock/stuff/mbutton#231)
+  file: u/h/hamnsnock/stuff/mbutton.c:43
+  prgm: u/h/hamnsnock/stuff/mbutton.c
+  func: short
+  args: ( , )
+Tue Oct 24 08:08:24 1995:  
+[ERROR] *Bad argument 1 to interactive()
+Expected: object Got: 0.
+  obj : (u/h/hamnsnock/stuff/mbutton#233)
+  file: u/h/hamnsnock/stuff/mbutton.c:43
+  prgm: u/h/hamnsnock/stuff/mbutton.c
+  func: short
+  args: ( , )
+Tue Oct 24 16:23:30 1995:  
+[ERROR] *Error in loading object '/u/k/kyricc/testshop'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Tue Oct 24 16:30:12 1995:  
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (u/k/kyricc/testshop)
+  file: u/k/kyricc/testshop.c:80
+  prgm: u/k/kyricc/testshop.c
+  func: buy
+  args: ( "kcod", )
+Tue Oct 24 16:40:17 1995:  
+[ERROR] *call_other() couldn't find object
+  obj : (u/k/kyricc/testshop)
+  file: u/k/kyricc/testshop.c:82
+  prgm: u/k/kyricc/testshop.c
+  func: buy
+  args: ( "kdofa", )
+Tue Oct 24 16:52:17 1995:  
+[ERROR] *Bad argument 1 to explode()
+Expected: string Got: 0.
+  obj : (cmd/player/emote)
+  file: cmd/player/emote.c:11
+  prgm: cmd/player/emote.c
+  func: main
+  args: ( 0, )
+Tue Oct 24 17:00:13 1995:  
+[ERROR] *Bad argument 2 to message()
+Expected: string Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_room.c:4
+  prgm: adm/simul_efun.c
+  func: tell_room
+  args: ( "Kyricc the utter mudlib hacker buy's a Kyricc's dagger of Forgotten Ages.
+"00, )
+Tue Oct 24 17:22:34 1995:  
+[ERROR] *Bad argument 1 to interactive()
+Expected: object Got: 0.
+  obj : (u/h/hamnsnock/stuff/mbutton#56)
+  file: u/h/hamnsnock/stuff/mbutton.c:43
+  prgm: u/h/hamnsnock/stuff/mbutton.c
+  func: short
+  args: ( , )
+Tue Oct 24 17:28:24 1995:  
+[ERROR] *Error in loading object '/u/h/hamnsnock/stuff/mbutton'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Tue Oct 24 18:12:20 1995:  
+[ERROR] *call_other() couldn't find object
+  obj : (obj/clone/user/human#61)
+  file: obj/inherit/base/object.c:70
+  prgm: obj/inherit/base/object.c
+  func: move
+  args: ( "/u/h/hamnsnock/pata/timbers2.c", )
+Tue Oct 24 18:26:28 1995:  
+[ERROR] *Error in loading object '/obj/clone/corpse'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Tue Oct 24 18:28:21 1995:  
+[ERROR] *Error in loading object '/obj/clone/corpse'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Tue Oct 24 18:29:37 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "return envornment(find_player("hamnsnock"))", )
+Tue Oct 24 18:29:51 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "return enviornment(find_player("hamnsnock"))", )
+Tue Oct 24 18:30:41 1995:  
+[ERROR] *Error in loading object '/obj/clone/corpse'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Tue Oct 24 18:33:30 1995:  
+[ERROR] *Error in loading object '/obj/clone/reinzombie'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Tue Oct 24 18:48:45 1995:  
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0Kyricc liquifies you with its kdofa, hitting with unbelievable force!
+, )
+Tue Oct 24 19:28:49 1995:  
+[ERROR] *Error in loading object '/adm/simul_efun'
+  obj : (adm/simul_efun)
+  file: adm/efuns/destruct.c:10
+  prgm: adm/simul_efun.c
+  func: destruct
+  args: ( 0, )
+Tue Oct 24 19:31:26 1995:  
+[ERROR] *Error in loading object '/adm/simul_efun'
+  obj : (adm/simul_efun)
+  file: adm/efuns/destruct.c:10
+  prgm: adm/simul_efun.c
+  func: destruct
+  args: ( 0, )
+Tue Oct 24 19:31:42 1995:  
+[ERROR] *Error in loading object '/adm/simul_efun'
+  obj : (adm/simul_efun)
+  file: adm/efuns/destruct.c:10
+  prgm: adm/simul_efun.c
+  func: destruct
+  args: ( 0, )
+Tue Oct 24 19:38:08 1995:  
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0Kyricc liquifies you with its kdofa, splatterring everything with blood!
+, )
+Tue Oct 24 19:38:38 1995:  
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0Kyricc disentegrates you with its k dagger, hitting with unbelievable force!
+, )
+Tue Oct 24 19:38:48 1995:  
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0Kyricc disentegrates you with its k dagger, splatterring everything with blood!
+, )
+Tue Oct 24 21:00:59 1995:  
+[ERROR] *Bad argument 1 to present()
+Expected: string or object Got: 0.
+  obj : (u/k/kyricc/testshop)
+  file: u/k/kyricc/testshop.c:80
+  prgm: u/k/kyricc/testshop.c
+  func: buy
+  args: ( 0, )
+Tue Oct 24 21:01:03 1995:  
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (u/k/kyricc/testshop)
+  file: u/k/kyricc/testshop.c:82
+  prgm: u/k/kyricc/testshop.c
+  func: buy
+  args: ( "cloak", )
+Tue Oct 24 21:27:09 1995:  
+[ERROR] *call_other() couldn't find object
+  obj : (obj/clone/user/human#180)
+  file: obj/inherit/base/object.c:70
+  prgm: obj/inherit/base/object.c
+  func: move
+  args: ( "/u/h/hamnsnock/pata/timbers2.c", )
+Tue Oct 24 21:29:00 1995:  
+[ERROR] *call_other() couldn't find object
+  obj : (obj/clone/user/human#180)
+  file: obj/inherit/base/object.c:70
+  prgm: obj/inherit/base/object.c
+  func: move
+  args: ( "/u/h/hamnsnock/pata/timbers2.c", )
+Tue Oct 24 21:37:25 1995:  
+[ERROR] *Error in loading object '/u/h/hamnsnock/stuff/shanu'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Tue Oct 24 21:52:03 1995:  
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (u/k/kyricc/shop)
+  file: u/k/kyricc/shop.c:82
+  prgm: u/k/kyricc/shop.c
+  func: buy
+  args: ( "cloak", )
+Tue Oct 24 21:52:51 1995:  
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (u/k/kyricc/shop)
+  file: u/k/kyricc/shop.c:82
+  prgm: u/k/kyricc/shop.c
+  func: buy
+  args: ( "cloak", )
+Tue Oct 24 21:54:14 1995:  
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (u/k/kyricc/shop)
+  file: u/k/kyricc/shop.c:82
+  prgm: u/k/kyricc/shop.c
+  func: buy
+  args: ( "cloak", )
+Tue Oct 24 22:10:05 1995:  
+[ERROR] *String index out of bounds.
+  obj : (cmd/player/emote)
+  file: cmd/player/emote.c:24
+  prgm: cmd/player/emote.c
+  func: main
+  args: ( "is Into extra I's tonight....  Ever liik at something?", )
+Tue Oct 24 22:11:19 1995:  
+[ERROR] *Indexing on illegal type.
+  obj : (u/k/kyricc/shop)
+  file: u/k/kyricc/shop.c:63
+  prgm: u/k/kyricc/shop.c
+  func: list
+  args: ( , )
+Tue Oct 24 22:15:12 1995:  
+[ERROR] *String index out of bounds.
+  obj : (cmd/player/emote)
+  file: cmd/player/emote.c:24
+  prgm: cmd/player/emote.c
+  func: main
+  args: ( "ponder  Should he make it crash the mud when compiled?", )
+Tue Oct 24 22:43:09 1995:  
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0The combat ends.
+, )
+Tue Oct 24 22:44:07 1995:  
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0The combat ends.
+, )
+Tue Oct 24 22:46:20 1995:  
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0The combat ends.
+, )
+Tue Oct 24 22:46:48 1995:  
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0The combat ends.
+, )
+Tue Oct 24 22:48:08 1995:  
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0The combat ends.
+, )
+Tue Oct 24 22:48:14 1995:  
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0The combat ends.
+, )
+Tue Oct 24 22:49:03 1995:  
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (u/k/kyricc/shop)
+  file: u/k/kyricc/shop.c:82
+  prgm: u/k/kyricc/shop.c
+  func: buy
+  args: ( "cloak", )
+Tue Oct 24 22:49:07 1995:  
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (u/k/kyricc/shop)
+  file: u/k/kyricc/shop.c:82
+  prgm: u/k/kyricc/shop.c
+  func: buy
+  args: ( "dagger", )
+Tue Oct 24 22:52:36 1995:  
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0The combat ends.
+, )
+Tue Oct 24 22:52:48 1995:  
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0The combat ends.
+, )
+Tue Oct 24 23:06:54 1995:  
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (adm/obj/daemon/logind)
+  file: adm/obj/daemon/logind.c:168
+  prgm: adm/obj/daemon/logind.c
+  func: player_enter_world
+  args: ( obj/clone/connection#2300, )
+Tue Oct 24 23:26:53 1995:  
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0The combat ends.
+, )
+Tue Oct 24 23:33:29 1995:  
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0The combat ends.
+, )
+Tue Oct 24 23:33:39 1995:  
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0The combat ends.
+, )
+Tue Oct 24 23:33:59 1995:  
+[ERROR] *Error in loading object '/obj/clone/shsh'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Tue Oct 24 23:33:59 1995:  
+[ERROR] *Error in loading object '/obj/clone/tmsh'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Tue Oct 24 23:34:01 1995:  
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0The combat ends.
+, )
+Tue Oct 24 23:34:29 1995:  
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0The combat ends.
+, )
+Tue Oct 24 23:34:37 1995:  
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0The combat ends.
+, )
+Tue Oct 24 23:34:47 1995:  
+[ERROR] *Indexing on illegal type.
+  obj : (u/k/kyricc/shop)
+  file: u/k/kyricc/shop.c:63
+  prgm: u/k/kyricc/shop.c
+  func: list
+  args: ( , )
+Tue Oct 24 23:34:55 1995:  
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0The combat ends.
+, )
+Tue Oct 24 23:35:18 1995:  
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0The combat ends.
+, )
+Tue Oct 24 23:35:34 1995:  
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0The combat ends.
+, )
+Tue Oct 24 23:36:56 1995:  
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0The combat ends.
+, )
+Tue Oct 24 23:37:08 1995:  
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0The combat ends.
+, )
+Tue Oct 24 23:37:14 1995:  
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0The combat ends.
+, )
+Tue Oct 24 23:38:18 1995:  
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0Hamnsnock chops you with its deadly blade, hitting hard!
+, )
+Tue Oct 24 23:38:39 1995:  
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0Tim creamates you with its death spike, massacring to little fragments!
+, )
+Wed Oct 25 02:08:44 1995:  
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (adm/obj/daemon/logind)
+  file: adm/obj/daemon/logind.c:168
+  prgm: adm/obj/daemon/logind.c
+  func: player_enter_world
+  args: ( obj/clone/connection#3030, )
+Wed Oct 25 02:36:35 1995:  
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (adm/obj/daemon/logind)
+  file: adm/obj/daemon/logind.c:168
+  prgm: adm/obj/daemon/logind.c
+  func: player_enter_world
+  args: ( obj/clone/connection#3140, )
+Wed Oct 25 02:36:59 1995:  
+[ERROR] *call_other() couldn't find object
+  obj : (obj/clone/user/human#310)
+  file: obj/inherit/base/object.c:70
+  prgm: obj/inherit/base/object.c
+  func: move
+  args: ( "/u/h/hamnsnock/pata/timbers2.c", )
+Wed Oct 25 02:39:04 1995:  
+[ERROR] *call_other() couldn't find object
+  obj : (obj/clone/user/human#310)
+  file: obj/inherit/base/object.c:70
+  prgm: obj/inherit/base/object.c
+  func: move
+  args: ( "/u/h/hamnsnock/pata/timbers2.c", )
+Wed Oct 25 09:47:32 1995:  
+[ERROR] *call_other() couldn't find object
+  obj : (obj/clone/user/human#319)
+  file: obj/inherit/base/object.c:70
+  prgm: obj/inherit/base/object.c
+  func: move
+  args: ( "/u/h/hamnsnock/pata/timbers3.c", )
+Wed Oct 25 09:47:34 1995:  
+[ERROR] *call_other() couldn't find object
+  obj : (obj/clone/user/human#319)
+  file: obj/inherit/base/object.c:70
+  prgm: obj/inherit/base/object.c
+  func: move
+  args: ( "/u/h/hamnsnock/pata/xantie1.c", )
+Wed Oct 25 10:12:44 1995:  
+[ERROR] *call_other() couldn't find object
+  obj : (obj/clone/user/human#319)
+  file: obj/inherit/base/object.c:70
+  prgm: obj/inherit/base/object.c
+  func: move
+  args: ( "/u/h/hamnsnock/pata/timbers3.c", )
+Wed Oct 25 10:16:33 1995:  
+[ERROR] *call_other() couldn't find object
+  obj : (obj/clone/user/human#319)
+  file: obj/inherit/base/object.c:70
+  prgm: obj/inherit/base/object.c
+  func: move
+  args: ( "/u/h/hamnsnock/pata/learn4.c", )
+Wed Oct 25 11:37:55 1995:  
+[ERROR] *Error in loading object '/u/h/hamnsnock/stuff/pring'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Wed Oct 25 11:38:38 1995:  
+[ERROR] *Bad argument 1 to capitalize()
+Expected: string Got: 1.
+  obj : (cmd/player/inventory)
+  file: cmd/player/inventory.c:26
+  prgm: cmd/player/inventory.c
+  func: main
+  args: ( , )
+Wed Oct 25 11:55:35 1995:  
+[ERROR] *Error in loading object '/u/h/hamnsnock/stuff/pring'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Wed Oct 25 11:56:17 1995:  
+[ERROR] *Object must call seteuid() prior to calling clone_object().
+  obj : (u/h/hamnsnock/stuff/pring#351)
+  file: u/h/hamnsnock/stuff/pring.c:50
+  prgm: u/h/hamnsnock/stuff/pring.c
+  func: send_portal
+  args: ( "quint", )
+Wed Oct 25 11:57:27 1995:  
+[ERROR] *Object must call seteuid() prior to calling clone_object().
+  obj : (u/h/hamnsnock/stuff/pring#352)
+  file: u/h/hamnsnock/stuff/pring.c:50
+  prgm: u/h/hamnsnock/stuff/pring.c
+  func: send_portal
+  args: ( "quint", )
+Wed Oct 25 12:04:05 1995:  
+[ERROR] *Error in loading object '/u/h/hamnsnock/stuff/pring'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Wed Oct 25 12:04:46 1995:  
+[ERROR] *Error in loading object '/u/h/hamnsnock/stuff/pring'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Wed Oct 25 12:07:50 1995:  
+[ERROR] *Error in loading object '/u/h/hamnsnock/stuff/pring'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Wed Oct 25 14:53:34 1995:  
+[ERROR] *Printable strings limited to length of 8192.
+  obj : (obj/clone/user/human#362)
+  file: obj/clone/user.c:281
+  prgm: obj/clone/user.c
+  func: receive_message
+  args: ( "write"Mon Oct 23 23:33:52 1995:  
+[ERROR] *Error in loading object '/obj/inherit/base/living'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Tue Oct 24 00:11:58 1995:  
+[ERROR] *Printable strings limited to length of 8192.
+  obj : (obj/clone/user/human#144)
+  file: obj/clone/user.c:281
+  prgm: obj/clone/user.c
+  func: receive_message
+  args: ( "write"#obj/daemon/net/intermud.c
+no_clean 1
+Password 13786
+MudList (/38032,(["Sodden Earth":({-1,"140.247.187.95",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["who":1,"emoteto":1,"http":3995,"ftp":3999,"channel":1,"tell":1,"rcp":3990,"locate":1,"finger":1,]),0,}),"ghojmoH":({0,"130.89.227.77",5555,5558,0,"Tmi-2","Tmi-2","MudOS v21","LPmud","Mudlib Development","unknown",(["tell":1,"who":1,"locate":1,"ftp":5554,"finger":1,"channel":1,0:1,]),0,}),"Holy Ground":({-1,"205.138.138.1",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["who":1,"emoteto":1,"http":3995,"ftp":3999,"channel":1,"tell":1,"rcp":3990,"locate":1,"finger":1,]),0,}),"Development":({0,"137.215.31.23",3333,3338,3341,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["who":1,"emoteto":1,"http":3328,"ftp":3332,"channel":1,"tell":1,"rcp":3323,"locate":1,"finger":1,]),0,}),"SammyMud":({0,"130.238.251.203",4000,4005,4008,"Nightmare IV","Nightmare IV","MudOS v21.4","LPMud","open for public","unknown",(["tell":1,"who":1,"rcp":3990,"http":3995,"locate":1,"ftp":3999,"finger":1,"channel":1,]),0,}),"Lua Test":({-1,"204.182.47.15",5000,5001,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"Red Dragon":({-1,"205.164.80.15",4000,4001,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","Guild, Race dev.","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"The Mystik Isles":({0,"153.64.19.124",5000,5001,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"ReFlux":({0,"141.219.20.113",4000,4005,4008,"Nightmare IV","Nightmare IV","MudOS v21.4","LPMud","open for public","unknown",(["tell":1,"who":1,"rcp":3990,"http":3995,"locate":1,"ftp":3999,"finger":1,"channel":1,]),0,}),"The Mangoria Project":({0,"198.53.206.116",4000,4005,4008,"Nightmare IV","Nightmare IV","MudOS v21.4","LPMud","open for public","unknown",(["tell":1,"who":1,"rcp":3990,"http":3995,"locate":1,"ftp":3999,"finger":1,"channel":1,]),0,}),"Farbridge":({0,"128.193.5.165",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["who":1,"emoteto":1,"http":3995,"ftp":3999,"channel":1,"tell":1,"rcp":3990,"locate":1,"finger":1,]),0,}),"Blahm":({0,"204.238.216.51",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"emoteto":1,"ftp":3999,"http":3995,"who":1,"tell":1,"finger":1,"rcp":3990,"locate":1,]),0,}),"Nightmare":({-1,"199.199.122.10",4000,4005,4008,"Nightmare IVr2","Nightmare IVr2","MudOS v21.7b2","LPMud","mudlib development","nightmare-admin@imaginary.com",(["http":3995,"ftp":3999,"who":1,"emoteto":1,"amcp":"1.1","channel":1,"tell":1,"finger":1,"rcp":3990,"locate":1,]),([]),}),"Dysfunctional Mud":({-1,"129.186.85.38",4444,4449,4452,"UltraLib 0.1","UltraLib 0.1","MudOS v21.7b1","LPMud","alpha development","mud@knapp38.res.iastate.edu",(["http":4439,"ftp":4443,"who":1,"emoteto":1,"channel":1,"amcp":"1.1","rcp":4434,"tell":1,"locate":1,"finger":1,]),([]),}),"MISL":({-1,"198.70.148.9",5555,5556,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"Nol MUD":({-1,"202.37.179.86",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["who":1,"emoteto":1,"http":3995,"ftp":3999,"channel":1,"tell":1,"rcp":3990,"locate":1,"finger":1,]),0,}),"Craic":({0,"141.219.20.113",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"emoteto":1,"ftp":3999,"http":3995,"who":1,"tell":1,"finger":1,"rcp":3990,"locate":1,]),0,}),"Mystik Isles":({0,"153.64.19.124",5000,5001,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["tell":1,"who":1,"finger":1,"locate":1,"channel":1,]),0,}),"DeadMUD-Lima-Test":({0,"141.218.40.180",2345,2346,0,"Lima 0.9r3 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["tell":1,"who":1,"finger":1,"locate":1,"channel":1,]),0,}),"CHRONICLES":({0,"198.213.192.13",2112,2113,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","Insertion Development","unknown",(["tell":1,"who":1,"finger":1,"locate":1,"channel":1,]),0,}),"IdeaExchange":({-1,"199.199.122.10",7890,7895,7898,"Foundation IIr1","Foundation IIr1","MudOS v21.6b7","LPMud","open to public","beek@imaginary.com",(["who":1,"emoteto":1,"http":7885,"amcp":"1.1","ftp":7889,"channel":1,"tell":1,"rcp":7880,"locate":1,"finger":1,]),([]),}),"PRIVATE IDAHO":({-1,"204.132.120.1",8888,8889,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"Time Killer":({0,"204.238.216.51",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"emoteto":1,"ftp":3999,"http":3995,"who":1,"tell":1,"finger":1,"rcp":3990,"locate":1,]),0,}),"Alpha Complex":({0,"131.215.18.60",9999,10000,0,"Lima 0.9r3 (pre-alpha)","Lima","MudOS v21.7a3","LP","mudlib development","unknown",(["finger":1,"channel":1,"locate":1,"who":1,"tell":1,]),0,}),"Vortex":({-1,"156.46.216.2",4500,4505,4508,"Nightmare IV","Nightmare IV","MudOS v21.4","LPMud","open for public","unknown",(["tell":1,"who":1,"rcp":4490,"http":4495,"locate":1,"ftp":4499,"finger":1,"channel":1,]),0,}),"Realms of Time":({-1,"204.157.9.29",5000,5005,5008,"Nightmare 3.3.2","Nightmare 3.3.2","MudOS v21.5","LPMud","Unknown, whee","root@rot.com",(["who":1,"emoteto":1,"http":4995,"amcp":"1.1","ftp":4999,"channel":1,"tell":1,"rcp":4988,"locate":1,"finger":1,]),([]),}),"Shattered Empire":({-1,"204.71.144.66",3000,3005,3008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.7b2","LPMud","mudlib development","unknown",(["http":2995,"ftp":2999,"who":1,"emoteto":1,"channel":1,"rcp":2990,"tell":1,"locate":1,"finger":1,]),0,}),"Trek Worlds":({0,"130.89.233.61",1701,1702,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["tell":1,"who":1,"finger":1,"locate":1,"channel":1,]),0,}),"CeltiQuest":({-1,"204.157.201.239",7778,7783,7786,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["who":1,"emoteto":1,"http":7773,"ftp":7777,"channel":1,"tell":1,"rcp":7768,"locate":1,"finger":1,]),0,}),"Forgotten Realms":({0,"129.93.1.24",1678,1679,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"Mist Mountain":({0,"204.246.64.39",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["who":1,"emoteto":1,"http":3995,"ftp":3999,"channel":1,"tell":1,"rcp":3990,"locate":1,"finger":1,]),0,}),"Enulal":({-1,"163.143.125.117",2222,2227,0,"CustomiseD","CustomiseD","AD.04.02","CDlib","Open to players.","genesis@enulal.u-aizu.ac.jp",(["who":1,"ftp":2223,"emoteto":1,"channel":1,"http":2224,"finger":1,"mail":1,"locate":1,"tell":1,]),(["www-dir":"/",]),}),"Viruni":({0,"137.204.72.8",7878,7879,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["tell":1,"who":1,"finger":1,"locate":1,"channel":1,]),0,}),"Eyrie":({-1,"128.243.152.246",4000,4005,4008,"Nightmare IV","Nightmare IV","MudOS v21.5","LPMud","open for public","unknown",(["tell":1,"who":1,"rcp":3990,"http":3995,"locate":1,"ftp":3999,"finger":1,"channel":1,]),0,}),"test":({0,"128.2.22.34",4444,4449,4452,"Nightmare IVr1","Nightmare IVr1","MudOS v21.5","LPMud","mudlib development","unknown",(["channel":1,"emoteto":1,"ftp":4443,"http":4439,"who":1,"finger":1,"tell":1,"locate":1,"rcp":4434,]),0,}),"Earthdawn":({0,"136.142.80.102",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"emoteto":1,"ftp":3999,"http":3995,"who":1,"finger":1,"tell":1,"locate":1,"rcp":3990,]),0,}),"Phantasie":({0,"134.129.129.11",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"emoteto":1,"ftp":3999,"http":3995,"who":1,"tell":1,"finger":1,"rcp":3990,"locate":1,]),0,}),"Lands of Celaria":({0,"129.237.225.100",4000,4005,4008,"Nightmare IV","Nightmare IV","MudOS v21.4","LPMud","open for public","unknown",(["tell":1,"who":1,"rcp":3990,"http":3995,"locate":1,"ftp":3999,"finger":1,"channel":1,]),0,}),"Nightmare-IV":({0,"137.215.102.162",5555,5560,5563,"Nightmare IV","Nightmare IV","MudOS v21.6","LPMud","open for public","unknown",(["channel":1,"finger":1,"ftp":5554,"locate":1,"http":5550,"rcp":5545,"who":1,"tell":1,]),0,}),"Castalia":({-1,"204.243.186.2",7000,7005,7008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["who":1,"emoteto":1,"http":6995,"ftp":6999,"channel":1,"tell":1,"rcp":6990,"locate":1,"finger":1,]),0,}),"Chronicles":({-1,"198.213.192.13",2112,2113,0,"Lima 0.9r4 (pre alpha)","Lima","MudOS v21.7a10","LP","guild/class development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"Akuma":({0,"198.60.253.63",666,671,674,"Nightmare IV","Nightmare IV","MudOS v21.4","LPMud","open for public","unknown",(["tell":1,"who":1,"rcp":656,"http":661,"locate":1,"ftp":665,"finger":1,"channel":1,]),0,}),"ArcadiaF":({-1,"199.120.150.7",9999,10000,0,"Lima 0.9r4","Lima","MudOS v21.7a10","LP","Mudlib Development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"Utter Chaos":({0,"204.57.174.131",5000,5001,0,"Lima 0.9r3 (pre-alpha)","Lima","MudOS v21.7a3","LP","mudlib development","unknown",(["tell":1,"who":1,"locate":1,"channel":1,"finger":1,]),0,}),"Foundation II":({-1,"128.2.22.34",2222,2227,2230,"Nightmare IVr1","Nightmare IVr1","MudOS v21.5","LPMud","mudlib development","unknown",(["who":1,"emoteto":1,"http":2217,"ftp":2221,"channel":1,"tell":1,"rcp":2212,"locate":1,"finger":1,]),0,}),"Jamaica MUD":({0,"128.205.222.66",7777,7782,7785,"Nightmare IV","Nightmare IV","MudOS v21.4","LPMud","open for public","unknown",(["channel":1,"finger":1,"ftp":7776,"locate":1,"http":7772,"rcp":7767,"who":1,"tell":1,]),0,}),"Elenium":({0,"137.215.31.23",2222,2227,2230,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"emoteto":1,"ftp":2221,"http":2217,"who":1,"finger":1,"tell":1,"locate":1,"rcp":2212,]),0,}),"dp":({0,"205.218.118.5",6666,6669,0,"Tmi-2","Tmi-2","MudOS v21c2","LPmud","Mudlib Development","unknown",(["tell":1,"who":1,"locate":1,"ftp":6665,"finger":1,"channel":1,]),0,}),"DDA - F":({0,"128.103.65.122",4000,4005,4008,"Foundation IIr1","Foundation IIr1","MudOS v21.5","LPMud","under development","unknown",(["channel":1,"emoteto":1,"ftp":3999,"http":3995,"who":1,"tell":1,"finger":1,"rcp":3990,"locate":1,]),0,}),"Eodon":({0,"131.174.124.32",5555,5558,0,"Eodon's MudLib","Tmi-2 1.2","MudOS v21.5","LPmud","Mudlib Development","unknown",(["channel":1,"finger":1,"ftp":5554,"locate":1,"who":1,"tell":1,]),0,}),"ZorkMUD":({0,"198.92.143.9",7890,7891,0,"Lima 0.9r3 (pre-alpha)","Lima","MudOS v21.7a8","LP","mud development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"Mangoria Project":({0,"198.53.206.114",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["who":1,"emoteto":1,"http":3995,"ftp":3999,"channel":1,"tell":1,"rcp":3990,"locate":1,"finger":1,]),0,}),"Nameless":({0,"203.8.161.50",4000,4005,4008,"Nightmare IV","Nightmare IV","MudOS v21.4","LPMud","open for public","unknown",(["channel":1,"finger":1,"ftp":3999,"locate":1,"http":3995,"rcp":3990,"who":1,"tell":1,]),0,}),"KPlace Test Mud":({0,"199.89.234.17",7878,7879,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["tell":1,"who":1,"locate":1,"finger":1,"channel":1,]),0,}),"Rusted Reality":({-1,"205.199.81.96",10000,10005,10008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","mud@jam.rust.net",(["who":1,"emoteto":1,"http":9995,"amcp":"1.1","ftp":9999,"channel":1,"tell":1,"rcp":9990,"locate":1,"finger":1,]),([]),}),"UnderDark":({0,"205.219.116.122",2222,2227,2230,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"emoteto":1,"ftp":2221,"http":2217,"who":1,"tell":1,"finger":1,"rcp":2212,"locate":1,]),0,}),"Koko Wa Mud":({-1,"204.182.49.82",4000,4001,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"ZakkMUD":({-1,"205.218.122.11",3500,3502,0,"BogLegLIB 0.01a","BogLegLIB","MudOS v21.7a8","LP","Mudlib Development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"Quendor":({0,"198.92.143.9",4734,9010,0,"Lima 0.9r1 pre-alpha","Lima","MudOS v21.6a10","LP","Open for the public","unknown",(["finger":1,"channel":1,"locate":1,"who":1,"tell":1,]),0,}),"Underdark":({0,"205.219.116.122",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"emoteto":1,"ftp":3999,"http":3995,"who":1,"tell":1,"finger":1,"rcp":3990,"locate":1,]),0,}),"Unnamed III":({0,"137.215.102.162",5555,5560,5563,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"emoteto":1,"ftp":5554,"http":5550,"who":1,"finger":1,"tell":1,"locate":1,"rcp":5545,]),0,}),"Starbird":({0,"129.240.30.28",4000,4005,4008,"Foundation II","Foundation II","MudOS v21.4","LPMud","open for public","unknown",(["channel":1,"finger":1,"ftp":3999,"locate":1,"http":3995,"rcp":3990,"who":1,"tell":1,]),0,}),"Team-Aye":({-1,"130.89.226.53",5555,5558,0,"Tmi-2","Tmi-2","MudOS v21","LPmud","Mudlib Development","unknown",(["tell":1,"who":1,"locate":1,"ftp":5554,"finger":1,"channel":1,0:1,]),0,}),"Styx":({-1,"128.123.8.116",3000,3005,3008,"Shitlib .02","Shitlib .02","MudOS v21.4","LPMud","Open for business","unknown",(["tell":1,"who":1,"rcp":2990,"http":2995,"locate":1,"ftp":2999,"finger":1,"channel":1,]),0,}),"Psycho Thriller":({0,"205.197.26.2",2469,2470,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","early death development","unknown",(["tell":1,"who":1,"finger":1,"locate":1,"channel":1,]),0,}),"GrandMUD":({0,"204.174.223.1",2001,2006,2009,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"emoteto":1,"ftp":2000,"http":1996,"who":1,"finger":1,"tell":1,"locate":1,"rcp":1991,]),0,}),"Rewted Operator":({0,"198.142.2.21",6969,6970,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["tell":1,"who":1,"finger":1,"locate":1,"channel":1,]),0,}),"Imajica":({-1,"140.160.192.111",5000,5005,5008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["who":1,"emoteto":1,"http":4995,"ftp":4999,"channel":1,"tell":1,"rcp":4990,"locate":1,"finger":1,]),0,}),"Realms Lore":({0,"129.93.1.24",1678,1679,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"Orion":({-1,"205.218.118.5",2000,1999,1998,"OrionLib v0.5","OrionLib","MudOS v21.6","LP","Mudlib Development","cowl@orion.tyler.net",(["tell":1,"who":1,"locate":1,"channel":1,"http":2080,]),([]),}),"Fury of the Dragon":({0,"204.182.47.15",7000,7001,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["tell":1,"who":1,"finger":1,"locate":1,"channel":1,]),0,}),"Lima Bean":({-1,"198.92.143.9",7878,7879,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","Open for the public","rust@virginia.edu or gstein@svpal.org",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),]),/)
+ChannelList (/8,(["l":({"PRIVATE IDAHO",0,}),"imud_gossip":({"*",0,}),"intermud":({"EotL",0,}),"imud_code":({"*",0,}),"mud":({"Red Dragon",0,}),"misl":({"MISL",0,}),]),/)
+Banned ([])
+Nameservers ({({"*gjs","199.199.122.10 9000",}),})
+, )
+Tue Oct 24 00:25:41 1995:  
+[ERROR] *Error in loading object '/cmd/wiz/summon'
+  obj : (cmd/wiz/update)
+, )
+Wed Oct 25 14:54:00 1995:  
+[ERROR] *Printable strings limited to length of 8192.
+  obj : (obj/clone/user/human#362)
+  file: obj/clone/user.c:281
+  prgm: obj/clone/user.c
+  func: receive_message
+  args: ( "write"Mon Oct 23 23:33:52 1995:  
+[ERROR] *Error in loading object '/obj/inherit/base/living'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Tue Oct 24 00:11:58 1995:  
+[ERROR] *Printable strings limited to length of 8192.
+  obj : (obj/clone/user/human#144)
+  file: obj/clone/user.c:281
+  prgm: obj/clone/user.c
+  func: receive_message
+  args: ( "write"#obj/daemon/net/intermud.c
+no_clean 1
+Password 13786
+MudList (/38032,(["Sodden Earth":({-1,"140.247.187.95",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["who":1,"emoteto":1,"http":3995,"ftp":3999,"channel":1,"tell":1,"rcp":3990,"locate":1,"finger":1,]),0,}),"ghojmoH":({0,"130.89.227.77",5555,5558,0,"Tmi-2","Tmi-2","MudOS v21","LPmud","Mudlib Development","unknown",(["tell":1,"who":1,"locate":1,"ftp":5554,"finger":1,"channel":1,0:1,]),0,}),"Holy Ground":({-1,"205.138.138.1",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["who":1,"emoteto":1,"http":3995,"ftp":3999,"channel":1,"tell":1,"rcp":3990,"locate":1,"finger":1,]),0,}),"Development":({0,"137.215.31.23",3333,3338,3341,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["who":1,"emoteto":1,"http":3328,"ftp":3332,"channel":1,"tell":1,"rcp":3323,"locate":1,"finger":1,]),0,}),"SammyMud":({0,"130.238.251.203",4000,4005,4008,"Nightmare IV","Nightmare IV","MudOS v21.4","LPMud","open for public","unknown",(["tell":1,"who":1,"rcp":3990,"http":3995,"locate":1,"ftp":3999,"finger":1,"channel":1,]),0,}),"Lua Test":({-1,"204.182.47.15",5000,5001,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"Red Dragon":({-1,"205.164.80.15",4000,4001,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","Guild, Race dev.","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"The Mystik Isles":({0,"153.64.19.124",5000,5001,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"ReFlux":({0,"141.219.20.113",4000,4005,4008,"Nightmare IV","Nightmare IV","MudOS v21.4","LPMud","open for public","unknown",(["tell":1,"who":1,"rcp":3990,"http":3995,"locate":1,"ftp":3999,"finger":1,"channel":1,]),0,}),"The Mangoria Project":({0,"198.53.206.116",4000,4005,4008,"Nightmare IV","Nightmare IV","MudOS v21.4","LPMud","open for public","unknown",(["tell":1,"who":1,"rcp":3990,"http":3995,"locate":1,"ftp":3999,"finger":1,"channel":1,]),0,}),"Farbridge":({0,"128.193.5.165",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["who":1,"emoteto":1,"http":3995,"ftp":3999,"channel":1,"tell":1,"rcp":3990,"locate":1,"finger":1,]),0,}),"Blahm":({0,"204.238.216.51",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"emoteto":1,"ftp":3999,"http":3995,"who":1,"tell":1,"finger":1,"rcp":3990,"locate":1,]),0,}),"Nightmare":({-1,"199.199.122.10",4000,4005,4008,"Nightmare IVr2","Nightmare IVr2","MudOS v21.7b2","LPMud","mudlib development","nightmare-admin@imaginary.com",(["http":3995,"ftp":3999,"who":1,"emoteto":1,"amcp":"1.1","channel":1,"tell":1,"finger":1,"rcp":3990,"locate":1,]),([]),}),"Dysfunctional Mud":({-1,"129.186.85.38",4444,4449,4452,"UltraLib 0.1","UltraLib 0.1","MudOS v21.7b1","LPMud","alpha development","mud@knapp38.res.iastate.edu",(["http":4439,"ftp":4443,"who":1,"emoteto":1,"channel":1,"amcp":"1.1","rcp":4434,"tell":1,"locate":1,"finger":1,]),([]),}),"MISL":({-1,"198.70.148.9",5555,5556,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"Nol MUD":({-1,"202.37.179.86",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["who":1,"emoteto":1,"http":3995,"ftp":3999,"channel":1,"tell":1,"rcp":3990,"locate":1,"finger":1,]),0,}),"Craic":({0,"141.219.20.113",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"emoteto":1,"ftp":3999,"http":3995,"who":1,"tell":1,"finger":1,"rcp":3990,"locate":1,]),0,}),"Mystik Isles":({0,"153.64.19.124",5000,5001,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["tell":1,"who":1,"finger":1,"locate":1,"channel":1,]),0,}),"DeadMUD-Lima-Test":({0,"141.218.40.180",2345,2346,0,"Lima 0.9r3 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["tell":1,"who":1,"finger":1,"locate":1,"channel":1,]),0,}),"CHRONICLES":({0,"198.213.192.13",2112,2113,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","Insertion Development","unknown",(["tell":1,"who":1,"finger":1,"locate":1,"channel":1,]),0,}),"IdeaExchange":({-1,"199.199.122.10",7890,7895,7898,"Foundation IIr1","Foundation IIr1","MudOS v21.6b7","LPMud","open to public","beek@imaginary.com",(["who":1,"emoteto":1,"http":7885,"amcp":"1.1","ftp":7889,"channel":1,"tell":1,"rcp":7880,"locate":1,"finger":1,]),([]),}),"PRIVATE IDAHO":({-1,"204.132.120.1",8888,8889,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"Time Killer":({0,"204.238.216.51",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"emoteto":1,"ftp":3999,"http":3995,"who":1,"tell":1,"finger":1,"rcp":3990,"locate":1,]),0,}),"Alpha Complex":({0,"131.215.18.60",9999,10000,0,"Lima 0.9r3 (pre-alpha)","Lima","MudOS v21.7a3","LP","mudlib development","unknown",(["finger":1,"channel":1,"locate":1,"who":1,"tell":1,]),0,}),"Vortex":({-1,"156.46.216.2",4500,4505,4508,"Nightmare IV","Nightmare IV","MudOS v21.4","LPMud","open for public","unknown",(["tell":1,"who":1,"rcp":4490,"http":4495,"locate":1,"ftp":4499,"finger":1,"channel":1,]),0,}),"Realms of Time":({-1,"204.157.9.29",5000,5005,5008,"Nightmare 3.3.2","Nightmare 3.3.2","MudOS v21.5","LPMud","Unknown, whee","root@rot.com",(["who":1,"emoteto":1,"http":4995,"amcp":"1.1","ftp":4999,"channel":1,"tell":1,"rcp":4988,"locate":1,"finger":1,]),([]),}),"Shattered Empire":({-1,"204.71.144.66",3000,3005,3008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.7b2","LPMud","mudlib development","unknown",(["http":2995,"ftp":2999,"who":1,"emoteto":1,"channel":1,"rcp":2990,"tell":1,"locate":1,"finger":1,]),0,}),"Trek Worlds":({0,"130.89.233.61",1701,1702,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["tell":1,"who":1,"finger":1,"locate":1,"channel":1,]),0,}),"CeltiQuest":({-1,"204.157.201.239",7778,7783,7786,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["who":1,"emoteto":1,"http":7773,"ftp":7777,"channel":1,"tell":1,"rcp":7768,"locate":1,"finger":1,]),0,}),"Forgotten Realms":({0,"129.93.1.24",1678,1679,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"Mist Mountain":({0,"204.246.64.39",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["who":1,"emoteto":1,"http":3995,"ftp":3999,"channel":1,"tell":1,"rcp":3990,"locate":1,"finger":1,]),0,}),"Enulal":({-1,"163.143.125.117",2222,2227,0,"CustomiseD","CustomiseD","AD.04.02","CDlib","Open to players.","genesis@enulal.u-aizu.ac.jp",(["who":1,"ftp":2223,"emoteto":1,"channel":1,"http":2224,"finger":1,"mail":1,"locate":1,"tell":1,]),(["www-dir":"/",]),}),"Viruni":({0,"137.204.72.8",7878,7879,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["tell":1,"who":1,"finger":1,"locate":1,"channel":1,]),0,}),"Eyrie":({-1,"128.243.152.246",4000,4005,4008,"Nightmare IV","Nightmare IV","MudOS v21.5","LPMud","open for public","unknown",(["tell":1,"who":1,"rcp":3990,"http":3995,"locate":1,"ftp":3999,"finger":1,"channel":1,]),0,}),"test":({0,"128.2.22.34",4444,4449,4452,"Nightmare IVr1","Nightmare IVr1","MudOS v21.5","LPMud","mudlib development","unknown",(["channel":1,"emoteto":1,"ftp":4443,"http":4439,"who":1,"finger":1,"tell":1,"locate":1,"rcp":4434,]),0,}),"Earthdawn":({0,"136.142.80.102",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"emoteto":1,"ftp":3999,"http":3995,"who":1,"finger":1,"tell":1,"locate":1,"rcp":3990,]),0,}),"Phantasie":({0,"134.129.129.11",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"emoteto":1,"ftp":3999,"http":3995,"who":1,"tell":1,"finger":1,"rcp":3990,"locate":1,]),0,}),"Lands of Celaria":({0,"129.237.225.100",4000,4005,4008,"Nightmare IV","Nightmare IV","MudOS v21.4","LPMud","open for public","unknown",(["tell":1,"who":1,"rcp":3990,"http":3995,"locate":1,"ftp":3999,"finger":1,"channel":1,]),0,}),"Nightmare-IV":({0,"137.215.102.162",5555,5560,5563,"Nightmare IV","Nightmare IV","MudOS v21.6","LPMud","open for public","unknown",(["channel":1,"finger":1,"ftp":5554,"locate":1,"http":5550,"rcp":5545,"who":1,"tell":1,]),0,}),"Castalia":({-1,"204.243.186.2",7000,7005,7008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["who":1,"emoteto":1,"http":6995,"ftp":6999,"channel":1,"tell":1,"rcp":6990,"locate":1,"finger":1,]),0,}),"Chronicles":({-1,"198.213.192.13",2112,2113,0,"Lima 0.9r4 (pre alpha)","Lima","MudOS v21.7a10","LP","guild/class development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"Akuma":({0,"198.60.253.63",666,671,674,"Nightmare IV","Nightmare IV","MudOS v21.4","LPMud","open for public","unknown",(["tell":1,"who":1,"rcp":656,"http":661,"locate":1,"ftp":665,"finger":1,"channel":1,]),0,}),"ArcadiaF":({-1,"199.120.150.7",9999,10000,0,"Lima 0.9r4","Lima","MudOS v21.7a10","LP","Mudlib Development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"Utter Chaos":({0,"204.57.174.131",5000,5001,0,"Lima 0.9r3 (pre-alpha)","Lima","MudOS v21.7a3","LP","mudlib development","unknown",(["tell":1,"who":1,"locate":1,"channel":1,"finger":1,]),0,}),"Foundation II":({-1,"128.2.22.34",2222,2227,2230,"Nightmare IVr1","Nightmare IVr1","MudOS v21.5","LPMud","mudlib development","unknown",(["who":1,"emoteto":1,"http":2217,"ftp":2221,"channel":1,"tell":1,"rcp":2212,"locate":1,"finger":1,]),0,}),"Jamaica MUD":({0,"128.205.222.66",7777,7782,7785,"Nightmare IV","Nightmare IV","MudOS v21.4","LPMud","open for public","unknown",(["channel":1,"finger":1,"ftp":7776,"locate":1,"http":7772,"rcp":7767,"who":1,"tell":1,]),0,}),"Elenium":({0,"137.215.31.23",2222,2227,2230,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"emoteto":1,"ftp":2221,"http":2217,"who":1,"finger":1,"tell":1,"locate":1,"rcp":2212,]),0,}),"dp":({0,"205.218.118.5",6666,6669,0,"Tmi-2","Tmi-2","MudOS v21c2","LPmud","Mudlib Development","unknown",(["tell":1,"who":1,"locate":1,"ftp":6665,"finger":1,"channel":1,]),0,}),"DDA - F":({0,"128.103.65.122",4000,4005,4008,"Foundation IIr1","Foundation IIr1","MudOS v21.5","LPMud","under development","unknown",(["channel":1,"emoteto":1,"ftp":3999,"http":3995,"who":1,"tell":1,"finger":1,"rcp":3990,"locate":1,]),0,}),"Eodon":({0,"131.174.124.32",5555,5558,0,"Eodon's MudLib","Tmi-2 1.2","MudOS v21.5","LPmud","Mudlib Development","unknown",(["channel":1,"finger":1,"ftp":5554,"locate":1,"who":1,"tell":1,]),0,}),"ZorkMUD":({0,"198.92.143.9",7890,7891,0,"Lima 0.9r3 (pre-alpha)","Lima","MudOS v21.7a8","LP","mud development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"Mangoria Project":({0,"198.53.206.114",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["who":1,"emoteto":1,"http":3995,"ftp":3999,"channel":1,"tell":1,"rcp":3990,"locate":1,"finger":1,]),0,}),"Nameless":({0,"203.8.161.50",4000,4005,4008,"Nightmare IV","Nightmare IV","MudOS v21.4","LPMud","open for public","unknown",(["channel":1,"finger":1,"ftp":3999,"locate":1,"http":3995,"rcp":3990,"who":1,"tell":1,]),0,}),"KPlace Test Mud":({0,"199.89.234.17",7878,7879,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["tell":1,"who":1,"locate":1,"finger":1,"channel":1,]),0,}),"Rusted Reality":({-1,"205.199.81.96",10000,10005,10008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","mud@jam.rust.net",(["who":1,"emoteto":1,"http":9995,"amcp":"1.1","ftp":9999,"channel":1,"tell":1,"rcp":9990,"locate":1,"finger":1,]),([]),}),"UnderDark":({0,"205.219.116.122",2222,2227,2230,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"emoteto":1,"ftp":2221,"http":2217,"who":1,"tell":1,"finger":1,"rcp":2212,"locate":1,]),0,}),"Koko Wa Mud":({-1,"204.182.49.82",4000,4001,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"ZakkMUD":({-1,"205.218.122.11",3500,3502,0,"BogLegLIB 0.01a","BogLegLIB","MudOS v21.7a8","LP","Mudlib Development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"Quendor":({0,"198.92.143.9",4734,9010,0,"Lima 0.9r1 pre-alpha","Lima","MudOS v21.6a10","LP","Open for the public","unknown",(["finger":1,"channel":1,"locate":1,"who":1,"tell":1,]),0,}),"Underdark":({0,"205.219.116.122",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"emoteto":1,"ftp":3999,"http":3995,"who":1,"tell":1,"finger":1,"rcp":3990,"locate":1,]),0,}),"Unnamed III":({0,"137.215.102.162",5555,5560,5563,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"emoteto":1,"ftp":5554,"http":5550,"who":1,"finger":1,"tell":1,"locate":1,"rcp":5545,]),0,}),"Starbird":({0,"129.240.30.28",4000,4005,4008,"Foundation II","Foundation II","MudOS v21.4","LPMud","open for public","unknown",(["channel":1,"finger":1,"ftp":3999,"locate":1,"http":3995,"rcp":3990,"who":1,"tell":1,]),0,}),"Team-Aye":({-1,"130.89.226.53",5555,5558,0,"Tmi-2","Tmi-2","MudOS v21","LPmud","Mudlib Development","unknown",(["tell":1,"who":1,"locate":1,"ftp":5554,"finger":1,"channel":1,0:1,]),0,}),"Styx":({-1,"128.123.8.116",3000,3005,3008,"Shitlib .02","Shitlib .02","MudOS v21.4","LPMud","Open for business","unknown",(["tell":1,"who":1,"rcp":2990,"http":2995,"locate":1,"ftp":2999,"finger":1,"channel":1,]),0,}),"Psycho Thriller":({0,"205.197.26.2",2469,2470,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","early death development","unknown",(["tell":1,"who":1,"finger":1,"locate":1,"channel":1,]),0,}),"GrandMUD":({0,"204.174.223.1",2001,2006,2009,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"emoteto":1,"ftp":2000,"http":1996,"who":1,"finger":1,"tell":1,"locate":1,"rcp":1991,]),0,}),"Rewted Operator":({0,"198.142.2.21",6969,6970,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["tell":1,"who":1,"finger":1,"locate":1,"channel":1,]),0,}),"Imajica":({-1,"140.160.192.111",5000,5005,5008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["who":1,"emoteto":1,"http":4995,"ftp":4999,"channel":1,"tell":1,"rcp":4990,"locate":1,"finger":1,]),0,}),"Realms Lore":({0,"129.93.1.24",1678,1679,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"Orion":({-1,"205.218.118.5",2000,1999,1998,"OrionLib v0.5","OrionLib","MudOS v21.6","LP","Mudlib Development","cowl@orion.tyler.net",(["tell":1,"who":1,"locate":1,"channel":1,"http":2080,]),([]),}),"Fury of the Dragon":({0,"204.182.47.15",7000,7001,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["tell":1,"who":1,"finger":1,"locate":1,"channel":1,]),0,}),"Lima Bean":({-1,"198.92.143.9",7878,7879,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","Open for the public","rust@virginia.edu or gstein@svpal.org",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),]),/)
+ChannelList (/8,(["l":({"PRIVATE IDAHO",0,}),"imud_gossip":({"*",0,}),"intermud":({"EotL",0,}),"imud_code":({"*",0,}),"mud":({"Red Dragon",0,}),"misl":({"MISL",0,}),]),/)
+Banned ([])
+Nameservers ({({"*gjs","199.199.122.10 9000",}),})
+, )
+Tue Oct 24 00:25:41 1995:  
+[ERROR] *Error in loading object '/cmd/wiz/summon'
+  obj : (cmd/wiz/update)
+, )
+Wed Oct 25 15:33:30 1995:  
+[ERROR] *Error in loading object '/obj/clone/shsh'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Wed Oct 25 15:33:30 1995:  
+[ERROR] *Error in loading object '/obj/clone/tmsh'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Wed Oct 25 15:42:16 1995:  
+[ERROR] *Bad argument 2 to member_array()
+Expected: string or array Got: 0.
+  obj : (obj/clone/connection#3)
+  file: obj/inherit/base/object.c:120
+  prgm: obj/inherit/base/object.c
+  func: id
+  args: ( "instance", )
+Wed Oct 25 16:35:13 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Wed Oct 25 16:35:53 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Wed Oct 25 16:36:59 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Wed Oct 25 16:37:36 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Wed Oct 25 16:38:26 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Wed Oct 25 16:38:38 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Wed Oct 25 16:39:30 1995:  
+[ERROR] *Bad argument 1 to living()
+Expected: object Got: 0.
+  obj : (cmd/player/emote)
+  file: cmd/player/emote.c:58
+  prgm: cmd/player/emote.c
+  func: main
+  args: ( "smile to lol", )
+Wed Oct 25 18:02:59 1995:  
+[ERROR] *Printable strings limited to length of 8192.
+  obj : (obj/clone/user/human#2)
+  file: obj/clone/user.c:282
+  prgm: obj/clone/user.c
+  func: receive_message
+  args: ( "write"Mon Oct 23 23:33:52 1995:  
+[ERROR] *Error in loading object '/obj/inherit/base/living'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Tue Oct 24 00:11:58 1995:  
+[ERROR] *Printable strings limited to length of 8192.
+  obj : (obj/clone/user/human#144)
+  file: obj/clone/user.c:281
+  prgm: obj/clone/user.c
+  func: receive_message
+  args: ( "write"#obj/daemon/net/intermud.c
+no_clean 1
+Password 13786
+MudList (/38032,(["Sodden Earth":({-1,"140.247.187.95",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["who":1,"emoteto":1,"http":3995,"ftp":3999,"channel":1,"tell":1,"rcp":3990,"locate":1,"finger":1,]),0,}),"ghojmoH":({0,"130.89.227.77",5555,5558,0,"Tmi-2","Tmi-2","MudOS v21","LPmud","Mudlib Development","unknown",(["tell":1,"who":1,"locate":1,"ftp":5554,"finger":1,"channel":1,0:1,]),0,}),"Holy Ground":({-1,"205.138.138.1",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["who":1,"emoteto":1,"http":3995,"ftp":3999,"channel":1,"tell":1,"rcp":3990,"locate":1,"finger":1,]),0,}),"Development":({0,"137.215.31.23",3333,3338,3341,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["who":1,"emoteto":1,"http":3328,"ftp":3332,"channel":1,"tell":1,"rcp":3323,"locate":1,"finger":1,]),0,}),"SammyMud":({0,"130.238.251.203",4000,4005,4008,"Nightmare IV","Nightmare IV","MudOS v21.4","LPMud","open for public","unknown",(["tell":1,"who":1,"rcp":3990,"http":3995,"locate":1,"ftp":3999,"finger":1,"channel":1,]),0,}),"Lua Test":({-1,"204.182.47.15",5000,5001,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"Red Dragon":({-1,"205.164.80.15",4000,4001,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","Guild, Race dev.","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"The Mystik Isles":({0,"153.64.19.124",5000,5001,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"ReFlux":({0,"141.219.20.113",4000,4005,4008,"Nightmare IV","Nightmare IV","MudOS v21.4","LPMud","open for public","unknown",(["tell":1,"who":1,"rcp":3990,"http":3995,"locate":1,"ftp":3999,"finger":1,"channel":1,]),0,}),"The Mangoria Project":({0,"198.53.206.116",4000,4005,4008,"Nightmare IV","Nightmare IV","MudOS v21.4","LPMud","open for public","unknown",(["tell":1,"who":1,"rcp":3990,"http":3995,"locate":1,"ftp":3999,"finger":1,"channel":1,]),0,}),"Farbridge":({0,"128.193.5.165",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["who":1,"emoteto":1,"http":3995,"ftp":3999,"channel":1,"tell":1,"rcp":3990,"locate":1,"finger":1,]),0,}),"Blahm":({0,"204.238.216.51",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"emoteto":1,"ftp":3999,"http":3995,"who":1,"tell":1,"finger":1,"rcp":3990,"locate":1,]),0,}),"Nightmare":({-1,"199.199.122.10",4000,4005,4008,"Nightmare IVr2","Nightmare IVr2","MudOS v21.7b2","LPMud","mudlib development","nightmare-admin@imaginary.com",(["http":3995,"ftp":3999,"who":1,"emoteto":1,"amcp":"1.1","channel":1,"tell":1,"finger":1,"rcp":3990,"locate":1,]),([]),}),"Dysfunctional Mud":({-1,"129.186.85.38",4444,4449,4452,"UltraLib 0.1","UltraLib 0.1","MudOS v21.7b1","LPMud","alpha development","mud@knapp38.res.iastate.edu",(["http":4439,"ftp":4443,"who":1,"emoteto":1,"channel":1,"amcp":"1.1","rcp":4434,"tell":1,"locate":1,"finger":1,]),([]),}),"MISL":({-1,"198.70.148.9",5555,5556,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"Nol MUD":({-1,"202.37.179.86",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["who":1,"emoteto":1,"http":3995,"ftp":3999,"channel":1,"tell":1,"rcp":3990,"locate":1,"finger":1,]),0,}),"Craic":({0,"141.219.20.113",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"emoteto":1,"ftp":3999,"http":3995,"who":1,"tell":1,"finger":1,"rcp":3990,"locate":1,]),0,}),"Mystik Isles":({0,"153.64.19.124",5000,5001,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["tell":1,"who":1,"finger":1,"locate":1,"channel":1,]),0,}),"DeadMUD-Lima-Test":({0,"141.218.40.180",2345,2346,0,"Lima 0.9r3 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["tell":1,"who":1,"finger":1,"locate":1,"channel":1,]),0,}),"CHRONICLES":({0,"198.213.192.13",2112,2113,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","Insertion Development","unknown",(["tell":1,"who":1,"finger":1,"locate":1,"channel":1,]),0,}),"IdeaExchange":({-1,"199.199.122.10",7890,7895,7898,"Foundation IIr1","Foundation IIr1","MudOS v21.6b7","LPMud","open to public","beek@imaginary.com",(["who":1,"emoteto":1,"http":7885,"amcp":"1.1","ftp":7889,"channel":1,"tell":1,"rcp":7880,"locate":1,"finger":1,]),([]),}),"PRIVATE IDAHO":({-1,"204.132.120.1",8888,8889,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"Time Killer":({0,"204.238.216.51",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"emoteto":1,"ftp":3999,"http":3995,"who":1,"tell":1,"finger":1,"rcp":3990,"locate":1,]),0,}),"Alpha Complex":({0,"131.215.18.60",9999,10000,0,"Lima 0.9r3 (pre-alpha)","Lima","MudOS v21.7a3","LP","mudlib development","unknown",(["finger":1,"channel":1,"locate":1,"who":1,"tell":1,]),0,}),"Vortex":({-1,"156.46.216.2",4500,4505,4508,"Nightmare IV","Nightmare IV","MudOS v21.4","LPMud","open for public","unknown",(["tell":1,"who":1,"rcp":4490,"http":4495,"locate":1,"ftp":4499,"finger":1,"channel":1,]),0,}),"Realms of Time":({-1,"204.157.9.29",5000,5005,5008,"Nightmare 3.3.2","Nightmare 3.3.2","MudOS v21.5","LPMud","Unknown, whee","root@rot.com",(["who":1,"emoteto":1,"http":4995,"amcp":"1.1","ftp":4999,"channel":1,"tell":1,"rcp":4988,"locate":1,"finger":1,]),([]),}),"Shattered Empire":({-1,"204.71.144.66",3000,3005,3008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.7b2","LPMud","mudlib development","unknown",(["http":2995,"ftp":2999,"who":1,"emoteto":1,"channel":1,"rcp":2990,"tell":1,"locate":1,"finger":1,]),0,}),"Trek Worlds":({0,"130.89.233.61",1701,1702,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["tell":1,"who":1,"finger":1,"locate":1,"channel":1,]),0,}),"CeltiQuest":({-1,"204.157.201.239",7778,7783,7786,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["who":1,"emoteto":1,"http":7773,"ftp":7777,"channel":1,"tell":1,"rcp":7768,"locate":1,"finger":1,]),0,}),"Forgotten Realms":({0,"129.93.1.24",1678,1679,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"Mist Mountain":({0,"204.246.64.39",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["who":1,"emoteto":1,"http":3995,"ftp":3999,"channel":1,"tell":1,"rcp":3990,"locate":1,"finger":1,]),0,}),"Enulal":({-1,"163.143.125.117",2222,2227,0,"CustomiseD","CustomiseD","AD.04.02","CDlib","Open to players.","genesis@enulal.u-aizu.ac.jp",(["who":1,"ftp":2223,"emoteto":1,"channel":1,"http":2224,"finger":1,"mail":1,"locate":1,"tell":1,]),(["www-dir":"/",]),}),"Viruni":({0,"137.204.72.8",7878,7879,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["tell":1,"who":1,"finger":1,"locate":1,"channel":1,]),0,}),"Eyrie":({-1,"128.243.152.246",4000,4005,4008,"Nightmare IV","Nightmare IV","MudOS v21.5","LPMud","open for public","unknown",(["tell":1,"who":1,"rcp":3990,"http":3995,"locate":1,"ftp":3999,"finger":1,"channel":1,]),0,}),"test":({0,"128.2.22.34",4444,4449,4452,"Nightmare IVr1","Nightmare IVr1","MudOS v21.5","LPMud","mudlib development","unknown",(["channel":1,"emoteto":1,"ftp":4443,"http":4439,"who":1,"finger":1,"tell":1,"locate":1,"rcp":4434,]),0,}),"Earthdawn":({0,"136.142.80.102",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"emoteto":1,"ftp":3999,"http":3995,"who":1,"finger":1,"tell":1,"locate":1,"rcp":3990,]),0,}),"Phantasie":({0,"134.129.129.11",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"emoteto":1,"ftp":3999,"http":3995,"who":1,"tell":1,"finger":1,"rcp":3990,"locate":1,]),0,}),"Lands of Celaria":({0,"129.237.225.100",4000,4005,4008,"Nightmare IV","Nightmare IV","MudOS v21.4","LPMud","open for public","unknown",(["tell":1,"who":1,"rcp":3990,"http":3995,"locate":1,"ftp":3999,"finger":1,"channel":1,]),0,}),"Nightmare-IV":({0,"137.215.102.162",5555,5560,5563,"Nightmare IV","Nightmare IV","MudOS v21.6","LPMud","open for public","unknown",(["channel":1,"finger":1,"ftp":5554,"locate":1,"http":5550,"rcp":5545,"who":1,"tell":1,]),0,}),"Castalia":({-1,"204.243.186.2",7000,7005,7008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["who":1,"emoteto":1,"http":6995,"ftp":6999,"channel":1,"tell":1,"rcp":6990,"locate":1,"finger":1,]),0,}),"Chronicles":({-1,"198.213.192.13",2112,2113,0,"Lima 0.9r4 (pre alpha)","Lima","MudOS v21.7a10","LP","guild/class development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"Akuma":({0,"198.60.253.63",666,671,674,"Nightmare IV","Nightmare IV","MudOS v21.4","LPMud","open for public","unknown",(["tell":1,"who":1,"rcp":656,"http":661,"locate":1,"ftp":665,"finger":1,"channel":1,]),0,}),"ArcadiaF":({-1,"199.120.150.7",9999,10000,0,"Lima 0.9r4","Lima","MudOS v21.7a10","LP","Mudlib Development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"Utter Chaos":({0,"204.57.174.131",5000,5001,0,"Lima 0.9r3 (pre-alpha)","Lima","MudOS v21.7a3","LP","mudlib development","unknown",(["tell":1,"who":1,"locate":1,"channel":1,"finger":1,]),0,}),"Foundation II":({-1,"128.2.22.34",2222,2227,2230,"Nightmare IVr1","Nightmare IVr1","MudOS v21.5","LPMud","mudlib development","unknown",(["who":1,"emoteto":1,"http":2217,"ftp":2221,"channel":1,"tell":1,"rcp":2212,"locate":1,"finger":1,]),0,}),"Jamaica MUD":({0,"128.205.222.66",7777,7782,7785,"Nightmare IV","Nightmare IV","MudOS v21.4","LPMud","open for public","unknown",(["channel":1,"finger":1,"ftp":7776,"locate":1,"http":7772,"rcp":7767,"who":1,"tell":1,]),0,}),"Elenium":({0,"137.215.31.23",2222,2227,2230,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"emoteto":1,"ftp":2221,"http":2217,"who":1,"finger":1,"tell":1,"locate":1,"rcp":2212,]),0,}),"dp":({0,"205.218.118.5",6666,6669,0,"Tmi-2","Tmi-2","MudOS v21c2","LPmud","Mudlib Development","unknown",(["tell":1,"who":1,"locate":1,"ftp":6665,"finger":1,"channel":1,]),0,}),"DDA - F":({0,"128.103.65.122",4000,4005,4008,"Foundation IIr1","Foundation IIr1","MudOS v21.5","LPMud","under development","unknown",(["channel":1,"emoteto":1,"ftp":3999,"http":3995,"who":1,"tell":1,"finger":1,"rcp":3990,"locate":1,]),0,}),"Eodon":({0,"131.174.124.32",5555,5558,0,"Eodon's MudLib","Tmi-2 1.2","MudOS v21.5","LPmud","Mudlib Development","unknown",(["channel":1,"finger":1,"ftp":5554,"locate":1,"who":1,"tell":1,]),0,}),"ZorkMUD":({0,"198.92.143.9",7890,7891,0,"Lima 0.9r3 (pre-alpha)","Lima","MudOS v21.7a8","LP","mud development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"Mangoria Project":({0,"198.53.206.114",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["who":1,"emoteto":1,"http":3995,"ftp":3999,"channel":1,"tell":1,"rcp":3990,"locate":1,"finger":1,]),0,}),"Nameless":({0,"203.8.161.50",4000,4005,4008,"Nightmare IV","Nightmare IV","MudOS v21.4","LPMud","open for public","unknown",(["channel":1,"finger":1,"ftp":3999,"locate":1,"http":3995,"rcp":3990,"who":1,"tell":1,]),0,}),"KPlace Test Mud":({0,"199.89.234.17",7878,7879,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["tell":1,"who":1,"locate":1,"finger":1,"channel":1,]),0,}),"Rusted Reality":({-1,"205.199.81.96",10000,10005,10008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","mud@jam.rust.net",(["who":1,"emoteto":1,"http":9995,"amcp":"1.1","ftp":9999,"channel":1,"tell":1,"rcp":9990,"locate":1,"finger":1,]),([]),}),"UnderDark":({0,"205.219.116.122",2222,2227,2230,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"emoteto":1,"ftp":2221,"http":2217,"who":1,"tell":1,"finger":1,"rcp":2212,"locate":1,]),0,}),"Koko Wa Mud":({-1,"204.182.49.82",4000,4001,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"ZakkMUD":({-1,"205.218.122.11",3500,3502,0,"BogLegLIB 0.01a","BogLegLIB","MudOS v21.7a8","LP","Mudlib Development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"Quendor":({0,"198.92.143.9",4734,9010,0,"Lima 0.9r1 pre-alpha","Lima","MudOS v21.6a10","LP","Open for the public","unknown",(["finger":1,"channel":1,"locate":1,"who":1,"tell":1,]),0,}),"Underdark":({0,"205.219.116.122",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"emoteto":1,"ftp":3999,"http":3995,"who":1,"tell":1,"finger":1,"rcp":3990,"locate":1,]),0,}),"Unnamed III":({0,"137.215.102.162",5555,5560,5563,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"emoteto":1,"ftp":5554,"http":5550,"who":1,"finger":1,"tell":1,"locate":1,"rcp":5545,]),0,}),"Starbird":({0,"129.240.30.28",4000,4005,4008,"Foundation II","Foundation II","MudOS v21.4","LPMud","open for public","unknown",(["channel":1,"finger":1,"ftp":3999,"locate":1,"http":3995,"rcp":3990,"who":1,"tell":1,]),0,}),"Team-Aye":({-1,"130.89.226.53",5555,5558,0,"Tmi-2","Tmi-2","MudOS v21","LPmud","Mudlib Development","unknown",(["tell":1,"who":1,"locate":1,"ftp":5554,"finger":1,"channel":1,0:1,]),0,}),"Styx":({-1,"128.123.8.116",3000,3005,3008,"Shitlib .02","Shitlib .02","MudOS v21.4","LPMud","Open for business","unknown",(["tell":1,"who":1,"rcp":2990,"http":2995,"locate":1,"ftp":2999,"finger":1,"channel":1,]),0,}),"Psycho Thriller":({0,"205.197.26.2",2469,2470,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","early death development","unknown",(["tell":1,"who":1,"finger":1,"locate":1,"channel":1,]),0,}),"GrandMUD":({0,"204.174.223.1",2001,2006,2009,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"emoteto":1,"ftp":2000,"http":1996,"who":1,"finger":1,"tell":1,"locate":1,"rcp":1991,]),0,}),"Rewted Operator":({0,"198.142.2.21",6969,6970,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["tell":1,"who":1,"finger":1,"locate":1,"channel":1,]),0,}),"Imajica":({-1,"140.160.192.111",5000,5005,5008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["who":1,"emoteto":1,"http":4995,"ftp":4999,"channel":1,"tell":1,"rcp":4990,"locate":1,"finger":1,]),0,}),"Realms Lore":({0,"129.93.1.24",1678,1679,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"Orion":({-1,"205.218.118.5",2000,1999,1998,"OrionLib v0.5","OrionLib","MudOS v21.6","LP","Mudlib Development","cowl@orion.tyler.net",(["tell":1,"who":1,"locate":1,"channel":1,"http":2080,]),([]),}),"Fury of the Dragon":({0,"204.182.47.15",7000,7001,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["tell":1,"who":1,"finger":1,"locate":1,"channel":1,]),0,}),"Lima Bean":({-1,"198.92.143.9",7878,7879,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","Open for the public","rust@virginia.edu or gstein@svpal.org",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),]),/)
+ChannelList (/8,(["l":({"PRIVATE IDAHO",0,}),"imud_gossip":({"*",0,}),"intermud":({"EotL",0,}),"imud_code":({"*",0,}),"mud":({"Red Dragon",0,}),"misl":({"MISL",0,}),]),/)
+Banned ([])
+Nameservers ({({"*gjs","199.199.122.10 9000",}),})
+, )
+Tue Oct 24 00:25:41 1995:  
+[ERROR] *Error in loading object '/cmd/wiz/summon'
+  obj : (cmd/wiz/update)
+, )
+Wed Oct 25 18:55:21 1995:  
+[ERROR] *Permission to use generate_source() denied by master::valid_compile_to_c()
+  obj : (tmp/tmp_eval_file)
+  file: tmp/tmp_eval_file.c:5
+  prgm: tmp/tmp_eval_file.c
+  func: eval
+  args: ( , )
+Wed Oct 25 18:57:42 1995:  
+[ERROR] *RUNTIME_LOADING not enabled
+  obj : (tmp/tmp_eval_file)
+  file: tmp/tmp_eval_file.c:5
+  prgm: tmp/tmp_eval_file.c
+  func: eval
+  args: ( , )
+Wed Oct 25 19:13:11 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "return generate_source()", )
+Wed Oct 25 19:13:27 1995:  
+[ERROR] *RUNTIME_LOADING not enabled
+  obj : (tmp/tmp_eval_file)
+  file: tmp/tmp_eval_file.c:5
+  prgm: tmp/tmp_eval_file.c
+  func: eval
+  args: ( , )
+Wed Oct 25 19:13:47 1995:  
+[ERROR] *RUNTIME_LOADING not enabled
+  obj : (tmp/tmp_eval_file)
+  file: tmp/tmp_eval_file.c:5
+  prgm: tmp/tmp_eval_file.c
+  func: eval
+  args: ( , )
+Wed Oct 25 19:14:31 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "return asm { int x; x = 1; }", )
+Wed Oct 25 19:17:46 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "asm { int x; x = 3; }", )
+Thu Oct 26 02:09:29 1995:  
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (adm/obj/daemon/fingerd)
+  file: adm/obj/daemon/fingerd.c:60
+  prgm: adm/obj/daemon/fingerd.c
+  func: GetFinger
+  args: ( 0, )
+Thu Oct 26 02:09:33 1995:  
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (adm/obj/daemon/fingerd)
+  file: adm/obj/daemon/fingerd.c:60
+  prgm: adm/obj/daemon/fingerd.c
+  func: GetFinger
+  args: ( 0, )
+Thu Oct 26 02:09:45 1995:  
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (adm/obj/daemon/fingerd)
+  file: adm/obj/daemon/fingerd.c:60
+  prgm: adm/obj/daemon/fingerd.c
+  func: GetFinger
+  args: ( 0, )
+Thu Oct 26 02:10:20 1995:  
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (adm/obj/daemon/fingerd)
+  file: adm/obj/daemon/fingerd.c:60
+  prgm: adm/obj/daemon/fingerd.c
+  func: GetFinger
+  args: ( 0, )
+Thu Oct 26 02:48:50 1995:  
+[ERROR] *Printable strings limited to length of 8192.
+  obj : (obj/clone/user/human#24)
+  file: obj/clone/user.c:282
+  prgm: obj/clone/user.c
+  func: receive_message
+  args: ( "write"#obj/daemon/net/intermud.c
+no_clean 1
+Password 43245
+MudList (/43479,(["Eodon":({-1,"131.174.124.32",5555,5558,0,"Eodon's MudLib","Tmi-2 1.2","MudOS v21.5","LPmud","Mudlib Development","unknown",(["tell":1,"who":1,"locate":1,"ftp":5554,"finger":1,"channel":1,]),0,}),"MISL":({0,"198.70.148.9",5555,5556,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["tell":1,"who":1,"finger":1,"locate":1,"channel":1,]),0,}),"Elenium":({0,"137.215.31.23",2222,2227,2230,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"http":2217,"tell":1,"emoteto":1,"finger":1,"ftp":2221,"rcp":2212,"who":1,"locate":1,]),0,}),"Viruni":({0,"137.204.72.8",7878,7879,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["tell":1,"who":1,"finger":1,"locate":1,"channel":1,]),0,}),"IdeaExchange":({-1,"199.199.122.10",7890,7895,7898,"Foundation IIr1","Foundation IIr1","MudOS v21.6b7","LPMud","open to public","beek@imaginary.com",(["tell":1,"emoteto":1,"http":7885,"amcp":"1.1","finger":1,"channel":1,"who":1,"rcp":7880,"locate":1,"ftp":7889,]),([]),}),"Styx":({0,"128.123.8.116",3000,3005,3008,"Shitlib .02","Shitlib .02","MudOS v21.4","LPMud","Open for business","unknown",(["channel":1,"finger":1,"ftp":2999,"locate":1,"http":2995,"rcp":2990,"who":1,"tell":1,]),0,}),"Mystik Isles":({0,"153.64.19.124",5000,5001,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["tell":1,"who":1,"finger":1,"locate":1,"channel":1,]),0,}),"CHRONICLES":({0,"198.213.192.13",2112,2113,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","Insertion Development","unknown",(["tell":1,"who":1,"finger":1,"locate":1,"channel":1,]),0,}),"PRIVATE IDAHO":({0,"204.132.120.1",8888,8889,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["tell":1,"who":1,"finger":1,"locate":1,"channel":1,]),0,}),"Alpha Complex":({0,"131.215.18.60",9999,10000,0,"Lima 0.9r3 (pre-alpha)","Lima","MudOS v21.7a3","LP","mudlib development","unknown",(["finger":1,"channel":1,"locate":1,"who":1,"tell":1,]),0,}),"Koko Wa Mud":({0,"204.182.49.82",4000,4001,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["tell":1,"who":1,"finger":1,"locate":1,"channel":1,]),0,}),"The Mangoria Project":({0,"198.53.206.116",4000,4005,4008,"Nightmare IV","Nightmare IV","MudOS v21.4","LPMud","open for public","unknown",(["tell":1,"who":1,"rcp":3990,"http":3995,"locate":1,"ftp":3999,"finger":1,"channel":1,]),0,}),"The Mystik Isles":({0,"153.64.19.124",5000,5001,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"Craic":({0,"141.219.20.113",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"http":3995,"tell":1,"emoteto":1,"finger":1,"ftp":3999,"rcp":3990,"who":1,"locate":1,]),0,}),"Psycho Thriller":({-1,"205.197.26.2",2469,2470,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","early death development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"Utter Chaos":({0,"204.57.174.131",5000,5001,0,"Lima 0.9r3 (pre-alpha)","Lima","MudOS v21.7a3","LP","mudlib development","unknown",(["tell":1,"who":1,"locate":1,"channel":1,"finger":1,]),0,}),"Development":({0,"137.215.31.23",3333,3338,3341,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["tell":1,"emoteto":1,"http":3328,"finger":1,"channel":1,"who":1,"rcp":3323,"locate":1,"ftp":3332,]),0,}),"CeltiQuest":({0,"204.157.201.239",7778,7783,7786,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"http":7773,"emoteto":1,"tell":1,"finger":1,"ftp":7777,"locate":1,"rcp":7768,"who":1,]),0,}),"Proteus":({0,"131.111.131.57",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"http":3995,"emoteto":1,"tell":1,"finger":1,"ftp":3999,"locate":1,"rcp":3990,"who":1,]),0,}),"Castalia":({-1,"204.243.186.2",7000,7005,7008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["tell":1,"emoteto":1,"http":6995,"finger":1,"channel":1,"who":1,"rcp":6990,"locate":1,"ftp":6999,]),0,}),"Vortex":({-1,"156.46.216.2",4500,4505,4508,"Nightmare IV","Nightmare IV","MudOS v21.4","LPMud","open for public","unknown",(["tell":1,"who":1,"rcp":4490,"http":4495,"locate":1,"ftp":4499,"finger":1,"channel":1,]),0,}),"Orion":({-1,"205.218.118.5",2000,1999,1998,"OrionLib v0.5","OrionLib","MudOS v21.6","LP","Mudlib Development","cowl@orion.tyler.net",(["tell":1,"who":1,"http":2080,"locate":1,"ftp":2021,"channel":1,]),([]),}),"ReFlux":({0,"141.219.20.113",4000,4005,4008,"Nightmare IV","Nightmare IV","MudOS v21.4","LPMud","open for public","unknown",(["tell":1,"who":1,"rcp":3990,"http":3995,"locate":1,"ftp":3999,"finger":1,"channel":1,]),0,}),"Lima Bean":({-1,"198.92.143.9",7878,7879,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","Open for the public","rust@virginia.edu or gstein@svpal.org",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"Farbridge":({-1,"128.193.5.132",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["tell":1,"emoteto":1,"http":3995,"finger":1,"channel":1,"who":1,"rcp":3990,"locate":1,"ftp":3999,]),0,}),"Eyrie":({0,"128.243.152.246",4000,4005,4008,"Nightmare IV","Nightmare IV","MudOS v21.5","LPMud","open for public","unknown",(["tell":1,"who":1,"rcp":3990,"http":3995,"locate":1,"ftp":3999,"finger":1,"channel":1,]),0,}),"dp":({0,"205.218.118.5",6666,6669,0,"Tmi-2","Tmi-2","MudOS v21c2","LPmud","Mudlib Development","unknown",(["tell":1,"who":1,"locate":1,"ftp":6665,"finger":1,"channel":1,]),0,}),"Chronicles":({0,"198.213.192.13",2112,2113,0,"Lima 0.9r4 (pre alpha)","Lima","MudOS v21.7a10","LP","guild/class development","unknown",(["tell":1,"who":1,"finger":1,"locate":1,"channel":1,]),0,}),"Akuma":({-1,"198.60.253.17",666,671,674,"Nightmare IV","Nightmare IV","MudOS v21.4","LPMud","open for public","unknown",(["tell":1,"who":1,"rcp":656,"http":661,"locate":1,"ftp":665,"finger":1,"channel":1,]),0,}),"Mist Mountain":({0,"204.246.64.39",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["http":3995,"channel":1,"tell":1,"emoteto":1,"finger":1,"ftp":3999,"rcp":3990,"who":1,"locate":1,]),0,}),"Dysfunctional Mud":({-1,"129.186.85.38",4444,4449,4452,"UltraLib 0.1","UltraLib 0.1","MudOS v21.7b1","LPMud","alpha development","mud@knapp38.res.iastate.edu",(["http":4439,"tell":1,"finger":1,"emoteto":1,"channel":1,"amcp":"1.1","rcp":4434,"ftp":4443,"who":1,"locate":1,]),([]),}),"Rewted Operator":({-1,"198.142.2.21",6969,6970,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"KPlace Test Mud":({0,"199.89.234.17",7878,7879,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["tell":1,"who":1,"locate":1,"finger":1,"channel":1,]),0,}),"Enulal":({0,"163.143.125.117",2222,2227,0,"CustomiseD","CustomiseD","AD.04.02","CDlib","Open to players.","genesis@enulal.u-aizu.ac.jp",(["finger":1,"mail":1,"emoteto":1,"channel":1,"http":2224,"tell":1,"who":1,"ftp":2223,"locate":1,]),(["www-dir":"/",]),}),"Foundation II":({0,"128.2.22.34",2222,2227,2230,"Nightmare IVr1","Nightmare IVr1","MudOS v21.5","LPMud","mudlib development","unknown",(["channel":1,"http":2217,"emoteto":1,"tell":1,"finger":1,"ftp":2221,"locate":1,"rcp":2212,"who":1,]),0,}),"Nol MUD":({0,"202.37.179.86",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"http":3995,"emoteto":1,"tell":1,"finger":1,"ftp":3999,"locate":1,"rcp":3990,"who":1,]),0,}),"Sodden Earth":({0,"140.247.187.95",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["tell":1,"http":3995,"channel":1,"emoteto":1,"finger":1,"ftp":3999,"rcp":3990,"who":1,"locate":1,]),0,}),"Nightmare":({0,"199.199.122.10",4000,4005,4008,"Nightmare IVr2","Nightmare IVr2","MudOS v21.7b2","LPMud","mudlib development","nightmare-admin@imaginary.com",(["http":3995,"tell":1,"emoteto":1,"channel":1,"amcp":"1.1","finger":1,"ftp":3999,"rcp":3990,"who":1,"locate":1,]),([]),}),"Rusted Reality":({0,"205.199.81.96",10000,10005,10008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","mud@jam.rust.net",(["channel":1,"http":9995,"tell":1,"emoteto":1,"finger":1,"amcp":"1.1","ftp":9999,"rcp":9990,"who":1,"locate":1,]),([]),}),"Fury of the Dragon":({0,"204.182.47.15",7000,7001,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["tell":1,"who":1,"finger":1,"locate":1,"channel":1,]),0,}),"Jamaica MUD":({0,"128.205.222.66",7777,7782,7785,"Nightmare IV","Nightmare IV","MudOS v21.4","LPMud","open for public","unknown",(["channel":1,"finger":1,"ftp":7776,"locate":1,"http":7772,"rcp":7767,"who":1,"tell":1,]),0,}),"Quendor":({0,"198.92.143.9",4734,9010,0,"Lima 0.9r1 pre-alpha","Lima","MudOS v21.6a10","LP","Open for the public","unknown",(["tell":1,"who":1,"locate":1,"channel":1,"finger":1,]),0,}),"Lands of Celaria":({0,"129.237.225.100",4000,4005,4008,"Nightmare IV","Nightmare IV","MudOS v21.4","LPMud","open for public","unknown",(["channel":1,"finger":1,"ftp":3999,"locate":1,"http":3995,"rcp":3990,"who":1,"tell":1,]),0,}),"DeadMUD-Lima-Test":({0,"141.218.40.180",2345,2346,0,"Lima 0.9r3 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["tell":1,"who":1,"finger":1,"locate":1,"channel":1,]),0,}),"Red Dragon":({-1,"205.164.80.15",4000,4001,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","Guild, Race dev.","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"Earthdawn":({0,"136.142.80.102",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["tell":1,"emoteto":1,"http":3995,"finger":1,"channel":1,"who":1,"rcp":3990,"locate":1,"ftp":3999,]),0,}),"SammyMud":({0,"130.238.251.203",4000,4005,4008,"Nightmare IV","Nightmare IV","MudOS v21.4","LPMud","open for public","unknown",(["tell":1,"who":1,"rcp":3990,"http":3995,"locate":1,"ftp":3999,"finger":1,"channel":1,]),0,}),"Time Killer":({0,"204.238.216.51",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"http":3995,"tell":1,"emoteto":1,"finger":1,"ftp":3999,"rcp":3990,"who":1,"locate":1,]),0,}),"Nightmare-IV":({0,"137.215.102.162",5555,5560,5563,"Nightmare IV","Nightmare IV","MudOS v21.6","LPMud","open for public","unknown",(["channel":1,"finger":1,"ftp":5554,"locate":1,"http":5550,"rcp":5545,"who":1,"tell":1,]),0,}),"Imajica":({-1,"140.160.192.111",5000,5005,5008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["tell":1,"emoteto":1,"http":4995,"finger":1,"channel":1,"who":1,"rcp":4990,"locate":1,"ftp":4999,]),0,}),"Blahm":({0,"204.238.216.51",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"http":3995,"tell":1,"emoteto":1,"finger":1,"ftp":3999,"rcp":3990,"who":1,"locate":1,]),0,}),"DDA - F":({0,"128.103.65.122",4000,4005,4008,"Foundation IIr1","Foundation IIr1","MudOS v21.5","LPMud","under development","unknown",(["channel":1,"http":3995,"tell":1,"emoteto":1,"finger":1,"ftp":3999,"rcp":3990,"who":1,"locate":1,]),0,}),"Mud":({0,"128.123.56.183",2222,2227,2230,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["tell":1,"http":2217,"channel":1,"emoteto":1,"finger":1,"ftp":2221,"rcp":2212,"who":1,"locate":1,]),0,}),"Steven's Mud":({-1,"128.2.22.34",2222,2227,2230,"Nightmare IVr1","Nightmare IVr1","MudOS v21.5","LPMud","mudlib development","unknown",(["tell":1,"emoteto":1,"http":2217,"finger":1,"channel":1,"who":1,"rcp":2212,"locate":1,"ftp":2221,]),0,}),"Unnamed III":({0,"137.215.102.162",5555,5560,5563,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"http":5550,"tell":1,"emoteto":1,"finger":1,"ftp":5554,"rcp":5545,"who":1,"locate":1,]),0,}),"Realms of Time":({-1,"204.157.9.29",5000,5005,5008,"Nightmare 3.3.2","Nightmare 3.3.2","MudOS v21.5","LPMud","Unknown, whee","root@rot.com",(["tell":1,"emoteto":1,"http":4995,"amcp":"1.1","finger":1,"channel":1,"who":1,"rcp":4988,"locate":1,"ftp":4999,]),([]),}),"Starbird":({0,"129.240.30.28",4000,4005,4008,"Foundation II","Foundation II","MudOS v21.4","LPMud","open for public","unknown",(["channel":1,"finger":1,"ftp":3999,"locate":1,"http":3995,"rcp":3990,"who":1,"tell":1,]),0,}),"Trek Worlds":({0,"130.89.233.61",1701,1702,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["tell":1,"who":1,"finger":1,"locate":1,"channel":1,]),0,}),"Lua Test":({0,"204.182.47.15",5000,5001,0,"Lima 0.9r4 (pre-alpha)","Lima","MudOS v21.7a10","LP","mudlib development","unknown",(["tell":1,"who":1,"finger":1,"locate":1,"channel":1,]),0,}),"test":({0,"128.2.22.34",4444,4449,4452,"Nightmare IVr1","Nightmare IVr1","MudOS v21.5","LPMud","mudlib development","unknown",(["channel":1,"http":4439,"tell":1,"emoteto":1,"finger":1,"ftp":4443,"rcp":4434,"who":1,"locate":1,]),0,}),"ZakkMUD":({-1,"205.218.122.11",3500,3502,0,"BogLegLIB 0.01a","BogLegLIB","MudOS v21.7a8","LP","Mudlib Development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"ZorkMUD":({-1,"198.92.143.9",7890,7891,0,"Lima 0.9r3 (pre-alpha)","Lima","MudOS v21.7a8","LP","mud development","zorkmud@lima.imaginary.com",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"Team-Aye":({0,"130.89.226.53",5555,5558,0,"Tmi-2","Tmi-2","MudOS v21","LPmud","Mudlib Development","unknown",(["tell":1,"who":1,"locate":1,"ftp":5554,"finger":1,"channel":1,0:1,]),0,}),"ArcadiaF":({0,"199.120.150.7",9999,10000,0,"Lima 0.9r4","Lima","MudOS v21.7a10","LP","Mudlib Development","unknown",(["channel":1,"locate":1,"finger":1,"who":1,"tell":1,]),0,}),"Nameless":({0,"203.8.161.50",4000,4005,4008,"Nightmare IV","Nightmare IV","MudOS v21.4","LPMud","open for public","unknown",(["channel":1,"finger":1,"ftp":3999,"locate":1,"http":3995,"rcp":3990,"who":1,"tell":1,]),0,}),"Holy Ground":({-1,"205.138.138.1",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["tell":1,"emoteto":1,"http":3995,"finger":1,"channel":1,"who":1,"rcp":3990,"locate":1,"ftp":3999,]),0,}),"GrandMUD":({0,"204.174.223.1",8888,8893,8896,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["tell":1,"emoteto":1,"http":8883,"finger":1,"channel":1,"who":1,"rcp":8878,"locate":1,"ftp":8887,]),0,}),"Shattered Empire":({-1,"204.71.144.66",3000,3005,3008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.7b2","LPMud","mudlib development","unknown",(["http":2995,"tell":1,"finger":1,"emoteto":1,"channel":1,"rcp":2990,"ftp":2999,"who":1,"locate":1,]),0,}),"Phantasie":({0,"134.129.129.11",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["channel":1,"http":3995,"tell":1,"emoteto":1,"finger":1,"ftp":3999,"rcp":3990,"who":1,"locate":1,]),0,}),"DW_private":({0,"130.89.11.68",4242,4244,4250,"Discworld 7.0a","Discworld 7.0a","MudOS v21.5","LPMud","mudlib development","ddt@unknown",(["who":1,"rcp":4240,"http":5678,"amcp":"1.1","ftp":4444,"channel":1,]),([]),}),"Mangoria Project":({0,"198.53.206.70",4000,4005,4008,"Nightmare IVr1","Nightmare IVr1","MudOS v21.6","LPMud","mudlib development","unknown",(["tell":1,"http":3995,"channel":1,"emoteto":1,"finger":1,"ftp":3999,"rcp":3990,"who":1,"locate":1,]),0,}),"ghojmoH":({0,"130.89.227.77",5555,5558,0,"Tmi-2","Tmi-2","MudOS v21","LPmud","Mudlib Development","unknown",(["tell":1,"who":1,"locate":1,"ftp":5554,"finger":1,"channel":1,0:1,]),0,}),]),/)
+ChannelList (/8,(["l":({"PRIVATE IDAHO",0,}),"imud_gossip":({"*",0,}),"intermud":({"EotL",0,}),"imud_code":({"*",0,}),"mud":({"Red Dragon",0,}),"misl":({"MISL",0,}),]),/)
+Banned ([])
+Nameservers ({({"*gjs","199.199.122.10 9000",}),})
+, )
+Thu Oct 26 03:18:47 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "die()", )
+Thu Oct 26 03:23:35 1995:  
+[ERROR] *Illegal to move or destruct an object defining actions from a verb function which returns zero.
+  obj : (0)
+  file: :0
+  prgm: 0
+Thu Oct 26 03:26:11 1995:  
+[ERROR] *Illegal to move or destruct an object defining actions from a verb function which returns zero.
+  obj : (0)
+  file: :0
+  prgm: 0
+Thu Oct 26 03:26:21 1995:  
+[ERROR] *Illegal to move or destruct an object defining actions from a verb function which returns zero.
+  obj : (0)
+  file: :0
+  prgm: 0
+Thu Oct 26 03:33:40 1995:  
+[ERROR] *Error in loading object '/u/h/hamnsnock/stuff/god'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 03:34:00 1995:  
+[ERROR] *Error in loading object '/u/h/hamnsnock/stuff/god'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 03:34:38 1995:  
+[ERROR] *Bad argument 1 to capitalize()
+Expected: string Got: 1.
+  obj : (cmd/player/look)
+  file: cmd/player/look.c:30
+  prgm: cmd/player/look.c
+  func: main
+  args: ( 0, )
+Thu Oct 26 03:38:43 1995:  
+[ERROR] *Error in loading object '/u/h/hamnsnock/stuff/god'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 12:32:26 1995:  
+[ERROR] *Bad argument 1 to living()
+Expected: object Got: 0.
+  obj : (cmd/player/emote)
+  file: cmd/player/emote.c:58
+  prgm: cmd/player/emote.c
+  func: main
+  args: ( "smile to lol", )
+Thu Oct 26 12:43:31 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 13:10:01 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 13:11:26 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 13:19:36 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 13:20:32 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 13:21:16 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 13:22:21 1995:  
+[ERROR] *Bad argument 2 to member_array()
+Expected: string or array Got: 0.
+  obj : (cmd/player/emote)
+  file: cmd/player/emote.c:64
+  prgm: cmd/player/emote.c
+  func: main
+  args: ( "bow to lol", )
+Thu Oct 26 13:26:28 1995:  
+[ERROR] *Bad argument 2 to member_array()
+Expected: string or array Got: 0.
+  obj : (cmd/player/emote)
+  file: cmd/player/emote.c:64
+  prgm: cmd/player/emote.c
+  func: main
+  args: ( "smile to lol", )
+Thu Oct 26 13:29:53 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 13:30:49 1995:  
+[ERROR] *Bad argument 2 to member_array()
+Expected: string or array Got: 0.
+  obj : (cmd/player/emote)
+  file: cmd/player/emote.c:64
+  prgm: cmd/player/emote.c
+  func: main
+  args: ( "smile to lol", )
+Thu Oct 26 13:34:22 1995:  
+[ERROR] *Bad argument 2 to member_array()
+Expected: string or array Got: 0.
+  obj : (cmd/player/emote)
+  file: cmd/player/emote.c:64
+  prgm: cmd/player/emote.c
+  func: main
+  args: ( "smile to lol", )
+Thu Oct 26 13:35:35 1995:  
+[ERROR] *Indexing on illegal type.
+  obj : (cmd/player/emote)
+  file: cmd/player/emote.c:17
+  prgm: cmd/player/emote.c
+  func: main
+  args: ( "smile to lol", )
+Thu Oct 26 13:36:57 1995:  
+[ERROR] *Indexing on illegal type.
+  obj : (cmd/player/emote)
+  file: cmd/player/emote.c:17
+  prgm: cmd/player/emote.c
+  func: main
+  args: ( "smile to lol", )
+Thu Oct 26 13:38:44 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 13:39:10 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 13:39:50 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 13:40:50 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 13:43:07 1995:  
+[ERROR] *Indexing on illegal type.
+  obj : (cmd/player/emote)
+  file: cmd/player/emote.c:17
+  prgm: cmd/player/emote.c
+  func: main
+  args: ( "smile to lol", )
+Thu Oct 26 13:44:58 1995:  
+[ERROR] *Bad argument 2 to member_array()
+Expected: string or array Got: 0.
+  obj : (cmd/player/emote)
+  file: cmd/player/emote.c:64
+  prgm: cmd/player/emote.c
+  func: main
+  args: ( "smile to lol", )
+Thu Oct 26 13:46:10 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 13:50:01 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 13:50:41 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 13:51:22 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 13:52:00 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 13:52:34 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 13:52:58 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 13:55:07 1995:  
+[ERROR] *Bad argument 2 to member_array()
+Expected: string or array Got: 0.
+  obj : (cmd/player/emote)
+  file: cmd/player/emote.c:65
+  prgm: cmd/player/emote.c
+  func: main
+  args: ( "bow to lol", )
+Thu Oct 26 17:41:55 1995:  
+[ERROR] *Bad argument 2 to member_array()
+Expected: string or array Got: 0.
+  obj : (cmd/player/emote)
+  file: cmd/player/emote.c:65
+  prgm: cmd/player/emote.c
+  func: main
+  args: ( "smile to lol", )
+Thu Oct 26 17:46:06 1995:  
+[ERROR] *Bad argument 2 to member_array()
+Expected: string or array Got: 0.
+  obj : (cmd/player/emote)
+  file: cmd/player/emote.c:65
+  prgm: cmd/player/emote.c
+  func: main
+  args: ( "smile to lol", )
+Thu Oct 26 17:47:12 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 17:48:01 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 17:50:15 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 17:52:42 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 17:53:12 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 17:53:58 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 17:56:01 1995:  
+[ERROR] *Bad argument 2 to member_array()
+Expected: string or array Got: 0.
+  obj : (cmd/player/emote)
+  file: cmd/player/emote.c:65
+  prgm: cmd/player/emote.c
+  func: main
+  args: ( "smile to lol", )
+Thu Oct 26 17:56:55 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 17:57:15 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 17:58:18 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 17:58:46 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 17:59:28 1995:  
+[ERROR] *Indexing on illegal type.
+  obj : (cmd/player/emote)
+  file: cmd/player/emote.c:18
+  prgm: cmd/player/emote.c
+  func: main
+  args: ( "smile to lol", )
+Thu Oct 26 17:59:32 1995:  
+[ERROR] *Indexing on illegal type.
+  obj : (cmd/player/emote)
+  file: cmd/player/emote.c:18
+  prgm: cmd/player/emote.c
+  func: main
+  args: ( "smile", )
+Thu Oct 26 18:00:34 1995:  
+[ERROR] *Indexing on illegal type.
+  obj : (cmd/player/emote)
+  file: cmd/player/emote.c:18
+  prgm: cmd/player/emote.c
+  func: main
+  args: ( "smile", )
+Thu Oct 26 18:01:37 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 18:02:33 1995:  
+[ERROR] *Indexing on illegal type.
+  obj : (cmd/player/emote)
+  file: cmd/player/emote.c:18
+  prgm: cmd/player/emote.c
+  func: main
+  args: ( "smile", )
+Thu Oct 26 18:07:06 1995:  
+[ERROR] *Error in loading object '/obj/inherit/base/living'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 18:07:38 1995:  
+[ERROR] *Array index out of bounds
+  obj : (cmd/player/emote)
+  file: cmd/player/emote.c:69
+  prgm: cmd/player/emote.c
+  func: main
+  args: ( "smile to lol", )
+Thu Oct 26 18:07:51 1995:  
+[ERROR] *Error in loading object '/obj/inherit/base/living'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 18:08:55 1995:  
+[ERROR] *Error in loading object '/obj/inherit/base/living'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 18:09:27 1995:  
+[ERROR] *Error in loading object '/obj/inherit/base/living'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 18:09:51 1995:  
+[ERROR] *Error in loading object '/obj/inherit/base/living'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 18:10:31 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "set_level()", )
+Thu Oct 26 18:11:05 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "return this_player->farfig(2)", )
+Thu Oct 26 18:14:16 1995:  
+[ERROR] *Array index out of bounds
+  obj : (cmd/player/emote)
+  file: cmd/player/emote.c:71
+  prgm: cmd/player/emote.c
+  func: main
+  args: ( "smile to lol", )
+Thu Oct 26 18:20:18 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 18:24:22 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "return set_level", )
+Thu Oct 26 18:24:26 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "return set_level()", )
+Thu Oct 26 18:24:42 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "return set_title()", )
+Thu Oct 26 18:28:51 1995:  
+[ERROR] *Error in loading object '/obj/clone/user'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 18:31:22 1995:  
+[ERROR] *Error in loading object '/u/l/lol/help'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 18:32:02 1995:  
+[ERROR] *Error in loading object '/u/l/lol/help'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 18:35:49 1995:  
+[ERROR] *Error in loading object '/obj/clone/user'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 18:39:06 1995:  
+[ERROR] *Error in loading object '/cmd/player/exa'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 18:51:00 1995:  
+[ERROR] *Error in loading object '/cmd/player/exa'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 19:18:38 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 19:23:09 1995:  
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (adm/obj/daemon/fingerd)
+  file: adm/obj/daemon/fingerd.c:60
+  prgm: adm/obj/daemon/fingerd.c
+  func: GetFinger
+  args: ( 0, )
+Thu Oct 26 19:41:51 1995:  
+[ERROR] *Bad argument 1 to explode()
+Expected: string Got: 0.
+  obj : (cmd/player/emote)
+  file: cmd/player/emote.c:13
+  prgm: cmd/player/emote.c
+  func: main
+  args: ( 0, )
+Thu Oct 26 19:49:13 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 19:49:59 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 19:50:36 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 19:50:58 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 19:51:38 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 19:51:54 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Thu Oct 26 20:09:11 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (obj/clone/user/human#97)
+  file: obj/clone/user.c:245
+  prgm: obj/clone/user.c
+  func: commandHook
+  args: ( "smiles", )
+Thu Oct 26 20:09:15 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (obj/clone/user/human#97)
+  file: obj/clone/user.c:245
+  prgm: obj/clone/user.c
+  func: commandHook
+  args: ( "smile", )
+Thu Oct 26 20:09:17 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (obj/clone/user/human#97)
+  file: obj/clone/user.c:245
+  prgm: obj/clone/user.c
+  func: commandHook
+  args: ( 0, )
+Fri Oct 27 18:12:39 1995:  
+[ERROR] *Error in loading object '/obj/daemon/net/ftpd'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Fri Oct 27 18:24:05 1995:  
+[ERROR] *Negative index passed to array.
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:53
+  prgm: cmd/wiz/update.c
+  func: _main
+  args: ( ERROR: (s)printf(): Incorrect argument to type %s. (arg 0)
+)
+Fri Oct 27 18:26:28 1995:  
+[ERROR] *Error in loading object '/obj/daemon/net/ftpd'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Fri Oct 27 18:33:03 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (obj/clone/user/human#180)
+  file: obj/clone/user.c:245
+  prgm: obj/clone/user.c
+  func: commandHook
+  args: ( "nod", )
+Fri Oct 27 18:43:28 1995:  
+[ERROR] *Error in loading object '/obj/daemon/net/ftpd'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Fri Oct 27 18:43:59 1995:  
+[ERROR] *Object must call seteuid() prior to calling clone_object().
+  obj : (tmp/tmp_eval_file)
+  file: tmp/tmp_eval_file.c:5
+  prgm: tmp/tmp_eval_file.c
+  func: eval
+  args: ( , )
+Fri Oct 27 21:06:07 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (obj/clone/user/human#180)
+  file: obj/clone/user.c:245
+  prgm: obj/clone/user.c
+  func: commandHook
+  args: ( "grin", )
+Fri Oct 27 21:10:15 1995:  
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (adm/obj/daemon/fingerd)
+  file: adm/obj/daemon/fingerd.c:60
+  prgm: adm/obj/daemon/fingerd.c
+  func: GetFinger
+  args: ( 0, )
+Sat Oct 28 00:08:35 1995:  
+[ERROR] *Error in loading object '/u/h/hamnsnock/stuff/pring'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sat Oct 28 00:09:21 1995:  
+[ERROR] *Object must call seteuid() prior to calling clone_object().
+  obj : (u/h/hamnsnock/stuff/pring#216)
+  file: u/h/hamnsnock/stuff/pring.c:55
+  prgm: u/h/hamnsnock/stuff/pring.c
+  func: send_portal
+  args: ( "quint", )
+Sat Oct 28 00:09:51 1995:  
+[ERROR] *Object must call seteuid() prior to calling clone_object().
+  obj : (u/h/hamnsnock/stuff/pring#216)
+  file: u/h/hamnsnock/stuff/pring.c:55
+  prgm: u/h/hamnsnock/stuff/pring.c
+  func: send_portal
+  args: ( "quint", )
+Sat Oct 28 00:10:53 1995:  
+[ERROR] *Object must call seteuid() prior to calling clone_object().
+  obj : (u/h/hamnsnock/stuff/pring#216)
+  file: u/h/hamnsnock/stuff/pring.c:55
+  prgm: u/h/hamnsnock/stuff/pring.c
+  func: send_portal
+  args: ( "quint", )
+Sat Oct 28 00:18:38 1995:  
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (u/h/hamnsnock/stuff/pring#217)
+  file: u/h/hamnsnock/stuff/pring.c:60
+  prgm: u/h/hamnsnock/stuff/pring.c
+  func: send_portal
+  args: ( "quint", )
+Sat Oct 28 00:20:08 1995:  
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (u/h/hamnsnock/stuff/pring#217)
+  file: u/h/hamnsnock/stuff/pring.c:60
+  prgm: u/h/hamnsnock/stuff/pring.c
+  func: send_portal
+  args: ( "quint", )
+Sat Oct 28 00:21:29 1995:  
+[ERROR] *Error in loading object '/u/h/hamnsnock/stuff/pring'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sat Oct 28 13:45:55 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (obj/clone/user/human#238)
+  file: obj/clone/user.c:245
+  prgm: obj/clone/user.c
+  func: commandHook
+  args: ( "nod", )
+Sat Oct 28 13:48:46 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (obj/clone/user/human#242)
+  file: obj/clone/user.c:245
+  prgm: obj/clone/user.c
+  func: commandHook
+  args: ( 0, )
+Sat Oct 28 13:49:50 1995:  
+[ERROR] *Error in loading object '/cmd/adm/tmsh'
+  obj : (obj/clone/user/human#242)
+  file: obj/clone/user.c:245
+  prgm: obj/clone/user.c
+  func: commandHook
+  args: ( 0, )
+Sat Oct 28 13:56:56 1995:  
+[ERROR] *Error in loading object '/obj/clone/shsh'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sat Oct 28 13:58:47 1995:  
+[ERROR] *Bad argument 1 to capitalize()
+Expected: string Got: 1.
+  obj : (cmd/player/inventory)
+  file: cmd/player/inventory.c:16
+  prgm: cmd/player/inventory.c
+  func: main
+  args: ( , )
+Sat Oct 28 14:01:52 1995:  
+[ERROR] *Error in loading object '/obj/clone/shsh'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sat Oct 28 14:02:52 1995:  
+[ERROR] *Error in loading object '/obj/clone/shsh'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sat Oct 28 14:04:06 1995:  
+[ERROR] *Error in loading object '/obj/clone/shsh'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sat Oct 28 14:07:25 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "return ({ "test", "one", "two", "three" })[..2]", )
+Sat Oct 28 14:08:37 1995:  
+[ERROR] *Error in loading object '/obj/clone/shsh'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sat Oct 28 14:13:02 1995:  
+[ERROR] *Error in loading object '/obj/clone/shsh'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sat Oct 28 14:18:54 1995:  
+[ERROR] *Error in loading object '/obj/clone/shsh'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sat Oct 28 14:19:16 1995:  
+[ERROR] *Error in loading object '/u/h/hamnsnock/stuff/wand'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sat Oct 28 14:19:18 1995:  
+[ERROR] *Error in loading object '/u/h/hamnsnock/stuff/wand'
+  obj : (cmd/wiz/clone)
+  file: cmd/wiz/clone.c:22
+  prgm: cmd/wiz/clone.c
+  func: _main
+  args: ( ERROR: (s)printf(): Incorrect argument to type %s. (arg 0)
+)
+Sat Oct 28 14:22:25 1995:  
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (tmp/tmp_eval_file)
+  file: tmp/tmp_eval_file.c:5
+  prgm: tmp/tmp_eval_file.c
+  func: eval
+  args: ( , )
+Sat Oct 28 14:22:31 1995:  
+[ERROR] *Illegal to move or destruct an object defining actions from a verb function which returns zero.
+  obj : (0)
+  file: :0
+  prgm: 0
+Sat Oct 28 14:29:51 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "return INTERMUD_D->GetMatch("Dysfunctional Mud")", )
+Sat Oct 28 14:41:17 1995:  
+[ERROR] *Error in loading object '/obj/clone/shsh'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sat Oct 28 14:43:03 1995:  
+[ERROR] *Undefined function: set
+  obj : (obj/clone/shsh)
+  file: obj/clone/shsh.c:122
+  prgm: obj/clone/shsh.c
+  func: create
+  args: ( , )
+Sat Oct 28 14:44:06 1995:  
+[ERROR] *Undefined function: set_prevent_drop
+  obj : (obj/clone/shsh)
+  file: obj/clone/shsh.c:126
+  prgm: obj/clone/shsh.c
+  func: create
+  args: ( , )
+Sat Oct 28 14:48:43 1995:  
+[ERROR] *Error in loading object '/obj/inherit/base/object'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sat Oct 28 15:01:12 1995:  
+[ERROR] *Error in loading object '/obj/examples/monster'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sat Oct 28 15:02:34 1995:  
+[ERROR] *Error in loading object '/obj/examples/monster'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:108
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sat Oct 28 15:44:51 1995:  
+[ERROR] *Bad argument to [ .. ] range operator.
+  obj : (adm/simul_efun)
+  file: adm/efuns/extract.c:3
+  prgm: adm/simul_efun.c
+  func: extract
+  args: ( 00, )
+Sat Oct 28 15:47:09 1995:  
+[ERROR] *Error in loading object '/adm/simul_efun'
+  obj : (adm/simul_efun)
+  file: adm/efuns/destruct.c:11
+  prgm: adm/simul_efun.c
+  func: destruct
+  args: ( 0, )
+Sat Oct 28 15:49:33 1995:  
+[ERROR] *Bad argument to [ .. ] range operator.
+  obj : (adm/simul_efun)
+  file: adm/efuns/extract.c:4
+  prgm: adm/simul_efun.c
+  func: extract
+  args: ( 000, )
+Sat Oct 28 16:04:36 1995:  
+[ERROR] *Undefined function: wrap
+  obj : (obj/clone/shsh#291)
+  file: obj/clone/shsh.c:693
+  prgm: obj/clone/shsh.c
+  func: change_colour
+  args: ( "yes", )
+Sat Oct 28 16:07:01 1995:  
+[ERROR] *Error in loading object '/u/h/hamnsnock/stuff/wand'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sat Oct 28 16:07:17 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "return get_home_path()", )
+Sat Oct 28 16:08:08 1995:  
+[ERROR] *Error in loading object '/u/h/hamnsnock/stuff/wand'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sat Oct 28 16:10:40 1995:  
+[ERROR] *Undefined function: set_action
+  obj : (u/h/hamnsnock/stuff/wand#295)
+  file: u/h/hamnsnock/stuff/wand.c:27
+  prgm: u/h/hamnsnock/stuff/wand.c
+  func: init
+  args: ( , )
+Sat Oct 28 16:13:47 1995:  
+[ERROR] *Bad argument 1 to sscanf
+Expected: string Got: 0.
+  obj : (obj/clone/shsh#296)
+  file: obj/clone/shsh.c:2150
+  prgm: obj/clone/shsh.c
+  func: process_dir
+  args: ( 0, )
+Sat Oct 28 16:14:40 1995:  
+[ERROR] *Bad argument 1 to sscanf
+Expected: string Got: 0.
+  obj : (obj/clone/shsh#296)
+  file: obj/clone/shsh.c:2150
+  prgm: obj/clone/shsh.c
+  func: process_dir
+  args: ( 0, )
+Sat Oct 28 16:14:44 1995:  
+[ERROR] *Bad argument 1 to sscanf
+Expected: string Got: 0.
+  obj : (obj/clone/shsh#296)
+  file: obj/clone/shsh.c:2150
+  prgm: obj/clone/shsh.c
+  func: process_dir
+  args: ( 0, )
+Sat Oct 28 16:16:08 1995:  
+[ERROR] *Error in loading object '/cmd/adm/shsh'
+  obj : (obj/clone/user/human#283)
+  file: obj/clone/user.c:245
+  prgm: obj/clone/user.c
+  func: commandHook
+  args: ( "off", )
+Sat Oct 28 16:16:16 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "return help", )
+Sat Oct 28 16:24:03 1995:  
+[ERROR] *Error in loading object '/cmd/adm/shsh'
+  obj : (obj/clone/user/human#300)
+  file: obj/clone/user.c:245
+  prgm: obj/clone/user.c
+  func: commandHook
+  args: ( "help", )
+Sat Oct 28 16:26:32 1995:  
+[ERROR] *Bad argument 1 to sscanf
+Expected: string Got: 0.
+  obj : (obj/clone/shsh#305)
+  file: obj/clone/shsh.c:1046
+  prgm: obj/clone/shsh.c
+  func: add_window
+  args: ( 0, )
+Sat Oct 28 16:33:31 1995:  
+[ERROR] *Error in loading object '/obj/clone/shsh'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sat Oct 28 16:40:35 1995:  
+[ERROR] *Error in loading object '/obj/clone/shsh'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sat Oct 28 16:40:47 1995:  
+[ERROR] *Error in loading object '/obj/clone/shsh'
+  obj : (cmd/wiz/clone)
+  file: cmd/wiz/clone.c:22
+  prgm: cmd/wiz/clone.c
+  func: _main
+  args: ( ERROR: (s)printf(): Incorrect argument to type %s. (arg 0)
+)
+Sat Oct 28 16:40:53 1995:  
+[ERROR] *Error in loading object '/obj/clone/shsh'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sat Oct 28 16:48:23 1995:  
+[ERROR] *Error in loading object '/obj/clone/shsh'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sat Oct 28 17:05:17 1995:  
+[ERROR] *Array index out of bounds.
+  obj : (obj/clone/shsh#325)
+  file: obj/clone/shsh.c:1675
+  prgm: obj/clone/shsh.c
+  func: display_alarms
+  args: ( , )
+Sat Oct 28 17:12:41 1995:  
+[ERROR] *Bad argument 1 to present()
+Expected: string or object Got: 0.
+  obj : (cmd/wiz/slay)
+  file: cmd/wiz/slay.c:6
+  prgm: cmd/wiz/slay.c
+  func: main
+  args: ( 0, )
+Sat Oct 28 17:12:59 1995:  
+[ERROR] *Illegal to move or destruct an object defining actions from a verb function which returns zero.
+  obj : (0)
+  file: :0
+  prgm: 0
+Sat Oct 28 17:28:50 1995:  
+[ERROR] *Error in loading object '/u/h/hamnsnock/stuff/wand'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sat Oct 28 17:35:18 1995:  
+[ERROR] *Error in loading object '/u/h/hamnsnock/stuff/wand'
+  obj : (cmd/wiz/clone)
+  file: cmd/wiz/clone.c:22
+  prgm: cmd/wiz/clone.c
+  func: _main
+  args: ( ERROR: (s)printf(): Incorrect argument to type %s. (arg 0)
+)
+Sat Oct 28 18:22:34 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sat Oct 28 18:24:41 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sat Oct 28 18:25:15 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sat Oct 28 18:25:35 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sat Oct 28 18:25:57 1995:  
+[ERROR] *Left hand side of += is a number (or zero); right side is not a number.
+  obj : (cmd/player/emote)
+  file: cmd/player/emote.c:16
+  prgm: cmd/player/emote.c
+  func: create
+  args: ( , )
+Sat Oct 28 18:29:04 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sat Oct 28 18:32:23 1995:  
+[ERROR] *Left hand side of += is a number (or zero); right side is not a number.
+  obj : (cmd/player/emote)
+  file: cmd/player/emote.c:18
+  prgm: cmd/player/emote.c
+  func: create
+  args: ( , )
+Sat Oct 28 18:35:02 1995:  
+[ERROR] *Left hand side of += is a number (or zero); right side is not a number.
+  obj : (cmd/player/emote)
+  file: cmd/player/emote.c:17
+  prgm: cmd/player/emote.c
+  func: create
+  args: ( , )
+Sat Oct 28 18:36:28 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sat Oct 28 18:59:13 1995:  
+[ERROR] *Negative index passed to array.
+  obj : (cmd/player/emote)
+  file: cmd/player/emote.c:49
+  prgm: cmd/player/emote.c
+  func: main
+  args: ( "grin", )
+Sat Oct 28 19:24:13 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sat Oct 28 19:30:37 1995:  
+[ERROR] *Array index out of bounds.
+  obj : (cmd/player/emote)
+  file: cmd/player/emote.c:39
+  prgm: cmd/player/emote.c
+  func: main
+  args: ( "hit lol on the head", )
+Sat Oct 28 19:33:56 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sat Oct 28 19:34:58 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sat Oct 28 19:35:18 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sat Oct 28 19:43:41 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sat Oct 28 19:44:25 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sat Oct 28 19:47:36 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sat Oct 28 19:48:42 1995:  
+[ERROR] *Error in loading object '/cmd/player/emote'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sat Oct 28 19:49:11 1995:  
+[ERROR] *Left hand side of += is a number (or zero); right side is not a number.
+  obj : (cmd/player/emote)
+  file: cmd/player/emote.c:84
+  prgm: cmd/player/emote.c
+  func: main
+  args: ( "smile to lol", )
+Sat Oct 28 19:49:55 1995:  
+[ERROR] *Left hand side of += is a number (or zero); right side is not a number.
+  obj : (cmd/player/emote)
+  file: cmd/player/emote.c:85
+  prgm: cmd/player/emote.c
+  func: main
+  args: ( "smile to lol", )
+Sat Oct 28 19:55:06 1995:  
+[ERROR] *call_other() couldn't find object
+  obj : (cmd/player/help)
+  file: cmd/player/help.c:13
+  prgm: cmd/player/help.c
+  func: main
+  args: ( "exa.c", )
+Sat Oct 28 19:55:29 1995:  
+[ERROR] *call_other() couldn't find object
+  obj : (cmd/player/help)
+  file: cmd/player/help.c:13
+  prgm: cmd/player/help.c
+  func: main
+  args: ( "exa.c", )
+Sat Oct 28 19:57:25 1995:  
+[ERROR] *call_other() couldn't find object
+  obj : (cmd/player/help)
+  file: cmd/player/help.c:13
+  prgm: cmd/player/help.c
+  func: main
+  args: ( "exa", )
+Sun Oct 29 00:08:06 1995:  
+[ERROR] *Error in loading object '/u/h/hamnsnock/stuff/wand'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sun Oct 29 00:10:25 1995:  
+[ERROR] *Illegal to move or destruct an object defining actions from a verb function which returns zero.
+  obj : (0)
+  file: :0
+  prgm: 0
+Sun Oct 29 00:12:49 1995:  
+[ERROR] *Illegal to move or destruct an object defining actions from a verb function which returns zero.
+  obj : (0)
+  file: :0
+  prgm: 0
+Sun Oct 29 00:14:38 1995:  
+[ERROR] *Illegal to move or destruct an object defining actions from a verb function which returns zero.
+  obj : (0)
+  file: :0
+  prgm: 0
+Sun Oct 29 00:19:27 1995:  
+[ERROR] *Illegal to move or destruct an object defining actions from a verb function which returns zero.
+  obj : (0)
+  file: :0
+  prgm: 0
+Sun Oct 29 00:26:42 1995:  
+[ERROR] *Undefined function: set_action
+  obj : (u/h/hamnsnock/stuff/wand#366)
+  file: u/h/hamnsnock/stuff/wand.c:41
+  prgm: u/h/hamnsnock/stuff/wand.c
+  func: init
+  args: ( , )
+Sun Oct 29 00:27:18 1995:  
+[ERROR] *Illegal to move or destruct an object defining actions from a verb function which returns zero.
+  obj : (0)
+  file: :0
+  prgm: 0
+Sun Oct 29 00:27:46 1995:  
+[ERROR] *Undefined function: set_action
+  obj : (u/h/hamnsnock/stuff/wand#366)
+  file: u/h/hamnsnock/stuff/wand.c:41
+  prgm: u/h/hamnsnock/stuff/wand.c
+  func: init
+  args: ( , )
+Sun Oct 29 00:28:14 1995:  
+[ERROR] *Could not find 'cmd/adm/netstat.c' to compile.
+  obj : (tmp/tmp_eval_file)
+  file: tmp/tmp_eval_file.c:5
+  prgm: tmp/tmp_eval_file.c
+  func: eval
+  args: ( , )
+Sun Oct 29 00:28:22 1995:  
+[ERROR] *Illegal to move or destruct an object defining actions from a verb function which returns zero.
+  obj : (0)
+  file: :0
+  prgm: 0
+Sun Oct 29 00:41:28 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "return lpc_info", )
+Sun Oct 29 01:20:08 1995:  
+[ERROR] *Function is no longer a simul_efun.
+  obj : (obj/clone/user/human#229)
+  file: obj/inherit/base/living.c:214
+  prgm: obj/inherit/base/living.c
+  func: long
+  args: ( 0, )
+Sun Oct 29 01:21:34 1995:  
+[ERROR] *Function is no longer a simul_efun.
+  obj : (obj/clone/user/human#229)
+  file: obj/inherit/base/living.c:214
+  prgm: obj/inherit/base/living.c
+  func: long
+  args: ( 0, )
+Sun Oct 29 01:23:19 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "return long()", )
+Sun Oct 29 01:23:31 1995:  
+[ERROR] *Function is no longer a simul_efun.
+  obj : (obj/clone/user/human#229)
+  file: obj/inherit/base/living.c:214
+  prgm: obj/inherit/base/living.c
+  func: long
+  args: ( 0, )
+Sun Oct 29 01:24:01 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "return capitalize()", )
+Sun Oct 29 01:24:05 1995:  
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/pronoun.c:5
+  prgm: adm/simul_efun.c
+  func: pronoun
+  args: ( 00, )
+Sun Oct 29 01:25:56 1995:  
+[ERROR] *Function is no longer a simul_efun.
+  obj : (obj/clone/user/human#229)
+  file: obj/inherit/base/living.c:214
+  prgm: obj/inherit/base/living.c
+  func: long
+  args: ( 0, )
+Sun Oct 29 01:27:58 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "return possessive()", )
+Sun Oct 29 01:28:53 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "return short()", )
+Sun Oct 29 01:29:13 1995:  
+[ERROR] *Function is no longer a simul_efun.
+  obj : (obj/clone/user/human#229)
+  file: obj/inherit/base/living.c:214
+  prgm: obj/inherit/base/living.c
+  func: long
+  args: ( 0, )
+Sun Oct 29 01:29:39 1995:  
+[ERROR] *Function is no longer a simul_efun.
+  obj : (obj/clone/user/human#229)
+  file: obj/inherit/base/living.c:214
+  prgm: obj/inherit/base/living.c
+  func: long
+  args: ( 0, )
+Sun Oct 29 01:30:11 1995:  
+[ERROR] *Function is no longer a simul_efun.
+  obj : (obj/clone/user/human#229)
+  file: obj/inherit/base/living.c:214
+  prgm: obj/inherit/base/living.c
+  func: long
+  args: ( 0, )
+Sun Oct 29 01:30:51 1995:  
+[ERROR] *Function is no longer a simul_efun.
+  obj : (obj/clone/user/human#229)
+  file: obj/inherit/base/living.c:214
+  prgm: obj/inherit/base/living.c
+  func: long
+  args: ( 0, )
+Sun Oct 29 01:00:11 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "return get_dir("/da?/"", )
+Sun Oct 29 01:02:35 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "return implod(({"t","i","m"}),"/")", )
+Sun Oct 29 01:14:39 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "return goto", )
+Sun Oct 29 01:17:38 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "return "test"[>]", )
+Sun Oct 29 01:17:48 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "return "test"[<]", )
+Sun Oct 29 01:18:00 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "return "test"[<..<]", )
+Sun Oct 29 01:18:14 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "return "test"[..<]", )
+Sun Oct 29 01:18:24 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "return "test"[..>]", )
+Sun Oct 29 01:18:38 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "return "test"[..2]", )
+Sun Oct 29 01:18:50 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "return "test"[0..>]", )
+Sun Oct 29 01:19:47 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "return "test"[>0..>0]", )
+Sun Oct 29 01:20:27 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "return "test"[1>..1>]", )
+Sun Oct 29 12:16:55 1995:  
+[ERROR] *call_other() couldn't find object
+  obj : (u/l/lol/help)
+  file: u/l/lol/help.c:13
+  prgm: u/l/lol/help.c
+  func: main
+  args: ( "exa", )
+Sun Oct 29 12:19:47 1995:  
+[ERROR] *call_other() couldn't find object
+  obj : (u/l/lol/help)
+  file: u/l/lol/help.c:13
+  prgm: u/l/lol/help.c
+  func: main
+  args: ( "exa", )
+Sun Oct 29 12:48:28 1995:  
+[ERROR] *Bad argument 1 to explode()
+Expected: string Got: 0.
+  obj : (cmd/player/emote)
+  file: cmd/player/emote.c:29
+  prgm: cmd/player/emote.c
+  func: main
+  args: ( 0, )
+Sun Oct 29 13:19:14 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "return eval string str; foreach(str in "test") write(str);", )
+Sun Oct 29 13:20:35 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "char ch; foreach(ch in "test) printf("%c", ch);", )
+Sun Oct 29 13:24:58 1995:  
+[ERROR] *Error in loading object '/obj/clone/user'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sun Oct 29 13:24:58 1995:  
+[ERROR] *Error in loading object '/obj/clone/user'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sun Oct 29 13:42:24 1995:  
+[ERROR] *Array index out of bounds.
+  obj : (obj/clone/user/human#10)
+  file: obj/clone/user.c:134
+  prgm: obj/clone/user.c
+  func: process_input
+  args: ( "", )
+Sun Oct 29 13:42:24 1995:  
+[ERROR] *Array index out of bounds.
+  obj : (obj/clone/user/human#10)
+  file: obj/clone/user.c:134
+  prgm: obj/clone/user.c
+  func: process_input
+  args: ( "", )
+Sun Oct 29 13:50:59 1995:  
+[ERROR] *Negative index passed to array.
+  obj : (obj/clone/user/human#22)
+  file: obj/clone/user.c:155
+  prgm: obj/clone/user.c
+  func: process_input
+  args: ( "ls /*", )
+Sun Oct 29 13:53:17 1995:  
+[ERROR] *Negative index passed to array.
+  obj : (obj/clone/user/human#25)
+  file: obj/clone/user.c:155
+  prgm: obj/clone/user.c
+  func: process_input
+  args: ( "ls /*", )
+Sun Oct 29 13:54:07 1995:  
+[ERROR] *Negative index passed to array.
+  obj : (obj/clone/user/human#25)
+  file: obj/clone/user.c:155
+  prgm: obj/clone/user.c
+  func: process_input
+  args: ( "? explode("/*", "/")", )
+Sun Oct 29 13:56:36 1995:  
+[ERROR] *Negative index passed to array.
+  obj : (obj/clone/user/human#25)
+  file: obj/clone/user.c:155
+  prgm: obj/clone/user.c
+  func: process_input
+  args: ( "ls /da*/", )
+Sun Oct 29 14:03:47 1995:  
+[ERROR] *Negative index passed to array.
+  obj : (obj/clone/user/human#28)
+  file: obj/clone/user.c:158
+  prgm: obj/clone/user.c
+  func: process_input
+  args: ( "ls /*", )
+Sun Oct 29 14:06:48 1995:  
+[ERROR] *Negative index passed to array.
+  obj : (obj/clone/user/human#31)
+  file: obj/clone/user.c:158
+  prgm: obj/clone/user.c
+  func: process_input
+  args: ( "ls /da*", )
+Sun Oct 29 14:08:56 1995:  
+[ERROR] *Bad argument 1 to implode()
+Expected: array Got: 0.
+  obj : (obj/clone/user/human#34)
+  file: obj/clone/user.c:173
+  prgm: obj/clone/user.c
+  func: process_input
+  args: ( "ls /*", )
+Sun Oct 29 14:12:46 1995:  
+[ERROR] *Bad argument 1 to implode()
+Expected: array Got: 0.
+  obj : (obj/clone/user/human#37)
+  file: obj/clone/user.c:175
+  prgm: obj/clone/user.c
+  func: process_input
+  args: ( "say /da*/u*/bo*/t/tim/", )
+Sun Oct 29 14:19:38 1995:  
+[ERROR] *Error in loading object '/obj/clone/user'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sun Oct 29 14:19:38 1995:  
+[ERROR] *Error in loading object '/obj/clone/user'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sun Oct 29 14:39:26 1995:  
+[ERROR] *Bad argument 1 to implode()
+Expected: array Got: 0.
+  obj : (obj/clone/user/human#76)
+  file: obj/clone/user.c:144
+  prgm: obj/clone/user.c
+  func: process_input
+  args: ( "say *", )
+Sun Oct 29 14:42:15 1995:  
+[ERROR] *Error in loading object '/obj/clone/user'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sun Oct 29 14:42:15 1995:  
+[ERROR] *Error in loading object '/obj/clone/user'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sun Oct 29 14:45:22 1995:  
+[ERROR] *Error in loading object '/obj/clone/user'
+  obj : (adm/obj/daemon/logind)
+  file: adm/obj/daemon/logind.c:185
+  prgm: adm/obj/daemon/logind.c
+  func: player_enter_world
+  args: ( obj/clone/connection#770, )
+Sun Oct 29 15:02:49 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "int tmp = 3; for(;;){int tmp; tmp = 12; break; } write(tmp);", )
+Sun Oct 29 15:54:21 1995:  
+[ERROR] *Error in loading object '/obj/clone/user'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sun Oct 29 15:54:21 1995:  
+[ERROR] *Error in loading object '/obj/clone/user'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sun Oct 29 17:16:34 1995:  
+[ERROR] *Error in loading object '/obj/clone/user'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sun Oct 29 17:16:34 1995:  
+[ERROR] *Error in loading object '/obj/clone/user'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sun Oct 29 17:17:08 1995:  
+[ERROR] *Error in loading object '/obj/clone/user'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sun Oct 29 17:17:52 1995:  
+[ERROR] *Error in loading object '/obj/clone/user'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sun Oct 29 17:18:11 1995:  
+[ERROR] *Error in loading object '/obj/clone/user'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Sun Oct 29 19:51:35 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "return 150 armour.c monster.c weapon.c 2", )
+Sun Oct 29 19:57:25 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "return /obj/examples/550*2/150.1", )
+Sun Oct 29 19:57:39 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "return /obj/examples/550.0*2.0/150.0", )
+Sun Oct 29 19:57:45 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "return 550.0 armour.c monster.c weapon.c 2.0 / 150.0", )
+Sun Oct 29 19:57:59 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "return 550.0 armour.c monster.c weapon.c 20.0 / 150.0", )
+Sun Oct 29 19:58:11 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "return 550.0 armour.c monster.c weapon.c 20.0", )
+Sun Oct 29 19:58:19 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "return 550 armour.c monster.c weapon.c 20", )
+Sun Oct 29 20:00:01 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "return 9 armour.c monster.c weapon.c 12", )
+Sun Oct 29 20:11:19 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "return 17 (570)", )
+Sun Oct 29 20:12:37 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "return 17  570", )
+Mon Oct 30 00:30:41 1995:  
+[ERROR] *Illegal to move or destruct an object defining actions from a verb function which returns zero.
+  obj : (0)
+  file: :0
+  prgm: 0
+Mon Oct 30 00:39:34 1995:  
+[ERROR] *Illegal to move or destruct an object defining actions from a verb function which returns zero.
+  obj : (0)
+  file: :0
+  prgm: 0
+Mon Oct 30 00:41:54 1995:  
+[ERROR] *Bad type argument to +.  Had string and object.
+  obj : (u/h/hamnsnock/stuff/wand#57)
+  file: u/h/hamnsnock/stuff/wand.c:132
+  prgm: u/h/hamnsnock/stuff/wand.c
+  func: do_status
+  args: ( , )
+Mon Oct 30 00:42:29 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "return write(environment(this_player())", )
+Mon Oct 30 00:46:00 1995:  
+[ERROR] *Illegal to move or destruct an object defining actions from a verb function which returns zero.
+  obj : (0)
+  file: :0
+  prgm: 0
+Mon Oct 30 01:19:41 1995:  
+[ERROR] *Illegal to move or destruct an object defining actions from a verb function which returns zero.
+  obj : (0)
+  file: :0
+  prgm: 0
+Mon Oct 30 01:20:01 1995:  
+[ERROR] *Illegal to move or destruct an object defining actions from a verb function which returns zero.
+  obj : (0)
+  file: :0
+  prgm: 0
+Mon Oct 30 01:22:24 1995:  
+[ERROR] *Illegal to move or destruct an object defining actions from a verb function which returns zero.
+  obj : (0)
+  file: :0
+  prgm: 0
+Mon Oct 30 01:22:32 1995:  
+[ERROR] *Illegal to move or destruct an object defining actions from a verb function which returns zero.
+  obj : (0)
+  file: :0
+  prgm: 0
+Mon Oct 30 01:22:36 1995:  
+[ERROR] *Illegal to move or destruct an object defining actions from a verb function which returns zero.
+  obj : (0)
+  file: :0
+  prgm: 0
+Mon Oct 30 01:27:19 1995:  
+[ERROR] *Illegal to move or destruct an object defining actions from a verb function which returns zero.
+  obj : (0)
+  file: :0
+  prgm: 0
+Mon Oct 30 01:29:34 1995:  
+[ERROR] *Illegal to move or destruct an object defining actions from a verb function which returns zero.
+  obj : (0)
+  file: :0
+  prgm: 0
+Mon Oct 30 01:30:48 1995:  
+[ERROR] *Error in loading object '/u/h/hamnsnock/stuff/wand'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Mon Oct 30 01:31:30 1995:  
+[ERROR] *Error in loading object '/u/h/hamnsnock/stuff/wand'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Mon Oct 30 01:33:39 1995:  
+[ERROR] *Error in loading object '/u/h/hamnsnock/stuff/wand'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Mon Oct 30 01:34:31 1995:  
+[ERROR] *Illegal to move or destruct an object defining actions from a verb function which returns zero.
+  obj : (0)
+  file: :0
+  prgm: 0
+Mon Oct 30 01:38:23 1995:  
+[ERROR] *Illegal to move or destruct an object defining actions from a verb function which returns zero.
+  obj : (0)
+  file: :0
+  prgm: 0
+Mon Oct 30 01:38:23 1995:  
+[ERROR] *Illegal to move or destruct an object defining actions from a verb function which returns zero.
+  obj : (0)
+  file: :0
+  prgm: 0
+Mon Oct 30 01:43:54 1995:  
+[ERROR] *Illegal to move or destruct an object defining actions from a verb function which returns zero.
+  obj : (0)
+  file: :0
+  prgm: 0
+Mon Oct 30 01:48:08 1995:  
+[ERROR] *Bad argument 1 to explode()
+Expected: string Got: 0.
+  obj : (cmd/player/emote)
+  file: cmd/player/emote.c:29
+  prgm: cmd/player/emote.c
+  func: main
+  args: ( 0, )
+Mon Oct 30 01:57:39 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( "return ctime()", )
+Mon Oct 30 01:59:15 1995:  
+[ERROR] *Error in loading object '/cmd/wiz/ls'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Mon Oct 30 02:00:34 1995:  
+[ERROR] *Error in loading object '/cmd/wiz/ls'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Mon Oct 30 02:07:27 1995:  
+[ERROR] *Error in loading object '/u/h/hamnsnock/stuff/wand'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Mon Oct 30 02:08:50 1995:  
+[ERROR] *Error in loading object '/u/h/hamnsnock/stuff/wand'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Mon Oct 30 02:09:50 1995:  
+[ERROR] *Error in loading object '/u/h/hamnsnock/stuff/wand'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Mon Oct 30 02:10:38 1995:  
+[ERROR] *Error in loading object '/u/h/hamnsnock/stuff/wand'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Mon Oct 30 02:10:55 1995:  
+[ERROR] *Error in loading object '/u/h/hamnsnock/stuff/wand'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Mon Oct 30 02:11:57 1995:  
+[ERROR] *Error in loading object '/u/h/hamnsnock/stuff/wand'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Mon Oct 30 02:13:41 1995:  
+[ERROR] *Error in loading object '/u/h/hamnsnock/stuff/wand'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Mon Oct 30 02:28:45 1995:  
+[ERROR] *Error in loading object '/u/h/hamnsnock/stuff/wand'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+Mon Oct 30 17:00:35 1995:  
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0nslookup report:
+ip: 0
+name: rtd.com
+, )
+Mon Oct 30 17:00:43 1995:  
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0nslookup report:
+ip: 0
+name: 234
+, )

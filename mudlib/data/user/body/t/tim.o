@@ -1,8 +1,12 @@
 #obj/clone/user/human.c
 name "tim"
-coins ({75,18,})
-title "the utter mudlib hacker"
+coins ({23,2005,})
+hit_points -204
+spell_points 0
+sex 1
+title "the cool"
 current_dir "/u/t/tim"
 term "ansi"
+aliases (["l":"look","i":"inventory","sw":"southwest","se":"southeast","nw":"northwest","ne":"northeast","w":"west","e":"east","s":"south","n":"north","la":"look at","sc":"score",])
 Hook 0
 path "/cmd/player:/adm/cmd/wiz:/adm/cmd/adm:/cmd/wiz:/adm/cmd/player:/cmd/adm"

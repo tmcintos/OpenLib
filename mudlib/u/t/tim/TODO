@@ -1,7 +1,13 @@
 -security
 -player bodies, shells, shell interfaces
+-hit/spell points, damage
+-max weight funcs
 -monsters etc.
--get, put, drop
+-put
 -dest command: options for file argument, and dest all instances...
 -command daemon
 -help daemon
+-mail daemon
+-emote daemon
+-leveling system
+-chat daemon

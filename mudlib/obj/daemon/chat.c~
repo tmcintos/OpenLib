@@ -139,7 +139,7 @@ varargs void eventSendChannel(string who, string ch, string msg, int emote,
 	    ob = find_player(target);
 	    target = (string)ob->query_name();
 	}
-	this_msg = "%^MAGENTA%^<" + ch + ">%^END%^ ";
+	this_msg = "%^MAGENTA%^<" + ch + ">%^RESET%^ ";
 	msg = replace_string(msg, "$N", who);
 	if( target ) {
 	    msg = replace_string(msg, "$O", target);
@@ -150,7 +150,7 @@ varargs void eventSendChannel(string who, string ch, string msg, int emote,
 	if( ob ) message(ch, this_msg + targmsg +"\n", ob);
     }
     else {
-	msg = who + " %^MAGENTA%^<" + ch + ">%^END%^: " + msg +"\n";
+	msg = who + " %^MAGENTA%^<" + ch + ">%^RESET%^: " + msg +"\n";
 	message(ch, msg, Channels[ch]);
     }
 }

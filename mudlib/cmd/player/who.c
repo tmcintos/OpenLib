@@ -22,7 +22,7 @@ main(string arg)
       write(sprintf("%-50s %4d\n",
 		    (in_edit(user) ? "*" : " ") +
 		    (in_input(user) ? "+" : " ") +
-		    (string)user->short(),
+		    (string)user->short()+".",
 		    query_idle(user) / 60
 		    ));
     else

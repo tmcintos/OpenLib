@@ -8,6 +8,9 @@ inherit ROOM;
 void
 create()
 {
+
+  ::create();
+
   set_light(1);
   set_short("You are on Mysos St. east of the toen square.\n");
   set_long("You are on Mysos St. east of the town square.  To the\n"+

@@ -1,25 +1,28 @@
+/*  -*- LPC -*-  */
 #include <command.h>
 
 int
 main()
 {
+  string blurb = "";
   object *inv, ob;
-  int vis_ob_found = 0;
 
   inv = all_inventory(this_player());
 
-  write("You are carrying:\n");
-
   foreach(ob in inv) {
     string sh = ob->short();
+
     if(sh) {
-      vis_ob_found = 1;
-      write(capitalize(sh) + "\n");
+      blurb += sprintf("%s\n", capitalize(sh));
+    } else if(1) {                                /* WIZ check here */
+      blurb += sprintf("Invisible object: %s\n", file_name(ob));
     }
   }
 
-  if(!vis_ob_found)
-    write("(nothing)\n");
+  if(blurb == "")
+    write("You are empty handed\n");
+  else
+    write("You are carrying:\n" + blurb);
 
   return 1;
 }

@@ -9,6 +9,7 @@ int
 main(string what)
 {
   object ob;
+  int err;
 
   if(!what || what == "")
     return notify_fail("Drop what??\n");
@@ -23,7 +24,10 @@ main(string what)
 
 // might want an ob->on_drop() here...
 
-  ob->move(environment(this_player()));
+  err = ob->move(environment(this_player()));
+
+  if(err < 1)
+    return notify_fail("You fail.\n");       // error checking later
 
   say(sprintf("%s drops %s.\n",
 	      this_player()->query_cap_name(),

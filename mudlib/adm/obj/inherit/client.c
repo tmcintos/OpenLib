@@ -1,7 +1,10 @@
-/*    /secure/lib/client.c
+/*  -*- LPC -*-
+ *    /secure/lib/client.c
  *    from the Foundation II LPC Library
  *    a TCP client object
  *    created by Descartes of Borg 950428
+ *
+ *  10.23.95  Tim changed to fit this mudlib
  */
 
 #include <mudlib.h>
@@ -106,13 +109,12 @@ static void eventSocketClose() { }
 
 int eventDestruct() {
     eventClose(Socket);
-//    return daemon::eventDestruct();
-    return 1;  // timothy
+    return daemon::Destruct();
 }
 
 static void eventSocketError(string str, int x) { 
     if( LogFile ) 
-      log_file(LogFile, ctime(time()) + "\n" + socket_error(x) + "\n");
+      log_file(LogFile, ctime(time()) + "\n" + socket_error(x));
 }
 
 function SetRead(function f) { return (Read = f); }

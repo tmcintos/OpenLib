@@ -13,6 +13,8 @@ string user_path(string name)
 // Thanks to Huthar for resolve_path.
 // Rewrite by Symmetry 5/4/95
 // 09/16/95  Tim McIntosh:  Fixed this so it actually works right :)
+// 10/24/95  Tim:  Added the @ prefix to get the path of an object in the
+//                 room or inventory.
 */
 
 string resolve_path(string curr, string newer) {
@@ -25,7 +27,7 @@ string resolve_path(string curr, string newer) {
     return curr;
 
   case "~":
-    return user_path((string)this_player()->query_name());
+    return user_cwd((string)this_player()->query_name());
 	
   case "here":
     return file_name(environment(this_user()))+".c";
@@ -35,6 +37,20 @@ string resolve_path(string curr, string newer) {
       newer = user_path((string)this_player()->query_name()) + newer[2..];
     } else {
       switch(newer[0]) {
+      case '@':
+	{
+	  object ob;
+	  string fname;
+	  ob = present(newer[1..], environment(this_player()));
+	  if(!ob) ob = present(newer[1..], this_player());
+	  if(ob) {
+	    sscanf(file_name(ob), "%s#%*d.c", fname);
+	    return fname + ".c";
+	  } else {
+	    newer = curr + "/" + newer[1..];
+	  }
+	  break;
+        }
       case '~':
 	{
 	  i = strsrch(newer, '/');

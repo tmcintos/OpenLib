@@ -1,9 +1,10 @@
 #obj/clone/connection.c
 name "kyricc"
 password "zEqQmTOepnpVM"
-real_name ""
-email_addr 0
+real_name "Jason Borgmann"
+email_addr "kyricc@knapp38.res.iastate.edu"
 home_dir "/u/k/kyricc"
-body "/obj/clone/user/default"
-login_time 813713696
+body "/obj/clone/user/human"
+login_time 814963400
 login_from "knapp38.res.iastate.edu"
+active 0

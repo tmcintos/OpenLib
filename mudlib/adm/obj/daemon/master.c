@@ -127,19 +127,25 @@ error_handler(mapping error)
   line = sprintf("\n[ERROR] %s"
 		 "  obj : (%O)\n"
 		 "  file: %s:%d\n"
-		 "  prgm: %s\n"
-		 "  func: %s\n"
-		 "  args: ( ", error["error"], error["object"],
-		 error["file"], error["line"], error["program"],
-		 trace[sizeof(trace)-1]["function"]);
-//  if(arrayp(trace[sizeof(trace)-1]["arguments"]))
-//    line += sprintf("%@O, ", trace[sizeof(trace)-1]["arguments"]);
-//  else
-//    line += sprintf("%O", trace[sizeof(trace)-1]["arguments"]);
-  line += ")\n";
+		 "  prgm: %s\n",
+		 error["error"], error["object"],
+		 error["file"], error["line"], error["program"]);
+  if(sizeof(trace)) {
+    line += sprintf("  func: %s\n"
+		    "  args: ( ", 
+		    trace[sizeof(trace)-1]["function"]);
 
-  tell_object(this_player(1),line);
-  log_file("errors", line);
+    if(arrayp(trace[sizeof(trace)-1]["arguments"]))
+      line += sprintf("%@O, ", trace[sizeof(trace)-1]["arguments"]);
+    else
+      line += sprintf("%O", trace[sizeof(trace)-1]["arguments"]);
+    line += ")\n";
+  }
+
+  tell_object(this_player(1),
+	      sprintf("error: file: %s:%d;  %s",
+		      error["file"], error["line"], error["error"]));
+  log_file("rterrors", line);
   return 1;
 }
 

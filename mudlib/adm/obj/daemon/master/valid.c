@@ -174,3 +174,9 @@ valid_save_binary(string file)
 {
   return 1;
 }
+
+int
+valid_compile_to_c(string file)
+{
+  return 1;
+}

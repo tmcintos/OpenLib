@@ -19,6 +19,8 @@
 #define mudlib() "UltraLib"
 #define mudlib_version() "0.1"
 #define version() __VERSION__
+#define MUD_STATUS "alpha development"
+#define ADMIN_EMAIL "mud@knapp38.res.iastate.edu"
 
 // Crap for quick n dirty compatibility with the Intermud3 stuff
 
@@ -26,6 +28,8 @@
 #define identify(x) typeof(x)
 
 // (Tim) put in to make it easier to change later...
+
+#define member_group(uid, group) GROUP_D->is_member(group, uid)
 
 #define RESOLVE_PATH(x) this_player()->path_resolve(x)
 

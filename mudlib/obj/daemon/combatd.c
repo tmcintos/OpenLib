@@ -1,9 +1,16 @@
+/*  -*- LPC -*-  */
+// combatd.c
+//
 //This is the Combat Daemon.  It handles everything related to 
 //combat that doesn't need to be in the player's body.
 //
 //Orig Daemon by Casper.  Mail at epeters@netcom.com for 
 //questions concerning this daemon and any functions written by 
 //me.  10/13/95 
+//
+// 10.23.95  Tim:  - fixed so combat is visible to bystanders (2 lines)
+//                   amounted to putting in some tell_room()'s
+//                 - removed possessive() cause it's an efun now;
  
 #include <mudlib.h>
 #include <object_types.h>
@@ -22,12 +29,6 @@ private mapping combatants,weapon_info,ac,num_attacks;
 varargs void execute_attack(object victim, object attacker, 
                        mixed *weapon_info, int hit_mod, int dmg_mod);
 void execute_bow_attack(object victim, object attacker, mixed *weapon_info);
- 
-//Do something about this.  Temp patch.  Casper 10/13/95
-string possessive(object attacker)
-{
-  return "his/her/it's";
-}
  
 void create()
 {
@@ -109,15 +110,22 @@ int clean_up_all_attackers()
   {
     j = sizeof(combatants[keylist[i]]);
     attackerlist = ({combatants[keylist[i]][0]});
-    while (--j)
-    {
-      if(environment(combatants[keylist[i]][j])==
-         environment(combatants[keylist[i]][0]))
-        attackerlist = attackerlist + ({combatants[keylist[i]][j]});
-    }
+    if(attackerlist[0])
+      while (--j)
+      {
+        if((combatants[keylist[i]][j] ? 
+            (environment(combatants[keylist[i]][j]) == 
+             environment(attackerlist[0])) : 0))
+          attackerlist = attackerlist + ({combatants[keylist[i]][j]});
+      }
     if(sizeof(attackerlist)==1)
     {
-      combatants[keylist[i]][0]->set_combating(0);
+// this isn't working after 1 kill --Tim
+//      {
+//        tell_object(combatants[keylist[i]][0],"The combat ends.\n");
+//      }
+      if(combatants[keylist[i]][0])
+        combatants[keylist[i]][0]->set_combating(0);
       map_delete(combatants,keylist[i]);
       map_delete(weapon_info,keylist[i]);
       map_delete(ac,keylist[i]);
@@ -172,7 +180,7 @@ varargs void execute_attack(object victim, object attacker,
                     mixed *weapon_info, int hit_mod, int dmg_mod)
 {
   int damage, to_hit, dmg_rnd, i, drunk_mod = victim->query_drunk() - attacker->query_drunk();
-  string *message, pos = possessive(attacker), 
+  string *message, pos = pronoun(attacker, 1), 
     vid = sprintf("%i",getoid(victim));
   string aname = attacker->query_cap_name(), vname = 
     victim->query_cap_name();
@@ -216,9 +224,9 @@ varargs void execute_attack(object victim, object attacker,
       message[1]));
     //Hmm, with a daemon, no wait, ahh... =>  Cheating here, 
     //better way to do this one?  Casper
-    victim->say(sprintf("%s %s %s with %s %s, %s\n", aname, 
-      weapon_info[5][i], vname, pos, weapon_info[8][i], 
-      message[1]), attacker);
+    tell_room(environment(attacker), sprintf("%s %s %s with %s %s, %s\n",
+      aname, weapon_info[5][i], vname, pos, weapon_info[8][i], 
+      message[1]), ({ attacker, victim }));
     return;
   }
   //We missed code in here
@@ -226,8 +234,8 @@ varargs void execute_attack(object victim, object attacker,
     weapon_info[6][i], vname, weapon_info[8][i]));
   tell_object(victim, sprintf("%s %s you with %s %s.\n", aname, 
     weapon_info[7][i], pos, weapon_info[8][i]));
-  victim->say(sprintf("%s %s %s with %s %s.\n", aname, 
-    weapon_info[7][i], vname, pos, weapon_info[8][i]));
+  tell_room(environment(attacker), sprintf("%s %s %s with %s %s.\n", aname, 
+    weapon_info[7][i], vname, pos, weapon_info[8][i]), ({ attacker, victim}));
   return;
 }
  

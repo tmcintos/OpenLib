@@ -7,7 +7,12 @@
 //                    misc options (light, and so on.)
 //  10/11/95  Tim: Changed to inherit OBJECT, removed some functions defined
 //                 in OBJECT as a result of this.  Cleaned up just a little.
- 
+//  10/15/95  Lol:  Added non-object items to the rooms
+//            (look, but don't touch).  Added the function exa_items
+//            which is called upon by the exa.c command.
+
+#pragma save_binary
+
 #include <mudlib.h>
 #include <object_types.h>
 
@@ -16,6 +21,7 @@ inherit OBJECT;
 
 boolean no_attacks_here;      /* can we attack here? 1=no 0=yes */
 mapping exits;            /* hmm...who knows   */
+mapping items;             /*sets mapping for items  */
 
 // Overload of default constructor
  
@@ -23,9 +29,11 @@ void create()
 {
   object::create();
   object::set_object_class(OBJECT_CONTAINER);
+  items =([]);
   exits = ([]);
 }
 
+// override of object::clean_up() which we _don't_ want to call
 // If this is a regular room and no living present...remove
  
 int
@@ -35,7 +43,7 @@ clean_up(int inherited)
     return 0;
 
   if(filter_array(all_inventory(this_object()), (: living :)) == ({}))
-    remove();
+    destruct(this_object());
   return 1;
 }
 
@@ -141,6 +149,9 @@ set_exits(mapping args)
 {
   exits = args;
 }
+
+void set_items(mapping args) {
+  items=args; }
  
 int
 move_to_room()
@@ -166,4 +177,18 @@ move_to_room()
   me->move(dest_ob);
   me->force_me("look");
   return 1;
+}
+
+int
+exa_item(string str)
+{
+  string *itm, *item_desc,tmp;
+  itm=keys(items);
+  item_desc=values(items);
+
+  if (member_array(str,itm) !=-1) {
+    printf("You see "+item_desc[member_array(str,itm)]+".\n");
+  } else {
+    write("Examine what?\n");
+  }
 }

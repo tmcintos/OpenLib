@@ -4,8 +4,11 @@
 #include <command.h>
 
 int
-main()
+main(string path)
 {
-  write(this_player()->query_cwd() +"\n");
+  if(path)
+    write(RESOLVE_PATH(path) +"\n");
+  else
+    write(this_player()->query_cwd() +"\n");
   return 1;
 }

@@ -27,7 +27,7 @@ GetFinger(string username)
 {
   string line = "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
                 "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n";
-  string ret = "";
+  string ret = "", tmp;
   int idle, num_users;
   object user, conn, *list;
 
@@ -104,7 +104,16 @@ GetFinger(string username)
     // For beauty only :) Fix later; Tim.
     //
     ret += "No Mail.\n";
-    ret += "No Plan.\n";
+
+    // Plan & Project
+    if(tmp = read_file(user_path(username)+".project", 1, 1))
+      ret += "Project: "+ tmp;
+    else
+      ret += "No Project.\n";
+    if(tmp = read_file(user_path(username)+".plan", 1, 17))
+      ret += "Plan:\n"+ tmp;
+    else
+      ret += "No Plan.\n";
   } else {
     ret = sprintf("finger: %s: no such user.\n", username);  // no such user
   }
@@ -118,10 +127,11 @@ mixed *GetRemoteFinger(string who)
 // modifies: nothing
 // post: returns a finger packet for Intermud3
 {
-  string RealName, CapName, HomeDir, Email, Level;
+  string RealName, CapName, HomeDir, Email,
+         Project = user_path(who) + ".project";
   int LoginTime;
   mixed *tmp;
-  object conn;
+  object conn, player;
 
   conn = new(CONNECTION_OB);
 
@@ -131,10 +141,18 @@ mixed *GetRemoteFinger(string who)
     HomeDir = conn->query_home_dir();
     LoginTime = conn->query_login_time();
     Email = conn->query_email_addr();
-    Level = 0;
+
+    if(file_exists(Project))
+      Project = "Project: " + read_file(Project, 1, 1);
+    else
+      Project = 0;
+
+    player = find_player(who);
 
     tmp = ({ CapName, CapName, RealName, Email, ctime(LoginTime),
-	     "Not dealing here", Level, "\n" });
+	     (player ? query_idle(player) : -1), 0, 0, Project});
     return tmp;
+  } else {
+    return 0;
   }
 }

@@ -1,7 +1,10 @@
-/*    /daemon/services/error.c
+/*  -*- LPC -*-
+ *    /daemon/services/error.c
  *    from the Foundation II LPC Library
  *    error handling for the grand Intermud 3 Protocol
  *    created by Descartes of Borg 950715
+ *
+ *  10.23.95  Tim changed to fit this mudlib
  */
 
 void eventReceiveError(mixed *packet) {
@@ -26,7 +29,7 @@ void eventReceiveError(mixed *packet) {
 	case "unk-user":
 	if( !ob ) return;
 	message("system", (msg ? msg : "Unknown user reported from " + mud +
-			   "."), ob);
+			   ".\n"), ob);
 	return;
     }
 }

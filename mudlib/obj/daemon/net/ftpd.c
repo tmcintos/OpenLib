@@ -1,5 +1,6 @@
 /*  -*- LPC -*-  */
 #pragma save_binary
+#pragma no_clone
 
 /*
  * ftpd.c:
@@ -280,14 +281,22 @@
  *   some ftp clients complaining about bare linefeeds in ls output, to
  *   satisfy broken ftp clients that demand only "\n".
  *
- * 94.12.09 - Robocoder
+ * 94.12.09 Robocoder
  * o small optimization in ls() -- changed s1 = s1 + s2 -> s1 += s2
-* o added some code for more robustness in in_read_callback()
+ * o added some code for more robustness in in_read_callback()
+ *
+ * 95.10.27 Tim@UltraLIB
+ * o changed the order of the #includes so daemons.h is included first
+ * o fixed some things in get_path() having to do with the ANONYMOUS_FTP
+ *   false root, also changed PWD to display the path relative to the false
+ *   root. (still doesn't prevent full paths in error messages)
+ * o Bumped rev # to 5.81 because I can do that :)
+ *
  */
 
 #include <mudlib.h>
 
-#define FTPD_VERSION "5.8"
+#define FTPD_VERSION "5.81"
 
 /*
 -----------------------------------------------
@@ -303,7 +312,7 @@ int number_of_users;
 /*
  * edit ftpdconf.h & ftpdsupp.h to configure ftpd for your mudlib
  */
-#include <daemons.h>  // this must be before ftpdsupp.h -- Timothy
+#include <daemons.h>
 #include <net/ftpd.h>
 #include <net/ftpdconf.h>
 #include <net/ftpdsupp.h>
@@ -1077,7 +1086,7 @@ static void parse_comm( int fd, string str ) {
 #ifdef ANONYMOUS_FTP
 		if (UNAME == "anonymous")
 		    log_file( LOG_FILE, sprintf("%s (%s) connected from %s.\n",
-			  UNAME, str[strlen(command[0]) + 1..-1], USITE) );
+			  UNAME, str[strlen(command[0]) + 1..], USITE) );
 		else
 #endif
 		    log_file( LOG_FILE, sprintf("%s connected from %s.\n",
@@ -1374,8 +1383,15 @@ static void parse_comm( int fd, string str ) {
 	case "xpwd": // print the current working directory (deprecated)
 	case "pwd":  // print the current working directory
 	    CHECK_LOGIN();
+	    tmp = socket_info[ fd ][ CWD ];
+#ifdef ANONYMOUS_FTP
+	    if( UNAME == "anonymous" ) {
+	      sscanf(tmp, FTP_DIR "%s", tmp);
+	      tmp = "/" + tmp;
+	    }
+#endif
 	    socket_write( fd, sprintf("257 \"%s\" is the current directory.\n",
-		  socket_info[ fd ][ CWD ]) );
+		  tmp) );
 	    break;
 	case "xcup": // change to parent of current working directory (deprecated)
 	case "cdup": // change to parent of current working directory
@@ -1391,7 +1407,9 @@ static void parse_comm( int fd, string str ) {
 	    else
 		tmp = socket_info[ fd ][ CWD ];
 	    if ( check_valid_read( tmp, fd ) ) {
-		tmp = get_path( fd, tmp );
+/* This is redundant, and causes problems with the false root
+ *		tmp = get_path( fd, tmp );
+ */
 
 		if ( !directory_exists( tmp ) ) {
 		    socket_write( fd, sprintf("550 %s: Not a directory.\n", tmp) );
@@ -1808,16 +1826,21 @@ static string get_path( int fd, string str ) {
 	/* change to home dir */
 #ifdef ANONYMOUS_FTP
 	if (UNAME == "anonymous")
-	    str = FTP_DIR;
+	    return FTP_DIR;
 	else
 #endif
-	    str = HOME_DIR( UNAME );
+	    return HOME_DIR( UNAME );
     } else {
 	if ( str[ 0 ] == '~' ) {
 	    /* relative to user directories */
 	    if ( str[ 1 ] == '/' ) {
 		/* relative to user's home directory */
 		temp = extract( str, 1 );
+#ifdef ANONYMOUS_FTP
+		if( UNAME == "anonymous" )
+		  str = "/" + temp;
+		else
+#endif
 		str = HOME_DIR( UNAME ) + temp;
 	    } else {
 		/* relative to someone else's home directory */
@@ -1827,12 +1850,22 @@ static string get_path( int fd, string str ) {
 		    name = extract( str, 1 );
 		    str = HOME_DIR( name );
 		} else {
-		    /* "cheat" at this point and just assume they are a wizard. */
+		 /* "cheat" at this point and just assume they are a wizard. */
 		    str = sprintf("%s/%s", HOME_DIR( name ), str);
 		}
 	    }
 	} else if (str [0] != '/') {
 	    /* relative to current working directory */
+#ifdef ANONYMOUS_FTP
+            if(UNAME == "anonymous") {
+	      /* take out the false root from the dir expression */
+	      string tmp;
+	      if(sscanf(socket_info[ fd ][ CWD ], FTP_DIR+"%s", tmp) == 1)
+		str = sprintf("%s/%s/", tmp, str);
+	      else
+		str = sprintf("%s/%s/", socket_info[ fd ][ CWD ], str);
+	    } else 
+#endif
 	    str = sprintf("%s/%s/", socket_info[ fd ][ CWD ], str);
 	} /* else absolute path name */
     }
@@ -1983,8 +2016,6 @@ void remove() {
 	 
        error( "Cannot destruct while there are active ftp sessions.\n" );
 #endif
-
-    destruct( this_object() );
 }
 
 /* EOF */

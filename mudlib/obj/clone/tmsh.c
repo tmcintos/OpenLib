@@ -49,6 +49,9 @@
 #define FAIL_MSG "command failed"          // What we get when command fails
 #define NL "\n"                            // You tell me :)
 #define WRITE(x) tell_object(owner, x)     // used to send msg to the owner
+#define RESOLVE_PATH(x) path_resolve(x)    // Your resolve_path in player obj
+#undef SHADOWING                          // use shadow()
+#define CHANGE_HOOK_IN_PLAYER              // uses change_Hook in player obj
 
 // Leave this how it is...use the above define to omit debug
 #ifdef ALLOW_DEBUG
@@ -56,12 +59,17 @@
           tell_object(owner, "%^RED%^debug tmsh:%^END%^ "+ x +"%^YELLOW%^#%^END%^\n")
 #else
 #define DEBUG(x)
-#endif
+#endif  /* ALLOW_DEBUG */
+
+#ifdef SHADOWING
+#define WRITE(x) message("shell", x, owner)
+#endif  /* SHADOWING */
 
 inherit BASE;
 
 // Global Variables
 string outfile, infile, errfile, pipe;     // redirection files
+status append;                             // redirection stuff
 string leftover;                           // used with pipes only
 mapping table;                             // array of command files
 mapping alias;                             // alias database
@@ -124,6 +132,7 @@ void create() {
 		"which"     :  "do_which",
 		"rehash"    :  "hash_cmds",
 		"set"       :  "set_env",
+		"source"    :  "source_f",
 		"unset"     :  "set_env",
 		]);
 
@@ -133,39 +142,24 @@ void create() {
   alias = ([]);
 }
 
-void init() {
-  string tmp;
-
-  add_action("get_cmd", "");
-  owner = environment();
-  tmp = file_name();
-  sscanf(tmp, "%s#%*s", tmp);
-  vars += (["shell"  :  tmp+".c",
-            "version" : this_object()->version(),
-	   "path"   :  USER_PATH,
-	   "tmsh":  VERSION,
-	 ]);
-  this_object()->hash_cmds(0);
-  WRITE(this_object()->version() +"\n");
-  WRITE("Type ~help for a list of internal shell commands.\n");
-  this_object()->MAIN("~/.tmshrc");
-}
-
 //  This is the special function called when this object is used as
 //  a command to execute a script.
 
 int MAIN(string file) {
-  string text, *cmds, *lines;
+  string text, *cmds, *lines, tmp;
   int i, j;
-  object shell;
+  object shell, newshell;
 
   shell = previous_object();         // Keep track of the user's shell
-  if((file == "") || !file) {
-    shell->stdout("Usage: tmsh <script file>\n");
+  if(!file || file == "") {
+/*    shell->stdout("Usage: tmsh <script file>\n"); */
+    if(sscanf(file_name(), "%s#%*s", tmp) != 1) tmp = file_name();
+    newshell = new(tmp);
+    newshell->initialize();
     if(shell != this_object()) destruct(this_object());
     return 1;
   }
-  file = shell->query_owner()->path_resolve(file);
+  file = shell->query_owner()->RESOLVE_PATH(file);
 
   if(file_size(file) >= 0) {
     text = read_file(file);
@@ -200,6 +194,9 @@ int get() { return 1; }
 
 int drop() {
   WRITE("tmsh: Exiting.\n");
+#ifdef CHANGE_HOOK_IN_PLAYER
+  owner->change_Hook(0);
+#endif
   destruct(this_object());
 }
 
@@ -223,7 +220,7 @@ void toggle_debug() {
 //  Need a shell escape in here eventually?
 
 int do_cmd(string cmd, string args) {
-  string file, unparsed, tmp, rest;
+  string file, unparsed, tmp, rest, dumb;
   int i, j, ret;
   int ok;
 
@@ -232,7 +229,7 @@ int do_cmd(string cmd, string args) {
   int k;
 #endif
 
-  outfile = 0; infile = 0; errfile = 0; pipe = 0; leftover = 0;
+  outfile = 0; infile = 0; errfile = 0; pipe = 0; leftover = 0; append = 0;
   if(args && args != "") {
     cmd += " "+ args;
     cmd = replace_string(cmd, " ; ", ";");
@@ -264,6 +261,13 @@ int do_cmd(string cmd, string args) {
   if(args) {
     unparsed = args;
     args = "";  tmp = ""; rest = "";
+
+//  Check for an append, change to a regular redirect and note it..
+    if(sscanf(unparsed, "%*s>> %s", dumb) == 1) {
+      DEBUG("append detected.");
+      unparsed = replace_string(unparsed, ">>", ">");
+      append = 1;
+    }
 
     if((sscanf(unparsed, "%s | %s %s", tmp, pipe, leftover) == 3) ||
        (sscanf(unparsed, "%s | %s", tmp, pipe) == 2) ||
@@ -298,7 +302,7 @@ int do_cmd(string cmd, string args) {
 	      (sscanf(unparsed, "< %s %s", infile, rest) == 2) ||
               (sscanf(unparsed, "< %s", infile) == 1)) {
       DEBUG("input redirected");
-      infile = "/"+ owner->path_resolve(infile);
+      infile = owner->RESOLVE_PATH(infile);
       DEBUG("infile: "+infile);
       DEBUG("partial arguments: "+tmp);
       DEBUG("rest: "+rest);
@@ -306,7 +310,7 @@ int do_cmd(string cmd, string args) {
       
       if(file_size(infile) > 0) {
         if(unparsed && unparsed != "") unparsed += " ";
-        unparsed += read_file(infile);
+        unparsed += replace_string(read_file(infile), "\n", "");
       } else {
         WRITE("error: file "+ infile +" does not exist.\n");
 
@@ -347,7 +351,7 @@ int do_cmd(string cmd, string args) {
 //  Otherwise check the full file path
 
   DEBUG("Searching for command...");
-  file = "/"+owner->path_resolve(cmd);
+  file = "/"+owner->RESOLVE_PATH(cmd);
   DEBUG("File was: "+file);
 
   if(file_size(file) > 0) {
@@ -438,6 +442,46 @@ int get_cmd(string args) {
     verb = alias[verb];
 
   return do_cmd(verb, args);
+}
+
+// function: initialize
+//
+// Called when the shell is first cloned by the player
+
+void initialize() {
+  string tmp;
+  mixed blurb;
+
+  owner = this_player();
+#ifndef SHADOWING
+  move_object(owner);
+#endif
+#ifndef CHANGE_HOOK_IN_PLAYER
+  add_action("get_cmd", "");
+#else
+  owner->change_Hook((: get_cmd :));
+#endif
+  WRITE(this_object()->version() +"\n");
+  WRITE("Owner is: "+ (string)dump_variable(owner) +"\n");
+#ifdef SHADOWING
+  blurb = shadow(owner);
+  if(!blurb) {
+    WRITE("WARNING: unable to shadow your player object!\n");
+  } else {
+    WRITE("Player object shadowed.\n");
+    WRITE((string)dump_variable(blurb) + "\n");
+  }
+#endif
+  tmp = file_name();
+  sscanf(tmp, "%s#%*s", tmp);
+  vars += (["shell"  :  tmp+".c",
+            "version" : this_object()->version(),
+	   "path"   :  USER_PATH,
+	   "tmsh":  VERSION,
+	 ]);
+  this_object()->hash_cmds(0);
+  WRITE("Type 'help' for a list of internal shell commands.\n");
+  this_object()->MAIN("~/.tmshrc");
 }
 
 //  Function: hash_cmds
@@ -535,8 +579,8 @@ void stdout(string str) {
   if(!pipe && !outfile)
     WRITE(str);
   if(outfile) {
-    file = owner->path_resolve(outfile);
-//  Put a flag in here later to prevent/allow overwriting files on accident
+    file = owner->RESOLVE_PATH(outfile);
+    if(!append) rm(file);
     write_file(file, str);
   }
   if(pipe) {
@@ -562,7 +606,7 @@ void stderr(string str) {
   string file;
 
   if(errfile) {
-    file = owner->path_resolve(errfile);
+    file = owner->RESOLVE_PATH(errfile);
     write_file(file, str);
   } else {
     WRITE("error: "+ str);
@@ -603,6 +647,7 @@ void show_help(string str) {
     "debug      turn on/off debugging mode."+NL+
     "cmds       list the commands in the command table."+NL+
     "set/unset  set or remove shell variables."+NL+
+    "source     execute a script file"+NL+
     "exit       exit from tmsh."+NL
 	);
 }
@@ -661,6 +706,9 @@ int set_env(string args) {
     WRITE("ALLOW_DEBUG--Debugging code compiled in.\n");
 #else
     WRITE("Debugging code omitted.\n");
+#endif
+#ifdef SHADOWING
+    WRITE("SHADOWING--Allows shell to shadow player object.\n");
 #endif
     WRITE("Variable indicator = "+ VAR +"\n");
     WRITE("Comment indicator = "+ COMMENT +"\n");
@@ -734,8 +782,30 @@ void do_which(string cmd) {
   return;
 }
 
-void
-receive_message(string class, string msg)
+int
+source_f(string file)
 {
+  return MAIN(file);
+}
+
+#ifdef SHADOWING
+void
+receive_message(mixed class, string msg)
+{
+  WRITE("IN RECIEVE\n");
+  switch(class) {
+  case "shell" :
+    msg = "[shell] "+ msg;
+    break;
+  default :
+    msg = "["+class+"] "+ msg;
+  }
   owner->receive_message(class, msg);
 }
+
+void
+write_prompt()
+{
+  owner->receive_message("", "tmsh%");
+}
+#endif /* SHADOWING */

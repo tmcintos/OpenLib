@@ -1,7 +1,11 @@
 #obj/clone/user.c
 name "lol"
-title "the utter mudlib hacker"
-current_dir "/data/user"
+coins ({0,0,})
+hit_points 100
+spell_points 0
+sex 1
+title "is sick and grumpy"
+current_dir "/cmd/player"
 term 0
 Hook 0
-path "/cmd/player:/adm/cmd/wiz:/adm/cmd/adm:/cmd/wiz:/adm/cmd/player:/cmd/adm"
+path "/u/l/lol:/cmd/player:/cmd/wiz:/cmd/adm:/adm/cmd/player:/adm/cmd/wiz:/adm/cmd/adm"

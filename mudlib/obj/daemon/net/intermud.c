@@ -1,28 +1,36 @@
-/*    /daemon/intermud.c
+/*  -*- LPC -*-
+ *    /daemon/intermud.c
  *    from the Nightmare IV LPC Library
  *    daemon handling the InterMUD-3 Protocol
  *    created by Descartes of Borg 950506
+ *
+ *  10.23.95  Tim modified for this mudlib
  */
 
-#include <mudlib.h>
+#ifndef __PACKAGE_SOCKETS__
+#error You should not try and load /daemon/intermud.c with no sockets package.
+#else
 
+#include <mudlib.h>
 #include <save.h>
-#include <daemons.h>
-#include <net/network.h>
 #include <net/config.h>
 #include <net/daemons.h>
+#include <net/network.h>
 #include "intermud.h"
 
 inherit TCP_CLIENT;
 
+private int Password;
 private class list MudList, ChannelList;
 private mapping Banned;
 private mixed *Nameservers;
-private static int Connected;
+private static int Connected, Tries;
 
 static void create() {
     client::create();
     Connected = 0;
+    Password = 0;
+    Tries = 0;
     Banned = ([]);
     Nameservers = ({ ({ "*gjs", "199.199.122.10 9000" }) });
     MudList = new(class list);
@@ -37,26 +45,22 @@ static void create() {
     SetNoClean(1);
     SetDestructOnClose(1);
     SetSocketType(MUD);
-    call_out( (: Setup :), 1, Nameservers[0][0], 0 );
+    call_out( (: Setup :), 2);
 }
 
-static void Setup(string ns, int x) {
+static void Setup() {
     string ip;
     int port;
 
-    if( x >= sizeof(Nameservers) || x < 0 ) 
-      error("Failed to locate an active nameserver.\n");
-    if( Nameservers[x][0] != ns ) return;
-    if( x + 1 < sizeof(Nameservers) )
-      call_out( (: Setup :), 30, Nameservers[x+1][0], x+1);
-    else call_out((: eventConnectionFailure :), 30);
-    sscanf(Nameservers[x][1], "%s %d", ip, port);
+    if( !Nameservers || !sizeof(Nameservers) ) return;
+    sscanf(Nameservers[0][1], "%s %d", ip, port);
     if( eventCreateSocket(ip, port) < 0 ) return;
-    eventWrite( ({ "startup-req-1", 5, mud_name(), 0, ns, 0, "password",
-		  MudList->ID, ChannelList->ID, query_host_port(), PORT_OOB, 
-		  PORT_UDP, mudlib() + " " + mudlib_version(), 
-		  mudlib() + " " + mudlib_version(), version(), "LPMud",
-		  "alpha development", INTERMUD_SERVICES }) );
+    eventWrite( ({ "startup-req-2", 5, mud_name(), 0, Nameservers[0][0], 0,
+		   Password, MudList->ID, ChannelList->ID, query_host_port(),
+		   PORT_OOB, PORT_UDP, mudlib() + " " + mudlib_version(), 
+		   mudlib() + " " + mudlib_version(), version(), "LPMud",
+		   MUD_STATUS, ADMIN_EMAIL,
+		   (mapping)SERVICES_D->GetServices(), ([]) }) );
 }
 
 static void eventRead(mixed *packet) {
@@ -72,21 +76,24 @@ static void eventRead(mixed *packet) {
     }
     switch(packet[0]) {
 	case "startup-reply":
-	  if( sizeof(packet) < 7 ) return;  /* should send error */
+	  if( sizeof(packet) != 8 ) return;  /* should send error */
 	  if( !sizeof(packet[6]) ) return;
 	  if( packet[6][0][0] == Nameservers[0][0] ) {
 	      Nameservers = packet[6];
 	      Connected = Nameservers[0][0];
+	      Password = packet[7];
 	      eventRequestMudList();
 	      eventRequestChannelList();
+	      save_object(SAVE_INTERMUD);
 	  }
 	  else {
 	      Nameservers = packet[6];
-	      Setup(Nameservers[0][0], 0);
+	      Setup();
 	  }
 	  return;
         case "mudlist":
-//	  if( packet[6] == MudList->ID ) return; 
+	  if( sizeof(packet) != 8 ) return;
+	  if( packet[6] == MudList->ID ) return; 
 	  if( packet[2] != Nameservers[0][0] ) return;
 	  MudList->ID = packet[6];
 	  foreach(cle, val in packet[7]) {
@@ -94,7 +101,7 @@ static void eventRead(mixed *packet) {
 		map_delete(MudList->List, cle);
 	      else if( val ) MudList->List[cle] = val;
 	  }
-//	  MudList->List = packet[7];
+	  save_object(SAVE_INTERMUD);
 	  return;
 	case "channel-e":
 	  SERVICES_D->eventReceiveChannelEmote(packet);
@@ -120,8 +127,12 @@ static void eventRead(mixed *packet) {
 		map_delete(ChannelList->List, cle);
 	      else if( val ) ChannelList->List[cle] = val;
 	  } 
+	  save_object(SAVE_INTERMUD);
 	  SERVICES_D->eventRegisterChannels(packet[7]);
 	  return;
+        case "emoteto":
+	  SERVICES_D->eventReceiveEmote(packet);
+	  break;
 	case "finger-req":
 	  SERVICES_D->eventReceiveFingerRequest(packet);
 	  break;
@@ -173,8 +184,12 @@ static void eventRequestChannelList() {
 }
 
 static void eventSocketClose() {
+    int extra_wait;
+
+    extra_wait = (Tries++) * 20;
+    if( extra_wait > 600 ) extra_wait = 600;
     Connected = 0;
-    Setup(Nameservers[0][0], 0);
+    call_out( (: Setup :), 20 + extra_wait);
 }
 
 static void eventConnectionFailure() {
@@ -191,7 +206,10 @@ string GetMudName(string mud) {
     int x;
 
     if( MudList->List[mud] ) return mud;
-    lc = map(uc = keys(MudList->List), (: lower_case :));
+    lc = map(uc = keys(MudList->List), function(string str) {
+      if( !str ) return "";
+      else return lower_case(str);
+    });
     x = member_array(lower_case(mud), lc);
     if( x < 0 ) return 0;
     else return uc[x];
@@ -214,3 +232,5 @@ string *GetMatch(string mud) {
 }
 
 string GetNameserver() { return Nameservers[0][0]; }
+
+#endif /* __PACKAGE_SOCKETS__ */

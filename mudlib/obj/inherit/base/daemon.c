@@ -2,8 +2,9 @@
 // daemon.c
 // inherited by daemons (go figure) and commands
 // 
+#pragma save_binary
 
-int no_clean;       // 1 if we don't want cleaned up
+private int no_clean;       // 1 if we don't want cleaned up
 
 void
 create()
@@ -15,7 +16,7 @@ create()
 void
 remove()
 {
-  destruct(this_object());
+// code to be done on destruct() here
 }
 
 
@@ -24,11 +25,12 @@ remove()
 void
 Destruct()
 {
-  remove();
+  destruct(this_object());
 }
 
 // You can't shadow daemons
 
+nomask
 int
 query_prevent_shadow()
 {
@@ -42,6 +44,7 @@ clean_up(int inh)
   remove();
 }
 
+nomask
 void
 SetNoClean(int i)
 {

@@ -5,6 +5,12 @@
 #include <uid.h>
 #include "efuns/efuns.h"   // This file has all the efuns includes in it...
 
+void
+create()
+{
+  seteuid(getuid(this_object()));
+}
+
 varargs int
 getoid(object ob)
 {

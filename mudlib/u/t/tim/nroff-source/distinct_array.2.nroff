@@ -1,0 +1,15 @@
+.\"distinct_array() - remove duplicate elements in an array
+.TH distinct_array 2 "Oct 18 1995" Ultralib "Simulated Efuns"
+
+.SH NAME
+distinct_array() - remove duplicate elements in an array
+
+.SH SYNOPSIS
+mixed * distinct_array( mixed *arr );
+
+.SH DESCRIPTION
+distinct_array() returns an array which is the same as 'arr', but with all
+duplicate elements removed.
+
+.SH SEE ALSO
+filter_array(3), map_array(3)

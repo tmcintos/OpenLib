@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+                        C O M M A N D  I N F O
+Flag support and some other stuff is in for cmds, see /include/cmdline.h
+Command files are in /cmd/player:/cmd/wiz:/cmd/adm
+Secure commands are under /adm in the same directories.
+                        I N T E R M U D >> 3 <<
+mudlist, tell, chat work with this.  Intermud chat chans are 'intercre' and
+'intergossip'; local chan is 'mud'.  Only talk on 'intercre' if it is a coding
+question...we may get banned if we abuse this channel.
+                            A L I A S E S
+Real "cheap" aliases for n,s,e,w,i,l are stuck in user.c...they don't take args
+                          !! C O M B A T !!
+The combat daemon is up, runnning, and all fixed 
+Monsters now die.  Will have regs for making weapons and armour 
+asap for you guys.
+                  O B J E C T  W E I G T  &  M O N E Y
+Object weight & re-sale value is now supported.  Money supply is supported
+in living objects, money container cloneable in /obj/clone/money.c  See docs
+in /doc/project for details...
+===============================================================================
+To see this file again:  cat /adm/etc/motd
+motd last update: 10/20/95

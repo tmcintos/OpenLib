@@ -10,7 +10,7 @@ varargs int update_file(string file, boolean reload, boolean silent);
 int
 _main(string file, int argc, string *argv, string *flags)
 {
-  string *files, inhfile;
+  string *files;
   int i, reload, size, hush;
 
   if (!file)
@@ -30,9 +30,7 @@ _main(string file, int argc, string *argv, string *flags)
 
       foreach(ob in children(file)) {
 	write("destructing: "+ file_name(ob) +"\n");
-	ob->remove();
-	if(ob)
-	  destruct(ob);
+	destruct(ob);
       }
     }
     /*  Recursive Updating:  big R is deep inherit list  */
@@ -49,10 +47,10 @@ _main(string file, int argc, string *argv, string *flags)
       else
 	files = deep_inherit_list(find_object(file));
       
-      foreach(inhfile in files) {
+      for(i=sizeof(files)-1; i >= 0; i--) {
 	if(!hush)
-	  write("update: " + inhfile +": ");
-	update_file(inhfile, FALSE, hush);
+	  write("update: " + files[i] +": ");
+	update_file(files[i], TRUE, hush);
       }
     }
 

@@ -1,20 +1,19 @@
 // -*- LPC -*- //
 // Coded by the local idiot Kyricc //
 
-include <mudlib.h>
+#include <mudlib.h>
 inherit ROOM;
 
-object storeroom;
+object storeroom, weap;                    // The storage room for this shop
 
 void
 init()
 {
 
   ::init();
-  add_action("buy", "buy");
+
   add_action("list", "list");
-  add_action("sell", "sell");
-  add_action("value", "value");
+  add_action("buy", "buy");
 
 }
 
@@ -24,91 +23,66 @@ create()
 
   ::create();
 
-  storeroom = new(ROOM);
+  storeroom = new(ROOM);                         // _clone_ a new blank room
+  storeroom->clone("/obj/examples/weapon.c");
   storeroom->set_light(1);
-  storeroom->set_short("The Storeroom.\n");
-  storeroom->set_long("This is the shop storeroom where all of the items that\n"+
-		      "that are for sale are kept.\n");
-  storeroom->set_exits("shop" : this_object());
+  storeroom->set_short("The Storeroom");
+  storeroom->set_long("This is where the items in the shop's "
+		      "inventory are kept...players KEEP OUT!\n");
+  storeroom->set_exits((["shop" : this_object()]));
 
+// Now an object 'ob' can be moved into storeroom by doing ob->move(storeroom);
+// and be found in the storeroom by doing ob2 = present("whatever", storeroom);
+
+  weap = new("/u/k/kyricc/WEAPONS/kdofa.c");
+  weap->move(storeroom);
+  weap = new("/u/k/kyricc/ARMOURS/kcod.c");
+  weap->move(storeroom);
+  
   set_light(1);
   set_short("The Generic Shop.\n");
   set_long("This is the generic shop.\n"+
 	   "Here you can buy items, sell items, list the items for sale,\n"+
 	   "and check the value of an item.\n");
-  set_exits((["start" : "/d/base/start.c",
+  set_exits((["start"    : "/d/base/start.c",
+	      "backroom" : storeroom,                // Exit to the storeroom
 	      ]));
 
 }
 
-buy(item)
-{
-
-  if(!item)
-    return 0;
-  call_other("room/store", "but", item);
-  return 1;
-
-}
-
+int
 list()
-{
-}
-
-sell(item)
 {
 
   object ob;
+  string *money;
 
-  if(!item)
-    return 0;
-  if(item == "all") {
-    object next;
-    ob = first_inventory(this_player());
-    while(ob) {
-      next = next_inventory(ob);
-      if(!ob)->drop() && ob->query_value()) {
-	write(ob)->short() + ":\t");
-        do_sell(ob); }
-      ob = next;
-    }
-    write("Ok.\n");
-    return 1;
-    }
-    
-    ob = present(item, this_player());
-    if(!ob)
-     ob = present(item, this_object());
-    if(!ob) {
-        write("No such item ("); write(item); write(") here.\n");
-	return 1;
-      }
-
-    do_sell(ob);
-    return 1;
+  foreach(ob in all_inventory(storeroom))
+  {
+    money = ob->query_value();
+  if(ob->short()) write(ob->short() + "   :  " + (money[0] ? money[0]
+    + " silver" : "")+ (money[0] && money[1] ? "and, " : "") + (money[1]
+    ? money[1] + " gold.\n" : ".\n"));
+  }
+  return 1;
 
 }
 
-value(item)
+int
+buy(string item)
 {
+  object ob, buyer;
+  int *money;
+  buyer = this_player();
 
-  int value;
-  string name_of_item;
+  storeroom->query_inventory(item);
+    if(!item) notify_fail("That is not for sale!\n");
+  ob = present(item, storeroom);
 
-  if(!item)
-    return 0;
-
-  name_of_item = present(item);
-  if(!name_of_item)
-    name_of_item = find_item_in_player(item);
-  if(!name_of_item) {
-    if(call_other("room/store", "value", item))
-      return 1;
-    write("No such item ("); write(item); write(") here\n");
-    write("or in the store.\n");
-    return 1;
-  }
-  write("You would get "); write(value); write(" gold coins.\n");
+  money = ob->query_value();
+    if(!buyer->remove_money(money)) notify_fail("You don't have enough money!\n");
+      ob->move(this_player());
+      write("You buy " + ob->short() + ".\n");
+      tell_room(this_object(), buyer->short() + " buys " + ob->short() + ".\n", buyer);
   return 1;
-
 }

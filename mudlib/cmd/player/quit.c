@@ -12,6 +12,6 @@ main(string arg)
   write("Saving " + name +"....\n");
   me->save_player();
   write("Bye.\n");
-  me->remove();
+  destruct(me);
   return 1;
 }

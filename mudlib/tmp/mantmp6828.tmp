@@ -1,9 +1,0 @@
-add_action() (3)     - bind a command verb to a local function
-command() (3)        - execute a command as if given by the object
-commands() (3)       - returns some information about actions the user can take
-disable_commands() (3) - makes a living object non-living
-ed_cmd() (3)         - send a command to an ed session
-enable_commands() (3) - allow object to use 'player' commands
-parse_command() (3)  - try to match a string with a given pat tern
-query_verb() (3)     - return the name of the command currently being executed
-remove_action (3)    - unbind a command verb from a local func tion

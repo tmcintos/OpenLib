@@ -8,16 +8,23 @@
 // 10/11/95     Tim: Added various things, changed things around; Also
 //                   modified living.c and room.c to inherit this.
 // 10/14/95     Tim: Added weight & value functions & variables
+// 10/28/95     Tim: Added set_prevent_get(boolean) & set_prevent_drop(boolean)
+
+#pragma save_binary
+
+#include <object_types.h>
+#include <move.h>
 
 // set to 'private static' so that inheritor won't be able to directly
 // access this variable and so that save_object() won't save it to the .o file
-#include <object_types.h>
 
-private static string *ids;              /* what we respond to */
+private static string *ids = ({});       /* what we respond to */
 private static int light;                /* presence of light */
 private static int *value;               /* value of this object */
 private static int weight;               /* weight of this object */
 private static int object_class;         /* bitstring determines obj class */
+private static boolean prevent_get;      /* if 1 we can't get this obj */
+private static boolean prevent_drop;     /* if 1 we can't drop this obj */
 
 // These 2 must be viewable by children since there are no query_long/short
 // functions
@@ -25,8 +32,11 @@ static string short_desc;                /* short description */
 static string long_desc;                 /* long description */
 
 // Prototypes (someone fill in the rest sometime)
+int query_weight();
 int query_object_class();
 int set_object_class(int obj_class);
+void set_prevent_get(boolean pg);
+void set_prevent_drop(boolean pd);
 
 void
 create()
@@ -38,29 +48,59 @@ create()
   long_desc = "";
   short_desc = 0;
   light = 0;
+  weight = 0;
 }
 
+// this is called by the driver when an object is destructed
 void
 remove()
 {
-  // add code here to prevent unwanted destructions.
+  object ob;
+
+  foreach(ob in all_inventory(this_object())) {
+    if(ob->drop())
+      ob->move(environment(this_object()));
+  }
   // update attributes of the container and the containees.
-  destruct(this_object());
 }
 
 int
 move(mixed dest)
 {
+  object from = environment(this_object());
+
   // add code here to prevent disallowed moves (target is full, object
   // is immovable, etc.).  Also update attributes of source and target
-  // objects. Note: /inherit/master/valid.c:valid_override() is currently
+  // objects. Note in the master valid_override() is currently
   // set up to restrict calls to move_object() to this file only.
+  
 
-  if(dest->query_object_class() & OBJECT_CONTAINER) {
-    move_object(dest);
-    return 1;
-  } else {
+  if(!dest || !(dest->query_object_class() & OBJECT_CONTAINER))
+    return MOVE_NOT_ALLOWED;
+
+  if(dest->query_object_class() & OBJECT_LIVING &&
+    !dest->add_weight(query_weight()))
+    return MOVE_TOO_HEAVY;
+
+// when this is actually done we can put this in :>
+//  if(!dest->add_bulk(query_weight()))
+//    return MOVE_TOO_LARGE;
+	
+  move_object(dest);
+
+  return MOVE_OK;
+}
+
+// if this object is lost (no environment) and not inherited, then destruct
+
+int
+clean_up(int inh)
+{
+  if(!inh && !environment(this_object())) {
+    destruct(this_object());
     return 0;
+  } else {
+    return 1;
   }
 }
 
@@ -69,7 +109,16 @@ void
 set_ids(string *arg)
 {
   // probably want to add some security here.
+  if(!arg)
+    ids = ({});
   ids = arg;
+}
+
+nomask
+string *
+query_ids()
+{
+  return ids;
 }
 
 int
@@ -78,24 +127,31 @@ id(string arg)
   if (!arg) {
     return 0;
   }
-  if (!ids) return arg == "instance";        // Tim
   return (member_array(arg, ids) != -1);
 }
 
-// returns 1 if we can get this object
+void
+set_prevent_get(boolean pg)
+{
+  prevent_get = pg;
+}
 
 int
 get()
 {
-  return 1;
+  return !prevent_get;
 }
 
-// returns 1 if we can drop this_object
+void
+set_prevent_drop(boolean pd)
+{
+  prevent_drop = pd;
+}
 
 int
 drop()
 {
-  return 1;
+  return !prevent_drop;
 }
 
 nomask
@@ -175,7 +231,8 @@ nomask
 int *
 query_value()
 {
-  if(!value || value == ({}) ||
+  if(value == ({}) ||
+     sizeof(value) != 2 ||
      (!value[0] && !value[1]))
     return 0;
   else
@@ -189,7 +246,8 @@ set_value(int *money)
   value = money;        // We can do this cause it's LPC !!
 }
 
-nomask
+// can be redefined, but don't.  Mainly for living.c
+
 int
 query_weight()
 {
