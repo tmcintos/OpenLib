@@ -908,3 +908,217 @@ Tue Apr 23 22:15:21 1996:  manorgay.dial.mcnet.ch: ERROR: Not Found (Tue Apr 23 
 Tue Apr 23 22:15:30 1996:  manorgay.dial.mcnet.ch: CONNECTED (Tue Apr 23 22:15:30 1996)
 Tue Apr 23 22:15:30 1996:  manorgay.dial.mcnet.ch: GET /~kyricc HTTP/1.0 (Tue Apr 23 22:15:30 1996)
 Tue Apr 23 22:15:30 1996:  manorgay.dial.mcnet.ch: ERROR: Not Found (Tue Apr 23 22:15:30 1996)
+Thu Apr 25 16:32:30 1996:  129.186.85.38: CONNECTED (Thu Apr 25 16:32:27 1996)
+Thu Apr 25 16:32:30 1996:  129.186.85.38: GET /index.html HTTP/1.0 (Thu Apr 25 16:32:30 1996)
+Thu Apr 25 16:32:30 1996:  129.186.85.38: ERROR: Not Found (Thu Apr 25 16:32:30 1996)
+Thu Apr 25 16:32:30 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Apr 25 16:34:40 1996:  129.186.85.38: CONNECTED (Thu Apr 25 16:34:38 1996)
+Thu Apr 25 16:34:40 1996:  129.186.85.38: GET /~tim/ HTTP/1.0 (Thu Apr 25 16:34:40 1996)
+Thu Apr 25 16:34:40 1996:  129.186.85.38: ERROR: Not Found (Thu Apr 25 16:34:40 1996)
+Thu Apr 25 16:34:40 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Apr 25 16:34:44 1996:  129.186.85.38: CONNECTED (Thu Apr 25 16:34:44 1996)
+Thu Apr 25 16:34:44 1996:  129.186.85.38: GET /~tim HTTP/1.0 (Thu Apr 25 16:34:44 1996)
+Thu Apr 25 16:34:44 1996:  129.186.85.38: ERROR: Not Found (Thu Apr 25 16:34:44 1996)
+Thu Apr 25 16:34:44 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Apr 25 16:34:57 1996:  129.186.85.38: CONNECTED (Thu Apr 25 16:34:57 1996)
+Thu Apr 25 16:34:57 1996:  129.186.85.38: GET /www/index.html HTTP/1.0 (Thu Apr 25 16:34:57 1996)
+Thu Apr 25 16:34:57 1996:  129.186.85.38: ERROR: Not Found (Thu Apr 25 16:34:57 1996)
+Thu Apr 25 16:34:57 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Apr 25 16:36:27 1996:  129.186.85.38: CONNECTED (Thu Apr 25 16:36:27 1996)
+Thu Apr 25 16:36:27 1996:  129.186.85.38: GET /www/index.html HTTP/1.0 (Thu Apr 25 16:36:27 1996)
+Thu Apr 25 16:36:27 1996:  129.186.85.38: ERROR: Not Found (Thu Apr 25 16:36:27 1996)
+Thu Apr 25 16:36:27 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Apr 25 16:38:30 1996:  129.186.85.38: CONNECTED (Thu Apr 25 16:38:30 1996)
+Thu Apr 25 16:38:30 1996:  129.186.85.38: GET /www/index.html HTTP/1.0 (Thu Apr 25 16:38:30 1996)
+Thu Apr 25 16:38:30 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Apr 25 16:39:00 1996:  129.186.85.38: CONNECTED (Thu Apr 25 16:39:00 1996)
+Thu Apr 25 16:39:00 1996:  129.186.85.38: GET /index.html HTTP/1.0 (Thu Apr 25 16:39:00 1996)
+Thu Apr 25 16:39:00 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Apr 25 22:35:32 1996:  169.197.1.3: CONNECTED (Thu Apr 25 22:35:32 1996)
+Thu Apr 25 22:35:32 1996:  169.197.1.3: GET / HTTP/1.0 (Thu Apr 25 22:35:32 1996)
+Thu Apr 25 22:35:32 1996:  Ip 169.197.1.3 resloved to azstarnet.com after connection closed.
+Thu Apr 25 22:36:02 1996:  169.197.1.3: CONNECTED (Thu Apr 25 22:36:02 1996)
+Thu Apr 25 22:36:02 1996:  169.197.1.3: GET /~hamnsnock/ HTTP/1.0 (Thu Apr 25 22:36:02 1996)
+Thu Apr 25 22:36:02 1996:  169.197.1.3: ERROR: Not Found (Thu Apr 25 22:36:02 1996)
+Thu Apr 25 22:36:02 1996:  Ip 169.197.1.3 resloved to azstarnet.com after connection closed.
+Thu Apr 25 22:36:10 1996:  169.197.1.3: CONNECTED (Thu Apr 25 22:36:10 1996)
+Thu Apr 25 22:36:10 1996:  169.197.1.3: GET /~kyricc/ HTTP/1.0 (Thu Apr 25 22:36:10 1996)
+Thu Apr 25 22:36:10 1996:  169.197.1.3: ERROR: Not Found (Thu Apr 25 22:36:10 1996)
+Thu Apr 25 22:36:10 1996:  Ip 169.197.1.3 resloved to azstarnet.com after connection closed.
+Thu Apr 25 22:36:14 1996:  169.197.1.3: CONNECTED (Thu Apr 25 22:36:14 1996)
+Thu Apr 25 22:36:14 1996:  169.197.1.3: GET /~tim/ HTTP/1.0 (Thu Apr 25 22:36:14 1996)
+Thu Apr 25 22:36:14 1996:  169.197.1.3: ERROR: Not Found (Thu Apr 25 22:36:14 1996)
+Thu Apr 25 22:36:14 1996:  Ip 169.197.1.3 resloved to azstarnet.com after connection closed.
+Thu Apr 25 22:44:15 1996:  169.197.1.3: CONNECTED (Thu Apr 25 22:44:15 1996)
+Thu Apr 25 22:44:15 1996:  169.197.1.3: GET / HTTP/1.0 (Thu Apr 25 22:44:15 1996)
+Thu Apr 25 22:44:15 1996:  Ip 169.197.1.3 resloved to azstarnet.com after connection closed.
+Fri Apr 26 00:28:18 1996:  128.196.51.105: CONNECTED (Fri Apr 26 00:28:18 1996)
+Fri Apr 26 00:28:18 1996:  128.196.51.105: GET / HTTP/1.0 (Fri Apr 26 00:28:18 1996)
+Fri Apr 26 00:28:18 1996:  Ip 128.196.51.105 resloved to mn-pub05.library.Arizona.EDU after connection closed.
+Fri Apr 26 00:34:04 1996:  128.196.51.105: CONNECTED (Fri Apr 26 00:34:04 1996)
+Fri Apr 26 00:34:04 1996:  128.196.51.105: GET / HTTP/1.0 (Fri Apr 26 00:34:04 1996)
+Fri Apr 26 00:34:04 1996:  Ip 128.196.51.105 resloved to mn-pub05.library.Arizona.EDU after connection closed.
+Fri Apr 26 01:40:26 1996:  128.196.51.105: CONNECTED (Fri Apr 26 01:40:26 1996)
+Fri Apr 26 01:40:26 1996:  128.196.51.105: GET / HTTP/1.0 (Fri Apr 26 01:40:26 1996)
+Fri Apr 26 01:40:26 1996:  Ip 128.196.51.105 resloved to mn-pub05.library.Arizona.EDU after connection closed.
+Fri Apr 26 01:40:44 1996:  128.196.51.105: CONNECTED (Fri Apr 26 01:40:44 1996)
+Fri Apr 26 01:40:44 1996:  128.196.51.105: GET /gateways/finger HTTP/1.0 (Fri Apr 26 01:40:44 1996)
+Fri Apr 26 01:40:44 1996:  Ip 128.196.51.105 resloved to mn-pub05.library.Arizona.EDU after connection closed.
+Fri Apr 26 01:59:48 1996:  mn-pub05.library.Arizona.EDU: CONNECTED (Fri Apr 26 01:59:48 1996)
+Fri Apr 26 01:59:48 1996:  mn-pub05.library.Arizona.EDU: GET / HTTP/1.0 (Fri Apr 26 01:59:48 1996)
+Fri Apr 26 01:59:54 1996:  128.196.51.105: CONNECTED (Fri Apr 26 01:59:54 1996)
+Fri Apr 26 01:59:54 1996:  128.196.51.105: GET /~hamnsnock/ HTTP/1.0 (Fri Apr 26 01:59:54 1996)
+Fri Apr 26 01:59:54 1996:  128.196.51.105: ERROR: Not Found (Fri Apr 26 01:59:54 1996)
+Fri Apr 26 01:59:54 1996:  Ip 128.196.51.105 resloved to mn-pub05.library.Arizona.EDU after connection closed.
+Fri Apr 26 02:15:21 1996:  129.186.85.38: CONNECTED (Fri Apr 26 02:15:21 1996)
+Fri Apr 26 02:15:21 1996:  129.186.85.38: GET / HTTP/1.0 (Fri Apr 26 02:15:21 1996)
+Fri Apr 26 02:15:21 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Fri Apr 26 02:15:27 1996:  knapp38.res.iastate.edu: CONNECTED (Fri Apr 26 02:15:27 1996)
+Fri Apr 26 02:15:27 1996:  knapp38.res.iastate.edu: GET /~tim/ HTTP/1.0 (Fri Apr 26 02:15:27 1996)
+Fri Apr 26 02:15:27 1996:  knapp38.res.iastate.edu: ERROR: Not Found (Fri Apr 26 02:15:27 1996)
+Fri Apr 26 02:16:56 1996:  129.186.85.38: CONNECTED (Fri Apr 26 02:16:56 1996)
+Fri Apr 26 02:16:56 1996:  129.186.85.38: GET /~tim/ HTTP/1.0 (Fri Apr 26 02:16:56 1996)
+Fri Apr 26 02:16:56 1996:  129.186.85.38: ERROR: Not Found (Fri Apr 26 02:16:56 1996)
+Fri Apr 26 02:16:56 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Fri Apr 26 02:17:00 1996:  129.186.85.38: CONNECTED (Fri Apr 26 02:17:00 1996)
+Fri Apr 26 02:17:00 1996:  129.186.85.38: GET / HTTP/1.0 (Fri Apr 26 02:17:00 1996)
+Fri Apr 26 02:17:00 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Fri Apr 26 02:17:04 1996:  129.186.85.38: CONNECTED (Fri Apr 26 02:17:04 1996)
+Fri Apr 26 02:17:04 1996:  129.186.85.38: GET /~tim/ HTTP/1.0 (Fri Apr 26 02:17:04 1996)
+Fri Apr 26 02:17:04 1996:  129.186.85.38: ERROR: Not Found (Fri Apr 26 02:17:04 1996)
+Fri Apr 26 02:17:04 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Fri Apr 26 02:17:59 1996:  129.186.85.38: CONNECTED (Fri Apr 26 02:17:59 1996)
+Fri Apr 26 02:17:59 1996:  129.186.85.38: GET /~tim/ HTTP/1.0 (Fri Apr 26 02:17:59 1996)
+Fri Apr 26 02:17:59 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Fri Apr 26 02:18:03 1996:  129.186.85.38: CONNECTED (Fri Apr 26 02:18:03 1996)
+Fri Apr 26 02:18:03 1996:  129.186.85.38: GET /~hamnsnock/ HTTP/1.0 (Fri Apr 26 02:18:03 1996)
+Fri Apr 26 02:18:03 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Fri Apr 26 02:18:09 1996:  129.186.85.38: CONNECTED (Fri Apr 26 02:18:09 1996)
+Fri Apr 26 02:18:09 1996:  129.186.85.38: GET /~evergreen/ HTTP/1.0 (Fri Apr 26 02:18:09 1996)
+Fri Apr 26 02:18:09 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Fri Apr 26 02:18:11 1996:  129.186.85.38: CONNECTED (Fri Apr 26 02:18:11 1996)
+Fri Apr 26 02:18:11 1996:  129.186.85.38: GET /~kyricc/ HTTP/1.0 (Fri Apr 26 02:18:11 1996)
+Fri Apr 26 02:18:11 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Fri Apr 26 02:19:52 1996:  129.186.85.38: CONNECTED (Fri Apr 26 02:19:52 1996)
+Fri Apr 26 02:19:52 1996:  129.186.85.38: GET / HTTP/1.0 (Fri Apr 26 02:19:52 1996)
+Fri Apr 26 02:19:52 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Fri Apr 26 02:19:56 1996:  129.186.85.38: CONNECTED (Fri Apr 26 02:19:56 1996)
+Fri Apr 26 02:19:56 1996:  129.186.85.38: GET /~tim/ HTTP/1.0 (Fri Apr 26 02:19:56 1996)
+Fri Apr 26 02:19:56 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Fri Apr 26 02:20:02 1996:  129.186.85.38: CONNECTED (Fri Apr 26 02:20:02 1996)
+Fri Apr 26 02:20:02 1996:  129.186.85.38: GET /gateways/finger?tim HTTP/1.0 (Fri Apr 26 02:20:02 1996)
+Fri Apr 26 02:20:02 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Fri Apr 26 02:20:22 1996:  129.186.85.38: CONNECTED (Fri Apr 26 02:20:22 1996)
+Fri Apr 26 02:20:22 1996:  129.186.85.38: GET /gateways/finger HTTP/1.0 (Fri Apr 26 02:20:22 1996)
+Fri Apr 26 02:20:22 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Fri Apr 26 03:07:53 1996:  169.197.1.3: CONNECTED (Fri Apr 26 03:07:53 1996)
+Fri Apr 26 03:07:53 1996:  169.197.1.3: GET / HTTP/1.0 (Fri Apr 26 03:07:53 1996)
+Fri Apr 26 03:07:53 1996:  Ip 169.197.1.3 resloved to azstarnet.com after connection closed.
+Fri Apr 26 03:08:01 1996:  169.197.1.3: CONNECTED (Fri Apr 26 03:08:01 1996)
+Fri Apr 26 03:08:01 1996:  169.197.1.3: GET /~hamnsnock/ HTTP/1.0 (Fri Apr 26 03:08:01 1996)
+Fri Apr 26 03:08:01 1996:  Ip 169.197.1.3 resloved to azstarnet.com after connection closed.
+Fri Apr 26 09:58:55 1996:  azstarnet.com: CONNECTED (Fri Apr 26 09:58:55 1996)
+Fri Apr 26 09:58:55 1996:  azstarnet.com: GET / HTTP/1.0 (Fri Apr 26 09:58:55 1996)
+Fri Apr 26 09:59:09 1996:  169.197.1.3: CONNECTED (Fri Apr 26 09:59:09 1996)
+Fri Apr 26 09:59:09 1996:  169.197.1.3: GET /~hamnsnock/ HTTP/1.0 (Fri Apr 26 09:59:09 1996)
+Fri Apr 26 09:59:09 1996:  Ip 169.197.1.3 resloved to azstarnet.com after connection closed.
+Fri Apr 26 10:00:34 1996:  169.197.1.3: CONNECTED (Fri Apr 26 10:00:34 1996)
+Fri Apr 26 10:00:34 1996:  169.197.1.3: GET / HTTP/1.0 (Fri Apr 26 10:00:34 1996)
+Fri Apr 26 10:00:34 1996:  Ip 169.197.1.3 resloved to azstarnet.com after connection closed.
+Fri Apr 26 10:00:40 1996:  169.197.1.3: CONNECTED (Fri Apr 26 10:00:40 1996)
+Fri Apr 26 10:00:40 1996:  169.197.1.3: GET /~hamnsnock/ HTTP/1.0 (Fri Apr 26 10:00:40 1996)
+Fri Apr 26 10:00:40 1996:  Ip 169.197.1.3 resloved to azstarnet.com after connection closed.
+Fri Apr 26 10:05:37 1996:  169.197.1.3: CONNECTED (Fri Apr 26 10:05:37 1996)
+Fri Apr 26 10:05:37 1996:  169.197.1.3: GET / HTTP/1.0 (Fri Apr 26 10:05:37 1996)
+Fri Apr 26 10:05:37 1996:  Ip 169.197.1.3 resloved to azstarnet.com after connection closed.
+Fri Apr 26 10:05:45 1996:  169.197.1.3: CONNECTED (Fri Apr 26 10:05:45 1996)
+Fri Apr 26 10:05:45 1996:  169.197.1.3: GET /~hamnsnock/ HTTP/1.0 (Fri Apr 26 10:05:45 1996)
+Fri Apr 26 10:05:45 1996:  Ip 169.197.1.3 resloved to azstarnet.com after connection closed.
+Fri Apr 26 10:06:17 1996:  169.197.1.3: CONNECTED (Fri Apr 26 10:06:17 1996)
+Fri Apr 26 10:06:17 1996:  169.197.1.3: GET /~hamnsnock/ HTTP/1.0 (Fri Apr 26 10:06:17 1996)
+Fri Apr 26 10:06:17 1996:  Ip 169.197.1.3 resloved to azstarnet.com after connection closed.
+Fri Apr 26 10:08:06 1996:  169.197.1.3: CONNECTED (Fri Apr 26 10:08:06 1996)
+Fri Apr 26 10:08:06 1996:  169.197.1.3: GET /~hamnsnock/ HTTP/1.0 (Fri Apr 26 10:08:06 1996)
+Fri Apr 26 10:08:06 1996:  Ip 169.197.1.3 resloved to azstarnet.com after connection closed.
+Fri Apr 26 10:08:16 1996:  169.197.1.3: CONNECTED (Fri Apr 26 10:08:16 1996)
+Fri Apr 26 10:08:16 1996:  169.197.1.3: GET /~kyricc/ HTTP/1.0 (Fri Apr 26 10:08:16 1996)
+Fri Apr 26 10:08:16 1996:  Ip 169.197.1.3 resloved to azstarnet.com after connection closed.
+Fri Apr 26 10:08:24 1996:  169.197.1.3: CONNECTED (Fri Apr 26 10:08:24 1996)
+Fri Apr 26 10:08:24 1996:  169.197.1.3: GET /~kyricc/corpse.html HTTP/1.0 (Fri Apr 26 10:08:24 1996)
+Fri Apr 26 10:08:24 1996:  Ip 169.197.1.3 resloved to azstarnet.com after connection closed.
+Fri Apr 26 10:08:34 1996:  azstarnet.com: CONNECTED (Fri Apr 26 10:08:34 1996)
+Fri Apr 26 10:08:34 1996:  azstarnet.com: GET /~tim/TODO HTTP/1.0 (Fri Apr 26 10:08:34 1996)
+Fri Apr 26 10:08:46 1996:  169.197.1.3: CONNECTED (Fri Apr 26 10:08:46 1996)
+Fri Apr 26 10:08:46 1996:  169.197.1.3: GET /~tim/TODO HTTP/1.0 (Fri Apr 26 10:08:46 1996)
+Fri Apr 26 10:08:46 1996:  Ip 169.197.1.3 resloved to azstarnet.com after connection closed.
+Fri Apr 26 10:09:55 1996:  169.197.1.3: CONNECTED (Fri Apr 26 10:09:55 1996)
+Fri Apr 26 10:09:55 1996:  169.197.1.3: GET / HTTP/1.0 (Fri Apr 26 10:09:55 1996)
+Fri Apr 26 10:09:55 1996:  Ip 169.197.1.3 resloved to azstarnet.com after connection closed.
+Fri Apr 26 10:10:07 1996:  169.197.1.3: CONNECTED (Fri Apr 26 10:10:07 1996)
+Fri Apr 26 10:10:07 1996:  169.197.1.3: GET /gateways/finger HTTP/1.0 (Fri Apr 26 10:10:07 1996)
+Fri Apr 26 10:10:07 1996:  Ip 169.197.1.3 resloved to azstarnet.com after connection closed.
+Fri Apr 26 10:10:21 1996:  azstarnet.com: CONNECTED (Fri Apr 26 10:10:21 1996)
+Fri Apr 26 10:10:21 1996:  azstarnet.com: GET /~casper/ HTTP/1.0 (Fri Apr 26 10:10:21 1996)
+Fri Apr 26 10:10:21 1996:  azstarnet.com: ERROR: Not Found (Fri Apr 26 10:10:21 1996)
+Fri Apr 26 10:10:25 1996:  169.197.1.3: CONNECTED (Fri Apr 26 10:10:25 1996)
+Fri Apr 26 10:10:25 1996:  169.197.1.3: GET /~damian/ HTTP/1.0 (Fri Apr 26 10:10:25 1996)
+Fri Apr 26 10:10:25 1996:  169.197.1.3: ERROR: Not Found (Fri Apr 26 10:10:25 1996)
+Fri Apr 26 10:10:25 1996:  Ip 169.197.1.3 resloved to azstarnet.com after connection closed.
+Fri Apr 26 10:10:29 1996:  169.197.1.3: CONNECTED (Fri Apr 26 10:10:29 1996)
+Fri Apr 26 10:10:29 1996:  169.197.1.3: GET /~evergreen/ HTTP/1.0 (Fri Apr 26 10:10:29 1996)
+Fri Apr 26 10:10:29 1996:  Ip 169.197.1.3 resloved to azstarnet.com after connection closed.
+Fri Apr 26 10:10:33 1996:  169.197.1.3: CONNECTED (Fri Apr 26 10:10:33 1996)
+Fri Apr 26 10:10:33 1996:  169.197.1.3: GET /~exe/ HTTP/1.0 (Fri Apr 26 10:10:33 1996)
+Fri Apr 26 10:10:33 1996:  169.197.1.3: ERROR: Not Found (Fri Apr 26 10:10:33 1996)
+Fri Apr 26 10:10:33 1996:  Ip 169.197.1.3 resloved to azstarnet.com after connection closed.
+Fri Apr 26 10:10:37 1996:  169.197.1.3: CONNECTED (Fri Apr 26 10:10:37 1996)
+Fri Apr 26 10:10:37 1996:  169.197.1.3: GET /~hamnsnock/ HTTP/1.0 (Fri Apr 26 10:10:37 1996)
+Fri Apr 26 10:10:37 1996:  Ip 169.197.1.3 resloved to azstarnet.com after connection closed.
+Fri Apr 26 10:11:03 1996:  169.197.1.3: CONNECTED (Fri Apr 26 10:11:03 1996)
+Fri Apr 26 10:11:03 1996:  169.197.1.3: GET /~misery HTTP/1.0 (Fri Apr 26 10:11:03 1996)
+Fri Apr 26 10:11:03 1996:  169.197.1.3: ERROR: Not Found (Fri Apr 26 10:11:03 1996)
+Fri Apr 26 10:11:03 1996:  Ip 169.197.1.3 resloved to azstarnet.com after connection closed.
+Fri Apr 26 10:11:05 1996:  169.197.1.3: CONNECTED (Fri Apr 26 10:11:05 1996)
+Fri Apr 26 10:11:05 1996:  169.197.1.3: GET /~quint/ HTTP/1.0 (Fri Apr 26 10:11:05 1996)
+Fri Apr 26 10:11:05 1996:  169.197.1.3: ERROR: Not Found (Fri Apr 26 10:11:05 1996)
+Fri Apr 26 10:11:05 1996:  Ip 169.197.1.3 resloved to azstarnet.com after connection closed.
+Fri Apr 26 10:11:09 1996:  169.197.1.3: CONNECTED (Fri Apr 26 10:11:09 1996)
+Fri Apr 26 10:11:09 1996:  169.197.1.3: GET /~talen/ HTTP/1.0 (Fri Apr 26 10:11:09 1996)
+Fri Apr 26 10:11:09 1996:  169.197.1.3: ERROR: Not Found (Fri Apr 26 10:11:09 1996)
+Fri Apr 26 10:11:09 1996:  Ip 169.197.1.3 resloved to azstarnet.com after connection closed.
+Fri Apr 26 10:11:13 1996:  169.197.1.3: CONNECTED (Fri Apr 26 10:11:13 1996)
+Fri Apr 26 10:11:13 1996:  169.197.1.3: GET /~tim/ HTTP/1.0 (Fri Apr 26 10:11:13 1996)
+Fri Apr 26 10:11:13 1996:  Ip 169.197.1.3 resloved to azstarnet.com after connection closed.
+Fri Apr 26 12:13:30 1996:  159.233.91.12: CONNECTED (Fri Apr 26 12:13:26 1996)
+Fri Apr 26 12:13:30 1996:  159.233.91.12: GET / HTTP/1.0 (Fri Apr 26 12:13:30 1996)
+Fri Apr 26 12:13:30 1996:  Ip 159.233.91.12 resloved to jharris.iscg.Pima.GOV after connection closed.
+Mon Apr 29 13:26:00 1996:  150.135.46.46: CONNECTED (Mon Apr 29 13:25:54 1996)
+Mon Apr 29 13:26:00 1996:  150.135.46.46: GET / HTTP/1.0 (Mon Apr 29 13:26:00 1996)
+Mon Apr 29 13:26:00 1996:  Ip 150.135.46.46 resloved to napi2.ResComp.Arizona.EDU after connection closed.
+Thu May  2 03:56:41 1996:  129.186.85.38: CONNECTED (Thu May  2 03:56:41 1996)
+Thu May  2 03:56:41 1996:  129.186.85.38: GET / HTTP/1.0 (Thu May  2 03:56:41 1996)
+Thu May  2 03:56:41 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu May  2 03:58:07 1996:  129.186.85.38: CONNECTED (Thu May  2 03:58:07 1996)
+Thu May  2 03:58:07 1996:  129.186.85.38: GET /~tim/ HTTP/1.0 (Thu May  2 03:58:07 1996)
+Thu May  2 03:58:07 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu May  2 04:02:24 1996:  129.186.85.38: CONNECTED (Thu May  2 04:02:24 1996)
+Thu May  2 04:02:24 1996:  129.186.85.38: GET /~kyricc/ HTTP/1.0 (Thu May  2 04:02:24 1996)
+Thu May  2 04:02:24 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu May  2 04:02:44 1996:  129.186.85.38: CONNECTED (Thu May  2 04:02:44 1996)
+Thu May  2 04:02:44 1996:  129.186.85.38: GET /~kyricc/corpse.html HTTP/1.0 (Thu May  2 04:02:44 1996)
+Thu May  2 04:02:44 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu May  2 04:03:29 1996:  129.186.85.38: CONNECTED (Thu May  2 04:03:29 1996)
+Thu May  2 04:03:29 1996:  129.186.85.38: GET /~kyricc/put.html HTTP/1.0 (Thu May  2 04:03:29 1996)
+Thu May  2 04:03:29 1996:  129.186.85.38: ERROR: Not Found (Thu May  2 04:03:29 1996)
+Thu May  2 04:03:29 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu May  2 18:33:11 1996:  128.200.145.52: CONNECTED (Thu May  2 18:33:09 1996)
+Thu May  2 18:33:11 1996:  128.200.145.52: GET / HTTP/1.0 (Thu May  2 18:33:11 1996)
+Thu May  2 18:33:11 1996:  Ip 0 resloved to NOT RESOLVED after connection closed.
+Fri May  3 13:04:21 1996:  pipe6.t1.usa.pipeline.com: CONNECTED (Fri May  3 13:04:21 1996)
+Fri May  3 13:04:21 1996:  pipe6.t1.usa.pipeline.com: GET / HTTP/1.0 (Fri May  3 13:04:21 1996)
+Fri May  3 14:30:54 1996:  169.197.8.38: CONNECTED (Fri May  3 14:30:52 1996)
+Fri May  3 14:30:54 1996:  169.197.8.38: GET / HTTP/1.0 (Fri May  3 14:30:54 1996)
+Fri May  3 14:30:58 1996:  Ip 169.197.8.38 resloved to usr7ip38.azstarnet.com after connection closed.
+Fri May  3 21:29:03 1996:  128.196.159.87: CONNECTED (Fri May  3 21:29:01 1996)
+Fri May  3 21:29:03 1996:  128.196.159.87: GET / HTTP/1.0 (Fri May  3 21:29:03 1996)
+Fri May  3 21:29:03 1996:  Ip 128.196.159.87 resloved to aorta.Medicine.Arizona.EDU after connection closed.

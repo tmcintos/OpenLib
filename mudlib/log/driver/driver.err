@@ -1,6 +1,6 @@
 using config file: /home/mud/etc/config.dm
 ----------------------------------------------------------------------------
-Dysfunctional Mud (MudOS v22a26) starting up on FreeBSD - Wed Apr 24 02:18:18 1996
+Dysfunctional Mud (MudOS v22a26) starting up on FreeBSD - Mon May  6 15:54:20 1996
 
 
 Connected to address server on localhost port 7374
@@ -36,6 +36,8 @@ Error *Error in loading object '/obj/daemon/net/ftp_d'
 ]Preloading : /obj/daemon/emote_d...](0.0)
 ]Preloading : /obj/daemon/finger_d...](0.0)
 ]Preloading : /obj/daemon/termcap_d...](0.0)
+]Preloading : /obj/inherit/room...](0.0)
+]Preloading : /obj/inherit/living...](0.0)
 Initializations complete.
 
 Accepting connections on port 4444.

@@ -26,6 +26,5 @@
 
 #define SIMUL_EFUN   SECURE_DIR "/simul_efun"
 
-#define CLEAN_UP     INHERIT_DIR "/clean_up"
 
 #endif /* _MUDLIB_H */

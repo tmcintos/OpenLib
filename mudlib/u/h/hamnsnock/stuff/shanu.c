@@ -4,11 +4,6 @@ inherit MONSTER "/human";
 object ob;
 object sign;
 
-reset(arg)
-{
-  if(arg)
-    return;
-}
 
 init(){
     add_action("do_conjure" , "conjure");

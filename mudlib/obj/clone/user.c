@@ -31,7 +31,7 @@ private string* channels;           // list of subscribed channels
 /*
  * Applies
  */
-void   low_setup();
+void   initialize();
 nomask void remove();
 void   write_prompt();
 void   write_ed_prompt(int mode);
@@ -101,9 +101,9 @@ private int cmd_hook(string args);
  */
 
 void
-low_setup()
+initialize()
 {
-  ::low_setup();
+  ::initialize();
   channels = ({});
   aliases = ([]);
   env_vars = ([]);

@@ -114,11 +114,13 @@ preload(string file)
 // 'file', giving the error message 'message'.
 
 int
-error_handler(mapping error)
+error_handler(mapping error, int caught)
 {
   string name, home;
   string line;
   mapping *trace = error["trace"];
+
+  if( caught ) return;
 
   line = sprintf("\n[ERROR] %s"
 		 "  obj : (%O)\n"

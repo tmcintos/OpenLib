@@ -2,6 +2,9 @@
 // object.c:  a representation of a normal object
 // Tim 23 Apr 96
 
+#pragma save_binary
+#pragma no_warnings
+
 #include <mudlib.h>
 #include <modules.h>
 #include <object_types.h>

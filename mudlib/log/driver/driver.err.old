@@ -1,6 +1,6 @@
 using config file: /home/mud/etc/config.dm
 ----------------------------------------------------------------------------
-Dysfunctional Mud (MudOS v22a26) starting up on FreeBSD - Tue Apr 23 15:38:24 1996
+Dysfunctional Mud (MudOS v22a26) starting up on FreeBSD - Thu May  2 03:56:19 1996
 
 
 Connected to address server on localhost port 7374
@@ -36,7 +36,60 @@ Error *Error in loading object '/obj/daemon/net/ftp_d'
 ]Preloading : /obj/daemon/emote_d...](0.0)
 ]Preloading : /obj/daemon/finger_d...](0.0)
 ]Preloading : /obj/daemon/termcap_d...](0.0)
+]Preloading : /obj/inherit/room...](0.0)
+]Preloading : /obj/inherit/living...](0.0)
 Initializations complete.
 
 Accepting connections on port 4444.
-closed external ports
+]Hamnsnock is link-dead.
+get_user_data: read on fd 10
+System Error: get_user_data: read:Connection reset by peer
+]Hamnsnock is link-dead.
+]Tim is link-dead.
+object /u/t/tim/zip: eval_cost too big 200000
+object /u/t/tim/zip: eval_cost too big 200000
+Error in error handler: *stack overflow
+program: /adm/obj/daemon/master.c, object: /adm/obj/daemon/master, file: /adm/obj/daemon/master.c:130
+'eventReadCallback' in 'adm/obj/inherit/client.c' ('obj/daemon/net/intermud') /adm/obj/inherit/client.c:61
+arguments were (3,({ /* sizeof() == 9 */
+  "channel-m",
+  5,
+  "Shadowrun-MUD",
+  "wraith",
+  0,
+  0,
+  "imud_gossip",
+  "Wraith",
+  "regardless of what your mud calls it =)"
+}))
+'      eventRead' in 'obj/daemon/net/intermud.c' ('obj/daemon/net/intermud') /obj/daemon/net/intermud.c:113
+arguments were (({ /* sizeof() == 9 */
+  "channel-m",
+  5,
+  "Shadowrun-MUD",
+  "wraith",
+  0,
+  0,
+  "imud_gossip",
+  "Wraith",
+  "regardless of what your mud calls it =)"
+}))
+locals were: 0,0,0,0,0,0
+'eventReceiveChannelMessage' in 'obj/daemon/net/services.c' ('obj/daemon/net/services') /obj/daemon/net/services/channel.c:72
+arguments were (2483840)
+'broadcast_local' in ' obj/daemon/chat_d.c' ('   obj/daemon/chat_d') /obj/daemon/chat_d.c:232
+arguments were ("igossip","Wraith@Shadowrun-MUD","regardless of what your mud calls it =)",0,0,0)
+locals were: 0,"Wraith@Shadowrun-MUD %^L_BLUE%^[igossip]%^RESET%^: regardless of what your mud calls it =)
+",0
+'    tell_object' in '    adm/simul_efun.c' ('      adm/simul_efun') /adm/efuns/tell_object.c:3
+arguments were (0,2483076)
+'  error_handler' in 'adm/obj/daemon/master.c' ('adm/obj/daemon/master') /adm/obj/daemon/master.c:130
+arguments were (Error '*stack overflow
+' while trying to print error trace -- trace suppressed.
+Connection from 129.186.85.38 aborted.
+Connection from 129.186.85.38 aborted.
+Connection from 129.186.85.38 aborted.
+Connection from 129.186.85.38 aborted.
+******** FATAL ERROR: Process terminated
+MudOS driver attempting to exit gracefully.
+crash() in master called successfully.  Aborting.

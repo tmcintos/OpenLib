@@ -4,10 +4,13 @@
 //
 // This file is part of the UltraLib distribution mudlib.
 // It may be used and modified as long as this header remains intact.
-// The UltraLib mudlib is available via FTP at knapp38.res.iastate.edu
+//
+// See the files in /doc/USAGE/ for details reguarding the use, modification,
+// and copying of this code.
 //
 // Inspired by VikingMUD and other things...
 //
+// 05/03/96  Tim : optimized (?) some by changing the way flags are handled.
 
 int _main(string arguments);
 int flag(string flag);
@@ -16,6 +19,7 @@ int flag(string flag);
 int main(string *argv, string *argv2);
 
 private string *flags;               //  array of flags passed on command line
+private string charflags;            //  single character flags
 
 // Function:  _main()
 // Arguments:  command line as taken from player
@@ -27,37 +31,42 @@ private string *flags;               //  array of flags passed on command line
 int
 _main(string arguments)
 {
-  string *argv = ({});          //  array of verb + all args passed to command
-  string *argv2 = ({});         // array of all non-flag arguments
+  string* argv;          //  array of verb + all args passed to command
+  string* argv2;         // array of all non-flag arguments
 
   flags = ({});
+  charflags = "";
 
-  if(arguments) 
-    argv = explode(arguments, " ");
+  if( arguments )
+  {
+    argv =  explode(arguments, " ");
+    argv2 = filter(argv, (: strsrch($1, '-') :));  // remove if begins with '-'
+  }
+  else
+  {
+    argv =  ({ });
+    argv2 = ({ });
+  }
 
-  argv = ({ query_verb() }) + argv;
-
-  for(int i=0; i < sizeof(argv); i++) {         // get array of flags
-    if(argv[i][0] == '-') {
-      if(argv[i][1] != '-')
-	flags += explode(argv[i], "");          // normal flags
-      else
-	flags += ({ argv[i][2..] });            // word flags passed as --word
-    } else if(i != 0) {
-      argv2 += ({ argv[i] });                   // get words that aren't flags
-    }
+  foreach(string word in filter(argv, (: !strsrch($1, '-') :)))
+  {
+    if( word[1] != '-' )
+      charflags += word;                   // character flags
+    else
+      flags += ({ word[2..] });            // word flags passed as --word
   }
 
   // Might as well catch this here
 
-  if(flag("help")) {
+  if( flag("help") )
+  {
     printf("Help for %s:\n\n", argv[0]);
     write(this_object()->help());
     write("\n");
     return 1;
   }
 
-  return main(argv, argv2);
+  return main(({ query_verb() }) + argv, argv2);
 }
 
 // Function:  flag()
@@ -68,5 +77,8 @@ _main(string arguments)
 int
 flag(string flag)
 {
-  return member_array(flag, flags) != -1;
+  if( sizeof(flag) == 1 )
+    return strsrch(charflags, flag) != -1;
+  else
+    return member_array(flag, flags) != -1;
 }

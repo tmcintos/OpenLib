@@ -6,9 +6,8 @@
 
 inherit WEAPON;
 
-void create()
+void setup()
 {
-  ::create();
   set_weapon_info(({
   50,    //damage bonus
   60,    //damage range
@@ -29,7 +28,7 @@ void create()
   set_long(@ENDLONG
 This is one massive piece of meat.  I bet it does a lot of damage too!
 ENDLONG);
-  set_ids(({"dick", "jdick"}));
+  add_ids(({"dick", "jdick"}));
   set_value(({ 40, 0 }));                        // 40 silver, 0 gold --Tim
 }
 

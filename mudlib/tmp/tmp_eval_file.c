@@ -4,4 +4,4 @@
 #undef unguarded
 mixed eval() { 
   object me = this_player();
-  return sizeof(""); }
+  return "/u/t/tim/zip"->test(); }

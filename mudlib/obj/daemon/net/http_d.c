@@ -7,6 +7,9 @@
  *    Fixed a bug which caused binary connections to fail. (Leto@Earth 060694)
  *    Added a check for EECALLBACK on socket_write() (Descartes of Borg 940620)
  *    Dysfunctional-ized by Tim 10/31/95
+ 
+ *  hacked by tim 4/26 due to reversible explode string...make more elegant
+ *  approach later
  */
 
 #include <mudlib.h>
@@ -154,7 +157,7 @@ static private void get_file(int fd, string file) {
     if(file[0] != '/') 
       file = sprintf("/%s", file);
 
-    parts = explode(file = absolute_path("/", file), "/");
+    parts = explode(file = absolute_path("/", file), "/") - ({ "" });
 
     if(!sizeof(parts)) {
       file = sprintf("%s/index.html", DIR_WWW);
@@ -179,7 +182,7 @@ static private void get_file(int fd, string file) {
       file = sprintf("%s%s", DIR_WWW, file);
 
 // removes duplicate slashes
-    file = sprintf("/%s", implode(explode(file, "/"), "/"));
+    file = sprintf("/%s", implode(explode(file, "/") - ({ "" }), "/"));
 
     if(file_size(file) == -2) file = sprintf("%s/index.html", file);
 

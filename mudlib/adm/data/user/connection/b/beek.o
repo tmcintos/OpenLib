@@ -1,0 +1,12 @@
+#obj/clone/connection.c
+name "beek"
+cap_name "Beek"
+password "vOfOm.YAPKKjs"
+real_name "Tim Hollebeek"
+email_addr "beek@imaginary.com"
+body "/obj/clone/user/human"
+login_shell "/obj/clone/shells/rsh"
+gender 1
+login_time 830479230
+logout_time 824969857
+login_from "franck.Princeton.EDU"

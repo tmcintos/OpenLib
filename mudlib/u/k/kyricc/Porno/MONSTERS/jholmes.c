@@ -8,12 +8,12 @@
 inherit MONSTER "/human";
 
 void
-create()
+initialize()
 {
 
   object dick;
 
-  ::create();
+  ::initialize();
 
   set_name("john");
   set_short("John Holmes");

@@ -17,4 +17,7 @@ stuff to edit when moving in new body/shell:
   quit command?
   chfn command (not directly needed, but do it anyway)
 -security_d may work now; problems with privs_file() in master--bug?
+-problems w/calling present() from commands...
  Need to test all this and do a lot more work on security all-around
+-bugs in user.c remove()...fix
+-change all occurrences of CLEAN_UP to M_CLEAN_UP (#include <modules.h>)

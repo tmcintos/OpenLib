@@ -7,6 +7,6 @@ email_addr "clintw@AZStarNet.COM"
 body "/obj/clone/user/human"
 login_shell "/obj/clone/shells/nmsh"
 gender 1
-login_time 830331189
-logout_time 830331026
+login_time 831425428
+logout_time 831425480
 login_from "azstarnet.com"

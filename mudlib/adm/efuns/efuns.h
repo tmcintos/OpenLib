@@ -4,6 +4,7 @@
  *  They will be included at the bottom of simul_efun.c
  */
 
+#include "to_string.c"
 #include "x_exists.c"
 #include "write.c"
 #include "printf.c"

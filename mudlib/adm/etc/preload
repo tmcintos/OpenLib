@@ -17,3 +17,5 @@
 /obj/daemon/emote_d
 /obj/daemon/finger_d
 /obj/daemon/termcap_d
+/obj/inherit/room
+/obj/inherit/living

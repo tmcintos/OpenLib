@@ -44,8 +44,6 @@ private static object owner;           /* Shell Owner */
 /*
  * Applies
  */
-int clean_up();
-
 string shell_id();                                // returns shell id string
 object shell_init(object ob);      // called by logind to setup shell
 /*
@@ -74,12 +72,6 @@ private int cmd_alias(string args);               // alias set user command
 private int cmd_cd(string args);                  // change dir user command
 private int cmd_history();                        // display history
 private void add_history(string str);             // add to history list
-
-int
-clean_up()
-{
-  return 0; // never call again
-}
 
 string
 shell_id()

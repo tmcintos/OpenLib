@@ -16,37 +16,36 @@
 //            also took out brief() since we can use short() for that in rooms
 //  04/20/96  Tim: now inherits CONTAINER.  Made the relevant code changes.
 //            Changed long() to return a formatted string only.
-
+//
 #pragma save_binary
+#pragma no_warnings
 
-#include <mudlib.h>
-#include <modules.h>
-#include <object_types.h>
+#include "room.h"
 
-inherit INHERIT_DIR "/inttostr";         /* converts int's to strings */
-inherit CONTAINER;
+inherit BASE;
+
+inherit M_CLEAN_UP;
+inherit M_OBJECT_CLASS;
+inherit M_FLAGS;
 inherit M_LIGHT;
+inherit M_VISIBLE;
+inherit M_DIMENSIONS;
+inherit M_CONTAINER;
 
+//
+// Global Variables
+//
 private static boolean no_attacks_here;  /* can we attack here? 1=no 0=yes */
 private static mapping exits;            /* hmm...who knows */
 private static mapping items;            /* sets mapping for items */
 
-// Prototypes
-void initialize();
-void init();
-nomask boolean query_no_attack();
-string long();
-int receive_object(object ob);
-nomask void set_no_attack();                     // cannot fight here
-nomask void set_exits(mapping dir_dest_mapping); // dest can be obj or string 
-nomask void set_items(mapping id_long_mapping);  // long can be str/function
-nomask int move_to_room();            // player command
-nomask string exa_item(string item);  // returns long desc of item
-
 void
 initizalize()
 {
-  ::initialize();
+  m_flags::initialize();
+  m_container::initialize();
+  m_visible::initialize();
+  set_object_class(OBJECT_ROOM | query_object_class());
   items =([]);
   exits = ([]);
 
@@ -68,37 +67,27 @@ init()
   add_action("move_to_room", keys(exits));
 }
 
-// set() is below
-
-nomask boolean
-query_no_attack()
-{
-  return no_attacks_here;
-}
-
-// Overload of the long() func.
+//
+// Overload of m_visible::long()
+//
 // Had too many writes for me.  Cut them out to recduce CPU & 
 // clean up the apearance.  Casper 8/24/95
+// cleaned up some more.  Tim 4/24/96
 
 string
 long()
 {
   string* keyring = keys(exits);
-  int i = sizeof(keyring);
-  int light = query_light();
-  object* obs;
+  int i = sizeof(keyring), light = query_light();
   string ret;
  
-  //Add a check to deep_inventory for a lightsource.  
-  //Will check docs on Rift for a possible shortcuts.  Casper 8/24/95
+  // Add a check to deep_inventory for a lightsource.  
+  // Will check docs on Rift for a possible shortcuts.  Casper 8/24/95
   if( !light ) {
-    obs = deep_inventory(this_object());
-    foreach(object ob in obs)
+    foreach(object ob in deep_inventory(this_object()))
       if( (light = ob->query_light()) ) break;
-    if( !light ) {
-      ret = "It is dark here.\n";
-      return ret;
-    }
+
+    if( !light ) return "It is dark here.\n";
   }
 
   if( !long_desc )
@@ -107,28 +96,20 @@ long()
     ret = long_desc;
  
   // Exit viewing crap
-  if( !i ) {
-    ret += "  There are no obvious exits.\n";
-  } else {
-    if(i == 1)
-    {
-      ret += "  The only obvious exit is "+ keyring[0] +".\n";
-    } else {
-      ret += "  There are "+ int_to_word(i) +" obvious exits:  ";
+  if( !i ) return ret + "  There are no obvious exits.\n";
+  if(i == 1) return ret + "  The only obvious exit is "+ keyring[0] +".\n";
 
-      while (--i > 1)
-        ret +=keyring[i] +", ";
+  ret += "  There are "+ to_string(i) +" obvious exits:  ";
 
-      ret += keyring[1] +" and "+ keyring[0] +".\n";
-    }
-  }
+  while (--i > 1)
+    ret += keyring[i] +", ";
 
-  return ret;
+  return ret + keyring[1] +" and "+ keyring[0] +".\n";
 }
 
-/*
- * override of container::receive_object()
- */
+//
+// overload of m_container::receive_object()
+//
 int
 receive_object(object ob)
 {
@@ -146,10 +127,38 @@ set_no_attack()
   no_attacks_here = TRUE;
 }
 
+nomask boolean
+query_no_attack()
+{
+  return no_attacks_here;
+}
+
 nomask void
 set_exits(mapping args)
 {
   exits = args;
+}
+
+nomask void
+add_exits(mapping args)
+{
+  exits += args;
+}
+
+nomask void
+remove_exits(string* keylist)
+{
+  foreach(string key in keylist) {
+    map_delete(exits, key);
+  }
+}
+
+int
+move_to_room()
+{
+  string verb = query_verb();
+  if( !exits[verb] ) return 0;
+  return this_player()->move_player(exits[verb], verb);
 }
 
 nomask void
@@ -158,14 +167,6 @@ set_items(mapping args)
   items = args;
 }
  
-int
-move_to_room()
-{
-  mixed dest_ob = exits[query_verb()];
-
-  return this_player()->move_player(dest_ob, query_verb());
-}
-
 string
 exa_item(string str)
 {

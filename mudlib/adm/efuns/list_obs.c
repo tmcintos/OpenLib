@@ -8,8 +8,7 @@ private string
 count_items(string desc, int num)
 {
   if( num > 1 )
-    return sprintf("%s %s",
-		   INHERIT_DIR "/inttostr"->int_to_word(num), pluralize(desc));
+    return sprintf("%s %s", to_string(num), pluralize(desc));
   else
     return desc;
 }

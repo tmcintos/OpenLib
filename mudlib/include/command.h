@@ -11,10 +11,10 @@
 
 #include <mudlib.h>
 #include <dirs.h>
+#include <modules.h>
 
 inherit DAEMON;
-inherit CLEAN_UP;
-
+inherit M_CLEAN_UP;
 inherit INHERIT_DIR "/command";
 
 #endif /* _COMMAND_H */

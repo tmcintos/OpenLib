@@ -6,9 +6,9 @@
 inherit ROOM;
 
 void
-create()
+initialize()
 {
-  ::create();
+  ::initialize();
   set_light(1);
   set_short("This is Kyricc's laboratory.");
   set_long("This is Kyricc's laboratory.  Here you see shelves on\n"+

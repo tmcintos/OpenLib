@@ -3,17 +3,18 @@
 inherit ROOM;
 
 void
-create()
+initialize()
 {
-  ::create();
+  ::initialize();
   set_light(1);
-  set_short("This is Hamnsnock's very own workroom!\n");
-  set_long("     You stand in a large room with magic books everywhere.\n"+
-         "There are potions of all sorts and kinds all over the room, you\n"+
-         "feel very good standing in this room.  Its very magical... and
-evil \n");
-  set_exits((["church" : "/room/church.c",
-               "void" : "/adm/obj/daemon/void.c",
-               "pata" : "/u/h/hamnsnock/pata/xroads.c"
+  set_short("This is Hamnsnock's workroom.\n");
+  set_long("You look around the room and can just feel the evil.  there\n"+
+         "are giant spell books everywhere.  And a lot of dark red evil\n"+
+         "potions to choose from.  There is even a book on the desk, \n"
+         "you can see some writing on it.\n");
+  set_items((["book" : "It is a boring book on evil.\n"]));
+  set_exits((["start" : "/d/base/start.c",
+              "church" : "/room/church.c",
+              "void" : "/adm/obj/daemon/void.c",
               ]));
 }

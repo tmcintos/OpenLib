@@ -1986,3 +1986,244 @@ Wed Apr 24 00:16:35 1996:  imud_gossip: Descartes@IdeaExchange:name one thing to
 Wed Apr 24 00:16:53 1996:  imud_gossip: Descartes@IdeaExchange:it is simply the slowest, most instable piece of trash ever passed off as tested software
 Wed Apr 24 00:17:25 1996:  imud_gossip: Descartes@IdeaExchange:it is a horrible development environment, and it builds crash prone apps
 Wed Apr 24 00:17:51 1996:  imud_gossip: Descartes@IdeaExchange:I am sure PowerBlower access oracle through ODBC must make for plenty of time to play minesweeper
+Wed Apr 24 21:04:07 1996:  imud_code: Descartes@IdeaExchange:err, I agree with what Beek said... I only prototype every method because hundreds of people are reading my code
+Wed Apr 24 21:04:27 1996:  imud_code: Descartes@IdeaExchange:for any possible use you have, there is no need to prototype every method
+Wed Apr 24 21:32:13 1996:  imud_code: Descartes@IdeaExchange:actually, Luinil is right
+Wed Apr 24 21:32:21 1996:  imud_code: Descartes@IdeaExchange:mappings of classes are very very messy
+Wed Apr 24 21:47:22 1996:  imud_code: Descartes@IdeaExchange:err, why?
+Wed Apr 24 21:48:04 1996:  imud_code: Descartes@IdeaExchange:even if you want somethign as simple as having the desc depend on day or night>
+Wed Apr 24 21:49:57 1996:  imud_code: Descartes@IdeaExchange:but you should be able to conditionally have the description depend on the current circumstances
+Wed Apr 24 21:50:33 1996:  imud_code: Descartes@IdeaExchange:not in Lima
+Wed Apr 24 21:53:16 1996:  imud_code: Descartes@IdeaExchange:avoiding add_action is good... I think Mongar means the ability to have a dynamic item descritpion
+Thu Apr 25 19:29:02 1996:  imud_gossip: Descartes@IdeaExchange:err, a person has the right to allow the use of their code as they see fit
+Thu Apr 25 19:29:28 1996:  imud_gossip: Descartes@IdeaExchange:you have no business stealing their code
+Sun Apr 28 09:12:40 1996:  imud_code: Descartes@IdeaExchange:this channel is not for that
+Sun Apr 28 09:15:59 1996:  imud_code: Descartes@IdeaExchange:if you guys can't learn how to use this channel properly, you won't be using it at all
+Sun Apr 28 09:16:39 1996:  imud_code: Descartes@IdeaExchange:this is the code channel, not the hi channel, and not the nameless sorrows channel
+Sun Apr 28 09:17:44 1996:  imud_code: Descartes@IdeaExchange:it is supposed to be unused unless you have a code question
+Sun Apr 28 09:17:56 1996:  imud_code: Descartes@IdeaExchange:50%
+Sun Apr 28 09:18:22 1996:  imud_code: Descartes@IdeaExchange:50%
+Sun Apr 28 09:18:54 1996:  imud_code: Descartes@IdeaExchange:50%
+Sun Apr 28 09:19:18 1996:  imud_code: Descartes@IdeaExchange:it generates 0 or 1
+Sun Apr 28 09:21:57 1996:  imud_code: Descartes@IdeaExchange:hello.... I am the guy who wrote the textbook son LPC
+Sun Apr 28 09:22:17 1996:  imud_code: Descartes@IdeaExchange:wonders if everyone at Nameless Sorrows is so mentally challenged.
+Sun Apr 28 09:22:49 1996:  imud_code: Descartes@IdeaExchange:5 minutes where you have not said anything stypud
+Sun Apr 28 09:23:23 1996:  imud_code: Descartes@IdeaExchange:whatever :)
+Sun Apr 28 12:12:40 1996:  imud_gossip: Descartes@IdeaExchange:speak for yourself Vitacha
+Sun Apr 28 12:13:56 1996:  imud_gossip: Descartes@IdeaExchange:congradulations Prometheus, here's a cookie
+Sun Apr 28 12:14:18 1996:  imud_gossip: Descartes@IdeaExchange:I would not be caught dead reading such a book :)
+Sun Apr 28 12:14:46 1996:  imud_gossip: Descartes@IdeaExchange:Valentino, I don't give a flying fuck about the core file
+Sun Apr 28 12:15:31 1996:  imud_gossip: Descartes@IdeaExchange:Prometheus, why do you need to be such an ass?
+Sun Apr 28 12:15:39 1996:  imud_gossip: Descartes@IdeaExchange:why is it embarassing?
+Sun Apr 28 12:15:53 1996:  imud_gossip: Descartes@IdeaExchange:it is an extra file
+Sun Apr 28 12:15:59 1996:  imud_gossip: Descartes@IdeaExchange:just rm the damn thing
+Sun Apr 28 12:16:37 1996:  imud_gossip: Descartes@IdeaExchange:may I ask to what end you are getting on my case Valentino?
+Sun Apr 28 12:16:49 1996:  imud_gossip: Descartes@IdeaExchange:anyone judging an entire mudlib cause it has a core file in it is a flaming idiot
+Sun Apr 28 12:17:35 1996:  imud_gossip: Descartes@IdeaExchange:and quite honestly, I have better things to do than untar it, remove the core file, and tar it back up
+Sun Apr 28 12:17:55 1996:  imud_gossip: Descartes@IdeaExchange:well, I am not embarassed
+Sun Apr 28 12:18:15 1996:  imud_gossip: Descartes@IdeaExchange:bite me Zara, you have no idea
+Sun Apr 28 12:19:00 1996:  imud_gossip: Descartes@IdeaExchange:then don't download it
+Sun Apr 28 12:19:16 1996:  imud_gossip: Descartes@IdeaExchange:Zara is using a NM 3.* lib
+Sun Apr 28 12:19:50 1996:  imud_gossip: Descartes@IdeaExchange:Zara: here is a suggestion, don't use it
+Sun Apr 28 12:20:32 1996:  imud_gossip: Descartes@IdeaExchange:especially a bunch of two bit programmers criticizing his code
+Sun Apr 28 12:21:12 1996:  imud_gossip: Descartes@IdeaExchange:Zara no
+Sun Apr 28 12:21:18 1996:  imud_gossip: Descartes@IdeaExchange:NM is nothing like tmi
+Sun Apr 28 12:22:19 1996:  imud_gossip: Descartes@IdeaExchange:gee, Valentino, I have 5 people giving me random shit for no reason, you expect me to be a keen guy in the face of that?
+Sun Apr 28 12:22:47 1996:  imud_gossip: Descartes@IdeaExchange:Zara you weould not have a freaking mud if it weere not for me
+Sun Apr 28 12:23:47 1996:  imud_gossip: Descartes@IdeaExchange:haughty attitude because I wnated to charge you cost for running a mud?
+Sun Apr 28 12:24:17 1996:  imud_gossip: Descartes@IdeaExchange:Nightmare is as good as Lima
+Sun Apr 28 12:24:34 1996:  imud_gossip: Descartes@IdeaExchange:you are not using the current release of NM
+Sun Apr 28 12:25:28 1996:  imud_gossip: Descartes@IdeaExchange:object model is the fundmental differentce
+Sun Apr 28 12:27:04 1996:  imud_gossip: Descartes@IdeaExchange:that and the fact that NM may no longer exist in a few weeks if this constant rain of shit does not stop
+Sun Apr 28 12:27:41 1996:  imud_gossip: Descartes@IdeaExchange:they have the same basic design principles though, with some different focuses
+Sun Apr 28 12:28:05 1996:  imud_gossip: Descartes@IdeaExchange:Lima is more administration oriented
+Sun Apr 28 12:28:17 1996:  imud_gossip: Descartes@IdeaExchange:it has tons of admin features
+Sun Apr 28 12:28:29 1996:  imud_gossip: Descartes@IdeaExchange:NM has a lot of player features
+Sun Apr 28 15:48:04 1996:  imud_gossip: Descartes@IdeaExchange:let them drink coffee!
+Sun Apr 28 15:56:16 1996:  imud_gossip: Descartes@IdeaExchange:they should know not to jump... but birdies tmept them, I can tell :)
+Sun Apr 28 17:56:10 1996:  imud_code: Descartes@IdeaExchange:technically it is undefined
+Sun Apr 28 17:59:01 1996:  imud_code: Descartes@IdeaExchange:there are reasons besides messiness why not to do it though :)
+Sun Apr 28 17:59:31 1996:  imud_code: Descartes@IdeaExchange:such as being able to dynamically add stats and skills
+Sun Apr 28 18:00:07 1996:  imud_code: Descartes@IdeaExchange:if they are in a class, a code change is required to addd a new stat or skill
+Sun Apr 28 18:00:34 1996:  imud_code: Descartes@IdeaExchange:ahhh
+Sun Apr 28 18:00:48 1996:  imud_code: Descartes@IdeaExchange:that makes sense
+Sun Apr 28 18:01:58 1996:  imud_code: Descartes@IdeaExchange:the class thing mroe efficient?  I think so
+Sun Apr 28 18:03:00 1996:  imud_code: Descartes@IdeaExchange: replacing the whol skills mapping though is not a good idea since it limits your ability to dynamically add classes
+Sun Apr 28 18:03:14 1996:  imud_code: Descartes@IdeaExchange:basically, use classes where you have a structure that will never change
+Sun Apr 28 18:21:28 1996:  imud_gossip: Descartes@IdeaExchange:the bulls lead miami by 30 pts in the 3rd quarter
+Sun Apr 28 18:24:55 1996:  imud_gossip: Descartes@IdeaExchange:rodman gets 2 technicals... again...
+Sun Apr 28 18:30:29 1996:  imud_gossip: Descartes@IdeaExchange:me getting kicked?
+Sun Apr 28 19:34:57 1996:  imud_gossip: Descartes@IdeaExchange:oh no, my brains
+Sun Apr 28 21:05:25 1996:  imud_code: Descartes@IdeaExchange:is there anyone who would be interested in testing the F IIr1.1 install?
+Sun Apr 28 21:12:29 1996:  imud_code: Descartes@IdeaExchange:okie, it will be out on the ftp site in like 5 minutes :) I aprpeciate it :)
+Sun Apr 28 21:19:44 1996:  imud_code: Descartes@IdeaExchange:because this is for code testing
+Sun Apr 28 21:20:36 1996:  imud_code: Descartes@IdeaExchange:just what I said
+Sun Apr 28 21:21:24 1996:  imud_code: Descartes@IdeaExchange:you asked what I was doing on intercre, and I said asking someone to test my code
+Sun Apr 28 21:30:05 1996:  imud_gossip: Descartes@IdeaExchange:for those of you giving me shit about the core file in the mudlib: removing it made no difference in the gzipped release
+Sun Apr 28 21:30:51 1996:  imud_code: Descartes@IdeaExchange:the latest release of Foundation is now available
+Mon Apr 29 14:09:33 1996:  imud_gossip: Descartes@IdeaExchange:what do you mean by promotion?
+Mon Apr 29 22:30:57 1996:  imud_code: Descartes@IdeaExchange:what is the question?
+Mon Apr 29 22:32:37 1996:  imud_code: Descartes@IdeaExchange:varargs fun(object obj, mixed *args...)
+Mon Apr 29 22:34:14 1996:  imud_code: Descartes@IdeaExchange:yes, you need the return type
+Mon Apr 29 22:34:26 1996:  imud_code: Descartes@IdeaExchange:and bingo, that is exactly what happens
+Mon Apr 29 22:46:01 1996:  imud_gossip: Descartes@IdeaExchange:can I buy a vowel?
+Mon Apr 29 22:47:10 1996:  imud_gossip: Descartes@IdeaExchange:I would like to buy an e
+Mon Apr 29 22:47:58 1996:  imud_gossip: Descartes@IdeaExchange:is this your attempt at a more feminine name?
+Mon Apr 29 22:48:30 1996:  imud_gossip: Descartes@IdeaExchange:my last name os choc full o'e's
+Mon Apr 29 22:48:46 1996:  imud_gossip: Descartes@IdeaExchange:your name is offensive
+Mon Apr 29 22:49:22 1996:  imud_gossip: Descartes@IdeaExchange:P*******'s of course
+Mon Apr 29 22:51:17 1996:  imud_gossip: Descartes@IdeaExchange:err, strawberry?
+Mon Apr 29 22:56:12 1996:  imud_gossip: Descartes@IdeaExchange:llamas and their unmentionable habits?
+Mon Apr 29 22:56:45 1996:  imud_gossip: Descartes@IdeaExchange:math sucks
+Mon Apr 29 23:01:22 1996:  imud_gossip: Descartes@IdeaExchange:Dr Strangelove
+Mon Apr 29 23:01:52 1996:  imud_gossip: Descartes@IdeaExchange:monkeys like ice cream
+Mon Apr 29 23:47:08 1996:  imud_gossip: Descartes@IdeaExchange:no Zakk, why would I have?
+Mon Apr 29 23:47:18 1996:  imud_gossip: Descartes@IdeaExchange:just been coding a project too many hours straight in Java :)
+Mon Apr 29 23:48:34 1996:  imud_gossip: Descartes@IdeaExchange:$10 word
+Mon Apr 29 23:49:31 1996:  imud_gossip: Descartes@IdeaExchange:Java is actually quite a nice programming language
+Mon Apr 29 23:50:09 1996:  imud_gossip: Descartes@IdeaExchange:the language itself is prety stable
+Mon Apr 29 23:50:23 1996:  imud_gossip: Descartes@IdeaExchange:have you met any bugs Darklord?
+Mon Apr 29 23:50:43 1996:  imud_gossip: Descartes@IdeaExchange:like?
+Mon Apr 29 23:51:01 1996:  imud_gossip: Descartes@IdeaExchange:I say so, and I have been using it A LOT
+Mon Apr 29 23:51:51 1996:  imud_gossip: Descartes@IdeaExchange:Java
+Mon Apr 29 23:52:40 1996:  imud_gossip: Descartes@IdeaExchange:I cannot comment on that
+Mon Apr 29 23:53:22 1996:  imud_gossip: Descartes@IdeaExchange:huh?
+Mon Apr 29 23:54:26 1996:  imud_gossip: Descartes@IdeaExchange:I have loads of them
+Mon Apr 29 23:54:42 1996:  imud_gossip: Descartes@IdeaExchange:JDBC drivers for mSQL and Postgres, confidential stuff for clients, a mud
+Mon Apr 29 23:55:49 1996:  imud_gossip: Descartes@IdeaExchange:at least, a fully Java one from client to server :)
+Mon Apr 29 23:57:17 1996:  imud_gossip: Descartes@IdeaExchange:distributed client/server Java?
+Mon Apr 29 23:57:59 1996:  imud_gossip: Descartes@IdeaExchange:well, I doubt it is anywhere the scope I am planning :)
+Mon Apr 29 23:58:29 1996:  imud_gossip: Descartes@IdeaExchange:my mud will be distributed across the world with multiple possible interfaces, a database backend, etc/
+Tue Apr 30 00:00:18 1996:  imud_gossip: Descartes@IdeaExchange:anyone know how to remove a visual component from a window?
+Tue Apr 30 00:00:26 1996:  imud_gossip: Descartes@IdeaExchange:in Java of ocurse
+Tue Apr 30 00:01:40 1996:  imud_gossip: Descartes@IdeaExchange:I desperately need it since you can't remove items froma chice
+Tue Apr 30 00:06:29 1996:  imud_gossip: Descartes@IdeaExchange:it is awt stuff, from what i can see the answer is no :)
+Tue Apr 30 00:11:41 1996:  imud_gossip: Descartes@IdeaExchange:has not had a final in years
+Wed May  1 19:48:49 1996:  imud_gossip: Descartes@IdeaExchange:Happy May Day
+Wed May  1 19:49:01 1996:  imud_gossip: Descartes@IdeaExchange:k kommunismu
+Wed May  1 19:49:35 1996:  imud_gossip: Descartes@IdeaExchange:I am
+Wed May  1 21:14:33 1996:  imud_gossip: Descartes@IdeaExchange:sleepy
+Wed May  1 21:14:49 1996:  imud_gossip: Descartes@IdeaExchange:the sky
+Wed May  1 21:32:04 1996:  imud_gossip: Descartes@IdeaExchange:the software on which you build your mud
+Wed May  1 21:34:29 1996:  imud_gossip: Descartes@IdeaExchange:fix your car?
+Wed May  1 21:34:47 1996:  imud_gossip: Descartes@IdeaExchange:mine breaks, I buy another :)
+Thu May  2 16:44:02 1996:  imud_gossip: Descartes@IdeaExchange:brb
+Thu May  2 17:06:33 1996:  imud_gossip: Descartes@IdeaExchange:can you play doom over the internet?
+Thu May  2 17:06:39 1996:  imud_gossip: Descartes@IdeaExchange:multiplayer doom that is
+Thu May  2 17:06:45 1996:  imud_gossip: Descartes@IdeaExchange:how? :)
+Thu May  2 17:07:51 1996:  imud_gossip: Descartes@IdeaExchange:what is a shar?
+Thu May  2 17:09:04 1996:  imud_gossip: Descartes@IdeaExchange:how hard is it to get it to work? and is it really slow?
+Thu May  2 17:10:10 1996:  imud_gossip: Descartes@IdeaExchange:well, if you could emal it to me, that would be cool :)
+Thu May  2 17:12:51 1996:  imud_gossip: Descartes@IdeaExchange:well, hell, I can't even get it to run with windows 95
+Thu May  2 17:15:19 1996:  imud_gossip: Descartes@IdeaExchange:anyone got doom running with windows 95?
+Thu May  2 17:32:15 1996:  imud_gossip: Descartes@IdeaExchange:man id software support sucks
+Thu May  2 17:34:17 1996:  imud_gossip: Descartes@IdeaExchange:bite me :)
+Thu May  2 17:34:47 1996:  imud_gossip: Descartes@IdeaExchange:I start it and it gives me a page choc full o errors
+Thu May  2 17:38:32 1996:  imud_gossip: Descartes@IdeaExchange:windoom?
+Thu May  2 17:38:46 1996:  imud_gossip: Descartes@IdeaExchange:the id home page has nothing about windows
+Thu May  2 17:40:33 1996:  imud_gossip: Descartes@IdeaExchange:err, idsoftware
+Thu May  2 17:42:26 1996:  imud_gossip: Descartes@IdeaExchange:alta-vista should be renamed search engine of the dead end links
+Thu May  2 18:03:18 1996:  imud_gossip: Descartes@IdeaExchange:to
+Thu May  2 18:03:24 1996:  imud_gossip: Descartes@IdeaExchange:Aragorn
+Thu May  2 18:03:24 1996:  imud_gossip: Descartes@IdeaExchange:like
+Thu May  2 18:03:26 1996:  imud_gossip: Descartes@IdeaExchange:this
+Thu May  2 18:04:06 1996:  imud_gossip: Descartes@IdeaExchange:ugh... who is not following the I3 emote standards?
+Thu May  2 18:05:39 1996:  imud_gossip: Descartes@IdeaExchange:fix it please :)
+Thu May  2 18:07:31 1996:  imud_gossip: Descartes@IdeaExchange:was it funny?
+Thu May  2 18:16:48 1996:  imud_code: Descartes@IdeaExchange:no
+Thu May  2 18:22:46 1996:  imud_gossip: Descartes@IdeaExchange:who exactly would listen to a test channel?
+Thu May  2 18:22:56 1996:  imud_gossip: Descartes@IdeaExchange:having one would automatically render it useless :)
+Thu May  2 18:23:20 1996:  imud_gossip: Descartes@IdeaExchange:go ahead and code :)
+Thu May  2 21:09:42 1996:  imud_gossip: Descartes@IdeaExchange:anyone see DS9 this week?  The Muse?
+Thu May  2 21:10:38 1996:  imud_gossip: Descartes@IdeaExchange:isn't Anslem the name of the book from the episode where Jake grew old?
+Thu May  2 21:29:56 1996:  imud_code: Descartes@IdeaExchange:when in doubt about things like that, give the ole eval command a shot
+Thu May  2 22:10:06 1996:  imud_code: Descartes@IdeaExchange:-
+Thu May  2 22:13:37 1996:  imud_code: Descartes@IdeaExchange:that means f is 0
+Thu May  2 22:16:30 1996:  imud_code: Descartes@IdeaExchange:ok, 0.0
+Fri May  3 17:34:09 1996:  imud_gossip: Descartes@IdeaExchange:that is annoying
+Fri May  3 17:36:20 1996:  imud_gossip: Descartes@IdeaExchange:apache is a paing
+Fri May  3 17:36:24 1996:  imud_gossip: Descartes@IdeaExchange:or a pain
+Fri May  3 17:36:48 1996:  imud_gossip: Descartes@IdeaExchange:5 finger discount Satan?
+Fri May  3 17:37:02 1996:  imud_gossip: Descartes@IdeaExchange:the install was a pain, it does not log as much info
+Fri May  3 17:38:45 1996:  imud_gossip: Descartes@IdeaExchange:arrrhhh
+Fri May  3 17:40:47 1996:  imud_gossip: Descartes@IdeaExchange:Voyager SUCKS!!!!!!!
+Fri May  3 17:42:44 1996:  imud_gossip: Descartes@IdeaExchange:if I wrote a book, would you all buy it? :)
+Fri May  3 17:43:24 1996:  imud_gossip: Descartes@IdeaExchange:on Java?
+Fri May  3 17:43:42 1996:  imud_gossip: Descartes@IdeaExchange:too bad :(
+Fri May  3 17:44:07 1996:  imud_gossip: Descartes@IdeaExchange:what if I make Nightmare X a Java mud? :)
+Fri May  3 17:44:37 1996:  imud_gossip: Descartes@IdeaExchange:actually, I proposed one on LPC, and it was *almost* accepted
+Fri May  3 17:44:51 1996:  imud_gossip: Descartes@IdeaExchange:but then they decided it would not sell enough copies :(
+Fri May  3 17:44:59 1996:  imud_gossip: Descartes@IdeaExchange:ayuh, this was O'Reilly
+Fri May  3 17:46:03 1996:  imud_gossip: Descartes@IdeaExchange:I will redo the LPC stuff (with advanced stuff) in HTML this summer
+Fri May  3 17:46:37 1996:  imud_gossip: Descartes@IdeaExchange:still, there is nothinglike a hardcopy reference by your side
+Fri May  3 17:46:53 1996:  imud_gossip: Descartes@IdeaExchange:you have to understand, I wrote the first two books in ed :)
+Fri May  3 17:47:32 1996:  imud_gossip: Descartes@IdeaExchange:err, I have much more sphisticated tools at my disposal in 1996 :)
+Fri May  3 17:48:04 1996:  imud_gossip: Descartes@IdeaExchange:I actually intend to write it in HTML using some sort of authoring tool that will do spell checking
+Fri May  3 17:48:40 1996:  imud_gossip: Descartes@IdeaExchange:Netscape Gold does not do spell checking
+Fri May  3 17:48:52 1996:  imud_gossip: Descartes@IdeaExchange:Word does not do proper web page authoring
+Fri May  3 17:50:49 1996:  imud_gossip: Descartes@IdeaExchange:hmm... maybe I should write one
+Fri May  3 18:22:30 1996:  imud_gossip: Descartes@IdeaExchange:this channel is regulated, and that was way out of line
+Fri May  3 18:28:36 1996:  imud_code: Descartes@IdeaExchange:did you try typing 'tap'?
+Fri May  3 18:29:10 1996:  imud_code: Descartes@IdeaExchange:what happened is what happens
+Fri May  3 18:34:56 1996:  imud_gossip: Descartes@IdeaExchange:I just colourized Citizen Kane
+Fri May  3 18:35:26 1996:  imud_gossip: Descartes@IdeaExchange:Ted Turner got all hot and bothers
+Fri May  3 18:35:30 1996:  imud_gossip: Descartes@IdeaExchange:bothered
+Fri May  3 18:36:32 1996:  imud_gossip: Descartes@IdeaExchange:JDBC changes again!!!!
+Fri May  3 18:37:37 1996:  imud_gossip: Descartes@IdeaExchange:put a piece of metal in your head you said, make you dead, make you hippa hippa hippa
+Fri May  3 18:38:49 1996:  imud_gossip: Descartes@IdeaExchange:now, how would you have ever been allowe don the line if that were the case?
+Fri May  3 19:16:02 1996:  imud_gossip: Descartes@IdeaExchange:you know how to change the font on a web page?
+Fri May  3 19:16:32 1996:  imud_gossip: Descartes@IdeaExchange:thanks :)'
+Fri May  3 19:16:56 1996:  imud_gossip: Descartes@IdeaExchange:nope, that did not do it
+Fri May  3 19:18:49 1996:  imud_gossip: Descartes@IdeaExchange:I can try
+Fri May  3 19:19:03 1996:  imud_gossip: Descartes@IdeaExchange:nope
+Fri May  3 19:19:17 1996:  imud_gossip: Descartes@IdeaExchange:not: NAME, COMMAND, FONTNAME, FACE, TYPEFACE
+Fri May  3 19:21:40 1996:  imud_gossip: Descartes@IdeaExchange:help help!
+Fri May  3 19:21:50 1996:  imud_code: Descartes@IdeaExchange:how about here, anyone know how to set the font in HTML
+Fri May  3 19:22:48 1996:  imud_code: Descartes@IdeaExchange:I have seeb\n it somewhere :)
+Fri May  3 19:23:04 1996:  imud_code: Descartes@IdeaExchange:of course you ca't, but you can try
+Fri May  3 19:23:53 1996:  imud_code: Descartes@IdeaExchange:no not the body one :)
+Fri May  3 19:24:39 1996:  imud_code: Descartes@IdeaExchange:no
+Fri May  3 19:24:51 1996:  imud_code: Descartes@IdeaExchange:<BASEFONT SIZE=blah>
+Fri May  3 19:29:47 1996:  imud_gossip: Descartes@IdeaExchange:it can't be just an internet explorer deal
+Fri May  3 19:29:55 1996:  imud_gossip: Descartes@IdeaExchange:I don't touch the piece of crap
+Fri May  3 19:36:21 1996:  ichat: Descartes@IdeaExchange:no idea
+Fri May  3 19:36:59 1996:  ichat: Descartes@IdeaExchange:yes :)
+Fri May  3 19:38:01 1996:  ichat: Descartes@IdeaExchange:player channels are banned at this time
+Fri May  3 19:38:39 1996:  ichat: Descartes@IdeaExchange:yep... that is a I3 prohibition
+Fri May  3 19:38:51 1996:  ichat: Descartes@IdeaExchange:bring it up on the intermud mailig list if you want it changed
+Fri May  3 19:39:22 1996:  ichat: Descartes@IdeaExchange:intermud@imaginary.com
+Fri May  3 19:39:30 1996:  ichat: Descartes@IdeaExchange:you should probably join the list first
+Fri May  3 19:39:52 1996:  ichat: Descartes@IdeaExchange:what trend is that?
+Fri May  3 19:40:16 1996:  ichat: Descartes@IdeaExchange:what about imaginary.com?
+Fri May  3 19:40:38 1996:  ichat: Descartes@IdeaExchange:what is the trend?
+Fri May  3 19:41:04 1996:  ichat: Descartes@IdeaExchange:Microsoft is not on imaginary.com :)
+Fri May  3 19:41:08 1996:  ichat: Descartes@IdeaExchange:oh, LPMud :)
+Mon May  6 17:52:46 1996:  imud_gossip: Descartes@IdeaExchange:it does a lot
+Mon May  6 17:57:17 1996:  imud_code: Descartes@IdeaExchange:probably SetInventory()
+Mon May  6 17:57:39 1996:  imud_code: Descartes@IdeaExchange:but I am making an extremely rough guess as to what you mean
+Mon May  6 17:58:14 1996:  imud_code: Descartes@IdeaExchange:something like it is in NM, have a look at the room docs :)
+Mon May  6 18:00:28 1996:  imud_code: Descartes@IdeaExchange:yeah, I do foreach(object ob in objects()) if( base_name(ob) == file) count++;
+Mon May  6 18:03:15 1996:  imud_code: Descartes@IdeaExchange:the format for SetInventory() depends on the object in question, best to refer to the docs ont hat
+Mon May  6 18:03:43 1996:  imud_code: Descartes@IdeaExchange:you ddon't do that witht eh NM mudlib
+Mon May  6 18:03:55 1996:  imud_code: Descartes@IdeaExchange:/doc/build
+Mon May  6 18:04:45 1996:  imud_code: Descartes@IdeaExchange:I will sacrifice a little efficiency for understandbility any day
+Mon May  6 18:06:06 1996:  imud_code: Descartes@IdeaExchange:because that does not mean they should never be called
+Mon May  6 18:06:24 1996:  imud_code: Descartes@IdeaExchange:and actually, keeping things in their own files can be more efficien\t maybe
+Mon May  6 18:06:30 1996:  imud_code: Descartes@IdeaExchange:since you never have to write resets
+Mon May  6 18:06:42 1996:  imud_code: Descartes@IdeaExchange:which means the rooms are always replaced
+Mon May  6 18:07:14 1996:  imud_code: Descartes@IdeaExchange:although that is a random theory and I have no idea if it is truly more efficient overall :)
+Mon May  6 18:07:46 1996:  imud_code: Descartes@IdeaExchange:the most important reason is that from a code maintainence point of view, ob->set() is hell
+Mon May  6 18:11:52 1996:  imud_code: Descartes@IdeaExchange:absolute_value(x)
+Mon May  6 18:12:02 1996:  imud_code: Descartes@IdeaExchange:to_int(f);
+Mon May  6 18:14:14 1996:  imud_code: Descartes@IdeaExchange:Beek has an LPC fix, no idea how fast it is
+Mon May  6 18:15:21 1996:  imud_code: Descartes@IdeaExchange:that is correct, because of a change made to mudos a few released back
+Mon May  6 18:17:11 1996:  imud_code: Descartes@IdeaExchange:like I said, Beek has an LPC fix, but I have no idea how fast it is
+Mon May  6 18:17:43 1996:  imud_gossip: Descartes@IdeaExchange:not a very useful class since you are using a version of NM that no longer exists :)
+Mon May  6 18:18:26 1996:  imud_gossip: Descartes@IdeaExchange:no one new is using
+Mon May  6 18:18:30 1996:  imud_gossip: Descartes@IdeaExchange:it
+Mon May  6 18:19:04 1996:  imud_gossip: Descartes@IdeaExchange:tribbles
+Mon May  6 18:20:18 1996:  imud_gossip: Descartes@IdeaExchange:what are tribbles?
+Mon May  6 18:20:38 1996:  imud_gossip: Descartes@IdeaExchange:I KNow what they are
+Mon May  6 18:20:46 1996:  imud_gossip: Descartes@IdeaExchange:I am just curious what about them is lagging the mud
+Mon May  6 18:20:56 1996:  imud_gossip: Descartes@IdeaExchange:reproduction?
+Mon May  6 18:21:35 1996:  imud_gossip: Descartes@IdeaExchange:that will do it

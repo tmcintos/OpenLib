@@ -26,3 +26,7 @@ Mon Apr 22 20:43:24 1996 (tmcintos@knapp38.res.iastate.edu (Tim))
 Mon Apr 22 21:57:28 1996 (tmcintos@knapp38.res.iastate.edu (Tim))
     * object.c: changed set_ids() to add_ids()
 
+Fri May  3 15:49:58 1996 (tmcintos@knapp38.res.iastate.edu (Tim))
+    * cmdline.c:  Changed the way flags are handled, hopefully optimized
+      it to some extent.
+

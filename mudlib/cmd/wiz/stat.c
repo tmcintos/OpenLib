@@ -5,6 +5,7 @@ int
 main(string* argv, string* argv2)
 {
   string info = "";
+  mixed tmp;
   object ob;
 
   if( !sizeof(argv2) )
@@ -39,8 +40,8 @@ main(string* argv, string* argv2)
   foreach(string id in ob->query_ids())
     info += id + ", ";
   info += "\n";
-  info += sprintf("Value: %i silver, %i gold.\n",
-		    ob->query_value()[0], ob->query_value()[1]);
+  if( tmp = ob->query_value() )
+    info += sprintf("Value: %i silver, %i gold.\n", tmp[0], tmp[1]);
 
   this_player()->more(explode(info, "\n"));
   return 1;

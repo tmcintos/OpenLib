@@ -1,14 +1,15 @@
 #obj/clone/user/human.c
 slen 24
 swid 80
-curr_line 300
-lines 295
-file "/u/h/hamnsnock/stuff/wand.c"
-callback 0
+curr_line 34
+lines 33
+file ({"login_d: 0 is not a supported terminal type","Welcome to Dysfunctional Mud!","-------------------------------------------------------------------------------","                D y s f u n c t i o n a l  M u d  N e w s","			last update: 04/23/96","-------------------------------------------------------------------------------","* Please send mail to Tim if you want to become a developer.  Additionally,","  all developers should join the mailing list by sending mail to","  majordomo@knapp38.res.iastate.edu with the string 'subscribe dysfunctional'","  in the body of the letter.","","* If you want to take on a project or have any new project ideas, send mail","  to Tim.","","* There is now a 'changelog' command which appends an entry to the ChangeLog","  file in the current working directory.","","* Changed set_ids() to add_ids() in OBJECT. Make changes accordingly.","","* Going through a major revision.  Modularizing inheritable objects, anything","  derived from BASE will find out that create() is declared 'nomask'.  You","  should use initialize() in place of create() in derived objects.  See BASE","  for the code as it stands right now.","    Basically have 3 functions, initialize(), low_setup(), and setup().","  The setup() funcs are for initializing cloned objects (as opposed to the","  master copy without the # in its name).  low_setup is used in the mudlib","  and setup() is reserved for the end user (that way you don't have to call","  ::setup() all the time).","    Note that this is subject to change, so don't make your fixes yet unless","  you don't mind doing it again.","","","",})
+callback 
+no_clean 0
 flags ({})
 coins ({550,436,})
 hit_points 58
 spell_points 0
-env_vars (["the":"dark and evil lord of Patagonia","MORE_EXIT_END":1,"GENDER":1,"LENGTH":24,"nmsh_nick":([]),"nmsh_alias":(["u":"up","bio":"biography","l":"look $*","ne":"northeast","goto":".goto $*","join":".join $*","quit":".quit","s":"south","home":".home","w":"west","e":"east","se":"southeast","d":"down","n":"north","i":"inventory","exa":"look at $*","wand":"clone /u/h/hamnsnock/stuff/wand.c","sw":"southwest","nw":"northwest","summon":".summon $*",]),"WIDTH":80,"TITLE":"The evil $N, lord of Patagonia","nmsh_xverb":(["'":"say $*",":":"emote $*",]),"version":"Prototype Shell","TERM":"vt100","SHELL":"/obj/clone/shells/protosh","PATH":"/cmd/wiz:/adm/cmd/wiz:/cmd/player:/adm/cmd/player",])
-aliases (["l":"look","f":"finger","ne":"northeast","goto":".goto","join":".join","quit":".quit","s":"south","home":".home","w":"west","e":"east","se":"southeast","n":"north","i":"inventory","sc":"score","wand":"clone /u/h/hamnsnock/stuff/wand","sw":"southwest","nw":"northwest",])
-channels ({"wiz",})
+env_vars (["SHELL":"/obj/clone/shells/protosh","PATH":"/cmd/wiz:/adm/cmd/wiz:/cmd/player:/adm/cmd/player","the":"dark and evil lord of Patagonia","nmsh_xverb":(["'":"say $*",":":"emote $*",]),"version":"Prototype Shell","nmsh_alias":(["ic":"chat icode: $*","home":".home","ige":"chat emote igossip: $*","goto":".goto $*","i":"inventory","w":"west","d":"down","n":"north","ig":"chat igossip: $*","wand":"clone /u/h/hamnsnock/stuff/wand.c","sw":"southwest","u":"up","l":"look $*","nw":"northwest","ne":"northeast","quit":".quit","s":"south","bio":"biography","summon":".summon $*","se":"southeast","e":"east","join":".join $*","exa":"look at $*",]),"GENDER":1,"LENGTH":24,"nmsh_nick":([]),"WIDTH":80,"TITLE":"The evil $N, lord of Patagonia","TERM":"vt100","MORE_EXIT_END":1,])
+aliases (["home":".home","goto":".goto","i":"inventory","w":"west","n":"north","wand":"clone /u/h/hamnsnock/stuff/wand","sw":"southwest","l":"look","nw":"northwest","sc":"score","f":"finger","ne":"northeast","quit":".quit","s":"south","se":"southeast","e":"east","join":".join",])
+channels ({"wiz","igossip","icode",})

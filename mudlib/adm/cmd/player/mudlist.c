@@ -10,8 +10,6 @@
 #include <command.h>
 #include <net/daemons.h>
 
-inherit INHERIT_DIR "/inttostr";
-
 int
 main(string str) {
     mixed *info;
@@ -114,7 +112,7 @@ main(string str) {
 			 mud, info[8], info[7], info[5], info[1],
 			 (info[2] ? sprintf("%i", info[2]) : "N/A")) });
     list = sort_array(list, 1);
-    list = ({ mud_name() + " recognizes " + int_to_word(sizeof(borg)) +
+    list = ({ mud_name() + " recognizes " + to_string(sizeof(borg)) +
 		" mud(s) matching your query: ", "" }) + list;
     this_player()->more(list);
     return 1;

@@ -158,3 +158,13 @@ u/t/tim/tmp.c line 2: Warning: redefinition of #define HEY
 
 u/t/tim/test.c line 4: parse error
 u/t/tim/workroom.c line 19: Illegal to redefine 'nomask' function "create"
+u/t/tim/workroom.c line 38: Reserved type name unexpected.
+u/t/tim/workroom.c line 38: parse error
+u/t/tim/workroom.c line 47: Bad argument 1 to efun remove_action()
+u/t/tim/workroom.c line 51: Number of arguments disagrees with previous definition.
+u/t/tim/workroom.c line 47: Too few arguments to remove_action
+u/t/tim/workroom.c line 51: Number of arguments disagrees with previous definition.
+u/t/tim/workroom.c line 47: Too few arguments to remove_action
+u/t/tim/workroom.c line 51: Number of arguments disagrees with previous definition.
+u/t/tim/workroom.c line 51: Number of arguments disagrees with previous definition.
+u/t/tim/test.c line 4: Too few arguments to remove_action

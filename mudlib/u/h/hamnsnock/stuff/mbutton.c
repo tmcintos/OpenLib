@@ -47,7 +47,7 @@ short(){
 if(environment(this_object()))
 {
 if(interactive(environment()))
-  return "a " + color + "button, with message: " +message;
+  return "a " + color + " button, with message: " + message;
 }
  return "a magical button";
 }

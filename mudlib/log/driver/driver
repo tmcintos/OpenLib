@@ -690,3 +690,32 @@ Driver came up: Mon Apr 22 21:18:05 CDT 1996
 Driver came up: Tue Apr 23 15:38:23 CDT 1996
 Driver went down (exit code: 0): Wed Apr 24 02:18:17 CDT 1996
 Driver came up: Wed Apr 24 02:18:17 CDT 1996
+Driver went down (exit code: 132): Wed Apr 24 23:57:27 CDT 1996
+Driver came up: Wed Apr 24 23:57:29 CDT 1996
+Driver went down (exit code: 255): Wed Apr 24 23:57:30 CDT 1996
+Driver exited with -1.  Halting.
+Driver came up: Wed Apr 24 23:58:23 CDT 1996
+Driver went down (exit code: 255): Wed Apr 24 23:58:23 CDT 1996
+Driver exited with -1.  Halting.
+Driver came up: Wed Apr 24 23:59:16 CDT 1996
+Driver came up: Thu Apr 25 00:04:59 CDT 1996
+Driver went down (exit code: 132): Thu Apr 25 00:07:36 CDT 1996
+Driver came up: Thu Apr 25 00:07:37 CDT 1996
+Driver came up: Thu Apr 25 16:49:44 CDT 1996
+Driver came up: Fri Apr 26 02:14:44 CDT 1996
+Driver came up: Sun Apr 28 00:59:54 CDT 1996
+Driver came up: Sun Apr 28 01:00:11 CDT 1996
+Driver came up: Sun Apr 28 20:18:31 CDT 1996
+Driver came up: Mon Apr 29 11:00:13 CDT 1996
+Driver came up: Tue Apr 30 14:15:49 CDT 1996
+Driver came up: Tue Apr 30 23:55:14 CDT 1996
+Driver came up: Wed May  1 04:36:33 CDT 1996
+Driver came up: Wed May  1 19:19:22 CDT 1996
+Driver went down (exit code: 0): Wed May  1 19:21:44 CDT 1996
+Driver came up: Wed May  1 19:21:45 CDT 1996
+Driver went down (exit code: 0): Wed May  1 19:31:29 CDT 1996
+Driver came up: Wed May  1 19:31:30 CDT 1996
+Driver came up: Thu May  2 03:56:17 CDT 1996
+Driver went down (exit code: 134): Sat May  4 01:00:20 CDT 1996
+Driver came up: Sat May  4 01:00:21 CDT 1996
+Driver came up: Mon May  6 15:54:19 CDT 1996

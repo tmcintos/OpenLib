@@ -7,6 +7,6 @@ email_addr "mud"
 body "/obj/clone/user/human"
 login_shell "/obj/clone/shells/rsh"
 gender 0
-login_time 830331036
-logout_time 830331040
+login_time 831156810
+logout_time 831156828
 login_from "knapp38.res.iastate.edu"

@@ -5,8 +5,8 @@ inherit MONSTER;
   string title = "";
 object security;
 int invis = 0;
-create(){
-   ::create();
+initialize(){
+  ::initialize();
    set_name("Xantie");
 }
 

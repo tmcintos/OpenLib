@@ -1,0 +1,18 @@
+MUD Mail v1.0
+-------------
+
+mail.c:		user command to read/send mail
+editor.c:	simple global editor for entering text
+mailbox.*:	mailbox object
+maild.c:	mail daemon
+		--can be used with provided mailbox object or new
+		mailbox object can be created which has functions prototyped
+		in mailbox.h
+		--can also use provided or different editor for
+		entering text
+
+You will probably need to edit maild.c and mail.c to change the #defines to
+suit your mud.  You may also need to define a few small functions to
+compensate for the use of local simul efuns in the code.  If your mud doesn't
+support the discworld color codes (ex: %^BLUE%^) you should edit maild.c
+to remove them.
