@@ -1,25 +1,31 @@
 /*  -*- LPC -*-  */
 // security_d.c:  Mudlib security implementation
-//   Created by Tim 04.13.96
+//
+// Copyright (C) 1996 Tim McIntosh (tmcintos@dm.imaginary.com)
+//
+// This program is part of the OpenLib Mudlib distribution; it
+// is free software; you can redistribute it and/or modify it
+// under the terms of the GNU General Public License as published
+// by the Free Software Foundation; either version 2 of the License,
+// or (at your option) any later version.
+// 
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+// 
+// If you acquired this program as part of the OpenLib Mudlib
+// distribution, you should have received a copy of the GNU
+// General Public License in the file /doc/GPL; if not,
+// write to the Free Software Foundation, Inc., 675 Mass Ave,
+// Cambridge, MA 02139, USA.
+//
+// Created by Tim 04.13.96
 //
 //   Based on security concept by Reimer Behrends
 //   (behrends@buran.fb10.tu-berlin.de) described in document "LIMA MUDLIB
 //   SECURITY" on Lima Bean homepage (http://lima.imaginary.com/security.html).
 //
-// todo: 
-//       valid_* funcs called from master (read, write, etc)
-//       efun files--clean them up, write more code
-//       verify file protection
-//       verify that everything works correctly--robustness, make sure you
-//         can't break it by passing weird values. (also warning msgs etc.)
-//       insert unguarded() calls into the proper objects.
-//       figure out file protections for user data & how to set up.
-//       move objects to the right directories (move include to /adm/include)
-//       figure out how to save a player body when a file protection is not 0
-//         probably involves reworking the connection/body scheme so the
-//         body can have higher privs than the connection.
-// files modified lately:
-// none
 
 #include <dirs.h>
 #include <origin.h>

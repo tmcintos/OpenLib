@@ -1,9 +1,9 @@
 ----------------------------------------------------------------------------
-Dysfunctional Mud (MudOS v22.1a6) starting up on FreeBSD - Tue Oct 15 23:09:16 1996
+Dysfunctional Mud (MudOS v22.1a6) starting up on FreeBSD - Thu Oct 17 00:22:45 1996
 
 
 Connected to address server on localhost port 7374
-/adm/obj/daemon/master.c line 129: Warning: Non-void functions must return a value.
+/adm/obj/daemon/master.c line 132: Warning: Non-void functions must return a value.
 
 Loading preloaded files ...
 Initializations complete.

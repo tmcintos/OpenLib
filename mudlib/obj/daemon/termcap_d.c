@@ -21,7 +21,8 @@
 // write to the Free Software Foundation, Inc., 675 Mass Ave,
 // Cambridge, MA 02139, USA.
 //
-
+// Created 10.15.96 by Tim@Dysfunctional Mud
+//
 
 private mapping default_termcap;
 private mapping database;

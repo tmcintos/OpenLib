@@ -1,11 +1,13 @@
-/*  -*- LPC -*-  */
-// file: /daemon/master.c
+//  -*- LPC -*-
+//
+// NOTE: This file is NOT covered by the OpenLib License agreement
+//
 
 #include <mudlib.h>
 #include <daemons.h>
 #include <login.h>
 
-#include "master/valid.c"      // all the valid_* functions
+#include "master/valid.c"
 
 void
 create()
@@ -22,7 +24,8 @@ connect(int portnum)
   err = catch( user = new(CONNECTION_OB) );
   
   if (err) {
-    efun::write("It looks like someone is working on the connect object.\n");
+    efun::write("It looks like someone is working on the "
+		"connection object.\n");
     destruct(user);
   }
 
@@ -279,4 +282,13 @@ string
 author_file(string str)
 {
   return (string)call_other(SIMUL_EFUN, "author_file", str);
+}
+
+// Returns the list of valid literals that may appear in parse rules
+// Of course this should be generalized *wink* -Tim 10/16/96
+
+string*
+parse_command_prepos_list()
+{
+  return ({ "at", "in", "on", "by", "from", "into", "of" });
 }

@@ -1,4 +1,7 @@
 /*  -*- LPC -*-  */
+// Orig by Tim -- This is a sloppy hack, not intended to be actually used,
+// but it never got any further than this.
+//
 #include <weapon.h>
 
 mapping raceinfo;  // keyed by race names, values are mixed*

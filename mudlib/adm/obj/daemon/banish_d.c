@@ -1,24 +1,39 @@
-/*
- * Banish daemon for the Ultralib mudlib. Written by Talen (Stuart Lamble -
+/*  -*- LPC -*-
+ *
+ * Banish daemon for the Openlib mudlib. Written by Talen (Stuart Lamble -
  * lamble@yoyo.cc.monash.edu.au) January-February '96.
  *
- * This code is subject to the Ultralib copyright - specifically,
- * you may modify and use this code freely, but may not remove this copyright
- * from this file.
- *
- * Note that, since I (Talen) also wiz on Shattered Worlds, there may be
- * similarities between the code in this file, and the banish system on
- * SW. Any such similarities are coincidental, not intentional.
- */
-/*
  * Banish daemon: maintains a list of character names that have been
  * banished from the game, and (optionally) a list of times when they
  * can return. This time is of the form returned by time() - it is up
  * to any relevant objects to convert game time to real time if so
  * desired.
- */
-
-/*
+ *
+ * Copyright (C) 1996 Stuart Lamble
+ *
+ * This program is part of the OpenLib Mudlib distribution; it
+ * is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU General Public License as published
+ * by the Free Software Foundation; either version 2 of the License,
+ * or (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * If you acquired this program as part of the OpenLib Mudlib
+ * distribution, you should have received a copy of the GNU
+ * General Public License in the file /doc/GPL; if not,
+ * write to the Free Software Foundation, Inc., 675 Mass Ave,
+ * Cambridge, MA 02139, USA.
+ *
+ *
+ * Note that, since I (Talen) also wiz on Shattered Worlds, there may be
+ * similarities between the code in this file, and the banish system on
+ * SW. Any such similarities are coincidental, not intentional.
+ *
+ *
  * 3.31.96  Tim  *Fixed member_array() problems, 1st/2nd args were transposed
  *               *Added remove() to save object on destruct
  * 6.24.96  Tim  *Changed to use <save.h>

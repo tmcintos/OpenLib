@@ -4198,3 +4198,57 @@ Tue Oct 15 23:01:30 1996: imud_gossip: Descartes@IdeaExchange:really... just THI
 Tue Oct 15 23:02:46 1996: imud_gossip: Descartes@IdeaExchange:the whole mud waits while your wait() sits quietly
 Tue Oct 15 23:03:22 1996: imud_gossip: Descartes@IdeaExchange:that is not what call out does
 Wed Oct 16 00:05:34 1996: imud_gossip: Descartes@IdeaExchange:is the net there?
+Wed Oct 16 00:38:18 1996: imud_code: Descartes@IdeaExchange:what ya need?
+Wed Oct 16 00:40:06 1996: imud_code: Descartes@IdeaExchange:looks like that is not the line it is looking at
+Wed Oct 16 00:40:16 1996: imud_code: Descartes@IdeaExchange:or more likely, you have an extra "" somewhere n there
+Wed Oct 16 00:42:41 1996: imud_code: Descartes@IdeaExchange:yes
+Wed Oct 16 00:44:38 1996: imud_code: Descartes@IdeaExchange:no :) I told you., you hjave an extra " somewhere
+Wed Oct 16 00:47:57 1996: imud_code: Descartes@IdeaExchange:for some reason, the compiler thinks you are passing one arg to SetDoor()
+Wed Oct 16 00:49:01 1996: imud_code: Descartes@IdeaExchange:I don't know, it is your file
+Wed Oct 16 00:49:35 1996: imud_code: Descartes@IdeaExchange:no
+Wed Oct 16 00:52:22 1996: imud_code: Descartes@IdeaExchange:the , before ]) willnot make a difference
+Wed Oct 16 00:52:36 1996: imud_code: Descartes@IdeaExchange:next step is to comment out the SetDoor(0 line and see if the room compiles
+Wed Oct 16 00:52:48 1996: imud_code: Descartes@IdeaExchange:if it compiles, the error is in the SetDoor(0- line, if it doesnot, it is elsewhere
+Wed Oct 16 09:25:26 1996: imud_gossip: Descartes@Dead Souls:decided to sit and lie about me while I am not on R'aaza?
+Wed Oct 16 09:26:20 1996: imud_gossip: Descartes@Dead Souls:I guess so, seems he is not here now though...
+Wed Oct 16 10:12:08 1996: imud_code: Descartes@IdeaExchange:http://www.imaginary.com/LPC/Nightmare/Admins
+Wed Oct 16 10:12:30 1996: imud_code: Descartes@IdeaExchange:nonsense... all the commands are completely documented
+Wed Oct 16 10:13:49 1996: imud_code: Descartes@IdeaExchange:mkdir /cmds/common /secure/cmds/common
+Wed Oct 16 10:13:57 1996: imud_code: Descartes@IdeaExchange:then update /verbs/common/help.c
+Wed Oct 16 10:14:21 1996: imud_code: Descartes@IdeaExchange:talk to R'aaza
+Wed Oct 16 10:15:19 1996: imud_code: Descartes@IdeaExchange:that mant create two dirs
+Wed Oct 16 10:15:31 1996: imud_code: Descartes@IdeaExchange:/cmds/common and /secure/cmds/common
+Wed Oct 16 10:16:35 1996: imud_code: Descartes@IdeaExchange:Krem I think his actiuons speak for your entire yet another pathetic attempt at duplicating NM the way it should be(TM) mud
+Wed Oct 16 10:17:26 1996: imud_code: Descartes@IdeaExchange:congradulations
+Wed Oct 16 10:17:36 1996: imud_code: Descartes@IdeaExchange:no problem Old One
+Wed Oct 16 10:17:44 1996: imud_code: Descartes@IdeaExchange:please do have a look at that web page though
+Wed Oct 16 10:21:43 1996: imud_code: Descartes@IdeaExchange:/realms?
+Wed Oct 16 10:23:44 1996: imud_code: Descartes@IdeaExchange:questions in the README doc and getting started doc are dumb :)
+Wed Oct 16 10:24:06 1996: imud_code: Descartes@IdeaExchange:/doc/mudlib
+Wed Oct 16 10:24:22 1996: imud_code: Descartes@IdeaExchange:I believe the doc is called MudLocking or something
+Wed Oct 16 10:25:08 1996: imud_code: Descartes@IdeaExchange:the getting started doc is on that web page
+Wed Oct 16 10:25:18 1996: imud_code: Descartes@IdeaExchange:the win32 mudos isnot at all stripped down
+Wed Oct 16 10:25:28 1996: imud_code: Descartes@IdeaExchange:it is the same drivr and same mudlib
+Wed Oct 16 12:09:58 1996: imud_gossip: Descartes@Nightmare:what a clever boy you are Emkil to come up with such a witty comment
+Wed Oct 16 16:01:52 1996: imud_code: Descartes@IdeaExchange:economy
+Wed Oct 16 16:02:25 1996: imud_code: Descartes@IdeaExchange:it is really quite simple :)
+Wed Oct 16 16:04:21 1996: imud_code: Descartes@IdeaExchange:yes, that is the way to do it for a test char
+Wed Oct 16 21:07:15 1996: imud_code: Descartes@IdeaExchange:just what it says :)
+Wed Oct 16 21:12:51 1996: imud_gossip: Descartes@IdeaExchange:decided to move on to somethign else Tim?
+Wed Oct 16 21:14:42 1996: imud_gossip: Descartes@IdeaExchange:I am thinking maybe I all I am doing with NM is let twits open half-based muds that deplete the number of players playign real muds
+Wed Oct 16 21:22:22 1996: imud_gossip: Descartes@IdeaExchange:Dole is a gezer
+Wed Oct 16 21:42:38 1996: imud_gossip: Descartes@IdeaExchange:NM is at 19 right now :)
+Wed Oct 16 21:46:30 1996: imud_gossip: Descartes@IdeaExchange:just code a ne wone... what info you looking for specifically?
+Wed Oct 16 21:47:22 1996: imud_gossip: Descartes@IdeaExchange:you need to update all the LPC files
+Wed Oct 16 21:47:26 1996: imud_gossip: Descartes@IdeaExchange:when in doubt, reboot :)
+Wed Oct 16 22:40:08 1996: imud_gossip: Descartes@Nightmare:that is something to be proud of
+Wed Oct 16 23:04:36 1996: imud_code: Descartes@IdeaExchange:yes
+Wed Oct 16 23:05:44 1996: imud_code: Descartes@IdeaExchange:your food vendor
+Wed Oct 16 23:07:23 1996: imud_code: Descartes@IdeaExchange:there are a lot of factors that matter... bargaining of player and vendor, currency rates, etc
+Wed Oct 16 23:09:54 1996: imud_code: Descartes@IdeaExchange:then muck with the barkeep sell formula :)
+Wed Oct 16 23:13:57 1996: imud_code: Descartes@Nightmare:yes
+Wed Oct 16 23:21:15 1996: imud_code: Descartes@IdeaExchange:you just can't plug in the old race.c
+Wed Oct 16 23:22:16 1996: imud_code: Descartes@IdeaExchange:well, in the current version, all races... it will show only player racesnext release
+Thu Oct 17 00:17:20 1996: imud_code: Descartes@IdeaExchange:yes it does
+Thu Oct 17 00:17:36 1996: imud_code: Descartes@IdeaExchange:cost and value are two different things
+Thu Oct 17 00:17:52 1996: imud_code: Descartes@IdeaExchange:cost is how much I have to pay for it, value is how much the vemndor will give me

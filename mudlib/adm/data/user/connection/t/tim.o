@@ -7,6 +7,6 @@ email_addr "tmcintos@dm.imaginary.com"
 body "/adm/obj/clone/user"
 login_shell "/adm/obj/clone/shells/protosh"
 gender 1
-login_time 845439148
-logout_time 845441415
+login_time 845529775
+logout_time 845529807
 login_from "loopback"

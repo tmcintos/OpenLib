@@ -1,6 +1,7 @@
 /*  -*- LPC -*-  */
 // m_living:  Functions for living objects
-// Tim 24 Apr 96
+// Created by Tim 24 Apr 96
+// Tim 16 Oct 96 - Added is_living() function to support the NL parser
 
 #include <dirs.h>
 #include "m_living.h"
@@ -12,6 +13,7 @@ private static string name;            // our name, don't save in users
 private static int gender;             // 1=male -1=female 0=neutral (gender.h)
 private int hit_points, spell_points;  // our HP/SP
 
+
 void
 low_setup()
 {
@@ -20,6 +22,7 @@ low_setup()
   enable_commands();         // living object; Tim 9/14/95
   set_heart_beat(1);
 }
+
 
 void
 remove()
@@ -36,6 +39,16 @@ remove()
   }
 }
 
+
+// This is used by the NL parser among other things
+
+int
+is_living()
+{
+  return 1;
+}
+
+    
 /*
  * set_name:  Set the name of this living object
  */

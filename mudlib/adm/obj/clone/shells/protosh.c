@@ -1,17 +1,30 @@
-/*  -*- LPC -*-  */
-/*
- * Shell Inheritable
- * (C)1996 Cameron Kaiser "Evergreen"
- * 
- * This code is governed by the UltraLib usage agreement.
- * Removal of this header is illegal. All rights reserved.
- *
- * 02.26.96  Tim     Modified to produce shell compatible with new user.c
- * 02.27.96  Tim     Extensive modifications to shape into present form
- * 02.28.96  Tim     
- * 09.22.96  Tim     Made LPC eval work..2 liner.  Changed to use to_string()
- *                   Man this code is ugly!
- */
+//  -*- LPC -*-
+//
+// Copyright (C) 1996 Tim McIntosh (tmcintos@dm.imaginary.com)
+//
+// This program is part of the OpenLib Mudlib distribution; it
+// is free software; you can redistribute it and/or modify it
+// under the terms of the GNU General Public License as published
+// by the Free Software Foundation; either version 2 of the License,
+// or (at your option) any later version.
+// 
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+// 
+// If you acquired this program as part of the OpenLib Mudlib
+// distribution, you should have received a copy of the GNU
+// General Public License in the file /doc/GPL; if not,
+// write to the Free Software Foundation, Inc., 675 Mass Ave,
+// Cambridge, MA 02139, USA.
+//
+// 02.26.96  Tim     Modified to produce shell compatible with new user.c
+// 02.27.96  Tim     Extensive modifications to shape into present form
+// 02.28.96  Tim     
+// 09.22.96  Tim     Made LPC eval work..2 liner.  Changed to use to_string()
+//                   Man this code is ugly!
+//
 
 #include <mudlib.h>
 #include <dirs.h>
@@ -89,7 +102,7 @@ shell_init(object ob)
 {
   string tmp;
 
-  if(owner) return;
+  if(owner) return 0;
   if(!(owner = shadow(ob))) return 0;
 
   current_dir = user_cwd(owner->query_name());
@@ -110,6 +123,7 @@ shell_init(object ob)
   if( !env["PATH"] )
     env["PATH"] = "/cmd/player:/adm/cmd/player:/cmd/wiz:/adm/cmd/wiz:"
                   "/cmd/adm:/adm/cmd/adm";
+  parse_init();
   return owner;
 }
 
@@ -421,7 +435,11 @@ process_input(string input)
   if( input )
     words[0] = input;
 
-  return implode(words, " ");
+  input = implode(words, " ");
+  if( parse_sentence(input) == 1 )
+    return "";
+  else
+    return input;
 }
 
 // Called from cmd_hook() in the user

@@ -1,7 +1,26 @@
-/*  -*- LPC -*-  */
+//  -*- LPC -*-
 //  login_d.c:  handles logins to the mud
 //
-//  Orig written by Tim the regional LPC guru.
+// Copyright (C) 1996 Tim McIntosh (tmcintos@dm.imaginary.com)
+//
+// This program is part of the OpenLib Mudlib distribution; it
+// is free software; you can redistribute it and/or modify it
+// under the terms of the GNU General Public License as published
+// by the Free Software Foundation; either version 2 of the License,
+// or (at your option) any later version.
+// 
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+// 
+// If you acquired this program as part of the OpenLib Mudlib
+// distribution, you should have received a copy of the GNU
+// General Public License in the file /doc/GPL; if not,
+// write to the Free Software Foundation, Inc., 675 Mass Ave,
+// Cambridge, MA 02139, USA.
+//
+// Orig written by Tim the regional LPC guru.
 //
 //  FEATURES:
 //    Checks for the existence of the following files to enable features:
@@ -22,6 +41,7 @@
 //    08/24/96                 Added mudlock feature to prevent new users.
 //    09/03/96                 Changed the way TERM is set.
 //    09/22/96                 Cleaned up code a little
+//
 
 #include <mudlib.h>
 #include <daemons.h>    // for groupd

@@ -1,5 +1,7 @@
 /*  -*- LPC -*-  */
 // Simulated Efuns file
+//
+// NOTE: This file is NOT covered by the terms of the OpenLib License agreement
 
 #include <dirs.h>
 #include "simul_efun/efuns.h" // This file has all the efuns includes in it.

@@ -1,8 +1,29 @@
 /*  -*- LPC -*-  */
-// combat.c:  Functions for objects which do combat
+// m_combat.c:  Functions for objects which do combat
+//
+// Copyright (C) 1996 Eric Peters (epeters@netcom.com)
+//
+// This program is part of the OpenLib Mudlib distribution; it
+// is free software; you can redistribute it and/or modify it
+// under the terms of the GNU General Public License as published
+// by the Free Software Foundation; either version 2 of the License,
+// or (at your option) any later version.
+// 
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+// 
+// If you acquired this program as part of the OpenLib Mudlib
+// distribution, you should have received a copy of the GNU
+// General Public License in the file /doc/GPL; if not,
+// write to the Free Software Foundation, Inc., 675 Mass Ave,
+// Cambridge, MA 02139, USA.
+//
 // Tim 24 Apr 96 (created from old combat.c)
 //
 // Orig by Casper 9/95
+//
 // 01.29.96  Tim  - Put prototypes in combat.h & included race.h protos
 //                - Cleaned up a bit, took out this_object()'s since race.h
 //                  now defines those functions

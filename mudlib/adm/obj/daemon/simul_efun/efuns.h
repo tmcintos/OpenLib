@@ -4,6 +4,7 @@
  *  They will be included at the bottom of simul_efun.c
  */
 
+#include "overridden.c"
 #include "security.c"
 #include "to_string.c"
 #include "to_english.c"
@@ -11,7 +12,6 @@
 #include "write.c"
 #include "printf.c"
 #include "break_string.c"
-#include "wrap.c"
 #include "cat.c"
 #include "say.c"
 #include "shout.c"

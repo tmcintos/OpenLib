@@ -1,4 +1,4 @@
-/*  -*- LPC -*-  */
+//  -*- LPC -*-
 // user.c:  an interactive object representing the player's body intended
 //          to interface with a shell to do command processing
 //

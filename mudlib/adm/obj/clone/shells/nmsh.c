@@ -3,6 +3,8 @@
  *    the new Nightmare shell
  *    created by Descartes of Borg 940216
  *
+ * NOTE: This file is NOT subject to the terms of the OpenLib License agreement
+ *
  *    2.29.96  Tim ported over to UltraLib.
  *             Left 3 defines in that may be useful.  Also calls some functions
  *             not presently in the user like query_invis() and query_client()

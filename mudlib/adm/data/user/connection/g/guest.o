@@ -5,8 +5,8 @@ password "sXurny5LrrgM2"
 real_name "Guest Acct"
 email_addr "none"
 body "/adm/obj/clone/user"
-login_shell "/adm/obj/clone/shells/rsh"
+login_shell "/adm/obj/clone/shells/protosh"
 gender 0
-login_time 845434383
-logout_time 845434444
-login_from "canis.ece.utexas.edu"
+login_time 845516751
+logout_time 845516924
+login_from "loopback"

@@ -81,4 +81,7 @@
 -player saving: quick hack is in place but need better solution
 -reply command for replying to the last person who used 'tell' to send
  you a message (handy for I3 and long names)
+-higher priv objects inheriting lower priv objects is a security hole...this
+ should be checked in the lib and things should get reorganized...notably
+ user.c
 </PRE>

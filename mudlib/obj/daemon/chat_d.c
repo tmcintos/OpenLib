@@ -337,7 +337,7 @@ chat(string str)
       return 1;
     } else {
       if(!mud) {
-	write(wrap("Users: " + implode(tmp, " ") + "\n"));
+	write("Users: " + implode(tmp, " ") + "\n");
       } else {
 	
 	if( ch == (ch = map_to_remote(ch)) ) {
