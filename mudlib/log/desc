@@ -1286,3 +1286,124 @@ Tue Apr  2 23:25:58 1996:  imud_code: Descartes@IdeaExchange:I am not too keen o
 Tue Apr  2 23:49:29 1996:  imud_code: Descartes@IdeaExchange:SetItems()
 Tue Apr  2 23:49:39 1996:  imud_code: Descartes@IdeaExchange:there is documentation on this stuff :)
 Tue Apr  2 23:55:41 1996:  imud_code: Descartes@IdeaExchange:this line is for code
+Wed Apr  3 21:47:24 1996:  imud_code: Descartes@IdeaExchange:it means specifically ""
+Wed Apr  3 22:14:44 1996:  imud_code: Descartes@IdeaExchange:well, it was not, and it told you why :)
+Thu Apr  4 08:54:16 1996:  imud_code: Descartes@IdeaExchange:the function names are no longer than NM 3 ones, in fact shorter
+Thu Apr  4 08:54:30 1996:  imud_code: Descartes@IdeaExchange:excepting events, which simly have the word event preprended
+Thu Apr  4 08:56:55 1996:  imud_code: Descartes@IdeaExchange:thank you
+Thu Apr  4 12:32:10 1996:  imud_gossip: Descartes@IdeaExchange:muds be quiet lately
+Thu Apr  4 12:32:18 1996:  imud_gossip: Descartes@IdeaExchange:they must be dying
+Thu Apr  4 12:33:04 1996:  imud_gossip: Descartes@IdeaExchange:LPMud is dead :)
+Thu Apr  4 12:34:22 1996:  imud_code: Descartes@IdeaExchange:Enkil: you download it,read the directions, and hope it works
+Thu Apr  4 12:34:48 1996:  imud_gossip: Descartes@IdeaExchange:I generally avoid this line
+Thu Apr  4 12:35:11 1996:  imud_gossip: Descartes@IdeaExchange:I just felt like expressing my opinion on the future of LPMud
+Thu Apr  4 12:35:37 1996:  imud_code: Descartes@IdeaExchange:Enkil, then I point you tothe little section that says I do not support the ftpd
+Thu Apr  4 12:35:51 1996:  imud_gossip: Descartes@IdeaExchange:I am going to write a Java system
+Thu Apr  4 12:36:11 1996:  imud_code: Descartes@IdeaExchange:no one
+Thu Apr  4 12:40:12 1996:  imud_code: Descartes@IdeaExchange:you should do it in Java
+Thu Apr  4 12:40:28 1996:  imud_code: Descartes@IdeaExchange:multi-htreaded support, and better security design
+Thu Apr  4 12:41:30 1996:  imud_code: Descartes@IdeaExchange:Java runs fine without the web
+Thu Apr  4 12:41:39 1996:  imud_code: Descartes@IdeaExchange:and Java exists for portability
+Thu Apr  4 12:41:57 1996:  imud_code: Descartes@IdeaExchange:hmm... though, there is no SunOS support
+Thu Apr  4 12:42:07 1996:  imud_code: Descartes@IdeaExchange:go figure
+Thu Apr  4 12:42:33 1996:  imud_gossip: Descartes@IdeaExchange:no one disputes my LPMud is dead claim? >:)
+Thu Apr  4 12:43:53 1996:  imud_gossip: Descartes@IdeaExchange:well, most of the buffoons doing java mud stuff don't have a clue what they are doing
+Thu Apr  4 12:44:27 1996:  imud_code: Descartes@IdeaExchange:I did not know python had thread support
+Thu Apr  4 12:44:41 1996:  imud_gossip: Descartes@IdeaExchange:it is supposed to be the last weekenmd of july
+Thu Apr  4 12:44:51 1996:  imud_gossip: Descartes@IdeaExchange:but I have gotten NO ONE registering
+Thu Apr  4 12:45:52 1996:  imud_gossip: Descartes@IdeaExchange:*nod* if nothing else, it will be a fun gathering
+Thu Apr  4 12:46:36 1996:  imud_gossip: Descartes@IdeaExchange:nice lst hoorah for LPMud :)
+Thu Apr  4 12:47:14 1996:  imud_gossip: Descartes@IdeaExchange:no, I intend to finish NM if it kills me
+Thu Apr  4 12:47:50 1996:  imud_gossip: Descartes@IdeaExchange:the next NM release will come out when the bugs in MudOS are fixed
+Thu Apr  4 12:48:31 1996:  imud_gossip: Descartes@IdeaExchange:i said the end of march because I did not think it would take 4 months to fix this mudos bug
+Thu Apr  4 12:48:59 1996:  imud_gossip: Descartes@IdeaExchange:Python does not have the security manager concept of Java
+Thu Apr  4 12:49:15 1996:  imud_gossip: Descartes@IdeaExchange:docs are part of the final release
+Thu Apr  4 12:49:31 1996:  imud_gossip: Descartes@IdeaExchange:port lima to python? :)
+Thu Apr  4 12:49:49 1996:  imud_gossip: Descartes@IdeaExchange:try loading a room from a remote host with pythn :)
+Thu Apr  4 12:50:43 1996:  imud_gossip: Descartes@IdeaExchange:well, I don't know, I just know my next mud project is Java not python :)
+Thu Apr  4 12:51:48 1996:  imud_gossip: Descartes@IdeaExchange:no one cares about the security holes :)
+Thu Apr  4 12:53:42 1996:  imud_gossip: Descartes@IdeaExchange:Java has such huge buy in... if you are going to go for smething else, you have to find something more secure, and there is no such thing
+Thu Apr  4 12:54:16 1996:  imud_gossip: Descartes@IdeaExchange:LPC does not load remote objects
+Thu Apr  4 12:54:38 1996:  imud_gossip: Descartes@IdeaExchange:Java has a potential of changing the way we do software development
+Thu Apr  4 12:54:44 1996:  imud_gossip: Descartes@IdeaExchange:the hypeis deserved
+Thu Apr  4 12:55:11 1996:  imud_gossip: Descartes@IdeaExchange:how am I going to load /std/body from lima bean over to here?
+Thu Apr  4 12:56:03 1996:  imud_gossip: Descartes@IdeaExchange:remote function calls are not the problem
+Thu Apr  4 12:56:21 1996:  imud_gossip: Descartes@IdeaExchange:I am talking about storing class A on one machine and loading it on another
+Thu Apr  4 12:57:03 1996:  imud_gossip: Descartes@IdeaExchange:no, that is not right Rust
+Thu Apr  4 12:57:33 1996:  imud_gossip: Descartes@IdeaExchange:sending the source code and compiling wuld be outrageously inefficient
+Thu Apr  4 12:58:24 1996:  imud_gossip: Descartes@IdeaExchange:correct
+Thu Apr  4 12:58:38 1996:  imud_gossip: Descartes@IdeaExchange:by the way, i think Java is remarkably LPC like :)
+Thu Apr  4 13:00:20 1996:  imud_gossip: Descartes@IdeaExchange:like...?
+Thu Apr  4 13:01:16 1996:  imud_gossip: Descartes@IdeaExchange:the Java model is what is impotant
+Thu Apr  4 13:01:22 1996:  imud_gossip: Descartes@IdeaExchange:not the language itself
+Thu Apr  4 13:01:32 1996:  imud_gossip: Descartes@IdeaExchange:and corba is simply a communication protocol
+Thu Apr  4 13:01:47 1996:  imud_gossip: Descartes@IdeaExchange:Java-like languae + corba is the answer
+Thu Apr  4 13:03:27 1996:  imud_gossip: Descartes@IdeaExchange:you have to aim at your current developer base
+Thu Apr  4 13:03:37 1996:  imud_gossip: Descartes@IdeaExchange:and that is what will make Java successful
+Thu Apr  4 13:04:11 1996:  imud_gossip: Descartes@IdeaExchange:protected works fine
+Thu Apr  4 13:04:27 1996:  imud_gossip: Descartes@IdeaExchange:and the exception handling is not complex
+Thu Apr  4 13:04:39 1996:  imud_gossip: Descartes@IdeaExchange:the only difference from Python is minor
+Thu Apr  4 13:05:30 1996:  imud_gossip: Descartes@IdeaExchange:Java speed bites
+Thu Apr  4 13:05:52 1996:  imud_gossip: Descartes@IdeaExchange:well, if protected is not working, it is a bug and not a feature of the language
+Thu Apr  4 13:09:27 1996:  imud_gossip: Descartes@IdeaExchange:Java is not a product of advertising
+Thu Apr  4 13:09:47 1996:  imud_gossip: Descartes@IdeaExchange:the Java marketing staff was just two people until recently
+Thu Apr  4 13:10:19 1996:  imud_gossip: Descartes@IdeaExchange:that is not a lot of marketing by industry standards
+Thu Apr  4 13:10:31 1996:  imud_gossip: Descartes@IdeaExchange:at any rate, I am headed to JavaOne in May
+Thu Apr  4 13:10:53 1996:  imud_gossip: Descartes@IdeaExchange:Sunis solving a problem no one else has solved
+Thu Apr  4 13:10:59 1996:  imud_gossip: Descartes@IdeaExchange:that is the source of the hype
+Thu Apr  4 13:11:48 1996:  imud_gossip: Descartes@IdeaExchange:oh yeah, by the way, I am going to be a regular columnist for the Java Developers Journal :)
+Thu Apr  4 13:12:06 1996:  imud_gossip: Descartes@IdeaExchange:which language?
+Thu Apr  4 13:13:06 1996:  imud_gossip: Descartes@IdeaExchange:no they do not
+Thu Apr  4 13:14:12 1996:  imud_gossip: Descartes@IdeaExchange:not to the degree of sphisticationof the Java model
+Thu Apr  4 13:14:24 1996:  imud_gossip: Descartes@IdeaExchange:which is tremendously important
+Thu Apr  4 13:14:37 1996:  imud_gossip: Descartes@IdeaExchange:Perl does not handle the human race well
+Thu Apr  4 13:15:01 1996:  imud_gossip: Descartes@IdeaExchange:Rust, ou have never shown a big slant on Python, now, have you?
+Thu Apr  4 13:15:29 1996:  imud_gossip: Descartes@IdeaExchange:I do a LOT with Java
+Thu Apr  4 13:15:51 1996:  imud_gossip: Descartes@IdeaExchange:and I do script programming in python
+Thu Apr  4 13:16:11 1996:  imud_gossip: Descartes@IdeaExchange:Rust, I use 10 languages in one day commonly
+Thu Apr  4 13:16:39 1996:  imud_gossip: Descartes@IdeaExchange:already today I have worked in Java, Perl, C++, SQL
+Thu Apr  4 13:17:09 1996:  imud_gossip: Descartes@IdeaExchange:oh yeah, that LPC thing too
+Thu Apr  4 13:18:18 1996:  imud_gossip: Descartes@IdeaExchange:pet peeve number 1 of *Java* mud people... they want to build "drivers"
+Thu Apr  4 13:18:32 1996:  ichat: Descartes@IdeaExchange:why redo LPMud in Java?
+Thu Apr  4 13:18:50 1996:  imud_gossip: Descartes@IdeaExchange:why redo LPMud in Java?
+Thu Apr  4 13:21:09 1996:  imud_gossip: Descartes@IdeaExchange:heh, well, read issue #1 of the Java Developers Journal for my thoughts on Java Mud :)
+Thu Apr  4 13:22:41 1996:  imud_gossip: Descartes@IdeaExchange:no, and it will not be on newsstands until next month
+Thu Apr  4 13:24:38 1996:  imud_gossip: Descartes@IdeaExchange:horizontally
+Thu Apr  4 23:25:54 1996:  imud_gossip: Descartes@IdeaExchange:already saw the episode
+Thu Apr  4 23:26:08 1996:  imud_gossip: Descartes@IdeaExchange:what happens see, is...
+Thu Apr  4 23:26:34 1996:  imud_gossip: Descartes@IdeaExchange:...and the President...
+Thu Apr  4 23:26:50 1996:  imud_gossip: Descartes@IdeaExchange:it is an awesome episode
+Thu Apr  4 23:27:06 1996:  imud_gossip: Descartes@IdeaExchange:Delenn has the best line I have heard on B5 ever in it
+Thu Apr  4 23:27:34 1996:  imud_gossip: Descartes@IdeaExchange:muds are a most profund waste of time
+Thu Apr  4 23:27:56 1996:  imud_gossip: Descartes@IdeaExchange:want some clues? :)
+Thu Apr  4 23:28:08 1996:  imud_gossip: Descartes@IdeaExchange:because I want to finish what I started
+Thu Apr  4 23:28:37 1996:  imud_gossip: Descartes@IdeaExchange:life, by the way, is a huge waste of time
+Thu Apr  4 23:30:05 1996:  imud_gossip: Descartes@IdeaExchange:Nightmare V is almost certain to be the last release of the NM mudlib
+Thu Apr  4 23:31:05 1996:  imud_gossip: Descartes@IdeaExchange:muds raised mine... I got my best GPA the semester I mudded
+Thu Apr  4 23:34:22 1996:  imud_gossip: Descartes@IdeaExchange:probably because it made me use my time better
+Thu Apr  4 23:53:28 1996:  imud_gossip: Descartes@IdeaExchange:delenn's line?
+Thu Apr  4 23:56:09 1996:  imud_gossip: Descartes@IdeaExchange:how many seasons are there supposed to be?
+Fri Apr  5 17:53:15 1996:  imud_gossip: Descartes@IdeaExchange:anyone here ever been to China?
+Fri Apr  5 21:28:22 1996:  imud_gossip: Descartes@IdeaExchange:this conversation is in really poor taste
+Fri Apr  5 21:35:34 1996:  imud_gossip: Descartes@IdeaExchange:guys who think good sex is a nocturnal emission
+Fri Apr  5 21:36:55 1996:  imud_gossip: Descartes@IdeaExchange:Caiaphus grow up or log out
+Fri Apr  5 21:38:07 1996:  imud_gossip: Descartes@IdeaExchange:yeah fuckhead, I am stupid
+Fri Apr  5 21:39:39 1996:  imud_gossip: Descartes@IdeaExchange:reason #25 for the fall of LPMuds... the intellect of mud people has dropped a thousand fold in the last 2 years
+Fri Apr  5 21:40:46 1996:  imud_gossip: Descartes@IdeaExchange:whatecer
+Fri Apr  5 21:41:04 1996:  imud_gossip: Descartes@IdeaExchange:I would damn near guarantee I am smarrter than you Caiaphas
+Fri Apr  5 21:41:56 1996:  imud_gossip: Descartes@IdeaExchange:sucks to be you
+Fri Apr  5 21:43:02 1996:  imud_gossip: Descartes@IdeaExchange:I am damn happy and thankful I am me :)
+Fri Apr  5 21:45:15 1996:  imud_gossip: Descartes@IdeaExchange:that statement was a reference to me bozo
+Fri Apr  5 21:45:35 1996:  imud_gossip: Descartes@IdeaExchange:it sucks, I need to lose weight
+Fri Apr  5 21:47:32 1996:  imud_gossip: Descartes@IdeaExchange:I prefer chocolate chip
+Fri Apr  5 23:08:21 1996:  imud_gossip: Descartes@IdeaExchange:no, it is an sefun
+Sat Apr  6 16:39:38 1996:  imud_gossip: Descartes@IdeaExchange:who all has gotten mail from those hijack.org fucks?
+Sat Apr  6 16:40:20 1996:  imud_gossip: Descartes@IdeaExchange:I emailed the postmaster of their provider and and spammed them with 200 emails back
+Sat Apr  6 16:41:43 1996:  imud_gossip: Descartes@IdeaExchange:anyone who sends me junk email gets a program called fuckyou.pl in my hme dir run on them
+Sat Apr  6 16:41:57 1996:  imud_gossip: Descartes@IdeaExchange:normally I mail them back their own junk mail like 30 times
+Sat Apr  6 16:42:07 1996:  imud_gossip: Descartes@IdeaExchange:this particular piece, I got three copies of though
+Sat Apr  6 16:42:25 1996:  imud_gossip: Descartes@IdeaExchange:so I had it mail them 200 times with a nice commentary at the top ebery 30 seconds
+Sat Apr  6 16:43:45 1996:  imud_gossip: Descartes@IdeaExchange:with 200 mails, they have to sort through those 200 :)
+Sat Apr  6 16:45:00 1996:  imud_gossip: Descartes@IdeaExchange:people spam you a lot leto? :)
+Sat Apr  6 20:33:51 1996:  imud_code: Descartes@IdeaExchange:%^GREEN%^FUCK%^RED%^ YOU :)
+Sat Apr  6 20:35:23 1996:  imud_code: Descartes@IdeaExchange:whatever

@@ -1,6 +1,6 @@
 using config file: /home/mud/etc/config.dm
 ----------------------------------------------------------------------------
-Dysfunctional Mud (MudOS v22a23) starting up on FreeBSD - Sun Mar 31 16:31:43 1996
+Dysfunctional Mud (MudOS v22a25) starting up on FreeBSD - Wed Apr  3 23:28:53 1996
 
 
 Connected to address server on localhost port 7374
@@ -8,7 +8,15 @@ include/mudlib.h line 15: Warning: redefinition of #define OBJECT
 
 
 Loading preloaded files ...
-obj/daemon/net/services/file.c line 134: Undefined variable 'fn'
-obj/daemon/net/services/file.c line 134: parse error
-obj/daemon/net/services/file.c line 143: Reserved type name unexpected.
-obj/daemon/net/services/file.c line 143: parse error
+include/net/ftpdconf.h line 113: Warning: redefinition of #define PUB_DIR
+
+include/net/ftpdconf.h line 114: Warning: redefinition of #define FTP_DIR
+
+Initializations complete.
+
+Accepting connections on port 4444.
+******** FATAL ERROR: Segmentation fault
+MudOS driver attempting to exit gracefully.
+(current object was /obj/daemon/net/intermud)
+'     <function>' in '          <function>' ('obj/clone/user/human#10') 
+Fatal error while shutting down.  Aborting.

@@ -1,10 +1,11 @@
 #obj/clone/connection.c
 name "misery"
+cap_name 0
 password "W/DfbivhHVSNk"
 real_name "Kenny"
 email_addr "crystal@best.com"
 body "/obj/clone/user/human"
-login_shell 0
-login_time 825228218
+login_shell "/obj/clone/shells/nmsh"
+login_time 828733805
 logout_time 823422339
-login_from "crystal.vip.best.com"
+login_from "153.37.101.15"

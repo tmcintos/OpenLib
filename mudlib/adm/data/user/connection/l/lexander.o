@@ -1,0 +1,11 @@
+#obj/clone/connection.c
+name "lexander"
+cap_name "Lexander"
+password "Sh5UAiOSdSrHY"
+real_name "Andrew Hardin"
+email_addr "aha744@airmail.net"
+body "/obj/clone/user/human"
+login_shell "/obj/clone/shells/rsh"
+login_time 828932976
+logout_time 828868661
+login_from "dal07-08.ppp.iadfw.net"

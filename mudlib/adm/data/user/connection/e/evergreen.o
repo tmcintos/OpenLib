@@ -6,6 +6,6 @@ real_name "Cameron Kaiser"
 email_addr "ckaiser@ucsd.edu"
 body "/obj/clone/user/human"
 login_shell "/obj/clone/shells/protosh"
-login_time 828373834
-logout_time 828380951
-login_from "apm-b337-10.ucsd.edu"
+login_time 828716425
+logout_time 828718999
+login_from "apm-b337-15.ucsd.edu"

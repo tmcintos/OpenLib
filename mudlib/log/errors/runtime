@@ -3222,3 +3222,1963 @@ Expected: string or array or object Got: 0.
   prgm: room/hump.c
   func: reset
   args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 719632, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 719716, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 719672, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 719756, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 856652, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 856736, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 889620, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 889704, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (adm/obj/daemon/fingerd)
+  file: adm/obj/daemon/fingerd.c:62
+  prgm: adm/obj/daemon/fingerd.c
+  func: GetFinger
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/yard)
+  file: room/yard.c:17
+  prgm: room/yard.c
+  func: extra_reset
+  args: ( )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Error in loading object '/room/bank'
+  obj : (obj/clone/user/human#100)
+  file: obj/inherit/object.c:110
+  prgm: obj/inherit/object.c
+  func: move
+  args: ( "/room/bank", )
+
+[ERROR] *Error in loading object '/room/bank'
+  obj : (obj/clone/user/human#100)
+  file: obj/inherit/object.c:110
+  prgm: obj/inherit/object.c
+  func: move
+  args: ( "/room/bank", )
+
+[ERROR] *Error in loading object '/room/bank'
+  obj : (obj/clone/user/human#100)
+  file: obj/inherit/object.c:110
+  prgm: obj/inherit/object.c
+  func: move
+  args: ( "/room/bank", )
+
+[ERROR] *Error in loading object '/room/post'
+  obj : (obj/clone/user/human#100)
+  file: obj/inherit/object.c:110
+  prgm: obj/inherit/object.c
+  func: move
+  args: ( "/room/post", )
+
+[ERROR] *Error in loading object '/room/post'
+  obj : (obj/clone/user/human#100)
+  file: obj/inherit/object.c:110
+  prgm: obj/inherit/object.c
+  func: move
+  args: ( "/room/post", )
+
+[ERROR] *Error in loading object '/obj/inherit/weapon'
+  obj : (room/shop)
+  file: room/shop.c:41
+  prgm: room/shop.c
+  func: create
+  args: ( )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/adv_inner)
+  file: room/adv_inner.c:14
+  prgm: room/adv_inner.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Array index must be positive or zero.
+  obj : (room/adv_guild)
+  file: room/adv_guild.c:151
+  prgm: room/adv_guild.c
+  func: get_next_exp
+  args: ( -1, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/jetty2)
+  file: room/jetty2.c:14
+  prgm: room/jetty2.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/adv_inner)
+  file: room/adv_inner.c:14
+  prgm: room/adv_inner.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1594196, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 716924, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/yard)
+  file: room/yard.c:17
+  prgm: room/yard.c
+  func: extra_reset
+  args: ( )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/jetty2)
+  file: room/jetty2.c:14
+  prgm: room/jetty2.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/adv_inner)
+  file: room/adv_inner.c:14
+  prgm: room/adv_inner.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 747108, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 688632, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/yard)
+  file: room/yard.c:17
+  prgm: room/yard.c
+  func: extra_reset
+  args: ( )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/jetty2)
+  file: room/jetty2.c:14
+  prgm: room/jetty2.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/adv_inner)
+  file: room/adv_inner.c:14
+  prgm: room/adv_inner.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 880188, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1645220, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/yard)
+  file: room/yard.c:17
+  prgm: room/yard.c
+  func: extra_reset
+  args: ( )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/jetty2)
+  file: room/jetty2.c:14
+  prgm: room/jetty2.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/adv_inner)
+  file: room/adv_inner.c:14
+  prgm: room/adv_inner.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 880188, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1645220, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/yard)
+  file: room/yard.c:17
+  prgm: room/yard.c
+  func: extra_reset
+  args: ( )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/jetty2)
+  file: room/jetty2.c:14
+  prgm: room/jetty2.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/adv_inner)
+  file: room/adv_inner.c:14
+  prgm: room/adv_inner.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 880188, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 2359480, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/yard)
+  file: room/yard.c:17
+  prgm: room/yard.c
+  func: extra_reset
+  args: ( )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/jetty2)
+  file: room/jetty2.c:14
+  prgm: room/jetty2.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/adv_inner)
+  file: room/adv_inner.c:14
+  prgm: room/adv_inner.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 859424, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 2359480, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/yard)
+  file: room/yard.c:17
+  prgm: room/yard.c
+  func: extra_reset
+  args: ( )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/jetty2)
+  file: room/jetty2.c:14
+  prgm: room/jetty2.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/adv_inner)
+  file: room/adv_inner.c:14
+  prgm: room/adv_inner.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1645220, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 788648, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/yard)
+  file: room/yard.c:17
+  prgm: room/yard.c
+  func: extra_reset
+  args: ( )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/jetty2)
+  file: room/jetty2.c:14
+  prgm: room/jetty2.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/adv_inner)
+  file: room/adv_inner.c:14
+  prgm: room/adv_inner.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1645220, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 788648, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/yard)
+  file: room/yard.c:17
+  prgm: room/yard.c
+  func: extra_reset
+  args: ( )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/jetty2)
+  file: room/jetty2.c:14
+  prgm: room/jetty2.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/adv_inner)
+  file: room/adv_inner.c:14
+  prgm: room/adv_inner.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1645220, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 788648, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/yard)
+  file: room/yard.c:17
+  prgm: room/yard.c
+  func: extra_reset
+  args: ( )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/jetty2)
+  file: room/jetty2.c:14
+  prgm: room/jetty2.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/adv_inner)
+  file: room/adv_inner.c:14
+  prgm: room/adv_inner.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1645220, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 788648, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/yard)
+  file: room/yard.c:17
+  prgm: room/yard.c
+  func: extra_reset
+  args: ( )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/jetty2)
+  file: room/jetty2.c:14
+  prgm: room/jetty2.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/adv_inner)
+  file: room/adv_inner.c:14
+  prgm: room/adv_inner.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 880188, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 2359480, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/yard)
+  file: room/yard.c:17
+  prgm: room/yard.c
+  func: extra_reset
+  args: ( )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/jetty2)
+  file: room/jetty2.c:14
+  prgm: room/jetty2.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/adv_inner)
+  file: room/adv_inner.c:14
+  prgm: room/adv_inner.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 2359480, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 2410908, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/yard)
+  file: room/yard.c:17
+  prgm: room/yard.c
+  func: extra_reset
+  args: ( )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/jetty2)
+  file: room/jetty2.c:14
+  prgm: room/jetty2.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/adv_inner)
+  file: room/adv_inner.c:14
+  prgm: room/adv_inner.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 2359480, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 2410908, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/yard)
+  file: room/yard.c:17
+  prgm: room/yard.c
+  func: extra_reset
+  args: ( )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/jetty2)
+  file: room/jetty2.c:14
+  prgm: room/jetty2.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/adv_inner)
+  file: room/adv_inner.c:14
+  prgm: room/adv_inner.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1607484, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 888460, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/yard)
+  file: room/yard.c:17
+  prgm: room/yard.c
+  func: extra_reset
+  args: ( )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/jetty2)
+  file: room/jetty2.c:14
+  prgm: room/jetty2.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/adv_inner)
+  file: room/adv_inner.c:14
+  prgm: room/adv_inner.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1607484, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 2410908, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/yard)
+  file: room/yard.c:17
+  prgm: room/yard.c
+  func: extra_reset
+  args: ( )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/jetty2)
+  file: room/jetty2.c:14
+  prgm: room/jetty2.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/adv_inner)
+  file: room/adv_inner.c:14
+  prgm: room/adv_inner.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1607484, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 2410908, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/yard)
+  file: room/yard.c:17
+  prgm: room/yard.c
+  func: extra_reset
+  args: ( )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/jetty2)
+  file: room/jetty2.c:14
+  prgm: room/jetty2.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/adv_inner)
+  file: room/adv_inner.c:14
+  prgm: room/adv_inner.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1607484, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 2410908, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/yard)
+  file: room/yard.c:17
+  prgm: room/yard.c
+  func: extra_reset
+  args: ( )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/jetty2)
+  file: room/jetty2.c:14
+  prgm: room/jetty2.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/adv_inner)
+  file: room/adv_inner.c:14
+  prgm: room/adv_inner.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1607484, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 888460, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/yard)
+  file: room/yard.c:17
+  prgm: room/yard.c
+  func: extra_reset
+  args: ( )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/jetty2)
+  file: room/jetty2.c:14
+  prgm: room/jetty2.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/adv_inner)
+  file: room/adv_inner.c:14
+  prgm: room/adv_inner.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1607484, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 2410908, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/yard)
+  file: room/yard.c:17
+  prgm: room/yard.c
+  func: extra_reset
+  args: ( )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/jetty2)
+  file: room/jetty2.c:14
+  prgm: room/jetty2.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/adv_inner)
+  file: room/adv_inner.c:14
+  prgm: room/adv_inner.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1607484, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 2410908, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/yard)
+  file: room/yard.c:17
+  prgm: room/yard.c
+  func: extra_reset
+  args: ( )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/jetty2)
+  file: room/jetty2.c:14
+  prgm: room/jetty2.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/adv_inner)
+  file: room/adv_inner.c:14
+  prgm: room/adv_inner.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 796400, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 694000, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/yard)
+  file: room/yard.c:17
+  prgm: room/yard.c
+  func: extra_reset
+  args: ( )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/jetty2)
+  file: room/jetty2.c:14
+  prgm: room/jetty2.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/adv_inner)
+  file: room/adv_inner.c:14
+  prgm: room/adv_inner.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 808036, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 851880, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/yard)
+  file: room/yard.c:17
+  prgm: room/yard.c
+  func: extra_reset
+  args: ( )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/jetty2)
+  file: room/jetty2.c:14
+  prgm: room/jetty2.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/adv_inner)
+  file: room/adv_inner.c:14
+  prgm: room/adv_inner.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1607484, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 851880, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/yard)
+  file: room/yard.c:17
+  prgm: room/yard.c
+  func: extra_reset
+  args: ( )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/jetty2)
+  file: room/jetty2.c:14
+  prgm: room/jetty2.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/adv_inner)
+  file: room/adv_inner.c:14
+  prgm: room/adv_inner.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 724852, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 888544, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/yard)
+  file: room/yard.c:17
+  prgm: room/yard.c
+  func: extra_reset
+  args: ( )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/jetty2)
+  file: room/jetty2.c:14
+  prgm: room/jetty2.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/adv_inner)
+  file: room/adv_inner.c:14
+  prgm: room/adv_inner.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 724948, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 888460, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/yard)
+  file: room/yard.c:17
+  prgm: room/yard.c
+  func: extra_reset
+  args: ( )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/jetty2)
+  file: room/jetty2.c:14
+  prgm: room/jetty2.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/adv_inner)
+  file: room/adv_inner.c:14
+  prgm: room/adv_inner.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 724948, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 837960, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/yard)
+  file: room/yard.c:17
+  prgm: room/yard.c
+  func: extra_reset
+  args: ( )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/jetty2)
+  file: room/jetty2.c:14
+  prgm: room/jetty2.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/adv_inner)
+  file: room/adv_inner.c:14
+  prgm: room/adv_inner.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 724948, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 716840, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/yard)
+  file: room/yard.c:17
+  prgm: room/yard.c
+  func: extra_reset
+  args: ( )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/jetty2)
+  file: room/jetty2.c:14
+  prgm: room/jetty2.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/adv_inner)
+  file: room/adv_inner.c:14
+  prgm: room/adv_inner.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 716812, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 747244, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/yard)
+  file: room/yard.c:17
+  prgm: room/yard.c
+  func: extra_reset
+  args: ( )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/jetty2)
+  file: room/jetty2.c:14
+  prgm: room/jetty2.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/adv_inner)
+  file: room/adv_inner.c:14
+  prgm: room/adv_inner.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 796512, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 796512, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/yard)
+  file: room/yard.c:17
+  prgm: room/yard.c
+  func: extra_reset
+  args: ( )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/jetty2)
+  file: room/jetty2.c:14
+  prgm: room/jetty2.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/adv_inner)
+  file: room/adv_inner.c:14
+  prgm: room/adv_inner.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 725544, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 725544, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/yard)
+  file: room/yard.c:17
+  prgm: room/yard.c
+  func: extra_reset
+  args: ( )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/jetty2)
+  file: room/jetty2.c:14
+  prgm: room/jetty2.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/adv_inner)
+  file: room/adv_inner.c:14
+  prgm: room/adv_inner.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 747016, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 735452, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/yard)
+  file: room/yard.c:17
+  prgm: room/yard.c
+  func: extra_reset
+  args: ( )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/jetty2)
+  file: room/jetty2.c:14
+  prgm: room/jetty2.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/adv_inner)
+  file: room/adv_inner.c:14
+  prgm: room/adv_inner.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 747016, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 725544, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/yard)
+  file: room/yard.c:17
+  prgm: room/yard.c
+  func: extra_reset
+  args: ( )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/jetty2)
+  file: room/jetty2.c:14
+  prgm: room/jetty2.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/adv_inner)
+  file: room/adv_inner.c:14
+  prgm: room/adv_inner.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 746560, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 725544, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/yard)
+  file: room/yard.c:17
+  prgm: room/yard.c
+  func: extra_reset
+  args: ( )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/jetty2)
+  file: room/jetty2.c:14
+  prgm: room/jetty2.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/adv_inner)
+  file: room/adv_inner.c:14
+  prgm: room/adv_inner.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 725544, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 725544, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/yard)
+  file: room/yard.c:17
+  prgm: room/yard.c
+  func: extra_reset
+  args: ( )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/jetty2)
+  file: room/jetty2.c:14
+  prgm: room/jetty2.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/adv_inner)
+  file: room/adv_inner.c:14
+  prgm: room/adv_inner.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 796512, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 796512, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/yard)
+  file: room/yard.c:17
+  prgm: room/yard.c
+  func: extra_reset
+  args: ( )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/jetty2)
+  file: room/jetty2.c:14
+  prgm: room/jetty2.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/adv_inner)
+  file: room/adv_inner.c:14
+  prgm: room/adv_inner.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 796512, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 796512, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/yard)
+  file: room/yard.c:17
+  prgm: room/yard.c
+  func: extra_reset
+  args: ( )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/jetty2)
+  file: room/jetty2.c:14
+  prgm: room/jetty2.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/adv_inner)
+  file: room/adv_inner.c:14
+  prgm: room/adv_inner.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 725544, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 725544, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/yard)
+  file: room/yard.c:17
+  prgm: room/yard.c
+  func: extra_reset
+  args: ( )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/jetty2)
+  file: room/jetty2.c:14
+  prgm: room/jetty2.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/adv_inner)
+  file: room/adv_inner.c:14
+  prgm: room/adv_inner.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 725544, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 725544, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/yard)
+  file: room/yard.c:17
+  prgm: room/yard.c
+  func: extra_reset
+  args: ( )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 719348, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 719432, )
+
+[ERROR] *String index out of bounds.
+  obj : (obj/daemon/emoted)
+  file: obj/daemon/emoted.c:44
+  prgm: obj/daemon/emoted.c
+  func: emote_parse
+  args: ( 871816, )
+
+[ERROR] *String index out of bounds.
+  obj : (obj/daemon/emoted)
+  file: obj/daemon/emoted.c:44
+  prgm: obj/daemon/emoted.c
+  func: emote_parse
+  args: ( 742448, )

@@ -1279,3 +1279,21 @@ obj/clone/shsh.c line 1619: Warning: Unknown \x char.
 obj/clone/money.c line 74: Undefined variable 'OBJECT_LIVING'
 obj/clone/money.c line 84: Illegal to redefine 'nomask' function "move"
 obj/inherit/weapon.c line 78: Illegal to redefine 'nomask' function "move"
+obj/clone/money.c line 74: Undefined variable 'OBJECT_LIVING'
+obj/clone/money.c line 84: Illegal to redefine 'nomask' function "move"
+room/bank.c line 68: Undefined variable 'str'
+room/bank.c line 68: Undefined variable 'str'
+room/bank.c line 68: Undefined variable 'str'
+room/post.c line 32: parse error
+room/post.c line 34: Illegal LHS
+room/post.c line 37: parse error
+room/post.c line 37: Illegal LHS
+room/post.c line 39: parse error
+room/post.c line 39: Illegal LHS
+room/post.c line 32: parse error
+room/post.c line 34: Illegal LHS
+room/post.c line 37: parse error
+room/post.c line 37: Illegal LHS
+room/post.c line 39: parse error
+room/post.c line 39: Illegal LHS
+obj/inherit/weapon.c line 78: Illegal to redefine 'nomask' function "move"

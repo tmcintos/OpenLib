@@ -6,6 +6,6 @@ real_name "Matt Eddinger"
 email_addr "meddi@cse.unl.edu"
 body "/obj/clone/user/human"
 login_shell "/obj/clone/shells/protosh"
-login_time 828520191
-logout_time 828520525
+login_time 828876801
+logout_time 828876886
 login_from "cse.unl.edu"

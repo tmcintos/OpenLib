@@ -1,5 +1,0 @@
-#include <mudlib.h>
-
-inherit USER;
-
-#include <races/human2.c>

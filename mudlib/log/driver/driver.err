@@ -1,6 +1,6 @@
 using config file: /home/mud/etc/config.dm
 ----------------------------------------------------------------------------
-Dysfunctional Mud (MudOS v22a25) starting up on FreeBSD - Wed Apr  3 21:14:26 1996
+Dysfunctional Mud (MudOS v22a25) starting up on FreeBSD - Sun Apr  7 21:28:04 1996
 
 
 Connected to address server on localhost port 7374
@@ -8,3 +8,10 @@ include/mudlib.h line 15: Warning: redefinition of #define OBJECT
 
 
 Loading preloaded files ...
+include/net/ftpdconf.h line 113: Warning: redefinition of #define PUB_DIR
+
+include/net/ftpdconf.h line 114: Warning: redefinition of #define FTP_DIR
+
+Initializations complete.
+
+Accepting connections on port 4444.
