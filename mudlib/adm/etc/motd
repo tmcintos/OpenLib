@@ -1,28 +1,28 @@
 -------------------------------------------------------------------------------
                 D y s f u n c t i o n a l  M u d  N e w s
-			last update: 04/23/96
+			last update: 06/17/96
 -------------------------------------------------------------------------------
-* Please send mail to Tim if you want to become a developer.  Additionally,
-  all developers should join the mailing list by sending mail to
-  majordomo@knapp38.res.iastate.edu with the string 'subscribe dysfunctional'
-  in the body of the letter.
+* Any mail for the mud can be sent to the following addresses:
+      rockford@novia.net, astasia@iastate.edu (Tim)
+      kyricc@inetnebr.com (Kyricc)
+      scott@de.msstate.edu (Quint)
 
-* If you want to take on a project or have any new project ideas, send mail
-  to Tim.
+* I am working on a new FTP server for the mud.  Right now you should be able
+  to get and put files in both ASCII and BINARY mode.  Try it out if you get
+  a chance and report any bugs to me.  (port: 4443) --Tim
 
-* There is now a 'changelog' command which appends an entry to the ChangeLog
-  file in the current working directory.
+* Check out my ~tim/TODO list for things that need to be done.  New items are
+  usually added to the bottom of the list.
 
-* Changed set_ids() to add_ids() in OBJECT. Make changes accordingly.
+* I moved some directories around, mostly stuff got moved into /adm.
+  There is a new include dir there, simul_efun stuff got moved into
+  /adm/obj/daemon where it should be, as did the /obj/daemon/net directory.
+  Save files got changed a little too.
 
-* Going through a major revision.  Modularizing inheritable objects, anything
-  derived from BASE will find out that create() is declared 'nomask'.  You
-  should use initialize() in place of create() in derived objects.  See BASE
-  for the code as it stands right now.
-    Basically have 3 functions, initialize(), low_setup(), and setup().
-  The setup() funcs are for initializing cloned objects (as opposed to the
-  master copy without the # in its name).  low_setup is used in the mudlib
-  and setup() is reserved for the end user (that way you don't have to call
-  ::setup() all the time).
-    Note that this is subject to change, so don't make your fixes yet unless
-  you don't mind doing it again.
+SECURITY stuff is mostly in place.  I've noticed problem already having to
+do with callbacks from high privilege objects.  Quint, Ev and Tim should
+have priv 1 access and everyone else should not right now.  Use the command
+'lswiz' to get a list of wizards, and 'lsdom' for a list of domains.  Please
+report any bugs in the system to me (Tim).  DOCUMENTATION can be found in
+the file /doc/mudlib/systems/security--This is the original documentation
+on which the system is based.  Better documentation later hopefully. :)

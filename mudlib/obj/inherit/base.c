@@ -1,6 +1,8 @@
 // base.c:  Base object inherited by all (most) others except daemons
 // Tim 23 Apr 96
 
+// modified to have destroy(), on_destruct() - Scott 11 Jun 96
+
 // The following functions are intended to increase the granularity
 // beyond that of the create() function when used by clones.
 
@@ -44,4 +46,22 @@ void
 remove()
 {
   /* This space intentionally left blank */
+}
+
+
+varargs void
+on_destruct( string flags )
+{
+ /* This space intentionally left blank (for now) - Scott */
+}
+
+
+varargs int
+destroy( object ob, string flags )
+{
+	if( !ob || !objectp(ob) ) ob = this_object();
+	else return( ob->destroy() );
+
+	ob->on_destruct( flags );
+	return destruct( this_object() );
 }

@@ -1,0 +1,5 @@
+#adm/obj/daemon/security_d.c
+write_protections (["/d":"\"@mudlib\"","/ftp":"\"@mudlib\"","/obj":"1","/doc":"\"@mudlib\"","/u/g/greg":"\"greg:\"","/log":"\"@mudlib\"","/include":"\"@mudlib\"","/u":"0","/adm/data":"0","/":"1","/data":"\"@mudlib\"","/cmd":"\"@mudlib\"","/ftp/incoming":"0","/tmp":"0","/adm":"1","/u/t/tim":"\"tim:\"",])
+read_protections ([])
+domains (["Admin":(["tim":2,"quint":2,"evergreen":2,]),])
+privs (["tim":({}),"dryghar:":({}),"hamnsnock":({}),"talen":({}),"evergreen:":({}),"dryghar":({}),"hamnsnock:":({}),"greg:":({}),"greg":({}),"quint:":({}),"@mudlib":({"Admin",}),"tim:":({}),"Admin:":({}),"kyricc:":({}),"quint":({}),"evergreen":({}),"Admin":({"tim","quint","evergreen",}),"talen:":({}),"kyricc":({}),0:({}),1:({"Admin",}),])

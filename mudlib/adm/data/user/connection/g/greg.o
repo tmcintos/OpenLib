@@ -5,7 +5,8 @@ password "xEb1eHLxfmE9U"
 real_name "Nowhere MAN"
 email_addr "astasia@iastate.edu"
 body "/obj/clone/user/human"
-login_shell "/obj/clone/shells/rsh"
-login_time 826009489
-logout_time 826009507
-login_from "knapp38.res.iastate.edu"
+login_shell "/obj/clone/shells/nmsh"
+gender 0
+login_time 835590951
+logout_time 835590999
+login_from "mr-howell.novia.net"

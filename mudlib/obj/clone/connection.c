@@ -68,7 +68,10 @@ save_connection(string username)
   string dir;
 
   dir = CONNECTION_DIR "/" + username[0..0];
-  if(file_size(dir) != -2) mkdir(dir);
+
+  if( file_size(dir) == -1 )
+    if( !mkdir(dir) )
+      error("Couldn't create directory "+ dir +".\n");
 
   return save_object(dir + "/" + username, 1);
 }
@@ -76,8 +79,8 @@ save_connection(string username)
 int
 restore_connection(string username)
 {
-  return restore_object(CONNECTION_DIR "/" +
-		     username[0..0] + "/" + username, 1);
+  string dir = CONNECTION_DIR "/" + username[0..0] + "/" + username;
+  return restore_object(dir, 1);
 }
 
 void

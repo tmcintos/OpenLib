@@ -1,15 +1,15 @@
 #obj/clone/user/human.c
 slen 25
 swid 80
-curr_line 49
-lines 25
-file "/doc/man/man4/privs_file.4"
-callback 0
+curr_line 37
+lines 36
+file ({"login_d: cons25 is not a supported terminal type","Welcome to Dysfunctional Mud!","-------------------------------------------------------------------------------","                D y s f u n c t i o n a l  M u d  N e w s","			last update: 06/17/96","-------------------------------------------------------------------------------","* Welcome to the new semi-premanent home for DysFunctionalMUD.  If you are","  reading this you prolly already know the site name, but just for your","  information it is:  canaan.de.msstate.edu 4444.","","* Any mail for the mud can be sent to the following addresses:","      rockford@novia.net, astasia@iastate.edu (Tim)","      kyricc@inetnebr.com (Kyricc)","      scott@de.msstate.edu (Quint)","","* I am working on a new FTP server for the mud.  Right now you should be able","  to get and put files in both ASCII and BINARY mode.  Try it out if you get","  a chance and report any bugs to me.  (port: 4443) --Tim","","* Check out my ~tim/TODO list for things that need to be done.  New items are","  usually added to the bottom of the list.","","*** SECURITY *** stuff is partially in.  valid_read/write should be working.","  I'll prepare a doc on how it works.  Quint, Ev and Tim should have global","  write access right now, and everyone else should not.  Mail me at my","  email address if you find bugs.  The files involved are listed in","  /security.files; please don't modify them without letting me know first.","  (I'm working with a local copy at home I'm keeping up to date).","","* I moved some directories around, mostly stuff got moved into /adm.","  There is a new include dir there, simul_efun stuff got moved into","  /adm/obj/daemon where it should be, as did the /obj/daemon/net directory.","  Save files got changed a little too.","","","",})
+callback 
 no_clean 0
 flags ({})
 coins ({0,0,})
 hit_points 0
 spell_points 0
-env_vars (["PROMPT":"[%^BOLD%^%~%^RESET%^]-> ","PATH":"/cmd/wiz:/adm/cmd/wiz:/cmd/player:/adm/cmd/player:/adm/cmd/adm:/cmd/adm","hey":1,"MORE_EXIT_END":1,"nmsh_xverb":([":":"emote $*","'":"say $*",]),"BOB":0,"nmsh_alias":(["s":"south","e":"east","se":"southeast","l":"look $*","nw":"northwest","bio":"biography","w":"west","d":"down","i":"inventory","n":"north","u":"up","sw":"southwest","exa":"look at $*","ne":"northeast",]),"TITLE":"is sweet talkin' the mudlib","nmsh_nick":([]),"LENGTH":25,"SHELL":"/obj/clone/shells/protosh","WIDTH":80,"history":100,"TERM":"ansi","version":"Prototype Shell",])
-aliases (["s":"south","se":"southeast","e":"east","nw":"northwest","la":"look at","w":"west","i":"inventory","unsub":"unsubscribe","n":"north","er":"more /log/errors/runtime","sub":"subscribe","l":"look","prompt":"say \"$PROMPT\"","brb":"shout Be right back I\\'m going AFK!!!","sc":"score","nod":"emote nod","sw":"southwest","ls":"ls -c","ne":"northeast",])
-channels ({"wiz","gossip","interchat","igossip","icode",})
+env_vars (["nmsh_alias":(["exa":"look at $*","w":"west","i":"inventory","n":"north","s":"south","se":"southeast","l":"look $*","sw":"southwest","nw":"northwest","e":"east","d":"down","bio":"biography","ne":"northeast","u":"up",]),"version":"Prototype Shell","PROMPT":"[%^BOLD%^%~%^RESET%^]-> ","SHELL":"/obj/clone/shells/protosh","nmsh_xverb":([":":"emote $*","'":"say $*",]),"MORE_EXIT_END":1,"PATH":"/cmd/wiz:/adm/cmd/wiz:/cmd/player:/adm/cmd/player:/adm/cmd/adm:/cmd/adm","nmsh_nick":([]),"LENGTH":25,"BOB":0,"WIDTH":80,"TITLE":"is sweet talkin' the mudlib","hey":1,"history":100,"TERM":"ansi",])
+aliases (["w":"west","n":"north","sub":"subscribe","e":"east","nod":"emote nod","la":"look at","ls":"ls -cF","unsub":"unsubscribe","sc":"score","i":"inventory","s":"south","l":"look","se":"southeast","er":"more /log/errors/runtime","sw":"southwest","nw":"northwest","ne":"northeast","brb":"shout Be right back I\\'m going AFK!!!","prompt":"say \"$PROMPT\"",])
+channels ({})

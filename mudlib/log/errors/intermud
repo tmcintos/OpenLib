@@ -14,3 +14,56 @@ Wed May  8 04:13:01 1996:  not-allowed: you are not allowed on that channel
 Wed May  8 04:24:33 1996:  not-allowed: you are not allowed on that channel
 Wed May  8 09:33:43 1996:  not-allowed: you are not allowed on that channel
 Wed May  8 09:33:43 1996:  not-allowed: you are not allowed on that channel
+Wed May 15 00:25:40 1996:  not-allowed: you are not allowed on that channel
+Wed May 15 00:25:40 1996:  not-allowed: you are not allowed on that channel
+Wed May 15 00:32:25 1996:  not-allowed: you are not allowed on that channel
+Wed May 15 00:32:25 1996:  not-allowed: you are not allowed on that channel
+Wed May 15 15:56:23 1996:  pretzel: Pretzel
+Wed May 15 15:56:29 1996:  pretzel: Pretzel
+Thu May 23 21:56:29 1996:  not-allowed: you are not allowed on that channel
+Thu May 23 21:56:29 1996:  not-allowed: you are not allowed on that channel
+Thu May 23 22:58:21 1996:  pretzel: Pretzel
+Fri May 31 13:53:28 1996:  not-allowed: you are not allowed on that channel
+Fri May 31 13:53:28 1996:  not-allowed: you are not allowed on that channel
+Fri May 31 17:38:28 1996:  unk-dst: destination unknown
+Fri May 31 17:38:28 1996:  packet: ({ /* sizeof() == 6 */
+  "auth-mud-req",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "Lima Bean",
+  0
+})
+Fri May 31 17:41:03 1996:  unk-dst: destination unknown
+Fri May 31 17:41:03 1996:  packet: ({ /* sizeof() == 6 */
+  "auth-mud-req",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "Lima Bean",
+  0
+})
+Fri May 31 22:16:47 1996:  not-allowed: you are not allowed on that channel
+Fri May 31 22:16:47 1996:  not-allowed: you are not allowed on that channel
+Sun Jun  2 05:16:57 1996:  not-allowed: you are not allowed on that channel
+Sun Jun  2 05:16:57 1996:  not-allowed: you are not allowed on that channel
+Sun Jun  2 05:18:36 1996:  not-allowed: you are not allowed on that channel
+Sun Jun  2 05:18:36 1996:  not-allowed: you are not allowed on that channel
+Mon Jun  3 06:05:31 1996:  not-allowed: you are not allowed on that channel
+Mon Jun  3 06:05:31 1996:  not-allowed: you are not allowed on that channel
+Mon Jun  3 21:01:18 1996:  not-allowed: you are not allowed on that channel
+Mon Jun  3 21:01:18 1996:  not-allowed: you are not allowed on that channel
+Tue Jun 11 22:17:55 1996:  not-allowed: you are not allowed on that channel
+Tue Jun 11 22:17:55 1996:  not-allowed: you are not allowed on that channel
+Thu Jun 13 11:28:35 1996:  hanzou: Hanzou
+Sun Jun 16 17:32:27 1996:  majesto: Majesto
+Sun Jun 16 18:56:12 1996:  icewolf: Icewolf
+Sun Jun 16 19:12:21 1996:  icewolf: Icewolf
+Sun Jun 16 23:52:18 1996:  not-allowed: you are not allowed on that channel
+Sun Jun 16 23:52:18 1996:  not-allowed: you are not allowed on that channel
+Tue Jun 18 00:12:04 1996:  not-allowed: you are not allowed on that channel
+Tue Jun 18 00:12:04 1996:  not-allowed: you are not allowed on that channel
+Sat Jun 22 14:26:07 1996:  unk-user: Casper is not involved.
+Sat Jun 22 14:26:15 1996:  unk-user: Bob is not involved.
+Mon Jun 24 19:44:37 1996: icewolf: Icewolf
+Mon Jun 24 19:45:12 1996: icewolf: Icewolf

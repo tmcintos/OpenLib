@@ -6,6 +6,12 @@
 
 #include "master/valid.c"      // all the valid_* functions
 
+void
+create()
+{
+  efun::set_privs(this_object(), save_variable(1));
+}
+
 object
 connect(int portnum)
 {
@@ -118,37 +124,42 @@ error_handler(mapping error, int caught)
 {
   string name, home;
   string line;
-  mapping *trace = error["trace"];
 
   if( caught ) return;
 
   line = sprintf("\n[ERROR] %s"
-		 "  obj : (%O)\n"
-		 "  file: %s:%d\n"
-		 "  prgm: %s\n",
-		 error["error"], error["object"],
-		 error["file"], error["line"], error["program"]);
+		 "  time   : %s\n"
+		 "  file   : %s:%d\n"
+		 "  pgm/obj: %s (%O)\n"
+		 "  [TRACE]  size==%d\n",
+		 error["error"],
+		 ctime(time()),
+		 error["file"], error["line"],
+		 error["program"], error["object"],
+		 sizeof(error["trace"]));
 
-  if(sizeof(trace)) {
-    line += sprintf("  func: %s\n"
-		    "  args: ( ", 
-		    trace[sizeof(trace)-1]["function"]);
+  foreach(mapping traceback in error["trace"]) {
+    line += sprintf("    file   : %s:%d\n"
+		    "    pgm/obj: %s (%O)\n"
+		    "    func   : %s (",
+		    traceback["file"], traceback["line"],
+		    traceback["program"], traceback["object"],
+		    traceback["function"]);
+    if( arrayp(traceback["arguments"]) ) {
+      string paramlist = "";
 
-    if(arrayp(trace[sizeof(trace)-1]["arguments"])) {
-      foreach(mixed arg in trace[sizeof(trace)-1]["arguments"])
-	line += sprintf("%O, ", arg);
-    } else
-      line += sprintf("%O", trace[sizeof(trace)-1]["arguments"]);
+      foreach(mixed arg in traceback["arguments"])
+	paramlist += sprintf("%O, ", arg);
+
+      line += break_string(replace_string(paramlist, "\n", ""), 60, 13);
+    }
+    else
+      line += "void";
 
     line += ")\n";
+    line += sprintf("    %*'-'s", 70, "\n");
   }
 
-  if(this_player(1)) {
-    tell_object(this_player(1), sprintf("runtime: file: %s:%d;  %s",
-					error["file"], error["line"],
-					error["error"]));
-  }
-   
   name = file_owner(error["file"]);
   if (name)
     home = user_cwd(name);
@@ -156,8 +167,13 @@ error_handler(mapping error, int caught)
     home = LOG_DIR;
   home = home + "/errors";
 
+  if(this_interactive())
+    message("system", "\nruntime: error: "
+	    "Check " + home + "/runtime for more information.\n",
+	    this_interactive());
+   
   if(directory_exists(home))
-    write_file(home + "/runtime", line);
+    unguarded((: write_file, home + "/runtime", line :), 1);
 
   return 1;
 }
@@ -166,7 +182,9 @@ void
 log_error(string file, string message)
 {
   string name, home;
-   
+
+  message = break_string(replace_string(message, "\n", ""), 79) + "\n";
+
   name = file_owner(file);
   if (name)
     home = user_cwd(name);
@@ -174,10 +192,13 @@ log_error(string file, string message)
     home = LOG_DIR;
   home = home + "/errors";
 
-  tell_object(this_player(1),"\ncompile: " + message);
+  if( this_interactive() )
+    message("system", "\ncompile: error: "
+	    "Check "+ home +"/compile for more information.\n",
+	    this_interactive());
 
   if(directory_exists(home))
-    write_file(home + "/compile", message);
+    unguarded((: write_file, home + "/compile", message :), 1);
 }
 
 // save_ed_setup and restore_ed_setup are called by the ed to maintain
@@ -193,7 +214,7 @@ save_ed_setup(object who, int code)
 
   file = user_path(who->query_name()) + ".edrc";
   rm(file);
-  return write_file(file, code + "");
+  return unguarded((: write_file, file, code + "" :), 1);
 }
 
 // Retrieve the ed setup. No meaning to defend this file read from
@@ -238,8 +259,7 @@ make_path_absolute(string file)
 string
 privs_file(string str)
 {
-  return "bob";
-//  return (string)call_other(SIMUL_EFUN, "privs_file", str);
+  return (string)call_other(SECURITY_D, "privs_file", str);
 }
 
 string

@@ -1,11 +1,9 @@
-using config file: /home/mud/etc/config.dm
+using config file: /home/tim/etc/config.dm
 ----------------------------------------------------------------------------
-Dysfunctional Mud (MudOS v22a26) starting up on FreeBSD - Thu May  2 03:56:19 1996
+Dysfunctional Mud (MudOS v22a26) starting up on Solaris - Sun Jun 16 23:28:29 1996
 
 
 Connected to address server on localhost port 7374
-include/mudlib.h line 15: Warning: redefinition of #define OBJECT
-
 
 Loading preloaded files ...
 ]Preloading : /adm/obj/daemon/void...](0.0)
@@ -13,23 +11,19 @@ Loading preloaded files ...
 ]Preloading : /adm/obj/daemon/login_d...](0.0)
 ]Preloading : /adm/obj/daemon/mail_d...](0.0)
 ]Preloading : /obj/daemon/net/services...](0.0)
-]Preloading : /obj/daemon/net/intermud...](0.0)
-]Preloading : /obj/daemon/net/oob_d...](0.0)
+]Preloading : /obj/daemon/net/oob_d...]
+Error *Error in loading object '/obj/daemon/net/oob_d'
+ when loading /obj/daemon/net/oob_d
 ]Preloading : /obj/daemon/net/auth_d...](0.0)
 ]Preloading : /obj/daemon/net/ucache_d...](0.0)
-]Preloading : /obj/daemon/net/ftp_d...include/net/ftpdconf.h line 113: Warning: redefinition of #define PUB_DIR
-
-include/net/ftpdconf.h line 114: Warning: redefinition of #define FTP_DIR
-
-include/net/ftpdsupp.h line 97: Undefined function seteuid
-obj/daemon/net/ftp_d.c line 379: Undefined function getuid
-obj/daemon/net/ftp_d.c line 425: Undefined function geteuid
-]
-Error *Error in loading object '/obj/daemon/net/ftp_d'
- when loading /obj/daemon/net/ftp_d
+]Preloading : /obj/daemon/net/ftp_d...](0.0)
 ]Preloading : /obj/daemon/net/http_d...](0.0)
-]Preloading : /obj/daemon/net/remote...](0.0)
-]Preloading : /obj/daemon/net/finger_d...](0.0)
+]Preloading : /obj/daemon/net/remote...]
+Error *Error in loading object '/obj/daemon/net/remote'
+ when loading /obj/daemon/net/remote
+]Preloading : /obj/daemon/net/finger_d...]
+Error *Error in loading object '/obj/daemon/net/finger_d'
+ when loading /obj/daemon/net/finger_d
 ]Preloading : /obj/daemon/chat_d...](0.0)
 ]Preloading : /obj/daemon/combat_d...](0.0)
 ]Preloading : /obj/daemon/editor_d...](0.0)
@@ -41,55 +35,9 @@ Error *Error in loading object '/obj/daemon/net/ftp_d'
 Initializations complete.
 
 Accepting connections on port 4444.
-]Hamnsnock is link-dead.
-get_user_data: read on fd 10
+get_user_data: read on fd 8
 System Error: get_user_data: read:Connection reset by peer
-]Hamnsnock is link-dead.
 ]Tim is link-dead.
-object /u/t/tim/zip: eval_cost too big 200000
-object /u/t/tim/zip: eval_cost too big 200000
-Error in error handler: *stack overflow
-program: /adm/obj/daemon/master.c, object: /adm/obj/daemon/master, file: /adm/obj/daemon/master.c:130
-'eventReadCallback' in 'adm/obj/inherit/client.c' ('obj/daemon/net/intermud') /adm/obj/inherit/client.c:61
-arguments were (3,({ /* sizeof() == 9 */
-  "channel-m",
-  5,
-  "Shadowrun-MUD",
-  "wraith",
-  0,
-  0,
-  "imud_gossip",
-  "Wraith",
-  "regardless of what your mud calls it =)"
-}))
-'      eventRead' in 'obj/daemon/net/intermud.c' ('obj/daemon/net/intermud') /obj/daemon/net/intermud.c:113
-arguments were (({ /* sizeof() == 9 */
-  "channel-m",
-  5,
-  "Shadowrun-MUD",
-  "wraith",
-  0,
-  0,
-  "imud_gossip",
-  "Wraith",
-  "regardless of what your mud calls it =)"
-}))
-locals were: 0,0,0,0,0,0
-'eventReceiveChannelMessage' in 'obj/daemon/net/services.c' ('obj/daemon/net/services') /obj/daemon/net/services/channel.c:72
-arguments were (2483840)
-'broadcast_local' in ' obj/daemon/chat_d.c' ('   obj/daemon/chat_d') /obj/daemon/chat_d.c:232
-arguments were ("igossip","Wraith@Shadowrun-MUD","regardless of what your mud calls it =)",0,0,0)
-locals were: 0,"Wraith@Shadowrun-MUD %^L_BLUE%^[igossip]%^RESET%^: regardless of what your mud calls it =)
-",0
-'    tell_object' in '    adm/simul_efun.c' ('      adm/simul_efun') /adm/efuns/tell_object.c:3
-arguments were (0,2483076)
-'  error_handler' in 'adm/obj/daemon/master.c' ('adm/obj/daemon/master') /adm/obj/daemon/master.c:130
-arguments were (Error '*stack overflow
-' while trying to print error trace -- trace suppressed.
-Connection from 129.186.85.38 aborted.
-Connection from 129.186.85.38 aborted.
-Connection from 129.186.85.38 aborted.
-Connection from 129.186.85.38 aborted.
 ******** FATAL ERROR: Process terminated
 MudOS driver attempting to exit gracefully.
 crash() in master called successfully.  Aborting.

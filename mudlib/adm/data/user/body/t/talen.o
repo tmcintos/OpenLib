@@ -1,9 +1,15 @@
 #obj/clone/user/human.c
+slen 24
+swid 80
+curr_line 1
+lines 11
+file ({"--------------------------------------------------------------------------","Player Help                                                 (General Help)","--------------------------------------------------------------------------","","This is the Player general help file","","Type 'help help' for details on using help.  Look at the look and help","commands for examples on how to add the help funcs to commands.","","--------------------------------------------------------------------------","",})
+callback 0
+no_clean 0
 flags ({})
 coins ({0,0,})
 hit_points 100
 spell_points 0
-gender 0
-env_vars (["nmsh_alias":(["exa":"look at $*","se":"southeast","u":"up","sw":"southwest","bio":"biography","n":"north","ne":"northeast","s":"south","nw":"northwest","e":"east","w":"west","i":"inventory","d":"down","l":"look $*",]),"nmsh_nick":([]),"TERM":"vt102","nmsh_xverb":(["'":"say $*",":":"emote $*",]),])
-aliases (["se":"southeast","sw":"southwest","n":"north","ne":"northeast","s":"south","sc":"score","nw":"northwest","e":"east","w":"west","i":"inventory","l":"look",])
+env_vars (["LENGTH":24,"nmsh_nick":([]),"WIDTH":80,"nmsh_xverb":(["'":"say $*",":":"emote $*",]),"TERM":"xterm","nmsh_alias":(["s":"south","ne":"northeast","n":"north","i":"inventory","u":"up","se":"southeast","d":"down","e":"east","exa":"look at $*","l":"look $*","w":"west","bio":"biography","sw":"southwest","nw":"northwest",]),])
+aliases (["s":"south","ne":"northeast","n":"north","i":"inventory","se":"southeast","e":"east","l":"look","w":"west","sw":"southwest","nw":"northwest","sc":"score",])
 channels ({})

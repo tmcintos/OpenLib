@@ -174,7 +174,9 @@ net_dead()
     ed_cmd("Q");
   }
 
-  tell_room(environment(), query_cap_name() + " is link-dead.\n");
+  if(environment())
+    message("system", query_cap_name() + " is link-dead.\n", environment(),
+	    this_player());
 }
 
 nomask int
@@ -358,13 +360,12 @@ save_player()
   file = dir + "/" + username;
 
   /* create directory if needed */
-  if(file_size(dir) == -1) {
-    if(!mkdir(dir))
+  if( file_size(dir) == -1 )
+    if( !mkdir(dir) )
       error("couldn't create directory "+ dir +"\n");
-  }
 
-  connection->save_connection(username);         // also save connection
-  return save_object(file, 1);                   // save 0 values too
+  connection->save_connection(username);                // also save connection
+  return save_object(file, 1);                       // save 0 values too
 }
 
 nomask varargs int
@@ -406,7 +407,8 @@ restore_player()
 
   file = USER_BODY_DIR "/"+ username[0..0] + "/" + username;
 
-  return restore_object(file, 1);          // don't zero out non-statics
+  // don't 0 out non-statics
+  return restore_object(file, 1);
 }
 
 int

@@ -1,7 +1,13 @@
-cmd/wiz/id.c line 36: Undefined function getuid
-room/hump.c line 24: parse error
-room/vill_track.c line 10: parse error
-obj/clone/money.c line 23: Undefined function set_ids
-obj/clone/money.c line 24: Illegal to redefine 'nomask' function "create"
-obj/clone/money.c line 74: Undefined variable 'OBJECT_LIVING'
-cmd/wiz/id.c line 36: Undefined function getuid
+tmp/tmp_eval_file.c line 7: Undefined variable 'u'
+tmp/tmp_eval_file.c line 7: Undefined variable 't'
+tmp/tmp_eval_file.c line 7: Undefined variable 'tim'
+tmp/tmp_eval_file.c line 7: syntax error
+tmp/tmp_eval_file.c line 7: Undefined function domain_stats
+tmp/tmp_eval_file.c line 7: Undefined function add_worth
+tmp/tmp_eval_file.c line 7: Undefined function wiz_list
+tmp/tmp_eval_file.c line 7: Undefined function efuns
+adm/obj/daemon/login_d.c line 400: syntax error
+adm/obj/daemon/login_d.c line 400: syntax error
+adm/obj/daemon/login_d.c line 400: syntax error
+adm/obj/daemon/net/finger_d.c line 27: Wrong number of arguments to
+eventCreateSocket    Expected: 3  Got: 2

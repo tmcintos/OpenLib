@@ -8,6 +8,13 @@
  *  12.08.95  Tim modified to support MUD mode sockets
  *  02.05.96  Tim added SetSocketClosed(), Closed variable & related code
  *  03.23.96  Tim eventCreateSocket() returns fd of listening socket
+ *  06.01.96  Tim renamed original eventCreateSocket() to eventListenSocket()
+ *            and created new eventCreateSocket() from the version in client.c
+ *            so it is possible to create outgoing sockets from the server
+ *            also. (useful for FTP and similar servers)
+ *  06.01.96  Tim added eventWriteError() for notifying when a write that is
+ *            in progress fails and the socket must be closed.  This allows
+ *            us to determine if the socket closed normally or with an error.
  */
 
 #include <mudlib.h>
@@ -27,14 +34,14 @@ static void create() {
     Sockets = ([]);
 }
 
-int eventCreateSocket(int port, int type) {
+int eventListenSocket(int port, int SocketType) {
     int x;
 
-    if(type > STREAM) return -1;
+    if(SocketType > STREAM) return -1;
 
     Listen = new(class server);
     Listen->Blocking = 0; /* servers are not blocking to start */
-    x = socket_create(type, "eventServerReadCallback", 
+    x = socket_create(SocketType, "eventServerReadCallback", 
 		      "eventServerAbortCallback");
     if( x < 0 ) {
 	eventSocketError("Error in socket_create().", x);
@@ -54,6 +61,37 @@ int eventCreateSocket(int port, int type) {
 	return x;
     }
     return Listen->Descriptor;
+}
+
+int eventCreateSocket(string host, int port, int SocketType) {
+    class server Socket;
+    int x;
+
+    Socket = new(class server);
+    Socket->Blocking = 1;
+    if( !SocketType ) SocketType = STREAM;
+    x = socket_create(SocketType, "eventServerReadCallback",
+		      "eventServerAbortCallback");
+    if( x < 0 ) {
+	eventSocketError("Error in socket_create().", x);
+	return x;
+    }
+    Socket->Descriptor = x;
+    x = socket_bind(Socket->Descriptor, 0);
+    if( x != EESUCCESS ) {
+	eventClose(Socket);
+	eventSocketError("Error in socket_bind().", x);
+	return x;
+    }
+    x = socket_connect(Socket->Descriptor, host + " " + port, 
+		       "eventServerReadCallback", "eventServerWriteCallback");
+    if( x != EESUCCESS ) {
+	eventClose(Socket);
+	eventSocketError("Error in socket_connect().", x);
+	return x;
+    }
+    Sockets[Socket->Descriptor] = Socket;
+    return Socket->Descriptor;
 }
 
 static void eventServerListenCallback(int fd) {
@@ -107,6 +145,7 @@ static void eventServerWriteCallback(int fd) {
 		sock->Blocking = 1;
 		return;
 	    default:
+		eventWriteError(fd);
 		eventClose(sock);
 		eventSocketError("Error in socket_write().", x);
 		return;
@@ -157,6 +196,8 @@ static void eventNewConnection(int fd) {
     ((class server)Sockets[fd])->Descriptor = fd;
     ((class server)Sockets[fd])->Blocking = 0; 
 }
+
+static void eventWriteError(int fd) { }
 
 static void eventSocketError(string str, int x) { }
 

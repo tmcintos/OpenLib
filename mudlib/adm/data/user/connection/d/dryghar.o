@@ -7,6 +7,6 @@ email_addr "ae187@ccn.cs.dal.ca"
 body "/obj/clone/user/human"
 login_shell "/obj/clone/shells/nmsh"
 gender 0
-login_time 830267837
-logout_time 830267918
-login_from "knapp38.res.iastate.edu"
+login_time 835638331
+logout_time 835459257
+login_from "browser2.mountnet.com"

@@ -1,129 +1,234 @@
 
-[ERROR] *Bad argument 3 to message()
-Expected: string or array or object Got: 0.
-  obj : (adm/simul_efun)
-  file: adm/efuns/tell_object.c:3
-  prgm: adm/simul_efun.c
-  func: tell_object
-  args: ( 0, 1703300, )
+[ERROR] *Bad argument 1 to restore_variable()
+Expected: string Got: 0.
+  time   : Sat Jun 22 16:09:01 1996
+  file   : adm/obj/daemon/simul_efun/security.c:45
+  pgm/obj: adm/obj/daemon/simul_efun.c (adm/obj/daemon/simul_efun)
+  [TRACE]  size==7
+    file   : :0
+    pgm/obj: <function> (obj/clone/user/human#174)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:206
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#174)
+    func   : <function> (             "/adm/cmd/wiz/tail", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/protosh.c:521
+    pgm/obj: obj/clone/shells/protosh.c (obj/clone/shells/protosh#175)
+    func   : cmd_hook (             "/adm/cmd/wiz/tail", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:426
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#174)
+    func   : cmd_hook (             "/adm/cmd/wiz/tail", )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (adm/cmd/wiz/id)
+    func   : _main (             1862980, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/id.c:31
+    pgm/obj: adm/cmd/wiz/id.c (adm/cmd/wiz/id)
+    func   : main (             "/adm/cmd/wiz/tail", )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/simul_efun/security.c:45
+    pgm/obj: adm/obj/daemon/simul_efun.c (adm/obj/daemon/simul_efun)
+    func   : query_privs (             1583344, )
+    ---------------------------------------------------------------------
 
-[ERROR] *Bad argument 3 to message()
-Expected: string or array or object Got: 0.
-  obj : (adm/simul_efun)
-  file: adm/efuns/tell_object.c:3
-  prgm: adm/simul_efun.c
-  func: tell_object
-  args: ( 0, 1703428, )
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  time   : Sat Jun 22 16:57:35 1996
+  file   : adm/cmd/wiz/eval.c:25
+  pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+  [TRACE]  size==7
+    file   : :0
+    pgm/obj: <function> (obj/clone/user/human#174)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:206
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#174)
+    func   : <function> (             "domain_stats()", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/protosh.c:521
+    pgm/obj: obj/clone/shells/protosh.c (obj/clone/shells/protosh#175)
+    func   : cmd_hook (             "domain_stats()", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:426
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#174)
+    func   : cmd_hook (             "domain_stats()", )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (adm/cmd/wiz/?)
+    func   : _main (             1540396, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/?.c:5
+    pgm/obj: adm/cmd/wiz/?.c (adm/cmd/wiz/?)
+    func   : main (             1540396, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/eval.c:25
+    pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+    func   : main (             1636172, )
+    ---------------------------------------------------------------------
 
-[ERROR] *Bad argument 3 to message()
-Expected: string or array or object Got: 0.
-  obj : (adm/simul_efun)
-  file: adm/efuns/tell_object.c:3
-  prgm: adm/simul_efun.c
-  func: tell_object
-  args: ( 0, 1703556, )
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  time   : Sat Jun 22 17:02:57 1996
+  file   : adm/cmd/wiz/eval.c:25
+  pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+  [TRACE]  size==7
+    file   : :0
+    pgm/obj: <function> (obj/clone/user/human#174)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:206
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#174)
+    func   : <function> (             "add_worth()", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/protosh.c:521
+    pgm/obj: obj/clone/shells/protosh.c (obj/clone/shells/protosh#175)
+    func   : cmd_hook (             "add_worth()", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:426
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#174)
+    func   : cmd_hook (             "add_worth()", )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (adm/cmd/wiz/?)
+    func   : _main (             1482892, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/?.c:5
+    pgm/obj: adm/cmd/wiz/?.c (adm/cmd/wiz/?)
+    func   : main (             1482892, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/eval.c:25
+    pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+    func   : main (             1572212, )
+    ---------------------------------------------------------------------
 
-[ERROR] *Bad argument 3 to message()
-Expected: string or array or object Got: 0.
-  obj : (adm/simul_efun)
-  file: adm/efuns/tell_object.c:3
-  prgm: adm/simul_efun.c
-  func: tell_object
-  args: ( 0, 1703684, )
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  time   : Sat Jun 22 17:11:51 1996
+  file   : adm/cmd/wiz/eval.c:25
+  pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+  [TRACE]  size==7
+    file   : :0
+    pgm/obj: <function> (obj/clone/user/human#174)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:206
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#174)
+    func   : <function> (             "wiz_list()", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/protosh.c:521
+    pgm/obj: obj/clone/shells/protosh.c (obj/clone/shells/protosh#175)
+    func   : cmd_hook (             "wiz_list()", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:426
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#174)
+    func   : cmd_hook (             "wiz_list()", )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (adm/cmd/wiz/?)
+    func   : _main (             1936660, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/?.c:5
+    pgm/obj: adm/cmd/wiz/?.c (adm/cmd/wiz/?)
+    func   : main (             1936660, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/eval.c:25
+    pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+    func   : main (             1538732, )
+    ---------------------------------------------------------------------
 
-[ERROR] *Bad argument 3 to message()
-Expected: string or array or object Got: 0.
-  obj : (adm/simul_efun)
-  file: adm/efuns/tell_object.c:3
-  prgm: adm/simul_efun.c
-  func: tell_object
-  args: ( 0, 1703812, )
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  time   : Sat Jun 22 17:12:03 1996
+  file   : adm/cmd/wiz/eval.c:25
+  pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+  [TRACE]  size==7
+    file   : :0
+    pgm/obj: <function> (obj/clone/user/human#174)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:206
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#174)
+    func   : <function> (             "efuns()", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/protosh.c:521
+    pgm/obj: obj/clone/shells/protosh.c (obj/clone/shells/protosh#175)
+    func   : cmd_hook (             "efuns()", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:426
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#174)
+    func   : cmd_hook (             "efuns()", )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (adm/cmd/wiz/?)
+    func   : _main (             1936660, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/?.c:5
+    pgm/obj: adm/cmd/wiz/?.c (adm/cmd/wiz/?)
+    func   : main (             1936660, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/eval.c:25
+    pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+    func   : main (             1801884, )
+    ---------------------------------------------------------------------
 
-[ERROR] *Bad argument 3 to message()
-Expected: string or array or object Got: 0.
-  obj : (adm/simul_efun)
-  file: adm/efuns/tell_object.c:3
-  prgm: adm/simul_efun.c
-  func: tell_object
-  args: ( 0, 1718788, )
+[ERROR] *Bad argument 1 to explode()
+Expected: string Got: 0.
+  time   : Sat Jun 22 17:21:41 1996
+  file   : cmd/wiz/last.c:52
+  pgm/obj: cmd/wiz/last.c (cmd/wiz/last)
+  [TRACE]  size==6
+    file   : :0
+    pgm/obj: <function> (obj/clone/user/human#174)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:206
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#174)
+    func   : <function> (             "-5", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/protosh.c:521
+    pgm/obj: obj/clone/shells/protosh.c (obj/clone/shells/protosh#175)
+    func   : cmd_hook (             "-5", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:426
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#174)
+    func   : cmd_hook (             "-5", )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/cmdline.c:69
+    pgm/obj: obj/inherit/cmdline.c (cmd/wiz/last)
+    func   : _main (             "-5", )
+    ---------------------------------------------------------------------
+    file   : cmd/wiz/last.c:52
+    pgm/obj: cmd/wiz/last.c (cmd/wiz/last)
+    func   : main (             ({ /* sizeof() == 2 */  "last",  "-5"}), ({ }),
+)
+    ---------------------------------------------------------------------
 
-[ERROR] *Bad argument 3 to message()
-Expected: string or array or object Got: 0.
-  obj : (adm/simul_efun)
-  file: adm/efuns/tell_object.c:3
-  prgm: adm/simul_efun.c
-  func: tell_object
-  args: ( 0, 1718916, )
-
-[ERROR] *Bad argument 3 to message()
-Expected: string or array or object Got: 0.
-  obj : (adm/simul_efun)
-  file: adm/efuns/tell_object.c:3
-  prgm: adm/simul_efun.c
-  func: tell_object
-  args: ( 0, 1719044, )
-
-[ERROR] *Bad argument 3 to message()
-Expected: string or array or object Got: 0.
-  obj : (adm/simul_efun)
-  file: adm/efuns/tell_object.c:3
-  prgm: adm/simul_efun.c
-  func: tell_object
-  args: ( 0, 1719172, )
-
-[ERROR] *Bad argument 3 to message()
-Expected: string or array or object Got: 0.
-  obj : (adm/simul_efun)
-  file: adm/efuns/tell_object.c:3
-  prgm: adm/simul_efun.c
-  func: tell_object
-  args: ( 0, 1719300, )
-
-[ERROR] *Bad argument 3 to message()
-Expected: string or array or object Got: 0.
-  obj : (adm/simul_efun)
-  file: adm/efuns/write.c:3
-  prgm: adm/simul_efun.c
-  func: write
-  args: ( 1651652, )
-
-[ERROR] *Bad argument 3 to message()
-Expected: string or array or object Got: 0.
-  obj : (adm/simul_efun)
-  file: adm/efuns/write.c:3
-  prgm: adm/simul_efun.c
-  func: write
-  args: ( 2404932, )
-
-[ERROR] *Error in loading object '/room/hump'
-  obj : (obj/clone/user/human#40)
-  file: obj/inherit/modules/m_move.c:21
-  prgm: obj/inherit/modules/m_move.c
-  func: move
-  args: ( "/room/hump", )
-
-[ERROR] *Error in loading object '/room/vill_track'
-  obj : (obj/clone/user/human#40)
-  file: obj/inherit/modules/m_move.c:21
-  prgm: obj/inherit/modules/m_move.c
-  func: move
-  args: ( "/room/vill_track", )
-
-[ERROR] *Error in loading object '/u/h/hamnsnock/stuff/tit'
-  obj : (cmd/wiz/clone)
-  file: cmd/wiz/clone.c:23
-  prgm: cmd/wiz/clone.c
-  func: main
-  args: ( ({ /* sizeof() == 2 */
-  "clone",
-  "tit"
-}), ({ /* sizeof() == 1 */
-  "tit"
-}), )
-
-[ERROR] *ERROR: (s)printf(): Incorrect argument type to %d.
-  obj : (adm/simul_efun)
-  file: adm/efuns/printf.c:8
-  prgm: adm/simul_efun.c
-  func: printf
-  args: ( 2393672, 2347840, )
+[ERROR] *call_other() couldn't find object
+  time   : Sun Jun 23 23:13:59 1996
+  file   : cmd/adm/ban.c:31
+  pgm/obj: cmd/adm/ban.c (cmd/adm/ban)
+  [TRACE]  size==6
+    file   : :0
+    pgm/obj: <function> (obj/clone/user/human#198)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:206
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#198)
+    func   : <function> (             "tim", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/protosh.c:521
+    pgm/obj: obj/clone/shells/protosh.c (obj/clone/shells/protosh#199)
+    func   : cmd_hook (             "tim", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:426
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#198)
+    func   : cmd_hook (             "tim", )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/cmdline.c:69
+    pgm/obj: obj/inherit/cmdline.c (cmd/adm/ban)
+    func   : _main (             "tim", )
+    ---------------------------------------------------------------------
+    file   : cmd/adm/ban.c:31
+    pgm/obj: cmd/adm/ban.c (cmd/adm/ban)
+    func   : main (             ({ /* sizeof() == 2 */  "ban",  "tim"}),
+             1645928, )
+    ---------------------------------------------------------------------

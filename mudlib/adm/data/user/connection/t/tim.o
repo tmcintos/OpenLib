@@ -7,6 +7,6 @@ email_addr "tmcintos@knapp38.res.iastate.edu"
 body "/obj/clone/user/human"
 login_shell "/obj/clone/shells/protosh"
 gender 1
-login_time 831621931
-logout_time 831625561
-login_from "knapp38.res.iastate.edu"
+login_time 835844032
+logout_time 835763118
+login_from "mountain-dew.novia.net"

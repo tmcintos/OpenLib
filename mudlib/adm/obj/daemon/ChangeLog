@@ -6,3 +6,10 @@ Sat Apr 13 20:43:15 1996 (tmcintos@knapp38.res.iastate.edu (Tim))
 Tue Apr 16 23:38:18 1996 (tmcintos@knapp38.res.iastate.edu (Tim))
     * master.c, login_d.c, master/valid.c:  Took out UID stuff.
 
+Sat Jun 22 16:44:58 1996 (tmcintos@knapp38.res.iastate.edu (Tim))
+    * master.c: Added unguarded() calls where needed.
+
+Sun Jun 23 23:18:29 1996 (tmcintos@knapp38.res.iastate.edu (Tim))
+    banish_d.c:  New file.  Keeps track of banished names.
+    login_d.c:  Updated to check for banished names and wizlock or adminlock.
+

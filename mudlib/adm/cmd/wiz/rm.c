@@ -17,15 +17,19 @@ main(string *argv, string *argv2)
     
     switch(file_size(file)) {
     case -1:
-      printf("rm: %s does not exist.\n", file);
+      if( query_notify_fail() )
+	write(query_notify_fail());
+      else
+	printf("rm: %s does not exist.\n", file);
       break;
     case -2:
       printf("rm: %s is a directory.\n", file);
       break;
+    default:
+      if(verbose) write(file + "\n");
+      if( !rm(file) && query_notify_fail() )
+        write(query_notify_fail());
     }
-    if(verbose) write(file + "\n");
-    rm(file);
-//    SECURITY_D->unguarded( 1, (: rm($(file)) :) );
   }
 
   return 1;

@@ -8,7 +8,8 @@ class server {
     mixed *Buffer;
 }
 
-int eventCreateSocket(int port, int type);
+int eventListenSocket(int port, int type);
+int eventCreateSocket(string host, int port, int SocketType);
 static void eventServerListenCallback(int fd);
 static void eventServerAbortCallback(int fd);
 static void eventServerReadCallback(int fd, mixed val);
@@ -19,6 +20,7 @@ static void eventClose(class server sock);
 static void eventSocketClosed(int fd);
 int eventDestruct();
 static void eventNewConnection(int fd);
+static void eventWriteError(int fd);
 static void eventSocketError(string str, int x);
 
 function SetRead(function f);

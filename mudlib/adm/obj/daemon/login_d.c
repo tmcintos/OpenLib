@@ -21,7 +21,7 @@
 #include <gender.h>
 
 #define DEBUG
-#define display(x) message("system", x, this_player());
+#define display(x) message("system", x, this_player())
 
 inherit DAEMON;
 
@@ -130,6 +130,7 @@ logon2(string username)
 {
   object conn = this_player();
   string pw;
+  int t;
 
   username = lower_case(username);
 
@@ -138,15 +139,23 @@ logon2(string username)
     return;
   }
 
-  //  This is for mudlocking; simply make group (ALL_GID) the users allowed in
+  if( t = BANISH_D->query_banned(username) ) {
+    display(sprintf("%s has been banished from %s%s.  Sorry!\n",
+		    capitalize(username),
+		    mud_name(),
+		    (t == -1 ? "" : " until " + ctime(t))));
+    return get_uname();
+  }
 
-/* security -- check domain probably */
+  if( file_exists("/adm/etc/adminlock") && !admin_exists(username) ) {
+    display("Only administrators may login right now.\n");
+    return get_uname();
+  }
 
-//
-//  if(!GROUP_D->is_member(ALL_GID, username)) {
-//    display("Sorry, you are not allowed to log in right now.\n");
-//    return get_uname();
-//  }
+  if( file_exists("/adm/etc/wizlock") && !wizard_exists(username) ) {
+    display("Only wizards may login right now.\n");
+    return get_uname();
+  }
 
   if(!conn->restore_connection(username)) {
     if(!valid_name(username))
@@ -295,6 +304,12 @@ player_enter_world(int new_char)
   map_delete(attempt_number, conn);
   display("\n");
 
+
+  // lastlog entry
+  write_file(LASTLOG, sprintf("%:-10s  %:-20s  %s  %:-15s\n",
+			      username, query_ip_name(conn), ctime(time()),
+			      query_ip_number(conn)));
+
   // If linkdead, reconnect
   if(body = find_player(username)) {
     if(interactive(body)) {
@@ -337,6 +352,12 @@ player_enter_world(int new_char)
   exec(body, conn);
 
   /* security -- setup privs */
+  if( admin_exists(username) )
+    set_privs(body, 1);
+  else if( wizard_exists(username) )
+    set_privs(body, username);
+  else
+    set_privs(body, 0);
 
   body->init_player(username);
   if(!shell->shell_init(body)) {
@@ -361,13 +382,6 @@ player_enter_world(int new_char)
 
   buf += sprintf("Welcome to %s!\n%s\n\n", mud_name(), read_file(MOTD));
 
-  if( MAIL_D->check_mail(username) ) {
-    if( MAIL_D->check_mail(username, 1) )
-      buf += "\n\nYou have NEW mail.\n\n\n";
-    else
-      buf += "You have mail.";
-  }
-
   body->more(explode(buf, "\n"), (: player_enter_world2, username, body :));
 }
 
@@ -380,9 +394,12 @@ player_enter_world2(string username, object body)
   body->move(START_ROOM);
   body->force_me("look");
 
-  write_file(LASTLOG, sprintf("%:-10s  %:-20s  %s  %:-15s\n",
-			      username, query_ip_name(body), ctime(time()),
-			      query_ip_number(body)));
+  if( MAIL_D->check_mail(username) ) {
+    if( MAIL_D->check_mail(username, 1) )
+      display("\nYou have %^GREEN%^NEW%^RESET%^ mail.\n\n");
+    else
+      display("You have mail.\n");
+  }
 }
 
 /*-------------------------- Name & Password Checks -------------------------*/
@@ -404,7 +421,7 @@ valid_name(string username)
     if(username[i] < 'A' || username[i] > 'z' ||
        (username[i] > 'Z' && username[i] < 'a')) 
       {
-	display("Username must consist of letters only.\n");
+	display("Username must consist of alphabetic characters only.\n");
 	return 0;
       }
   }

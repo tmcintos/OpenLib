@@ -1,25 +1,18 @@
 #include <command.h>
 #include <net/daemons.h>
-#include <net/ftpd.h>
 
 int
 main()
 {
-  int i;
-  mapping *connections;
+  mixed* list = FTP_D->query_connections();
 
-  connections = FTP_D->query_connections();
+  message("system", "Name          Privilege     From Host\n"
+	            "------------------------------------------------------\n",
+	  this_player());
 
-  i = sizeof(connections);
-
-  write(sprintf("%-15s                    %-15s\n",
-		"User Name", "From Address"));
-  write("---------                          ------------\n");
-
-  while(i--)
-    write(sprintf("%-15s                    %-15s\n",
-		  connections[i][USER_NAME], 
-		  connections[i][USER_SITE]));
-
+  foreach(string* info in list)
+    message("system", sprintf("%-:12s  %-12s  %s\n",
+			      info[0], sprint_priv(info[1]), info[2]),
+	    this_player());
   return 1;
 }

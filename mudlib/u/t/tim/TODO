@@ -67,4 +67,21 @@ more.c:	-rewrite more() for better efficiency and to take a func pointer
  call interior() (or something) with 'look in'
 -change mudlib to use __DIR__ which is a handy thing I just discovered...
  Don't you just love undocumented mud drivers?!
+-ls.c: add an flag to sort files by modification date
+-list idle time as hh:mm:ss or dd:hh:mm:ss in the general finger report.
+mail: when editor aborts while doing a reply, make it come back to the
+command loop if possible.
+-linkdeadedness: save messages from when you were linkdead in a buffer.
+Give option for viewing on reconnect.  (possibly only certain classes of
+messages or configurable)--This should be a shell feature.
+more():  Fix it so when exactly one screenful is displayed, it will exit
+instead of saying (END) and prompting...This is when MORE_EXIT_END is defined
+of course...
+-login_d: change it so any member of domain admin gets priv 1 (?)
+-fix errors in net daemons caused by my change to server.c
+-fix security hole created by programs like changelog which use a callback
+ from a daemon with priv 1 access.
+ Probably just means being careful when writing such commands...maybe more.
+-unsetenv command is a symbolic link to setenv...now is in wrong dir...
+ remove and fix sometime.
 </PRE>

@@ -25,7 +25,7 @@ create()
 
   channels = ([]);
   chanmap = ({});
-  restore_object(SAVE_CHATD, 1);
+  restore_object(SAVE_CHAT_D, 1);
 
   foreach(string chan in keys(channels)) {
     ((class channel_info) channels[chan])->userlist = ({});
@@ -69,7 +69,7 @@ set_alias(string localname, string remotename)
   // more validity checks to do here
 
   chanmap += ({ localname, remotename });
-  save_object(SAVE_CHATD);
+  save_object(SAVE_CHAT_D);
 }
 
 // pre: true
@@ -91,7 +91,7 @@ add_channel(string name, string desc, int level, string guild)
 
   channels += ([ name : newchan ]);
 
-  save_object(SAVE_CHATD);
+  save_object(SAVE_CHAT_D);
   return 1;
 }
 
@@ -107,7 +107,7 @@ remove_channel(string name)
 
   map_delete(channels, name);
 
-  save_object(SAVE_CHATD);
+  save_object(SAVE_CHAT_D);
   return 1;
 }
 

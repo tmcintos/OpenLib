@@ -65,8 +65,14 @@ valid_socket(object eff_user, string fun, mixed *info)
 
 int
 valid_write(string file, mixed user, string func)
-{
-  return 1;
+{ 
+  if( !check_priv(SECURITY_D->get_file_protection(file, 0)) ) {
+    unguarded((: log_file("fail", sprintf("v_w: file=%s, user=%O, func=%s\n",
+					  $(file), $(user), $(func))) :), 1);
+    return notify_fail(file + ": Insufficient privilege.\n");
+  }
+  else
+    return 1;
 }
 
 // valid_read:  called exactly the same as valid_write()
@@ -74,7 +80,13 @@ valid_write(string file, mixed user, string func)
 int
 valid_read(string file, mixed user, string func)
 {
-  return 1;
+  if( !check_priv(SECURITY_D->get_file_protection(file, 1)) ) {
+    unguarded((: log_file("fail", sprintf("v_r: file=%s, user=%O, func=%s\n",
+					  $(file), $(user), $(func))) :), 1);
+    return notify_fail(file + ": Insufficient privilege.\n");
+  }
+  else
+    return 1;
 }
 
 int

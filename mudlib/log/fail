@@ -1,0 +1,6 @@
+Sun Jun 23 23:23:24 1996: v_w: file=/log/lastlog, user=adm/obj/daemon/login_d, func=write_file
+Sun Jun 23 23:24:53 1996: v_w: file=/TEST, user=obj/clone/user/human#223, func=ed_start
+Sun Jun 23 23:25:01 1996: v_w: file=/README, user=adm/cmd/wiz/rm, func=remove_file
+Sun Jun 23 23:26:44 1996: v_w: file=/adm/ChangeLog, user=adm/cmd/wiz/rm, func=remove_file
+Sun Jun 23 23:35:57 1996: v_w: file=/log/lastlog, user=adm/obj/daemon/login_d, func=write_file
+Mon Jun 24 12:47:32 1996: v_w: file=/log/lastlog, user=adm/obj/daemon/login_d, func=write_file

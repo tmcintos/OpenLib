@@ -4,4 +4,4 @@
 #undef unguarded
 mixed eval() { 
   object me = this_player();
-  return query_privs(me); }
+  return efuns(); }

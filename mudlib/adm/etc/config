@@ -16,7 +16,7 @@ port number : 4444
 
 # mud may define up to 5 external commands which return a socket used to
 # communicate with the command.  Accessed via external_start() efun.
-external_cmd_1 : /usr/local/bin/tcsh -s
+# external_cmd_1 : /usr/local/bin/tcsh -s
 
 # the address server is an external program that lets the mud translate
 # internet names to numbers (and vice versa).  select an unused port.
@@ -24,26 +24,26 @@ address server ip : localhost
 address server port : 7374
  
 # absolute pathname of mudlib
-mudlib directory : /home/mud/mudlib
+mudlib directory : /home/tim/dysfun/mudlib
  
 # absolute pathname of driver/config dir
-binary directory : /home/mud/MudOS/bin
+binary directory : /home/mudtim/dysfun/MudOS/bin
  
 # debug.log and author/domain stats are stored here
 log directory : /log
 
 # the directories which are searched by #include <...>
 # for multiple dirs, separate each path with a ':'
-include directories : /include
+include directories : /adm/include:/include
  
 # Directory to save binaries in.  (if BINARIES is defined)
-save binaries directory : /data/binaries
+save binaries directory : /adm/data/binaries
  
 # the file which defines the master object
 master file : /adm/obj/daemon/master
  
 # the file where all global simulated efuns are defined.
-simulated efun file : /adm/simul_efun
+simulated efun file : /adm/obj/daemon/simul_efun
  
 # file to swap out objects; not used if time to swap is 0
 swap file : /adm/tmp/swapfile

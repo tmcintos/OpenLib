@@ -1189,3 +1189,126 @@ Wed May  8 18:03:30 1996:  homer.infoseek.com: ERROR: Not Found (Wed May  8 18:0
 Thu May  9 00:31:31 1996:  206.26.42.253: CONNECTED (Thu May  9 00:31:31 1996)
 Thu May  9 00:31:31 1996:  206.26.42.253: GET / HTTP/1.0 (Thu May  9 00:31:31 1996)
 Thu May  9 00:31:31 1996:  Ip 206.26.42.253 resloved to pm1-29.starlink.com after connection closed.
+Fri May 24 18:11:42 1996:  Socket closed.
+Fri May 24 18:15:05 1996:  oasis.novia.net: CONNECTED (Fri May 24 18:11:36 1996)
+Fri May 31 13:37:46 1996:  204.248.25.50: CONNECTED (Fri May 31 13:37:46 1996)
+Fri May 31 13:37:46 1996:  204.248.25.50: GET / HTTP/1.0 (Fri May 31 13:37:46 1996)
+Fri May 31 13:37:46 1996:  Ip 204.248.25.50 resloved to gilligan.novia.net after connection closed.
+Fri May 31 13:37:56 1996:  204.248.25.50: CONNECTED (Fri May 31 13:37:56 1996)
+Fri May 31 13:37:56 1996:  204.248.25.50: GET / HTTP/1.0 (Fri May 31 13:37:56 1996)
+Fri May 31 13:37:56 1996:  Ip 204.248.25.50 resloved to gilligan.novia.net after connection closed.
+Fri May 31 13:38:12 1996:  204.248.25.50: CONNECTED (Fri May 31 13:38:12 1996)
+Fri May 31 13:38:12 1996:  204.248.25.50: GET /~quint/ HTTP/1.0 (Fri May 31 13:38:12 1996)
+Fri May 31 13:38:12 1996:  204.248.25.50: ERROR: Not Found (Fri May 31 13:38:12 1996)
+Fri May 31 13:38:12 1996:  Ip 204.248.25.50 resloved to gilligan.novia.net after connection closed.
+Fri May 31 13:38:18 1996:  204.248.25.50: CONNECTED (Fri May 31 13:38:18 1996)
+Fri May 31 13:38:18 1996:  204.248.25.50: GET /~evergreen/ HTTP/1.0 (Fri May 31 13:38:18 1996)
+Fri May 31 13:38:18 1996:  Ip 204.248.25.50 resloved to gilligan.novia.net after connection closed.
+Fri May 31 13:38:24 1996:  gilligan.novia.net: CONNECTED (Fri May 31 13:38:24 1996)
+Fri May 31 13:38:24 1996:  gilligan.novia.net: GET /~kyricc/ HTTP/1.0 (Fri May 31 13:38:24 1996)
+Fri May 31 13:38:26 1996:  gilligan.novia.net: CONNECTED (Fri May 31 13:38:26 1996)
+Fri May 31 13:38:26 1996:  gilligan.novia.net: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Fri May 31 13:38:26 1996)
+Fri May 31 13:38:32 1996:  204.248.25.50: CONNECTED (Fri May 31 13:38:32 1996)
+Fri May 31 13:38:32 1996:  204.248.25.50: GET /~kyricc/shop.html HTTP/1.0 (Fri May 31 13:38:32 1996)
+Fri May 31 13:38:32 1996:  204.248.25.50: ERROR: Not Found (Fri May 31 13:38:32 1996)
+Fri May 31 13:38:32 1996:  Ip 204.248.25.50 resloved to gilligan.novia.net after connection closed.
+Fri May 31 13:38:36 1996:  gilligan.novia.net: CONNECTED (Fri May 31 13:38:36 1996)
+Fri May 31 13:38:36 1996:  gilligan.novia.net: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Fri May 31 13:38:36 1996)
+Fri May 31 23:00:12 1996:  Socket closed.
+Fri May 31 23:00:28 1996:  bono.novia.net: CONNECTED (Fri May 31 22:59:44 1996)
+Fri May 31 23:01:33 1996:  Socket closed.
+Fri May 31 23:03:41 1996:  bono.novia.net: CONNECTED (Fri May 31 23:00:32 1996)
+Fri May 31 23:04:22 1996:  Socket closed.
+Fri May 31 23:04:30 1996:  bono.novia.net: CONNECTED (Fri May 31 23:04:10 1996)
+Fri May 31 23:04:38 1996:  Socket closed.
+Fri May 31 23:05:53 1996:  localhost: CONNECTED (Fri May 31 23:04:34 1996)
+Fri May 31 23:06:11 1996:  Socket closed.
+Fri May 31 23:09:42 1996:  bono.novia.net: CONNECTED (Fri May 31 23:05:55 1996)
+Fri May 31 23:13:25 1996:  Socket closed.
+Fri May 31 23:18:44 1996:  bono.novia.net: CONNECTED (Fri May 31 23:13:05 1996)
+Thu Jun 20 06:48:27 1996:  204.123.2.54: CONNECTED (Thu Jun 20 06:48:27 1996)
+Thu Jun 20 06:48:27 1996:  204.123.2.54: GET /robots.txt HTTP/1.0 (Thu Jun 20 06:48:27 1996)
+Thu Jun 20 06:48:27 1996:  204.123.2.54: ERROR: Not Found (Thu Jun 20 06:48:27 1996)
+Thu Jun 20 06:48:29 1996:  Ip 204.123.2.54 resloved to scooter.pa-x.dec.com after connection closed.
+Thu Jun 20 06:48:29 1996:  204.123.2.54: CONNECTED (Thu Jun 20 06:48:29 1996)
+Thu Jun 20 06:48:29 1996:  204.123.2.54: GET / HTTP/1.0 (Thu Jun 20 06:48:29 1996)
+Thu Jun 20 06:48:29 1996:  Ip 204.123.2.54 resloved to scooter.pa-x.dec.com after connection closed.
+Thu Jun 20 18:39:13 1996:  204.123.2.54: CONNECTED (Thu Jun 20 18:39:13 1996)
+Thu Jun 20 18:39:13 1996:  204.123.2.54: GET /~tim/TODO HTTP/1.0 (Thu Jun 20 18:39:13 1996)
+Thu Jun 20 18:39:15 1996:  Ip 204.123.2.54 resloved to scooter.pa-x.dec.com after connection closed.
+Thu Jun 20 18:57:53 1996:  scooter.pa-x.dec.com: CONNECTED (Thu Jun 20 18:57:53 1996)
+Thu Jun 20 18:57:53 1996:  scooter.pa-x.dec.com: GET /~tim/DONE HTTP/1.0 (Thu Jun 20 18:57:53 1996)
+Fri Jun 21 10:58:49 1996:  204.123.2.54: CONNECTED (Fri Jun 21 10:58:49 1996)
+Fri Jun 21 10:58:49 1996:  204.123.2.54: GET /gateways/finger HTTP/1.0 (Fri Jun 21 10:58:49 1996)
+Fri Jun 21 10:58:49 1996:  Ip 204.123.2.54 resloved to scooter.pa-x.dec.com after connection closed.
+Fri Jun 21 11:18:31 1996:  204.123.2.54: CONNECTED (Fri Jun 21 11:18:31 1996)
+Fri Jun 21 11:18:31 1996:  204.123.2.54: GET /~casper HTTP/1.0 (Fri Jun 21 11:18:31 1996)
+Fri Jun 21 11:18:31 1996:  204.123.2.54: ERROR: Not Found (Fri Jun 21 11:18:31 1996)
+Fri Jun 21 11:18:31 1996:  Ip 204.123.2.54 resloved to scooter.pa-x.dec.com after connection closed.
+Fri Jun 21 11:30:31 1996:  204.123.2.54: CONNECTED (Fri Jun 21 11:30:31 1996)
+Fri Jun 21 11:30:31 1996:  204.123.2.54: GET /~damian HTTP/1.0 (Fri Jun 21 11:30:31 1996)
+Fri Jun 21 11:30:31 1996:  204.123.2.54: ERROR: Not Found (Fri Jun 21 11:30:31 1996)
+Fri Jun 21 11:30:31 1996:  Ip 204.123.2.54 resloved to scooter.pa-x.dec.com after connection closed.
+Mon Jun 24 00:59:14 1996: 204.141.0.105: CONNECTED (Mon Jun 24 00:59:14 1996)
+Mon Jun 24 00:59:14 1996: 204.141.0.105: GET / HTTP/1.0 (Mon Jun 24 00:59:14 1996)
+Mon Jun 24 00:59:14 1996: Ip 204.141.0.105 resloved to rattlehead.wtp.com after connection closed.
+Tue Jun 25 21:27:53 1996: 204.123.2.54: CONNECTED (Tue Jun 25 21:27:53 1996)
+Tue Jun 25 21:27:53 1996: 204.123.2.54: GET /robots.txt HTTP/1.0 (Tue Jun 25 21:27:53 1996)
+Tue Jun 25 21:27:53 1996: 204.123.2.54: ERROR: Not Found (Tue Jun 25 21:27:53 1996)
+Tue Jun 25 21:27:53 1996: Ip 204.123.2.54 resloved to scooter.pa-x.dec.com after connection closed.
+Tue Jun 25 21:27:55 1996: scooter.pa-x.dec.com: CONNECTED (Tue Jun 25 21:27:55 1996)
+Tue Jun 25 21:27:55 1996: scooter.pa-x.dec.com: GET /~evergreen HTTP/1.0 (Tue Jun 25 21:27:55 1996)
+Tue Jun 25 21:41:46 1996: scooter.pa-x.dec.com: CONNECTED (Tue Jun 25 21:41:46 1996)
+Tue Jun 25 21:41:46 1996: scooter.pa-x.dec.com: GET /~exe HTTP/1.0 (Tue Jun 25 21:41:46 1996)
+Tue Jun 25 21:41:46 1996: scooter.pa-x.dec.com: ERROR: Not Found (Tue Jun 25 21:41:46 1996)
+Tue Jun 25 21:51:44 1996: 204.123.2.54: CONNECTED (Tue Jun 25 21:51:44 1996)
+Tue Jun 25 21:51:44 1996: 204.123.2.54: GET /~hamnsnock HTTP/1.0 (Tue Jun 25 21:51:44 1996)
+Tue Jun 25 21:51:44 1996: Ip 204.123.2.54 resloved to scooter.pa-x.dec.com after connection closed.
+Tue Jun 25 21:59:15 1996: scooter.pa-x.dec.com: CONNECTED (Tue Jun 25 21:59:15 1996)
+Tue Jun 25 21:59:15 1996: scooter.pa-x.dec.com: GET /~kyricc HTTP/1.0 (Tue Jun 25 21:59:15 1996)
+Tue Jun 25 22:04:58 1996: scooter.pa-x.dec.com: CONNECTED (Tue Jun 25 22:04:58 1996)
+Tue Jun 25 22:04:58 1996: scooter.pa-x.dec.com: GET /~misery HTTP/1.0 (Tue Jun 25 22:04:58 1996)
+Tue Jun 25 22:04:58 1996: scooter.pa-x.dec.com: ERROR: Not Found (Tue Jun 25 22:04:58 1996)
+Wed Jun 26 01:31:32 1996: 204.123.2.54: CONNECTED (Wed Jun 26 01:31:32 1996)
+Wed Jun 26 01:31:32 1996: 204.123.2.54: GET /corpse.html HTTP/1.0 (Wed Jun 26 01:31:32 1996)
+Wed Jun 26 01:31:32 1996: 204.123.2.54: ERROR: Not Found (Wed Jun 26 01:31:32 1996)
+Wed Jun 26 01:31:32 1996: Ip 204.123.2.54 resloved to scooter.pa-x.dec.com after connection closed.
+Wed Jun 26 11:45:12 1996: scooter.pa-x.dec.com: CONNECTED (Wed Jun 26 11:45:12 1996)
+Wed Jun 26 11:45:12 1996: scooter.pa-x.dec.com: GET /~quint HTTP/1.0 (Wed Jun 26 11:45:12 1996)
+Wed Jun 26 11:45:12 1996: scooter.pa-x.dec.com: ERROR: Not Found (Wed Jun 26 11:45:12 1996)
+Wed Jun 26 11:51:36 1996: 204.123.2.54: CONNECTED (Wed Jun 26 11:51:36 1996)
+Wed Jun 26 11:51:36 1996: 204.123.2.54: GET /~talen HTTP/1.0 (Wed Jun 26 11:51:36 1996)
+Wed Jun 26 11:51:36 1996: 204.123.2.54: ERROR: Not Found (Wed Jun 26 11:51:36 1996)
+Wed Jun 26 11:51:36 1996: Ip 204.123.2.54 resloved to scooter.pa-x.dec.com after connection closed.
+Wed Jun 26 11:56:47 1996: 204.123.2.54: CONNECTED (Wed Jun 26 11:56:47 1996)
+Wed Jun 26 11:56:47 1996: 204.123.2.54: GET /~tim HTTP/1.0 (Wed Jun 26 11:56:47 1996)
+Wed Jun 26 11:56:47 1996: Ip 204.123.2.54 resloved to scooter.pa-x.dec.com after connection closed.
+Wed Jun 26 18:42:23 1996: 204.123.2.54: CONNECTED (Wed Jun 26 18:42:23 1996)
+Wed Jun 26 18:42:23 1996: 204.123.2.54: GET /put.html HTTP/1.0 (Wed Jun 26 18:42:23 1996)
+Wed Jun 26 18:42:23 1996: 204.123.2.54: ERROR: Not Found (Wed Jun 26 18:42:23 1996)
+Wed Jun 26 18:42:23 1996: Ip 204.123.2.54 resloved to scooter.pa-x.dec.com after connection closed.
+Wed Jun 26 19:03:05 1996: scooter.pa-x.dec.com: CONNECTED (Wed Jun 26 19:03:05 1996)
+Wed Jun 26 19:03:05 1996: scooter.pa-x.dec.com: GET /shop.html HTTP/1.0 (Wed Jun 26 19:03:05 1996)
+Wed Jun 26 19:03:05 1996: scooter.pa-x.dec.com: ERROR: Not Found (Wed Jun 26 19:03:05 1996)
+Thu Jun 27 09:53:36 1996: 204.123.2.54: CONNECTED (Thu Jun 27 09:53:34 1996)
+Thu Jun 27 09:53:36 1996: 204.123.2.54: GET /races.html HTTP/1.0 (Thu Jun 27 09:53:36 1996)
+Thu Jun 27 09:53:36 1996: 204.123.2.54: ERROR: Not Found (Thu Jun 27 09:53:36 1996)
+Thu Jun 27 09:53:36 1996: Ip 204.123.2.54 resloved to scooter.pa-x.dec.com after connection closed.
+Thu Jun 27 09:58:36 1996: 204.123.2.54: CONNECTED (Thu Jun 27 09:58:36 1996)
+Thu Jun 27 09:58:36 1996: 204.123.2.54: GET /crys.html HTTP/1.0 (Thu Jun 27 09:58:36 1996)
+Thu Jun 27 09:58:36 1996: 204.123.2.54: ERROR: Not Found (Thu Jun 27 09:58:36 1996)
+Thu Jun 27 09:58:36 1996: Ip 204.123.2.54 resloved to scooter.pa-x.dec.com after connection closed.
+Thu Jun 27 10:02:25 1996: 204.123.2.54: CONNECTED (Thu Jun 27 10:02:25 1996)
+Thu Jun 27 10:02:25 1996: 204.123.2.54: GET /porno.html HTTP/1.0 (Thu Jun 27 10:02:25 1996)
+Thu Jun 27 10:02:25 1996: 204.123.2.54: ERROR: Not Found (Thu Jun 27 10:02:25 1996)
+Thu Jun 27 10:02:25 1996: Ip 204.123.2.54 resloved to scooter.pa-x.dec.com after connection closed.
+Fri Jun 28 17:28:48 1996: 204.248.25.57: CONNECTED (Fri Jun 28 17:28:48 1996)
+Fri Jun 28 17:28:48 1996: 204.248.25.57: GET / HTTP/1.0 (Fri Jun 28 17:28:48 1996)
+Fri Jun 28 17:28:48 1996: Ip 204.248.25.57 resloved to batman.novia.net after connection closed.
+Fri Jun 28 17:28:58 1996: batman.novia.net: CONNECTED (Fri Jun 28 17:28:58 1996)
+Fri Jun 28 17:28:58 1996: batman.novia.net: GET / HTTP/1.0 (Fri Jun 28 17:28:58 1996)
+Fri Jun 28 17:29:12 1996: batman.novia.net: CONNECTED (Fri Jun 28 17:29:12 1996)
+Fri Jun 28 17:29:12 1996: batman.novia.net: GET /~quint/ HTTP/1.0 (Fri Jun 28 17:29:12 1996)
+Fri Jun 28 17:29:12 1996: batman.novia.net: ERROR: Not Found (Fri Jun 28 17:29:12 1996)
+Fri Jun 28 17:29:32 1996: batman.novia.net: CONNECTED (Fri Jun 28 17:29:32 1996)
+Fri Jun 28 17:29:32 1996: batman.novia.net: GET /gateways/finger HTTP/1.0 (Fri Jun 28 17:29:32 1996)

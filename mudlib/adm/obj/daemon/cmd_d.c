@@ -6,9 +6,9 @@
 // 02/19/96  Tim  Optimized a bit more :)
 
 #include <mudlib.h>
+#include <save.h>
 
 #define DEBUG
-#define SAVE_COMD SECURE_DAEMON_SAVE_DIR "/comd"
 
 inherit DAEMON;
 
@@ -20,7 +20,7 @@ void
 create()
 {
   cmdpathmap = ([]);
-  restore_object(SAVE_COMD, 1);
+  restore_object(SAVE_CMD_D, 1);
 }
 
 void
@@ -32,7 +32,7 @@ reset()
   }
   // Assert: directories with no commands have been removed from mapping
 
-  save_object(SAVE_COMD);
+  save_object(SAVE_CMD_D);
 }
 
 #ifdef DEBUG
@@ -139,6 +139,6 @@ hash_path(string path)
   // Assert:  cmdpathmap[path] now contains an array of all cmds
   //          in that dir (without the .c extension)
 
-  save_object(SAVE_COMD);
+  save_object(SAVE_CMD_D);
   return 1;
 }

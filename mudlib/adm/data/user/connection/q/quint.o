@@ -5,7 +5,8 @@ password "smSFhBKrCmnWk"
 real_name "Scott Jackson"
 email_addr "scott@de.msstate.edu"
 body "/obj/clone/user/human"
-login_shell "/obj/clone/shells/nmsh"
-login_time 826005209
-logout_time 826005227
-login_from "knapp38.res.iastate.edu"
+login_shell "/obj/clone/shells/protosh"
+gender 0
+login_time 835890137
+logout_time 835971391
+login_from "Melville.ERC.MsState.Edu"
