@@ -1,0 +1,9 @@
+#obj/clone/user/human.c
+flags ({})
+coins ({150,112,})
+hit_points 4
+spell_points 0
+gender 0
+env_vars (["SHELL":"/obj/clone/shells/protosh","PATH":"/cmd/player:/adm/cmd/player:/cmd/wiz:/adm/cmd/wiz:/cmd/adm:/adm/cmd/adm","TERM":"vt100","version":"Prototype Shell",])
+aliases (["n":"north","sw":"southwest","sc":"score","l":"look","ne":"northeast","w":"west","nw":"northwest","s":"south","e":"east","i":"inventory","se":"southeast",])
+channels ({})

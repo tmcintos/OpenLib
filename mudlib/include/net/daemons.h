@@ -4,6 +4,7 @@
 #include <dirs.h>
 
 #define INTERMUD_D           DAEMON_DIR "/net/intermud"
+#define OOB_D                DAEMON_DIR "/net/oob_d"
 #define NETWORK_D            DAEMON_DIR "/net/network"
 #define SERVICES_D           DAEMON_DIR "/net/services"
 #define FTP_D                DAEMON_DIR "/net/ftpd"

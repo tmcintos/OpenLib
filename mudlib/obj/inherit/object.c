@@ -11,8 +11,6 @@
 // 10/28/95     Tim: Added set_prevent_get(boolean) & set_prevent_drop(boolean)
 // 01/29/96     Tim: Added object flag funcs
 
-#pragma save_binary
-
 #include <object_types.h>
 #include <move.h>
 
@@ -35,14 +33,32 @@ static string short_desc;                /* short description */
 static string long_desc;                 /* long description */
 
 // Prototypes (someone fill in the rest sometime)
+void create();
+int remove();
+int clean_up(int inh);
+nomask int move(mixed dest);
+nomask void set_ids(string* ids);
+nomask string* query_ids();
+int id(string arg);
+nomask void set_prevent_get(boolean pg);
+nomask void set_prevent_drop(boolean pd);
+int get();
+int drop();
+nomask void set_light(int lev);
+nomask void set_long(string s);
+nomask void set_short(string s);
+nomask int query_light();
+string short();
+varargs mixed long(int flag);
+nomask int query_flag(string flag);
+nomask void set_flag(string flag);
+nomask void clear_flag(string flag);
+nomask int* query_value();
+nomask void set_value(int* money);
 int query_weight();
-int query_object_class();
-int query_flag(string flag);
-void set_flag(string flag);
-void clear_flag(string flag);
-void set_object_class(int obj_class);
-void set_prevent_get(boolean pg);
-void set_prevent_drop(boolean pd);
+nomask void set_weight(int lbs);
+nomask int query_object_class();
+nomask void set_object_class(int obj_class);
 
 void
 create()
@@ -52,14 +68,11 @@ create()
   set_object_class(OBJECT_OBJECT);
   ids = ({});
   long_desc = "";
-  short_desc = 0;
-  light = 0;
-  weight = 0;
   flags = ({});
 }
 
 // this is called by the driver when an object is destructed
-void
+int
 remove()
 {
   object ob;
@@ -69,33 +82,6 @@ remove()
       ob->move(environment(this_object()));
   }
   // update attributes of the container and the containees.
-}
-
-int
-move(mixed dest)
-{
-  object from = environment(this_object());
-
-  // add code here to prevent disallowed moves (target is full, object
-  // is immovable, etc.).  Also update attributes of source and target
-  // objects. Note in the master valid_override() is currently
-  // set up to restrict calls to move_object() to this file only.
-  
-
-  if(!dest || !(dest->query_object_class() & OBJECT_CONTAINER))
-    return MOVE_NOT_ALLOWED;
-
-  if(dest->query_object_class() & OBJECT_LIVING &&
-    !dest->add_weight(query_weight()))
-    return MOVE_TOO_HEAVY;
-
-// when this is actually done we can put this in :>
-//  if(!dest->add_bulk(query_weight()))
-//    return MOVE_TOO_LARGE;
-	
-  move_object(dest);
-
-  return MOVE_OK;
 }
 
 // if this object is lost (no environment) and not inherited, then destruct
@@ -111,8 +97,34 @@ clean_up(int inh)
   }
 }
 
-nomask
-void
+nomask int
+move(mixed dest)
+{
+  object from = environment(this_object());
+
+  // add code here to prevent disallowed moves (target is full, object
+  // is immovable, etc.).  Also update attributes of source and target
+  // objects. Note in the master valid_override() is currently
+  // set up to restrict calls to move_object() to this file only.
+
+  if(stringp(dest)) dest = load_object(dest);
+
+  if(!dest || !(dest->query_object_class() & OBJECT_CONTAINER))
+    return MOVE_NOT_ALLOWED;
+
+  if(living(dest) && !dest->add_weight(query_weight()))
+    return MOVE_TOO_HEAVY;
+
+// when this is actually done we can put this in :>
+//  if(!dest->add_bulk(query_weight()))
+//    return MOVE_TOO_LARGE;
+	
+  move_object(dest);
+
+  return MOVE_OK;
+}
+
+nomask void
 set_ids(string *arg)
 {
   // probably want to add some security here.
@@ -121,8 +133,7 @@ set_ids(string *arg)
   ids = copy(arg);
 }
 
-nomask
-string *
+nomask string *
 query_ids()
 {
   return copy(ids);
@@ -137,7 +148,7 @@ id(string arg)
     return (member_array(arg, ids) != -1);
 }
 
-void
+nomask void
 set_prevent_get(boolean pg)
 {
   prevent_get = pg;
@@ -149,7 +160,7 @@ get()
   return !prevent_get;
 }
 
-void
+nomask void
 set_prevent_drop(boolean pd)
 {
   prevent_drop = pd;
@@ -161,15 +172,13 @@ drop()
   return !prevent_drop;
 }
 
-nomask
-void
+nomask void
 set_light(int level)
 {
   light = level;
 }
 
-nomask
-int
+nomask void
 set_long(string str)
 {
   long_desc = str;
@@ -178,15 +187,13 @@ set_long(string str)
     long_desc = "";
 }
 
-nomask
-int
+nomask void
 set_short(string str)
 {
   short_desc = str;
 }
 
-nomask
-int
+nomask int
 query_light()
 {
   return light;
@@ -201,8 +208,7 @@ short()
   return short_desc;
 }
 
-varargs
-mixed
+varargs mixed
 long(int flag)
 {
   string ret = long_desc;
@@ -234,28 +240,25 @@ long(int flag)
   return 0;
 }
 
-int
+nomask int
 query_flag(string flag)
 {
   return member_array(flag, flags) != -1;
 }
 
-void
+nomask void
 set_flag(string flag)
 {
-  if(!query_flag(flag))
-    flags += ({ flag });
+  if(!query_flag(flag)) flags += ({ flag });
 }
 
-void
+nomask void
 clear_flag(string flag)
 {
-  if(query_flag(flag))
-    flags -= ({ flag });
+  if(query_flag(flag)) flags -= ({ flag });
 }
 
-nomask
-int *
+nomask int*
 query_value()
 {
   if(value == ({}) ||
@@ -266,11 +269,11 @@ query_value()
     return copy(value);
 }
 
-nomask
-void
-set_value(int *money)
+nomask void
+set_value(int* money)
 {
-  value = money;        // We can do this cause it's LPC !!
+  // I'll do this just in case people monkey with money after they use it here
+  value = copy(money);
 }
 
 // can be redefined, but don't.  Mainly for living.c
@@ -279,30 +282,25 @@ int
 query_weight()
 {
   int total_weight = weight;
-  object ob;
 
-// If we're a container, report our weight plus the weight of what we contain
-
+  // If we're a container, report our weight plus the weight of what we contain
   if(query_object_class() & OBJECT_CONTAINER) {
-    foreach(ob in all_inventory(this_object())) {
+    foreach(object ob in all_inventory(this_object()))
       total_weight += ob->query_weight();
-    }
   }
 
   return total_weight;
 }
 
-nomask
-void
+nomask void
 set_weight(int pounds)
 {
   weight = pounds;
 }
 
-// Takes a bitstring as defined in <object_types.h>
+// Takes a bitfield as defined in <object_types.h>
 
-nomask
-void
+nomask void
 set_object_class(int obj_class)
 {
   object_class = obj_class;
@@ -310,8 +308,7 @@ set_object_class(int obj_class)
 
 // returns the object class bitstring
 
-nomask
-int
+nomask int
 query_object_class()
 {
   return object_class;

@@ -8,11 +8,12 @@
  *
  * Auronthas 15. Jan 1992
  *
- * 10/12/95     Tim: Changed %^END%^ to %^RESET%^ to comply with the standard
+ * 10/12/95     Tim Changed %^END%^ to %^RESET%^ to comply with the standard
  *              in the mud community.
- * 11/14/95     Tim: further Dysfunctional-ized by making the ranges [x..y]
+ * 11/14/95     Tim further Dysfunctional-ized by making the ranges [x..y]
  *              compliant with the new MudOS standards
- * 01/22/96     Tim: added string* query_supported_termtypes()
+ * 01/22/96     Tim added string* query_supported_termtypes()
+ * 02/17/96     Tim fixed to user copy(), changed to a daemon
  */
 
 /*
@@ -285,14 +286,14 @@ mapping termcap_entries =
 mapping
 query_all_termcap_entries()
 {
-    return termcap_entries;
+    return copy(termcap_entries);
 }
 
 mapping
 query_termcap(string what) /* Added by Kniggit 930115 */
 {
     if(termcap_entries && what)
-	return termcap_entries[what];
+	return copy(termcap_entries[what]);
 }
 
 mixed*
@@ -315,138 +316,10 @@ termcap_capability(string entry, string capability)
     return 0;
 }
 
-varargs string
-termcap(string message, string capability, object ob)
-{
-    string t_type, t;
-
-    if (!message)
-	message = "";
-    if (!ob && !(ob = this_player()))
-	ob = previous_object();
-    if ((t_type = (string)ob->query_property("TERM")) &&
-	termcap_entries[t_type] &&
-	(t = termcap_capability(t_type, capability)))
-    {
-	return (t ? t : "") + message + ((t = start_end[capability]) ?
-	    termcap_capability(t_type, t) : "");
-    }
-    return message;
-}	
-
-varargs string
-inverse (string str, object who)
-{
-    return str;
-}
-
-varargs string
-blink (string str, object who) {
-    return str;
-}
-
-varargs string
-bold (string str, object who) {
-    str=ESC "BOLD" ESC + str + ESC "RESET" ESC;
-    return str;
-}
-
-varargs string
-underscore (string str, object who) {
-    return str;
-}
-
-varargs string
-clear_screen (object who) {
-    return ESC "CLS" ESC;
-}
-
 string
-termcap_format_line(string line, string ttype)
+termcap_format_line(string message, string ttype)
 {
-    string *words = explode(line, ESC);
-    mapping tce = termcap_entries[ttype];
-    int i = (line[0] != '%' || line[1] != '^');
+  if(!termcap_entries[ttype]) ttype = "dumb";
 
-    if (mapp(tce) && stringp(ttype))
-    {
-	string w, end = tce["RESET"];
-	int nl, ef, el = strlen(tce["RESET"])+1;
-	while (i < sizeof(words)) {
-	  words[i] = tce[words[i]];
-	  i += 2;
-	}
-	w = implode(words, "");
-	if (w[<el..<1] == end) {
-	    w = w[0..<el+1];
-	    ef = 1;
-	}
-	if (w[<1..<1] == "\n") {
-	    nl = 1;
-	    w = w[0..<2];
-	}
-	ef && w += end;
-	nl && w += "\n";
-	return w;
-    }
-    else
-    {
-	//object *new = allocate((sizeof(words) / 2) + 1);
-	string *new_words = allocate((sizeof(words) / 2) + 1);
-	int j = 0;
-	i = !i;
-	while (i < sizeof(words))
-	{
-	    new_words[j++] = words[i];
-	    i += 2;
-	}
-	return implode(new_words - ({ 0 }), "");
-    }
+  return terminal_colour(message, termcap_entries[ttype]);
 }
-
-
-/*
-** Function name:	format_color
-** Description:		Formats a string according to the colour settings
-**			of a player (as set with the colour command).
-**			Note: Adds the mudlib codes, not the real escape
-**			codes.
-** Arguments:		mesg - the message to format
-**			type - the colour type as given to the colour
-**			       command, for instance "exits" or
-**			       "channels/chat".
-**			player - optional, the player who is going to
-**				 receive the formatted text.
-** Returns:		The formatted string.
-*/
-#if 0
-string
-format_color(string mesg, string type, object player) {
-    mapping map;
-    /* Default target is this_player(), or if that doesn't exist, the
-	calling object */
-    if (!player) {
-	player = this_player() ? this_player() : previous_object();
-    }
-    if (mapp(map=player->query_property("COLOURS"))) {
-	int i;
-	string *arr, fallback, cl;
-	arr = explode(cl, "/");
-	/* This part assumes that no colour attributes contain more
-	    than one slash */
-	if (sizeof(arr) == 2) {
-	    fallback = arr[0];
-	    cl = arr[1];
-	}
-	else {
-	    cl = arr[0];
-	}
-	if (!map[cl])
-	    
-	if (mesg[<1..<1] == "\n")
-	    return cl + mesg[0..<2] + "%^RESET%^";
-	return cl + mesg + "%^RESET%^";
-    }
-    return mesg;
-}
-#endif

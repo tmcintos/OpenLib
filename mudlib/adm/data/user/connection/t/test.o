@@ -1,0 +1,11 @@
+#obj/clone/connection.c
+name "test"
+cap_name "test"
+password "MVUKrUCu.S9mo"
+real_name "test"
+email_addr "nowher"
+body "/obj/clone/user/human"
+login_shell "/obj/clone/shells/rsh"
+login_time 827612860
+logout_time 827612871
+login_from "knapp38.res.iastate.edu"

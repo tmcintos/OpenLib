@@ -1,0 +1,8 @@
+/*  -*- LPC -*-  */
+
+class heapnode {
+  class heapnode left;
+  class heapnode right;
+  int freq;
+  char ch;
+}

@@ -25,7 +25,7 @@
 (admin) tim, kyricc
 
 # People who do mudlib work
-(mudlib) {admin}, casper, quint, talen, exe
+(mudlib) {admin}, casper, quint, talen, exe, evergreen
 
 # The system's uid
 (system) System
@@ -36,4 +36,4 @@
 
 # If you want to LOCK the mud, define this list as the allowed users.
 # Otherwise this list should be empty.
-(all) {mudlib}, hamnsnock, craig, karrde
+  (all) {mudlib}, hamnsnock, craig, damian, misery, warthog, testdude, comintern

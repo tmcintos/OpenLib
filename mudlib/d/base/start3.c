@@ -12,5 +12,5 @@ create()
   set_long("You are just West of the CENTER of the MUD.\n");
   set_exits((["east" : "/d/base/start",
 	      ]));
+  replace_program(ROOM);
 }
-

@@ -1,5 +1,55 @@
-Fri Feb  9 00:04:04 1996:  generate_key: Dysfunctional Mud, 250544495
-Fri Feb  9 00:04:04 1996:  store_key: Dysfunctional Mud, 250544495
-Fri Feb  9 00:45:22 1996:  reset: deleting Dysfunctional Mud from keymap
-Mon Feb 19 01:24:22 1996:  store_key: Enulal, 14236523
-Mon Feb 19 01:35:14 1996:  reset: deleting Enulal from keymap
+Mon Mar 25 23:59:28 1996:  store_key: Lima Bean, 828863081
+Tue Mar 26 00:06:32 1996:  generate_key: Dysfunctional Mud, 420696881
+Tue Mar 26 00:06:32 1996:  store_key: Dysfunctional Mud, 420696881
+Tue Mar 26 00:06:34 1996:  authenticate_mud: Dysfunctional Mud, 420696881, ret=1
+Tue Mar 26 00:07:18 1996:  store_key: Lima Bean, 778573284
+Tue Mar 26 00:10:35 1996:  store_key: Lima Bean, 167761775
+Tue Mar 26 00:11:07 1996:  generate_key: Dysfunctional Mud, 101192052
+Tue Mar 26 00:11:07 1996:  store_key: Dysfunctional Mud, 101192052
+Tue Mar 26 00:11:09 1996:  authenticate_mud: Dysfunctional Mud, 101192052, ret=1
+Tue Mar 26 00:13:42 1996:  generate_key: Lima Bean, 991256448
+Tue Mar 26 00:14:12 1996:  authenticate_mud: Lima Bean, 991256448, ret=1
+Sun Mar 31 16:12:42 1996:  store_key: FotD, 828310557
+Sun Mar 31 16:21:35 1996:  store_key: FotD, 828311090
+Sun Mar 31 16:22:32 1996:  store_key: FotD, 828311148
+Sun Mar 31 16:23:02 1996:  store_key: FotD, 828311178
+Sun Mar 31 16:33:56 1996:  store_key: FotD, 828311832
+Sun Mar 31 16:36:57 1996:  store_key: FotD, 828312013
+Sun Mar 31 16:37:51 1996:  store_key: FotD, 828312067
+Sun Mar 31 16:41:24 1996:  store_key: FotD, 828312279
+Sun Mar 31 16:42:40 1996:  store_key: FotD, 828312357
+Sun Mar 31 16:44:03 1996:  store_key: FotD, 828312437
+Sun Mar 31 16:46:08 1996:  generate_key: Dysfunctional Mud, 90100000
+Sun Mar 31 16:46:08 1996:  store_key: Dysfunctional Mud, 90100000
+Sun Mar 31 16:46:10 1996:  authenticate_mud: Dysfunctional Mud, 90100000, ret=1
+Sun Mar 31 17:50:45 1996:  generate_key: Dysfunctional Mud, 891988812
+Sun Mar 31 17:50:45 1996:  store_key: Dysfunctional Mud, 891988812
+Sun Mar 31 17:50:47 1996:  authenticate_mud: Dysfunctional Mud, 891988812, ret=1
+Sun Mar 31 17:51:44 1996:  generate_key: Dysfunctional Mud, 143731869
+Sun Mar 31 17:51:44 1996:  store_key: Dysfunctional Mud, 143731869
+Sun Mar 31 17:51:46 1996:  authenticate_mud: Dysfunctional Mud, 143731869, ret=1
+Sun Mar 31 17:53:34 1996:  generate_key: Dysfunctional Mud, 134636821
+Sun Mar 31 17:53:34 1996:  store_key: Dysfunctional Mud, 134636821
+Sun Mar 31 17:53:36 1996:  authenticate_mud: Dysfunctional Mud, 134636821, ret=1
+Sun Mar 31 17:58:13 1996:  generate_key: Dysfunctional Mud, 307210520
+Sun Mar 31 17:58:15 1996:  store_key: Dysfunctional Mud, 307210520
+Sun Mar 31 17:58:17 1996:  authenticate_mud: Dysfunctional Mud, 307210520, ret=1
+Sun Mar 31 18:00:06 1996:  generate_key: Dysfunctional Mud, 236770248
+Sun Mar 31 18:00:06 1996:  store_key: Dysfunctional Mud, 236770248
+Sun Mar 31 18:00:08 1996:  authenticate_mud: Dysfunctional Mud, 236770248, ret=1
+Sun Mar 31 23:15:57 1996:  store_key: Lost Wishes, 1538010102
+Sun Mar 31 23:18:58 1996:  store_key: Lost Wishes, 1696391859
+Sun Mar 31 23:21:57 1996:  store_key: Lost Wishes, 1096278841
+Sun Mar 31 23:25:00 1996:  store_key: Lost Wishes, 1863523715
+Sun Mar 31 23:28:01 1996:  store_key: Lost Wishes, 255404781
+Sun Mar 31 23:31:00 1996:  store_key: Lost Wishes, 1574565270
+Sun Mar 31 23:34:01 1996:  store_key: Lost Wishes, 1855512109
+Sun Mar 31 23:37:02 1996:  store_key: Lost Wishes, 766941971
+Mon Apr  1 14:28:01 1996:  store_key: Lost Wishes, 1735559404
+Mon Apr  1 14:29:27 1996:  store_key: Lost Wishes, 2113414949
+Mon Apr  1 14:32:28 1996:  store_key: Lost Wishes, 1254895726
+Mon Apr  1 14:35:29 1996:  store_key: Lost Wishes, 1153677319
+Mon Apr  1 14:38:28 1996:  store_key: Lost Wishes, 1465950530
+Mon Apr  1 14:41:31 1996:  store_key: Lost Wishes, 1304045665
+Mon Apr  1 14:44:34 1996:  store_key: Lost Wishes, 971121088
+Mon Apr  1 19:30:57 1996:  store_key: FotD, 828408872

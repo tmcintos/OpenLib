@@ -2,7 +2,7 @@
 //  room.c:  basic room object for use in building areas
 //    Originally written by Tim McIntosh sometime in early 6/95
 //
-//  06/26/95  Tim McIntosh:   Added exits. :)  Those are always nice.
+//  06/26/95  Tim:  Added exits. :)  Those are always nice.
 //  08/24/95  Casper: Performed misc optimization and added 
 //                    misc options (light, and so on.)
 //  10/11/95  Tim: Changed to inherit OBJECT, removed some functions defined
@@ -10,6 +10,10 @@
 //  10/15/95  Lol:  Added non-object items to the rooms
 //            (look, but don't touch).  Added the function exa_items
 //            which is called upon by the exa.c command.
+//  03/08/96  Tim: exa.c is now merged with look.c, an item may have a function
+//            pointer to a function of type string; prototyped all functions;
+//            took out id() since it is useless in this context;
+//            also took out brief() since we can use short() for that in rooms
 
 #pragma save_binary
 
@@ -23,12 +27,25 @@ private static boolean no_attacks_here;  /* can we attack here? 1=no 0=yes */
 private static mapping exits;            /* hmm...who knows */
 private static mapping items;            /* sets mapping for items */
 
+// Prototypes
+void create();
+int clean_up(int inh);
+void init();
+nomask boolean query_no_attack();
+varargs mixed long(int flag);
+nomask void set_no_attack();                     // cannot fight here
+nomask void set_exits(mapping dir_dest_mapping); // dest can be obj or string 
+nomask void set_items(mapping id_long_mapping);  // long can be str/function
+nomask int move_to_room();            // player command
+nomask string exa_item(string item);  // returns long desc of item
+
 // Overload of default constructor
  
-void create()
+void
+create()
 {
   object::create();
-  object::set_object_class(OBJECT_CONTAINER);
+  set_object_class(OBJECT_CONTAINER);
   items =([]);
   exits = ([]);
 }
@@ -47,29 +64,20 @@ clean_up(int inherited)
   return 1;
 }
 
-// overload of id()
- 
-int id(string str)
-{
-  return str == "room" || str == "here";
-}
- 
 //Throw this into the generic move_living() func so that the 
 //coders can add inits into their rooms and not worry about the 
 //::init()  Casper 8/24/95
 
-void init()
+void
+init()
 {
-  string *keyring = keys(exits);
-  int i = sizeof(keyring);
- 
-  while(i--)
-    add_action("move_to_room", keyring[i]);
+  add_action("move_to_room", keys(exits));
 }
 
-// Can we fight here?  (set() for this is later)
+// set() is below
 
-boolean query_no_attack()
+nomask boolean
+query_no_attack()
 {
   return no_attacks_here;
 }
@@ -78,25 +86,33 @@ boolean query_no_attack()
 // Had too many writes for me.  Cut them out to recduce CPU & 
 // clean up the apearance.  Casper 8/24/95
 
-varargs
-mixed long(int flag)
+varargs mixed
+long(int flag)
 {
   string *keyring = keys(exits), output;
   int i = sizeof(keyring);
+  int light = query_light();
+  object* obs;
  
   //Add a check to deep_inventory for a lightsource.  
   //Will check docs on Rift for a possible shortcuts.  Casper 8/24/95
-  if(!query_light())
-  {
-    write("It is dark here.\n");
-    return;
+  if(!light) {
+    obs = all_inventory(this_object());
+    for(int j = 0; j < sizeof(obs); j++)
+      obs += all_inventory(obs[j]);
+    foreach(object ob in obs)
+      if(light = ob->query_light()) break;
+    if(!light) {
+      write("It is dark here.\n");
+      return;
+    }
   }
   if(!long_desc)
     output = "A nondescript room\n";
   else
     output = long_desc;
  
-// Exit viewing crap
+  // Exit viewing crap
   if(i == 0)
   {
     output +="  There are no obvious exits.\n";
@@ -118,77 +134,55 @@ mixed long(int flag)
     }
   }
 
-// if flag is set, return the string
+  // if flag is set, return the string
   if(flag)
     return output;
 
-// Else write out line by line, mainly for breaking up large chunks sent
-// to the player...
-// I'm just recycling variables here; don't get confused :)
+  // Else write out line by line, mainly for breaking up large chunks sent
+  // to the player...
+  // I'm just recycling variables here; don't get confused :)
 
   keyring = explode(output, "\n");
   foreach(output in keyring)
     write(output + "\n");
 }
  
-/*  Gee, whats this do?  Casper
-string brief()
-{
- 
-}
-*/
- 
-void
+nomask void
 set_no_attack()
 {
   no_attacks_here = TRUE;
 }
 
-void
+nomask void
 set_exits(mapping args)
 {
   exits = args;
 }
 
-void set_items(mapping args) {
-  items=args; }
+nomask void
+set_items(mapping args)
+{
+  items = args;
+}
  
 int
 move_to_room()
 {
-  object me;
-  string dest_ob, dest_dir, tmp;
- 
-  me = this_player();
-  dest_ob = exits[query_verb()];
+  mixed dest_ob = exits[query_verb()];
 
-// get the direction to tack onto the out line...
-  if(stringp(dest_ob) && sscanf(dest_ob, "%s#%s", tmp, dest_dir) == 1) {
-    dest_ob = tmp;
-  } else {
-    dest_dir = query_verb();
+  // for relative paths
+  if(stringp(dest_ob)) {
+    string* destdir = explode(dest_ob, "#");
+    string path = base_name(this_object());
+    path = path[0..strsrch(path, '/', -1)];
+    destdir[<1] = absolute_path(path, destdir[<1]);
+    dest_ob = implode(destdir, "#");
   }
-
-  tmp = me->query_cap_name();
-
-  say(tmp +" moves to the "+ dest_dir +".\n");
-  tell_room(dest_ob, tmp + " arrives.\n");
- 
-  me->move(dest_ob);
-  me->force_me("look");
-  return 1;
+  return this_player()->move_player(dest_ob, query_verb());
 }
 
-int
+string
 exa_item(string str)
 {
-  string *itm, *item_desc,tmp;
-  itm=keys(items);
-  item_desc=values(items);
-
-  if (member_array(str,itm) !=-1) {
-    printf("You see "+item_desc[member_array(str,itm)]+".\n");
-  } else {
-    write("Examine what?\n");
-  }
+  return evaluate(items[str]);
 }

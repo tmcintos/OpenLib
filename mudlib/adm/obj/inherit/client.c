@@ -7,6 +7,7 @@
  *  10.23.95  Tim changed to fit this mudlib
  *  02.05.96  Tim added CloseSocket()
  *            added SetSocketClose(), Close variable & related code
+ *  03.25.96  Tim eventCreateSocket() returns fd on success
  */
 
 #include <mudlib.h>
@@ -46,6 +47,7 @@ int eventCreateSocket(string host, int port) {
 	eventSocketError("Error in socket_connect().", x);
 	return x;
     }
+    return Socket->Descriptor;
 }
 
 static void eventAbortCallback(int fd) {

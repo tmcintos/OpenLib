@@ -8,15 +8,15 @@
 #include "master/valid.c"      // all the valid_* functions
 
 object
-connect()
+connect(int portnum)
 {
   object user;
   mixed err;
   
-  err = catch(user = new(CONNECTION_OB));
+  err = catch( user = new(CONNECTION_OB) );
   
   if (err) {
-    efun::write("It looks like someone is working on the connect object.\n");
+    write("It looks like someone is working on the connect object.\n");
     destruct(user);
   }
 
@@ -31,8 +31,8 @@ connect()
 mixed
 compile_object(string file)
 {
-//	return (mixed)VIRTUAL_D->compile_object(file);
-	return 0;
+  //	return (mixed)VIRTUAL_D->compile_object(file);
+  return 0;
 }
 
 // This is called when there is a driver segmentation fault or a bus error,
@@ -42,17 +42,17 @@ compile_object(string file)
 static void
 crash(string error, object command_giver, object current_object)
 {
-	shout("Master object shouts: Damn!\n");
-	shout("Master object tells you: The game is crashing.\n");
+  shout("Master object shouts: Damn!\n");
+  shout("Master object tells you: "
+	"Buckle up bonehead; you're going for a ride!\n");
+  shout("Master object tells you: The game is crashing.\n");
 
-	log_file("crashes", mud_name() + " crashed on: " + ctime(time()) +
-		", error: " + error + "\n");
-	if (command_giver) {
-		log_file("crashes", "this_player: " + file_name(command_giver) + "\n");
-	}
-	if (current_object) {
-		log_file("crashes", "this_object: " + file_name(current_object) + "\n");
-	}
+  log_file("crashes", sprintf("%s crashed on: %s, error: %s\n",
+			      mud_name(), ctime(time()), error));
+  if (command_giver)
+    log_file("crashes", "this_player: " + file_name(command_giver) + "\n");
+  if (current_object)
+    log_file("crashes", "this_object: " + file_name(current_object) + "\n");
 }
 
 // Function name:   update_file
@@ -64,21 +64,21 @@ crash(string error, object command_giver, object current_object)
 static string *
 update_file(string file)
 {
-	string *array;
-	string str;
-	int i;
+  string *array;
+  string str;
 
-	str = read_file(file);
-	if (!str) {
-		return ({});
-	}
-	array = explode(str, "\n");
-	for (i = 0; i < sizeof(array); i++) {
-		if (array[i][0] == '#') {
-			array[i] = 0;
-		}
-	}
-	return array;
+  str = read_file(file);
+
+  if (!str) return ({});
+
+  array = explode(str, "\n");
+
+  for (int i = 0; i < sizeof(array); i++) {
+    if (array[i][0] == '#')
+      array[i] = 0;
+  }
+
+  return array;
 }
 
 // Function name:       epilog
@@ -87,10 +87,7 @@ update_file(string file)
 string *
 epilog(int load_empty)
 {
-	string *items;
-
-	items = update_file(CONFIG_DIR + "/preload");
-	return items;
+  return update_file(CONFIG_DIR + "/preload");
 }
 
 // preload an object
@@ -98,21 +95,20 @@ epilog(int load_empty)
 void
 preload(string file)
 {
-	int t1;
-	string err;
+  int t1;
+  string err;
 
-	if (file_size(file + ".c") == -1)
-		return;
+  if (!file_exists(file + ".c")) return;
 
-	t1 = time();
-	efun::write("Preloading : " + file + "...");
-	err = catch(call_other(file, "??"));
-	if (err != 0) {
-		efun::write("\nError " + err + " when loading " + file + "\n");
-	} else {
-		t1 = time() - t1;
-		efun::write("(" + t1/60 + "." + t1 % 60 + ")\n");
-	}
+  t1 = time();
+  write("Preloading : " + file + "...");
+  err = catch(call_other(file, "??"));
+  if (err != 0) {
+    write("\nError " + err + " when loading " + file + "\n");
+  } else {
+    t1 = time() - t1;
+    write("(" + t1/60 + "." + t1 % 60 + ")\n");
+  }
 }
 
 // Write an error message into a log file. The error occured in the object
@@ -138,30 +134,29 @@ error_handler(mapping error)
 		    trace[sizeof(trace)-1]["function"]);
 
     if(arrayp(trace[sizeof(trace)-1]["arguments"])) {
-      foreach(mixed arg in trace[sizeof(trace)-1]["arguments"]) {
+      foreach(mixed arg in trace[sizeof(trace)-1]["arguments"])
 	line += sprintf("%O, ", arg);
-      }
-    } else {
+    } else
       line += sprintf("%O", trace[sizeof(trace)-1]["arguments"]);
-    }
+
     line += ")\n";
   }
 
   if(this_player(1)) {
-    tell_object(this_player(1),
-		sprintf("runtime: file: %s:%d;  %s",
-			error["file"], error["line"], error["error"]));
+    tell_object(this_player(1), sprintf("runtime: file: %s:%d;  %s",
+					error["file"], error["line"],
+					error["error"]));
   }
    
   name = file_owner(error["file"]);
-  if (name) {
+  if (name)
     home = user_cwd(name);
-  } else {
+  else
     home = LOG_DIR;
-  }
   home = home + "/errors";
+
   if(directory_exists(home))
-    write_file(home+"/runtime", line);
+    write_file(home + "/runtime", line);
 
   return 1;
 }
@@ -172,17 +167,16 @@ log_error(string file, string message)
   string name, home;
    
   name = file_owner(file);
-  if (name) {
+  if (name)
     home = user_cwd(name);
-  } else {
+  else
     home = LOG_DIR;
-  }
   home = home + "/errors";
 
-  tell_object(this_player(1),"\ncompile: "+message);
+  tell_object(this_player(1),"\ncompile: " + message);
 
   if(directory_exists(home))
-    write_file(home+"/compile", message);
+    write_file(home + "/compile", message);
 }
 
 // save_ed_setup and restore_ed_setup are called by the ed to maintain
@@ -192,14 +186,13 @@ log_error(string file, string message)
 int
 save_ed_setup(object who, int code)
 {
-   string file;
+  string file;
   
-    if (!intp(code)) {
-        return 0;
-    }
-    file = user_path(geteuid(who)) + ".edrc";
-    rm(file);
-    return write_file(file, code + "");
+  if (!intp(code)) return 0;
+
+  file = user_path(geteuid(who)) + ".edrc";
+  rm(file);
+  return write_file(file, code + "");
 }
 
 // Retrieve the ed setup. No meaning to defend this file read from
@@ -208,15 +201,15 @@ save_ed_setup(object who, int code)
 int
 retrieve_ed_setup(object who)
 {
-   string file;
-   int code;
+  string file;
+  int code;
   
-    file = user_path(geteuid(who)) + ".edrc";
-    if (file_size(file) <= 0) {
-        return 0;
-    }
-    sscanf(read_file(file), "%d", code);
-    return code;
+  file = user_path(geteuid(who)) + ".edrc";
+  if (file_size(file) <= 0) {
+    return 0;
+  }
+  sscanf(read_file(file), "%d", code);
+  return code;
 }
 
 // When an object is destructed, this function is called with every
@@ -225,48 +218,47 @@ retrieve_ed_setup(object who)
 void
 destruct_environment_of(object ob)
 {
-	if (!interactive(ob)) {
-		return;
-	}
-	tell_object(ob, "The object containing you was dested.\n");
-	ob->move(VOID_OB);
+  if (!interactive(ob)) return;
+
+  tell_object(ob, "The object containing you was dested.\n");
+  ob->move(VOID_OB);
 }
 
-// make_path_absolute: This is called by the driver to resolve path names in ed.
+// make_path_absolute: This is called by the driver to resolve path names in ed
 
 string
 make_path_absolute(string file)
 {
-	file = resolve_path((string)this_player()->query_cwd(), file);
-	return file;
+  file = absolute_path((string)this_player()->query_cwd(), file);
+  return file;
 }
 
 string
 get_root_uid()
 {
-   return ROOT_UID;
+  return ROOT_UID;
 }
 
 string
 get_bb_uid()
 {
-   return BACKBONE_UID;
+  return BACKBONE_UID;
 }
 
 string
 creator_file(string str)
 {
-	return (string)call_other(SIMUL_EFUN, "creator_file", str);
+  return (string)call_other(SIMUL_EFUN, "creator_file", str);
 }
 
 string
 domain_file(string str)
 {
-	return (string)call_other(SIMUL_EFUN, "domain_file", str);
+  return (string)call_other(SIMUL_EFUN, "domain_file", str);
 }
 
 string
 author_file(string str)
 {
-	return (string)call_other(SIMUL_EFUN, "author_file", str);
+  return (string)call_other(SIMUL_EFUN, "author_file", str);
 }

@@ -21,15 +21,17 @@ void eventReceiveError(mixed *packet) {
     packet = packet[8];
     switch(error_code) {
 	case "unk-dst": case "not-imp": case "unk-type": case "unk-src":
-	log_file("errors/intermud", error_code + ": " + msg + "\n");
-	return;
+          log_file("errors/intermud", error_code + ": " + msg + "\n");
+	  return;
 	case "unk-type":
-	log_file("errors/intermud", error_code + ": " + msg + "\n");
-	return;
+          log_file("errors/intermud", error_code + ": " + msg + "\n");
+	  return;
 	case "unk-user":
-	if( !ob ) return;
-	message("system", (msg ? msg : "Unknown user reported from " + mud +
-			   ".\n"), ob);
-	return;
+	  if( !ob ) return;
+	  message("system", (msg ? msg : "Unknown user reported from " + mud +
+			     ".\n"), ob);
+        default:
+          log_file("errors/intermud", error_code + ": " + msg + "\n");
+	  return;
     }
 }

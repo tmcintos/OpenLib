@@ -5,9 +5,10 @@ class channel_info {
   object *userlist;        /* list of subscribed users */
 }
 
-#define chan_i class channel_info
-
-int chat(string str);
+// someone finish these !
+int chat(string msg);
+int channel_exists(string name);
+void add_member(string chan, object member);
 string map_to_local(string ch);
 string map_to_remote(string ch);
 varargs void broadcast_local(string ch, string who, string msg, int emote,

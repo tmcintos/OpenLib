@@ -7,6 +7,7 @@
 //
 
 #include <mudlib.h>
+#include <net/daemons.h>
 #include "maild.h"
 
 inherit DAEMON;
@@ -288,89 +289,129 @@ cmd_send_mesg3(string subject, string tolist, function cf, string* lines)
 
 void
 cmd_send_mesg4(string cclist, string tolist, string subject,
-	       string content, function cf)
+	       string contents, function cf)
 {
-  send_mail(cclist, "", this_player()->query_cap_name(), tolist, time(),
-	    subject, content);
-  if(cf)
-    evaluate(cf);
+  mapping to_list, cc_list;
+  string* tmp_tolist;
+  string* tmp_cclist;
+  string* userlist;
+  string from = this_player(1)->query_cap_name();
+
+  tmp_tolist = explode(tolist, ",");
+  tmp_cclist = explode(cclist, ",");
+  /*
+   * filter remote users from tolist and cclist and create mappings
+   */
+  to_list = filter_remote_users(tmp_tolist);
+  cc_list = filter_remote_users(tmp_cclist);
+
+  from = sprintf("%s@%s", from, mud_name());
+  foreach(string mud in distinct_array(keys(cc_list) + keys(to_list))) {
+    userlist = (to_list[mud] ? to_list[mud] : ({})) +
+               (cc_list[mud] ? cc_list[mud] : ({}));
+    if( mud == mud_name() )
+      send_mail(to_list, cc_list, userlist, from, time(), subject, contents);
+    else {
+      SERVICES_D->eventSendMail(from,
+				to_list,
+				cc_list,
+				userlist,
+				time(), subject, contents);
+      if( this_player() ) printf("Mail queued to %s\n", mud);
+    }
+  }
+  if( cf ) evaluate(cf);
+}
+
+/* You should pass 'arr' by reference to this (don't use copy()) */
+
+private mapping
+filter_remote_users(string* arr)
+{
+  mapping ret = ([]);
+  
+  for(int i = 0; i < sizeof(arr); i++) {
+    if( strsrch(arr[i], '@') != -1 ) {
+      string user, host;
+
+      sscanf(arr[i], "%s@%s", user, host);
+      user = replace_string(user, " ", "");
+      if( (host = INTERMUD_D->GetMudName(host)) ) {
+	if( !ret[host] )
+	  ret[host]  = ({ user });
+	else
+	  ret[host] += ({ user });
+      } else if( this_player() ) printf("%s: no such host.\n", host);
+      arr -= ({ arr[i] });
+    } else {
+      arr[i] = replace_string(arr[i], " ", "");
+      if( !ret[mud_name()] )
+	ret[mud_name()] = ({ arr[i] });
+      else
+	ret[mud_name()] += ({ arr[i] });
+    }
+  }
+  return ret;
 }
 
 void
-send_mail(string bcclist, string cclist, string from, string tolist, 
-	  int time, string subject, string mesg)
+send_mail(mapping to_list, mapping cc_list, string* bcc_list, string from,
+	  int time, string subject, string content)
 {
-  object tmpmbox = new(MAILBOX);
-  string* userlist;
   string localmesg;
-
-  bcclist = replace_string(bcclist, " ", "");
-  tolist = replace_string(tolist, " ", "");
-  userlist = explode(bcclist, ",") + explode(tolist, ",");
+  object tmpmbox = new(MAILBOX);
+  function collapse = function(mapping x)
+                      {
+			string ret = "";
+			foreach(string mud, string* list in x)
+			  ret += implode(list, sprintf("@%s, ", mud)) +
+			         "@" + mud;
+			return ret;
+		      };
 
   localmesg = sprintf("To: %s\n"
 		      "From: %s\n"
 		      "Date: %s\n"
 		      "Subject: %s\n"
 		      "CC: %s\n"
-		      "BCC: %s\n"
 		      "-------\n%s",
-		      tolist, from, ctime(time), subject,
-		      cclist, bcclist, mesg);
+		      evaluate(collapse, to_list),
+		      from, ctime(time), subject,
+		      evaluate(collapse, cc_list),
+		      content);
 
-  foreach(string user in userlist) {
-    object ob;
-
-    if(!user_exists(user)) /* no such user or remote */ {
-
-      if(strsrch(user, '@')) {
-
-	/* Do I3 stuff here */
-
-	if(this_player())
-	  printf("%s: intermud mail not implemented.\n", user);
-      } else {
-	if(this_player())
-	  printf("%s: no such user.\n", user);
-      }
+  foreach(string user in bcc_list) {
+    object ob = find_player(user);
+    user = lower_case(user);
+    /*
+     * if user is in mail right now
+     */
+    if( open_boxes[user] ) {
+      ((object) open_boxes[user])->add_mesg(subject, from, localmesg);
+      if( this_player() ) printf("Mail sent to %s.\n", user);
+      if( ob )
+	message("system", "%^BELL%^You have %^GREEN%^NEW%^RESET%^ mail.\n",ob);
       continue;
-
-    } else /* local user */ {
-
-      // if user is in mail right now
-      if(open_boxes[user]) {
-	((object) open_boxes[user])->add_mesg(subject, from, localmesg);
-	printf("Mail %%^GREEN%%^sent%%^RESET%%^ to %s.\n", user);
-	
-	if(ob = find_player(user))
-	  tell_object(ob, "%^BELL%^You have %^GREEN%^NEW%^RESET%^ mail.\n");
-
-	continue;
-      }
-
-      if(!tmpmbox->restore_mailbox(user)) {
-	log_file("maild", sprintf("error loading mbox for %s\n", user));
-	  
-	// Couldn't load an existing mailbox for this user.
-	// We need to do this if the box doesn't load so the messages in
-	// the previous box aren't still hanging around.
-	tmpmbox->reinit_mailbox(user);
-      }
-
-      tmpmbox->add_mesg(subject, from, localmesg);
-      
-      if(!tmpmbox->save_mailbox()) {
-	log_file("maild", sprintf("error saving mbox for %s\n", user));
-	if(this_player())
-	  printf("%%^RED%%^Failed%%^RESET%%^ to send mail to %s.\n", user);
-      } else if(this_player()) {
-	printf("Mail %%^GREEN%%^sent%%^RESET%%^ to %s.\n", user);
-	
-	if(ob = find_player(user))
-	  tell_object(ob, "%^BELL%^You have %^GREEN%^NEW%^RESET%^ mail.\n");
-      }
+    }
+    if( !tmpmbox->restore_mailbox(user) ) {
+      log_file("maild", sprintf("error loading mbox for %s\n", user));
+      /*
+       * Couldn't load an existing mailbox for this user.
+       * We need to do this if the box doesn't load so the messages in
+       * the previous box aren't still hanging around.
+       */
+      tmpmbox->reinit_mailbox(user);
+    }
+    tmpmbox->add_mesg(subject, from, localmesg);
+    if( !tmpmbox->save_mailbox() ) {
+      log_file("maild", sprintf("error saving mbox for %s\n", user));
+      if(this_player())
+	printf("%%^RED%%^Failed%%^RESET%%^ to send mail to %s.\n", user);
+    } else {
+      if( this_player() ) printf("Mail sent to %s.\n", user);
+      if( ob )
+	message("system", "%^BELL%^You have %^GREEN%^NEW%^RESET%^ mail.\n",ob);
     }
   }
-
   destruct(tmpmbox);
 }

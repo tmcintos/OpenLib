@@ -11,6 +11,7 @@
 int
 file_exists(string filename)
 {
+  if(!filename) return 0;
   return (file_size(filename) >= 0);
 }
 
@@ -21,6 +22,7 @@ file_exists(string filename)
 int
 directory_exists(string dirname)
 {
+  if(!dirname) return 0;
   return (file_size(dirname) == -2);
 }
 
@@ -30,7 +32,8 @@ directory_exists(string dirname)
  */
 
 int
-user_exists(string x)
+user_exists(string u)
 {
-  return file_exists(CONNECTION_DIR "/" + x[0..0] + "/" + x + ".o");
+  if(!u) return 0;
+  return file_exists(sprintf(CONNECTION_DIR "/%c/%s.o", u[0], u));
 }

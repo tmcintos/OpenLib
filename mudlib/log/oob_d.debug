@@ -1,0 +1,891 @@
+Sun Mar 31 23:15:57 1996:  OOBBegin: connecting: mud=Lost Wishes
+Sun Mar 31 23:15:59 1996:  evWrite(5, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  1,
+  1538010102
+}))
+Sun Mar 31 23:15:59 1996:  Socket fd=(5) closed.
+Sun Mar 31 23:18:56 1996:  OOBBegin: connecting: mud=Lost Wishes
+Sun Mar 31 23:19:00 1996:  evWrite(5, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  1,
+  1696391859
+}))
+Sun Mar 31 23:19:00 1996:  Socket fd=(5) closed.
+Sun Mar 31 23:21:57 1996:  OOBBegin: connecting: mud=Lost Wishes
+Sun Mar 31 23:21:59 1996:  evWrite(5, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  1,
+  1096278841
+}))
+Sun Mar 31 23:21:59 1996:  Socket fd=(5) closed.
+Sun Mar 31 23:24:58 1996:  OOBBegin: connecting: mud=Lost Wishes
+Sun Mar 31 23:25:02 1996:  evWrite(5, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  1,
+  1863523715
+}))
+Sun Mar 31 23:25:02 1996:  Socket fd=(5) closed.
+Sun Mar 31 23:27:59 1996:  OOBBegin: connecting: mud=Lost Wishes
+Sun Mar 31 23:28:03 1996:  evWrite(5, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  1,
+  255404781
+}))
+Sun Mar 31 23:28:03 1996:  Socket fd=(5) closed.
+Sun Mar 31 23:31:00 1996:  OOBBegin: connecting: mud=Lost Wishes
+Sun Mar 31 23:31:02 1996:  evWrite(5, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  1,
+  1574565270
+}))
+Sun Mar 31 23:32:16 1996:  Socket fd=(5) closed.
+Sun Mar 31 23:34:01 1996:  OOBBegin: connecting: mud=Lost Wishes
+Sun Mar 31 23:34:03 1996:  evWrite(5, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  1,
+  1855512109
+}))
+Sun Mar 31 23:34:03 1996:  Socket fd=(5) closed.
+Sun Mar 31 23:37:02 1996:  OOBBegin: connecting: mud=Lost Wishes
+Sun Mar 31 23:37:04 1996:  evWrite(5, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  1,
+  766941971
+}))
+Sun Mar 31 23:37:34 1996:  Socket fd=(5) closed.
+Sun Mar 31 23:43:02 1996:  OOBBegin: connecting: mud=Lost Wishes
+Sun Mar 31 23:46:02 1996:  OOBBegin: connecting: mud=Lost Wishes
+Sun Mar 31 23:47:07 1996:  OOBBegin: connecting: mud=Lost Wishes 2
+Sun Mar 31 23:47:37 1996:  OOBBegin: connecting: mud=IdeaExchange
+Sun Mar 31 23:48:05 1996:  OOBBegin: connecting: mud=FotD
+Sun Mar 31 23:49:03 1996:  OOBBegin: connecting: mud=FotD
+Sun Mar 31 23:49:03 1996:  OOBBegin: connecting: mud=Lost Wishes
+Sun Mar 31 23:52:04 1996:  OOBBegin: connecting: mud=FotD
+Sun Mar 31 23:52:04 1996:  OOBBegin: connecting: mud=Lost Wishes
+Sun Mar 31 23:55:05 1996:  OOBBegin: connecting: mud=FotD
+Sun Mar 31 23:55:05 1996:  OOBBegin: connecting: mud=Lost Wishes
+Sun Mar 31 23:58:06 1996:  OOBBegin: connecting: mud=FotD
+Sun Mar 31 23:58:06 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 00:01:07 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 00:01:07 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 00:04:08 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 00:04:08 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 00:07:09 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 00:07:09 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 00:10:10 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 00:10:10 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 00:13:11 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 00:13:11 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 00:16:12 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 00:16:12 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 00:19:12 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 00:19:12 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 00:22:13 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 00:22:13 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 00:25:14 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 00:25:14 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 00:28:15 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 00:28:15 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 00:31:16 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 00:31:16 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 00:34:17 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 00:34:17 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 00:37:18 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 00:37:18 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 00:40:19 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 00:40:19 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 00:43:20 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 00:43:20 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 00:46:21 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 00:46:21 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 00:49:21 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 00:49:21 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 00:52:22 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 00:52:22 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 00:55:23 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 00:55:23 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 00:58:24 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 00:58:24 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 01:01:25 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 01:01:25 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 01:04:26 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 01:04:26 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 01:07:27 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 01:07:27 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 01:10:28 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 01:10:28 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 01:13:29 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 01:13:29 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 01:16:30 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 01:16:30 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 01:19:30 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 01:19:30 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 01:22:31 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 01:22:31 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 01:25:32 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 01:25:32 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 01:28:33 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 01:28:33 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 01:31:34 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 01:31:34 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 01:34:35 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 01:34:35 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 01:37:36 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 01:37:36 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 01:40:37 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 01:40:37 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 01:43:38 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 01:43:38 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 01:46:39 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 01:46:39 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 01:49:39 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 01:49:39 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 01:52:40 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 01:52:40 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 01:55:41 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 01:55:41 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 01:58:42 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 01:58:42 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 02:01:43 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 02:01:43 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 02:04:44 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 02:04:44 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 02:07:45 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 02:07:45 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 02:10:46 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 02:10:46 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 02:13:47 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 02:13:47 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 02:16:48 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 02:16:48 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 02:19:49 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 02:19:49 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 02:22:49 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 02:22:49 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 02:25:50 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 02:25:50 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 02:28:51 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 02:28:51 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 02:31:52 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 02:31:52 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 02:34:53 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 02:34:53 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 02:37:54 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 02:37:54 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 02:40:55 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 02:40:55 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 02:43:56 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 02:43:56 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 02:46:57 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 02:46:57 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 02:49:58 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 02:49:58 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 02:52:58 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 02:52:58 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 02:55:59 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 02:55:59 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 02:59:00 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 02:59:00 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 03:02:01 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 03:02:01 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 03:05:02 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 03:05:02 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 03:08:03 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 03:08:03 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 03:11:04 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 03:11:04 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 03:14:05 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 03:14:05 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 03:17:06 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 03:17:06 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 03:20:07 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 03:20:07 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 03:23:07 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 03:23:07 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 03:26:08 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 03:26:08 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 03:29:09 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 03:29:09 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 03:32:10 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 03:32:10 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 03:35:11 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 03:35:11 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 03:38:12 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 03:38:12 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 03:41:13 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 03:41:13 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 03:44:14 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 03:44:14 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 03:47:15 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 03:47:15 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 03:50:16 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 03:50:16 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 03:53:16 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 03:53:16 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 03:56:17 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 03:56:17 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 03:59:18 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 03:59:18 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 04:02:19 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 04:02:19 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 04:05:20 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 04:05:20 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 04:08:21 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 04:08:21 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 04:11:22 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 04:11:22 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 04:14:23 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 04:14:23 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 04:17:24 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 04:17:24 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 04:20:25 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 04:20:25 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 04:23:26 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 04:23:26 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 04:26:27 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 04:26:27 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 04:29:28 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 04:29:28 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 04:32:28 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 04:32:28 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 04:35:29 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 04:35:29 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 04:38:30 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 04:38:30 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 04:41:31 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 04:41:31 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 04:44:32 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 04:44:32 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 04:47:33 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 04:47:33 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 04:50:34 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 04:50:34 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 04:53:35 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 04:53:35 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 04:56:36 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 04:56:36 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 04:59:37 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 04:59:37 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 05:02:37 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 05:02:37 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 05:05:38 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 05:05:38 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 05:08:39 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 05:08:39 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 05:11:40 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 05:11:40 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 05:14:41 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 05:14:41 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 05:17:42 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 05:17:42 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 05:20:43 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 05:20:43 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 05:23:44 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 05:23:44 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 05:26:45 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 05:26:45 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 05:29:46 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 05:29:46 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 05:32:46 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 05:32:46 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 05:35:47 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 05:35:47 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 05:38:48 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 05:38:48 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 05:41:49 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 05:41:49 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 05:44:50 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 05:44:50 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 05:47:51 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 05:47:51 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 05:50:52 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 05:50:52 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 05:53:53 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 05:53:53 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 05:56:54 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 05:56:54 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 05:59:55 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 05:59:55 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 06:02:55 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 06:02:55 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 06:05:56 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 06:05:56 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 06:08:57 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 06:08:57 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 06:11:58 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 06:11:58 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 06:14:59 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 06:14:59 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 06:18:00 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 06:18:00 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 06:21:01 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 06:21:01 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 06:24:02 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 06:24:02 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 06:27:03 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 06:27:03 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 06:30:04 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 06:30:04 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 06:33:05 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 06:33:05 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 06:36:06 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 06:36:06 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 06:39:06 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 06:39:06 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 06:42:07 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 06:42:07 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 06:45:08 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 06:45:08 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 06:48:09 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 06:48:09 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 06:51:10 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 06:51:10 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 06:54:11 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 06:54:11 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 06:57:12 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 06:57:12 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 07:00:13 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 07:00:13 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 07:03:14 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 07:03:14 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 07:06:15 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 07:06:15 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 07:09:15 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 07:09:15 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 07:12:16 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 07:12:16 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 07:15:17 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 07:15:17 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 07:18:18 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 07:18:18 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 07:21:19 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 07:21:19 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 07:24:20 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 07:24:20 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 07:27:21 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 07:27:21 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 07:30:22 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 07:30:22 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 07:33:23 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 07:33:23 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 07:36:24 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 07:36:24 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 07:39:24 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 07:39:24 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 07:42:25 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 07:42:25 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 07:45:26 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 07:45:26 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 07:48:27 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 07:48:27 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 07:51:28 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 07:51:28 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 07:54:29 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 07:54:29 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 07:57:30 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 07:57:30 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 08:00:31 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 08:00:31 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 08:03:32 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 08:03:32 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 08:06:33 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 08:06:33 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 08:09:33 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 08:09:33 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 08:12:34 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 08:12:34 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 08:15:35 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 08:15:35 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 08:18:36 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 08:18:36 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 08:21:37 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 08:21:37 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 08:24:38 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 08:24:38 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 08:27:39 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 08:27:39 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 08:30:40 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 08:30:40 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 08:33:41 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 08:33:41 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 08:36:42 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 08:36:42 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 08:39:42 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 08:39:42 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 08:42:43 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 08:42:43 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 08:45:44 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 08:45:44 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 08:48:45 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 08:48:45 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 08:51:46 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 08:51:46 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 08:54:47 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 08:54:47 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 08:57:48 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 08:57:48 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 09:00:49 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 09:00:49 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 09:03:50 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 09:03:50 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 09:06:51 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 09:06:51 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 09:09:52 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 09:09:52 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 09:12:53 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 09:12:53 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 09:15:53 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 09:15:53 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 09:18:54 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 09:18:54 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 09:21:55 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 09:21:55 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 09:24:56 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 09:24:56 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 09:27:57 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 09:27:57 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 09:30:58 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 09:30:58 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 09:33:59 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 09:33:59 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 09:37:00 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 09:37:00 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 09:40:01 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 09:40:01 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 09:43:02 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 09:43:02 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 09:46:03 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 09:46:03 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 09:49:03 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 09:49:03 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 09:52:03 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 09:52:03 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 09:55:04 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 09:55:04 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 09:58:05 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 09:58:05 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 10:01:05 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 10:01:05 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 10:04:06 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 10:04:06 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 10:07:07 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 10:07:07 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 10:10:08 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 10:10:08 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 10:13:08 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 10:13:08 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 10:16:09 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 10:16:09 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 10:19:10 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 10:19:10 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 10:22:11 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 10:22:11 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 10:25:12 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 10:25:12 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 10:28:13 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 10:28:13 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 10:31:14 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 10:31:14 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 10:34:15 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 10:34:15 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 10:37:16 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 10:37:16 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 10:40:17 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 10:40:17 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 10:43:17 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 10:43:17 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 10:46:18 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 10:46:18 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 10:49:19 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 10:49:19 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 10:52:20 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 10:52:20 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 10:55:21 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 10:55:21 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 10:58:22 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 10:58:22 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 11:01:23 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 11:01:23 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 11:04:24 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 11:04:24 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 11:07:25 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 11:07:25 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 11:10:26 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 11:10:26 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 11:13:27 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 11:13:27 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 11:16:28 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 11:16:28 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 11:19:28 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 11:19:28 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 11:22:29 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 11:22:29 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 11:25:30 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 11:25:30 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 11:28:31 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 11:28:31 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 11:31:32 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 11:31:32 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 11:34:33 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 11:34:33 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 11:37:34 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 11:37:34 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 11:40:35 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 11:40:35 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 11:43:36 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 11:43:36 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 11:46:37 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 11:46:37 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 11:49:38 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 11:49:38 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 11:52:38 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 11:52:38 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 11:55:39 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 11:55:39 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 11:58:40 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 11:58:40 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 12:01:41 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 12:01:41 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 12:04:42 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 12:04:42 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 12:07:43 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 12:07:43 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 12:10:44 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 12:10:44 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 12:13:45 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 12:13:45 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 12:16:46 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 12:16:46 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 12:19:47 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 12:19:47 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 12:22:47 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 12:22:47 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 12:25:48 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 12:25:48 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 12:28:49 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 12:28:49 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 12:31:50 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 12:31:50 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 12:34:51 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 12:34:51 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 12:37:52 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 12:37:52 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 12:40:53 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 12:40:53 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 12:43:54 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 12:43:54 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 12:46:55 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 12:46:55 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 12:49:56 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 12:49:56 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 12:52:56 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 12:52:56 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 12:55:57 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 12:55:57 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 12:58:58 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 12:58:58 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 13:01:59 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 13:01:59 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 13:05:00 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 13:05:00 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 13:08:01 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 13:08:01 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 13:11:02 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 13:11:02 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 13:14:03 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 13:14:03 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 13:17:04 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 13:17:04 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 13:20:05 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 13:20:05 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 13:23:05 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 13:23:05 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 13:26:06 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 13:26:06 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 13:29:07 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 13:29:07 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 13:32:08 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 13:32:08 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 13:35:09 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 13:35:09 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 13:38:10 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 13:38:10 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 13:41:11 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 13:41:11 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 13:44:12 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 13:44:12 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 13:47:13 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 13:47:13 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 13:50:14 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 13:50:14 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 13:53:14 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 13:53:14 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 13:56:15 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 13:56:15 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 13:59:16 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 13:59:16 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 14:02:17 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 14:02:17 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 14:05:18 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 14:05:18 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 14:08:19 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 14:08:19 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 14:11:20 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 14:11:20 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 14:14:21 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 14:14:21 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 14:17:22 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 14:17:22 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 14:20:23 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 14:20:23 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 14:23:23 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 14:23:23 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 14:26:24 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 14:26:24 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 14:29:25 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 14:29:25 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 14:29:27 1996:  evWrite(5, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  1,
+  1735559404
+}))
+Mon Apr  1 14:29:57 1996:  Socket fd=(5) closed.
+Mon Apr  1 14:32:26 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 14:32:26 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 14:32:28 1996:  evWrite(5, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  1,
+  2113414949
+}))
+Mon Apr  1 14:33:43 1996:  Socket fd=(5) closed.
+Mon Apr  1 14:35:27 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 14:35:27 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 14:35:29 1996:  evWrite(5, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  1,
+  1254895726
+}))
+Mon Apr  1 14:35:29 1996:  Socket fd=(5) closed.
+Mon Apr  1 14:38:28 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 14:38:28 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 14:38:30 1996:  evWrite(5, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  1,
+  1465950530
+}))
+Mon Apr  1 14:38:36 1996:  Socket fd=(5) closed.
+Mon Apr  1 14:41:29 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 14:41:29 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 14:41:33 1996:  evWrite(5, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  1,
+  1304045665
+}))
+Mon Apr  1 14:41:33 1996:  Socket fd=(5) closed.
+Mon Apr  1 14:44:30 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 14:44:30 1996:  OOBBegin: connecting: mud=Lost Wishes
+Mon Apr  1 14:44:36 1996:  evWrite(5, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  1,
+  971121088
+}))
+Mon Apr  1 14:44:38 1996:  evRead(5, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Lost Wishes",
+  0,
+  0
+}))
+Mon Apr  1 14:44:38 1996:  evSndPkts(5, Lost Wishes)
+Mon Apr  1 14:44:38 1996:  evWrite(5, ({ /* sizeof() == 4 */
+  "file-list-req",
+  "Dysfunctional Mud",
+  "tim",
+  ""
+}))
+Mon Apr  1 14:44:38 1996:  evRead(5, ({ /* sizeof() == 3 */
+  "file-list-reply",
+  "tim",
+  ({ })
+}))
+Mon Apr  1 14:44:40 1996:  evSndPkts(5, Lost Wishes)
+Mon Apr  1 14:44:40 1996:  evWrite(5, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Mon Apr  1 14:44:40 1996:  evRead(5, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Lost Wishes"
+}))
+Mon Apr  1 14:44:40 1996:  evRcvOOBEnd(5, Lost Wishes)(client)
+Mon Apr  1 14:44:40 1996:  Socket fd=(5) closed.
+Mon Apr  1 14:47:31 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 14:50:32 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 14:53:33 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 14:56:34 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 14:59:34 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 15:02:35 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 15:05:36 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 15:08:37 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 15:11:38 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 15:14:39 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 15:17:40 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 15:20:41 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 15:23:42 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 15:26:43 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 15:29:44 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 15:32:44 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 15:35:45 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 15:38:46 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 15:41:47 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 15:44:48 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 15:47:49 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 15:50:50 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 15:53:51 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 15:56:52 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 15:59:53 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 16:02:54 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 16:05:55 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 16:08:55 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 16:11:56 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 16:14:57 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 16:17:58 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 16:20:59 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 16:24:00 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 16:27:01 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 16:30:02 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 16:33:03 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 16:36:04 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 16:39:05 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 16:42:06 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 16:45:07 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 16:48:07 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 16:51:08 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 16:54:09 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 16:57:10 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 17:00:11 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 17:03:12 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 17:06:13 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 17:09:14 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 17:12:15 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 17:15:16 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 17:18:17 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 17:21:17 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 17:24:18 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 17:27:19 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 17:30:20 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 17:33:21 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 17:36:22 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 17:39:23 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 17:42:24 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 17:45:25 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 17:48:26 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 17:51:26 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 17:54:27 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 17:57:28 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 18:00:29 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 18:03:30 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 18:06:31 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 18:09:32 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 18:12:33 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 18:15:34 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 18:18:35 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 18:21:36 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 18:24:37 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 18:27:38 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 18:30:39 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 18:33:39 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 18:36:40 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 18:39:41 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 18:42:42 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 18:45:43 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 18:48:44 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 18:51:45 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 18:54:46 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 18:57:47 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 19:00:48 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 19:03:49 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 19:06:50 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 19:09:51 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 19:12:51 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 19:15:52 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 19:18:53 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 19:21:54 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 19:24:55 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 19:27:56 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 19:30:57 1996:  OOBBegin: connecting: mud=FotD
+Mon Apr  1 19:30:59 1996:  evWrite(5, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  1,
+  828408872
+}))
+Mon Apr  1 19:31:05 1996:  evRead(5, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "FotD",
+  0,
+  0
+}))
+Mon Apr  1 19:31:05 1996:  evSndPkts(5, FotD)
+Mon Apr  1 19:31:05 1996:  evWrite(5, ({ /* sizeof() == 4 */
+  "file-list-req",
+  "Dysfunctional Mud",
+  "tim",
+  ""
+}))
+Mon Apr  1 19:31:05 1996:  evRead(5, ({ /* sizeof() == 3 */
+  "file-list-reply",
+  "tim",
+  ({ /* sizeof() == 5 */
+    ({ /* sizeof() == 3 */
+      "intermud3.c",
+      19348,
+      824669461
+    }),
+    ({ /* sizeof() == 3 */
+      "mudlist.c",
+      2910,
+      826835783
+    }),
+    ({ /* sizeof() == 3 */
+      "prison.c",
+      268,
+      824668726
+    }),
+    ({ /* sizeof() == 3 */
+      "rope.c",
+      1871,
+      824669844
+    }),
+    ({ /* sizeof() == 3 */
+      "test",
+      -2,
+      825247511
+    })
+  })
+}))
+Mon Apr  1 19:31:07 1996:  evSndPkts(5, FotD)
+Mon Apr  1 19:31:07 1996:  evWrite(5, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Mon Apr  1 19:31:07 1996:  evRead(5, ({ /* sizeof() == 2 */
+  "oob-end",
+  "FotD"
+}))
+Mon Apr  1 19:31:07 1996:  evRcvOOBEnd(5, FotD)(client)
+Mon Apr  1 19:31:07 1996:  Socket fd=(5) closed.

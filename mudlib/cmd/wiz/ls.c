@@ -19,7 +19,7 @@
 #include <cmdline.h>
 
 // screen width
-#define WIDTH 80
+#define WIDTH 79
 
 void do_ls(string dir, int optl, int opta, int optc, int optF);
 void long_format(string* files);
@@ -35,8 +35,8 @@ main(string *argv, string *argv2)
   optF = flag("F");  // F flag marks loaded objects and dirs
   opta = flag("a");  // a flag lists all files including dot files
   optl = flag("l");  // list using long format
-  optc = (this_player()->query_term()=="ansi" ||
-	  this_player()->query_term()=="vt100");
+  optc = ( this_player()->get_env("TERM") == "ansi" ||
+     	   this_player()->get_env("TERM") == "vt100" );
 
   // No args on command line case
   if(!sizeof(argv2)) {
@@ -123,7 +123,7 @@ short_format(string* files, string dir, int optc, int optF)
   }
   max_fname_len += 2;
 
-  if(!(columns = ((WIDTH * 100) / max_fname_len) / 100)) columns = 1;
+  if( !(columns = WIDTH  / max_fname_len) ) columns = 1;
   col_len = to_int(ceil(to_float(sizeof(files)) / to_float(columns)));
 
   // create columns

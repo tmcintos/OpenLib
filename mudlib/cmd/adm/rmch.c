@@ -1,7 +1,6 @@
 /*  -*- LPC -*-  */
 #include <command.h>
 #include <daemons.h>
-#include "/obj/daemon/chatd.h"
 
 #define USAGE "usage: rmch <channelname>\n"
 

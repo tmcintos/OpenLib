@@ -7,7 +7,6 @@
 #include <uid.h>        /* gets define for ROOT_UID on tmi-2 */
 #include <mudlib.h>
 #include <net/network.h> /* ftp port define, more? */
-#include <net/socket.h> /* various socket defines from tmi-2 */
 
 /*
 -----------------------------------------------

@@ -1,0 +1,10 @@
+By Tim 3/30/96 -- this is really rough
+
+Ok, how about a system that prevents modification of any file in the mudlib
+(wizards home directories excluded) by anyone other than 1 person who has
+"checked out" the file (like an RCS).  To save overhead I think all files
+would have to be automatically locked by default, then the daemon could
+keep a list of unlocked or checked out files (only these files could be
+written/modified etc.).  You could also check out or unlock a directory.
+I say 'unlock' in the sense of disabling the system's protection because
+when doing major modifications it would just get in the way.

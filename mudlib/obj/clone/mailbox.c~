@@ -13,13 +13,15 @@
 // Path to the directory under which to create mailboxes
 #define MAIL_SAVE_DIR "/data/user/mail"
 
-// Define this to be the log file to save debug info to
-#undef DEBUG "mbox"
+// Define this if wanted
+#undef DEBUG(x) log_file("mbox", x);
 
 #include "mailbox.h"
 
 private static string mailfile;   // filename of save file
 private mixed* msgs;              // array of instances of class 'mmess'
+
+#define MESG(x) ((mmess) msgs[x])
 
 void
 create()
@@ -34,7 +36,7 @@ reinit_mailbox(string username)
   mailfile = MAIL_SAVE_DIR + "/" + username[0..0] + "/" + username;
 
 #ifdef DEBUG
-  log_file(DEBUG, sprintf("resinit: %s\n", mailfile));
+  DEBUG( sprintf("reinit: %s\n", mailfile) );
 #endif
 
   msgs = ({});
@@ -46,7 +48,7 @@ restore_mailbox(string username)
   mailfile = MAIL_SAVE_DIR + "/" + username[0..0] + "/" + username;
 
 #ifdef DEBUG
-  log_file(DEBUG, sprintf("restore: %s\n", mailfile));
+  DEBUG( sprintf("restore: %s\n", mailfile) );
 #endif
 
   return restore_object(mailfile);
@@ -58,12 +60,12 @@ save_mailbox()
   string mdir = mailfile[0..strsrch(mailfile, '/', -1)-1];
 
 #ifdef DEBUG
-  log_file(DEBUG, sprintf("save: %s\n", mailfile));
+  DEBUG( sprintf("save: %s\n", mailfile) );
 #endif
 
   if(!directory_exists(mdir)) {
 #ifdef DEBUG
-    log_file(DEBUG, sprintf("mkdir: %s\n", mdir));
+    DEBUG( sprintf("mkdir: %s\n", mdir) );
 #endif
     mkdir(mdir);
   }
@@ -93,19 +95,19 @@ get_new_mesg_count()
 string
 get_mesg(int num)
 {
-  return ((mmess) msgs[num - 1])->mesg;
+  return MESG(num - 1)->mesg;
 }
 
 string
 get_subj(int num)
 {
-  return ((mmess) msgs[num - 1])->subj;
+  return MESG(num - 1)->subj;
 }
 
 string
 get_from(int num)
 {
-  return ((mmess) msgs[num - 1])->from;
+  return MESG(num - 1)->from;
 }
 
 void
@@ -130,5 +132,11 @@ del_mesg(int num)
 void
 mark_read(int num)
 {
-  ((mmess) msgs[num-1])->unread = 0;
+  MESG(num - 1)->unread = 0;
+}
+
+int
+is_unread(int num)
+{
+  return MESG(num - 1)->unread;
 }

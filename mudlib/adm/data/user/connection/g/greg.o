@@ -1,0 +1,11 @@
+#obj/clone/connection.c
+name "greg"
+cap_name "GreG"
+password "xEb1eHLxfmE9U"
+real_name "Nowhere MAN"
+email_addr "astasia@iastate.edu"
+body "/obj/clone/user/human"
+login_shell "/obj/clone/shells/rsh"
+login_time 826009489
+logout_time 826009507
+login_from "knapp38.res.iastate.edu"

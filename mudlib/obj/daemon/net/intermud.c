@@ -62,8 +62,8 @@ static void Setup() {
     eventWrite( ({ "startup-req-2", 5, mud_name(), 0, Nameservers[0][0], 0,
 		   Password, MudList->ID, ChannelList->ID, 0 /* mud_port() */,
 		   PORT_OOB, PORT_UDP, mudlib_name() + " " + mudlib_version(), 
-		   mudlib_name() + " " + mudlib_version(), driver_version(),
-		   "LP", MUD_STATUS, ADMIN_EMAIL,
+		   mudlib_name(), driver_version(), "LP", MUD_STATUS,
+		   ADMIN_EMAIL,
 		   (mapping)SERVICES_D->GetServices(), ([]) }) );
 }
 
@@ -174,6 +174,9 @@ static void eventRead(mixed *packet) {
 	  break;
 	case "auth-mud-reply":
 	  SERVICES_D->eventReceiveAuthReply(packet);
+	  break;
+	case "oob-req":
+	  SERVICES_D->eventReceiveOOBRequest(packet);
 	  break;
         case "error":
 	  SERVICES_D->eventReceiveError(packet);

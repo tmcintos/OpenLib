@@ -1,0 +1,9 @@
+#obj/clone/user/human.c
+flags ({})
+coins ({0,0,})
+hit_points 100
+spell_points 0
+gender 0
+env_vars (["PATH":"/cmd/player:/adm/cmd/player:/adm/cmd/wiz:/cmd/wiz:/adm/cmd/adm:/cmd/adm","TERM":"ansi",])
+aliases (["i":"inventory","e":"east","l":"look","nw":"northwest","n":"north","sw":"southwest","se":"southeast","ne":"northeast","s":"south","w":"west","sc":"score",])
+channels ({})

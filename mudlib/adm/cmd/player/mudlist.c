@@ -67,20 +67,21 @@ main(string str) {
 	int val, comma = 0;
 
 	mud = keys(borg)[0];
-	msg = "\nDetailed information on %^GREEN%^" + mud + "%^RESET%^:\n";
-	msg += sprintf("MUD Type: %:-15s Server: %:-15s Library: %s\n",
-		       borg[mud][8], borg[mud][7], borg[mud][5]);
-	msg += "State: ";
+	msg = "\nDetailed information on %^GREEN%^" + mud + "%^RESET%^: (";
 	switch(borg[mud][0]) {
 	case -1:
-	  msg += "UP\n";
+	  msg += "UP";
 	  break;
 	case 0:
-	  msg += "DOWN\n";
+	  msg += "DOWN";
 	  break;
 	default:
-	  msg += sprintf("DOWN for %i minutes.\n", borg[mud][0] / 60);
+	  msg += sprintf("DOWN for %i minutes.", borg[mud][0] / 60);
 	}
+	msg += ")\n";
+	msg += sprintf("MUD Type: %:-15s Server: %:-15s Library: %s\n",
+		       borg[mud][8], borg[mud][7], borg[mud][5]);
+	msg += sprintf("Base Mudlib: %s\n", borg[mud][6]);
 	msg += "Status: " + borg[mud][9] + "\n"
 	       "Admin Email: "+ borg[mud][10] + "\n";
 	msg += "Services: ";
@@ -109,9 +110,9 @@ main(string str) {
     }
     list = ({});
     foreach(mud, info in borg)
-      list += ({ sprintf("%:-15s %:-10s %:-15s %:-15s %:-15s %s",
+      list += ({ sprintf("%:-15s %:-10s %:-15s %:-14s %:-15s %:5s",
 			 mud, info[8], info[7], info[5], info[1],
-			 (info[2] ? "" + info[2] : "N/A")) });
+			 (info[2] ? sprintf("%i", info[2]) : "N/A")) });
     list = sort_array(list, 1);
     list = ({ mud_name() + " recognizes " + int_to_word(sizeof(borg)) +
 		" mud(s) matching your query: ", "" }) + list;

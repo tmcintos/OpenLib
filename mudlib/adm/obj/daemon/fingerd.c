@@ -75,12 +75,12 @@ GetFinger(string username)
   conn = new(CONNECTION_OB);
 
   if(conn->restore_connection(username)) {
-    ret += sprintf("Login: %-8s                    Name: %-20s\n"
-		   "Directory: %-20s    Body: %-20s\n"
-		   "Email: %-20s\n",
+    ret += sprintf("Login: %:-10s                    Name: %:-20s\n"
+		   "Shell: %:-25s     Body: %:-25s\n"
+		   "Email: %:-20s\n",
 		   username,
 		   conn->query_real_name(),
-		   conn->query_home_dir(),
+		   conn->query_login_shell(),
 		   conn->query_body(),
 		   conn->query_email_addr());
     //

@@ -1,0 +1,11 @@
+#obj/clone/connection.c
+name "tim"
+cap_name 0
+password "TKpXEwZ9LKfG2"
+real_name "Tim McIntosh"
+email_addr "tmcintos@knapp38.res.iastate.edu"
+body "/obj/clone/user/human"
+login_shell "/obj/clone/shells/protosh"
+login_time 828579174
+logout_time 828579172
+login_from "knapp38.res.iastate.edu"

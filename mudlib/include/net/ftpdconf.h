@@ -110,8 +110,8 @@
  * for RESTRICTED_READ and/or RESTRICTED_WRITE; undefine any for which
  * the directory doesn't exist on your system
  */
-#define PUB_DIR "/pub/"
-#define FTP_DIR "/pub/ftp/"
+#define PUB_DIR "/ftp/pub/"
+#define FTP_DIR "/ftp/"
 
 /* define this array as the only set of users permitted to use ftp
  * Example:

@@ -62,19 +62,18 @@ void cmd_mail_loop(object mbox);
 void cmd_send_mesg(string tolist, function call_func);
 
 /*
- * This function distributes a mail message both locally and remotely
- * Remote mailing has not yet been implemented.
+ * This function distributes mail locally
  *
- * 'tolist'  should be a comma separated list of users to send this mesg to
- * 'bcclist' should be a comma separated list of users to recieve carbon copies
- * 'cclist'  is for documentation only.  Messages will not be sent to users
- *           in cclist.  This is for use with Intermud-3 for showing users who
- *           received a carbon copy on a remote mud.
+ * 'bcclist' is an array of usernames to send the message to.
+ *
+ * 'tolist'  These two are for documentation only, they should be mappings
+ * 'cclist'  of the following format:
+ *           ([ Mudname : ({ user-1, ... }), ... ])
  * 'time'    send time; an integer as returned by time()
  *
  * The rest is self explanatory.
  */
-void send_mail(string bcclist, string cclist, string from, string tolist, 
+void send_mail(mapping to_list, mapping cc_list, string* bcc_list, string from,
 	       int time, string subject, string content);
 
 /*
@@ -91,3 +90,4 @@ void cmd_send_mesg2(string input, string tolist, function cf);
 void cmd_send_mesg3(string* lines, string subject, string tolist, function cf);
 void cmd_send_mesg4(string cclist, string tolist, string subject,
 			    string content, function cf);
+private mapping filter_remote_users(string* arr);

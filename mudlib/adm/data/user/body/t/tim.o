@@ -1,0 +1,9 @@
+#obj/clone/user/human.c
+flags ({})
+coins ({0,2000,})
+hit_points 0
+spell_points 0
+gender 1
+env_vars (["PROMPT":"[%^BOLD%^%~%^RESET%^]-> ","SHELL":"/obj/clone/shells/protosh","PATH":"/cmd/wiz:/adm/cmd/wiz:/cmd/player:/adm/cmd/player:/adm/cmd/adm:/cmd/adm","nmsh_nick":([]),"MORE_EXIT_END":1,"LENGTH":25,"history":100,"TITLE":"Before asking $N, try asking Beek or Descartes","BOB":0,"nmsh_alias":(["sw":"southwest","exa":"look at $*","u":"up","se":"southeast","bio":"biography","n":"north","ne":"northeast","s":"south","e":"east","nw":"northwest","w":"west","d":"down","i":"inventory","l":"look $*",]),"TERM":"ansi","nmsh_xverb":(["'":"say $*",":":"emote $*",]),"version":"Prototype Shell",])
+aliases (["ne":"northeast","sub":"subscribe","nod":"emote nod","la":"look at","sc":"score","s":"south","e":"east","prompt":"say \"$PROMPT\"","w":"west","l":"look","se":"southeast","sw":"southwest","brb":"shout Be right back I\\'m going AFK!!!","unsub":"unsubscribe","n":"north","er":"more /log/errors/runtime","nw":"northwest","test":"? \\\"/u/t/tim/zip\\\"->test()","i":"inventory",])
+channels ({"igossip","wiz","icode",})

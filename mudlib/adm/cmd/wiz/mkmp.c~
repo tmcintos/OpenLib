@@ -1,0 +1,85 @@
+#include <command.h>
+#incldue <daemons.h>
+#include <dirs.h>
+
+inherit INHERIT_DIR "/time";
+
+string *sections = ({
+  "",                               // man1
+  "Simulated External Functions",   // man2
+  "LPC Library Functions",          // man3
+  "Driver Applies",                 // man4
+});
+
+string* sequence = ({
+  "NAME",
+  "SYNOPSIS",
+  "DESCRIPTION",
+  "RETURN VALUES",
+  "ENVIRONMENT",
+  "FILES",
+  "EXAMPLES",
+  "ERRORS",
+  "SEE ALSO",
+  "HISTORY",
+  "BUGS"
+});
+
+int
+main(string arg)
+{
+  int section = to_int(arg);
+
+  if(!section || section > sizeof(sections))
+    return notify_fail("usage: mkmp <section>\n");
+
+  write("Function name: ");
+  input_to("get_fname", 0, arg, 0);
+}
+
+void
+write_section(int sec, string fname)
+{
+  write_file(fname, ".Sh " + sequence[sec] + "\n");
+  write_file(fname, text + "\n");
+}
+
+void
+get_fname(string input, string fname)
+{
+  string section = fname;
+  fname = RESOLVE_PATH(input + "." + section);
+  write_file(fname, ".Dd " + get_date(time(), DATESTR_DATE)
+	     + " " + get_date(time(), DATESTR_YEAR) + "\n");
+  write_file(fname, ".Dt " + upper_case(input) + " " + section
+	     + " \"" + sections[to_int(section) - 1] + "\"\n");
+  write_file(fname, ".Os \"" + mudlib_name() + " " +
+	     mudlib_version() + "\"");
+  write("Enter short description of function on 2nd line.\n");
+  EDITOR_D->edit((: get_info, fname, 0 :), ({ input }));
+}
+
+void
+get_info(string fname, int part, string* buf)
+{
+  switch(part) {
+  case 0: /* Name */
+    write_section(0, ".Fn " + buf[0] + "\n" + implode(buf[1..], "\n"));
+    write("Enter function prototypes\n");
+    EDITOR_D->edit((: get_info, fname, 1 :));
+    break;
+  case 1: /* Synopsis */
+    write_section(1, implode(buf, "\n"));
+    write("Enter DESCRIPTION field\n");
+    EDITOR_D->edit((: get_info, fname, 1 :));
+    break;
+  default:
+    if(part > sizeof(sequence) - 1) {
+      write("Done!\n");
+      return;
+    }
+    write_section(part, implode(buf, "\n"));
+    write("Enter " + sequence[part] + " field.\n");
+    EDITOR_D->edit((: get_info, fname, ++part :));
+  }
+}

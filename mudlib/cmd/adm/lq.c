@@ -1,11 +1,12 @@
 #include <command.h>
 #include <element.h>
+#include <net/daemons.h>
 
 int
 main()
 {
   element* Q;
-  Q = "/obj/daemon/net/inetd"->dump_queue();
+  Q = OOB_D->dump_queue();
 
   write("Queued:\n");
   foreach(mixed mud in Q) {

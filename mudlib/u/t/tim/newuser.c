@@ -19,7 +19,7 @@
 inherit LIVING;
 inherit INHERIT_DIR "/more";
 
-private static object connection;   // connection object pointer
+private static object connection;   // user should always have a conn.
 private static object shell;        // shell pointer
 private static string current_dir;  // current working directory
 
@@ -47,12 +47,13 @@ void    reconnect();                     // also called from login daemon
 int     set_cap_name(string capname);
 void    set_channels(string* chans);
 int     set_connection(object ob);
+int     set_shell(object ob);
 int     force_me(string cmd);
 int     start_ed(string file, int rst);  // input handled by process_input()
 void    process_ed_input(string input);
-void    set_env(string var, mixed val);
 int     set_cwd(string cwd);
 mapping get_aliases();                   // returns actual mapping
+mapping get_environment();               // same thing
 
 /*
  * Unrestricted Public Functions
@@ -82,12 +83,15 @@ private int cmd_hook(string args);
  * string shell_process_input(string input);         // process player input
  * string shell_filter_message(string msgclass, string msg); // filter msgs
  * int    shell_cmd_hook(string verb, string arg);   // shell can catch cmds
+ * // called from init_player() to give the shell a chance to perform any
+ * // setup operations
+ * void   shell_init();
  *
  * Shell (and only shell) calls these local functions:
  * set_env(), set_cwd(), get_aliases()
  *
  * Required environment variables:
- * TITLE
+ * TITLE, PATH
  *
  * (predicted: MIN, MOUT, MMIN, MMOUT, MCLONE, MHOME, WKROOM, PATH,
  *             TERM (termtype:LENGTHxWIDTH) )
@@ -111,14 +115,13 @@ void create()
 
 int remove()
 {
-  save_player();
+  if(!query_name()) return 0;
+
   foreach(string chan in channels)
     CHAT_D->remove_member(chan, this_player());
 
-  if(connection) {
-    connection->save_connection(query_name());
-    efun::destruct(connection);
-  }
+  if(connection)
+    destruct(connection, 1);
 
   living::remove();
 }
@@ -150,7 +153,7 @@ net_dead()
    */
   if(in_edit()) {
     ed_cmd(".");
-    ed_cmd("w " + connection->query_home_dir() + "/ed_crash_file");
+    ed_cmd("w " + user_cwd(query_name()) + "/ed_crash_file");
     ed_cmd("Q");
   }
 
@@ -177,6 +180,7 @@ void init_player(string username)
 {
   seteuid(getuid(this_object()));
   set_name(username);              // static--won't get zeroed out
+  current_dir = user_cwd(username);
 
   restore_player();                // non-statics are not zeroed out
 
@@ -184,6 +188,14 @@ void init_player(string username)
 
   foreach(string chan in channels)
     CHAT_D->add_member(chan, this_player());
+  
+  if( get_env("PATH") ) {
+    foreach(string path in explode(get_env("PATH"), ":"))
+      if(!CMD_D->hashed_path(path))
+	CMD_D->hash_path(path);
+  }
+
+  shell->shell_init();
 }
 
 /*
@@ -203,7 +215,7 @@ reconnect()
 int
 set_cap_name(string capname)
 {
-  if(getuid(previous_object()) != ROOT_UID) return 0;
+  if(geteuid(previous_object()) != ROOT_UID) return 0;
 
   if(lower_case(capname) == query_name()) {
     cap_name = capname;
@@ -229,22 +241,20 @@ set_connection(object ob)
 }
 
 int
+set_shell(object ob)
+{
+  if(geteuid(previous_object()) != ROOT_UID) return 0;
+
+  shell = ob;
+  return 1;
+}
+
+int
 force_me(string cmd)
 {
   // if(geteuid(previous_object()) != ROOT_UID) return 0;
 
   return command(cmd);
-}
-
-void
-set_env(string var, mixed val)
-{
-  if(previous_object() != shell) return;
-
-  if(!val)
-    map_delete(env_vars, var);
-  else
-    env_vars[var] = val;
 }
 
 int
@@ -266,6 +276,18 @@ get_aliases()
    * alias handling in the shell easier. (Can just use mapping.)
    */
   return aliases;
+}
+
+mapping
+get_environment()
+{
+  if(previous_object() != shell) return;
+
+  /*
+   * Yes, we are returning a handle to the actual mapping, this is to make
+   * alias handling in the shell easier. (Can just use mapping.)
+   */
+  return env_vars;
 }
 
 mixed

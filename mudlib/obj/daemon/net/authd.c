@@ -18,73 +18,83 @@
 
 inherit DAEMON;
 
-private mapping keymap;  // mapping by mudname of keysets
+private mapping client_keys;
+private mapping server_keys;
 
 void
 create()
 {
   ::create();
-  keymap = ([]);
+  client_keys = ([]);
+  server_keys = ([]);
 }
 
 #ifdef DEBUG
-mapping
-dump_keymap()
+mixed*
+dump_keys()
 {
-  return keymap;
+  return ({ "client", client_keys, "server", server_keys });
 }
 #endif
 
-// clean up keymap periodically, removing muds which have expired keys here
-// _and_ when our key to them has probably expired also
-
+/*
+ * clean up keymaps periodically, removing muds which have expired keys here
+ * _and_ when our key to them has probably expired also
+ */
 void
-reset()
+cleanup_keys()
 {
-  int t = time();
+  int t = time(), shut_down = 1;
 
-  foreach(string mud, keyset k in keymap) {
-    if(t - k->conn_there_timestamp > 600 &&
-       t - k->conn_here_timestamp > 600) {
-#ifdef DEBUG
-	 log_file(DBFILE, sprintf("reset: deleting %s from keymap\n", mud));
-#endif
-	 map_delete(keymap, mud);
-    }
+  foreach(string mud, class key k in server_keys) {
+    if( (t - k->timestamp) > 600 )
+      map_delete(server_keys, mud);   // key expired, discard
+    else
+      shut_down = 0;                  // key valid
+  }
+
+  if( shut_down ) OOB_D->close_oob_port();
+
+  foreach(string mud, class key k in client_keys) {
+    if( (t - k->timestamp) > 600 )
+      map_delete(client_keys, mud);   // discard key
   }
 }
 
-// generate a new key to give to a mud, and set up a call_out to expire it
-
+/*
+ * generate a new key to give to a mud with a timestamp
+ */
 int
 generate_key(string mudname)
 {
   int keyval;
 
-/* code that sets keyval*/
+  /*
+   * code that sets keyval (a big number)
+   */
   keyval = random(46340) * random(46340);
 
-  if(!keymap[mudname]) {
-    keyset newkey = new(keyset);
+  if( !server_keys[mudname] ) {
+    class key newkey = new(class key);
 
-    newkey->conn_here = keyval;
-    newkey->conn_here_timestamp = time();
+    newkey->key = keyval;
+    newkey->timestamp = time();
 
-    keymap[mudname] = newkey;
+    server_keys[mudname] = newkey;
   } else {
-    ((keyset) keymap[mudname])->conn_here = keyval;
-    ((keyset) keymap[mudname])->conn_here_timestamp = time();
+    ((class key) server_keys[mudname])->key = keyval;
+    ((class key) server_keys[mudname])->timestamp = time();
   }
 
 #ifdef DEBUG
   log_file(DBFILE, sprintf("generate_key: %s, %d\n", mudname, keyval));
 #endif
-
   return keyval;
 }
 
-// store a key recieved from another mud used to connect there
-
+/*
+ * store a key recieved from another mud used to connect there
+ */
 void
 store_key(string mudname, int keyval)
 {
@@ -92,56 +102,64 @@ store_key(string mudname, int keyval)
   log_file(DBFILE, sprintf("store_key: %s, %d\n", mudname, keyval));
 #endif
   
-  if(!keymap[mudname]) {
-    keyset newkey = new(keyset);
+  if( !client_keys[mudname] ) {
+    class key newkey = new(class key);
 
-    newkey->conn_there = keyval;
-    newkey->conn_there_timestamp = time();
+    newkey->key = keyval;
+    newkey->timestamp = time();
 
-    keymap += ([ mudname : newkey ]);
+    client_keys[mudname] = newkey;
   } else {
-    ((keyset) keymap[mudname])->conn_there = keyval;
-    ((keyset) keymap[mudname])->conn_there_timestamp = time();
+    ((class key) client_keys[mudname])->key = keyval;
+    ((class key) client_keys[mudname])->timestamp = time();
   }
 }
 
-// Authenticate a mud that is trying to connect
-// 1 = pass, 0 = fail
-
+/*
+ * Authenticate a mud that is trying to connect
+ * 1 = pass, 0 = fail
+ */
 int
 authenticate_mud(string mudname, int keyval)
 {
+  /*
+   * no class key on record
+   */
+  if( !server_keys[mudname] ) return 0;
+
+  /*
+   * 10min expiration check
+   */
+  if( time() - ((class key) server_keys[mudname])->timestamp > 600 ) return 0;
+
+  /*
+   * check for match
+   */
+  if( ((class key) server_keys[mudname])->key == keyval ) {
 #ifdef DEBUG
-  log_file(DBFILE, sprintf("authenticate_mud: %s, %d", mudname, keyval));
+    log_file(DBFILE, sprintf("authenticate_mud: %s, %d, ret=1\n",
+			     mudname, keyval));
 #endif
-
-  // no keyset on record
-  if(!keymap[mudname])
-    return 0;
-
-  // 10min expiration check
-  if(time() - ((keyset) keymap[mudname])->conn_here_timestamp > 600)
-    return 0;
-
-  // check for match
-  if( ((keyset) keymap[mudname])->conn_here == keyval ) {
-#ifdef DEBUG
-  log_file(DBFILE, ",ret=1\n");
-#endif
+    map_delete(server_keys, mudname); // discard one-time-key
     return 1;
   } else {
 #ifdef DEBUG
-  log_file(DBFILE, ",ret=0\n");
+    log_file(DBFILE, sprintf("authenticate_mud: %s, %d, ret=0\n",
+			     mudname, keyval));
 #endif
     return 0;
   }
 }
 
+/*
+ * returns our key to 'mudname'
+ */
 int
 get_session_key(string mudname)
 {
-  if(keymap[mudname])
-    return ((keyset) keymap[mudname])->conn_there;
-  else
-    return 0;
+  if( client_keys[mudname] ) {
+    int key = ((class key) client_keys[mudname])->key;
+    map_delete(client_keys, mudname);  // one-time-key discard
+    return key;
+  } else return 0;
 }

@@ -1,2 +1,0 @@
-#obj/clone/mailbox.c
-msgs ({(/1,"Tim","Re: hey","To: kyriccFrom: TimDate: Thu Feb 15 15:26:05 1996Subject: Re: heyCC: BCC: -------You needed the <PRE>...</PRE> tags around the code...stands for'preformatted' so the browser won't try to format the text between them.I went ahead and put them in there.  Looks like it still strips outthe stuff in the #include statements since they use <>'s but that probisn't too important.  I think there's a HTML tag to represent actualbrackets but I'm not sure what it is...might also be an escape characterto use...Laterz",/),})

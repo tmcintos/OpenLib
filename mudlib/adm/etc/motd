@@ -1,23 +1,26 @@
 -------------------------------------------------------------------------------
                 D y s f u n c t i o n a l  M u d  N e w s
-			last update: 02/13/96
+			last update: 03/04/96
 -------------------------------------------------------------------------------
-                        C O M M A N D  I N F O
-Flag support and some other stuff is in for cmds, see /include/cmdline.h
-Command files are in /cmd/player:/cmd/wiz:/cmd/adm
-Secure commands are under /adm in the same directories.
-                          !! C O M B A T !!
-We have weapon regs now, as described in /obj/examples/dagger.c.  These are
-tennative, and may change.  They leave a lot open to the coder, but should
-keep things balanced with the prices.  Armor regs will be in shortly.
-                  O B J E C T  W E I G T  &  M O N E Y
-Object weight & re-sale value is now supported.  Money supply is supported
-in living objects, money container cloneable in /obj/clone/money.c  See docs
-in /doc/project for details.  This all needs to be double checked.
-                            >> R A C E S <<
-We now have a clay race in.  Directions on how to use are in the docs.  This
-clay race is malieable for all sorts of creatures & anything there is no set
-race for.
-                              >> HELP <<
-Help command is sort of in place.  I know how the help will be set up but
-the code in the command itself could be cleaned up...oh well it's late now.
+New USER/SHELL couple is in place for testing.
+  The base for all bodies is /obj/clone/user.c.
+
+NOTE: I changed the setup so the shell shadows the user.
+
+Everything should work (except for LPC expansion and one other thing) in
+protosh now.  Includes globbing, history, variables, aliases
+
+Check out /obj/clone/shells/protosh.doc for documentation on protosh.
+Not elegantly written but if you want that you can do it. :)
+
+Shells in /obj/clone/shells:
+  nmsh --   port over of the nightmare shell. aliases, history, nicknames
+            Has various cmds for wizzes; cd, pwd, pushd, popd, scripting (nmsh)
+  protosh   Tim's experimental shell...basically just me messing around trying
+            to do various things: cd, set/unset, alias/unalias, history,
+            globbing, variable substitution, quoting...see the doc for it.
+  ssh --    Bare bones shell...doesn't really serve any purpose right now
+            but could be a user shell w/no features
+  rsh --    Restricted nmsh; I had to hardcode a few things since wizardp()
+            doesn't work yet to make it a user shell.  Only allows access to
+            user commands.

@@ -1,6 +1,6 @@
 using config file: /home/mud/etc/config.dm
 ----------------------------------------------------------------------------
-Dysfunctional Mud (MudOS v22a22) starting up on FreeBSD - Mon Feb 19 19:38:50 1996
+Dysfunctional Mud (MudOS v22a23) starting up on FreeBSD - Sun Mar 31 16:31:43 1996
 
 
 Connected to address server on localhost port 7374
@@ -8,9 +8,7 @@ include/mudlib.h line 15: Warning: redefinition of #define OBJECT
 
 
 Loading preloaded files ...
-include/net/ftpdconf.h line 114: Warning: redefinition of #define FTP_DIR
-
-Initializations complete.
-
-Accepting connections on port 4444.
-closed external ports
+obj/daemon/net/services/file.c line 134: Undefined variable 'fn'
+obj/daemon/net/services/file.c line 134: parse error
+obj/daemon/net/services/file.c line 143: Reserved type name unexpected.
+obj/daemon/net/services/file.c line 143: parse error

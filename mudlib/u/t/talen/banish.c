@@ -19,6 +19,11 @@
  * desired.
  */
 
+/*
+ * 3.31.96  Tim  *Fixed member_array() problems, 1st/2nd args were transposed
+ *               *Added remove() to save object on destruct
+ */
+
 /* should this be mixed *? */
 string *names;
 int    *times;
@@ -40,6 +45,13 @@ void reset()
   save_me();
 }
 
+int
+remove()
+{
+  save_me();
+  return 0; // ok to remove us
+}
+
 int clean_up(int inherited)
 {
   return 0; /* this object should *always* stick around */
@@ -49,7 +61,7 @@ int clean_up(int inherited)
 static clean_out()
 {
   int loop = sizeof(names) - 1;
-  int pos = member_array(names, 0);
+  int pos = member_array(0, names);
 
   if (pos == -1) return; /* no zero elements! */
 
@@ -60,7 +72,7 @@ static clean_out()
       names[pos] = names[loop];
       times[pos] = times[loop];
       names[loop] = 0;
-      pos = member_array(names, 0);
+      pos = member_array(0, names);
     }
   }
   names = names[0..(pos - 1)]; /* compact it down to min size */
@@ -72,10 +84,10 @@ int banish(string name, int return_time)
 /* put in a check for names that should never be banished here, if apt. */
   int pos;
 
-  pos = member_array(names, name);
+  pos = member_array(name, names);
   if (pos == -1) /* not already there */
   {
-    pos = member_array(names, 0); /* check for empty slots */
+    pos = member_array(0, names); /* check for empty slots */
     if (pos == -1) /* there are no empties - create some. */
     {
       pos = sizeof(names);
@@ -90,7 +102,7 @@ int banish(string name, int return_time)
 
 int unban(string name)
 {
-  int pos = member_array(names, name);
+  int pos = member_array(name, names);
   if (pos == -1) return 0; /* not there */
   names[pos] = 0;
   return 1;
@@ -98,7 +110,7 @@ int unban(string name)
 
 int query_banned(string name)
 {
-  int pos = member_array(names, name);
+  int pos = member_array(name, names);
   if (pos == -1) return 0; /* not there, not banished */
   if (!times[pos]) return -1; /* permanent banishment */
   if (times[pos] < time())

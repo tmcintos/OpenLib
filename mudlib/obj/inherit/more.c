@@ -6,16 +6,18 @@
 //   as well as curr_line to do this right.
 
 // Temporary!!
-#define CHUNK 24
-#define WIDTH 80
+#define CHUNK (this_object()->get_env("LENGTH") ? \
+	       this_object()->get_env("LENGTH") : 24)
+#define WIDTH (this_object()->get_env("WIDTH") ? \
+	       this_object()->get_env("WIDTH") : 80)
 
 /*
  * Notification messages
  */
-#define NOTIFY_END  "%^INVERSE%^(END)%^RESET%^ [hit 'q' to continue]"
+#define NOTIFY_END  "%^INVERSE%^(END)%^RESET%^ [hit 'q'<return> to continue]"
 #define NOTIFY_MORE "%^INVERSE%^--MORE--%^RESET%^"
-#define NOTIFY_INST " [<space> for more, 'h' for help]"
-#define NOTIFY_CONT "%^INVERSE%^Hit Spacebar to Continue%^RESET%^"
+#define NOTIFY_INST " [<return> for more, 'h' for help]"
+#define NOTIFY_CONT "%^INVERSE%^Hit <return> to Continue%^RESET%^"
 
 /*
  * Used to properly display text to user
@@ -69,8 +71,8 @@ more_file(string input, string filename, int curr_line, int sl, function cb)
   string text;
 
   switch(input[0]) {
-  case ' ' :                             // show NEXT page
-    display("\n");                       // need a newline
+  case ' ': case 0:                      // show NEXT page
+//    display("\n");                       // need a newline
   case 'X' :                             // for starting; prints no newline
     break;
   case 'h' :                             // show HELP
@@ -86,7 +88,7 @@ more_file(string input, string filename, int curr_line, int sl, function cb)
 
     display(NOTIFY_CONT);
 
-    get_char("more_file", 1, filename, curr_line, sl, cb);
+    input_to("more_file", filename, curr_line, sl, cb);
     return;
   case 's' :                             // SKIP FORWARD one page
     display("\n");                       // need a newline
@@ -103,7 +105,7 @@ more_file(string input, string filename, int curr_line, int sl, function cb)
     evaluate(cb);
     return;
   default :
-    get_char("more_file", 1, filename, curr_line, sl, cb);
+    input_to("more_file", filename, curr_line, sl, cb);
     return;
   }  /* switch(input) */
 
@@ -125,6 +127,12 @@ more_file(string input, string filename, int curr_line, int sl, function cb)
   if(text) {
     if(!read_file(filename, curr_line, 1)) {
       itmp = sl - sizeof(explode(text, "\n"));
+
+      if( this_object()->get_env("MORE_EXIT_END") ) {
+	evaluate(cb);
+	return;
+      }
+
       for(int i = 1; i < itmp; i++)
 	display("~\n");
       display(NOTIFY_END);
@@ -138,7 +146,7 @@ more_file(string input, string filename, int curr_line, int sl, function cb)
       more_file("X", filename, curr_line - (sl - 1), sl, cb);
   }
 
-  get_char("more_file", 1, filename, curr_line, sl, cb);
+  input_to("more_file", filename, curr_line, sl, cb);
 }
 
 /*
@@ -155,8 +163,8 @@ more_array(string input, string *lines, int curr_line, int size,
   start_line = curr_line;
 
   switch(input[0]) {
-  case ' ' :                             // show NEXT page
-    display("\n");                       // need a newline
+  case ' ': case 0:                      // show NEXT page
+//    display("\n");                       // need a newline
   case 'X' :                             // for starting; prints no newline
     break;
   case 'h' :                             // show HELP
@@ -177,7 +185,7 @@ more_array(string input, string *lines, int curr_line, int size,
 
     display(NOTIFY_CONT);
 
-    get_char("more_array", 1, lines, curr_line, size, sl, sw, cb);
+    input_to("more_array", lines, curr_line, size, sl, sw, cb);
     return;
   case 'q' :                             // only way out
     display("\n");                       // need a newline
@@ -211,7 +219,7 @@ more_array(string input, string *lines, int curr_line, int size,
     
     break;
   default :
-    get_char("more_array", 1, lines, curr_line, size, sl, sw, cb);
+    input_to("more_array", lines, curr_line, size, sl, sw, cb);
     return;
   }  /* switch(input) */
 
@@ -220,6 +228,10 @@ more_array(string input, string *lines, int curr_line, int size,
    */
   for(int i = 0; i < sl-1; i++) {
     if(curr_line > size) {                   // past the end of array
+      if( this_object()->get_env("MORE_EXIT_END") ) {
+	evaluate(cb);
+	return;
+      }
       display("~\n");
     } else {
       text = lines[curr_line++ - 1];
@@ -236,7 +248,7 @@ more_array(string input, string *lines, int curr_line, int size,
 		    NOTIFY_MORE, (100 * curr_line) / size, NOTIFY_INST));
   }
 
-  get_char("more_array", 1, lines, curr_line, size, sl, sw, cb);
+  input_to("more_array", lines, curr_line, size, sl, sw, cb);
 }
 
 /*

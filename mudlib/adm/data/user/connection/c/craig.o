@@ -1,0 +1,11 @@
+#obj/clone/connection.c
+name "craig"
+cap_name 0
+password "bOoy1fVHjDi7k"
+real_name 0
+email_addr 0
+body "/obj/clone/user/human"
+login_shell "/obj/clone/shells/protosh"
+login_time 828414102
+logout_time 828414143
+login_from "loopback"

@@ -14,7 +14,7 @@ create()
   set_short("Beavis");
   set_long("A scrawny, stupid looking high school kid.\n");
   set_move_around(15);
-  set_talk(5, ({"This sucks!",
+  set_talk(40, ({"This sucks!",
 	     "Hey Butthead!  You suck!",
 	     "FIRE...FIRE...FIRE",
 	     "Fire's cool.",

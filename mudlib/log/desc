@@ -769,3 +769,520 @@ Wed Feb 14 11:56:44 1996:  imud_gossip: Descartes@IdeaExchange:err learn
 Wed Feb 14 12:20:43 1996:  imud_code: Descartes@Nightmare:no exist right now
 Wed Feb 14 16:32:43 1996:  imud_code: Descartes@IdeaExchange:depends on how you compile the driver
 Wed Feb 14 20:51:01 1996:  imud_code: Descartes@Nightmare:do not use v22a22
+Tue Feb 20 19:19:08 1996:  imud_gossip: Descartes@IdeaExchange:with respect to a really old conversation, encre is obvious if you use Nightmare, not obvious if you don't
+Tue Feb 20 19:19:22 1996:  imud_gossip: Descartes@IdeaExchange:it is even more obvious if you bother to read the document that says Start
+Tue Feb 20 19:26:14 1996:  imud_gossip: Descartes@IdeaExchange:I believe they do
+Tue Feb 20 19:26:22 1996:  imud_gossip: Descartes@IdeaExchange:but I am not an authority on that
+Tue Feb 20 20:33:35 1996:  imud_gossip: Descartes@IdeaExchange:command paths are irrelevant
+Tue Feb 20 20:33:49 1996:  imud_gossip: Descartes@IdeaExchange:most npc like things are done through verbs
+Tue Feb 20 20:52:39 1996:  imud_gossip: Descartes@IdeaExchange:what's silly?
+Tue Feb 20 20:53:47 1996:  imud_code: Descartes@IdeaExchange:creators never make good test chars, their stats are always skewed
+Tue Feb 20 20:54:49 1996:  imud_code: Descartes@IdeaExchange:I have no idea, I have 200 pieces of unread mail
+Tue Feb 20 21:00:57 1996:  imud_code: Descartes@IdeaExchange:is it a quesiton I can answer here???
+Tue Feb 20 21:05:51 1996:  imud_code: Descartes@IdeaExchange:no selene, that makes no sense
+Tue Feb 20 21:07:05 1996:  imud_gossip: Descartes@IdeaExchange:that does not make ne side lockable and the other not
+Tue Feb 20 21:09:10 1996:  imud_gossip: Descartes@IdeaExchange:you need to do a little razzle dazzle, nothing complex
+Tue Feb 20 21:10:52 1996:  imud_code: Descartes@IdeaExchange:you can;t do that
+Tue Feb 20 21:12:57 1996:  imud_code: Descartes@IdeaExchange:evidently lockabe is associated with a side
+Tue Feb 20 21:13:03 1996:  imud_code: Descartes@IdeaExchange:play with it and see what happens
+Thu Feb 22 16:48:37 1996:  imud_code: Descartes@IdeaExchange:what is a victim?
+Thu Feb 22 16:49:14 1996:  imud_code: Descartes@IdeaExchange:you read theose and do what you want with them
+Thu Feb 22 16:50:24 1996:  imud_code: Descartes@IdeaExchange:you mean have the computer do what you mean, not what you say?>
+Thu Feb 22 16:52:17 1996:  imud_code: Descartes@IdeaExchange:make sure you call whatever to make the path absolute before calling the efun
+Thu Feb 22 22:27:39 1996:  imud_gossip: Descartes@IdeaExchange:because you have no idea how to code?
+Thu Feb 22 22:29:27 1996:  imud_gossip: Descartes@IdeaExchange:that mud better have no NM IV code in it Misery
+Thu Feb 22 22:29:58 1996:  imud_gossip: Descartes@IdeaExchange:for the sake of my comment, yes it does
+Thu Feb 22 22:30:16 1996:  imud_gossip: Descartes@IdeaExchange:Misery's mud better have none of *my* code in it
+Thu Feb 22 22:31:10 1996:  imud_gossip: Descartes@IdeaExchange:you heard what i said
+Thu Feb 22 22:31:48 1996:  imud_gossip: Descartes@IdeaExchange:if you are illegally using my code, you will care
+Thu Feb 22 22:32:20 1996:  imud_gossip: Descartes@IdeaExchange:it sure as hell would be illegal
+Thu Feb 22 22:33:31 1996:  imud_gossip: Descartes@IdeaExchange:the entire mudlib of Nightmare and Foundation are covered by the agreement
+Thu Feb 22 22:35:07 1996:  imud_gossip: Descartes@IdeaExchange:ahh,m you are stealing someone else's code then
+Thu Feb 22 22:43:08 1996:  imud_gossip: Descartes@IdeaExchange:back to vacation!
+Thu Feb 22 22:43:14 1996:  imud_gossip: Descartes@IdeaExchange:see you suckers in a week
+Thu Feb 29 13:17:40 1996:  imud_code: Descartes@IdeaExchange:/doc/build/Properties
+Thu Feb 29 13:19:49 1996:  imud_code: Descartes@IdeaExchange:light is not what you can see and what you cannot
+Thu Feb 29 13:19:59 1996:  imud_code: Descartes@IdeaExchange:it is the amount of light in the room
+Thu Feb 29 13:20:35 1996:  imud_code: Descartes@IdeaExchange:#!/bin/csh ... while(1) ... driver mudos.cfg ... end
+Thu Feb 29 13:21:49 1996:  imud_gossip: Descartes@IdeaExchange:there is a mud conference in the twin cities at the end of july
+Thu Feb 29 13:22:34 1996:  imud_code: Descartes@IdeaExchange:basically
+Thu Feb 29 13:22:58 1996:  imud_gossip: Descartes@IdeaExchange:Tor, that is completely imbecillic
+Thu Feb 29 13:26:13 1996:  imud_code: Descartes@IdeaExchange:not including vendor_types.h
+Thu Feb 29 13:27:19 1996:  imud_code: Descartes@IdeaExchange:no
+Thu Feb 29 13:28:09 1996:  imud_code: Descartes@IdeaExchange:try looking at what you most recently modified, since it is something you did on your end causing thaty
+Thu Feb 29 13:29:04 1996:  imud_code: Descartes@IdeaExchange:clearly you are trying to code something that will not load
+Thu Feb 29 13:32:45 1996:  imud_code: Descartes@IdeaExchange:what do you mean manually load vendor_types.h?
+Thu Feb 29 13:33:05 1996:  imud_code: Descartes@IdeaExchange:you mean #include <vendor_types.h>?
+Thu Feb 29 13:33:19 1996:  imud_code: Descartes@IdeaExchange:notify messages?
+Thu Feb 29 13:33:35 1996:  imud_code: Descartes@IdeaExchange:Aurelius of course you had to do that
+Thu Feb 29 13:34:51 1996:  imud_code: Descartes@IdeaExchange:I have no idea, Blitz coded that system
+Thu Feb 29 17:27:10 1996:  imud_gossip: Descartes@IdeaExchange:the specs exist, guess you need to implement it yourself
+Thu Feb 29 17:28:07 1996:  imud_gossip: Descartes@IdeaExchange:it is a sick world where more tmi-2 muds are up than Lima
+Thu Feb 29 17:31:54 1996:  imud_gossip: Descartes@IdeaExchange:any amount of inane, mindless drivel can count as folklore
+Thu Feb 29 17:33:00 1996:  imud_gossip: Descartes@IdeaExchange:it is a scarey world where people think Descartes was the dude who wrote LPC manuals and the NM mudlib
+Thu Feb 29 22:12:14 1996:  imud_gossip: Descartes@IdeaExchange:kill rainforest
+Thu Feb 29 22:12:46 1996:  imud_gossip: Descartes@IdeaExchange:rm -rf is tres powerful
+Fri Mar  1 09:17:45 1996:  imud_gossip: Descartes@IdeaExchange:v22a22 is not stable
+Fri Mar  1 09:59:17 1996:  imud_gossip: Descartes@IdeaExchange:apache IMHO bites
+Fri Mar  1 10:01:22 1996:  imud_gossip: Descartes@IdeaExchange:well, I do python, but, whatever
+Fri Mar  1 10:01:40 1996:  imud_gossip: Descartes@IdeaExchange:there are python and perl modules to allow you to write cgi securely
+Fri Mar  1 10:01:46 1996:  imud_gossip: Descartes@IdeaExchange:no shit
+Fri Mar  1 10:04:11 1996:  imud_gossip: Descartes@IdeaExchange:this machine is hit pretty heavily
+Fri Mar  1 10:04:17 1996:  imud_gossip: Descartes@IdeaExchange:ncsa
+Fri Mar  1 10:04:53 1996:  imud_gossip: Descartes@IdeaExchange:the latest
+Fri Mar  1 17:57:02 1996:  imud_gossip: Descartes@Nightmare:chmod a+r dir
+Fri Mar  1 17:57:20 1996:  imud_gossip: Descartes@Nightmare:actually, chmod 755 dir
+Fri Mar  1 17:57:30 1996:  imud_gossip: Descartes@Nightmare:read access is not sufficient
+Fri Mar  1 17:58:19 1996:  imud_gossip: Descartes@Nightmare:correct
+Fri Mar  1 17:58:31 1996:  imud_gossip: Descartes@Nightmare:files need to be 644 andf dirs 755
+Fri Mar  1 18:00:37 1996:  imud_gossip: Descartes@Nightmare:are you planning on using the MSQL support?
+Fri Mar  1 18:01:09 1996:  imud_gossip: Descartes@Nightmare:beek changed the name of the package files but forgot to change the name of the .c files :)
+Fri Mar  1 18:01:26 1996:  imud_gossip: Descartes@Nightmare:so the options.h define is DATABASE_DB not DB
+Fri Mar  1 18:03:40 1996:  imud_gossip: Descartes@Nightmare:I am using the stuff for things like bug tracking, player trivia (like doing relational things among players, not saving players)
+Fri Mar  1 18:06:27 1996:  imud_gossip: Descartes@Nightmare:any database access in sql will be much faster than doing the same thing in LPC
+Fri Mar  1 18:06:49 1996:  imud_gossip: Descartes@Nightmare:the only upside for LPC is straight saving objects and restoring them
+Fri Mar  1 18:07:07 1996:  imud_gossip: Descartes@Nightmare:any data relationships will be done faster in sql
+Fri Mar  1 18:10:15 1996:  imud_gossip: Descartes@Nightmare:the deal is this... LPC requires an object database... that is what save_object()/restore_object() are
+Fri Mar  1 18:10:39 1996:  imud_gossip: Descartes@Nightmare:relational databases are always going to poorly capture LPC objects
+Fri Mar  1 18:16:38 1996:  imud_gossip: Descartes@IdeaExchange:report it as a bug and hopefully it will be fixed before IVr3
+Fri Mar  1 18:57:06 1996:  imud_gossip: Descartes@IdeaExchange:type 'id'
+Fri Mar  1 18:57:32 1996:  imud_gossip: Descartes@IdeaExchange:just id
+Fri Mar  1 18:59:04 1996:  imud_gossip: Descartes@IdeaExchange:is that your user id?
+Fri Mar  1 18:59:31 1996:  imud_gossip: Descartes@IdeaExchange:then the other dir you mentioned is your home
+Fri Mar  1 18:59:47 1996:  imud_gossip: Descartes@IdeaExchange:type 'cd ~;chmod 755 ,'
+Fri Mar  1 19:00:03 1996:  imud_gossip: Descartes@IdeaExchange:err . not ,
+Fri Mar  1 19:17:32 1996:  imud_gossip: Descartes@IdeaExchange:chmod 700 ~/.*
+Fri Mar  1 19:17:38 1996:  imud_gossip: Descartes@IdeaExchange:log out and log back in
+Fri Mar  1 19:31:35 1996:  imud_gossip: Descartes@IdeaExchange:what do you mean?
+Fri Mar  1 19:32:13 1996:  imud_gossip: Descartes@IdeaExchange:it is the people downloading dirty pictures from ftp.winternet.com
+Fri Mar  1 22:05:30 1996:  imud_gossip: Descartes@IdeaExchange:change to a useful mudlib
+Fri Mar  1 22:06:02 1996:  imud_gossip: Descartes@IdeaExchange:hi
+Fri Mar  1 22:07:05 1996:  imud_gossip: Descartes@IdeaExchange:it sounds like you are bored
+Fri Mar  1 22:10:12 1996:  imud_gossip: Descartes@IdeaExchange:who is pissing whom off?
+Fri Mar  1 22:10:46 1996:  imud_gossip: Descartes@IdeaExchange:what is channel_t?
+Fri Mar  1 22:13:29 1996:  imud_gossip: Descartes@IdeaExchange:why are you targetting people on his mud?
+Fri Mar  1 22:13:47 1996:  imud_gossip: Descartes@IdeaExchange:why don't you login to another mud that supports them and test it on yourself?
+Fri Mar  1 22:15:07 1996:  imud_gossip: Descartes@IdeaExchange:then login to Lima Bean and test it on yourself
+Fri Mar  1 22:15:15 1996:  imud_gossip: Descartes@IdeaExchange:don't be a dweeb and bother other people
+Fri Mar  1 22:16:00 1996:  imud_gossip: Descartes@IdeaExchange:then why is Cire pissed that you are sending them to hise people?
+Fri Mar  1 22:17:42 1996:  imud_gossip: Descartes@IdeaExchange:I have no idea what the hell you are doing
+Fri Mar  1 23:07:26 1996:  imud_code: Descartes@IdeaExchange:room.c
+Sat Mar  2 00:07:10 1996:  imud_gossip: Descartes@IdeaExchange:woo woo!!! LPC MSQL routines are working like a charn!
+Sat Mar  2 00:07:12 1996:  imud_gossip: Descartes@IdeaExchange:err charm
+Sat Mar  2 00:07:56 1996:  imud_gossip: Descartes@IdeaExchange:yes, SQL
+Sat Mar  2 00:11:31 1996:  imud_gossip: Descartes@IdeaExchange:miniSQL
+Sat Mar  2 00:11:39 1996:  imud_gossip: Descartes@IdeaExchange:it is a small, free RDBMS
+Sat Mar  2 00:13:28 1996:  imud_gossip: Descartes@IdeaExchange:relational database management system
+Sat Mar  2 00:14:38 1996:  imud_gossip: Descartes@IdeaExchange:standard query language
+Sat Mar  2 00:15:06 1996:  imud_gossip: Descartes@IdeaExchange:maybe it is, I don;t really care :)
+Sat Mar  2 00:15:18 1996:  imud_gossip: Descartes@IdeaExchange:what it means itself has no meaning anyways
+Sat Mar  2 00:15:33 1996:  imud_gossip: Descartes@IdeaExchange:it is a language for accessing the relations among data
+Sat Mar  2 18:02:05 1996:  imud_gossip: Descartes@IdeaExchange:it is actually the case that you have to decide what you want death to mean
+Sat Mar  2 18:02:19 1996:  imud_gossip: Descartes@IdeaExchange:there is no such thing as a 'pray' command
+Sat Mar  2 18:03:18 1996:  imud_gossip: Descartes@IdeaExchange:then code something that calls eventRevive()
+Sat Mar  2 18:03:58 1996:  imud_gossip: Descartes@IdeaExchange:do you want other players to revive the dead?  Do you want to be lame and code yet another church where people pray?  Do you want to do somehting no one has thought of?
+Sat Mar  2 18:06:06 1996:  imud_gossip: Descartes@IdeaExchange:whatever tickles your pickle
+Sat Mar  2 18:20:11 1996:  imud_gossip: Descartes@IdeaExchange:then you have dorks like Misery opening muds just to be on the admin channel
+Sat Mar  2 18:22:01 1996:  imud_gossip: Descartes@IdeaExchange:I am not interested in hacks Nippie
+Sat Mar  2 18:22:23 1996:  imud_gossip: Descartes@IdeaExchange:it will be done the right way, and the right way is not possible yet
+Sat Mar  2 18:22:37 1996:  imud_gossip: Descartes@IdeaExchange:it has to be a hack Leto
+Sat Mar  2 18:23:24 1996:  imud_gossip: Descartes@IdeaExchange:I must caution you again against talking on things you are clueless about Leto... this is not NM code, it is MudOS command parisng
+Sat Mar  2 18:25:22 1996:  imud_gossip: Descartes@IdeaExchange:Leto, you are the one with that habit
+Sat Mar  2 18:26:55 1996:  imud_gossip: Descartes@IdeaExchange:I piss you off and it gives you a license to blabber about anything? cool
+Sat Mar  2 18:28:07 1996:  imud_gossip: Descartes@IdeaExchange:that is being held up by driver releases
+Sat Mar  2 18:28:35 1996:  imud_gossip: Descartes@IdeaExchange:as far as I can see, there is only one major bug I need to wait on for IVr2.4
+Sat Mar  2 18:29:05 1996:  imud_gossip: Descartes@IdeaExchange:wrong arguments getting passed to parser callback functions by the driver
+Sat Mar  2 18:29:13 1996:  imud_gossip: Descartes@IdeaExchange:should be fixedin v22a24 I hope
+Sat Mar  2 18:29:29 1996:  imud_gossip: Descartes@IdeaExchange:msql support is not needed to release NM
+Sat Mar  2 18:29:38 1996:  imud_gossip: Descartes@IdeaExchange:and I have msql support working in v22a23
+Sat Mar  2 18:29:58 1996:  imud_gossip: Descartes@IdeaExchange:with msql support, yes, there were several problems
+Sat Mar  2 18:30:04 1996:  imud_gossip: Descartes@IdeaExchange:Beek changed some file names on me
+Sat Mar  2 18:30:30 1996:  imud_gossip: Descartes@IdeaExchange:also...
+Sat Mar  2 18:30:46 1996:  imud_gossip: Descartes@IdeaExchange:need to manually #define the proper INCL in database_db.h
+Sat Mar  2 18:31:04 1996:  imud_gossip: Descartes@IdeaExchange:Beek forgot that edit_source -options runs after edit_source -configure
+Sat Mar  2 18:31:20 1996:  imud_gossip: Descartes@IdeaExchange:so the right INCL never gets defined
+Sat Mar  2 18:31:36 1996:  imud_gossip: Descartes@IdeaExchange:and finally, change two instances of const0n to const0 in database_db.c
+Sat Mar  2 18:31:52 1996:  imud_gossip: Descartes@IdeaExchange:that should do it
+Sat Mar  2 18:33:01 1996:  imud_gossip: Descartes@IdeaExchange:for the most part yes, I was more modeling on a simplistic dblib
+Sat Mar  2 18:33:31 1996:  imud_gossip: Descartes@IdeaExchange:it seems to be working cool... I have a very simple interactive sql system for NM
+Sat Mar  2 18:34:09 1996:  imud_gossip: Descartes@IdeaExchange:database permissions are still kinda tricky
+Sat Mar  2 18:34:35 1996:  imud_gossip: Descartes@IdeaExchange:I have no benchmarks, but I am damn certain any complex relations will be infinitely faster using msql
+Sat Mar  2 18:35:05 1996:  imud_gossip: Descartes@IdeaExchange:also huge mappings (like bug tracking systems) are much more efficiently stored in a database where they can be accessed on an as needed basis
+Sat Mar  2 18:35:29 1996:  imud_gossip: Descartes@IdeaExchange:well, for things like storing player data, you still wnat to use save_object()/restore_object()
+Sat Mar  2 18:35:53 1996:  imud_gossip: Descartes@IdeaExchange:you only want to use the database stuff for where you want to get complex data relations
+Sat Mar  2 18:36:16 1996:  imud_gossip: Descartes@IdeaExchange:for example, all the people who play your mud from winternet.com to check for doubles
+Sat Mar  2 18:38:53 1996:  imud_gossip: Descartes@IdeaExchange:oh yes, make sure you change the define to PACKAGE_DATABASE_DB and make database_db.c include database_db.h instead of db.h
+Sat Mar  2 18:39:31 1996:  imud_gossip: Descartes@IdeaExchange:ahh
+Sat Mar  2 18:39:35 1996:  imud_gossip: Descartes@IdeaExchange:that will work too :)
+Sat Mar  2 18:41:29 1996:  imud_gossip: Descartes@IdeaExchange:is here
+Sat Mar  2 18:43:54 1996:  imud_gossip: Descartes@IdeaExchange:no, there is a db server and efuns now
+Sat Mar  2 18:44:16 1996:  imud_gossip: Descartes@IdeaExchange:I wrote a database efun package to interface with the MSQL rdbms package
+Sat Mar  2 18:44:42 1996:  imud_gossip: Descartes@IdeaExchange:Beek integrated it in tighter with MudOS than I had done
+Sat Mar  2 18:45:02 1996:  imud_gossip: Descartes@IdeaExchange:but he made a couple of mistakes... which would be expected for the first try at full integration
+Sat Mar  2 18:45:28 1996:  imud_gossip: Descartes@IdeaExchange:especially since this package is the first mudos package to try to interface from build.MudOS with third party packages which may or may not exist
+Sat Mar  2 19:43:36 1996:  imud_gossip: Descartes@Nightmare:wrong line :)
+Sat Mar  2 21:39:41 1996:  imud_gossip: Descartes@IdeaExchange:drop it
+Sat Mar  2 23:08:33 1996:  imud_gossip: Descartes@Nightmare:that is not a proper path
+Sat Mar  2 23:08:39 1996:  imud_gossip: Descartes@Nightmare:it is not on ftp.imaginary.com
+Sat Mar  2 23:18:03 1996:  imud_gossip: Descartes@IdeaExchange:some interface thing
+Sat Mar  2 23:22:22 1996:  imud_gossip: Descartes@IdeaExchange:there was a change in mudos
+Sat Mar  2 23:24:21 1996:  imud_gossip: Descartes@IdeaExchange:no idea
+Sat Mar  2 23:26:15 1996:  imud_gossip: Descartes@IdeaExchange:yes
+Sat Mar  2 23:27:04 1996:  imud_gossip: Descartes@Nightmare:deal
+Sat Mar  2 23:31:39 1996:  imud_gossip: Descartes@IdeaExchange:specify what is meant
+Sat Mar  2 23:33:03 1996:  imud_gossip: Descartes@IdeaExchange:users.c... move() { return user::move(); }
+Sat Mar  2 23:34:32 1996:  imud_gossip: Descartes@IdeaExchange:override the function then call the one you want called
+Sat Mar  2 23:35:08 1996:  imud_gossip: Descartes@IdeaExchange:whatever, I have no idea what exactly you wsnt
+Sun Mar  3 11:23:36 1996:  imud_gossip: Descartes@IdeaExchange:why do you have an 'i player' command?
+Sun Mar  3 11:23:40 1996:  imud_gossip: Descartes@IdeaExchange:just use scan
+Sun Mar  3 11:24:20 1996:  imud_gossip: Descartes@IdeaExchange:you had to rewrite i to see the inventory of other people, and scan gives more info
+Sun Mar  3 11:27:01 1996:  imud_gossip: Descartes@IdeaExchange:I am just talking about on I3... Earth is the only TMI-2 derivative I did not count
+Sun Mar  3 11:30:06 1996:  imud_gossip: Descartes@IdeaExchange:tmi is not like anything available for mudos
+Sun Mar  3 11:30:12 1996:  imud_gossip: Descartes@IdeaExchange:so that is a bad comparison :)
+Sun Mar  3 11:31:46 1996:  imud_gossip: Descartes@IdeaExchange:that hardly makes it anything like Discworld :)
+Sun Mar  3 11:32:28 1996:  imud_gossip: Descartes@IdeaExchange:it is not like anything itself :)
+Sun Mar  3 11:32:43 1996:  imud_gossip: Descartes@IdeaExchange:actually, all of the MudOS ;libs are quite different
+Sun Mar  3 11:34:17 1996:  imud_gossip: Descartes@IdeaExchange:s/imaginative/twisted
+Sun Mar  3 11:35:37 1996:  imud_gossip: Descartes@IdeaExchange:run it on any 3.* driver now :)
+Sun Mar  3 11:37:38 1996:  imud_gossip: Descartes@IdeaExchange:the slower driver with fewer features? :)
+Sun Mar  3 11:38:50 1996:  imud_gossip: Descartes@IdeaExchange:DGD is so bare bones as to be nearly useless
+Sun Mar  3 11:39:04 1996:  imud_gossip: Descartes@IdeaExchange:unless you intend to do something commercial, then you have a hell of a lot of writing on your hands
+Sun Mar  3 12:00:33 1996:  imud_gossip: Descartes@IdeaExchange:anyone have any examples of the socket class in java?
+Sun Mar  3 12:02:58 1996:  imud_gossip: Descartes@IdeaExchange:I don't see any
+Sun Mar  3 12:13:33 1996:  imud_code: Descartes@IdeaExchange:writing a damn socket object bites with Java
+Sun Mar  3 12:19:43 1996:  imud_code: Descartes@IdeaExchange:type 'mudlist -m nightmare'
+Sun Mar  3 12:19:59 1996:  imud_code: Descartes@IdeaExchange:the obvious exits are in the long descs
+Sun Mar  3 12:20:21 1996:  imud_code: Descartes@IdeaExchange:there just are 0 examples of how to use the socket stuff
+Sun Mar  3 12:21:33 1996:  imud_code: Descartes@IdeaExchange:obvious exits are listed in the long descriptions
+Sun Mar  3 12:23:40 1996:  imud_code: Descartes@IdeaExchange:whatever :)
+Sun Mar  3 12:23:58 1996:  imud_code: Descartes@IdeaExchange:you all are absolutely right, I have no idea what I am talking about with respect to the code I wrote
+Sun Mar  3 12:26:21 1996:  imud_code: Descartes@IdeaExchange:Nightmare IVr2.3 does include obvious exits in the long description
+Sun Mar  3 12:27:15 1996:  imud_code: Descartes@IdeaExchange:no
+Sun Mar  3 12:27:23 1996:  imud_code: Descartes@IdeaExchange:should I repeat myself yet again?
+Sun Mar  3 12:27:31 1996:  imud_code: Descartes@IdeaExchange:Nightmare IVr2.3 does include obvious exits in the long description
+Sun Mar  3 12:28:09 1996:  imud_code: Descartes@IdeaExchange:you need to specify which exits are obvious
+Sun Mar  3 12:28:43 1996:  imud_code: Descartes@IdeaExchange:is SetObviousExits() not obvious enough to you? or did I write the documentation in a foreign language?
+Sun Mar  3 12:30:06 1996:  imud_code: Descartes@IdeaExchange:what the fuck else do you expect SetObviousExits() to mean?  make the exits obvious just sometimes?
+Sun Mar  3 12:30:58 1996:  imud_code: Descartes@IdeaExchange:the standard puts it in the long and the short
+Sun Mar  3 12:31:36 1996:  imud_code: Descartes@IdeaExchange:yes, I am on NM
+Sun Mar  3 12:31:58 1996:  imud_code: Descartes@IdeaExchange:who said it did anything like NM3?
+Sun Mar  3 12:32:55 1996:  imud_code: Descartes@IdeaExchange:I'll be damned if you people don't have the narrowest fucking minds on earth
+Sun Mar  3 12:33:27 1996:  imud_code: Descartes@IdeaExchange:SetObviousExitsJustLikeTheyWereOnSomeOtherMudlibANDiFtHEYdOnOTaPPEARtHISwAYtHENtHEYaREnOToBVIOUSeXITS()
+Sun Mar  3 12:34:51 1996:  imud_code: Descartes@IdeaExchange:piss off Spadex and go use tmi-2
+Sun Mar  3 12:35:52 1996:  imud_code: Descartes@IdeaExchange:suits me fine
+Sun Mar  3 12:36:04 1996:  imud_code: Descartes@IdeaExchange:less inane crap per day being asked of me the better
+Sun Mar  3 12:37:14 1996:  imud_code: Descartes@IdeaExchange:the bottom line is don't fucking insult the documentation unless you have put at least 5 minutes of thought into the criticism
+Sun Mar  3 12:37:44 1996:  imud_code: Descartes@IdeaExchange:and if you can explain how SetObviousExits() can possibly mean not setting the obvious exits, I will apologize profusely
+Sun Mar  3 12:44:00 1996:  imud_gossip: Descartes@Nightmare:don't try suicide
+Sun Mar  3 14:21:37 1996:  imud_code: Descartes@IdeaExchange:Selene that was a damn nsane thing to do
+Sun Mar  3 14:25:23 1996:  imud_gossip: Descartes@IdeaExchange:gillette tortures animals!
+Mon Mar  4 21:23:39 1996:  imud_code: Descartes@IdeaExchange:does anyone know the ascii values of the characters the server sends on connect using the telnet protocol?
+Mon Mar  4 21:24:50 1996:  imud_gossip: Descartes@IdeaExchange:can anyone hear me?
+Mon Mar  4 21:27:19 1996:  imud_code: Descartes@IdeaExchange:right
+Mon Mar  4 21:34:09 1996:  imud_gossip: Descartes@IdeaExchange:code the monster right
+Tue Mar  5 09:49:31 1996:  imud_code: Descartes@IdeaExchange:you coded them wrng?
+Tue Mar  5 09:50:57 1996:  imud_code: Descartes@IdeaExchange:code them right
+Tue Mar  5 09:59:44 1996:  imud_code: Descartes@IdeaExchange:you don't have to do a damn thing
+Tue Mar  5 10:00:00 1996:  imud_code: Descartes@IdeaExchange:they die in the normal course of combat when you do sufficient damage to them
+Tue Mar  5 10:01:10 1996:  imud_code: Descartes@IdeaExchange:you only win if you damage them enough
+Tue Mar  5 10:01:16 1996:  imud_code: Descartes@IdeaExchange:if they damage you enough, you die
+Tue Mar  5 10:52:58 1996:  imud_code: Descartes@IdeaExchange:not on this line
+Tue Mar  5 10:53:24 1996:  imud_gossip: Descartes@IdeaExchange:leto wake up!!! 
+Tue Mar  5 10:54:02 1996:  imud_gossip: Descartes@IdeaExchange:look at this window
+Tue Mar  5 19:04:13 1996:  imud_code: Descartes@IdeaExchange:anyone have any idea how to construct an image in Java?
+Tue Mar  5 19:29:23 1996:  imud_code: Descartes@IdeaExchange:anyone know where some good java docs are?  Not that crap on the sun h0me page
+Tue Mar  5 19:54:57 1996:  imud_gossip: Descartes@IdeaExchange:you probably read them
+Tue Mar  5 19:55:11 1996:  imud_gossip: Descartes@IdeaExchange:I never did more than one draft
+Tue Mar  5 19:55:35 1996:  imud_gossip: Descartes@IdeaExchange:old ones are as good as new ones with only one version existing
+Tue Mar  5 19:55:55 1996:  imud_gossip: Descartes@IdeaExchange:I just want a quesiton answered
+Tue Mar  5 19:55:57 1996:  imud_gossip: Descartes@IdeaExchange:hi
+Tue Mar  5 19:56:39 1996:  imud_gossip: Descartes@IdeaExchange:there is only ONE set of LPC documentation, I never wrote a second
+Tue Mar  5 19:56:45 1996:  imud_gossip: Descartes@IdeaExchange:I want an answer NOW :)
+Tue Mar  5 19:57:30 1996:  imud_gossip: Descartes@IdeaExchange:they are worded for newbie coders
+Tue Mar  5 19:57:40 1996:  imud_gossip: Descartes@IdeaExchange:and anyone modifying the wording is in violation of my copyright
+Tue Mar  5 19:58:00 1996:  imud_gossip: Descartes@IdeaExchange:I want to know how to create an image object when I have no instance of an applet object lying around
+Tue Mar  5 20:00:59 1996:  imud_gossip: Descartes@IdeaExchange:would you rather Hitler?
+Tue Mar  5 20:03:58 1996:  imud_gossip: Descartes@IdeaExchange:given a URL, how do I instantiate an Image object in Java without access to an applet object instance
+Tue Mar  5 20:04:20 1996:  imud_gossip: Descartes@IdeaExchange:the normal way is applet_instance.getImage(url)
+Tue Mar  5 20:04:38 1996:  imud_gossip: Descartes@IdeaExchange:I have no applet instance in scope
+Tue Mar  5 20:04:48 1996:  imud_gossip: Descartes@IdeaExchange:those sun docs say to do the wrong thing
+Tue Mar  5 20:05:10 1996:  imud_gossip: Descartes@IdeaExchange:they say do Toolkit.getDefaultToolkit().getImage(url)
+Tue Mar  5 20:05:22 1996:  imud_gossip: Descartes@IdeaExchange:unfortunately, there is no getImage() method in the toolkit class
+Tue Mar  5 20:05:36 1996:  imud_gossip: Descartes@IdeaExchange:it has nothing to do with what browser you have
+Tue Mar  5 20:06:32 1996:  imud_gossip: Descartes@IdeaExchange:no shjit DK?
+Tue Mar  5 20:13:06 1996:  imud_gossip: Descartes@IdeaExchange:that's why I want the answer to my java question :)
+Tue Mar  5 20:33:51 1996:  imud_gossip: Descartes@Nightmare:#define NO_WIZARDS in options.h
+Tue Mar  5 20:34:16 1996:  imud_gossip: Descartes@Nightmare:try using your old options.h
+Tue Mar  5 20:37:23 1996:  imud_gossip: Descartes@Nightmare:not only are they lame enough to use it, even lamer to overide it
+Tue Mar  5 20:37:41 1996:  imud_gossip: Descartes@Nightmare:think no wizards rulz
+Tue Mar  5 20:38:18 1996:  imud_gossip: Descartes@Nightmare:because tmi-2 is lame
+Tue Mar  5 20:39:13 1996:  imud_gossip: Descartes@Nightmare:any time you can avoid a call to quer() is a plus
+Tue Mar  5 20:45:22 1996:  imud_gossip: Descartes@Nightmare:exit means nothing
+Tue Mar  5 20:45:34 1996:  imud_gossip: Descartes@Nightmare:you are not supposed to willy-nilly add commands with the nm mudlib
+Tue Mar  5 20:46:04 1996:  imud_gossip: Descartes@Nightmare:go exit is not valid, go out is the closest
+Tue Mar  5 20:47:12 1996:  imud_gossip: Descartes@Nightmare:no you cannot do that
+Tue Mar  5 20:47:20 1996:  imud_gossip: Descartes@Nightmare:not without breaking the command structure
+Tue Mar  5 20:47:32 1996:  imud_gossip: Descartes@Nightmare:in other words you *can* do that but your are not *supposed* to do that
+Tue Mar  5 22:34:48 1996:  imud_gossip: Descartes@Nightmare:Java java java
+Tue Mar  5 22:40:40 1996:  imud_code: Descartes@Nightmare:don't add actions
+Tue Mar  5 22:40:50 1996:  imud_code: Descartes@Nightmare:don't use reset
+Tue Mar  5 22:41:20 1996:  imud_code: Descartes@Nightmare:add_action() is absolutely forbidden in the NM lib
+Tue Mar  5 22:42:41 1996:  imud_code: Descartes@Nightmare:you can code it
+Tue Mar  5 22:42:57 1996:  imud_code: Descartes@Nightmare:you just don't add the action, players already have the action
+Tue Mar  5 22:43:25 1996:  imud_code: Descartes@Nightmare:you are using an alpha mudlib, that is not documented
+Tue Mar  5 22:44:43 1996:  imud_code: Descartes@Nightmare:encre
+Tue Mar  5 22:45:53 1996:  imud_code: Descartes@Nightmare:what is worded strangely?
+Tue Mar  5 22:46:36 1996:  imud_code: Descartes@Nightmare:reboot the mud
+Tue Mar  5 23:11:57 1996:  imud_gossip: Descartes@Nightmare:die die die
+Wed Mar  6 09:45:09 1996:  imud_code: Descartes@IdeaExchange:try looking at the inherit list
+Wed Mar  6 09:45:26 1996:  imud_code: Descartes@IdeaExchange:probably not though
+Wed Mar  6 10:09:51 1996:  imud_code: Descartes@Nightmare:there is no such thing as v22
+Wed Mar  6 10:10:09 1996:  imud_code: Descartes@Nightmare:and all MudOS releases are at ftp.imaginary.com or they do not exist
+Wed Mar  6 10:10:39 1996:  imud_code: Descartes@Nightmare:figured he could not possibly mean that since it is on the ftp site :)
+Wed Mar  6 10:12:54 1996:  imud_code: Descartes@Nightmare:there is no such thing as v22
+Wed Mar  6 10:13:14 1996:  imud_code: Descartes@Nightmare:no such thing as v2.2 either
+Wed Mar  6 10:14:14 1996:  imud_code: Descartes@Nightmare:that source is not reliable
+Wed Mar  6 10:14:22 1996:  imud_code: Descartes@Nightmare:v21.6 is fine
+Wed Mar  6 10:14:36 1996:  imud_code: Descartes@Nightmare:I never said that
+Wed Mar  6 10:14:44 1996:  imud_code: Descartes@Nightmare:I NEVER suggest v22 to anyone
+Wed Mar  6 10:14:54 1996:  imud_code: Descartes@Nightmare:Beek never said that, I doubt he recommends the v22 alphas to anyone
+Wed Mar  6 10:15:08 1996:  imud_code: Descartes@Nightmare:v21.4 is the earliest
+Wed Mar  6 10:18:17 1996:  imud_code: Descartes@Nightmare:if you don't know, you have not read your docs or used our mud at all
+Wed Mar  6 10:19:08 1996:  imud_code: Descartes@Nightmare:or you are using NM 3 and don't use the parser :)
+Wed Mar  6 10:19:14 1996:  imud_code: Descartes@Nightmare:I would never in a million years have recommended any NM 3 mud to use v22a*
+Wed Mar  6 10:19:26 1996:  imud_code: Descartes@Nightmare:NEVER use alphas on a production mud
+Wed Mar  6 10:19:46 1996:  imud_code: Descartes@Nightmare:of course, there are exceptions :)
+Wed Mar  6 10:40:04 1996:  imud_gossip: Descartes@IdeaExchange:because I am tired of answering questions I put in the directions
+Wed Mar  6 10:40:12 1996:  imud_gossip: Descartes@IdeaExchange:flux, that is bullshit
+Wed Mar  6 10:41:50 1996:  imud_gossip: Descartes@IdeaExchange:I don't know at this point whether I should waste my time
+Wed Mar  6 10:42:07 1996:  imud_gossip: Descartes@IdeaExchange:I have gotten 2 responses saying they might come to my last query
+Wed Mar  6 10:42:37 1996:  imud_gossip: Descartes@IdeaExchange:and Flux: Nightmare suffers from a lack of documentation
+Wed Mar  6 10:42:49 1996:  imud_gossip: Descartes@IdeaExchange:it does not suffer from quality of documentation that exists
+Wed Mar  6 10:43:31 1996:  imud_gossip: Descartes@IdeaExchange:and what was I complaining about?
+Wed Mar  6 10:43:39 1996:  imud_gossip: Descartes@IdeaExchange:I was complaining about people who did not read directions
+Wed Mar  6 10:43:51 1996:  imud_gossip: Descartes@IdeaExchange:that implies the documentation for the problem in question exists
+Wed Mar  6 10:44:19 1996:  imud_gossip: Descartes@IdeaExchange:for example, people getting started missing the doc that says Start
+Wed Mar  6 10:45:52 1996:  imud_gossip: Descartes@IdeaExchange:I have seen that happen a lot
+Wed Mar  6 10:46:04 1996:  imud_gossip: Descartes@IdeaExchange:and people asking for the mudlib without docs because the docs take up so much space
+Wed Mar  6 10:47:04 1996:  imud_gossip: Descartes@IdeaExchange:trying to write LPMud 2.4.5 rooms
+Wed Mar  6 10:48:08 1996:  imud_gossip: Descartes@IdeaExchange:I want it to
+Wed Mar  6 10:48:14 1996:  imud_gossip: Descartes@IdeaExchange:and I plan on it
+Wed Mar  6 10:48:35 1996:  imud_gossip: Descartes@IdeaExchange:I just do not like everyone's attitude 'You make it work and tell us what it is'
+Wed Mar  6 10:49:35 1996:  imud_gossip: Descartes@IdeaExchange:basically
+Wed Mar  6 10:50:05 1996:  imud_gossip: Descartes@IdeaExchange:determine what you want to see happen
+Wed Mar  6 10:50:15 1996:  imud_gossip: Descartes@IdeaExchange:come up with a thing to do and sponsor it
+Wed Mar  6 10:50:23 1996:  imud_gossip: Descartes@IdeaExchange:I can find the utilities and do all the leg work
+Wed Mar  6 10:52:22 1996:  imud_gossip: Descartes@IdeaExchange:Minneapolis, MN
+Wed Mar  6 10:53:22 1996:  imud_gossip: Descartes@IdeaExchange:the point is to get together and learn something
+Wed Mar  6 10:55:23 1996:  imud_gossip: Descartes@IdeaExchange:help me come up with an agenda... I am proposing that the theme be the affect of local laws on international muds
+Wed Mar  6 10:58:56 1996:  imud_gossip: Descartes@IdeaExchange:presentations on topics of interest
+Wed Mar  6 10:59:14 1996:  imud_gossip: Descartes@IdeaExchange:'How to migrate your NM 3 mud to intermud'
+Wed Mar  6 11:03:43 1996:  imud_gossip: Descartes@IdeaExchange:I don;t want suggestions on topics, I want people saying they are going to present topics
+Wed Mar  6 11:04:43 1996:  imud_gossip: Descartes@IdeaExchange:right now I have a lot of people saying they will present papers if I give them a topic
+Wed Mar  6 11:06:48 1996:  imud_gossip: Descartes@IdeaExchange:like I said, migrating NM 3 libs to intermud 3 is something you kow about
+Wed Mar  6 11:07:26 1996:  imud_gossip: Descartes@IdeaExchange:cool :) mail me a proposal so I have it on record :)
+Wed Mar  6 11:08:26 1996:  imud_gossip: Descartes@IdeaExchange:it would not be a topic of interest to most people on *this* line
+Wed Mar  6 11:08:32 1996:  imud_gossip: Descartes@IdeaExchange:they are already here
+Wed Mar  6 11:08:57 1996:  imud_gossip: Descartes@IdeaExchange:better yet... it should be part of a larger presentation on intermud 3
+Wed Mar  6 11:09:05 1996:  imud_gossip: Descartes@IdeaExchange:that you do in coordnation with someone else
+Wed Mar  6 11:09:59 1996:  imud_gossip: Descartes@IdeaExchange:but you can do the part on moving NM3 muds
+Wed Mar  6 18:36:16 1996:  imud_gossip: Descartes@IdeaExchange:on NM it is realy easy, just read the document on making doors
+Wed Mar  6 18:38:09 1996:  imud_gossip: Descartes@IdeaExchange:no, I am not telling you to do that
+Wed Mar  6 18:38:17 1996:  imud_gossip: Descartes@IdeaExchange:you create two rooms and you create a door
+Wed Mar  6 18:39:23 1996:  imud_gossip: Descartes@IdeaExchange:linking what?
+Wed Mar  6 18:40:38 1996:  imud_gossip: Descartes@IdeaExchange:don't use the create command
+Wed Mar  6 18:40:44 1996:  imud_gossip: Descartes@IdeaExchange:use good old ed
+Wed Mar  6 18:42:08 1996:  imud_gossip: Descartes@IdeaExchange:Darkman, he is not using your mudlib
+Wed Mar  6 18:43:35 1996:  imud_gossip: Descartes@IdeaExchange:yes the doc has an example
+Wed Mar  6 18:43:49 1996:  imud_gossip: Descartes@IdeaExchange:the downside is if he gets too fancy, some of the more esoteric pieces are changing in IVr4
+Wed Mar  6 18:43:55 1996:  imud_gossip: Descartes@IdeaExchange:2.4
+Wed Mar  6 18:44:55 1996:  imud_gossip: Descartes@IdeaExchange:http://www.imaginary.com/LPC/Nightmare/Creators/Doors
+Wed Mar  6 18:56:00 1996:  imud_code: Descartes@IdeaExchange:call cheesebrain->SetSkill("whatever", level, class)
+Wed Mar  6 18:57:59 1996:  imud_gossip: Descartes@IdeaExchange:only 7 other muds use tmi-2, and you are the only one using your release on this line :)
+Wed Mar  6 18:58:31 1996:  imud_gossip: Descartes@IdeaExchange:1.2
+Wed Mar  6 19:00:46 1996:  imud_gossip: Descartes@IdeaExchange:call player->func(args)
+Wed Mar  6 19:02:04 1996:  imud_gossip: Descartes@IdeaExchange:what I told you they were hte first time aorund :)
+Wed Mar  6 19:02:14 1996:  imud_gossip: Descartes@IdeaExchange:skill name, skill level to set to, class to set to
+Wed Mar  6 19:12:29 1996:  imud_gossip: Descartes@IdeaExchange:class 12 is nonsensical
+Wed Mar  6 19:13:28 1996:  imud_gossip: Descartes@IdeaExchange:classes are 1 -5
+Wed Mar  6 21:44:43 1996:  imud_gossip: Descartes@Nightmare:woo woo, got it so you can get to nightmare through the web now :)
+Wed Mar  6 21:55:12 1996:  imud_gossip: Descartes@IdeaExchange:you know it is a bad day when you mean to type 'kill -9 4218' and you type kill -9 '4228' and 4228 is your shell process
+Thu Mar  7 14:45:13 1996:  imud_gossip: Descartes@IdeaExchange:answering stupid questions
+Thu Mar  7 14:47:36 1996:  imud_gossip: Descartes@IdeaExchange:asking a bunch of coders is not the way to get that info
+Thu Mar  7 14:48:08 1996:  imud_gossip: Descartes@IdeaExchange:I did not say you wer e not
+Thu Mar  7 14:48:18 1996:  imud_gossip: Descartes@IdeaExchange:my point is that players are the best ones to ask that question
+Thu Mar  7 14:49:20 1996:  imud_gossip: Descartes@IdeaExchange:well, if you are on this line, chances are Jester can't give you what you don;t already have
+Thu Mar  7 14:50:23 1996:  imud_gossip: Descartes@IdeaExchange:so we are back to my point, you need to ask players, not coders
+Thu Mar  7 14:51:17 1996:  imud_gossip: Descartes@IdeaExchange:and these people are evidently trying to do on their own muds what they think muds are missing... to get at what is truly missing on muds, you need to ask people currently involved with playing the game
+Thu Mar  7 14:52:23 1996:  imud_gossip: Descartes@IdeaExchange:piss off Zharradan
+Thu Mar  7 14:52:37 1996:  imud_gossip: Descartes@IdeaExchange:a survey of the wrong people is not casual conversation
+Thu Mar  7 14:53:44 1996:  imud_gossip: Descartes@IdeaExchange:why is it I can't point out the fucking obvious without gettin shit from dorks like Zharradan and Nightengale?
+Thu Mar  7 14:55:00 1996:  imud_gossip: Descartes@IdeaExchange:who is doing that?
+Thu Mar  7 17:56:25 1996:  imud_gossip: Descartes@IdeaExchange:to make my life miserable
+Thu Mar  7 17:58:28 1996:  imud_gossip: Descartes@IdeaExchange:you are from one of them germanic countries
+Thu Mar  7 17:59:48 1996:  imud_gossip: Descartes@IdeaExchange:America, America ueber alles
+Thu Mar  7 18:00:18 1996:  imud_gossip: Descartes@IdeaExchange:dutch people are germanic
+Thu Mar  7 18:01:02 1996:  imud_gossip: Descartes@IdeaExchange:then it is not like calling an american canadian or mexican
+Thu Mar  7 18:01:15 1996:  imud_gossip: Descartes@IdeaExchange:cause americans are not canadian or mexican
+Thu Mar  7 18:01:35 1996:  imud_gossip: Descartes@IdeaExchange:they are not germanic either
+Thu Mar  7 18:01:39 1996:  imud_gossip: Descartes@IdeaExchange:I am Celtic
+Thu Mar  7 18:01:51 1996:  imud_gossip: Descartes@IdeaExchange:many are african in descent
+Thu Mar  7 18:02:23 1996:  imud_gossip: Descartes@IdeaExchange:many are also italian and oriental
+Thu Mar  7 18:02:31 1996:  imud_gossip: Descartes@IdeaExchange:the USA has no ethnicity
+Thu Mar  7 18:03:13 1996:  imud_gossip: Descartes@IdeaExchange:err, right miss dutchie
+Thu Mar  7 18:05:12 1996:  imud_gossip: Descartes@IdeaExchange:so like, I start hotjava from the sun cd-rom... and the thing gpf's immediately
+Thu Mar  7 18:05:48 1996:  imud_gossip: Descartes@IdeaExchange:general protection fault
+Thu Mar  7 18:10:15 1996:  imud_gossip: Descartes@IdeaExchange:hmmm... javadoc is cool
+Thu Mar  7 18:13:26 1996:  imud_gossip: Descartes@IdeaExchange:Monique, you are invisible
+Thu Mar  7 20:06:10 1996:  imud_code: Descartes@IdeaExchange:inherit LIB_SENTIENT
+Thu Mar  7 20:07:04 1996:  imud_code: Descartes@IdeaExchange:probably because you are calling npc::create();
+Thu Mar  7 20:08:11 1996:  imud_code: Descartes@IdeaExchange:you are inheriting a different object, therefore you need to refer to the object you inherited
+Thu Mar  7 20:08:17 1996:  imud_code: Descartes@IdeaExchange:sentient::create();
+Thu Mar  7 20:18:24 1996:  imud_code: Descartes@IdeaExchange:sentient inherits npc
+Thu Mar  7 20:18:36 1996:  imud_code: Descartes@IdeaExchange:you only therefore should inherit sentient
+Thu Mar  7 20:21:51 1996:  imud_code: Descartes@IdeaExchange:like from an errors?
+Thu Mar  7 20:22:05 1996:  imud_code: Descartes@IdeaExchange:I mean, what sort of trace are you wanting?
+Thu Mar  7 20:23:23 1996:  imud_code: Descartes@IdeaExchange:previous_object(-1) is always a quick hack
+Thu Mar  7 20:23:33 1996:  imud_code: Descartes@IdeaExchange:you should check your error log first
+Fri Mar  8 10:01:53 1996:  imud_gossip: Descartes@IdeaExchange:the LPMud timeline
+Fri Mar  8 22:40:53 1996:  imud_gossip: Descartes@IdeaExchange:Namesi you should not be formatting output
+Fri Mar  8 23:21:27 1996:  imud_gossip: Descartes@IdeaExchange:you don't work around alpha bugs
+Fri Mar  8 23:21:35 1996:  imud_gossip: Descartes@IdeaExchange:you wait for a proper fix
+Fri Mar  8 23:21:53 1996:  imud_gossip: Descartes@IdeaExchange:most all bugs in NM IVr2.3 are related to the driver parsing syste,
+Fri Mar  8 23:22:12 1996:  imud_gossip: Descartes@IdeaExchange:whatever floats your boat
+Fri Mar  8 23:24:00 1996:  imud_gossip: Descartes@IdeaExchange:going net dead for a minute
+Fri Mar  8 23:31:00 1996:  imud_gossip: Descartes@IdeaExchange:that did not work
+Fri Mar  8 23:31:16 1996:  imud_gossip: Descartes@IdeaExchange:part 1 did not work
+Fri Mar  8 23:31:28 1996:  imud_gossip: Descartes@IdeaExchange:ftp.imaginary.com
+Fri Mar  8 23:42:46 1996:  imud_gossip: Descartes@IdeaExchange:all versions of mudos are at ftp.imaginary.com
+Fri Mar  8 23:42:54 1996:  imud_gossip: Descartes@IdeaExchange:that is the mudos release site
+Sat Mar  9 10:54:58 1996:  imud_gossip: Descartes@IdeaExchange:if they are not dying, then an error is generated, and it will tell you why in the error logs
+Sat Mar  9 10:55:28 1996:  imud_gossip: Descartes@IdeaExchange:slow_shutdown() is called
+Sat Mar  9 11:23:31 1996:  imud_gossip: Descartes@IdeaExchange:it would be logged to an error log matching the error causing the not dying
+Sat Mar  9 11:23:55 1996:  imud_gossip: Descartes@IdeaExchange:there are three types of error, runtime, compile time, and caught
+Sat Mar  9 11:24:01 1996:  imud_gossip: Descartes@IdeaExchange:runtime go to /log/runtime
+Sat Mar  9 11:24:11 1996:  imud_gossip: Descartes@IdeaExchange:catch /log/catch
+Sat Mar  9 11:24:27 1996:  imud_gossip: Descartes@IdeaExchange:and compile time to log files for the individual creators or system dirs
+Sat Mar  9 11:25:33 1996:  imud_code: Descartes@IdeaExchange:define don;t die
+Sat Mar  9 11:26:25 1996:  imud_code: Descartes@IdeaExchange:that makes no sense Leto :)
+Sat Mar  9 11:26:38 1996:  imud_code: Descartes@IdeaExchange:what does it mean that it does not die?
+Sat Mar  9 11:27:16 1996:  imud_code: Descartes@IdeaExchange:Leto, leave it alone, you have no idea what he means, and if you are right, it is just an accident
+Sat Mar  9 11:27:36 1996:  imud_code: Descartes@IdeaExchange:I am asking specifically how is it not dying
+Sat Mar  9 11:28:54 1996:  imud_code: Descartes@IdeaExchange:you cannot use a term in its definition
+Sat Mar  9 11:29:08 1996:  imud_code: Descartes@IdeaExchange:when I ask you how it does not die, you cannot say it does not die
+Sat Mar  9 11:29:20 1996:  imud_code: Descartes@IdeaExchange:what is it not doing
+Sat Mar  9 11:29:40 1996:  imud_code: Descartes@IdeaExchange:and don;t use the word die or any synonym thereof
+Sat Mar  9 11:30:01 1996:  imud_code: Descartes@IdeaExchange:are you sure it is not calling eventDie()?
+Sat Mar  9 11:32:01 1996:  imud_code: Descartes@IdeaExchange:and this happens across the board?
+Sat Mar  9 11:32:41 1996:  imud_code: Descartes@IdeaExchange:then you must have made some change to body.c which prevents it from dying
+Sat Mar  9 11:33:44 1996:  imud_code: Descartes@IdeaExchange:depends on the change you made
+Sat Mar  9 11:34:32 1996:  imud_code: Descartes@IdeaExchange:then you are almost certainly not reading the error logs right
+Sat Mar  9 11:35:22 1996:  imud_code: Descartes@IdeaExchange:no, but I can tell you what you are looking for
+Sat Mar  9 11:35:48 1996:  imud_code: Descartes@IdeaExchange:grep kills /log/runtime
+Sat Mar  9 11:36:38 1996:  imud_code: Descartes@IdeaExchange:ok search the catch log
+Sat Mar  9 11:37:39 1996:  imud_code: Descartes@IdeaExchange:that's right
+Sat Mar  9 11:37:49 1996:  imud_code: Descartes@IdeaExchange:and the trace mentions eventDie()
+Sat Mar  9 11:37:59 1996:  imud_code: Descartes@IdeaExchange:so you did two things wrong here...
+Sat Mar  9 11:38:13 1996:  imud_code: Descartes@IdeaExchange:#1 you relied on a call to represent real happenings
+Sat Mar  9 11:38:29 1996:  imud_code: Descartes@IdeaExchange:you need to put debug lines in code and see what is really happening and not rely on call
+Sat Mar  9 11:38:41 1996:  imud_code: Descartes@IdeaExchange:because eventDie() takes 1 or 0 arguments
+Sat Mar  9 11:38:55 1996:  imud_code: Descartes@IdeaExchange:calling it with no args will work, with 1 arg is not working
+Sat Mar  9 11:39:05 1996:  imud_code: Descartes@IdeaExchange:second thing is you did not read yourt catch log right
+Sat Mar  9 11:39:31 1996:  imud_code: Descartes@IdeaExchange:now, to fix that, just make the right sub-dirs of /save/kills
+Sat Mar  9 11:44:13 1996:  imud_code: Descartes@IdeaExchange:right now you need to do it manually, like I just told you to do :)
+Sat Mar  9 11:45:07 1996:  imud_gossip: Descartes@IdeaExchange:or do it from the mud
+Sat Mar  9 11:45:13 1996:  imud_gossip: Descartes@IdeaExchange:you have mkdir on the mud :)
+Sat Mar  9 11:45:29 1996:  imud_gossip: Descartes@IdeaExchange:hmm, not with multuple args thogh :)
+Sat Mar  9 13:12:07 1996:  imud_code: Descartes@IdeaExchange:it does not matter
+Sat Mar  9 13:12:21 1996:  imud_code: Descartes@IdeaExchange:unless you have exiting properties already set
+Sat Mar  9 13:12:31 1996:  imud_code: Descartes@IdeaExchange:SetProperties() wipes out any existing properties
+Sat Mar  9 13:15:36 1996:  imud_code: Descartes@IdeaExchange:what would an exiting property be?
+Sat Mar  9 13:16:31 1996:  imud_code: Descartes@IdeaExchange:might as well have asked me if I meant exementing property
+Sat Mar  9 13:16:49 1996:  imud_code: Descartes@IdeaExchange:I said wipes out existinng properties
+Sat Mar  9 13:18:39 1996:  imud_code: Descartes@IdeaExchange:kill pid
+Sat Mar  9 13:19:03 1996:  imud_code: Descartes@IdeaExchange:Zharradan, this is the code channel, try to keep your useless blather on intergossip
+Sat Mar  9 13:19:28 1996:  imud_code: Descartes@IdeaExchange:you either need to be logged into the same machine or on the mud
+Sat Mar  9 13:19:40 1996:  imud_code: Descartes@IdeaExchange:otherwise you have a security problem :)
+Sat Mar  9 13:21:16 1996:  imud_code: Descartes@IdeaExchange:root should give you access to the machine
+Sat Mar  9 13:21:56 1996:  imud_code: Descartes@IdeaExchange:then why don;t you have access to your account?
+Sat Mar  9 13:22:26 1996:  imud_code: Descartes@IdeaExchange:is Eterna Server an LPC processing server? or a different vriant?
+Sat Mar  9 13:23:19 1996:  imud_code: Descartes@IdeaExchange:well, welcome to I3 :)
+Sat Mar  9 13:23:37 1996:  imud_code: Descartes@IdeaExchange:you can write scripts to do whatever bizarre things you like
+Sat Mar  9 13:24:05 1996:  imud_code: Descartes@IdeaExchange:it would be a tricky one though
+Sat Mar  9 13:33:30 1996:  imud_code: Descartes@IdeaExchange:where do you see whitespace?
+Sat Mar  9 13:33:36 1996:  imud_code: Descartes@IdeaExchange:"" is no chars
+Sat Mar  9 13:34:14 1996:  imud_code: Descartes@IdeaExchange:just use the rteurn value from GetObviousExits()
+Sat Mar  9 13:34:30 1996:  imud_code: Descartes@IdeaExchange:the whitespace comes from the line that outputs the obvious exits
+Sat Mar  9 17:34:48 1996:  imud_code: Descartes@IdeaExchange:it defaults to mud port -10
+Sat Mar  9 17:35:01 1996:  imud_gossip: Descartes@IdeaExchange:children by the millions scream for alex chilton
+Sat Mar  9 18:06:38 1996:  imud_code: Descartes@IdeaExchange:in Java, can you override a public method so that it is private?
+Sat Mar  9 18:10:49 1996:  imud_code: Descartes@IdeaExchange:I think args and name are the signature, I need to check I guess
+Sat Mar  9 18:13:20 1996:  imud_gossip: Descartes@IdeaExchange:private GI Joe() thows aTantrum {
+Sat Mar  9 18:23:05 1996:  imud_gossip: Descartes@IdeaExchange:I did :)
+Sat Mar  9 18:55:55 1996:  imud_gossip: Descartes@IdeaExchange:that is proper
+Sat Mar  9 18:56:21 1996:  imud_code: Descartes@IdeaExchange:you are adding two mappings, not adding their elements
+Sat Mar  9 18:56:51 1996:  imud_code: Descartes@IdeaExchange:no
+Sat Mar  9 18:57:17 1996:  imud_code: Descartes@IdeaExchange:leto's answer would create ([ ([ "test" : 3 ]), ([ "test" : 9 ]) ])
+Sat Mar  9 18:57:45 1996:  imud_code: Descartes@IdeaExchange:you need a["test"] += b["test"]
+Sat Mar  9 18:59:56 1996:  imud_code: Descartes@IdeaExchange:yes, just because Leto was being short, not because he was really wrong
+Sat Mar  9 19:00:22 1996:  imud_code: Descartes@IdeaExchange:Cire, you mean it is kind of a pain to have a mapping be a mapping? :)
+Sat Mar  9 20:18:46 1996:  imud_gossip: Descartes@IdeaExchange:thanks for that local conversation
+Sat Mar  9 20:31:13 1996:  imud_gossip: Descartes@IdeaExchange:the bottom line is that they were on the SAME mud
+Sat Mar  9 20:32:28 1996:  imud_code: Descartes@IdeaExchange:you don't
+Sat Mar  9 20:35:37 1996:  imud_gossip: Descartes@IdeaExchange:well, those would be stupid admins
+Sat Mar  9 20:35:49 1996:  imud_gossip: Descartes@IdeaExchange:or ones administering a 56k link network
+Sat Mar  9 20:36:55 1996:  imud_gossip: Descartes@IdeaExchange:also i laugh at people who call anything a waste of bandwidth
+Sat Mar  9 20:37:01 1996:  imud_gossip: Descartes@IdeaExchange:using bandwidth is not wasting it
+Sat Mar  9 20:44:54 1996:  imud_code: Descartes@IdeaExchange:I do, but I am too busy to go make it available right now
+Sat Mar  9 20:45:04 1996:  imud_code: Descartes@IdeaExchange:besides, coding up something is not that hard
+Sat Mar  9 20:45:22 1996:  imud_code: Descartes@IdeaExchange:just print out the fields in author_stats() and domain_stats()
+Sat Mar  9 20:54:57 1996:  imud_code: Descartes@IdeaExchange:you mean like author stats and domain stats?
+Sat Mar  9 20:55:51 1996:  imud_code: Descartes@Nightmare:I am Descartes :)
+Sat Mar  9 20:56:03 1996:  imud_code: Descartes@Nightmare:the great one died 300 years ago
+Sat Mar  9 20:56:59 1996:  imud_code: Descartes@Nightmare:thank you :) i know some might not agree
+Sat Mar  9 20:58:30 1996:  imud_code: Descartes@IdeaExchange:thank you :)
+Sat Mar  9 21:01:27 1996:  imud_code: Descartes@IdeaExchange:Hanzou, those fiels are not meant to be edited by hand
+Sat Mar  9 21:02:31 1996:  imud_gossip: Descartes@Nightmare:how?
+Sat Mar  9 21:05:54 1996:  imud_code: Descartes@IdeaExchange:author_stats() and domain_stats() have very little with the old wizlist stuff
+Sat Mar  9 21:38:28 1996:  imud_code: Descartes@IdeaExchange:no
+Sat Mar  9 22:27:22 1996:  imud_code: Descartes@IdeaExchange:like Rassilon said, you determine it in master.c to answer your original question
+Sat Mar  9 22:29:33 1996:  imud_code: Descartes@IdeaExchange:your original question was how you prevent things from loading in ./tmp
+Sat Mar  9 22:31:02 1996:  imud_code: Descartes@IdeaExchange:I guess the answer there would be 'Who gives a shit?"
+Sat Mar  9 22:36:51 1996:  imud_gossip: Descartes@IdeaExchange:how pinheads can dance on an angel?
+Sat Mar  9 22:36:55 1996:  imud_gossip: Descartes@IdeaExchange:err how many
+Sat Mar  9 22:38:40 1996:  imud_gossip: Descartes@IdeaExchange:no need to pick on people
+Sat Mar  9 22:40:06 1996:  imud_gossip: Descartes@IdeaExchange:who did that?
+Sat Mar  9 22:41:11 1996:  imud_gossip: Descartes@IdeaExchange:muds should be senfining $N
+Sat Mar  9 22:41:21 1996:  imud_gossip: Descartes@IdeaExchange:fucker of the day
+Sat Mar  9 23:13:32 1996:  imud_gossip: Descartes@IdeaExchange:anyone know how to set any of the freaking modifiers in the new crap cc-mode that comes with emacs these days?
+Sun Mar 10 10:01:08 1996:  imud_gossip: Descartes@IdeaExchange:a creative guy
+Mon Mar 18 11:54:54 1996:  ichat: Descartes@IdeaExchange:sharing the world with slaughtered pigs!
+Sat Mar 23 00:13:43 1996:  ichat: Descartes@IdeaExchange:java java java
+Sat Mar 23 18:09:01 1996:  imud_code: Descartes@IdeaExchange:str = oldstr[0..x-1] + substr + oldstr[x+1..];
+Sat Mar 23 18:11:53 1996:  imud_code: Descartes@IdeaExchange:beek answered what you wanted
+Sat Mar 23 18:12:14 1996:  imud_code: Descartes@IdeaExchange:mine and Belal's answeres were needlessly complicated
+Sat Mar 23 18:13:18 1996:  imud_code: Descartes@IdeaExchange:Nightmare is off of I3 for reasons ranging frma fundamental believe that intermud is stupid to a question of whether I intend actually to have anything to do with I3 any more period
+Sat Mar 23 18:14:00 1996:  imud_code: Descartes@IdeaExchange:yes, he also said sr[x..x-1] = "blah" not to replace it
+Sat Mar 23 18:32:42 1996:  imud_code: Descartes@IdeaExchange:I am gone from muds indefinitely... DO NOT MAIL ME QUESTIONS
+Sat Mar 23 18:34:05 1996:  imud_code: Descartes@IdeaExchange:I find no enjoyment here right now
+Sun Mar 24 23:23:00 1996:  imud_code: Descartes@IdeaExchange:this line is certainly not the place for that question
+Sun Mar 24 23:23:50 1996:  imud_code: Descartes@IdeaExchange:no
+Sun Mar 24 23:24:02 1996:  imud_code: Descartes@IdeaExchange:this line is ONLY for code related discussion
+Sun Mar 24 23:25:36 1996:  imud_code: Descartes@IdeaExchange:then ask the questioninstead of asking if peple are out there
+Sun Mar 24 23:26:49 1996:  imud_code: Descartes@IdeaExchange:is there a problem with me expecting you to adhere to what this lineis for?
+Sun Mar 24 23:27:45 1996:  imud_code: Descartes@IdeaExchange:no need to tell me what the small stuff is
+Wed Mar 27 18:01:54 1996:  imud_code: Descartes@IdeaExchange:oh, it actually needs some tweaking to work on solaris
+Wed Mar 27 18:02:04 1996:  imud_code: Descartes@IdeaExchange:despite the propaganda, perl code is not necessarily portable
+Tue Apr  2 08:44:30 1996:  imud_code: Descartes@IdeaExchange:MudOS changed word wrap support
+Tue Apr  2 23:18:35 1996:  imud_code: Descartes@IdeaExchange:mud is dead
+Tue Apr  2 23:22:39 1996:  imud_code: Descartes@IdeaExchange:SetExits()
+Tue Apr  2 23:24:01 1996:  imud_code: Descartes@IdeaExchange:don't put the .c
+Tue Apr  2 23:24:11 1996:  imud_code: Descartes@IdeaExchange:of course, lounge.c has to load
+Tue Apr  2 23:24:25 1996:  imud_code: Descartes@IdeaExchange:I actually doubt whether having the .c makes any difference
+Tue Apr  2 23:24:41 1996:  imud_code: Descartes@IdeaExchange:I would bet your lounge simply does not load
+Tue Apr  2 23:24:57 1996:  imud_code: Descartes@IdeaExchange:hi :)
+Tue Apr  2 23:25:15 1996:  imud_code: Descartes@IdeaExchange:I am fine
+Tue Apr  2 23:25:58 1996:  imud_code: Descartes@IdeaExchange:I am not too keen on accepting cres who have their own muds up
+Tue Apr  2 23:49:29 1996:  imud_code: Descartes@IdeaExchange:SetItems()
+Tue Apr  2 23:49:39 1996:  imud_code: Descartes@IdeaExchange:there is documentation on this stuff :)
+Tue Apr  2 23:55:41 1996:  imud_code: Descartes@IdeaExchange:this line is for code

@@ -166,3 +166,73 @@ Fri Feb 16 19:08:31 1996:  tim logged out from knapp38.res.iastate.edu.
 Fri Feb 16 20:28:31 1996:  tim connected from knapp38.res.iastate.edu.
 Fri Feb 16 20:28:41 1996:  tim stor /u/t/tim/newuser.c (ASCII).
 Fri Feb 16 20:28:43 1996:  tim logged out from knapp38.res.iastate.edu.
+Wed Feb 21 23:12:44 1996:  kyricc connected from knapp38.res.iastate.edu.
+Wed Feb 21 23:13:14 1996:  kyricc retr /u/k/kyricc/MONSTERS/beavis.c (ASCII).
+Wed Feb 21 23:13:18 1996:  kyricc logged out from knapp38.res.iastate.edu.
+Wed Feb 21 23:31:07 1996:  kyricc failed/incorrect login from knapp38.res.iastate.edu.
+Wed Feb 21 23:31:17 1996:  kyricc connected from knapp38.res.iastate.edu.
+Wed Feb 21 23:31:35 1996:  kyricc stor /u/k/kyricc/Porno/MONSTERS/dixied.c (ASCII).
+Wed Feb 21 23:31:43 1996:  kyricc logged out from knapp38.res.iastate.edu.
+Wed Feb 28 18:07:08 1996:  warthog connected from cse.unl.edu.
+Wed Feb 28 18:07:33 1996:  warthog stor /u/w/warthog/Daytona/volusia1.c (ASCII).
+Wed Feb 28 18:14:03 1996:  warthog stor /u/w/warthog/Daytona/pizza_hut.c (ASCII).
+Wed Feb 28 18:14:09 1996:  warthog logged out from cse.unl.edu.
+Wed Feb 28 18:20:52 1996:  warthog connected from cse.unl.edu.
+Wed Feb 28 18:21:05 1996:  warthog stor /u/w/warthog/Daytona/volusia1.c (ASCII).
+Wed Feb 28 18:24:03 1996:  warthog stor /u/w/warthog/Daytona/pizza_hut.c (ASCII).
+Wed Feb 28 18:32:52 1996:  warthog stor /u/w/warthog/Daytona/kennel.c (ASCII).
+Wed Feb 28 18:40:20 1996:  warthog stor /u/w/warthog/Daytona/volusia1.c (ASCII).
+Wed Feb 28 18:40:24 1996:  warthog stor /u/w/warthog/Daytona/volusia2.c (ASCII).
+Wed Feb 28 18:40:28 1996:  warthog stor /u/w/warthog/Daytona/pizza_hut.c (ASCII).
+Wed Feb 28 18:40:32 1996:  warthog stor /u/w/warthog/Daytona/kennel.c (ASCII).
+Wed Feb 28 18:40:36 1996:  warthog logged out from cse.unl.edu.
+Wed Feb 28 18:47:30 1996:  warthog connected from cse.unl.edu.
+Wed Feb 28 18:47:42 1996:  warthog stor /u/w/warthog/Daytona/volusia2.c (ASCII).
+Wed Feb 28 18:47:44 1996:  warthog logged out from cse.unl.edu.
+Thu Feb 29 05:53:25 1996:  kyricc connected from knapp38.res.iastate.edu.
+Thu Feb 29 05:54:15 1996:  kyricc stor /u/k/kyricc/Porno/MONSTERS/rjeremy.c (ASCII).
+Thu Feb 29 05:54:20 1996:  kyricc logged out from knapp38.res.iastate.edu.
+Sat Mar 23 17:00:16 1996:  anonymous (bob@) connected from loopback.
+Sat Mar 23 17:01:36 1996:  anonymous logged out from loopback.
+Sat Mar 23 17:01:40 1996:  tim connected from loopback.
+Sat Mar 23 17:01:54 1996:  tim logged out from loopback.
+Sat Mar 23 17:02:51 1996:  tim failed/incorrect login from loopback.
+Sat Mar 23 17:02:55 1996:  tim connected from loopback.
+Sat Mar 23 17:03:19 1996:  tim logged out from loopback.
+Sat Mar 23 18:13:40 1996:  tim connected from loopback.
+Sat Mar 23 18:13:50 1996:  tim logged out from loopback.
+Sat Mar 23 18:16:03 1996:  tim connected from loopback.
+Sat Mar 23 18:16:15 1996:  tim logged out from loopback.
+Sat Mar 23 18:16:21 1996:  tim connected from loopback.
+Sat Mar 23 18:16:53 1996:  tim logged out from loopback.
+Sat Mar 23 18:17:51 1996:  tim connected from loopback.
+Sat Mar 23 18:18:05 1996:  tim logged out from loopback.
+Sat Mar 23 18:18:30 1996:  tim connected from loopback.
+Sat Mar 23 18:18:44 1996:  tim logged out from loopback.
+Sat Mar 23 18:18:52 1996:  anonymous (astasia@) connected from loopback.
+Sat Mar 23 18:21:17 1996:  anonymous logged out from loopback.
+Sat Mar 23 18:22:05 1996:  tim connected from loopback.
+Sat Mar 23 18:23:50 1996:  tim logged out from loopback.
+Sat Mar 23 18:25:10 1996:  anonymous (root@) connected from loopback.
+Sat Mar 23 18:25:18 1996:  anonymous logged out from loopback.
+Mon Apr  1 10:06:48 1996:  evergreen connected from sdcc13.ucsd.edu.
+Mon Apr  1 10:07:11 1996:  evergreen stor /u/e/evergreen/board_basis.c (ASCII).
+Mon Apr  1 10:07:15 1996:  evergreen logged out from sdcc13.ucsd.edu.
+Mon Apr  1 10:08:21 1996:  evergreen connected from sdcc13.ucsd.edu.
+Mon Apr  1 10:08:29 1996:  evergreen stor /u/e/evergreen/board_basis.c (ASCII).
+Mon Apr  1 10:09:17 1996:  evergreen logged out from sdcc13.ucsd.edu.
+Mon Apr  1 10:09:39 1996:  evergreen connected from sdcc13.ucsd.edu.
+Mon Apr  1 10:09:41 1996:  evergreen stor /u/e/evergreen/board_basis.c (ASCII).
+Mon Apr  1 10:10:16 1996:  evergreen logged out from sdcc13.ucsd.edu.
+Mon Apr  1 10:11:04 1996:  evergreen connected from sdcc13.ucsd.edu.
+Mon Apr  1 10:11:14 1996:  evergreen stor /u/e/evergreen/board_basis.c (ASCII).
+Mon Apr  1 10:11:36 1996:  evergreen logged out from sdcc13.ucsd.edu.
+Mon Apr  1 10:13:23 1996:  evergreen connected from sdcc13.ucsd.edu.
+Mon Apr  1 10:13:43 1996:  evergreen stor /u/e/evergreen/board_basis.c (ASCII).
+Mon Apr  1 10:15:25 1996:  evergreen logged out from sdcc13.ucsd.edu.
+Wed Apr  3 02:16:27 1996:  warthog connected from cse.unl.edu.
+Wed Apr  3 02:16:39 1996:  warthog retr /u/w/warthog/workroom.c (ASCII).
+Wed Apr  3 02:22:11 1996:  warthog stor /u/w/warthog/workroom.c (ASCII).
+Wed Apr  3 02:29:31 1996:  warthog connected from cse.unl.edu.
+Wed Apr  3 02:37:17 1996:  warthog logged out from cse.unl.edu.
+Wed Apr  3 02:38:44 1996:  warthog logged out from cse.unl.edu.

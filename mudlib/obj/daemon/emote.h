@@ -26,3 +26,5 @@ gasp:
 wink:an eye
 wave:
 offer:
+masterbate:to near ejaculation
+ejaculate:streamers of ropey semen all about the room

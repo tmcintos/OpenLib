@@ -3,29 +3,25 @@
 #include <dirs.h>
 
 string
+base_name(object ob)
+{
+  string str = file_name(ob);
+  int idx = strsrch(str, '#');
+
+  if(idx == -1) return str;
+  else return str[0..idx-1];
+}
+
+string
 user_cwd(string name)
 {
-  if(!user_exists(name)) {
-    return sprintf(USER_DIR "/%c/%s", name[0], name);
-  } else {
-    object ob = find_player(name);
-
-    if(ob) {
-      return ob->query_connection()->query_home_dir();
-    } else {
-      ob = new(CONNECTION_OB);
-
-      if(ob->restore_connection(name))
-	return ob->query_home_dir();
-      else
-	error("user_cwd: this shouldn't happen");
-    }
-  }
+  if(!name) return "";
+  return sprintf(USER_DIR "/%c/%s", name[0], name);
 }
 
 string user_path(string name)
 {
-   return (user_cwd(name) + "/");
+  return (user_cwd(name) + "/");
 }
 
 /*
@@ -113,6 +109,8 @@ string*
 glob(string root, string* pattern)
 {
   string* matches = get_dir(sprintf("%s/%s", root, pattern[0]));
+
+  if(!matches || !sizeof(matches)) return ({});
 
   if(sizeof(pattern) == 1) {
     for(int i = 0; i < sizeof(matches); i++)

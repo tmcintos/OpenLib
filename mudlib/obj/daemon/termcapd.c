@@ -198,9 +198,7 @@ mapping termcap_entries =
   ([
     "BELL":"",		/* audible signal (bell) */
     "CLS":"[;H[2J",		/* clear screen and home cursor */
-    "COLUMNS":80,		/* number of columns in a line */
     "HOME":"[H",		/* home cursor */
-    "LINES":24,			/* number of lines on screen or page */
     "BOLD":"[1m",		/* turn on bold (extra bright) attribute */
     "INVERSE":"[7m",		/* turn on reverse-video attribute */
     "BLINK":"[5m",		/* turn on blinking attribute */
@@ -243,10 +241,8 @@ mapping termcap_entries =
     "BELL":"",		/* audible signal (bell) */
     "CLS":"[;H[2J",		/* clear screen and home cursor */
     "MOVE":"![%i%d;%dH",	/* screen-relative cursor motion to row m col n */
-    "COLUMNS":80,		/* number of columns in a line */
     "HOME":"[H",		/* home cursor */
     "INITTERM":"[1;24r[24;1H",/* terminal initialization string */
-    "LINES":24,			/* number of lines on screen or page */
     "BOLD":"[1m",		/* turn on bold (extra bright) attribute */
     "INVERSE":"[7m",		/* turn on reverse-video attribute */
     "BLINK":"[5m",		/* turn on blinking attribute */
@@ -404,50 +400,3 @@ termcap_format_line(string line, string ttype)
 	return implode(new_words - ({ 0 }), "");
     }
 }
-
-
-/*
-** Function name:	format_color
-** Description:		Formats a string according to the colour settings
-**			of a player (as set with the colour command).
-**			Note: Adds the mudlib codes, not the real escape
-**			codes.
-** Arguments:		mesg - the message to format
-**			type - the colour type as given to the colour
-**			       command, for instance "exits" or
-**			       "channels/chat".
-**			player - optional, the player who is going to
-**				 receive the formatted text.
-** Returns:		The formatted string.
-*/
-#if 0
-string
-format_color(string mesg, string type, object player) {
-    mapping map;
-    /* Default target is this_player(), or if that doesn't exist, the
-	calling object */
-    if (!player) {
-	player = this_player() ? this_player() : previous_object();
-    }
-    if (mapp(map=player->query_property("COLOURS"))) {
-	int i;
-	string *arr, fallback, cl;
-	arr = explode(cl, "/");
-	/* This part assumes that no colour attributes contain more
-	    than one slash */
-	if (sizeof(arr) == 2) {
-	    fallback = arr[0];
-	    cl = arr[1];
-	}
-	else {
-	    cl = arr[0];
-	}
-	if (!map[cl])
-	    
-	if (mesg[<1..<1] == "\n")
-	    return cl + mesg[0..<2] + "%^RESET%^";
-	return cl + mesg + "%^RESET%^";
-    }
-    return mesg;
-}
-#endif

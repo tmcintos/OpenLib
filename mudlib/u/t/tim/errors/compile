@@ -57,3 +57,64 @@ u/t/tim/bin/test.c line 74: Reserved type name unexpected.
 u/t/tim/bin/test.c line 74: parse error
 u/t/tim/bin/test.c line 74: Reserved type name unexpected.
 u/t/tim/bin/test.c line 74: parse error
+u/t/tim/bin/socketio.c line 15: Cannot #include client.h
+u/t/tim/bin/socketio.c line 23: parse error
+u/t/tim/bin/shell.c line 10: Undefined variable 'client'
+u/t/tim/shellinh.c line 46: Undefined variable 'term'
+u/t/tim/shellinh.c line 71: == always false because of incompatible types ( string vs int ).
+u/t/tim/shellinh.c line 105: Left argument of -> is not a class
+u/t/tim/zip.c line 19: Type of returned value doesn't match function return type ( int vs void ).
+u/t/tim/zip.c line 30: Type of returned value doesn't match function return type ( int vs void ).
+u/t/tim/zip.c line 49: Bad right argument to '<' : "class heapnode "
+u/t/tim/zip.c line 50: Bad assignment ( int vs class heapnode ).
+u/t/tim/zip.c line 51: Bad right argument to '<' : "class heapnode "
+u/t/tim/zip.c line 52: Bad assignment ( int vs class heapnode ).
+u/t/tim/zip.c line 49: Bad right argument to '<' : "class heapnode "
+u/t/tim/zip.c line 50: Bad assignment ( int vs class heapnode ).
+u/t/tim/zip.c line 51: Bad right argument to '<' : "class heapnode "
+u/t/tim/zip.c line 52: Bad assignment ( int vs class heapnode ).
+u/t/tim/zip.c line 1: parse error
+u/t/tim/zip.c line 167: Type of returned value doesn't match function return type ( mapping vs string ).
+u/t/tim/zip.c line 84: Undefined variable 'L'
+u/t/tim/zip.c line 87: Undefined variable 'L'
+u/t/tim/zip.c line 170: Undefined function createF
+u/t/tim/zip.c line 170: Type mismatch ( mapping vs unknown ) when initializing F
+u/t/tim/zip.c line 175: parse error
+u/t/tim/zip.c line 175: parse error
+u/t/tim/zip.c line 173: Wrong number of arguments to compress
+    Expected: 2  Got: 1
+u/t/tim/zip.c line 173: Bad type for argument 2 ( string vs mapping )
+u/t/tim/zip.c line 151: parse error
+u/t/tim/zip.c line 153: Illegal LHS
+u/t/tim/zip.c line 154: parse error
+u/t/tim/zip.c line 158: Illegal LHS
+u/t/tim/zip.c line 159: Illegal LHS
+u/t/tim/zip.c line 159: Illegal LHS
+u/t/tim/zip.c line 159: parse error
+u/t/tim/zip.c line 159: Illegal LHS
+u/t/tim/zip.c line 159: Undefined variable 'encoding'
+u/t/tim/zip.c line 160: Undefined variable 'ch'
+u/t/tim/zip.c line 162: Undefined variable 'ch'
+u/t/tim/zip.c line 170: Bad type for argument 1 ( class heapnode vs mapping )
+u/t/tim/zip.c line 157: Bad argument 1 to efun restore_variable()
+u/t/tim/zip.c line 196: parse error
+u/t/tim/zip.c line 196: parse error
+u/t/tim/zip.c line 196: Wrong number of arguments to uncompress
+    Expected: 1  Got: 2
+u/t/tim/zip.c line 196: Bad type for argument 1 ( buffer vs mapping )
+u/t/tim/zip.c line 213: Wrong number of arguments to create_heap
+    Expected: 1  Got: 2
+u/t/tim/zip.c line 213: Wrong number of arguments to huffman_encode
+    Expected: 2  Got: 1
+u/t/tim/zip.c line 75: Undefined variable 'h1'
+u/t/tim/zip.c line 75: Left argument of -> is not a class
+u/t/tim/zip.c line 75: Undefined variable 'h2'
+u/t/tim/zip.c line 75: Left argument of -> is not a class
+u/t/tim/zip.c line 77: Left argument of -> is not a class
+u/t/tim/zip.c line 77: Left argument of -> is not a class
+u/t/tim/zip.c line 102: Undefined variable 'compare_heapnode'
+u/t/tim/zip.c line 102: parse error
+u/t/tim/zip.c line 103: Illegal LHS
+u/t/tim/zip.c line 103: parse error
+u/t/tim/zip.c line 104: Illegal LHS
+u/t/tim/zip.c line 104: parse error

@@ -11,7 +11,7 @@
 // 01.22.96  Tim@UltraLib  Added member 'from' and string get_from(int num)
 
 // Path to the directory under which to create mailboxes
-#define MAIL_SAVE_DIR "/data/user/mail"
+#define MAIL_SAVE_DIR "/adm/data/user/mail"
 
 // Define this if wanted
 #undef DEBUG(x) log_file("mbox", x);

@@ -21,8 +21,8 @@ the beach and Clyde Morris Blvd.
 DONE);
 
   set_exits((["start" : "/d/base/start.c",
-      	      "north" : "/u/w/warthog/pizzahut.c",
-	      "south" : "/u/w/warthog/kennel.c",
-	      "east" : "/u/w/warthog/volusia2.c",       
+      	      "north" : "/u/w/warthog/Daytona/pizza_hut.c",
+	      "south" : "/u/w/warthog/Daytona/kennel.c",
+	      "east" : "/u/w/warthog/Daytona/volusia2.c",       
                ])); 
 }

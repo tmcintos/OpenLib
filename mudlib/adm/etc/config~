@@ -1,5 +1,5 @@
 ###############################################################################
-#              Customizable runtime config file for MudOS 0.9.20              #
+#              Customizable runtime config file for MudOS v22                 #
 ###############################################################################
 # NOTE: All paths specified here are relative to the mudlib directory except  #
 #       for mudlib directory, and binary directory.                           #
@@ -12,11 +12,11 @@ name : Dysfunctional Mud
 # mud may define up to 5 external ports for which connect() is called
 # in the master object with the port number as argument
 # types are: telnet, binary, ascii
-mud port : 4444
+port number : 4444
 
 # mud may define up to 5 external commands which return a socket used to
 # communicate with the command.  Accessed via external_start() efun.
-external_cmd_1 : /usr/local/bin/tcsh -i
+external_cmd_1 : /usr/local/bin/tcsh -s
 
 # the address server is an external program that lets the mud translate
 # internet names to numbers (and vice versa).  select an unused port.
@@ -73,7 +73,8 @@ maximum bits in a bitfield : 1200
  
 # Maximum amount of "eval cost" per thread - execution is halted when 
 # it is exceeded.
-maximum evaluation cost : 100000
+#maximum evaluation cost : 100000
+maximum evaluation cost : 500000
  
 # This is the maximum array size allowed for one single array.
 maximum array size : 15000
@@ -95,7 +96,7 @@ maximum read file size : 200000
  
 # max number of bytes you allow to be read and written with read_bytes 
 # and write_bytes
-maximum byte transfer : 100000
+maximum byte transfer : 700000
  
 # Reserve an extra memory area from malloc(), to free when we run out
 # of memory.

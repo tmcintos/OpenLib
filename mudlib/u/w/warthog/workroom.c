@@ -20,7 +20,7 @@ create()
          "In the back you see...can it be...a Cray supercomputer \n"+
          "At the terminal you see Warthog playing another mud..heh.\n");
   set_exits((["start" : "/d/base/start.c",
-              "crys" : "/u/k/kyricc/Crysanthium/town_square.c",
+              "daytona" : "/u/w/warthog/Daytona/volusia1.c",
               "void" : "/adm/obj/daemon/void.c",
 	      ]));
 }

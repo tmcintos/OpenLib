@@ -20,11 +20,11 @@ get_date(int time, int which_part)
 
   case DATESTR_TIME:
     sscanf(ctime(time), "%*s %*s %*s %s %*s", tmp);
-    return tmp;
+    return "" + tmp;
 
   case DATESTR_YEAR:
     sscanf(ctime(time), "%*s %*s %*d %*s %d", tmp);
-    return tmp;
+    return "" + tmp;
 
   case DATESTR_SHORT:
     sscanf(ctime(time), "%*s %s:%s:%*s %*s", tmp, tmp2);

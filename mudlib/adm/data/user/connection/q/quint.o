@@ -1,0 +1,11 @@
+#obj/clone/connection.c
+name "quint"
+cap_name 0
+password "smSFhBKrCmnWk"
+real_name "Scott Jackson"
+email_addr "scott@de.msstate.edu"
+body "/obj/clone/user/human"
+login_shell "/obj/clone/shells/nmsh"
+login_time 826005209
+logout_time 826005227
+login_from "knapp38.res.iastate.edu"

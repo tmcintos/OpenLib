@@ -26,10 +26,4 @@
 
 #define CLEAN_UP     INHERIT_DIR "/clean_up"
 
-#define START_ROOM   DOMAIN_DIR "/base/start"
-
-#define MALE         1
-#define FEMALE      -1
-#define NEUTRAL      0
-
 #endif /* _MUDLIB_H */

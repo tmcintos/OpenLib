@@ -1,0 +1,9 @@
+#obj/clone/user/human.c
+flags ({})
+coins ({30,10,})
+hit_points 0
+spell_points 0
+gender 0
+env_vars (["MORE_EXIT_END":1,"version":"Prototype Shell","noglob":1,"SHELL":"/obj/clone/shells/protosh","PATH":"/cmd/player:/adm/cmd/player:/cmd/wiz:/adm/cmd/wiz:/cmd/adm:/adm/cmd/adm","TITLE":"is raping the MudLib!","PROMPT":"[%~]->","TERM":"vt100",])
+aliases (["n":"north","ww":"shout WOOOOOOO WOOOOOOO","|":"more","sc":"score","s":"south","ne":"northeast","sw":"southwest","bbb":"shout I\\'m baaaaaaaaack!!!","se":"southeast","brb":"shout Be right back...I\\'m going AFK!!!","nod":"emote nods quietly","l":"look","e":"east","cgoss":"chat igossip:","news":"more /adm/etc/motd","i":"inventory","w":"west","nw":"northwest","grin":"emote grins evilly","la":"look at","ahh":"emote ahhs","c":"clone",])
+channels ({"igossip","interchat",})

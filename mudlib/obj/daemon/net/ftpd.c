@@ -294,6 +294,9 @@
  * 96.1.20 Tim
  * o fixed an old i[3..-4] type range statement to comply with new MudOS
  * o fixed ftpconf.h to use network.h
+ *
+ * 96.3.23 Tim
+ * o changed long list to not restrict line length
  */
 
 #include <mudlib.h>
@@ -679,7 +682,8 @@ string ls( string path, int column, int fd ) {
 	}
     }
 
-    return sprintf( "%-#70s\n", implode( files, "\n" ) );
+//    return sprintf( "%-#70s\n", implode( files, "\n" ) );
+    return implode( files, "\n" ) +"\n";
 }
 
 void data_write_callback( int fd ) {

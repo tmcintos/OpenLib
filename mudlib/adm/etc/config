@@ -16,7 +16,7 @@ port number : 4444
 
 # mud may define up to 5 external commands which return a socket used to
 # communicate with the command.  Accessed via external_start() efun.
-external_cmd_1 : /usr/local/bin/tcsh -i
+external_cmd_1 : /usr/local/bin/tcsh -s
 
 # the address server is an external program that lets the mud translate
 # internet names to numbers (and vice versa).  select an unused port.
@@ -73,7 +73,8 @@ maximum bits in a bitfield : 1200
  
 # Maximum amount of "eval cost" per thread - execution is halted when 
 # it is exceeded.
-maximum evaluation cost : 100000
+#maximum evaluation cost : 100000
+maximum evaluation cost : 500000
  
 # This is the maximum array size allowed for one single array.
 maximum array size : 15000
@@ -95,12 +96,12 @@ maximum read file size : 200000
  
 # max number of bytes you allow to be read and written with read_bytes 
 # and write_bytes
-maximum byte transfer : 100000
+maximum byte transfer : 700000
  
 # Reserve an extra memory area from malloc(), to free when we run out
 # of memory.
 # If this value is 0, no area will be reserved.
-reserved size : 50000
+reserved size : 500000
  
 # Define the size of the shared string hash table.  This number should
 # a prime, probably between 1000 and 30000; if you set it to about 1/5
@@ -137,7 +138,7 @@ maximum local variables : 30
  
 # Define the maximum stack size of the stack machine. This stack will also
 # contain all local variables and arguments.  (unused currently)
-evaluator stack size : 1000
+evaluator stack size : 5000
  
 # Define the size of the compiler stack. This defines how complex
 # expressions the compiler can parse.  (unused currently)

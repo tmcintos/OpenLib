@@ -20,7 +20,6 @@ static void eventSocketClosed(int fd);
 int eventDestruct();
 static void eventNewConnection(int fd);
 static void eventSocketError(string str, int x);
-void CloseSocket(int fd);
 
 function SetRead(function f);
 function SetSocketClosed(function f);

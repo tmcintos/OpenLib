@@ -16,7 +16,7 @@
 
 // Major version number changes when new features are added; minor version
 // number changes with bug fixes and implementation changes.
-#define VERSION "1.1"
+#define VERSION "1.2"
 
 // Path to your mailbox object
 #define MAILBOX "/obj/clone/mailbox"

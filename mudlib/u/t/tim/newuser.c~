@@ -1,3 +1,4 @@
+/*  -*- LPC -*-  */
 // file:  user.c
 // mudlib:  UltraLib
 // purpose:  an interactive object representing the player's body
@@ -18,7 +19,7 @@
 inherit LIVING;
 inherit INHERIT_DIR "/more";
 
-private static object connection;   // connection object pointer
+private static object connection;   // user should always have a conn.
 private static object shell;        // shell pointer
 private static string current_dir;  // current working directory
 
@@ -68,6 +69,7 @@ int     save_player();
  */
 private int set_name(string username);    // override of living.c for security
 private int restore_player();
+private int cmd_hook(string args);
 
 /*
  * The shell handles all user input, variable/alias expansion, look & feel,
@@ -78,7 +80,8 @@ private int restore_player();
  * string shell_prompt();                            // return normal prompt
  * string shell_ed_prompt();                         // return prompt for ed
  * string shell_process_input(string input);         // process player input
- * string shell_receive_message(string msgclass, string msg); // filter msgs
+ * string shell_filter_message(string msgclass, string msg); // filter msgs
+ * int    shell_cmd_hook(string verb, string arg);   // shell can catch cmds
  *
  * Shell (and only shell) calls these local functions:
  * set_env(), set_cwd(), get_aliases()
@@ -86,7 +89,8 @@ private int restore_player();
  * Required environment variables:
  * TITLE
  *
- * (predicted: TERM, MIN, MOUT, MMIN, MMOUT, MCLONE, MHOME, WKROOM, PATH)
+ * (predicted: MIN, MOUT, MMIN, MMOUT, MCLONE, MHOME, WKROOM, PATH,
+ *             TERM (termtype:LENGTHxWIDTH) )
  */
 
 /*
@@ -107,13 +111,13 @@ void create()
 
 int remove()
 {
+  if(!query_name()) return 0;
+
   foreach(string chan in channels)
     CHAT_D->remove_member(chan, this_player());
 
-  if(connection) {
-    connection->save_connection(query_name());
-    efun::destruct(connection);
-  }
+  if(connection)
+    destruct(connection, 1);
 
   living::remove();
 }
@@ -132,7 +136,7 @@ write_prompt()
 void
 receive_message(string msgclass, string msg)
 {
-  receive((string) shell->shell_receive_message(msgclass, msg));
+  receive((string) shell->shell_filter_message(msgclass, msg));
 }
 
 void
@@ -145,7 +149,7 @@ net_dead()
    */
   if(in_edit()) {
     ed_cmd(".");
-    ed_cmd("w " + connection->query_home_dir() + "/ed_crash_file");
+    ed_cmd("w " + user_cwd(query_name()) + "/ed_crash_file");
     ed_cmd("Q");
   }
 
@@ -172,10 +176,11 @@ void init_player(string username)
 {
   seteuid(getuid(this_object()));
   set_name(username);              // static--won't get zeroed out
+  current_dir = user_cwd(username);
 
   restore_player();                // non-statics are not zeroed out
 
-// command hook add_act. here if needed
+  add_action((: cmd_hook :), "");  // command hook add_action
 
   foreach(string chan in channels)
     CHAT_D->add_member(chan, this_player());
@@ -198,7 +203,7 @@ reconnect()
 int
 set_cap_name(string capname)
 {
-  if(getuid(previous_object()) != ROOT_UID) return 0;
+  if(geteuid(previous_object()) != ROOT_UID) return 0;
 
   if(lower_case(capname) == query_name()) {
     cap_name = capname;
@@ -327,6 +332,24 @@ restore_player()
   file = USER_BODY_DIR "/"+ username[0..0] + "/" + username;
 
   return restore_object(file, 1);          // don't zero out non-statics
+}
+
+private
+int
+cmd_hook(string arg)
+{
+  string verb = query_verb();
+  object cmd_ob;
+
+  if(!strlen(arg)) arg = 0;
+
+  if( shell->shell_cmd_hook(verb, arg) ) return 1;
+
+  if( cmd_ob = CMD_D->find_cmd(verb) ) return (int) cmd_ob->_main(arg);
+
+  // if( EMOTE_D->cmd_emote(verb, arg) ) return 1;
+
+  return 0;
 }
 
 //  start_ed:     Starts the editor.

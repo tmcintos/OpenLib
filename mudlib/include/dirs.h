@@ -8,6 +8,7 @@
 #define DOMAIN_DIR   "/d"
 #define DATA_DIR     "/data"
 #define DOC_DIR      "/doc"
+#define PUB_DIR      "/ftp/pub"
 #define FTP_DIR      "/ftp"
 #define INCLUDE_DIR  "/include"
 #define LOG_DIR      "/log"
@@ -21,6 +22,7 @@
 
 // SECONDARY directories
 #define CONFIG_DIR         SECURE_DIR "/etc"
+#define SECURE_CMD_DIR     SECURE_DIR CMD_DIR
 #define SECURE_DATA_DIR    SECURE_DIR DATA_DIR
 #define SECURE_CLONE_DIR   SECURE_DIR CLONE_DIR
 #define SECURE_DAEMON_DIR  SECURE_DIR DAEMON_DIR

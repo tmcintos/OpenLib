@@ -10,3 +10,9 @@
  needed. This can be done after the kinks are worked out w/1 client part.
 -mail: use more() for paging header output
 -rwho service: take out call to more() since it won't work with tp == 0
+shell::move() should let LOGIN_D move it
+stuff to edit when moving in new body/shell:
+  logind
+  su command
+  quit command?
+  chfn command (not directly needed, but do it anyway)

@@ -49,3 +49,68 @@ Sun Feb 18 14:48:55 1996:  Dysfunctional Mud crashed on: Sun Feb 18 14:48:55 199
 Sun Feb 18 14:49:46 1996:  Dysfunctional Mud crashed on: Sun Feb 18 14:49:46 1996, error: Process terminated
 Mon Feb 19 19:31:43 1996:  Dysfunctional Mud crashed on: Mon Feb 19 19:31:43 1996, error: Process terminated
 Mon Feb 19 19:38:49 1996:  Dysfunctional Mud crashed on: Mon Feb 19 19:38:49 1996, error: Process terminated
+Mon Feb 19 23:41:56 1996:  Dysfunctional Mud crashed on: Mon Feb 19 23:41:56 1996, error: Segmentation fault
+Mon Feb 19 23:41:56 1996:  this_player: /obj/clone/user/human#31
+Mon Feb 19 23:41:56 1996:  this_object: /u/t/tim/bin/socketio#34
+Mon Feb 19 23:41:56 1996:  Dysfunctional Mud crashed on: Mon Feb 19 23:41:56 1996, error: Process terminated
+Mon Feb 19 23:46:46 1996:  Dysfunctional Mud crashed on: Mon Feb 19 23:46:46 1996, error: Segmentation fault
+Mon Feb 19 23:46:46 1996:  this_player: /obj/clone/user/human#2
+Mon Feb 19 23:46:46 1996:  this_object: /u/t/tim/bin/socketio#5
+Mon Feb 19 23:46:46 1996:  Dysfunctional Mud crashed on: Mon Feb 19 23:46:46 1996, error: Process terminated
+Mon Feb 19 23:46:46 1996:  this_object: /adm/obj/daemon/master
+Mon Feb 19 23:47:55 1996:  Dysfunctional Mud crashed on: Mon Feb 19 23:47:55 1996, error: Process terminated
+Tue Feb 20 21:11:10 1996:  Dysfunctional Mud crashed on: Tue Feb 20 21:11:10 1996, error: Segmentation fault
+Fri Feb 23 00:13:01 1996:  Dysfunctional Mud crashed on: Fri Feb 23 00:13:01 1996, error: Process terminated
+Fri Mar  1 19:03:34 1996:  Dysfunctional Mud crashed on: Fri Mar  1 19:03:34 1996, error: Segmentation fault
+Fri Mar  1 19:03:34 1996:  this_player: /obj/clone/user/human#2
+Fri Mar  1 19:03:34 1996:  this_object: /u/t/tim/bin/socketio#6
+Fri Mar  1 19:03:36 1996:  Dysfunctional Mud crashed on: Fri Mar  1 19:03:36 1996, error: Process terminated
+Fri Mar  1 20:35:33 1996:  Dysfunctional Mud crashed on: Fri Mar  1 20:35:33 1996, error: Process terminated
+Sun Mar  3 04:27:33 1996:  Dysfunctional Mud crashed on: Sun Mar  3 04:27:33 1996, error: Segmentation fault
+Sun Mar  3 04:27:33 1996:  this_player: /obj/clone/user/human#75
+Sun Mar  3 04:59:13 1996:  Dysfunctional Mud crashed on: Sun Mar  3 04:59:13 1996, error: Segmentation fault
+Sun Mar  3 04:59:13 1996:  this_player: /obj/clone/user/human#15
+Sun Mar  3 04:59:13 1996:  this_object: /cmd/wiz/goto
+Sun Mar  3 04:59:59 1996:  Dysfunctional Mud crashed on: Sun Mar  3 04:59:59 1996, error: Segmentation fault
+Sun Mar  3 04:59:59 1996:  this_player: /obj/clone/user/human#3
+Sun Mar  3 04:59:59 1996:  this_object: /cmd/wiz/goto
+Sun Mar  3 05:00:58 1996:  Dysfunctional Mud crashed on: Sun Mar  3 05:00:58 1996, error: Segmentation fault
+Sun Mar  3 05:00:58 1996:  this_player: /obj/clone/user/human#8
+Sun Mar  3 05:00:58 1996:  this_object: /cmd/wiz/goto
+Sun Mar  3 05:03:33 1996:  Dysfunctional Mud crashed on: Sun Mar  3 05:03:33 1996, error: Segmentation fault
+Sun Mar  3 05:03:33 1996:  this_player: /obj/clone/user/human#3
+Sun Mar  3 05:03:33 1996:  this_object: /adm/cmd/wiz/update
+Mon Mar  4 20:25:10 1996:  Dysfunctional Mud crashed on: Mon Mar  4 20:25:10 1996, error: Segmentation fault
+Mon Mar  4 20:25:10 1996:  this_player: /obj/clone/user/human#82
+Mon Mar  4 20:25:10 1996:  this_object: /tmp/tmp_eval_file
+Wed Mar 20 00:43:46 1996:  Dysfunctional Mud crashed on: Wed Mar 20 00:43:46 1996, error: Process terminated
+Wed Mar 20 21:35:46 1996:  Dysfunctional Mud crashed on: Wed Mar 20 21:35:46 1996, error: Process terminated
+Tue Mar 26 00:19:26 1996:  Dysfunctional Mud crashed on: Tue Mar 26 00:19:26 1996, error: Segmentation fault
+Tue Mar 26 00:19:26 1996:  this_player: /obj/clone/user/human#2
+Tue Mar 26 00:19:26 1996:  this_object: /u/t/tim/bin/socketio#29
+Tue Mar 26 00:19:26 1996:  Dysfunctional Mud crashed on: Tue Mar 26 00:19:26 1996, error: Process terminated
+Tue Mar 26 00:26:22 1996:  Dysfunctional Mud crashed on: Tue Mar 26 00:26:22 1996, error: Segmentation fault
+Tue Mar 26 00:26:22 1996:  this_player: /obj/clone/user/human#2
+Tue Mar 26 00:26:22 1996:  this_object: /u/t/tim/bin/socketio#6
+Tue Mar 26 00:26:22 1996:  Dysfunctional Mud crashed on: Tue Mar 26 00:26:22 1996, error: Process terminated
+Wed Mar 27 03:09:05 1996:  Dysfunctional Mud crashed on: Wed Mar 27 03:09:05 1996, error: Segmentation fault
+Wed Mar 27 03:09:05 1996:  this_player: /obj/clone/user/human#2
+Wed Mar 27 03:09:05 1996:  this_object: /u/t/tim/zip
+Wed Mar 27 03:11:37 1996:  Dysfunctional Mud crashed on: Wed Mar 27 03:11:37 1996, error: Segmentation fault
+Wed Mar 27 03:11:37 1996:  this_player: /obj/clone/user/human#2
+Wed Mar 27 03:11:37 1996:  this_object: /u/t/tim/zip
+Wed Mar 27 03:12:16 1996:  Dysfunctional Mud crashed on: Wed Mar 27 03:12:16 1996, error: Segmentation fault
+Wed Mar 27 03:12:16 1996:  this_player: /obj/clone/user/human#2
+Wed Mar 27 03:12:16 1996:  this_object: /u/t/tim/zip
+Wed Mar 27 03:12:38 1996:  Dysfunctional Mud crashed on: Wed Mar 27 03:12:38 1996, error: Segmentation fault
+Wed Mar 27 03:12:38 1996:  this_player: /obj/clone/user/human#2
+Wed Mar 27 03:12:38 1996:  this_object: /u/t/tim/zip
+Wed Mar 27 03:12:58 1996:  Dysfunctional Mud crashed on: Wed Mar 27 03:12:58 1996, error: Segmentation fault
+Wed Mar 27 03:12:58 1996:  this_player: /obj/clone/user/human#2
+Wed Mar 27 03:12:58 1996:  this_object: /u/t/tim/zip
+Wed Mar 27 03:13:18 1996:  Dysfunctional Mud crashed on: Wed Mar 27 03:13:18 1996, error: Segmentation fault
+Wed Mar 27 03:13:18 1996:  this_player: /obj/clone/user/human#2
+Wed Mar 27 03:13:18 1996:  this_object: /u/t/tim/zip
+Sun Mar 31 16:31:06 1996:  Dysfunctional Mud crashed on: Sun Mar 31 16:31:06 1996, error: Segmentation fault
+Sun Mar 31 16:31:06 1996:  this_player: /obj/clone/user/human#14
+Sun Mar 31 16:31:06 1996:  this_object: /adm/cmd/wiz/update

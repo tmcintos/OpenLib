@@ -1,0 +1,11 @@
+#obj/clone/connection.c
+name "warthog"
+cap_name 0
+password "XB.v3O5349nz2"
+real_name "Matt Eddinger"
+email_addr "meddi@cse.unl.edu"
+body "/obj/clone/user/human"
+login_shell "/obj/clone/shells/protosh"
+login_time 828520191
+logout_time 828520525
+login_from "cse.unl.edu"

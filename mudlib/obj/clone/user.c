@@ -1,456 +1,450 @@
 /*  -*- LPC -*-  */
-// mudlib:   Lil 
-// file:     user.c
-// purpose:  is the representation of an interactive (user) in the MUD
-//
-//  06/26/95  Tim McIntosh:  name is lower case now
-//  08/25/95  Tim McIntosh:  put in an 'ed' interface
-//  Tim says:  This is quick and dirty...it should be totally rewritten
-//  replace this with a functioning version.
-//                           added support for keeping track of connection obj
-//  09/29/95 Tim McIntosh:  added (object *)query_inventory()
-//  09/30/95 Casper:  Added inherits for combat related functions and
-//                    quick 'hack' for inheriting 'human' functions into
-//                    user.c
-//  10/03/95 Tim:  Moved some stuff to living.c, cleaned up some... 
-//  02/13/96 Tim:  inherits more() funcs now instead of include
+// file:  user.c
+// mudlib:  UltraLib
+// purpose:  an interactive object representing the player's body
+//           intended to interface with a shell to do command processing
+// Originally written by Tim 2/16/96
 
 #include <mudlib.h>
 #include <dirs.h>
+#include <login.h>
 #include <uid.h>
-#include <daemons.h>
 #include <object_types.h>
+#include <daemons.h>
+#include <shells.h>
+
+#define MSG_ED "ed"
+#define MSG_PROMPT "prompt"
+#define MSG_SYS "system"
 
 inherit LIVING;
 inherit INHERIT_DIR "/more";
 
-private string title;                  // our title
-private string current_dir;            // current working directory
-private string term;                   // terminal type
-private mapping aliases;               // our aliases
-private function Hook;
-private static object connection;      // user's connection object
-private string* channels;              // subscribed channels
+private static object connection;   // user should always have a conn.
+private static string cap_name;     // name with proper capitalization
 
-// search path, take out later
-private string* search_path = ({ "/cmd/player",
-				 "/adm/cmd/wiz",
-				 "/cmd/wiz",
-				 "/adm/cmd/adm",
-				 "/adm/cmd/player",
-				 "/cmd/adm"
-			      });
+private mapping env_vars;           // environment variable mapping
+private mapping aliases;            // alias mapping
+private string* channels;           // list of subscribed channels
 
-string query_cwd() { return current_dir; }
-string query_term() { return term; }
-object query_connection() { return connection; }
-string* query_path() { return copy(search_path); }
-string* query_channels() { return copy(channels); }
+/*
+ * Applies
+ */
+void   create();
+nomask void remove();
+void   write_prompt();
+void   write_ed_prompt(int mode);
+void   receive_message(string msgclass, string msg);
+nomask void net_dead();
+nomask int  move_or_destruct(object dest);
 
-// Overload of living::create()
+/*
+ * Restricted Public Functions
+ */
+nomask void init_player(string username);// called from logind sets name etc.
+nomask void reconnect();                 // also called from login daemon
+nomask int  set_cap_name(string capname);
+nomask void set_channels(string* chans);
+nomask int  set_connection(object ob);
+nomask int  force_me(string cmd);
+nomask int start_ed(string file, int rst);  // input handled by process_input()
+nomask void process_ed_input(string input);
+int set_cwd(string cwd);
+int set_env(string var, mixed val);
+nomask mapping get_aliases();               // returns actual mapping
+nomask mapping get_environment();           // same thing
+
+/*
+ * Unrestricted Public Functions
+ */
+mixed   get_env(string var);
+nomask string  short();
+nomask string  query_cap_name();
+nomask boolean is_subscribed_chan(string chan);
+nomask string* query_channels();
+nomask int save_player();
+nomask varargs int move_player(mixed dest, string dir); // for a pretty move
+nomask object  query_connection();
+string* query_path();
+
+/*
+ * Private Functions
+ */
+private int set_name(string username);    // override of living.c for security
+private int restore_player();
+private int cmd_hook(string args);
+
+/*
+ * This player object is meant to be shadowed by a shell.
+ * The shell handles all user input, variable/alias expansion, look & feel,
+ * setting/clearing env variables, etc.
+ *
+ * Required shell functions:
+ * shell_id()    // returns the id of the shell
+ *
+ * Shell (and only shell) calls these local functions:
+ * set_env(), set_cwd(), get_aliases()
+ *
+ * Required environment variables:
+ * TITLE, PATH
+ *
+ * Currently used by shell and other things:
+ * TERM, WIDTH, LENGTH
+ * (predicted: MIN, MOUT, MMIN, MMOUT, MCLONE, MHOME, WKROOM, PATH,
+ *             TERM (termtype:LENGTHxWIDTH) )
+ */
+
+/*
+ * Implementation ---------------------------------------------------------
+ */
 
 void
 create()
 {
   living::create();
-  living::set_object_class(query_object_class() | OBJECT_PLAYER);
-  seteuid(0);                       // so logind can export_uid() to us
-  channels = ({ });
-  aliases = (["n"   :  "north",
-	      "s"   :  "south",
-	      "e"   :  "east",
-	      "w"   :  "west",
-	      "ne"  :  "northeast",
-	      "nw"  :  "northwest",
-	      "se"  :  "southeast",
-	      "sw"  :  "southwest",
-	      "i"   :  "inventory",
-	      "l"   :  "look",
-	      "sc"  :  "score",
-	      ]);
-
+  seteuid(0);                             // so logind can export_uid() to us
+  channels = ({});
+  aliases = ([]);
+  env_vars = ([]);
 }
 
-// Overload of living::short()
-
-string
-short() { return query_cap_name() + " " + title; }
-
-// Overload of destructor living::remove()
-
-void
+int
 remove()
 {
+  if(!query_name()) return 0;
+
   foreach(string chan in channels) {
-    CHAT_D->remove_member(chan, this_player());
+    if(CHAT_D->channel_exists(chan))
+      CHAT_D->remove_member(chan, this_player());
+    else
+      channels -= ({ chan });   // channel no longer exists, delete
   }
 
-  if(connection) {
-    connection->save_connection(query_name());
-    efun::destruct(connection);
-  }
+  if(connection)
+    destruct(connection, 1);
 
-  living::remove();
+  return living::remove();
 }
 
-// Overload of living::set_name()
-
-int
-set_name(string username)
+void
+write_prompt()
 {
-  // may wish to add security to prevent just anyone from changing
-  // someone else's name.
-  if(geteuid(previous_object()) != ROOT_UID)
-    return 0;
-  living::set_name(username);
+  message(MSG_PROMPT, "no shell> ", this_object());
 }
 
-int
-set_title(string ttl)
+void
+write_ed_prompt(int mode)
 {
-  if(ttl) {
-    title = ttl;
+  message(MSG_PROMPT, "ed:", this_object());
+}
+
+void
+receive_message(string msgclass, string msg)
+{
+  string ttype = env_vars["TERM"];
+
+  if(!ttype) ttype = "dumb";
+
+  if(msgclass != "nofilter")
+    msg = TERMCAP_D->termcap_format_line(msg, ttype);
+
+  receive(msg);
+}
+
+nomask void
+net_dead()
+{
+  set_heart_beat(0);           // disable heartbeat
+
+  /*
+   * If in ed, quit.
+   */
+  if(in_edit()) {
+    ed_cmd(".");
+    ed_cmd("w " + user_cwd(query_name()) + "/ed_crash_file");
+    ed_cmd("Q");
   }
-  write("You are now "+ short() +".\n");
+
+  tell_room(environment(), query_cap_name() + " is link-dead.\n");
+}
+
+nomask int
+move_or_destruct(object dest)
+{
+  this_object()->move(VOID_OB);
+
+  message(MSG_SYS,
+	  "The world dissolves around you.  You find yourself floating..\n",
+	  this_object());
+
   return 1;
 }
 
-int
-set_term(string arg)
+/*
+ * Called from LOGIN_D once the player has successfully logged in and
+ * the uid has been set.
+ */
+nomask void
+init_player(string username)
 {
-  term = arg;
+  seteuid(getuid(this_object()));
+  set_name(username);              // static--won't get zeroed out
+
+  restore_player();                // non-statics are not zeroed out
+
+  // use a call other so a shell can catch this
+  add_action((: this_object()->cmd_hook($1) :), "");
+
+  foreach(string chan in channels) {
+    if(CHAT_D->channel_exists(chan))
+      CHAT_D->add_member(chan, this_player());
+    else
+      channels -= ({ chan });   // channel no longer exists, delete
+  }
+  
+  if( get_env("PATH") ) {
+    foreach(string path in explode(get_env("PATH"), ":"))
+      if( !CMD_D->hashed_path(path) ) CMD_D->hash_path(path);
+  }
 }
 
-// set_cwd:  (Tim)  Not sure how to really handle this; this'll do for now...
-//          Path resolving should be done in 'cd'
-//          returns 0 on fail; 1 on success (as usual i guess)
-
-int
-set_cwd(string cwd)
+/*
+ * also called from login daemon when reconnecting to linkdead player
+ */
+nomask void
+reconnect()
 {
-  if(!cwd)
-    return 0;
+  if(geteuid(previous_object()) != ROOT_UID) return;
 
-  current_dir = cwd;
-  return 1;
+  set_heart_beat(1);            // re-enable heartbeat
+
+  message(MSG_SYS, "\nReconnected.\n", this_player());
+  say(query_cap_name() + " has reconnected.\n");
 }
 
-//  Set the connection object for this user
+nomask int
+set_cap_name(string capname)
+{
+  if(geteuid(previous_object()) != ROOT_UID) return 0;
 
-int
+  cap_name = capname;
+}
+
+nomask void
+set_channels(string* chans)
+{
+//  if(geteuid(previous_object()) != ROOT_UID) return;
+  channels = copy(chans);
+}
+
+nomask int
 set_connection(object ob)
 {
-  ob->set_active();       // so it won't be destructed so easily
+  if(geteuid(previous_object()) != ROOT_UID) return 0;
+
   connection = ob;
   return 1;
 }
 
-// Set the list of channels
-
-void
-set_channels(string* chans)
+nomask int
+force_me(string cmd)
 {
-  channels = chans;
+  // if(geteuid(previous_object()) != ROOT_UID) return 0;
+
+  return command(cmd);
 }
 
-boolean
+int
+set_env(string var, mixed val)
+{
+  if(query_shadowing(previous_object()) != this_object() &&
+     getuid(previous_object()) != ROOT_UID) return 0;
+
+  env_vars[var] = val;
+  return 1;
+}
+
+nomask mapping
+get_aliases()
+{
+  if(query_shadowing(previous_object()) != this_object()) return 0;
+
+  /*
+   * Yes, we are returning a handle to the actual mapping, this is to make
+   * alias handling in the shell easier. (Can just use mapping.)
+   */
+  return aliases;
+}
+
+nomask mapping
+get_environment()
+{
+  if(query_shadowing(previous_object()) != this_object()) return 0;
+
+  /*
+   * Yes, we are returning a handle to the actual mapping, this is to make
+   * alias handling in the shell easier. (Can just use mapping.)
+   */
+  return env_vars;
+}
+
+mixed
+get_env(string var)
+{
+  return env_vars[var];
+}
+
+nomask string
+short()
+{
+  string title = get_env("TITLE");
+
+  if(title) {
+    if(strsrch(title, "$N") != -1)
+      return replace_string(title, "$N", query_cap_name());
+    else
+      return sprintf("%s %s", query_cap_name(), title);
+  }
+  return sprintf("%s the title-less", query_cap_name());
+}
+
+nomask string
+query_cap_name()
+{
+  if( !cap_name )
+    return capitalize( query_name() );
+  else
+    return cap_name;
+}
+
+nomask boolean
 is_subscribed_chan(string chan)
 {
-  if( member_array(chan, channels) == -1 )
-    return FALSE;
-  else
-    return TRUE;
+  return member_array(chan, channels) != -1;
 }
 
-// path_resolve: (Tim) resolve_path is an efun;  This is player specific...
-
-string
-path_resolve(string path)
+nomask string*
+query_channels()
 {
-  return absolute_path(query_cwd(), path);
+  return copy(channels);
 }
 
-// possible to modify player input here before driver parses it.
-
-string
-process_input(string arg)
-{
-  if(arg[0] != '\\') {
-    mixed words = explode(arg, " ");
-
-    if(!sizeof(words)) return;
-
-    if(member_array(words[0], keys(aliases)) != -1) {
-      words[0] = aliases[words[0]];
-    }
-
-    for(int j = 0; j < sizeof(words); j++) {
-      string path = words[j];
-
-      /*
-       * If there are no wildcards, don't even bother
-       */
-      if(strsrch(path, '*') != -1 || strsrch(path, '?') != -1) {
-	string root;
-	string* tmp = explode(path, "/");
-	
-	for(int i = 0; i < sizeof(tmp); i++) {
-	  /*
-	   * Only need to call glob on the part after the 1st wildcard
-	   * with the beginning as the starting directory.
-	   */
-	  if(strsrch(tmp[i], '*') != -1 || strsrch(tmp[i], '?') != -1) {
-	    root = implode(tmp[0..i-1], "/");
-	    tmp = tmp[i..];
-	    break;
-	  }
-	}
-	words[j] = implode(glob(root, tmp), " ");
-      }
-    }
-    return implode(words, " ");
-  } else {
-    if(strlen(arg) > 1)
-      arg = arg[1..];
-    return arg;
-  }
-}
-
-//  Save the values to the playerfile
-
-int
+nomask int
 save_player()
 {
-  string file, dir, username;
-  username = query_name();
+  string file, dir, username = query_name();
 
-  dir = DATA_DIR "/user/body/" + username[0..0];
-  if(file_size(dir) != -2) mkdir(dir);
-
+  dir = USER_BODY_DIR "/" + username[0..0];
   file = dir + "/" + username;
 
-  connection->save_connection(username);
-  return save_object(file);
+  /* create directory if needed */
+  if(file_size(dir) == -1) {
+    if(!mkdir(dir))
+      error("couldn't create directory "+ dir +"\n");
+  }
+
+  connection->save_connection(username);         // also save connection
+  return save_object(file, 1);                   // save 0 values too
 }
 
-//  Restore from playerfile
-//  (security here)
+nomask varargs int
+move_player(mixed dest, string dir)
+{
+  object from = environment();
 
-int
+  if(!dest) return 0;
+
+  if(stringp(dest))
+    sscanf(dest, "%s#%s", dir, dest);
+
+  if(move(dest) > 0) {
+    tell_room(from, sprintf("%s moves to the %s.\n", query_cap_name(), dir));
+    say(sprintf("%s arrives.\n", query_cap_name()));
+    command("look");
+    return 1;
+  }
+  return notify_fail("Move failed.\n");
+}
+
+nomask object
+query_connection()
+{
+  return connection;
+}
+
+private int
+set_name(string username)
+{
+  living::set_name(username);
+}
+
+private int
 restore_player()
 {
   string username = query_name();
   string file;
 
-  if(!username || username == "") return 0;
+  file = USER_BODY_DIR "/"+ username[0..0] + "/" + username;
 
-  username = lower_case(username);
-  file = DATA_DIR "/user/body/"+ username[0..0] + "/" + username;
-  return restore_object(file, 1);
+  return restore_object(file, 1);          // don't zero out non-statics
 }
-
-// setup: used to configure attributes that aren't known by this_object()
-// at create() time such as living_name (and so can't be done in create()).
-
-void
-setup(string username)
-{
-  seteuid(getuid(this_object()));
-
-  set_name(username);
-  restore_player();
-
-  add_action("commandHook", "", 1);
-
-  if(!channels) {
-    channels = ({ });
-  } else {
-    foreach(string chan in channels) {
-      CHAT_D->add_member(chan, this_player());
-    }
-  }
-
-  foreach(string path in search_path) {
-    if(!CMD_D->hashed_path(path) && !CMD_D->hash_path(path))
-      search_path -= ({ path });
-  }
-
-  if(!title) title = "the utter mudlib hacker";
-}
-
-// (Tim) don't know if this should be here...but I'm doing it anyway for now
-int
-force_me(string command)
-{
-  // security ?
-  command(command);
-  return 1;
-}
-
-// this is a temp. sloppy hack for now
 
 int
-commandHook(string arg)
+cmd_hook(string arg)
 {
   string verb = query_verb();
-  object cobj;
-  string aliastmp1;
-  string tmp_emote;
+  object cmd_ob;
 
-    if(arg == "") arg = 0;
+  if(query_shadowing(previous_object()) != this_object() &&
+     previous_object() != this_object()) return 0;
 
-//  Get this out of the player....LATER!!!  (Tim)
-    switch(verb) {
-    case "path":
-      if(!arg) { write(implode(search_path, ":") +"\n"); return 1; }
-      if(CMD_D->hashed_path(arg) || CMD_D->hash_path(arg)) {
-	if(member_array(arg, search_path) == -1) {
-	  search_path += ({ arg });
-	  write("Path added.\n");
-	}
-      }
-      return 1;
-    case "term":
-      if(!arg) { write(term +"\n"); return 1; }
-      term = arg;
-      return 1;
-    case "alias":
-      if(!arg) { write(dump_variable(aliases) +"\n"); return 1; }
-      if(arg && sscanf(arg, "%s %s", aliastmp1, arg) == 2) {
-	aliases += ([ aliastmp1 : arg ]);
-      } else {
-	if(member_array(arg, keys(aliases)) != -1)
-	  map_delete(aliases, arg);
-      }
-      return 1;
-    case "eval":
-      return (int) "/adm/cmd/wiz/eval"->main(arg);
-    }
+  if(!strlen(arg)) arg = 0;
 
-    if(cobj = CMD_D->find_cmd(verb)) {
-      return (int) cobj->_main(arg);
-    } else {
-      tmp_emote = verb;
+  if( cmd_ob = CMD_D->find_cmd(verb) )
+    return (int) cmd_ob->_main(arg);
 
-      if(arg)
-	tmp_emote += " " + arg;
-
-      return (int) EMOTE_D->emote_search(verb, tmp_emote);
-    }
+  // if( EMOTE_D->cmd_emote(verb, arg) ) return 1;
+  return 0;
 }
-
-// init: called by the driver to give the object a chance to add some
-// actions (see the MudOS "applies" documentation for a better description).
-
-void
-init()
-{
-	// using "" as the second argument to add_action() causes the driver
-	// to call commandHook() for those user inputs not matched by other
-	// add_action defined commands (thus 'commandHook' becomes the default
-	// action for those verbs without an explicitly associated action).
-	if (this_object() == this_player()) {
-		add_action("commandHook", "", 1);
-	}
-}
-
-// receive_message: called by the message() efun.
-
-void
-receive_message(string msgClass, string msg)
-{
-	// the meaning of 'msgClass' is at the mudlib's discretion
-//	receive(wrap(termcap_format_line(msg, query_term())));
-	receive(TERMCAP_D->termcap_format_line(msg, query_term()));
-}
-
-// net_dead: called by the gamedriver when an interactive player loses
-// hir network connection to the mud.
-
-void
-net_dead()
-{
-  set_heart_beat(0);
-
-#ifndef __HAS_ED__
-  if(in_edit()) {
-    ed_cmd(".");
-    ed_cmd("w "+ connection->query_home_dir() +"/ed_crash_file");
-    ed_cmd("Q");
-  }
-#endif
-
-  tell_room(environment(), query_cap_name() + " is link-dead.\n");
-}
-
-// reconnect: called by the login.c object when a netdead player reconnects.
-
-void
-reconnect()
-{
-	set_heart_beat(1);
-    write("\nReconnected.\n");
-    say(query_cap_name() + " has reconnected.\n");
-}
-
-// tim: this needs to be here so you don't get destructed when the room is...
-
-int
-move_or_destruct(object dest)
-{
-  this_object()->move(VOID_OB);
-  tell_object(this_object(),
-	  "The world dissolves around you.  You find yourself floating..\n");
-  return 1;
-}
-
 
 //  start_ed:     Starts the editor.
 //      file      full path of the file to edit.
 //      restrict  if this is 1, the commands to modify the file are disabled
-//
-//  NOTE:  This should stay in the player object.
 
-int
+nomask int
 start_ed(string file, int restrict)
 {
-#ifdef __HAS_ED__  // old way
-  ed(file, "", restrict);
-  return 1;
-}
-#else  // v21 crap
-  string blurb;
-  int tmp;
+  int size = file_size(file);
 
-  tmp = file_size(file);
-  
+  if(size == -2) return 0;                       // don't edit directories
 
-  write(file + ((tmp > 0) ?
-		": " + tmp + " bytes.\n" :
-		"\n"));
-  write(ed_start(file, restrict));
-  write(": ");
+  message(MSG_ED,
+	  sprintf("%s%s\n", file, (size > 0 ? ": " + size + " bytes." : "")),
+	  this_player());
+  message(MSG_ED, ed_start(file, restrict), this_player());
+
+  this_object()->write_ed_prompt(query_ed_mode()); // call other so can catch
+                                                   // with a shadow
   input_to("process_ed_input");
   return 1;
 }
 
-void
+nomask void
 process_ed_input(string input)
 {
-  int mode;
+  int md;
+  message(MSG_ED, ed_cmd(input), this_player());
 
-  write(ed_cmd(input));
-  mode = query_ed_mode();
-
-  switch(mode) {
-  case -2 :    // at --more-- prompt in help screen
-    break;
-  case -1 :    // not in ed
-    return;
-  case 0 :     // at the ed prompt
-    write(": ");
-    break;
+  
+  if( (md = query_ed_mode()) != -1) {
+    this_object()->write_ed_prompt(md);            // call other so can catch
+                                                   // with a shadow
+    input_to("process_ed_input");
   }
-  input_to("process_ed_input");
 }
-#endif
+
+string*
+query_path()
+{
+  return DEFAULT_PATHS;
+}

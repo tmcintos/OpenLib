@@ -1,0 +1,9 @@
+#obj/clone/user/human.c
+flags ({})
+coins ({0,0,})
+hit_points 0
+spell_points 0
+gender 0
+env_vars (["nmsh_xverb":([":":"emote $*","'":"say $*",]),"nmsh_alias":(["n":"north","e":"east","se":"southeast","ne":"northeast","i":"inventory","nw":"northwest","sw":"southwest","w":"west","bio":"biography","d":"down","exa":"look at $*","l":"look $*","u":"up","s":"south",]),"TITLE":"Bleh! says $N","nmsh_nick":([]),"TERM":"xterm","MORE_EXIT_END":1,"PATH":"/cmd/wiz:/cmd/player:/cmd/adm:/adm/cmd/player:/adm/cmd/wiz","version":"Prototype Shell","SHELL":"/obj/clone/shells/protosh","PROMPT":"[%/]-> ",])
+aliases (["n":"north","e":"east","sc":"score","se":"southeast","la":"look at","ne":"northeast","i":"inventory","sw":"southwest","nw":"northwest","w":"west","l":"look","test":"say \"Check ${this} out???\"","s":"south",])
+channels ({})

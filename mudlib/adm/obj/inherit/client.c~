@@ -70,6 +70,7 @@ static void eventWriteCallback(int fd) {
     while( Socket->Buffer && x == EESUCCESS ) {
 	switch( x = socket_write(Socket->Descriptor, Socket->Buffer[0]) ) {
             case EESUCCESS:
+
 	        break;
 	    case EECALLBACK:
 		Socket->Blocking = 1;

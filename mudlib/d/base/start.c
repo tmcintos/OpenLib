@@ -16,4 +16,5 @@ end);
   set_exits((["east" : "/d/base/start2",
 	      "west" : "/d/base/start3",
 	      ]));
+  replace_program(ROOM);
 }

@@ -2,10 +2,11 @@
 #ifndef OBJECT_TYPES
 #define OBJECT_TYPES "ARE SET"
 
-#define OBJECT_LIVING     1
-#define OBJECT_PLAYER     2
-#define OBJECT_LINK       4
-#define OBJECT_NO_ATTACK 8
+// #define OBJECT_LIVING     1 living() efun
+// #define OBJECT_PLAYER     2 userp() efun
+// #define OBJECT_LINK       4 interactive() efun
+// #define OBJECT_NO_ATTACK 8  --Tim: I think we'll only fight in rooms, which
+//                                    have a func for this..
 #define OBJECT_OBJECT     16
 #define OBJECT_WEAPON     32
 #define OBJECT_ARMOUR     64

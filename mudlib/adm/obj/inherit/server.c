@@ -7,6 +7,7 @@
  *  10.23.95  Tim modified for this mudlib
  *  12.08.95  Tim modified to support MUD mode sockets
  *  02.05.96  Tim added SetSocketClosed(), Closed variable & related code
+ *  03.23.96  Tim eventCreateSocket() returns fd of listening socket
  */
 
 #include <mudlib.h>
@@ -52,6 +53,7 @@ int eventCreateSocket(int port, int type) {
 	eventSocketError("Error in socket_listen().", x);
 	return x;
     }
+    return Listen->Descriptor;
 }
 
 static void eventServerListenCallback(int fd) {

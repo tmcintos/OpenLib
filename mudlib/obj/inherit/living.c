@@ -20,7 +20,7 @@ inherit INHERIT_DIR "/combat";
 inherit OBJECT;
 
 // Global Variables
-private static string name = "";       // our name, don't save in users
+private static string name;            // our name, don't save in users
 
 private int *coins;                    // our money
 private int hit_points, spell_points;  // our HP/SP
@@ -62,7 +62,7 @@ int recieve_damage(int damage)
     hit_points = 0;
 
 // don't die if we're a player right now -- Tim
-  if(!(query_object_class() & OBJECT_PLAYER))
+  if(!(userp(this_player())))
     if(!hit_points)
       call_out((: die :), 2);
 
@@ -82,7 +82,7 @@ void
 create()
 {
   object::create();
-  set_object_class(OBJECT_LIVING | OBJECT_CONTAINER);
+  set_object_class(OBJECT_CONTAINER);
 
   set_weight(this_object()->query_base_weight());
 

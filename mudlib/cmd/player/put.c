@@ -1,60 +1,33 @@
-/*  -*- LPC -*-  */
-// get.c:  get an oKyricc 1/23/96
-//   Originally by Tim 10/11/95
-//
+//  put.c: puts objs into things
+//  coded by Kyricc
+//  24 Feb 96
 
 #include <command.h>
 
 int
-main(string what)
-  string from, short;
-  object ob, source;
+main (string what)
+{
+  string where, short;
+  object ob, destination;
   int err;
 
   if(!what || what == "")
-    return notify_fail("Get what??\n");
+    return notify_fail("Put what where??\n");
 
-  if(sscanf(what, "%s from %s", what, from) == 2) {
-    source = present(from, this_player());
-    if(!source)
-      source = present(from, environment(this_player()));
-    if(!source)
-      return notify_fail(sprintf("Can't find %s here to get it from!\n",
-				 from));
-  } else {
-    source = environment(this_player());
-  }
+  if(sscanf(what, "%s in %s", what, where) == 2) {
+    destination = present(where, this_player());
+    if(!destination)
+    destination = present(where, environment(this_player()));
+    if(!destination)
+      return notify_fail(sprintf("Cant find %s here to put it into!\n",
+                                 where));
+      }
 
-  ob = present(what, source);
+  ob = present(what, this_player());
 
-  if(!ob) {
-    if(source)
-      return notify_fail(sprintf("Can't find %s in %s.\n", what, from));
-    else 
-      return notify_fail(sprintf("Can't find %s here.\n", what));
-  }
-
-  if(!ob->get())
-    return notify_fail("You can't get that!\n");
-
-// Object weight stuff here...
-// don't know if we'll want to do a ob->on_get() or just do all in init()
-
-  short = ob->short();            // ob not guaranteed to exist after move
-
-  if(err = ob->move(this_player()) < 1)
-    return notify_fail("You fail.\n");      // add error detection later
-
-  if(source && source != environment(this_player()))
-    say(sprintf("%s gets %s from %s.\n",
-		this_player()->query_cap_name(),
-		short,
-		source->short()));
-  else
-    say(sprintf("%s gets %s.\n",
-		this_player()->query_cap_name(),
-		short));
-
+  if(!ob)
+    return notify_fail("You don't have that!\n");
+  ob->move(destination);
   write("Ok.\n");
   return 1;
 }

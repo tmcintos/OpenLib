@@ -1,0 +1,9 @@
+#obj/clone/user/human.c
+flags ({})
+coins ({0,0,})
+hit_points 100
+spell_points 0
+gender 0
+env_vars (["PATH":"/cmd/player:/adm/cmd/player:/cmd/wiz:/adm/cmd/wiz:/cmd/adm:/adm/cmd/adm","SHELL":"/obj/clone/shells/protosh","TERM":"vt100","title":"the stud","version":"Prototype Shell",])
+aliases (["i":"inventory","se":"southeast","c":"cat","n":"north","nw":"northwest","sc":"score","e":"east","ls":"ls -F","sw":"southwest","la":"look at","s":"south","ne":"northeast","w":"west","l":"look",])
+channels ({"icode","wiz","info",})

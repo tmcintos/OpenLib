@@ -1,0 +1,23 @@
+/*  -*- LPC -*-  */
+#include <command.h>
+
+int
+main()
+{
+  object conn = this_player()->query_connection();
+  object body = new(conn->query_body());
+  object old_bod = this_player();
+
+  if(body->move(environment(this_player())) < 1) {
+    destruct(body);
+    retrun notify_fail("Couldn't move body to this environment.\n");
+  }
+
+  body->set_connection(conn);
+  exec(body, this_player());   // the ol' switch-er-ooo
+
+  old_bod->set_connection(0);  // so we don't dest our conn.
+  destruct(old_bod);
+
+  return 1;
+}

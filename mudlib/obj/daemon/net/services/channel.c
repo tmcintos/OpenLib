@@ -89,9 +89,10 @@ varargs void eventSendChannel(string who, string ch, string msg, int emote,
 
     if( emote ) {
 	if( target && targmsg ) {
-	    if( sscanf(target, "%s@%s", targpl, where) != 2 )
+	    if( sscanf(target, "%s@%s", targpl, where) != 2 ) {
 	      targpl = target;
-	    where = mud_name();
+	      where = mud_name();
+	    } // tim 2/96 -- still need targeted emotes in here
 	}
 	else targpl = where = targmsg = 0;
 	packet = ({ "channel-e", 5, mud_name(), convert_name(who), 0, 0, ch, 

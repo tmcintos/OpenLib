@@ -27,19 +27,15 @@ void eventReceiveEmote(mixed *packet) {
 	return;
     }
     packet[7] = replace_string(packet[7], "$N", packet[6] + "@" + packet[2]);
-    message("emote", packet[7], ob);
+    message("emote", packet[7] + "\n", ob);
 }
 
 void eventSendEmote(string who, string where, string msg) {
     string pl, plc;
     
-    pl = (string)this_player(1)->GetKeyName();
+    pl = (string)this_player(1)->query_name();
     plc = (string)this_player(1)->query_cap_name();
     where = (string)INTERMUD_D->GetMudName(where);
     INTERMUD_D->eventWrite(({ "emoteto", 5, mud_name(), pl, where, 
 			      convert_name(who), plc, msg }));
 }
-
-    
-
-    

@@ -600,3 +600,682 @@ adm/obj/daemon/cmdd.c line 77: 'path' is not a local or a global variable.
 adm/obj/daemon/cmdd.c line 78: Undefined variable 'path'
 obj/clone/user.c line 275: 'path' is not a local or a global variable.
 obj/clone/user.c line 276: Undefined variable 'path'
+tmp/tmp_eval_file.c line 6: Too many arguments to explode
+tmp/tmp_eval_file.c line 6: Too few arguments to terminal_colour
+obj/daemon/net/fingerd.c line 21: parse error
+obj/daemon/net/fingerd.c line 27: Undefined variable 'val'
+obj/daemon/net/fingerd.c line 27: Illegal LHS
+obj/daemon/net/fingerd.c line 29: Undefined variable 'finger'
+obj/daemon/net/fingerd.c line 30: Undefined variable 'fd'
+tmp/tmp_eval_file.c line 6: parse error
+cmd/adm/files.c line 15: Undefined variable 'ret'
+tmp/tmp_eval_file.c line 6: parse error
+cmd/adm/su.c line 13: Undefined variable 'retrun'
+cmd/adm/su.c line 13: parse error
+cmd/adm/su.c line 13: Undefined variable 'retrun'
+cmd/adm/su.c line 13: parse error
+tmp/tmp_eval_file.c line 6: Undefined variable 'who'
+tmp/tmp_eval_file.c line 7: End of file in string
+tmp/tmp_eval_file.c line 7: parse error
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+tmp/tmp_eval_file.c line 6: Undefined variable 'users'
+tmp/tmp_eval_file.c line 6: Undefined function clear_notify
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+adm/efuns/x_exists.c line 25: Undefined variable 'filename'
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+tmp/tmp_eval_file.c line 6: Undefined function dir_exists
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+obj/daemon/chatd.c line 93: Bad argument 2 to efun member_array()
+tmp/tmp_eval_file.c line 6: parse error
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+obj/clone/connection.c line 15: parse error
+cmd/player/put.c line 32: parse error
+cmd/player/put.c line 32: parse error
+tmp/tmp_eval_file.c line 6: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+tmp/tmp_eval_file.c line 6: parse error
+tmp/tmp_eval_file.c line 7: End of file in string
+obj/clone/shells/protosh.c line 124: Warning: Types in ?: do not match ( int vs string ).
+obj/clone/shells/protosh.c line 132: Warning: Types in ?: do not match ( int vs string ).
+obj/clone/shells/protosh.c line 156: Too few arguments to replace_string
+obj/clone/shells/protosh.c line 156: Bad assignment ( int vs string ).
+obj/clone/shells/protosh.c line 156: parse error
+obj/clone/shells/protosh.c line 157: Illegal LHS
+obj/clone/shells/protosh.c line 159: Warning: Value of conditional expression is unused
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+tmp/tmp_eval_file.c line 6: Illegal lvalue
+tmp/tmp_eval_file.c line 6: Bad assignment ( string vs int ).
+tmp/tmp_eval_file.c line 6: Illegal lvalue
+tmp/tmp_eval_file.c line 6: parse error
+obj/clone/shells/protosh.c line 121: parse error
+obj/clone/shells/protosh.c line 122: Illegal LHS
+obj/clone/shells/protosh.c line 122: parse error
+obj/clone/shells/protosh.c line 124: Illegal LHS
+obj/clone/shells/protosh.c line 124: parse error
+obj/clone/shells/protosh.c line 130: Illegal LHS
+cmd/player/put.c line 32: parse error
+tmp/tmp_eval_file.c line 6: parse error
+tmp/tmp_eval_file.c line 6: parse error
+tmp/tmp_eval_file.c line 6: parse error
+tmp/tmp_eval_file.c line 6: Illegal lvalue
+tmp/tmp_eval_file.c line 6: Undefined variable 'wds'
+obj/clone/shells/tmp.c line 15: Warning: Unknown \x character.
+obj/clone/shells/tmp.c line 34: Warning: Unknown \x character.
+obj/clone/shells/tmp.c line 62: Warning: Unknown \x character.
+obj/clone/shells/tmp.c line 77: Warning: Unknown \x character.
+obj/clone/shells/tmp.c line 107: Undefined variable 'i'
+obj/clone/shells/tmp.c line 107: Undefined variable 'i'
+tmp/tmp_eval_file.c line 7: End of file in string
+tmp/tmp_eval_file.c line 7: parse error
+tmp/tmp_eval_file.c line 6: Warning: A negative constant as the second element of arr[x..y] no longer means indexing from the end.  Use arr[x..<y]
+tmp/tmp_eval_file.c line 6: Undefined function sscnaf
+obj/clone/shells/protosh.c line 259: Undefined variable 'idx'
+obj/clone/shells/protosh.c line 294: parse error
+obj/clone/shells/protosh.c line 295: Illegal LHS
+obj/clone/shells/protosh.c line 295: parse error
+obj/clone/shells/protosh.c line 297: Illegal LHS
+obj/clone/shells/protosh.c line 297: parse error
+obj/clone/shells/protosh.c line 294: parse error
+obj/clone/shells/protosh.c line 295: Illegal LHS
+obj/clone/shells/protosh.c line 295: parse error
+obj/clone/shells/protosh.c line 297: Illegal LHS
+obj/clone/shells/protosh.c line 297: parse error
+obj/clone/shells/protosh.c line 299: Illegal LHS
+obj/clone/shells/protosh.c line 294: Warning: Unknown \x char.
+obj/clone/shells/protosh.c line 294: Warning: Unknown \x char.
+obj/clone/shells/protosh.c line 294: parse error
+obj/clone/shells/protosh.c line 295: Illegal LHS
+obj/clone/shells/protosh.c line 295: parse error
+obj/clone/shells/protosh.c line 297: Illegal LHS
+obj/clone/shells/protosh.c line 297: parse error
+obj/clone/shells/protosh.c line 299: Illegal LHS
+obj/clone/shells/protosh.c line 295: parse error
+obj/clone/shells/protosh.c line 296: Illegal LHS
+obj/clone/shells/protosh.c line 296: parse error
+obj/clone/shells/protosh.c line 298: Illegal LHS
+obj/clone/shells/protosh.c line 298: parse error
+obj/clone/shells/protosh.c line 300: Illegal LHS
+tmp/tmp_eval_file.c line 6: parse error
+tmp/tmp_eval_file.c line 6: Illegal character constant
+tmp/tmp_eval_file.c line 6: parse error
+tmp/tmp_eval_file.c line 7: End of file in string
+tmp/tmp_eval_file.c line 6: parse error
+tmp/tmp_eval_file.c line 7: End of file in string
+cmd/wiz/timtest.c line 51: Warning: Value of conditional expression is unused
+obj/clone/shells/protosh.c line 246: Undefined variable 'tmp'
+obj/clone/shells/protosh.c line 263: Undefined variable 'tmp'
+cmd/wiz/timtest.c line 63: Undefined function get_words
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+obj/clone/shells/protosh.c line 430: parse error
+obj/clone/shells/protosh.c line 431: Illegal LHS
+obj/clone/shells/protosh.c line 434: Bad assignment ( mixed * vs string ).
+obj/clone/shells/protosh.c line 436: parse error
+obj/clone/shells/protosh.c line 444: Undefined variable 'key'
+obj/clone/shells/protosh.c line 444: Illegal LHS
+obj/clone/shells/protosh.c line 430: parse error
+obj/clone/shells/protosh.c line 431: Illegal LHS
+obj/clone/shells/protosh.c line 434: Bad assignment ( mixed * vs string ).
+obj/clone/shells/protosh.c line 468: parse error
+obj/clone/shells/protosh.c line 469: Illegal LHS
+obj/clone/shells/protosh.c line 472: Bad assignment ( mixed * vs string ).
+obj/clone/shells/protosh.c line 473: Undefined variable 'onwer'
+obj/clone/shells/protosh.c line 330: Type of returned value doesn't match function return type ( void vs string ).
+obj/clone/shells/protosh.c line 332: Undefined variable 'input'
+obj/clone/shells/protosh.c line 332: Undefined variable 'input'
+obj/clone/shells/protosh.c line 69: Number of arguments disagrees with previous definition.
+tmp/tmp_eval_file.c line 6: Undefined function sort
+tmp/tmp_eval_file.c line 6: parse error
+obj/clone/shells/protosh.c line 600: Undefined variable 'val'
+obj/clone/shells/protosh.c line 613: parse error
+obj/clone/shells/protosh.c line 616: Illegal LHS
+obj/clone/shells/protosh.c line 617: parse error
+tmp/tmp_eval_file.c line 6: Undefined variable 'match_path'
+tmp/tmp_eval_file.c line 6: Too few arguments to match_path
+tmp/tmp_eval_file.c line 6: Undefined function each
+tmp/tmp_eval_file.c line 6: Undefined variable 'hey'
+tmp/tmp_eval_file.c line 6: Undefined variable 'hey'
+tmp/tmp_eval_file.c line 6: Too few arguments to unique_array
+obj/clone/shells/protosh.c line 343: Illegal to use local variable in functional.
+obj/clone/shells/protosh.c line 361: Illegal to use local variable in functional.
+obj/clone/shells/protosh.c line 556: Reserved type name unexpected.
+obj/clone/shells/protosh.c line 556: parse error
+obj/clone/shells/protosh.c line 556: Illegal LHS
+obj/clone/shells/protosh.c line 557: Reserved type name unexpected.
+obj/clone/shells/protosh.c line 557: parse error
+obj/clone/shells/protosh.c line 563: Illegal LHS
+tmp/tmp_eval_file.c line 6: Undefined function arrange_string
+obj/clone/nmsh.c line 8: Cannot #include flags.h
+obj/clone/nmsh.c line 9: Cannot #include nmsh.h
+obj/clone/nmsh.c line 36: Undefined function reset_history
+obj/clone/nmsh.c line 37: Undefined function reset_prompt
+obj/clone/nmsh.c line 44: Undefined function creatorp
+obj/clone/nmsh.c line 67: Undefined function arrange_string
+tmp/tmp_eval_file.c line 6: Too few arguments to userp
+tmp/tmp_eval_file.c line 6: Undefined function trim
+obj/clone/shells/nmsh.c line 8: Cannot #include flags.h
+obj/clone/shells/nmsh.c line 43: Undefined function creatorp
+obj/clone/shells/nmsh.c line 57: Undefined function arrange_string
+obj/clone/shells/nmsh.c line 108: Undefined function set_cwd
+obj/clone/shells/nmsh.c line 188: Undefined function pushd
+obj/clone/shells/nmsh.c line 193: Undefined function popd
+obj/clone/shells/nmsh.c line 8: Cannot #include flags.h
+obj/clone/shells/nmsh.c line 108: Undefined function set_cwd
+obj/clone/shells/nmsh.c line 187: Undefined function pushd
+obj/clone/shells/nmsh.c line 192: Undefined function popd
+obj/clone/shells/nmsh.c line 221: Undefined function base_name
+obj/clone/shells/nmsh.c line 221: Bad assignment ( unknown vs string ).
+obj/clone/shells/nmsh.c line 219: Undefined function base_name
+obj/clone/shells/nmsh.c line 219: Bad assignment ( unknown vs string ).
+obj/clone/shells/nmsh.c line 219: Bad argument 1 to efun explode()
+obj/clone/shells/nmsh.c line 233: Undefined variable 'DEFAULT_PROMPT'
+obj/clone/shells/nmsh.c line 249: Undefined function hiddenp
+obj/clone/shells/nmsh.c line 270: Undefined variable 'y'
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+adm/efuns/path_utils.c line 8: Undefined variable 'str'
+adm/efuns/path_utils.c line 9: Undefined variable 'idx'
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+obj/clone/shells/nmsh.c line 233: Undefined variable 'DEFAULT_PROMPT'
+obj/clone/shells/nmsh.c line 249: Undefined function hiddenp
+obj/clone/shells/nmsh.c line 270: Undefined variable 'y'
+obj/clone/shells/nmsh.c line 272: Undefined variable 'ret'
+obj/clone/shells/nmsh.c line 286: Undefined variable 'SUPPORTED_CLIENTS'
+obj/clone/shells/nmsh.c line 288: Undefined function process_request
+obj/clone/shells/nmsh.c line 235: Undefined variable 'DEFAULT_PROMPT'
+obj/clone/shells/nmsh.c line 272: Undefined variable 'y'
+obj/clone/shells/nmsh.c line 274: Undefined variable 'ret'
+obj/clone/shells/nmsh.c line 288: Undefined variable 'SUPPORTED_CLIENTS'
+obj/clone/shells/nmsh.c line 290: Undefined function process_request
+obj/clone/shells/nmsh.c line 295: Undefined function do_history
+obj/clone/shells/nmsh.c line 236: Undefined variable 'DEFAULT_PROMPT'
+obj/clone/shells/nmsh.c line 298: Undefined function do_history
+obj/clone/shells/nmsh.c line 298: Bad assignment ( unknown vs string ).
+obj/clone/shells/nmsh.c line 298: == always false because of incompatible types ( unknown vs string ).
+obj/clone/shells/nmsh.c line 300: Undefined function add_history_cmd
+obj/clone/shells/nmsh.c line 301: Undefined function do_nickname
+obj/clone/shells/nmsh.c line 301: Undefined function add_history_cmd
+obj/clone/shells/nmsh.c line 302: Undefined function do_alias
+obj/clone/shells/nmsh.c line 302: Type of returned value doesn't match function return type ( unknown vs string ).
+obj/clone/shells/nmsh.c line 326: Too few arguments to message
+obj/clone/shells/nmsh.c line 405: Redeclaration of function do_alias.
+obj/clone/shells/nmsh.c line 480: Redeclaration of function add_history_cmd.
+obj/clone/shells/nmsh.c line 326: Too few arguments to message
+obj/clone/shells/nmsh.c line 72: Macro expansion buffer overflow
+obj/clone/shells/nmsh.c line 72: parse error
+obj/clone/shells/nmsh.c line 508: Undefined variable 'TERMCAP_D'
+tmp/tmp_eval_file.c line 6: Undefined function enable_wizard
+tmp/tmp_eval_file.c line 6: Undefined function query_all_inventory
+tmp/tmp_eval_file.c line 6: Undefined variable 'adm'
+tmp/tmp_eval_file.c line 6: Undefined variable 'obj'
+tmp/tmp_eval_file.c line 6: Undefined variable 'daemon'
+tmp/tmp_eval_file.c line 6: Reserved type name unexpected.
+tmp/tmp_eval_file.c line 6: parse error
+tmp/tmp_eval_file.c line 6: Too few arguments to replaceable
+tmp/tmp_eval_file.c line 6: Too few arguments to file_length
+tmp/tmp_eval_file.c line 6: Undefined function apply
+tmp/tmp_eval_file.c line 6: Too few arguments to remove_interactive
+tmp/tmp_eval_file.c line 6: Undefined function call_function_interactive
+tmp/tmp_eval_file.c line 6: Too few arguments to terminal_colour
+tmp/tmp_eval_file.c line 6: Too few arguments to terminal_colour
+obj/clone/shells/nmsh.c line 194: Undefined variable 'lines'
+tmp/tmp_eval_file.c line 6: Bad argument 1 to efun destruct()
+tmp/tmp_eval_file.c line 6: Undefined function get_user_data
+tmp/tmp_eval_file.c line 6: parse error
+tmp/tmp_eval_file.c line 6: parse error
+tmp/tmp_eval_file.c line 6: Too few arguments to functions
+tmp/tmp_eval_file.c line 6: Bad argument 1 to efun variables()
+adm/obj/daemon/master.c line 20: parse error
+adm/obj/daemon/master.c line 20: Too many macro expansions
+tmp/tmp_eval_file.c line 6: parse error
+tmp/tmp_eval_file.c line 6: Too few arguments to shout
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+tmp/tmp_eval_file.c line 6: parse error
+tmp/tmp_eval_file.c line 6: Too few arguments to write
+tmp/tmp_eval_file.c line 6: parse error
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+obj/clone/shells/protosh.c line 618: Undefined variable 'CMD_D'
+obj/clone/user.c line 152: Undefined variable 'env'
+obj/clone/user.c line 152: Undefined variable 'env'
+adm/obj/daemon/logind.c line 85: Undefined variable 'ORIGIN_LOCAL'
+adm/obj/daemon/logind.c line 354: parse error
+adm/obj/daemon/logind.c line 355: parse error
+tmp/tmp_eval_file.c line 6: Undefined function set_light
+adm/obj/daemon/logind.c line 204: Called function not compiled with type testing.
+adm/obj/daemon/logind.c line 204: Warning: Return type doesn't match prototype ( void vs unknown )
+adm/obj/daemon/logind.c line 212: Called function not compiled with type testing.
+adm/obj/daemon/logind.c line 212: Warning: Return type doesn't match prototype ( void vs unknown )
+adm/obj/daemon/logind.c line 227: Called function not compiled with type testing.
+adm/obj/daemon/logind.c line 227: Warning: Return type doesn't match prototype ( void vs unknown )
+adm/cmd/player/chfn.c line 54: Undefined variable 'file'
+adm/cmd/player/chfn.c line 69: Undefined variable 'file'
+adm/obj/daemon/logind.c line 107: Number of arguments disagrees with previous definition.
+tmp/tmp_eval_file.c line 6: Undefined variable 'bob'
+tmp/tmp_eval_file.c line 6: Undefined variable 'jim'
+tmp/tmp_eval_file.c line 6: Undefined variable 's'
+room/room.c line 29: parse error
+room/room.c line 35: Illegal LHS
+room/room.c line 36: Undefined variable 'i'
+room/room.c line 30: parse error
+room/room.c line 36: Illegal LHS
+room/room.c line 37: Undefined variable 'i'
+room/room.c line 30: parse error
+room/room.c line 36: Illegal LHS
+room/room.c line 37: Undefined variable 'i'
+room/room.c line 28: parse error
+room/room.c line 34: Illegal LHS
+room/room.c line 35: Undefined variable 'i'
+room/room.c line 29: parse error
+room/room.c line 35: Illegal LHS
+room/room.c line 36: Undefined variable 'i'
+tmp/tmp_eval_file.c line 6: Single '#' in identifier -- use '##' for token pasting
+tmp/tmp_eval_file.c line 6: parse error
+tmp/tmp_eval_file.c line 6: parse error
+obj/inherit/room.c line 167: Bad argument 1 to efun strsrch()
+room/jetty.c line 10: Undefined variable 'no_castle_flag'
+obj/inherit/room.c line 165: Undefined function bjectp
+obj/inherit/room.c line 165: Undefined function bjectp
+room/room/jetty.c line 1: Cannot #include room.h
+room/room/jetty.c line 5: parse error
+room/vill_road2.c line 7: parse error
+room/jetty2.c line 14: Too many arguments to move_object
+room/vill_road2.c line 7: parse error
+room/vill_road2.c line 92: Too many arguments to move_object
+room/vill_road2.c line 92: Too many arguments to move_object
+room/adv_guild.c line 34: Undefined variable 'arg'
+room/adv_guild.c line 34: Undefined variable 'arg'
+room/adv_guild.c line 34: Undefined variable 'arg'
+room/room.c line 122: parse error
+room/room.c line 122: Illegal LHS
+room/room.c line 39: Undefined function reset
+room/room.c line 41: Wrong number of arguments to reset
+    Expected: 0  Got: 1
+room/room.c line 36: Missing type for argument
+room/room.c line 32: Bad argument 1 to efun explode()
+room/room.c line 32: Bad argument 1 to efun explode()
+room/yard.c line 10: parse error
+room/forest1.c line 8: Undefined function fix_jacket
+room/forest1.c line 28: Redeclaration of function fix_jacket.
+room/orc_vall.c line 24: parse error
+room/orc_vall.c line 27: Illegal LHS
+room/orc_vall.c line 46: Undefined variable 'w_name'
+room/orc_vall.c line 47: parse error
+room/orc_vall.c line 47: Illegal LHS
+room/orc_vall.c line 48: Illegal to use private variable 'value'
+room/yard.c line 10: parse error
+room/pub2.c line 14: Too many arguments to move_object
+room/pub2.c line 18: Too many arguments to move_object
+room/pub2.c line 120: Too many arguments to move_object
+room/pub2.c line 131: parse error
+room/pub2.c line 133: parse error
+room/store.c line 86: Too many arguments to move_object
+room/store.c line 116: Too many arguments to move_object
+room/store.c line 136: Too many arguments to move_object
+room/store.c line 142: Too many arguments to move_object
+room/storage.c line 28: Too many arguments to move_object
+room/storage.c line 28: Too many arguments to move_object
+room/storage.c line 28: Too many arguments to move_object
+room/prison.c line 17: Too few arguments to add_action
+room/prison.c line 17: Too few arguments to add_action
+room/prison.c line 17: Too few arguments to add_action
+room/prison.c line 16: Too few arguments to add_action
+room/prison.c line 11: Missing type for argument
+room/prison.c line 15: Too few arguments to add_action
+room/prison.c line 15: Undefined function add_verb
+room/prison.c line 15: Too few arguments to add_action
+room/prison.c line 15: Undefined function add_verb
+room/prison.c line 15: Too few arguments to add_action
+room/prison.c line 15: Undefined function add_verb
+room/orc_vall.c line 24: parse error
+room/orc_vall.c line 27: Illegal LHS
+room/orc_vall.c line 46: Undefined variable 'w_name'
+room/orc_vall.c line 47: parse error
+room/orc_vall.c line 47: Illegal LHS
+room/orc_vall.c line 48: Illegal to use private variable 'value'
+room/orc_vall.c line 24: parse error
+room/orc_vall.c line 27: Illegal LHS
+room/orc_vall.c line 46: Undefined variable 'w_name'
+room/orc_vall.c line 47: parse error
+room/orc_vall.c line 47: Illegal LHS
+room/orc_vall.c line 48: Illegal to use private variable 'value'
+room/orc_vall.c line 24: parse error
+room/orc_vall.c line 27: Illegal LHS
+room/orc_vall.c line 46: Undefined variable 'w_name'
+room/orc_vall.c line 47: parse error
+room/orc_vall.c line 47: Illegal LHS
+room/orc_vall.c line 48: Illegal to use private variable 'value'
+room/orc_vall.c line 24: parse error
+room/orc_vall.c line 27: Illegal LHS
+room/orc_vall.c line 46: Undefined variable 'w_name'
+room/orc_vall.c line 47: parse error
+room/orc_vall.c line 47: Illegal LHS
+room/orc_vall.c line 48: Illegal to use private variable 'value'
+room/prison.c line 3: parse error
+room/prison.c line 12: Too few arguments to add_action
+room/prison.c line 12: Undefined function add_verb
+room/inn.c line 25: Undefined variable 'arg'
+room/inn.c line 25: Bad assignment ( mixed * vs string ).
+room/inn.c line 31: Redeclaration of function init.
+room/inn.c line 36: Redeclaration of function long.
+room/adv_inner.c line 14: Undefined variable 'arg'
+room/inn.c line 25: Undefined variable 'arg'
+room/inn.c line 25: Bad assignment ( mixed * vs string ).
+room/inn.c line 31: Redeclaration of function init.
+room/inn.c line 36: Redeclaration of function long.
+room/inn.c line 24: Bad assignment ( mixed * vs string ).
+room/inn.c line 30: Redeclaration of function init.
+room/inn.c line 35: Redeclaration of function long.
+room/inn.c line 30: Redeclaration of function init.
+room/inn.c line 35: Redeclaration of function long.
+room/inn.c line 30: Redeclaration of function init.
+room/inn.c line 35: Redeclaration of function long.
+room/inn.c line 30: Redeclaration of function init.
+room/inn.c line 35: Redeclaration of function long.
+room/inn.c line 34: Redeclaration of function long.
+room/inn.c line 32: Undefined function show_menu
+room/inn.c line 48: Redeclaration of function show_menu.
+room/room.h line 31: parse error
+room/room.h line 31: parse error
+room/room.h line 33: parse error
+room/room.h line 32: parse error
+room/room.h line 32: parse error
+room/room.h line 32: parse error
+room/room.h line 50: parse error
+room/test.c line 54: Too many arguments to move_object
+room/room.c line 49: Missing type for argument
+room/room.c line 49: Missing type for argument
+room/rum2.c line 15: Too few arguments to add_action
+obj/clone/shsh.c line 61: Warning: redefinition of #define NULL
+
+obj/clone/shsh.c line 1619: Warning: Unknown \x char.
+obj/clone/shells/ssh.c line 46: Number of arguments disagrees with previous definition.
+obj/clone/user.c line 249: Undefined variable 'shell'
+obj/clone/user.c line 264: Undefined variable 'shell'
+obj/clone/user.c line 273: Undefined variable 'shell'
+obj/clone/user.c line 283: Undefined variable 'shell'
+obj/clone/user.c line 295: Undefined variable 'shell'
+obj/clone/shells/ssh.c line 65: Type of returned value doesn't match function return type ( object vs int ).
+obj/clone/user.c line 257: Undefined function shadowp
+obj/clone/user.c line 257: != always true because of incompatible types ( unknown vs object ).
+obj/clone/user.c line 266: != always true because of incompatible types ( unknown vs object ).
+obj/clone/user.c line 276: != always true because of incompatible types ( unknown vs object ).
+obj/clone/user.c line 288: != always true because of incompatible types ( unknown vs object ).
+obj/clone/user.c line 257: Undefined function shadowp
+obj/clone/user.c line 257: != always true because of incompatible types ( unknown vs object ).
+obj/clone/user.c line 266: != always true because of incompatible types ( unknown vs object ).
+obj/clone/user.c line 276: != always true because of incompatible types ( unknown vs object ).
+obj/clone/user.c line 288: != always true because of incompatible types ( unknown vs object ).
+obj/clone/shells/nmsh.c line 257: Type of returned value doesn't match function return type ( string vs void ).
+obj/clone/shells/nmsh.c line 539: Undefined variable 'verb'
+obj/clone/shells/nmsh.c line 539: Undefined variable 'verb'
+obj/clone/shells/ssh.c line 95: Wrong number of arguments to cmd_set
+    Expected: 1  Got: 0
+obj/clone/shells/protosh.c line 530: Number of arguments disagrees with previous definition.
+tmp/tmp_eval_file.c line 6: Undefined variable 'me0'
+tmp/tmp_eval_file.c line 6: parse error
+room/narr_alley.c line 18: Undefined variable 'str'
+room/narr_alley.c line 18: Undefined variable 'str'
+room/post.c line 32: parse error
+room/post.c line 34: Illegal LHS
+room/post.c line 37: parse error
+room/post.c line 37: Illegal LHS
+room/post.c line 39: parse error
+room/post.c line 39: Illegal LHS
+cmd/player/look.c line 32: Undefined variable 'ob'
+room/well.c line 27: Undefined variable 'str'
+room/sub/door_trap.c line 32: Too few arguments to add_action
+room/sub/door_trap.c line 32: Undefined function add_verb
+room/sub/door_trap.c line 32: Too few arguments to add_action
+obj/inherit/room.c line 88: Bad assignment ( object * vs object ).
+obj/inherit/room.c line 90: Value indexed has a bad type : "object "
+obj/inherit/room.c line 90: Bad assignment ( object * vs object ).
+room/post.c line 32: parse error
+room/post.c line 34: Illegal LHS
+room/post.c line 37: parse error
+room/post.c line 37: Illegal LHS
+room/post.c line 39: parse error
+room/post.c line 39: Illegal LHS
+room/sub/after_trap.c line 16: Undefined function extra_reset
+room/sub/after_trap.c line 36: Redeclaration of function extra_reset.
+room/maze1/maze1.c line 17: Too few arguments to add_action
+room/maze1/maze1.c line 18: Too few arguments to add_action
+room/maze1/maze1.c line 19: Too few arguments to add_action
+room/maze1/maze1.c line 20: Too few arguments to add_action
+room/post.c line 32: parse error
+room/post.c line 34: Illegal LHS
+room/post.c line 37: parse error
+room/post.c line 37: Illegal LHS
+room/post.c line 39: parse error
+room/post.c line 39: Illegal LHS
+tmp/tmp_eval_file.c line 6: Undefined variable 'mudlib_name9'
+tmp/tmp_eval_file.c line 6: parse error
+adm/cmd/wiz/mkmp.c line 2: Unrecognised # directive
+adm/cmd/wiz/mkmp.c line 44: Undefined variable 'text'
+adm/cmd/wiz/mkmp.c line 52: Undefined variable 'DATESTR_DATE'
+adm/cmd/wiz/mkmp.c line 53: Undefined variable 'DATESTR_YEAR'
+adm/cmd/wiz/mkmp.c line 59: Undefined variable 'EDITOR_D'
+adm/cmd/wiz/mkmp.c line 59: Undefined variable 'get_info'
+adm/cmd/wiz/mkmp.c line 44: Undefined variable 'text'
+adm/cmd/wiz/mkmp.c line 52: Undefined variable 'DATESTR_DATE'
+adm/cmd/wiz/mkmp.c line 53: Undefined variable 'DATESTR_YEAR'
+adm/cmd/wiz/mkmp.c line 59: Undefined variable 'get_info'
+adm/cmd/wiz/mkmp.c line 59: Illegal to use local variable in functional.
+adm/cmd/wiz/mkmp.c line 52: Undefined variable 'DATESTR_DATE'
+adm/cmd/wiz/mkmp.c line 53: Undefined variable 'DATESTR_YEAR'
+adm/cmd/wiz/mkmp.c line 59: Undefined variable 'get_info'
+adm/cmd/wiz/mkmp.c line 59: Illegal to use local variable in functional.
+adm/cmd/wiz/mkmp.c line 60: Undefined variable 'get_info'
+adm/cmd/wiz/mkmp.c line 60: Illegal to use local variable in functional.
+tmp/tmp_eval_file.c line 6: Undefined function intersect_array
+cmd/player/subscribe.c line 10: Undefined variable 'chan_i'
+cmd/player/subscribe.c line 10: parse error
+obj/daemon/chatd.c line 30: Undefined function add_member
+obj/daemon/chatd.c line 127: parse error
+obj/daemon/chatd.c line 127: Illegal LHS
+obj/daemon/chatd.c line 127: parse error
+obj/daemon/chatd.c line 136: Illegal LHS
+obj/daemon/chatd.c line 136: parse error
+obj/daemon/chatd.c line 127: parse error
+obj/daemon/chatd.c line 127: Illegal LHS
+obj/daemon/chatd.c line 127: parse error
+obj/daemon/chatd.c line 136: Illegal LHS
+obj/daemon/chatd.c line 136: parse error
+obj/daemon/chatd.c line 145: Illegal LHS
+obj/inherit/object.c line 113: Undefined variable 'OBJECT_LIVING'
+obj/inherit/object.c line 187: Warning: Return type doesn't match prototype ( int vs void )
+obj/inherit/object.c line 193: Warning: Return type doesn't match prototype ( int vs void )
+obj/inherit/object.c line 186: Warning: Return type doesn't match prototype ( int vs void )
+obj/inherit/object.c line 192: Warning: Return type doesn't match prototype ( int vs void )
+obj/inherit/room.c line 182: Number of arguments disagrees with previous definition.
+obj/inherit/living.c line 65: Undefined variable 'OBJECT_PLAYER'
+obj/inherit/living.c line 66: parse error
+obj/inherit/living.c line 89: Illegal LHS
+obj/inherit/living.c line 89: parse error
+obj/inherit/living.c line 90: Illegal LHS
+obj/inherit/living.c line 91: Illegal LHS
+obj/inherit/living.c line 98: Illegal LHS
+obj/clone/user.c line 103: Undefined variable 'OBJECT_PLAYER'
+obj/clone/user.c line 103: Undefined variable 'OBJECT_PLAYER'
+tmp/tmp_eval_file.c line 6: Undefined function sort
+tmp/tmp_eval_file.c line 6: Undefined function sort_mapping
+obj/daemon/net/inetd.c line 345: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/inherit/weapon.c line 78: Illegal to redefine 'nomask' function "move"
+obj/inherit/weapon.c line 78: Illegal to redefine 'nomask' function "move"
+obj/inherit/weapon.c line 78: Illegal to redefine 'nomask' function "move"
+obj/inherit/weapon.c line 78: Illegal to redefine 'nomask' function "move"
+obj/inherit/weapon.c line 78: Illegal to redefine 'nomask' function "move"
+tmp/tmp_eval_file.c line 6: Undefined variable 'obj'
+tmp/tmp_eval_file.c line 6: Undefined variable 'clone'
+tmp/tmp_eval_file.c line 6: Single '#' in identifier -- use '##' for token pasting
+tmp/tmp_eval_file.c line 6: parse error
+tmp/tmp_eval_file.c line 6: Undefined variable 'users'
+tmp/tmp_eval_file.c line 6: Undefined variable 'users'
+tmp/tmp_eval_file.c line 6: parse error
+include/net/daemons.h line 7: Unrecognised # directive
+obj/daemon/net/oob_d.c line 352: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/oob_d.c line 352: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/oob_d.c line 352: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/oob_d.c line 352: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/authd.c line 143: Undefined variable 'check'
+obj/daemon/net/authd.c line 143: parse error
+obj/daemon/net/authd.c line 115: parse error
+obj/daemon/net/authd.c line 114: Undefined variable 'keyval'
+obj/daemon/net/services/auth.c line 31: Undefined variable 'target_mudname'
+include/net/ftpdconf.h line 114: Warning: redefinition of #define FTP_DIR
+
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+include/net/ftpdconf.h line 114: Warning: redefinition of #define FTP_DIR
+
+include/net/ftpdconf.h line 114: Warning: redefinition of #define FTP_DIR
+
+include/net/ftpdconf.h line 114: Warning: redefinition of #define FTP_DIR
+
+include/net/ftpdconf.h line 114: Warning: redefinition of #define FTP_DIR
+
+include/net/ftpdconf.h line 114: Warning: redefinition of #define FTP_DIR
+
+include/net/ftpdconf.h line 113: Warning: redefinition of #define PUB_DIR
+
+cmd/wiz/rls.c line 15: Undefined variable 'dir'
+obj/daemon/net/oob_d.c line 353: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/oob_d.c line 361: parse error
+obj/daemon/net/oob_d.c line 362: Illegal LHS
+obj/daemon/net/oob_d.c line 353: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+cmd/wiz/rls.c line 13: Undefined variable 'argv'
+obj/daemon/net/oob_d.c line 354: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/oob_d.c line 355: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/oob_d.c line 355: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/authd.c line 36: Type of returned value doesn't match function return type ( mixed * vs mapping ).
+obj/daemon/net/authd.c line 205: parse error
+obj/daemon/net/oob_d.c line 355: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/oob_d.c line 354: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/oob_d.c line 373: parse error
+obj/daemon/net/oob_d.c line 380: Illegal LHS
+obj/daemon/net/oob_d.c line 380: parse error
+obj/daemon/net/oob_d.c line 382: Illegal LHS
+obj/daemon/net/oob_d.c line 383: Illegal LHS
+obj/daemon/net/oob_d.c line 384: Undefined variable 'tmp'
+obj/daemon/net/oob_d.c line 375: Undefined variable 'addr'
+obj/daemon/net/oob_d.c line 384: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/oob_d.c line 384: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/oob_d.c line 384: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/authd.c line 56: Undefined variable 'shutdown'
+obj/daemon/net/services/auth.c line 18: Undefined variable 'key'
+obj/daemon/net/oob_d.c line 385: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/oob_d.c line 385: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/oob_d.c line 380: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/oob_d.c line 380: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/oob_d.c line 380: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/oob_d.c line 380: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/oob_d.c line 380: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/oob_d.c line 380: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/oob_d.c line 381: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+tmp/tmp_eval_file.c line 6: Undefined variable 'call_out_info'
+obj/daemon/net/oob_d.c line 381: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/oob_d.c line 381: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/oob_d.c line 386: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/oob_d.c line 386: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/oob_d.c line 386: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/oob_d.c line 385: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/oob_d.c line 385: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/oob_d.c line 385: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+include/net/ftpdconf.h line 113: Warning: redefinition of #define PUB_DIR
+
+include/net/ftpdconf.h line 114: Warning: redefinition of #define FTP_DIR
+
+obj/daemon/net/services/file.c line 33: Undefined variable 'dir'
+tmp/tmp_eval_file.c line 6: Undefined variable 'call_out_info'
+obj/daemon/net/oob_d.c line 385: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/oob_d.c line 384: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/oob_d.c line 331: Undefined variable 'ORIGIN_LOCAL'
+obj/daemon/net/oob_d.c line 387: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/oob_d.c line 388: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/oob_d.c line 405: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/oob_d.c line 46: Undefined variable 'client'
+obj/daemon/net/oob_d.c line 305: Undefined function OOBConnect
+obj/daemon/net/oob_d.c line 310: Undefined variable 'no_call_out'
+obj/daemon/net/oob_d.c line 364: Number of arguments disagrees with previous definition.
+obj/daemon/net/oob_d.c line 374: Undefined function evalutate
+obj/daemon/net/oob_d.c line 391: Redeclaration of function OOBConnect.
+obj/daemon/net/oob_d.c line 308: Undefined function OOBConnect
+obj/daemon/net/oob_d.c line 313: Undefined variable 'no_call_out'
+obj/daemon/net/oob_d.c line 367: Number of arguments disagrees with previous definition.
+obj/daemon/net/oob_d.c line 377: Undefined function evalutate
+obj/daemon/net/oob_d.c line 394: Redeclaration of function OOBConnect.
+obj/daemon/net/oob_d.c line 313: Undefined variable 'no_call_out'
+obj/daemon/net/oob_d.c line 377: Undefined function evalutate
+obj/daemon/net/oob_d.c line 377: Undefined function evalutate
+obj/clone/shsh.c line 61: Warning: redefinition of #define NULL
+
+obj/clone/shsh.c line 1619: Warning: Unknown \x char.
+cmd/wiz/iftp.c line 14: Undefined variable 'mudname'
+cmd/wiz/iftp.c line 56: Number of arguments disagrees with previous definition.
+tmp/tmp_eval_file.c line 6: Value indexed has a bad type : "int "
+tmp/tmp_eval_file.c line 6: parse error
+tmp/tmp_eval_file.c line 6: Undefined variable 'b'
+tmp/tmp_eval_file.c line 6: Undefined function pow2
+tmp/tmp_eval_file.c line 6: parse error
+tmp/tmp_eval_file.c line 6: parse error
+tmp/tmp_eval_file.c line 6: Undefined variable 'hey'
+tmp/tmp_eval_file.c line 6: Illegal LHS
+tmp/tmp_eval_file.c line 6: Undefined function itoa
+tmp/tmp_eval_file.c line 6: Undefined function setb
+tmp/tmp_eval_file.c line 6: parse error
+tmp/tmp_eval_file.c line 6: parse error
+tmp/tmp_eval_file.c line 6: parse error
+tmp/tmp_eval_file.c line 6: Bad argument 3 to efun write_buffer()
+tmp/tmp_eval_file.c line 6: Undefined variable 'EVALUATOR_STACK_SIZE'
+tmp/tmp_eval_file.c line 6: Undefined variable '__EVALUATOR_STACK_SIZE__'
+obj/clone/money.c line 74: Undefined variable 'OBJECT_LIVING'
+obj/clone/money.c line 84: Illegal to redefine 'nomask' function "move"
+tmp/tmp_eval_file.c line 6: Too few arguments to function_exists
+tmp/tmp_eval_file.c line 6: parse error
+obj/daemon/net/services/file.c line 132: Undefined variable 'id'
+obj/daemon/net/services/file.c line 143: Reserved type name unexpected.
+obj/daemon/net/services/file.c line 143: parse error
+tmp/tmp_eval_file.c line 6: parse error
+tmp/tmp_eval_file.c line 6: parse error
+obj/daemon/net/services/file.c line 144: Undefined function PseudoRootPath
+obj/daemon/net/services/file.c line 144: Type mismatch ( string vs unknown ) when initializing file
+tmp/tmp_eval_file.c line 6: Bad argument number 1 to '-': "mapping "
+adm/obj/daemon/maild.c line 304: Undefined function filter_local_users
+adm/obj/daemon/maild.c line 304: Bad assignment ( unknown vs mapping ).
+adm/obj/daemon/maild.c line 305: Bad assignment ( unknown vs mapping ).
+adm/obj/daemon/maild.c line 317: Undefined variable 'SERVICES_D'
+adm/obj/daemon/maild.c line 317: Undefined variable 'from'
+adm/obj/daemon/maild.c line 321: Undefined variable 'contents'
+adm/obj/daemon/maild.c line 317: Undefined variable 'SERVICES_D'
+adm/obj/daemon/maild.c line 317: Undefined variable 'from'
+adm/obj/daemon/maild.c line 321: Undefined variable 'contents'
+adm/obj/daemon/maild.c line 338: Undefined variable 'INTERMUD_D'
+adm/obj/daemon/maild.c line 318: Undefined variable 'from'
+adm/obj/daemon/maild.c line 322: Undefined variable 'contents'
+adm/obj/daemon/maild.c line 323: Undefined variable 'contents'
+adm/obj/daemon/maild.c line 313: Undefined variable 'content'
+tmp/tmp_eval_file.c line 6: parse error
+tmp/tmp_eval_file.c line 6: parse error
+obj/clone/shsh.c line 61: Warning: redefinition of #define NULL
+
+obj/clone/shsh.c line 1619: Warning: Unknown \x char.
+obj/clone/money.c line 74: Undefined variable 'OBJECT_LIVING'
+obj/clone/money.c line 84: Illegal to redefine 'nomask' function "move"
+obj/inherit/weapon.c line 78: Illegal to redefine 'nomask' function "move"

@@ -141,7 +141,7 @@ init_groups()
   /* 
    * now remove double elements
    */
-  groups = map_mapping(groups, (: remove_duplicates($2) :));
+  groups = map_mapping(groups, (: distinct_array($2) :));
 	
   return TRUE;
 }
@@ -164,20 +164,4 @@ expand_subgroups(string *uidlist)
   }
 
   return uidlist;
-}
-
-/*
- * define a function here to use with map_mapping
- */
-private
-string *
-remove_duplicates(string *arr) {
-  int i = sizeof(arr);
-  string tmp;
-  while(i--) {
-    tmp = arr[i];                 // store elt
-    arr -= ({ tmp });             // subtract out all copies of elt
-    arr += ({ tmp });             // put 1 copy of elt back in
-  }
-  return arr;
 }

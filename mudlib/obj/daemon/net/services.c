@@ -31,6 +31,7 @@ static void create() {
 #include "services/tell.c"
 #include "services/who.c"
 #include "services/auth.c"
+#include "services/file.c"
 
 mapping GetServices() {
     return ([

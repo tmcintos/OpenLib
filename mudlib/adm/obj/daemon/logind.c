@@ -11,10 +11,12 @@
 //    09/14/95                 put public definitions into logind.h
 //    sometime                 <another major rewrite...no more logind.h>
 //    01/20/96                 Fixed mud-locking by 'all' group feature
+//    03/01/96                 Cleaned up some more
 
 #include <mudlib.h>
-#include <login.h>      // login related defines
 #include <daemons.h>    // for groupd
+#include <login.h>      // login related defines
+#include <origin.h>
 #include <uid.h>        // for group ids
 
 #define DEBUG
@@ -22,25 +24,31 @@
 
 inherit DAEMON;
 
-mapping attempt_number;       // mapping of # login fails for each connection
+private mapping attempt_number; // mapping of # login fails for each connection
 
-/* Prototypes */
-// only call these externally
-int check_passwd(string username, string password);
-void logon();
+/*
+ * Public Functions -- only call check_password unless you know what yer doin
+ */
+public void create();
+public void logon(int silent);
+public int check_passwd(string username, string password);
+public void dump_connection(object c);
+public int valid_name(string username);
 
-// don't call these externally
-void create();
-string lookup_password(string username);
-void get_uname();
-void logon2(string username);
-void get_password(string password);
-varargs void get_new_password(string password, int verify, string lastpass);
-void ask_throw_out(string input, object other_player);
-void player_enter_world(int new_char);
-void player_enter_world2(string user, object body);
-int valid_name(string username);
-void dump_connection(object c);
+/*
+ * Private Functions
+ */
+private string lookup_password(string username);
+private void get_uname();
+private void logon2(string username);
+private void get_password(string password);
+private varargs void get_new_password(string password, int verify, string lastpass);
+private void prompt_cap_name(int try);
+private void get_cap_name(string input, int try);
+private void get_player_info(string input, int which);
+private void ask_throw_out(string input, object other_player);
+private void player_enter_world(int new_char);
+private void player_enter_world2(string user, object body);
 
 #ifdef DEBUG
 mapping
@@ -50,15 +58,17 @@ dump_attempt_number()
 }
 #endif
 
+public
 void
 create()
 {
-  daemon::create();
+  ::create();
   attempt_number = ([]);
 }
 
 // use check_password() publicly, not this
 
+private
 string
 lookup_password(string username)
 {
@@ -67,7 +77,6 @@ lookup_password(string username)
 
   conn->restore_connection(username);
   ret = (string)conn->query_password();
-
   destruct(conn);
   return ret;
 }
@@ -77,25 +86,27 @@ lookup_password(string username)
 void
 dump_connection(object c)
 {
+  if(origin() != ORIGIN_LOCAL && previous_object() != c) return 0;
+
   map_delete(attempt_number, c);
-  efun::destruct(c);
+  destruct(c, TRUE);
 }
 
 /*-------------------------- Login Sequence ---------------------------------*/
 
 void
-logon()
+logon(int silent)
 {
-  cat(ISSUE);
-  display("\n");
-  printf("Mudlib: %s v%s\n", mudlib_name(), mudlib_version());
-  printf("Driver: %s (%s)\n", driver_version(), machine_os());
-
+  if(!silent) {
+    display(sprintf("%s\n", read_file(ISSUE)));
+    display(sprintf("Mudlib: %s v%s\n", mudlib_name(), mudlib_version()));
+    display(sprintf("Driver: %s (%s)\n", driver_version(), machine_os()));
+  }
   attempt_number += ([ this_player() : 0 ]);
-
   get_uname();
 }
 
+private
 void
 get_uname()
 {
@@ -107,11 +118,12 @@ get_uname()
     display("repeated login failures.\n");
     dump_connection(conn);
   } else {
-    display("login: ");
+    display(PROMPT_LOGIN);
     input_to("logon2");
   }
 }
 
+private
 void
 logon2(string username)
 {
@@ -125,7 +137,7 @@ logon2(string username)
     return;
   }
 
-//  This is for mudlocking; simply make group (ALL_GID) the users allowed in
+  //  This is for mudlocking; simply make group (ALL_GID) the users allowed in
 
   if(!GROUP_D->is_member(ALL_GID, username)) {
     display("Sorry, you are not allowed to log in right now.\n");
@@ -133,37 +145,34 @@ logon2(string username)
   }
 
   if(!conn->restore_connection(username)) {
-    if(!valid_name(username)) return get_uname();
+    if(!valid_name(username))
+      return get_uname();
     conn->set_name(username);
-
     display("New Character.\n");
     display("You must now enter a password for your character.\n");
     display("Password: ");
     input_to("get_new_password", 1, FALSE);
-    return;
   } else if(pw == "") {
     display("You have no password!!\n");
     player_enter_world(FALSE);
-    return;
   } else {
-    display("Password: ");
+    display(PROMPT_PASSWORD);
     input_to("get_password", 1);
   }
 }
 
+private
 void
 get_password(string password)
 {
-  object conn = this_player();
-
-  if(!check_passwd((string)conn->query_name(), password)) {
+  if(!check_passwd((string)this_player()->query_name(), password)) {
     display("\nlogin incorrect.\n");
     return get_uname();
   }
-
   player_enter_world(FALSE);
 }
 
+private
 varargs
 void
 get_new_password(string password, int verify, string lastpass)
@@ -176,13 +185,54 @@ get_new_password(string password, int verify, string lastpass)
     display("They don't match!!\n");
     return get_uname();
   }
-
-// set name before, now set password
+  // set name before, now set password
   this_player()->set_password(crypt(password, 0));
 
-  player_enter_world(TRUE);
+  display("\n");
+  prompt_cap_name(0);
 }
 
+private
+void
+prompt_cap_name(int try)
+{
+  display("Enter your username capitalized how you want it to appear\nname: ");
+  input_to("get_cap_name", 0, try);
+}
+
+private
+void
+get_cap_name(string input, int try)
+{
+  if(!this_player()->set_cap_name(input)) {
+    if(try < 4) {
+      display("Spelling must be the same as username.\n");
+      return prompt_cap_name(++try);
+    } else
+      display("Leaving cap-name as default.\n");
+  }
+  display("Please enter your email address: ");
+  input_to("get_player_info", 0, 0);
+}
+
+private
+void
+get_player_info(string input, int which)
+{
+  switch(which) {
+  case 0:  /* EMAIL */
+    this_player()->set_email_addr((sizeof(input) ? input : "(none given)"));
+    display("Please enter your real name: ");
+    which = 1;
+    break;
+  case 1:  /* REAL NAME */
+    this_player()->set_real_name((sizeof(input) ? input : "(none given)"));
+    return  player_enter_world(TRUE);
+  }
+  input_to("get_player_info", 0, which);
+}
+
+private
 void
 ask_throw_out(string input, object other_player)
 {
@@ -197,24 +247,27 @@ ask_throw_out(string input, object other_player)
       player_enter_world(FALSE);   // should never happen w/a new character
       break;
     case 'n':
-      display("Ok, have it your way...\n");
+      display("Fine then! If that's the way you want it!!\n");
       dump_connection(this_player());
       break;
     }
   }
 }
 
+private
 void
 player_enter_world(int new_char)
 {
-  object body;
   object conn = this_player();
   string username = (string) conn->query_name();
-  string player_body, buf = "";
+  object body, shell;
+  string buf = "";
 
+  // delete us from login fail map
+  map_delete(attempt_number, conn);
   display("\n");
 
-// If linkdead, reconnect
+  // If linkdead, reconnect
   if(body = find_player(username)) {
     if(interactive(body)) {
       display("You are already playing!\n");
@@ -230,48 +283,62 @@ player_enter_world(int new_char)
     return;
   }
 
-  map_delete(attempt_number, conn);           // delete us from login fail map
-
-  if(player_body = (string)conn->query_body())
-    body = new(player_body);
-
-  if(!body) {
+  // Get user's body
+  if( !(string)conn->query_body() )
+    conn->set_body( DEFAULT_BODY );
+  if( !(body = new( conn->query_body() )) ) {
     log_file("logind", "failed to load body for " + username +"\n");
     buf += "!!! Failed to load your body!!  Loading default body.\n"
-              "!!! Please notify an Admin.\n";
-    body = new(USER_OB);
+           "!!! Please notify an Admin.\n";
+    body = new( DEFAULT_BODY );               // guaranteed to load *grin*
   }
-
-  if(!conn->query_home_dir())
-    conn->set_home_dir(user_cwd(username));   // set up default home dir
-
+  
+  // Get user's shell
+  if( !conn->query_login_shell() )
+    conn->set_login_shell( DEFAULT_SHELL );
+  if( !(shell = new( conn->query_login_shell())) ) {
+    log_file("logind", "failed to load shell for " + username +"\n");
+    buf += "!!! Failed to load your shell!!  Loading default shell.\n"
+           "!!! Please notify an Admin.\n";
+    shell = new( DEFAULT_SHELL );            // also guaranteed to load *grin*
+  }
   conn->set_login_time(time());
   conn->save_connection(username);
 
   body->set_connection(conn);
   exec(body, conn);
 
-  // set eff uid, then export it to user; MUST BE DONE BEFORE setup()!!!
+  // set eff uid, then export it to user; MUST BE DONE BEFORE init_player()!!!
   seteuid(username);
-  if(!export_uid(body))
+  if( !export_uid(body) )
     buf += "logind: failed to set uid!!\n";
   seteuid(getuid(this_object()));                   // reset logind's euid
 
-  body->setup(username);
-  if(new_char)
-    body->save_player();
+  body->init_player(username);
+  if(!shell->shell_init(body)) {
+    buf += "logind: couldn't init your shell.\n";
+    destruct(shell);
+  }
+  body->set_cap_name(conn->query_cap_name());
+  if(new_char) body->save_player();
 
-  buf += "Welcome to " + mud_name() + "!\n\n";
-  buf += read_file(MOTD);
-  buf += "\n\n";
+  if(member_array(conn->query_terminal_type(),
+		  TERMCAP_D->query_supported_termtypes()) != -1)
+    body->set_env("TERM", conn->query_terminal_type());
 
-  if(MAIL_D->check_mail(username))
-    buf += sprintf("You have %smail.",
-		      (MAIL_D->check_mail(username, 1) ? "NEW " : ""));
+  buf += sprintf("Welcome to %s!\n%s\n\n", mud_name(), read_file(MOTD));
+
+  if( MAIL_D->check_mail(username) ) {
+    if( MAIL_D->check_mail(username, 1) )
+      buf += "\n\nYou have NEW mail.\n\n\n";
+    else
+      buf += "You have mail.";
+  }
 
   body->more(explode(buf, "\n"), (: player_enter_world2, username, body :));
 }
 
+private
 void
 player_enter_world2(string username, object body)
 {
@@ -281,46 +348,43 @@ player_enter_world2(string username, object body)
   body->force_me("look");
 
   write_file(LASTLOG, sprintf("%-10.10s  %-20.20s  %s  %-15.15s\n",
-				     username,
-				     query_ip_name(body),
-				     ctime(time()),
-				     query_ip_number(body)));
+			      username, query_ip_name(body), ctime(time()),
+			      query_ip_number(body)));
 }
 
 /*-------------------------- Name & Password Checks -------------------------*/
 
+public
 int
 valid_name(string username)
 {
-  int i;
-
   if(username == "" || !username)
     return 0;
 
   if(strlen(username) > 10 || strlen(username) < 3) {
     display("Username must be between 3 and 10 characters in length.\n");
-    return 0;                                         // Too long or short
+    return 0;                                        // Too long or short
   }
 
-  for(i=0;i < strlen(username);i++)                   // Name has special chars
-    if(username[i] < 'A' ||
-       username[i] > 'z' ||
-       (username[i] > 'Z' && username[i] < 'a')) {
-      display("Username must not consist of letters only.\n");
-      return 0;
-    }
+  for(int i = 0; i < sizeof(username); i++) {        // Name has special chars
+    if(username[i] < 'A' || username[i] > 'z' ||
+       (username[i] > 'Z' && username[i] < 'a')) 
+      {
+	display("Username must consist of letters only.\n");
+	return 0;
+      }
+  }
+
   return 1;                                           // Name is OK
 }
 
+public
 int
 check_passwd(string username, string passwd)
 {
-  string crypted_pass;
+  string crypted_pass = lookup_password(username);
 
-  crypted_pass = lookup_password(username);
-
-  if(!crypted_pass) return 0;
-
-  if(crypt(passwd, crypted_pass[0..1]) == crypted_pass) return 1;
-  return 0;
+  if(!crypted_pass)
+    return 0;
+  return ( crypt(passwd, crypted_pass[0..1]) == crypted_pass );
 }
