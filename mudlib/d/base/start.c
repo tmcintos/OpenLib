@@ -4,9 +4,8 @@
 inherit ROOM;
 
 void
-create()
+initialize()
 {
-  ::create();
   set_light(1);
   set_short("Center of the MUD\n");
   set_long(@end

@@ -1,15 +1,17 @@
 #obj/clone/user/human.c
 slen 24
 swid 80
-curr_line 35
-lines 34
-file ({"login_d: screen is not a supported terminal type","Welcome to Dysfunctional Mud!","-------------------------------------------------------------------------------","                D y s f u n c t i o n a l  M u d  N e w s","			last update: 05/15/96","-------------------------------------------------------------------------------","* Welcome to the new semi-premanent home for DysFunctionalMUD.  If you are","  reading this you prolly already know the site name, but just for your","  information it is:  canaan.de.msstate.edu 4444.","","* Due to the fact that Tim will have VERY limited net access for a time, I,","  Kyricc, will assume duties of mud admin.  This is temporary till Tim gets","  access again.","","* I will (as much as possible) try to keep the mud up and running as much","  as possible.  There may be interruptions if there is a bug in the driver","  or any other MAJOR bug.  This is due to that fact that I am not as good","  at finding the bugs and fixing them as Tim is.","","* Any mail for the mud can be sent to the following addresses:","","     tim@canaan.de.msstate.edu","","     kyricc@inetnebr.com","","  I will respond as quickly as possible...","","* If i have left any improtatnt info outta this motd I am sorry."," ","* Tim has internet access now: mailto rockford@novia.net","  As usual mail to astasia@iastate.edu will also get there.","","","You have mail.",})
-callback 
+curr_line 1
+lines 23
+in_help 0
+file ({"Privileges: (total 21)","1          -> ( Admin )","0          -> (  )","@mudlib    -> ( Admin )","Admin      -> ( tim quint evergreen )","Admin:     -> (  )","dryghar    -> (  )","dryghar:   -> (  )","evergreen  -> (  )","evergreen: -> (  )","greg       -> (  )","greg:      -> (  )","hamnsnock  -> (  )","hamnsnock: -> (  )","kyricc     -> (  )","kyricc:    -> (  )","quint      -> (  )","quint:     -> (  )","talen      -> (  )","talen:     -> (  )","tim        -> (  )","tim:       -> (  )","",})
+callback 0
+extend 0
 no_clean 0
 flags ({})
 coins ({30,10,})
 hit_points 0
 spell_points 0
-env_vars (["PROMPT":"[%~]->","LENGTH":24,"WIDTH":80,"MORE_EXIT_END":1,"PATH":"/cmd/player:/adm/cmd/player:/cmd/wiz:/adm/cmd/wiz:/cmd/adm:/adm/cmd/adm","TITLE":"is raping the MudLib!","TERM":"vt100","version":"Prototype Shell","SHELL":"/obj/clone/shells/protosh","noglob":1,])
-aliases (["s":"south","nw":"northwest","cgoss":"chat igossip:","l":"look","w":"west","ahh":"emote ahhs","sc":"score","la":"look at","n":"north","bbb":"shout I\\'m baaaaaaaaack!!!","i":"inventory","grin":"emote grins evilly","brb":"shout Be right back...I\\'m going AFK!!!","se":"southeast","nod":"emote nods quietly","c":"clone","e":"east","ne":"northeast","news":"more /adm/etc/motd","ww":"shout WOOOOOOO WOOOOOOO","|":"more","sw":"southwest",])
-channels ({"igossip","interchat",})
+env_vars (["TERM":"vt100","version":"Prototype Shell","PATH":"/cmd/player:/adm/cmd/player:/cmd/wiz:/adm/cmd/wiz:/cmd/adm:/adm/cmd/adm","MORE_EXIT_END":1,"PROMPT":"[%~]->","SHELL":"/obj/clone/shells/protosh","LENGTH":24,"noglob":1,"TITLE":"is raping the MudLib!","WIDTH":80,])
+aliases (["ne":"northeast","e":"east","i":"inventory","sc":"score","news":"more /adm/etc/motd","cgoss":"chat igossip:","nod":"emote nods quietly","s":"south","sw":"southwest","nw":"northwest","brb":"shout Be right back...I\\'m going AFK!!!","la":"look at","c":"clone","l":"look","ww":"shout WOOOOOOO WOOOOOOO","w":"west","grin":"emote grins evilly","|":"more","ahh":"emote ahhs","n":"north","bbb":"shout I\\'m baaaaaaaaack!!!","se":"southeast",])
+channels ({"igossip",})

@@ -4,3 +4,8 @@ Sun Jun 23 23:25:01 1996: v_w: file=/README, user=adm/cmd/wiz/rm, func=remove_fi
 Sun Jun 23 23:26:44 1996: v_w: file=/adm/ChangeLog, user=adm/cmd/wiz/rm, func=remove_file
 Sun Jun 23 23:35:57 1996: v_w: file=/log/lastlog, user=adm/obj/daemon/login_d, func=write_file
 Mon Jun 24 12:47:32 1996: v_w: file=/log/lastlog, user=adm/obj/daemon/login_d, func=write_file
+Tue Jul 30 23:02:40 1996: v_r: file=/tmp, user=adm/obj/daemon/simul_efun, func=file_size
+Tue Jul 30 23:02:50 1996: v_r: file=/tmp, user=adm/obj/daemon/simul_efun, func=file_size
+Tue Jul 30 23:03:34 1996: v_r: file=/tmp, user=adm/obj/daemon/simul_efun, func=file_size
+Tue Jul 30 23:03:36 1996: v_r: file=/tmp, user=adm/cmd/wiz/ls, func=file_size
+Tue Jul 30 23:43:38 1996: v_w: file=/log/shutdown, user=adm/obj/daemon/simul_efun, func=write_file

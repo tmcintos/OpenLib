@@ -19,6 +19,7 @@
 //       04.22.96   T.M   Fixed one line directory bug.
 //       06.12.96   T.M   Updated w.r.t. security stuff--more cleanup when
 //                        efuns are made.
+//       07.03.96   T.M   Added coloring for .h and .o files
 
 #include <cmdline.h>
 #include <daemons.h>
@@ -155,8 +156,19 @@ short_format(string* files, string dir, int optc, int optF)
 	    files[j] = "%^L_BLUE%^" + files[j] +"%^RESET%^";
 	  else if(tmp_is_loaded)
 	    files[j] = "%^L_GREEN%^"+ files[j] +"%^RESET%^";
-	  else if(files[j][<2..<1] == ".c")
-	    files[j] = "%^L_RED%^"+ files[j] +"%^RESET%^";
+	  else {
+	    switch(files[j][<2..<1]) {
+	    case ".c":
+	      files[j] = "%^L_RED%^"+ files[j] +"%^RESET%^";
+	      break;
+	    case ".h":
+	      files[j] = "%^L_YELLOW%^" + files[j] +"%^RESET%^";
+	      break;
+	    case ".o":
+	      files[j] = "%^L_CYAN%^" + files[j] + "%^RESET%^";
+	      break;
+	    }
+	  }
 	}
 
 	// 'F' flag:  tack on symbols

@@ -15,7 +15,6 @@
 #define LASTLOG LOG_DIR "/lastlog"
 #define DEFAULT_SHELL CLONE_DIR "/shells/rsh"
 #define DEFAULT_BODY  CLONE_DIR "/user/human"
-// #define START_ROOM   DOMAIN_DIR "/base/start"
-#define START_ROOM  "/room/church"
+#define START_ROOM   DOMAIN_DIR "/base/start"
 
 #endif /* _LOGIN_H */

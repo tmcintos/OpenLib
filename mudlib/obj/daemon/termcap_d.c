@@ -71,7 +71,11 @@ mapping start_end =
 
 mapping termcap_entries =
 ([
-  "dumb":(["RESET":""]),			/* Dumb terminal */
+  "dumb":			/* Dumb terminal */
+  ([
+    "CLS":"\n",
+    "RESET":""
+    ]),
   "vt100":
   ([
     "BELL":"",		/* audible signal (bell) */

@@ -6,6 +6,7 @@
 // Originally written by Tim 2/16/96
 //
 // 22 Apr 96  Tim:  added receive_snoop()
+//  7 Jul 96  Tim:  added message blocking and buffering
 
 #include <mudlib.h>
 #include <dirs.h>
@@ -23,6 +24,9 @@ inherit LIVING;
 
 private static object connection;   // user should always have a conn.
 private static string cap_name;     // name with proper capitalization
+
+private static int blocking;        // 1 if blocking messages 0 if not.
+private static string* msgbuf;      // message buffer for blocking & linkdead
 
 private mapping env_vars;           // environment variable mapping
 private mapping aliases;            // alias mapping
@@ -47,6 +51,7 @@ nomask void init_player(string username);// called from logind sets name etc.
 nomask void reconnect();                 // also called from login daemon
 nomask int  set_cap_name(string capname);
 nomask void set_channels(string* chans);
+nomask void set_blocking(int is_blocking);
 nomask int  set_connection(object ob);
 nomask int  force_me(string cmd);
 nomask int start_ed(string file, int rst);  // input handled by process_input()
@@ -64,6 +69,7 @@ nomask string  short();
 nomask string  query_cap_name();
 nomask boolean is_subscribed_chan(string chan);
 nomask string* query_channels();
+nomask int query_blocking();
 nomask int save_player();
 nomask varargs int move_player(mixed dest, string dir); // for a pretty move
 nomask object  query_connection();
@@ -104,9 +110,10 @@ void
 initialize()
 {
   ::initialize();
-  channels = ({});
-  aliases = ([]);
-  env_vars = ([]);
+  channels = ({ });
+  aliases = ([ ]);
+  env_vars = ([ ]);
+  msgbuf = ({ });
 }
 
 int
@@ -150,8 +157,14 @@ receive_message(string msgclass, string msg)
   if(msgclass != "nofilter")
     msg = TERMCAP_D->termcap_format_line(msg, ttype);
 
-  receive(msg);
-//  receive(break_string(msg, (width ? width : 80)));
+  if( !blocking )
+    receive(msg);
+  else
+  {
+    msgbuf += ({ msg });
+    if( sizeof(msgbuf) > 100 )
+      msgbuf = msgbuf[1..];
+  }
 }
 
 void
@@ -177,6 +190,8 @@ net_dead()
   if(environment())
     message("system", query_cap_name() + " is link-dead.\n", environment(),
 	    this_player());
+
+  blocking = 1;                // cache messages
 }
 
 nomask int
@@ -227,6 +242,7 @@ reconnect()
   /* security -- admin level */
 
   set_heart_beat(1);            // re-enable heartbeat
+  set_blocking(0);
 
   message(MSG_SYS, "\nReconnected.\n", this_player());
   say(query_cap_name() + " has reconnected.\n");
@@ -245,6 +261,20 @@ set_channels(string* chans)
 {
   /* security -- admin level */
   channels = copy(chans);
+}
+
+nomask void
+set_blocking(int is_blocking)
+{
+  /* security -- admin level? */
+  blocking = is_blocking;
+
+  if( !is_blocking && sizeof(msgbuf) )
+  {
+    message("system", "These messages were held for you:\n", this_object());
+    more(explode(implode(msgbuf, ""), "\n"));
+    msgbuf = ({ });
+  }
 }
 
 nomask int
@@ -349,6 +379,12 @@ nomask string*
 query_channels()
 {
   return copy(channels);
+}
+
+nomask int
+query_blocking()
+{
+  return blocking;
 }
 
 nomask int

@@ -24,10 +24,10 @@ address server ip : localhost
 address server port : 7374
  
 # absolute pathname of mudlib
-mudlib directory : /home/tim/dysfun/mudlib
+mudlib directory : /u2/mud/mudlib
  
 # absolute pathname of driver/config dir
-binary directory : /home/mudtim/dysfun/MudOS/bin
+binary directory : /u2/mud/MudOS/bin
  
 # debug.log and author/domain stats are stored here
 log directory : /log

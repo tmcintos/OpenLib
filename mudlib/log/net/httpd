@@ -1312,3 +1312,15 @@ Fri Jun 28 17:29:12 1996: batman.novia.net: GET /~quint/ HTTP/1.0 (Fri Jun 28 17
 Fri Jun 28 17:29:12 1996: batman.novia.net: ERROR: Not Found (Fri Jun 28 17:29:12 1996)
 Fri Jun 28 17:29:32 1996: batman.novia.net: CONNECTED (Fri Jun 28 17:29:32 1996)
 Fri Jun 28 17:29:32 1996: batman.novia.net: GET /gateways/finger HTTP/1.0 (Fri Jun 28 17:29:32 1996)
+Wed Jul 10 21:56:26 1996: 127.0.0.1: CONNECTED (Wed Jul 10 21:56:26 1996)
+Wed Jul 10 21:56:26 1996: 127.0.0.1: GET / HTTP/1.0 (Wed Jul 10 21:56:26 1996)
+Wed Jul 10 21:56:26 1996: Ip 127.0.0.1 resloved to localhost after connection closed.
+Wed Jul 10 21:56:36 1996: 127.0.0.1: CONNECTED (Wed Jul 10 21:56:36 1996)
+Wed Jul 10 21:56:36 1996: 127.0.0.1: GET /~tim/ HTTP/1.0 (Wed Jul 10 21:56:36 1996)
+Wed Jul 10 21:56:36 1996: Ip 127.0.0.1 resloved to localhost after connection closed.
+Wed Jul 10 21:56:46 1996: 127.0.0.1: CONNECTED (Wed Jul 10 21:56:44 1996)
+Wed Jul 10 21:56:46 1996: 127.0.0.1: GET /gateways/finger HTTP/1.0 (Wed Jul 10 21:56:46 1996)
+Wed Jul 10 21:56:46 1996: Ip 127.0.0.1 resloved to localhost after connection closed.
+Wed Jul 10 21:57:45 1996: 127.0.0.1: CONNECTED (Wed Jul 10 21:57:45 1996)
+Wed Jul 10 21:57:45 1996: 127.0.0.1: GET /gateways/finger HTTP/1.0 (Wed Jul 10 21:57:45 1996)
+Wed Jul 10 21:57:45 1996: Ip 127.0.0.1 resloved to localhost after connection closed.

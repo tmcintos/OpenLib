@@ -4,6 +4,7 @@
  *  They will be included at the bottom of simul_efun.c
  */
 
+#include "security.c"
 #include "to_string.c"
 #include "x_exists.c"
 #include "write.c"
@@ -22,6 +23,5 @@
 #include "distinct_array.c"
 #include "destruct.c"
 #include "pronoun.c"
-#include "security.c"
 #include "list_obs.c"
 #include "dump_variable.c"

@@ -1,3 +1,3 @@
 #obj/daemon/chat_d.c
-channels (["igossip":(/"Intermud Gossip Channel",0,0,({}),/),])
-chanmap ({})
+channels (["icode":(/"Intermud Coding Discussion",0,0,({}),/),"igossip":(/"Intermud Gossip Channel",0,0,({,}),/),])
+chanmap ({"igossip","imud_gossip","igossip","imud_gossip","icode","imud_code",})

@@ -50,7 +50,7 @@ query_privs(object ob)
 int
 set_privs(object ob, mixed priv)
 {
-  if( !check_previous_priv(priv) ) return 0;
+  if( !check_previous_priv(1) ) return 0;
 
   efun::set_privs(ob, save_variable(priv));
   return 1;

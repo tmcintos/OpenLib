@@ -30,3 +30,7 @@ Fri May  3 15:49:58 1996 (tmcintos@knapp38.res.iastate.edu (Tim))
     * cmdline.c:  Changed the way flags are handled, hopefully optimized
       it to some extent.
 
+Tue Jul 30 23:46:39 1996 (tmcintos@knapp38.res.iastate.edu (Tim))
+    * more.c:  Streamlined a little...still needs rewritten from scratch
+      in my opinion.
+
