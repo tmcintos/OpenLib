@@ -15,11 +15,18 @@
 
 void eventReceiveLocateRequest(mixed *packet) {
     object ob;
-    string sts;
+    string *sts = ({ });
 
     if( file_name(previous_object()) != INTERMUD_D ) return;
     if( !(ob = find_player(packet[6])) || !ob->short() ) return;
-    if( !(sts = (string) ob->query_user_status()) ) sts = "unknown";
+
+    if( in_edit(ob) )
+      sts += ({ "in editor" });
+    if( in_input(ob) )
+      sts += ({ "in input" });
+    if( !sizeof(sts) )
+      sts = ({ "unknown" });
+
     INTERMUD_D->eventWrite( ({ "locate-reply",
 			       5,
 			       mud_name(),
@@ -29,7 +36,7 @@ void eventReceiveLocateRequest(mixed *packet) {
 			       mud_name(), 
 			       (string)ob->query_cap_name(),
 			       query_idle(ob),
-			       sts
+			       implode(sts, ", "),
 			       }) );
 }
 

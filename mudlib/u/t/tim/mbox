@@ -29,3 +29,36 @@ probably a good way to go.
 Well, let me know what you think about this.
  
 Tim
+To: tim@Dysfunctional Mud
+From: Evergreen
+Date: Wed Sep 11 09:48:21 1996
+Subject: problem of player saves
+CC: 
+-------
+You might have a save_object daemon that valid_write() can call. When
+the player object issues a 'save' command, some lfun in the player will
+tell the save_object daemon it's saving. valid_write() asks the
+save daemon if it's allowed to write to the player object file; the
+daemon says yes (and when it does, denies permission afterwards so that
+there's no hole opened). You can check to make sure that the lfun in
+the player was the one that called the save daemon with call_stack() or
+something.
+ 
+Just an idea,
+Evergreen
+To: tim@Dysfunctional Mud
+From: Evergreen
+Date: Fri Sep 20 12:57:45 1996
+Subject: Re: addendum
+CC: 
+-------
+Here's an even zanier idea: two separate file access systems. Normally,
+an object carries the uid of its owner except for players, which carry
+root, and thus can save at any time. An object *called* by the player
+gets to valid_write() with its uid, not the player's, and so doesn't
+cause overpermissive stuff and bad things. :-)
+ 
+Of course, the only other objects that can go uid root are in /adm.
+Does this simplify things, maybe?
+ 
+Evergreen

@@ -29,6 +29,11 @@ callback(string file, string head, string* buf)
     return;
   }
 
+  if( !NEWSSERVER->new_post("mudlib.devel.changes", "no-thread", file,
+			     this_player()->query_name(),
+			     implode(buf, "\n") + "\n") )
+    write("Newsgroup post failed.\n");
+
   write_file(file, head);
   write_file(file, "    " + implode(buf, "\n    ") + "\n\n");
   printf("Appended to %s\n", file);

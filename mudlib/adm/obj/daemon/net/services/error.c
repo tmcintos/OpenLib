@@ -34,6 +34,7 @@ void eventReceiveError(mixed *packet) {
 			     ".\n"), ob);
         default:
           log_file("errors/intermud", error_code + ": " + msg + "\n");
+	  log_file("errors/intermud", "packet: " + sprintf("%O\n", packet));
 	  return;
     }
 }

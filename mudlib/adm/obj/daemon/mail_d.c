@@ -36,7 +36,7 @@ check_mail(string username, int check_new)
   object mbox = new(MAILBOX);
   int ret;
 
-  mbox->restore_mailbox(username);
+  unguarded((: call_other, mbox, "restore_mailbox", username :), 1);
   
   if(!check_new) {
     ret = mbox->get_mesg_count();
@@ -444,17 +444,17 @@ send_mail(mapping to_list, mapping cc_list, string* bcc_list, string from,
 	message("system", "%^BELL%^You have %^GREEN%^NEW%^RESET%^ mail.\n",ob);
       continue;
     }
-    if( !tmpmbox->restore_mailbox(user) ) {
+    if( !unguarded((: call_other, tmpmbox, "restore_mailbox", user:), 1) ) {
       log_file("maild", sprintf("error loading mbox for %s\n", user));
       /*
        * Couldn't load an existing mailbox for this user.
        * We need to do this if the box doesn't load so the messages in
        * the previous box aren't still hanging around.
        */
-      tmpmbox->reinit_mailbox(user);
+      unguarded((: call_other, tmpmbox, "reinit_mailbox", user :), 1);
     }
     tmpmbox->add_mesg(subject, from, localmesg);
-    if( !tmpmbox->save_mailbox() ) {
+    if( !unguarded((: call_other, tmpmbox, "save_mailbox":), 1) ) {
       log_file("maild", sprintf("error saving mbox for %s\n", user));
       if(this_player())
 	printf("%%^RED%%^Failed%%^RESET%%^ to send mail to %s.\n", user);

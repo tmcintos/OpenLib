@@ -1,472 +1,174 @@
-/*  Hey emacs! This is written in -*- LPC -*-  */
-/* /adm/obj/efuns/termcap.c
- *
- * © Copyright VikingMud 1993, 1994
- * Contributors: Stig Sæther Bakken (Auronthas)
- *
- * Special functions for generating terminal specific character sequences.
- *
- * Auronthas 15. Jan 1992
- *
- * 10/12/95     Tim: Changed %^END%^ to %^RESET%^ to comply with the standard
- *              in the mud community.
- * 11/14/95     Tim: further Dysfunctional-ized by making the ranges [x..y]
- *              compliant with the new MudOS standards
- * 01/22/96     Tim: added string* query_supported_termtypes()
- * 02/17/96     Tim: fixed to user copy(), changed to a daemon
- * 04/16/96     Tim: fixed to accomodate change to REVERSIBLE_EXPLODE_STRING
- * 09/03/96     Tim: ripped out most of guts to switch to terminal_colour()
- */
-
-/*
- *  W A R N I N G ! ! ! !
- *
- * You should NOT view this file from within the mud or in an editor
- * you are not sure if will quote escape characters (emacs works).
- * This file is so full of escape characters that your terminal will
- * most probably be seriously messed up from viewing it.
- *
- * The following blank lines are for your protection only.
- */
+/*  -*- LPC -*-  */
+// termcap_d.c:  Provides Discworld/Nightmare/Lima style color code
+//               translations for different terminal types.
+//
+// Copyright (C) 1996 Tim McIntosh (tmcintos@dm.imaginary.com)
+//
+// This program is part of the OpenLib Mudlib distribution; it
+// is free software; you can redistribute it and/or modify it
+// under the terms of the GNU General Public License as published
+// by the Free Software Foundation; either version 2 of the License,
+// or (at your option) any later version.
+// 
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+// 
+// If you acquired this program as part of the OpenLib Mudlib
+// distribution, you should have received a copy of the GNU
+// General Public License in the file /doc/GPL; if not,
+// write to the Free Software Foundation, Inc., 675 Mass Ave,
+// Cambridge, MA 02139, USA.
+//
 
 
+private mapping default_termcap;
+private mapping database;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#define ESC "%^"
-
-mapping start_end =
-([
-  "UNDERLINE":"RESET",
-  "BOLD":"RESET",
-  "INVERSE":"RESET",
-  "BLINK":"RESET",
-  ]);
-
-mapping termcap_entries =
-([
-  "default" :
-  /* Default Entry--Don't add anything w/out putting a blank entry here!!!! */
-  ([
-    /* Action */
-    "ESC" : ESC,   /* Our Escape Character */
-    "RESET" : "",
-    "HOME" : "",
-    "CLS" : "",
-    "BELL" : "",
-    "INITTERM" : "",
-    "TAB" : "",
-    "UNDERLINE" : "",
-    
-    /* Attributes */
-    "INVERSE" : "",
-    "BLINK" : "",
-    "FLASH" : "",    
-    "BOLD" : "",
-    
-    /* Color */
-    "BLACK" : "",
-    "BLUE" : "",
-    "B_BLACK" : "",
-    "B_BLUE" : "",
-    "B_CYAN" : "",
-    "B_GREEN" : "",
-    "B_GREY" : "",
-    "B_MAGENTA" : "",
-    "B_RED" : "",
-    "B_WHITE" : "",
-    "B_YELLOW" : "",
-    "CYAN" : "",
-    "GREEN" : "",
-    "GREY" : "",
-    "L_BLUE" : "",
-    "L_CYAN" : "",
-    "L_GREEN" : "",
-    "L_MAGENTA" : "",
-    "L_RED" : "",
-    "L_YELLOW" : "",
-    "MAGENTA" : "",
-    "RED" : "",
-    "WHITE" : "",
-    "YELLOW" : "",
-    "al" : "",
-    "dl" : "",
-    "is" : "",
-    "kb" : "",
-    "kd" : "",
-    "kl" : "",
-    "kr" : "",
-    "ku" : "",
-    "rc" : "",
-    "rs" : "",
-    "sc" : "",
-    "se" : "",
-    "sr" : "",
-    "up" : "",
-    "ve" : "",
-    "vi" : "",
-    "BG" : "",
-    "FG" : "",
-    ]),
-  "vt100":
-  ([
-    "BELL":"",		/* audible signal (bell) */
-    "CLS":"[;H[2J",		/* clear screen and home cursor */
-    "BOLD":"[1m",		/* turn on bold (extra bright) attribute */
-    "INVERSE":"[7m",		/* turn on reverse-video attribute */
-    "BLINK":"[5m",		/* turn on blinking attribute */
-    "RESET":"[m",		/* turn off all attributes */
-    "TAB":"	",		/* move cursor to next hardware tab stop */
-    "UNDERLINE":"[4m",	/* underline character overstrikes */
-    "ESC":ESC,		/* Our escape character (so we can quote it) */
-    ]),
-  "vt102":  /* Tim--I'm not sure about this but it seems to work */
-  ([
-    "BELL":"",		/* audible signal (bell) */
-    "CLS":"[;H[2J",		/* clear screen and home cursor */
-    "BOLD":"[1m",		/* turn on bold (extra bright) attribute */
-    "INVERSE":"[7m",		/* turn on reverse-video attribute */
-    "BLINK":"[5m",		/* turn on blinking attribute */
-    "RESET":"[m",		/* turn off all attributes */
-    "TAB":"	",		/* move cursor to next hardware tab stop */
-    "UNDERLINE":"[4m",	/* underline character overstrikes */
-    "BLACK":"[30m",
-    "RED":"[31m",
-    "GREEN":"[32m",
-    "YELLOW":"[33m",
-    "BLUE":"[34m",
-    "MAGENTA":"[35m",
-    "CYAN":"[36m",
-    "GREY":"[37m",
-    "WHITE":"[37m",
-
-    "L_RED":"[1;31m",
-    "L_GREEN":"[1;32m",
-    "L_YELLOW":"[1;33m",
-    "L_BLUE":"[1;34m",
-    "L_MAGENTA":"[1;35m",
-    "L_CYAN":"[1;36m",
-
-    "B_BLACK":"[40m",
-    "B_RED":"[41m",
-    "B_GREEN":"[42m",
-    "B_YELLOW":"[43m",
-    "B_BLUE":"[44m",
-    "B_MAGENTA":"[45m",
-    "B_CYAN":"[46m",
-    "B_GREY":"[47m",
-    "B_WHITE":"[47m",
-    "ESC":ESC,		/* Our escape character (so we can quote it) */
-    ]),
-  "ansi" :
-  ([
-    "CLS":"[;H[2J",		/* clear screen and home cursor */
-    "BOLD":"[1m",		/* turn on bold (extra bright) attribute */
-    "INVERSE":"[7m",		/* turn on reverse-video attribute */
-    "BLINK":"[5m",		/* turn on blinking attribute */
-    "RESET":"[m",		/* turn off all attributes */
-    "TAB":"	",		/* move cursor to next hardware tab stop */
-    "UNDERLINE":"[4m",	/* underline character overstrikes */
-    "BLACK":"[30m",
-    "RED":"[31m",
-    "GREEN":"[32m",
-    "YELLOW":"[33m",
-    "BLUE":"[34m",
-    "MAGENTA":"[35m",
-    "CYAN":"[36m",
-    "GREY":"[37m",
-    "WHITE":"[37m",
-
-    "L_RED":"[1;31m",
-    "L_GREEN":"[1;32m",
-    "L_YELLOW":"[1;33m",
-    "L_BLUE":"[1;34m",
-    "L_MAGENTA":"[1;35m",
-    "L_CYAN":"[1;36m",
-
-    "B_BLACK":"[40m",
-    "B_RED":"[41m",
-    "B_GREEN":"[42m",
-    "B_YELLOW":"[43m",
-    "B_BLUE":"[44m",
-    "B_MAGENTA":"[45m",
-    "B_CYAN":"[46m",
-    "B_GREY":"[47m",
-    "B_WHITE":"[47m",
-    "ESC":ESC,		/* Our escape character (so we can quote it) */
-    ]),
-  "debug" :
-  ([
-    "BELL":"[BELL]",
-    "BOLD":"[BOLD]",		/* turn on bold (extra bright) attribute */
-    "INVERSE":"[INVERSE]",		/* turn on reverse-video attribute */
-    "BLINK":"[BLINK]",		/* turn on blinking attribute */
-    "RESET":"[RESET]",		/* turn off all attributes */
-    "TAB":"[TAB]",		/* move cursor to next hardware tab stop */
-    "UNDERLINE":"[UNDERLINE]",	/* underline character overstrikes */
-    "BLACK":"[BLACK]",
-    "RED":"[RED]",
-    "GREEN":"[GREEN]",
-    "YELLOW":"[YELLOW]",
-    "BLUE":"[BLUE]",
-    "MAGENTA":"[MAGENTA]",
-    "CYAN":"[CYAN]",
-    "GREY":"[GREY]",
-    "WHITE":"[WHITE]",
-
-    "L_RED":"[L_RED]",
-    "L_GREEN":"[L_GREEN]",
-    "L_YELLOW":"[L_YELLOW]",
-    "L_BLUE":"L_BLUE]",
-    "L_MAGENTA":"[L_MAGENTA]",
-    "L_CYAN":"[L_CYAN]",
-
-    "B_BLACK":"[B_BLACK]",
-    "B_RED":"[B_RED]",
-    "B_GREEN":"[B_GREEN]",
-    "B_YELLOW":"[B_YELLOW]",
-    "B_BLUE":"[B_BLUE]",
-    "B_MAGENTA":"[B_MAGENTA]",
-    "B_CYAN":"[B_CYAN]",
-    "B_GREY":"[B_GREY]",
-    "B_WHITE":"[B_WHITE]",
-    "ESC":"[ESC]",
-    ]),
-  "xterm":
-  ([
-    "BELL":"",		/* audible signal (bell) */
-    "CLS":"[;H[2J",		/* clear screen and home cursor */
-    "HOME":"[H",		/* home cursor */
-    "BOLD":"[1m",		/* turn on bold (extra bright) attribute */
-    "INVERSE":"[7m",		/* turn on reverse-video attribute */
-    "BLINK":"[5m",		/* turn on blinking attribute */
-    "RESET":"[m",		/* turn off all attributes */
-    "TAB":"	",		/* move cursor to next hardware tab stop */
-    "UNDERLINE":"[4m",	/* underline character overstrikes */
-    "ESC":ESC,		/* Our escape character (so we can quote it) */
-    ]),
-  "atari":	/* I have one - Auronthas */
-  ([
-    "CLS":"E",
-    "sr":"I",
-    "up":"A",
-    "ku":"A",
-    "kd":"B",
-    "kr":"C",
-    "kl":"D",
-    "kb":"",
-    "BOLD":"p",
-    "se":"q",
-    "sc":"j",
-    "rc":"k",
-    "al":"L",
-    "dl":"M",
-    "vi":"f",
-    "ve":"e",
-    "is":"vq",
-    "rs":"vEq",
-    "BG":"c%c",
-    "FG":"b%c",
-    "ESC":ESC,		/* Our escape character (so we can quote it) */
-    ]),
-  "adm3a":
-  ([
-    "CLS":"",
-    "ESC":ESC,		/* Our escape character (so we can quote it) */
-    ]),    
-  "colxterm":
-  ([
-    "BELL":"",		/* audible signal (bell) */
-    "CLS":"[;H[2J",		/* clear screen and home cursor */
-    "HOME":"[H",		/* home cursor */
-    "INITTERM":"[1;24r[24;1H",/* terminal initialization string */
-    "BOLD":"[1m",		/* turn on bold (extra bright) attribute */
-    "INVERSE":"[7m",		/* turn on reverse-video attribute */
-    "BLINK":"[5m",		/* turn on blinking attribute */
-    "RESET":"[m",		/* turn off all attributes */
-    "TAB":"	",		/* move cursor to next hardware tab stop */
-    "UNDERLINE":"[4m",	/* underline character overstrikes */
-    "BLACK":"[30m",
-    "RED":"[31m",
-    "GREEN":"[32m",
-    "YELLOW":"[33m",
-    "BLUE":"[34m",
-    "MAGENTA":"[35m",
-    "CYAN":"[36m",
-    "GREY":"[37m",
-    "WHITE":"[37m",
-
-    "L_RED":"[1;31m",
-    "L_GREEN":"[1;32m",
-    "L_YELLOW":"[1;33m",
-    "L_BLUE":"[1;34m",
-    "L_MAGENTA":"[1;35m",
-    "L_CYAN":"[1;36m",
-
-    "B_BLACK":"[40m",
-    "B_RED":"[41m",
-    "B_GREEN":"[42m",
-    "B_YELLOW":"[43m",
-    "B_BLUE":"[44m",
-    "B_MAGENTA":"[45m",
-    "B_CYAN":"[46m",
-    "B_GREY":"[47m",
-    "B_WHITE":"[47m",
-    "ESC":ESC,		/* Our escape character (so we can quote it) */
-    ]),
-  ]);
-
-mapping
-query_all_termcap_entries()
+void
+create()
 {
-    return copy(termcap_entries);
+  default_termcap =
+    ([
+      "RESET"     : "",     // Clear all attributes
+      "BELL"      : "",     // Audible signal
+
+      /* Attributes */
+      "INVERSE"   : "",
+      "UNDERSCORE": "",
+      "BOLD"      : "",
+      "FLASH"     : "",
+
+      /* Foreground colors */
+      "BLACK"     : "",
+      "RED"       : "",
+      "GREEN"     : "",
+      "ORANGE"    : "",
+      "YELLOW"    : "",
+      "BLUE"      : "",
+      "MAGENTA"   : "",
+      "CYAN"      : "",
+      "WHITE"     : "",
+
+      /* Background colors */
+      "B_BLACK"   : "",
+      "B_RED"     : "",
+      "B_GREEN"   : "",
+      "B_ORANGE"  : "",
+      "B_YELLOW"  : "",
+      "B_BLUE"    : "",
+      "B_MAGENTA" : "",
+      "B_CYAN"    : "",
+      "B_WHITE"   : "",
+
+      /* Screen & Cursor functions */
+      "INITTERM"  : "",     // Clear screen and home cursor
+      "CLEARLINE" : "",
+      "HOME"      : "",      // Home cursor
+      "SAVE"      : "",
+      "RESTORE"   : "",
+      ]);
+
+  database =
+    ([
+      "default" : default_termcap,
+      "ansi" : default_termcap +
+      ([
+	"RESET"     : "\e[0m",
+	"BOLD"      : "\e[1m",
+	"UNDERSCORE": "\e[4m",
+	"FLASH"     : "\e[5m",
+	"INVERSE"   : "\e[7m",
+	"BLACK"     : "\e[30m",
+	"RED"       : "\e[31m",
+	"GREEN"     : "\e[32m",
+	"ORANGE"    : "\e[33m",
+	"YELLOW"    : "\e[1m\e[33m",
+	"BLUE"      : "\e[34m",
+	"MAGENTA"   : "\e[35m",
+	"CYAN"      : "\e[36m",
+	"WHITE"     : "\e[37m",
+	"B_BLACK"   : "\e[40m",
+	"B_RED"     : "\e[41m",
+	"B_GREEN"   : "\e[42m",
+	"B_ORANGE"  : "\e[43m",
+	"B_YELLOW"  : "\e[1m\e[43m",
+	"B_BLUE"    : "\e[44m",
+	"B_MAGENTA" : "\e[45m",
+	"B_CYAN"    : "\e[46m",
+	"B_WHITE"   : "\e[47m",
+	"CLEARLINE" : "\e[L\e[G",
+	"INITTERM"  : "\e[H\e[2J",
+	"HOME"      : "\e[H",
+	"SAVE"      : "\e7",
+	"RESTORE"   : "\e8",
+	]),
+      "xterm" : default_termcap +
+      ([
+	"RESET"     : "\e[m",
+	"BELL"      : "",
+	"HOME"      : "\e[H",
+	"BOLD"      : "\e[1m",
+	"FLASH"     : "\e[5m",
+	"INVERSE"   : "\e[7m",
+	"CLEARLINE" : "\e[L\e[G",
+	"INITTERM"  : "\e[H\e[2J",
+      ]),
+      /* FreeBSD Console -- subset of ANSI */
+      "cons25" : default_termcap +
+      ([
+	"RESET"     : "\e[0m",
+	"BOLD"      : "\e[1m",
+	"UNDERSCORE": "\e[4m",
+	"FLASH"     : "\e[5m",
+	"INVERSE"   : "\e[7m",
+	"BLACK"     : "\e[30m",
+	"RED"       : "\e[31m",
+	"GREEN"     : "\e[32m",
+	"ORANGE"    : "\e[33m",
+	"YELLOW"    : "\e[1m\e[33m",
+	"BLUE"      : "\e[34m",
+	"MAGENTA"   : "\e[35m",
+	"CYAN"      : "\e[36m",
+	"WHITE"     : "\e[37m",
+	"B_BLACK"   : "\e[40m",
+	"B_RED"     : "\e[41m",
+	"B_GREEN"   : "\e[42m",
+	"B_ORANGE"  : "\e[43m",
+	"B_YELLOW"  : "\e[1m\e[43m",
+	"B_BLUE"    : "\e[44m",
+	"B_MAGENTA" : "\e[45m",
+	"B_CYAN"    : "\e[46m",
+	"B_WHITE"   : "\e[47m",
+	"CLEARLINE" : "\e[2K",
+	"INITTERM"  : "\e[H\e[2J",
+	"HOME"      : "\e[H",
+	]),
+      ]);
 }
 
-mapping
-query_termcap(string what) /* Added by Kniggit 930115 */
+
+string*
+query_supported_termtypes()
 {
-  if(termcap_entries)
-    if( termcap_entries[what] )
-      return termcap_entries["default"] + termcap_entries[what];
-    else
-      return copy(termcap_entries["default"]);
+  if( !nullp(database) )
+    return keys(database);
   else
-    return ([ "this should not happen" : "" ]);
+    return ({ });  // shouldn't happen
 }
 
-mixed*
-query_supported_termtypes() /* Added by Tim 960122 */
-{
-  if(termcap_entries)
-    return keys(termcap_entries);
-}
-
-mixed
-termcap_capability(string entry, string capability)
-{
-    mapping temp;
-
-    if (temp = query_termcap(entry)) {
-	if (!temp[capability] && temp["tc"])
-	    return termcap_capability(temp["tc"], capability);
-	return temp[capability];
-    }
-    return 0;
-}
-
-#if 0
-varargs string
-termcap(string message, string capability, object ob)
-{
-    string t_type, t;
-
-    if (!message)
-	message = "";
-    if (!ob && !(ob = this_player()))
-	ob = previous_object();
-    if ((t_type = (string)ob->get_env("TERM")) &&
-	termcap_entries[t_type] &&
-	(t = termcap_capability(t_type, capability)))
-    {
-	return (t ? t : "") + message + ((t = start_end[capability]) ?
-	    termcap_capability(t_type, t) : "");
-    }
-    return message;
-}	
-
-varargs string
-inverse (string str, object who)
-{
-    return str;
-}
-
-varargs string
-blink (string str, object who) {
-    return str;
-}
-
-varargs string
-bold (string str, object who) {
-    str=ESC "BOLD" ESC + str + ESC "RESET" ESC;
-    return str;
-}
-
-varargs string
-underscore (string str, object who) {
-    return str;
-}
-
-varargs string
-clear_screen (object who) {
-    return ESC "CLS" ESC;
-}
 
 string
-termcap_format_line(string line, string ttype)
+translate(string msg, string ttype, int width)
 {
-    string *words = explode(line, ESC);
-    mapping tce = termcap_entries[ttype];
-    int i = 1;
+  mapping translations;
 
-    if (mapp(tce) && stringp(ttype))
-    {
-	string w, end = tce["RESET"];
-	int nl, ef, el = strlen(tce["RESET"])+1;
-	while (i < sizeof(words)) {
-	  words[i] = tce[words[i]];
-	  i += 2;
-	}
-	w = implode(words, "");
-	if (w[<el..<1] == end) {
-	    w = w[0..<el+1];
-	    ef = 1;
-	}
-	if (w[<1..<1] == "\n") {
-	    nl = 1;
-	    w = w[0..<2];
-	}
-	ef && w += end;
-	nl && w += "\n";
-	return w;
-    }
-    else
-    {
-	string *new_words = allocate((sizeof(words) / 2) + 1);
-	int j = 0;
-	i = 0;
-	while (i < sizeof(words))
-	{
-	    new_words[j++] = words[i];
-	    i += 2;
-	}
-	return implode(new_words - ({ 0 }), "");
-    }
+  if( nullp(database) )
+    return msg;  // shouldn't happen
+  else if( undefinedp(translations = database[ttype]) )
+    return msg;  // shouldn't happend if termtype is set up correctly
+  else
+    return terminal_colour(msg, translations, width);
 }
-#endif

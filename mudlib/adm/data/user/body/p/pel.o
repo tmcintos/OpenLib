@@ -1,18 +1,21 @@
-#/obj/clone/user/human.c
-morestring "/data/README: (%d%%) %s"
+#/adm/obj/clone/user.c
+morestring "/obj/clone/nmsh.c: (%d%%) %s"
 callback 0
 redraw 
-s_length 72
-start 1
-prev 1
-length 1
-file "/data/README"
+s_length 25
+start 27
+prev 3
+length 611
+file "/obj/clone/nmsh.c"
 in_help 0
 no_clean 0
 flags ([])
 coins ({0,0,})
 hit_points 100
 spell_points 0
-env_vars (["LENGTH":72,"nmsh_nick":([]),"WIDTH":80,"nmsh_xverb":(["'":"say $*",":":"emote $*",]),"PATH":"/cmd/wiz:/adm/cmd/wiz:/cmd/player:/adm/cmd/player","nmsh_alias":(["e":"east","i":"inventory","nw":"northwest","exa":"look at $*","ne":"northeast","bio":"biography","w":"west","d":"down","u":"up","s":"south","n":"north","se":"southeast","l":"look $*","sw":"southwest",]),"TERM":"xterm",])
+str 0
+agil 0
+skills 0
+env_vars (["nmsh_nick":([]),"nmsh_alias":(["sw":"southwest","exa":"look at $*","se":"southeast","l":"look $*","w":"west","d":"down","i":"inventory","ne":"northeast","u":"up","n":"north","s":"south","e":"east","nw":"northwest","bio":"biography",]),"TERM":"xterm","nmsh_xverb":(["'":"say $*",":":"emote $*",]),"LENGTH":25,"PATH":"/cmd/wiz:/adm/cmd/wiz:/cmd/player:/adm/cmd/player","WIDTH":80,])
 aliases ([])
 channels ({})

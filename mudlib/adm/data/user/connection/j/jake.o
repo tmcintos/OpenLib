@@ -1,0 +1,12 @@
+#/adm/obj/clone/connection.c
+name "jake"
+cap_name "Jake"
+password "ajP4qww5fEZ1I"
+real_name "Tim McIntosh"
+email_addr "astasia@iastate.edu"
+body "/adm/obj/clone/user"
+login_shell "/adm/obj/clone/shells/nmsh"
+gender 1
+login_time 843270777
+logout_time 843270924
+login_from "loopback"

@@ -96,15 +96,20 @@ long()
     ret = long_desc;
  
   // Exit viewing crap
-  if( !i ) return ret + "  There are no obvious exits.\n";
-  if(i == 1) return ret + "  The only obvious exit is "+ keyring[0] +".\n";
+  switch( i )
+  {
+  case 0:
+    return ret + "  There are no obvious exits.\n";
+  case 1:
+    return ret + "  The only obvious exit is " + keyring[0] + ".\n";
+  default:
+    ret += "  There are " + to_english(i) + " obvious exits:  ";
 
-  ret += "  There are "+ to_string(i) +" obvious exits:  ";
+    foreach(string dir in keyring[0..<3])
+      ret += dir + ", ";
 
-  while (--i > 1)
-    ret += keyring[i] +", ";
-
-  return ret + keyring[1] +" and "+ keyring[0] +".\n";
+    return ret + keyring[<2] + " and " + keyring[<1] + ".\n";
+  }
 }
 
 //

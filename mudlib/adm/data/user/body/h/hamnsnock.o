@@ -1,15 +1,21 @@
-#obj/clone/user/human.c
-slen 24
-swid 80
-curr_line 34
-lines 33
-file ({"login_d: 0 is not a supported terminal type","Welcome to Dysfunctional Mud!","-------------------------------------------------------------------------------","                D y s f u n c t i o n a l  M u d  N e w s","			last update: 04/23/96","-------------------------------------------------------------------------------","* Please send mail to Tim if you want to become a developer.  Additionally,","  all developers should join the mailing list by sending mail to","  majordomo@knapp38.res.iastate.edu with the string 'subscribe dysfunctional'","  in the body of the letter.","","* If you want to take on a project or have any new project ideas, send mail","  to Tim.","","* There is now a 'changelog' command which appends an entry to the ChangeLog","  file in the current working directory.","","* Changed set_ids() to add_ids() in OBJECT. Make changes accordingly.","","* Going through a major revision.  Modularizing inheritable objects, anything","  derived from BASE will find out that create() is declared 'nomask'.  You","  should use initialize() in place of create() in derived objects.  See BASE","  for the code as it stands right now.","    Basically have 3 functions, initialize(), low_setup(), and setup().","  The setup() funcs are for initializing cloned objects (as opposed to the","  master copy without the # in its name).  low_setup is used in the mudlib","  and setup() is reserved for the end user (that way you don't have to call","  ::setup() all the time).","    Note that this is subject to change, so don't make your fixes yet unless","  you don't mind doing it again.","","","",})
-callback 
+#/obj/clone/user.c
+morestring "%%^INVERSE%%^--MORE--%%^RESET%%^ (%d%%) %s"
+callback 0
+redraw 
+s_length 24
+start 27
+prev 4
+length 26
+file ({"wand        clone /u/h/hamnsnock/stuff/wand.c","ige         chat emote igossip: $*","ls          ls -c $*","u           up","i           inventory","ne          northeast","l           look $*","se          southeast","summon      .summon $*","join        .join $*","nw          northwest","quit        .quit","home        .home","ig          chat igossip: $*","bio         biography","w           west","d           down","s           south","ic          chat icode: $*","n           north","e           east","exa         look at $*","goto        .goto $*","sw          southwest","$'           say $*","$:           emote $*",})
+in_help 0
 no_clean 0
 flags ({})
 coins ({550,436,})
 hit_points 58
 spell_points 0
-env_vars (["PATH":"/cmd/wiz:/adm/cmd/wiz:/cmd/player:/adm/cmd/player","MORE_EXIT_END":1,"nmsh_xverb":([":":"emote $*","'":"say $*",]),"nmsh_alias":(["ige":"chat emote igossip: $*","s":"south","se":"southeast","e":"east","ic":"chat icode: $*","bio":"biography","nw":"northwest","w":"west","d":"down","i":"inventory","n":"north","wand":"clone /u/h/hamnsnock/stuff/wand.c","ig":"chat igossip: $*","summon":".summon $*","l":"look $*","home":".home","u":"up","sw":"southwest","quit":".quit","ls":"ls -c $*","exa":"look at $*","goto":".goto $*","ne":"northeast","join":".join $*",]),"LENGTH":24,"nmsh_nick":([]),"TITLE":"The evil $N, lord of Patagonia","SHELL":"/obj/clone/shells/protosh","WIDTH":80,"GENDER":1,"TERM":"ansi","the":"dark and evil lord of Patagonia","version":"Prototype Shell",])
-aliases (["s":"south","se":"southeast","e":"east","nw":"northwest","w":"west","i":"inventory","n":"north","wand":"clone /u/h/hamnsnock/stuff/wand","l":"look","home":".home","sc":"score","f":"finger","sw":"southwest","quit":".quit","goto":".goto","ne":"northeast","join":".join",])
+str 0
+agil 0
+skills 0
+env_vars (["nmsh_xverb":(["'":"say $*",":":"emote $*",]),"MORE_EXIT_END":1,"PATH":"/cmd/wiz:/adm/cmd/wiz:/cmd/player:/adm/cmd/player","the":"dark and evil lord of Patagonia","GENDER":1,"nmsh_alias":(["wand":"clone /u/h/hamnsnock/stuff/wand.c","ige":"chat emote igossip: $*","ls":"ls -c $*","u":"up","i":"inventory","ne":"northeast","l":"look $*","se":"southeast","summon":".summon $*","join":".join $*","nw":"northwest","quit":".quit","home":".home","ig":"chat igossip: $*","bio":"biography","w":"west","d":"down","s":"south","ic":"chat icode: $*","n":"north","e":"east","exa":"look at $*","goto":".goto $*","sw":"southwest",]),"version":"Prototype Shell","LENGTH":24,"WIDTH":80,"SHELL":"/obj/clone/shells/protosh","nmsh_nick":([]),"TERM":"vt102","TITLE":"The evil $N, lord of Patagonia",])
+aliases (["wand":"clone /u/h/hamnsnock/stuff/wand","f":"finger","i":"inventory","ne":"northeast","l":"look","se":"southeast","join":".join","nw":"northwest","quit":".quit","home":".home","w":"west","s":"south","n":"north","sc":"score","e":"east","goto":".goto","sw":"southwest",])
 channels ({"wiz","igossip","icode",})

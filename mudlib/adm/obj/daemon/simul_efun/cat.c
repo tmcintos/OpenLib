@@ -28,7 +28,7 @@ varargs int cat( string path, int start, int num )
     {
         if( trun && ( strlen( text ) < file_size( path ) ) )
             text += "***TRUNCATED***\n";
-        message( "cat", text, this_player() );
+        message( "system", text, this_player() );
         return 1; // success
     }
     // File doesn't exist, start is a non-positive number or 

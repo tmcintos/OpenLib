@@ -72,4 +72,9 @@
  and too long eval...problem is prolly in get_file_protection
 -termcap: refine daemon and build up a larger database
 -syslog: system logging facility, msg priorities etc.
+-get command:  fix so you can't steal stuff from people-not now at least
+-trans/summon:  create some commands to bring people/things to your environmt.
+-ROOM: unresolved issues with adding exits, etc.  Need to figure out a way
+ to add_action() to each player that is already in the room.  This problem
+ may go away if we go to using xverbs..don't know.
 </PRE>

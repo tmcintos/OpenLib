@@ -3,21 +3,26 @@
 
 #include <dirs.h>
 
-// Default terminal type to use when we user's type is unsupported
-#define DEFAULT_TERM "default"
-
-#define PROMPT_LOGIN "login: "
-#define PROMPT_PASSWORD "Password: "
+//#define PROMPT_LOGIN    "login: "
+//#define PROMPT_PASSWORD "Password: "
+#define PROMPT_LOGIN    "Shutup and enter your username! "
+#define PROMPT_PASSWORD "Now what about the password, wiseguy? "
 
 #define MAX_USERNAME_LENGTH 12
 #define MIN_USERNAME_LENGTH 3
+
 #define CONNECTION_DIR  SECURE_DATA_DIR "/user/connection"
 #define USER_BODY_DIR   SECURE_DATA_DIR "/user/body"
-#define MOTD   CONFIG_DIR "/motd"
-#define ISSUE  CONFIG_DIR "/issue"
+
+#define MOTD    CONFIG_DIR "/motd"
+#define ISSUE   CONFIG_DIR "/issue"
 #define LASTLOG LOG_DIR "/lastlog"
-#define DEFAULT_SHELL CLONE_DIR "/shells/rsh"
-#define DEFAULT_BODY  CLONE_DIR "/user/human"
+
+#define CONNECTION_OB SECURE_CLONE_DIR "/connection"
+#define DEFAULT_SHELL SECURE_CLONE_DIR "/shells/nmsh"
+#define DEFAULT_BODY  SECURE_CLONE_DIR "/user"
+#define DEFAULT_TERM "default"
+
 #define START_ROOM   DOMAIN_DIR "/base/start"
 
 #endif /* _LOGIN_H */

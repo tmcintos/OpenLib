@@ -120,10 +120,44 @@ void eventRegisterChannels(mapping list) {
     foreach(channel, val in list) {
 	if( !val ) continue;
 	if( channel == (string)CHAT_D->map_to_local(channel) ) {
-	    INTERMUD_D->eventWrite(({ "channel-listen", 5, mud_name(), 0, ns, 
-				      0, channel, 0 }));
+            string name;
+	    int num;
+	    
 	    log_file("channels", "New channel: " + channel + " recognized " +
 		     ctime(time()) + "\nValue: " + identify(val));
+
+	    if( val[1] ) {
+	      INTERMUD_D->eventWrite(({ "channel-listen", 5, mud_name(), 0, ns,
+					0, channel, 0 }));
+	      continue; // don't mess w/filtered or banned channels
+	    }
+
+	    if( INTERMUD_D->GetMudState(val[0]) >= 0 ) continue;
+
+	    if( (num = strsrch(channel, '_')) >= 0 )
+	      name = "i"+channel[num+1..];
+	    else
+	      name = "i"+channel;
+	    
+	    name = replace_string(name, "inter", "i")[0..20];
+
+	    if( name == channel )
+	      name += "0";
+
+	    if( CHAT_D->channel_exists(name) )
+	    {
+	      num = 0;
+	      sscanf(name, "%s%d", name, num);
+	      name = sprintf("%s%d", name, ++num);
+	    }
+	    
+	    if( CHAT_D->add_channel(name, val[0], 0, 0) )
+	    {
+	      CHAT_D->set_alias(name, channel);
+	      INTERMUD_D->eventWrite(({ "channel-listen", 5, mud_name(), 0, ns,
+					0, channel, 1 }));
+	    }
+	    
 	}
 	else INTERMUD_D->eventWrite(({ "channel-listen", 5, mud_name(), 0, ns,
 				       0, channel, 1 }));

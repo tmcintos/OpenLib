@@ -3,6 +3,6 @@
 main(string str)
 {
   if(!str) str = "";
-  write(to_string(atoi(str)) +"\n");
+  write(to_english(to_int(str)) +"\n");
   return 1;
 }

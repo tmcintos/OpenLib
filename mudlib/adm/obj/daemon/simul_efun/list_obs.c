@@ -8,7 +8,7 @@ private string
 count_items(string desc, int num)
 {
   if( num > 1 )
-    return sprintf("%s %s", to_string(num), pluralize(desc));
+    return sprintf("%s %s", to_english(num), pluralize(desc));
   else
     return desc;
 }

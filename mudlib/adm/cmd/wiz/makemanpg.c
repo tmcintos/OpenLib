@@ -76,7 +76,7 @@ main(string arg)
   if(!arg)
     return notify_fail(USAGE +"\n");
 
-  cmdinfo["section"] = atoi(arg);
+  cmdinfo["section"] = to_int(arg);
   write("File Name (don't use parens): ");
   input_to("get_cmd_name", 0, cmdinfo);
   return 1;

@@ -19,6 +19,7 @@
 #define NEWS_D               DAEMON_DIR        "/readnews_d"
 #define NEWSSERVER           SECURE_DAEMON_DIR        "/news_d"
 // #define OPTIONS_D            SECURE_DAEMON_DIR "/options"
+#define SAVE_D               SECURE_DAEMON_DIR "/save_d"
 #define SECURITY_D           SECURE_DAEMON_DIR "/security_d"
 #define TERMCAP_D            DAEMON_DIR        "/termcap_d"
 

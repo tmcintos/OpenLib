@@ -24,7 +24,7 @@ main(string str) {
         who = convert_name(words[0]);
         if(maxi > 2) words[1] = implode(words[1..maxi-1], "@");
         maxi = sizeof(words = explode(words[1], " "));
-        for(i=0; i<maxi; i++) {
+        for(i=maxi - 1; i >= 0; i--) {
 	    string *mts;
             tmp = lower_case(implode(words[0..i], " "));
 	    

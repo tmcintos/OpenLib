@@ -1,31 +1,37 @@
 #include <command.h>
+#include <daemons.h>
+
+void
+save_newsrc(string file, mapping newsrc)
+{
+  rm(file);
+  
+  foreach(string group, string list in newsrc)
+  {
+    write_file(file, sprintf("%s: %s\n", group, list));
+  }
+}
 
 int
 main()
 {
-  mapping newsrc = ([ ]);
-  string* lines;
-  string file = user_cwd(this_player()->query_name()) + "/.newsrc";
+  string file = user_path(this_player()->query_name()) + ".newsrc";
+  mapping newsrc;
 
-  write("Getting your newsrc...\n");
-
-  if( !file_exists(file) )
-    write("You have no newsrc!  Using empty newsrc.\n");
-  else
+  if( file_exists(file) )
   {
-    lines = explode(read_file(file), "\n");
+    int curr_line = 1;
 
-    foreach(string line in lines)
+    newsrc = ([ ]);
+    
+    foreach(string str in explode(read_file(file), "\n"))
     {
       string group, list;
-      if( sscanf(line, "%s:%s", group, list) != 2 )
-      {
-	write("Corrupt line in newsrc file...continuing\n");
-	continue;
-      }
-      newsrc[group] = list;
+      
+      if( sscanf(str, "%s: %s", group, list) == 2 )
+	newsrc[group] = list;
     }
   }
 
-  return 1;
+  return NEWS_D->read_news(newsrc, (: save_newsrc, file :));
 }

@@ -1,3 +1,0 @@
-This package contains an inheritable command module which can be used
-to pass command line arguments to any command in the form of 2 arrays
-of words and a flag() function to determine whether flags have been passed.

@@ -13,7 +13,7 @@ main(string arg)
 		       "  --------     -----" });
 
     foreach(string key, mixed val in env)
-      lines += ({ sprintf("  %-10s   %-O", key, val) });
+      lines += ({ sprintf("  %-10s   %-s", key, to_string(val)) });
     this_player()->more(lines);
   } else if( query_verb() == "setenv" ) {
     string key;

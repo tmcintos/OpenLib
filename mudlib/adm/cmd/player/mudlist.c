@@ -112,7 +112,7 @@ main(string str) {
 			 mud, info[8], info[7], info[5], info[1],
 			 (info[2] ? sprintf("%i", info[2]) : "N/A")) });
     list = sort_array(list, 1);
-    list = ({ mud_name() + " recognizes " + to_string(sizeof(borg)) +
+    list = ({ mud_name() + " recognizes " + to_english(sizeof(borg)) +
 		" mud(s) matching your query: ", "" }) + list;
     this_player()->more(list);
     return 1;

@@ -9,6 +9,7 @@
 
 #include <mudlib.h>
 #include <daemons.h>
+#include <login.h>
 #include <time.h>
 
 inherit DAEMON;

@@ -847,3 +847,461 @@ Mon Sep  9 08:36:51 1996: knapp38.res.iastate.edu
 Mon Sep  9 08:36:51 1996: ttype: screen
 Mon Sep  9 14:15:28 1996: loopback
 Mon Sep  9 14:15:28 1996: ttype: cons25
+Mon Sep  9 19:06:54 1996: 127.0.0.1
+Mon Sep  9 19:06:54 1996: ttype: cons25
+Mon Sep  9 19:22:52 1996: loopback
+Mon Sep  9 19:22:52 1996: ttype: screen
+Mon Sep  9 20:06:02 1996: 146.186.17.39
+Mon Sep  9 20:06:02 1996: ttype: vt220
+Tue Sep 10 05:43:16 1996: 129.186.85.38
+Tue Sep 10 05:43:18 1996: ttype: screen
+Tue Sep 10 15:48:19 1996: loopback
+Tue Sep 10 15:48:19 1996: ttype: cons25
+Tue Sep 10 16:00:01 1996: knapp38.res.iastate.edu
+Tue Sep 10 16:00:01 1996: ttype: cons25
+Tue Sep 10 17:40:18 1996: 127.0.0.1
+Tue Sep 10 17:40:18 1996: ttype: cons25
+Tue Sep 10 17:47:06 1996: 161.109.128.2
+Tue Sep 10 17:47:06 1996: ttype: vt100
+Tue Sep 10 19:47:34 1996: 129.186.85.38
+Tue Sep 10 19:47:34 1996: ttype: screen
+Tue Sep 10 19:55:59 1996: loopback
+Tue Sep 10 19:55:59 1996: ttype: cons25
+Tue Sep 10 20:20:14 1996: 127.0.0.1
+Tue Sep 10 20:20:14 1996: ttype: cons25
+Tue Sep 10 20:20:18 1996: 129.186.85.38
+Tue Sep 10 20:20:18 1996: ttype: screen
+Tue Sep 10 20:25:25 1996: 127.0.0.1
+Tue Sep 10 20:25:25 1996: ttype: cons25
+Tue Sep 10 20:29:34 1996: loopback
+Tue Sep 10 20:29:34 1996: ttype: cons25
+Wed Sep 11 01:08:48 1996: 129.186.85.38
+Wed Sep 11 01:08:48 1996: ttype: screen
+Wed Sep 11 04:12:44 1996: knapp38.res.iastate.edu
+Wed Sep 11 04:12:44 1996: ttype: screen
+Wed Sep 11 09:44:18 1996: 132.239.52.91
+Wed Sep 11 09:44:18 1996: ttype: vt220
+Wed Sep 11 12:34:17 1996: knapp38.res.iastate.edu
+Wed Sep 11 12:34:17 1996: ttype: screen
+Wed Sep 11 12:52:38 1996: loopback
+Wed Sep 11 12:52:38 1996: ttype: cons25
+Wed Sep 11 18:24:38 1996: loopback
+Wed Sep 11 18:24:38 1996: ttype: cons25
+Wed Sep 11 20:38:40 1996: loopback
+Wed Sep 11 20:38:40 1996: ttype: vt100
+Wed Sep 11 20:39:26 1996: loopback
+Wed Sep 11 20:39:26 1996: ttype: cons25
+Wed Sep 11 21:05:18 1996: loopback
+Wed Sep 11 21:05:18 1996: ttype: screen
+Wed Sep 11 23:50:55 1996: loopback
+Wed Sep 11 23:50:55 1996: ttype: cons25
+Wed Sep 11 23:55:25 1996: loopback
+Wed Sep 11 23:55:25 1996: ttype: xterm
+Thu Sep 12 00:58:39 1996: knapp38.res.iastate.edu
+Thu Sep 12 00:58:39 1996: ttype: screen
+Thu Sep 12 02:57:06 1996: knapp38.res.iastate.edu
+Thu Sep 12 02:57:06 1996: ttype: screen
+Thu Sep 12 08:49:32 1996: knapp38.res.iastate.edu
+Thu Sep 12 08:49:32 1996: ttype: screen
+Thu Sep 12 14:08:11 1996: 206.138.226.143
+Thu Sep 12 14:08:19 1996: ttype: vt100
+Thu Sep 12 15:53:14 1996: loopback
+Thu Sep 12 15:53:14 1996: ttype: cons25
+Thu Sep 12 17:02:21 1996: loopback
+Thu Sep 12 17:02:21 1996: ttype: cons25
+Thu Sep 12 21:37:16 1996: 129.186.33.165
+Thu Sep 12 21:37:16 1996: ttype: vt100
+Thu Sep 12 21:53:29 1996: 128.83.134.67
+Thu Sep 12 21:53:31 1996: ttype: vt100
+Fri Sep 13 06:10:56 1996: knapp38.res.iastate.edu
+Fri Sep 13 06:10:56 1996: ttype: screen
+Fri Sep 13 16:17:17 1996: 204.248.24.1
+Fri Sep 13 16:17:17 1996: ttype: vt100
+Fri Sep 13 22:13:03 1996: loopback
+Fri Sep 13 22:13:03 1996: ttype: vt100
+Sat Sep 14 00:40:27 1996: knapp38.res.iastate.edu
+Sat Sep 14 00:40:27 1996: ttype: screen
+Mon Sep 16 12:13:52 1996: 150.237.168.83
+Mon Sep 16 12:13:52 1996: ttype: linux
+Mon Sep 16 12:52:12 1996: 127.0.0.1
+Mon Sep 16 12:52:12 1996: ttype: xterm
+Mon Sep 16 19:06:54 1996: 127.0.0.1
+Mon Sep 16 19:06:54 1996: ttype: cons25
+Mon Sep 16 20:19:10 1996: 150.237.176.8
+Mon Sep 16 20:19:10 1996: ttype: ibm-3278-2
+Mon Sep 16 20:44:50 1996: loopback
+Mon Sep 16 20:44:50 1996: ttype: cons25
+Mon Sep 16 22:23:03 1996: 127.0.0.1
+Mon Sep 16 22:23:03 1996: ttype: cons25
+Tue Sep 17 01:42:01 1996: 10.0.0.2
+Tue Sep 17 01:42:01 1996: ttype: linux
+Tue Sep 17 04:08:36 1996: 205.215.64.13
+Tue Sep 17 04:08:36 1996: ttype: vt220
+Tue Sep 17 18:44:28 1996: deathstar
+Tue Sep 17 18:44:28 1996: ttype: linux
+Tue Sep 17 22:55:44 1996: loopback
+Tue Sep 17 22:55:44 1996: ttype: xterm
+Wed Sep 18 10:11:44 1996: 129.186.85.38
+Wed Sep 18 10:11:44 1996: ttype: screen
+Wed Sep 18 13:00:53 1996: loopback
+Wed Sep 18 13:00:55 1996: ttype: cons25
+Wed Sep 18 20:25:44 1996: loopback
+Wed Sep 18 20:25:44 1996: ttype: cons25
+Wed Sep 18 20:33:14 1996: loopback
+Wed Sep 18 20:33:14 1996: ttype: cons25
+Wed Sep 18 20:38:00 1996: 208.2.126.189
+Wed Sep 18 21:50:46 1996: loopback
+Wed Sep 18 21:50:46 1996: ttype: cons25
+Wed Sep 18 22:15:21 1996: loopback
+Wed Sep 18 22:15:21 1996: ttype: xterm
+Thu Sep 19 00:04:14 1996: loopback
+Thu Sep 19 00:04:14 1996: ttype: cons25
+Thu Sep 19 00:05:12 1996: loopback
+Thu Sep 19 00:05:12 1996: ttype: cons25
+Thu Sep 19 04:17:58 1996: 205.215.64.13
+Thu Sep 19 04:17:58 1996: ttype: vt220
+Thu Sep 19 07:39:50 1996: 129.186.85.38
+Thu Sep 19 07:39:50 1996: ttype: screen
+Thu Sep 19 10:41:54 1996: 129.186.89.17
+Thu Sep 19 10:41:54 1996: ttype: xterm
+Thu Sep 19 13:25:35 1996: knapp38.res.iastate.edu
+Thu Sep 19 13:25:35 1996: ttype: screen
+Thu Sep 19 15:38:13 1996: axp.calumet.purdue.edu
+Thu Sep 19 15:38:13 1996: ttype: vt220
+Thu Sep 19 16:11:07 1996: loopback
+Thu Sep 19 16:11:07 1996: ttype: cons25
+Thu Sep 19 19:11:31 1996: 127.0.0.1
+Thu Sep 19 19:11:31 1996: ttype: cons25
+Thu Sep 19 19:13:20 1996: loopback
+Thu Sep 19 19:13:20 1996: ttype: cons25
+Thu Sep 19 19:16:33 1996: loopback
+Thu Sep 19 19:16:33 1996: ttype: cons25
+Fri Sep 20 00:55:31 1996: 199.184.119.1
+Fri Sep 20 00:55:31 1996: ttype: vt102
+Fri Sep 20 02:13:20 1996: 207.98.129.1
+Fri Sep 20 02:13:20 1996: ttype: vt102
+Fri Sep 20 12:49:06 1996: 198.202.66.85
+Fri Sep 20 12:49:06 1996: ttype: xterm
+Fri Sep 20 13:37:07 1996: loopback
+Fri Sep 20 13:37:07 1996: ttype: cons25
+Fri Sep 20 14:17:29 1996: loopback
+Fri Sep 20 14:17:29 1996: ttype: cons25
+Fri Sep 20 14:34:35 1996: 127.0.0.1
+Fri Sep 20 14:35:47 1996: 127.0.0.1
+Fri Sep 20 14:35:47 1996: ttype: cons25
+Fri Sep 20 14:36:57 1996: loopback
+Fri Sep 20 14:36:57 1996: ttype: cons25
+Fri Sep 20 15:53:50 1996: loopback
+Fri Sep 20 15:53:50 1996: ttype: cons25
+Fri Sep 20 16:07:18 1996: loopback
+Fri Sep 20 16:07:18 1996: ttype: cons25
+Fri Sep 20 16:31:05 1996: 127.0.0.1
+Fri Sep 20 16:31:05 1996: ttype: cons25
+Fri Sep 20 16:31:55 1996: loopback
+Fri Sep 20 16:31:55 1996: ttype: cons25
+Fri Sep 20 16:32:27 1996: loopback
+Fri Sep 20 16:32:27 1996: ttype: cons25
+Fri Sep 20 16:34:42 1996: loopback
+Fri Sep 20 16:34:42 1996: ttype: cons25
+Fri Sep 20 16:36:45 1996: loopback
+Fri Sep 20 16:36:45 1996: ttype: cons25
+Fri Sep 20 16:40:48 1996: loopback
+Fri Sep 20 16:40:48 1996: ttype: cons25
+Fri Sep 20 18:04:12 1996: 127.0.0.1
+Fri Sep 20 18:04:12 1996: ttype: cons25
+Fri Sep 20 18:08:52 1996: loopback
+Fri Sep 20 18:08:52 1996: ttype: cons25
+Fri Sep 20 18:36:46 1996: loopback
+Fri Sep 20 18:36:46 1996: ttype: cons25
+Fri Sep 20 19:06:11 1996: loopback
+Fri Sep 20 19:06:11 1996: ttype: cons25
+Fri Sep 20 20:08:44 1996: loopback
+Fri Sep 20 20:08:44 1996: ttype: cons25
+Fri Sep 20 20:32:17 1996: loopback
+Fri Sep 20 20:32:17 1996: ttype: cons25
+Fri Sep 20 20:34:13 1996: 128.171.44.7
+Fri Sep 20 20:34:13 1996: ttype: vt100
+Fri Sep 20 20:43:56 1996: loopback
+Fri Sep 20 20:43:56 1996: ttype: cons25
+Fri Sep 20 20:44:04 1996: loopback
+Fri Sep 20 20:44:04 1996: ttype: cons25
+Fri Sep 20 20:47:25 1996: loopback
+Fri Sep 20 20:47:25 1996: ttype: cons25
+Fri Sep 20 20:48:38 1996: loopback
+Fri Sep 20 20:48:38 1996: ttype: cons25
+Fri Sep 20 20:48:56 1996: loopback
+Fri Sep 20 20:48:56 1996: ttype: cons25
+Fri Sep 20 20:52:31 1996: loopback
+Fri Sep 20 20:52:31 1996: ttype: cons25
+Sat Sep 21 01:34:44 1996: 129.186.85.38
+Sat Sep 21 01:34:44 1996: ttype: screen
+Sat Sep 21 07:51:35 1996: loopback
+Sat Sep 21 07:51:35 1996: ttype: screen
+Sat Sep 21 07:58:33 1996: 199.184.119.1
+Sat Sep 21 09:54:45 1996: knapp38.res.iastate.edu
+Sat Sep 21 09:54:45 1996: ttype: screen
+Sat Sep 21 11:15:52 1996: loopback
+Sat Sep 21 11:15:52 1996: ttype: cons25
+Sat Sep 21 19:39:24 1996: loopback
+Sat Sep 21 19:39:24 1996: ttype: cons25
+Sat Sep 21 23:49:24 1996: loopback
+Sat Sep 21 23:49:24 1996: ttype: cons25
+Sun Sep 22 12:34:49 1996: loopback
+Sun Sep 22 12:34:49 1996: ttype: cons25
+Sun Sep 22 12:41:09 1996: loopback
+Sun Sep 22 12:41:09 1996: ttype: cons25
+Sun Sep 22 13:11:22 1996: loopback
+Sun Sep 22 13:11:22 1996: ttype: xterm
+Sun Sep 22 17:12:44 1996: 128.113.109.144
+Sun Sep 22 17:16:39 1996: cii3116-19.its.rpi.edu
+Sun Sep 22 17:16:39 1996: ttype: xterm
+Sun Sep 22 17:21:15 1996: cii3116-19.its.rpi.edu
+Sun Sep 22 17:21:15 1996: ttype: xterm
+Sun Sep 22 17:21:33 1996: cii3116-19.its.rpi.edu
+Sun Sep 22 17:21:33 1996: ttype: xterm
+Sun Sep 22 18:14:40 1996: loopback
+Sun Sep 22 18:14:40 1996: ttype: xterm
+Sun Sep 22 18:15:31 1996: loopback
+Sun Sep 22 18:15:31 1996: ttype: xterm
+Sun Sep 22 18:26:08 1996: loopback
+Sun Sep 22 18:26:08 1996: ttype: xterm
+Sun Sep 22 18:27:00 1996: loopback
+Sun Sep 22 18:27:00 1996: ttype: xterm
+Sun Sep 22 18:27:18 1996: loopback
+Sun Sep 22 18:27:18 1996: ttype: xterm
+Sun Sep 22 18:31:25 1996: loopback
+Sun Sep 22 18:31:25 1996: ttype: xterm
+Sun Sep 22 19:11:09 1996: loopback
+Sun Sep 22 19:11:09 1996: ttype: xterm
+Sun Sep 22 19:25:59 1996: 127.0.0.1
+Sun Sep 22 19:25:59 1996: ttype: xterm
+Sun Sep 22 19:28:20 1996: 127.0.0.1
+Sun Sep 22 19:28:20 1996: ttype: xterm
+Sun Sep 22 19:49:14 1996: 127.0.0.1
+Sun Sep 22 19:49:14 1996: ttype: xterm
+Sun Sep 22 19:49:26 1996: 127.0.0.1
+Sun Sep 22 19:49:26 1996: ttype: xterm
+Sun Sep 22 19:52:02 1996: 127.0.0.1
+Sun Sep 22 19:52:02 1996: ttype: xterm
+Sun Sep 22 20:06:46 1996: loopback
+Sun Sep 22 20:06:46 1996: ttype: xterm
+Sun Sep 22 20:35:00 1996: 127.0.0.1
+Sun Sep 22 20:35:00 1996: ttype: xterm
+Sun Sep 22 20:37:14 1996: loopback
+Sun Sep 22 20:37:14 1996: ttype: xterm
+Sun Sep 22 20:41:54 1996: loopback
+Sun Sep 22 20:41:54 1996: ttype: xterm
+Sun Sep 22 20:47:15 1996: loopback
+Sun Sep 22 20:47:15 1996: ttype: xterm
+Sun Sep 22 21:16:47 1996: loopback
+Sun Sep 22 21:16:47 1996: ttype: xterm
+Sun Sep 22 23:35:32 1996: 129.186.85.38
+Sun Sep 22 23:35:32 1996: ttype: screen
+Sun Sep 22 23:38:09 1996: knapp38.res.iastate.edu
+Sun Sep 22 23:38:09 1996: ttype: screen
+Sun Sep 22 23:49:10 1996: knapp38.res.iastate.edu
+Sun Sep 22 23:49:10 1996: ttype: screen
+Mon Sep 23 02:44:43 1996: 127.0.0.1
+Mon Sep 23 02:44:43 1996: ttype: cons25
+Mon Sep 23 02:46:09 1996: loopback
+Mon Sep 23 02:46:09 1996: ttype: cons25
+Mon Sep 23 03:44:51 1996: 129.186.85.38
+Mon Sep 23 03:44:51 1996: ttype: screen
+Mon Sep 23 06:50:43 1996: 128.163.117.31
+Mon Sep 23 06:50:43 1996: ttype: vt100
+Mon Sep 23 06:51:47 1996: nx31.mik.uky.edu
+Mon Sep 23 06:51:49 1996: ttype: vt100
+Mon Sep 23 11:29:58 1996: loopback
+Mon Sep 23 11:29:58 1996: ttype: cons25
+Mon Sep 23 11:38:35 1996: loopback
+Mon Sep 23 11:38:35 1996: ttype: cons25
+Mon Sep 23 17:19:17 1996: 132.239.52.96
+Mon Sep 23 17:19:25 1996: ttype: vt220
+Mon Sep 23 22:59:18 1996: loopback
+Mon Sep 23 22:59:18 1996: ttype: cons25
+Mon Sep 23 23:03:29 1996: loopback
+Mon Sep 23 23:03:29 1996: ttype: xterm
+Tue Sep 24 09:22:18 1996: 129.186.5.93
+Tue Sep 24 09:22:18 1996: ttype: xterm
+Tue Sep 24 12:53:15 1996: pv055d.vincent.iastate.edu
+Tue Sep 24 12:53:17 1996: ttype: xterm
+Tue Sep 24 13:34:34 1996: pv055d.vincent.iastate.edu
+Tue Sep 24 13:34:34 1996: ttype: xterm
+Tue Sep 24 16:22:24 1996: loopback
+Tue Sep 24 16:22:24 1996: ttype: cons25
+Tue Sep 24 20:30:48 1996: loopback
+Tue Sep 24 20:30:48 1996: ttype: xterm
+Wed Sep 25 11:50:16 1996: 127.0.0.1
+Wed Sep 25 11:50:16 1996: ttype: cons25
+Wed Sep 25 18:16:15 1996: loopback
+Wed Sep 25 18:16:15 1996: ttype: cons25
+Thu Sep 26 00:40:43 1996: loopback
+Thu Sep 26 00:40:45 1996: ttype: xterm
+Thu Sep 26 08:19:53 1996: 129.186.85.38
+Thu Sep 26 08:19:53 1996: ttype: screen
+Thu Sep 26 13:01:19 1996: 129.186.5.94
+Thu Sep 26 13:01:19 1996: ttype: xterm
+Sun Sep 29 20:40:53 1996: 127.0.0.1
+Sun Sep 29 20:40:53 1996: ttype: cons25
+Mon Sep 30 11:37:49 1996: loopback
+Mon Sep 30 11:37:49 1996: ttype: xterm
+Mon Sep 30 14:58:48 1996: dynamic-28.nexus.idiscover.co.uk
+Mon Sep 30 14:58:56 1996: ttype: amiga
+Mon Sep 30 15:46:33 1996: loopback
+Mon Sep 30 15:46:33 1996: ttype: xterm
+Mon Sep 30 19:34:55 1996: loopback
+Mon Sep 30 19:34:55 1996: ttype: cons25
+Mon Sep 30 20:16:09 1996: loopback
+Mon Sep 30 20:16:09 1996: ttype: cons25
+Mon Sep 30 22:45:26 1996: loopback
+Mon Sep 30 22:45:26 1996: ttype: cons25
+Mon Sep 30 23:05:58 1996: loopback
+Mon Sep 30 23:05:58 1996: ttype: xterm
+Tue Oct  1 23:03:46 1996: 127.0.0.1
+Tue Oct  1 23:03:48 1996: ttype: cons25
+Tue Oct  1 23:06:11 1996: loopback
+Tue Oct  1 23:06:11 1996: ttype: cons25
+Wed Oct  2 02:12:57 1996: loopback
+Wed Oct  2 02:12:59 1996: ttype: screen
+Wed Oct  2 11:36:05 1996: 127.0.0.1
+Wed Oct  2 11:36:05 1996: ttype: cons25
+Wed Oct  2 21:20:57 1996: loopback
+Wed Oct  2 21:20:57 1996: ttype: xterm
+Thu Oct  3 14:01:17 1996: 129.186.89.15
+Thu Oct  3 14:01:17 1996: ttype: xterm
+Fri Oct  4 01:12:56 1996: 127.0.0.1
+Fri Oct  4 01:12:58 1996: ttype: xterm
+Fri Oct  4 01:20:15 1996: 205.215.64.13
+Fri Oct  4 01:20:15 1996: ttype: vt220
+Fri Oct  4 23:16:39 1996: loopback
+Fri Oct  4 23:16:39 1996: ttype: xterm
+Sat Oct  5 11:03:18 1996: loopback
+Sat Oct  5 11:03:20 1996: ttype: xterm
+Sat Oct  5 11:18:28 1996: 206.104.23.183
+Sat Oct  5 11:18:30 1996: ttype: ansi
+Sat Oct  5 11:51:16 1996: loopback
+Sat Oct  5 11:51:16 1996: ttype: xterm
+Sat Oct  5 13:30:43 1996: loopback
+Sat Oct  5 13:30:43 1996: ttype: xterm
+Sat Oct  5 13:31:30 1996: loopback
+Sat Oct  5 13:31:30 1996: ttype: screen
+Sat Oct  5 20:24:37 1996: 127.0.0.1
+Sat Oct  5 20:24:39 1996: ttype: xterm
+Sun Oct  6 12:28:32 1996: 205.215.64.13
+Sun Oct  6 12:28:32 1996: ttype: vt220
+Sun Oct  6 13:44:37 1996: loopback
+Sun Oct  6 13:44:37 1996: ttype: xterm
+Sun Oct  6 15:07:00 1996: loopback
+Sun Oct  6 15:07:00 1996: ttype: cons25
+Sun Oct  6 17:49:13 1996: 132.239.52.92
+Sun Oct  6 17:49:15 1996: ttype: vt220
+Sun Oct  6 18:32:15 1996: loopback
+Sun Oct  6 18:32:15 1996: ttype: cons25
+Sun Oct  6 19:00:04 1996: loopback
+Sun Oct  6 19:00:04 1996: ttype: cons25
+Sun Oct  6 23:50:58 1996: loopback
+Sun Oct  6 23:50:58 1996: ttype: xterm
+Mon Oct  7 01:03:16 1996: 127.0.0.1
+Mon Oct  7 01:03:16 1996: ttype: xterm
+Mon Oct  7 02:38:08 1996: loopback
+Mon Oct  7 02:38:08 1996: ttype: screen
+Mon Oct  7 04:16:45 1996: loopback
+Mon Oct  7 04:16:45 1996: ttype: screen
+Mon Oct  7 04:43:29 1996: loopback
+Mon Oct  7 04:43:29 1996: ttype: screen
+Mon Oct  7 05:06:14 1996: Fudge.funcom.com
+Mon Oct  7 05:08:55 1996: Fudge.funcom.com
+Tue Oct  8 00:53:07 1996: 141.218.40.78
+Tue Oct  8 00:53:09 1996: ttype: vt100
+Tue Oct  8 12:21:39 1996: 204.50.130.143
+Tue Oct  8 12:21:47 1996: ttype: ansi
+Tue Oct  8 16:27:22 1996: loopback
+Tue Oct  8 16:27:22 1996: ttype: xterm
+Tue Oct  8 19:39:04 1996: amanda.dorsai.org
+Tue Oct  8 19:39:06 1996: ttype: vt100
+Tue Oct  8 22:16:41 1996: loopback
+Tue Oct  8 22:16:41 1996: ttype: screen
+Wed Oct  9 00:19:42 1996: loopback
+Wed Oct  9 00:19:42 1996: ttype: screen
+Wed Oct  9 11:01:30 1996: loopback
+Wed Oct  9 11:01:30 1996: ttype: cons25
+Wed Oct  9 11:02:44 1996: loopback
+Wed Oct  9 11:02:44 1996: ttype: cons25
+Wed Oct  9 18:28:46 1996: loopback
+Wed Oct  9 18:28:46 1996: ttype: xterm
+Wed Oct  9 20:01:50 1996: 199.3.25.76
+Wed Oct  9 20:01:52 1996: ttype: ansi
+Wed Oct  9 22:35:02 1996: loopback
+Wed Oct  9 22:35:02 1996: ttype: screen
+Wed Oct  9 23:12:05 1996: loopback
+Wed Oct  9 23:12:05 1996: ttype: xterm
+Thu Oct 10 03:11:28 1996: Fudge.funcom.com
+Thu Oct 10 03:11:30 1996: ttype: ansi
+Thu Oct 10 12:35:33 1996: 129.186.23.130
+Thu Oct 10 12:35:35 1996: ttype: iris-ansi-net
+Thu Oct 10 15:52:19 1996: loopback
+Thu Oct 10 15:52:19 1996: ttype: cons25
+Fri Oct 11 02:11:51 1996: 128.143.136.18
+Fri Oct 11 02:11:51 1996: ttype: xterm
+Sat Oct 12 13:20:40 1996: 205.215.64.13
+Sat Oct 12 13:20:40 1996: ttype: vt220
+Sat Oct 12 15:18:21 1996: 127.0.0.1
+Sat Oct 12 15:18:21 1996: ttype: screen
+Sun Oct 13 20:46:46 1996: loopback
+Sun Oct 13 20:46:46 1996: ttype: cons25
+Sun Oct 13 21:25:56 1996: loopback
+Sun Oct 13 21:25:56 1996: ttype: xterm
+Sun Oct 13 21:43:58 1996: 127.0.0.1
+Sun Oct 13 21:43:58 1996: ttype: xterm
+Mon Oct 14 01:37:53 1996: loopback
+Mon Oct 14 01:37:53 1996: ttype: screen
+Mon Oct 14 04:27:54 1996: loopback
+Mon Oct 14 04:27:54 1996: ttype: screen
+Mon Oct 14 04:44:57 1996: loopback
+Mon Oct 14 04:44:57 1996: ttype: screen
+Mon Oct 14 09:46:56 1996: loopback
+Mon Oct 14 09:46:56 1996: ttype: cons25
+Mon Oct 14 23:52:59 1996: loopback
+Mon Oct 14 23:52:59 1996: ttype: cons25
+Tue Oct 15 09:04:34 1996: loopback
+Tue Oct 15 09:04:34 1996: ttype: xterm
+Tue Oct 15 12:47:49 1996: 129.186.89.19
+Tue Oct 15 12:47:49 1996: ttype: xterm
+Tue Oct 15 12:58:13 1996: 129.186.89.19
+Tue Oct 15 12:58:13 1996: ttype: xterm
+Tue Oct 15 13:00:10 1996: du89-19.cc.iastate.edu
+Tue Oct 15 13:00:10 1996: ttype: xterm
+Tue Oct 15 16:19:16 1996: 127.0.0.1
+Tue Oct 15 16:19:16 1996: ttype: cons25
+Tue Oct 15 17:06:04 1996: loopback
+Tue Oct 15 17:06:04 1996: ttype: cons25
+Tue Oct 15 21:32:38 1996: 128.83.59.204
+Tue Oct 15 21:32:38 1996: ttype: xterm
+Tue Oct 15 21:33:46 1996: grouper.ece.utexas.edu
+Tue Oct 15 21:33:46 1996: ttype: xterm
+Tue Oct 15 21:34:18 1996: grouper.ece.utexas.edu
+Tue Oct 15 21:34:20 1996: ttype: xterm
+Tue Oct 15 21:44:02 1996: 127.0.0.1
+Tue Oct 15 21:44:02 1996: ttype: cons25
+Tue Oct 15 21:45:31 1996: 128.83.59.14
+Tue Oct 15 21:45:31 1996: ttype: xterm
+Tue Oct 15 21:45:39 1996: loopback
+Tue Oct 15 21:45:39 1996: ttype: cons25
+Tue Oct 15 21:46:25 1996: canis.ece.utexas.edu
+Tue Oct 15 21:46:25 1996: ttype: xterm
+Tue Oct 15 21:47:17 1996: canis.ece.utexas.edu
+Tue Oct 15 21:47:17 1996: ttype: xterm
+Tue Oct 15 21:52:57 1996: canis.ece.utexas.edu
+Tue Oct 15 21:52:57 1996: ttype: xterm
+Tue Oct 15 21:54:06 1996: canis.ece.utexas.edu
+Tue Oct 15 21:54:06 1996: ttype: xterm
+Tue Oct 15 21:59:15 1996: loopback
+Tue Oct 15 21:59:15 1996: ttype: cons25
+Tue Oct 15 23:07:48 1996: loopback
+Tue Oct 15 23:07:48 1996: ttype: cons25
+Tue Oct 15 23:08:20 1996: loopback
+Tue Oct 15 23:08:20 1996: ttype: cons25
+Tue Oct 15 23:09:21 1996: 127.0.0.1
+Tue Oct 15 23:09:21 1996: ttype: cons25
+Tue Oct 15 23:12:26 1996: loopback
+Tue Oct 15 23:12:26 1996: ttype: cons25

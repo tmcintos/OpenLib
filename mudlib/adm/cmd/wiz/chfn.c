@@ -1,5 +1,6 @@
 /*  -*- LPC -*-  */
 #include <command.h>
+#include <login.h>
 
 // This command changes finger information (found in connection object) for
 // a user.  If no username is passed, this_player() is assumed.  If a username

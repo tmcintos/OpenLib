@@ -35,3 +35,27 @@ Tue Sep  3 20:20:51 1996: this_object: /adm/cmd/wiz/eval
 Tue Sep  3 20:29:09 1996: Dysfunctional Mud crashed on: Tue Sep  3 20:29:09 1996, error: Segmentation fault
 Tue Sep  3 20:29:09 1996: this_player: /obj/clone/user/human#2
 Tue Sep  3 20:29:09 1996: this_object: /adm/cmd/wiz/eval
+Tue Sep 10 20:16:59 1996: Dysfunctional Mud crashed on: Tue Sep 10 20:16:59 1996, error: Process terminated
+Tue Sep 10 20:22:19 1996: Dysfunctional Mud crashed on: Tue Sep 10 20:22:19 1996, error: Process terminated
+Mon Sep 16 15:19:25 1996: Dysfunctional Mud crashed on: Mon Sep 16 15:19:25 1996, error: Process terminated
+Mon Sep 16 16:20:28 1996: Dysfunctional Mud crashed on: Mon Sep 16 16:20:28 1996, error: Process terminated
+Mon Sep 16 20:46:00 1996: Dysfunctional Mud crashed on: Mon Sep 16 20:46:00 1996, error: Process terminated
+Mon Sep 16 20:46:00 1996: this_object: /adm/obj/daemon/net/intermud
+Mon Sep 16 20:55:07 1996: Dysfunctional Mud crashed on: Mon Sep 16 20:55:07 1996, error: Process terminated
+Mon Sep 16 20:55:07 1996: this_object: /adm/obj/daemon/net/intermud
+Mon Sep 16 21:53:20 1996: Dysfunctional Mud crashed on: Mon Sep 16 21:53:20 1996, error: Process terminated
+Mon Sep 16 22:18:26 1996: Dysfunctional Mud crashed on: Mon Sep 16 22:18:26 1996, error: Process terminated
+Thu Sep 19 16:32:57 1996: Dysfunctional Mud crashed on: Thu Sep 19 16:32:57 1996, error: Process terminated
+Fri Sep 20 18:00:46 1996: Dysfunctional Mud crashed on: Fri Sep 20 18:00:46 1996, error: Segmentation fault
+Fri Sep 20 18:00:46 1996: this_player: /adm/obj/clone/user#14
+Fri Sep 20 18:00:46 1996: this_object: /adm/obj/daemon/simul_efun
+Sun Sep 22 19:51:43 1996: Dysfunctional Mud crashed on: Sun Sep 22 19:51:43 1996, error: Segmentation fault
+Sun Sep 22 19:51:43 1996: this_player: /adm/obj/clone/user#2
+Sun Sep 22 19:51:43 1996: this_object: /adm/obj/daemon/security_d
+Tue Oct  1 22:32:23 1996: Dysfunctional Mud crashed on: Tue Oct  1 22:32:23 1996, error: Process terminated
+Thu Oct  3 16:42:49 1996: Dysfunctional Mud crashed on: Thu Oct  3 16:42:49 1996, error: Process terminated
+Mon Oct  7 00:39:10 1996: Dysfunctional Mud crashed on: Mon Oct  7 00:39:10 1996, error: Process terminated
+Thu Oct 10 16:18:46 1996: Dysfunctional Mud crashed on: Thu Oct 10 16:18:46 1996, error: Process terminated
+Thu Oct 10 16:18:46 1996: this_object: /adm/obj/daemon/net/intermud
+Sun Oct 13 21:30:03 1996: Dysfunctional Mud crashed on: Sun Oct 13 21:30:03 1996, error: Process terminated
+Sun Oct 13 21:30:03 1996: this_object: /adm/obj/daemon/net/intermud

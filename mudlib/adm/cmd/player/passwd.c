@@ -1,6 +1,7 @@
 /*  -*- LPC -*-  */
 #include <command.h>
 #include <daemons.h>
+#include <login.h>
 
 int
 main()

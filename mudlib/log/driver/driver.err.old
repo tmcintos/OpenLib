@@ -1,9 +1,10 @@
 using config file: /u2/mud/etc/config.dm
 ----------------------------------------------------------------------------
-Dysfunctional Mud (MudOS v22b13) starting up on FreeBSD - Fri Sep  6 04:11:59 1996
+Dysfunctional Mud (MudOS v22.1a6) starting up on FreeBSD - Tue Oct 15 21:43:39 1996
 
 
 Connected to address server on localhost port 7374
+/adm/obj/daemon/master.c line 129: Warning: Non-void functions must return a value.
 
 Loading preloaded files ...
 ]Preloading : /adm/obj/daemon/void...](0.0)
@@ -26,28 +27,2004 @@ Loading preloaded files ...
 ]Preloading : /obj/daemon/emote_d...](0.0)
 ]Preloading : /obj/daemon/termcap_d...](0.0)
 ]Preloading : /obj/inherit/room...](0.0)
-]Preloading : /obj/inherit/living...](0.0)
+]Preloading : /obj/inherit/living...]
+Error *Error in loading object '/obj/inherit/modules/m_combat'
+ when loading /obj/inherit/living
 Initializations complete.
 
 Accepting connections on port 4444.
-System Error: socket_connect: connect:No route to host
-System Error: socket_connect: connect:No route to host
-System Error: socket_connect: connect:No route to host
-System Error: socket_connect: connect:No route to host
-System Error: socket_connect: connect:No route to host
-System Error: socket_connect: connect:No route to host
-System Error: socket_connect: connect:No route to host
-System Error: socket_connect: connect:No route to host
-System Error: socket_connect: connect:No route to host
-System Error: socket_connect: connect:No route to host
-System Error: socket_connect: connect:No route to host
-System Error: socket_connect: connect:No route to host
-System Error: socket_connect: connect:No route to host
-System Error: socket_connect: connect:No route to host
-System Error: socket_connect: connect:No route to host
-System Error: socket_connect: connect:No route to host
-System Error: socket_connect: connect:No route to host
-System Error: socket_connect: connect:No route to host
-System Error: socket_connect: connect:No route to host
-]Kyricc is link-dead.
-closed external ports
+Error in error handler: *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+program: /adm/obj/clone/user.c, object: /adm/obj/clone/user#36, file: /adm/obj/clone/user.c:179
+'     <function>' in '          <function>' ('adm/obj/clone/user#36') 
+'     <function>' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:245
+arguments were ("/obj/daemon/termcap_d")
+'       cmd_hook' in 'adm/obj/clone/shells/protosh.c' ('adm/obj/clone/shells/protosh#37') /adm/obj/clone/shells/protosh.c:524
+arguments were ("/obj/daemon/termcap_d")
+locals were: 2239528
+'       cmd_hook' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:480
+arguments were ("/obj/daemon/termcap_d")
+locals were: 2239528,adm/cmd/wiz/update
+'          _main' in 'obj/inherit/cmdline.c' ('  adm/cmd/wiz/update') /obj/inherit/cmdline.c:69
+arguments were ("/obj/daemon/termcap_d")
+locals were: 763392,763600,0
+'           main' in 'adm/cmd/wiz/update.c' ('  adm/cmd/wiz/update') /adm/cmd/wiz/update.c:67
+arguments were (({ /* sizeof() == 2 */
+  "update",
+  "/obj/daemon/termcap_d"
+}),763600)
+locals were: 0,"/obj/daemon/termcap_d",0,1,0,0,0,0
+'    update_file' in 'adm/cmd/wiz/update.c' ('  adm/cmd/wiz/update') /adm/cmd/wiz/update.c:119
+arguments were ("/obj/daemon/termcap_d",1,0)
+locals were: 0,0
+'          write' in 'adm/obj/daemon/simul_efun.c' ('adm/obj/daemon/simul_efun') /adm/obj/daemon/simul_efun/write.c:3
+arguments were (2774312)
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("write","object re-loaded.
+")
+locals were: "vt102",80,0
+'  error_handler' in 'adm/obj/daemon/master.c' ('adm/obj/daemon/master') /adm/obj/daemon/master.c:174
+arguments were (2373664,0)
+locals were: 0,"/log/errors","
+[ERROR] *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+  time   : Tue Oct 15 23:07:37 1996
+  file   : adm/obj/clone/user.c:179
+  pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+  [TRACE]  size==9
+    file   : :0
+    pgm/obj: <function> (adm/obj/clone/user#36)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:245
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : <function> (             "/obj/daemon/termcap_d", )
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/shells/protosh.c:524
+    pgm/obj: adm/obj/clone/shells/protosh.c (adm/obj/clone/shells/protosh#37)
+    func   : cmd_hook (             "/obj/daemon/termcap_d", )
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:480
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : cmd_hook (             "/obj/daemon/termcap_d", )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/cmdline.c:69
+    pgm/obj: obj/inherit/cmdline.c (adm/cmd/wiz/update)
+    func   : _main (             "/obj/daemon/termcap_d", )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/update.c:67
+    pgm/obj: adm/cmd/wiz/update.c (adm/cmd/wiz/update)
+    func   : main (             ({ /* sizeof() == 2 */  "update", 
+             "/obj/daemon/termcap_d"}), 763600, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/update.c:119
+    pgm/obj: adm/cmd/wiz/update.c (adm/cmd/wiz/update)
+    func   : update_file (             "/obj/daemon/termcap_d", 1, 0, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/simul_efun/write.c:3
+    pgm/obj: adm/obj/daemon/simul_efun.c (adm/obj/daemon/simul_efun)
+    func   : write (             2774312, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:179
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : receive_message (             "write", "object re-loaded.", )
+    ---------------------------------------------------------------------
+",([ /* sizeof() == 7 */
+  "program" : "adm/obj/clone/user.c",
+  "function" : "receive_message",
+  "locals" : ({ /* sizeof() == 3 */
+      "vt102",
+      80,
+      0
+    }),
+  "object" : adm/obj/clone/user#36,
+  "arguments" : ({ /* sizeof() == 2 */
+      "write",
+      "object re-loaded.
+"
+    }),
+  "file" : "adm/obj/clone/user.c",
+  "line" : 179,
+]),""write", "object re-loaded.
+", ","object re-loaded.
+"
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("system","
+runtime: error: Check /log/errors/runtime for more information.
+")
+locals were: "vt102",80,0
+Error in error handler: *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+program: /adm/obj/clone/user.c, object: /adm/obj/clone/user#36, file: /adm/obj/clone/user.c:179
+'   write_prompt' in 'adm/obj/clone/shells/protosh.c' ('adm/obj/clone/shells/protosh#37') /adm/obj/clone/shells/protosh.c:558
+arguments were ()
+locals were: 2220196,"~"
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("prompt","[%^BOLD%^~%^RESET%^]-> ")
+locals were: "vt102",80,0
+'  error_handler' in 'adm/obj/daemon/master.c' ('adm/obj/daemon/master') /adm/obj/daemon/master.c:174
+arguments were (2348608,0)
+locals were: 0,"/log/errors","
+[ERROR] *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+  time   : Tue Oct 15 23:07:37 1996
+  file   : adm/obj/clone/user.c:179
+  pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+  [TRACE]  size==2
+    file   : adm/obj/clone/shells/protosh.c:558
+    pgm/obj: adm/obj/clone/shells/protosh.c (adm/obj/clone/shells/protosh#37)
+    func   : write_prompt ()
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:179
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : receive_message (             "prompt", "[%^BOLD%^~%^RESET%^]-> ", )
+    ---------------------------------------------------------------------
+",([ /* sizeof() == 7 */
+  "program" : "adm/obj/clone/user.c",
+  "function" : "receive_message",
+  "object" : adm/obj/clone/user#36,
+  "arguments" : ({ /* sizeof() == 2 */
+      "prompt",
+      "[%^BOLD%^~%^RESET%^]-> "
+    }),
+  "file" : "adm/obj/clone/user.c",
+  "locals" : ({ /* sizeof() == 3 */
+      "vt102",
+      80,
+      0
+    }),
+  "line" : 179,
+]),""prompt", "[%^BOLD%^~%^RESET%^]-> ", ","[%^BOLD%^~%^RESET%^]-> "
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("system","
+runtime: error: Check /log/errors/runtime for more information.
+")
+locals were: "vt102",80,0
+Error in error handler: *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+program: /adm/obj/clone/user.c, object: /adm/obj/clone/user#36, file: /adm/obj/clone/user.c:179
+'     <function>' in '          <function>' ('adm/obj/clone/user#36') 
+'     <function>' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:245
+arguments were (0)
+'       cmd_hook' in 'adm/obj/clone/shells/protosh.c' ('adm/obj/clone/shells/protosh#37') /adm/obj/clone/shells/protosh.c:524
+arguments were ("")
+locals were: 1718504
+'       cmd_hook' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:480
+arguments were (0)
+locals were: 1718504,adm/cmd/player/quit
+'          _main' in 'obj/inherit/command.c' (' adm/cmd/player/quit') /obj/inherit/command.c:20
+arguments were (0)
+'           main' in 'adm/cmd/player/quit.c' (' adm/cmd/player/quit') /adm/cmd/player/quit.c:20
+arguments were (0)
+locals were: "Tim",adm/obj/clone/user#36,adm/obj/clone/connection#34
+'       force_me' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:319
+arguments were (2348296)
+'     <function>' in '          <function>' ('adm/obj/clone/user#36') 
+'     <function>' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:245
+arguments were (0)
+'       cmd_hook' in 'adm/obj/clone/shells/protosh.c' ('adm/obj/clone/shells/protosh#37') /adm/obj/clone/shells/protosh.c:524
+arguments were ("")
+locals were: 2348296
+'       cmd_hook' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:480
+arguments were (0)
+locals were: 2348296,adm/cmd/player/save
+'          _main' in 'obj/inherit/command.c' (' adm/cmd/player/save') /obj/inherit/command.c:20
+arguments were (0)
+'           main' in 'adm/cmd/player/save.c' (' adm/cmd/player/save') /adm/cmd/player/save.c:10
+arguments were ()
+'         printf' in 'adm/obj/daemon/simul_efun.c' ('adm/obj/daemon/simul_efun') /adm/obj/daemon/simul_efun/printf.c:8
+arguments were (2956808,764560)
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("write","save: user Tim saved.
+")
+locals were: "vt102",80,0
+'  error_handler' in 'adm/obj/daemon/master.c' ('adm/obj/daemon/master') /adm/obj/daemon/master.c:174
+arguments were (2348576,0)
+locals were: 0,"/log/errors","
+[ERROR] *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+  time   : Tue Oct 15 23:07:39 1996
+  file   : adm/obj/clone/user.c:179
+  pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+  [TRACE]  size==15
+    file   : :0
+    pgm/obj: <function> (adm/obj/clone/user#36)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:245
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : <function> (             0, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/shells/protosh.c:524
+    pgm/obj: adm/obj/clone/shells/protosh.c (adm/obj/clone/shells/protosh#37)
+    func   : cmd_hook (             "", )
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:480
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : cmd_hook (             0, )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (adm/cmd/player/quit)
+    func   : _main (             0, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/player/quit.c:20
+    pgm/obj: adm/cmd/player/quit.c (adm/cmd/player/quit)
+    func   : main (             0, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:319
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : force_me (             2348296, )
+    ---------------------------------------------------------------------
+    file   : :0
+    pgm/obj: <function> (adm/obj/clone/user#36)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:245
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : <function> (             0, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/shells/protosh.c:524
+    pgm/obj: adm/obj/clone/shells/protosh.c (adm/obj/clone/shells/protosh#37)
+    func   : cmd_hook (             "", )
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:480
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : cmd_hook (             0, )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (adm/cmd/player/save)
+    func   : _main (             0, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/player/save.c:10
+    pgm/obj: adm/cmd/player/save.c (adm/cmd/player/save)
+    func   : main ()
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/simul_efun/printf.c:8
+    pgm/obj: adm/obj/daemon/simul_efun.c (adm/obj/daemon/simul_efun)
+    func   : printf (             2956808, 764560, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:179
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : receive_message (             "write", "save: user Tim saved.", )
+    ---------------------------------------------------------------------
+",([ /* sizeof() == 7 */
+  "program" : "adm/obj/clone/user.c",
+  "function" : "receive_message",
+  "object" : adm/obj/clone/user#36,
+  "arguments" : ({ /* sizeof() == 2 */
+      "write",
+      "save: user Tim saved.
+"
+    }),
+  "file" : "adm/obj/clone/user.c",
+  "locals" : ({ /* sizeof() == 3 */
+      "vt102",
+      80,
+      0
+    }),
+  "line" : 179,
+]),""write", "save: user Tim saved.
+", ","save: user Tim saved.
+"
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("system","
+runtime: error: Check /log/errors/runtime for more information.
+")
+locals were: "vt102",80,0
+Error in error handler: *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+program: /adm/obj/clone/user.c, object: /adm/obj/clone/user#36, file: /adm/obj/clone/user.c:179
+'   write_prompt' in 'adm/obj/clone/shells/protosh.c' ('adm/obj/clone/shells/protosh#37') /adm/obj/clone/shells/protosh.c:558
+arguments were ()
+locals were: 2220196,"~"
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("prompt","[%^BOLD%^~%^RESET%^]-> ")
+locals were: "vt102",80,0
+'  error_handler' in 'adm/obj/daemon/master.c' ('adm/obj/daemon/master') /adm/obj/daemon/master.c:174
+arguments were (2348608,0)
+locals were: 0,"/log/errors","
+[ERROR] *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+  time   : Tue Oct 15 23:07:42 1996
+  file   : adm/obj/clone/user.c:179
+  pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+  [TRACE]  size==2
+    file   : adm/obj/clone/shells/protosh.c:558
+    pgm/obj: adm/obj/clone/shells/protosh.c (adm/obj/clone/shells/protosh#37)
+    func   : write_prompt ()
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:179
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : receive_message (             "prompt", "[%^BOLD%^~%^RESET%^]-> ", )
+    ---------------------------------------------------------------------
+",([ /* sizeof() == 7 */
+  "locals" : ({ /* sizeof() == 3 */
+      "vt102",
+      80,
+      0
+    }),
+  "program" : "adm/obj/clone/user.c",
+  "function" : "receive_message",
+  "object" : adm/obj/clone/user#36,
+  "arguments" : ({ /* sizeof() == 2 */
+      "prompt",
+      "[%^BOLD%^~%^RESET%^]-> "
+    }),
+  "file" : "adm/obj/clone/user.c",
+  "line" : 179,
+]),""prompt", "[%^BOLD%^~%^RESET%^]-> ", ","[%^BOLD%^~%^RESET%^]-> "
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("system","
+runtime: error: Check /log/errors/runtime for more information.
+")
+locals were: "vt102",80,0
+Error in error handler: *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+program: /adm/obj/clone/user.c, object: /adm/obj/clone/user#36, file: /adm/obj/clone/user.c:179
+'   write_prompt' in 'adm/obj/clone/shells/protosh.c' ('adm/obj/clone/shells/protosh#37') /adm/obj/clone/shells/protosh.c:558
+arguments were ()
+locals were: 2348548,"~"
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("prompt","[%^BOLD%^~%^RESET%^]-> ")
+locals were: "vt102",80,0
+'  error_handler' in 'adm/obj/daemon/master.c' ('adm/obj/daemon/master') /adm/obj/daemon/master.c:174
+arguments were (2841280,0)
+locals were: 0,"/log/errors","
+[ERROR] *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+  time   : Tue Oct 15 23:07:52 1996
+  file   : adm/obj/clone/user.c:179
+  pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+  [TRACE]  size==2
+    file   : adm/obj/clone/shells/protosh.c:558
+    pgm/obj: adm/obj/clone/shells/protosh.c (adm/obj/clone/shells/protosh#37)
+    func   : write_prompt ()
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:179
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : receive_message (             "prompt", "[%^BOLD%^~%^RESET%^]-> ", )
+    ---------------------------------------------------------------------
+",([ /* sizeof() == 7 */
+  "program" : "adm/obj/clone/user.c",
+  "function" : "receive_message",
+  "object" : adm/obj/clone/user#36,
+  "locals" : ({ /* sizeof() == 3 */
+      "vt102",
+      80,
+      0
+    }),
+  "arguments" : ({ /* sizeof() == 2 */
+      "prompt",
+      "[%^BOLD%^~%^RESET%^]-> "
+    }),
+  "file" : "adm/obj/clone/user.c",
+  "line" : 179,
+]),""prompt", "[%^BOLD%^~%^RESET%^]-> ", ","[%^BOLD%^~%^RESET%^]-> "
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("system","
+runtime: error: Check /log/errors/runtime for more information.
+")
+locals were: "vt102",80,0
+Error in error handler: *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+program: /adm/obj/clone/user.c, object: /adm/obj/clone/user#36, file: /adm/obj/clone/user.c:179
+'   write_prompt' in 'adm/obj/clone/shells/protosh.c' ('adm/obj/clone/shells/protosh#37') /adm/obj/clone/shells/protosh.c:558
+arguments were ()
+locals were: 2237188,"~"
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("prompt","[%^BOLD%^~%^RESET%^]-> ")
+locals were: "vt102",80,0
+'  error_handler' in 'adm/obj/daemon/master.c' ('adm/obj/daemon/master') /adm/obj/daemon/master.c:174
+arguments were (2348384,0)
+locals were: 0,"/log/errors","
+[ERROR] *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+  time   : Tue Oct 15 23:08:24 1996
+  file   : adm/obj/clone/user.c:179
+  pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+  [TRACE]  size==2
+    file   : adm/obj/clone/shells/protosh.c:558
+    pgm/obj: adm/obj/clone/shells/protosh.c (adm/obj/clone/shells/protosh#37)
+    func   : write_prompt ()
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:179
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : receive_message (             "prompt", "[%^BOLD%^~%^RESET%^]-> ", )
+    ---------------------------------------------------------------------
+",([ /* sizeof() == 7 */
+  "program" : "adm/obj/clone/user.c",
+  "function" : "receive_message",
+  "object" : adm/obj/clone/user#36,
+  "arguments" : ({ /* sizeof() == 2 */
+      "prompt",
+      "[%^BOLD%^~%^RESET%^]-> "
+    }),
+  "file" : "adm/obj/clone/user.c",
+  "locals" : ({ /* sizeof() == 3 */
+      "vt102",
+      80,
+      0
+    }),
+  "line" : 179,
+]),""prompt", "[%^BOLD%^~%^RESET%^]-> ", ","[%^BOLD%^~%^RESET%^]-> "
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("system","
+runtime: error: Check /log/errors/runtime for more information.
+")
+locals were: "vt102",80,0
+Error in error handler: *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+program: /adm/obj/clone/user.c, object: /adm/obj/clone/user#36, file: /adm/obj/clone/user.c:179
+'   write_prompt' in 'adm/obj/clone/shells/protosh.c' ('adm/obj/clone/shells/protosh#37') /adm/obj/clone/shells/protosh.c:558
+arguments were ()
+locals were: 2957572,"~"
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("prompt","[%^BOLD%^~%^RESET%^]-> ")
+locals were: "vt102",80,0
+'  error_handler' in 'adm/obj/daemon/master.c' ('adm/obj/daemon/master') /adm/obj/daemon/master.c:174
+arguments were (2115936,0)
+locals were: 0,"/log/errors","
+[ERROR] *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+  time   : Tue Oct 15 23:08:24 1996
+  file   : adm/obj/clone/user.c:179
+  pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+  [TRACE]  size==2
+    file   : adm/obj/clone/shells/protosh.c:558
+    pgm/obj: adm/obj/clone/shells/protosh.c (adm/obj/clone/shells/protosh#37)
+    func   : write_prompt ()
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:179
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : receive_message (             "prompt", "[%^BOLD%^~%^RESET%^]-> ", )
+    ---------------------------------------------------------------------
+",([ /* sizeof() == 7 */
+  "program" : "adm/obj/clone/user.c",
+  "function" : "receive_message",
+  "object" : adm/obj/clone/user#36,
+  "locals" : ({ /* sizeof() == 3 */
+      "vt102",
+      80,
+      0
+    }),
+  "arguments" : ({ /* sizeof() == 2 */
+      "prompt",
+      "[%^BOLD%^~%^RESET%^]-> "
+    }),
+  "file" : "adm/obj/clone/user.c",
+  "line" : 179,
+]),""prompt", "[%^BOLD%^~%^RESET%^]-> ", ","[%^BOLD%^~%^RESET%^]-> "
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("system","
+runtime: error: Check /log/errors/runtime for more information.
+")
+locals were: "vt102",80,0
+Error in error handler: *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+program: /adm/obj/clone/user.c, object: /adm/obj/clone/user#36, file: /adm/obj/clone/user.c:179
+'   write_prompt' in 'adm/obj/clone/shells/protosh.c' ('adm/obj/clone/shells/protosh#37') /adm/obj/clone/shells/protosh.c:558
+arguments were ()
+locals were: 2348388,"~"
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("prompt","[%^BOLD%^~%^RESET%^]-> ")
+locals were: "vt102",80,0
+'  error_handler' in 'adm/obj/daemon/master.c' ('adm/obj/daemon/master') /adm/obj/daemon/master.c:174
+arguments were (2957568,0)
+locals were: 0,"/log/errors","
+[ERROR] *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+  time   : Tue Oct 15 23:08:26 1996
+  file   : adm/obj/clone/user.c:179
+  pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+  [TRACE]  size==2
+    file   : adm/obj/clone/shells/protosh.c:558
+    pgm/obj: adm/obj/clone/shells/protosh.c (adm/obj/clone/shells/protosh#37)
+    func   : write_prompt ()
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:179
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : receive_message (             "prompt", "[%^BOLD%^~%^RESET%^]-> ", )
+    ---------------------------------------------------------------------
+",([ /* sizeof() == 7 */
+  "program" : "adm/obj/clone/user.c",
+  "function" : "receive_message",
+  "object" : adm/obj/clone/user#36,
+  "locals" : ({ /* sizeof() == 3 */
+      "vt102",
+      80,
+      0
+    }),
+  "arguments" : ({ /* sizeof() == 2 */
+      "prompt",
+      "[%^BOLD%^~%^RESET%^]-> "
+    }),
+  "file" : "adm/obj/clone/user.c",
+  "line" : 179,
+]),""prompt", "[%^BOLD%^~%^RESET%^]-> ", ","[%^BOLD%^~%^RESET%^]-> "
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("system","
+runtime: error: Check /log/errors/runtime for more information.
+")
+locals were: "vt102",80,0
+Error in error handler: *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+program: /adm/obj/clone/user.c, object: /adm/obj/clone/user#36, file: /adm/obj/clone/user.c:179
+'   write_prompt' in 'adm/obj/clone/shells/protosh.c' ('adm/obj/clone/shells/protosh#37') /adm/obj/clone/shells/protosh.c:558
+arguments were ()
+locals were: 2348388,"~"
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("prompt","[%^BOLD%^~%^RESET%^]-> ")
+locals were: "vt102",80,0
+'  error_handler' in 'adm/obj/daemon/master.c' ('adm/obj/daemon/master') /adm/obj/daemon/master.c:174
+arguments were (2317504,0)
+locals were: 0,"/log/errors","
+[ERROR] *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+  time   : Tue Oct 15 23:08:28 1996
+  file   : adm/obj/clone/user.c:179
+  pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+  [TRACE]  size==2
+    file   : adm/obj/clone/shells/protosh.c:558
+    pgm/obj: adm/obj/clone/shells/protosh.c (adm/obj/clone/shells/protosh#37)
+    func   : write_prompt ()
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:179
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : receive_message (             "prompt", "[%^BOLD%^~%^RESET%^]-> ", )
+    ---------------------------------------------------------------------
+",([ /* sizeof() == 7 */
+  "program" : "adm/obj/clone/user.c",
+  "function" : "receive_message",
+  "object" : adm/obj/clone/user#36,
+  "locals" : ({ /* sizeof() == 3 */
+      "vt102",
+      80,
+      0
+    }),
+  "arguments" : ({ /* sizeof() == 2 */
+      "prompt",
+      "[%^BOLD%^~%^RESET%^]-> "
+    }),
+  "file" : "adm/obj/clone/user.c",
+  "line" : 179,
+]),""prompt", "[%^BOLD%^~%^RESET%^]-> ", ","[%^BOLD%^~%^RESET%^]-> "
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("system","
+runtime: error: Check /log/errors/runtime for more information.
+")
+locals were: "vt102",80,0
+Error in error handler: *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+program: /adm/obj/clone/user.c, object: /adm/obj/clone/user#36, file: /adm/obj/clone/user.c:179
+'     <function>' in '          <function>' ('adm/obj/clone/user#36') 
+'     <function>' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:245
+arguments were (0)
+'       cmd_hook' in 'adm/obj/clone/shells/protosh.c' ('adm/obj/clone/shells/protosh#37') /adm/obj/clone/shells/protosh.c:524
+arguments were ("")
+locals were: 2348392
+'       cmd_hook' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:480
+arguments were (0)
+locals were: 2348392,cmd/wiz/where
+'          _main' in 'obj/inherit/command.c' ('       cmd/wiz/where') /obj/inherit/command.c:20
+arguments were (0)
+'           main' in '     cmd/wiz/where.c' ('       cmd/wiz/where') /cmd/wiz/where.c:12
+arguments were ()
+locals were: 0
+'          write' in 'adm/obj/daemon/simul_efun.c' ('adm/obj/daemon/simul_efun') /adm/obj/daemon/simul_efun/write.c:3
+arguments were (2750600)
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("write","User                         Where
+")
+locals were: "vt102",80,0
+'  error_handler' in 'adm/obj/daemon/master.c' ('adm/obj/daemon/master') /adm/obj/daemon/master.c:174
+arguments were (2348384,0)
+locals were: 0,"/log/errors","
+[ERROR] *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+  time   : Tue Oct 15 23:08:28 1996
+  file   : adm/obj/clone/user.c:179
+  pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+  [TRACE]  size==8
+    file   : :0
+    pgm/obj: <function> (adm/obj/clone/user#36)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:245
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : <function> (             0, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/shells/protosh.c:524
+    pgm/obj: adm/obj/clone/shells/protosh.c (adm/obj/clone/shells/protosh#37)
+    func   : cmd_hook (             "", )
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:480
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : cmd_hook (             0, )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (cmd/wiz/where)
+    func   : _main (             0, )
+    ---------------------------------------------------------------------
+    file   : cmd/wiz/where.c:12
+    pgm/obj: cmd/wiz/where.c (cmd/wiz/where)
+    func   : main ()
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/simul_efun/write.c:3
+    pgm/obj: adm/obj/daemon/simul_efun.c (adm/obj/daemon/simul_efun)
+    func   : write (             2750600, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:179
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : receive_message (             "write", "User                         Where", )
+    ---------------------------------------------------------------------
+",([ /* sizeof() == 7 */
+  "program" : "adm/obj/clone/user.c",
+  "function" : "receive_message",
+  "object" : adm/obj/clone/user#36,
+  "locals" : ({ /* sizeof() == 3 */
+      "vt102",
+      80,
+      0
+    }),
+  "arguments" : ({ /* sizeof() == 2 */
+      "write",
+      "User                         Where
+"
+    }),
+  "file" : "adm/obj/clone/user.c",
+  "line" : 179,
+]),""write", "User                         Where
+", ","User                         Where
+"
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("system","
+runtime: error: Check /log/errors/runtime for more information.
+")
+locals were: "vt102",80,0
+Error in error handler: *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+program: /adm/obj/clone/user.c, object: /adm/obj/clone/user#36, file: /adm/obj/clone/user.c:179
+'     <function>' in '          <function>' ('adm/obj/clone/user#36') 
+'     <function>' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:245
+arguments were (0)
+'       cmd_hook' in 'adm/obj/clone/shells/protosh.c' ('adm/obj/clone/shells/protosh#37') /adm/obj/clone/shells/protosh.c:524
+arguments were ("")
+locals were: 1720232
+'       cmd_hook' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:480
+arguments were (0)
+locals were: 1720232,cmd/player/look
+'          _main' in 'obj/inherit/command.c' ('     cmd/player/look') /obj/inherit/command.c:20
+arguments were (0)
+'           main' in '   cmd/player/look.c' ('     cmd/player/look') /cmd/player/look.c:17
+arguments were (0)
+locals were: d/base/start,0,0,0
+'         printf' in 'adm/obj/daemon/simul_efun.c' ('adm/obj/daemon/simul_efun') /adm/obj/daemon/simul_efun/printf.c:8
+arguments were (2841288,2233584)
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("write","[/d/base/start]
+")
+locals were: "vt102",80,0
+'  error_handler' in 'adm/obj/daemon/master.c' ('adm/obj/daemon/master') /adm/obj/daemon/master.c:174
+arguments were (2277760,0)
+locals were: 0,"/log/errors","
+[ERROR] *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+  time   : Tue Oct 15 23:08:30 1996
+  file   : adm/obj/clone/user.c:179
+  pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+  [TRACE]  size==8
+    file   : :0
+    pgm/obj: <function> (adm/obj/clone/user#36)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:245
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : <function> (             0, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/shells/protosh.c:524
+    pgm/obj: adm/obj/clone/shells/protosh.c (adm/obj/clone/shells/protosh#37)
+    func   : cmd_hook (             "", )
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:480
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : cmd_hook (             0, )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (cmd/player/look)
+    func   : _main (             0, )
+    ---------------------------------------------------------------------
+    file   : cmd/player/look.c:17
+    pgm/obj: cmd/player/look.c (cmd/player/look)
+    func   : main (             0, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/simul_efun/printf.c:8
+    pgm/obj: adm/obj/daemon/simul_efun.c (adm/obj/daemon/simul_efun)
+    func   : printf (             2841288, 2233584, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:179
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : receive_message (             "write", "[/d/base/start]", )
+    ---------------------------------------------------------------------
+",([ /* sizeof() == 7 */
+  "program" : "adm/obj/clone/user.c",
+  "function" : "receive_message",
+  "object" : adm/obj/clone/user#36,
+  "locals" : ({ /* sizeof() == 3 */
+      "vt102",
+      80,
+      0
+    }),
+  "arguments" : ({ /* sizeof() == 2 */
+      "write",
+      "[/d/base/start]
+"
+    }),
+  "file" : "adm/obj/clone/user.c",
+  "line" : 179,
+]),""write", "[/d/base/start]
+", ","[/d/base/start]
+"
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("system","
+runtime: error: Check /log/errors/runtime for more information.
+")
+locals were: "vt102",80,0
+Error in error handler: *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+program: /adm/obj/clone/user.c, object: /adm/obj/clone/user#36, file: /adm/obj/clone/user.c:179
+'     <function>' in '          <function>' ('adm/obj/clone/user#36') 
+'     <function>' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:245
+arguments were (0)
+'       cmd_hook' in 'adm/obj/clone/shells/protosh.c' ('adm/obj/clone/shells/protosh#37') /adm/obj/clone/shells/protosh.c:524
+arguments were ("")
+locals were: 1720232
+'       cmd_hook' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:480
+arguments were (0)
+locals were: 1720232,cmd/player/look
+'          _main' in 'obj/inherit/command.c' ('     cmd/player/look') /obj/inherit/command.c:20
+arguments were (0)
+'           main' in '   cmd/player/look.c' ('     cmd/player/look') /cmd/player/look.c:17
+arguments were (0)
+locals were: d/base/start,0,0,0
+'         printf' in 'adm/obj/daemon/simul_efun.c' ('adm/obj/daemon/simul_efun') /adm/obj/daemon/simul_efun/printf.c:8
+arguments were (2841288,2233584)
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("write","[/d/base/start]
+")
+locals were: "vt102",80,0
+'  error_handler' in 'adm/obj/daemon/master.c' ('adm/obj/daemon/master') /adm/obj/daemon/master.c:174
+arguments were (2705024,0)
+locals were: 0,"/log/errors","
+[ERROR] *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+  time   : Tue Oct 15 23:08:32 1996
+  file   : adm/obj/clone/user.c:179
+  pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+  [TRACE]  size==8
+    file   : :0
+    pgm/obj: <function> (adm/obj/clone/user#36)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:245
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : <function> (             0, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/shells/protosh.c:524
+    pgm/obj: adm/obj/clone/shells/protosh.c (adm/obj/clone/shells/protosh#37)
+    func   : cmd_hook (             "", )
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:480
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : cmd_hook (             0, )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (cmd/player/look)
+    func   : _main (             0, )
+    ---------------------------------------------------------------------
+    file   : cmd/player/look.c:17
+    pgm/obj: cmd/player/look.c (cmd/player/look)
+    func   : main (             0, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/simul_efun/printf.c:8
+    pgm/obj: adm/obj/daemon/simul_efun.c (adm/obj/daemon/simul_efun)
+    func   : printf (             2841288, 2233584, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:179
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : receive_message (             "write", "[/d/base/start]", )
+    ---------------------------------------------------------------------
+",([ /* sizeof() == 7 */
+  "program" : "adm/obj/clone/user.c",
+  "function" : "receive_message",
+  "object" : adm/obj/clone/user#36,
+  "arguments" : ({ /* sizeof() == 2 */
+      "write",
+      "[/d/base/start]
+"
+    }),
+  "file" : "adm/obj/clone/user.c",
+  "locals" : ({ /* sizeof() == 3 */
+      "vt102",
+      80,
+      0
+    }),
+  "line" : 179,
+]),""write", "[/d/base/start]
+", ","[/d/base/start]
+"
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("system","
+runtime: error: Check /log/errors/runtime for more information.
+")
+locals were: "vt102",80,0
+Error in error handler: *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+program: /adm/obj/clone/user.c, object: /adm/obj/clone/user#36, file: /adm/obj/clone/user.c:179
+'     <function>' in '          <function>' ('adm/obj/clone/user#36') 
+'     <function>' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:245
+arguments were (0)
+'       cmd_hook' in 'adm/obj/clone/shells/protosh.c' ('adm/obj/clone/shells/protosh#37') /adm/obj/clone/shells/protosh.c:524
+arguments were ("")
+locals were: 1720232
+'       cmd_hook' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:480
+arguments were (0)
+locals were: 1720232,cmd/player/look
+'          _main' in 'obj/inherit/command.c' ('     cmd/player/look') /obj/inherit/command.c:20
+arguments were (0)
+'           main' in '   cmd/player/look.c' ('     cmd/player/look') /cmd/player/look.c:17
+arguments were (0)
+locals were: d/base/start,0,0,0
+'         printf' in 'adm/obj/daemon/simul_efun.c' ('adm/obj/daemon/simul_efun') /adm/obj/daemon/simul_efun/printf.c:8
+arguments were (2841288,2068064)
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("write","[/d/base/start]
+")
+locals were: "vt102",80,0
+'  error_handler' in 'adm/obj/daemon/master.c' ('adm/obj/daemon/master') /adm/obj/daemon/master.c:174
+arguments were (2957920,0)
+locals were: 0,"/log/errors","
+[ERROR] *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+  time   : Tue Oct 15 23:08:32 1996
+  file   : adm/obj/clone/user.c:179
+  pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+  [TRACE]  size==8
+    file   : :0
+    pgm/obj: <function> (adm/obj/clone/user#36)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:245
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : <function> (             0, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/shells/protosh.c:524
+    pgm/obj: adm/obj/clone/shells/protosh.c (adm/obj/clone/shells/protosh#37)
+    func   : cmd_hook (             "", )
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:480
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : cmd_hook (             0, )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (cmd/player/look)
+    func   : _main (             0, )
+    ---------------------------------------------------------------------
+    file   : cmd/player/look.c:17
+    pgm/obj: cmd/player/look.c (cmd/player/look)
+    func   : main (             0, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/simul_efun/printf.c:8
+    pgm/obj: adm/obj/daemon/simul_efun.c (adm/obj/daemon/simul_efun)
+    func   : printf (             2841288, 2068064, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:179
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : receive_message (             "write", "[/d/base/start]", )
+    ---------------------------------------------------------------------
+",([ /* sizeof() == 7 */
+  "locals" : ({ /* sizeof() == 3 */
+      "vt102",
+      80,
+      0
+    }),
+  "program" : "adm/obj/clone/user.c",
+  "function" : "receive_message",
+  "object" : adm/obj/clone/user#36,
+  "arguments" : ({ /* sizeof() == 2 */
+      "write",
+      "[/d/base/start]
+"
+    }),
+  "file" : "adm/obj/clone/user.c",
+  "line" : 179,
+]),""write", "[/d/base/start]
+", ","[/d/base/start]
+"
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("system","
+runtime: error: Check /log/errors/runtime for more information.
+")
+locals were: "vt102",80,0
+Error in error handler: *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+program: /adm/obj/clone/user.c, object: /adm/obj/clone/user#36, file: /adm/obj/clone/user.c:179
+'   write_prompt' in 'adm/obj/clone/shells/protosh.c' ('adm/obj/clone/shells/protosh#37') /adm/obj/clone/shells/protosh.c:558
+arguments were ()
+locals were: 2705028,"~"
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("prompt","[%^BOLD%^~%^RESET%^]-> ")
+locals were: "vt102",80,0
+'  error_handler' in 'adm/obj/daemon/master.c' ('adm/obj/daemon/master') /adm/obj/daemon/master.c:174
+arguments were (2077792,0)
+locals were: 0,"/log/errors","
+[ERROR] *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+  time   : Tue Oct 15 23:08:32 1996
+  file   : adm/obj/clone/user.c:179
+  pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+  [TRACE]  size==2
+    file   : adm/obj/clone/shells/protosh.c:558
+    pgm/obj: adm/obj/clone/shells/protosh.c (adm/obj/clone/shells/protosh#37)
+    func   : write_prompt ()
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:179
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : receive_message (             "prompt", "[%^BOLD%^~%^RESET%^]-> ", )
+    ---------------------------------------------------------------------
+",([ /* sizeof() == 7 */
+  "locals" : ({ /* sizeof() == 3 */
+      "vt102",
+      80,
+      0
+    }),
+  "program" : "adm/obj/clone/user.c",
+  "function" : "receive_message",
+  "object" : adm/obj/clone/user#36,
+  "arguments" : ({ /* sizeof() == 2 */
+      "prompt",
+      "[%^BOLD%^~%^RESET%^]-> "
+    }),
+  "file" : "adm/obj/clone/user.c",
+  "line" : 179,
+]),""prompt", "[%^BOLD%^~%^RESET%^]-> ", ","[%^BOLD%^~%^RESET%^]-> "
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("system","
+runtime: error: Check /log/errors/runtime for more information.
+")
+locals were: "vt102",80,0
+Error in error handler: *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+program: /adm/obj/clone/user.c, object: /adm/obj/clone/user#36, file: /adm/obj/clone/user.c:179
+'     <function>' in '          <function>' ('adm/obj/clone/user#36') 
+'     <function>' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:245
+arguments were ("at tim")
+'       cmd_hook' in 'adm/obj/clone/shells/protosh.c' ('adm/obj/clone/shells/protosh#37') /adm/obj/clone/shells/protosh.c:524
+arguments were ("at tim")
+locals were: 1720232
+'       cmd_hook' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:480
+arguments were ("at tim")
+locals were: 1720232,cmd/player/look
+'          _main' in 'obj/inherit/command.c' ('     cmd/player/look') /obj/inherit/command.c:20
+arguments were (2234036)
+'           main' in '   cmd/player/look.c' ('     cmd/player/look') /cmd/player/look.c:41
+arguments were ("tim")
+locals were: d/base/start,0,0,adm/obj/clone/user#36
+'          write' in 'adm/obj/daemon/simul_efun.c' ('adm/obj/daemon/simul_efun') /adm/obj/daemon/simul_efun/write.c:3
+arguments were (2345476)
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("write","Let Tim tell you how to win friends and influence people.
+He is a member of the human race.
+He is in death's arms.
+  He is carrying nothing.
+")
+locals were: "vt102",80,0
+'  error_handler' in 'adm/obj/daemon/master.c' ('adm/obj/daemon/master') /adm/obj/daemon/master.c:174
+arguments were (2705024,0)
+locals were: 0,"/log/errors","
+[ERROR] *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+  time   : Tue Oct 15 23:08:34 1996
+  file   : adm/obj/clone/user.c:179
+  pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+  [TRACE]  size==8
+    file   : :0
+    pgm/obj: <function> (adm/obj/clone/user#36)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:245
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : <function> (             "at tim", )
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/shells/protosh.c:524
+    pgm/obj: adm/obj/clone/shells/protosh.c (adm/obj/clone/shells/protosh#37)
+    func   : cmd_hook (             "at tim", )
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:480
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : cmd_hook (             "at tim", )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (cmd/player/look)
+    func   : _main (             2234036, )
+    ---------------------------------------------------------------------
+    file   : cmd/player/look.c:41
+    pgm/obj: cmd/player/look.c (cmd/player/look)
+    func   : main (             "tim", )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/simul_efun/write.c:3
+    pgm/obj: adm/obj/daemon/simul_efun.c (adm/obj/daemon/simul_efun)
+    func   : write (             2345476, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:179
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : receive_message (             "write", "Let Tim tell you how to win friends
+             and influence people.He is a member of the
+             human race.He is in death's arms.  He is
+             carrying nothing.", )
+    ---------------------------------------------------------------------
+",([ /* sizeof() == 7 */
+  "program" : "adm/obj/clone/user.c",
+  "function" : "receive_message",
+  "object" : adm/obj/clone/user#36,
+  "arguments" : ({ /* sizeof() == 2 */
+      "write",
+      "Let Tim tell you how to win friends and influence people.
+He is a member of the human race.
+He is in death's arms.
+  He is carrying nothing.
+"
+    }),
+  "file" : "adm/obj/clone/user.c",
+  "locals" : ({ /* sizeof() == 3 */
+      "vt102",
+      80,
+      0
+    }),
+  "line" : 179,
+]),""write", "Let Tim tell you how to win friends and influence people.
+He is a member of the human race.
+He is in death's arms.
+  He is carrying nothing.
+", ","Let Tim tell you how to win friends and influence people.
+He is a member of the human race.
+He is in death's arms.
+  He is carrying nothing.
+"
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("system","
+runtime: error: Check /log/errors/runtime for more information.
+")
+locals were: "vt102",80,0
+Error in error handler: *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+program: /adm/obj/clone/user.c, object: /adm/obj/clone/user#36, file: /adm/obj/clone/user.c:179
+'     <function>' in '          <function>' ('adm/obj/clone/user#36') 
+'     <function>' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:245
+arguments were (0)
+'       cmd_hook' in 'adm/obj/clone/shells/protosh.c' ('adm/obj/clone/shells/protosh#37') /adm/obj/clone/shells/protosh.c:524
+arguments were ("")
+locals were: 1751784
+'       cmd_hook' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:480
+arguments were (0)
+locals were: 1751784,adm/cmd/adm/shutdown
+'          _main' in 'obj/inherit/command.c' ('adm/cmd/adm/shutdown') /obj/inherit/command.c:20
+arguments were (0)
+'           main' in 'adm/cmd/adm/shutdown.c' ('adm/cmd/adm/shutdown') /adm/cmd/adm/shutdown.c:9
+arguments were (0)
+locals were: 0
+'          write' in 'adm/obj/daemon/simul_efun.c' ('adm/obj/daemon/simul_efun') /adm/obj/daemon/simul_efun/write.c:3
+arguments were (2963592)
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("write","Shutting down imediately...
+")
+locals were: "vt102",80,0
+'  error_handler' in 'adm/obj/daemon/master.c' ('adm/obj/daemon/master') /adm/obj/daemon/master.c:174
+arguments were (2348384,0)
+locals were: 0,"/log/errors","
+[ERROR] *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+  time   : Tue Oct 15 23:08:38 1996
+  file   : adm/obj/clone/user.c:179
+  pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+  [TRACE]  size==8
+    file   : :0
+    pgm/obj: <function> (adm/obj/clone/user#36)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:245
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : <function> (             0, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/shells/protosh.c:524
+    pgm/obj: adm/obj/clone/shells/protosh.c (adm/obj/clone/shells/protosh#37)
+    func   : cmd_hook (             "", )
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:480
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : cmd_hook (             0, )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (adm/cmd/adm/shutdown)
+    func   : _main (             0, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/adm/shutdown.c:9
+    pgm/obj: adm/cmd/adm/shutdown.c (adm/cmd/adm/shutdown)
+    func   : main (             0, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/simul_efun/write.c:3
+    pgm/obj: adm/obj/daemon/simul_efun.c (adm/obj/daemon/simul_efun)
+    func   : write (             2963592, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:179
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : receive_message (             "write", "Shutting down imediately...", )
+    ---------------------------------------------------------------------
+",([ /* sizeof() == 7 */
+  "program" : "adm/obj/clone/user.c",
+  "function" : "receive_message",
+  "object" : adm/obj/clone/user#36,
+  "arguments" : ({ /* sizeof() == 2 */
+      "write",
+      "Shutting down imediately...
+"
+    }),
+  "file" : "adm/obj/clone/user.c",
+  "locals" : ({ /* sizeof() == 3 */
+      "vt102",
+      80,
+      0
+    }),
+  "line" : 179,
+]),""write", "Shutting down imediately...
+", ","Shutting down imediately...
+"
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("system","
+runtime: error: Check /log/errors/runtime for more information.
+")
+locals were: "vt102",80,0
+Error in error handler: *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+program: /adm/obj/clone/user.c, object: /adm/obj/clone/user#36, file: /adm/obj/clone/user.c:179
+'     <function>' in '          <function>' ('adm/obj/clone/user#36') 
+'     <function>' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:245
+arguments were (0)
+'       cmd_hook' in 'adm/obj/clone/shells/protosh.c' ('adm/obj/clone/shells/protosh#37') /adm/obj/clone/shells/protosh.c:524
+arguments were ("")
+locals were: 1718504
+'       cmd_hook' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:480
+arguments were (0)
+locals were: 1718504,adm/cmd/player/quit
+'          _main' in 'obj/inherit/command.c' (' adm/cmd/player/quit') /obj/inherit/command.c:20
+arguments were (0)
+'           main' in 'adm/cmd/player/quit.c' (' adm/cmd/player/quit') /adm/cmd/player/quit.c:20
+arguments were (0)
+locals were: "Tim",adm/obj/clone/user#36,adm/obj/clone/connection#41
+'       force_me' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:319
+arguments were (2348296)
+'     <function>' in '          <function>' ('adm/obj/clone/user#36') 
+'     <function>' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:245
+arguments were (0)
+'       cmd_hook' in 'adm/obj/clone/shells/protosh.c' ('adm/obj/clone/shells/protosh#37') /adm/obj/clone/shells/protosh.c:524
+arguments were ("")
+locals were: 2348296
+'       cmd_hook' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:480
+arguments were (0)
+locals were: 2348296,adm/cmd/player/save
+'          _main' in 'obj/inherit/command.c' (' adm/cmd/player/save') /obj/inherit/command.c:20
+arguments were (0)
+'           main' in 'adm/cmd/player/save.c' (' adm/cmd/player/save') /adm/cmd/player/save.c:10
+arguments were ()
+'         printf' in 'adm/obj/daemon/simul_efun.c' ('adm/obj/daemon/simul_efun') /adm/obj/daemon/simul_efun/printf.c:8
+arguments were (2956808,2698496)
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("write","save: user Tim saved.
+")
+locals were: "vt102",80,0
+'  error_handler' in 'adm/obj/daemon/master.c' ('adm/obj/daemon/master') /adm/obj/daemon/master.c:174
+arguments were (2792928,0)
+locals were: 0,"/log/errors","
+[ERROR] *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+  time   : Tue Oct 15 23:08:42 1996
+  file   : adm/obj/clone/user.c:179
+  pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+  [TRACE]  size==15
+    file   : :0
+    pgm/obj: <function> (adm/obj/clone/user#36)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:245
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : <function> (             0, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/shells/protosh.c:524
+    pgm/obj: adm/obj/clone/shells/protosh.c (adm/obj/clone/shells/protosh#37)
+    func   : cmd_hook (             "", )
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:480
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : cmd_hook (             0, )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (adm/cmd/player/quit)
+    func   : _main (             0, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/player/quit.c:20
+    pgm/obj: adm/cmd/player/quit.c (adm/cmd/player/quit)
+    func   : main (             0, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:319
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : force_me (             2348296, )
+    ---------------------------------------------------------------------
+    file   : :0
+    pgm/obj: <function> (adm/obj/clone/user#36)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:245
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : <function> (             0, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/shells/protosh.c:524
+    pgm/obj: adm/obj/clone/shells/protosh.c (adm/obj/clone/shells/protosh#37)
+    func   : cmd_hook (             "", )
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:480
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : cmd_hook (             0, )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (adm/cmd/player/save)
+    func   : _main (             0, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/player/save.c:10
+    pgm/obj: adm/cmd/player/save.c (adm/cmd/player/save)
+    func   : main ()
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/simul_efun/printf.c:8
+    pgm/obj: adm/obj/daemon/simul_efun.c (adm/obj/daemon/simul_efun)
+    func   : printf (             2956808, 2698496, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:179
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : receive_message (             "write", "save: user Tim saved.", )
+    ---------------------------------------------------------------------
+",([ /* sizeof() == 7 */
+  "program" : "adm/obj/clone/user.c",
+  "function" : "receive_message",
+  "object" : adm/obj/clone/user#36,
+  "arguments" : ({ /* sizeof() == 2 */
+      "write",
+      "save: user Tim saved.
+"
+    }),
+  "file" : "adm/obj/clone/user.c",
+  "locals" : ({ /* sizeof() == 3 */
+      "vt102",
+      80,
+      0
+    }),
+  "line" : 179,
+]),""write", "save: user Tim saved.
+", ","save: user Tim saved.
+"
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("system","
+runtime: error: Check /log/errors/runtime for more information.
+")
+locals were: "vt102",80,0
+Error in error handler: *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+program: /adm/obj/clone/user.c, object: /adm/obj/clone/user#36, file: /adm/obj/clone/user.c:179
+'     <function>' in '          <function>' ('adm/obj/clone/user#36') 
+'     <function>' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:245
+arguments were (0)
+'       cmd_hook' in 'adm/obj/clone/shells/protosh.c' ('adm/obj/clone/shells/protosh#37') /adm/obj/clone/shells/protosh.c:520
+arguments were ("")
+locals were: 2703496
+'      cmd_alias' in 'adm/obj/clone/shells/protosh.c' ('adm/obj/clone/shells/protosh#37') /adm/obj/clone/shells/protosh.c:637
+arguments were ("")
+locals were: ({ /* sizeof() == 25 */
+  "  alias        long form",
+  "  -----        ---------",
+  "  er           more /log/errors/runtime",
+  "  se           southeast",
+  "  nod          emote nod",
+  "  l            look",
+  "  te           tail /log/errors/compile",
+  "  i            inventory",
+  "  unsub        unsubscribe",
+  "  prompt       say "$PROMPT"",
+  "  tr           tail /log/errors/runtime",
+  "  la           look at",
+  "  sw           southwest",
+  "  w            west",
+  "  po5          say Hey. Hey. So, yer 5 hours late\? Yeah, so\? So whats up with that\? I\'ve got stuff to do alright\? Alright\! So, uh, what\'s goin on\? Nothin--What are you doin\? I dunno, hangin out. Oh.",
+  "  sub          subscribe",
+  "  ls           ls -cF",
+  "  ne           northeast",
+  "  n            north",
+  "  sc           score",
+  "  s            south",
+  "  e            east",
+  "  cls          say %^CLS%^",
+  "  nw           northwest",
+  "  brb          shout Be right back I\'m going AFK!!!"
+}),"brb","shout Be right back I\'m going AFK!!!",0,0
+'           more' in '  obj/inherit/more.c' ('adm/obj/clone/user#36') /obj/inherit/more.c:215
+arguments were (2798592,0)
+'      more_loop' in '  obj/inherit/more.c' ('adm/obj/clone/user#36') /obj/inherit/more.c:161
+arguments were ("")
+locals were: 0,0
+'     <function>' in '          <function>' ('adm/obj/clone/user#36') 
+'   redraw_array' in '  obj/inherit/more.c' ('adm/obj/clone/user#36') /obj/inherit/more.c:90
+arguments were ()
+locals were: 1686532
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("system","
+  alias        long form
+  -----        ---------
+  er           more /log/errors/runtime
+  se           southeast
+  nod          emote nod
+  l            look
+  te           tail /log/errors/compile
+  i            inventory
+  unsub        unsubscribe
+  prompt       say "$PROMPT"
+  tr           tail /log/errors/runtime
+  la           look at
+  sw           southwest
+  w            west
+  po5          say Hey. Hey. So, yer 5 hours late\? Yeah, so\? So whats up with that\? I\'ve got stuff to do alright\? Alright\! So, uh, what\'s goin on\? Nothin--What are you doin\? I dunno, hangin out. Oh.
+  sub          subscribe
+  ls           ls -cF
+  ne           northeast
+  n            north
+  sc           score
+  s            south
+  e            east
+  cls          say %^CLS%^
+  nw           northwest
+")
+locals were: "vt102",80,0
+'  error_handler' in 'adm/obj/daemon/master.c' ('adm/obj/daemon/master') /adm/obj/daemon/master.c:174
+arguments were (2792032,0)
+locals were: 0,"/log/errors","
+[ERROR] *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+  time   : Tue Oct 15 23:08:46 1996
+  file   : adm/obj/clone/user.c:179
+  pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+  [TRACE]  size==9
+    file   : :0
+    pgm/obj: <function> (adm/obj/clone/user#36)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:245
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : <function> (             0, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/shells/protosh.c:520
+    pgm/obj: adm/obj/clone/shells/protosh.c (adm/obj/clone/shells/protosh#37)
+    func   : cmd_hook (             "", )
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/shells/protosh.c:637
+    pgm/obj: adm/obj/clone/shells/protosh.c (adm/obj/clone/shells/protosh#37)
+    func   : cmd_alias (             "", )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/more.c:215
+    pgm/obj: obj/inherit/more.c (adm/obj/clone/user#36)
+    func   : more (             2798592, 0, )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/more.c:161
+    pgm/obj: obj/inherit/more.c (adm/obj/clone/user#36)
+    func   : more_loop (             "", )
+    ---------------------------------------------------------------------
+    file   : :0
+    pgm/obj: <function> (adm/obj/clone/user#36)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : obj/inherit/more.c:90
+    pgm/obj: obj/inherit/more.c (adm/obj/clone/user#36)
+    func   : redraw_array ()
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:179
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : receive_message (             "system", "  alias        long form  -----     
+             ---------  er           more
+             /log/errors/runtime  se           southeast 
+             nod          emote nod  l            look  te  
+             tail /log/errors/compile  i           
+             inventory  unsub        unsubscribe  prompt    
+             say "$PROMPT"  tr           tail
+             /log/errors/runtime  la           look at  sw  
+             southwest  w            west  po5          say
+             Hey. Hey. So, yer 5 hours late\? Yeah, so\? So
+             whats up with that\? I\'ve got stuff to do
+             alright\? Alright\! So, uh, what\'s goin on\?
+             Nothin--What are you doin\? I dunno, hangin
+             out. Oh.  sub          subscribe  ls          
+             ls -cF  ne           northeast  n           
+             north  sc           score  s            south 
+             e            east  cls          say %^CLS%^  nw
+             northwest", )
+    ---------------------------------------------------------------------
+",([ /* sizeof() == 7 */
+  "program" : "adm/obj/clone/user.c",
+  "function" : "receive_message",
+  "locals" : ({ /* sizeof() == 3 */
+      "vt102",
+      80,
+      0
+    }),
+  "object" : adm/obj/clone/user#36,
+  "arguments" : ({ /* sizeof() == 2 */
+      "system",
+      "
+  alias        long form
+  -----        ---------
+  er           more /log/errors/runtime
+  se           southeast
+  nod          emote nod
+  l            look
+  te           tail /log/errors/compile
+  i            inventory
+  unsub        unsubscribe
+  prompt       say "$PROMPT"
+  tr           tail /log/errors/runtime
+  la           look at
+  sw           southwest
+  w            west
+  po5          say Hey. Hey. So, yer 5 hours late\? Yeah, so\? So whats up with that\? I\'ve got stuff to do alright\? Alright\! So, uh, what\'s goin on\? Nothin--What are you doin\? I dunno, hangin out. Oh.
+  sub          subscribe
+  ls           ls -cF
+  ne           northeast
+  n            north
+  sc           score
+  s            south
+  e            east
+  cls          say %^CLS%^
+  nw           northwest
+"
+    }),
+  "file" : "adm/obj/clone/user.c",
+  "line" : 179,
+]),""system", "
+  alias        long form
+  -----        ---------
+  er           more /log/errors/runtime
+  se           southeast
+  nod          emote nod
+  l            look
+  te           tail /log/errors/compile
+  i            inventory
+  unsub        unsubscribe
+  prompt       say "$PROMPT"
+  tr           tail /log/errors/runtime
+  la           look at
+  sw           southwest
+  w            west
+  po5          say Hey. Hey. So, yer 5 hours late\? Yeah, so\? So whats up with that\? I\'ve got stuff to do alright\? Alright\! So, uh, what\'s goin on\? Nothin--What are you doin\? I dunno, hangin out. Oh.
+  sub          subscribe
+  ls           ls -cF
+  ne           northeast
+  n            north
+  sc           score
+  s            south
+  e            east
+  cls          say %^CLS%^
+  nw           northwest
+", ","
+  alias        long form
+  -----        ---------
+  er           more /log/errors/runtime
+  se           southeast
+  nod          emote nod
+  l            look
+  te           tail /log/errors/compile
+  i            inventory
+  unsub        unsubscribe
+  prompt       say "$PROMPT"
+  tr           tail /log/errors/runtime
+  la           look at
+  sw           southwest
+  w            west
+  po5          say Hey. Hey. So, yer 5 hours late\? Yeah, so\? So whats up with that\? I\'ve got stuff to do alright\? Alright\! So, uh, what\'s goin on\? Nothin--What are you doin\? I dunno, hangin out. Oh.
+  sub          subscribe
+  ls           ls -cF
+  ne           northeast
+  n            north
+  sc           score
+  s            south
+  e            east
+  cls          say %^CLS%^
+  nw           northwest
+"
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("system","
+runtime: error: Check /log/errors/runtime for more information.
+")
+locals were: "vt102",80,0
+Error in error handler: *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+program: /adm/obj/clone/user.c, object: /adm/obj/clone/user#36, file: /adm/obj/clone/user.c:179
+'     <function>' in '          <function>' ('adm/obj/clone/user#36') 
+'     <function>' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:245
+arguments were ("/log/errors/compile")
+'       cmd_hook' in 'adm/obj/clone/shells/protosh.c' ('adm/obj/clone/shells/protosh#37') /adm/obj/clone/shells/protosh.c:524
+arguments were ("/log/errors/compile")
+locals were: 2683112
+'       cmd_hook' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:480
+arguments were ("/log/errors/compile")
+locals were: 2683112,adm/cmd/wiz/tail
+'          _main' in 'obj/inherit/command.c' ('    adm/cmd/wiz/tail') /obj/inherit/command.c:20
+arguments were (2957476)
+'           main' in '  adm/cmd/wiz/tail.c' ('    adm/cmd/wiz/tail') /adm/cmd/wiz/tail.c:22
+arguments were ("/log/errors/compile")
+locals were: 51
+'            cat' in 'adm/obj/daemon/simul_efun.c' ('adm/obj/daemon/simul_efun') /adm/obj/daemon/simul_efun/cat.c:31
+arguments were ("/log/errors/compile",51,20)
+locals were: "/adm/tmp/tmp_eval_file.c line 8: Undefined variable 'users'
+/adm/tmp/tmp_eval_file.c line 8: parse error
+/adm/tmp/tmp_eval_file.c line 9: Illegal LHS
+/adm/tmp/tmp_eval_file.c line 11: Undefined variable 'f'
+/adm/tmp/tmp_eval_file.c line 11: Undefined variable 'priv'
+/adm/tmp/tmp_eval_file.c line 13: parse error
+/adm/obj/clone/shells/rsh.c line 36: Warning: Non-void functions must return a
+value.
+/adm/tmp/tmp_eval_file.c line 8: Left argument of -> is not a class
+/adm/obj/clone/shells/nmsh.c line 32: Warning: Non-void functions must return a
+value.
+/doc/misc/termcap_d.c line 70: parse error
+/doc/misc/termcap_d.c line 105: parse error
+/doc/misc/termcap_d.c line 170: Undefined variable 'ttype'
+/doc/misc/termcap_d.c line 170: Illegal LHS
+/doc/misc/termcap_d.c line 170: parse error
+/adm/cmd/wiz/tail.c line 19: Undefined function tail
+/doc/misc/termcap_d.c line 108: Undefined variable 'default_term'
+/doc/misc/termcap_d.c line 169: Undefined variable 'str'
+/doc/misc/termcap_d.c line 170: Undefined function undeflinedp
+",0
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("system","/adm/tmp/tmp_eval_file.c line 8: Undefined variable 'users'
+/adm/tmp/tmp_eval_file.c line 8: parse error
+/adm/tmp/tmp_eval_file.c line 9: Illegal LHS
+/adm/tmp/tmp_eval_file.c line 11: Undefined variable 'f'
+/adm/tmp/tmp_eval_file.c line 11: Undefined variable 'priv'
+/adm/tmp/tmp_eval_file.c line 13: parse error
+/adm/obj/clone/shells/rsh.c line 36: Warning: Non-void functions must return a
+value.
+/adm/tmp/tmp_eval_file.c line 8: Left argument of -> is not a class
+/adm/obj/clone/shells/nmsh.c line 32: Warning: Non-void functions must return a
+value.
+/doc/misc/termcap_d.c line 70: parse error
+/doc/misc/termcap_d.c line 105: parse error
+/doc/misc/termcap_d.c line 170: Undefined variable 'ttype'
+/doc/misc/termcap_d.c line 170: Illegal LHS
+/doc/misc/termcap_d.c line 170: parse error
+/adm/cmd/wiz/tail.c line 19: Undefined function tail
+/doc/misc/termcap_d.c line 108: Undefined variable 'default_term'
+/doc/misc/termcap_d.c line 169: Undefined variable 'str'
+/doc/misc/termcap_d.c line 170: Undefined function undeflinedp
+")
+locals were: "vt102",80,0
+'  error_handler' in 'adm/obj/daemon/master.c' ('adm/obj/daemon/master') /adm/obj/daemon/master.c:174
+arguments were (2683104,0)
+locals were: 0,"/log/errors","
+[ERROR] *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+  time   : Tue Oct 15 23:08:50 1996
+  file   : adm/obj/clone/user.c:179
+  pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+  [TRACE]  size==8
+    file   : :0
+    pgm/obj: <function> (adm/obj/clone/user#36)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:245
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : <function> (             "/log/errors/compile", )
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/shells/protosh.c:524
+    pgm/obj: adm/obj/clone/shells/protosh.c (adm/obj/clone/shells/protosh#37)
+    func   : cmd_hook (             "/log/errors/compile", )
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:480
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : cmd_hook (             "/log/errors/compile", )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (adm/cmd/wiz/tail)
+    func   : _main (             2957476, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/tail.c:22
+    pgm/obj: adm/cmd/wiz/tail.c (adm/cmd/wiz/tail)
+    func   : main (             "/log/errors/compile", )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/simul_efun/cat.c:31
+    pgm/obj: adm/obj/daemon/simul_efun.c (adm/obj/daemon/simul_efun)
+    func   : cat (             "/log/errors/compile", 51, 20, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:179
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : receive_message (             "system", "/adm/tmp/tmp_eval_file.c line 8:
+             Undefined variable
+             'users'/adm/tmp/tmp_eval_file.c line 8: parse
+             error/adm/tmp/tmp_eval_file.c line 9: Illegal
+             LHS/adm/tmp/tmp_eval_file.c line 11: Undefined
+             variable 'f'/adm/tmp/tmp_eval_file.c line 11:
+             Undefined variable
+             'priv'/adm/tmp/tmp_eval_file.c line 13: parse
+             error/adm/obj/clone/shells/rsh.c line 36:
+             Warning: Non-void functions must return
+             avalue./adm/tmp/tmp_eval_file.c line 8: Left
+             argument of -> is not a
+             class/adm/obj/clone/shells/nmsh.c line 32:
+             Warning: Non-void functions must return
+             avalue./doc/misc/termcap_d.c line 70: parse
+             error/doc/misc/termcap_d.c line 105: parse
+             error/doc/misc/termcap_d.c line 170: Undefined
+             variable 'ttype'/doc/misc/termcap_d.c line 170:
+             Illegal LHS/doc/misc/termcap_d.c line 170:
+             parse error/adm/cmd/wiz/tail.c line 19:
+             Undefined function tail/doc/misc/termcap_d.c
+             line 108: Undefined variable
+             'default_term'/doc/misc/termcap_d.c line 169:
+             Undefined variable 'str'/doc/misc/termcap_d.c
+             line 170: Undefined function undeflinedp", )
+    ---------------------------------------------------------------------
+",([ /* sizeof() == 7 */
+  "program" : "adm/obj/clone/user.c",
+  "function" : "receive_message",
+  "object" : adm/obj/clone/user#36,
+  "locals" : ({ /* sizeof() == 3 */
+      "vt102",
+      80,
+      0
+    }),
+  "arguments" : ({ /* sizeof() == 2 */
+      "system",
+      "/adm/tmp/tmp_eval_file.c line 8: Undefined variable 'users'
+/adm/tmp/tmp_eval_file.c line 8: parse error
+/adm/tmp/tmp_eval_file.c line 9: Illegal LHS
+/adm/tmp/tmp_eval_file.c line 11: Undefined variable 'f'
+/adm/tmp/tmp_eval_file.c line 11: Undefined variable 'priv'
+/adm/tmp/tmp_eval_file.c line 13: parse error
+/adm/obj/clone/shells/rsh.c line 36: Warning: Non-void functions must return a
+value.
+/adm/tmp/tmp_eval_file.c line 8: Left argument of -> is not a class
+/adm/obj/clone/shells/nmsh.c line 32: Warning: Non-void functions must return a
+value.
+/doc/misc/termcap_d.c line 70: parse error
+/doc/misc/termcap_d.c line 105: parse error
+/doc/misc/termcap_d.c line 170: Undefined variable 'ttype'
+/doc/misc/termcap_d.c line 170: Illegal LHS
+/doc/misc/termcap_d.c line 170: parse error
+/adm/cmd/wiz/tail.c line 19: Undefined function tail
+/doc/misc/termcap_d.c line 108: Undefined variable 'default_term'
+/doc/misc/termcap_d.c line 169: Undefined variable 'str'
+/doc/misc/termcap_d.c line 170: Undefined function undeflinedp
+"
+    }),
+  "file" : "adm/obj/clone/user.c",
+  "line" : 179,
+]),""system", "/adm/tmp/tmp_eval_file.c line 8: Undefined variable 'users'
+/adm/tmp/tmp_eval_file.c line 8: parse error
+/adm/tmp/tmp_eval_file.c line 9: Illegal LHS
+/adm/tmp/tmp_eval_file.c line 11: Undefined variable 'f'
+/adm/tmp/tmp_eval_file.c line 11: Undefined variable 'priv'
+/adm/tmp/tmp_eval_file.c line 13: parse error
+/adm/obj/clone/shells/rsh.c line 36: Warning: Non-void functions must return a
+value.
+/adm/tmp/tmp_eval_file.c line 8: Left argument of -> is not a class
+/adm/obj/clone/shells/nmsh.c line 32: Warning: Non-void functions must return a
+value.
+/doc/misc/termcap_d.c line 70: parse error
+/doc/misc/termcap_d.c line 105: parse error
+/doc/misc/termcap_d.c line 170: Undefined variable 'ttype'
+/doc/misc/termcap_d.c line 170: Illegal LHS
+/doc/misc/termcap_d.c line 170: parse error
+/adm/cmd/wiz/tail.c line 19: Undefined function tail
+/doc/misc/termcap_d.c line 108: Undefined variable 'default_term'
+/doc/misc/termcap_d.c line 169: Undefined variable 'str'
+/doc/misc/termcap_d.c line 170: Undefined function undeflinedp
+", ","/adm/tmp/tmp_eval_file.c line 8: Undefined variable 'users'
+/adm/tmp/tmp_eval_file.c line 8: parse error
+/adm/tmp/tmp_eval_file.c line 9: Illegal LHS
+/adm/tmp/tmp_eval_file.c line 11: Undefined variable 'f'
+/adm/tmp/tmp_eval_file.c line 11: Undefined variable 'priv'
+/adm/tmp/tmp_eval_file.c line 13: parse error
+/adm/obj/clone/shells/rsh.c line 36: Warning: Non-void functions must return a
+value.
+/adm/tmp/tmp_eval_file.c line 8: Left argument of -> is not a class
+/adm/obj/clone/shells/nmsh.c line 32: Warning: Non-void functions must return a
+value.
+/doc/misc/termcap_d.c line 70: parse error
+/doc/misc/termcap_d.c line 105: parse error
+/doc/misc/termcap_d.c line 170: Undefined variable 'ttype'
+/doc/misc/termcap_d.c line 170: Illegal LHS
+/doc/misc/termcap_d.c line 170: parse error
+/adm/cmd/wiz/tail.c line 19: Undefined function tail
+/doc/misc/termcap_d.c line 108: Undefined variable 'default_term'
+/doc/misc/termcap_d.c line 169: Undefined variable 'str'
+/doc/misc/termcap_d.c line 170: Undefined function undeflinedp
+"
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("system","
+runtime: error: Check /log/errors/runtime for more information.
+")
+locals were: "vt102",80,0
+Error in error handler: *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+program: /adm/obj/clone/user.c, object: /adm/obj/clone/user#36, file: /adm/obj/clone/user.c:179
+'     <function>' in '          <function>' ('adm/obj/clone/user#36') 
+'     <function>' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:245
+arguments were ("/adm/obj/clone/user")
+'       cmd_hook' in 'adm/obj/clone/shells/protosh.c' ('adm/obj/clone/shells/protosh#37') /adm/obj/clone/shells/protosh.c:524
+arguments were ("/adm/obj/clone/user")
+locals were: 2239528
+'       cmd_hook' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:480
+arguments were ("/adm/obj/clone/user")
+locals were: 2239528,adm/cmd/wiz/update
+'          _main' in 'obj/inherit/cmdline.c' ('  adm/cmd/wiz/update') /obj/inherit/cmdline.c:69
+arguments were ("/adm/obj/clone/user")
+locals were: 2067968,762928,0
+'           main' in 'adm/cmd/wiz/update.c' ('  adm/cmd/wiz/update') /adm/cmd/wiz/update.c:66
+arguments were (({ /* sizeof() == 2 */
+  "update",
+  "/adm/obj/clone/user"
+}),762928)
+locals were: 0,"/adm/obj/clone/user",0,1,0,0,0,0
+'          write' in 'adm/obj/daemon/simul_efun.c' ('adm/obj/daemon/simul_efun') /adm/obj/daemon/simul_efun/write.c:3
+arguments were (2118600)
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("write","update: ")
+locals were: "vt102",80,0
+'  error_handler' in 'adm/obj/daemon/master.c' ('adm/obj/daemon/master') /adm/obj/daemon/master.c:174
+arguments were (2227040,0)
+locals were: 0,"/log/errors","
+[ERROR] *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+  time   : Tue Oct 15 23:08:58 1996
+  file   : adm/obj/clone/user.c:179
+  pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+  [TRACE]  size==8
+    file   : :0
+    pgm/obj: <function> (adm/obj/clone/user#36)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:245
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : <function> (             "/adm/obj/clone/user", )
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/shells/protosh.c:524
+    pgm/obj: adm/obj/clone/shells/protosh.c (adm/obj/clone/shells/protosh#37)
+    func   : cmd_hook (             "/adm/obj/clone/user", )
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:480
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : cmd_hook (             "/adm/obj/clone/user", )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/cmdline.c:69
+    pgm/obj: obj/inherit/cmdline.c (adm/cmd/wiz/update)
+    func   : _main (             "/adm/obj/clone/user", )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/update.c:66
+    pgm/obj: adm/cmd/wiz/update.c (adm/cmd/wiz/update)
+    func   : main (             ({ /* sizeof() == 2 */  "update", 
+             "/adm/obj/clone/user"}), 762928, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/simul_efun/write.c:3
+    pgm/obj: adm/obj/daemon/simul_efun.c (adm/obj/daemon/simul_efun)
+    func   : write (             2118600, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:179
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : receive_message (             "write", "update: ", )
+    ---------------------------------------------------------------------
+",([ /* sizeof() == 7 */
+  "locals" : ({ /* sizeof() == 3 */
+      "vt102",
+      80,
+      0
+    }),
+  "program" : "adm/obj/clone/user.c",
+  "function" : "receive_message",
+  "object" : adm/obj/clone/user#36,
+  "arguments" : ({ /* sizeof() == 2 */
+      "write",
+      "update: "
+    }),
+  "file" : "adm/obj/clone/user.c",
+  "line" : 179,
+]),""write", "update: ", ","update: "
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("system","
+runtime: error: Check /log/errors/runtime for more information.
+")
+locals were: "vt102",80,0
+Error in error handler: *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+program: /adm/obj/clone/user.c, object: /adm/obj/clone/user#36, file: /adm/obj/clone/user.c:179
+'   write_prompt' in 'adm/obj/clone/shells/protosh.c' ('adm/obj/clone/shells/protosh#37') /adm/obj/clone/shells/protosh.c:558
+arguments were ()
+locals were: 2348388,"~"
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("prompt","[%^BOLD%^~%^RESET%^]-> ")
+locals were: "vt102",80,0
+'  error_handler' in 'adm/obj/daemon/master.c' ('adm/obj/daemon/master') /adm/obj/daemon/master.c:174
+arguments were (2841536,0)
+locals were: 0,"/log/errors","
+[ERROR] *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+  time   : Tue Oct 15 23:09:00 1996
+  file   : adm/obj/clone/user.c:179
+  pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+  [TRACE]  size==2
+    file   : adm/obj/clone/shells/protosh.c:558
+    pgm/obj: adm/obj/clone/shells/protosh.c (adm/obj/clone/shells/protosh#37)
+    func   : write_prompt ()
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:179
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : receive_message (             "prompt", "[%^BOLD%^~%^RESET%^]-> ", )
+    ---------------------------------------------------------------------
+",([ /* sizeof() == 7 */
+  "program" : "adm/obj/clone/user.c",
+  "function" : "receive_message",
+  "object" : adm/obj/clone/user#36,
+  "arguments" : ({ /* sizeof() == 2 */
+      "prompt",
+      "[%^BOLD%^~%^RESET%^]-> "
+    }),
+  "file" : "adm/obj/clone/user.c",
+  "locals" : ({ /* sizeof() == 3 */
+      "vt102",
+      80,
+      0
+    }),
+  "line" : 179,
+]),""prompt", "[%^BOLD%^~%^RESET%^]-> ", ","[%^BOLD%^~%^RESET%^]-> "
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("system","
+runtime: error: Check /log/errors/runtime for more information.
+")
+locals were: "vt102",80,0
+Error in error handler: *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+program: /adm/obj/clone/user.c, object: /adm/obj/clone/user#36, file: /adm/obj/clone/user.c:179
+'     <function>' in '          <function>' ('adm/obj/clone/user#36') 
+'     <function>' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:245
+arguments were ("tim")
+'       cmd_hook' in 'adm/obj/clone/shells/protosh.c' ('adm/obj/clone/shells/protosh#37') /adm/obj/clone/shells/protosh.c:524
+arguments were ("tim")
+locals were: 2841544
+'       cmd_hook' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:480
+arguments were ("tim")
+locals were: 2841544,cmd/wiz/dest
+'          _main' in 'obj/inherit/command.c' ('        cmd/wiz/dest') /obj/inherit/command.c:20
+arguments were (2786132)
+'           main' in '      cmd/wiz/dest.c' ('        cmd/wiz/dest') /cmd/wiz/dest.c:28
+arguments were ("tim")
+locals were: adm/obj/clone/user#36
+'          write' in 'adm/obj/daemon/simul_efun.c' ('adm/obj/daemon/simul_efun') /adm/obj/daemon/simul_efun/write.c:3
+arguments were (1984516)
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("write","You just destroyed Let Tim tell you how to win friends and influence people!
+")
+locals were: "vt102",80,0
+'  error_handler' in 'adm/obj/daemon/master.c' ('adm/obj/daemon/master') /adm/obj/daemon/master.c:174
+arguments were (2348384,0)
+locals were: 0,"/log/errors","
+[ERROR] *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+  time   : Tue Oct 15 23:09:02 1996
+  file   : adm/obj/clone/user.c:179
+  pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+  [TRACE]  size==8
+    file   : :0
+    pgm/obj: <function> (adm/obj/clone/user#36)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:245
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : <function> (             "tim", )
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/shells/protosh.c:524
+    pgm/obj: adm/obj/clone/shells/protosh.c (adm/obj/clone/shells/protosh#37)
+    func   : cmd_hook (             "tim", )
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:480
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : cmd_hook (             "tim", )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (cmd/wiz/dest)
+    func   : _main (             2786132, )
+    ---------------------------------------------------------------------
+    file   : cmd/wiz/dest.c:28
+    pgm/obj: cmd/wiz/dest.c (cmd/wiz/dest)
+    func   : main (             "tim", )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/simul_efun/write.c:3
+    pgm/obj: adm/obj/daemon/simul_efun.c (adm/obj/daemon/simul_efun)
+    func   : write (             1984516, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:179
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : receive_message (             "write", "You just destroyed Let Tim tell you
+             how to win friends and influence people!", )
+    ---------------------------------------------------------------------
+",([ /* sizeof() == 7 */
+  "locals" : ({ /* sizeof() == 3 */
+      "vt102",
+      80,
+      0
+    }),
+  "program" : "adm/obj/clone/user.c",
+  "function" : "receive_message",
+  "object" : adm/obj/clone/user#36,
+  "arguments" : ({ /* sizeof() == 2 */
+      "write",
+      "You just destroyed Let Tim tell you how to win friends and influence people!
+"
+    }),
+  "file" : "adm/obj/clone/user.c",
+  "line" : 179,
+]),""write", "You just destroyed Let Tim tell you how to win friends and influence people!
+", ","You just destroyed Let Tim tell you how to win friends and influence people!
+"
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("system","
+runtime: error: Check /log/errors/runtime for more information.
+")
+locals were: "vt102",80,0
+Error in error handler: *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+program: /adm/obj/clone/user.c, object: /adm/obj/clone/user#36, file: /adm/obj/clone/user.c:179
+'   write_prompt' in 'adm/obj/clone/shells/protosh.c' ('adm/obj/clone/shells/protosh#37') /adm/obj/clone/shells/protosh.c:558
+arguments were ()
+locals were: 2348388,"~"
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("prompt","[%^BOLD%^~%^RESET%^]-> ")
+locals were: "vt102",80,0
+'  error_handler' in 'adm/obj/daemon/master.c' ('adm/obj/daemon/master') /adm/obj/daemon/master.c:174
+arguments were (2773728,0)
+locals were: 0,"/log/errors","
+[ERROR] *Bad argument 2 to terminal_colour()
+Expected: mapping Got: 0.
+  time   : Tue Oct 15 23:09:04 1996
+  file   : adm/obj/clone/user.c:179
+  pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+  [TRACE]  size==2
+    file   : adm/obj/clone/shells/protosh.c:558
+    pgm/obj: adm/obj/clone/shells/protosh.c (adm/obj/clone/shells/protosh#37)
+    func   : write_prompt ()
+    ---------------------------------------------------------------------
+    file   : adm/obj/clone/user.c:179
+    pgm/obj: adm/obj/clone/user.c (adm/obj/clone/user#36)
+    func   : receive_message (             "prompt", "[%^BOLD%^~%^RESET%^]-> ", )
+    ---------------------------------------------------------------------
+",([ /* sizeof() == 7 */
+  "program" : "adm/obj/clone/user.c",
+  "function" : "receive_message",
+  "object" : adm/obj/clone/user#36,
+  "locals" : ({ /* sizeof() == 3 */
+      "vt102",
+      80,
+      0
+    }),
+  "arguments" : ({ /* sizeof() == 2 */
+      "prompt",
+      "[%^BOLD%^~%^RESET%^]-> "
+    }),
+  "file" : "adm/obj/clone/user.c",
+  "line" : 179,
+]),""prompt", "[%^BOLD%^~%^RESET%^]-> ", ","[%^BOLD%^~%^RESET%^]-> "
+'receive_message' in 'adm/obj/clone/user.c' ('adm/obj/clone/user#36') /adm/obj/clone/user.c:179
+arguments were ("system","
+runtime: error: Check /log/errors/runtime for more information.
+")
+locals were: "vt102",80,0

@@ -219,6 +219,12 @@ string GetMudName(string mud) {
     else return uc[x];
 }
 
+int GetMudState(string mud) {
+  if( !MudList->List[mud] )
+    return 0;
+  return MudList->List[mud][0];
+}
+
 mapping GetMudList() { return copy(MudList->List); }
 
 string *GetMuds() { return keys(MudList->List); }

@@ -2148,3 +2148,54 @@ Mon Sep  9 06:22:09 1996: evWrite(6, ({ /* sizeof() == 2 */
   "Dysfunctional Mud"
 }))
 Mon Sep  9 06:22:09 1996: Socket fd=(6) closed.
+Mon Oct 14 04:32:13 1996: OOBBegin: connecting: mud=Lima Bean
+Mon Oct 14 04:32:17 1996: evWrite(5, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  1,
+  1328971897
+}))
+Mon Oct 14 04:32:17 1996: evRead(5, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Lima Bean",
+  0,
+  0
+}))
+Mon Oct 14 04:32:17 1996: evSndPkts(5, Lima Bean)
+Mon Oct 14 04:32:17 1996: evWrite(5, ({ /* sizeof() == 9 */
+  "mail",
+  0,
+  "Kyricc",
+  ([ /* sizeof() == 1 */
+    "Lima Bean" : ({ /* sizeof() == 1 */
+        "satan"
+      }),
+  ]),
+  ([ ]),
+  ({ }),
+  845285533,
+  "I3 stuff",
+  "I see you havn't been on for quite a while.  Still waiting for that
+I3 for CircleMUD stuff...  Hope I'm not bugging you too much about
+it...just kinda excited about implementing it.  Talk to ya laterz..
+ 
+Kyricc@Dysfunctional MUD
+"
+}))
+Mon Oct 14 04:32:17 1996: evRead(5, ({ /* sizeof() == 2 */
+  "mail-ack",
+  ([ /* sizeof() == 1 */
+    0 : ({ }),
+  ])
+}))
+Mon Oct 14 04:32:19 1996: evSndPkts(5, Lima Bean)
+Mon Oct 14 04:32:19 1996: evWrite(5, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Mon Oct 14 04:32:19 1996: evRead(5, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Lima Bean"
+}))
+Mon Oct 14 04:32:19 1996: evRcvOOBEnd(5, Lima Bean)(client)
+Mon Oct 14 04:32:19 1996: Socket fd=(5) closed.

@@ -3,6 +3,8 @@
 #ifndef _TYPE_H
 #define _TYPE_H
 
+#undef  OBJECT
+
 #define INT             "int"
 #define STRING  	"string"
 #define ARRAY   	"array"

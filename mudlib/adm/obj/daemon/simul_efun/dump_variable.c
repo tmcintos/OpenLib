@@ -6,7 +6,6 @@
 // 09/16/95  Tim McIntosh: fixed the sprintf statement so it'll do a mapping
 //           containing arrays or other mappings.
 
-#undef OBJECT
 #include <type.h>
 
 string

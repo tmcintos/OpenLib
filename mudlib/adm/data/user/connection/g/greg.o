@@ -1,12 +1,12 @@
-#/obj/clone/connection.c
+#/adm/obj/clone/connection.c
 name "greg"
 cap_name "GreG"
 password "xEb1eHLxfmE9U"
 real_name "Nowhere MAN"
 email_addr "astasia@iastate.edu"
-body "/obj/clone/user"
-login_shell "/obj/clone/shells/nmsh"
+body "/adm/obj/clone/user"
+login_shell "/adm/obj/clone/shells/nmsh"
 gender 0
-login_time 842000579
-logout_time 842000892
-login_from "localhost"
+login_time 843445015
+logout_time 843449533
+login_from "loopback"

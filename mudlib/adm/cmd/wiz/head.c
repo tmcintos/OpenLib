@@ -11,7 +11,7 @@ main(string file)
 
   file = RESOLVE_PATH(file);
 
-  if (!cat(file, 1, 18))
+  if (!cat(file, 1, 20))
     return notify_fail("head: file does not exists or isn't readable.\n");
 
   return 1;

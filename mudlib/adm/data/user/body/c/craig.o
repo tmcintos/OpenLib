@@ -1,15 +1,21 @@
-#obj/clone/user/human.c
+#/obj/clone/user/human.c
+morestring "/doc/man/man4/create.4: (%d%%) %s"
+callback 0
+redraw 
+s_length 24
+start 24
+prev 1
+length 33
+file "/doc/man/man4/create.4"
+in_help 0
+no_clean 0
 flags ({})
 coins ({150,112,})
 hit_points 4
 spell_points 0
-gender 0
-slen 24
-swid 80
-curr_line 1
-lines 23
-file ({"Welcome to Dysfunctional Mud!","-------------------------------------------------------------------------------","                D y s f u n c t i o n a l  M u d  N e w s","			last update: 04/16/96","-------------------------------------------------------------------------------","* Please send mail to Tim if you want to become a developer.  Additionally,","  all developers should join the mailing list by sending mail to","  majordomo@knapp38.res.iastate.edu with the string 'subscribe dysfunctional'","  in the body of the letter.","","* If you want to take on a project or have any new project ideas, send mail to","  Tim.","","* The bulletin board object is progressing, so we should have boards soon. :)","","* There is now a 'changelog' command which appends an entry to the ChangeLog","  file in the current working directory.","","* Changed ls command back to take -c flag for color.  Alias ls to ls -c if","  you want color support on all the time.","","","",})
-callback 
-env_vars (["TERM":"vt100","version":"Prototype Shell","LENGTH":24,"SHELL":"/obj/clone/shells/protosh","WIDTH":80,"PATH":"/cmd/player:/adm/cmd/player:/cmd/wiz:/adm/cmd/wiz:/cmd/adm:/adm/cmd/adm",])
-aliases (["ne":"northeast","w":"west","n":"north","nw":"northwest","se":"southeast","e":"east","sc":"score","i":"inventory","sw":"southwest","l":"look","s":"south",])
+str 0
+agil 0
+skills 0
+env_vars (["SHELL":"/obj/clone/shells/protosh","nmsh_xverb":([":":"emote $*","'":"say $*",]),"LENGTH":24,"WIDTH":80,"nmsh_alias":(["se":"southeast","sw":"southwest","exa":"look at $*","l":"look $*","e":"east","u":"up","w":"west","ne":"northeast","s":"south","d":"down","i":"inventory","n":"north","bio":"biography","nw":"northwest",]),"TERM":"vt100","nmsh_nick":([]),"PATH":"/cmd/player:/adm/cmd/player:/cmd/wiz:/adm/cmd/wiz:/cmd/adm:/adm/cmd/adm","version":"Prototype Shell",])
+aliases (["se":"southeast","sw":"southwest","l":"look","sc":"score","e":"east","w":"west","ne":"northeast","s":"south","i":"inventory","n":"north","nw":"northwest",])
 channels ({})

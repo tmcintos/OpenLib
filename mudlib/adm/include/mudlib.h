@@ -5,9 +5,10 @@
 
 #include <dirs.h>
 
+// Conflict with type.h
+#undef OBJECT
+
 // Objects
-#define CONNECTION_OB CLONE_DIR "/connection"
-#define USER_OB      CLONE_DIR "/user"             // default user body
 #define MASTER_OB    SECURE_DAEMON_DIR "/master"
 #define SIMUL_EFUN   SECURE_DAEMON_DIR "/simul_efun"
 #define VOID_OB      SECURE_DAEMON_DIR "/void"

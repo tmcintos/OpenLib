@@ -1,4 +1,5 @@
 <PRE>
+-termcap: rewrote daemon from scratch to get rid of proprietary code (Tim)
 -move /data/user directory to /adm/data/user (Tim)
 -fixed fingerd (Tim)
 -combat daemon (Casper)

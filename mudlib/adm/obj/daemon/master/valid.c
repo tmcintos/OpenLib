@@ -2,6 +2,7 @@
 // valid.c:  included by master.c
 /* security -- whole thing */
 // separated out from master.c to reduce the complexity a bit.
+#include <daemons.h>
 
 int
 valid_shadow(object ob)
@@ -65,14 +66,15 @@ valid_socket(object eff_user, string fun, mixed *info)
 
 int
 valid_write(string file, mixed user, string func)
-{ 
-  if( !check_priv(SECURITY_D->get_file_protection(file, 0)) ) {
-    unguarded((: log_file("fail", sprintf("v_w: file=%s, user=%O, func=%s\n",
-					  $(file), $(user), $(func))) :), 1);
-    return notify_fail(file + ": Insufficient privilege.\n");
-  }
-  else
+{
+  if( func == "save_object" && SAVE_D->valid_save(user) )
     return 1;
+  else if( check_priv(SECURITY_D->get_file_protection(file, 0)) )
+    return 1;
+
+  unguarded((: log_file, "fail", sprintf("v_w: file=%s, user=%O, func=%s\n",
+					 file, user, func) :), 1);
+  return notify_fail(file + ": Insufficient privilege.\n");
 }
 
 // valid_read:  called exactly the same as valid_write()
@@ -80,13 +82,14 @@ valid_write(string file, mixed user, string func)
 int
 valid_read(string file, mixed user, string func)
 {
-  if( !check_priv(SECURITY_D->get_file_protection(file, 1)) ) {
-    unguarded((: log_file("fail", sprintf("v_r: file=%s, user=%O, func=%s\n",
-					  $(file), $(user), $(func))) :), 1);
-    return notify_fail(file + ": Insufficient privilege.\n");
-  }
-  else
+  if( func == "restore_object" && SAVE_D->valid_restore(user) )
     return 1;
+  else if( check_priv(SECURITY_D->get_file_protection(file, 1)) )
+    return 1;
+  
+  unguarded((: log_file, "fail", sprintf("v_r: file=%s, user=%O, func=%s\n",
+					 file, user, func) :), 1);
+  return notify_fail(file + ": Insufficient privilege.\n");
 }
 
 int

@@ -5,7 +5,8 @@
 mixed
 eval()
 {
-  function f = function() { object me = this_player(); return me->set_short(0); };
+  function f = function() { object me = this_player(); return read_file("/README", 0, 1); };
+  mixed priv = (this_interactive() ? query_privs(this_interactive()) : 0);
 
-  return unguarded(f, query_privs(this_interactive()));
+  return unguarded(f, priv);
 }

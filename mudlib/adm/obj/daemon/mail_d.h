@@ -21,6 +21,10 @@
 //         o Changed to use more() when displaying things
 //         o Added 'save' command, changed behavior of pressing <enter>
 //         o Bumped version to 3.0 to reflect these changes.
+// 09.20.96  Tim@Dysfunctional Mud
+//         o Changed to use unguarded() when loading/saving mailboxes
+//           to implement security.
+//         o Bumped version to 3.1 to reflect changes.
 //          
 
 #include <mudlib.h>
@@ -28,7 +32,7 @@
 
 // Major version number changes when new features are added; minor version
 // number changes with bug fixes and implementation changes.
-#define VERSION "3.0"
+#define VERSION "3.1"
 
 // Path to your mailbox object (UltraLib defines this in mudlib.h)
 // #define MAILBOX "/adm/obj/clone/mailbox"

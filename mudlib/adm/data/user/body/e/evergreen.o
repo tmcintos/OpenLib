@@ -1,17 +1,21 @@
-#/obj/clone/user/human.c
-callback 0
+#/adm/obj/clone/user.c
+morestring "%%^INVERSE%%^--MORE--%%^RESET%%^ (%d%%) %s"
+callback 
 redraw 
 s_length 24
-start 346
-prev 346
-length 361
-file "/obj/daemon/combat_d.c"
+start 70
+prev 47
+length 51
+file ({"!!! Failed to load your body!!  Loading default body.","!!! Please notify an Admin.","!!! Failed to load your shell!!  Loading default shell.","!!! Please notify an Admin.","login_d: 'vt220' is not a supported terminal type.","         Using 'default' as default terminal type.","Welcome to Dysfunctional Mud!","-------------------------------------------------------------------------------","                D y s f u n c t i o n a l  M u d  N e w s","			last update: 09/05/96","-------------------------------------------------------------------------------","* Any mail for the mud can be sent to the following addresses:","      rockford@novia.net, astasia@iastate.edu (Tim)","      kyricc@inetnebr.com (Kyricc)","","* I am working on a new FTP server for the mud.  Right now you should be able","  to get and put files in both ASCII and BINARY mode.  Try it out if you get","  a chance and report any bugs to me.  (port: 4443) --Tim","","* Check out my ~tim/TODO list for things that need to be done.  New items are","  usually added to the bottom of the list.","","* SECURITY stuff is mostly in place.  I've noticed problem already having to","  do with callbacks from high privilege objects.  Quint, Ev and Tim should","  have priv 1 access and everyone else should not right now.  Use the command","  'lswiz' to get a list of wizards, and 'lsdom' for a list of domains.  Please","  report any bugs in the system to me (Tim).  DOCUMENTATION can be found in","  the file /doc/mudlib/systems/security--This is the original documentation","  on which the system is based.  Better documentation later hopefully. :)","","* CHAT command:  I changed the syntax...you don't need a ':' anymore. -Tim","","* Changed it so default for more() is to exit when done paging.  setenv","  MORE_NO_EXIT_END to change this.  (this is opposite of before) -Tim","","* TERMINAL TYPES: Once again supported properly..although few are supported.","  **hint, hint--project idea**  If your terminal type is unknown, it will","  default to \"default\" which does nothing.  If you set the environment variable","  DEFAULT_TERM to a value this will be used instead. -Tim","  \"ansi\" or \"vt102\" are probably the coolest if you support them. (setenv)","","* MAIL has been bumped up to v3.0  A few small things have changed like","  deletions which are now marked as deleted and aren't committed until the","  mailbox is saved.  See the online help in mail for more info.","","* PROBLEM:  How to let the players save their character (priv 0) while having","  a write protection=1 on the /adm/data directory so as to prevent others from","  modifying it.  Give me any ideas you\\'ve got. --Tim","","","",})
 in_help 0
 no_clean 0
 flags ({})
 coins ({0,0,})
 hit_points 100
 spell_points 0
-env_vars (["SHELL":"/obj/clone/shells/protosh","TITLE":"is testing","LENGTH":24,"WIDTH":80,"PATH":"/cmd/player:/adm/cmd/player:/cmd/wiz:/adm/cmd/wiz:/cmd/adm:/adm/cmd/adm","TERM":"xterm","PROMPT":"%//> ","version":"Prototype Shell",])
-aliases (["e":"east","i":"inventory","nw":"northwest","ne":"northeast","w":"west","s":"south","n":"north","sc":"score","l":"look","se":"southeast","sw":"southwest",])
+str 0
+agil 0
+skills 0
+env_vars (["TITLE":"is testing","LENGTH":24,"nmsh_xverb":([":":"emote $*","'":"say $*",]),"WIDTH":80,"nmsh_alias":(["sw":"southwest","bio":"biography","i":"inventory","ne":"northeast","e":"east","se":"southeast","nw":"northwest","u":"up","l":"look $*","w":"west","d":"down","n":"north","exa":"look at $*","s":"south",]),"PATH":"/cmd/player:/adm/cmd/player:/cmd/wiz:/adm/cmd/wiz:/cmd/adm:/adm/cmd/adm","nmsh_nick":([]),"PROMPT":"%//> ","version":"Prototype Shell","TERM":"default","SHELL":"/obj/clone/shells/protosh","DEFAULT_TERM":"vt102",])
+aliases (["sw":"southwest","l":"look","w":"west","i":"inventory","n":"north","s":"south","sc":"score","ne":"northeast","se":"southeast","e":"east","nw":"northwest",])
 channels ({})

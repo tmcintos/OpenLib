@@ -5,12 +5,11 @@
 //   Based on security concept by Reimer Behrends
 //   (behrends@buran.fb10.tu-berlin.de) described in document "LIMA MUDLIB
 //   SECURITY" on Lima Bean homepage (http://lima.imaginary.com/security.html).
-
+//
 // todo: 
 //       valid_* funcs called from master (read, write, etc)
-//       work on privs_file() master apply
 //       efun files--clean them up, write more code
-//       verify file protection, clean up check_privilege
+//       verify file protection
 //       verify that everything works correctly--robustness, make sure you
 //         can't break it by passing weird values. (also warning msgs etc.)
 //       insert unguarded() calls into the proper objects.
@@ -41,6 +40,7 @@ nomask string privs_file(string filename);
  */
 private static object unguarded_ob;
 private static mixed  unguarded_priv;
+
 /*
  * mapping of absolute paths (beginning with '/') to protections
  */
@@ -114,6 +114,8 @@ create()
 			USER_DIR   : save_variable(0),      // temporary!
 		      ]);
   read_protections = ([]);
+  unguarded_ob = 0;
+  unguarded_priv = 0;
 
   unguarded((: restore_object( SAVE_FILE, 1 ) :), 1);
 }
@@ -293,30 +295,37 @@ is_greater(mixed p1, mixed p2)
   return 0;
 }
 
-/*
- * this_object() is always popped off the top of the stack first (not checked)
- * 'skip' tells how many other objects to pop off the stack before checking.
- */
+//
+// this_object() is always popped off the top of the stack first (not checked)
+// 'skip' tells how many other objects to pop off the stack before checking.
+// (i.e. how many objects do we assume are secure)
+//
+
 nomask int
 check_privilege(mixed priv, int skip)
 {
-  object* stack = call_stack(1);
-  string* funcs = call_stack(2);
+  object* stack = call_stack(1);        // objects
+  string* funcs = call_stack(2);        // function names
 
-//  message("none", dump_variable(stack), find_player("tim"));
-
-  for(int i = skip + 1; i < sizeof(stack); i++) {
+  for( int i = skip + 1; i < sizeof(stack); i++ )
+  {
     mixed ob_priv;
     int stop;
 
     if( !stack[i] )
       error("Object in call stack was destructed.\n");
 
+    //
+    // We have to assume the master and simul_efun are secure
+    //
     if( stack[i] == master() || stack[i] == simul_efun() )
       continue;
 
     ob_priv = query_privs(stack[i]);
 
+    //
+    // We can assume the security_d is secure, hopefully :)
+    //
     if( stack[i] == this_object() ) {
       if( funcs[i] == "eval_unguarded" ) {
 	ob_priv = unguarded_priv;
@@ -325,47 +334,47 @@ check_privilege(mixed priv, int skip)
 	continue;
     }
 
-//    if(find_player("tim"))
-//    message("none", sprintf("%O (%s) ==> %O\n", stack[i], funcs[i], ob_priv),
-//	    find_player("tim"));
+    if( !is_greater(ob_priv, priv) && !is_opened(priv, ob_priv) )
+      return 0;      // Failure
 
-    if( !is_greater(ob_priv, priv) && !is_opened(priv, ob_priv) ) {
-//      message("none", "is_greater() failed, returning 0\n", find_player("tim"));
-      return 0;
-    }
-    if( stop ) {
-//      message("none", "--would stop here--\n", find_player("tim"));
-      break;
-    }
+    if( stop )
+      break;         // caught an unguarded() call so we stop checking here
   }
-//      message("none", "checked ok, returning 1\n", find_player("tim"));
-  return 1;
+  return 1;          // Success
 }
+
+//
+// eval_unguarded() - the only way to execute something above your priv level
+//
+// The workings of this are complicated when you consider nested calls
+// to it.
+//
 
 nomask mixed
 eval_unguarded(function code, mixed priv)
 {
   object tmp_ob = unguarded_ob;
   mixed ret, tmp_priv = unguarded_priv;
-  mixed ob_priv = query_privs(previous_object(1));
+  mixed ob_priv = (previous_object(1) == unguarded_ob ? unguarded_priv :
+		   query_privs(previous_object(1)));
   string err;
 
   if( previous_object() != simul_efun() )
     error("Illegal call to eval_unguarded()");
-
+  
+//  if( this_player() ) printf("priv_level=%O\n", ob_priv);
   /*
    * This has to be done this way since 1 always tests higher.
    * (even against itself)
    * Similar special case for 0.
    */
   if( priv != ob_priv &&
-      is_greater(priv, ob_priv) &&
-      !is_greater(ob_priv, priv) )
+      !is_greater(ob_priv, priv) && !is_opened(priv, ob_priv) )
     error("Cannot set privilege level higher than object calling unguarded");
-
+  
   unguarded_ob = previous_object(1);
   unguarded_priv = priv;
-  err = catch(ret = evaluate(code));
+  err = catch(ret = evaluate(code));   // execute the code
   unguarded_ob = tmp_ob;
   unguarded_priv = tmp_priv;
 
@@ -844,7 +853,7 @@ get_file_protection(string fname, int read)
 
     // This makes sure that this loop will terminate
     // On read we default to 0, write to 1
-    if( !idx )
+    if( idx < 1 )
       return (read ? 0 : 1);
 
     fname = fname[0..idx-1];

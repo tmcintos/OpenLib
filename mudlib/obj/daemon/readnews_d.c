@@ -1,5 +1,29 @@
 /*  -*- LPC -*-  */
+// readnews_d.c:  Provides a user interface to NEWS_D
+//
+// Copyright (C) 1996 Tim McIntosh (tmcintos@dm.imaginary.com)
+//
+// This program is part of the OpenLib Mudlib distribution; it
+// is free software; you can redistribute it and/or modify it
+// under the terms of the GNU General Public License as published
+// by the Free Software Foundation; either version 2 of the License,
+// or (at your option) any later version.
+// 
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+// 
+// If you acquired this program as part of the OpenLib Mudlib
+// distribution, you should have received a copy of the GNU
+// General Public License in the file /doc/GPL; if not,
+// write to the Free Software Foundation, Inc., 675 Mass Ave,
+// Cambridge, MA 02139, USA.
+//
+
 #include <daemons.h>
+#include "readnews_d.h"
+
 
 int
 max(int i1, int i2)
@@ -161,84 +185,290 @@ max_in_list(string list)
   return max;
 }
 
-// User cmd
-// Gets the user's newsrc and figures out how to read the specified group
-#if 1
-void
-read_group(string newsgroup, mapping newsrc)
-{
-  int* info = NEWSSERVER->get_group_info(newsgroup);
 
-  if( !info ||  !NEWSSERVER->can_access_group(newsgroup, this_player()) )
+// user command
+varargs int
+read_news(mapping newsrc, function call_back)
+{
+  class reader r = new(class reader);
+  
+  if( !newsrc )
+  {
+    mixed* groups = NEWSSERVER->get_group_list();
+
+    message("system", "Setting up your newsrc...\n", this_player());
+
+    newsrc = ([ ]);
+    
+    foreach(mixed* ginfo in groups)
+    {
+      newsrc[ginfo[0]] = "";
+    }
+  }
+
+  r->cb = call_back;
+  r->newsrc = newsrc;
+  r->touched = ([ ]);
+  r->group = "";  // this is important to select_thread()
+  
+  prompt_group(r);
+  return 1;
+}
+
+
+varargs int
+read_one_group(string newsgroup, mapping newsrc, function call_back)
+{
+  class reader r = new(class reader);
+
+  r->cb = call_back;
+  r->newsrc = newsrc;
+  r->group = newsgroup;
+  read_group(r);
+
+  return 1;
+}
+
+
+// prompt the user to see if they want to read the next group
+
+void
+prompt_group(class reader r)
+{
+  string* list = keys(r->newsrc);
+
+  r->prev_group = r->group;
+  
+  while( sizeof(list) && r->touched[r->group = list[0]] )
+  {
+    list = list[1..];
+  }
+  
+  if( !sizeof(list) )
+  {
+    message("system", "End of newsgroups.\n", this_player());
+    return evaluate(r->cb, r->newsrc);
+  }
+
+  r->touched[r->group] = 1;
+  
+  message("system", sprintf("Enter group %s? [ynpusgq]: ", r->group),
+	  this_player());
+  get_char("select_group", 0, r);
+}
+
+
+// process input from prompt_group()
+
+void
+select_group(string input, class reader r)
+{
+  message("system", "\n", this_player());
+  
+  switch(input[0])
+  {
+  case 'y':
+    return read_group(r);
+  case 'n':
+    return prompt_group(r);
+  case 'p':
+    r->group = r->prev_group;
+    return read_group(r);
+  case 'u':
+    map_delete(r->newsrc, r->group);
+    message("system", "Unsubscribed.\n", this_player());
+    return prompt_group(r);
+  case 's':
+    message("system", "Group to subscribe to: ", this_player());
+    input_to("subscribe", 0, r);
+    return;
+  case 'g':
+    message("system", "Go to group: ", this_player());
+    input_to("goto", 0, r);
+    return;
+  case 'q':
+    return evaluate(r->cb, r->newsrc);
+  default:
+    message("system", sprintf("Enter group %s? [ynpq]: ", r->group),
+	    this_player());
+    get_char("select_group", 0, r);
+  }
+}
+
+
+void
+subscribe(string group, class reader r)
+{
+  if( NEWSSERVER->get_group_info(group) )
+  {
+    r->newsrc[group] = "";
+    r->group = group;
+    message("system", "Subscribed.\n", this_player());
+    return read_group(r);
+  }
+  else
+  {
+    string msg = query_notify_fail();
+
+    if( !msg )
+      msg = "No such group.\n";
+    
+    message("system", msg, this_player());
+    message("system", sprintf("Enter group %s? [ynpusgq]: ", r->group),
+	    this_player());
+    get_char("select_group", 0, r);
+  }
+}
+
+
+void
+goto(string group, class reader r)
+{
+  if( !r->newsrc[group] )
+  {
+    message("system", "You are not subscribed!\n", this_player());
+    message("system", sprintf("Enter group %s? [ynpusgq]: ", r->group),
+	    this_player());
+    get_char("select_group", 0, r);
+  }
+  else
+  {
+    r->group = group;
+    return read_group(r);
+  }
+}
+
+    
+// figures out how to read the specified group
+
+void
+read_group(class reader r)
+{
+  r->info = NEWSSERVER->get_group_info(r->group);
+
+  if( !r->info ||  !NEWSSERVER->can_access_group(r->group, this_player()) )
   {
     message("system", "You cannot access that group.\n", this_player());
-    return;
+    return evaluate(r->cb, r->newsrc);
   }
+  
+  if( undefinedp(r->newsrc[r->group]) )
+    r->newsrc[r->group] = "";
+
+  r->threads = NEWSSERVER->get_threads(r->group);
 
   // Get newsrc entry up-to-date
-  if( info[0] != 1 )
-    newsrc[newsgroup] = condense_list("1-"+ info[0] +","+ newsrc[newsgroup]);
-
-  
+  if( r->info[0] != 1 )
+    r->newsrc[r->group] = condense_list("1-"+ r->info[0] +
+					"," + r->newsrc[r->group]);
+  prompt_thread(r);
 }
+
+
+// Prompt the user to see if they want to read the next thread
 
 void
-read_loop(string newsgroup, int* info, int current_post, string input)
+prompt_thread(class reader r)
 {
-  if( input != "q")
-    display(sprintf("%%^INVERSE%%^%s #%d %%^RESET%%^[npq]: ",
-		    newsgroup, current_post));
-
-  switch(input) {
-  case "":
-    break;
-  case "q":
-    return main_loop("");
-  case "n":
+  if( !sizeof(r->threads) )
   {
-    mixed* post;
-
-    display("%^CLS%^");
-    while( !post && current_post < info[2] )
-    {
-      post = NEWSSERVER->get_post(newsgroup, ++current_post);
-    }
-
-    if( !post )
-    {
-      display("No more messages.\n");
-      display(sprintf("%%^INVERSE%%^%s #%d %%^RESET%%^[npq]: ",
-		      newsgroup, current_post));
-      break;
-    }
-
-    this_player()->more(format_post(post),
-			(: read_loop, newsgroup, info, current_post, "" :));
-    return;
+    message("system", "No more threads.\n", this_player());
+    prompt_group(r);
   }
-  case "p":
+  else
   {
-    mixed* post;
-
-    display("%^CLS%^");
-    while( !post && current_post > 1 )
-    {
-      post = NEWSSERVER->get_post(newsgroup, --current_post);
-    }
-
-    if( !post )
-    {
-      display("No more messages.\n");
-      display(sprintf("%%^INVERSE%%^%s #%d %%^RESET%%^[npq]: ",
-		      newsgroup, current_post));
-      break;
-    }
-
-    this_player()->more(format_post(post),
-			(: read_loop, newsgroup, info, current_post, "" :));
-    return;
+    r->thread = r->threads[0];
+    r->threads = r->threads[1..];
+    message("system", sprintf("Read thread \"%s\"? [ynq]: ", r->thread),
+	    this_player());
+    input_to("select_thread", 0, r);
   }
-  }
-  input_to((: read_loop, newsgroup, info, current_post :));
 }
-#endif
+
+
+// process the input of prompt_thread()
+
+void
+select_thread(string input, class reader r)
+{
+  switch(input[0])
+  {
+  case 'y':
+    r->post = 0;
+    return prompt_message(r);
+  case 'n':
+    return prompt_thread(r);
+  case 'q':
+    if( r->prev_group )
+      return prompt_group(r); // this is how we tell if we're only readin 1 gp
+    else
+      return evaluate(r->cb, r->newsrc);
+  default:
+    message("system", sprintf("Read thread \"%s\"? [ynq]: ", r->thread),
+	    this_player());
+    input_to("select_thread", 0, r);
+  }
+}
+
+
+// prompt the user to see if they want to read the next message in the 
+// current thread
+
+void
+prompt_message(class reader r)
+{
+  mixed* post;
+  int*   list = expand_list(r->newsrc[r->group]);
+
+  // Skip non-existent and already-read posts
+  while( !(post = NEWSSERVER->get_post(r->group, ++r->post)) ||
+         member_array(r->post, list) != -1 )
+  {
+    if( r->post > r->info[1] /* last id */ )
+    {
+      message("system", "End of thread.\n", this_player());
+      return prompt_thread(r);
+    }
+  }
+
+  message("system", sprintf("Read article \"%s\"? [ynprq]: ", post[2]),
+	  this_player());
+  input_to("select_message", 0, r, post);
+}
+
+
+// process input from prompt_message()
+
+void
+select_message(string input, class reader r, mixed* post)
+{
+  switch(input[0])
+  {
+  case 'y':
+    r->newsrc[r->group] = condense_list(r->newsrc[r->group] + "," + r->post);
+					   
+    r->prev_post = post;
+    this_player()->more(({ "Date: " + ctime(post[0]), "From: " + post[3],
+			   "Subject: " + post[2] }) + explode(post[4], "\n"),
+			(: prompt_message, r :));
+    break;
+  case 'n':
+    return prompt_message(r);
+  case 'p':
+    post = r->prev_post;
+    this_player()->more(({ "Date: " + post[0], "From: " + post[3],
+			   "Subject: " + post[2] }) + explode(post[4], "\n"),
+			(: prompt_message, r :));
+    break;
+  case 'r':
+    message("system", "Reply not implemented.\n", this_player());
+    /* create message with same thread */
+    break;
+  case 'q':
+    return prompt_thread(r);
+  default:
+    message("system", sprintf("Read article \"%s\"? [ynprq]: ", post[2]),
+	    this_player());
+    input_to("select_message", 0, r, post);
+  }
+}

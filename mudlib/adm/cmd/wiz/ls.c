@@ -24,7 +24,7 @@
 #include <cmdline.h>
 #include <daemons.h>
 
-void do_ls(string dir, int optl, int opta, int optc, int optd, int optF);
+int do_ls(string dir, int optl, int opta, int optc, int optd, int optF);
 void long_print_file(string dir, mixed* file);
 void short_format(string* files, string dir, int optc, int optF);
 int catch_dots(mixed file);
@@ -33,7 +33,7 @@ int
 main(string *argv, string *argv2)
 {
   int optc, optF, optl, opta, optd;
-  int i;
+  int i, ret;
 
   optF = flag("F");  // F flag marks loaded objects and dirs
   opta = flag("a");  // a flag lists all files including dot files
@@ -49,15 +49,17 @@ main(string *argv, string *argv2)
 
   // I did it this way to avoid the extra newline when only 1 arg is given
   for(i = 0; i < sizeof(argv2)-1; i++) {
-    do_ls(argv2[i], optl, opta, optc, optd, optF);
+    ret = do_ls(argv2[i], optl, opta, optc, optd, optF) || ret;
     write("\n");
   }
-  do_ls(argv2[i], optl, opta, optc, optd, optF);
+  ret = do_ls(argv2[i], optl, opta, optc, optd, optF) || ret;
 
-  return 1;
+  notify_fail("");
+  
+  return ret;
 }
 
-void
+int
 do_ls(string dir, int optl, int opta, int optc, int optd, int optF) {
   mixed* files;
   int is_dir;
@@ -85,7 +87,7 @@ do_ls(string dir, int optl, int opta, int optc, int optd, int optF) {
       long_print_file("", tmp);
     } else
       write(dir + "\n");
-    return;
+    return 1;
   }
     
   if(opta) {
@@ -99,6 +101,8 @@ do_ls(string dir, int optl, int opta, int optc, int optd, int optF) {
     map(files, (: long_print_file, dir :));
   else
     short_format(files, dir, optc, optF);
+
+  return 1;
 }
 
 void
@@ -153,19 +157,19 @@ short_format(string* files, string dir, int optc, int optF)
 	// 'c' flag:  tack on the perty colors
 	if(optc) {
 	  if(tmp_is_dir)
-	    files[j] = "%^L_BLUE%^" + files[j] +"%^RESET%^";
+	    files[j] = "%^BOLD%^%^BLUE%^" + files[j] +"%^RESET%^";
 	  else if(tmp_is_loaded)
-	    files[j] = "%^L_GREEN%^"+ files[j] +"%^RESET%^";
+	    files[j] = "%^BOLD%^%^GREEN%^"+ files[j] +"%^RESET%^";
 	  else {
 	    switch(files[j][<2..<1]) {
 	    case ".c":
-	      files[j] = "%^L_RED%^"+ files[j] +"%^RESET%^";
+	      files[j] = "%^BOLD%^%^RED%^"+ files[j] +"%^RESET%^";
 	      break;
 	    case ".h":
-	      files[j] = "%^L_YELLOW%^" + files[j] +"%^RESET%^";
+	      files[j] = "%^YELLOW%^" + files[j] +"%^RESET%^";
 	      break;
 	    case ".o":
-	      files[j] = "%^L_CYAN%^" + files[j] + "%^RESET%^";
+	      files[j] = "%^BOLD%^%^CYAN%^" + files[j] + "%^RESET%^";
 	      break;
 	    }
 	  }

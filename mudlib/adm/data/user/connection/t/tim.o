@@ -1,12 +1,12 @@
-#/obj/clone/connection.c
+#/adm/obj/clone/connection.c
 name "tim"
 cap_name 0
 password "TKpXEwZ9LKfG2"
 real_name "Tim McIntosh"
 email_addr "tmcintos@dm.imaginary.com"
-body "/obj/clone/user"
-login_shell "/obj/clone/shells/protosh"
+body "/adm/obj/clone/user"
+login_shell "/adm/obj/clone/shells/protosh"
 gender 1
-login_time 842296530
-logout_time 842033613
+login_time 845439148
+logout_time 845441415
 login_from "loopback"

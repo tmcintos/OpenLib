@@ -15,7 +15,7 @@ main(string verb)
   if(cmd)
     write(cmd + "\n");
   else
-    write(sprintf("which: %s: no such command.\n", verb));
+    return notify_fail(sprintf("which: %s: no such command.\n", verb));
 
   return 1;
 }

@@ -1,12 +1,12 @@
-#/obj/clone/connection.c
+#/adm/obj/clone/connection.c
 name "pel"
 cap_name "Pel"
-password "JAIUdQBB1md3E"
+password "hQcd1HE9bY9N."
 real_name "Paul Lange"
 email_addr "pel@mail.utexas.edu"
-body "/obj/clone/user/human"
-login_shell "/obj/clone/shells/nmsh"
+body "/adm/obj/clone/user"
+login_shell "/adm/obj/clone/shells/nmsh"
 gender 1
-login_time 841733269
-logout_time 841734634
-login_from "curly.cc.utexas.edu"
+login_time 845434484
+logout_time 845435105
+login_from "canis.ece.utexas.edu"

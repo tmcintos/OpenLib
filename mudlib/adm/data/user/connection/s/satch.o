@@ -1,4 +1,4 @@
-#/obj/clone/connection.c
+#/adm/obj/clone/connection.c
 name "satch"
 cap_name "Satch"
 password "WgHt1s/pCjAPI"
@@ -7,6 +7,6 @@ email_addr "satchriani@aol.com"
 body "/obj/clone/user/human"
 login_shell "/obj/clone/shells/nmsh"
 gender 1
-login_time 842125574
-logout_time 842125592
-login_from "axp.calumet.purdue.edu"
+login_time 845144444
+logout_time 845144458
+login_from "205.215.64.13"

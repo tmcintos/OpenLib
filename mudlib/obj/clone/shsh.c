@@ -665,7 +665,7 @@ static screen_length(string length) {
    MAX = 24; }
  
    else {
-   temp = atoi(length);
+   temp = to_int(length);
  
      if(!intp(temp) || temp < 1) {
      write("\n  Invalid shell screen length.\n");
@@ -873,7 +873,7 @@ static set_comm_size(string size) {
    temp = 5; }
  
    else {
-   temp = atoi(size);
+   temp = to_int(size);
  
      if(!intp(temp) || temp < 1) {
      write("\n  Invalid communication window size.\n");

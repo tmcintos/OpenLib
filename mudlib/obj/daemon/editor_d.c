@@ -1,11 +1,24 @@
-/*  -*- LPC -*-  */
-/*
- * QuickEditor 0.3T
- * Copyright 1996 Cameron Kaiser (Evergreen)
+/*  -*- LPC -*-
  *
- * Usage of this code is under the terms of the UltraLib license agreement.
- * You may freely modify and use this code, but you may not remove this
- * copyright message and you may not use it for profit.
+ * QuickEditor 0.3T
+ * Copyright (C) 1996 Cameron Kaiser (Evergreen) (ckaiser@ucsd.edu)
+ *
+ * This program is part of the OpenLib Mudlib distribution; it
+ * is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU General Public License as published
+ * by the Free Software Foundation; either version 2 of the License,
+ * or (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * If you acquired this program as part of the OpenLib Mudlib
+ * distribution, you should have received a copy of the GNU
+ * General Public License in the file /doc/GPL; if not,
+ * write to the Free Software Foundation, Inc., 675 Mass Ave,
+ * Cambridge, MA 02139, USA.
  *
  * Modified by Tim to use function pointers when OLD_MUDOS is _not_ defined.
  *     Also added VERSION define for ease of update.

@@ -206,6 +206,26 @@ get_post(string group, int id)
   }
 }
 
+string*
+get_threads(string group)
+{
+  class newsgroup theGroup = groups[group];
+
+  if( !theGroup )
+    return (mixed *) notify_fail("No such newsgroup.\n");
+
+  if( theGroup->domain &&
+      (!this_player() ||
+       (!adminp(this_player()) &&
+	!member_domain(this_player()->query_name(), theGroup->domain))) )
+    return (mixed *)notify_fail("Insufficient access to read newsgroup.\n");
+  else
+  {
+    return distinct_array(map(values(theGroup->posts),
+			      (: ((class post) $1)->thread :)));
+  }
+}
+
 // User cmd
 
 int*

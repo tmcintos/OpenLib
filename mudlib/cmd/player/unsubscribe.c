@@ -15,7 +15,8 @@ main(string str)
 
   this_player()->set_channels( this_player()->query_channels() - ({ str }) );
 
-  CHAT_D->remove_member(str, this_player());
+  if( CHAT_D->channel_exists(str) )
+    CHAT_D->remove_member(str, this_player());
 
   write("Unsubscribed.\n");
 

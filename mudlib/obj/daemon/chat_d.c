@@ -1,6 +1,27 @@
 /*  -*- LPC -*-  */
-// chatd.c
+// chatd.c:  Provides chat channels for players.
+//
+// Copyright (C) 1996 Tim McIntosh (tmcintos@dm.imaginary.com)
+//
+// This program is part of the OpenLib Mudlib distribution; it
+// is free software; you can redistribute it and/or modify it
+// under the terms of the GNU General Public License as published
+// by the Free Software Foundation; either version 2 of the License,
+// or (at your option) any later version.
+// 
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+// 
+// If you acquired this program as part of the OpenLib Mudlib
+// distribution, you should have received a copy of the GNU
+// General Public License in the file /doc/GPL; if not,
+// write to the Free Software Foundation, Inc., 675 Mass Ave,
+// Cambridge, MA 02139, USA.
+//
 // Originally written by Tim in fall 1995.
+//
 // 03/08/96   Tim@Dysfunctional Mud
 //          o fixed emote to work with I3; documented code somewhat;
 //          o took out query_channel_info() and replaced with
@@ -22,7 +43,7 @@
 inherit DAEMON;
 
 private mapping channels;
-private string* chanmap;   // even idx is local name; odd idx is remote name
+private mapping chanmap;
 
 void
 create()
@@ -30,7 +51,7 @@ create()
   daemon::create();
 
   channels = ([]);
-  chanmap = ({});
+  chanmap = ([]);
   restore_object(SAVE_CHAT_D, 1);
 
   foreach(string chan in keys(channels)) {
@@ -71,10 +92,19 @@ channel_exists(string name)
 void
 set_alias(string localname, string remotename)
 {
-  if(!archp(this_interactive())) return 0;
+  /* Check the sanity of this--Tim */
+  if( this_interactive() )
+  {
+    if( !archp(this_interactive()) )
+      return 0;
+  }
+  else
+  {
+    if( file_name(previous_object()) != SERVICES_D )
+      return 0;
+  }
   // more validity checks to do here
-
-  chanmap += ({ localname, remotename });
+  chanmap += ([ localname : remotename ]);	       
   save_object(SAVE_CHAT_D);
 }
 
@@ -86,8 +116,20 @@ add_channel(string name, string desc, int level, string guild)
 {
   class channel_info newchan;
 
-  if(!archp(this_interactive())) return 0;
-  if(channel_exists(name)) return 0;
+  /* Check the sanity of this--Tim */
+  if( this_interactive() )
+  {
+    if( !archp(this_interactive()) )
+      return 0;
+  }
+  else
+  {
+    if( file_name(previous_object()) != SERVICES_D )
+      return 0;
+  }
+  
+  if( channel_exists(name) )
+    return 0;
 
   newchan = new(class channel_info);
   newchan->desc = desc;
@@ -169,15 +211,15 @@ void
 show_channels()
 {
   write("[* means channel is an Intermud channel]\n");
-  printf("%-10s  %-45s  %-10s  %7s\n",
+  printf("%-20s  %-35s  %-10s  %7s\n",
 	 "Channel", "Description", "Guild", "Min Lvl");
-  printf("%-10s  %-45s  %-10s  %5s\n",
+  printf("%-20s  %-35s  %-10s  %5s\n",
 	 "-------", "-----------", "-----", "-----");
 
   foreach(string ch in sort_array(keys(channels), (: strcmp :))) {
     class channel_info info = channels[ch];
 
-    printf("%:-10s %c%:-45s  %:-10s  %:-3s\n",
+    printf("%:-20s %c%:-35s  %:-10s  %:-3s\n",
 	   ch, (ch == map_to_remote(ch) ? ' ' : '*'), info->desc,
 	   (info->guild ? (string) info->guild : "none"),
 	   (info->min_lvl != -1 ? (string) info->min_lvl : "n/a"));
@@ -206,7 +248,7 @@ broadcast_local(string ch, string who, string msg,
   if(!channels[ch])
     return;
 
-  mess = "%^L_BLUE%^[" + ch + "]%^RESET%^: ";
+  mess = "%^BOLD%^%^BLUE%^[" + ch + "]%^RESET%^: ";
   msg = replace_string(msg, "$N", who);
 
   if(emote) {
@@ -338,11 +380,8 @@ chat(string str)
 string
 map_to_local(string ch)
 {
-  int i = member_array(ch, chanmap);
-
-  if(i > 0 && i % 2) { /* Odd */
-    ch = chanmap[i-1];
-  }
+  foreach(string loc, string rem in chanmap)
+    if(rem == ch) return loc;
 
   return ch;
 }
@@ -353,11 +392,8 @@ map_to_local(string ch)
 string
 map_to_remote(string ch)
 {
-  int i = member_array(ch, chanmap);
-
-  if(i >= 0 && !(i % 2)) { /* Even */
-    ch = chanmap[i+1];
-  }
+  if( chanmap[ch] )
+    return chanmap[ch];
 
   return ch;
 }

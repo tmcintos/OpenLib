@@ -126,7 +126,7 @@ do_unwield(object weapon, int make_noise)
   }
   else
   {
-    if(hands_info & (j = pow(2,i+1)))
+    if(hands_info && (j = pow(2,i+1)))
       hands_info -= j;
     else
       hands_info -= j/2;
