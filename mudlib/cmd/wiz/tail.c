@@ -1,5 +1,7 @@
 /*  -*- LPC -*-  */
 // tail.c:  Tim McIntosh (astasia@iastate.edu)
+//
+// 04.13.96  Tim:  fixed to prevent tail'ing directories and typo in error msg
 
 #include <command.h>
 
@@ -11,8 +13,10 @@ main(string file)
 
   file = RESOLVE_PATH(file);
 
-  if (!tail(file))
-    return notify_fail("tail: file does not exists or isn't readable.\n");
+  if ( !file_exists(file) )
+    return notify_fail("tail: file does not exist.\n");
+  else
+    tail(file);
 
   return 1;
 }

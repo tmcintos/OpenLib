@@ -2,7 +2,6 @@
 // file: /daemon/master.c
 
 #include <mudlib.h>
-#include <uid.h>
 #include <daemons.h>
 
 #include "master/valid.c"      // all the valid_* functions
@@ -190,7 +189,7 @@ save_ed_setup(object who, int code)
   
   if (!intp(code)) return 0;
 
-  file = user_path(geteuid(who)) + ".edrc";
+  file = user_path(who->query_name()) + ".edrc";
   rm(file);
   return write_file(file, code + "");
 }
@@ -204,7 +203,7 @@ retrieve_ed_setup(object who)
   string file;
   int code;
   
-  file = user_path(geteuid(who)) + ".edrc";
+  file = user_path(who->query_name()) + ".edrc";
   if (file_size(file) <= 0) {
     return 0;
   }
@@ -230,19 +229,14 @@ string
 make_path_absolute(string file)
 {
   file = absolute_path((string)this_player()->query_cwd(), file);
-  return file;
+  return (string)call_other(SIMUL_EFUN, "absolute_path",
+			    this_player()->query_cwd(), file);
 }
 
 string
-get_root_uid()
+privs_file(string str)
 {
-  return ROOT_UID;
-}
-
-string
-get_bb_uid()
-{
-  return BACKBONE_UID;
+  return (string)call_other(SIMUL_EFUN, "privs_file", str);
 }
 
 string

@@ -93,7 +93,7 @@ digit_to_prefix(int i)
   case 3:
     return "thirty";
   case 4:
-    return "fourty";
+    return "forty";
   case 5:
     return "fifty";
   case 6:

@@ -1,23 +1,14 @@
 // -*- LPC -*- //
 // Coded by the local idiot Kyricc //
+//
+// 21 Apr 96 Tim updated with respect to new OBJECT::move() stuff
+// 22 Apr 96 Tim added replace program stuff for memory savings.
 
 #include <mudlib.h>
+
 inherit ROOM;
 
 object storeroom;                    // The storage room for this shop
-
-void
-init()
-{
-
-  ::init();
-
-  add_action("list", "list");
-  add_action("buy", "buy");
-  add_action("sell", "sell");
-  add_action("value", "value");
-
-}
 
 void
 create()
@@ -51,6 +42,25 @@ create()
   set_exits((["start"    : "/d/base/start.c",
 	      "backroom" : storeroom,                // Exit to the storeroom
 	      ]));
+
+  // This saves memory when a file inherits this one and then only defines
+  // a create() function and nothing else. (see manpage)
+  // This works because it doesn't replace until the current execution
+  // is complete.
+  if( replaceable(this_object()) )
+    replace_program(SHOP);
+}
+
+void
+init()
+{
+
+  ::init();
+
+  add_action("list", "list");
+  add_action("buy", "buy");
+  add_action("sell", "sell");
+  add_action("value", "value");
 
 }
 
@@ -92,10 +102,13 @@ buy(string item)
 
   money = ob->query_value();
 
-  if(!buyer->remove_money(money))
+  if( !buyer->remove_money(money) )
     return notify_fail("You don't have enough money!\n");
 
-  ob->move(this_player());
+  if( !(ob->move(buyer)) ) {
+    buyer->add_money(money);
+    return 0;  // move() sets the fail message
+  }
 
   write("You buy " + ob->short() + ".\n");
   tell_room(this_object(),
@@ -124,11 +137,12 @@ sell (string item)
 //*  back.
 
   if(!ob->drop())
-    return notify_fail("You can get rid of that!\n");
+    return notify_fail("You can't get rid of that!\n");
 
   money = ob->query_value();
 
-  seller->add_money(money);
+  if( !(seller->add_money(money)) )
+    return notify_fail("You can't carry that much money!!\n");
 
   ob->move(storeroom);
 

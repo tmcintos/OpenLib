@@ -1,5 +1,6 @@
 /*  -*- LPC -*-  */
 #include <cmdline.h>
+#include <daemons.h>
 
 int
 main(string *argv, string *argv2)
@@ -24,6 +25,7 @@ main(string *argv, string *argv2)
     }
     if(verbose) write(file + "\n");
     rm(file);
+//    SECURITY_D->unguarded( 1, (: rm($(file)) :) );
   }
 
   return 1;

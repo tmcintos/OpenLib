@@ -4,11 +4,12 @@
 // purpose:  an interactive object representing the player's body
 //           intended to interface with a shell to do command processing
 // Originally written by Tim 2/16/96
+//
+// 22 Apr 96  Tim:  added receive_snoop()
 
 #include <mudlib.h>
 #include <dirs.h>
 #include <login.h>
-#include <uid.h>
 #include <object_types.h>
 #include <daemons.h>
 #include <shells.h>
@@ -35,6 +36,7 @@ nomask void remove();
 void   write_prompt();
 void   write_ed_prompt(int mode);
 void   receive_message(string msgclass, string msg);
+void   receive_snoop(string msg);
 nomask void net_dead();
 nomask int  move_or_destruct(object dest);
 
@@ -102,7 +104,6 @@ void
 create()
 {
   living::create();
-  seteuid(0);                             // so logind can export_uid() to us
   channels = ({});
   aliases = ([]);
   env_vars = ([]);
@@ -142,6 +143,7 @@ void
 receive_message(string msgclass, string msg)
 {
   string ttype = env_vars["TERM"];
+  int width = env_vars["WIDTH"];
 
   if(!ttype) ttype = "dumb";
 
@@ -149,6 +151,13 @@ receive_message(string msgclass, string msg)
     msg = TERMCAP_D->termcap_format_line(msg, ttype);
 
   receive(msg);
+//  receive(break_string(msg, (width ? width : 80)));
+}
+
+void
+receive_snoop(string msg)
+{
+  receive_message("snoop", "%^L_RED%^] " + msg + "%^RESET%^");
 }
 
 nomask void
@@ -182,12 +191,11 @@ move_or_destruct(object dest)
 
 /*
  * Called from LOGIN_D once the player has successfully logged in and
- * the uid has been set.
+ * the privs have been set.
  */
 nomask void
 init_player(string username)
 {
-  seteuid(getuid(this_object()));
   set_name(username);              // static--won't get zeroed out
 
   restore_player();                // non-statics are not zeroed out
@@ -214,7 +222,7 @@ init_player(string username)
 nomask void
 reconnect()
 {
-  if(geteuid(previous_object()) != ROOT_UID) return;
+  /* security -- admin level */
 
   set_heart_beat(1);            // re-enable heartbeat
 
@@ -225,7 +233,7 @@ reconnect()
 nomask int
 set_cap_name(string capname)
 {
-  if(geteuid(previous_object()) != ROOT_UID) return 0;
+  /* security -- admin level */
 
   cap_name = capname;
 }
@@ -233,14 +241,14 @@ set_cap_name(string capname)
 nomask void
 set_channels(string* chans)
 {
-//  if(geteuid(previous_object()) != ROOT_UID) return;
+  /* security -- admin level */
   channels = copy(chans);
 }
 
 nomask int
 set_connection(object ob)
 {
-  if(geteuid(previous_object()) != ROOT_UID) return 0;
+  /* security -- admin level */
 
   connection = ob;
   return 1;
@@ -249,7 +257,7 @@ set_connection(object ob)
 nomask int
 force_me(string cmd)
 {
-  // if(geteuid(previous_object()) != ROOT_UID) return 0;
+  /* security -- admin level */
 
   return command(cmd);
 }
@@ -257,10 +265,14 @@ force_me(string cmd)
 int
 set_env(string var, mixed val)
 {
-  if(query_shadowing(previous_object()) != this_object() &&
-     getuid(previous_object()) != ROOT_UID) return 0;
+  /* security -- admin level */
+//  if(query_shadowing(previous_object()) != this_object()) return 0;
 
-  env_vars[var] = val;
+  if( !val )
+    map_delete(env_vars, var);
+  else
+    env_vars[var] = val;
+
   return 1;
 }
 
@@ -365,13 +377,13 @@ move_player(mixed dest, string dir)
   if(stringp(dest))
     sscanf(dest, "%s#%s", dir, dest);
 
-  if(move(dest) > 0) {
+  if( move(dest) > 0 ) {
     tell_room(from, sprintf("%s moves to the %s.\n", query_cap_name(), dir));
     say(sprintf("%s arrives.\n", query_cap_name()));
     command("look");
     return 1;
   }
-  return notify_fail("Move failed.\n");
+  return 0;
 }
 
 nomask object

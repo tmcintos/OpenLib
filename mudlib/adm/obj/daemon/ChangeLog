@@ -1,0 +1,8 @@
+Sat Apr 13 20:43:15 1996 (tmcintos@knapp38.res.iastate.edu (Tim))
+    * login_d.c:
+      . Changed to use defines in <login.h> for max/min username length.
+      . Added support for getting gender type during player setup.
+
+Tue Apr 16 23:38:18 1996 (tmcintos@knapp38.res.iastate.edu (Tim))
+    * master.c, login_d.c, master/valid.c:  Took out UID stuff.
+

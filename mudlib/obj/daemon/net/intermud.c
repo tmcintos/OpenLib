@@ -4,8 +4,9 @@
  *    daemon handling the InterMUD-3 Protocol
  *    created by Descartes of Borg 950506
  *
- *  10.23.95  Tim modified for this mudlib
- *  12.08.95  Tim added 'auth' support
+ *  10.23.95  Tim: modified for this mudlib
+ *  12.08.95  Tim: added 'auth' support
+ *  04.13.96  Tim: finally removed mudlist-req and chanlist-req
  */
 
 #ifndef __PACKAGE_SOCKETS__
@@ -59,7 +60,7 @@ static void Setup() {
     if( !Nameservers || !sizeof(Nameservers) ) return;
     sscanf(Nameservers[0][1], "%s %d", ip, port);
     if( eventCreateSocket(ip, port) < 0 ) return;
-    eventWrite( ({ "startup-req-2", 5, mud_name(), 0, Nameservers[0][0], 0,
+    eventWrite( ({ "startup-req-3", 5, mud_name(), 0, Nameservers[0][0], 0,
 		   Password, MudList->ID, ChannelList->ID, 0 /* mud_port() */,
 		   PORT_OOB, PORT_UDP, mudlib_name() + " " + mudlib_version(), 
 		   mudlib_name(), driver_version(), "LP", MUD_STATUS,
@@ -86,8 +87,6 @@ static void eventRead(mixed *packet) {
 	      Nameservers = packet[6];
 	      Connected = Nameservers[0][0];
 	      Password = packet[7];
-	      eventRequestMudList();
-	      eventRequestChannelList();
 	      save_object(SAVE_INTERMUD);
 	  }
 	  else {
@@ -178,22 +177,14 @@ static void eventRead(mixed *packet) {
 	case "oob-req":
 	  SERVICES_D->eventReceiveOOBRequest(packet);
 	  break;
+	case "ucache-update":
+	  SERVICES_D->eventReceiveUcacheUpdate(packet);
         case "error":
 	  SERVICES_D->eventReceiveError(packet);
 	  break;
         default:
 	  break;
     }
-}
-
-static void eventRequestMudList() {
-    eventWrite( ({ "mudlist-request", 5, mud_name(), 0, 
-		   Nameservers[0][0], 0, MudList->ID }) );
-}
-
-static void eventRequestChannelList() {
-    eventWrite( ({ "chanlist-req", 5, mud_name(), 0, Nameservers[0][0], 0,
-		   ChannelList->ID }) );
 }
 
 static void eventSocketClose() {

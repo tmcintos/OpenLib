@@ -31,7 +31,7 @@ killing.  It's blade is long, sharp, and carefuly polished,
 the ideal weapon for creating havoc in the world.
 ENDLONG);
 
-  set_ids(({"sword","long sword","longsword","weapon"}));
+  add_ids(({"sword","long sword","longsword","weapon"}));
   set_weight(8);                                 // 8 lbs.(?) --Tim
   set_value(({ 40, 0 }));                        // 40 silver, 0 gold --Tim
 }

@@ -1,26 +1,21 @@
 -------------------------------------------------------------------------------
                 D y s f u n c t i o n a l  M u d  N e w s
-			last update: 03/04/96
+			last update: 04/22/96
 -------------------------------------------------------------------------------
-New USER/SHELL couple is in place for testing.
-  The base for all bodies is /obj/clone/user.c.
+* Please send mail to Tim if you want to become a developer.  Additionally,
+  all developers should join the mailing list by sending mail to
+  majordomo@knapp38.res.iastate.edu with the string 'subscribe dysfunctional'
+  in the body of the letter.
 
-NOTE: I changed the setup so the shell shadows the user.
+* If you want to take on a project or have any new project ideas, send mail
+  to Tim.
 
-Everything should work (except for LPC expansion and one other thing) in
-protosh now.  Includes globbing, history, variables, aliases
+* The bulletin board object is progressing, so we should have boards soon. :)
 
-Check out /obj/clone/shells/protosh.doc for documentation on protosh.
-Not elegantly written but if you want that you can do it. :)
+* There is now a 'changelog' command which appends an entry to the ChangeLog
+  file in the current working directory.
 
-Shells in /obj/clone/shells:
-  nmsh --   port over of the nightmare shell. aliases, history, nicknames
-            Has various cmds for wizzes; cd, pwd, pushd, popd, scripting (nmsh)
-  protosh   Tim's experimental shell...basically just me messing around trying
-            to do various things: cd, set/unset, alias/unalias, history,
-            globbing, variable substitution, quoting...see the doc for it.
-  ssh --    Bare bones shell...doesn't really serve any purpose right now
-            but could be a user shell w/no features
-  rsh --    Restricted nmsh; I had to hardcode a few things since wizardp()
-            doesn't work yet to make it a user shell.  Only allows access to
-            user commands.
+* Changed ls command back to take -c flag for color.  Alias ls to ls -c if
+  you want color support on all the time.
+
+* Changed set_ids() to add_ids() in OBJECT. Make changes accordingly.

@@ -1,0 +1,35 @@
+// These are files using uid related stuff which needs to be removed
+// Marked with an 'X' means it's fixed, marked with an 'S' means it still
+// needs some form of security added.  Make sure to put a comment like
+// /* security -- <security level> */ wherever security should be placed
+// when fixing these.
+
+   ./obj/daemon/net/ftp_d.c
+X  ./obj/daemon/net/http_d.c
+XS ./obj/clone/user.c
+   ./obj/clone/tmsh.c
+XS ./obj/clone/connection.c
+   ./obj/clone/shsh.c
+X  ./obj/clone/mailbox.c
+   ./obj/clone/olduser.c
+X  ./obj/clone/shells/protosh.c
+X  ./obj/clone/shells/nmsh.c
+X  ./obj/clone/shells/rsh.c
+X  ./obj/inherit/daemon.c
+X  ./obj/inherit/object.c
+X  ./cmd/wiz/id.c
+XS ./adm/obj/daemon/master.c
+XS ./adm/obj/daemon/login_d.c
+./adm/obj/daemon/group_d.c
+XS ./adm/obj/daemon/master/valid.c
+X  ./adm/obj/daemon/cmd_d.c
+./adm/obj/daemon/master_old.c
+XS ./adm/simul_efun.c
+X  ./adm/cmd/wiz/eval.c
+XS ./adm/cmd/adm/su.c
+./u/g/greg/tmsh.shadowed.c
+./u/t/tim/newuser.c
+./u/t/tim/shellinh.c
+./u/e/evergreen/shellinh.c
+./u/e/evergreen/board_basis.c
+./room/oldroom.c

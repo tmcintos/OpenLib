@@ -4,7 +4,8 @@
  *    performs player lookups
  *    created by Descartes of Borg 950624
  *
- *  10.23.95  Tim changed to fit this mudlib
+ *  10.23.95  Tim: changed to fit this mudlib
+ *  04.12.96  Tim: Added version 3 protocol support
  */
 
 #define SERVICE_LOCATE
@@ -14,12 +15,22 @@
 
 void eventReceiveLocateRequest(mixed *packet) {
     object ob;
+    string sts;
 
     if( file_name(previous_object()) != INTERMUD_D ) return;
     if( !(ob = find_player(packet[6])) || !ob->short() ) return;
-    INTERMUD_D->eventWrite( ({ "locate-reply", 5, mud_name(), 0, packet[2], 
-			       packet[3], mud_name(), 
-			       (string)ob->query_cap_name() }) );
+    if( !(sts = (string) ob->query_user_status()) ) sts = "unknown";
+    INTERMUD_D->eventWrite( ({ "locate-reply",
+			       5,
+			       mud_name(),
+			       0,
+			       packet[2], 
+			       packet[3],
+			       mud_name(), 
+			       (string)ob->query_cap_name(),
+			       query_idle(ob),
+			       sts
+			       }) );
 }
 
 void eventReceiveLocateReply(mixed *packet) {
@@ -28,8 +39,11 @@ void eventReceiveLocateReply(mixed *packet) {
     if( file_name(previous_object()) != INTERMUD_D ) return;
     if( !stringp(packet[5]) || !(ob = find_player(convert_name(packet[5]))) ) 
       return;
-    message("system", packet[7] + " was just located on " + packet[6] + ".\n",
-	    ob);
+    message("system",
+	    sprintf("%s was just located on %s.\n"
+		    "Idle %i minutes.\n"
+		    "Status: %s\n",
+		    packet[7], packet[6], packet[8] / 60, packet[9]), ob);
 }
 
 void eventSendLocateRequest(string who) {

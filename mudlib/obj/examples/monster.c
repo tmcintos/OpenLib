@@ -6,12 +6,12 @@
 inherit MONSTER "/human";
 
 void
-create()
+setup()
 {
   object weap;
 
-  ::create();
   set_name("beavis");
+  add_ids(({ "kid" }));
   set_short("Beavis");
   set_long("A scrawny, stupid looking high school kid.\n");
   set_gender(GENDER_MALE);

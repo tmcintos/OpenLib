@@ -1,0 +1,12 @@
+#obj/clone/connection.c
+name "lucincia"
+cap_name "Lucincia"
+password "Af89dX9YqErZI"
+real_name "Lucincia"
+email_addr "none"
+body "/obj/clone/user/human"
+login_shell "/obj/clone/shells/rsh"
+gender -1
+login_time 829622628
+logout_time 829622725
+login_from "keely.isca.uiowa.edu"

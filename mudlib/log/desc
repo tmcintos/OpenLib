@@ -1546,3 +1546,329 @@ Wed Apr 10 23:02:36 1996:  imud_gossip: Descartes@IdeaExchange:no
 Wed Apr 10 23:02:45 1996:  imud_gossip: Descartes@IdeaExchange:IE has been up over a month!
 Wed Apr 10 23:03:21 1996:  imud_gossip: Descartes@IdeaExchange:IdeaExchange has been up for 4w 1d 4h 54m 4s.
 Wed Apr 10 23:03:59 1996:  imud_gossip: Descartes@IdeaExchange:Up since: Tue Mar 12 17:12:35 1996         Next reboot: Thu Aug  9 10:12:35 2007
+Thu Apr 11 08:45:01 1996:  imud_code: Descartes@IdeaExchange:SetPreventGet()
+Thu Apr 11 18:39:40 1996:  imud_gossip: Descartes@IdeaExchange:what fun was that?
+Thu Apr 11 18:40:30 1996:  imud_gossip: Descartes@IdeaExchange:can you summarize?
+Thu Apr 11 18:41:33 1996:  imud_gossip: Descartes@IdeaExchange:I got mail from one of them... I can't fathom how a nunch of players could get deleted
+Thu Apr 11 18:42:07 1996:  imud_gossip: Descartes@IdeaExchange:who was the one whining about the icode rules? and who reminded him?
+Fri Apr 12 00:22:35 1996:  imud_gossip: Descartes@IdeaExchange:help me!!!! I have a horrible song by Oasis in ymy head!!!
+Fri Apr 12 00:24:34 1996:  imud_gossip: Descartes@IdeaExchange:why exactly would you do that?
+Fri Apr 12 00:25:28 1996:  imud_gossip: Descartes@IdeaExchange:true
+Fri Apr 12 16:11:02 1996:  imud_code: Descartes@IdeaExchange:anyone online know jack about RMI?
+Fri Apr 12 16:13:17 1996:  imud_code: Descartes@IdeaExchange:popular?
+Fri Apr 12 16:14:27 1996:  imud_code: Descartes@IdeaExchange:this is not te placefor sayinghi
+Sat Apr 13 00:18:50 1996:  imud_gossip: Descartes@IdeaExchange:bing
+Sat Apr 13 00:21:19 1996:  imud_gossip: Descartes@IdeaExchange:ok, working on a Java book, so not much time for mud right now
+Sat Apr 13 00:22:11 1996:  imud_gossip: Descartes@IdeaExchange:on what?
+Sat Apr 13 00:22:59 1996:  imud_gossip: Descartes@IdeaExchange:I have no enemies :)
+Sat Apr 13 00:23:38 1996:  imud_gossip: Descartes@IdeaExchange:and who is your enemy?
+Sat Apr 13 00:23:50 1996:  imud_gossip: Descartes@IdeaExchange:I got one kitty sitting in my lap trying to keep me from doing work
+Sat Apr 13 00:24:32 1996:  imud_gossip: Descartes@IdeaExchange:well, I am here
+Sat Apr 13 00:24:50 1996:  imud_gossip: Descartes@IdeaExchange:got new picture of them up
+Sat Apr 13 15:29:40 1996:  imud_code: Descartes@IdeaExchange:next_living()? sounds like a discworld thing
+Sat Apr 13 15:33:55 1996:  imud_gossip: Descartes@IdeaExchange:filter(users(), (: environment($1) == room :))
+Sat Apr 13 15:34:23 1996:  imud_gossip: Descartes@IdeaExchange:or (all_inventory(room) & users())
+Sat Apr 13 15:34:45 1996:  imud_gossip: Descartes@IdeaExchange:don't say hey, hey is for horses
+Sat Apr 13 15:34:53 1996:  imud_gossip: Descartes@IdeaExchange:that is simple
+Sat Apr 13 22:05:03 1996:  imud_gossip: Descartes@IdeaExchange:reboot me baby!!!!!
+Sat Apr 13 23:19:11 1996:  imud_code: Descartes@IdeaExchange:imud_code
+Sat Apr 13 23:23:16 1996:  imud_code: Descartes@IdeaExchange:it is intermud
+Sat Apr 13 23:29:38 1996:  imud_code: Descartes@IdeaExchange:i do delete people who are causing mail to bounce
+Sat Apr 13 23:30:04 1996:  imud_code: Descartes@IdeaExchange:tiggers always bounce
+Sat Apr 13 23:52:11 1996:  imud_code: Descartes@IdeaExchange:anyone know how to set a Java applet property from the APPLET tag?
+Sun Apr 14 00:20:41 1996:  imud_gossip: Descartes@IdeaExchange:congradulations, want a cookie?
+Sun Apr 14 13:24:11 1996:  imud_gossip: Descartes@IdeaExchange:read the FAQ
+Sun Apr 14 13:24:43 1996:  imud_gossip: Descartes@IdeaExchange:http://www.imaginary.com/LPMud/lpmud_faq.html
+Sun Apr 14 14:55:28 1996:  imud_gossip: Descartes@IdeaExchange:there is no such thing
+Sun Apr 14 15:23:12 1996:  imud_code: Descartes@IdeaExchange:to get Frontiers a new machine?
+Sun Apr 14 15:23:20 1996:  imud_code: Descartes@IdeaExchange:there is no justification for that
+Sun Apr 14 15:24:20 1996:  imud_code: Descartes@IdeaExchange:the admins would be damn stupid to go out and get you a new machine
+Sun Apr 14 15:25:29 1996:  imud_code: Descartes@IdeaExchange:none of them go out and buy machines *for muds*
+Sun Apr 14 15:26:23 1996:  imud_code: Descartes@IdeaExchange:only because they probably *already* had the machien and have nothing betetr to do with it
+Sun Apr 14 15:26:43 1996:  imud_code: Descartes@IdeaExchange:if the circumstances are otherwise, you school's computing department has skewed priorities
+Sun Apr 14 15:28:24 1996:  imud_code: Descartes@IdeaExchange:I am not against mudding, I am saying it is not worth a college spending its resources on
+Sun Apr 14 15:29:14 1996:  imud_code: Descartes@IdeaExchange:a pitaance that could be spent on putting another kid through school
+Sun Apr 14 15:29:40 1996:  imud_code: Descartes@IdeaExchange:there are much better things to do with that pittance than buy a machine for a game
+Sun Apr 14 15:30:16 1996:  imud_code: Descartes@IdeaExchange:I did not say to scrap everything
+Sun Apr 14 15:30:34 1996:  imud_code: Descartes@IdeaExchange:clearly it makes sense if they have an old unused machine lying around to let a mud run on it
+Sun Apr 14 15:31:07 1996:  imud_code: Descartes@IdeaExchange:but going out to fund a mud is completely insane
+Sun Apr 14 15:31:37 1996:  imud_code: Descartes@IdeaExchange:if you want someone to spend money on a mud for you, do it yourself
+Sun Apr 14 15:32:19 1996:  imud_code: Descartes@IdeaExchange:you sound like a spoiled little brat, and this belongs on intergossip
+Sun Apr 14 15:32:39 1996:  imud_gossip: Descartes@IdeaExchange:the school has no business funding muds
+Sun Apr 14 15:32:51 1996:  imud_gossip: Descartes@IdeaExchange:*especially* if it is a public university
+Sun Apr 14 15:33:15 1996:  imud_gossip: Descartes@IdeaExchange:err, because you sound like a spoiled brat
+Sun Apr 14 15:33:44 1996:  imud_gossip: Descartes@IdeaExchange:how can you conceive of justifying the spending of $2,000 on a GAME when some students don't have computers to do their papers on?
+Sun Apr 14 15:34:26 1996:  imud_gossip: Descartes@IdeaExchange:whatever Cratylus, your opinion of me does not phaze me
+Sun Apr 14 15:34:52 1996:  imud_gossip: Descartes@IdeaExchange:hell no Hanzou, what he wants is immoral
+Sun Apr 14 15:35:06 1996:  imud_gossip: Descartes@IdeaExchange:Cratylus, who the hell do you think I am?
+Sun Apr 14 15:35:22 1996:  imud_gossip: Descartes@IdeaExchange:I know exactly what has been done with muds
+Sun Apr 14 15:35:36 1996:  imud_gossip: Descartes@IdeaExchange:getting them to spend $2,000 on a game is immoral
+Sun Apr 14 15:35:46 1996:  imud_gossip: Descartes@IdeaExchange:I act like who I am
+Sun Apr 14 15:36:08 1996:  imud_gossip: Descartes@IdeaExchange:because that $2,000 could be much better spent
+Sun Apr 14 15:36:24 1996:  imud_gossip: Descartes@IdeaExchange:there is no justification for spending it on a mud
+Sun Apr 14 15:36:38 1996:  imud_gossip: Descartes@IdeaExchange:and you are arguing with a huge mud advopcate right now
+Sun Apr 14 15:36:56 1996:  imud_gossip: Descartes@IdeaExchange:I bought my computer with my money, not someone else's
+Sun Apr 14 15:37:13 1996:  imud_gossip: Descartes@IdeaExchange:especially not with someone else's which had a dedicated purpose to it
+Sun Apr 14 15:37:25 1996:  imud_gossip: Descartes@IdeaExchange:no, the students pay for education
+Sun Apr 14 15:37:43 1996:  imud_gossip: Descartes@IdeaExchange:the only possible way to get the college to fund it would be to start up a student organization
+Sun Apr 14 15:38:21 1996:  imud_gossip: Descartes@IdeaExchange:well, on my school, those were funded through student organizations
+Sun Apr 14 15:38:29 1996:  imud_gossip: Descartes@IdeaExchange:which is different
+Sun Apr 14 15:38:37 1996:  imud_gossip: Descartes@IdeaExchange:but you are not proposing a student organization
+Sun Apr 14 15:38:51 1996:  imud_gossip: Descartes@IdeaExchange:you just want someone to give you a computer so you can play games
+Sun Apr 14 15:39:33 1996:  imud_gossip: Descartes@IdeaExchange:I ran a freakin student organization in college, I know how funding works
+Sun Apr 14 15:39:57 1996:  imud_gossip: Descartes@IdeaExchange:no, my argument does not insanely support muds as the answer to world problems
+Sun Apr 14 15:40:12 1996:  imud_gossip: Descartes@IdeaExchange:I know where muds lie on the priority list
+Sun Apr 14 15:40:38 1996:  imud_gossip: Descartes@IdeaExchange:and they are somewhere close to nowhere on that list from a computing department point of view
+Sun Apr 14 15:41:06 1996:  imud_gossip: Descartes@IdeaExchange:I never said there was no educational benefit
+Sun Apr 14 15:41:14 1996:  imud_gossip: Descartes@IdeaExchange:i learned to code on muds
+Sun Apr 14 15:41:38 1996:  imud_gossip: Descartes@IdeaExchange:but that does not justify *spending money* to support them
+Sun Apr 14 15:41:46 1996:  imud_gossip: Descartes@IdeaExchange:from a collegel point of view
+Sun Apr 14 15:42:14 1996:  imud_gossip: Descartes@IdeaExchange:and it is the height of arrogance to suggest somehow that someone else should be responsible for funding your fun and games
+Sun Apr 14 15:44:19 1996:  imud_gossip: Descartes@IdeaExchange:Rigel, them giving you bandwidth costs them nothing
+Sun Apr 14 15:44:37 1996:  imud_gossip: Descartes@IdeaExchange:asking a U for bandiwdth when you supply the equipment is cool
+Sun Apr 14 15:44:47 1996:  imud_gossip: Descartes@IdeaExchange:and there is no real reason for the school not to allow it
+Sun Apr 14 15:45:13 1996:  imud_gossip: Descartes@IdeaExchange:line costs?
+Sun Apr 14 15:45:59 1996:  imud_gossip: Descartes@IdeaExchange:why not co-locate with campus machines?
+Sun Apr 14 15:48:02 1996:  imud_gossip: Descartes@IdeaExchange:I don't think the U should fund your dedicated line
+Sun Apr 14 15:52:15 1996:  imud_gossip: Descartes@IdeaExchange:you should never need to touch your server
+Sun Apr 14 15:52:43 1996:  imud_gossip: Descartes@IdeaExchange:NM's server is in eden prairie MN, and moving to downtown minneapolis... I see it once maybe every 3 months
+Sun Apr 14 16:03:49 1996:  imud_gossip: Descartes@IdeaExchange:anyone know what URS form to fill out to file an extension?
+Sun Apr 14 16:15:00 1996:  imud_gossip: Descartes@IdeaExchange:what is proper network support?>
+Sun Apr 14 16:15:10 1996:  imud_gossip: Descartes@IdeaExchange:and you can have X on windows 95
+Sun Apr 14 16:15:22 1996:  imud_gossip: Descartes@IdeaExchange:and there are a bijillion free apps for windows
+Sun Apr 14 16:15:40 1996:  imud_gossip: Descartes@IdeaExchange:windows 95 has free java
+Sun Apr 14 16:16:04 1996:  imud_gossip: Descartes@IdeaExchange:my network code on widnows 95 seems quite stable
+Sun Apr 14 16:16:24 1996:  imud_gossip: Descartes@IdeaExchange:for exchange, who needs an smtp gateway for exchange?
+Sun Apr 14 16:16:48 1996:  imud_gossip: Descartes@IdeaExchange:no, because windows 95 is not good for running amud :)
+Sun Apr 14 16:17:01 1996:  imud_gossip: Descartes@IdeaExchange:you don;t nbeed the gateway to exchange
+Sun Apr 14 16:18:01 1996:  imud_gossip: Descartes@IdeaExchange:I manage to mail to the internet just fine
+Sun Apr 14 16:18:19 1996:  imud_gossip: Descartes@IdeaExchange:you don't HAVE to use Exchange
+Sun Apr 14 16:18:35 1996:  imud_gossip: Descartes@IdeaExchange:well, Windows 95 is a single user operating system
+Sun Apr 14 16:19:25 1996:  imud_gossip: Descartes@IdeaExchange:the conversation is about windows 95 and linux for your desktop
+Sun Apr 14 21:59:27 1996:  imud_gossip: Descartes@IdeaExchange:anyone here using ISDN?
+Sun Apr 14 22:03:14 1996:  imud_gossip: Descartes@IdeaExchange:$189/month unlimited 128k
+Sun Apr 14 22:03:28 1996:  imud_gossip: Descartes@IdeaExchange:US Wets is horrible
+Sun Apr 14 22:04:24 1996:  imud_gossip: Descartes@IdeaExchange:where inside their domain do you live?
+Sun Apr 14 22:04:57 1996:  imud_gossip: Descartes@IdeaExchange:I complained to one of thei reps about their service nce
+Sun Apr 14 22:05:11 1996:  imud_gossip: Descartes@IdeaExchange:told them the minute AT&T offered local service, I was walking
+Sun Apr 14 22:05:15 1996:  imud_gossip: Descartes@IdeaExchange:the rep said he was too
+Sun Apr 14 22:05:43 1996:  imud_gossip: Descartes@IdeaExchange:it is not a joke... he really said that to me
+Sun Apr 14 22:05:55 1996:  imud_gossip: Descartes@IdeaExchange:said nothing they could do about how incompetent the people in Denver were
+Sun Apr 14 22:06:17 1996:  imud_gossip: Descartes@IdeaExchange:for?
+Sun Apr 14 22:06:31 1996:  imud_gossip: Descartes@IdeaExchange:unlimited?
+Sun Apr 14 22:06:45 1996:  imud_gossip: Descartes@IdeaExchange:which local bell
+Sun Apr 14 22:07:37 1996:  imud_gossip: Descartes@IdeaExchange:hell, the school I graduated from has all dorms wired ethernet
+Sun Apr 14 22:07:50 1996:  imud_gossip: Descartes@IdeaExchange:and they install ethernet cards without charge
+Sun Apr 14 22:08:18 1996:  imud_gossip: Descartes@IdeaExchange:I graduated before people knew what the net was :)
+Sun Apr 14 22:08:44 1996:  imud_gossip: Descartes@IdeaExchange:so I did not benefit from that feature
+Sun Apr 14 22:09:08 1996:  imud_gossip: Descartes@IdeaExchange:of course, the tuition for the school is around $25,000 per year :)
+Sun Apr 14 22:09:24 1996:  imud_gossip: Descartes@IdeaExchange:so either that is a cool feature, or expensive internet access :)
+Sun Apr 14 22:09:46 1996:  imud_gossip: Descartes@IdeaExchange:Bates College
+Sun Apr 14 22:09:58 1996:  imud_gossip: Descartes@IdeaExchange:we had maid service as well :)
+Mon Apr 15 23:21:09 1996:  imud_code: Descartes@IdeaExchange:this is not a chat channel
+Mon Apr 15 23:22:21 1996:  imud_code: Descartes@IdeaExchange:well stop chatting garbage on it
+Mon Apr 15 23:24:36 1996:  imud_code: Descartes@IdeaExchange:you need to find what error -22 is in docket.h I think
+Mon Apr 15 23:24:56 1996:  imud_gossip: Descartes@IdeaExchange:huh?
+Mon Apr 15 23:25:38 1996:  imud_code: Descartes@IdeaExchange:hmmm... what OS?
+Mon Apr 15 23:26:08 1996:  imud_code: Descartes@IdeaExchange:ahh, never mind, you mean LPC?
+Mon Apr 15 23:26:20 1996:  imud_code: Descartes@IdeaExchange:it means you are trying to write to a cblocking socket
+Mon Apr 15 23:26:36 1996:  imud_gossip: Descartes@IdeaExchange:that is what intergossip is
+Mon Apr 15 23:26:48 1996:  imud_code: Descartes@IdeaExchange:it should not happen though
+Mon Apr 15 23:26:56 1996:  imud_code: Descartes@IdeaExchange:you should be waiting for a write callback
+Mon Apr 15 23:27:12 1996:  imud_code: Descartes@IdeaExchange:and only then writing
+Mon Apr 15 23:27:31 1996:  imud_gossip: Descartes@IdeaExchange:I was referring to the dude using intercre to look for someone
+Mon Apr 15 23:28:05 1996:  imud_code: Descartes@IdeaExchange:well, what is happening is that you open a connection and start writing to it
+Mon Apr 15 23:28:17 1996:  imud_code: Descartes@IdeaExchange:for whatever reason, the buffer is filling, which is normal
+Mon Apr 15 23:28:39 1996:  imud_code: Descartes@IdeaExchange:what is abnoramal (i.e. nbad socket code) is you are continuing to try to write instead of waiting for a write callback
+Mon Apr 15 23:28:59 1996:  imud_gossip: Descartes@IdeaExchange:you have way too much faith in people Mongar
+Mon Apr 15 23:29:55 1996:  imud_gossip: Descartes@IdeaExchange:where does it say we have no right to define content for these lines?
+Mon Apr 15 23:30:50 1996:  imud_gossip: Descartes@IdeaExchange:we do not dictate content, only content on the channels we sponsor
+Mon Apr 15 23:31:06 1996:  imud_gossip: Descartes@IdeaExchange:setting up your own channel is part of the spec
+Mon Apr 15 23:32:58 1996:  imud_gossip: Descartes@IdeaExchange:easily... the stuff is not necessarily going through a central server
+Mon Apr 15 23:33:04 1996:  imud_gossip: Descartes@IdeaExchange:for details, read the spec
+Mon Apr 15 23:33:14 1996:  imud_gossip: Descartes@IdeaExchange:sponsoring a channel means simly adding a ne wone
+Mon Apr 15 23:33:36 1996:  imud_gossip: Descartes@IdeaExchange:the router does not scontent monitoring, it is just a carrier
+Mon Apr 15 23:33:59 1996:  imud_gossip: Descartes@IdeaExchange:the idea exchange is the sponsor of the imud_code and imud_gossip channels, and thus defines the cntent for them
+Mon Apr 15 23:34:23 1996:  imud_gossip: Descartes@IdeaExchange:similarly, you could define a kriton_is_god channel and allow only people who actively worship you to take part
+Mon Apr 15 23:35:11 1996:  imud_gossip: Descartes@IdeaExchange:it is being worked on :)
+Mon Apr 15 23:35:31 1996:  imud_gossip: Descartes@IdeaExchange:the only mud that has gotten in trouble with it was seriously over any line of common sense
+Mon Apr 15 23:36:25 1996:  imud_gossip: Descartes@IdeaExchange:StarMUD
+Mon Apr 15 23:36:45 1996:  imud_gossip: Descartes@IdeaExchange:EoTL has never been on here
+Mon Apr 15 23:37:11 1996:  imud_gossip: Descartes@IdeaExchange:they have been? ack
+Mon Apr 15 23:38:44 1996:  imud_gossip: Descartes@IdeaExchange:well, I guess I need soem sleep
+Mon Apr 15 23:38:46 1996:  imud_gossip: Descartes@IdeaExchange:night :)
+Tue Apr 16 10:50:46 1996:  imud_code: Descartes@IdeaExchange:ask on intergossip
+Tue Apr 16 10:51:35 1996:  imud_code: Descartes@IdeaExchange:well, intercre is not for chat, and Lima is not retarded
+Tue Apr 16 10:52:13 1996:  imud_code: Descartes@IdeaExchange:I don't know the intergossip command
+Tue Apr 16 19:47:39 1996:  imud_code: Descartes@IdeaExchange:use NM IV
+Tue Apr 16 19:47:49 1996:  imud_code: Descartes@IdeaExchange:don't use an unsupported lib
+Tue Apr 16 22:21:45 1996:  imud_gossip: Descartes@IdeaExchange:this channel ain;t for this sorta talk
+Tue Apr 16 22:22:46 1996:  imud_gossip: Descartes@IdeaExchange:it is agains rhia channel's charter
+Tue Apr 16 22:22:56 1996:  imud_gossip: Descartes@IdeaExchange:this
+Tue Apr 16 22:23:08 1996:  imud_gossip: Descartes@IdeaExchange:no, guys can't talk about sucking things
+Tue Apr 16 22:24:00 1996:  imud_gossip: Descartes@IdeaExchange:not for sexually explicit discussion
+Tue Apr 16 22:26:41 1996:  imud_gossip: Descartes@IdeaExchange:and I was more referring to auto-erotic stuff than lingerie
+Tue Apr 16 22:26:41 1996:  imud_gossip: Descartes@IdeaExchange:sexually explicit conversation or hate conversation
+Tue Apr 16 22:26:41 1996:  imud_gossip: Descartes@IdeaExchange:shut up Hanzou, this has nothing to do with the CDA
+Tue Apr 16 22:26:45 1996:  imud_gossip: Descartes@IdeaExchange:it is people trying to be responsible who want to have a line where they don't have to hear a bunch of adolescents jabbering in public about their inability to keep their hormones in check
+Tue Apr 16 22:26:57 1996:  imud_gossip: Descartes@IdeaExchange:err, I don;t have to toggle it off, cause this line is not for that sort of conversation
+Tue Apr 16 22:27:11 1996:  imud_gossip: Descartes@IdeaExchange:if you want a sex channel,. start one
+Tue Apr 16 22:27:27 1996:  imud_gossip: Descartes@IdeaExchange:it is a chat line, and sex talk is not on here
+Tue Apr 16 22:27:51 1996:  imud_gossip: Descartes@IdeaExchange:what was the masturbation talk then Heaven?
+Tue Apr 16 22:28:33 1996:  imud_gossip: Descartes@IdeaExchange:Zac: that is because  the charters of these two lines need to be drille dinto people's heads
+Tue Apr 16 22:28:58 1996:  imud_gossip: Descartes@IdeaExchange:this is not a single mud Othla, this is a bunch of muds with a bunch of different needs
+Tue Apr 16 22:29:36 1996:  imud_gossip: Descartes@IdeaExchange:what right to free speech?
+Tue Apr 16 22:30:22 1996:  imud_gossip: Descartes@IdeaExchange:the one in the bill of rights does not apply to private chat lines
+Tue Apr 16 22:30:48 1996:  imud_gossip: Descartes@IdeaExchange:I think it is on the web
+Tue Apr 16 22:31:08 1996:  imud_gossip: Descartes@IdeaExchange:WHY DO YOU THINK FREEDOM OF SPEECH APPLIES TO INTERMUD?
+Tue Apr 16 22:31:14 1996:  imud_gossip: Descartes@IdeaExchange:the government does not run this line
+Tue Apr 16 22:31:50 1996:  imud_gossip: Descartes@IdeaExchange:this line is run by the idea exchange, which sets it up as being a line of general audiience chat
+Tue Apr 16 22:32:23 1996:  imud_gossip: Descartes@IdeaExchange:Zac freedom of speech is a right you are protected from the government of abridging
+Tue Apr 16 22:32:51 1996:  imud_gossip: Descartes@IdeaExchange:have I cut anyone off?
+Tue Apr 16 22:33:07 1996:  imud_gossip: Descartes@IdeaExchange:I believe what i am doing is informing you guys that what you are discussing is out of charter
+Tue Apr 16 22:33:33 1996:  imud_gossip: Descartes@IdeaExchange:didn't you just hear about it now heaven?>
+Tue Apr 16 22:34:19 1996:  imud_gossip: Descartes@IdeaExchange:it amazes me that you all can feel so violated and upset about this
+Tue Apr 16 22:34:49 1996:  imud_gossip: Descartes@IdeaExchange:do you guys underrstand where your mud ends and this chat line begins?
+Tue Apr 16 22:34:59 1996:  imud_gossip: Descartes@IdeaExchange:I am informing you about it Heavemn
+Tue Apr 16 22:35:19 1996:  imud_gossip: Descartes@IdeaExchange:stop complaining about not being told about a rule before you are told
+Tue Apr 16 22:36:05 1996:  imud_gossip: Descartes@IdeaExchange:i am not bitching about it, i am telling you not to do it
+Tue Apr 16 22:36:24 1996:  imud_gossip: Descartes@IdeaExchange:i don';t exactly know where a freakin copy is, it is either deathblade or Beek that is in charge of it
+Tue Apr 16 22:37:00 1996:  imud_gossip: Descartes@IdeaExchange:if you don;t like it, go to some other channel for gods sake
+Tue Apr 16 22:37:18 1996:  imud_gossip: Descartes@IdeaExchange:FOR THE LAST DAMN TIME, I AM TELLING YOU ABOUT IT NOW IF YOU DID NOT KNOW
+Tue Apr 16 22:37:38 1996:  imud_gossip: Descartes@IdeaExchange:yuo guys are acting like I am throwing you off
+Tue Apr 16 22:37:56 1996:  imud_gossip: Descartes@IdeaExchange:i am telling you what the rules are, i have no idea where it is written down
+Tue Apr 16 22:38:32 1996:  imud_gossip: Descartes@IdeaExchange:no talk which creates a hostile environment... i.e sexist, racist talk
+Tue Apr 16 22:39:21 1996:  imud_gossip: Descartes@IdeaExchange:why do you act like it is your god given right to be on this line?
+Tue Apr 16 22:39:45 1996:  imud_gossip: Descartes@IdeaExchange:when did I say you have to be psychic?
+Tue Apr 16 22:40:09 1996:  imud_gossip: Descartes@IdeaExchange:I did not ban any of you
+Tue Apr 16 22:40:17 1996:  imud_gossip: Descartes@IdeaExchange:no action was taken against you
+Tue Apr 16 22:40:41 1996:  imud_gossip: Descartes@IdeaExchange:i just told you what it says
+Tue Apr 16 22:40:53 1996:  imud_gossip: Descartes@IdeaExchange:I did not cheew you out
+Tue Apr 16 22:41:03 1996:  imud_gossip: Descartes@IdeaExchange:until you started talking about freedom of speech crap
+Tue Apr 16 22:41:15 1996:  imud_gossip: Descartes@IdeaExchange:yes, Heaven, in theory i could ban you for that
+Tue Apr 16 22:41:43 1996:  imud_gossip: Descartes@IdeaExchange:rules exist for this line
+Tue Apr 16 22:42:20 1996:  imud_gossip: Descartes@IdeaExchange:maybe Heaven, if you would shut up and listen, you would not be so confused 1005 of the time
+Tue Apr 16 22:43:02 1996:  imud_gossip: Descartes@IdeaExchange:Heaven, you act like we can enforce what muds do on their own muds
+Tue Apr 16 22:43:14 1996:  imud_gossip: Descartes@IdeaExchange:Narek, you are damn straight I am getting hostile
+Tue Apr 16 22:43:34 1996:  imud_gossip: Descartes@IdeaExchange:I am annoyed at being assailed by 10 people
+Tue Apr 16 22:43:48 1996:  imud_gossip: Descartes@IdeaExchange:I don't freakin care where the document is
+Tue Apr 16 22:44:20 1996:  imud_gossip: Descartes@IdeaExchange:for the 10th time, I have told you the damn rules
+Tue Apr 16 22:44:30 1996:  imud_gossip: Descartes@IdeaExchange:so you have read them
+Tue Apr 16 22:44:38 1996:  imud_gossip: Descartes@IdeaExchange:are you that stupid heaven?
+Tue Apr 16 22:45:10 1996:  imud_gossip: Descartes@IdeaExchange:no shit Zakk
+Tue Apr 16 22:45:35 1996:  imud_gossip: Descartes@IdeaExchange:I have no clue, Deathblade said he was going too
+Tue Apr 16 22:45:57 1996:  imud_gossip: Descartes@IdeaExchange:I am tired of all your bullshit
+Tue Apr 16 22:46:09 1996:  imud_gossip: Descartes@IdeaExchange:not ONE of you is thinking before speaking
+Tue Apr 16 22:46:33 1996:  imud_gossip: Descartes@IdeaExchange:Heaven, I have stated the rules sebveral; times
+Tue Apr 16 22:46:59 1996:  imud_gossip: Descartes@IdeaExchange:you just have not heard one word I have said... several of you just want to interpret some sort of violation of your rights here
+Tue Apr 16 22:47:11 1996:  imud_gossip: Descartes@IdeaExchange:the rules are vague
+Tue Apr 16 22:47:29 1996:  imud_gossip: Descartes@IdeaExchange:#1 I don't know where they are written dfown
+Tue Apr 16 22:47:47 1996:  imud_gossip: Descartes@IdeaExchange:your obsessive insistance on seeing them written down does not change that they exist or what they are
+Tue Apr 16 22:48:13 1996:  imud_gossip: Descartes@IdeaExchange:Othila, I can't do any such thing
+Tue Apr 16 22:48:23 1996:  imud_gossip: Descartes@IdeaExchange:no one can control what any mud does internally
+Tue Apr 16 22:48:44 1996:  imud_gossip: Descartes@IdeaExchange:because I say they exist is good enough
+Tue Apr 16 22:49:28 1996:  imud_gossip: Descartes@IdeaExchange:if I make up the rules, and I say a rule exist, yes, it is good enough
+Tue Apr 16 22:49:54 1996:  imud_gossip: Descartes@IdeaExchange:wuth respect to intergossip, IdeaExchange makes up the rules
+Tue Apr 16 22:50:14 1996:  imud_gossip: Descartes@IdeaExchange:Wraith and Karna... that is exactly the crap that is pissing me off
+Tue Apr 16 22:50:28 1996:  imud_gossip: Descartes@IdeaExchange:Heaven, I am an administrator of IdeaExchange
+Tue Apr 16 22:50:44 1996:  imud_gossip: Descartes@IdeaExchange:and Othila, am i very likely to make up rules willy-nilly?
+Tue Apr 16 22:51:36 1996:  imud_gossip: Descartes@IdeaExchange:what was wraith's answer?
+Tue Apr 16 22:51:46 1996:  imud_gossip: Descartes@IdeaExchange:i gave you frewaking rules
+Tue Apr 16 22:52:13 1996:  imud_gossip: Descartes@IdeaExchange:that is correct
+Tue Apr 16 22:52:23 1996:  imud_gossip: Descartes@IdeaExchange:every intermud channel is sponsored by some mud
+Tue Apr 16 22:52:35 1996:  imud_gossip: Descartes@IdeaExchange:Heaven, if they violate the rules, I will tell them
+Tue Apr 16 22:52:53 1996:  imud_gossip: Descartes@IdeaExchange:the problem is everyone's moronic insistance in arguing the point here
+Tue Apr 16 22:53:47 1996:  imud_gossip: Descartes@IdeaExchange:there was no freaking trial
+Tue Apr 16 22:54:17 1996:  imud_gossip: Descartes@IdeaExchange:you guys were talking in terms that bordered on violation, and I pointed it out
+Tue Apr 16 22:54:23 1996:  imud_gossip: Descartes@IdeaExchange:no one was removed or anythiung else
+Tue Apr 16 22:54:51 1996:  imud_gossip: Descartes@IdeaExchange:because you were ascting like it?
+Tue Apr 16 22:55:15 1996:  imud_gossip: Descartes@IdeaExchange:debating freedom of speech calling me a dic\tator, demanding I post the rules before you would follow them
+Tue Apr 16 22:55:26 1996:  imud_gossip: Descartes@IdeaExchange:Wraith, shut the hell up
+Tue Apr 16 22:56:02 1996:  imud_gossip: Descartes@IdeaExchange:no, that was Karna
+Tue Apr 16 22:56:44 1996:  imud_gossip: Descartes@IdeaExchange:if I were prone to ban people on a whim, don't you think I would have banned the lot of you by now?
+Tue Apr 16 22:57:16 1996:  imud_gossip: Descartes@IdeaExchange:it will be put on the web if it is not alrerady
+Tue Apr 16 22:57:30 1996:  imud_gossip: Descartes@IdeaExchange:to my knowledge it is on www.imaginary.com somewhre as is
+Tue Apr 16 22:58:20 1996:  imud_gossip: Descartes@IdeaExchange:and like I said, if my personal will determined who got banished, your mud would be #1 on the list wraoith
+Tue Apr 16 22:59:57 1996:  imud_gossip: Descartes@IdeaExchange:bs, people were arguing what the rules were
+Tue Apr 16 23:00:05 1996:  imud_gossip: Descartes@IdeaExchange:as if i were making them up and shit
+Tue Apr 16 23:00:43 1996:  imud_gossip: Descartes@IdeaExchange:and Wraith, I am actually looking to see if i can find them
+Tue Apr 16 23:00:57 1996:  imud_gossip: Descartes@IdeaExchange:that does not follow Wraith
+Tue Apr 16 23:01:17 1996:  imud_gossip: Descartes@IdeaExchange:here they are...
+Tue Apr 16 23:01:37 1996:  imud_gossip: Descartes@IdeaExchange:the following are considered over the line...
+Tue Apr 16 23:01:49 1996:  imud_gossip: Descartes@IdeaExchange:#1 explicit sexual content
+Tue Apr 16 23:02:18 1996:  imud_gossip: Descartes@IdeaExchange:#2 anything that is intended _only_ for the purpose of offending a person or person currently listening
+Tue Apr 16 23:02:30 1996:  imud_gossip: Descartes@IdeaExchange:#3blatantly racist or sexist remarks
+Tue Apr 16 23:03:14 1996:  imud_gossip: Descartes@IdeaExchange:spamming
+Tue Apr 16 23:03:32 1996:  imud_gossip: Descartes@IdeaExchange:Wraith will you stop being intentionally dense
+Tue Apr 16 23:03:54 1996:  imud_gossip: Descartes@IdeaExchange:#5 discussing anything not elated to coding on the code channel
+Tue Apr 16 23:04:18 1996:  imud_gossip: Descartes@IdeaExchange:now how the hell can I sit and have a conversation with this bunch of assholes?
+Tue Apr 16 23:04:26 1996:  imud_gossip: Descartes@IdeaExchange:no Darklord...
+Tue Apr 16 23:04:36 1996:  imud_gossip: Descartes@IdeaExchange:this is in a mail where the rules were established
+Tue Apr 16 23:04:50 1996:  imud_gossip: Descartes@IdeaExchange:you want to keep it up Narek?
+Tue Apr 16 23:05:02 1996:  imud_gossip: Descartes@IdeaExchange:Narek, Wraith
+Tue Apr 16 23:05:27 1996:  imud_gossip: Descartes@IdeaExchange:Wraith is trying to do nothing other than be argumentative, same with Narek
+Tue Apr 16 23:06:17 1996:  imud_gossip: Descartes@IdeaExchange:because they are being drowned out by the droning of jerks like Wraith and Narek
+Tue Apr 16 23:07:08 1996:  imud_gossip: Descartes@IdeaExchange:there is no clear definition
+Tue Apr 16 23:07:47 1996:  imud_gossip: Descartes@IdeaExchange:no one is going to be suddenly booted without warning
+Tue Apr 16 23:08:26 1996:  imud_gossip: Descartes@IdeaExchange:no, and as i said about 10 times before, it was not the lingerie I was referrign to
+Tue Apr 16 23:09:26 1996:  imud_gossip: Descartes@IdeaExchange:sarcastic? OI am serious
+Tue Apr 16 23:10:24 1996:  imud_gossip: Descartes@IdeaExchange:bloody americans love to play the victim
+Tue Apr 16 23:11:55 1996:  imud_gossip: Descartes@IdeaExchange:Narek, it is not like my opinion of you is all that high :)
+Tue Apr 16 23:12:21 1996:  imud_gossip: Descartes@IdeaExchange:congradulations Heaven, do you want a cookie?
+Tue Apr 16 23:14:09 1996:  imud_gossip: Descartes@IdeaExchange:I have been yelled at and called named for 30 minutes, you don;t think it makes sense that I would be insulting by this time?
+Tue Apr 16 23:14:54 1996:  imud_gossip: Descartes@IdeaExchange:whatever
+Tue Apr 16 23:15:04 1996:  imud_gossip: Descartes@IdeaExchange:I am an american
+Tue Apr 16 23:15:26 1996:  imud_gossip: Descartes@IdeaExchange:whatever Heaven, you all have put me over the line
+Tue Apr 16 23:15:54 1996:  imud_gossip: Descartes@IdeaExchange:smart-ass comments are not covered in the rules
+Tue Apr 16 23:16:20 1996:  imud_gossip: Descartes@IdeaExchange:it is me against 10 people
+Tue Apr 16 23:16:30 1996:  imud_gossip: Descartes@IdeaExchange:10 people insulting me and being rude to me
+Tue Apr 16 23:16:36 1996:  imud_gossip: Descartes@IdeaExchange:that pisses me off
+Tue Apr 16 23:17:16 1996:  imud_gossip: Descartes@IdeaExchange:I don't much like people who mud any more
+Tue Apr 16 23:17:36 1996:  imud_gossip: Descartes@IdeaExchange:oh, yes you were Othila
+Tue Apr 16 23:18:27 1996:  imud_gossip: Descartes@IdeaExchange:Othila, you were rude at the start of the conversation and mellowed out
+Tue Apr 16 23:18:53 1996:  imud_gossip: Descartes@IdeaExchange:and unfortunately my scroll only goes back to where you started asking for rule clarifications when I was reading them
+Tue Apr 16 23:23:30 1996:  imud_gossip: Descartes@IdeaExchange:well, the impression I am left with is that you were rude, however, i will assume you were not and I just got that image from being barraged by tons of rudeness
+Tue Apr 16 23:23:30 1996:  imud_gossip: Descartes@IdeaExchange:therefore, I am sorry
+Wed Apr 17 00:44:29 1996:  imud_code: Descartes@IdeaExchange:wraith you best drop it
+Thu Apr 18 22:15:57 1996:  imud_gossip: Descartes@IdeaExchange:good night :)
+Sat Apr 20 15:03:22 1996:  imud_gossip: Descartes@IdeaExchange:2 bottles of wine for the price of one (real wine, not the cheap shit)
+Sat Apr 20 18:48:02 1996:  imud_gossip: Descartes@IdeaExchange:what kind of morons post to a thread called NCC-1701-D vs. Star Destroyer
+Sat Apr 20 19:45:17 1996:  imud_gossip: Descartes@IdeaExchange:Java
+Sat Apr 20 19:47:28 1996:  imud_gossip: Descartes@IdeaExchange:I don't know :)... I read the quote recently... if CGI is the answer, it must have been a peculiar question.
+Sat Apr 20 21:31:49 1996:  imud_gossip: Descartes@IdeaExchange:it is a sefun
+Sat Apr 20 21:32:49 1996:  imud_gossip: Descartes@IdeaExchange:a function in the sefun object
+Sat Apr 20 22:20:04 1996:  imud_gossip: Descartes@IdeaExchange:Java rcks :)
+Sat Apr 20 22:20:10 1996:  imud_gossip: Descartes@IdeaExchange:better than I spell
+Sat Apr 20 22:20:32 1996:  imud_gossip: Descartes@IdeaExchange:did someone say I had to have a point?
+Sat Apr 20 22:21:30 1996:  imud_gossip: Descartes@IdeaExchange:people often fear what they do not understand
+Sat Apr 20 22:50:51 1996:  imud_gossip: Descartes@IdeaExchange:yes
+Sat Apr 20 22:51:29 1996:  imud_gossip: Descartes@IdeaExchange:what ya need?
+Sun Apr 21 10:05:12 1996:  imud_code: Descartes@IdeaExchange:ask it instead of rambling on
+Sun Apr 21 10:07:02 1996:  imud_code: Descartes@IdeaExchange:inherit the post office object
+Sun Apr 21 10:08:21 1996:  imud_code: Descartes@IdeaExchange:dunno, read the source code :)
+Sun Apr 21 23:07:35 1996:  imud_gossip: Descartes@IdeaExchange:identify() bites
+Sun Apr 21 23:08:10 1996:  imud_gossip: Descartes@IdeaExchange:it was a snide comment on identify(), not really relevant
+Sun Apr 21 23:10:08 1996:  imud_gossip: Descartes@IdeaExchange:it could, but current implementation bites, at least on Nightmare :)
+Sun Apr 21 23:12:15 1996:  imud_gossip: Descartes@IdeaExchange:it would help if I would take a look more than once every 4 years
+Sun Apr 21 23:13:03 1996:  imud_gossip: Descartes@IdeaExchange:I suppose i have around 200 right now... not exactly sure
+Sun Apr 21 23:14:35 1996:  imud_gossip: Descartes@IdeaExchange:no, I did not get anything of hers... it was a friendly divorce, we just each kept what we had in our possession
+Sun Apr 21 23:15:04 1996:  imud_gossip: Descartes@IdeaExchange:it just appears she had some of my cd's
+Sun Apr 21 23:15:20 1996:  imud_gossip: Descartes@IdeaExchange:the cure has a new release in 2 weeks!!!!
+Sun Apr 21 23:15:38 1996:  imud_gossip: Descartes@IdeaExchange:Wild Mood Swings
+Sun Apr 21 23:22:28 1996:  imud_gossip: Descartes@IdeaExchange:the cure's ne wone will be the first in 4 years, before that it was the first in 3 years, before that the first in 2 years, and before that they did it once a year
+Sun Apr 21 23:23:58 1996:  imud_gossip: Descartes@IdeaExchange:that would explain the flatulence
+Sun Apr 21 23:29:42 1996:  imud_gossip: Descartes@IdeaExchange:nothing like a little flatulence to stop a conversation, eh?
+Mon Apr 22 00:12:43 1996:  imud_code: Descartes@IdeaExchange:what mud you on with I2?
+Mon Apr 22 00:13:12 1996:  imud_gossip: Descartes@IdeaExchange:I2 bites.
+Mon Apr 22 00:13:26 1996:  imud_gossip: Descartes@IdeaExchange:and I am sure they all have wonderful thigns to say abut me as well
+Mon Apr 22 20:22:24 1996:  imud_gossip: Descartes@IdeaExchange:was on tonight
+Mon Apr 22 20:22:32 1996:  imud_gossip: Descartes@IdeaExchange:disturbed the hell out of me
+Mon Apr 22 20:22:48 1996:  imud_gossip: Descartes@IdeaExchange:and as I have flown more, I have already been getting more nervous each time I climb on a plane
+Mon Apr 22 22:17:09 1996:  imud_gossip: Descartes@IdeaExchange:err, not
+Mon Apr 22 22:17:29 1996:  imud_gossip: Descartes@IdeaExchange:in 2038 if we are using 32 bit operating systems we shuld suffer the consequences
+Mon Apr 22 22:17:47 1996:  imud_gossip: Descartes@IdeaExchange:hi Othila
+Mon Apr 22 22:18:19 1996:  imud_gossip: Descartes@IdeaExchange:I am just dandy
+Mon Apr 22 22:20:52 1996:  imud_gossip: Descartes@IdeaExchange:also keep in mind any system needing to represent dates out of that time frame have their own internal date representations
+Mon Apr 22 22:23:23 1996:  imud_gossip: Descartes@IdeaExchange:older than Drew Bledsoe
+Mon Apr 22 22:24:27 1996:  imud_gossip: Descartes@IdeaExchange:I am younger than Bob Dole
+Mon Apr 22 22:25:57 1996:  imud_gossip: Descartes@IdeaExchange:I am definitely not older than Clinton

@@ -43,8 +43,6 @@ object shell_init(object ob) {
     if(owner) return;
     if(!(owner = shadow(ob))) return 0;
 
-    seteuid(getuid(owner));
-
     reset_history();
     reset_prompt();
 

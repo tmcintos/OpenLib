@@ -1,9 +1,14 @@
 #obj/clone/user/human.c
 flags ({})
-coins ({0,2000,})
+coins ({0,0,})
 hit_points 0
 spell_points 0
-gender 1
-env_vars (["TITLE":"Before asking $N, try asking Beek or Descartes","MORE_EXIT_END":1,"nmsh_nick":([]),"history":100,"nmsh_alias":(["l":"look $*","s":"south","i":"inventory","n":"north","u":"up","exa":"look at $*","bio":"biography","ne":"northeast","nw":"northwest","w":"west","sw":"southwest","d":"down","se":"southeast","e":"east",]),"BOB":0,"hey":0,"nmsh_xverb":([":":"emote $*","'":"say $*",]),"version":"Prototype Shell","LENGTH":25,"PROMPT":"[%^BOLD%^%~%^RESET%^]-> ","SHELL":"/obj/clone/shells/protosh","PATH":"/cmd/wiz:/adm/cmd/wiz:/cmd/player:/adm/cmd/player:/adm/cmd/adm:/cmd/adm","TERM":"ansi",])
-aliases (["l":"look","s":"south","prompt":"say \"$PROMPT\"","sc":"score","unsub":"unsubscribe","nw":"northwest","w":"west","er":"more /log/errors/runtime","test":"? \\\"/u/t/tim/zip\\\"->test()","se":"southeast","nod":"emote nod","sub":"subscribe","e":"east","i":"inventory","n":"north","brb":"shout Be right back I\\'m going AFK!!!","ne":"northeast","sw":"southwest","la":"look at",])
-channels ({"wiz",})
+slen 25
+swid 80
+curr_line 49
+lines 38
+file "/include/cmdline.h"
+callback 0
+env_vars (["WIDTH":80,"nmsh_xverb":(["'":"say $*",":":"emote $*",]),"TITLE":"Before asking $N, try asking Beek or Descartes","TERM":"ansi","PROMPT":"[%^BOLD%^%~%^RESET%^]-> ","version":"Prototype Shell","history":100,"nmsh_alias":(["exa":"look at $*","i":"inventory","se":"southeast","l":"look $*","ne":"northeast","bio":"biography","e":"east","w":"west","d":"down","n":"north","s":"south","u":"up","nw":"northwest","sw":"southwest",]),"SHELL":"/obj/clone/shells/protosh","nmsh_nick":([]),"PATH":"/cmd/wiz:/adm/cmd/wiz:/cmd/player:/adm/cmd/player:/adm/cmd/adm:/cmd/adm","hey":1,"BOB":0,"LENGTH":25,"MORE_EXIT_END":1,])
+aliases (["i":"inventory","ls":"ls -c","prompt":"say \"$PROMPT\"","se":"southeast","l":"look","la":"look at","ne":"northeast","sc":"score","sub":"subscribe","w":"west","e":"east","brb":"shout Be right back I\\'m going AFK!!!","unsub":"unsubscribe","n":"north","s":"south","test":"? \\\"/u/t/tim/zip\\\"->test()","er":"more /log/errors/runtime","nod":"emote nod","nw":"northwest","sw":"southwest",])
+channels ({"wiz","gossip","interchat",})

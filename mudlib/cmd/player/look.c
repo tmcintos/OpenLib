@@ -12,18 +12,19 @@ main(string str)
 {
   object room = environment(this_player());
 
-  if(!str) {
-    if(wizardp(this_player()))
+  if( !str ) {
+    if( wizardp(this_player()) )
       printf("[%s]\n", file_name(room));
 
-    room->long();
+    write(room->long());
+
     foreach(object ob in all_inventory(room)) {
       string tmp = (string) ob->short();
 
-      if(ob == this_player()) continue;
-      if(tmp)
+      if( ob == this_player() ) continue;
+      if( tmp )
 	write(capitalize(tmp) +"\n");
-      else if(wizardp(this_player()))
+      else if( wizardp(this_player()) )
 	printf("Invis Object: %s\n", file_name(ob));
     }
   } else {
@@ -37,7 +38,7 @@ main(string str)
 	else
 	  return notify_fail("That is not here.\n");
       } else
-	ob->long();
+	write(ob->long());
     } else
       return notify_fail("Look AT something?\n");
   }

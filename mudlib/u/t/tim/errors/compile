@@ -118,3 +118,41 @@ u/t/tim/zip.c line 103: Illegal LHS
 u/t/tim/zip.c line 103: parse error
 u/t/tim/zip.c line 104: Illegal LHS
 u/t/tim/zip.c line 104: parse error
+u/t/tim/board.c line 94: Undefined variable 'EDITOR_D'
+u/t/tim/board.c line 94: Undefined variable 'post_return'
+u/t/tim/board.c line 94: Illegal to use local variable in a functional.
+u/t/tim/board.c line 99: Bad assignment ( mixed * vs string ).
+u/t/tim/board.c line 113: parse error
+u/t/tim/board.c line 96: Undefined variable 'post_return'
+u/t/tim/board.c line 96: Illegal to use local variable in a functional.
+u/t/tim/board.c line 101: Bad assignment ( mixed * vs string ).
+u/t/tim/board.c line 115: parse error
+u/t/tim/board.c line 112: Bad assignment ( mixed * vs string ).
+u/t/tim/board.c line 126: parse error
+u/t/tim/board.c line 127: parse error
+u/t/tim/board.c line 116: Bad assignment ( mixed * vs string ).
+u/t/tim/board.c line 116: Bad assignment ( mixed * vs string ).
+u/t/tim/board.c line 55: Left argument of -> is not a class
+u/t/tim/board.c line 55: parse error
+u/t/tim/board.c line 56: Illegal LHS
+u/t/tim/board.c line 59: Illegal LHS
+u/t/tim/board.c line 62: Illegal LHS
+u/t/tim/board.c line 62: parse error
+u/t/tim/board.c line 56: parse error
+u/t/tim/board.c line 57: Illegal LHS
+u/t/tim/board.c line 60: Illegal LHS
+u/t/tim/board.c line 63: Illegal LHS
+u/t/tim/board.c line 63: parse error
+u/t/tim/board.c line 93: Undefined variable 'str'
+u/t/tim/board.c line 95: Undefined variable 'threadprops'
+u/t/tim/board.c line 113: Bad assignment ( string * vs string ).
+u/t/tim/board.c line 112: Bad assignment ( string * vs string ).
+u/t/tim/board.c line 129: parse error
+u/t/tim/board.c line 132: Illegal LHS
+u/t/tim/board.c line 132: parse error
+u/t/tim/tmp.c line 2: Missing type for argument
+u/t/tim/tmp.c line 2: Missing type for argument
+u/t/tim/tmp.c line 3: parse error
+u/t/tim/tmp.c line 5: parse error
+u/t/tim/tmp.c line 2: Warning: redefinition of #define HEY
+

@@ -15,7 +15,7 @@ main(string arg)
     foreach(string key, mixed val in env)
       lines += ({ sprintf("  %-10s   %-O", key, val) });
     this_player()->more(lines);
-  } else if( query_verb() == "set" ) {
+  } else if( query_verb() == "setenv" ) {
     string key;
     mixed val;
 
@@ -31,11 +31,12 @@ main(string arg)
     }
 
     this_player()->set_env(key, val);
-  } else if( query_verb() == "unset" ) {
-    sscanf(arg, "%s", arg);
-    if( env[arg] )
+    printf("%s=%O\n", key, val);
+  } else if( query_verb() == "unsetenv" ) {
+    if( env[arg] ) {
+      printf("%s removed\n", arg);
       this_player()->set_env(arg, 0);
-    else
+    } else
       return notify_fail("unset: no such environment variable.\n");
   }
 

@@ -1,17 +1,18 @@
 #include <object_types.h>
 
-dummy()
+int
+receive_object()
 {
-}
-
-// Tim
-
-long()
-{
-  write("You are in the Void.  It is total nothingness.\n");
   return 1;
 }
 
+string
+long()
+{
+  return "You are in the Void.  It is total nothingness.\n";
+}
+
+int
 query_object_class()
 {
   return OBJECT_CONTAINER;

@@ -5,12 +5,6 @@
 //   Hitting 'h' repeatedly scrolls back...need to keep track of prev_line
 //   as well as curr_line to do this right.
 
-// Temporary!!
-#define CHUNK (this_object()->get_env("LENGTH") ? \
-	       this_object()->get_env("LENGTH") : 24)
-#define WIDTH (this_object()->get_env("WIDTH") ? \
-	       this_object()->get_env("WIDTH") : 80)
-
 /*
  * Notification messages
  */
@@ -22,17 +16,27 @@
 /*
  * Used to properly display text to user
  */
-#define display(x) message("system", x, this_object())
+#define display(x) receive_message("system", x);
 
+/*
+ * Globals
+ */
+private int slen;               // screen length
+private int swid;               // screen width
+private int curr_line;          // next line to be displayed
+private int lines;              // number of lines in file or array
+private mixed file;             // file name or array of lines
+private function callback;      // callback function
 /*
  * Prototypes
  */
+void receive_message(string msg_class, string msg);
+mixed get_env(string var);
+
 varargs int more(string filename, function callback);
-void more_file(string input, string filename, int curr_line,
-	   int screen_len, function callback);
-void more_array(string input, string *lines, int curr_line, int size,
-	   int screen_len, int screen_wid, function callback);
-int more_show_help();
+private void more_file(string input);
+private void more_array(string input);
+private int more_show_help();
 
 /*
  * more() call this with an argument that is either an array of lines
@@ -41,21 +45,26 @@ int more_show_help();
  *        called after the text is displayed.
  */
 
-varargs
-int
-more(mixed fileORarray, function callback)
+varargs int
+more(mixed file_or_array, function call_back)
 {
-  int total;
+  file = file_or_array;
+  curr_line = 1;
+  slen = get_env("LENGTH");
+  swid = get_env("WIDTH");
+  callback = call_back;
 
-  if(arrayp(fileORarray)) {
-    for(int i = 0; i < sizeof(fileORarray); i++)
-      fileORarray[i] += "\n";
-    more_array("X", fileORarray, 1, sizeof(fileORarray), CHUNK,
-	       WIDTH, callback);
+  if( !slen ) slen = 80;
+  if( !swid ) swid = 80;
+
+  if( arrayp(file) ) {
+    file = map(file, (: $1 + "\n" :));
+    lines = sizeof(file);
+    more_array("X");
   } else {
-    more_file("X", fileORarray, 1, CHUNK, callback);
+    lines = file_length(file);
+    more_file("X");
   }
-
   return 1;
 }
 
@@ -64,10 +73,10 @@ more(mixed fileORarray, function callback)
  *   curr_line is always the 1st line of the next page to print
  */
 
-void
-more_file(string input, string filename, int curr_line, int sl, function cb)
+private void
+more_file(string input)
 {
-  int itmp, percent;
+  int itmp;
   string text;
 
   switch(input[0]) {
@@ -77,35 +86,35 @@ more_file(string input, string filename, int curr_line, int sl, function cb)
     break;
   case 'h' :                             // show HELP
     display("\n");                       // need a newline
-    curr_line -= sl - 1;         // back to top of this page
+    curr_line -= slen - 1;               // back to top of this page
 
-    if(curr_line < 1)                    // we're on the 1st page already
+    if(curr_line < 1)                       // we're on the 1st page already
       curr_line = 1;
 
-    itmp = this_object()->more_show_help() + 1;   // number of lines displayed
-    itmp = sl - itmp;                     // fill the user's screen
+    itmp = more_show_help() + 1;            // number of lines displayed
+    itmp = slen - itmp;                     // fill the user's screen
     for(int i = 0; i < itmp; i++) display("\n");
 
     display(NOTIFY_CONT);
 
-    input_to("more_file", filename, curr_line, sl, cb);
+    input_to("more_file");
     return;
   case 's' :                             // SKIP FORWARD one page
     display("\n");                       // need a newline
     display("Skipping 1 page...\n");
-    curr_line += sl - 1;
+    curr_line += slen - 1;
     break;
   case 'u' :
   case 'b' :                             // BACK one page
     display("\n");                       // need a newline
-    curr_line -= 2 * (sl-1);
+    curr_line -= 2 * (slen - 1);
     break;
   case 'q' :                             // Only way out
     display("\n");                       // need a newline
-    evaluate(cb);
+    evaluate(callback);
     return;
   default :
-    input_to("more_file", filename, curr_line, sl, cb);
+    input_to("more_file");
     return;
   }  /* switch(input) */
 
@@ -116,20 +125,20 @@ more_file(string input, string filename, int curr_line, int sl, function cb)
   if(curr_line < 1)                      // we're on the 1st page already
     curr_line = 1;
 
-  if(text = read_file(filename, curr_line, sl-1)) {
+  if(text = read_file(file, curr_line, slen - 1)) {
     display(text);
-    curr_line += sl - 1;
+    curr_line += slen - 1;
   }
 
   /*
    * End of file encountered, but some text was read
    */
   if(text) {
-    if(!read_file(filename, curr_line, 1)) {
-      itmp = sl - sizeof(explode(text, "\n"));
+    if(!read_file(file, curr_line, 1)) {
+      itmp = slen - sizeof(explode(text, "\n"));
 
-      if( this_object()->get_env("MORE_EXIT_END") ) {
-	evaluate(cb);
+      if( get_env("MORE_EXIT_END") ) {
+	evaluate(callback);
 	return;
       }
 
@@ -137,27 +146,24 @@ more_file(string input, string filename, int curr_line, int sl, function cb)
 	display("~\n");
       display(NOTIFY_END);
     } else {
-      display(sprintf("%s (line: %d) %s",
-		      NOTIFY_MORE, curr_line, NOTIFY_INST));
+      display(sprintf("%s (%d%%) %s", NOTIFY_MORE,
+		      (curr_line-1) * 100 / lines, NOTIFY_INST));
     }
   } else {
     // curr_line is past end of file, redraw screen
-    return
-      more_file("X", filename, curr_line - (sl - 1), sl, cb);
+    return more_file("X");
   }
-
-  input_to("more_file", filename, curr_line, sl, cb);
+  input_to("more_file");
 }
 
 /*
  * more_array()
  */
 
-void
-more_array(string input, string *lines, int curr_line, int size,
-	   int sl, int sw, function cb)
+private void
+more_array(string input)
 {
-  int itmp, percent, start_line;
+  int itmp, start_line;
   string text;
 
   start_line = curr_line;
@@ -169,36 +175,36 @@ more_array(string input, string *lines, int curr_line, int size,
     break;
   case 'h' :                             // show HELP
     display("\n");                       // need a newline
-//    for(int i = 0; i < sl-1; i++) {  // back to top of this page
+//    for(int i = 0; i < slen - 1; i++) {  // back to top of this page
 //      string tmp;
 //      tmp = lines[--curr_line - 1];
 //      if(curr_line < 1) break;                // if we hit the top of page
-//      i += (strlen(tmp) - 1) / sw;    // account for wrap-around lines
+//      i += (strlen(tmp) - 1) / swid;    // account for wrap-around lines
 //    }
 //
-//    if(curr_line < 1)                        // we're on the 1st page already
-      curr_line = start_line;                     // top of this page
+//    if(curr_line < 1)                   // we're on the 1st page already
+    curr_line = start_line;               // top of this page
 
-    itmp = this_object()->more_show_help() + 1;   // number of lines displayed
-    itmp = sl - itmp;                     // fill the user's screen
+    itmp = more_show_help() + 1;          // number of lines displayed
+    itmp = slen - itmp;                     // fill the user's screen
     for(int i = 0; i < itmp; i++) display("\n");
 
     display(NOTIFY_CONT);
 
-    input_to("more_array", lines, curr_line, size, sl, sw, cb);
+    input_to("more_array");
     return;
   case 'q' :                             // only way out
     display("\n");                       // need a newline
-    evaluate(cb);
+    evaluate(callback);
     return;
   case 's' :                             // SKIP FORWARD one page
     display("\n");                       // need a newline
     display("Skipping 1 page...\n");
-    for(int i = 0; i < sl-1; i++) {
+    for(int i = 0; i < slen - 1; i++) {
       string tmp;
-      tmp = lines[curr_line++ - 1];
-      i += (strlen(tmp) - 1) / sw;   // account for wrap-around lines
-      if(curr_line == size+1) {              // end of array
+      tmp = file[curr_line++ - 1];
+      i += (strlen(tmp) - 1) / swid;   // account for wrap-around lines
+      if(curr_line == lines + 1) {           // end of array
 	curr_line = start_line;              // start where we were
 	break;
       }
@@ -207,11 +213,11 @@ more_array(string input, string *lines, int curr_line, int size,
   case 'u' :
   case 'b' :                                 // BACK one page
     display("\n");                           // need a newline
-    for(int i = 0; i < 2*(sl-1); i++) { // back to top of previous page
+    for(int i = 0; i < 2*(slen - 1); i++) { // back to top of previous page
       string tmp;
       if(curr_line < 2) break;               // if we hit the top of document
-      tmp = lines[--curr_line - 1];
-      i += (strlen(tmp) - 1) / sw;   // account for wrap-around lines
+      tmp = file[--curr_line - 1];
+      i += (strlen(tmp) - 1) / swid;   // account for wrap-around lines
     }
 
     if(curr_line < 1)                        // we're on the 1st page already
@@ -219,47 +225,44 @@ more_array(string input, string *lines, int curr_line, int size,
     
     break;
   default :
-    input_to("more_array", lines, curr_line, size, sl, sw, cb);
+    input_to("more_array");
     return;
   }  /* switch(input) */
 
   /*
    * display next page
    */
-  for(int i = 0; i < sl-1; i++) {
-    if(curr_line > size) {                   // past the end of array
-      if( this_object()->get_env("MORE_EXIT_END") ) {
-	evaluate(cb);
+  for(int i = 0; i < slen - 1; i++) {
+    if(curr_line > lines) {                   // past the end of array
+      if( get_env("MORE_EXIT_END") ) {
+	evaluate(callback);
 	return;
       }
       display("~\n");
     } else {
-      text = lines[curr_line++ - 1];
+      text = file[curr_line++ - 1];
       display(text);
-      i += (strlen(text) - 1) / sw;  // account for wrap-around lines
+      i += (strlen(text) - 1) / swid;  // account for wrap-around lines
     }
   }
 
-  if(curr_line > size) {                     // past the end of array
+  if(curr_line > lines) {                     // past the end of array
     curr_line = start_line;                  // reset curr_line
     display(NOTIFY_END);
   } else {
     display(sprintf("%s (%d%%) %s",
-		    NOTIFY_MORE, (100 * curr_line) / size, NOTIFY_INST));
+		    NOTIFY_MORE, 100 * (curr_line - 1) / lines, NOTIFY_INST));
   }
-
-  input_to("more_array", lines, curr_line, size, sl, sw, cb);
+  input_to("more_array");
 }
 
 /*
  *  Help for more
  */
 
-int
+private int
 more_show_help()
 {
-  int i;
-
   display("Help for MORE:\n\n"
 	  +"<spacebar>    Show next page\n"
 	  +"u,b           Go back to the previous page\n"

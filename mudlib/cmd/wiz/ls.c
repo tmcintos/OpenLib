@@ -1,6 +1,6 @@
 /*  -*- LPC -*-  */
 // ls.c: 05/05/95:  Tim McIntosh (astasia@iastate.edu)
-//                  Supports flags -alF (single or combos)
+//                  Supports flags -aclF (single or combos)
 //
 // This file is part of the UltraLib distribution mudlib.
 // It may be used and modified as long as this header remains intact.
@@ -15,11 +15,10 @@
 //       12.10.95:  T.M   Changed normal ls to use sprintf()
 //       12.17.95:  T.M   Made output a little prettier
 //       02.12.96:  T.M   Broke do_ls() into short_format() and long_format()
+//       04.16.96:  T.M   Optimized some...
+//       04.22.96   T.M   Fixed one line directory bug.
 
 #include <cmdline.h>
-
-// screen width
-#define WIDTH 79
 
 void do_ls(string dir, int optl, int opta, int optc, int optF);
 void long_format(string* files);
@@ -35,8 +34,7 @@ main(string *argv, string *argv2)
   optF = flag("F");  // F flag marks loaded objects and dirs
   opta = flag("a");  // a flag lists all files including dot files
   optl = flag("l");  // list using long format
-  optc = ( this_player()->get_env("TERM") == "ansi" ||
-     	   this_player()->get_env("TERM") == "vt100" );
+  optc = flag("c");  // color list
 
   // No args on command line case
   if(!sizeof(argv2)) {
@@ -49,7 +47,6 @@ main(string *argv, string *argv2)
     do_ls(argv2[i], optl, opta, optc, optF);
     write("\n");
   }
-
   do_ls(argv2[i], optl, opta, optc, optF);
 
   return 1;
@@ -100,35 +97,31 @@ do_ls(string dir, int optl, int opta, int optc, int optF) {
 void
 long_format(mixed* files)
 {
-  foreach(mixed* file in files) {
-    string tmp = ( (file[1] == -2) ? "<DIR>" : "" + file[1] );
-    printf("   %18-s   %6-s   %30-s\n", file[0], tmp, ctime(file[2]) );
-  }
+  map(files, (: printf("   %:-18s   %6s   %:-30s\n", $1[0],
+		       $1[1] == - 2 ? "<DIR>" : ""+$1[1],
+		       ctime($1[2]))
+	      :) );
 }
 
 void
 short_format(string* files, string dir, int optc, int optF)
 {
+  int width = this_player()->get_env("WIDTH") - 1;
   int max_fname_len, columns, col_len;
-  string spaces;
-  string printstr = "";
-  spaces = "                                                                 ";
-    
+
+  if( !width ) width = 79;
+
+  if( !sizeof(files) ) return;
+
   // get longest filename and setup columns
-  for(int i = 0; i < sizeof(files); i++) {
-    int itmp = 1 + strlen( files[i] );
+  max_fname_len = sort_array(map(files, (: strlen($1) :)), 1)[<1] + 2;
 
-    if(itmp > max_fname_len)
-      max_fname_len = itmp;
-  }
-  max_fname_len += 2;
-
-  if( !(columns = WIDTH  / max_fname_len) ) columns = 1;
-  col_len = to_int(ceil(to_float(sizeof(files)) / to_float(columns)));
+  if( !(columns = width / max_fname_len) ) columns = 1;
+  col_len = sizeof(files) / columns + 1;
 
   // create columns
   for(int i = 0; i < col_len; i++) {
-    printstr = "";
+    string printstr = "";
 
     // create each row
     for(int j = i; j < col_len * columns; j += col_len) {
@@ -166,7 +159,7 @@ short_format(string* files, string dir, int optc, int optF)
 	  len--;                                  // so is this
 	}
       }
-      printstr = sprintf("%s%s%"+len+"' 's", printstr, files[j], "");
+      printstr = sprintf("%s%s%*' 's", printstr, files[j], len, "");
     }
     write(printstr +"\n");
   }

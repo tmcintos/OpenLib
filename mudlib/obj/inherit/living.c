@@ -7,36 +7,43 @@
 // 10/14/95     Casper:  Including a generic race body for use with monsters.
 // 10/14/95     Tim:  added weight and money funcs.
 // 10/16/95     Tim:  started adding support for DEATH >evil grin<
+// 04/20/96     Tim:  changed to inherit CONTAINER, took out add_weight()
+//                    changed long() to return formatted string only.
+//                    Updated w.r.t. object.c
 
 #pragma save_binary
 
 #include <mudlib.h>
 #include <object_types.h>
 #include <money.h>
-#include <race.h>
-#include <races/human.h>
 
 inherit INHERIT_DIR "/combat";
-inherit OBJECT;
+inherit CONTAINER;
+
+#include <race.h>  // race prototypes
 
 // Global Variables
 private static string name;            // our name, don't save in users
+private static int gender;             // 1=male -1=female 0=neutral (gender.h)
 
 private int *coins;                    // our money
 private int hit_points, spell_points;  // our HP/SP
-private int gender;                    // 1=male -1=female 0=neutral (gender.h)
 
-// Function Prototypes
+/*
+ * Function Prototypes
+ */
 void create();
 int set_name(string name);
 int id(string id);
-int get();
-varargs mixed long(int flag);
-void fix_weight();                     // re-init the weight of this obj
-int add_weight(int weight);            // add weight to living (if we can)
+nomask int add_money(int* money);
+nomask int remove_money(int* money);
+nomask int get();
+string long();
 void die();
 
-// Query functions
+/*
+ * Query functions
+ */
 string query_name() { return name; }
 string query_cap_name() { return capitalize(name); }
 int* query_money() { return copy(coins); }
@@ -49,7 +56,8 @@ query_stat(string stat)
   return 5;
 }
 
-int recieve_damage(int damage)
+int
+recieve_damage(int damage)
 {
   write(sprintf("You took %i damage.\n",damage));
 
@@ -62,7 +70,7 @@ int recieve_damage(int damage)
     hit_points = 0;
 
 // don't die if we're a player right now -- Tim
-  if(!(userp(this_player())))
+  if( !userp(this_player()) )
     if(!hit_points)
       call_out((: die :), 2);
 
@@ -76,82 +84,81 @@ query_skill(string skill)
   return 5;
 }
 
-// Rest of the Implementation
-
+/*
+ * Rest of the Implementation
+ */
 void
 create()
 {
-  object::create();
-  set_object_class(OBJECT_CONTAINER);
+  ::create();
 
-  set_weight(this_object()->query_base_weight());
+  if( clonep() ) {
+    coins = allocate(COIN_TYPES);
+    for(int i = 0; i < COIN_TYPES; i++)
+      coins[i] = 0;
 
-  coins = allocate(COIN_TYPES);
-  for(int i = 0; i < COIN_TYPES; i++)
-    coins[i] = 0;
+    enable_commands();         // living object; Tim 9/14/95
+    set_heart_beat(1);
 
-  enable_commands();         // living object; Tim 9/14/95
-  set_heart_beat(1);
+    init_combat();
 
-  init_combat();
-
-  hit_points = 100;       // temporary! for testing death
+    hit_points = 100;       // temporary! for testing death
+  }
 }
 
 int
 clean_up(int inh)
 {
-  if(!inh && !environment())
+  if( !inh && !environment() )
     destruct(this_object());
   else
     return 1;
 }
 
-// set_name:  Set the name of this living object
-
+/*
+ * set_name:  Set the name of this living object
+ */
 int
 set_name(string namestr)
 {
   name = lower_case(namestr);
-  set_living_name(namestr);          // for find_living()
+  set_living_name(name);          // for find_living()
   return 1;
 }
 
-nomask
-void
+nomask void
 set_gender(int s)
 {
   gender = s;
 }
 
-// add money to living -- returns 1 if the money was received successfully
-
-nomask
-int
+/*
+ * add money to living -- returns 1 if the money was received successfully
+ */
+nomask int
 add_money(int *money)
 {
-  int i, weight = 0;
+  int weight;
 
-  if(sizeof(money) < COIN_TYPES)
+  if( sizeof(money) < COIN_TYPES )
     return 0;
 
   weight += money[SILVER] / 18;
   weight += money[GOLD] / 6;
 
-  if(!add_weight(weight))
+  if( weight + query_weight_contained() > query_weight_capacity() )
     return 0;
 
-  for(i = 0; i < COIN_TYPES; i++) {
+  for(int i = 0; i < COIN_TYPES; i++)
     coins[i] += money[i];
-  }
 
   return 1;
 }
 
-// remove money from living--makes change
-
-nomask
-int
+/*
+ * remove money from living--makes change
+ */
+nomask int
 remove_money(int *money)
 {
   int remove_silver, remove_gold;
@@ -159,7 +166,7 @@ remove_money(int *money)
   if(sizeof(money) < COIN_TYPES)
     return 0;
 
-  if(coins[SILVER] >= money[SILVER]) {
+  if( coins[SILVER] >= money[SILVER] ) {
     remove_silver = money[SILVER];
   } else {
     int gold_required, left_over;
@@ -178,7 +185,7 @@ remove_money(int *money)
     }
   }
 
-  if(coins[GOLD] >= money[GOLD]) {
+  if( coins[GOLD] >= money[GOLD] ) {
     remove_gold = money[GOLD];
   } else {
     int silver_required;
@@ -202,90 +209,75 @@ remove_money(int *money)
   return 1;
 }
 
-// called by the present() efun (and some others) to determine whether
-// an object is referred as an 'arg'.
-
+/*
+ * called by the present() efun (and some others) to determine whether
+ * an object is referred as an 'arg'.
+ */
 int
 id(string arg)
 {
-  return (arg == query_name() || object::id(arg));
+  return ( arg == query_name() || ::id(arg) );
 }
 
-// Overload of get()...You can't get a living object
-//   no need to overload drop() since you can't get it :)
-
-int
+/*
+ * Overload of get()...You can't get a living object
+ * no need to overload drop() since you can't get it :)
+ */
+nomask int
 get()
 {
   return 0;
 }
 
-// Long description
-// with flag set = 1, this returns a string
-// otherwise writes it out
-
-varargs
-mixed
-long(int flag)
+/*
+ * Long description
+ */
+string
+long()
 {
-  object ob;
+  object* obs = all_inventory(this_object());
+  string prn = capitalize(pronoun(this_object(), 0));
+  string ret = short() + ".\n" + (long_desc ? long_desc : "");
+  string tmp;
 
-  if(!flag) {
-    write(short() +"\n" +
-	  (long_desc ? long_desc : "") +
-	  capitalize(pronoun(this_object())) + " is carrying:\n");
-    
-    foreach(ob in all_inventory(this_object())) {
-      string tmp;
+  ret += sprintf("  %s is a %s.\n", prn, query_race());
 
-      if(tmp = (string)ob->short())
-	write("  "+ capitalize(tmp) +"\n");
-    }
+  /*
+   * Inventory
+   */
+  tmp = sprintf("  %s is carrying ", prn);
 
-    return 1;
-  } else {
-    string ret = "";
+  if( sizeof(obs) )
+    tmp += list_obs(obs) + ".\n";
+  else
+    tmp += "nothing.\n";
 
-    ret += short() + "\n" +
-           (long_desc ? long_desc : "") +
-           "He/She is carrying:\n";
-
-    foreach(ob in all_inventory(this_object())) {
-      string tmp;
-
-      if(tmp = (string)ob->short())
-	ret += "  " + tmp + "\n";
-    }
-
-    return ret;
-  }
+  ret += break_string(tmp, 70);
+  return ret;
 }
-
-// overload of object::query_weight()
 
 int
-query_weight()
+receive_object(object ob)
 {
-  int my_weight = object::query_weight();          // body wt. + inventory wt.
+  // test for strength and room to carry object
+  return 1;
+}
 
-// weight of coins
-  my_weight += coins[SILVER] / 18;
-  my_weight += coins[GOLD] / 6;
+/*
+ * overload of container::query_weight_contained()
+ */
+int
+query_weight_contained()
+{
+  int weight = ::query_weight_contained();     // body wt. + inventory wt.
 
-  return my_weight;
+  // weight of coins
+  weight += coins[SILVER] / 18;
+  weight += coins[GOLD] / 6;
+
+  return weight;
 }
   
-boolean
-add_weight(int pounds)
-{
-  return TRUE;           // remove later -- Tim
-
-  if((query_weight() + pounds) > this_object()->query_max_weight())
-    return FALSE;
-
-  return TRUE;
-}
-
 // Death :)
 // Need to override this for players
 
@@ -312,4 +304,3 @@ die()
 
   destruct(this_object());
 }
-

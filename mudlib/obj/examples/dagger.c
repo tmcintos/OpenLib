@@ -46,7 +46,7 @@ with a small hand guard, the ideal weapon for creating pure
 havoc in the world.
 ENDLONG);
  
-  set_ids(({"dagger","weapon"})); //Please have "weapon" in 
+  add_ids(({"dagger","weapon"})); //Please have "weapon" in 
                                   //all weapons.
   set_weight(2);                                 // 2 lbs.(?) --Casper
   set_value(({ 0, 0 }));  // To be determined --Casper

@@ -6,6 +6,7 @@ real_name "Tim McIntosh"
 email_addr "tmcintos@knapp38.res.iastate.edu"
 body "/obj/clone/user/human"
 login_shell "/obj/clone/shells/protosh"
-login_time 829194984
-logout_time 829106529
+gender 1
+login_time 830225900
+logout_time 830222760
 login_from "knapp38.res.iastate.edu"

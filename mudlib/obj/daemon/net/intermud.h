@@ -10,8 +10,6 @@ static void create();
 static int remove();
 static void Setup();
 static void eventRead(mixed *packet);
-static void eventRequestMudList();
-static void eventRequestChannelList();
 static void eventSocketClose();
 static void eventConnectionFailure();
 int SetDestructOnClose(int x);

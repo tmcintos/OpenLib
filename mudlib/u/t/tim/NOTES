@@ -16,3 +16,5 @@ stuff to edit when moving in new body/shell:
   su command
   quit command?
   chfn command (not directly needed, but do it anyway)
+-security_d may work now; problems with privs_file() in master--bug?
+ Need to test all this and do a lot more work on security all-around

@@ -48,7 +48,10 @@ main(string dest)
     return notify_fail("goto: cannot find specified object\n");
 
 
-  me->move(ob);
+  if( ob == from )
+    return notify_fail("You stay where you are.\n");
+
+  if( !(me->move(ob)) ) return 0;
   me->force_me("look");
 
   tell_room(ob, sprintf("%s falls from the sky and lands on his head.\n",

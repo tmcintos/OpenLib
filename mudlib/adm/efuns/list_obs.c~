@@ -1,0 +1,22 @@
+/*  -*- LPC -*-  */
+string
+list_obs(object* list)
+{
+  string* descs;
+
+  if( !sizeof(list) ) return "";
+
+  if( this_player() && !wizardp(this_player()) )
+    list = filter(list, (: $1->short() :));   // filter invisible
+
+  if( !sizeof(list) ) return "";
+
+  descs = map(list, (: ($1->short() ? $1->short() :
+			sprintf("an invisible object [%s]", file_name($1))) :)
+	      );
+
+  if( sizeof(descs) == 1 )
+    return descs[0];
+  else
+    return implode(descs[0..<2], ", ") + "and " + descs[<1];
+}

@@ -6,6 +6,14 @@
  
 #include <weapon_types.h>
 
+string query_race()
+{
+  return "human";
+}
+
+/*
+ * override of object::query_base_weight
+ */
 int query_base_weight()
 {
   return 140;  // in lbs.

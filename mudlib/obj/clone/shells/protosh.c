@@ -98,8 +98,6 @@ shell_init(object ob)
   if(owner) return;
   if(!(owner = shadow(ob))) return 0;
 
-  seteuid( getuid(owner) );
-
   current_dir = user_cwd(owner->query_name());
   history = ([]);
   hist_start = hist_end = 1;
@@ -383,9 +381,10 @@ lglob(string input)
   idx = strsrch(input[0..idx], '/', -1);
 
   if( idx )
-    input = implode(glob(input[0..idx - 1], explode(input[idx..], "/")), " ");
+    input = implode(glob(input[0..idx - 1],
+			 explode(input[idx+1..], "/")), " ");
   else
-    input = implode(glob("", explode(input, "/")), " ");
+    input = implode(glob("", explode(input[1..], "/")), " ");
 
   return input;
 }

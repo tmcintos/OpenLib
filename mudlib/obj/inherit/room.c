@@ -14,6 +14,8 @@
 //            pointer to a function of type string; prototyped all functions;
 //            took out id() since it is useless in this context;
 //            also took out brief() since we can use short() for that in rooms
+//  04/20/96  Tim: now inherits CONTAINER.  Made the relevant code changes.
+//            Changed long() to return a formatted string only.
 
 #pragma save_binary
 
@@ -21,7 +23,7 @@
 #include <object_types.h>
 
 inherit INHERIT_DIR "/inttostr";         /* converts int's to strings */
-inherit OBJECT;
+inherit CONTAINER;
 
 private static boolean no_attacks_here;  /* can we attack here? 1=no 0=yes */
 private static mapping exits;            /* hmm...who knows */
@@ -32,7 +34,8 @@ void create();
 int clean_up(int inh);
 void init();
 nomask boolean query_no_attack();
-varargs mixed long(int flag);
+string long();
+int receive_object(object ob);
 nomask void set_no_attack();                     // cannot fight here
 nomask void set_exits(mapping dir_dest_mapping); // dest can be obj or string 
 nomask void set_items(mapping id_long_mapping);  // long can be str/function
@@ -44,23 +47,31 @@ nomask string exa_item(string item);  // returns long desc of item
 void
 create()
 {
-  object::create();
-  set_object_class(OBJECT_CONTAINER);
+  ::create();
   items =([]);
   exits = ([]);
+
+  // This saves memory when a file inherits this one and then only defines
+  // a create() function and nothing else. (see manpage)
+  // This works because it doesn't replace until the current execution
+  // is complete.
+  if( replaceable(this_object()) )
+    replace_program(ROOM);
 }
 
-// override of object::clean_up() which we _don't_ want to call
-// If this is a regular room and no living present...remove
- 
+/*
+ * override of object::clean_up() which we _don't_ want to call
+ * If this is a regular room and no living present...remove
+ */
 int
 clean_up(int inherited)
 {
   if(inherited)
     return 0;
 
-  if(filter_array(all_inventory(this_object()), (: living :)) == ({}))
+  if( !sizeof(filter_array(all_inventory(this_object()), (: living :))) )
     destruct(this_object());
+
   return 1;
 }
 
@@ -86,67 +97,66 @@ query_no_attack()
 // Had too many writes for me.  Cut them out to recduce CPU & 
 // clean up the apearance.  Casper 8/24/95
 
-varargs mixed
-long(int flag)
+string
+long()
 {
-  string *keyring = keys(exits), output;
+  string* keyring = keys(exits);
   int i = sizeof(keyring);
   int light = query_light();
   object* obs;
+  string ret;
  
   //Add a check to deep_inventory for a lightsource.  
   //Will check docs on Rift for a possible shortcuts.  Casper 8/24/95
-  if(!light) {
-    obs = all_inventory(this_object());
-    for(int j = 0; j < sizeof(obs); j++)
-      obs += all_inventory(obs[j]);
+  if( !light ) {
+    obs = deep_inventory(this_object());
     foreach(object ob in obs)
-      if(light = ob->query_light()) break;
-    if(!light) {
-      write("It is dark here.\n");
-      return;
+      if( (light = ob->query_light()) ) break;
+    if( !light ) {
+      ret = "It is dark here.\n";
+      return ret;
     }
   }
-  if(!long_desc)
-    output = "A nondescript room\n";
+
+  if( !long_desc )
+    ret = "A nondescript room\n";
   else
-    output = long_desc;
+    ret = long_desc;
  
   // Exit viewing crap
-  if(i == 0)
-  {
-    output +="  There are no obvious exits.\n";
-  }
-  else
-  {
+  if( !i ) {
+    ret += "  There are no obvious exits.\n";
+  } else {
     if(i == 1)
     {
-      output +="  The only obvious exit is "+ keyring[0] +".\n";
-    } 
-    else
-    {
-      output +="  There are "+ int_to_word(i) +" obvious exits:  ";
+      ret += "  The only obvious exit is "+ keyring[0] +".\n";
+    } else {
+      ret += "  There are "+ int_to_word(i) +" obvious exits:  ";
+
       while (--i > 1)
-      {
-        output +=keyring[i] +", ";
-      }
-      output += keyring[1] +" and "+ keyring[0] +".\n";
+        ret +=keyring[i] +", ";
+
+      ret += keyring[1] +" and "+ keyring[0] +".\n";
     }
   }
 
-  // if flag is set, return the string
-  if(flag)
-    return output;
-
-  // Else write out line by line, mainly for breaking up large chunks sent
-  // to the player...
-  // I'm just recycling variables here; don't get confused :)
-
-  keyring = explode(output, "\n");
-  foreach(output in keyring)
-    write(output + "\n");
+  return ret;
 }
- 
+
+/*
+ * override of container::receive_object()
+ */
+int
+receive_object(object ob)
+{
+  if( !query_bulk_capacity() ) return 1;
+
+  if( query_bulk_contained() + ob->query_bulk() > query_bulk_capacity() )
+    return notify_fail("There is not room in there for you!\n");
+
+  return 1;
+}
+
 nomask void
 set_no_attack()
 {

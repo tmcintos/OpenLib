@@ -1315,3 +1315,372 @@ obj/daemon/combatd.c line 329: Undefined variable 'OBJECT_LIVING'
 obj/daemon/combatd.c line 333: Undefined variable 'OBJECT_NO_ATTACK'
 obj/daemon/combatd.c line 338: Undefined variable 'OBJECT_PLAYER'
 obj/clone/money.c line 74: Undefined variable 'OBJECT_LIVING'
+obj/daemon/net/services/ucache.c line 14: End of file in string
+obj/daemon/net/services/ucache.c line 14: parse error
+obj/daemon/net/ucache_d.c line 6: Cannot #include net/daemons
+obj/daemon/net/ucache_d.c line 31: Undefined function preivous_object
+obj/daemon/net/ucache_d.c line 31: Bad argument 1 to efun file_name()
+obj/daemon/net/ucache_d.c line 31: Undefined variable 'SERVICES_D'
+obj/daemon/net/ucache_d.c line 6: Cannot #include net/daemons
+obj/daemon/net/ucache_d.c line 31: Undefined variable 'SERVICES_D'
+tmp/tmp_eval_file.c line 6: parse error
+tmp/tmp_eval_file.c line 6: Too few arguments to localtime
+tmp/tmp_eval_file.c line 6: Undefined variable 'n'
+tmp/tmp_eval_file.c line 6: parse error
+tmp/tmp_eval_file.c line 6: Too few arguments to filter
+tmp/tmp_eval_file.c line 6: Undefined function sort
+tmp/tmp_eval_file.c line 6: Undefined variable 'call_stack'
+adm/obj/daemon/security_d.c line 77: Illegal to use local variable in functional.
+adm/obj/daemon/security_d.c line 88: Undefined function check_priv
+adm/obj/daemon/security_d.c line 122: Undefined function is_wizard
+adm/obj/daemon/security_d.c line 88: Undefined function check_priv
+adm/obj/daemon/security_d.c line 122: Undefined function is_wizard
+adm/obj/daemon/security_d.c line 127: Bad type for argument 1 ( string vs int )
+adm/obj/daemon/security_d.c line 138: Bad type for argument 1 ( string vs int )
+adm/obj/daemon/security_d.c line 152: Bad type for argument 1 ( string vs int )
+adm/obj/daemon/security_d.c line 163: Bad type for argument 1 ( string vs int )
+adm/obj/daemon/security_d.c line 93: Undefined function check_priv
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+adm/obj/daemon/security_d.c line 135: Wrong number of macro arguments
+adm/obj/daemon/security_d.c line 136: parse error
+adm/obj/daemon/security_d.c line 137: Wrong number of macro arguments
+adm/obj/daemon/security_d.c line 138: parse error
+tmp/tmp_eval_file.c line 6: Wrong number of macro arguments
+tmp/tmp_eval_file.c line 6: Undefined variable 'unguarded'
+tmp/tmp_eval_file.c line 6: Wrong number of macro arguments
+tmp/tmp_eval_file.c line 6: Left argument of -> is not a class
+adm/cmd/wiz/rm.c line 27: Undefined variable 'SECURITY_D'
+tmp/tmp_eval_file.c line 7: Undefined function lines
+tmp/tmp_eval_file.c line 7: Too many arguments to program_info
+tmp/tmp_eval_file.c line 7: Too many arguments to program_info
+tmp/tmp_eval_file.c line 7: Undefined variable 'strncmp'
+tmp/tmp_eval_file.c line 7: Undefined function strncmp
+tmp/tmp_eval_file.c line 7: Undefined variable 'SECURE_D'
+adm/obj/daemon/security_d.c line 107: Undefined function priv_exists
+adm/obj/daemon/security_d.c line 178: Redeclaration of function priv_exists.
+adm/obj/daemon/security_d.c line 188: Undefined variable 'priv'
+adm/obj/daemon/security_d.c line 198: Undefined variable 'priv'
+adm/obj/daemon/security_d.c line 294: Undefined variable 'DOMAIN_MEMBER'
+adm/obj/daemon/security_d.c line 301: Wrong number of arguments to member_domain
+    Expected: 2  Got: 1
+adm/obj/daemon/security_d.c line 188: Undefined variable 'priv'
+adm/obj/daemon/security_d.c line 198: Undefined variable 'priv'
+adm/obj/daemon/security_d.c line 294: Undefined variable 'DOMAIN_MEMBER'
+adm/obj/daemon/security_d.c line 301: Wrong number of arguments to member_domain
+    Expected: 2  Got: 1
+tmp/tmp_eval_file.c line 7: Undefined function member_domain
+tmp/tmp_eval_file.c line 7: Undefined function member_domain
+tmp/tmp_eval_file.c line 7: parse error
+tmp/tmp_eval_file.c line 7: Undefined function simul_efun
+adm/obj/daemon/security_d.c line 109: Undefined variable 'priv'
+adm/obj/daemon/security_d.c line 149: Undefined function domain_exists
+adm/obj/daemon/security_d.c line 149: Undefined function admin_domain
+adm/obj/daemon/security_d.c line 154: Undefined function member_domain
+adm/obj/daemon/security_d.c line 202: Undefined variable 'unguarded'
+adm/obj/daemon/security_d.c line 288: Redeclaration of function domain_exists.
+adm/obj/daemon/security_d.c line 149: Undefined function admin_domain
+adm/obj/daemon/security_d.c line 154: Undefined function member_domain
+adm/obj/daemon/security_d.c line 202: Undefined variable 'unguarded'
+adm/obj/daemon/security_d.c line 322: Redeclaration of function admin_domain.
+adm/obj/daemon/security_d.c line 328: Redeclaration of function member_domain.
+adm/obj/daemon/security_d.c line 149: Undefined function admin_domain
+adm/obj/daemon/security_d.c line 154: Undefined function member_domain
+adm/obj/daemon/security_d.c line 205: Undefined variable 'unguarded'
+adm/obj/daemon/security_d.c line 322: Redeclaration of function admin_domain.
+adm/obj/daemon/security_d.c line 328: Redeclaration of function member_domain.
+adm/obj/daemon/security_d.c line 149: Undefined function admin_domain
+adm/obj/daemon/security_d.c line 154: Undefined function member_domain
+adm/obj/daemon/security_d.c line 322: Redeclaration of function admin_domain.
+adm/obj/daemon/security_d.c line 328: Redeclaration of function member_domain.
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+tmp/tmp_eval_file.c line 7: Undefined function simul_efun
+tmp/tmp_eval_file.c line 7: Undefined variable 'master'
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+tmp/tmp_eval_file.c line 7: Undefined variable 'hey'
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+tmp/tmp_eval_file.c line 7: Undefined function t_ungaurded
+obj/clone/money.c line 74: Undefined variable 'OBJECT_LIVING'
+tmp/tmp_eval_file.c line 7: Undefined variable 'hey'
+tmp/tmp_eval_file.c line 7: Too few arguments to explode
+tmp/tmp_eval_file.c line 7: Undefined variable 'who'
+tmp/tmp_eval_file.c line 7: Undefined variable 'REVERSIBLE_EXPLODE_STRING'
+tmp/tmp_eval_file.c line 7: Undefined variable '__SANE_EXPLODE_STRING__'
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+adm/efuns/check_priv.c line 27: Undefined function restore_varible
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+tmp/tmp_eval_file.c line 7: Undefined variable 'hey'
+tmp/tmp_eval_file.c line 7: Undefined function file_creator
+adm/obj/daemon/login_d.c line 358: Undefined variable 'terminfo'
+tmp/tmp_eval_file.c line 7: Undefined function set_env
+cmd/wiz/ls.c line 113: Reserved type name unexpected.
+cmd/wiz/ls.c line 113: parse error
+cmd/wiz/ls.c line 113: Illegal LHS
+cmd/wiz/ls.c line 114: Undefined variable 'width'
+cmd/wiz/ls.c line 117: Undefined variable 'files'
+cmd/wiz/ls.c line 120: Undefined variable 'max_fname_len'
+cmd/wiz/ls.c line 125: Undefined variable 'WIDTH'
+cmd/wiz/ls.c line 182: parse error
+cmd/wiz/ls.c line 115: parse error
+cmd/wiz/ls.c line 127: Illegal LHS
+cmd/wiz/ls.c line 127: parse error
+cmd/wiz/ls.c line 127: Illegal LHS
+cmd/wiz/ls.c line 128: Illegal LHS
+cmd/wiz/ls.c line 128: parse error
+cmd/wiz/ls.c line 115: Too few arguments to sort_array
+cmd/wiz/ls.c line 115: Value indexed has a bad type : "int "
+tmp/tmp_eval_file.c line 7: parse error
+cmd/wiz/ls.c line 108: parse error
+cmd/wiz/ls.c line 108: $var illegal outside of function pointer.
+cmd/wiz/ls.c line 114: Illegal LHS
+cmd/wiz/ls.c line 114: parse error
+cmd/wiz/ls.c line 118: Illegal LHS
+cmd/wiz/ls.c line 121: Illegal LHS
+cmd/wiz/ls.c line 109: parse error
+cmd/wiz/ls.c line 110: $var illegal outside of function pointer.
+cmd/wiz/ls.c line 116: Illegal LHS
+cmd/wiz/ls.c line 116: parse error
+cmd/wiz/ls.c line 120: Illegal LHS
+cmd/wiz/ls.c line 123: Illegal LHS
+cmd/wiz/ls.c line 109: $var illegal outside of function pointer.
+cmd/wiz/ls.c line 109: parse error
+cmd/wiz/ls.c line 110: $var illegal outside of function pointer.
+cmd/wiz/ls.c line 110: $var illegal outside of function pointer.
+cmd/wiz/ls.c line 111: $var illegal outside of function pointer.
+cmd/wiz/ls.c line 117: Illegal LHS
+cmd/wiz/ls.c line 109: parse error
+cmd/wiz/ls.c line 110: $var illegal outside of function pointer.
+cmd/wiz/ls.c line 116: Illegal LHS
+cmd/wiz/ls.c line 116: parse error
+cmd/wiz/ls.c line 120: Illegal LHS
+cmd/wiz/ls.c line 123: Illegal LHS
+cmd/wiz/ls.c line 109: parse error
+cmd/wiz/ls.c line 110: $var illegal outside of function pointer.
+cmd/wiz/ls.c line 116: Illegal LHS
+cmd/wiz/ls.c line 116: parse error
+cmd/wiz/ls.c line 120: Illegal LHS
+cmd/wiz/ls.c line 123: Illegal LHS
+obj/clone/money.c line 74: Undefined variable 'OBJECT_LIVING'
+tmp/tmp_eval_file.c line 7: parse error
+obj/clone/shells/protosh.c line 387: parse error
+obj/clone/shells/protosh.c line 399: Illegal LHS
+obj/clone/shells/protosh.c line 401: Illegal LHS
+obj/clone/shells/protosh.c line 412: Illegal LHS
+obj/clone/shells/protosh.c line 412: parse error
+obj/clone/shells/protosh.c line 418: Illegal LHS
+obj/clone/shells/protosh.c line 387: parse error
+obj/clone/shells/protosh.c line 399: Illegal LHS
+obj/clone/shells/protosh.c line 401: Illegal LHS
+obj/clone/shells/protosh.c line 412: Illegal LHS
+obj/clone/shells/protosh.c line 412: parse error
+obj/clone/shells/protosh.c line 418: Illegal LHS
+obj/clone/shells/protosh.c line 387: Too few arguments to implode
+obj/clone/shells/protosh.c line 387: Bad assignment ( int vs string ).
+obj/inherit/more.c line 191: Undefined variable 'sl'
+obj/inherit/more.c line 208: Undefined variable 'sw'
+obj/inherit/more.c line 218: Illegal to redeclare local name 'i'
+obj/inherit/more.c line 222: Undefined variable 'sw'
+obj/inherit/more.c line 237: Illegal to redeclare local name 'i'
+obj/inherit/more.c line 247: Undefined variable 'sw'
+tmp/tmp_eval_file.c line 7: parse error
+tmp/tmp_eval_file.c line 7: parse error
+obj/clone/money.c line 74: Undefined variable 'OBJECT_LIVING'
+obj/inherit/object.c line 193: Undefined variable 'ret'
+obj/inherit/object.c line 194: Number of arguments disagrees with previous definition.
+obj/inherit/container.c line 25: Undefined variable 'OBJECT_CONTAINER'
+obj/inherit/container.c line 36: 'ob' is not a local or a global variable.
+obj/inherit/container.c line 37: Undefined variable 'ob'
+obj/inherit/container.c line 58: Undefined function query_bulk
+obj/inherit/container.c line 58: Undefined function query_base_bulk
+obj/inherit/container.c line 58: Bad argument number 1 to '-': "unknown "
+obj/inherit/container.c line 25: Undefined variable 'OBJECT_CONTAINER'
+obj/inherit/container.c line 36: 'ob' is not a local or a global variable.
+obj/inherit/container.c line 37: Undefined variable 'ob'
+obj/inherit/container.c line 58: Undefined function query_bulk
+obj/inherit/container.c line 58: Undefined function query_base_bulk
+obj/inherit/container.c line 58: Bad argument number 1 to '-': "unknown "
+obj/inherit/container.c line 38: 'ob' is not a local or a global variable.
+obj/inherit/container.c line 39: Undefined variable 'ob'
+obj/inherit/container.c line 60: Undefined function query_bulk
+obj/inherit/container.c line 60: Undefined function query_base_bulk
+obj/inherit/container.c line 60: Bad argument number 1 to '-': "unknown "
+obj/inherit/container.c line 60: Undefined function query_bulk
+obj/inherit/container.c line 60: Undefined function query_base_bulk
+obj/inherit/container.c line 60: Bad argument number 1 to '-': "unknown "
+obj/inherit/room.c line 94: Undefined variable 'keyring'
+obj/inherit/room.c line 96: Illegal to redeclare local name 'keyring'
+obj/inherit/living.c line 140: Undefined function add_weight
+obj/inherit/living.c line 231: parse error
+obj/inherit/living.c line 232: Illegal LHS
+obj/inherit/living.c line 235: Illegal LHS
+obj/inherit/living.c line 238: Illegal LHS
+obj/inherit/living.c line 243: Undefined variable 'ob'
+obj/inherit/living.c line 242: parse error
+obj/inherit/living.c line 243: Illegal LHS
+obj/inherit/living.c line 246: Illegal LHS
+obj/inherit/living.c line 249: Illegal LHS
+obj/inherit/living.c line 254: Undefined variable 'ob'
+obj/inherit/living.c line 254: Illegal LHS
+obj/inherit/living.c line 242: parse error
+obj/inherit/living.c line 243: Illegal LHS
+obj/inherit/living.c line 246: Illegal LHS
+obj/inherit/living.c line 249: Illegal LHS
+obj/inherit/living.c line 254: Undefined variable 'ob'
+obj/inherit/living.c line 254: Illegal LHS
+obj/inherit/living.c line 242: parse error
+obj/inherit/living.c line 243: Illegal LHS
+obj/inherit/living.c line 246: Illegal LHS
+obj/inherit/living.c line 249: Illegal LHS
+obj/inherit/living.c line 254: Undefined variable 'ob'
+obj/inherit/living.c line 254: Illegal LHS
+obj/inherit/living.c line 241: parse error
+obj/inherit/living.c line 242: Illegal LHS
+obj/inherit/living.c line 245: Illegal LHS
+obj/inherit/living.c line 248: Illegal LHS
+obj/inherit/living.c line 253: Undefined variable 'ob'
+obj/inherit/living.c line 253: Illegal LHS
+obj/inherit/living.c line 250: parse error
+obj/inherit/living.c line 253: Undefined variable 'ob'
+obj/inherit/living.c line 253: Illegal LHS
+obj/inherit/living.c line 253: parse error
+obj/inherit/living.c line 255: Undefined variable 'tmp'
+obj/inherit/living.c line 255: Illegal LHS
+obj/inherit/living.c line 241: parse error
+obj/inherit/living.c line 242: Illegal LHS
+obj/inherit/living.c line 245: Illegal LHS
+obj/inherit/living.c line 248: Illegal LHS
+obj/inherit/living.c line 253: Undefined variable 'ob'
+obj/inherit/living.c line 253: Illegal LHS
+obj/inherit/living.c line 241: parse error
+obj/inherit/living.c line 242: Illegal LHS
+obj/inherit/living.c line 245: Illegal LHS
+obj/inherit/living.c line 248: Illegal LHS
+obj/inherit/living.c line 253: Undefined variable 'ob'
+obj/inherit/living.c line 253: Illegal LHS
+obj/inherit/living.c line 242: parse error
+obj/inherit/living.c line 243: Illegal LHS
+obj/inherit/living.c line 246: Illegal LHS
+obj/inherit/living.c line 249: Illegal LHS
+obj/inherit/living.c line 254: Undefined variable 'ob'
+obj/inherit/living.c line 254: Illegal LHS
+obj/inherit/living.c line 242: parse error
+obj/inherit/living.c line 243: Illegal LHS
+obj/inherit/living.c line 246: Illegal LHS
+obj/inherit/living.c line 249: Illegal LHS
+obj/inherit/living.c line 254: Undefined variable 'ob'
+obj/inherit/living.c line 254: Illegal LHS
+obj/inherit/living.c line 245: parse error
+obj/inherit/living.c line 246: Illegal LHS
+obj/inherit/living.c line 249: Illegal LHS
+obj/inherit/living.c line 252: Illegal LHS
+obj/inherit/living.c line 257: Undefined variable 'ob'
+obj/inherit/living.c line 257: Illegal LHS
+obj/inherit/living.c line 240: parse error
+obj/inherit/living.c line 241: Illegal LHS
+obj/inherit/living.c line 244: Illegal LHS
+obj/inherit/living.c line 247: Illegal LHS
+obj/inherit/living.c line 252: Undefined variable 'ob'
+obj/inherit/living.c line 252: Illegal LHS
+obj/inherit/object.c line 278: Undefined variable 'bulk'
+obj/inherit/object.c line 290: Undefined variable 'bulk'
+adm/obj/daemon/void.c line 16: Undefined variable 'OBJECT_CONTAINER'
+include/net/ftpdconf.h line 113: Warning: redefinition of #define PUB_DIR
+
+include/net/ftpdconf.h line 114: Warning: redefinition of #define FTP_DIR
+
+include/net/ftpdsupp.h line 97: Undefined function seteuid
+obj/daemon/net/ftp_d.c line 379: Undefined function getuid
+obj/daemon/net/ftp_d.c line 425: Undefined function geteuid
+room/vill_track.c line 10: parse error
+obj/clone/money.c line 74: Undefined variable 'OBJECT_LIVING'
+cmd/player/put.c line 30: Undefined function prounoun
+cmd/player/put.c line 30: Invalid argument types to '+' ( string vs unknown )
+obj/inherit/living.c line 239: Undefined function prounoun
+obj/inherit/living.c line 239: Invalid argument types to '+' ( unknown vs string )
+obj/inherit/living.c line 240: parse error
+obj/inherit/living.c line 241: Illegal LHS
+obj/inherit/living.c line 241: parse error
+obj/inherit/living.c line 244: Undefined variable 'ob'
+obj/inherit/living.c line 244: Illegal LHS
+obj/inherit/living.c line 244: parse error
+obj/inherit/living.c line 240: parse error
+obj/inherit/living.c line 241: Illegal LHS
+obj/inherit/living.c line 241: parse error
+obj/inherit/living.c line 244: Undefined variable 'ob'
+obj/inherit/living.c line 244: Illegal LHS
+obj/inherit/living.c line 244: parse error
+tmp/tmp_eval_file.c line 7: parse error
+tmp/tmp_eval_file.c line 7: parse error
+tmp/tmp_eval_file.c line 7: $var illegal outside of function pointer.
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+tmp/tmp_eval_file.c line 7: Undefined variable 'hey'
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+tmp/tmp_eval_file.c line 7: Undefined function count_items
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+tmp/tmp_eval_file.c line 7: Illegal index to array constant.
+cmd/player/drop.c line 23: Undefined variable 'obj'
+cmd/player/drop.c line 45: Type of returned value doesn't match function return type ( int vs void ).
+cmd/player/drop.c line 45: Type of returned value doesn't match function return type ( int vs void ).
+cmd/player/get.c line 29: Undefined function do_get
+cmd/player/get.c line 65: Redeclaration of function do_get.
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+tmp/tmp_eval_file.c line 8: End of file in string
+tmp/tmp_eval_file.c line 8: parse error
+tmp/tmp_eval_file.c line 7: Undefined variable 'bind'
+tmp/tmp_eval_file.c line 7: parse error
+obj/inherit/object.c line 96: Undefined variable 'OBJECT'
+tmp/tmp_eval_file.c line 7: Undefined function mudlib_stats
+obj/inherit/shop.c line 106: parse error
+obj/inherit/shop.c line 123: Illegal LHS
+obj/inherit/shop.c line 123: parse error
+obj/inherit/shop.c line 128: Undefined variable 'seller'
+obj/inherit/shop.c line 128: Illegal LHS
+obj/inherit/shop.c line 128: parse error
+include/races/human.h line 20: Illegal to redefine 'nomask' function "query_base_weight"
+obj/inherit/object.c line 91: Undefined variable 'COIN_TYPES'
+obj/inherit/object.c line 259: Undefined variable 'COIN_TYPES'
+obj/inherit/object.c line 91: Undefined variable 'COIN_TYPES'
+obj/inherit/object.c line 259: Undefined variable 'COIN_TYPES'
+obj/inherit/object.c line 91: Undefined variable 'COIN_TYPES'
+obj/inherit/object.c line 259: Undefined variable 'COIN_TYPES'
+obj/inherit/object.c line 91: Undefined variable 'COIN_TYPES'
+obj/inherit/object.c line 259: Undefined variable 'COIN_TYPES'
+obj/inherit/object.c line 91: Undefined variable 'COIN_TYPES'
+obj/inherit/object.c line 259: Undefined variable 'COIN_TYPES'

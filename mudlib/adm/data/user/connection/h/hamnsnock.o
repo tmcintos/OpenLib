@@ -1,10 +1,12 @@
 #obj/clone/connection.c
 name "hamnsnock"
+cap_name 0
 password "aWf9YuNsuRo9k"
 real_name "Clint Wallace"
-email_addr "ascw@AZStarNet.COM"
-home_dir "/u/h/hamnsnock"
+email_addr "clintw@AZStarNet.COM"
 body "/obj/clone/user/human"
-login_time 823408724
-logout_time 823408811
+login_shell "/obj/clone/shells/nmsh"
+gender 1
+login_time 830229833
+logout_time 830230422
 login_from "azstarnet.com"

@@ -1,11 +1,14 @@
 #obj/clone/user/human.c
 flags ({})
-name "hamnsnock"
 coins ({550,436,})
 hit_points 58
-title "the great magician of patagonia"
-current_dir "/u/h/hamnsnock"
-term "ansi"
-aliases (["sc":"score","i":"inventory","se":"southeast","join":".join","f":"finger","wand":"clone /u/h/hamnsnock/stuff/wand","nw":"northwest","goto":".goto","sw":"southwest","s":"south","home":".home","quit":".quit","e":"east","w":"west","l":"look","ne":"northeast","n":"north",])
-channels ({"igossip","wiz","icode",})
-search_path ({"/cmd/player/","/adm/cmd/wiz/","/cmd/wiz/","/adm/cmd/adm/","/adm/cmd/player/","/cmd/adm/",})
+spell_points 0
+slen 24
+swid 80
+curr_line 27
+lines 26
+file ({"login_d: 0 is not a supported terminal type","Welcome to Dysfunctional Mud!","-------------------------------------------------------------------------------","                D y s f u n c t i o n a l  M u d  N e w s","			last update: 04/22/96","-------------------------------------------------------------------------------","* Please send mail to Tim if you want to become a developer.  Additionally,","  all developers should join the mailing list by sending mail to","  majordomo@knapp38.res.iastate.edu with the string 'subscribe dysfunctional'","  in the body of the letter.","","* If you want to take on a project or have any new project ideas, send mail","  to Tim.","","* The bulletin board object is progressing, so we should have boards soon. :)","","* There is now a 'changelog' command which appends an entry to the ChangeLog","  file in the current working directory.","","* Changed ls command back to take -c flag for color.  Alias ls to ls -c if","  you want color support on all the time.","","* Changed set_ids() to add_ids() in OBJECT. Make changes accordingly.","","","",})
+callback 0
+env_vars (["WIDTH":80,"TITLE":"the dark evil one","nmsh_xverb":(["'":"say $*",":":"emote $*",]),"GENDER":1,"version":"Prototype Shell","TERM":"vt100","SHELL":"/obj/clone/shells/protosh","nmsh_alias":(["exa":"look at $*","i":"inventory","se":"southeast","l":"look $*","ne":"northeast","bio":"biography","wand":"clone stuff/wand","w":"west","e":"east","d":"down","n":"north","s":"south","u":"up","nw":"northwest","sw":"southwest",]),"nmsh_nick":([]),"PATH":"/cmd/wiz:/adm/cmd/wiz:/cmd/player:/adm/cmd/player","LENGTH":24,"MORE_EXIT_END":1,])
+aliases (["i":"inventory","se":"southeast","l":"look","home":".home","ne":"northeast","wand":"clone /u/h/hamnsnock/stuff/wand","goto":".goto","sc":"score","w":"west","e":"east","f":"finger","n":"north","quit":".quit","s":"south","nw":"northwest","sw":"southwest","join":".join",])
+channels ({"wiz","icode","igossip",})

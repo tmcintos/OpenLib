@@ -32,7 +32,7 @@ void create() {\
   set_light(LIGHT); set_short(SH); set_long(LO);\
   set_exits(([ DIR : "/"DEST ])); } \
 void init() { ::init(); EXTRA_INIT }\
-varargs mixed long(int flag) { EXTRA_LONG ::long(flag); }
+string long() { EXTRA_LONG + ::long(); }
 
 #define TWO_EXIT(DEST1, DIR1, DEST2, DIR2, SH, LO, LIGHT)\
 void reset(int arg) { EXTRA_RESET }\
@@ -42,7 +42,7 @@ void create() {\
   set_light(LIGHT); set_short(SH); set_long(LO);\
   set_exits(([ DIR1 : "/"DEST1, DIR2 : "/"DEST2 ])); } \
 void init() { ::init(); EXTRA_INIT }\
-varargs mixed long(int flag) { EXTRA_LONG ::long(flag); }
+string long() { EXTRA_LONG + ::long(); }
 
 #define THREE_EXIT(DEST1, DIR1, DEST2, DIR2, DEST3, DIR3, SH, LO, LIGHT)\
 void reset(int arg) { EXTRA_RESET }\
@@ -52,7 +52,7 @@ void create() {\
   set_light(LIGHT); set_short(SH); set_long(LO);\
   set_exits(([ DIR1 : "/"DEST1, DIR2 : "/"DEST2, DIR3 : "/"DEST3 ])); } \
 void init() { ::init(); EXTRA_INIT }\
-varargs mixed long(int flag) { EXTRA_LONG ::long(flag); }
+string long() { EXTRA_LONG + ::long(); }
 
 #define FOUR_EXIT(DEST1, DIR1, DEST2, DIR2, DEST3, DIR3, DEST4, DIR4, SH, LO, LIGHT)\
 void reset(int arg) { EXTRA_RESET }\
@@ -62,6 +62,6 @@ void create() {\
   set_light(LIGHT); set_short(SH); set_long(LO);\
   set_exits(([ DIR1 : "/"DEST1, DIR2 : "/"DEST2, DIR3 : "/"DEST3, DIR4 : "/"DEST4 ])); } \
 void init() { ::init(); EXTRA_INIT }\
-varargs mixed long(int flag) { EXTRA_LONG ::long(flag); }
+string long() { EXTRA_LONG + ::long(); }
 
 #define move_object(x, y) x->move(y)

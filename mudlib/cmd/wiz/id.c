@@ -28,9 +28,8 @@ main(string str)
 
   conn = ob->query_connection();
 
-  printf("uid=%s euid=%s oid=%d coid=%d heart_b=%s groups=%s\n",
-	 getuid(ob),
-	 geteuid(ob),
+  printf("priv=%s oid=%d coid=%d heart_b=%s groups=%s\n",
+	 "",
 	 getoid(ob),
 	 (conn ? getoid(conn) : -1 ),
 	 (query_heart_beat(ob) ? "on" : "off"),

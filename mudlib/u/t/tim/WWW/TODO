@@ -22,6 +22,8 @@
 -help command/system uses help() and help_desc() in the command obj.
 	help on commands get from object, topics from /doc/help/{player,wiz..}
 	Search by keyword with -k flag (uses help_desc() to search commands)
+        Help should also search for objects in the immediate environment that
+        may respond to the id==topic and check for help() in them.
 -changelog command
 -bug,idea commands log to /log/BUGS /log/IDEAS
 	also log to wizards' home dirs if files belong to them
@@ -59,4 +61,8 @@ more.c:	-rewrite more() for better efficiency and to take a func pointer
 -object. needs work...
 -room.c: make long() always ret a string array too... will have to change
  this standard for all objects.
+-ucache: finish this daemon and related code (Tim)
+-shutdown() -- efun for this that checks root permissions etc...
+-change semantics of looking at objects to call long() with 'look at' and to
+ call interior() (or something) with 'look in'
 </PRE>

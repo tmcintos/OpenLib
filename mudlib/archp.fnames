@@ -1,0 +1,3 @@
+./obj/daemon/chat_d.c
+./adm/efuns/wizardp.c
+./adm/cmd/wiz/chfn.c

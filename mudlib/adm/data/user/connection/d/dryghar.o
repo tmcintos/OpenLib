@@ -6,6 +6,6 @@ real_name "Nick Young"
 email_addr "ae187@ccn.cs.dal.ca"
 body "/obj/clone/user/human"
 login_shell "/obj/clone/shells/nmsh"
-login_time 829188025
-logout_time 829188035
+login_time 829250886
+logout_time 829250895
 login_from "knapp38.res.iastate.edu"

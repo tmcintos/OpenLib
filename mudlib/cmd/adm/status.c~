@@ -1,0 +1,15 @@
+#include <cmdline.h>
+
+int
+main(string* argv, string* argv2)
+{
+  string info;
+
+  if( flag("l") )
+    info = mud_status(1);
+  else
+    info = mud_status(0);
+
+  this_player()->more(explode(info, "\n"));
+  return 1;
+}

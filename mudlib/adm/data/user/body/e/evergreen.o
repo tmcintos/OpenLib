@@ -5,5 +5,5 @@ hit_points 100
 spell_points 0
 gender 0
 env_vars (["SHELL":"/obj/clone/shells/protosh","TITLE":"is testing","PATH":"/cmd/player:/adm/cmd/player:/cmd/wiz:/adm/cmd/wiz:/cmd/adm:/adm/cmd/adm","PROMPT":"%//> ","version":"Prototype Shell",])
-aliases (["l":"look","s":"south","i":"inventory","n":"north","sc":"score","ne":"northeast","nw":"northwest","w":"west","sw":"southwest","se":"southeast","e":"east",])
+aliases (["i":"inventory","l":"look","ne":"northeast","w":"west","sw":"southwest","s":"south","n":"north","e":"east","sc":"score","nw":"northwest","se":"southeast",])
 channels ({})

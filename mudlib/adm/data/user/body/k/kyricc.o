@@ -4,6 +4,12 @@ coins ({30,10,})
 hit_points 0
 spell_points 0
 gender 0
-env_vars (["MORE_EXIT_END":1,"version":"Prototype Shell","noglob":1,"SHELL":"/obj/clone/shells/protosh","PATH":"/cmd/player:/adm/cmd/player:/cmd/wiz:/adm/cmd/wiz:/cmd/adm:/adm/cmd/adm","TITLE":"is raping the MudLib!","PROMPT":"[%~]->","TERM":"vt100",])
-aliases (["n":"north","ww":"shout WOOOOOOO WOOOOOOO","|":"more","sc":"score","s":"south","ne":"northeast","sw":"southwest","bbb":"shout I\\'m baaaaaaaaack!!!","se":"southeast","brb":"shout Be right back...I\\'m going AFK!!!","nod":"emote nods quietly","l":"look","e":"east","cgoss":"chat igossip:","news":"more /adm/etc/motd","i":"inventory","w":"west","nw":"northwest","grin":"emote grins evilly","la":"look at","ahh":"emote ahhs","c":"clone",])
+slen 24
+swid 80
+curr_line 1
+lines 23
+file ({"Welcome to Dysfunctional Mud!","-------------------------------------------------------------------------------","                D y s f u n c t i o n a l  M u d  N e w s","			last update: 04/16/96","-------------------------------------------------------------------------------","* Please send mail to Tim if you want to become a developer.  Additionally,","  all developers should join the mailing list by sending mail to","  majordomo@knapp38.res.iastate.edu with the string 'subscribe dysfunctional'","  in the body of the letter.","","* If you want to take on a project or have any new project ideas, send mail to","  Tim.","","* The bulletin board object is progressing, so we should have boards soon. :)","","* There is now a 'changelog' command which appends an entry to the ChangeLog","  file in the current working directory.","","* Changed ls command back to take -c flag for color.  Alias ls to ls -c if","  you want color support on all the time.","","","You have mail.",})
+callback 
+env_vars (["version":"Prototype Shell","PROMPT":"[%~]->","SHELL":"/obj/clone/shells/protosh","LENGTH":24,"WIDTH":80,"TITLE":"is raping the MudLib!","TERM":"vt100","noglob":1,"MORE_EXIT_END":1,"PATH":"/cmd/player:/adm/cmd/player:/cmd/wiz:/adm/cmd/wiz:/cmd/adm:/adm/cmd/adm",])
+aliases (["news":"more /adm/etc/motd","ne":"northeast","c":"clone","nod":"emote nods quietly","nw":"northwest","ww":"shout WOOOOOOO WOOOOOOO","se":"southeast","|":"more","e":"east","s":"south","brb":"shout Be right back...I\\'m going AFK!!!","w":"west","n":"north","bbb":"shout I\\'m baaaaaaaaack!!!","la":"look at","ahh":"emote ahhs","cgoss":"chat igossip:","sc":"score","i":"inventory","grin":"emote grins evilly","sw":"southwest","l":"look",])
 channels ({"igossip","interchat",})

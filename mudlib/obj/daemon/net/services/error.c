@@ -22,9 +22,11 @@ void eventReceiveError(mixed *packet) {
     switch(error_code) {
 	case "unk-dst": case "not-imp": case "unk-type": case "unk-src":
           log_file("errors/intermud", error_code + ": " + msg + "\n");
+	  log_file("errors/intermud", "packet: " + sprintf("%O\n", packet));
 	  return;
 	case "unk-type":
           log_file("errors/intermud", error_code + ": " + msg + "\n");
+	  log_file("errors/intermud", "packet: " + sprintf("%O\n", packet));
 	  return;
 	case "unk-user":
 	  if( !ob ) return;

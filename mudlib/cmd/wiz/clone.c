@@ -29,10 +29,9 @@ main(string *argv, string *argv2)
   else
     err = ob->move(environment(this_player()));
 
-  if(err < 1) {
-    if(ob) ob->remove();
+  if(err == 0) {
     if(ob) destruct(ob);
-    return notify_fail("You fail.\n");
+    return 0;
   }
 
   printf("You clone %s.\n", tmp);

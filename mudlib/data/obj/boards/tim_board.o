@@ -1,0 +1,4 @@
+#u/t/tim/tboard.c
+flags ({})
+postings (["Boards Rock!!":({(/({"testin","one","two","three",}),"tim",/),(/({"Heck Yeah!!",}),"tim",/),}),])
+boardname "tim_board"

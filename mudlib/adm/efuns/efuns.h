@@ -23,3 +23,5 @@
 #include "distinct_array.c"
 #include "destruct.c"
 #include "pronoun.c"
+#include "check_priv.c"
+#include "list_obs.c"

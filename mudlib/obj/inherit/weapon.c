@@ -2,6 +2,7 @@
 // Orig by Casper 9/95
 // 10/14/95   Tim: removed set_long/short to work with changes to OBJECT,
 //                 and removed var's long and short
+// 04/20/96   Tim: updated w.r.t. object.c
  
 #include <mudlib.h>
 #include <object_types.h>
@@ -14,7 +15,8 @@ private static mixed *wield_info;
  
 void create()
 {
-  object::set_object_class(OBJECT_WEAPON | OBJECT_OBJECT);
+  ::create();
+  ::set_object_class(OBJECT_WEAPON | query_object_class());
   wielded = 0;
 }
  
@@ -58,16 +60,11 @@ int query_hands()
   return hands;
 }
  
-string short()
+varargs string short(int fflag)
 {
+  if(fflag)
+    return short_desc;
   return short_desc+(wielded ? "(wielded)" : "");
-}
- 
-varargs string long(int fflag)
-{
-  if (fflag)
-    return long_desc;
-  write(long_desc);
 }
  
 int move(mixed dest)
@@ -77,10 +74,9 @@ int move(mixed dest)
   return ::move(dest);
 }
  
-void remove()
+int remove()
 {
   if(wielded)
     environment()->do_unwield(this_object(),1);
-  ::remove();
- 
+  return ::remove();
 }

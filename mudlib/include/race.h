@@ -6,6 +6,11 @@
 //
 
 /*
+ * Returns the name of the race
+ */
+string query_race();
+
+/*
  * Returns the base weight of the race's body
  */
 int query_base_weight();

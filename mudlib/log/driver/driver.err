@@ -1,6 +1,6 @@
 using config file: /home/mud/etc/config.dm
 ----------------------------------------------------------------------------
-Dysfunctional Mud (MudOS v22a25) starting up on FreeBSD - Wed Apr 10 10:03:36 1996
+Dysfunctional Mud (MudOS v22a26) starting up on FreeBSD - Mon Apr 22 21:18:06 1996
 
 
 Connected to address server on localhost port 7374
@@ -8,25 +8,34 @@ include/mudlib.h line 15: Warning: redefinition of #define OBJECT
 
 
 Loading preloaded files ...
-include/net/ftpdconf.h line 113: Warning: redefinition of #define PUB_DIR
+]Preloading : /adm/obj/daemon/void...](0.0)
+]Preloading : /adm/obj/daemon/cmd_d...](0.0)
+]Preloading : /adm/obj/daemon/login_d...](0.0)
+]Preloading : /adm/obj/daemon/mail_d...](0.0)
+]Preloading : /obj/daemon/net/services...](0.0)
+]Preloading : /obj/daemon/net/intermud...](0.0)
+]Preloading : /obj/daemon/net/oob_d...](0.0)
+]Preloading : /obj/daemon/net/auth_d...](0.0)
+]Preloading : /obj/daemon/net/ucache_d...](0.0)
+]Preloading : /obj/daemon/net/ftp_d...include/net/ftpdconf.h line 113: Warning: redefinition of #define PUB_DIR
 
 include/net/ftpdconf.h line 114: Warning: redefinition of #define FTP_DIR
 
+include/net/ftpdsupp.h line 97: Undefined function seteuid
+obj/daemon/net/ftp_d.c line 379: Undefined function getuid
+obj/daemon/net/ftp_d.c line 425: Undefined function geteuid
+]
+Error *Error in loading object '/obj/daemon/net/ftp_d'
+ when loading /obj/daemon/net/ftp_d
+]Preloading : /obj/daemon/net/http_d...](0.0)
+]Preloading : /obj/daemon/net/remote...](0.0)
+]Preloading : /obj/daemon/net/finger_d...](0.0)
+]Preloading : /obj/daemon/chat_d...](0.0)
+]Preloading : /obj/daemon/combat_d...](0.0)
+]Preloading : /obj/daemon/editor_d...](0.0)
+]Preloading : /obj/daemon/emote_d...](0.0)
+]Preloading : /obj/daemon/finger_d...](0.0)
+]Preloading : /obj/daemon/termcap_d...](0.0)
 Initializations complete.
 
 Accepting connections on port 4444.
-get_user_data: read on fd 11
-System Error: get_user_data: read:Connection reset by peer
-flush_message: invalid target!
-obj/clone/money.c line 74: Undefined variable 'OBJECT_LIVING'
-obj/clone/money.c line 74: Undefined variable 'OBJECT_LIVING'
-obj/clone/money.c line 74: Undefined variable 'OBJECT_LIVING'
-get_user_data: read on fd 11
-System Error: get_user_data: read:Connection reset by peer
-flush_message: invalid target!
-obj/clone/money.c line 74: Undefined variable 'OBJECT_LIVING'
-obj/clone/money.c line 74: Undefined variable 'OBJECT_LIVING'
-obj/clone/money.c line 74: Undefined variable 'OBJECT_LIVING'
-obj/clone/money.c line 74: Undefined variable 'OBJECT_LIVING'
-obj/clone/money.c line 74: Undefined variable 'OBJECT_LIVING'
-obj/clone/money.c line 74: Undefined variable 'OBJECT_LIVING'

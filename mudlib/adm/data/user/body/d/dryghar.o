@@ -4,6 +4,6 @@ coins ({0,0,})
 hit_points 100
 spell_points 0
 gender 0
-env_vars (["PATH":"/cmd/wiz:/adm/cmd/wiz:/cmd/player:/adm/cmd/player:/adm/:cmd/wiz:/adm/cmd/wiz:/cmd/wiz:/adm/cmd/wiz","nmsh_alias":(["sw":"southwest","ne":"northeast","n":"north","e":"east","s":"south","exa":"look at $*","l":"look $*","nw":"northwest","bio":"biography","w":"west","i":"inventory","d":"down","se":"southeast","u":"up",]),"nmsh_xverb":(["'":"say $*",":":"emote $*",]),"SHELL":"/obj/clone/shells/protosh","nmsh_nick":([]),"TERM":"ansi","version":"Prototype Shell",])
+env_vars (["nmsh_alias":(["l":"look $*","n":"north","i":"inventory","s":"south","sw":"southwest","e":"east","ne":"northeast","se":"southeast","bio":"biography","nw":"northwest","exa":"look at $*","w":"west","u":"up","d":"down",]),"nmsh_nick":([]),"version":"Prototype Shell","PATH":"/cmd/wiz:/adm/cmd/wiz:/cmd/player:/adm/cmd/player:/adm/:cmd/wiz:/adm/cmd/wiz:/cmd/wiz:/adm/cmd/wiz","SHELL":"/obj/clone/shells/protosh","nmsh_xverb":(["'":"say $*",":":"emote $*",]),"TERM":"ansi",])
 aliases ([])
 channels ({})

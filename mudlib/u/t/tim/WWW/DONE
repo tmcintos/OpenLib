@@ -29,4 +29,9 @@ more:   -checks env vars for LENGTH and WIDTH
 -oob_d is partially functional, file-list transfers work.  This is a catch
  all approach to the spec, but technically it should work if everyone follows
  the protocol.
+:Apr
+-updated intermud stuff to version 3 of the protocol
+-added more gender support in connection object and login_d
+-changed names of all daemons to daemonname_d.c
+-created 'iftp' command interface for the OOB file I3 service
 </PRE>

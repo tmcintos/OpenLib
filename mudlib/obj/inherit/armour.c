@@ -2,6 +2,7 @@
 // Orig by Casper 9/95
 // 10/14/95   Tim: removed set_long/short to work with changes to OBJECT,
 //                 and removed var's long and short
+// 04/20/96   Tim: updated w.r.t. object.c
  
 #include <mudlib.h>
 #include <object_types.h>
@@ -13,7 +14,8 @@ private static int worn,ac_one,ac_two;
  
 void create()
 {
-  object::set_object_class(OBJECT_ARMOUR | OBJECT_OBJECT);
+  ::create();
+  ::set_object_class(OBJECT_ARMOUR | query_object_class());
   worn = 0;
   where = "";
 }
@@ -43,14 +45,7 @@ int query_where_worn()
   return worn;
 }
  
-varargs string long(int fflag)
-{
-  if(fflag)
-    return long_desc;
-  write(long_desc);
-}
- 
-varargs string short(int fflag)
+string short(int fflag)
 {
   if(fflag)
     return short_desc;
@@ -86,10 +81,9 @@ int move(mixed dest)
   return ::move(dest);
 }
  
-void remove()
+int remove()
 {
   if(where!="")
     environment()->do_remove(this_object(),1);
-  ::remove();
- 
+  return ::remove();
 }

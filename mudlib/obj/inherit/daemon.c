@@ -8,7 +8,6 @@
 void
 create()
 {
-  seteuid(getuid(this_object()));
 }
 
 int

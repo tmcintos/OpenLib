@@ -1,23 +1,35 @@
-last update: 10/22/95
+last update: 04/21/96
 -------------------------------------------------------------------------------
 Weight is in pounds.
+Bulk is in ???
 
-All objects have 2 functions:
+_All_ objects have 2 functions: (found in OBJECT)
+
 	int query_weight();
-	void set_weight(int pounds);
-These functions can be used to set and find the weight of an object.
-query_weight() returns the total weight of the object which could be
-more than the value you set with set_weight() (if the object contains
-other objects with weight)
+	int query_base_weight();
+	nomask void set_weight(int lbs);
 
-LIVING OBJECTS & WEIGHT
------------------------
-  To see if an object can be moved to a living legally you should call
-	boolean add_weight(int pounds);
-in that object.  IF this func. returns true, then the weight can be added
-to the living without problems.  If it returns false, then the weight
-cannot be added to the living object (i.e. you shouldn't move the object in
-question to the living either).
-  Note that if the object being moved into the living inherits OBJECT, move()
-in that object won't allow it to move if add_weight() fails in it's
-destination object.  (see move.h for return values of move() in OBJECT)
+	int query_bulk();
+	int query_base_bulk();
+	nomask void set_bulk(int units);
+
+  These functions can be used to set and find the weight and bulk of an object.
+query_weight() returns the total weight of the object which could be
+more than the value you set with set_weight() [query_base_weight() always
+returns the value you pass to set_weight()].
+  The functions for bulk work in a similar manner.
+
+_Container_ objects have these additional functions: (found in CONTAINER)
+
+	nomask int set_rigid(int tf);
+	int query_weight_contained();
+	int query_bulk_contained();
+	int receive_object(object ob);
+
+	nomask int set_weight_capacity(int lbs);
+	nomask int query_weight_capacity();
+	nomask int set_bulk_capacity(int units);
+	nomask int query_bulk_capacity();
+
+  These should be self-explanatory for the most part.  Use set_rigid(1) to
+denote a rigid container like a box or trunk.

@@ -9358,3 +9358,340 @@ Expected: array Got: <buffer>.
       1
     }),
 ]), 871816, )
+
+[ERROR] *Value being indexed is zero.
+  obj : (u/t/tim/tboard#68)
+  file: u/t/tim/board.c:113
+  prgm: u/t/tim/board.c
+  func: post_return
+  args: ( -1, ({ }), )
+
+[ERROR] *Value being indexed is zero.
+  obj : (u/t/tim/tboard#71)
+  file: u/t/tim/board.c:113
+  prgm: u/t/tim/board.c
+  func: post_return
+  args: ( 0, ({ /* sizeof() == 3 */
+  "This is a test...this is only a test",
+  "later,",
+  "Tim"
+}), )
+
+[ERROR] *Array index out of bounds
+  obj : (u/t/tim/tboard#74)
+  file: u/t/tim/board.c:117
+  prgm: u/t/tim/board.c
+  func: post_return
+  args: ( 0, ({ /* sizeof() == 3 */
+  "Testing 1, 2, 3.",
+  "later,",
+  "Tim"
+}), )
+
+[ERROR] *Array index out of bounds.
+  obj : (u/t/tim/tboard#74)
+  file: u/t/tim/board.c:61
+  prgm: u/t/tim/board.c
+  func: long
+  args: ( 0, )
+
+[ERROR] *Array index out of bounds.
+  obj : (u/t/tim/tboard#76)
+  file: u/t/tim/board.c:114
+  prgm: u/t/tim/board.c
+  func: post_return
+  args: ( 1, 1604664, )
+
+[ERROR] *Array index out of bounds.
+  obj : (u/t/tim/tboard#78)
+  file: u/t/tim/board.c:126
+  prgm: u/t/tim/board.c
+  func: read
+  args: ( "2", )
+
+[ERROR] *Array index out of bounds.
+  obj : (u/t/tim/tboard#81)
+  file: u/t/tim/board.c:128
+  prgm: u/t/tim/board.c
+  func: read
+  args: ( "1,4", )
+
+[ERROR] *Array index out of bounds.
+  obj : (u/t/tim/tboard#81)
+  file: u/t/tim/board.c:128
+  prgm: u/t/tim/board.c
+  func: read
+  args: ( "1,2", )
+
+[ERROR] *Array index out of bounds.
+  obj : (u/t/tim/tboard#84)
+  file: u/t/tim/board.c:129
+  prgm: u/t/tim/board.c
+  func: read
+  args: ( "1", )
+
+[ERROR] *Array index out of bounds.
+  obj : (u/t/tim/tboard#84)
+  file: u/t/tim/board.c:129
+  prgm: u/t/tim/board.c
+  func: read
+  args: ( "0", )
+
+[ERROR] *Array index out of bounds.
+  obj : (u/t/tim/tboard#84)
+  file: u/t/tim/board.c:129
+  prgm: u/t/tim/board.c
+  func: read
+  args: ( "2", )
+
+[ERROR] *Array index out of bounds.
+  obj : (u/t/tim/tboard#85)
+  file: u/t/tim/board.c:127
+  prgm: u/t/tim/board.c
+  func: read
+  args: ( "1", )
+
+[ERROR] *Array index out of bounds.
+  obj : (u/t/tim/tboard#85)
+  file: u/t/tim/board.c:127
+  prgm: u/t/tim/board.c
+  func: read
+  args: ( "1,1", )
+
+[ERROR] *Array index out of bounds.
+  obj : (u/t/tim/tboard#85)
+  file: u/t/tim/board.c:127
+  prgm: u/t/tim/board.c
+  func: read
+  args: ( "1,0", )
+
+[ERROR] *Array index out of bounds.
+  obj : (u/t/tim/tboard#86)
+  file: u/t/tim/board.c:127
+  prgm: u/t/tim/board.c
+  func: read
+  args: ( "1", )
+
+[ERROR] *Array index must be positive or zero.
+  obj : (u/t/tim/tboard#86)
+  file: u/t/tim/board.c:127
+  prgm: u/t/tim/board.c
+  func: read
+  args: ( "-1", )
+
+[ERROR] *Array index out of bounds.
+  obj : (u/t/tim/tboard#86)
+  file: u/t/tim/board.c:127
+  prgm: u/t/tim/board.c
+  func: read
+  args: ( "5", )
+
+[ERROR] *Array index must be positive or zero.
+  obj : (u/t/tim/tboard#86)
+  file: u/t/tim/board.c:127
+  prgm: u/t/tim/board.c
+  func: read
+  args: ( "0", )
+
+[ERROR] *Array index out of bounds.
+  obj : (u/t/tim/tboard#86)
+  file: u/t/tim/board.c:127
+  prgm: u/t/tim/board.c
+  func: read
+  args: ( "1", )
+
+[ERROR] *Array index out of bounds.
+  obj : (u/t/tim/tboard#87)
+  file: u/t/tim/board.c:128
+  prgm: u/t/tim/board.c
+  func: read
+  args: ( "1", )
+
+[ERROR] *Array index out of bounds.
+  obj : (u/t/tim/tboard#88)
+  file: u/t/tim/board.c:128
+  prgm: u/t/tim/board.c
+  func: read
+  args: ( "1", )
+
+[ERROR] *Array index must be positive or zero.
+  obj : (u/t/tim/tboard#89)
+  file: u/t/tim/board.c:128
+  prgm: u/t/tim/board.c
+  func: read
+  args: ( "1", )
+
+[ERROR] *Array index must be positive or zero.
+  obj : (u/t/tim/tboard#89)
+  file: u/t/tim/board.c:128
+  prgm: u/t/tim/board.c
+  func: read
+  args: ( "1,0", )
+
+[ERROR] *Value being indexed is zero.
+  obj : (u/t/tim/tboard#90)
+  file: u/t/tim/board.c:129
+  prgm: u/t/tim/board.c
+  func: read
+  args: ( "1", )
+
+[ERROR] *Value being indexed is zero.
+  obj : (u/t/tim/tboard#90)
+  file: u/t/tim/board.c:129
+  prgm: u/t/tim/board.c
+  func: read
+  args: ( "2", )
+
+[ERROR] *Value being indexed is zero.
+  obj : (u/t/tim/tboard#90)
+  file: u/t/tim/board.c:129
+  prgm: u/t/tim/board.c
+  func: read
+  args: ( "2", )
+
+[ERROR] *Array index out of bounds.
+  obj : (u/t/tim/tboard#91)
+  file: u/t/tim/board.c:129
+  prgm: u/t/tim/board.c
+  func: read
+  args: ( "1", )
+
+[ERROR] *Array index out of bounds.
+  obj : (u/t/tim/tboard#91)
+  file: u/t/tim/board.c:129
+  prgm: u/t/tim/board.c
+  func: read
+  args: ( "1,1", )
+
+[ERROR] *Array index out of bounds.
+  obj : (u/t/tim/tboard#91)
+  file: u/t/tim/board.c:129
+  prgm: u/t/tim/board.c
+  func: read
+  args: ( "2", )
+
+[ERROR] *Array index out of bounds.
+  obj : (u/t/tim/tboard#91)
+  file: u/t/tim/board.c:129
+  prgm: u/t/tim/board.c
+  func: read
+  args: ( "3", )
+
+[ERROR] *Array index out of bounds.
+  obj : (u/t/tim/tboard#92)
+  file: u/t/tim/board.c:129
+  prgm: u/t/tim/board.c
+  func: read
+  args: ( "1", )
+
+[ERROR] *Array index out of bounds.
+  obj : (u/t/tim/tboard#92)
+  file: u/t/tim/board.c:129
+  prgm: u/t/tim/board.c
+  func: read
+  args: ( "1,1", )
+
+[ERROR] *Array index out of bounds.
+  obj : (u/t/tim/tboard#92)
+  file: u/t/tim/board.c:129
+  prgm: u/t/tim/board.c
+  func: read
+  args: ( "2", )
+
+[ERROR] *Array index out of bounds.
+  obj : (u/t/tim/tboard#93)
+  file: u/t/tim/board.c:128
+  prgm: u/t/tim/board.c
+  func: read
+  args: ( "1", )
+
+[ERROR] *Array index out of bounds.
+  obj : (u/t/tim/tboard#93)
+  file: u/t/tim/board.c:128
+  prgm: u/t/tim/board.c
+  func: read
+  args: ( "1,1", )
+
+[ERROR] *Array index out of bounds.
+  obj : (u/t/tim/tboard#94)
+  file: u/t/tim/board.c:127
+  prgm: u/t/tim/board.c
+  func: read
+  args: ( "1", )
+
+[ERROR] *Array index out of bounds.
+  obj : (u/t/tim/tboard#94)
+  file: u/t/tim/board.c:127
+  prgm: u/t/tim/board.c
+  func: read
+  args: ( "1", )
+
+[ERROR] *Array index out of bounds.
+  obj : (u/t/tim/tboard#94)
+  file: u/t/tim/board.c:127
+  prgm: u/t/tim/board.c
+  func: read
+  args: ( "1,1", )
+
+[ERROR] *Array index out of bounds.
+  obj : (u/t/tim/tboard#95)
+  file: u/t/tim/board.c:127
+  prgm: u/t/tim/board.c
+  func: read
+  args: ( "1", )
+
+[ERROR] *Array index out of bounds.
+  obj : (u/t/tim/tboard#95)
+  file: u/t/tim/board.c:127
+  prgm: u/t/tim/board.c
+  func: read
+  args: ( "1", )
+
+[ERROR] *Array index out of bounds.
+  obj : (u/t/tim/tboard#95)
+  file: u/t/tim/board.c:127
+  prgm: u/t/tim/board.c
+  func: read
+  args: ( "2", )
+
+[ERROR] *Array index out of bounds.
+  obj : (u/t/tim/tboard#96)
+  file: u/t/tim/board.c:127
+  prgm: u/t/tim/board.c
+  func: read
+  args: ( "1", )
+
+[ERROR] *Array index must be positive or zero.
+  obj : (u/t/tim/tboard#96)
+  file: u/t/tim/board.c:127
+  prgm: u/t/tim/board.c
+  func: read
+  args: ( "0", )
+
+[ERROR] *Array index must be positive or zero.
+  obj : (u/t/tim/tboard#96)
+  file: u/t/tim/board.c:127
+  prgm: u/t/tim/board.c
+  func: read
+  args: ( "-1", )
+
+[ERROR] *Array index out of bounds.
+  obj : (u/t/tim/tboard#96)
+  file: u/t/tim/board.c:127
+  prgm: u/t/tim/board.c
+  func: read
+  args: ( "2", )
+
+[ERROR] *Array index out of bounds.
+  obj : (u/t/tim/tboard#96)
+  file: u/t/tim/board.c:127
+  prgm: u/t/tim/board.c
+  func: read
+  args: ( "3", )
+
+[ERROR] *Array index out of bounds.
+  obj : (u/t/tim/tboard#96)
+  file: u/t/tim/board.c:127
+  prgm: u/t/tim/board.c
+  func: read
+  args: ( "1,1", )

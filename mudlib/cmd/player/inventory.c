@@ -1,28 +1,20 @@
 /*  -*- LPC -*-  */
+// Orig by someone way back when :)
+// Rewritten by Tim 22 Apr 96 to use list_obs() efun
+
 #include <command.h>
 
 int
 main()
 {
-  string blurb = "";
-  object *inv, ob;
+  object *inv;
 
   inv = all_inventory(this_player());
 
-  foreach(ob in inv) {
-    string sh = ob->short();
-
-    if(sh) {
-      blurb += sprintf("%s\n", capitalize(sh));
-    } else if(1) {                                /* WIZ check here */
-      blurb += sprintf("Invisible object: %s\n", file_name(ob));
-    }
-  }
-
-  if(blurb == "")
+  if( !sizeof(inv) )
     write("You are empty handed\n");
   else
-    write("You are carrying:\n" + blurb);
+    write("You are carrying:\n" + list_obs(inv, 1));
 
   return 1;
 }

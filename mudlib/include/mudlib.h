@@ -13,6 +13,7 @@
 
 #define BASE         INHERIT_DIR "/object"    // ! take this out soon !
 #define OBJECT       INHERIT_DIR "/object"
+#define CONTAINER    INHERIT_DIR "/container"
 #define ROOM	     INHERIT_DIR "/room"
 #define LIVING       INHERIT_DIR "/living"
 #define DAEMON       INHERIT_DIR "/daemon"

@@ -26,7 +26,6 @@ private mixed* msgs;              // array of instances of class 'mmess'
 void
 create()
 {
-  seteuid(getuid(this_object()));
   msgs = ({});
 }
 

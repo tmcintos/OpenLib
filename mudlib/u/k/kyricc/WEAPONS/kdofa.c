@@ -30,7 +30,7 @@ void create()
 "This is Kyricc's dagger of Forgotten Ages.  It is superbly crafted of\n"
 "the finest metals available.  The handle is made of solid pearl, and\n"
 "has mystic runes on it.  This weapon isn't for mere mortals.\n");
-  set_ids(({"kdofa","k dagger","death spike"}));
+  add_ids(({"kdofa","k dagger","death spike"}));
   set_value(({ 40, 0 }));                        // 40 silver, 0 gold --Tim
 }
 

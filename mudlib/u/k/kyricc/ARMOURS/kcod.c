@@ -17,6 +17,6 @@ void create()
   set_ac(800,10);   //makes 10% harder to hit, and reduces damage 
                    //delivered by 8
   set_type("body2");  //2 denotes for 2 armed creature.
-  set_ids(({"kcod", "k cloak", "darkman"}));
+  add_ids(({"kcod", "k cloak", "darkman"}));
   set_value(({0,2000}));
 }
