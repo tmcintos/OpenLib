@@ -1,0 +1,12 @@
+#/adm/obj/clone/connection.c
+name "celia"
+cap_name "Celia"
+password "bK0cDYiKiyKSg"
+real_name "klaus"
+email_addr "fskkk@aurora.alaska.edu"
+body "/adm/obj/clone/user"
+login_shell "/adm/obj/clone/shells/nmsh"
+gender -1
+login_time 848292712
+logout_time 848292736
+login_from "aurora.alaska.edu"

@@ -1,25 +1,24 @@
 /*  -*- LPC -*-  */
 // Simulated Efuns file
-//
-// NOTE: This file is NOT covered by the terms of the OpenLib License agreement
 
 #include <dirs.h>
-#include "simul_efun/efuns.h" // This file has all the efuns includes in it.
 
 void
 create()
 {
-  efun::set_privs(this_object(), save_variable(1));
+  efun::set_privs(this_object(), save_variable(1));  // set our privs here
 }
+
+// Get the object id number of a clone
 
 varargs int
 getoid(object ob)
 {
   int id;
 
-  if (!ob) {
+  if( !ob )
     ob = previous_object();
-  }
+
   sscanf(file_name(ob), "%*s#%d", id);
   return id;
 }
@@ -31,39 +30,19 @@ file_owner(string file)
 {
   string name, rest, dir;
 
-  if (sscanf(file, USER_DIR "/%s/%s/%s", dir, name, rest) == 3) {
+  if( sscanf(file, USER_DIR "/%s/%s/%s", dir, name, rest) == 3 )
     return name;
-  }
-  return 0;
+  else
+    return 0;
 }
 
-// domain_file should return the domain associated with a given file.
-
-string
-domain_file(string file)
-{
-  return "users";
-}
-
-// creator_file should return the name of the creator of a specific file.
-// for setting uid
-
-string
-creator_file(string file)
-{
-  return "this should be gone";
-}
-
-// author_file should return the name of the author of a specific file.
-
-string
-author_file(string file)
-{
-  return "fix author_file";
-}
+// Get the simul_efun object...analogous to master()
 
 object
 simul_efun()
 {
   return this_object();
 }
+
+// This file has all the efuns includes in it.
+#include "simul_efun/efuns.h"

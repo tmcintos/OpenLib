@@ -1,0 +1,12 @@
+#/adm/obj/clone/connection.c
+name "retard"
+cap_name "ReTaRd"
+password "VLW7YNsbg77x2"
+real_name "no"
+email_addr "jchen01@utopia.poly.edu"
+body "/adm/obj/clone/user"
+login_shell "/adm/obj/clone/shells/nmsh"
+gender 0
+login_time 848672897
+logout_time 848672953
+login_from "128.238.141.102"

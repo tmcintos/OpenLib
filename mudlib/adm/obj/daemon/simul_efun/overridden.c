@@ -1,3 +1,8 @@
+// overridden.c:  Overridden efuns
+//
+// They aren't all in this file right now but they should be moved here --Tim
+//
+
 object*
 livings()
 {

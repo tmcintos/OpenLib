@@ -1,0 +1,12 @@
+#/adm/obj/clone/connection.c
+name "joltman"
+cap_name "Joltman"
+password "qEp4ZuYQydUig"
+real_name "andy Barrett"
+email_addr "joltman@grfn.org"
+body "/adm/obj/clone/user"
+login_shell "/adm/obj/clone/shells/nmsh"
+gender 1
+login_time 849944732
+logout_time 849944777
+login_from "remcen.ehhs.cmich.edu"

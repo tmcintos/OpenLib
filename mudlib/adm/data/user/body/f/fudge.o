@@ -1,12 +1,12 @@
 #/adm/obj/clone/user.c
-morestring "/log/errors/runtime: (%d%%) %s"
-callback 0
+morestring "%%^INVERSE%%^--MORE--%%^RESET%%^ (%d%%) %s"
+callback 
 redraw 
 s_length 25
-start 172
-prev 148
-length 6224
-file "/log/errors/runtime"
+start 25
+prev 1
+length 8
+file ({"Date: Wed Oct 16 14:20:30 1996","From: tim","Subject: Re: I rock balls!!!","If only I had the 'canning' functionality in the stuff yet :)  So I","guess this newsgroup will have to stay around for a while. *evil grin*"," ","Shit I should be doing homework...doh!","",})
 in_help 0
 no_clean 0
 flags ([])
@@ -16,6 +16,6 @@ spell_points 0
 str 0
 agil 0
 skills 0
-env_vars (["nmsh_nick":([]),"PATH":"/cmd/wiz:/adm/cmd/wiz:/adm/cmd/player:/cmd/player","TERM":"ansi","nmsh_alias":(["bio":"biography","u":"up","e":"east","w":"west","nw":"northwest","sw":"southwest","d":"down","i":"inventory","n":"north","s":"south","exa":"look at $*","l":"look $*","se":"southeast","ne":"northeast",]),"LENGTH":25,"nmsh_xverb":(["'":"say $*",":":"emote $*",]),"WIDTH":80,])
+env_vars (["nmsh_xverb":([":":"emote $*","'":"say $*",]),"TERM":"xterm","LENGTH":25,"nmsh_nick":([]),"WIDTH":80,"nmsh_alias":(["i":"inventory","n":"north","sw":"southwest","s":"south","se":"southeast","l":"look $*","exa":"look at $*","e":"east","u":"up","ne":"northeast","nw":"northwest","bio":"biography","w":"west","d":"down",]),"PATH":"/cmd/wiz:/adm/cmd/wiz:/adm/cmd/player:/cmd/player",])
 aliases ([])
 channels ({})

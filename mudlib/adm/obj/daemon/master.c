@@ -23,9 +23,11 @@ connect(int portnum)
   
   err = catch( user = new(CONNECTION_OB) );
   
-  if (err) {
-    efun::write("It looks like someone is working on the "
-		"connection object.\n");
+  if( err )
+  {
+    message("system",
+	    "Someone must be working on the connection object.\n",
+	    this_player());
     destruct(user);
   }
 
@@ -51,16 +53,18 @@ compile_object(string file)
 static void
 crash(string error, object command_giver, object current_object)
 {
-  shout("Master object shouts: Damn!\n");
-  shout("Master object tells you: "
-	"Buckle up bonehead; you're going for a ride!\n");
-  shout("Master object tells you: The game is crashing.\n");
+  message("system",
+	  "Master object shouts: Damn!\n"
+	  "Master object tells you: "
+	  "Buckle up bonehead; you're going for a ride!\n"
+	  "Master object tells you: The game is crashing.\n",
+	  users());
 
   log_file("crashes", sprintf("%s crashed on: %s, error: %s\n",
 			      mud_name(), ctime(time()), error));
-  if (command_giver)
+  if( command_giver )
     log_file("crashes", "this_player: " + file_name(command_giver) + "\n");
-  if (current_object)
+  if( current_object )
     log_file("crashes", "this_object: " + file_name(current_object) + "\n");
 }
 
@@ -70,30 +74,30 @@ crash(string error, object command_giver, object current_object)
 // Return:          Array of nonblank lines that don't begin with '#'
 // Note:            must be declared static (else a security hole)
 
-static string *
+static string*
 update_file(string file)
 {
-  string *array;
+  string *arr;
   string str;
 
   str = read_file(file);
 
   if (!str) return ({});
 
-  array = explode(str, "\n");
+  arr = explode(str, "\n");
 
-  for (int i = 0; i < sizeof(array); i++) {
-    if (array[i][0] == '#')
-      array[i] = 0;
+  for (int i = 0; i < sizeof(arr); i++) {
+    if (arr[i][0] == '#')
+      arr[i] = 0;
   }
 
-  return array;
+  return arr;
 }
 
 // Function name:       epilog
 // Return:              List of files to preload
 
-string *
+string*
 epilog(int load_empty)
 {
   return update_file(CONFIG_DIR + "/preload");
@@ -107,23 +111,27 @@ preload(string file)
   int t1;
   string err;
 
-  if (!file_exists(file + ".c")) return;
+  if( !file_exists(file + ".c") )
+    return;
 
   t1 = time();
-  efun::write("Preloading : " + file + "...");
-  err = catch(call_other(file, "??"));
-  if (err != 0) {
-    efun::write("\nError " + err + " when loading " + file + "\n");
-  } else {
+  debug_message("Preloading : " + file + "...");
+
+  if( err = catch(call_other(file, "??")) )
+  {
+    debug_message("\nError " + err + " when loading " + file + "\n");
+  }
+  else
+  {
     t1 = time() - t1;
-    efun::write("(" + t1/60 + "." + t1 % 60 + ")\n");
+    debug_message("(" + t1/60 + "." + t1 % 60 + ")\n");
   }
 }
 
 // Write an error message into a log file. The error occured in the object
 // 'file', giving the error message 'message'.
 
-int
+void
 error_handler(mapping error, int caught)
 {
   string name, home;
@@ -142,14 +150,16 @@ error_handler(mapping error, int caught)
 		 error["program"], error["object"],
 		 sizeof(error["trace"]));
 
-  foreach(mapping traceback in error["trace"]) {
+  foreach(mapping traceback in error["trace"])
+  {
     line += sprintf("    file   : %s:%d\n"
 		    "    pgm/obj: %s (%O)\n"
 		    "    func   : %s (",
 		    traceback["file"], traceback["line"],
 		    traceback["program"], traceback["object"],
 		    traceback["function"]);
-    if( arrayp(traceback["arguments"]) ) {
+    if( arrayp(traceback["arguments"]) )
+    {
       string paramlist = "";
 
       foreach(mixed arg in traceback["arguments"])
@@ -165,21 +175,20 @@ error_handler(mapping error, int caught)
   }
 
   name = file_owner(error["file"]);
-  if (name)
+
+  if( name )
     home = user_cwd(name);
   else
     home = LOG_DIR;
   home = home + "/errors";
 
-  if(this_interactive())
+  if( this_interactive() )
     message("system", "\nruntime: error: "
 	    "Check " + home + "/runtime for more information.\n",
 	    this_interactive());
    
-  if(directory_exists(home))
+  if( directory_exists(home) )
     unguarded((: write_file, home + "/runtime", line :), 1);
-
-  return 1;
 }
 
 void
@@ -190,7 +199,8 @@ log_error(string file, string message)
   message = break_string(replace_string(message, "\n", ""), 79) + "\n";
 
   name = file_owner(file);
-  if (name)
+
+  if( name )
     home = user_cwd(name);
   else
     home = LOG_DIR;
@@ -201,7 +211,7 @@ log_error(string file, string message)
 	    "Check "+ home +"/compile for more information.\n",
 	    this_interactive());
 
-  if(directory_exists(home))
+  if( directory_exists(home) )
     unguarded((: write_file, home + "/compile", message :), 1);
 }
 
@@ -214,7 +224,8 @@ save_ed_setup(object who, int code)
 {
   string file;
   
-  if (!intp(code)) return 0;
+  if( !intp(code) )
+    return 0;
 
   file = user_path(who->query_name()) + ".edrc";
   rm(file);
@@ -231,7 +242,8 @@ retrieve_ed_setup(object who)
   int code;
   
   file = user_path(who->query_name()) + ".edrc";
-  if (file_size(file) <= 0) {
+  if( file_size(file) <= 0 )
+  {
     return 0;
   }
   sscanf(read_file(file), "%d", code);
@@ -244,7 +256,8 @@ retrieve_ed_setup(object who)
 void
 destruct_environment_of(object ob)
 {
-  if (!interactive(ob)) return;
+  if( !interactive(ob) )
+    return;
 
   tell_object(ob, "The object containing you was dested.\n");
   ob->move(VOID_OB);
@@ -255,33 +268,13 @@ destruct_environment_of(object ob)
 string
 make_path_absolute(string file)
 {
-  file = absolute_path((string)this_player()->query_cwd(), file);
-  return (string)call_other(SIMUL_EFUN, "absolute_path",
-			    this_player()->query_cwd(), file);
+  return absolute_path((string)this_player()->query_cwd(), file);
 }
 
 string
 privs_file(string str)
 {
   return (string)call_other(SECURITY_D, "privs_file", str);
-}
-
-string
-creator_file(string str)
-{
-  return (string)call_other(SIMUL_EFUN, "creator_file", str);
-}
-
-string
-domain_file(string str)
-{
-  return (string)call_other(SIMUL_EFUN, "domain_file", str);
-}
-
-string
-author_file(string str)
-{
-  return (string)call_other(SIMUL_EFUN, "author_file", str);
 }
 
 // Returns the list of valid literals that may appear in parse rules

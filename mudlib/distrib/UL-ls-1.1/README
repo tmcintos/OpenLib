@@ -1,0 +1,3 @@
+This is a standard 'ls' file listing command.  You will need to modify the
+long-listing format to fit your mudlib.  It also uses Discworld color codes
+with the -c flag which your mudlib may or may not support.

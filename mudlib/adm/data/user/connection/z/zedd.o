@@ -1,0 +1,12 @@
+#/adm/obj/clone/connection.c
+name "zedd"
+cap_name "Zedd"
+password "LHK2AUrAK2yaE"
+real_name "Brandon Hipsher"
+email_addr "hipsher@bscr.uga.edu"
+body "/adm/obj/clone/user"
+login_shell "/adm/obj/clone/shells/nmsh"
+gender 1
+login_time 849818290
+logout_time 0
+login_from "mb3.genetics.uga.edu"

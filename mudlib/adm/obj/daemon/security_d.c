@@ -87,6 +87,7 @@ private mapping privs;
  *   To make it possible for someone with a control priv to create other
  * privs, the control priv must be opened to itself.
  */
+private static int loaded;
 
 nomask void
 create()
@@ -124,6 +125,7 @@ create()
   unguarded_priv = 0;
 
   unguarded((: restore_object( SAVE_FILE, 1 ) :), 1);
+  loaded = 1;
 }
 
 nomask void
@@ -312,6 +314,8 @@ check_privilege(mixed priv, int skip)
 {
   object* stack = call_stack(1);        // objects
   string* funcs = call_stack(2);        // function names
+
+  if( !loaded ) return 1;
 
   for( int i = skip + 1; i < sizeof(stack); i++ )
   {

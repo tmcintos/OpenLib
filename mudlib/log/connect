@@ -1342,3 +1342,382 @@ Thu Oct 17 00:22:38 1996: loopback
 Thu Oct 17 00:22:38 1996: ttype: xterm
 Thu Oct 17 00:22:51 1996: 127.0.0.1
 Thu Oct 17 00:22:53 1996: ttype: xterm
+Thu Oct 17 00:24:45 1996: loopback
+Thu Oct 17 00:24:45 1996: ttype: xterm
+Thu Oct 17 00:27:38 1996: loopback
+Thu Oct 17 00:27:38 1996: ttype: cons25
+Thu Oct 17 05:11:00 1996: loopback
+Thu Oct 17 05:11:00 1996: ttype: screen
+Thu Oct 17 13:10:24 1996: loopback
+Thu Oct 17 13:10:24 1996: ttype: xterm
+Thu Oct 17 15:33:26 1996: loopback
+Thu Oct 17 15:33:26 1996: ttype: cons25
+Thu Oct 17 19:27:25 1996: loopback
+Thu Oct 17 19:27:25 1996: ttype: screen
+Thu Oct 17 19:30:36 1996: loopback
+Thu Oct 17 19:30:36 1996: ttype: screen
+Thu Oct 17 19:31:40 1996: loopback
+Thu Oct 17 19:31:40 1996: ttype: screen
+Thu Oct 17 20:07:27 1996: 141.218.40.78
+Thu Oct 17 20:07:27 1996: ttype: vt100
+Thu Oct 17 21:34:59 1996: 199.183.198.197
+Thu Oct 17 21:35:01 1996: ttype: vt100
+Thu Oct 17 22:38:43 1996: 128.83.59.204
+Thu Oct 17 22:38:43 1996: ttype: xterm
+Fri Oct 18 04:55:16 1996: 137.92.12.102
+Fri Oct 18 04:55:18 1996: ttype: vt100
+Sat Oct 19 01:15:48 1996: loopback
+Sat Oct 19 01:15:48 1996: ttype: screen
+Sat Oct 19 12:29:02 1996: 204.179.228.93
+Sun Oct 20 20:59:33 1996: 127.0.0.1
+Sun Oct 20 20:59:33 1996: ttype: cons25
+Mon Oct 21 00:35:29 1996: 198.59.148.3
+Mon Oct 21 00:36:12 1996: 207.92.151.131
+Mon Oct 21 11:04:05 1996: loopback
+Mon Oct 21 11:04:05 1996: ttype: cons25
+Mon Oct 21 11:37:43 1996: loopback
+Mon Oct 21 11:37:43 1996: ttype: cons25
+Mon Oct 21 15:53:07 1996: 205.179.145.14
+Mon Oct 21 15:53:07 1996: ttype: xterm
+Mon Oct 21 18:17:01 1996: loopback
+Mon Oct 21 18:17:01 1996: ttype: xterm
+Mon Oct 21 22:45:52 1996: loopback
+Mon Oct 21 22:45:55 1996: ttype: xterm
+Mon Oct 21 23:46:49 1996: loopback
+Mon Oct 21 23:46:49 1996: ttype: xterm
+Mon Oct 21 23:54:31 1996: loopback
+Mon Oct 21 23:54:31 1996: ttype: xterm
+Mon Oct 21 23:54:44 1996: 127.0.0.1
+Mon Oct 21 23:54:44 1996: ttype: xterm
+Tue Oct 22 12:24:41 1996: loopback
+Tue Oct 22 12:24:41 1996: ttype: xterm
+Tue Oct 22 19:17:08 1996: loopback
+Tue Oct 22 19:17:08 1996: ttype: xterm
+Tue Oct 22 20:37:25 1996: loopback
+Tue Oct 22 20:37:25 1996: ttype: xterm
+Wed Oct 23 00:18:50 1996: loopback
+Wed Oct 23 00:18:50 1996: ttype: screen
+Wed Oct 23 01:20:24 1996: 134.68.1.2
+Wed Oct 23 01:20:24 1996: ttype: vt100
+Wed Oct 23 02:00:16 1996: 205.215.64.13
+Wed Oct 23 02:00:18 1996: ttype: vt220
+Wed Oct 23 02:51:03 1996: 193.59.48.70
+Wed Oct 23 02:51:07 1996: ttype: vt102
+Wed Oct 23 11:10:48 1996: loopback
+Wed Oct 23 11:10:48 1996: ttype: xterm
+Wed Oct 23 11:13:47 1996: 130.157.3.226
+Wed Oct 23 11:13:47 1996: ttype: vt100
+Wed Oct 23 12:06:13 1996: 155.43.128.159
+Wed Oct 23 12:09:58 1996: loopback
+Wed Oct 23 12:09:58 1996: ttype: xterm
+Thu Oct 24 09:25:04 1996: 206.103.114.13
+Thu Oct 24 09:25:04 1996: ttype: vt300
+Thu Oct 24 14:11:41 1996: DHPC41.COMMNET.EDU
+Thu Oct 24 17:47:24 1996: 158.152.54.223
+Thu Oct 24 17:47:54 1996: falu.demon.co.uk
+Thu Oct 24 18:23:43 1996: loopback
+Thu Oct 24 18:23:43 1996: ttype: xterm
+Fri Oct 25 00:41:45 1996: loopback
+Fri Oct 25 00:41:45 1996: ttype: vt100
+Fri Oct 25 12:15:46 1996: DHPC41.COMMNET.EDU
+Sat Oct 26 00:20:03 1996: loopback
+Sat Oct 26 00:20:03 1996: ttype: screen
+Sat Oct 26 01:52:12 1996: 199.35.217.168
+Sat Oct 26 01:52:26 1996: pax-ca5-08.ix.netcom.com
+Sat Oct 26 12:07:34 1996: loopback
+Sat Oct 26 12:07:34 1996: ttype: xterm
+Sun Oct 27 18:04:01 1996: loopback
+Sun Oct 27 18:04:01 1996: ttype: xterm
+Mon Oct 28 04:43:02 1996: loopback
+Mon Oct 28 04:43:02 1996: ttype: screen
+Mon Oct 28 09:46:05 1996: loopback
+Mon Oct 28 09:46:05 1996: ttype: xterm
+Mon Oct 28 16:49:15 1996: 194.143.11.231
+Mon Oct 28 16:50:06 1996: nm7-6.ppp.sn.no
+Mon Oct 28 19:09:09 1996: loopback
+Mon Oct 28 19:09:09 1996: ttype: xterm
+Mon Oct 28 19:14:17 1996: loopback
+Mon Oct 28 19:14:17 1996: ttype: xterm
+Mon Oct 28 19:15:20 1996: loopback
+Mon Oct 28 19:15:20 1996: ttype: xterm
+Tue Oct 29 12:46:03 1996: 127.0.0.1
+Tue Oct 29 12:46:03 1996: ttype: xterm
+Wed Oct 30 00:06:59 1996: 127.0.0.1
+Wed Oct 30 00:06:59 1996: ttype: xterm
+Wed Oct 30 05:30:02 1996: loopback
+Wed Oct 30 05:30:02 1996: ttype: screen
+Wed Oct 30 09:19:37 1996: loopback
+Wed Oct 30 09:19:37 1996: ttype: vt100
+Wed Oct 30 15:53:25 1996: loopback
+Wed Oct 30 15:53:25 1996: ttype: vt220
+Thu Oct 31 01:46:44 1996: loopback
+Thu Oct 31 01:46:44 1996: ttype: screen
+Sat Nov  2 01:56:26 1996: 205.215.64.13
+Sat Nov  2 01:56:26 1996: ttype: vt220
+Sat Nov  2 02:05:26 1996: axp.calumet.purdue.edu
+Sat Nov  2 02:05:26 1996: ttype: vt220
+Sat Nov  2 02:11:23 1996: 137.132.1.18
+Sat Nov  2 02:11:25 1996: ttype: vt100
+Sat Nov  2 12:05:37 1996: axp.calumet.purdue.edu
+Sat Nov  2 12:05:37 1996: ttype: vt220
+Sat Nov  2 17:47:30 1996: axp.calumet.purdue.edu
+Sat Nov  2 17:47:32 1996: ttype: vt220
+Sun Nov  3 08:26:55 1996: 202.38.128.33
+Mon Nov  4 04:49:59 1996: 194.143.8.28
+Mon Nov  4 04:49:59 1996: ttype: xterm
+Mon Nov  4 04:55:54 1996: sinsen.sn.no
+Mon Nov  4 04:55:54 1996: ttype: xterm
+Mon Nov  4 21:40:14 1996: 127.0.0.1
+Mon Nov  4 21:40:14 1996: ttype: xterm
+Tue Nov  5 08:51:15 1996: 155.43.128.159
+Tue Nov  5 12:35:00 1996: localhost
+Tue Nov  5 12:35:00 1996: ttype: xterm
+Tue Nov  5 16:00:22 1996: localhost
+Tue Nov  5 16:00:22 1996: ttype: xterm
+Tue Nov  5 19:17:50 1996: localhost
+Tue Nov  5 19:17:50 1996: ttype: xterm
+Tue Nov  5 20:21:52 1996: 128.119.85.192
+Tue Nov  5 20:21:54 1996: ttype: vt100
+Wed Nov  6 00:23:16 1996: localhost
+Wed Nov  6 00:23:16 1996: ttype: screen
+Wed Nov  6 01:43:49 1996: 199.184.119.1
+Wed Nov  6 01:43:49 1996: ttype: screen
+Wed Nov  6 22:41:58 1996: localhost
+Wed Nov  6 22:41:58 1996: ttype: screen
+Thu Nov  7 00:37:10 1996: localhost
+Thu Nov  7 00:37:10 1996: ttype: screen
+Thu Nov  7 00:53:18 1996: localhost
+Thu Nov  7 00:53:18 1996: ttype: xterm
+Thu Nov  7 01:23:51 1996: localhost
+Thu Nov  7 01:23:51 1996: ttype: xterm
+Thu Nov  7 12:34:55 1996: localhost
+Thu Nov  7 12:34:57 1996: ttype: xterm
+Thu Nov  7 12:38:13 1996: 129.186.5.93
+Thu Nov  7 12:38:13 1996: ttype: xterm
+Thu Nov  7 15:33:19 1996: localhost
+Thu Nov  7 15:33:19 1996: ttype: vt100
+Thu Nov  7 18:30:22 1996: localhost
+Thu Nov  7 18:30:22 1996: ttype: xterm
+Thu Nov  7 23:13:58 1996: localhost
+Thu Nov  7 23:13:58 1996: ttype: screen
+Fri Nov  8 14:28:59 1996: localhost
+Fri Nov  8 14:28:59 1996: ttype: xterm
+Fri Nov  8 19:21:17 1996: localhost
+Fri Nov  8 19:21:19 1996: ttype: xterm
+Sat Nov  9 00:19:53 1996: 205.215.64.13
+Sat Nov  9 00:19:53 1996: ttype: vt220
+Sat Nov  9 01:02:19 1996: localhost
+Sat Nov  9 01:02:19 1996: ttype: xterm
+Sat Nov  9 04:42:47 1996: axp.calumet.purdue.edu
+Sat Nov  9 04:42:49 1996: ttype: vt220
+Sat Nov  9 23:48:21 1996: localhost
+Sat Nov  9 23:48:21 1996: ttype: xterm
+Sun Nov 10 00:20:19 1996: localhost
+Sun Nov 10 00:20:19 1996: ttype: xterm
+Sun Nov 10 18:05:16 1996: localhost
+Sun Nov 10 18:05:16 1996: ttype: xterm
+Sun Nov 10 18:05:38 1996: localhost
+Sun Nov 10 18:05:38 1996: ttype: xterm
+Sun Nov 10 21:22:25 1996: axp.calumet.purdue.edu
+Sun Nov 10 21:22:25 1996: ttype: vt220
+Sun Nov 10 22:23:14 1996: localhost
+Sun Nov 10 22:23:14 1996: ttype: xterm
+Mon Nov 11 17:04:09 1996: localhost
+Mon Nov 11 17:04:09 1996: ttype: xterm
+Mon Nov 11 21:43:55 1996: localhost
+Mon Nov 11 21:43:55 1996: ttype: xterm
+Mon Nov 11 22:22:33 1996: localhost
+Mon Nov 11 22:22:33 1996: ttype: xterm
+Mon Nov 11 23:42:53 1996: localhost
+Mon Nov 11 23:42:53 1996: ttype: xterm
+Tue Nov 12 00:26:23 1996: axp.calumet.purdue.edu
+Tue Nov 12 00:26:25 1996: ttype: vt220
+Tue Nov 12 00:36:44 1996: axp.calumet.purdue.edu
+Tue Nov 12 00:36:44 1996: ttype: vt220
+Tue Nov 12 04:10:07 1996: localhost
+Tue Nov 12 04:10:07 1996: ttype: xterm
+Wed Nov 13 00:41:03 1996: localhost
+Wed Nov 13 00:41:03 1996: ttype: xterm
+Wed Nov 13 00:53:27 1996: localhost
+Wed Nov 13 00:53:27 1996: ttype: screen
+Wed Nov 13 00:57:33 1996: localhost
+Wed Nov 13 00:57:33 1996: ttype: screen
+Wed Nov 13 01:29:01 1996: localhost
+Wed Nov 13 01:29:01 1996: ttype: screen
+Wed Nov 13 14:23:25 1996: localhost
+Wed Nov 13 14:23:25 1996: ttype: xterm
+Wed Nov 13 20:27:09 1996: localhost
+Wed Nov 13 20:27:09 1996: ttype: xterm
+Thu Nov 14 13:30:11 1996: localhost
+Thu Nov 14 13:30:11 1996: ttype: xterm
+Thu Nov 14 13:30:37 1996: localhost
+Thu Nov 14 13:30:37 1996: ttype: xterm
+Thu Nov 14 13:34:40 1996: localhost
+Thu Nov 14 13:34:40 1996: ttype: xterm
+Thu Nov 14 15:01:55 1996: localhost
+Thu Nov 14 15:01:55 1996: ttype: vt100
+Thu Nov 14 18:48:44 1996: localhost
+Thu Nov 14 18:48:44 1996: ttype: vt100
+Fri Nov 15 00:07:00 1996: 127.0.0.1
+Fri Nov 15 00:07:04 1996: ttype: xterm
+Fri Nov 15 03:29:21 1996: loopback
+Fri Nov 15 03:29:21 1996: ttype: screen
+Fri Nov 15 20:14:20 1996: loopback
+Fri Nov 15 20:14:22 1996: ttype: xterm
+Fri Nov 15 20:40:52 1996: loopback
+Fri Nov 15 20:40:54 1996: ttype: xterm
+Fri Nov 15 21:27:30 1996: loopback
+Fri Nov 15 21:27:30 1996: ttype: xterm
+Sun Nov 17 15:55:54 1996: loopback
+Sun Nov 17 15:55:57 1996: ttype: xterm
+Sun Nov 17 15:58:39 1996: 199.184.119.1
+Sun Nov 17 15:58:41 1996: ttype: screen
+Sun Nov 17 18:58:39 1996: loopback
+Sun Nov 17 18:58:39 1996: ttype: screen
+Sun Nov 17 19:08:22 1996: loopback
+Sun Nov 17 19:08:22 1996: ttype: xterm
+Sun Nov 17 22:51:04 1996: aurora.alaska.edu
+Sun Nov 17 22:51:04 1996: ttype: vt100
+Sun Nov 17 23:01:05 1996: falcon.inetnebr.com
+Sun Nov 17 23:01:05 1996: ttype: screen
+Mon Nov 18 05:56:02 1996: loopback
+Mon Nov 18 05:56:02 1996: ttype: screen
+Mon Nov 18 18:19:28 1996: loopback
+Mon Nov 18 18:19:28 1996: ttype: xterm
+Mon Nov 18 18:27:35 1996: loopback
+Mon Nov 18 18:27:35 1996: ttype: xterm
+Tue Nov 19 16:47:52 1996: loopback
+Tue Nov 19 16:47:52 1996: ttype: xterm
+Tue Nov 19 17:49:08 1996: loopback
+Tue Nov 19 17:49:08 1996: ttype: xterm
+Thu Nov 21 13:30:50 1996: loopback
+Thu Nov 21 13:30:53 1996: ttype: cons25
+Thu Nov 21 13:36:41 1996: loopback
+Thu Nov 21 13:36:41 1996: ttype: cons25
+Thu Nov 21 15:29:24 1996: loopback
+Thu Nov 21 15:29:24 1996: ttype: cons25
+Thu Nov 21 15:57:35 1996: loopback
+Thu Nov 21 15:57:35 1996: ttype: xterm
+Thu Nov 21 20:30:36 1996: loopback
+Thu Nov 21 20:30:36 1996: ttype: xterm
+Thu Nov 21 20:36:53 1996: loopback
+Thu Nov 21 20:36:53 1996: ttype: xterm
+Fri Nov 22 08:27:26 1996: 128.238.141.102
+Fri Nov 22 08:27:28 1996: ttype: ansi
+Fri Nov 22 10:38:04 1996: 128.118.77.31
+Fri Nov 22 10:38:08 1996: ttype: vt102
+Fri Nov 22 10:39:20 1996: clrc27.aa.psu.edu
+Fri Nov 22 10:39:22 1996: ttype: vt102
+Sat Nov 23 21:43:11 1996: 205.215.64.13
+Sat Nov 23 21:43:11 1996: ttype: vt100
+Mon Nov 25 19:19:24 1996: 134.129.233.214
+Mon Nov 25 19:19:26 1996: ttype: vt100
+Mon Nov 25 19:19:48 1996: 134.129.233.214
+Mon Nov 25 19:19:48 1996: ttype: vt100
+Tue Nov 26 23:46:37 1996: winnie.neurostudios.com
+Tue Nov 26 23:46:37 1996: ttype: ansi
+Wed Nov 27 09:32:44 1996: 194.182.193.148
+Wed Nov 27 09:34:51 1996: 194.182.193.148
+Wed Nov 27 09:34:51 1996: ttype: 
+Wed Nov 27 09:37:26 1996: 194.182.193.148
+Wed Nov 27 09:37:28 1996: ttype: 
+Wed Nov 27 17:06:21 1996: 128.238.141.102
+Wed Nov 27 17:06:21 1996: ttype: ansi
+Thu Nov 28 21:29:32 1996: axp.calumet.purdue.edu
+Thu Nov 28 21:29:34 1996: ttype: vt100
+Mon Dec  2 11:52:33 1996: du76-5.ppp.algonet.se
+Mon Dec  2 11:52:35 1996: ttype: ansi
+Mon Dec  2 13:21:20 1996: loopback
+Mon Dec  2 13:21:20 1996: ttype: xterm
+Mon Dec  2 13:59:36 1996: loopback
+Mon Dec  2 13:59:36 1996: ttype: xterm
+Mon Dec  2 15:17:33 1996: 128.238.141.102
+Mon Dec  2 15:17:35 1996: ttype: ansi
+Mon Dec  2 16:03:43 1996: 130.238.228.218
+Mon Dec  2 16:03:45 1996: ttype: dec-vt220
+Mon Dec  2 16:14:07 1996: 130.238.228.218
+Mon Dec  2 16:14:09 1996: ttype: dec-vt220
+Tue Dec  3 15:57:14 1996: loopback
+Tue Dec  3 15:57:14 1996: ttype: xterm
+Tue Dec  3 22:30:16 1996: loopback
+Tue Dec  3 22:30:16 1996: ttype: xterm
+Tue Dec  3 22:38:10 1996: 129.186.85.38
+Tue Dec  3 22:38:10 1996: ttype: xterm
+Tue Dec  3 23:57:55 1996: loopback
+Tue Dec  3 23:57:55 1996: ttype: xterm
+Thu Dec  5 14:37:40 1996: mb3.genetics.uga.edu
+Thu Dec  5 14:37:42 1996: ttype: vt220
+Fri Dec  6 11:24:53 1996: loopback
+Fri Dec  6 11:24:53 1996: ttype: xterm
+Fri Dec  6 23:07:52 1996: loopback
+Fri Dec  6 23:07:54 1996: ttype: xterm
+Sat Dec  7 01:45:04 1996: 141.209.92.15
+Sat Dec  7 01:45:04 1996: ttype: vt100
+Sat Dec  7 17:27:13 1996: loopback
+Sat Dec  7 17:27:13 1996: ttype: xterm
+Wed Dec 18 13:52:59 1996: 127.0.0.1
+Wed Dec 18 13:52:59 1996: ttype: xterm
+Wed Dec 18 13:54:40 1996: 127.0.0.1
+Wed Dec 18 13:54:40 1996: ttype: xterm
+Sat Feb 15 04:44:14 1997: 127.0.0.1
+Sat Feb 15 04:44:14 1997: ttype: xterm
+Sat Feb 15 04:45:38 1997: 127.0.0.1
+Sat Feb 15 04:45:38 1997: ttype: xterm
+Sat Feb 15 04:51:52 1997: localhost
+Sat Feb 15 04:51:52 1997: ttype: xterm
+Mon Feb 17 00:20:23 1997: localhost
+Mon Feb 17 00:20:23 1997: ttype: cons25
+Mon Feb 17 00:22:28 1997: localhost
+Mon Feb 17 00:22:28 1997: ttype: cons25
+Mon Feb 17 00:27:49 1997: localhost
+Mon Feb 17 00:27:49 1997: ttype: cons25
+Mon Feb 17 00:35:14 1997: 127.0.0.1
+Mon Feb 17 00:35:14 1997: ttype: cons25
+Mon Feb 17 00:41:58 1997: localhost
+Mon Feb 17 00:41:58 1997: ttype: cons25
+Mon Feb 17 00:52:56 1997: localhost
+Mon Feb 17 00:52:56 1997: ttype: cons25
+Tue Feb 18 10:43:45 1997: 127.0.0.1
+Tue Feb 18 10:43:45 1997: ttype: cons25
+Tue Feb 18 11:45:54 1997: localhost
+Tue Feb 18 11:45:54 1997: ttype: cons25
+Thu Feb 20 22:31:03 1997: 127.0.0.1
+Thu Feb 20 22:31:03 1997: ttype: cons25
+Fri Feb 21 10:41:04 1997: 129.186.5.94
+Fri Feb 21 10:41:07 1997: ttype: xterm
+Sat Feb 22 22:46:35 1997: localhost
+Sat Feb 22 22:46:35 1997: ttype: cons25
+Sun Feb 23 21:33:46 1997: localhost
+Sun Feb 23 21:33:50 1997: ttype: xterm
+Mon Feb 24 17:01:58 1997: localhost
+Mon Feb 24 17:02:01 1997: ttype: cons25
+Tue Mar  4 23:17:52 1997: 127.0.0.1
+Tue Mar  4 23:17:52 1997: ttype: xterm
+Tue Mar  4 23:47:59 1997: 127.0.0.1
+Tue Mar  4 23:47:59 1997: ttype: xterm
+Tue Mar  4 23:54:49 1997: 127.0.0.1
+Tue Mar  4 23:54:51 1997: ttype: xterm
+Sun Mar 30 23:03:45 1997: 129.186.85.38
+Sun Mar 30 23:03:45 1997: ttype: xterm
+Sun Mar 30 23:03:51 1997: knapp38.res.iastate.edu
+Sun Mar 30 23:03:51 1997: ttype: xterm
+Sun Mar 30 23:10:07 1997: 129.186.85.38
+Sun Mar 30 23:10:07 1997: ttype: xterm
+Sun Mar 30 23:12:53 1997: 129.186.85.38
+Sun Mar 30 23:12:53 1997: ttype: xterm
+Mon Aug 25 22:31:35 1997: 129.186.190.38
+Mon Aug 25 22:31:35 1997: ttype: xterm
+Mon Aug 25 22:32:43 1997: 129.186.190.38
+Mon Aug 25 22:32:43 1997: ttype: xterm
+Mon Sep 29 23:28:09 1997: 129.186.190.38
+Mon Sep 29 23:28:12 1997: ttype: xterm
+Mon Sep 29 23:29:33 1997: 129.186.190.38
+Mon Sep 29 23:29:33 1997: ttype: xterm
+Tue Sep 30 20:42:57 1997: 129.186.190.38
+Tue Sep 30 20:42:57 1997: ttype: xterm
+Tue Sep 30 20:47:36 1997: 129.186.190.38
+Tue Sep 30 20:47:36 1997: ttype: xterm
+Tue Sep 30 20:50:11 1997: 129.186.190.38
+Tue Sep 30 20:50:11 1997: ttype: xterm
+Tue Sep 30 20:51:17 1997: 129.186.190.38
+Tue Sep 30 20:51:17 1997: ttype: xterm

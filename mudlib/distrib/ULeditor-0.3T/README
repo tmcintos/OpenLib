@@ -1,0 +1,5 @@
+Editor Daemon v0.3T
+-------------------
+
+This is the UltraLib general purpose editor.  The source code should hopefully
+be self-explanatory.  Basically you call edit() to use it.

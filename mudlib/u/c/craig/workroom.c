@@ -1,5 +1,3 @@
-/*  -*- LPC -*-  */
-// -= Coded by the local idiot Kyricc=-
 
 #include <mudlib.h>
 

@@ -629,3 +629,17 @@ Driver went down (exit code: 0): Thu Oct 17 00:19:17 CDT 1996
 Driver came up: Thu Oct 17 00:19:17 CDT 1996
 Driver went down (exit code: 0): Thu Oct 17 00:22:45 CDT 1996
 Driver came up: Thu Oct 17 00:22:45 CDT 1996
+Driver came up: Sat Oct 19 16:49:04 CDT 1996
+Driver went down (exit code: 0): Mon Oct 21 23:54:38 CDT 1996
+Driver came up: Mon Oct 21 23:54:39 CDT 1996
+Driver came up: Tue Oct 29 10:12:51 CST 1996
+Driver came up: Tue Oct 29 21:40:38 CST 1996
+Driver came up: Mon Nov  4 21:21:30 CST 1996
+Driver came up: Thu Nov 14 20:48:18 CST 1996
+Driver went down (exit code: 255): Sat Dec  7 18:38:27 CST 1996
+Driver exited with -1.  Halting.
+Driver came up: Wed Dec 18 13:51:45 CST 1996
+Driver went down (exit code: 0): Wed Dec 18 13:53:21 CST 1996
+Driver came up: Wed Dec 18 13:53:22 CST 1996
+Driver went down (exit code: 255): Wed Dec 18 13:54:53 CST 1996
+Driver exited with -1.  Halting.

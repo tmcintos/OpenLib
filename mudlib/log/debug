@@ -1,11 +1,74 @@
 ----------------------------------------------------------------------------
-Dysfunctional Mud (MudOS v22.1a6) starting up on FreeBSD - Thu Oct 17 00:22:45 1996
+OpenLib Mud (MudOS v22b22) starting up on FreeBSD - Mon Sep 29 23:29:28 1997
 
 
-Connected to address server on localhost port 7374
-/adm/obj/daemon/master.c line 132: Warning: Non-void functions must return a value.
+Connection to address server (localhost 9999) refused.
 
 Loading preloaded files ...
+Preloading : /adm/obj/daemon/void...
+(0.0)
+
+Preloading : /adm/obj/daemon/cmd_d...
+(0.0)
+
+Preloading : /obj/daemon/race_d...
+(0.0)
+
+Preloading : /adm/obj/daemon/login_d...
+(0.0)
+
+Preloading : /adm/obj/daemon/mail_d...
+(0.0)
+
+Preloading : /adm/obj/daemon/net/services...
+(0.0)
+
+Preloading : /adm/obj/daemon/net/intermud...
+(0.0)
+
+Preloading : /adm/obj/daemon/net/oob_d...
+(0.0)
+
+Preloading : /adm/obj/daemon/net/auth_d...
+(0.0)
+
+Preloading : /adm/obj/daemon/net/ucache_d...
+(0.0)
+
+Preloading : /adm/obj/daemon/net/ftp_d...
+(0.0)
+
+Preloading : /adm/obj/daemon/net/http_d...
+(0.0)
+
+Preloading : /adm/obj/daemon/net/remote...
+(0.0)
+
+Preloading : /adm/obj/daemon/net/finger_d...
+(0.0)
+
+Preloading : /obj/daemon/chat_d...
+(0.0)
+
+Preloading : /obj/daemon/combat_d...
+(0.0)
+
+Preloading : /obj/daemon/editor_d...
+(0.0)
+
+Preloading : /obj/daemon/emote_d...
+(0.0)
+
+Preloading : /obj/daemon/termcap_d...
+(0.0)
+
+Preloading : /obj/inherit/room...
+(0.0)
+
+Preloading : /obj/inherit/living...
+(0.0)
+
 Initializations complete.
 
-Accepting connections on port 4444.
+Accepting connections on port 5555.
+closed external ports

@@ -5,7 +5,7 @@
 mixed
 eval()
 {
-  function f = function() { object me = this_player(); return __MUD_NAME__; };
+  function f = function() { object me = this_player(); return find_player("henry")->unsetenv("PATH"); };
   mixed priv = (this_interactive() ? query_privs(this_interactive()) : 0);
 
   return unguarded(f, priv);

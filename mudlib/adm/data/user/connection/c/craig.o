@@ -1,4 +1,4 @@
-#/obj/clone/connection.c
+#/adm/obj/clone/connection.c
 name "craig"
 cap_name 0
 password "bOoy1fVHjDi7k"
@@ -7,6 +7,6 @@ email_addr 0
 body "/obj/clone/user/human"
 login_shell "/obj/clone/shells/nmsh"
 gender 0
-login_time 842670785
-logout_time 842670884
-login_from "loopback"
+login_time 848018928
+logout_time 848018983
+login_from "localhost"

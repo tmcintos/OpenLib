@@ -7,12 +7,12 @@
 ###############################################################################
  
 # name of this mud
-name : Dysfunctional Mud
+name : OpenLib Mud
  
 # mud may define up to 5 external ports for which connect() is called
 # in the master object with the port number as argument
 # types are: telnet, binary, ascii
-port number : 4444
+port number : 5555
 
 # mud may define up to 5 external commands which return a socket used to
 # communicate with the command.  Accessed via external_start() efun.
@@ -21,7 +21,7 @@ port number : 4444
 # the address server is an external program that lets the mud translate
 # internet names to numbers (and vice versa).  select an unused port.
 address server ip : localhost
-address server port : 7374
+address server port : 9999
  
 # absolute pathname of mudlib
 mudlib directory : /u2/mud/mudlib

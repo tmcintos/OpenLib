@@ -1,12 +1,12 @@
 #/adm/obj/clone/user.c
-morestring "%%^INVERSE%%^--MORE--%%^RESET%%^ (%d%%) %s"
-callback 
+morestring "/u/k/kyricc/.newsrc: (%d%%) %s"
+callback 0
 redraw 
 s_length 24
 start 24
 prev 1
-length 7
-file ({"alt.wiz.advocacy: 1-1","mudlib.devel.announce: 1-2","mudlib.devel.ideas: 1-2","mudlib.devel.changes: 1-1","alt.kyricc.is.cool.cool.cool: 1-1","mudlib.devel.todo: 1-1","",})
+length 6
+file "/u/k/kyricc/.newsrc"
 in_help 0
 no_clean 0
 flags ({})
@@ -16,6 +16,6 @@ spell_points 0
 str 0
 agil 0
 skills 0
-env_vars (["version":"Prototype Shell","PATH":"/cmd/player:/adm/cmd/player:/cmd/wiz:/adm/cmd/wiz:/cmd/adm:/adm/cmd/adm","PROMPT":"[%~]->","LENGTH":24,"MORE_EXIT_END":1,"WIDTH":80,"SHELL":"/obj/clone/shells/protosh","nmsh_nick":([]),"TERM":"default","nmsh_alias":(["l":"look $*","e":"east","exa":"look at $*","sw":"southwest","w":"west","d":"down","u":"up","i":"inventory","n":"north","nw":"northwest","se":"southeast","bio":"biography","s":"south","ne":"northeast",]),"TITLE":"is raping the MudLib!","nmsh_xverb":(["'":"say $*",":":"emote $*",]),"noglob":1,])
-aliases (["c":"clone","la":"look at","i":"inventory","nod":"emote nods quietly","se":"southeast","cgoss":"chat igossip","sc":"score","grin":"emote grins evilly","l":"look","e":"east","bbb":"shout I\\'m baaaaaaaaack!!!","brb":"shout Be right back...I\\'m going AFK!!!","w":"west","sw":"southwest","n":"north","|":"more","nw":"northwest","s":"south","ww":"shout WOOOOOOO WOOOOOOO","ahh":"emote ahhs","ne":"northeast","news":"more /adm/etc/motd",])
+env_vars (["PROMPT":"[%~]->","nmsh_xverb":(["'":"say $*",":":"emote $*",]),"version":"Prototype Shell","LENGTH":24,"SHELL":"/obj/clone/shells/protosh","WIDTH":80,"TITLE":"is raping the MudLib!","nmsh_nick":([]),"TERM":"default","nmsh_alias":(["ne":"northeast","se":"southeast","i":"inventory","bio":"biography","exa":"look at $*","n":"north","s":"south","l":"look $*","e":"east","sw":"southwest","u":"up","w":"west","nw":"northwest","d":"down",]),"noglob":1,"MORE_EXIT_END":1,"PATH":"/cmd/player:/adm/cmd/player:/cmd/wiz:/adm/cmd/wiz:/cmd/adm:/adm/cmd/adm",])
+aliases (["se":"southeast","i":"inventory","sc":"score","e":"east","brb":"shout Be right back...I\\'m going AFK!!!","cgoss":"chat igossip","c":"clone","w":"west","bbb":"shout I\\'m baaaaaaaaack!!!","ne":"northeast","n":"north","news":"more /adm/etc/motd","la":"look at","s":"south","l":"look","sw":"southwest","|":"more","ww":"shout WOOOOOOO WOOOOOOO","ahh":"emote ahhs","nw":"northwest","nod":"emote nods quietly","grin":"emote grins evilly",])
 channels ({"igossip",})

@@ -1,0 +1,3243 @@
+Thu Oct 17 14:07:20 1996: diablo: Diablo
+Thu Oct 17 14:07:20 1996: packet: 0
+Thu Oct 17 15:01:04 1996: taichi: Taichi
+Thu Oct 17 15:01:04 1996: packet: 0
+Fri Oct 18 20:16:00 1996: tedronai: Tedronai
+Fri Oct 18 20:16:00 1996: packet: 1
+Fri Oct 18 20:16:06 1996: tedronai: Tedronai
+Fri Oct 18 20:16:06 1996: packet: 0
+Fri Oct 18 20:16:14 1996: tedronai: Tedronai
+Fri Oct 18 20:16:14 1996: packet: 1
+Fri Oct 18 20:16:24 1996: tedronai: Tedronai
+Fri Oct 18 20:16:24 1996: packet: 2
+Fri Oct 18 20:16:32 1996: tedronai: Tedronai
+Fri Oct 18 20:16:32 1996: packet: 1
+Sat Oct 19 15:24:31 1996: diablo: Diablo
+Sat Oct 19 15:24:31 1996: packet: 2
+Sat Oct 19 16:50:01 1996: not-allowed: you are not allowed on that channel
+Sat Oct 19 16:50:01 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "insomnia-chat",
+  0
+})
+Sat Oct 19 16:50:01 1996: not-allowed: you are not allowed on that channel
+Sat Oct 19 16:50:01 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-cre",
+  0
+})
+Sat Oct 19 16:50:01 1996: not-allowed: you are not allowed on that channel
+Sat Oct 19 16:50:01 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-admin",
+  0
+})
+Sat Oct 19 16:50:01 1996: not-allowed: you are not allowed on that channel
+Sat Oct 19 16:50:01 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "pyhpah",
+  0
+})
+Sat Oct 19 16:50:01 1996: not-allowed: you are not allowed on that channel
+Sat Oct 19 16:50:01 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "lw_test",
+  0
+})
+Sat Oct 19 16:50:01 1996: not-allowed: you are not allowed on that channel
+Sat Oct 19 16:50:01 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-chat",
+  0
+})
+Sat Oct 19 18:05:23 1996: morbid: Morbid
+Sat Oct 19 18:05:23 1996: packet: 1
+Sat Oct 19 18:05:49 1996: morbid: Morbid
+Sat Oct 19 18:05:49 1996: packet: 1
+Sat Oct 19 19:44:37 1996: diablo: Diablo
+Sat Oct 19 19:44:37 1996: packet: 1
+Sat Oct 19 19:45:29 1996: diablo: Diablo
+Sat Oct 19 19:45:29 1996: packet: 2
+Mon Oct 21 23:54:54 1996: not-allowed: you are not allowed on that channel
+Mon Oct 21 23:54:54 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-admin",
+  0
+})
+Mon Oct 21 23:54:54 1996: not-allowed: you are not allowed on that channel
+Mon Oct 21 23:54:54 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "lw_test",
+  0
+})
+Mon Oct 21 23:54:54 1996: not-allowed: you are not allowed on that channel
+Mon Oct 21 23:54:54 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "insomnia-chat",
+  0
+})
+Mon Oct 21 23:54:54 1996: not-allowed: you are not allowed on that channel
+Mon Oct 21 23:54:54 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-chat",
+  0
+})
+Mon Oct 21 23:54:54 1996: not-allowed: you are not allowed on that channel
+Mon Oct 21 23:54:54 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "pyhpah",
+  0
+})
+Mon Oct 21 23:54:54 1996: not-allowed: you are not allowed on that channel
+Mon Oct 21 23:54:54 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-cre",
+  0
+})
+Tue Oct 22 06:14:02 1996: flipper: Flipper
+Tue Oct 22 06:14:02 1996: packet: 1
+Tue Oct 22 06:15:45 1996: pie: Pie
+Tue Oct 22 06:15:45 1996: packet: 1
+Tue Oct 22 06:39:16 1996: pie: Pie
+Tue Oct 22 06:39:16 1996: packet: 1
+Wed Oct 23 20:07:52 1996: belial: Belial
+Wed Oct 23 20:07:52 1996: packet: 0
+Wed Oct 23 20:08:04 1996: belial: Belial
+Wed Oct 23 20:08:04 1996: packet: 1
+Wed Oct 23 23:17:24 1996: belial: Belial
+Wed Oct 23 23:17:24 1996: packet: 0
+Thu Oct 24 06:41:41 1996: not-allowed: you are not allowed on that channel
+Thu Oct 24 06:41:41 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-admin",
+  0
+})
+Thu Oct 24 06:41:43 1996: not-allowed: you are not allowed on that channel
+Thu Oct 24 06:41:43 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "lw_test",
+  0
+})
+Thu Oct 24 06:41:43 1996: not-allowed: you are not allowed on that channel
+Thu Oct 24 06:41:43 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "insomnia-chat",
+  0
+})
+Thu Oct 24 06:41:43 1996: not-allowed: you are not allowed on that channel
+Thu Oct 24 06:41:43 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-chat",
+  0
+})
+Thu Oct 24 06:41:43 1996: not-allowed: you are not allowed on that channel
+Thu Oct 24 06:41:43 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "pyhpah",
+  0
+})
+Thu Oct 24 06:41:43 1996: not-allowed: you are not allowed on that channel
+Thu Oct 24 06:41:43 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-cre",
+  0
+})
+Fri Oct 25 01:04:11 1996: not-allowed: you are not allowed on that channel
+Fri Oct 25 01:04:11 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-admin",
+  0
+})
+Fri Oct 25 01:04:11 1996: not-allowed: you are not allowed on that channel
+Fri Oct 25 01:04:11 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "lw_test",
+  0
+})
+Fri Oct 25 01:04:11 1996: not-allowed: you are not allowed on that channel
+Fri Oct 25 01:04:11 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "insomnia-chat",
+  0
+})
+Fri Oct 25 01:04:11 1996: not-allowed: you are not allowed on that channel
+Fri Oct 25 01:04:11 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-chat",
+  0
+})
+Fri Oct 25 01:04:11 1996: not-allowed: you are not allowed on that channel
+Fri Oct 25 01:04:11 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "pyhpah",
+  0
+})
+Fri Oct 25 01:04:13 1996: not-allowed: you are not allowed on that channel
+Fri Oct 25 01:04:13 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-cre",
+  0
+})
+Fri Oct 25 01:05:07 1996: not-allowed: you are not allowed on that channel
+Fri Oct 25 01:05:07 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-admin",
+  0
+})
+Fri Oct 25 01:05:07 1996: not-allowed: you are not allowed on that channel
+Fri Oct 25 01:05:07 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "lw_test",
+  0
+})
+Fri Oct 25 01:05:07 1996: not-allowed: you are not allowed on that channel
+Fri Oct 25 01:05:07 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "insomnia-chat",
+  0
+})
+Fri Oct 25 01:05:07 1996: not-allowed: you are not allowed on that channel
+Fri Oct 25 01:05:07 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-chat",
+  0
+})
+Fri Oct 25 01:05:07 1996: not-allowed: you are not allowed on that channel
+Fri Oct 25 01:05:07 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "pyhpah",
+  0
+})
+Fri Oct 25 01:05:07 1996: not-allowed: you are not allowed on that channel
+Fri Oct 25 01:05:07 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-cre",
+  0
+})
+Fri Oct 25 02:09:54 1996: not-allowed: you are not allowed on that channel
+Fri Oct 25 02:09:54 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-admin",
+  0
+})
+Fri Oct 25 02:09:54 1996: not-allowed: you are not allowed on that channel
+Fri Oct 25 02:09:54 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "lw_test",
+  0
+})
+Fri Oct 25 02:09:54 1996: not-allowed: you are not allowed on that channel
+Fri Oct 25 02:09:54 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "insomnia-chat",
+  0
+})
+Fri Oct 25 02:09:54 1996: not-allowed: you are not allowed on that channel
+Fri Oct 25 02:09:54 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-chat",
+  0
+})
+Fri Oct 25 02:09:54 1996: not-allowed: you are not allowed on that channel
+Fri Oct 25 02:09:54 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "pyhpah",
+  0
+})
+Fri Oct 25 02:09:54 1996: not-allowed: you are not allowed on that channel
+Fri Oct 25 02:09:54 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-cre",
+  0
+})
+Fri Oct 25 02:10:18 1996: not-allowed: you are not allowed on that channel
+Fri Oct 25 02:10:18 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-admin",
+  0
+})
+Fri Oct 25 02:10:18 1996: not-allowed: you are not allowed on that channel
+Fri Oct 25 02:10:18 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "lw_test",
+  0
+})
+Fri Oct 25 02:10:18 1996: not-allowed: you are not allowed on that channel
+Fri Oct 25 02:10:18 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "insomnia-chat",
+  0
+})
+Fri Oct 25 02:10:18 1996: not-allowed: you are not allowed on that channel
+Fri Oct 25 02:10:18 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-chat",
+  0
+})
+Fri Oct 25 02:10:18 1996: not-allowed: you are not allowed on that channel
+Fri Oct 25 02:10:18 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "pyhpah",
+  0
+})
+Fri Oct 25 02:10:18 1996: not-allowed: you are not allowed on that channel
+Fri Oct 25 02:10:18 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-cre",
+  0
+})
+Fri Oct 25 17:07:50 1996: cid: Cid
+Fri Oct 25 17:07:50 1996: packet: 2
+Fri Oct 25 17:07:50 1996: cid: Cid
+Fri Oct 25 17:07:50 1996: packet: 0
+Fri Oct 25 17:07:50 1996: cid: Cid
+Fri Oct 25 17:07:50 1996: packet: 1
+Fri Oct 25 17:07:50 1996: diablo: Diablo
+Fri Oct 25 17:07:50 1996: packet: 1
+Fri Oct 25 17:07:50 1996: diablo: Diablo
+Fri Oct 25 17:07:50 1996: packet: 2
+Fri Oct 25 17:07:50 1996: diablo: Diablo
+Fri Oct 25 17:07:50 1996: packet: 1
+Fri Oct 25 17:07:50 1996: diablo: Diablo
+Fri Oct 25 17:07:50 1996: packet: 2
+Fri Oct 25 17:07:50 1996: diablo: Diablo
+Fri Oct 25 17:07:50 1996: packet: 2
+Fri Oct 25 17:07:50 1996: diablo: Diablo
+Fri Oct 25 17:07:50 1996: packet: 1
+Fri Oct 25 17:07:50 1996: diablo: Diablo
+Fri Oct 25 17:07:50 1996: packet: 1
+Fri Oct 25 17:07:50 1996: diablo: Diablo
+Fri Oct 25 17:07:50 1996: packet: 1
+Fri Oct 25 17:07:50 1996: diablo: Diablo
+Fri Oct 25 17:07:50 1996: packet: 0
+Fri Oct 25 17:07:50 1996: diablo: Diablo
+Fri Oct 25 17:07:50 1996: packet: 2
+Fri Oct 25 21:42:06 1996: diablo: Diablo
+Fri Oct 25 21:42:06 1996: packet: 1
+Fri Oct 25 21:42:08 1996: diablo: Diablo
+Fri Oct 25 21:42:08 1996: packet: 1
+Sat Oct 26 14:07:12 1996: blaarg: Blaarg
+Sat Oct 26 14:07:12 1996: packet: 2
+Mon Oct 28 09:48:52 1996: not-allowed: you are not allowed on that channel
+Mon Oct 28 09:48:52 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-admin",
+  0
+})
+Mon Oct 28 09:48:52 1996: not-allowed: you are not allowed on that channel
+Mon Oct 28 09:48:52 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "lw_test",
+  0
+})
+Mon Oct 28 09:48:52 1996: not-allowed: you are not allowed on that channel
+Mon Oct 28 09:48:52 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "insomnia-chat",
+  0
+})
+Mon Oct 28 09:48:52 1996: not-allowed: you are not allowed on that channel
+Mon Oct 28 09:48:52 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-chat",
+  0
+})
+Mon Oct 28 09:48:52 1996: not-allowed: you are not allowed on that channel
+Mon Oct 28 09:48:52 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "pyhpah",
+  0
+})
+Mon Oct 28 09:48:52 1996: not-allowed: you are not allowed on that channel
+Mon Oct 28 09:48:52 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-cre",
+  0
+})
+Mon Oct 28 15:37:18 1996: diablo: Diablo
+Mon Oct 28 15:37:18 1996: packet: 2
+Mon Oct 28 16:31:22 1996: blaarg: Blaarg
+Mon Oct 28 16:31:22 1996: packet: 2
+Tue Oct 29 12:47:50 1996: not-allowed: you are not allowed on that channel
+Tue Oct 29 12:47:50 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "pyhpah",
+  0
+})
+Tue Oct 29 12:47:50 1996: not-allowed: you are not allowed on that channel
+Tue Oct 29 12:47:50 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-admin",
+  0
+})
+Tue Oct 29 12:47:50 1996: not-allowed: you are not allowed on that channel
+Tue Oct 29 12:47:50 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-chat",
+  0
+})
+Tue Oct 29 12:47:50 1996: not-allowed: you are not allowed on that channel
+Tue Oct 29 12:47:50 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-cre",
+  0
+})
+Tue Oct 29 12:47:50 1996: not-allowed: you are not allowed on that channel
+Tue Oct 29 12:47:50 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "lw_test",
+  0
+})
+Tue Oct 29 12:47:50 1996: not-allowed: you are not allowed on that channel
+Tue Oct 29 12:47:50 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "insomnia-chat",
+  0
+})
+Tue Oct 29 21:41:20 1996: bad-name: a mud is already connected with that name
+Tue Oct 29 21:41:20 1996: packet: ({ /* sizeof() == 20 */
+  "startup-req-3",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  3129,
+  2125879,
+  180,
+  4444,
+  4449,
+  4452,
+  "OpenLib 0.1",
+  "OpenLib",
+  "MudOS v22.1a6",
+  "LP",
+  "pre-alpha development",
+  "mud@dm.imaginary.com",
+  ([ /* sizeof() == 13 */
+    "file" : 1,
+    "mail" : 1,
+    "auth" : 1,
+    "who" : 1,
+    "tell" : 1,
+    "emoteto" : 1,
+    "channel" : 1,
+    "ftp" : 4443,
+    "rcp" : 4434,
+    "finger" : 1,
+    "locate" : 1,
+    "ucache" : 1,
+    "http" : 4439,
+  ]),
+  ([ ])
+})
+Tue Oct 29 21:41:42 1996: bad-name: a mud is already connected with that name
+Tue Oct 29 21:41:42 1996: packet: ({ /* sizeof() == 20 */
+  "startup-req-3",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  3129,
+  2125879,
+  180,
+  4444,
+  4449,
+  4452,
+  "OpenLib 0.1",
+  "OpenLib",
+  "MudOS v22.1a6",
+  "LP",
+  "pre-alpha development",
+  "mud@dm.imaginary.com",
+  ([ /* sizeof() == 13 */
+    "file" : 1,
+    "mail" : 1,
+    "auth" : 1,
+    "who" : 1,
+    "tell" : 1,
+    "emoteto" : 1,
+    "channel" : 1,
+    "ftp" : 4443,
+    "rcp" : 4434,
+    "finger" : 1,
+    "locate" : 1,
+    "ucache" : 1,
+    "http" : 4439,
+  ]),
+  ([ ])
+})
+Tue Oct 29 21:42:28 1996: not-allowed: you are not allowed on that channel
+Tue Oct 29 21:42:28 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "insomnia-chat",
+  0
+})
+Tue Oct 29 21:42:28 1996: not-allowed: you are not allowed on that channel
+Tue Oct 29 21:42:28 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-admin",
+  0
+})
+Tue Oct 29 21:42:28 1996: not-allowed: you are not allowed on that channel
+Tue Oct 29 21:42:28 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-cre",
+  0
+})
+Tue Oct 29 21:42:28 1996: not-allowed: you are not allowed on that channel
+Tue Oct 29 21:42:28 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "pyhpah",
+  0
+})
+Tue Oct 29 21:42:28 1996: not-allowed: you are not allowed on that channel
+Tue Oct 29 21:42:28 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-chat",
+  0
+})
+Tue Oct 29 21:42:28 1996: not-allowed: you are not allowed on that channel
+Tue Oct 29 21:42:28 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "lw_test",
+  0
+})
+Fri Nov  1 15:50:51 1996: not-allowed: you are not allowed on that channel
+Fri Nov  1 15:50:51 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "insomnia-chat",
+  0
+})
+Fri Nov  1 15:50:51 1996: not-allowed: you are not allowed on that channel
+Fri Nov  1 15:50:51 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-admin",
+  0
+})
+Fri Nov  1 15:50:51 1996: not-allowed: you are not allowed on that channel
+Fri Nov  1 15:50:51 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-cre",
+  0
+})
+Fri Nov  1 15:50:51 1996: not-allowed: you are not allowed on that channel
+Fri Nov  1 15:50:51 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "pyhpah",
+  0
+})
+Fri Nov  1 15:50:51 1996: not-allowed: you are not allowed on that channel
+Fri Nov  1 15:50:51 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-chat",
+  0
+})
+Fri Nov  1 15:50:51 1996: not-allowed: you are not allowed on that channel
+Fri Nov  1 15:50:51 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "lw_test",
+  0
+})
+Sat Nov  2 01:41:23 1996: not-allowed: you are not allowed on that channel
+Sat Nov  2 01:41:23 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "insomnia-chat",
+  0
+})
+Sat Nov  2 01:41:23 1996: not-allowed: you are not allowed on that channel
+Sat Nov  2 01:41:23 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-admin",
+  0
+})
+Sat Nov  2 01:41:23 1996: not-allowed: you are not allowed on that channel
+Sat Nov  2 01:41:23 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-cre",
+  0
+})
+Sat Nov  2 01:41:23 1996: not-allowed: you are not allowed on that channel
+Sat Nov  2 01:41:23 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "pyhpah",
+  0
+})
+Sat Nov  2 01:41:23 1996: not-allowed: you are not allowed on that channel
+Sat Nov  2 01:41:23 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-chat",
+  0
+})
+Sat Nov  2 01:41:23 1996: not-allowed: you are not allowed on that channel
+Sat Nov  2 01:41:23 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "lw_test",
+  0
+})
+Sat Nov  2 01:41:52 1996: not-allowed: you are not allowed on that channel
+Sat Nov  2 01:41:52 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "insomnia-chat",
+  0
+})
+Sat Nov  2 01:41:52 1996: not-allowed: you are not allowed on that channel
+Sat Nov  2 01:41:52 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-admin",
+  0
+})
+Sat Nov  2 01:41:52 1996: not-allowed: you are not allowed on that channel
+Sat Nov  2 01:41:52 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-cre",
+  0
+})
+Sat Nov  2 01:41:52 1996: not-allowed: you are not allowed on that channel
+Sat Nov  2 01:41:52 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "pyhpah",
+  0
+})
+Sat Nov  2 01:41:52 1996: not-allowed: you are not allowed on that channel
+Sat Nov  2 01:41:52 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-chat",
+  0
+})
+Sat Nov  2 01:41:52 1996: not-allowed: you are not allowed on that channel
+Sat Nov  2 01:41:52 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "lw_test",
+  0
+})
+Sun Nov  3 00:47:42 1996: not-allowed: you are not allowed on that channel
+Sun Nov  3 00:47:42 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "insomnia-chat",
+  0
+})
+Sun Nov  3 00:47:42 1996: not-allowed: you are not allowed on that channel
+Sun Nov  3 00:47:42 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-admin",
+  0
+})
+Sun Nov  3 00:47:42 1996: not-allowed: you are not allowed on that channel
+Sun Nov  3 00:47:42 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-cre",
+  0
+})
+Sun Nov  3 00:47:42 1996: not-allowed: you are not allowed on that channel
+Sun Nov  3 00:47:42 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "pyhpah",
+  0
+})
+Sun Nov  3 00:47:46 1996: not-allowed: you are not allowed on that channel
+Sun Nov  3 00:47:46 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-chat",
+  0
+})
+Sun Nov  3 00:47:46 1996: not-allowed: you are not allowed on that channel
+Sun Nov  3 00:47:46 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "lw_test",
+  0
+})
+Sun Nov  3 01:41:36 1996: not-allowed: you are not allowed on that channel
+Sun Nov  3 01:41:36 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "insomnia-chat",
+  0
+})
+Sun Nov  3 01:41:36 1996: not-allowed: you are not allowed on that channel
+Sun Nov  3 01:41:36 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-admin",
+  0
+})
+Sun Nov  3 01:41:36 1996: not-allowed: you are not allowed on that channel
+Sun Nov  3 01:41:36 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-cre",
+  0
+})
+Sun Nov  3 01:41:36 1996: not-allowed: you are not allowed on that channel
+Sun Nov  3 01:41:36 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "pyhpah",
+  0
+})
+Sun Nov  3 01:41:36 1996: not-allowed: you are not allowed on that channel
+Sun Nov  3 01:41:36 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-chat",
+  0
+})
+Sun Nov  3 01:41:36 1996: not-allowed: you are not allowed on that channel
+Sun Nov  3 01:41:36 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "lw_test",
+  0
+})
+Sun Nov  3 01:53:03 1996: not-allowed: you are not allowed on that channel
+Sun Nov  3 01:53:03 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "insomnia-chat",
+  0
+})
+Sun Nov  3 01:53:03 1996: not-allowed: you are not allowed on that channel
+Sun Nov  3 01:53:03 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-admin",
+  0
+})
+Sun Nov  3 01:53:03 1996: not-allowed: you are not allowed on that channel
+Sun Nov  3 01:53:03 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-cre",
+  0
+})
+Sun Nov  3 01:53:03 1996: not-allowed: you are not allowed on that channel
+Sun Nov  3 01:53:03 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "pyhpah",
+  0
+})
+Sun Nov  3 01:53:03 1996: not-allowed: you are not allowed on that channel
+Sun Nov  3 01:53:03 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-chat",
+  0
+})
+Sun Nov  3 01:53:03 1996: not-allowed: you are not allowed on that channel
+Sun Nov  3 01:53:03 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "lw_test",
+  0
+})
+Tue Nov  5 12:35:41 1996: not-allowed: you are not allowed on that channel
+Tue Nov  5 12:35:41 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-cre",
+  0
+})
+Tue Nov  5 12:35:41 1996: not-allowed: you are not allowed on that channel
+Tue Nov  5 12:35:41 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-admin",
+  0
+})
+Tue Nov  5 12:35:41 1996: not-allowed: you are not allowed on that channel
+Tue Nov  5 12:35:41 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-chat",
+  0
+})
+Tue Nov  5 12:35:41 1996: not-allowed: you are not allowed on that channel
+Tue Nov  5 12:35:41 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "pyhpah",
+  0
+})
+Tue Nov  5 12:35:41 1996: not-allowed: you are not allowed on that channel
+Tue Nov  5 12:35:41 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "insomnia-chat",
+  0
+})
+Tue Nov  5 12:35:41 1996: not-allowed: you are not allowed on that channel
+Tue Nov  5 12:35:41 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "lw_test",
+  0
+})
+Thu Nov  7 19:02:14 1996: not-allowed: you are not allowed on that channel
+Thu Nov  7 19:02:14 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-cre",
+  0
+})
+Thu Nov  7 19:02:14 1996: not-allowed: you are not allowed on that channel
+Thu Nov  7 19:02:14 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-admin",
+  0
+})
+Thu Nov  7 19:02:14 1996: not-allowed: you are not allowed on that channel
+Thu Nov  7 19:02:14 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-chat",
+  0
+})
+Thu Nov  7 19:02:14 1996: not-allowed: you are not allowed on that channel
+Thu Nov  7 19:02:14 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "pyhpah",
+  0
+})
+Thu Nov  7 19:02:14 1996: not-allowed: you are not allowed on that channel
+Thu Nov  7 19:02:14 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "insomnia-chat",
+  0
+})
+Thu Nov  7 19:02:14 1996: not-allowed: you are not allowed on that channel
+Thu Nov  7 19:02:14 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "lw_test",
+  0
+})
+Thu Nov  7 19:18:28 1996: not-allowed: you are not allowed on that channel
+Thu Nov  7 19:18:28 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-cre",
+  0
+})
+Thu Nov  7 19:18:28 1996: not-allowed: you are not allowed on that channel
+Thu Nov  7 19:18:28 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-admin",
+  0
+})
+Thu Nov  7 19:18:28 1996: not-allowed: you are not allowed on that channel
+Thu Nov  7 19:18:28 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-chat",
+  0
+})
+Thu Nov  7 19:18:28 1996: not-allowed: you are not allowed on that channel
+Thu Nov  7 19:18:28 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "pyhpah",
+  0
+})
+Thu Nov  7 19:18:28 1996: not-allowed: you are not allowed on that channel
+Thu Nov  7 19:18:28 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "insomnia-chat",
+  0
+})
+Thu Nov  7 19:18:28 1996: not-allowed: you are not allowed on that channel
+Thu Nov  7 19:18:28 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "lw_test",
+  0
+})
+Thu Nov  7 19:31:37 1996: not-allowed: you are not allowed on that channel
+Thu Nov  7 19:31:37 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-cre",
+  0
+})
+Thu Nov  7 19:31:37 1996: not-allowed: you are not allowed on that channel
+Thu Nov  7 19:31:37 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-admin",
+  0
+})
+Thu Nov  7 19:31:39 1996: not-allowed: you are not allowed on that channel
+Thu Nov  7 19:31:39 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-chat",
+  0
+})
+Thu Nov  7 19:31:39 1996: not-allowed: you are not allowed on that channel
+Thu Nov  7 19:31:39 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "pyhpah",
+  0
+})
+Thu Nov  7 19:31:39 1996: not-allowed: you are not allowed on that channel
+Thu Nov  7 19:31:39 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "insomnia-chat",
+  0
+})
+Thu Nov  7 19:31:39 1996: not-allowed: you are not allowed on that channel
+Thu Nov  7 19:31:39 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "lw_test",
+  0
+})
+Thu Nov  7 20:10:11 1996: not-allowed: you are not allowed on that channel
+Thu Nov  7 20:10:11 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-cre",
+  0
+})
+Thu Nov  7 20:10:11 1996: not-allowed: you are not allowed on that channel
+Thu Nov  7 20:10:11 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-admin",
+  0
+})
+Thu Nov  7 20:10:11 1996: not-allowed: you are not allowed on that channel
+Thu Nov  7 20:10:11 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-chat",
+  0
+})
+Thu Nov  7 20:10:11 1996: not-allowed: you are not allowed on that channel
+Thu Nov  7 20:10:11 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "pyhpah",
+  0
+})
+Thu Nov  7 20:10:11 1996: not-allowed: you are not allowed on that channel
+Thu Nov  7 20:10:11 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "insomnia-chat",
+  0
+})
+Thu Nov  7 20:10:11 1996: not-allowed: you are not allowed on that channel
+Thu Nov  7 20:10:11 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "lw_test",
+  0
+})
+Sat Nov  9 09:13:53 1996: not-allowed: you are not allowed on that channel
+Sat Nov  9 09:13:53 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-cre",
+  0
+})
+Sat Nov  9 09:13:53 1996: not-allowed: you are not allowed on that channel
+Sat Nov  9 09:13:53 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-admin",
+  0
+})
+Sat Nov  9 09:13:53 1996: not-allowed: you are not allowed on that channel
+Sat Nov  9 09:13:53 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-chat",
+  0
+})
+Sat Nov  9 09:13:53 1996: not-allowed: you are not allowed on that channel
+Sat Nov  9 09:13:53 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "pyhpah",
+  0
+})
+Sat Nov  9 09:13:53 1996: not-allowed: you are not allowed on that channel
+Sat Nov  9 09:13:53 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "insomnia-chat",
+  0
+})
+Sat Nov  9 09:13:53 1996: not-allowed: you are not allowed on that channel
+Sat Nov  9 09:13:53 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "lw_test",
+  0
+})
+Sat Nov  9 09:14:15 1996: not-allowed: you are not allowed on that channel
+Sat Nov  9 09:14:15 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-cre",
+  0
+})
+Sat Nov  9 09:14:15 1996: not-allowed: you are not allowed on that channel
+Sat Nov  9 09:14:15 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-admin",
+  0
+})
+Sat Nov  9 09:14:15 1996: not-allowed: you are not allowed on that channel
+Sat Nov  9 09:14:15 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-chat",
+  0
+})
+Sat Nov  9 09:14:15 1996: not-allowed: you are not allowed on that channel
+Sat Nov  9 09:14:15 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "pyhpah",
+  0
+})
+Sat Nov  9 09:14:15 1996: not-allowed: you are not allowed on that channel
+Sat Nov  9 09:14:15 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "insomnia-chat",
+  0
+})
+Sat Nov  9 09:14:15 1996: not-allowed: you are not allowed on that channel
+Sat Nov  9 09:14:15 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "lw_test",
+  0
+})
+Sat Nov  9 09:14:23 1996: not-allowed: you are not allowed on that channel
+Sat Nov  9 09:14:23 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-cre",
+  0
+})
+Sat Nov  9 09:14:23 1996: not-allowed: you are not allowed on that channel
+Sat Nov  9 09:14:23 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-admin",
+  0
+})
+Sat Nov  9 09:14:23 1996: not-allowed: you are not allowed on that channel
+Sat Nov  9 09:14:23 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-chat",
+  0
+})
+Sat Nov  9 09:14:23 1996: not-allowed: you are not allowed on that channel
+Sat Nov  9 09:14:23 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "pyhpah",
+  0
+})
+Sat Nov  9 09:14:23 1996: not-allowed: you are not allowed on that channel
+Sat Nov  9 09:14:23 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "insomnia-chat",
+  0
+})
+Sat Nov  9 09:14:23 1996: not-allowed: you are not allowed on that channel
+Sat Nov  9 09:14:23 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "lw_test",
+  0
+})
+Sat Nov  9 09:14:49 1996: not-allowed: you are not allowed on that channel
+Sat Nov  9 09:14:49 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-cre",
+  0
+})
+Sat Nov  9 09:14:49 1996: not-allowed: you are not allowed on that channel
+Sat Nov  9 09:14:49 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-admin",
+  0
+})
+Sat Nov  9 09:14:49 1996: not-allowed: you are not allowed on that channel
+Sat Nov  9 09:14:49 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-chat",
+  0
+})
+Sat Nov  9 09:14:49 1996: not-allowed: you are not allowed on that channel
+Sat Nov  9 09:14:49 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "pyhpah",
+  0
+})
+Sat Nov  9 09:14:49 1996: not-allowed: you are not allowed on that channel
+Sat Nov  9 09:14:49 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "insomnia-chat",
+  0
+})
+Sat Nov  9 09:14:49 1996: not-allowed: you are not allowed on that channel
+Sat Nov  9 09:14:49 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "lw_test",
+  0
+})
+Sat Nov  9 09:15:11 1996: not-allowed: you are not allowed on that channel
+Sat Nov  9 09:15:11 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-cre",
+  0
+})
+Sat Nov  9 09:15:11 1996: not-allowed: you are not allowed on that channel
+Sat Nov  9 09:15:11 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-admin",
+  0
+})
+Sat Nov  9 09:15:11 1996: not-allowed: you are not allowed on that channel
+Sat Nov  9 09:15:11 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-chat",
+  0
+})
+Sat Nov  9 09:15:11 1996: not-allowed: you are not allowed on that channel
+Sat Nov  9 09:15:11 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "pyhpah",
+  0
+})
+Sat Nov  9 09:15:11 1996: not-allowed: you are not allowed on that channel
+Sat Nov  9 09:15:11 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "insomnia-chat",
+  0
+})
+Sat Nov  9 09:15:11 1996: not-allowed: you are not allowed on that channel
+Sat Nov  9 09:15:11 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "lw_test",
+  0
+})
+Sun Nov 10 00:39:53 1996: unk-user: Blitz is not involved.
+Sun Nov 10 00:39:53 1996: packet: ({ /* sizeof() == 7 */
+  "finger-req",
+  5,
+  "Dysfunctional Mud",
+  "Tim",
+  "Nightmare",
+  0,
+  "blitz"
+})
+Tue Nov 12 01:38:39 1996: unk-dst: destination unknown
+Tue Nov 12 01:38:39 1996: packet: ({ /* sizeof() == 7 */
+  "who-reply",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "Bub Mud",
+  "Tim",
+  ({ /* sizeof() == 1 */
+    ({ /* sizeof() == 3 */
+      "Tim",
+      222,
+      "Let Tim tell you how to win friends and influence people"
+    })
+  })
+})
+Tue Nov 12 01:40:52 1996: unk-dst: destination unknown
+Tue Nov 12 01:40:52 1996: packet: ({ /* sizeof() == 7 */
+  "who-reply",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "Bub Mud",
+  "Tim",
+  ({ /* sizeof() == 1 */
+    ({ /* sizeof() == 3 */
+      "Tim",
+      357,
+      "Let Tim tell you how to win friends and influence people"
+    })
+  })
+})
+Tue Nov 12 01:55:23 1996: unk-dst: destination unknown
+Tue Nov 12 01:55:23 1996: packet: ({ /* sizeof() == 7 */
+  "who-reply",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "Bub Mud",
+  "Tim",
+  ({ /* sizeof() == 1 */
+    ({ /* sizeof() == 3 */
+      "Tim",
+      557,
+      "Let Tim tell you how to win friends and influence people"
+    })
+  })
+})
+Tue Nov 12 01:57:34 1996: unk-dst: destination unknown
+Tue Nov 12 01:57:34 1996: packet: ({ /* sizeof() == 7 */
+  "who-reply",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "Bub Mud",
+  "Tim",
+  ({ /* sizeof() == 1 */
+    ({ /* sizeof() == 3 */
+      "Tim",
+      688,
+      "Let Tim tell you how to win friends and influence people"
+    })
+  })
+})
+Tue Nov 12 01:57:54 1996: unk-dst: destination unknown
+Tue Nov 12 01:57:54 1996: packet: ({ /* sizeof() == 7 */
+  "who-reply",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "Bub Mud",
+  "Tim",
+  ({ /* sizeof() == 1 */
+    ({ /* sizeof() == 3 */
+      "Tim",
+      706,
+      "Let Tim tell you how to win friends and influence people"
+    })
+  })
+})
+Tue Nov 12 01:58:20 1996: unk-dst: destination unknown
+Tue Nov 12 01:58:20 1996: packet: ({ /* sizeof() == 7 */
+  "who-reply",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "Bub Mud",
+  "Tim",
+  ({ /* sizeof() == 1 */
+    ({ /* sizeof() == 3 */
+      "Tim",
+      734,
+      "Let Tim tell you how to win friends and influence people"
+    })
+  })
+})
+Tue Nov 12 01:58:57 1996: unk-dst: destination unknown
+Tue Nov 12 01:58:57 1996: packet: ({ /* sizeof() == 7 */
+  "who-reply",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "Bub Mud",
+  "Tim",
+  ({ /* sizeof() == 1 */
+    ({ /* sizeof() == 3 */
+      "Tim",
+      771,
+      "Let Tim tell you how to win friends and influence people"
+    })
+  })
+})
+Tue Nov 12 02:00:40 1996: unk-dst: destination unknown
+Tue Nov 12 02:00:40 1996: packet: ({ /* sizeof() == 7 */
+  "who-reply",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "Bub Mud",
+  "Tim",
+  ({ /* sizeof() == 1 */
+    ({ /* sizeof() == 3 */
+      "Tim",
+      874,
+      "Let Tim tell you how to win friends and influence people"
+    })
+  })
+})
+Tue Nov 12 02:02:01 1996: unk-dst: destination unknown
+Tue Nov 12 02:02:01 1996: packet: ({ /* sizeof() == 7 */
+  "who-reply",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "Bub Mud",
+  "Tim",
+  ({ /* sizeof() == 1 */
+    ({ /* sizeof() == 3 */
+      "Tim",
+      953,
+      "Let Tim tell you how to win friends and influence people"
+    })
+  })
+})
+Tue Nov 12 02:02:37 1996: unk-dst: destination unknown
+Tue Nov 12 02:02:37 1996: packet: ({ /* sizeof() == 7 */
+  "who-reply",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "Bub Mud",
+  "Tim",
+  ({ /* sizeof() == 1 */
+    ({ /* sizeof() == 3 */
+      "Tim",
+      991,
+      "Let Tim tell you how to win friends and influence people"
+    })
+  })
+})
+Tue Nov 12 02:05:02 1996: unk-dst: destination unknown
+Tue Nov 12 02:05:02 1996: packet: ({ /* sizeof() == 7 */
+  "who-reply",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "Bub Mud",
+  "Tim",
+  ({ /* sizeof() == 1 */
+    ({ /* sizeof() == 3 */
+      "Tim",
+      1134,
+      "Let Tim tell you how to win friends and influence people"
+    })
+  })
+})
+Tue Nov 12 02:05:20 1996: unk-dst: destination unknown
+Tue Nov 12 02:05:20 1996: packet: ({ /* sizeof() == 7 */
+  "who-reply",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "Bub Mud",
+  "Tim",
+  ({ /* sizeof() == 1 */
+    ({ /* sizeof() == 3 */
+      "Tim",
+      1154,
+      "Let Tim tell you how to win friends and influence people"
+    })
+  })
+})
+Tue Nov 12 02:08:36 1996: unk-dst: destination unknown
+Tue Nov 12 02:08:36 1996: packet: ({ /* sizeof() == 7 */
+  "who-reply",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "Bub Mud",
+  "Tim",
+  ({ /* sizeof() == 1 */
+    ({ /* sizeof() == 3 */
+      "Tim",
+      1350,
+      "Let Tim tell you how to win friends and influence people"
+    })
+  })
+})
+Tue Nov 12 02:11:13 1996: unk-dst: destination unknown
+Tue Nov 12 02:11:13 1996: packet: ({ /* sizeof() == 7 */
+  "who-reply",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "Bub Mud",
+  "Tim",
+  ({ /* sizeof() == 1 */
+    ({ /* sizeof() == 3 */
+      "Tim",
+      1507,
+      "Let Tim tell you how to win friends and influence people"
+    })
+  })
+})
+Tue Nov 12 02:11:37 1996: unk-dst: destination unknown
+Tue Nov 12 02:11:37 1996: packet: ({ /* sizeof() == 7 */
+  "who-reply",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "Bub Mud",
+  "Tim",
+  ({ /* sizeof() == 1 */
+    ({ /* sizeof() == 3 */
+      "Tim",
+      1531,
+      "Let Tim tell you how to win friends and influence people"
+    })
+  })
+})
+Tue Nov 12 02:12:03 1996: unk-dst: destination unknown
+Tue Nov 12 02:12:03 1996: packet: ({ /* sizeof() == 7 */
+  "who-reply",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "Bub Mud",
+  "Tim",
+  ({ /* sizeof() == 1 */
+    ({ /* sizeof() == 3 */
+      "Tim",
+      1557,
+      "Let Tim tell you how to win friends and influence people"
+    })
+  })
+})
+Tue Nov 12 02:12:19 1996: unk-dst: destination unknown
+Tue Nov 12 02:12:19 1996: packet: ({ /* sizeof() == 7 */
+  "who-reply",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "Bub Mud",
+  "Tim",
+  ({ /* sizeof() == 1 */
+    ({ /* sizeof() == 3 */
+      "Tim",
+      1571,
+      "Let Tim tell you how to win friends and influence people"
+    })
+  })
+})
+Tue Nov 12 02:13:54 1996: unk-dst: destination unknown
+Tue Nov 12 02:13:54 1996: packet: ({ /* sizeof() == 7 */
+  "who-reply",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "Bub Mud",
+  "Tim",
+  ({ /* sizeof() == 1 */
+    ({ /* sizeof() == 3 */
+      "Tim",
+      1668,
+      "Let Tim tell you how to win friends and influence people"
+    })
+  })
+})
+Tue Nov 12 02:14:55 1996: unk-dst: destination unknown
+Tue Nov 12 02:14:55 1996: packet: ({ /* sizeof() == 7 */
+  "who-reply",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "Bub Mud",
+  "Tim",
+  ({ /* sizeof() == 1 */
+    ({ /* sizeof() == 3 */
+      "Tim",
+      1729,
+      "Let Tim tell you how to win friends and influence people"
+    })
+  })
+})
+Tue Nov 12 02:15:08 1996: unk-dst: destination unknown
+Tue Nov 12 02:15:08 1996: packet: ({ /* sizeof() == 7 */
+  "who-reply",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "Bub Mud",
+  "Tim",
+  ({ /* sizeof() == 1 */
+    ({ /* sizeof() == 3 */
+      "Tim",
+      1742,
+      "Let Tim tell you how to win friends and influence people"
+    })
+  })
+})
+Tue Nov 12 02:15:32 1996: unk-dst: destination unknown
+Tue Nov 12 02:15:32 1996: packet: ({ /* sizeof() == 7 */
+  "who-reply",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "Bub Mud",
+  "Tim",
+  ({ /* sizeof() == 1 */
+    ({ /* sizeof() == 3 */
+      "Tim",
+      1766,
+      "Let Tim tell you how to win friends and influence people"
+    })
+  })
+})
+Tue Nov 12 02:16:19 1996: unk-dst: destination unknown
+Tue Nov 12 02:16:19 1996: packet: ({ /* sizeof() == 7 */
+  "who-reply",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "Bub Mud",
+  "Tim",
+  ({ /* sizeof() == 1 */
+    ({ /* sizeof() == 3 */
+      "Tim",
+      1813,
+      "Let Tim tell you how to win friends and influence people"
+    })
+  })
+})
+Tue Nov 12 02:24:58 1996: unk-dst: destination unknown
+Tue Nov 12 02:24:58 1996: packet: ({ /* sizeof() == 7 */
+  "who-reply",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "Bub Mud",
+  "Tim",
+  ({ /* sizeof() == 1 */
+    ({ /* sizeof() == 3 */
+      "Tim",
+      2330,
+      "Let Tim tell you how to win friends and influence people"
+    })
+  })
+})
+Tue Nov 12 02:26:44 1996: unk-dst: destination unknown
+Tue Nov 12 02:26:44 1996: packet: ({ /* sizeof() == 7 */
+  "who-reply",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "Bub Mud",
+  "Tim",
+  ({ /* sizeof() == 1 */
+    ({ /* sizeof() == 3 */
+      "Tim",
+      2438,
+      "Let Tim tell you how to win friends and influence people"
+    })
+  })
+})
+Tue Nov 12 02:27:02 1996: unk-dst: destination unknown
+Tue Nov 12 02:27:02 1996: packet: ({ /* sizeof() == 7 */
+  "who-reply",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "Bub Mud",
+  "Tim",
+  ({ /* sizeof() == 1 */
+    ({ /* sizeof() == 3 */
+      "Tim",
+      2454,
+      "Let Tim tell you how to win friends and influence people"
+    })
+  })
+})
+Tue Nov 12 02:27:11 1996: unk-dst: destination unknown
+Tue Nov 12 02:27:11 1996: packet: ({ /* sizeof() == 7 */
+  "who-reply",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "Bub Mud",
+  "Tim",
+  ({ /* sizeof() == 1 */
+    ({ /* sizeof() == 3 */
+      "Tim",
+      2465,
+      "Let Tim tell you how to win friends and influence people"
+    })
+  })
+})
+Tue Nov 12 02:27:25 1996: unk-dst: destination unknown
+Tue Nov 12 02:27:25 1996: packet: ({ /* sizeof() == 7 */
+  "who-reply",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "Bub Mud",
+  "Tim",
+  ({ /* sizeof() == 1 */
+    ({ /* sizeof() == 3 */
+      "Tim",
+      2479,
+      "Let Tim tell you how to win friends and influence people"
+    })
+  })
+})
+Tue Nov 12 02:27:37 1996: unk-dst: destination unknown
+Tue Nov 12 02:27:37 1996: packet: ({ /* sizeof() == 7 */
+  "who-reply",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "Bub Mud",
+  "Tim",
+  ({ /* sizeof() == 1 */
+    ({ /* sizeof() == 3 */
+      "Tim",
+      2491,
+      "Let Tim tell you how to win friends and influence people"
+    })
+  })
+})
+Tue Nov 12 02:28:12 1996: unk-dst: destination unknown
+Tue Nov 12 02:28:12 1996: packet: ({ /* sizeof() == 7 */
+  "who-reply",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "Bub Mud",
+  "Tim",
+  ({ /* sizeof() == 1 */
+    ({ /* sizeof() == 3 */
+      "Tim",
+      2526,
+      "Let Tim tell you how to win friends and influence people"
+    })
+  })
+})
+Tue Nov 12 02:28:40 1996: unk-dst: destination unknown
+Tue Nov 12 02:28:40 1996: packet: ({ /* sizeof() == 7 */
+  "who-reply",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "Bub Mud",
+  "Tim",
+  ({ /* sizeof() == 1 */
+    ({ /* sizeof() == 3 */
+      "Tim",
+      2552,
+      "Let Tim tell you how to win friends and influence people"
+    })
+  })
+})
+Tue Nov 12 02:29:06 1996: unk-dst: destination unknown
+Tue Nov 12 02:29:06 1996: packet: ({ /* sizeof() == 7 */
+  "who-reply",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "Bub Mud",
+  "Tim",
+  ({ /* sizeof() == 1 */
+    ({ /* sizeof() == 3 */
+      "Tim",
+      2580,
+      "Let Tim tell you how to win friends and influence people"
+    })
+  })
+})
+Tue Nov 12 02:30:28 1996: unk-dst: destination unknown
+Tue Nov 12 02:30:28 1996: packet: ({ /* sizeof() == 7 */
+  "who-reply",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "Bub Mud",
+  "Tim",
+  ({ /* sizeof() == 1 */
+    ({ /* sizeof() == 3 */
+      "Tim",
+      2660,
+      "Let Tim tell you how to win friends and influence people"
+    })
+  })
+})
+Tue Nov 12 02:32:08 1996: unk-dst: destination unknown
+Tue Nov 12 02:32:08 1996: packet: ({ /* sizeof() == 7 */
+  "who-reply",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "Bub Mud",
+  "Tim",
+  ({ /* sizeof() == 1 */
+    ({ /* sizeof() == 3 */
+      "Tim",
+      2762,
+      "Let Tim tell you how to win friends and influence people"
+    })
+  })
+})
+Tue Nov 12 02:33:34 1996: unk-dst: destination unknown
+Tue Nov 12 02:33:34 1996: packet: ({ /* sizeof() == 7 */
+  "who-reply",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "Bub Mud",
+  "Tim",
+  ({ /* sizeof() == 1 */
+    ({ /* sizeof() == 3 */
+      "Tim",
+      2848,
+      "Let Tim tell you how to win friends and influence people"
+    })
+  })
+})
+Tue Nov 12 02:43:09 1996: unk-dst: destination unknown
+Tue Nov 12 02:43:09 1996: packet: ({ /* sizeof() == 7 */
+  "who-reply",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "Bub Mud",
+  "Tim",
+  ({ /* sizeof() == 1 */
+    ({ /* sizeof() == 3 */
+      "Tim",
+      343,
+      "Let Tim tell you how to win friends and influence people"
+    })
+  })
+})
+Tue Nov 12 02:43:25 1996: unk-dst: destination unknown
+Tue Nov 12 02:43:25 1996: packet: ({ /* sizeof() == 7 */
+  "who-reply",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "Bub Mud",
+  "Tim",
+  ({ /* sizeof() == 1 */
+    ({ /* sizeof() == 3 */
+      "Tim",
+      357,
+      "Let Tim tell you how to win friends and influence people"
+    })
+  })
+})
+Tue Nov 12 23:45:13 1996: unk-dst: destination unknown
+Tue Nov 12 23:45:13 1996: packet: ({ /* sizeof() == 7 */
+  "who-reply",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "Bub Mud",
+  "Tim",
+  ({ })
+})
+Thu Nov 14 20:48:47 1996: not-allowed: you are not allowed on that channel
+Thu Nov 14 20:48:47 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-admin",
+  0
+})
+Thu Nov 14 20:48:47 1996: not-allowed: you are not allowed on that channel
+Thu Nov 14 20:48:47 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "pyhpah",
+  0
+})
+Thu Nov 14 20:48:47 1996: not-allowed: you are not allowed on that channel
+Thu Nov 14 20:48:47 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "insomnia-chat",
+  0
+})
+Thu Nov 14 20:48:47 1996: not-allowed: you are not allowed on that channel
+Thu Nov 14 20:48:47 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-chat",
+  0
+})
+Thu Nov 14 20:48:47 1996: not-allowed: you are not allowed on that channel
+Thu Nov 14 20:48:47 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "lw_test",
+  0
+})
+Thu Nov 14 20:48:47 1996: not-allowed: you are not allowed on that channel
+Thu Nov 14 20:48:47 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-cre",
+  0
+})
+Fri Nov 15 22:01:33 1996: bad-pkt: Packet is of incorrect sizey.
+Fri Nov 15 22:01:33 1996: packet: ({ /* sizeof() == 3 */
+  "channel-m",
+  5,
+  "Dysfunctional Mud"
+})
+Mon Nov 18 03:03:51 1996: unk-user: That player is blocking tells.
+Mon Nov 18 03:03:51 1996: packet: 0
+Wed Nov 20 21:27:32 1996: not-allowed: you are not allowed on that channel
+Wed Nov 20 21:27:32 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-admin",
+  0
+})
+Wed Nov 20 21:27:42 1996: not-allowed: you are not allowed on that channel
+Wed Nov 20 21:27:42 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "pyhpah",
+  0
+})
+Wed Nov 20 21:27:44 1996: not-allowed: you are not allowed on that channel
+Wed Nov 20 21:27:44 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "insomnia-chat",
+  0
+})
+Wed Nov 20 21:27:44 1996: not-allowed: you are not allowed on that channel
+Wed Nov 20 21:27:44 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-chat",
+  0
+})
+Wed Nov 20 21:27:44 1996: not-allowed: you are not allowed on that channel
+Wed Nov 20 21:27:44 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "lw_test",
+  0
+})
+Wed Nov 20 21:27:44 1996: not-allowed: you are not allowed on that channel
+Wed Nov 20 21:27:44 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-cre",
+  0
+})
+Wed Nov 20 21:33:04 1996: not-allowed: you are not allowed on that channel
+Wed Nov 20 21:33:04 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-admin",
+  0
+})
+Wed Nov 20 21:33:06 1996: not-allowed: you are not allowed on that channel
+Wed Nov 20 21:33:06 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "pyhpah",
+  0
+})
+Wed Nov 20 21:33:08 1996: not-allowed: you are not allowed on that channel
+Wed Nov 20 21:33:08 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "insomnia-chat",
+  0
+})
+Wed Nov 20 21:33:08 1996: not-allowed: you are not allowed on that channel
+Wed Nov 20 21:33:08 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-chat",
+  0
+})
+Wed Nov 20 21:33:12 1996: not-allowed: you are not allowed on that channel
+Wed Nov 20 21:33:12 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "lw_test",
+  0
+})
+Wed Nov 20 21:33:12 1996: not-allowed: you are not allowed on that channel
+Wed Nov 20 21:33:12 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-cre",
+  0
+})
+Thu Nov 21 15:58:11 1996: not-allowed: you are not allowed on that channel
+Thu Nov 21 15:58:11 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-admin",
+  0
+})
+Thu Nov 21 15:58:11 1996: not-allowed: you are not allowed on that channel
+Thu Nov 21 15:58:11 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "pyhpah",
+  0
+})
+Thu Nov 21 15:58:11 1996: not-allowed: you are not allowed on that channel
+Thu Nov 21 15:58:11 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "insomnia-chat",
+  0
+})
+Thu Nov 21 15:58:11 1996: not-allowed: you are not allowed on that channel
+Thu Nov 21 15:58:11 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-chat",
+  0
+})
+Thu Nov 21 15:58:11 1996: not-allowed: you are not allowed on that channel
+Thu Nov 21 15:58:11 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "lw_test",
+  0
+})
+Thu Nov 21 15:58:11 1996: not-allowed: you are not allowed on that channel
+Thu Nov 21 15:58:11 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-cre",
+  0
+})
+Thu Nov 21 16:03:18 1996: unk-user: That player is blocking tells.
+Thu Nov 21 16:03:18 1996: packet: 0
+Thu Nov 21 17:06:56 1996: unk-dst: destination unknown
+Thu Nov 21 17:06:56 1996: packet: ({ /* sizeof() == 6 */
+  "who-req",
+  5,
+  "Dysfunctional Mud",
+  "tim",
+  "Dead Souls",
+  0
+})
+Sat Nov 23 17:25:59 1996: wirikidor: Wirikidor
+Sat Nov 23 17:25:59 1996: packet: 2
+Sat Nov 23 17:26:17 1996: wirikidor: Wirikidor
+Sat Nov 23 17:26:17 1996: packet: 1
+Sat Nov 23 17:26:53 1996: wirikidor: Wirikidor
+Sat Nov 23 17:26:53 1996: packet: 1
+Sat Nov 23 17:31:59 1996: wirikidor: Wirikidor
+Sat Nov 23 17:31:59 1996: packet: 1
+Tue Dec  3 15:59:31 1996: not-allowed: you are not allowed on that channel
+Tue Dec  3 15:59:31 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-admin",
+  0
+})
+Tue Dec  3 15:59:31 1996: not-allowed: you are not allowed on that channel
+Tue Dec  3 15:59:31 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "pyhpah",
+  0
+})
+Tue Dec  3 15:59:31 1996: not-allowed: you are not allowed on that channel
+Tue Dec  3 15:59:31 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "insomnia-chat",
+  0
+})
+Tue Dec  3 15:59:31 1996: not-allowed: you are not allowed on that channel
+Tue Dec  3 15:59:31 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-chat",
+  0
+})
+Tue Dec  3 15:59:31 1996: not-allowed: you are not allowed on that channel
+Tue Dec  3 15:59:31 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "lw_test",
+  0
+})
+Tue Dec  3 15:59:31 1996: not-allowed: you are not allowed on that channel
+Tue Dec  3 15:59:31 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-cre",
+  0
+})
+Tue Dec  3 15:59:35 1996: unk-dst: destination unknown
+Tue Dec  3 15:59:35 1996: packet: ({ /* sizeof() == 6 */
+  "who-req",
+  5,
+  "Dysfunctional Mud",
+  "tim",
+  "Bub Mud",
+  0
+})
+Wed Dec 18 13:51:58 1996: bad-name: a mud is already connected with that name
+Wed Dec 18 13:51:58 1996: packet: ({ /* sizeof() == 20 */
+  "startup-req-3",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  19610,
+  3887679,
+  198,
+  4444,
+  4449,
+  4452,
+  "OpenLib 0.1",
+  "OpenLib",
+  "MudOS v22.1a6",
+  "LP",
+  "pre-alpha development",
+  "mud@dm.imaginary.com",
+  ([ /* sizeof() == 13 */
+    "file" : 1,
+    "mail" : 1,
+    "auth" : 1,
+    "who" : 1,
+    "tell" : 1,
+    "emoteto" : 1,
+    "channel" : 1,
+    "ftp" : 4443,
+    "rcp" : 4434,
+    "finger" : 1,
+    "locate" : 1,
+    "ucache" : 1,
+    "http" : 4439,
+  ]),
+  ([ ])
+})
+Wed Dec 18 13:52:25 1996: not-allowed: you are not allowed on that channel
+Wed Dec 18 13:52:25 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-chat",
+  0
+})
+Wed Dec 18 13:52:25 1996: not-allowed: you are not allowed on that channel
+Wed Dec 18 13:52:25 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "insomnia-chat",
+  0
+})
+Wed Dec 18 13:52:25 1996: not-allowed: you are not allowed on that channel
+Wed Dec 18 13:52:25 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-cre",
+  0
+})
+Wed Dec 18 13:52:25 1996: not-allowed: you are not allowed on that channel
+Wed Dec 18 13:52:25 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "pyhpah",
+  0
+})
+Wed Dec 18 13:52:27 1996: not-allowed: you are not allowed on that channel
+Wed Dec 18 13:52:27 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "lw_test",
+  0
+})
+Wed Dec 18 13:52:27 1996: not-allowed: you are not allowed on that channel
+Wed Dec 18 13:52:27 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-admin",
+  0
+})
+Wed Dec 18 13:53:32 1996: not-allowed: you are not allowed on that channel
+Wed Dec 18 13:53:32 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-admin",
+  0
+})
+Wed Dec 18 13:53:32 1996: not-allowed: you are not allowed on that channel
+Wed Dec 18 13:53:32 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-cre",
+  0
+})
+Wed Dec 18 13:53:32 1996: not-allowed: you are not allowed on that channel
+Wed Dec 18 13:53:32 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "lw_test",
+  0
+})
+Wed Dec 18 13:53:32 1996: not-allowed: you are not allowed on that channel
+Wed Dec 18 13:53:32 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "insomnia-chat",
+  0
+})
+Wed Dec 18 13:53:32 1996: not-allowed: you are not allowed on that channel
+Wed Dec 18 13:53:32 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-chat",
+  0
+})
+Wed Dec 18 13:53:32 1996: not-allowed: you are not allowed on that channel
+Wed Dec 18 13:53:32 1996: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "Dysfunctional Mud",
+  0,
+  "*gjs",
+  0,
+  "pyhpah",
+  0
+})
+Sat Feb 15 04:44:00 1997: not-allowed: you are not allowed on that channel
+Sat Feb 15 04:44:00 1997: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "OpenLib Mud",
+  0,
+  "*gjs",
+  0,
+  "pyhpah",
+  0
+})
+Sat Feb 15 04:44:00 1997: not-allowed: you are not allowed on that channel
+Sat Feb 15 04:44:00 1997: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "OpenLib Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-chat",
+  0
+})
+Sat Feb 15 04:44:00 1997: not-allowed: you are not allowed on that channel
+Sat Feb 15 04:44:00 1997: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "OpenLib Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-cre",
+  0
+})
+Sat Feb 15 04:44:00 1997: not-allowed: you are not allowed on that channel
+Sat Feb 15 04:44:00 1997: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "OpenLib Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-admin",
+  0
+})
+Sat Feb 15 04:44:00 1997: not-allowed: you are not allowed on that channel
+Sat Feb 15 04:44:00 1997: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "OpenLib Mud",
+  0,
+  "*gjs",
+  0,
+  "insomnia-chat",
+  0
+})
+Sat Feb 15 04:44:00 1997: not-allowed: you are not allowed on that channel
+Sat Feb 15 04:44:00 1997: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "OpenLib Mud",
+  0,
+  "*gjs",
+  0,
+  "lw_test",
+  0
+})
+Mon Feb 17 00:28:14 1997: bad-proto: protocol violation
+Mon Feb 17 00:28:14 1997: packet: ({ /* sizeof() == 20 */
+  "startup-req-3",
+  5,
+  "OpenLib Mud",
+  0,
+  "*tkm",
+  0,
+  0,
+  -1,
+  -1,
+  5555,
+  5560,
+  5563,
+  "OpenLib 0.1",
+  "OpenLib",
+  "MudOS v22.1a6",
+  "LP",
+  "pre-alpha development",
+  "mud@dm.imaginary.com",
+  ([ /* sizeof() == 13 */
+    "mail" : 1,
+    "auth" : 1,
+    "tell" : 1,
+    "emoteto" : 1,
+    "channel" : 1,
+    "finger" : 1,
+    "who" : 1,
+    "ftp" : 5554,
+    "locate" : 1,
+    "rcp" : 5545,
+    "ucache" : 1,
+    "http" : 5550,
+    "file" : 1,
+  ]),
+  ([ ])
+})
+Mon Feb 17 00:33:03 1997: bad-proto: protocol violation
+Mon Feb 17 00:33:03 1997: packet: ({ /* sizeof() == 20 */
+  "startup-req-3",
+  5,
+  "OpenLib Mud",
+  0,
+  "*tkm",
+  0,
+  122522749,
+  856161028,
+  -1,
+  5555,
+  5560,
+  5563,
+  "OpenLib 0.1",
+  "OpenLib",
+  "MudOS v22.1a6",
+  "LP",
+  "pre-alpha development",
+  "mud@dm.imaginary.com",
+  ([ /* sizeof() == 13 */
+    "mail" : 1,
+    "auth" : 1,
+    "tell" : 1,
+    "emoteto" : 1,
+    "channel" : 1,
+    "finger" : 1,
+    "who" : 1,
+    "ftp" : 5554,
+    "locate" : 1,
+    "rcp" : 5545,
+    "ucache" : 1,
+    "http" : 5550,
+    "file" : 1,
+  ]),
+  ([ ])
+})
+Mon Sep 29 23:31:59 1997: not-allowed: you are not allowed on that channel
+Mon Sep 29 23:31:59 1997: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "OpenLib Mud",
+  0,
+  "*gjs",
+  0,
+  "graylind_gossip",
+  0
+})
+Mon Sep 29 23:31:59 1997: not-allowed: you are not allowed on that channel
+Mon Sep 29 23:31:59 1997: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "OpenLib Mud",
+  0,
+  "*gjs",
+  0,
+  "graylind",
+  0
+})
+Mon Sep 29 23:31:59 1997: not-allowed: you are not allowed on that channel
+Mon Sep 29 23:31:59 1997: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "OpenLib Mud",
+  0,
+  "*gjs",
+  0,
+  "lw_test",
+  0
+})
+Mon Sep 29 23:31:59 1997: not-allowed: you are not allowed on that channel
+Mon Sep 29 23:31:59 1997: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "OpenLib Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-cre",
+  0
+})
+Mon Sep 29 23:31:59 1997: not-allowed: you are not allowed on that channel
+Mon Sep 29 23:31:59 1997: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "OpenLib Mud",
+  0,
+  "*gjs",
+  0,
+  "insom2dnd",
+  0
+})
+Mon Sep 29 23:31:59 1997: not-allowed: you are not allowed on that channel
+Mon Sep 29 23:31:59 1997: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "OpenLib Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-admin",
+  0
+})
+Mon Sep 29 23:31:59 1997: not-allowed: you are not allowed on that channel
+Mon Sep 29 23:31:59 1997: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "OpenLib Mud",
+  0,
+  "*gjs",
+  0,
+  "dnd2insom",
+  0
+})
+Mon Sep 29 23:31:59 1997: not-allowed: you are not allowed on that channel
+Mon Sep 29 23:31:59 1997: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "OpenLib Mud",
+  0,
+  "*gjs",
+  0,
+  "discworld-chat",
+  0
+})
+Mon Sep 29 23:31:59 1997: not-allowed: you are not allowed on that channel
+Mon Sep 29 23:31:59 1997: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "OpenLib Mud",
+  0,
+  "*gjs",
+  0,
+  "pyhpah",
+  0
+})
+Mon Sep 29 23:31:59 1997: not-allowed: you are not allowed on that channel
+Mon Sep 29 23:31:59 1997: packet: ({ /* sizeof() == 8 */
+  "channel-listen",
+  5,
+  "OpenLib Mud",
+  0,
+  "*gjs",
+  0,
+  "insomnia-chat",
+  0
+})

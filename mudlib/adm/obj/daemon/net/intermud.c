@@ -35,6 +35,7 @@ static void create() {
     Tries = 0;
     Banned = ([]);
     Nameservers = ({ ({ "*gjs", "206.151.209.131 9000" }) });
+//   Nameservers = ({ ({ "*tkm", "129.186.190.38 9000" }) });
     MudList = new(class list);
     ChannelList = new(class list);
     MudList->ID = -1;
@@ -49,7 +50,7 @@ static void create() {
     call_out( (: Setup :), 2);
 }
 
-static int remove() {
+int remove() {
   eventWrite( ({ "shutdown", 5, mud_name(), 0, Nameservers[0][0], 0, 0 }) );
 }
 

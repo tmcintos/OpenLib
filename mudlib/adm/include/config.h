@@ -20,11 +20,12 @@
 #define boolean int         // for read-ability
 #define NULL     0          // for clarity
 #define status int          // for backwards compat don't use
+//#define static nosave
 
 #define MUD_STATUS "pre-alpha development"
 #define ADMIN_EMAIL "mud@dm.imaginary.com"
 
-#define mudlib_name() "UltraLib"
+#define mudlib_name() "OpenLib"
 #define mudlib_version() "0.1"
 #define mud_name() get_config(__MUD_NAME__)
 #define mud_port() get_config(__MUD_PORT__)

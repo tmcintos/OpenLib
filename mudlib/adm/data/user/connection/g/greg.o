@@ -7,6 +7,6 @@ email_addr "astasia@iastate.edu"
 body "/adm/obj/clone/user"
 login_shell "/adm/obj/clone/shells/nmsh"
 gender 0
-login_time 845493012
-logout_time 845493356
-login_from "loopback"
+login_time 847793409
+logout_time 847793550
+login_from "localhost"

@@ -90,3 +90,11 @@ Wed Oct 16 20:46:39 1996: v_r: file=/adm/data, user=adm/obj/daemon/simul_efun, f
 Wed Oct 16 20:46:43 1996: v_r: file=/adm/data, user=adm/cmd/wiz/ls, func=file_size
 Wed Oct 16 20:46:51 1996: v_w: file=/adm/tmp/tmp_eval_file.c, user=adm/cmd/wiz/rm, func=remove_file
 Wed Oct 16 20:47:01 1996: v_w: file=/doc/GPL, user=adm/cmd/wiz/rm, func=remove_file
+Thu Oct 17 00:26:42 1996: v_w: file=/u/g/guest, user=adm/cmd/wiz/mkdir, func=mkdir
+Thu Oct 17 00:27:50 1996: v_r: file=/adm/data, user=adm/cmd/wiz/ls, func=file_size
+Thu Oct 17 20:09:11 1996: v_r: file=/adm/data/, user=adm/cmd/wiz/du, func=stat
+Mon Oct 21 00:37:00 1996: v_r: file=/adm/data, user=adm/cmd/wiz/ls, func=file_size
+Mon Oct 21 01:04:59 1996: v_r: file=/adm/data, user=adm/cmd/wiz/ls, func=file_size
+Mon Oct 21 01:05:15 1996: v_r: file=/adm/data, user=adm/cmd/wiz/ls, func=file_size
+Mon Oct 21 01:05:35 1996: v_r: file=/adm/data, user=adm/cmd/wiz/ls, func=file_size
+Mon Oct 21 15:53:53 1996: v_r: file=/adm/data, user=adm/cmd/wiz/ls, func=file_size

@@ -1,12 +1,12 @@
-#/obj/clone/user/human.c
-morestring "/doc/man/man4/create.4: (%d%%) %s"
+#/adm/obj/clone/user.c
+morestring "/u/t/tim/workroom.c: (%d%%) %s"
 callback 0
 redraw 
 s_length 24
 start 24
 prev 1
-length 33
-file "/doc/man/man4/create.4"
+length 51
+file "/u/t/tim/workroom.c"
 in_help 0
 no_clean 0
 flags ({})
@@ -16,6 +16,6 @@ spell_points 0
 str 0
 agil 0
 skills 0
-env_vars (["SHELL":"/obj/clone/shells/protosh","nmsh_xverb":([":":"emote $*","'":"say $*",]),"LENGTH":24,"WIDTH":80,"nmsh_alias":(["se":"southeast","sw":"southwest","exa":"look at $*","l":"look $*","e":"east","u":"up","w":"west","ne":"northeast","s":"south","d":"down","i":"inventory","n":"north","bio":"biography","nw":"northwest",]),"TERM":"vt100","nmsh_nick":([]),"PATH":"/cmd/player:/adm/cmd/player:/cmd/wiz:/adm/cmd/wiz:/cmd/adm:/adm/cmd/adm","version":"Prototype Shell",])
-aliases (["se":"southeast","sw":"southwest","l":"look","sc":"score","e":"east","w":"west","ne":"northeast","s":"south","i":"inventory","n":"north","nw":"northwest",])
+env_vars (["version":"Prototype Shell","SHELL":"/obj/clone/shells/protosh","LENGTH":24,"nmsh_xverb":([":":"emote $*","'":"say $*",]),"WIDTH":80,"TERM":"default","PATH":"/cmd/player:/adm/cmd/player:/cmd/wiz:/adm/cmd/wiz:/cmd/adm:/adm/cmd/adm","nmsh_alias":(["se":"southeast","i":"inventory","u":"up","n":"north","nw":"northwest","s":"south","sw":"southwest","l":"look $*","bio":"biography","exa":"look at $*","ne":"northeast","w":"west","d":"down","e":"east",]),"nmsh_nick":([]),])
+aliases (["sc":"score","se":"southeast","i":"inventory","n":"north","nw":"northwest","s":"south","sw":"southwest","l":"look","ne":"northeast","w":"west","e":"east",])
 channels ({})

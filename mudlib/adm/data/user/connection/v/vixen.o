@@ -1,0 +1,12 @@
+#/adm/obj/clone/connection.c
+name "vixen"
+cap_name "VIXEN"
+password "wNNZ2lvs9h1Dk"
+real_name "maybellyne"
+email_addr "vixen1@neurostudios.com"
+body "/adm/obj/clone/user"
+login_shell "/adm/obj/clone/shells/nmsh"
+gender -1
+login_time 849073667
+logout_time 849073732
+login_from "winnie.neurostudios.com"

@@ -1,0 +1,12 @@
+#/adm/obj/clone/connection.c
+name "henry"
+cap_name "Henry"
+password "bkwV5221CLd6E"
+real_name "Henry Rollins"
+email_addr "nowhereman@nowhere.com"
+body "/adm/obj/clone/user"
+login_shell "/adm/obj/clone/shells/rsh"
+gender 1
+login_time 875670681
+logout_time 875670744
+login_from "129.186.190.38"

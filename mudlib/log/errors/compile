@@ -1,0 +1,221 @@
+/adm/obj/clone/shells/nmsh.c line 34: Warning: Non-void functions must return a
+value.
+/cmd/player/subscribe.c line 12: Undefined function wrap
+/adm/tmp/tmp_eval_file.c line 8: Undefined function author_stats
+/adm/tmp/tmp_eval_file.c line 8: Undefined function domain_stats
+/adm/tmp/tmp_eval_file.c line 8: parse error
+/adm/tmp/tmp_eval_file.c line 9: Illegal LHS
+/adm/tmp/tmp_eval_file.c line 9: parse error
+/adm/obj/clone/shells/nmsh.c line 34: Warning: Non-void functions must return a
+value.
+/u/c/craig/workroom.c line 20: "
+/adm/obj/clone/shells/nmsh.c line 34: Warning: Non-void functions must return a
+value.
+/u/c/craig/workroom.c line 20: "
+/u/c/craig/weapons/sword.c line 47: Undefined function set_ids
+/u/c/craig/weapons/sword.c line 51: "
+/adm/tmp/tmp_eval_file.c line 8: Bad argument 1 to efun restore_variable()
+/adm/tmp/tmp_eval_file.c line 8: parse error
+/adm/tmp/tmp_eval_file.c line 13: End of file in text block
+/adm/tmp/tmp_eval_file.c line 8: parse error
+/adm/tmp/tmp_eval_file.c line 13: End of file in text block
+/adm/obj/clone/shells/nmsh.c line 34: Warning: Non-void functions must return a
+value.
+/adm/tmp/tmp_eval_file.c line 8: parse error
+/adm/tmp/tmp_eval_file.c line 13: End of file in text block
+/u/c/craig/workroom.c line 20: "
+/u/s/satch/workroom.c line 20: "
+/u/s/satch/workroom.c line 20: "
+/u/c/craig/workroom.c line 20: "
+/u/c/craig/workroom.c line 20: "
+/u/c/craig/weapons/sword.c line 47: Undefined function set_ids
+/u/c/craig/weapons/sword.c line 51: "
+/u/t/tim/descartes.c line 28: "
+/u/t/tim/invis.c line 8: Undefined function set_ids
+/u/c/craig/workroom.c line 18: "
+/adm/obj/clone/shells/nmsh.c line 34: Warning: Non-void functions must return a
+value.
+/adm/tmp/tmp_eval_file.c line 8: parse error
+/adm/tmp/tmp_eval_file.c line 9: Illegal LHS
+/adm/tmp/tmp_eval_file.c line 9: parse error
+/adm/tmp/tmp_eval_file.c line 8: parse error
+/adm/tmp/tmp_eval_file.c line 9: Illegal LHS
+/adm/tmp/tmp_eval_file.c line 11: Undefined variable 'f'
+/adm/tmp/tmp_eval_file.c line 11: Undefined variable 'priv'
+/adm/tmp/tmp_eval_file.c line 13: parse error
+obj/daemon/termcap_d.c line 174: Too many arguments to terminal_colour
+obj/daemon/termcap_d.c line 174: Type of returned value doesn't match function
+return type ( mapping vs string ).
+/adm/tmp/tmp_eval_file.c line 8: Undefined function socket_status
+/cmd/wiz/statsocket.c line 52: Warning: Value of conditional expression is
+unused
+/adm/obj/daemon/mail_d.c line 374: Warning: Unused local variable 'tmp_tolist'
+before the end of line
+/adm/obj/daemon/mail_d.c line 374: Warning: Unused local variable 'tmp_cclist'
+before the end of line
+/adm/obj/daemon/mail_d.c line 374: Warning: Unused local variable 'userlist'
+before the end of line
+/adm/obj/daemon/net/services/channel.c line 83: Warning: Unused local variable
+'target' before the end of line
+/adm/obj/inherit/client.c line 104: Warning: Unused local variable 'x' before
+the end of line
+/adm/obj/daemon/net/intermud.c line 189: Warning: Unused local variable 'cles'
+before the end of line
+/adm/obj/daemon/net/intermud.c line 189: Warning: Unused local variable 'ns'
+before the end of line
+/adm/obj/daemon/net/intermud.c line 189: Warning: Unused local variable 'i'
+before the end of line
+/adm/obj/daemon/net/intermud.c line 189: Warning: Unused local variable 'maxi'
+before the end of line
+/adm/obj/inherit/server.c line 173: Warning: Unused local variable 'x' before
+the end of line
+/adm/obj/daemon/net/http_d.c line 210: Warning: Unused local variable 'x'
+before the end of line
+/obj/daemon/combat_d.c line 316: Warning: Unused local variable 'dmg_rnd'
+before the end of line
+/obj/daemon/editor_d.c line 213: "#pragma strict_types" requires type of
+function before int ignore1, string 
+/obj/daemon/editor_d.c line 238: "#pragma strict_types" requires type of
+function before int ignore1, string 
+/obj/daemon/editor_d.c line 246: "#pragma strict_types" requires type of
+function before int where, string ig
+/obj/daemon/editor_d.c line 263: "#pragma strict_types" requires type of
+function before int ignore1, string 
+/obj/daemon/editor_d.c line 265: "#pragma strict_types" requires type of
+function before int where, string ig
+/obj/daemon/editor_d.c line 275: "#pragma strict_types" requires type of
+function before int ignore1, string 
+/obj/inherit/modules/m_combat.c line 270: Warning: Unused local variable
+'armour_locations' before the end of line
+/obj/inherit/modules/m_combat.c line 293: Warning: Unused local variable 'm'
+before the end of line
+/adm/obj/daemon/mail_d.c line 374: Warning: Unused local variable 'tmp_tolist'
+before the end of line
+/adm/obj/daemon/mail_d.c line 374: Warning: Unused local variable 'tmp_cclist'
+before the end of line
+/adm/obj/daemon/mail_d.c line 374: Warning: Unused local variable 'userlist'
+before the end of line
+/adm/obj/daemon/net/services/channel.c line 83: Warning: Unused local variable
+'target' before the end of line
+/adm/obj/inherit/client.c line 104: Warning: Unused local variable 'x' before
+the end of line
+/adm/obj/daemon/net/intermud.c line 189: Warning: Unused local variable 'cles'
+before the end of line
+/adm/obj/daemon/net/intermud.c line 189: Warning: Unused local variable 'ns'
+before the end of line
+/adm/obj/daemon/net/intermud.c line 189: Warning: Unused local variable 'i'
+before the end of line
+/adm/obj/daemon/net/intermud.c line 189: Warning: Unused local variable 'maxi'
+before the end of line
+/adm/obj/inherit/server.c line 173: Warning: Unused local variable 'x' before
+the end of line
+/adm/obj/daemon/net/http_d.c line 210: Warning: Unused local variable 'x'
+before the end of line
+/obj/daemon/combat_d.c line 316: Warning: Unused local variable 'dmg_rnd'
+before the end of line
+/obj/daemon/editor_d.c line 213: "#pragma strict_types" requires type of
+function before int ignore1, string 
+/obj/daemon/editor_d.c line 238: "#pragma strict_types" requires type of
+function before int ignore1, string 
+/obj/daemon/editor_d.c line 246: "#pragma strict_types" requires type of
+function before int where, string ig
+/obj/daemon/editor_d.c line 263: "#pragma strict_types" requires type of
+function before int ignore1, string 
+/obj/daemon/editor_d.c line 265: "#pragma strict_types" requires type of
+function before int where, string ig
+/obj/daemon/editor_d.c line 275: "#pragma strict_types" requires type of
+function before int ignore1, string 
+/obj/inherit/modules/m_combat.c line 270: Warning: Unused local variable
+'armour_locations' before the end of line
+/obj/inherit/modules/m_combat.c line 293: Warning: Unused local variable 'm'
+before the end of line
+/adm/obj/daemon/mail_d.c line 374: Warning: Unused local variable 'tmp_tolist'
+before the end of line
+/adm/obj/daemon/mail_d.c line 374: Warning: Unused local variable 'tmp_cclist'
+before the end of line
+/adm/obj/daemon/mail_d.c line 374: Warning: Unused local variable 'userlist'
+before the end of line
+/adm/obj/daemon/net/services/channel.c line 83: Warning: Unused local variable
+'target' before the end of line
+/adm/obj/inherit/client.c line 104: Warning: Unused local variable 'x' before
+the end of line
+/adm/obj/daemon/net/intermud.c line 189: Warning: Unused local variable 'cles'
+before the end of line
+/adm/obj/daemon/net/intermud.c line 189: Warning: Unused local variable 'ns'
+before the end of line
+/adm/obj/daemon/net/intermud.c line 189: Warning: Unused local variable 'i'
+before the end of line
+/adm/obj/daemon/net/intermud.c line 189: Warning: Unused local variable 'maxi'
+before the end of line
+/adm/obj/inherit/server.c line 173: Warning: Unused local variable 'x' before
+the end of line
+/adm/obj/daemon/net/http_d.c line 210: Warning: Unused local variable 'x'
+before the end of line
+/obj/daemon/combat_d.c line 316: Warning: Unused local variable 'dmg_rnd'
+before the end of line
+/obj/daemon/editor_d.c line 213: "#pragma strict_types" requires type of
+function before int ignore1, string 
+/obj/daemon/editor_d.c line 238: "#pragma strict_types" requires type of
+function before int ignore1, string 
+/obj/daemon/editor_d.c line 246: "#pragma strict_types" requires type of
+function before int where, string ig
+/obj/daemon/editor_d.c line 263: "#pragma strict_types" requires type of
+function before int ignore1, string 
+/obj/daemon/editor_d.c line 265: "#pragma strict_types" requires type of
+function before int where, string ig
+/obj/daemon/editor_d.c line 275: "#pragma strict_types" requires type of
+function before int ignore1, string 
+/obj/inherit/modules/m_combat.c line 270: Warning: Unused local variable
+'armour_locations' before the end of line
+/obj/inherit/modules/m_combat.c line 293: Warning: Unused local variable 'm'
+before the end of line
+/adm/obj/daemon/mail_d.c line 374: Warning: Unused local variable 'tmp_tolist'
+before the end of line
+/adm/obj/daemon/mail_d.c line 374: Warning: Unused local variable 'tmp_cclist'
+before the end of line
+/adm/obj/daemon/mail_d.c line 374: Warning: Unused local variable 'userlist'
+before the end of line
+/adm/obj/daemon/net/services/channel.c line 83: Warning: Unused local variable
+'target' before the end of line
+/adm/obj/inherit/client.c line 104: Warning: Unused local variable 'x' before
+the end of line
+/adm/obj/daemon/net/intermud.c line 189: Warning: Unused local variable 'cles'
+before the end of line
+/adm/obj/daemon/net/intermud.c line 189: Warning: Unused local variable 'ns'
+before the end of line
+/adm/obj/daemon/net/intermud.c line 189: Warning: Unused local variable 'i'
+before the end of line
+/adm/obj/daemon/net/intermud.c line 189: Warning: Unused local variable 'maxi'
+before the end of line
+/adm/obj/inherit/server.c line 173: Warning: Unused local variable 'x' before
+the end of line
+/adm/obj/daemon/net/http_d.c line 210: Warning: Unused local variable 'x'
+before the end of line
+/obj/daemon/combat_d.c line 316: Warning: Unused local variable 'dmg_rnd'
+before the end of line
+/obj/daemon/editor_d.c line 213: "#pragma strict_types" requires type of
+function before int ignore1, string 
+/obj/daemon/editor_d.c line 238: "#pragma strict_types" requires type of
+function before int ignore1, string 
+/obj/daemon/editor_d.c line 246: "#pragma strict_types" requires type of
+function before int where, string ig
+/obj/daemon/editor_d.c line 263: "#pragma strict_types" requires type of
+function before int ignore1, string 
+/obj/daemon/editor_d.c line 265: "#pragma strict_types" requires type of
+function before int where, string ig
+/obj/daemon/editor_d.c line 275: "#pragma strict_types" requires type of
+function before int ignore1, string 
+/obj/inherit/modules/m_combat.c line 270: Warning: Unused local variable
+'armour_locations' before the end of line
+/obj/inherit/modules/m_combat.c line 293: Warning: Unused local variable 'm'
+before the end of line
+adm/tmp/tmp_eval_file.c line 8: Undefined variable 'which' before ; };
+adm/tmp/tmp_eval_file.c line 8: parse error before ; };
+adm/tmp/tmp_eval_file.c line 9: Illegal LHS before the end of line
+adm/tmp/tmp_eval_file.c line 11: Undefined variable 'f' before  priv);
+adm/tmp/tmp_eval_file.c line 11: Undefined variable 'priv' before ;
+adm/tmp/tmp_eval_file.c line 13: parse error before the end of file
+adm/tmp/tmp_eval_file.c line 8: Too few arguments to function_owner before ; };
+adm/tmp/tmp_eval_file.c line 8: Undefined variable 'henry' before ->unsetenv(
+PATH ); 
+adm/tmp/tmp_eval_file.c line 8: Undefined variable 'PATH' before ; };

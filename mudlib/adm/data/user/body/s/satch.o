@@ -3,10 +3,10 @@ morestring "%%^INVERSE%%^--MORE--%%^RESET%%^ (%d%%) %s"
 callback 
 redraw 
 s_length 24
-start 70
-prev 47
-length 48
-file ({"!!! Failed to load your body!!  Loading default body.","!!! Please notify an Admin.","!!! Failed to load your shell!!  Loading default shell.","!!! Please notify an Admin.","login_d: 'vt220' is not a supported terminal type.","         Using 'default' as default terminal type.","Welcome to Dysfunctional Mud!","-------------------------------------------------------------------------------","                D y s f u n c t i o n a l  M u d  N e w s","			last update: 10/09/96","-------------------------------------------------------------------------------","* Any mail for the mud can be sent to the following addresses:","      mud@dm.imaginary.com (primary address)","      rockford@novia.net (Tim), astasia@iastate.edu (Tim during school)","      kyricc@inetnebr.com (Kyricc)","","* I am working on a new FTP server for the mud.  Right now you should be able","  to get and put files in both ASCII and BINARY mode.  Try it out if you get","  a chance and report any bugs to me.  (port: 4443) --Tim","  NOTE: this project may be abandoned in favor of an external ftpd process","        due to efficiency--this would have to interface w/the mudlib though.","","* Check out my ~tim/TODO list for things that need to be done.  New items are","  usually added to the bottom of the list.","","* SECURITY stuff is mostly in place.  I've noticed problem already having to","  do with callbacks from high privilege objects.  Quint, Ev and Tim should","  have priv 1 access and everyone else should not right now.  Use the command","  'lswiz' to get a list of wizards, and 'lsdom' for a list of domains.  Please","  report any bugs in the system to me (Tim).  DOCUMENTATION can be found in","  the file /doc/mudlib/systems/security--This is the original documentation","  on which the system is based.  Better documentation later hopefully. :)","","* Changed it so default for more() is to exit when done paging.  setenv","  MORE_NO_EXIT_END to change this.  (this is opposite of before) -Tim","","* TERMINAL TYPES: Once again supported properly..although few are supported.","  **hint, hint--project idea**  If your terminal type is unknown, it will","  default to \"default\" which does nothing.  If you set the environment variable","  DEFAULT_TERM to a value this will be used instead. -Tim","  \"ansi\" or \"vt102\" are probably the coolest if you support them. (setenv)","","* MAIL has been bumped up to v3.0  A few small things have changed like","  deletions which are now marked as deleted and aren't committed until the","  mailbox is saved.  See the online help in mail for more info.","","","",})
+start 24
+prev 1
+length 20
+file ({"login_d: couldn't init your shell.","login_d: 'vt100' is not a supported terminal type.","         Using 'default' as default terminal type.","Welcome to Dysfunctional Mud!","","***** P L E A S E  R E A D *****","","The OpenLib Mudlib Development Project has been abandoned.","","If you are interested in creating a playable MUD based on either","Nightmare IV or Lima mudlibs, please send mail to Tim (astasia@iastate.edu)","","Also, I am working on the beginnings of a JAVA based mud.  Descartes@Nightmare","has already done work in this area; I am producing one from scratch.","Send mail to me (Tim) if you want in on this.","","***** P L E A S E  R E A D *****","","","",})
 in_help 0
 no_clean 0
 flags ([])
@@ -16,6 +16,6 @@ spell_points 0
 str 0
 agil 0
 skills 0
-env_vars (["nmsh_xverb":(["'":"say $*",":":"emote $*",]),"MORE_EXIT_END":1,"TERM":"default","nmsh_alias":(["bio":"biography","u":"up","exa":"look at $*","sw":"southwest","i":"inventory","l":"look $*","la":"look at $*","w":"west","d":"down","n":"north","e":"east","s":"south","nw":"northwest","ne":"northeast","se":"southeast",]),"LENGTH":24,"PATH":"/cmd/wiz:/adm/cmd/wiz:/cmd/player:/adm/cmd/player","WIDTH":80,"nmsh_nick":([]),])
+env_vars (["nmsh_xverb":([":":"emote $*","'":"say $*",]),"TERM":"default","nmsh_nick":([]),"LENGTH":24,"nmsh_alias":(["i":"inventory","se":"southeast","ne":"northeast","n":"north","exa":"look at $*","bio":"biography","s":"south","l":"look $*","e":"east","la":"look at $*","sw":"southwest","u":"up","nw":"northwest","w":"west","d":"down",]),"PATH":"/cmd/wiz:/adm/cmd/wiz:/cmd/player:/adm/cmd/player","WIDTH":80,"MORE_EXIT_END":1,])
 aliases ([])
 channels ({})

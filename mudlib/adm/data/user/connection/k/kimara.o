@@ -1,0 +1,12 @@
+#/adm/obj/clone/connection.c
+name "kimara"
+cap_name "Kimara"
+password "hVLGvuJaH9wIs"
+real_name "Jesper Hansen"
+email_addr "95f09@uv.fremihs.dk"
+body "/adm/obj/clone/user"
+login_shell "/adm/obj/clone/shells/nmsh"
+gender 1
+login_time 849109007
+logout_time 0
+login_from "194.182.193.148"

@@ -7,6 +7,6 @@ email_addr "none"
 body "/adm/obj/clone/user"
 login_shell "/adm/obj/clone/shells/protosh"
 gender 0
-login_time 845516751
-logout_time 845516924
-login_from "loopback"
+login_time 846312748
+logout_time 846312847
+login_from "pax-ca5-08.ix.netcom.com"

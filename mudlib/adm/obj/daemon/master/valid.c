@@ -1,7 +1,11 @@
-/*  -*- LPC -*-  */
+//  -*- LPC -*-
 // valid.c:  included by master.c
-/* security -- whole thing */
 // separated out from master.c to reduce the complexity a bit.
+//
+// NOTE: This file is NOT covered by the terms of the OpenLib License Agreement
+//
+// Everything in here probably needs work --Tim
+//
 #include <daemons.h>
 
 int
@@ -39,15 +43,6 @@ valid_bind(object binder, object old_owner, object new_owner)
 {
   return 1;
 }
-
-// valid_domain: decides if a domain may be created
-// returns: 1 if domain may be created, 0 if not.
-
-int
-valid_domain(string domain)
-{
-	return 1;
-} 
 
 // valid_socket: controls access to socket efunctions
 // return: 1 if access allowed, 0 if not.

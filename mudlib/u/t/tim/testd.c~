@@ -1,0 +1,30 @@
+#include <daemons.h>
+#include <net/config.h>
+#include <net/network.h>
+
+inherit TCP_SERVER;
+
+mapping input;
+
+void create();
+void setup();
+
+void
+create()
+{
+  server::create();
+  call_out("setup", 1);
+  input = ([]);
+}
+
+void
+setup()
+{
+  eventListenSocket(mud_port() + 79, STREAM);
+}
+
+void
+eventRead(int fd, string val)
+{
+  message("system", dump_variable(restore_variable(val)), find_player("tim"));
+}

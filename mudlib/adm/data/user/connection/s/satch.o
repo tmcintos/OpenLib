@@ -4,9 +4,9 @@ cap_name "Satch"
 password "WgHt1s/pCjAPI"
 real_name "Jeff Piekarczyk"
 email_addr "satchriani@aol.com"
-body "/obj/clone/user/human"
-login_shell "/obj/clone/shells/nmsh"
+body "/adm/obj/clone/user"
+login_shell "/adm/obj/clone/user"
 gender 1
-login_time 845144444
-logout_time 845144458
-login_from "205.215.64.13"
+login_time 849238182
+logout_time 849238235
+login_from "axp.calumet.purdue.edu"

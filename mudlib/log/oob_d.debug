@@ -2199,3 +2199,584 @@ Mon Oct 14 04:32:19 1996: evRead(5, ({ /* sizeof() == 2 */
 }))
 Mon Oct 14 04:32:19 1996: evRcvOOBEnd(5, Lima Bean)(client)
 Mon Oct 14 04:32:19 1996: Socket fd=(5) closed.
+Thu Nov  7 23:44:16 1996: OOBBegin: connecting: mud=Lima Bean
+Thu Nov  7 23:44:18 1996: evWrite(7, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  1,
+  1641747378
+}))
+Thu Nov  7 23:44:18 1996: evRead(7, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Lima Bean",
+  0,
+  0
+}))
+Thu Nov  7 23:44:18 1996: evSndPkts(7, Lima Bean)
+Thu Nov  7 23:44:18 1996: evWrite(7, ({ /* sizeof() == 9 */
+  "mail",
+  0,
+  "Tim",
+  ([ /* sizeof() == 1 */
+    "Lima Bean" : ({ /* sizeof() == 1 */
+        "rust"
+      }),
+  ]),
+  ([ ]),
+  ({ }),
+  847431856,
+  "I-3 packet parsing routines in C",
+  "Zakk he thought maybe you had some C code to parse intermud3 packets.
+If this is true would it be possible for me to get a copy?  I can't
+seem to think of a real good (tm) way to do it myself :(
+ 
+Thanks,
+Tim@Dysfunctional Mud
+"
+}))
+Thu Nov  7 23:44:18 1996: evRead(7, ({ /* sizeof() == 2 */
+  "mail-ack",
+  ([ /* sizeof() == 1 */
+    0 : ({ }),
+  ])
+}))
+Thu Nov  7 23:44:20 1996: evSndPkts(7, Lima Bean)
+Thu Nov  7 23:44:20 1996: evWrite(7, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Thu Nov  7 23:44:20 1996: evRead(7, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Lima Bean"
+}))
+Thu Nov  7 23:44:20 1996: evRcvOOBEnd(7, Lima Bean)(client)
+Thu Nov  7 23:44:20 1996: Socket fd=(7) closed.
+Thu Nov  7 23:45:40 1996: OOBBegin: connecting: mud=Lima Bean
+Thu Nov  7 23:45:42 1996: evWrite(7, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  1,
+  1508737070
+}))
+Thu Nov  7 23:45:42 1996: evRead(7, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Lima Bean",
+  0,
+  0
+}))
+Thu Nov  7 23:45:42 1996: evSndPkts(7, Lima Bean)
+Thu Nov  7 23:45:42 1996: evWrite(7, ({ /* sizeof() == 9 */
+  "mail",
+  0,
+  "Tim",
+  ([ /* sizeof() == 1 */
+    "Lima Bean" : ({ /* sizeof() == 1 */
+        "tim"
+      }),
+  ]),
+  ([ ]),
+  ({ }),
+  847431940,
+  "test",
+  "testing
+later
+Tim
+"
+}))
+Thu Nov  7 23:45:42 1996: evRead(7, ({ /* sizeof() == 2 */
+  "mail-ack",
+  ([ /* sizeof() == 1 */
+    0 : ({ }),
+  ])
+}))
+Thu Nov  7 23:45:44 1996: evSndPkts(7, Lima Bean)
+Thu Nov  7 23:45:44 1996: evWrite(7, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Thu Nov  7 23:45:44 1996: evRead(7, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Lima Bean"
+}))
+Thu Nov  7 23:45:44 1996: evRcvOOBEnd(7, Lima Bean)(client)
+Thu Nov  7 23:45:44 1996: Socket fd=(7) closed.
+Mon Nov 11 05:12:20 1996: evRead(9, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Lima Bean",
+  1,
+  21884940
+}))
+Mon Nov 11 05:12:20 1996: evWrite(9, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  0,
+  0
+}))
+Mon Nov 11 05:12:20 1996: evRead(9, ({ /* sizeof() == 9 */
+  "mail",
+  2,
+  "rust",
+  ([ /* sizeof() == 1 */
+    "Dysfunctional Mud" : ({ /* sizeof() == 1 */
+        "tim"
+      }),
+  ]),
+  ([ ]),
+  ({ }),
+  847709470,
+  "Re: I-3 packet parsing routines in C",
+  "On Thu Nov  7 21:44:16 1996 Tim@Dysfunctional Mud wrote:
+> Zakk he thought maybe you had some C code to parse intermud3 packets.
+> If this is true would it be possible for me to get a copy?  I can't
+> seem to think of a real good (tm) way to do it myself :(
+>  
+> Thanks,
+> Tim@Dysfunctional Mud
+Yup, I have some code like that.  It's in my directory on Lima Bean:
+/wiz/rust/lpcval.{c,h}
+
+Hasn't been touched in a long time... A few different systems have
+used the code, so it should be OK, but I'm not 100% sure that the
+code I'm pointing you at is the most recent version ;-)
+
+If something is wrong w/ it, or if you need something added to it, come
+talk to me.
+
+What're you working on, if you don't mind me asking?
+
+John"
+}))
+Mon Nov 11 05:12:20 1996: evWrite(9, ({ /* sizeof() == 2 */
+  "mail-ack",
+  ([ /* sizeof() == 1 */
+    2 : ({ }),
+  ])
+}))
+Mon Nov 11 05:12:20 1996: evRead(9, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Lima Bean"
+}))
+Mon Nov 11 05:12:20 1996: evRcvOOBEnd(9, Lima Bean)(server)
+Mon Nov 11 05:12:20 1996: evSndPkts(9, Lima Bean)
+Mon Nov 11 05:12:20 1996: evWrite(9, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Mon Nov 11 05:12:20 1996: Socket fd=(9) closed.
+Mon Nov 11 17:09:27 1996: OOBBegin: connecting: mud=Lima Bean
+Mon Nov 11 17:09:29 1996: evWrite(8, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  1,
+  1431538007
+}))
+Mon Nov 11 17:09:29 1996: evRead(8, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Lima Bean",
+  0,
+  0
+}))
+Mon Nov 11 17:09:29 1996: evSndPkts(8, Lima Bean)
+Mon Nov 11 17:09:29 1996: evWrite(8, ({ /* sizeof() == 9 */
+  "mail",
+  0,
+  "Tim",
+  ([ /* sizeof() == 1 */
+    "Lima Bean" : ({ /* sizeof() == 1 */
+        "rust"
+      }),
+  ]),
+  ([ ]),
+  ({ }),
+  847753767,
+  "Re: Re: I-3 packet parsing routines in C",
+  "Ok thanks, I will take a look...
+ 
+As for what I am working on; just toying with some stuff possibly to
+make a portable C I3 package--got started because a friend of mine is
+interested in getting a Diku he has on I3, and no one has been able to
+get any code from Satan@Lima Bean who supposedly had something going for
+dikus...what I wanted to do though would be somewhat mud-type independent.
+This isn't one of my main projects, just something I was screwing with in
+my (free?) time...
+ 
+Tim
+"
+}))
+Mon Nov 11 17:09:29 1996: evRead(8, ({ /* sizeof() == 2 */
+  "mail-ack",
+  ([ /* sizeof() == 1 */
+    0 : ({ }),
+  ])
+}))
+Mon Nov 11 17:09:31 1996: evSndPkts(8, Lima Bean)
+Mon Nov 11 17:09:31 1996: evWrite(8, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Mon Nov 11 17:09:31 1996: evRead(8, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Lima Bean"
+}))
+Mon Nov 11 17:09:31 1996: evRcvOOBEnd(8, Lima Bean)(client)
+Mon Nov 11 17:09:31 1996: Socket fd=(8) closed.
+Mon Nov 11 22:03:49 1996: evRead(9, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Lima Bean",
+  1,
+  1055296269
+}))
+Mon Nov 11 22:03:49 1996: evWrite(9, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  0,
+  0
+}))
+Mon Nov 11 22:03:49 1996: evRead(9, ({ /* sizeof() == 9 */
+  "mail",
+  3,
+  "satan",
+  ([ /* sizeof() == 1 */
+    "Dysfunctional Mud" : ({ /* sizeof() == 1 */
+        "kyricc"
+      }),
+  ]),
+  ([ ]),
+  ({ }),
+  847770154,
+  "Re: I3 stuff",
+  "On Mon Oct 14 02:32:13 1996 Kyricc@Dysfunctional Mud wrote:
+> I see you havn't been on for quite a while.  Still waiting for that
+> I3 for CircleMUD stuff...  Hope I'm not bugging you too much about
+> it...just kinda excited about implementing it.  Talk to ya laterz..
+>  
+> Kyricc@Dysfunctional MUD
+
+Hi,
+  I've been doing this and that. I tar'ed up the code that I have
+for you, Im not sure how much help it will be at the moment, and
+I didn't write up any docs on it. Im not sure when I will get in
+a mood to work on it again, but I figured that I could atlease
+make the code available to anyone that wanted to pick it up and
+work on it. Rust said that 'tim@Dysfun...' was interested in it.
+I included a patch, the imud3.c and .h files, and the Imud3 lib
+that I used. The lib could use alot of cleaning up and has a
+ton of warning messages, but it works fine. Let me know what
+happens or if you know of some people that want to work on that
+code as a project and I'll start up a mailing list and maybe
+get inspired to work on it again. In the mean time, Im converting
+the stock Circle worlds over to a Lima Mudlib on ArcadiaF. If
+you want, the address is noc.cc.cc.ca.us 9999 and Im Bishop on
+there... Later"
+}))
+Mon Nov 11 22:03:49 1996: evWrite(9, ({ /* sizeof() == 2 */
+  "mail-ack",
+  ([ /* sizeof() == 1 */
+    3 : ({ }),
+  ])
+}))
+Mon Nov 11 22:03:49 1996: evRead(9, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Lima Bean"
+}))
+Mon Nov 11 22:03:49 1996: evRcvOOBEnd(9, Lima Bean)(server)
+Mon Nov 11 22:03:49 1996: evSndPkts(9, Lima Bean)
+Mon Nov 11 22:03:49 1996: evWrite(9, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Mon Nov 11 22:03:49 1996: Socket fd=(9) closed.
+Sun Nov 17 19:04:03 1996: OOBBegin: connecting: mud=Lima Bean
+Sun Nov 17 19:04:07 1996: evWrite(5, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  1,
+  203413218
+}))
+Sun Nov 17 19:04:07 1996: evRead(5, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Lima Bean",
+  0,
+  0
+}))
+Sun Nov 17 19:04:07 1996: evSndPkts(5, Lima Bean)
+Sun Nov 17 19:04:07 1996: evWrite(5, ({ /* sizeof() == 9 */
+  "mail",
+  0,
+  "Kyricc",
+  ([ /* sizeof() == 1 */
+    "Lima Bean" : ({ /* sizeof() == 1 */
+        "satan"
+      }),
+  ]),
+  ([ ]),
+  ({ }),
+  848279043,
+  "I3 - Circle",
+  "Got your mail.  If you want to check out what we have done I will try
+to get stuff in order for you.  I will prolly just mail you a uuencoded
+.zip file of the patch.  Getting closer to having everything functional.
+Well, just letting you know what is going on, decided prolly didn't need
+a mailing-list at this point.  Will prolly start one once we get stuff
+working.  Then kinda use it for further developement, questions, and
+improvements.  Well, I'll see you later.  BTW if you want the devel.
+site is on the mudlist as Bub MUD if it is up.
+ 
+Jason
+"
+}))
+Sun Nov 17 19:04:07 1996: evRead(5, ({ /* sizeof() == 2 */
+  "mail-ack",
+  ([ /* sizeof() == 1 */
+    0 : ({ }),
+  ])
+}))
+Sun Nov 17 19:04:09 1996: evSndPkts(5, Lima Bean)
+Sun Nov 17 19:04:09 1996: evWrite(5, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Sun Nov 17 19:04:09 1996: evRead(5, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Lima Bean"
+}))
+Sun Nov 17 19:04:09 1996: evRcvOOBEnd(5, Lima Bean)(client)
+Sun Nov 17 19:04:09 1996: Socket fd=(5) closed.
+Sun Nov 17 19:31:38 1996: evRead(6, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Lima Bean",
+  1,
+  66516729
+}))
+Sun Nov 17 19:31:38 1996: evWrite(6, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  0,
+  0
+}))
+Sun Nov 17 19:31:38 1996: evRead(6, ({ /* sizeof() == 9 */
+  "mail",
+  1,
+  "satan",
+  ([ /* sizeof() == 1 */
+    "Dysfunctional Mud" : ({ /* sizeof() == 1 */
+        "kyricc"
+      }),
+  ]),
+  ([ ]),
+  ({ }),
+  848283013,
+  "Re: I3 - Circle",
+  "On Sun Nov 17 17:04:03 1996 Kyricc@Dysfunctional Mud wrote:
+> Got your mail.  If you want to check out what we have done I will try
+> to get stuff in order for you.  I will prolly just mail you a uuencoded
+> .zip file of the patch.  Getting closer to having everything functional.
+> Well, just letting you know what is going on, decided prolly didn't need
+> a mailing-list at this point.  Will prolly start one once we get stuff
+> working.  Then kinda use it for further developement, questions, and
+> improvements.  Well, I'll see you later.  BTW if you want the devel.
+> site is on the mudlist as Bub MUD if it is up.
+>  
+> Jason
+
+    Where'd you get the name 'Bub Mud' ?   I know a guy name Bub
+that plays with CircleMUD's.
+"
+}))
+Sun Nov 17 19:31:38 1996: evWrite(6, ({ /* sizeof() == 2 */
+  "mail-ack",
+  ([ /* sizeof() == 1 */
+    1 : ({ }),
+  ])
+}))
+Sun Nov 17 19:31:38 1996: evRead(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Lima Bean"
+}))
+Sun Nov 17 19:31:38 1996: evRcvOOBEnd(6, Lima Bean)(server)
+Sun Nov 17 19:31:38 1996: evSndPkts(6, Lima Bean)
+Sun Nov 17 19:31:38 1996: evWrite(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Sun Nov 17 19:31:38 1996: Socket fd=(6) closed.
+Mon Sep 29 23:33:35 1997: OOBBegin: connecting: mud=Dysfunctional Mud
+Mon Sep 29 23:33:37 1997: evWrite(4, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "OpenLib Mud",
+  1,
+  154604630
+}))
+Mon Sep 29 23:33:37 1997: evRead(4, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  0,
+  0
+}))
+Mon Sep 29 23:33:37 1997: evSndPkts(4, Dysfunctional Mud)
+Mon Sep 29 23:33:37 1997: evWrite(4, ({ /* sizeof() == 2 */
+  "oob-end",
+  "OpenLib Mud"
+}))
+Mon Sep 29 23:33:37 1997: evRead(4, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Mon Sep 29 23:33:37 1997: evRcvOOBEnd(4, Dysfunctional Mud)(client)
+Mon Sep 29 23:33:39 1997: evWaitPkts(4, Dysfunctional Mud)
+Mon Sep 29 23:33:41 1997: evWaitPkts(4, Dysfunctional Mud)
+Mon Sep 29 23:33:41 1997: evSndPkts(4, Dysfunctional Mud)
+Mon Sep 29 23:33:41 1997: evWrite(4, ({ /* sizeof() == 4 */
+  "file-list-req",
+  "OpenLib Mud",
+  "tim",
+  ""
+}))
+Mon Sep 29 23:33:41 1997: evRead(4, ({ /* sizeof() == 3 */
+  "file-list-reply",
+  "tim",
+  ({ /* sizeof() == 3 */
+    ({ /* sizeof() == 3 */
+      ".",
+      -2,
+      875231792
+    }),
+    ({ /* sizeof() == 3 */
+      "..",
+      -2,
+      874976731
+    }),
+    ({ /* sizeof() == 3 */
+      "incoming",
+      -2,
+      875519924
+    })
+  })
+}))
+Mon Sep 29 23:33:43 1997: evSndPkts(4, Dysfunctional Mud)
+Mon Sep 29 23:33:43 1997: evWrite(4, ({ /* sizeof() == 2 */
+  "oob-end",
+  "OpenLib Mud"
+}))
+Mon Sep 29 23:33:43 1997: evRead(4, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Mon Sep 29 23:33:43 1997: evRcvOOBEnd(4, Dysfunctional Mud)(client)
+Mon Sep 29 23:33:45 1997: evWaitPkts(4, Dysfunctional Mud)
+Mon Sep 29 23:33:47 1997: evWaitPkts(4, Dysfunctional Mud)
+Mon Sep 29 23:33:49 1997: evWaitPkts(4, Dysfunctional Mud)
+Mon Sep 29 23:33:51 1997: evWaitPkts(4, Dysfunctional Mud)
+Mon Sep 29 23:33:51 1997: evSndPkts(4, Dysfunctional Mud)
+Mon Sep 29 23:33:51 1997: evWrite(4, ({ /* sizeof() == 4 */
+  "file-list-req",
+  "OpenLib Mud",
+  "tim",
+  "incoming"
+}))
+Mon Sep 29 23:33:51 1997: evRead(4, ({ /* sizeof() == 3 */
+  "file-list-reply",
+  "tim",
+  ({ /* sizeof() == 7 */
+    ({ /* sizeof() == 3 */
+      ".",
+      -2,
+      875519924
+    }),
+    ({ /* sizeof() == 3 */
+      "..",
+      -2,
+      875231792
+    }),
+    ({ /* sizeof() == 3 */
+      "README",
+      365,
+      875519924
+    }),
+    ({ /* sizeof() == 3 */
+      "genius.c",
+      2179,
+      875514718
+    }),
+    ({ /* sizeof() == 3 */
+      "scr_command.c",
+      3772,
+      875231918
+    }),
+    ({ /* sizeof() == 3 */
+      "test.c",
+      63,
+      875403246
+    }),
+    ({ /* sizeof() == 3 */
+      "tidbit.c",
+      313,
+      875318678
+    })
+  })
+}))
+Mon Sep 29 23:33:53 1997: evSndPkts(4, Dysfunctional Mud)
+Mon Sep 29 23:33:53 1997: evWrite(4, ({ /* sizeof() == 2 */
+  "oob-end",
+  "OpenLib Mud"
+}))
+Mon Sep 29 23:33:53 1997: evRead(4, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Mon Sep 29 23:33:53 1997: evRcvOOBEnd(4, Dysfunctional Mud)(client)
+Mon Sep 29 23:33:55 1997: evWaitPkts(4, Dysfunctional Mud)
+Mon Sep 29 23:33:57 1997: evWaitPkts(4, Dysfunctional Mud)
+Mon Sep 29 23:33:57 1997: Socket fd=(4) closed.
+Mon Sep 29 23:34:58 1997: OOBBegin: connecting: mud=Dysfunctional Mud
+Mon Sep 29 23:35:00 1997: evWrite(4, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "OpenLib Mud",
+  1,
+  78919340
+}))
+Mon Sep 29 23:35:06 1997: evRead(4, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  0,
+  0
+}))
+Mon Sep 29 23:35:06 1997: evSndPkts(4, Dysfunctional Mud)
+Mon Sep 29 23:35:06 1997: evWrite(4, ({ /* sizeof() == 9 */
+  "mail",
+  0,
+  "Tim",
+  ([ /* sizeof() == 1 */
+    "Dysfunctional Mud" : ({ /* sizeof() == 1 */
+        "tim"
+      }),
+  ]),
+  ([ ]),
+  ({ }),
+  875594098,
+  "testing",
+  "This is a test.
+testing
+one
+two
+three.
+-Tim
+"
+}))
+Mon Sep 29 23:35:06 1997: evRead(4, ({ /* sizeof() == 2 */
+  "mail-ack",
+  ([ /* sizeof() == 1 */
+    0 : ({ }),
+  ])
+}))
+Mon Sep 29 23:35:08 1997: evSndPkts(4, Dysfunctional Mud)
+Mon Sep 29 23:35:08 1997: evWrite(4, ({ /* sizeof() == 2 */
+  "oob-end",
+  "OpenLib Mud"
+}))
+Mon Sep 29 23:35:08 1997: evRead(4, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Mon Sep 29 23:35:08 1997: evRcvOOBEnd(4, Dysfunctional Mud)(client)
+Mon Sep 29 23:35:08 1997: Socket fd=(4) closed.

@@ -1,0 +1,21 @@
+#/adm/obj/clone/user.c
+morestring 0
+callback 0
+redraw 0
+s_length 0
+start 0
+prev 0
+length 0
+file 0
+in_help 0
+no_clean 0
+flags ([])
+coins ({0,0,})
+hit_points 100
+spell_points 0
+str 0
+agil 0
+skills 0
+env_vars (["nmsh_xverb":([":":"emote $*","'":"say $*",]),"nmsh_nick":([]),"nmsh_alias":(["se":"southeast","ne":"northeast","i":"inventory","exa":"look at $*","n":"north","bio":"biography","s":"south","l":"look $*","e":"east","sw":"southwest","u":"up","nw":"northwest","w":"west","d":"down",]),])
+aliases ([])
+channels ({})

@@ -7,6 +7,6 @@ email_addr "(none given)"
 body "/adm/obj/clone/user"
 login_shell "/adm/obj/clone/shells/nmsh"
 gender 1
-login_time 844935100
-logout_time 844937626
-login_from "Fudge.funcom.com"
+login_time 847104997
+logout_time 847129012
+login_from "sinsen.sn.no"

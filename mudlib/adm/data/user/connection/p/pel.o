@@ -7,6 +7,6 @@ email_addr "pel@mail.utexas.edu"
 body "/adm/obj/clone/user"
 login_shell "/adm/obj/clone/shells/nmsh"
 gender 1
-login_time 845434484
-logout_time 845435105
-login_from "canis.ece.utexas.edu"
+login_time 845609933
+logout_time 845610042
+login_from "grouper.ece.utexas.edu"

@@ -109,7 +109,7 @@ main(string str) {
     list = ({});
     foreach(mud, info in borg)
       list += ({ sprintf("%:-15s %:-10s %:-15s %:-14s %:-15s %:5s",
-			 mud, info[8], info[7], info[5], info[1],
+			 mud, info[8], info[7], info[6], info[1],
 			 (info[2] ? sprintf("%i", info[2]) : "N/A")) });
     list = sort_array(list, 1);
     list = ({ mud_name() + " recognizes " + to_english(sizeof(borg)) +

@@ -1,12 +1,12 @@
 #/adm/obj/clone/user.c
-morestring "/obj/clone/nmsh.c: (%d%%) %s"
+morestring "%%^INVERSE%%^--MORE--%%^RESET%%^ (%d%%) %s"
 callback 0
 redraw 
 s_length 25
-start 27
-prev 3
-length 611
-file "/obj/clone/nmsh.c"
+start 25
+prev 1
+length 9
+file ({"  variable     value","  --------     -----","  nmsh_alias   (mapping)","  PATH         /cmd/wiz:/adm/cmd/wiz:/cmd/player:/adm/cmd/player","  WIDTH        80","  nmsh_nick    (mapping)","  TERM         xterm","  nmsh_xverb   (mapping)","  LENGTH       25",})
 in_help 0
 no_clean 0
 flags ([])
@@ -16,6 +16,6 @@ spell_points 0
 str 0
 agil 0
 skills 0
-env_vars (["nmsh_nick":([]),"nmsh_alias":(["sw":"southwest","exa":"look at $*","se":"southeast","l":"look $*","w":"west","d":"down","i":"inventory","ne":"northeast","u":"up","n":"north","s":"south","e":"east","nw":"northwest","bio":"biography",]),"TERM":"xterm","nmsh_xverb":(["'":"say $*",":":"emote $*",]),"LENGTH":25,"PATH":"/cmd/wiz:/adm/cmd/wiz:/cmd/player:/adm/cmd/player","WIDTH":80,])
+env_vars (["WIDTH":80,"PATH":"/cmd/wiz:/adm/cmd/wiz:/cmd/player:/adm/cmd/player","nmsh_alias":(["d":"down","i":"inventory","n":"north","ne":"northeast","l":"look $*","bio":"biography","s":"south","nw":"northwest","e":"east","u":"up","se":"southeast","exa":"look at $*","sw":"southwest","w":"west",]),"nmsh_nick":([]),"nmsh_xverb":(["'":"say $*",":":"emote $*",]),"TERM":"xterm","LENGTH":25,])
 aliases ([])
 channels ({})
