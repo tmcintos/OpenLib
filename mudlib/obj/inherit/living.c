@@ -17,8 +17,8 @@
 #include <object_types.h>
 #include <money.h>
 
-inherit INHERIT_DIR "/combat";
 inherit CONTAINER;
+inherit INHERIT_DIR "/combat";
 
 #include <race.h>  // race prototypes
 
@@ -32,7 +32,8 @@ private int hit_points, spell_points;  // our HP/SP
 /*
  * Function Prototypes
  */
-void create();
+void low_setup();
+int remove();
 int set_name(string name);
 int id(string id);
 nomask int add_money(int* money);
@@ -88,22 +89,36 @@ query_skill(string skill)
  * Rest of the Implementation
  */
 void
-create()
+low_setup()
 {
-  ::create();
+  ::low_setup();
 
-  if( clonep() ) {
-    coins = allocate(COIN_TYPES);
-    for(int i = 0; i < COIN_TYPES; i++)
-      coins[i] = 0;
+  coins = allocate(COIN_TYPES);
+  for(int i = 0; i < COIN_TYPES; i++)
+    coins[i] = 0;
 
-    enable_commands();         // living object; Tim 9/14/95
-    set_heart_beat(1);
+  enable_commands();         // living object; Tim 9/14/95
+  set_heart_beat(1);
 
-    init_combat();
+  init_combat();
 
-    hit_points = 100;       // temporary! for testing death
+  hit_points = 100;       // temporary! for testing death
+}
+
+int
+remove()
+{
+  foreach(object ob in all_inventory(this_object())) {
+    string sh = ob->short();
+
+    if( ob->drop() && ob->move(environment()) ) {
+      tell_object(this_object(), sprintf("You drop %s.\n", sh));
+      tell_room(environment(),
+		sprintf("%s drops %s.\n", query_cap_name(), sh),
+		this_object());
+    }
   }
+  return ::remove();
 }
 
 int
@@ -284,7 +299,7 @@ query_weight_contained()
 void
 die()
 {
-  object corpse, ob;
+  object corpse;
 
   tell_object(this_object(), "You die.\n"
 	  "You see your own dead body from above.\n");
@@ -295,7 +310,7 @@ die()
   corpse = new(CLONE_DIR "/corpse");
   corpse->set_short(short());
 
-  foreach(ob in all_inventory(this_object())) {
+  foreach(object ob in all_inventory(this_object())) {
     if(ob->drop())
       ob->move(corpse);
   }

@@ -7,12 +7,19 @@
 varargs int
 destruct(object ob, int force)
 {
-  if(!ob) return 0;
+  string err;
+  int val;
 
-  if( !force &&  ob->remove() ) {
+  if( !ob ) ob = previous_object();
+
+  err = catch(val = ob->remove());
+
+  if( !force &&  val )
     return 0;
-  } else {
+  else
     efun::destruct(ob);
-    return 1;
-  }
+
+  if( err ) error(err);
+
+  return 1;
 }

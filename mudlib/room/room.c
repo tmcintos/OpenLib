@@ -21,7 +21,7 @@ string property;
 /* No castles are allowed to be dropped here */
 int no_castle_flag;
 
-void setup()
+void Setup()
 {
   mapping tmp = ([]); 
 
@@ -39,11 +39,11 @@ void setup()
 
 void reset(int arg) { }
 
-void create()
+void initialize()
 {
-  ::create();
+  ::initialize();
   reset(0);
-  setup();
+  Setup();
 }
 
 void move_object(mixed x, mixed y) { }

@@ -1684,3 +1684,116 @@ obj/inherit/object.c line 91: Undefined variable 'COIN_TYPES'
 obj/inherit/object.c line 259: Undefined variable 'COIN_TYPES'
 obj/inherit/object.c line 91: Undefined variable 'COIN_TYPES'
 obj/inherit/object.c line 259: Undefined variable 'COIN_TYPES'
+tmp/tmp_eval_file.c line 7: Undefined variable 'man'
+tmp/tmp_eval_file.c line 7: parse error
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+obj/clone/corpse.c line 26: Undefined function set_ids
+obj/clone/money.c line 23: Undefined function set_ids
+obj/clone/money.c line 74: Undefined variable 'OBJECT_LIVING'
+obj/inherit/living.c line 117: Undefined variable 'cap_name'
+obj/clone/corpse.c line 26: Undefined function set_ids
+obj/clone/money.c line 23: Undefined function set_ids
+obj/clone/money.c line 74: Undefined variable 'OBJECT_LIVING'
+obj/clone/nmsh.c line 8: Cannot #include flags.h
+obj/clone/nmsh.c line 44: Undefined function creatorp
+obj/clone/nmsh.c line 67: Undefined function arrange_string
+obj/clone/nmsh.c line 118: Undefined function set_cwd
+obj/clone/nmsh.c line 184: Undefined function query_cwd
+obj/clone/nmsh.c line 201: Undefined function pushd
+obj/clone/olduser.c line 57: Undefined variable 'OBJECT_PLAYER'
+obj/clone/olduser.c line 58: Undefined function seteuid
+obj/clone/olduser.c line 102: Undefined function geteuid
+obj/clone/olduser.c line 102: != always true because of incompatible types ( unknown vs string ).
+obj/clone/olduser.c line 258: Undefined function getuid
+obj/clone/shsh.c line 61: Warning: redefinition of #define NULL
+
+obj/clone/shsh.c line 284: Function getuid undefined
+obj/clone/shsh.c line 284: Function seteuid undefined
+obj/clone/shsh.c line 1619: Warning: Unknown \ escape.
+obj/clone/tmsh.c line 25: Cannot #include globals.h
+obj/clone/tmsh.c line 52: Warning: redefinition of #define RESOLVE_PATH
+
+obj/clone/tmsh.c line 68: parse error
+obj/clone/torch.c line 13: Undefined function set_ids
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+adm/efuns/destruct.c line 21: Bad argument 1 to efun error()
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+room/vill_track.c line 10: parse error
+room/vill_track.c line 10: parse error
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+obj/examples/object.c line 9: Undefined function set_ids
+obj/examples/armour.c line 24: Illegal to redefine 'nomask' function "create"
+obj/inherit/modules/weapon.c line 19: parse error
+obj/inherit/modules/weapon.c line 20: parse error
+obj/inherit/modules/weapon.c line 21: parse error
+obj/inherit/modules/weapon.c line 22: parse error
+obj/inherit/modules/weapon.c line 23: parse error
+obj/inherit/modules/weapon.c line 24: parse error
+obj/inherit/modules/weapon.c line 31: Undefined function query_object_class
+obj/inherit/modules/weapon.h line 7: Cannot #include object_class.h
+obj/inherit/modules/weapon.c line 16: Undefined variable 'OBJECT_WEAPON'
+obj/inherit/modules/weapon.c line 16: Undefined function query_object_class
+obj/inherit/modules/weapon.c line 16: Undefined function set_object_class
+obj/inherit/weapon.c line 13: parse error
+obj/inherit/weapon.c line 13: parse error
+obj/inherit/weapon.c line 26: Illegal to use private variable 'wielded'
+obj/inherit/weapon.c line 31: Illegal to use private variable 'wielded'
+obj/inherit/weapon.c line 38: Illegal to use private variable 'wielded'
+obj/clone/corpse.c line 26: Undefined function set_ids
+obj/clone/corpse.c line 27: Illegal to redefine 'nomask' function "create"
+obj/clone/money.c line 23: Undefined function set_ids
+obj/clone/money.c line 24: Illegal to redefine 'nomask' function "create"
+obj/clone/money.c line 74: Undefined variable 'OBJECT_LIVING'
+obj/inherit/armour.c line 27: Illegal to use private variable 'where'
+obj/inherit/armour.c line 28: Illegal to use private variable 'where'
+obj/inherit/armour.c line 28: Illegal to use private variable 'where'
+obj/inherit/modules/m_armour.c line 15: Undefined variable 'OBJECT_ARMOUR'
+obj/inherit/modules/m_armour.c line 15: Undefined function query_object_class
+obj/inherit/modules/m_armour.c line 15: Undefined variable 'OBJECT_ARMOUR'
+obj/inherit/modules/m_armour.c line 15: Undefined function query_object_class
+obj/inherit/modules/m_container.c line 17: Undefined function query_object_class
+obj/inherit/modules/m_weapon.c line 16: Undefined variable 'OBJECT_WEAPON'
+obj/inherit/modules/m_weapon.c line 16: Undefined function query_object_class
+obj/inherit/container.c line 9: parse error
+obj/inherit/container.c line 35: Warning: receive_object() inherited from both obj/inherit/object.c and obj/inherit/modules/m_container.c; using the definition in obj/inherit/modules/m_container.c.
+obj/inherit/container.c line 35: Warning: query_bulk() inherited from both obj/inherit/object.c and obj/inherit/modules/m_container.c; using the definition in obj/inherit/modules/m_container.c.
+obj/inherit/container.c line 35: Warning: query_weight() inherited from both obj/inherit/object.c and obj/inherit/modules/m_container.c; using the definition in obj/inherit/modules/m_container.c.
+obj/inherit/room.c line 60: Illegal to redefine 'nomask' function "create"
+obj/inherit/room.c line 105: Undefined function query_light
+obj/inherit/room.c line 105: Type mismatch ( int vs unknown ) when initializing light
+obj/inherit/room.c line 34: parse error
+obj/inherit/room.c line 103: Undefined function query_light
+obj/inherit/room.c line 103: Type mismatch ( int vs unknown ) when initializing light
+obj/inherit/room.c line 36: parse error
+obj/inherit/base.c line 51: Undefined variable 'on_remove'
+obj/inherit/container.c line 35: Warning: receive_object() inherited from both obj/inherit/object.c and obj/inherit/modules/m_container.c; using the definition in obj/inherit/modules/m_container.c.
+obj/inherit/container.c line 35: Warning: query_bulk() inherited from both obj/inherit/object.c and obj/inherit/modules/m_container.c; using the definition in obj/inherit/modules/m_container.c.
+obj/inherit/container.c line 35: Warning: query_weight() inherited from both obj/inherit/object.c and obj/inherit/modules/m_container.c; using the definition in obj/inherit/modules/m_container.c.
+obj/inherit/shop.c line 52: Illegal to redefine 'nomask' function "create"
+obj/inherit/container.c line 35: Warning: receive_object() inherited from both obj/inherit/object.c and obj/inherit/modules/m_container.c; using the definition in obj/inherit/modules/m_container.c.
+obj/inherit/container.c line 35: Warning: query_bulk() inherited from both obj/inherit/object.c and obj/inherit/modules/m_container.c; using the definition in obj/inherit/modules/m_container.c.
+obj/inherit/container.c line 35: Warning: query_weight() inherited from both obj/inherit/object.c and obj/inherit/modules/m_container.c; using the definition in obj/inherit/modules/m_container.c.
+obj/inherit/container.c line 35: Warning: receive_object() inherited from both obj/inherit/object.c and obj/inherit/modules/m_container.c; using the definition in obj/inherit/modules/m_container.c.
+obj/inherit/container.c line 35: Warning: query_bulk() inherited from both obj/inherit/object.c and obj/inherit/modules/m_container.c; using the definition in obj/inherit/modules/m_container.c.
+obj/inherit/container.c line 35: Warning: query_weight() inherited from both obj/inherit/object.c and obj/inherit/modules/m_container.c; using the definition in obj/inherit/modules/m_container.c.
+obj/clone/user.c line 105: Illegal to declare global variable of type void.
+obj/clone/user.c line 105: parse error
+obj/inherit/container.c line 35: Warning: receive_object() inherited from both obj/inherit/object.c and obj/inherit/modules/m_container.c; using the definition in obj/inherit/modules/m_container.c.
+obj/inherit/container.c line 35: Warning: query_bulk() inherited from both obj/inherit/object.c and obj/inherit/modules/m_container.c; using the definition in obj/inherit/modules/m_container.c.
+obj/inherit/container.c line 35: Warning: query_weight() inherited from both obj/inherit/object.c and obj/inherit/modules/m_container.c; using the definition in obj/inherit/modules/m_container.c.
+obj/examples/monster.c line 24: Reserved type name unexpected.
+obj/examples/monster.c line 24: parse error
+obj/examples/monster.c line 24: Illegal LHS
+obj/examples/monster.c line 25: Undefined variable 'ob'
+obj/examples/torch.c line 20: Undefined function set_light
+obj/examples/torch.c line 21: Illegal to redefine 'nomask' function "create"
+obj/examples/torch.c line 20: Undefined function set_light
+obj/examples/torch.c line 21: Illegal to redefine 'nomask' function "create"

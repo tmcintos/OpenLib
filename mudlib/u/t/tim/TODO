@@ -65,4 +65,6 @@ more.c:	-rewrite more() for better efficiency and to take a func pointer
 -shutdown() -- efun for this that checks root permissions etc...
 -change semantics of looking at objects to call long() with 'look at' and to
  call interior() (or something) with 'look in'
+-change mudlib to use __DIR__ which is a handy thing I just discovered...
+ Don't you just love undocumented mud drivers?!
 </PRE>

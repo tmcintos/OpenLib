@@ -156,3 +156,5 @@ u/t/tim/tmp.c line 3: parse error
 u/t/tim/tmp.c line 5: parse error
 u/t/tim/tmp.c line 2: Warning: redefinition of #define HEY
 
+u/t/tim/test.c line 4: parse error
+u/t/tim/workroom.c line 19: Illegal to redefine 'nomask' function "create"

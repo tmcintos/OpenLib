@@ -24,3 +24,4 @@
 #include "destruct.c"
 #include "pronoun.c"
 #include "check_priv.c"
+#include "list_obs.c"

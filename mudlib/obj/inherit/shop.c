@@ -11,12 +11,12 @@ inherit ROOM;
 object storeroom;                    // The storage room for this shop
 
 void
-create()
+initialize()
 {
 
   object weap;
 
-  ::create();
+  ::initialize();
 
   storeroom = new(ROOM);                         // _clone_ a new blank room
 

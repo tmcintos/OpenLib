@@ -18,9 +18,8 @@ inherit WEAPON;
 //modifiers)  This may be modified at any time, but 
 //annoucements WILL be made if it does.
  
-void create()
+void setup()
 {
-  ::create();
   set_weapon_info(({
   14,    //damage bonus
   7,    //damage range (damage of 14-20 per hit, avging at 17)

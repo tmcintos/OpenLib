@@ -100,6 +100,6 @@ die()
     }
     destruct(this_object());
   } else {
-    living::die();
+    ::die();
   }
 }

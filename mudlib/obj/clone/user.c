@@ -31,7 +31,7 @@ private string* channels;           // list of subscribed channels
 /*
  * Applies
  */
-void   create();
+void   low_setup();
 nomask void remove();
 void   write_prompt();
 void   write_ed_prompt(int mode);
@@ -101,9 +101,9 @@ private int cmd_hook(string args);
  */
 
 void
-create()
+low_setup()
 {
-  ::create();
+  ::low_setup();
   channels = ({});
   aliases = ([]);
   env_vars = ([]);
@@ -124,7 +124,7 @@ remove()
   if(connection)
     destruct(connection, 1);
 
-  return living::remove();
+  return ::remove();
 }
 
 void
@@ -395,7 +395,7 @@ query_connection()
 private int
 set_name(string username)
 {
-  living::set_name(username);
+  ::set_name(username);
 }
 
 private int

@@ -16,5 +16,4 @@ create()
   set_exits((["start" : "/d/base/start.c",
               "void" : "/adm/obj/daemon/void.c",
 	      ]));
-  replace_program(ROOM);
 }

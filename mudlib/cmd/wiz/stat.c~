@@ -25,7 +25,7 @@ main(string* argv, string* argv2)
     info += sprintf("Coins: %i silver, %i gold.\n",
 		    ob->query_money()[0], ob->query_money()[1]);
   }
-  if( ob->query_object_type() & OBJECT_CONTAINER ) {
+  if( ob->query_object_class() & OBJECT_CONTAINER ) {
     info += sprintf("Weight Cap: %i\n", ob->query_weight_capacity());
     info += sprintf("Bulk Cap: %i\n", ob->query_bulk_capacity());
     info += sprintf("Rigid: %s lbs.\n", (ob->query_rigid() ? "yes" : "no"));

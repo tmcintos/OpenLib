@@ -1,55 +1,20 @@
 /*  -*- LPC -*-  */
-// container.c:  Container object by Tim 4/20/96
+// container.c:  Functions for containers
+// Tim 23 Apr 96
 
-#pragma save_binary
+#include "m_container.h"
 
-#include <mudlib.h>
-#include <object_types.h>
-
-inherit OBJECT;
-
+//
+// Global Variables
+//
 private static int weight_capacity;
 private static int bulk_capacity;
 private static int rigid;            // rigid container or not?
 
-void create();
-string long();
-nomask int set_rigid(int tf);
-
-int query_weight_contained();
-int query_bulk_contained();
-int query_weight();
-int query_bulk();
-int receive_object(object ob);
-
-nomask int set_weight_capacity(int lbs);
-nomask int query_weight_capacity();
-nomask int set_bulk_capacity(int units);
-nomask int query_bulk_capacity();
-
-/*
- * Implementation
- */
 void
-create()
+initialize()
 {
-  ::create();
   set_object_class(query_object_class() | OBJECT_CONTAINER);
-}
-
-string
-long()
-{
-  string ret = ::long();
-  object* obs = all_inventory(this_object());
-
-  if( sizeof(obs) ) {
-    ret += "\nIt contains:\n";
-    foreach(object ob in obs) {
-      string tmp = ob->short();
-      if( tmp ) ret += "  " + capitalize(tmp) + "\n";
-    }
-  }
 }
 
 nomask int
@@ -107,13 +72,15 @@ query_bulk()
 int
 receive_object(object ob)
 {
+  string sh = capitalize(short());
+
   if( bulk_capacity && 
       ob->query_bulk() + query_bulk_contained() > bulk_capacity )
-    return notify_fail(short() + " is not large enough to hold that!\n");
+    return notify_fail(sh + " will not hold that large of object!\n");
 
   if( weight_capacity &&
       ob->query_weight() + query_weight_contained() > weight_capacity )
-    return notify_fail(short() + " is not strong enough to hold that!\n");
+    return notify_fail(sh + " cannot hold that much weight!\n");
 
   return 1;
 }

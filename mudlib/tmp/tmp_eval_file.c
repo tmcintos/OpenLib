@@ -4,4 +4,4 @@
 #undef unguarded
 mixed eval() { 
   object me = this_player();
-  return me->query_connection()->set_gender(1); }
+  return sizeof(""); }

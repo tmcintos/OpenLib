@@ -6,9 +6,8 @@
 
 inherit WEAPON;
 
-void create()
+void setup()
 {
-  ::create();
   set_weapon_info(({
   50,    //damage bonus
   60,    //damage range

@@ -1,15 +1,14 @@
 #obj/clone/user/human.c
+slen 24
+swid 80
+curr_line 24
+lines 33
+file ({"login_d: screen is not a supported terminal type","Welcome to Dysfunctional Mud!","-------------------------------------------------------------------------------","                D y s f u n c t i o n a l  M u d  N e w s","			last update: 04/22/96","-------------------------------------------------------------------------------","* Please send mail to Tim if you want to become a developer.  Additionally,","  all developers should join the mailing list by sending mail to","  majordomo@knapp38.res.iastate.edu with the string 'subscribe dysfunctional'","  in the body of the letter.","","* If you want to take on a project or have any new project ideas, send mail","  to Tim.","","* The bulletin board object is progressing, so we should have boards soon. :)","","* There is now a 'changelog' command which appends an entry to the ChangeLog","  file in the current working directory.","","* Changed ls command back to take -c flag for color.  Alias ls to ls -c if","  you want color support on all the time.","","* Changed set_ids() to add_ids() in OBJECT. Make changes accordingly.","","* Updated example objects somewhat.  We need to decide on the units of bulk.","","","","","You have NEW mail.","","","",})
+callback 
 flags ({})
 coins ({30,10,})
 hit_points 0
 spell_points 0
-gender 0
-slen 24
-swid 80
-curr_line 1
-lines 23
-file ({"Welcome to Dysfunctional Mud!","-------------------------------------------------------------------------------","                D y s f u n c t i o n a l  M u d  N e w s","			last update: 04/16/96","-------------------------------------------------------------------------------","* Please send mail to Tim if you want to become a developer.  Additionally,","  all developers should join the mailing list by sending mail to","  majordomo@knapp38.res.iastate.edu with the string 'subscribe dysfunctional'","  in the body of the letter.","","* If you want to take on a project or have any new project ideas, send mail to","  Tim.","","* The bulletin board object is progressing, so we should have boards soon. :)","","* There is now a 'changelog' command which appends an entry to the ChangeLog","  file in the current working directory.","","* Changed ls command back to take -c flag for color.  Alias ls to ls -c if","  you want color support on all the time.","","","You have mail.",})
-callback 
-env_vars (["version":"Prototype Shell","PROMPT":"[%~]->","SHELL":"/obj/clone/shells/protosh","LENGTH":24,"WIDTH":80,"TITLE":"is raping the MudLib!","TERM":"vt100","noglob":1,"MORE_EXIT_END":1,"PATH":"/cmd/player:/adm/cmd/player:/cmd/wiz:/adm/cmd/wiz:/cmd/adm:/adm/cmd/adm",])
-aliases (["news":"more /adm/etc/motd","ne":"northeast","c":"clone","nod":"emote nods quietly","nw":"northwest","ww":"shout WOOOOOOO WOOOOOOO","se":"southeast","|":"more","e":"east","s":"south","brb":"shout Be right back...I\\'m going AFK!!!","w":"west","n":"north","bbb":"shout I\\'m baaaaaaaaack!!!","la":"look at","ahh":"emote ahhs","cgoss":"chat igossip:","sc":"score","i":"inventory","grin":"emote grins evilly","sw":"southwest","l":"look",])
+env_vars (["LENGTH":24,"version":"Prototype Shell","PROMPT":"[%~]->","SHELL":"/obj/clone/shells/protosh","WIDTH":80,"TERM":"vt100","noglob":1,"PATH":"/cmd/player:/adm/cmd/player:/cmd/wiz:/adm/cmd/wiz:/cmd/adm:/adm/cmd/adm","TITLE":"is raping the MudLib!","MORE_EXIT_END":1,])
+aliases (["nod":"emote nods quietly","c":"clone","bbb":"shout I\\'m baaaaaaaaack!!!","la":"look at","|":"more","cgoss":"chat igossip:","w":"west","i":"inventory","news":"more /adm/etc/motd","n":"north","se":"southeast","ahh":"emote ahhs","l":"look","brb":"shout Be right back...I\\'m going AFK!!!","sw":"southwest","ww":"shout WOOOOOOO WOOOOOOO","sc":"score","e":"east","ne":"northeast","grin":"emote grins evilly","nw":"northwest","s":"south",])
 channels ({"igossip","interchat",})

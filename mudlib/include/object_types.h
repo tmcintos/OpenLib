@@ -13,8 +13,8 @@
 #define OBJECT_POTION     256
 #define OBJECT_WAND       512
 #define OBJECT_CONTAINER  1024
+#define OBJECT_ROOM       2048
 /*
-#define RESERVED          2048
 #define RESERVED          4098
 #define RESERVED          8192
 #define RESERVED          16348

@@ -5,9 +5,8 @@
  
 inherit ARMOUR;
  
-void create()
+void setup()
 {
-  ::create();
   set_short("Kyricc's cloak of Darkness");
   set_long(
 "This is Kyricc's cloak of Darkness.  It is made of the finest\n"

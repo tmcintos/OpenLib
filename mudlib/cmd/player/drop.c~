@@ -5,34 +5,42 @@
 
 #include <command.h>
 
+private void do_drop(object ob, string name);
+
 int
 main(string what)
 {
-  object ob;
-  int err;
+  string name = this_player()->query_cap_name();
 
-  if(!what || what == "")
-    return notify_fail("Drop what??\n");
+  if( !what ) return notify_fail("Drop what??\n");
 
-  ob = present(what, this_player());
+  if( lower_case(what) == "all" ) {
+    foreach(object ob in all_inventory(this_player()))
+      if( ob->drop() ) do_drop(ob, name);
+  } else {
+    object ob = present(what, this_player());
 
-  if(!ob)
-    return notify_fail(sprintf("You don't have %s.\n", what));
-  
-  if(!ob->drop())
-    return notify_fail("You can't drop that!\n");
+    if( !ob )
+      return notify_fail(sprintf("You don't have %s.\n", what));
+
+    if( !ob->drop() )
+      return notify_fail("You can't drop that!\n");
+
+    do_drop(ob, name);
+  }
+  return 1;
+}
+   
+private void
+do_drop(object ob, string name)
+{
+  string short = ob->short();
 
 // might want an ob->on_drop() here...
 
-  err = ob->move(environment(this_player()));
+  if( !(ob->move(environment(this_player()))) )
+    return write("You fail\n");
 
-  if(err < 1)
-    return notify_fail("You fail.\n");       // error checking later
-
-  say(sprintf("%s drops %s.\n",
-	      this_player()->query_cap_name(),
-	      ob->short()));
-
-  write("Ok.\n");
-  return 1;
+  say(sprintf("%s drops %s.\n", name, short));
+  printf("You drop %s.\n", short);
 }

@@ -1,9 +1,14 @@
 #obj/clone/user/human.c
+slen 80
+swid 80
+curr_line 1
+lines 27
+file ({"Welcome to Dysfunctional Mud!","-------------------------------------------------------------------------------","                D y s f u n c t i o n a l  M u d  N e w s","			last update: 04/22/96","-------------------------------------------------------------------------------","* Please send mail to Tim if you want to become a developer.  Additionally,","  all developers should join the mailing list by sending mail to","  majordomo@knapp38.res.iastate.edu with the string 'subscribe dysfunctional'","  in the body of the letter.","","* If you want to take on a project or have any new project ideas, send mail","  to Tim.","","* The bulletin board object is progressing, so we should have boards soon. :)","","* There is now a 'changelog' command which appends an entry to the ChangeLog","  file in the current working directory.","","* Changed ls command back to take -c flag for color.  Alias ls to ls -c if","  you want color support on all the time.","","* Changed set_ids() to add_ids() in OBJECT. Make changes accordingly.","","* Updated example objects somewhat.  We need to decide on the units of bulk.","","","",})
+callback 
 flags ({})
 coins ({0,0,})
 hit_points 100
 spell_points 0
-gender 0
-env_vars (["nmsh_alias":(["l":"look $*","n":"north","i":"inventory","s":"south","sw":"southwest","e":"east","ne":"northeast","se":"southeast","bio":"biography","nw":"northwest","exa":"look at $*","w":"west","u":"up","d":"down",]),"nmsh_nick":([]),"version":"Prototype Shell","PATH":"/cmd/wiz:/adm/cmd/wiz:/cmd/player:/adm/cmd/player:/adm/:cmd/wiz:/adm/cmd/wiz:/cmd/wiz:/adm/cmd/wiz","SHELL":"/obj/clone/shells/protosh","nmsh_xverb":(["'":"say $*",":":"emote $*",]),"TERM":"ansi",])
+env_vars (["PATH":"/cmd/wiz:/adm/cmd/wiz:/cmd/player:/adm/cmd/player:/adm/:cmd/wiz:/adm/cmd/wiz:/cmd/wiz:/adm/cmd/wiz","nmsh_nick":([]),"nmsh_xverb":(["'":"say $*",":":"emote $*",]),"TERM":"ansi","version":"Prototype Shell","SHELL":"/obj/clone/shells/protosh","nmsh_alias":(["exa":"look at $*","i":"inventory","se":"southeast","l":"look $*","ne":"northeast","bio":"biography","e":"east","w":"west","d":"down","n":"north","s":"south","u":"up","nw":"northwest","sw":"southwest",]),])
 aliases ([])
 channels ({})

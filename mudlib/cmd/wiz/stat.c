@@ -35,7 +35,10 @@ main(string* argv, string* argv2)
   info += sprintf("Base Bulk: %i\n", ob->query_base_bulk());
   info += sprintf("Bulk: %i\n", ob->query_bulk());
   info += sprintf("Light Level: %i\n", ob->query_light());
-  info += "Id's: " + sprintf("%@s,", ob->query_ids()) + "\n";
+  info += "Id's: ";
+  foreach(string id in ob->query_ids())
+    info += id + ", ";
+  info += "\n";
   info += sprintf("Value: %i silver, %i gold.\n",
 		    ob->query_value()[0], ob->query_value()[1]);
 

@@ -8,7 +8,7 @@ inherit MONSTER "/human";
 void
 setup()
 {
-  object weap;
+  object ob;
 
   set_name("beavis");
   add_ids(({ "kid" }));
@@ -23,7 +23,14 @@ setup()
 	     "Shutup Butthead!!",
 	     "I gotta go to the bathroom.",
 	   }));
-  weap = new("/obj/examples/weapon");
-  weap->move(this_object());
-  do_wield(weap, 1, 0);
+  ob = new("/obj/examples/weapon");
+  ob->move(this_object());
+  do_wield(ob, 1, 0);
+
+  ob = new("/obj/examples/armour");
+  ob->move(this_object());
+  do_wear(ob, 1, 0);
+
+  ob = new("/obj/examples/container");
+  ob->move(this_object());
 }

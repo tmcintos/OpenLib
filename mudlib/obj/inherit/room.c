@@ -20,18 +20,19 @@
 #pragma save_binary
 
 #include <mudlib.h>
+#include <modules.h>
 #include <object_types.h>
 
 inherit INHERIT_DIR "/inttostr";         /* converts int's to strings */
 inherit CONTAINER;
+inherit M_LIGHT;
 
 private static boolean no_attacks_here;  /* can we attack here? 1=no 0=yes */
 private static mapping exits;            /* hmm...who knows */
 private static mapping items;            /* sets mapping for items */
 
 // Prototypes
-void create();
-int clean_up(int inh);
+void initialize();
 void init();
 nomask boolean query_no_attack();
 string long();
@@ -42,12 +43,10 @@ nomask void set_items(mapping id_long_mapping);  // long can be str/function
 nomask int move_to_room();            // player command
 nomask string exa_item(string item);  // returns long desc of item
 
-// Overload of default constructor
- 
 void
-create()
+initizalize()
 {
-  ::create();
+  ::initialize();
   items =([]);
   exits = ([]);
 
@@ -57,22 +56,6 @@ create()
   // is complete.
   if( replaceable(this_object()) )
     replace_program(ROOM);
-}
-
-/*
- * override of object::clean_up() which we _don't_ want to call
- * If this is a regular room and no living present...remove
- */
-int
-clean_up(int inherited)
-{
-  if(inherited)
-    return 0;
-
-  if( !sizeof(filter_array(all_inventory(this_object()), (: living :))) )
-    destruct(this_object());
-
-  return 1;
 }
 
 //Throw this into the generic move_living() func so that the 
@@ -180,14 +163,6 @@ move_to_room()
 {
   mixed dest_ob = exits[query_verb()];
 
-  // for relative paths
-  if(stringp(dest_ob)) {
-    string* destdir = explode(dest_ob, "#");
-    string path = base_name(this_object());
-    path = path[0..strsrch(path, '/', -1)];
-    destdir[<1] = absolute_path(path, destdir[<1]);
-    dest_ob = implode(destdir, "#");
-  }
   return this_player()->move_player(dest_ob, query_verb());
 }
 

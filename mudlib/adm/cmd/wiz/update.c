@@ -112,7 +112,7 @@ update_file(string file, boolean reload, boolean silent)
   }
 
   if(reload) {
-    err = catch(call_other(file, "???"));
+    err = catch(load_object(file));
 
     if(!err) {
       if(!silent)

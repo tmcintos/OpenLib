@@ -4,9 +4,20 @@
 
 inherit WEAPON;
 
-void create()
+void setup()
 {
-  ::create();
+  add_ids( ({"sword","long sword","longsword","weapon"}) );
+  set_short("a long sword");
+  set_long(@ENDLONG
+This is a basic long sword created for the basic purpose of
+killing.  It's blade is long, sharp, and carefuly polished,
+the ideal weapon for creating havoc in the world.
+ENDLONG);
+
+  set_weight(8);                                 // 8 lbs.(?) --Tim
+  set_bulk(3);                                   // who knows?
+  set_value(({ 40, 0 }));                        // 40 silver, 0 gold --Tim
+
   set_weapon_info(({
   5,    //damage bonus
   6,    //damage range
@@ -23,15 +34,4 @@ void create()
   WEAP_SKILL_LONGSWORD, //Skill weapon uses.
   }));
   set_hands(1);
-
-  set_short("a long sword");
-  set_long(@ENDLONG
-This is a basic long sword created for the basic purpose of
-killing.  It's blade is long, sharp, and carefuly polished,
-the ideal weapon for creating havoc in the world.
-ENDLONG);
-
-  add_ids(({"sword","long sword","longsword","weapon"}));
-  set_weight(8);                                 // 8 lbs.(?) --Tim
-  set_value(({ 40, 0 }));                        // 40 silver, 0 gold --Tim
 }

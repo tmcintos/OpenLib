@@ -18,8 +18,8 @@
 #define MSG_PROMPT "prompt"
 #define MSG_SYS "system"
 
-inherit LIVING;
 inherit INHERIT_DIR "/more";
+inherit LIVING;
 
 private static object connection;   // user should always have a conn.
 private static string cap_name;     // name with proper capitalization
@@ -103,7 +103,7 @@ private int cmd_hook(string args);
 void
 create()
 {
-  living::create();
+  ::create();
   channels = ({});
   aliases = ([]);
   env_vars = ([]);
@@ -124,7 +124,7 @@ remove()
   if(connection)
     destruct(connection, 1);
 
-  return living::remove();
+  return ::remove();
 }
 
 void
@@ -395,7 +395,7 @@ query_connection()
 private int
 set_name(string username)
 {
-  living::set_name(username);
+  ::set_name(username);
 }
 
 private int

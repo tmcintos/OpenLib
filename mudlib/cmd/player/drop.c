@@ -41,6 +41,7 @@ do_drop(object ob, string name)
   if( !(ob->move(environment(this_player()))) )
     return write("You fail\n");
 
+  if( ob ) short = ob->short();
   say(sprintf("%s drops %s.\n", name, short));
   printf("You drop %s.\n", short);
 }

@@ -26,8 +26,8 @@ int no_castle_flag;
 
 #define ONE_EXIT(DEST, DIR, SH, LO, LIGHT)\
 void reset(int arg) { EXTRA_RESET }\
-void create() {\
-  ::create();\
+void initialize() {\
+  ::initialize();\
   reset(0);\
   set_light(LIGHT); set_short(SH); set_long(LO);\
   set_exits(([ DIR : "/"DEST ])); } \
@@ -36,8 +36,8 @@ string long() { EXTRA_LONG + ::long(); }
 
 #define TWO_EXIT(DEST1, DIR1, DEST2, DIR2, SH, LO, LIGHT)\
 void reset(int arg) { EXTRA_RESET }\
-void create() {\
-  ::create();\
+void initialize() {\
+  ::initialize();\
   reset(0);\
   set_light(LIGHT); set_short(SH); set_long(LO);\
   set_exits(([ DIR1 : "/"DEST1, DIR2 : "/"DEST2 ])); } \
@@ -46,8 +46,8 @@ string long() { EXTRA_LONG + ::long(); }
 
 #define THREE_EXIT(DEST1, DIR1, DEST2, DIR2, DEST3, DIR3, SH, LO, LIGHT)\
 void reset(int arg) { EXTRA_RESET }\
-void create() {\
-  ::create();\
+void initialize() {\
+  ::initialize();\
   reset(0);\
   set_light(LIGHT); set_short(SH); set_long(LO);\
   set_exits(([ DIR1 : "/"DEST1, DIR2 : "/"DEST2, DIR3 : "/"DEST3 ])); } \
@@ -56,8 +56,8 @@ string long() { EXTRA_LONG + ::long(); }
 
 #define FOUR_EXIT(DEST1, DIR1, DEST2, DIR2, DEST3, DIR3, DEST4, DIR4, SH, LO, LIGHT)\
 void reset(int arg) { EXTRA_RESET }\
-void create() {\
-  ::create();\
+void initialize() {\
+  ::initialize();\
   reset(0);\
   set_light(LIGHT); set_short(SH); set_long(LO);\
   set_exits(([ DIR1 : "/"DEST1, DIR2 : "/"DEST2, DIR3 : "/"DEST3, DIR4 : "/"DEST4 ])); } \

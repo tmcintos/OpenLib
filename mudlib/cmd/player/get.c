@@ -57,6 +57,8 @@ do_get(object ob, object source, string name)
   if( !(ob->move(this_player())) )
     return write("You fail.\n");
 
+  if( ob ) short = ob->short();
+
   if( source != environment(this_player()) ) {
     say(sprintf("%s gets %s from %s.\n", name, short, source->short()));
     printf("You get %s from %s.\n", short, source->short());

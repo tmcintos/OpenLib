@@ -28,7 +28,7 @@ private static string Prompt;
 private static string *Stack, *History; 
 private static object owner;
  
-static void create() { 
+static void initialize() { 
     Nicknames = ([]); 
     Aliases = ([ "l" : "look $*", "bio" : "biography", "i" : "inventory",
       "n" : "north", "s" : "south", "e" : "east", "w" : "west",
