@@ -2,7 +2,7 @@
 // more.c
 
 // Temporary!!
-#define CHUNK 25
+#define CHUNK 24
 #define WIDTH 80
 
 /* Prototypes */

@@ -5,7 +5,8 @@ hit_points 100
 spell_points 0
 sex 1
 title "is sick and grumpy"
-current_dir "/cmd/player"
+current_dir "/obj/daemon"
 term 0
+aliases (["sc":"score","l":"look","i":"inventory","sw":"southwest","se":"southeast","nw":"northwest","ne":"northeast","w":"west","e":"east","s":"south","n":"north",])
 Hook 0
-path "/u/l/lol:/cmd/player:/cmd/wiz:/cmd/adm:/adm/cmd/player:/adm/cmd/wiz:/adm/cmd/adm"
+search_path ({"/cmd/player","/adm/cmd/wiz","/cmd/wiz","/adm/cmd/adm","/adm/cmd/player","/cmd/adm",})

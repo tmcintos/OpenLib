@@ -1,0 +1,14 @@
+u/t/tim/test.c line 5: parse error
+u/t/tim/cmdloop.c line 13: No such inherited function ::init
+u/t/tim/cmdloop.c line 44: Number of arguments disagrees with previous definition.
+u/t/tim/cmdloop.c line 43: Number of arguments disagrees with previous definition.
+u/t/tim/test.c line 5: parse error
+u/t/tim/test.c line 13: parse error
+u/t/tim/test.c line 13: Illegal LHS
+u/t/tim/test.c line 14: parse error
+u/t/tim/test.c line 14: Illegal LHS
+u/t/tim/adm/remote.c line 17: Undefined variable 'arg'
+u/t/tim/test4.c line 6: parse error
+u/t/tim/descartes.c line 14: Undefined variable 'lines'
+u/t/tim/descartes.c line 26: Undefined function set_sex
+u/t/tim/descartes.c line 26: Undefined function set_sex

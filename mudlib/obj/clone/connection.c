@@ -1,13 +1,11 @@
 /*  -*- LPC -*-  */
 // initial connection for logging in
-#pragma no_inherit
+// Written by Tim sometime in fall 1995
 
 #include <mudlib.h>
 #include <login.h>
 #include <daemons.h>
 #include <uid.h>
-
-inherit OBJECT;
 
 private string name;             // username
 private string password;         // password, crypted
@@ -16,15 +14,16 @@ private string email_addr;       // user's email address
 private string home_dir;         // user's home directory
 private string body;             // user's body file
 private int    login_time;       // time() when user logged in
+private int    logout_time;      // time() when user quit
 private string login_from;       // ip_name from which user connected
-private boolean active;          // TRUE if this is an active connection ob
+static boolean is_active;        // active if logon() has been called
 
 // override of object::remove
 
 int
 remove()
 {
-  if(active)
+  if(is_active)
     return -1;
   else
     return 1;
@@ -33,12 +32,13 @@ remove()
 void
 net_dead()
 {
-  destruct(this_object());
+  LOGIN_D->dump_connection(this_object());
 }
 
 void
 logon()
 {
+  is_active = 1;
   LOGIN_D->logon();
 }
 
@@ -74,13 +74,8 @@ string query_password() { return password; }
 string query_home_dir() { return home_dir; }
 string query_body() { return body; }
 int    query_login_time() { return login_time; }
+int    query_logout_time() { return logout_time; }
 string query_login_from() { return login_from; }
-
-void
-set_active()
-{
-  active == TRUE;
-}
 
 int
 set_name(string arg)
@@ -89,7 +84,7 @@ set_name(string arg)
     return 0;
 
   name = arg;
-  set_ids(({ "connection-"+name }));
+
   return 1;
 }
 
@@ -138,5 +133,12 @@ set_login_time(int arg)
 {
   login_time = arg;
   login_from = query_ip_name(this_object());
+  return 1;
+}
+
+int
+set_logout_time(int arg)
+{
+  logout_time = arg;
   return 1;
 }

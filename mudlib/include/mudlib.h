@@ -16,6 +16,7 @@
 #define ROOM	     INHERIT_DIR "/base/room"
 #define LIVING       INHERIT_DIR "/base/living"
 #define DAEMON       INHERIT_DIR "/base/daemon"
+#define SHOP         INHERIT_DIR "/shop"
 #define WEAPON       INHERIT_DIR "/weapon"
 #define ARMOUR       INHERIT_DIR "/armour"
 #define USER         CLONE_DIR "/user"

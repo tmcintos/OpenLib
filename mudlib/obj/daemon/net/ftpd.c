@@ -1,6 +1,5 @@
 /*  -*- LPC -*-  */
 #pragma save_binary
-#pragma no_clone
 
 /*
  * ftpd.c:
@@ -292,6 +291,9 @@
  *   root. (still doesn't prevent full paths in error messages)
  * o Bumped rev # to 5.81 because I can do that :)
  *
+ * 96.1.20 Tim
+ * o fixed an old i[3..-4] type range statement to comply with new MudOS
+ * o fixed ftpconf.h to use network.h
  */
 
 #include <mudlib.h>
@@ -1426,7 +1428,7 @@ static void parse_comm( int fd, string str ) {
 #ifdef MESSAGE_FILES
 		if (file_size(tmp + "/.message") > 0) {
 		    tmp = read_file(tmp + "/.message");
-		    tmp = tmp[0..-2];
+		    tmp = tmp[0..<2];
 		    tmp = sprintf("250- %s\n250 %s command successful.\n",
 			  replace_string(tmp, "\n", "\n250- "), command[0]);
 		    socket_write(fd, tmp);

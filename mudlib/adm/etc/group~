@@ -22,17 +22,18 @@
 (root) Root, {admin}
 
 # People who run the mud
-(admin) tim, casper, quint
+(admin) tim, kyricc
 
 # People who do mudlib work
-(mudlib) {admin}, kyricc, lol, hamnsnock
+(mudlib) {admin}, casper, quint, talen, exe
 
 # The system's uid
 (system) System
 
 # Domain groups, domain uid (directory name) must be a member!
-(base) base
+  # Base domain
+  (base) base
 
-# Hmm, who could this be?? (leave this one blank always)
-(all) {mudlib}
 # If you want to LOCK the mud, define this list as the allowed users.
+# Otherwise this list should be empty.
+(all) {mudlib}, hamnsnock, craig, karrde

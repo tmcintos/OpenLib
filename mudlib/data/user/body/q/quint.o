@@ -1,12 +1,8 @@
-#obj/clone/user/human.c
+#obj/clone/user.c
 name "quint"
 coins ({0,0,})
 hit_points 100
-spell_points 0
-sex 0
-title "the greatest test character of all"
-current_dir "/u/q/quint"
-term "vt100"
-aliases (["n":"north","s":"south","e":"east","w":"west","ne":"northeast","nw":"northwest","se":"southeast","sw":"southwest","i":"inventory","l":"look","sc":"score",])
-Hook 0
-path "/cmd/player:/adm/cmd/wiz:/adm/cmd/adm:/cmd/wiz:/adm/cmd/player:/cmd/adm"
+title "says: bleh"
+aliases (["sw":"southwest","nw":"northwest","w":"west","sc":"score","i":"inventory","se":"southeast","ne":"northeast","n":"north","e":"east","l":"look","s":"south",])
+channels ({})
+search_path ({"/cmd/player","/adm/cmd/wiz","/cmd/wiz","/adm/cmd/adm","/adm/cmd/player","/cmd/adm",})

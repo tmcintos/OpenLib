@@ -1,0 +1,101 @@
+obj/clone/shsh.c line 61: Warning: redefinition of #define NULL
+
+obj/clone/shsh.c line 1621: Warning: Unknown \x char.
+obj/clone/shsh.c line 61: Warning: redefinition of #define NULL
+
+obj/clone/shsh.c line 1621: Warning: Unknown \x char.
+obj/clone/shsh.c line 61: Warning: redefinition of #define NULL
+
+obj/clone/shsh.c line 1619: Warning: Unknown \x char.
+obj/clone/shsh.c line 61: Warning: redefinition of #define NULL
+
+obj/clone/shsh.c line 1619: Warning: Unknown \x char.
+tmp/tmp_eval_file.c line 5: parse error
+obj/inherit/cmd_module.c line 61: Undefined variable 'arg'
+cmd/player/exa.c line 25: Type of returned value doesn't match function return type ( int vs void ).
+cmd/player/help.c line 62: Undefined variable 'CMD_D'
+cmd/player/look.c line 59: End of file in text block
+cmd/player/look.c line 59: parse error
+cmd/player/help.c line 44: parse error
+cmd/player/help.c line 45: Illegal LHS
+cmd/player/help.c line 46: parse error
+cmd/player/help.c line 47: Illegal LHS
+cmd/player/help.c line 53: parse error
+cmd/player/help.c line 55: Illegal LHS
+adm/obj/daemon/logind.c line 244: Bad argument 1 to efun explode()
+tmp/tmp_eval_file.c line 5: Warning: A negative constant as the second element of arr[x..y] no longer means indexing from the end.  Use arr[x..<y]
+cmd/player/exa.c line 25: Type of returned value doesn't match function return type ( int vs void ).
+tmp/tmp_eval_file.c line 5: Left argument of -> is not a class
+tmp/tmp_eval_file.c line 5: parse error
+tmp/tmp_eval_file.c line 5: parse error
+tmp/tmp_eval_file.c line 5: parse error
+tmp/tmp_eval_file.c line 5: parse error
+cmd/wiz/update.c line 22: Wrong number of macro arguments
+cmd/wiz/update.c line 22: Undefined variable 'RESOLVE_PATH'
+cmd/wiz/update.c line 86: Number of arguments disagrees with previous definition.
+obj/inherit/cmd_module.c line 43: Bad assignment ( string vs string * ).
+cmd/wiz/update.c line 22: Wrong number of macro arguments
+cmd/wiz/update.c line 22: Undefined variable 'RESOLVE_PATH'
+cmd/player/help.c line 88: Number of arguments disagrees with previous definition.
+cmd/wiz/clone.c line 16: Undefined variable 'file'
+cmd/wiz/man.c line 30: Wrong number of arguments to flag
+    Expected: 1  Got: 2
+cmd/wiz/man.c line 31: Wrong number of arguments to flag
+    Expected: 1  Got: 2
+cmd/wiz/man.c line 85: Number of arguments disagrees with previous definition.
+tmp/tmp_eval_file.c line 5: parse error
+tmp/tmp_eval_file.c line 6: End of file in string
+tmp/tmp_eval_file.c line 6: parse error
+cmd/wiz/ls.c line 27: Wrong number of arguments to flag
+    Expected: 1  Got: 2
+cmd/wiz/ls.c line 52: Number of arguments disagrees with previous definition.
+cmd/wiz/ls.c line 76: Wrong number of arguments to flag
+    Expected: 1  Got: 2
+cmd/wiz/ls.c line 85: Wrong number of arguments to flag
+    Expected: 1  Got: 2
+cmd/wiz/ls.c line 86: Wrong number of arguments to flag
+    Expected: 1  Got: 2
+cmd/wiz/ls.c line 110: Wrong number of arguments to flag
+    Expected: 1  Got: 2
+cmd/wiz/ls.c line 34: Wrong number of arguments to do_ls
+    Expected: 4  Got: 5
+cmd/wiz/ls.c line 34: Bad type for argument 2 ( string * vs int )
+cmd/wiz/ls.c line 40: Wrong number of arguments to do_ls
+    Expected: 4  Got: 5
+cmd/wiz/ls.c line 40: Bad type for argument 2 ( string * vs int )
+cmd/wiz/ls.c line 43: Wrong number of arguments to do_ls
+    Expected: 4  Got: 5
+cmd/wiz/ls.c line 43: Bad type for argument 2 ( string * vs int )
+tmp/tmp_eval_file.c line 5: Bad argument 1 to efun strlen()
+cmd/wiz/last.c line 96: Number of arguments disagrees with previous definition.
+tmp/tmp_eval_file.c line 5: parse error
+tmp/tmp_eval_file.c line 5: parse error
+obj/clone/connection.c line 39: Undefined variable 'active'
+adm/cmd/wiz/rm.c line 14: Wrong number of arguments to flag
+    Expected: 1  Got: 2
+adm/cmd/wiz/rm.c line 40: Number of arguments disagrees with previous definition.
+tmp/tmp_eval_file.c line 5: Bad argument 1 to efun destruct()
+tmp/tmp_eval_file.c line 5: parse error
+tmp/tmp_eval_file.c line 5: Undefined variable 'finger'
+tmp/tmp_eval_file.c line 5: parse error
+tmp/tmp_eval_file.c line 5: Undefined function enable_wizard
+adm/cmd/wiz/cp.c line 31: Wrong number of arguments to flag
+    Expected: 1  Got: 2
+adm/cmd/wiz/cp.c line 40: Number of arguments disagrees with previous definition.
+tmp/tmp_eval_file.c line 5: Left argument of -> is not a class
+tmp/tmp_eval_file.c line 5: Undefined function remove
+tmp/tmp_eval_file.c line 5: Left argument of -> is not a class
+obj/clone/connection.c line 87: Undefined function set_ids
+tmp/tmp_eval_file.c line 5: parse error
+adm/cmd/player/chfn.c line 91: End of file in text block
+adm/cmd/player/chfn.c line 91: parse error
+adm/cmd/player/chfn.c line 90: parse error
+cmd/player/exa.c line 25: Type of returned value doesn't match function return type ( int vs void ).
+cmd/player/put.c line 10: parse error
+cmd/player/put.c line 14: parse error
+cmd/player/put.c line 10: parse error
+cmd/player/put.c line 14: parse error
+cmd/player/exa.c line 25: Type of returned value doesn't match function return type ( int vs void ).
+obj/clone/shsh.c line 61: Warning: redefinition of #define NULL
+
+obj/clone/shsh.c line 1619: Warning: Unknown \x char.

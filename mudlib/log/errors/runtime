@@ -1,0 +1,891 @@
+
+[ERROR] *Destruct on vital object failed: new copy failed to reload.  obj : (adm/simul_efun)
+  file: adm/efuns/destruct.c:11
+  prgm: adm/simul_efun.c
+  func: destruct
+  args: ( 676092, )
+
+[ERROR] *Destruct on vital object failed: new copy failed to reload.  obj : (adm/simul_efun)
+  file: adm/efuns/destruct.c:11
+  prgm: adm/simul_efun.c
+  func: destruct
+  args: ( 676092, )
+
+[ERROR] *Destruct on vital object failed: new copy failed to reload.  obj : (adm/simul_efun)
+  file: adm/efuns/destruct.c:11
+  prgm: adm/simul_efun.c
+  func: destruct
+  args: ( 676092, )
+
+[ERROR] *Destruct on vital object failed: new copy failed to reload.  obj : (adm/simul_efun)
+  file: adm/efuns/destruct.c:11
+  prgm: adm/simul_efun.c
+  func: destruct
+  args: ( 676092, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 882460, )
+
+[ERROR] *Destruct on vital object failed: new copy failed to reload.  obj : (adm/simul_efun)
+  file: adm/efuns/destruct.c:11
+  prgm: adm/simul_efun.c
+  func: destruct
+  args: ( 676092, )
+
+[ERROR] *Destruct on vital object failed: new copy failed to reload.  obj : (adm/simul_efun)
+  file: adm/efuns/destruct.c:11
+  prgm: adm/simul_efun.c
+  func: destruct
+  args: ( 786024, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/printf.c:8
+  prgm: adm/simul_efun.c
+  func: printf
+  args: ( 1061872, 1639164, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/printf.c:8
+  prgm: adm/simul_efun.c
+  func: printf
+  args: ( 1061872, 1025396, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/printf.c:8
+  prgm: adm/simul_efun.c
+  func: printf
+  args: ( 1061872, 1050444, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/printf.c:8
+  prgm: adm/simul_efun.c
+  func: printf
+  args: ( 1061872, 1647196, )
+
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( 1648716, )
+
+[ERROR] *Error in loading object '/obj/inherit/cmd_module'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/cmd/player/exa'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/cmd/player/help'
+  obj : (adm/obj/daemon/cmdd)
+  file: adm/obj/daemon/cmdd.c:84
+  prgm: adm/obj/daemon/cmdd.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/cmd/player/look'
+  obj : (adm/obj/daemon/cmdd)
+  file: adm/obj/daemon/cmdd.c:84
+  prgm: adm/obj/daemon/cmdd.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *(s)printf(): More arguments specified than passed. (arg: 2)
+  obj : (cmd/player/help)
+  file: cmd/player/help.c:59
+  prgm: cmd/player/help.c
+  func: _main
+  args: ( "tim", 3, ({ /* sizeof() == 3 */
+  "help",
+  "-t",
+  "tim"
+}), ({ /* sizeof() == 1 */
+  "tim"
+}), )
+
+[ERROR] *Error in loading object '/cmd/player/help'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/adm/obj/daemon/logind'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_room.c:6
+  prgm: adm/simul_efun.c
+  func: tell_room
+  args: ( 0, "Beavis unwields a long sword.
+", ({ /* sizeof() == 1 */
+  u/k/kyricc/MONSTERS/monster
+}), )
+
+[ERROR] *Error in loading object '/cmd/player/exa'
+  obj : (adm/obj/daemon/cmdd)
+  file: adm/obj/daemon/cmdd.c:84
+  prgm: adm/obj/daemon/cmdd.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/u/e/evergreen/editord'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/u/e/evergreen/editord'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/u/e/evergreen/editord'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/u/e/evergreen/editord'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 739568, )
+
+[ERROR] *Array index out of bounds.
+  obj : (u/k/kyricc/MONSTERS/butthead)
+  file: obj/clone/monster.c:55
+  prgm: obj/clone/monster.c
+  func: random_action
+  args: ( )
+
+[ERROR] *Array index out of bounds.
+  obj : (u/k/kyricc/MONSTERS/beavis)
+  file: obj/clone/monster.c:55
+  prgm: obj/clone/monster.c
+  func: random_action
+  args: ( )
+
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( 817600, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 739292, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 739480, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 883116, )
+
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( 800908, )
+
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( 1101032, )
+
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( 1099476, )
+
+[ERROR] *Bad argument 1 to lower_case()
+Expected: string Got: 0.
+  obj : (obj/daemon/net/httpd)
+  file: obj/daemon/net/httpd.c:84
+  prgm: obj/daemon/net/httpd.c
+  func: read_callback
+  args: ( 4, 1053160, )
+
+[ERROR] *Array index out of bounds.
+  obj : (obj/daemon/net/httpd)
+  file: obj/daemon/net/httpd.c:82
+  prgm: obj/daemon/net/httpd.c
+  func: read_callback
+  args: ( 4, 954524, )
+
+[ERROR] *Array index out of bounds.
+  obj : (obj/daemon/net/httpd)
+  file: obj/daemon/net/httpd.c:82
+  prgm: obj/daemon/net/httpd.c
+  func: read_callback
+  args: ( 4, 1034240, )
+
+[ERROR] *Array index out of bounds.
+  obj : (obj/daemon/net/httpd)
+  file: obj/daemon/net/httpd.c:82
+  prgm: obj/daemon/net/httpd.c
+  func: read_callback
+  args: ( 4, 954524, )
+
+[ERROR] *Array index out of bounds.
+  obj : (obj/daemon/net/httpd)
+  file: obj/daemon/net/httpd.c:82
+  prgm: obj/daemon/net/httpd.c
+  func: read_callback
+  args: ( 4, 1034240, )
+
+[ERROR] *Error in loading object '/cmd/wiz/update'
+  obj : (adm/obj/daemon/cmdd)
+  file: adm/obj/daemon/cmdd.c:85
+  prgm: adm/obj/daemon/cmdd.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/obj/inherit/cmd_module'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:107
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/cmd/wiz/update'
+  obj : (adm/obj/daemon/cmdd)
+  file: adm/obj/daemon/cmdd.c:85
+  prgm: adm/obj/daemon/cmdd.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/cmd/player/help'
+  obj : (adm/obj/daemon/cmdd)
+  file: adm/obj/daemon/cmdd.c:85
+  prgm: adm/obj/daemon/cmdd.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Array index out of bounds.
+  obj : (obj/daemon/net/httpd)
+  file: obj/daemon/net/httpd.c:82
+  prgm: obj/daemon/net/httpd.c
+  func: read_callback
+  args: ( 4, 947020, )
+
+[ERROR] *Array index out of bounds.
+  obj : (obj/daemon/net/httpd)
+  file: obj/daemon/net/httpd.c:82
+  prgm: obj/daemon/net/httpd.c
+  func: read_callback
+  args: ( 4, 1054588, )
+
+[ERROR] *Bad argument 1 to lower_case()
+Expected: string Got: 0.
+  obj : (obj/daemon/net/httpd)
+  file: obj/daemon/net/httpd.c:84
+  prgm: obj/daemon/net/httpd.c
+  func: read_callback
+  args: ( 4, 1054588, )
+
+[ERROR] *Array index out of bounds.
+  obj : (obj/daemon/net/httpd)
+  file: obj/daemon/net/httpd.c:82
+  prgm: obj/daemon/net/httpd.c
+  func: read_callback
+  args: ( 5, 947020, )
+
+[ERROR] *Array index out of bounds.
+  obj : (obj/daemon/net/httpd)
+  file: obj/daemon/net/httpd.c:82
+  prgm: obj/daemon/net/httpd.c
+  func: read_callback
+  args: ( 4, 1054588, )
+
+[ERROR] *Array index out of bounds.
+  obj : (obj/daemon/net/httpd)
+  file: obj/daemon/net/httpd.c:82
+  prgm: obj/daemon/net/httpd.c
+  func: read_callback
+  args: ( 5, 947020, )
+
+[ERROR] *Array index out of bounds.
+  obj : (obj/daemon/net/httpd)
+  file: obj/daemon/net/httpd.c:82
+  prgm: obj/daemon/net/httpd.c
+  func: read_callback
+  args: ( 4, 1054588, )
+
+[ERROR] *Array index out of bounds.
+  obj : (obj/daemon/net/httpd)
+  file: obj/daemon/net/httpd.c:82
+  prgm: obj/daemon/net/httpd.c
+  func: read_callback
+  args: ( 5, 947020, )
+
+[ERROR] *Array index out of bounds.
+  obj : (obj/daemon/net/httpd)
+  file: obj/daemon/net/httpd.c:82
+  prgm: obj/daemon/net/httpd.c
+  func: read_callback
+  args: ( 4, 1054588, )
+
+[ERROR] *Array index out of bounds.
+  obj : (obj/daemon/net/httpd)
+  file: obj/daemon/net/httpd.c:82
+  prgm: obj/daemon/net/httpd.c
+  func: read_callback
+  args: ( 5, 947020, )
+
+[ERROR] *Array index out of bounds.
+  obj : (obj/daemon/net/httpd)
+  file: obj/daemon/net/httpd.c:82
+  prgm: obj/daemon/net/httpd.c
+  func: read_callback
+  args: ( 4, 1054588, )
+
+[ERROR] *Array index out of bounds.
+  obj : (obj/daemon/net/httpd)
+  file: obj/daemon/net/httpd.c:82
+  prgm: obj/daemon/net/httpd.c
+  func: read_callback
+  args: ( 5, 947020, )
+
+[ERROR] *Array index out of bounds.
+  obj : (obj/daemon/net/httpd)
+  file: obj/daemon/net/httpd.c:82
+  prgm: obj/daemon/net/httpd.c
+  func: read_callback
+  args: ( 4, 1054588, )
+
+[ERROR] *Array index out of bounds.
+  obj : (obj/daemon/net/httpd)
+  file: obj/daemon/net/httpd.c:82
+  prgm: obj/daemon/net/httpd.c
+  func: read_callback
+  args: ( 5, 947020, )
+
+[ERROR] *Error in loading object '/cmd/wiz/clone'
+  obj : (adm/obj/daemon/cmdd)
+  file: adm/obj/daemon/cmdd.c:85
+  prgm: adm/obj/daemon/cmdd.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Array index out of bounds.
+  obj : (obj/daemon/net/httpd)
+  file: obj/daemon/net/httpd.c:82
+  prgm: obj/daemon/net/httpd.c
+  func: read_callback
+  args: ( 4, 1048084, )
+
+[ERROR] *Array index out of bounds.
+  obj : (obj/daemon/net/httpd)
+  file: obj/daemon/net/httpd.c:82
+  prgm: obj/daemon/net/httpd.c
+  func: read_callback
+  args: ( 4, 986872, )
+
+[ERROR] *Array index out of bounds.
+  obj : (obj/daemon/net/httpd)
+  file: obj/daemon/net/httpd.c:82
+  prgm: obj/daemon/net/httpd.c
+  func: read_callback
+  args: ( 4, 1044428, )
+
+[ERROR] *Bad argument 1 to lower_case()
+Expected: string Got: 0.
+  obj : (obj/daemon/net/httpd)
+  file: obj/daemon/net/httpd.c:84
+  prgm: obj/daemon/net/httpd.c
+  func: read_callback
+  args: ( 4, 954464, )
+
+[ERROR] *Array index out of bounds.
+  obj : (obj/daemon/net/httpd)
+  file: obj/daemon/net/httpd.c:82
+  prgm: obj/daemon/net/httpd.c
+  func: read_callback
+  args: ( 4, 1044428, )
+
+[ERROR] *Error in loading object '/cmd/wiz/man'
+  obj : (adm/obj/daemon/cmdd)
+  file: adm/obj/daemon/cmdd.c:85
+  prgm: adm/obj/daemon/cmdd.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Array index out of bounds.
+  obj : (obj/daemon/net/httpd)
+  file: obj/daemon/net/httpd.c:82
+  prgm: obj/daemon/net/httpd.c
+  func: read_callback
+  args: ( 4, 1048904, )
+
+[ERROR] *Array index out of bounds.
+  obj : (obj/daemon/net/httpd)
+  file: obj/daemon/net/httpd.c:82
+  prgm: obj/daemon/net/httpd.c
+  func: read_callback
+  args: ( 4, 1048084, )
+
+[ERROR] *Array index out of bounds.
+  obj : (obj/daemon/net/httpd)
+  file: obj/daemon/net/httpd.c:82
+  prgm: obj/daemon/net/httpd.c
+  func: read_callback
+  args: ( 4, 1033764, )
+
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( 1052676, )
+
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( 1337592, )
+
+[ERROR] *Error in loading object '/cmd/wiz/ls'
+  obj : (adm/obj/daemon/cmdd)
+  file: adm/obj/daemon/cmdd.c:85
+  prgm: adm/obj/daemon/cmdd.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (adm/obj/daemon/fingerd)
+  file: adm/obj/daemon/fingerd.c:61
+  prgm: adm/obj/daemon/fingerd.c
+  func: GetFinger
+  args: ( 0, )
+
+[ERROR] *Error in loading object '/cmd/wiz/ls'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:111
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( 1369180, )
+
+[ERROR] *String index out of bounds.
+  obj : (adm/simul_efun)
+  file: adm/efuns/wrap.c:5
+  prgm: adm/simul_efun.c
+  func: wrap
+  args: ( 1050684, )
+
+[ERROR] *String index out of bounds.
+  obj : (adm/simul_efun)
+  file: adm/efuns/wrap.c:5
+  prgm: adm/simul_efun.c
+  func: wrap
+  args: ( 986320, )
+
+[ERROR] *ed_start() called while an ed session is already started.
+  obj : (obj/clone/user/human#129)
+  file: obj/clone/user.c:456
+  prgm: obj/clone/user.c
+  func: start_ed
+  args: ( 1053220, 0, )
+
+[ERROR] *String index out of bounds.
+  obj : (adm/simul_efun)
+  file: adm/efuns/wrap.c:5
+  prgm: adm/simul_efun.c
+  func: wrap
+  args: ( 1050684, )
+
+[ERROR] *String index out of bounds.
+  obj : (tmp/tmp_eval_file)
+  file: tmp/tmp_eval_file.c:5
+  prgm: tmp/tmp_eval_file.c
+  func: eval
+  args: ( )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 894792, )
+
+[ERROR] *Error in loading object '/cmd/wiz/last'
+  obj : (adm/obj/daemon/cmdd)
+  file: adm/obj/daemon/cmdd.c:85
+  prgm: adm/obj/daemon/cmdd.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Bad argument 1 to file_size()
+Expected: string Got: 0.
+  obj : (obj/clone/user#34)
+  file: obj/clone/user.c:451
+  prgm: obj/clone/user.c
+  func: start_ed
+  args: ( 0, 0, )
+
+[ERROR] *(s)printf(): Error in format string. (arg: 0)
+  obj : (tmp/tmp_eval_file)
+  file: tmp/tmp_eval_file.c:5
+  prgm: tmp/tmp_eval_file.c
+  func: eval
+  args: ( )
+
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( 1127344, )
+
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( 719632, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (cmd/player/quit)
+  file: cmd/player/quit.c:13
+  prgm: cmd/player/quit.c
+  func: main
+  args: ( 0, )
+
+[ERROR] *Error in loading object '/obj/clone/connection'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:111
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 732660, )
+
+[ERROR] *Error in loading object '/obj/clone/connection'
+  obj : (adm/obj/daemon/master)
+  file: adm/obj/daemon/master.c:16
+  prgm: adm/obj/daemon/master.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Bad argument 1 to lower_case()
+Expected: string Got: 0.
+  obj : (obj/daemon/net/httpd)
+  file: obj/daemon/net/httpd.c:84
+  prgm: obj/daemon/net/httpd.c
+  func: read_callback
+  args: ( 5, 960088, )
+
+[ERROR] *Array index out of bounds.
+  obj : (obj/daemon/net/httpd)
+  file: obj/daemon/net/httpd.c:82
+  prgm: obj/daemon/net/httpd.c
+  func: read_callback
+  args: ( 5, 1049808, )
+
+[ERROR] *Bad argument 1 to file_size()
+Expected: string Got: 0.
+  obj : (cmd/wiz/ls)
+  file: cmd/wiz/ls.c:63
+  prgm: cmd/wiz/ls.c
+  func: do_ls
+  args: ( 0, 0, 0, 0, 0, )
+
+[ERROR] *restore_object(): Illegal file format.
+  obj : (obj/clone/connection#104)
+  file: obj/clone/connection.c:57
+  prgm: obj/clone/connection.c
+  func: restore_connection
+  args: ( 1044164, )
+
+[ERROR] *Error in loading object '/adm/cmd/wiz/rm'
+  obj : (adm/obj/daemon/cmdd)
+  file: adm/obj/daemon/cmdd.c:85
+  prgm: adm/obj/daemon/cmdd.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( 895580, )
+
+[ERROR] *Bad argument 1 to destruct()
+Expected: object Got: 0.
+  obj : (tmp/tmp_eval_file)
+  file: tmp/tmp_eval_file.c:5
+  prgm: tmp/tmp_eval_file.c
+  func: eval
+  args: ( )
+
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( 881188, )
+
+[ERROR] *restore_object(): Illegal file format.
+  obj : (obj/clone/connection#107)
+  file: obj/clone/connection.c:57
+  prgm: obj/clone/connection.c
+  func: restore_connection
+  args: ( 956680, )
+
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( 992548, )
+
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( 1370452, )
+
+[ERROR] *Error in loading object '/adm/cmd/wiz/cp'
+  obj : (adm/obj/daemon/cmdd)
+  file: adm/obj/daemon/cmdd.c:85
+  prgm: adm/obj/daemon/cmdd.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( 732740, )
+
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( 1034784, )
+
+[ERROR] *Can't load objects when no effective user.
+  obj : (tmp/tmp_eval_file)
+  file: tmp/tmp_eval_file.c:5
+  prgm: tmp/tmp_eval_file.c
+  func: eval
+  args: ( )
+
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( 721696, )
+
+[ERROR] *Error in loading object '/u/d/damian/workroom1'
+  obj : (cmd/wiz/goto)
+  file: cmd/wiz/goto.c:23
+  prgm: cmd/wiz/goto.c
+  func: main
+  args: ( "workroom1", )
+
+[ERROR] *Error in loading object '/obj/clone/connection'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/u/d/damian/workroom1'
+  obj : (cmd/wiz/goto)
+  file: cmd/wiz/goto.c:23
+  prgm: cmd/wiz/goto.c
+  func: main
+  args: ( "workroom1", )
+
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:23
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( 703468, )
+
+[ERROR] *restore_object(): Illegal file format.
+  obj : (obj/clone/connection#123)
+  file: obj/clone/connection.c:60
+  prgm: obj/clone/connection.c
+  func: restore_connection
+  args: ( 1372360, )
+
+[ERROR] *Bad argument 1 to destruct()
+Expected: object Got: "obj/clone/connection#123".
+  obj : (adm/simul_efun)
+  file: adm/efuns/destruct.c:11
+  prgm: adm/simul_efun.c
+  func: destruct
+  args: ( 721420, )
+
+[ERROR] *Bad argument 1 to file_size()
+Expected: string Got: 0.
+  obj : (cmd/wiz/ls)
+  file: cmd/wiz/ls.c:63
+  prgm: cmd/wiz/ls.c
+  func: do_ls
+  args: ( 0, 0, 0, 0, 0, )
+
+[ERROR] *Bad argument 1 to file_size()
+Expected: string Got: 0.
+  obj : (cmd/wiz/ls)
+  file: cmd/wiz/ls.c:63
+  prgm: cmd/wiz/ls.c
+  func: do_ls
+  args: ( 0, 0, 0, 0, 0, )
+
+[ERROR] *Bad argument 1 to file_size()
+Expected: string Got: 0.
+  obj : (cmd/wiz/ls)
+  file: cmd/wiz/ls.c:63
+  prgm: cmd/wiz/ls.c
+  func: do_ls
+  args: ( 0, 0, 0, 0, 0, )
+
+[ERROR] *Error in loading object '/u/d/damian/workroom1'
+  obj : (cmd/wiz/goto)
+  file: cmd/wiz/goto.c:23
+  prgm: cmd/wiz/goto.c
+  func: main
+  args: ( "workroom1", )
+
+[ERROR] *Error in loading object '/adm/cmd/player/chfn'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/adm/cmd/player/chfn'
+  obj : (adm/obj/daemon/cmdd)
+  file: adm/obj/daemon/cmdd.c:85
+  prgm: adm/obj/daemon/cmdd.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/cmd/player/exa'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/cmd/player/put'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/cmd/player/put'
+  obj : (adm/obj/daemon/cmdd)
+  file: adm/obj/daemon/cmdd.c:85
+  prgm: adm/obj/daemon/cmdd.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/cmd/player/exa'
+  obj : (adm/obj/daemon/cmdd)
+  file: adm/obj/daemon/cmdd.c:85
+  prgm: adm/obj/daemon/cmdd.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/printf.c:8
+  prgm: adm/simul_efun.c
+  func: printf
+  args: ( 1160368, 1647988, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/printf.c:8
+  prgm: adm/simul_efun.c
+  func: printf
+  args: ( 1160368, 982916, )

@@ -24,6 +24,9 @@ public boolean is_member(string group, string user);
 // returns an array of group names that 'user' is a member of
 public string * query_groups(string user);
 
+// returns an array of the members of the group 'group'
+public string * query_members(string group);
+
 // forces groupd to reread the groups file; returns TRUE on success
 public boolean init_groups();
 
@@ -66,7 +69,14 @@ query_groups(string user)
 
   return ret;
 }
-    
+
+public
+string *
+query_members(string group)
+{
+  return copy(groups[group]);
+}
+
 public
 boolean
 is_member(string group, string user)

@@ -2,9 +2,9 @@
 name "kyricc"
 coins ({30,10,})
 hit_points 100
-spell_points 0
-title "the utter mudlib hacker"
-current_dir "/u/k/kyricc"
+title "the utter idiot"
+current_dir "/cmd/player"
 term "ansi"
-Hook 0
-path "/cmd/player:/adm/cmd/wiz:/adm/cmd/adm:/cmd/wiz:/adm/cmd/player:/cmd/adm"
+aliases (["n":"north","ne":"northeast","nw":"northwest","se":"southeast","i":"inventory","l":"look","sc":"score","s":"south","e":"east","sw":"southwest","w":"west",])
+channels ({})
+search_path ({"/cmd/player","/adm/cmd/wiz","/cmd/wiz","/adm/cmd/adm","/adm/cmd/player","/cmd/adm",})

@@ -5,6 +5,7 @@
  *    created by Descartes of Borg 950429
  *
  *  10.23.95  Tim modified for this mudlib
+ *  12.08.95  Tim modified to support MUD mode sockets
  */
 
 #include <mudlib.h>
@@ -23,12 +24,14 @@ static void create() {
     Sockets = ([]);
 }
 
-int eventCreateSocket(int port) {
+int eventCreateSocket(int port, int type) {
     int x;
+
+    if(type > STREAM) return -1;
 
     Listen = new(class server);
     Listen->Blocking = 0; /* servers are not blocking to start */
-    x = socket_create(STREAM, "eventServerReadCallback", 
+    x = socket_create(type, "eventServerReadCallback", 
 		      "eventServerAbortCallback");
     if( x < 0 ) {
 	eventSocketError("Error in socket_create().", x);
@@ -66,12 +69,12 @@ static void eventServerAbortCallback(int fd) {
     else if( Sockets[fd] ) eventClose(Sockets[fd]);
 }
 
-static void eventServerReadCallback(int fd, string str) {
-    if( functionp(Read) ) evaluate(Read, fd, str);
-    else eventRead(fd, str);
+static void eventServerReadCallback(int fd, mixed val) {
+    if( functionp(Read) ) evaluate(Read, fd, val);
+    else eventRead(fd, val);
 }
 
-static void eventRead(int fd, string str) { }
+static void eventRead(int fd, mixed val) { }
 
 static void eventServerWriteCallback(int fd) {
     class server sock;
@@ -112,15 +115,15 @@ static void eventServerWriteCallback(int fd) {
     }
 }
 
-varargs void eventWrite(int fd, string str, int close) {
+varargs void eventWrite(int fd, mixed val, int close) {
     class server sock;
     int x;
 
     if( Listen && Listen->Descriptor == fd ) sock = Listen;
     else if( Sockets[fd] ) sock = (class server)Sockets[fd];
     else return;
-    if( sock->Buffer ) sock->Buffer += ({ str });
-    else sock->Buffer = ({ str });
+    if( sock->Buffer ) sock->Buffer += ({ val });
+    else sock->Buffer = ({ val });
     sock->Closing = close;
     if( sock->Blocking ) return;
     else eventServerWriteCallback(sock->Descriptor);

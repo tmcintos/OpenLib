@@ -1,8 +1,10 @@
 /*  -*- LPC -*-  */
-// fingerd.c:  Tim
+// fingerd.c:  Written by Tim in fall 1995
 //
 //   This handles all finger requests; local and remote.
 //
+// 01.21.96  Tim McIntosh  Added support for mail checking
+
 #include <mudlib.h>
 #include <daemons.h>
 #include <time.h>
@@ -16,7 +18,6 @@ void
 create()
 {
   daemon::create();
-  SetNoClean(0);
 }
 
 string
@@ -27,8 +28,8 @@ GetFinger(string username)
 {
   string line = "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
                 "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n";
-  string ret = "";
-  int idle, num_users;
+  string ret = "", tmp;
+  int idle, num_users, mail_size;
   object user, conn, *list;
 
   // If no username is given, this part produces the string that contains
@@ -55,7 +56,7 @@ GetFinger(string username)
       conn = (object)user->query_connection();
 
       idle = query_idle(user);
-      ret += sprintf("%-10s   %-20s  %6s  %-12s  %-20s\n",
+      ret += sprintf("%-10.10s   %-20.20s  %6.6s  %-12.12s  %-22.22s\n",
 		     user->query_cap_name(),
 		     conn->query_real_name(),
 		     idle/60+":"+idle%60,
@@ -100,11 +101,21 @@ GetFinger(string username)
       ret += sprintf("Last login: %s", ctime(conn->query_login_time()));
       ret += sprintf(" from %s\n", conn->query_login_from());
     }
-    //
-    // For beauty only :) Fix later; Tim.
-    //
-    ret += "No Mail.\n";
-    ret += "No Plan.\n";
+
+    if(mail_size = (int) MAIL_D->check_mail(username, 1))
+      ret += sprintf("This user has %d pieces of unread mail.\n", mail_size);
+    else
+      ret += "No Mail.\n";
+
+    // Plan & Project
+    if(tmp = read_file(user_path(username)+".project", 1, 1))
+      ret += "Project: "+ tmp;
+    else
+      ret += "No Project.\n";
+    if(tmp = read_file(user_path(username)+".plan", 1, 17))
+      ret += "Plan:\n"+ tmp;
+    else
+      ret += "No Plan.\n";
   } else {
     ret = sprintf("finger: %s: no such user.\n", username);  // no such user
   }

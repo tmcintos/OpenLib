@@ -4,6 +4,7 @@
 #include <dirs.h>
 
 #define SAVE_BANISH        DAEMON_SAVE_DIR "/banish"
+#define SAVE_CHATD         DAEMON_SAVE_DIR "/chatd"
 #define SAVE_ECONOMY       DAEMON_SAVE_DIR "/economy"
 #define SAVE_ESTATES       DAEMON_SAVE_DIR "/estates"
 #define SAVE_EVENTS        DAEMON_SAVE_DIR "/events"

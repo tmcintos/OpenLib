@@ -8,14 +8,17 @@ inherit LIVING;
 
 private boolean move_around = FALSE;     // do we move around or not?
 private boolean talking_monster = FALSE; // do we go around talking??
-private int chance_talk = 100;           // chance to talk out of 100 
-private int chance_act = 100;            // chance to move out of 100
+private int chance_talk = 100;           // 100 - %chance to talk
+private int chance_act = 100;            // 100 - %chance to move
 private string *vocabulary = ({});       // lines that we speak
+private int undead;                      // 1 if undead
 
 // Function Prototypes
 void heart_beat();
 void set_move_around(int chance);
 void set_talk(int chance, string *lines);
+void set_undead();
+int query_undead();
 
 private void random_action();
 private void do_talk();
@@ -36,7 +39,7 @@ heart_beat()
 void
 set_move_around(int chance)
 {
-  chance_act = chance;
+  chance_act = 100 - chance;
   move_around = TRUE;
 }
 
@@ -57,7 +60,7 @@ random_action()
 void
 set_talk(int chance, string *lines)
 {
-  chance_talk = chance;
+  chance_talk = 100 - chance;
   vocabulary = lines;
   talking_monster = TRUE;
 }
@@ -70,4 +73,33 @@ do_talk()
   int num = random(sizeof(vocabulary));
 
   say(query_cap_name() + " says: " + vocabulary[num] +"\n");
+}
+
+void
+set_undead()
+{
+  undead = 1;
+}
+
+int
+query_undead()
+{
+  return undead;
+}
+
+void
+die()
+{
+  if(undead) {
+    tell_room(environment(this_object()),
+	      sprintf("%s turns to dust before your eyes.\n"));
+
+    foreach(object ob in all_inventory(this_object())) {
+      if(ob->drop())
+	ob->move(environment(this_object()));
+    }
+    destruct(this_object());
+  } else {
+    living::die();
+  }
 }

@@ -1,0 +1,10 @@
+#obj/clone/connection.c
+name "evergreen"
+password "ERBhas3HnETsQ"
+real_name "Cameron Kaiser"
+email_addr "ckaiser@ucsd.edu"
+home_dir "/u/e/evergreen"
+body "/obj/clone/user/human"
+login_time 822613303
+login_from "apm-b337-15.ucsd.edu"
+active 0

@@ -1,109 +1,63 @@
-Fri Oct 27 18:10:39 1995:  tim connected from localhost.
-Fri Oct 27 18:11:15 1995:  tim retr /u/t/tim/test.c (ASCII).
-Fri Oct 27 18:11:19 1995:  tim logged out from localhost.
-Fri Oct 27 18:13:38 1995:  anonymous () connected from localhost.
-Fri Oct 27 18:15:02 1995:  anonymous stor /ftp/ftp/socket.h (ASCII).
-Fri Oct 27 18:16:05 1995:  anonymous stor /ftp/ftp/ftp/socket.h (ASCII).
-Fri Oct 27 18:16:39 1995:  anonymous logged out from localhost.
-Fri Oct 27 18:22:05 1995:  anonymous () connected from localhost.
-Fri Oct 27 18:22:45 1995:  anonymous logged out from localhost.
-Fri Oct 27 18:22:53 1995:  anonymous () connected from localhost.
-Fri Oct 27 18:23:29 1995:  anonymous logged out from localhost.
-Fri Oct 27 18:24:21 1995:  anonymous () connected from localhost.
-Fri Oct 27 18:24:53 1995:  anonymous stor /pub/ftp/pub/ftp/socket.h (ASCII).
-Fri Oct 27 18:25:00 1995:  anonymous logged out from localhost.
-Fri Oct 27 18:32:18 1995:  anonymous () connected from localhost.
-Fri Oct 27 18:33:33 1995:  anonymous stor /pub/ftp/pub/ftp/socket.h (ASCII).
-Fri Oct 27 18:34:01 1995:  anonymous logged out from localhost.
-Fri Oct 27 18:39:41 1995:  anonymous () connected from localhost.
-Fri Oct 27 18:40:07 1995:  anonymous logged out from localhost.
-Fri Oct 27 18:41:40 1995:  anonymous () connected from localhost.
-Fri Oct 27 18:42:06 1995:  anonymous logged out from localhost.
-Fri Oct 27 18:44:19 1995:  anonymous (tim@log) connected from localhost.
-Fri Oct 27 18:46:11 1995:  anonymous logged out from localhost.
-Fri Oct 27 18:53:30 1995:  anonymous (astasia@iastate.edu) connected from localhost.
-Fri Oct 27 18:54:10 1995:  anonymous logged out from localhost.
-Fri Oct 27 18:59:00 1995:  anonymous (astasia@iastate.edu) connected from localhost.
-Fri Oct 27 18:59:14 1995:  anonymous logged out from localhost.
-Fri Oct 27 19:03:41 1995:  anonymous (astasia@iastate.edu) connected from localhost.
-Fri Oct 27 19:05:18 1995:  anonymous logged out from localhost.
-Fri Oct 27 19:10:06 1995:  anonymous (astasia!iastat.edu) connected from localhost.
-Fri Oct 27 19:10:20 1995:  anonymous logged out from localhost.
-Fri Oct 27 19:12:30 1995:  anonymous (astasia!) connected from localhost.
-Fri Oct 27 19:13:41 1995:  anonymous logged out from localhost.
-Fri Oct 27 19:17:00 1995:  anonymous (astasia@) connected from localhost.
-Fri Oct 27 19:17:16 1995:  anonymous logged out from localhost.
-Fri Oct 27 19:18:31 1995:  anonymous (astasia@) connected from localhost.
-Fri Oct 27 19:19:58 1995:  anonymous logged out from localhost.
-Fri Oct 27 19:27:24 1995:  anonymous (astasia) connected from localhost.
-Fri Oct 27 19:28:52 1995:  anonymous logged out from localhost.
-Fri Oct 27 19:30:09 1995:  anonymous (astasia) connected from localhost.
-Fri Oct 27 19:30:53 1995:  anonymous mkd /pub/test.
-Fri Oct 27 19:31:19 1995:  anonymous rmd /pub/test.
-Fri Oct 27 19:31:35 1995:  anonymous logged out from localhost.
-Fri Oct 27 19:41:52 1995:  anonymous (astasia@iastate.edu) connected from localhost.
-Fri Oct 27 19:42:35 1995:  anonymous logged out from localhost.
-Fri Oct 27 19:45:32 1995:  anonymous (astasia) connected from localhost.
-Fri Oct 27 19:45:48 1995:  anonymous logged out from localhost.
-Fri Oct 27 19:54:02 1995:  anonymous (astasa) connected from localhost.
-Fri Oct 27 19:54:18 1995:  anonymous logged out from localhost.
-Fri Oct 27 19:54:43 1995:  anonymous (astasia) connected from localhost.
-Fri Oct 27 19:55:19 1995:  anonymous logged out from localhost.
-Fri Oct 27 19:57:09 1995:  anonymous (astasia) connected from localhost.
-Fri Oct 27 19:58:28 1995:  anonymous mkd /pub/ftp/test.
-Fri Oct 27 19:58:36 1995:  anonymous mkd /pub/ftp/test/test2.
-Fri Oct 27 19:59:12 1995:  anonymous rmd /pub/ftp/test/test2.
-Fri Oct 27 19:59:16 1995:  anonymous rmd /pub/ftp/test.
-Fri Oct 27 19:59:20 1995:  anonymous logged out from localhost.
-Fri Oct 27 20:01:15 1995:  tim connected from localhost.
-Fri Oct 27 20:01:51 1995:  tim logged out from localhost.
-Fri Oct 27 20:02:58 1995:  anonymous (asdfjl) connected from localhost.
-Fri Oct 27 20:03:10 1995:  anonymous logged out from localhost.
-Fri Oct 27 20:04:04 1995:  anonymous (astasia) connected from localhost.
-Fri Oct 27 20:05:00 1995:  anonymous logged out from localhost.
-Fri Oct 27 20:05:02 1995:  tim connected from localhost.
-Fri Oct 27 20:05:12 1995:  tim logged out from localhost.
-Fri Oct 27 20:10:30 1995:  anonymous (astasia) connected from localhost.
-Fri Oct 27 20:11:12 1995:  anonymous logged out from localhost.
-Fri Oct 27 20:12:19 1995:  anonymous (astasia) connected from localhost.
-Fri Oct 27 20:12:27 1995:  anonymous mkd /pub/ftp/test.
-Fri Oct 27 20:12:45 1995:  anonymous rmd /pub/ftp/test.
-Fri Oct 27 20:12:47 1995:  anonymous logged out from localhost.
-Fri Oct 27 20:12:51 1995:  tim connected from localhost.
-Fri Oct 27 20:13:11 1995:  tim logged out from localhost.
-Fri Oct 27 20:13:13 1995:  jack denied access from localhost.
-Fri Oct 27 20:13:25 1995:  hamnsnock failed/incorrect login from localhost.
-Fri Oct 27 20:13:33 1995:  kyricc failed/incorrect login from localhost.
-Fri Oct 27 20:13:39 1995:  kyricc connected from localhost.
-Fri Oct 27 20:13:54 1995:  kyricc logged out from localhost.
-Fri Oct 27 20:16:10 1995:  anonymous (pwd) connected from localhost.
-Fri Oct 27 20:16:24 1995:  anonymous mkd /pub/ftp/test.
-Fri Oct 27 20:16:54 1995:  anonymous rmd /pub/ftp/test.
-Fri Oct 27 20:16:56 1995:  anonymous logged out from localhost.
-Fri Oct 27 20:20:28 1995:  anonymous (astasia) connected from localhost.
-Fri Oct 27 20:21:06 1995:  anonymous logged out from localhost.
-Fri Oct 27 20:21:24 1995:  tim connected from localhost.
-Fri Oct 27 20:21:36 1995:  tim logged out from localhost.
-Fri Oct 27 20:21:40 1995:  tim connected from localhost.
-Fri Oct 27 20:21:46 1995:  tim logged out from localhost.
-Fri Oct 27 20:21:56 1995:  anonymous (astaia@iastate.edu) connected from localhost.
-Fri Oct 27 20:22:10 1995:  anonymous logged out from localhost.
-Fri Oct 27 20:25:25 1995:  anonymous (astasia) connected from localhost.
-Fri Oct 27 20:25:47 1995:  anonymous mkd /pub/ftp/test.
-Fri Oct 27 20:25:53 1995:  anonymous logged out from localhost.
-Fri Oct 27 20:26:39 1995:  anonymous (astasia) connected from localhost.
-Fri Oct 27 20:27:28 1995:  anonymous mkd /pub/ftp/test/test2.
-Fri Oct 27 20:27:42 1995:  anonymous rmd /pub/ftp/test/test2.
-Fri Oct 27 20:27:56 1995:  anonymous rmd /pub/ftp/test.
-Fri Oct 27 20:27:58 1995:  anonymous logged out from localhost.
-Fri Oct 27 20:48:54 1995:  anonymous (astasia) connected from localhost.
-Fri Oct 27 20:49:20 1995:  anonymous logged out from localhost.
-Fri Oct 27 20:53:48 1995:  anonymous (astasia@iastate.edu) connected from localhost.
-Fri Oct 27 20:56:32 1995:  anonymous mkd /pub/ftp/test.
-Fri Oct 27 20:56:49 1995:  anonymous rmd /pub/ftp/test.
-Fri Oct 27 20:56:53 1995:  anonymous logged out from localhost.
-Fri Oct 27 20:56:55 1995:  tim connected from localhost.
-Fri Oct 27 20:57:35 1995:  tim mkd /test.
-Fri Oct 27 20:57:37 1995:  tim rmd /test.
-Fri Oct 27 20:57:39 1995:  tim logged out from localhost.
-Fri Oct 27 20:57:41 1995:  jake denied access from localhost.
+Sun Nov 19 11:36:48 1995:  casper connected from netcom12.netcom.com.
+Sun Nov 19 11:37:08 1995:  casper retr /obj/inherit/combat.c (BINARY).
+Sun Nov 19 11:37:24 1995:  casper retr /obj/inherit/armour.c (BINARY).
+Sun Nov 19 11:38:54 1995:  casper logged out from netcom12.netcom.com.
+Sun Nov 19 11:39:17 1995:  casper connected from netcom12.netcom.com.
+Sun Nov 19 11:39:23 1995:  casper retr /obj/inherit/armour.c (BINARY).
+Sun Nov 19 11:39:35 1995:  casper retr /obj/inherit/weapon.c (BINARY).
+Sun Nov 19 11:40:03 1995:  casper retr /obj/daemon/combatd.c (BINARY).
+Sun Nov 19 11:40:39 1995:  casper retr /include/races/human.h (BINARY).
+Sun Nov 19 11:40:45 1995:  casper logged out from netcom12.netcom.com.
+Sat Dec  2 04:11:40 1995:  tim connected from loopback.
+Sat Dec  2 04:11:58 1995:  tim retr /u/t/tim/ls.c (ASCII).
+Sat Dec  2 04:12:02 1995:  tim logged out from loopback.
+Sun Dec 10 11:50:02 1995:  tim connected from loopback.
+Sun Dec 10 11:50:50 1995:  tim retr /pub/ftp/creremote (ASCII).
+Sun Dec 10 11:51:04 1995:  tim logged out from loopback.
+Tue Dec 12 19:54:39 1995:  kyricc connected from knapp38.res.iastate.edu.
+Tue Dec 12 19:54:49 1995:  kyricc stor /u/k/kyricc/testshop.c (ASCII).
+Tue Dec 12 19:54:53 1995:  kyricc logged out from knapp38.res.iastate.edu.
+Sat Jan 20 21:52:17 1996:  talen failed/incorrect login from marble.cc.monash.edu.au.
+Sat Jan 20 21:52:25 1996:  talen connected from marble.cc.monash.edu.au.
+Mon Jan 22 15:51:30 1996:  evergreen connected from sdcc13.ucsd.edu.
+Mon Jan 22 15:55:23 1996:  evergreen logged out from sdcc13.ucsd.edu.
+Mon Jan 22 17:03:18 1996:  evergreen connected from sdcc13.ucsd.edu.
+Mon Jan 22 17:03:26 1996:  evergreen stor /doc/projects/editor.sys (ASCII).
+Mon Jan 22 17:03:36 1996:  evergreen logged out from sdcc13.ucsd.edu.
+Tue Jan 23 13:18:12 1996:  anonymous (WWWuser@) connected from 198.169.197.225.
+Tue Jan 23 13:18:26 1996:  anonymous logged out from dial197225.wbm.ca.
+Tue Jan 23 23:22:28 1996:  evergreen connected from sdcc13.ucsd.edu.
+Tue Jan 23 23:22:34 1996:  evergreen stor /u/e/evergreen/editord.c (ASCII).
+Wed Jan 24 09:52:28 1996:  evergreen connected from sdcc13.ucsd.edu.
+Wed Jan 24 09:52:44 1996:  evergreen stor /u/e/evergreen/editord.c (ASCII).
+Wed Jan 24 09:53:00 1996:  evergreen logged out from sdcc13.ucsd.edu.
+Wed Jan 24 22:43:35 1996:  evergreen connected from sdcc13.ucsd.edu.
+Wed Jan 24 22:44:39 1996:  evergreen retr /u/e/evergreen/editord.c (ASCII).
+Wed Jan 24 22:44:43 1996:  evergreen logged out from sdcc13.ucsd.edu.
+Wed Jan 24 23:25:29 1996:  evergreen connected from sdcc13.ucsd.edu.
+Wed Jan 24 23:25:31 1996:  evergreen stor /u/e/evergreen/editord.c (ASCII).
+Wed Jan 24 23:29:35 1996:  evergreen logged out from sdcc13.ucsd.edu.
+Thu Jan 25 12:06:00 1996:  evergreen connected from sdcc13.ucsd.edu.
+Thu Jan 25 12:06:06 1996:  evergreen stor /u/e/evergreen/editord.c (ASCII).
+Thu Jan 25 12:07:05 1996:  evergreen logged out from sdcc13.ucsd.edu.
+Thu Jan 25 12:19:51 1996:  evergreen connected from sdcc13.ucsd.edu.
+Thu Jan 25 12:19:59 1996:  evergreen stor /u/e/evergreen/editord.c (ASCII).
+Thu Jan 25 12:22:19 1996:  evergreen logged out from sdcc13.ucsd.edu.
+Thu Jan 25 12:39:16 1996:  evergreen connected from sdcc13.ucsd.edu.
+Thu Jan 25 12:39:29 1996:  evergreen retr /u/e/evergreen/editord.c (ASCII).
+Thu Jan 25 12:40:47 1996:  evergreen logged out from sdcc13.ucsd.edu.
+Thu Jan 25 16:54:26 1996:  evergreen connected from sdcc13.ucsd.edu.
+Thu Jan 25 16:54:32 1996:  evergreen stor /u/e/evergreen/editord.c (ASCII).
+Thu Jan 25 16:55:52 1996:  evergreen logged out from sdcc13.ucsd.edu.
+Thu Jan 25 16:59:18 1996:  evergreen connected from sdcc13.ucsd.edu.
+Thu Jan 25 16:59:20 1996:  evergreen stor /u/e/evergreen/editord.c (ASCII).
+Thu Jan 25 17:01:42 1996:  evergreen logged out from sdcc13.ucsd.edu.
+Thu Jan 25 17:16:27 1996:  evergreen connected from sdcc13.ucsd.edu.
+Thu Jan 25 17:16:29 1996:  evergreen stor /u/e/evergreen/editord.c (ASCII).
+Thu Jan 25 17:18:34 1996:  evergreen logged out from sdcc13.ucsd.edu.
+Thu Jan 25 17:24:38 1996:  evergreen connected from sdcc13.ucsd.edu.
+Thu Jan 25 17:24:40 1996:  evergreen stor /u/e/evergreen/editord.c (ASCII).
+Thu Jan 25 17:29:33 1996:  evergreen logged out from sdcc13.ucsd.edu.
+Thu Jan 25 17:38:06 1996:  evergreen connected from sdcc13.ucsd.edu.
+Thu Jan 25 17:38:08 1996:  evergreen stor /u/e/evergreen/editord.c (ASCII).
+Thu Jan 25 17:39:06 1996:  evergreen logged out from sdcc13.ucsd.edu.

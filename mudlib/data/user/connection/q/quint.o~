@@ -1,8 +1,11 @@
 #obj/clone/connection.c
 name "quint"
-password "tF2.nJcr484ko"
+password "gWFUBuF7qTdlA"
 real_name "Scott Jackson"
+email_addr "quint@Dysfunctional Mud"
 home_dir "/u/q/quint"
-body "/obj/clone/user"
-login_shell "none"
-login_time 812760420
+body "/obj/clone/user/human"
+login_time 822617011
+logout_time 822617266
+login_from "loopback"
+active 1

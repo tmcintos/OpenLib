@@ -7,12 +7,16 @@
 #define USAGE "mv [-o] <filepath> <destination>"
 
 int
-_main(string args, int argc, string *argv, string *flags)
+_main(string *argv, string *argv2)
 {
   string source, dest, *tmp;
+  int opto = flag("o");
 
-  if(!args || sscanf(args, "%s %s", source, dest) != 2)
+  if(sizeof(argv2) != 2)
     return notify_fail("usage: "+ USAGE +"\n");
+
+  source = argv2[0];
+  dest = argv2[1];
 
   tmp = explode(source, "/");
 
@@ -30,7 +34,7 @@ _main(string args, int argc, string *argv, string *flags)
 
 // Can specify -o flag to overwrite destination
 
-  if((file_size(dest) != -1) && !flag(flags, "o"))
+  if((file_size(dest) != -1) && !opto)
     return notify_fail("mv: destination file already exists.\n");
   else
     rm(dest);

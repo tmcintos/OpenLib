@@ -1,0 +1,3 @@
+#obj/clone/mailbox.c
+mailfile "/data/user/mail/c/craig"
+msgs ({})

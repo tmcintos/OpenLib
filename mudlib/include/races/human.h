@@ -4,6 +4,10 @@
  
 #include <weapon_types.h>
  
+//If things bug out, these next few functions need a return 
+//copy() scheme.  Casper (tryin to figger out EXACTLY how LPC 
+//handles pointers)
+ 
 string *query_armour_types()  //The 'ID' of armours that can be worn.
 {
   return ({"helm","ring","ring","bracers","body2","legs2","boots",
@@ -34,27 +38,37 @@ int query_hands()  //The number of hands and therefore(?)
 //Humans have only one pair of hands, so the first int is 
 //ignored.
  
-mixed *query_unarmed(int not_really_important,int fflag)
+varargs mixed *query_unarmed(int not_really_important,string wep_skill)
 {
+  //**DO NOT CHANGE THIS WITHOUT INFORMING ME, CASPER**
   return ({
-    this_object()->query_stat("strength") + (fflag ? 
-      this_object()->query_skill("unarmed")/3 : 0)
-    + this_object()->query_stat("agility")/3,
-    //Strength does a 1:1 bonus to damage.  agility does a 3:1 
-    //bonus (ability to direct the weapon where it hurts)
-    (fflag ? 5 + this_object()->query_skill("unarmed")/2 : 0),
-    //damage range needed ONLY for unarmed combat
-    500 + this_object()->query_stat("strength") * 3 + 
-      this_object()->query_stat("agility") * 10
-    + (fflag ? this_object()->query_skill("unarmed") * 25 : 0),
-    //500 = 50% base chance to hit * .3% per point of str + 1% 
-    //per point of strength, unarmed combat skill addes 2.5% 
-    //per point.
-    (fflag ? 0 : this_object()->query_stat("strength") * 5 + 
-      this_object()->query_stat("agility") * 10),
+    2916473 / (3 * (26 - this_object()->query_stat("strength")) + 
+      (26 - this_object()->query_stat("agility")) + 2 * (1001 - 
+      (wep_skill ? this_object()->query_skill(wep_skill) : 0)) + 
+      (1001 - (wep_skill ? this_object()->query_skill("combat") 
+      : 0))) - 949,
+    //That was the damage bonus.  Worked to balance (somewhat) 
+    //skills and the like.  Ask for an explination of why it 
+    //is the way it is.  Casper
+    (wep_skill && wep_skill == "unarmed" ? 5 + 
+      this_object()->query_skill("unarmed")/10 : 0),
+    //damage range needed ONLY for unarmed combat.  May need balancing
+    7 * this_object()->query_stat("strength") + 21 * 
+      this_object()->query_stat("agility") + (wep_skill ? 2 *
+      this_object()->query_skill("combat") + 
+      this_object()->query_skill(wep_skill) : 0) + 136,
+    //base to_hit
+    //Again, ask for an explination of why it is the way it 
+    //is.  Casper
+    (wep_skill && wep_skill == "unarmed" ? 0 : 
+      this_object()->query_stat("strength") * 10 + 
+      this_object()->query_stat("agility") * 20 + 
+      this_object()->query_skill("combat") * 10) +
+      (wep_skill != "unarmed" && wep_skill ? 
+      this_object()->query_skill(wep_skill) * 10 : 0),
     //parry modifier.  Nill for unarmed combat (how DO you
-    //parry with hands?) otherwize 1% per point of agil & .5%
-    //per point of str.
+    //parry with hands?) otherwize 2% per point of agil & 1%
+    //per point of str + 1% per combat * weapon skill.
     ({"punch","sock","chop","jab"}),
     ({"punches","socks","chops","jabs"}),
     ({"miss","swing above", "jab beside", "swing short"}),

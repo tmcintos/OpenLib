@@ -1,0 +1,10 @@
+#obj/clone/connection.c
+name "exe"
+password "YTJstsKRKTHbw"
+real_name "P. Gent"
+email_addr "p.n.gent@hull.ac.uk"
+home_dir "/u/e/exe"
+body "/obj/clone/user/human"
+login_time 822617660
+logout_time 822619130
+login_from "p083.tcourt.hull.ac.uk"

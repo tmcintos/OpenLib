@@ -1,0 +1,3 @@
+21/0196 : Exe
+	Changed emoted.c to remove the annoying s.es. messages seen in the room
+	This is a temp measure until we can rip out emoted and start again.

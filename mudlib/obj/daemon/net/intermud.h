@@ -7,6 +7,7 @@ class list {
 }
 
 static void create();
+static int remove();
 static void Setup();
 static void eventRead(mixed *packet);
 static void eventRequestMudList();

@@ -1,63 +1,35 @@
 /*  -*- LPC -*-  */
-// cmdline.h:  Tim McIntosh (astasia@iastate.edu)
-// functions for getting various things from the command line
+#ifndef _CMDLINE_H
+#define _CMDLINE_H
+// cmdline.h:  A replacement for command.h which provides facilities for
+//             stripping flags from the command line. (see cmd_module.c)
 //
-// #include this and write _main() as declared below for your main() function.
+// written by: Tim McIntosh (astasia@iastate.edu)
 //
-// Inspired by VikingMUD and other things...
+// This file is part of the UltraLib distribution mudlib.
+// It may be used and modified as long as this header remains intact.
+// The UltraLib mudlib is available via FTP at knapp38.res.iastate.edu
 //
-//          argv:  should be an array of all the words passed to the command
-//          argc:  should be the size of 'argv'
-//          flags: should be an array of all flags passed to the command
-//          flag(str) tells you if the 1-char string 'str' flag is present
+// #include this and write _main() as declared below for your main function.
 //
-//          Longer flags like -Pln03r should be able to be picked out of
-//          argv using member_array
+// int _main(string *argv, string *argv2);
+//
+// arguments passed:
+//          argv:  an array of all the words passed to the command with nothing
+//                 removed.  argv[0] is always the verb.
+//          argv2: an array of all the words passed to the command with flags
+//                 removed--the verb is not included in this array
+//
+//          flag(string str) tells you if the flag 'str' is present.
+//                           Flags that are more than 1 char. must be passed
+//                           with 2 leading dashes. e.g. --help
+//
+// NOTE: --help is a special flag which will cause help info to be printed
+// as returned by help() in the command object.
 
-int main(string arguments);
-int flag(string *flags, string flag);
-int _main(string args, int argc, string *argv, string *flags);
+#include <command.h>
+#include <dirs.h>
 
-int
-main(string arguments)
-{
-  int argc;                     //  size of argv
-  string *argv = ({});          //  array of verb + args passed to this command
-  string *flags = ({});         //  array of flags passed
-  string args;                  //  Argments to command with flags taken out
+inherit INHERIT_DIR "/cmd_module";
 
-  int i;
-  string *atmp = ({});
-
-  if(arguments) 
-    argv = explode(arguments, " ");
-  argv = ({ query_verb() }) + argv;
-
-  argc = sizeof(argv);
-
-  for(i=0; i < argc; i++) {               // get array of flags
-    if(argv[i][0] == '-')
-      flags += explode(argv[i], "");
-    else if(i != 0)
-      atmp += ({ argv[i] });              // get words that aren't flags
-  }
-
-// Remember argv[0] is the verb.
-  args = implode(atmp, " ");
-  if(!arguments) args = 0;
-
-  return _main(args, argc, argv, flags);
-}
-
-//  funcion: flag         Arguments:  flags array and a flag ex: "l", "r", etc.
-//                        Returns:  1 if flag was passed
-//                                  0 if flag was not passed
-
-int
-flag(string *flags, string flag)
-{
-  if(member_array(flag, flags) != -1)
-    return 1;
-
-  return 0;
-}
+#endif

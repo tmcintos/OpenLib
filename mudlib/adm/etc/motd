@@ -3,12 +3,6 @@
 Flag support and some other stuff is in for cmds, see /include/cmdline.h
 Command files are in /cmd/player:/cmd/wiz:/cmd/adm
 Secure commands are under /adm in the same directories.
-                        I N T E R M U D >> 3 <<
-Intermud chat chans are 'intercre' and 'intergossip'; local chan is 'mud'.
-Only talk on 'intercre' if it is a coding question...we may get banned
-if we abuse this channel.
-                            A L I A S E S
-Real "cheap" aliases for n,s,e,w,i,l are stuck in user.c...they don't take args
                           !! C O M B A T !!
 We have weapon regs now, as described in /obj/examples/dagger.c
 These are tennative, and may change.  They leave a lot open to the 
@@ -18,6 +12,13 @@ regs will be in shortly.
 Object weight & re-sale value is now supported.  Money supply is supported
 in living objects, money container cloneable in /obj/clone/money.c  See docs
 in /doc/project for details...
+                            >> R A C E S <<
+We now have a clay race in.  Directions on how to use are in the docs.  This
+clay race is malieable for all sorts of creatures & anything there is no set
+race for.
+                  >> HELP <<
+Help command is sort of in place.  I know how the help will be set up but
+the code in the command itself could be cleaned up...oh well it's late now.
 ===============================================================================
 To see this file again:  cat /adm/etc/motd
-motd last update: 10/29/95
+motd last update: 01/23/96

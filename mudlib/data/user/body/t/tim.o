@@ -1,12 +1,11 @@
 #obj/clone/user/human.c
 name "tim"
-coins ({23,2005,})
-hit_points -204
-spell_points 0
-sex 1
-title "the cool"
+coins ({0,2000,})
+hit_points 100
+gender 1
+title "the 'loose cannon' of mudding"
 current_dir "/u/t/tim"
 term "ansi"
-aliases (["l":"look","i":"inventory","sw":"southwest","se":"southeast","nw":"northwest","ne":"northeast","w":"west","e":"east","s":"south","n":"north","la":"look at","sc":"score",])
-Hook 0
-path "/cmd/player:/adm/cmd/wiz:/adm/cmd/adm:/cmd/wiz:/adm/cmd/player:/cmd/adm"
+aliases (["'":"say","w":"west","sw":"southwest","nw":"northwest","i":"inventory","ne":"northeast","sc":"score","se":"southeast","n":"north","e":"east","l":"look","s":"south","la":"look at",])
+channels ({"icode","igossip",})
+search_path ({"/cmd/player","/adm/cmd/wiz","/cmd/wiz","/adm/cmd/adm","/adm/cmd/player","/cmd/adm",})

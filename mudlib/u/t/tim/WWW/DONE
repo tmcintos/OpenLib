@@ -1,0 +1,7 @@
+<PRE>
+-revamp command.h and cmdline.h
+-command daemon
+-chat system
+-finger daemon
+-auth daemon (I3)
+</PRE>

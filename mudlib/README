@@ -5,7 +5,7 @@
 /d              domain directory.
 /data           data directory, i.e. 'save' directory.
 /doc            documentation directory.
-/ftp            ftp public ('pub') directory.
+/pub            public (ftp) directory.
 /include        header file directory.
 /log            log file directory.
 /obj            object directory; all objects are below this.

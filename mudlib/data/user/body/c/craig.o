@@ -1,0 +1,10 @@
+#obj/clone/user.c
+name "craig"
+coins ({150,112,})
+hit_points 4
+title "the utter mudlib hacker"
+current_dir "/u/c/craig"
+term "ansi"
+aliases (["ne":"northeast","i":"inventory","sc":"score","se":"southeast","sw":"southwest","w":"west","n":"north","l":"look","nw":"northwest","e":"east","s":"south",])
+channels ({})
+search_path ({"/cmd/player","/adm/cmd/wiz","/cmd/wiz","/adm/cmd/adm","/adm/cmd/player","/cmd/adm",})

@@ -5,6 +5,7 @@
  *    created by Descartes of Borg 950506
  *
  *  10.23.95  Tim modified for this mudlib
+ *  12.08.95  Tim added 'auth' support
  */
 
 #ifndef __PACKAGE_SOCKETS__
@@ -40,12 +41,15 @@ static void create() {
     ChannelList->ID = -1;
     ChannelList->List = ([]);
     if( file_size( SAVE_INTERMUD __SAVE_EXTENSION__ ) > 0 )
-//      unguarded( (: restore_object, SAVE_INTERMUD, 1 :) );
-      restore_object(SAVE_INTERMUD, 1);
+      unguarded( (: restore_object, SAVE_INTERMUD, 1 :) );
     SetNoClean(1);
     SetDestructOnClose(1);
     SetSocketType(MUD);
     call_out( (: Setup :), 2);
+}
+
+static int remove() {
+  eventWrite( ({ "shutdown", 5, mud_name(), 0, Nameservers[0][0], 0, 0 }) );
 }
 
 static void Setup() {
@@ -164,6 +168,12 @@ static void eventRead(mixed *packet) {
 	  SERVICES_D->eventReceiveMailOk(packet);
 	  break;
         case "file":
+	  break;
+	case "auth-mud-req":
+	  SERVICES_D->eventRecieveAuthRequest(packet);
+	  break;
+	case "auth-mud-reply":
+	  SERVICES_D->eventRecieveAuthReply(packet);
 	  break;
         case "error":
 	  SERVICES_D->eventReceiveError(packet);

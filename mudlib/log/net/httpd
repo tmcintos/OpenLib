@@ -1,0 +1,423 @@
+Wed Nov 15 05:17:29 1995:  localhost: CONNECTED (Wed Nov 15 05:17:29 1995)
+Wed Nov 15 05:17:29 1995:  localhost: GET /index.html HTTP/1.0 (Wed Nov 15 05:17:29 1995)
+Wed Nov 15 05:24:07 1995:  localhost: CONNECTED (Wed Nov 15 05:24:07 1995)
+Wed Nov 15 05:24:07 1995:  localhost: GET /index.html HTTP/1.0 (Wed Nov 15 05:24:07 1995)
+Wed Nov 15 05:25:23 1995:  localhost: CONNECTED (Wed Nov 15 05:25:23 1995)
+Wed Nov 15 05:25:23 1995:  localhost: GET /index.html HTTP/1.0 (Wed Nov 15 05:25:23 1995)
+Wed Nov 15 05:30:49 1995:  localhost: CONNECTED (Wed Nov 15 05:30:49 1995)
+Wed Nov 15 05:30:49 1995:  localhost: GET /index.html HTTP/1.0 (Wed Nov 15 05:30:49 1995)
+Wed Nov 15 06:09:56 1995:  localhost: CONNECTED (Wed Nov 15 06:09:56 1995)
+Wed Nov 15 06:09:56 1995:  localhost: GET /index.html HTTP/1.0 (Wed Nov 15 06:09:56 1995)
+Wed Nov 15 06:20:54 1995:  localhost: CONNECTED (Wed Nov 15 06:20:54 1995)
+Wed Nov 15 06:20:54 1995:  localhost: GET /gateways/finger HTTP/1.0 (Wed Nov 15 06:20:54 1995)
+Wed Nov 15 08:58:49 1995:  130.18.16.27: CONNECTED (Wed Nov 15 08:58:49 1995)
+Wed Nov 15 08:58:49 1995:  130.18.16.27: GET / HTTP/1.0 (Wed Nov 15 08:58:49 1995)
+Wed Nov 15 08:58:49 1995:  Ip 130.18.16.27 resloved to Discovery.DE.MsState.Edu after connection closed.
+Wed Nov 15 08:59:01 1995:  130.18.16.27: CONNECTED (Wed Nov 15 08:59:01 1995)
+Wed Nov 15 08:59:01 1995:  130.18.16.27: GET /gateways/finger HTTP/1.0 (Wed Nov 15 08:59:01 1995)
+Wed Nov 15 08:59:01 1995:  Ip 130.18.16.27 resloved to Discovery.DE.MsState.Edu after connection closed.
+Wed Nov 15 21:46:16 1995:  localhost: CONNECTED (Wed Nov 15 21:46:16 1995)
+Wed Nov 15 21:46:16 1995:  localhost: GET /index.html HTTP/1.0 (Wed Nov 15 21:46:16 1995)
+Thu Nov 16 18:23:15 1995:  129.49.20.3: CONNECTED (Thu Nov 16 18:23:15 1995)
+Thu Nov 16 18:23:15 1995:  129.49.20.3: GET / HTTP/1.0 (Thu Nov 16 18:23:15 1995)
+Thu Nov 16 18:23:15 1995:  Ip 129.49.20.3 resloved to beta.mathlab.sunysb.edu after connection closed.
+Thu Nov 16 18:23:21 1995:  129.49.20.3: CONNECTED (Thu Nov 16 18:23:21 1995)
+Thu Nov 16 18:23:21 1995:  129.49.20.3: GET /gateways/finger HTTP/1.0 (Thu Nov 16 18:23:21 1995)
+Thu Nov 16 18:23:21 1995:  Ip 129.49.20.3 resloved to beta.mathlab.sunysb.edu after connection closed.
+Thu Nov 16 18:23:29 1995:  129.49.20.3: CONNECTED (Thu Nov 16 18:23:29 1995)
+Thu Nov 16 18:23:29 1995:  129.49.20.3: GET / HTTP/1.0 (Thu Nov 16 18:23:29 1995)
+Thu Nov 16 18:23:29 1995:  Ip 129.49.20.3 resloved to beta.mathlab.sunysb.edu after connection closed.
+Thu Nov 16 18:23:37 1995:  129.49.20.3: CONNECTED (Thu Nov 16 18:23:37 1995)
+Thu Nov 16 18:23:37 1995:  129.49.20.3: GET /~hamnsnock/ HTTP/1.0 (Thu Nov 16 18:23:37 1995)
+Thu Nov 16 18:23:37 1995:  129.49.20.3: ERROR: Not Found (Thu Nov 16 18:23:37 1995)
+Thu Nov 16 18:23:37 1995:  Ip 129.49.20.3 resloved to beta.mathlab.sunysb.edu after connection closed.
+Thu Nov 16 18:23:59 1995:  129.49.20.3: CONNECTED (Thu Nov 16 18:23:59 1995)
+Thu Nov 16 18:23:59 1995:  129.49.20.3: GET / HTTP/1.0 (Thu Nov 16 18:23:59 1995)
+Thu Nov 16 18:23:59 1995:  Ip 129.49.20.3 resloved to beta.mathlab.sunysb.edu after connection closed.
+Thu Nov 16 21:22:15 1995:  localhost: CONNECTED (Thu Nov 16 21:22:15 1995)
+Thu Nov 16 21:22:15 1995:  localhost: GET /gateways/finger HTTP/1.0 (Thu Nov 16 21:22:15 1995)
+Fri Nov 17 10:50:01 1995:  localhost: CONNECTED (Fri Nov 17 10:50:01 1995)
+Fri Nov 17 10:50:01 1995:  localhost: GET /gateways/finger HTTP/1.0 (Fri Nov 17 10:50:01 1995)
+Fri Nov 17 18:59:39 1995:  130.18.16.27: CONNECTED (Fri Nov 17 18:59:39 1995)
+Fri Nov 17 18:59:39 1995:  130.18.16.27: GET / HTTP/1.0 (Fri Nov 17 18:59:39 1995)
+Fri Nov 17 18:59:39 1995:  Ip 130.18.16.27 resloved to Discovery.DE.MsState.Edu after connection closed.
+Fri Nov 17 18:59:43 1995:  130.18.16.27: CONNECTED (Fri Nov 17 18:59:43 1995)
+Fri Nov 17 18:59:43 1995:  130.18.16.27: GET /gateways/finger HTTP/1.0 (Fri Nov 17 18:59:43 1995)
+Fri Nov 17 18:59:43 1995:  Ip 130.18.16.27 resloved to Discovery.DE.MsState.Edu after connection closed.
+Fri Nov 17 18:59:49 1995:  130.18.16.27: CONNECTED (Fri Nov 17 18:59:49 1995)
+Fri Nov 17 18:59:49 1995:  130.18.16.27: GET /~hamnsnock/ HTTP/1.0 (Fri Nov 17 18:59:49 1995)
+Fri Nov 17 18:59:49 1995:  130.18.16.27: ERROR: Not Found (Fri Nov 17 18:59:49 1995)
+Fri Nov 17 18:59:49 1995:  Ip 130.18.16.27 resloved to Discovery.DE.MsState.Edu after connection closed.
+Fri Nov 17 18:59:59 1995:  130.18.16.27: CONNECTED (Fri Nov 17 18:59:59 1995)
+Fri Nov 17 18:59:59 1995:  130.18.16.27: GET /~tim/ HTTP/1.0 (Fri Nov 17 18:59:59 1995)
+Fri Nov 17 18:59:59 1995:  Ip 130.18.16.27 resloved to Discovery.DE.MsState.Edu after connection closed.
+Fri Nov 17 19:00:11 1995:  130.18.16.27: CONNECTED (Fri Nov 17 19:00:11 1995)
+Fri Nov 17 19:00:11 1995:  130.18.16.27: GET /gateways/finger/tim HTTP/1.0 (Fri Nov 17 19:00:11 1995)
+Fri Nov 17 19:00:11 1995:  130.18.16.27: ERROR: Bad Gateway (Fri Nov 17 19:00:11 1995)
+Fri Nov 17 19:00:11 1995:  Ip 130.18.16.27 resloved to Discovery.DE.MsState.Edu after connection closed.
+Fri Nov 17 21:48:36 1995:  192.189.65.5: CONNECTED (Fri Nov 17 21:48:34 1995)
+Fri Nov 17 21:48:36 1995:  192.189.65.5: GET /~kyricc/fcs.html HTTP/1.0 (Fri Nov 17 21:48:36 1995)
+Fri Nov 17 21:48:36 1995:  192.189.65.5: ERROR: Not Found (Fri Nov 17 21:48:36 1995)
+Fri Nov 17 21:48:36 1995:  Ip 192.189.65.5 resloved to parnassus.dana.edu after connection closed.
+Sat Nov 18 09:10:49 1995:  204.141.0.101: CONNECTED (Sat Nov 18 09:10:34 1995)
+Sat Nov 18 09:10:49 1995:  204.141.0.101: GET / HTTP/1.0 (Sat Nov 18 09:10:49 1995)
+Sat Nov 18 09:10:53 1995:  Ip 204.141.0.101 resloved to vicslip.netusa.net after connection closed.
+Sun Nov 19 05:47:37 1995:  localhost: CONNECTED (Sun Nov 19 05:47:37 1995)
+Sun Nov 19 05:47:37 1995:  localhost: GET /gateways/finger HTTP/1.0 (Sun Nov 19 05:47:37 1995)
+Mon Nov 20 22:40:53 1995:  crc-ferg27.unl.edu: CONNECTED (Mon Nov 20 22:40:53 1995)
+Mon Nov 20 22:40:53 1995:  crc-ferg27.unl.edu: GET / HTTP/1.0 (Mon Nov 20 22:40:53 1995)
+Mon Nov 20 22:41:18 1995:  crc-ferg27.unl.edu: CONNECTED (Mon Nov 20 22:41:16 1995)
+Mon Nov 20 22:41:18 1995:  crc-ferg27.unl.edu: GET / HTTP/1.0 (Mon Nov 20 22:41:18 1995)
+Mon Nov 20 22:41:32 1995:  crc-ferg27.unl.edu: CONNECTED (Mon Nov 20 22:41:32 1995)
+Mon Nov 20 22:41:32 1995:  crc-ferg27.unl.edu: GET /~kyricc/ HTTP/1.0 (Mon Nov 20 22:41:32 1995)
+Tue Nov 21 11:00:55 1995:  206.30.198.119: CONNECTED (Tue Nov 21 11:00:48 1995)
+Tue Nov 21 11:00:55 1995:  206.30.198.119: GET / HTTP/1.0 (Tue Nov 21 11:00:55 1995)
+Tue Nov 21 11:00:55 1995:  Ip 206.30.198.119 resloved to dialup19.gnatnet.net after connection closed.
+Tue Nov 21 11:01:19 1995:  dialup19.gnatnet.net: CONNECTED (Tue Nov 21 11:01:19 1995)
+Tue Nov 21 11:01:19 1995:  dialup19.gnatnet.net: GET /gateways/finger HTTP/1.0 (Tue Nov 21 11:01:19 1995)
+Tue Nov 21 21:52:16 1995:  129.93.34.76: CONNECTED (Tue Nov 21 21:52:16 1995)
+Tue Nov 21 21:52:16 1995:  129.93.34.76: GET / HTTP/1.0 (Tue Nov 21 21:52:16 1995)
+Tue Nov 21 21:52:16 1995:  Ip 129.93.34.76 resloved to crc-ferg23.unl.edu after connection closed.
+Tue Nov 21 21:53:11 1995:  crc-ferg23.unl.edu: CONNECTED (Tue Nov 21 21:53:09 1995)
+Tue Nov 21 21:53:11 1995:  crc-ferg23.unl.edu: GET / HTTP/1.0 (Tue Nov 21 21:53:11 1995)
+Tue Nov 21 21:53:37 1995:  crc-ferg23.unl.edu: CONNECTED (Tue Nov 21 21:53:33 1995)
+Tue Nov 21 21:53:37 1995:  crc-ferg23.unl.edu: GET /~kyricc/ HTTP/1.0 (Tue Nov 21 21:53:37 1995)
+Wed Nov 22 20:19:57 1995:  localhost: CONNECTED (Wed Nov 22 20:19:57 1995)
+Wed Nov 22 20:19:57 1995:  localhost: GET /index.html HTTP/1.0 (Wed Nov 22 20:19:57 1995)
+Wed Nov 22 20:20:05 1995:  localhost: CONNECTED (Wed Nov 22 20:20:05 1995)
+Wed Nov 22 20:20:05 1995:  localhost: GET /~kyricc/ HTTP/1.0 (Wed Nov 22 20:20:05 1995)
+Wed Nov 22 22:02:59 1995:  206.232.178.5: CONNECTED (Wed Nov 22 22:02:59 1995)
+Wed Nov 22 22:02:59 1995:  206.232.178.5: GET / HTTP/1.0 (Wed Nov 22 22:02:59 1995)
+Wed Nov 22 22:02:59 1995:  Ip 0 resloved to NOT RESOLVED after connection closed.
+Sat Nov 25 13:51:19 1995:  130.18.16.16: CONNECTED (Sat Nov 25 13:51:19 1995)
+Sat Nov 25 13:51:19 1995:  130.18.16.16: GET / HTTP/1.0 (Sat Nov 25 13:51:19 1995)
+Sat Nov 25 13:51:19 1995:  Ip 0 resloved to NOT RESOLVED after connection closed.
+Sat Nov 25 13:51:29 1995:  130.18.16.16: CONNECTED (Sat Nov 25 13:51:29 1995)
+Sat Nov 25 13:51:29 1995:  130.18.16.16: GET /gateways/finger HTTP/1.0 (Sat Nov 25 13:51:29 1995)
+Sat Nov 25 13:51:29 1995:  Ip 0 resloved to NOT RESOLVED after connection closed.
+Sun Dec  3 02:48:05 1995:  127.0.0.1: CONNECTED (Sun Dec  3 02:48:05 1995)
+Sun Dec  3 02:48:05 1995:  127.0.0.1: GET / HTTP/1.0 (Sun Dec  3 02:48:05 1995)
+Sun Dec  3 02:48:05 1995:  Ip 127.0.0.1 resloved to loopback after connection closed.
+Sun Dec  3 02:48:15 1995:  127.0.0.1: CONNECTED (Sun Dec  3 02:48:15 1995)
+Sun Dec  3 02:48:15 1995:  127.0.0.1: GET /~tim/ HTTP/1.0 (Sun Dec  3 02:48:15 1995)
+Sun Dec  3 02:48:15 1995:  Ip 127.0.0.1 resloved to loopback after connection closed.
+Sun Dec  3 02:48:19 1995:  127.0.0.1: CONNECTED (Sun Dec  3 02:48:19 1995)
+Sun Dec  3 02:48:19 1995:  127.0.0.1: GET /gateways/finger/tim HTTP/1.0 (Sun Dec  3 02:48:19 1995)
+Sun Dec  3 02:48:19 1995:  127.0.0.1: ERROR: Bad Gateway (Sun Dec  3 02:48:19 1995)
+Sun Dec  3 02:48:19 1995:  Ip 127.0.0.1 resloved to loopback after connection closed.
+Sun Dec  3 02:48:35 1995:  127.0.0.1: CONNECTED (Sun Dec  3 02:48:35 1995)
+Sun Dec  3 02:48:35 1995:  127.0.0.1: GET /gateways/finger/tim HTTP/1.0 (Sun Dec  3 02:48:35 1995)
+Sun Dec  3 02:48:35 1995:  127.0.0.1: ERROR: Bad Gateway (Sun Dec  3 02:48:35 1995)
+Sun Dec  3 02:48:35 1995:  Ip 127.0.0.1 resloved to loopback after connection closed.
+Sun Dec  3 02:48:41 1995:  127.0.0.1: CONNECTED (Sun Dec  3 02:48:41 1995)
+Sun Dec  3 02:48:41 1995:  127.0.0.1: GET /gateways/finger?tim HTTP/1.0 (Sun Dec  3 02:48:41 1995)
+Sun Dec  3 02:48:41 1995:  Ip 127.0.0.1 resloved to loopback after connection closed.
+Sun Dec  3 02:49:03 1995:  127.0.0.1: CONNECTED (Sun Dec  3 02:49:03 1995)
+Sun Dec  3 02:49:03 1995:  127.0.0.1: GET /gateways/finger HTTP/1.0 (Sun Dec  3 02:49:03 1995)
+Sun Dec  3 02:49:03 1995:  Ip 127.0.0.1 resloved to loopback after connection closed.
+Mon Dec  4 03:08:14 1995:  147.210.13.1: CONNECTED (Mon Dec  4 03:08:14 1995)
+Mon Dec  4 03:08:14 1995:  147.210.13.1: GET / HTTP/1.0 (Mon Dec  4 03:08:14 1995)
+Mon Dec  4 03:08:14 1995:  Ip 147.210.13.1 resloved to edwood.emi.u-bordeaux.fr after connection closed.
+Mon Dec  4 03:08:30 1995:  147.210.13.1: CONNECTED (Mon Dec  4 03:08:30 1995)
+Mon Dec  4 03:08:30 1995:  147.210.13.1: GET /gateways/finger HTTP/1.0 (Mon Dec  4 03:08:30 1995)
+Mon Dec  4 03:08:30 1995:  Ip 147.210.13.1 resloved to edwood.emi.u-bordeaux.fr after connection closed.
+Mon Dec  4 03:09:06 1995:  147.210.13.1: CONNECTED (Mon Dec  4 03:09:06 1995)
+Mon Dec  4 03:09:06 1995:  147.210.13.1: GET /index.html HTTP/1.0 (Mon Dec  4 03:09:06 1995)
+Mon Dec  4 03:09:06 1995:  Ip 147.210.13.1 resloved to edwood.emi.u-bordeaux.fr after connection closed.
+Mon Dec  4 04:39:11 1995:  142.58.126.21: CONNECTED (Mon Dec  4 04:39:11 1995)
+Mon Dec  4 04:39:11 1995:  142.58.126.21: GET / HTTP/1.0 (Mon Dec  4 04:39:11 1995)
+Mon Dec  4 04:39:11 1995:  Ip 142.58.126.21 resloved to rs10-annex5.sfu.ca after connection closed.
+Mon Dec  4 13:44:19 1995:  127.0.0.1: CONNECTED (Mon Dec  4 13:44:19 1995)
+Mon Dec  4 13:44:19 1995:  127.0.0.1: GET /gateways/finger HTTP/1.0 (Mon Dec  4 13:44:19 1995)
+Mon Dec  4 13:44:19 1995:  Ip 127.0.0.1 resloved to loopback after connection closed.
+Mon Dec  4 13:44:34 1995:  127.0.0.1: CONNECTED (Mon Dec  4 13:44:34 1995)
+Mon Dec  4 13:44:34 1995:  127.0.0.1: GET /index.html HTTP/1.0 (Mon Dec  4 13:44:34 1995)
+Mon Dec  4 13:44:34 1995:  Ip 127.0.0.1 resloved to loopback after connection closed.
+Mon Dec  4 13:45:04 1995:  127.0.0.1: CONNECTED (Mon Dec  4 13:45:04 1995)
+Mon Dec  4 13:45:04 1995:  127.0.0.1: GET /~hamnsnock/ HTTP/1.0 (Mon Dec  4 13:45:04 1995)
+Mon Dec  4 13:45:04 1995:  127.0.0.1: ERROR: Not Found (Mon Dec  4 13:45:04 1995)
+Mon Dec  4 13:45:04 1995:  Ip 127.0.0.1 resloved to loopback after connection closed.
+Mon Dec  4 13:45:08 1995:  127.0.0.1: CONNECTED (Mon Dec  4 13:45:08 1995)
+Mon Dec  4 13:45:08 1995:  127.0.0.1: GET /~lol/ HTTP/1.0 (Mon Dec  4 13:45:08 1995)
+Mon Dec  4 13:45:08 1995:  127.0.0.1: ERROR: Not Found (Mon Dec  4 13:45:08 1995)
+Mon Dec  4 13:45:08 1995:  Ip 127.0.0.1 resloved to loopback after connection closed.
+Mon Dec  4 13:45:12 1995:  127.0.0.1: CONNECTED (Mon Dec  4 13:45:12 1995)
+Mon Dec  4 13:45:12 1995:  127.0.0.1: GET /~casper/ HTTP/1.0 (Mon Dec  4 13:45:12 1995)
+Mon Dec  4 13:45:12 1995:  127.0.0.1: ERROR: Not Found (Mon Dec  4 13:45:12 1995)
+Mon Dec  4 13:45:12 1995:  Ip 127.0.0.1 resloved to loopback after connection closed.
+Mon Dec  4 13:45:16 1995:  127.0.0.1: CONNECTED (Mon Dec  4 13:45:16 1995)
+Mon Dec  4 13:45:16 1995:  127.0.0.1: GET /~tim/ HTTP/1.0 (Mon Dec  4 13:45:16 1995)
+Mon Dec  4 13:45:16 1995:  Ip 127.0.0.1 resloved to loopback after connection closed.
+Mon Dec  4 13:45:24 1995:  127.0.0.1: CONNECTED (Mon Dec  4 13:45:24 1995)
+Mon Dec  4 13:45:24 1995:  127.0.0.1: GET /~kyricc/ HTTP/1.0 (Mon Dec  4 13:45:24 1995)
+Mon Dec  4 13:45:24 1995:  Ip 127.0.0.1 resloved to loopback after connection closed.
+Mon Dec  4 13:50:25 1995:  129.93.33.1: CONNECTED (Mon Dec  4 13:50:25 1995)
+Mon Dec  4 13:50:25 1995:  129.93.33.1: GET / HTTP/1.0 (Mon Dec  4 13:50:25 1995)
+Mon Dec  4 13:50:25 1995:  Ip 129.93.33.1 resloved to cse.unl.edu after connection closed.
+Mon Dec  4 13:50:31 1995:  129.93.33.1: CONNECTED (Mon Dec  4 13:50:31 1995)
+Mon Dec  4 13:50:31 1995:  129.93.33.1: GET /~kyricc/ HTTP/1.0 (Mon Dec  4 13:50:31 1995)
+Mon Dec  4 13:50:31 1995:  Ip 129.93.33.1 resloved to cse.unl.edu after connection closed.
+Mon Dec  4 23:56:51 1995:  127.0.0.1: CONNECTED (Mon Dec  4 23:56:51 1995)
+Mon Dec  4 23:56:51 1995:  127.0.0.1: GET /gateways/finger HTTP/1.0 (Mon Dec  4 23:56:51 1995)
+Mon Dec  4 23:56:51 1995:  Ip 127.0.0.1 resloved to loopback after connection closed.
+Mon Dec  4 23:57:07 1995:  127.0.0.1: CONNECTED (Mon Dec  4 23:57:07 1995)
+Mon Dec  4 23:57:07 1995:  127.0.0.1: GET /index.html HTTP/1.0 (Mon Dec  4 23:57:07 1995)
+Mon Dec  4 23:57:07 1995:  Ip 127.0.0.1 resloved to loopback after connection closed.
+Mon Dec  4 23:57:17 1995:  127.0.0.1: CONNECTED (Mon Dec  4 23:57:17 1995)
+Mon Dec  4 23:57:17 1995:  127.0.0.1: GET /~kyricc/ HTTP/1.0 (Mon Dec  4 23:57:17 1995)
+Mon Dec  4 23:57:17 1995:  Ip 127.0.0.1 resloved to loopback after connection closed.
+Tue Dec  5 00:02:46 1995:  129.93.34.74: CONNECTED (Tue Dec  5 00:02:25 1995)
+Tue Dec  5 00:02:46 1995:  129.93.34.74: GET / HTTP/1.0 (Tue Dec  5 00:02:46 1995)
+Tue Dec  5 00:02:46 1995:  Ip 129.93.34.74 resloved to crc-ferg21.unl.edu after connection closed.
+Tue Dec  5 00:03:06 1995:  129.93.34.74: CONNECTED (Tue Dec  5 00:03:06 1995)
+Tue Dec  5 00:03:06 1995:  129.93.34.74: GET / HTTP/1.0 (Tue Dec  5 00:03:06 1995)
+Tue Dec  5 00:03:06 1995:  Ip 129.93.34.74 resloved to crc-ferg21.unl.edu after connection closed.
+Tue Dec  5 14:03:28 1995:  204.123.2.54: CONNECTED (Tue Dec  5 14:03:25 1995)
+Tue Dec  5 14:03:28 1995:  204.123.2.54: GET / HTTP/1.0 (Tue Dec  5 14:03:28 1995)
+Tue Dec  5 14:03:28 1995:  Ip 204.123.2.54 resloved to scooter.pa-x.dec.com after connection closed.
+Tue Dec  5 17:31:18 1995:  204.123.2.54: CONNECTED (Tue Dec  5 17:31:18 1995)
+Tue Dec  5 17:31:18 1995:  204.123.2.54: GET /gateways/finger HTTP/1.0 (Tue Dec  5 17:31:18 1995)
+Tue Dec  5 17:31:18 1995:  Ip 204.123.2.54 resloved to scooter.pa-x.dec.com after connection closed.
+Wed Dec  6 19:29:05 1995:  204.123.2.54: CONNECTED (Wed Dec  6 19:28:59 1995)
+Wed Dec  6 19:29:05 1995:  204.123.2.54: GET /~kyricc HTTP/1.0 (Wed Dec  6 19:29:05 1995)
+Wed Dec  6 19:29:05 1995:  Ip 204.123.2.54 resloved to scooter.pa-x.dec.com after connection closed.
+Wed Dec  6 19:41:26 1995:  204.123.2.54: CONNECTED (Wed Dec  6 19:41:24 1995)
+Wed Dec  6 19:41:26 1995:  204.123.2.54: GET /index.html HTTP/1.0 (Wed Dec  6 19:41:26 1995)
+Wed Dec  6 19:41:26 1995:  Ip 204.123.2.54 resloved to scooter.pa-x.dec.com after connection closed.
+Thu Dec  7 16:38:48 1995:  204.123.2.54: CONNECTED (Thu Dec  7 16:38:46 1995)
+Thu Dec  7 16:38:48 1995:  204.123.2.54: GET /~tim HTTP/1.0 (Thu Dec  7 16:38:48 1995)
+Thu Dec  7 16:38:52 1995:  Ip 204.123.2.54 resloved to scooter.pa-x.dec.com after connection closed.
+Thu Dec  7 19:10:23 1995:  204.123.2.54: CONNECTED (Thu Dec  7 19:10:23 1995)
+Thu Dec  7 19:10:23 1995:  204.123.2.54: GET /do_nothing.html HTTP/1.0 (Thu Dec  7 19:10:23 1995)
+Thu Dec  7 19:10:23 1995:  204.123.2.54: ERROR: Not Found (Thu Dec  7 19:10:23 1995)
+Thu Dec  7 19:10:23 1995:  Ip 204.123.2.54 resloved to scooter.pa-x.dec.com after connection closed.
+Thu Dec  7 21:50:23 1995:  204.123.2.54: CONNECTED (Thu Dec  7 21:50:21 1995)
+Thu Dec  7 21:50:23 1995:  204.123.2.54: GET /gateways/finger/tim HTTP/1.0 (Thu Dec  7 21:50:23 1995)
+Thu Dec  7 21:50:23 1995:  204.123.2.54: ERROR: Bad Gateway (Thu Dec  7 21:50:23 1995)
+Thu Dec  7 21:50:27 1995:  Ip 204.123.2.54 resloved to scooter.pa-x.dec.com after connection closed.
+Fri Dec  8 03:07:54 1995:  204.123.2.54: CONNECTED (Fri Dec  8 03:07:54 1995)
+Fri Dec  8 03:07:54 1995:  204.123.2.54: GET /~casper HTTP/1.0 (Fri Dec  8 03:07:54 1995)
+Fri Dec  8 03:07:54 1995:  204.123.2.54: ERROR: Not Found (Fri Dec  8 03:07:54 1995)
+Fri Dec  8 03:07:54 1995:  Ip 204.123.2.54 resloved to scooter.pa-x.dec.com after connection closed.
+Fri Dec  8 13:12:37 1995:  204.123.2.54: CONNECTED (Fri Dec  8 13:12:37 1995)
+Fri Dec  8 13:12:37 1995:  204.123.2.54: GET /~lol HTTP/1.0 (Fri Dec  8 13:12:37 1995)
+Fri Dec  8 13:12:37 1995:  204.123.2.54: ERROR: Not Found (Fri Dec  8 13:12:37 1995)
+Fri Dec  8 13:12:37 1995:  Ip 204.123.2.54 resloved to scooter.pa-x.dec.com after connection closed.
+Fri Dec  8 22:21:38 1995:  204.123.2.54: CONNECTED (Fri Dec  8 22:21:36 1995)
+Fri Dec  8 22:21:38 1995:  204.123.2.54: GET /~hamnsnock HTTP/1.0 (Fri Dec  8 22:21:38 1995)
+Fri Dec  8 22:21:38 1995:  204.123.2.54: ERROR: Not Found (Fri Dec  8 22:21:38 1995)
+Fri Dec  8 22:21:38 1995:  Ip 204.123.2.54 resloved to scooter.pa-x.dec.com after connection closed.
+Mon Dec 11 23:04:44 1995:  129.186.85.38: CONNECTED (Mon Dec 11 23:04:44 1995)
+Mon Dec 11 23:04:44 1995:  129.186.85.38: GET / HTTP/1.0 (Mon Dec 11 23:04:44 1995)
+Mon Dec 11 23:04:44 1995:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Dec 11 23:13:21 1995:  129.186.85.38: CONNECTED (Mon Dec 11 23:13:21 1995)
+Mon Dec 11 23:13:21 1995:  129.186.85.38: GET / HTTP/1.0 (Mon Dec 11 23:13:21 1995)
+Mon Dec 11 23:13:21 1995:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Dec 11 23:13:34 1995:  129.186.85.38: CONNECTED (Mon Dec 11 23:13:27 1995)
+Mon Dec 11 23:13:34 1995:  129.186.85.38: GET /gateways/finger HTTP/1.0 (Mon Dec 11 23:13:34 1995)
+Mon Dec 11 23:13:38 1995:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Dec 11 23:13:52 1995:  129.186.85.38: CONNECTED (Mon Dec 11 23:13:50 1995)
+Mon Dec 11 23:13:52 1995:  129.186.85.38: GET /~kyricc/ HTTP/1.0 (Mon Dec 11 23:13:52 1995)
+Mon Dec 11 23:13:55 1995:  129.186.85.38: CONNECTED (Mon Dec 11 23:13:52 1995)
+Mon Dec 11 23:13:55 1995:  129.186.85.38: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Mon Dec 11 23:13:55 1995)
+Mon Dec 11 23:13:57 1995:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Dec 11 23:13:57 1995:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Dec 11 23:16:11 1995:  129.186.85.38: CONNECTED (Mon Dec 11 23:16:11 1995)
+Mon Dec 11 23:16:11 1995:  129.186.85.38: GET / HTTP/1.0 (Mon Dec 11 23:16:11 1995)
+Mon Dec 11 23:16:11 1995:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Dec 11 23:16:13 1995:  129.186.85.38: CONNECTED (Mon Dec 11 23:16:13 1995)
+Mon Dec 11 23:16:13 1995:  129.186.85.38: GET /~kyricc/ HTTP/1.0 (Mon Dec 11 23:16:13 1995)
+Mon Dec 11 23:16:13 1995:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Dec 11 23:16:13 1995:  129.186.85.38: CONNECTED (Mon Dec 11 23:16:13 1995)
+Mon Dec 11 23:16:13 1995:  129.186.85.38: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Mon Dec 11 23:16:13 1995)
+Mon Dec 11 23:16:13 1995:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Dec 11 23:16:17 1995:  129.186.85.38: CONNECTED (Mon Dec 11 23:16:17 1995)
+Mon Dec 11 23:16:17 1995:  129.186.85.38: GET /~kyricc/do_nothing.html HTTP/1.0 (Mon Dec 11 23:16:17 1995)
+Mon Dec 11 23:16:17 1995:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Dec 11 23:16:29 1995:  129.186.85.38: CONNECTED (Mon Dec 11 23:16:29 1995)
+Mon Dec 11 23:16:29 1995:  129.186.85.38: GET /~kyricc/shop.html HTTP/1.0 (Mon Dec 11 23:16:29 1995)
+Mon Dec 11 23:16:29 1995:  129.186.85.38: ERROR: Not Found (Mon Dec 11 23:16:29 1995)
+Mon Dec 11 23:16:29 1995:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Dec 11 23:16:33 1995:  129.186.85.38: CONNECTED (Mon Dec 11 23:16:33 1995)
+Mon Dec 11 23:16:33 1995:  129.186.85.38: GET /~kyricc/corpse.html HTTP/1.0 (Mon Dec 11 23:16:33 1995)
+Mon Dec 11 23:16:33 1995:  129.186.85.38: ERROR: Not Found (Mon Dec 11 23:16:33 1995)
+Mon Dec 11 23:16:33 1995:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Dec 11 23:16:35 1995:  129.186.85.38: CONNECTED (Mon Dec 11 23:16:35 1995)
+Mon Dec 11 23:16:35 1995:  129.186.85.38: GET /~kyricc/cry.html HTTP/1.0 (Mon Dec 11 23:16:35 1995)
+Mon Dec 11 23:16:35 1995:  129.186.85.38: ERROR: Not Found (Mon Dec 11 23:16:35 1995)
+Mon Dec 11 23:16:35 1995:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Dec 11 23:16:47 1995:  129.186.85.38: CONNECTED (Mon Dec 11 23:16:47 1995)
+Mon Dec 11 23:16:47 1995:  129.186.85.38: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Mon Dec 11 23:16:47 1995)
+Mon Dec 11 23:16:47 1995:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Dec 11 23:16:51 1995:  129.186.85.38: CONNECTED (Mon Dec 11 23:16:51 1995)
+Mon Dec 11 23:16:51 1995:  129.186.85.38: GET /~tim/ HTTP/1.0 (Mon Dec 11 23:16:51 1995)
+Mon Dec 11 23:16:51 1995:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Dec 11 23:17:12 1995:  129.186.85.38: CONNECTED (Mon Dec 11 23:17:05 1995)
+Mon Dec 11 23:17:12 1995:  129.186.85.38: GET /gateways/finger/tim HTTP/1.0 (Mon Dec 11 23:17:12 1995)
+Mon Dec 11 23:17:12 1995:  129.186.85.38: ERROR: Bad Gateway (Mon Dec 11 23:17:12 1995)
+Mon Dec 11 23:17:12 1995:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Dec 11 23:17:19 1995:  129.186.85.38: CONNECTED (Mon Dec 11 23:17:19 1995)
+Mon Dec 11 23:17:19 1995:  129.186.85.38: GET /gateways?finger/tim HTTP/1.0 (Mon Dec 11 23:17:19 1995)
+Mon Dec 11 23:17:19 1995:  129.186.85.38: ERROR: Bad Gateway (Mon Dec 11 23:17:19 1995)
+Mon Dec 11 23:17:21 1995:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Dec 11 23:17:42 1995:  129.186.85.38: CONNECTED (Mon Dec 11 23:17:35 1995)
+Mon Dec 11 23:17:42 1995:  129.186.85.38: GET /gateways/finger?tim HTTP/1.0 (Mon Dec 11 23:17:42 1995)
+Mon Dec 11 23:17:50 1995:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Dec 11 23:18:24 1995:  129.186.85.38: CONNECTED (Mon Dec 11 23:18:24 1995)
+Mon Dec 11 23:18:24 1995:  129.186.85.38: GET /~hamnsnock/ HTTP/1.0 (Mon Dec 11 23:18:24 1995)
+Mon Dec 11 23:18:24 1995:  129.186.85.38: ERROR: Not Found (Mon Dec 11 23:18:24 1995)
+Mon Dec 11 23:18:24 1995:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Dec 11 23:18:37 1995:  129.186.85.38: CONNECTED (Mon Dec 11 23:18:30 1995)
+Mon Dec 11 23:18:37 1995:  129.186.85.38: GET /~lol/ HTTP/1.0 (Mon Dec 11 23:18:37 1995)
+Mon Dec 11 23:18:37 1995:  129.186.85.38: ERROR: Not Found (Mon Dec 11 23:18:37 1995)
+Mon Dec 11 23:18:46 1995:  129.186.85.38: CONNECTED (Mon Dec 11 23:18:39 1995)
+Mon Dec 11 23:18:46 1995:  129.186.85.38: GET /~casper/ HTTP/1.0 (Mon Dec 11 23:18:46 1995)
+Mon Dec 11 23:18:46 1995:  129.186.85.38: ERROR: Not Found (Mon Dec 11 23:18:46 1995)
+Mon Dec 11 23:18:46 1995:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Dec 11 23:18:46 1995:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Dec 14 00:58:14 1995:  129.93.33.1: CONNECTED (Thu Dec 14 00:58:02 1995)
+Thu Dec 14 00:58:14 1995:  129.93.33.1: GET /~kyricc/ HTTP/1.0 (Thu Dec 14 00:58:14 1995)
+Thu Dec 14 00:58:18 1995:  129.93.33.1: CONNECTED (Thu Dec 14 00:58:16 1995)
+Thu Dec 14 00:58:18 1995:  129.93.33.1: GET /~kyricc/ HTTP/1.0 (Thu Dec 14 00:58:18 1995)
+Thu Dec 14 00:58:18 1995:  Ip 129.93.33.1 resloved to cse.unl.edu after connection closed.
+Thu Dec 14 00:58:18 1995:  Ip 129.93.33.1 resloved to cse.unl.edu after connection closed.
+Thu Dec 14 00:58:22 1995:  129.93.33.1: CONNECTED (Thu Dec 14 00:58:20 1995)
+Thu Dec 14 00:58:22 1995:  129.93.33.1: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Thu Dec 14 00:58:22 1995)
+Thu Dec 14 00:58:24 1995:  Ip 129.93.33.1 resloved to cse.unl.edu after connection closed.
+Thu Dec 14 00:58:28 1995:  129.93.33.1: CONNECTED (Thu Dec 14 00:58:26 1995)
+Thu Dec 14 00:58:28 1995:  129.93.33.1: GET /~kyricc/do_nothing.html HTTP/1.0 (Thu Dec 14 00:58:28 1995)
+Thu Dec 14 00:58:28 1995:  Ip 129.93.33.1 resloved to cse.unl.edu after connection closed.
+Thu Jan 18 01:13:58 1996:  127.0.0.1: CONNECTED (Thu Jan 18 01:13:58 1996)
+Thu Jan 18 01:13:58 1996:  127.0.0.1: GET /gateways/finger HTTP/1.0 (Thu Jan 18 01:13:58 1996)
+Thu Jan 18 01:14:00 1996:  Ip 127.0.0.1 resloved to localhost after connection closed.
+Thu Jan 18 01:14:08 1996:  127.0.0.1: CONNECTED (Thu Jan 18 01:14:08 1996)
+Thu Jan 18 01:14:08 1996:  127.0.0.1: GET /index.html HTTP/1.0 (Thu Jan 18 01:14:08 1996)
+Thu Jan 18 01:14:08 1996:  Ip 127.0.0.1 resloved to localhost after connection closed.
+Thu Jan 18 01:14:30 1996:  127.0.0.1: CONNECTED (Thu Jan 18 01:14:30 1996)
+Thu Jan 18 01:14:30 1996:  127.0.0.1: GET /~kyricc/ HTTP/1.0 (Thu Jan 18 01:14:30 1996)
+Thu Jan 18 01:14:30 1996:  Ip 127.0.0.1 resloved to localhost after connection closed.
+Thu Jan 18 03:10:23 1996:  129.93.33.1: CONNECTED (Thu Jan 18 03:10:23 1996)
+Thu Jan 18 03:10:23 1996:  129.93.33.1: GET / HTTP/1.0 (Thu Jan 18 03:10:23 1996)
+Thu Jan 18 03:10:23 1996:  Ip 129.93.33.1 resloved to cse.unl.edu after connection closed.
+Thu Jan 18 03:10:35 1996:  129.93.33.1: CONNECTED (Thu Jan 18 03:10:35 1996)
+Thu Jan 18 03:10:35 1996:  129.93.33.1: GET /gateways/finger HTTP/1.0 (Thu Jan 18 03:10:35 1996)
+Thu Jan 18 03:10:35 1996:  Ip 129.93.33.1 resloved to cse.unl.edu after connection closed.
+Thu Jan 18 03:10:39 1996:  129.93.33.1: CONNECTED (Thu Jan 18 03:10:39 1996)
+Thu Jan 18 03:10:39 1996:  129.93.33.1: GET /index.html HTTP/1.0 (Thu Jan 18 03:10:39 1996)
+Thu Jan 18 03:10:41 1996:  Ip 129.93.33.1 resloved to cse.unl.edu after connection closed.
+Thu Jan 18 03:11:21 1996:  129.93.33.1: CONNECTED (Thu Jan 18 03:11:21 1996)
+Thu Jan 18 03:11:21 1996:  129.93.33.1: GET /~casper/ HTTP/1.0 (Thu Jan 18 03:11:21 1996)
+Thu Jan 18 03:11:21 1996:  129.93.33.1: ERROR: Not Found (Thu Jan 18 03:11:21 1996)
+Thu Jan 18 03:11:21 1996:  Ip 129.93.33.1 resloved to cse.unl.edu after connection closed.
+Thu Jan 18 03:11:29 1996:  129.93.33.1: CONNECTED (Thu Jan 18 03:11:29 1996)
+Thu Jan 18 03:11:29 1996:  129.93.33.1: GET /~kyricc/ HTTP/1.0 (Thu Jan 18 03:11:29 1996)
+Thu Jan 18 03:11:29 1996:  Ip 129.93.33.1 resloved to cse.unl.edu after connection closed.
+Thu Jan 18 18:01:21 1996:  129.186.85.38: CONNECTED (Thu Jan 18 18:01:19 1996)
+Thu Jan 18 18:01:21 1996:  129.186.85.38: GET / HTTP/1.0 (Thu Jan 18 18:01:21 1996)
+Thu Jan 18 18:01:21 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Jan 18 18:01:25 1996:  129.186.85.38: CONNECTED (Thu Jan 18 18:01:25 1996)
+Thu Jan 18 18:01:25 1996:  129.186.85.38: GET /gateways/finger HTTP/1.0 (Thu Jan 18 18:01:25 1996)
+Thu Jan 18 18:01:25 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Jan 18 18:01:31 1996:  129.186.85.38: CONNECTED (Thu Jan 18 18:01:31 1996)
+Thu Jan 18 18:01:31 1996:  129.186.85.38: GET /~hamnsnock/ HTTP/1.0 (Thu Jan 18 18:01:31 1996)
+Thu Jan 18 18:01:31 1996:  129.186.85.38: ERROR: Not Found (Thu Jan 18 18:01:31 1996)
+Thu Jan 18 18:01:31 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Jan 18 18:01:33 1996:  129.186.85.38: CONNECTED (Thu Jan 18 18:01:33 1996)
+Thu Jan 18 18:01:33 1996:  129.186.85.38: GET /~kyricc/ HTTP/1.0 (Thu Jan 18 18:01:33 1996)
+Thu Jan 18 18:01:33 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Jan 18 18:01:39 1996:  129.186.85.38: CONNECTED (Thu Jan 18 18:01:39 1996)
+Thu Jan 18 18:01:39 1996:  129.186.85.38: GET /~tim/ HTTP/1.0 (Thu Jan 18 18:01:39 1996)
+Thu Jan 18 18:01:39 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Jan 18 23:48:56 1996:  127.0.0.1: CONNECTED (Thu Jan 18 23:48:56 1996)
+Thu Jan 18 23:48:56 1996:  127.0.0.1: GET / HTTP/1.0 (Thu Jan 18 23:48:56 1996)
+Thu Jan 18 23:48:56 1996:  Ip 127.0.0.1 resloved to localhost after connection closed.
+Mon Jan 22 00:42:14 1996:  129.186.85.38: CONNECTED (Mon Jan 22 00:42:14 1996)
+Mon Jan 22 00:42:14 1996:  129.186.85.38: GET / HTTP/1.0 (Mon Jan 22 00:42:14 1996)
+Mon Jan 22 00:42:14 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Jan 22 00:42:18 1996:  129.186.85.38: CONNECTED (Mon Jan 22 00:42:18 1996)
+Mon Jan 22 00:42:18 1996:  129.186.85.38: GET /~tim/TODO HTTP/1.0 (Mon Jan 22 00:42:18 1996)
+Mon Jan 22 00:42:18 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Jan 22 00:44:21 1996:  129.186.85.38: CONNECTED (Mon Jan 22 00:44:21 1996)
+Mon Jan 22 00:44:21 1996:  129.186.85.38: GET / HTTP/1.0 (Mon Jan 22 00:44:21 1996)
+Mon Jan 22 00:44:21 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Jan 22 00:44:25 1996:  129.186.85.38: CONNECTED (Mon Jan 22 00:44:25 1996)
+Mon Jan 22 00:44:25 1996:  129.186.85.38: GET /~tim/TODO HTTP/1.0 (Mon Jan 22 00:44:25 1996)
+Mon Jan 22 00:44:25 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Jan 22 00:44:35 1996:  129.186.85.38: CONNECTED (Mon Jan 22 00:44:35 1996)
+Mon Jan 22 00:44:35 1996:  129.186.85.38: GET /~tim/DONE HTTP/1.0 (Mon Jan 22 00:44:35 1996)
+Mon Jan 22 00:44:35 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Jan 22 00:44:41 1996:  129.186.85.38: CONNECTED (Mon Jan 22 00:44:41 1996)
+Mon Jan 22 00:44:41 1996:  129.186.85.38: GET /gateways/finger HTTP/1.0 (Mon Jan 22 00:44:41 1996)
+Mon Jan 22 00:44:41 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Jan 22 00:44:47 1996:  129.186.85.38: CONNECTED (Mon Jan 22 00:44:47 1996)
+Mon Jan 22 00:44:47 1996:  129.186.85.38: GET /~tim/ HTTP/1.0 (Mon Jan 22 00:44:47 1996)
+Mon Jan 22 00:44:47 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Jan 22 00:45:09 1996:  129.186.85.38: CONNECTED (Mon Jan 22 00:45:09 1996)
+Mon Jan 22 00:45:09 1996:  129.186.85.38: GET /~exe/ HTTP/1.0 (Mon Jan 22 00:45:09 1996)
+Mon Jan 22 00:45:09 1996:  129.186.85.38: ERROR: Not Found (Mon Jan 22 00:45:09 1996)
+Mon Jan 22 00:45:09 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Jan 22 00:45:11 1996:  129.186.85.38: CONNECTED (Mon Jan 22 00:45:11 1996)
+Mon Jan 22 00:45:11 1996:  129.186.85.38: GET /~talen/ HTTP/1.0 (Mon Jan 22 00:45:11 1996)
+Mon Jan 22 00:45:11 1996:  129.186.85.38: ERROR: Not Found (Mon Jan 22 00:45:11 1996)
+Mon Jan 22 00:45:11 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Jan 22 00:45:17 1996:  129.186.85.38: CONNECTED (Mon Jan 22 00:45:17 1996)
+Mon Jan 22 00:45:17 1996:  129.186.85.38: GET /~casper/ HTTP/1.0 (Mon Jan 22 00:45:17 1996)
+Mon Jan 22 00:45:17 1996:  129.186.85.38: ERROR: Not Found (Mon Jan 22 00:45:17 1996)
+Mon Jan 22 00:45:17 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Jan 22 00:45:19 1996:  129.186.85.38: CONNECTED (Mon Jan 22 00:45:19 1996)
+Mon Jan 22 00:45:19 1996:  129.186.85.38: GET /~kyricc/ HTTP/1.0 (Mon Jan 22 00:45:19 1996)
+Mon Jan 22 00:45:19 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Jan 22 00:46:01 1996:  129.186.85.38: CONNECTED (Mon Jan 22 00:46:01 1996)
+Mon Jan 22 00:46:01 1996:  129.186.85.38: GET / HTTP/1.0 (Mon Jan 22 00:46:01 1996)
+Mon Jan 22 00:46:01 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Jan 22 00:46:03 1996:  129.186.85.38: CONNECTED (Mon Jan 22 00:46:03 1996)
+Mon Jan 22 00:46:03 1996:  129.186.85.38: GET /~tim/TODO HTTP/1.0 (Mon Jan 22 00:46:03 1996)
+Mon Jan 22 00:46:03 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Jan 22 12:02:37 1996:  132.239.210.146: CONNECTED (Mon Jan 22 12:02:37 1996)
+Mon Jan 22 12:02:37 1996:  132.239.210.146: GET / HTTP/1.0 (Mon Jan 22 12:02:37 1996)
+Mon Jan 22 12:02:37 1996:  Ip 132.239.210.146 resloved to acs-center12.ucsd.edu after connection closed.
+Mon Jan 22 12:02:43 1996:  132.239.210.146: CONNECTED (Mon Jan 22 12:02:43 1996)
+Mon Jan 22 12:02:43 1996:  132.239.210.146: GET /~tim/TODO HTTP/1.0 (Mon Jan 22 12:02:43 1996)
+Mon Jan 22 12:02:43 1996:  Ip 132.239.210.146 resloved to acs-center12.ucsd.edu after connection closed.
+Mon Jan 22 12:03:01 1996:  132.239.210.146: CONNECTED (Mon Jan 22 12:03:01 1996)
+Mon Jan 22 12:03:01 1996:  132.239.210.146: GET /~tim/TODO HTTP/1.0 (Mon Jan 22 12:03:01 1996)
+Mon Jan 22 12:03:01 1996:  Ip 132.239.210.146 resloved to acs-center12.ucsd.edu after connection closed.
+Mon Jan 22 12:07:31 1996:  132.239.210.146: CONNECTED (Mon Jan 22 12:07:31 1996)
+Mon Jan 22 12:07:31 1996:  132.239.210.146: GET /~tim/ HTTP/1.0 (Mon Jan 22 12:07:31 1996)
+Mon Jan 22 12:07:31 1996:  Ip 132.239.210.146 resloved to acs-center12.ucsd.edu after connection closed.
+Mon Jan 22 12:09:03 1996:  132.239.210.146: CONNECTED (Mon Jan 22 12:09:03 1996)
+Mon Jan 22 12:09:03 1996:  132.239.210.146: GET /~tim/TODO HTTP/1.0 (Mon Jan 22 12:09:03 1996)
+Mon Jan 22 12:09:03 1996:  Ip 132.239.210.146 resloved to acs-center12.ucsd.edu after connection closed.
+Mon Jan 22 12:11:36 1996:  132.239.210.146: CONNECTED (Mon Jan 22 12:11:36 1996)
+Mon Jan 22 12:11:36 1996:  132.239.210.146: GET /gateways/finger HTTP/1.0 (Mon Jan 22 12:11:36 1996)
+Mon Jan 22 12:11:36 1996:  Ip 132.239.210.146 resloved to acs-center12.ucsd.edu after connection closed.
+Mon Jan 22 12:12:58 1996:  132.239.210.146: CONNECTED (Mon Jan 22 12:12:58 1996)
+Mon Jan 22 12:12:58 1996:  132.239.210.146: GET /~talen/ HTTP/1.0 (Mon Jan 22 12:12:58 1996)
+Mon Jan 22 12:12:58 1996:  132.239.210.146: ERROR: Not Found (Mon Jan 22 12:12:58 1996)
+Mon Jan 22 12:12:58 1996:  Ip 132.239.210.146 resloved to acs-center12.ucsd.edu after connection closed.
+Mon Jan 22 12:13:44 1996:  132.239.210.146: CONNECTED (Mon Jan 22 12:13:44 1996)
+Mon Jan 22 12:13:44 1996:  132.239.210.146: GET /~evergreen HTTP/1.0 (Mon Jan 22 12:13:44 1996)
+Mon Jan 22 12:13:44 1996:  Ip 132.239.210.146 resloved to acs-center12.ucsd.edu after connection closed.
+Wed Jan 24 00:03:39 1996:  129.186.85.38: CONNECTED (Wed Jan 24 00:03:39 1996)
+Wed Jan 24 00:03:39 1996:  129.186.85.38: GET / HTTP/1.0 (Wed Jan 24 00:03:39 1996)
+Wed Jan 24 00:03:39 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Jan 25 13:12:35 1996:  Socket closed.
+Thu Jan 25 13:13:51 1996:  abacus.bates.edu: CONNECTED (Thu Jan 25 13:09:34 1996)
+Thu Jan 25 13:16:56 1996:  Socket closed.
+Thu Jan 25 13:18:40 1996:  abacus.bates.edu: CONNECTED (Thu Jan 25 13:15:54 1996)
+Thu Jan 25 13:35:25 1996:  Socket closed.
+Thu Jan 25 13:39:13 1996:  abacus.bates.edu: CONNECTED (Thu Jan 25 13:33:15 1996)
+Thu Jan 25 16:01:04 1996:  Socket closed.
+Thu Jan 25 16:01:06 1996:  Socket closed.
+Thu Jan 25 16:02:08 1996:  abacus.bates.edu: CONNECTED (Thu Jan 25 15:58:37 1996)
+Thu Jan 25 16:03:57 1996:  134.181.128.3: CONNECTED (Thu Jan 25 16:00:44 1996)
+Thu Jan 25 16:06:58 1996:  abacus.bates.edu: CONNECTED (Thu Jan 25 16:02:45 1996)
+Thu Jan 25 16:19:20 1996:  Socket closed.
+Thu Jan 25 16:22:02 1996:  abacus.bates.edu: CONNECTED (Thu Jan 25 16:16:27 1996)
+Thu Jan 25 16:22:02 1996:  134.181.128.3: CONNECTED (Thu Jan 25 16:18:55 1996)
+Thu Jan 25 16:31:05 1996:  abacus.bates.edu: CONNECTED (Thu Jan 25 16:26:14 1996)
+Thu Jan 25 17:18:20 1996:  Socket closed.
+Thu Jan 25 17:22:21 1996:  abacus.bates.edu: CONNECTED (Thu Jan 25 17:17:17 1996)
+Thu Jan 25 19:02:44 1996:  Socket closed.
+Thu Jan 25 19:04:39 1996:  abacus.bates.edu: CONNECTED (Thu Jan 25 18:59:48 1996)
+Thu Jan 25 19:07:40 1996:  134.181.128.3: CONNECTED (Thu Jan 25 19:02:28 1996)

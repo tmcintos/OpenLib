@@ -1,10 +1,10 @@
 #obj/clone/connection.c
 name "tim"
-password "ofs6r1w2SyRTE"
+password "TKpXEwZ9LKfG2"
 real_name "Tim McIntosh"
-email_addr "astasia@knapp38.res.iastate.edu"
+email_addr "tmcintos@novia.net"
 home_dir "/u/t/tim"
 body "/obj/clone/user/human"
-login_time 815115879
-login_from "localhost"
-active 0
+login_time 822625002
+logout_time 822629812
+login_from "loopback"

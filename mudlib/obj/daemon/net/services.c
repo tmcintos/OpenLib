@@ -30,10 +30,11 @@ static void create() {
 #include "services/locate.c"
 #include "services/tell.c"
 #include "services/who.c"
+#include "services/auth.c"
 
 mapping GetServices() {
     return ([
-	     "amcp" : "1.1",
+	//    "amcp" : "1.1",
 #ifdef SERVICE_AUTH
 	     "auth" : 1,
 #endif

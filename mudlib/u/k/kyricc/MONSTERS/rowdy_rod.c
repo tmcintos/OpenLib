@@ -26,6 +26,6 @@ create()
 	   }));
   weap = new("/obj/examples/weapon");
   weap->move(this_object());
-  do_wield(weap, 1, 1);
+  do_wield(weap, 1, 0);
 }
 

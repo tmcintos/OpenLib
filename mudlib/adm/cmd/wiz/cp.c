@@ -7,12 +7,16 @@
 #define USAGE "cp [-o] <source> <destination>"
 
 int
-_main(string args, int argc, string *argv, string *flags)
+_main(string *argv, string *argv2)
 {
   string source, dest, *tmp;
+  int opto = flag("o");
 
-  if(!args || sscanf(args, "%s %s", source, dest) != 2)
+  if(sizeof(argv2) != 2)
     return notify_fail("usage: "+ USAGE +"\n");
+
+  source = argv2[0];
+  dest = argv2[1];
 
   tmp = explode(source, "/");
 
@@ -28,7 +32,7 @@ _main(string args, int argc, string *argv, string *flags)
     dest += tmp[sizeof(tmp) - 1];
   }
 
-  if(!flag(flags, "o") && file_size(dest) != -1)
+  if(!opto && file_size(dest) != -1)
     return notify_fail("cp: destination file already exists.\n");
   else
     rm(dest);

@@ -1,13 +1,35 @@
 /*  -*- LPC -*-  */
 #include <command.h>
 
-int
-main()
-{
-  object conn;
+// This command changes finger information (found in connection object) for
+// a user.  If no username is passed, this_player() is assumed.  If a username
+// is passed the action taken depends whether or not the player is logged in.
 
-  conn = new(CONNECTION_OB);
-  conn->restore_connection((string) this_player()->query_name());
+int
+main(string uname)
+{
+  object conn, user;
+
+  if(!uname) {
+    uname = this_player()->query_name();
+    conn = this_player()->query_connection();
+  } else {
+    if(!archp(this_player()))
+      return notify_fail("chfn: You must be an archwizard to change another"
+			 " user's finger info.\n");
+
+    uname = lower_case(uname);
+
+    if(!user_exists(uname))
+      return notify_fail(uname +": no such user.\n");
+
+    if(!user = find_player(uname)) {
+      conn = new(CONNECTION_OB);
+      conn->restore_connection(uname);
+    } else {
+      conn = user->query_connection();
+    }
+  }
 
   printf("Real Name [%s]: ", (string) conn->query_real_name());
   input_to("get_rn", 0, conn);
@@ -41,7 +63,29 @@ get_email(string input, object conn)
     conn->set_email_addr(input);
 
   conn->save_connection((string) conn->query_name());
+
+  // This won't be able to dest a player's connection which is good
+  // remove() in active connections returns -1
   destruct(conn);
 
   printf("Finger information changed.\n");
+}
+
+string
+help_desc()
+{
+  return "change finger information for a user";
+}
+
+string
+help()
+{
+  return @ENDHELP
+usage:  chfn [username]
+
+If username is given, change finger information for that user.  Otherwise
+assume this player.  Note that you must be an admin to change finger
+information for another player.
+ENDHELP;
+
 }

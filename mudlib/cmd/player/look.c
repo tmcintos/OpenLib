@@ -44,3 +44,15 @@ main(string str)
   
   return 1;
 }
+
+string help_desc() { return "look around room or at an object"; }
+
+string
+help()
+{
+  return @ENDHELP
+To simply look around the room, type 'look' with no arguments.
+In order to look at an object you must type 'look at' and the object's
+name; for example:  look at book
+ENDHELP;
+}

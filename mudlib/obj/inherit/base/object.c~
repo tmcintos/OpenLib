@@ -10,10 +10,13 @@
 // 10/14/95     Tim: Added weight & value functions & variables
 // 10/28/95     Tim: Added set_prevent_get(boolean) & set_prevent_drop(boolean)
 
-// set to 'private static' so that inheritor won't be able to directly
-// access this variable and so that save_object() won't save it to the .o file
+#pragma save_binary
+
 #include <object_types.h>
 #include <move.h>
+
+// set to 'private static' so that inheritor won't be able to directly
+// access this variable and so that save_object() won't save it to the .o file
 
 private static string *ids = ({});       /* what we respond to */
 private static int light;                /* presence of light */
@@ -233,7 +236,7 @@ query_value()
      (!value[0] && !value[1]))
     return 0;
   else
-    return value;
+    return copy(value);
 }
 
 nomask

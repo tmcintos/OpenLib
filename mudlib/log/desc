@@ -1,0 +1,486 @@
+Sun Dec  3 23:14:46 1995:  imud_code: Descartes@IdeaExchange:yes
+Sun Dec  3 23:21:39 1995:  imud_code: Descartes@IdeaExchange:sorry... was away
+Sun Dec  3 23:21:53 1995:  imud_code: Descartes@IdeaExchange:right now it is going through someserious changes
+Sun Dec  3 23:22:15 1995:  imud_code: Descartes@IdeaExchange:my target is to have a web-based client by Q2 1996
+Tue Dec  5 15:54:08 1995:  imud_gossip: Descartes@IdeaExchange:ca va?
+Tue Dec  5 15:55:13 1995:  imud_gossip: Descartes@IdeaExchange:alright, just curious how the 4.2.2 installs are going :)
+Tue Dec  5 15:59:02 1995:  imud_gossip: Descartes@IdeaExchange:encre joe user
+Tue Dec  5 15:59:12 1995:  imud_gossip: Descartes@IdeaExchange:<HEAD> is right
+Tue Dec  5 16:07:44 1995:  imud_gossip: Descartes@IdeaExchange:be seeing you
+Tue Dec  5 19:56:15 1995:  imud_gossip: Descartes@IdeaExchange:we had a lot of muds on here this morning, what happened to them all?
+Tue Dec  5 20:03:54 1995:  imud_gossip: Descartes@IdeaExchange:free cookies!!!!!!!!!!!
+Tue Dec  5 20:07:13 1995:  imud_gossip: Descartes@IdeaExchange:on intergossip, not on intercre :)
+Tue Dec  5 20:09:00 1995:  imud_gossip: Descartes@IdeaExchange:they are virtual, so basically whatever kind you want
+Tue Dec  5 20:09:20 1995:  imud_gossip: Descartes@IdeaExchange:hmm... no docs on poisoning I don't thibnk :)
+Tue Dec  5 20:10:04 1995:  imud_gossip: Descartes@IdeaExchange:on Doors? there are door docs
+Tue Dec  5 20:10:30 1995:  imud_gossip: Descartes@IdeaExchange:there are docs on monsters now
+Tue Dec  5 20:10:42 1995:  imud_gossip: Descartes@IdeaExchange:thanks Raistlin :)
+Tue Dec  5 20:12:15 1995:  imud_gossip: Descartes@IdeaExchange:the doors worked fine
+Tue Dec  5 20:12:25 1995:  imud_gossip: Descartes@IdeaExchange:I would bet Sinistrad tweaked them to break other systems
+Tue Dec  5 20:12:37 1995:  imud_gossip: Descartes@IdeaExchange:IVr2.2
+Tue Dec  5 20:13:21 1995:  imud_gossip: Descartes@IdeaExchange:that is not the way doors shio
+Tue Dec  5 20:15:07 1995:  imud_gossip: Descartes@IdeaExchange:like I said, I think he made a change that breaks other systems
+Tue Dec  5 20:15:23 1995:  imud_gossip: Descartes@IdeaExchange:let me tell you what happened...
+Tue Dec  5 20:15:36 1995:  imud_gossip: Descartes@IdeaExchange:on NM, id fields must be all lower case
+Tue Dec  5 20:15:50 1995:  imud_gossip: Descartes@IdeaExchange:you set your key id to mixed case
+Tue Dec  5 20:16:00 1995:  imud_gossip: Descartes@IdeaExchange:thus it never matched the id of anything
+Tue Dec  5 20:16:10 1995:  imud_gossip: Descartes@IdeaExchange:so Sinistrad went in and mucked with the id code
+Tue Dec  5 20:16:22 1995:  imud_gossip: Descartes@IdeaExchange:that is wrong
+Tue Dec  5 20:16:32 1995:  imud_gossip: Descartes@IdeaExchange:you simply should not have had mixed case key id;s
+Tue Dec  5 20:16:48 1995:  imud_gossip: Descartes@IdeaExchange:that is not the problem,
+Tue Dec  5 20:16:56 1995:  imud_gossip: Descartes@IdeaExchange:the problem is what you have in the key id field for doors
+Tue Dec  5 20:17:20 1995:  imud_gossip: Descartes@IdeaExchange:in the door object
+Tue Dec  5 20:19:03 1995:  imud_gossip: Descartes@IdeaExchange:no, Selene, for all objects
+Tue Dec  5 20:19:27 1995:  imud_gossip: Descartes@IdeaExchange:SetId() converts anything to lowe case
+Tue Dec  5 20:19:53 1995:  imud_gossip: Descartes@IdeaExchange:I do not understand the question Raistlin
+Tue Dec  5 20:22:20 1995:  imud_gossip: Descartes@IdeaExchange:well, help in secure commands is not set up at this time
+Tue Dec  5 20:23:20 1995:  imud_gossip: Descartes@IdeaExchange:tail /secure/cmds/creator/call.c
+Tue Dec  5 20:24:50 1995:  imud_gossip: Descartes@IdeaExchange:because the expression 'black key' returns true for the door
+Tue Dec  5 20:25:10 1995:  imud_gossip: Descartes@IdeaExchange:I meant key
+Tue Dec  5 20:25:21 1995:  imud_gossip: Descartes@IdeaExchange:well, actually, I can't answer that question
+Tue Dec  5 20:25:29 1995:  imud_gossip: Descartes@IdeaExchange:it *is* somehting you all did however
+Tue Dec  5 20:25:41 1995:  imud_gossip: Descartes@IdeaExchange:doors on Nightmare work fine
+Tue Dec  5 20:26:07 1995:  imud_gossip: Descartes@IdeaExchange:Nightmare IV even
+Tue Dec  5 20:35:54 1995:  imud_gossip: Descartes@IdeaExchange::)
+Tue Dec  5 20:36:48 1995:  imud_gossip: Descartes@IdeaExchange:how beautiful what is?
+Tue Dec  5 20:37:58 1995:  imud_gossip: Descartes@IdeaExchange:ahh *nod* I knew that would be a paradigm shift for people used to door coding
+Tue Dec  5 20:38:16 1995:  imud_gossip: Descartes@IdeaExchange:however, for people who have never coded on LPMuds before, a door *is* a separate object
+Tue Dec  5 20:39:49 1995:  imud_gossip: Descartes@IdeaExchange:thanks :)
+Tue Dec  5 20:41:54 1995:  imud_gossip: Descartes@IdeaExchange:well, thanks :)  you guys should also let Blitz and Rush on NM know, they have had a large part in this
+Tue Dec  5 20:42:54 1995:  imud_gossip: Descartes@IdeaExchange:r2.2
+Tue Dec  5 20:43:28 1995:  imud_gossip: Descartes@IdeaExchange:keep in mind, however, they reflect any changes that haveoccurred.... mostly they will work for r1, but in some cases they will be wrong for r1
+Tue Dec  5 20:43:52 1995:  imud_gossip: Descartes@IdeaExchange:Rust, you know, I just now got that?
+Tue Dec  5 20:45:41 1995:  imud_gossip: Descartes@IdeaExchange:I do not understand the question
+Tue Dec  5 20:46:27 1995:  imud_gossip: Descartes@IdeaExchange:I still do not understand what you are asking :)
+Tue Dec  5 20:46:41 1995:  imud_gossip: Descartes@IdeaExchange:yes :)
+Wed Dec  6 15:06:12 1995:  imud_gossip: Descartes@IdeaExchange:: delimted
+Wed Dec  6 15:08:30 1995:  imud_gossip: Descartes@IdeaExchange:no, it wraps text according to the users screen width
+Wed Dec  6 15:46:02 1995:  imud_gossip: Descartes@IdeaExchange:yes, there will be
+Wed Dec  6 15:47:32 1995:  imud_code: Descartes@IdeaExchange:no
+Wed Dec  6 15:56:41 1995:  imud_code: Descartes@IdeaExchange:player or creator
+Wed Dec  6 15:57:50 1995:  imud_code: Descartes@IdeaExchange:Beek gets the credit for that
+Wed Dec  6 16:01:45 1995:  imud_gossip: Descartes@IdeaExchange:why do you want to add a neck?
+Wed Dec  6 16:02:23 1995:  imud_gossip: Descartes@IdeaExchange:the have the necklace protect the torso
+Wed Dec  6 16:02:51 1995:  imud_gossip: Descartes@IdeaExchange:actually, it should be armour type A_AMULET
+Wed Dec  6 16:02:59 1995:  imud_gossip: Descartes@IdeaExchange:that is what an amulet is
+Wed Dec  6 16:03:13 1995:  imud_gossip: Descartes@IdeaExchange:because you have a necklace  does not require you to go adding necks
+Wed Dec  6 16:03:46 1995:  imud_gossip: Descartes@IdeaExchange:just type "wear amulet"
+Wed Dec  6 16:03:58 1995:  imud_gossip: Descartes@IdeaExchange:cat /include/armour_types.h
+Wed Dec  6 16:04:48 1995:  imud_code: Descartes@IdeaExchange:then there is a bug in someone's code
+Wed Dec  6 16:07:07 1995:  imud_gossip: Descartes@IdeaExchange:LIB_LIGHT
+Wed Dec  6 16:08:03 1995:  imud_code: Descartes@IdeaExchange:well, you need a reason to add a neck
+Wed Dec  6 16:08:59 1995:  imud_code: Descartes@IdeaExchange:not IMHO
+Wed Dec  6 16:12:40 1995:  imud_code: Descartes@IdeaExchange:Selene, we have already determined there is a bug in someone's code
+Wed Dec  6 16:13:23 1995:  imud_code: Descartes@IdeaExchange:it may be yours, I have no idea
+Wed Dec  6 21:00:31 1995:  imud_gossip: Descartes@IdeaExchange:could people look at http://www.imaginary.com/LPC/Nightmare/API/object.html and tell me what you think about the documentation layout
+Wed Dec  6 21:00:37 1995:  imud_gossip: Descartes@IdeaExchange:btw... that is NS 2.0 beta only
+Wed Dec  6 21:04:48 1995:  imud_gossip: Descartes@IdeaExchange:no comments?
+Wed Dec  6 21:09:23 1995:  imud_gossip: Descartes@IdeaExchange:yeah, I suppose there is always the MS internet explorer :)
+Wed Dec  6 21:15:29 1995:  imud_gossip: Descartes@IdeaExchange:sorry, lost my link... did anyone manage to have a look?
+Wed Dec  6 21:17:50 1995:  imud_gossip: Descartes@IdeaExchange:thanks :)
+Wed Dec  6 21:18:18 1995:  imud_gossip: Descartes@IdeaExchange:yes
+Wed Dec  6 21:23:46 1995:  imud_gossip: Descartes@IdeaExchange:create filename room
+Wed Dec  6 21:25:00 1995:  imud_gossip: Descartes@IdeaExchange:cd to your home dir
+Wed Dec  6 21:25:10 1995:  imud_gossip: Descartes@IdeaExchange:and type 'create testroom.c room'
+Thu Dec  7 18:51:16 1995:  imud_gossip: Descartes@IdeaExchange:workng on it :)
+Thu Dec  7 18:51:26 1995:  imud_gossip: Descartes@IdeaExchange:there is /doc/build/Guilds
+Thu Dec  7 18:51:30 1995:  imud_gossip: Descartes@IdeaExchange:no examples though
+Thu Dec  7 18:52:36 1995:  imud_gossip: Descartes@IdeaExchange:hmm, nope, sorry, it does not yet exist
+Thu Dec  7 18:55:39 1995:  imud_gossip: Descartes@IdeaExchange:the guild object already allows leaders to make new members by simply issuing a command
+Thu Dec  7 21:18:52 1995:  imud_gossip: Descartes@IdeaExchange:definitely comes after 137
+Thu Dec  7 21:36:43 1995:  imud_gossip: Descartes@IdeaExchange:he would not have a good thing to say about mother teresa
+Thu Dec  7 21:37:44 1995:  imud_gossip: Descartes@IdeaExchange:here we go?
+Thu Dec  7 21:38:02 1995:  imud_gossip: Descartes@IdeaExchange:whatever
+Thu Dec  7 21:53:06 1995:  imud_gossip: Descartes@IdeaExchange:yes, at its creation
+Thu Dec  7 21:53:10 1995:  imud_gossip: Descartes@IdeaExchange:at no other time
+Thu Dec  7 21:53:26 1995:  imud_gossip: Descartes@IdeaExchange:that is what a virtual object is
+Thu Dec  7 21:54:47 1995:  imud_gossip: Descartes@IdeaExchange:right
+Thu Dec  7 21:54:55 1995:  imud_gossip: Descartes@IdeaExchange:sorta, but not arbitrary
+Thu Dec  7 21:55:23 1995:  imud_gossip: Descartes@IdeaExchange:basically, it will try to load a wierd fiel, like /realms/.descartes/cheese.t
+Thu Dec  7 21:55:43 1995:  imud_gossip: Descartes@IdeaExchange:that don't exist, so before it fails, it gives you a chance to clone an object and call it that
+Fri Dec  8 21:32:04 1995:  imud_gossip: Descartes@IdeaExchange:I see only 4 muds have not upgraded to IVr2.2 :)
+Fri Dec  8 21:32:54 1995:  imud_gossip: Descartes@IdeaExchange:there is a persistance patch posted to the NM bug tracking system
+Sat Dec  9 21:46:02 1995:  imud_gossip: Descartes@IdeaExchange:so I have been told
+Sat Dec  9 22:10:40 1995:  imud_gossip: Descartes@IdeaExchange:every mudlib on this line already has it working
+Sun Dec 10 16:45:47 1995:  imud_gossip: Descartes@IdeaExchange:because arrays are a pointer type
+Sun Dec 10 16:45:57 1995:  imud_gossip: Descartes@IdeaExchange:and all ({}) arrays point to the same array
+Sun Dec 10 16:47:00 1995:  imud_gossip: Descartes@IdeaExchange:({0,}) may point to a different array from your other ({0,})
+Sun Dec 10 17:20:48 1995:  imud_code: Descartes@IdeaExchange:create filename room
+Sun Dec 10 17:21:58 1995:  imud_code: Descartes@IdeaExchange:the same as ed
+Sun Dec 10 17:23:59 1995:  imud_gossip: Descartes@IdeaExchange:SetInventory()
+Sun Dec 10 17:24:05 1995:  imud_gossip: Descartes@IdeaExchange:do not use reset()
+Sun Dec 10 17:24:37 1995:  imud_gossip: Descartes@IdeaExchange:one sec
+Sun Dec 10 17:27:10 1995:  imud_gossip: Descartes@IdeaExchange:SetInventory() is a more efficient manner of doing the trick
+Sun Dec 10 17:28:04 1995:  imud_gossip: Descartes@IdeaExchange:let me put it another way, why would you mess with writing a reset() function and all that could go wrong when you can simply use SetInventory()?
+Sun Dec 10 17:28:24 1995:  imud_gossip: Descartes@IdeaExchange:you don't SetInventory() automatically takes care of that
+Sun Dec 10 17:31:27 1995:  imud_gossip: Descartes@IdeaExchange:reset() should rarely be used on NM muds any more... keep in mind objects are permanent
+Sun Dec 10 17:31:43 1995:  imud_gossip: Descartes@IdeaExchange:yes Novatron, though Kalinash is working on something better
+Sun Dec 10 17:33:02 1995:  imud_gossip: Descartes@IdeaExchange:it is certainly a buggy system... are you sure you are connecting to mud port -10
+Sun Dec 10 17:37:47 1995:  imud_gossip: Descartes@IdeaExchange:do you have a file ~novatron/adm/remote.c?
+Sun Dec 10 17:38:21 1995:  imud_gossip: Descartes@IdeaExchange:ahh, that would do it :)
+Sun Dec 10 17:41:14 1995:  imud_gossip: Descartes@IdeaExchange:#include <lib.h>   inherit LIB_REMOTE;
+Sun Dec 10 17:41:20 1995:  imud_gossip: Descartes@IdeaExchange:the only two lines for the file
+Sun Dec 10 19:17:46 1995:  imud_code: Descartes@IdeaExchange:rmdir
+Sun Dec 10 20:06:53 1995:  imud_code: Descartes@IdeaExchange:define not working
+Sun Dec 10 20:07:31 1995:  imud_code: Descartes@IdeaExchange:then you did not set its meal type right
+Sun Dec 10 20:09:34 1995:  imud_code: Descartes@IdeaExchange:is this something you just coded or something someone had, then logged out, then logged on with?
+Sun Dec 10 20:10:12 1995:  imud_code: Descartes@IdeaExchange:did *you* try to dribk it?
+Sun Dec 10 20:10:32 1995:  imud_code: Descartes@IdeaExchange:cres can't drink or eat
+Sun Dec 10 20:10:52 1995:  imud_code: Descartes@IdeaExchange:why should they?
+Sun Dec 10 20:11:08 1995:  imud_code: Descartes@IdeaExchange:no, cres are things that code
+Sun Dec 10 20:11:14 1995:  imud_code: Descartes@IdeaExchange:they are not players
+Sun Dec 10 20:11:24 1995:  imud_code: Descartes@IdeaExchange:having heart beats and all that extra player overhead is a waste
+Sun Dec 10 20:11:38 1995:  imud_code: Descartes@IdeaExchange:cres do not have heart beats
+Sun Dec 10 20:12:00 1995:  imud_code: Descartes@IdeaExchange:that's right... a mortal player is a much better gauge of play testing than is a cre
+Sun Dec 10 20:12:10 1995:  imud_code: Descartes@IdeaExchange:interactive != has a heart beat
+Sun Dec 10 20:13:07 1995:  imud_code: Descartes@IdeaExchange:well, in NM, interactive means inherits interactive.c
+Sun Dec 10 20:13:21 1995:  imud_code: Descartes@IdeaExchange:and interactive generally means responding to program output
+Sun Dec 10 20:18:59 1995:  imud_code: Descartes@IdeaExchange:that is what mud clients are for
+Sun Dec 10 20:19:23 1995:  imud_code: Descartes@IdeaExchange:a test on an objct not involved in a process is not a test
+Sun Dec 10 20:21:21 1995:  imud_code: Descartes@IdeaExchange:it very piossibly could be Jolt
+Sun Dec 10 20:21:38 1995:  imud_code: Descartes@IdeaExchange:besides, it is a waste of resources
+Sun Dec 10 20:22:00 1995:  imud_code: Descartes@IdeaExchange:creators != players
+Sun Dec 10 20:23:12 1995:  imud_gossip: Descartes@IdeaExchange:thanks :)
+Sun Dec 10 20:24:04 1995:  imud_gossip: Descartes@IdeaExchange:no idea
+Sun Dec 10 20:25:11 1995:  imud_gossip: Descartes@IdeaExchange:I imagine it will get through... Netscape == HTML now
+Sun Dec 10 20:27:35 1995:  imud_gossip: Descartes@IdeaExchange:all data members are protected
+Sun Dec 10 20:27:43 1995:  imud_gossip: Descartes@IdeaExchange:but can be made private
+Sun Dec 10 20:28:20 1995:  imud_code: Descartes@IdeaExchange:oops, all data members are protected by default (but that is called public) and can be made private through the private keyword
+Sun Dec 10 20:28:38 1995:  imud_code: Descartes@IdeaExchange:functions are public by default, but can be made protected (static) or private
+Sun Dec 10 20:38:37 1995:  imud_code: Descartes@IdeaExchange:I do not understand the quesiton
+Sun Dec 10 20:40:57 1995:  imud_code: Descartes@IdeaExchange:no, you do SetItems() on the monster
+Sun Dec 10 20:41:12 1995:  imud_code: Descartes@IdeaExchange:you should never describe one object through another object
+Sun Dec 10 20:41:32 1995:  imud_code: Descartes@IdeaExchange:you have to inherit LIB_ITEMS in the monster
+Sun Dec 10 22:32:03 1995:  imud_code: Descartes@IdeaExchange:/news/creator
+Sun Dec 10 22:35:20 1995:  imud_code: Descartes@IdeaExchange:yes?
+Sun Dec 10 22:38:09 1995:  imud_code: Descartes@IdeaExchange:what is odd about that?
+Sun Dec 10 22:38:59 1995:  imud_code: Descartes@IdeaExchange:nope, you are supposed to get them in thirds or halves or something
+Sun Dec 10 22:40:33 1995:  imud_code: Descartes@IdeaExchange:#1 recode it to do that #2 update the events daemon
+Sun Dec 10 22:51:59 1995:  imud_code: Descartes@IdeaExchange:y localized in a functional
+Sun Dec 10 22:54:08 1995:  imud_code: Descartes@IdeaExchange:meaning if you have a local variable
+Sun Dec 10 22:54:22 1995:  imud_code: Descartes@IdeaExchange:and then you want it avilable to a functional to be evaluated later
+Sun Dec 10 22:54:38 1995:  imud_code: Descartes@IdeaExchange:you have to reference it in the functional as $(local_var)
+Sun Dec 10 22:55:00 1995:  imud_code: Descartes@IdeaExchange:so the functional construct operator (: :) knows to evaluate the local variable now
+Sun Dec 10 22:55:52 1995:  imud_code: Descartes@IdeaExchange:so the func... void foo() { function f; int x; x = 5; f = (: write($(x)) :);
+Sun Dec 10 22:56:04 1995:  imud_code: Descartes@IdeaExchange:$(x) is set to 5
+Sun Dec 10 22:56:20 1995:  imud_code: Descartes@IdeaExchange:you need to understand functionals for it not be confusing
+Sun Dec 10 22:57:43 1995:  imud_code: Descartes@IdeaExchange:LPC is not C
+Sun Dec 10 22:57:53 1995:  imud_code: Descartes@IdeaExchange:LPC is an object oriented programming language
+Sun Dec 10 22:58:03 1995:  imud_code: Descartes@IdeaExchange:C is a language to make geeks feel they are cool
+Sun Dec 10 22:59:11 1995:  imud_code: Descartes@IdeaExchange:just the while() for() stuff :)
+Sun Dec 10 23:00:44 1995:  imud_code: Descartes@IdeaExchange:advanced is not out yet :)
+Sun Dec 10 23:02:52 1995:  imud_code: Descartes@IdeaExchange:call O'Reilly and Associates and ask them if they have any books on LPC
+Sun Dec 10 23:04:03 1995:  imud_code: Descartes@IdeaExchange:they are in Boston
+Sun Dec 10 23:09:00 1995:  imud_gossip: Descartes@IdeaExchange:which NM pages? the doc pages? or the rest of it?
+Sun Dec 10 23:12:25 1995:  imud_gossip: Descartes@IdeaExchange:I agree Rassilon... that is why all the pages of NM will end up with a white bg
+Mon Dec 11 19:19:11 1995:  imud_gossip: Descartes@IdeaExchange:bing
+Tue Dec 12 18:08:03 1995:  imud_gossip: Descartes@IdeaExchange:runtime really does not get you much
+Tue Dec 12 18:08:13 1995:  imud_gossip: Descartes@IdeaExchange:IMHO
+Tue Dec 12 18:17:48 1995:  imud_code: Descartes@Nightmare:I think force does not exist yet
+Tue Dec 12 18:18:26 1995:  imud_code: Descartes@Nightmare:this is not NM 3.2.2
+Tue Dec 12 18:18:32 1995:  imud_code: Descartes@Nightmare:no
+Tue Dec 12 18:18:42 1995:  imud_code: Descartes@Nightmare:in code it is simply ob->eventForce(cmd)
+Tue Dec 12 18:19:37 1995:  imud_code: Descartes@Nightmare:no, force should be a verb
+Tue Dec 12 18:19:45 1995:  imud_code: Descartes@Nightmare:but you could do it  as a command too
+Tue Dec 12 18:19:53 1995:  imud_code: Descartes@Nightmare:in which case you are right
+Tue Dec 12 18:21:29 1995:  imud_code: Descartes@Nightmare:this is NM 3? or NM IV?
+Tue Dec 12 18:22:01 1995:  imud_code: Descartes@Nightmare:they are important
+Tue Dec 12 18:22:09 1995:  imud_code: Descartes@Nightmare:you should not be intercepting the commands
+Tue Dec 12 18:22:25 1995:  imud_code: Descartes@Nightmare:in NM IV you handle it in eventReleaseObject()
+Tue Dec 12 18:22:40 1995:  imud_code: Descartes@Nightmare:and in NM 3 I think it is called release_objects()
+Tue Dec 12 18:23:06 1995:  imud_code: Descartes@Nightmare:any time you define the same command in multiple places you are only creating bugs and user confusion
+Tue Dec 12 18:24:16 1995:  imud_code: Descartes@Nightmare:you can do SetTouch() in an object just like Listen, Smell, and Searcg
+Tue Dec 12 18:25:02 1995:  imud_code: Descartes@Nightmare:LIB_TOUCH
+Tue Dec 12 18:25:14 1995:  imud_code: Descartes@Nightmare:from inside move
+Tue Dec 12 18:25:30 1995:  imud_code: Descartes@Nightmare:adding that action is bad
+Tue Dec 12 18:25:56 1995:  imud_code: Descartes@Nightmare:that is why it matters if you use NM IV
+Tue Dec 12 18:26:39 1995:  imud_code: Descartes@Nightmare:no
+Tue Dec 12 18:26:49 1995:  imud_code: Descartes@Nightmare:there is an event that handles the go command
+Tue Dec 12 18:27:07 1995:  imud_code: Descartes@Nightmare:right
+Tue Dec 12 18:27:25 1995:  imud_code: Descartes@Nightmare:err wrong Selene, I mean
+Tue Dec 12 18:28:07 1995:  imud_code: Descartes@Nightmare:SetSmell() is LIB_SMELL, SetItems() is LIB_ITEMS, SetTouch() is LIB_TOUCH, etc
+Tue Dec 12 18:28:49 1995:  imud_code: Descartes@Nightmare:move checks release_objects, therefore going checks it
+Tue Dec 12 18:29:14 1995:  imud_code: Descartes@Nightmare:on NM 3? it does not
+Tue Dec 12 18:29:56 1995:  imud_code: Descartes@Nightmare:eventGo() and eventEnter()
+Tue Dec 12 18:30:18 1995:  imud_code: Descartes@Nightmare:which trigger the move event, which trigger the release object event, which triggers the receive object event
+Tue Dec 12 18:30:26 1995:  imud_code: Descartes@Nightmare:you override
+Tue Dec 12 18:31:30 1995:  imud_code: Descartes@Nightmare:not using a shadow, using normal lpc
+Tue Dec 12 18:32:12 1995:  imud_code: Descartes@Nightmare:no, there is no reason at all for shadows here
+Tue Dec 12 18:32:28 1995:  imud_code: Descartes@Nightmare:alter it just in the rooms you want it altered
+Tue Dec 12 18:36:00 1995:  imud_code: Descartes@Nightmare:it really depends, that is the right way to do it, it is not clumsy
+Tue Dec 12 18:37:04 1995:  imud_code: Descartes@Nightmare:now that second idea is nasty
+Tue Dec 12 18:37:40 1995:  imud_code: Descartes@Nightmare:because it is error prone
+Tue Dec 12 18:37:46 1995:  imud_code: Descartes@Nightmare:and LPC is not as slow as you think
+Tue Dec 12 18:39:25 1995:  imud_code: Descartes@Nightmare:LPC is not your problem
+Tue Dec 12 18:54:29 1995:  imud_code: Descartes@Nightmare:LIB_ITEMS
+Tue Dec 12 18:55:01 1995:  imud_code: Descartes@Nightmare:yes, that does work :)
+Tue Dec 12 18:56:12 1995:  imud_code: Descartes@Nightmare:there was documentation on this with the lib
+Tue Dec 12 18:56:26 1995:  imud_code: Descartes@Nightmare:there are other thigns you need to do
+Tue Dec 12 18:56:36 1995:  imud_code: Descartes@Nightmare:which I do not remember off the top of my head
+Tue Dec 12 19:01:01 1995:  imud_code: Descartes@Nightmare:LIB_ITEMS
+Tue Dec 12 19:01:09 1995:  imud_code: Descartes@Nightmare:LIB_ITEMS has SetItems()
+Tue Dec 12 19:01:21 1995:  imud_code: Descartes@Nightmare:LIB_ITEM is  simple item,. like a wepaon
+Tue Dec 12 19:02:30 1995:  imud_code: Descartes@Nightmare:right
+Tue Dec 12 19:14:35 1995:  imud_gossip: Descartes@Nightmare:I am all alone in the supermarket, I can no longer shop happily
+Tue Dec 12 19:15:30 1995:  imud_gossip: Descartes@IdeaExchange:the clash :)
+Tue Dec 12 22:20:15 1995:  imud_gossip: Descartes@IdeaExchange:it converts a mixed case name into a unique id
+Wed Dec 13 09:12:46 1995:  imud_gossip: Descartes@IdeaExchange:thee
+Wed Dec 13 09:12:56 1995:  imud_gossip: Descartes@IdeaExchange:thou is second person subjective
+Wed Dec 13 09:14:12 1995:  imud_gossip: Descartes@IdeaExchange:by the way, the name of the driver is LPMud 03.02.1@121
+Wed Dec 13 09:14:12 1995:  imud_gossip: Descartes@IdeaExchange:the Amylaar is not the name of the driver
+Wed Dec 13 13:52:06 1995:  imud_gossip: Descartes@IdeaExchange:TMI-2 is easier than NM???? when id you code a NM IV lib?
+Wed Dec 13 13:55:33 1995:  imud_gossip: Descartes@IdeaExchange:Kalypso, like you have a clue
+Wed Dec 13 13:57:26 1995:  imud_gossip: Descartes@IdeaExchange:clearly not NM IV
+Wed Dec 13 13:57:26 1995:  imud_gossip: Descartes@IdeaExchange:then you are either and idiot or a liar :)
+Wed Dec 13 13:58:26 1995:  imud_gossip: Descartes@IdeaExchange:that tmi-2 design has been pretty much dismissed by most people, and people have moved on :)
+Wed Dec 13 13:59:29 1995:  imud_gossip: Descartes@IdeaExchange:why Kalypso? so if you misspell short you get an error you cannot debug?
+Wed Dec 13 14:00:21 1995:  imud_gossip: Descartes@IdeaExchange:ok, then you perfectly code a really slow and insecure lib :)
+Wed Dec 13 15:09:08 1995:  imud_gossip: Descartes@IdeaExchange:what's that?
+Wed Dec 13 15:10:22 1995:  imud_gossip: Descartes@IdeaExchange:what do you mean not allowed? target muds filter them
+Wed Dec 13 15:11:07 1995:  imud_gossip: Descartes@IdeaExchange:too bad
+Wed Dec 13 15:12:09 1995:  imud_gossip: Descartes@IdeaExchange:if a mud does nto want to see the codes, it should filter them out
+Wed Dec 13 15:12:37 1995:  imud_gossip: Descartes@IdeaExchange:I never saw such intent, and I would never have agreed to such intent
+Wed Dec 13 15:15:27 1995:  imud_gossip: Descartes@IdeaExchange:the DW colour codes are stabdard
+Wed Dec 13 15:15:53 1995:  imud_gossip: Descartes@IdeaExchange:Nightmare will not stop sending them
+Wed Dec 13 15:17:31 1995:  imud_gossip: Descartes@IdeaExchange:I am just stating that I do not believe that is right
+Wed Dec 13 15:18:46 1995:  imud_gossip: Descartes@IdeaExchange:fine, I will still send colours
+Wed Dec 13 15:24:31 1995:  imud_gossip: Descartes@IdeaExchange:the DW protocols are a defacto standard
+Wed Dec 13 15:24:58 1995:  imud_gossip: Descartes@IdeaExchange:furthermore, when we started on this I3 stuff, it was my understanding they would be treated as a real standard for the intermud
+Wed Dec 13 15:25:42 1995:  imud_gossip: Descartes@IdeaExchange:every MudOS mudlib supports them
+Wed Dec 13 15:25:52 1995:  imud_gossip: Descartes@IdeaExchange:coding support for them is trivial
+Wed Dec 13 15:26:00 1995:  imud_gossip: Descartes@IdeaExchange:even if it is just to filter them out
+Wed Dec 13 15:26:16 1995:  imud_gossip: Descartes@IdeaExchange:other drivers and server types can use them
+Wed Dec 13 15:29:39 1995:  imud_gossip: Descartes@IdeaExchange:then they can deal with my % and ^ and FLASH and % and ^
+Wed Dec 13 15:30:15 1995:  imud_gossip: Descartes@IdeaExchange:if most muds on this line are not supporting that, then it serves no purpose to send that
+Wed Dec 13 15:30:19 1995:  imud_gossip: Descartes@IdeaExchange:because it si communicating nothing
+Wed Dec 13 15:30:41 1995:  imud_gossip: Descartes@IdeaExchange:but as long as muds are, I am going to use it is a method of communication
+Wed Dec 13 15:36:23 1995:  imud_gossip: Descartes@IdeaExchange:who formatting is up to receiving muds now :)
+Wed Dec 13 15:36:41 1995:  imud_gossip: Descartes@IdeaExchange:and it is communication as long as your target audience for the most part can understand it
+Wed Dec 13 15:36:49 1995:  imud_gossip: Descartes@IdeaExchange:and it does not hurt anyone
+Wed Dec 13 15:38:02 1995:  imud_gossip: Descartes@IdeaExchange:they can easily filter it out, and it does not hamper usage by other systems
+Wed Dec 13 15:39:28 1995:  imud_gossip: Descartes@IdeaExchange:that is a non-argument
+Wed Dec 13 15:39:40 1995:  imud_gossip: Descartes@IdeaExchange:you are not faced with a Tower of Babel of colour protocols
+Wed Dec 13 15:39:44 1995:  imud_gossip: Descartes@IdeaExchange:you have 1
+Wed Dec 13 15:40:52 1995:  imud_gossip: Descartes@IdeaExchange:well, if a lot of Dikus show up not using this protocol, then it makes me using colour codes to communicate stupid since most people will not understand them, eh?
+Wed Dec 13 15:41:15 1995:  imud_gossip: Descartes@IdeaExchange:but as long as the vast majority do, I will continue to communicate using them
+Wed Dec 13 15:44:12 1995:  imud_gossip: Descartes@IdeaExchange:looking at this mudlist I see only 2 that do not
+Wed Dec 13 15:44:34 1995:  imud_gossip: Descartes@IdeaExchange:Discworld supports it, Lima supports it, tmi-2 supports it
+Wed Dec 13 15:44:52 1995:  imud_gossip: Descartes@IdeaExchange:that's not what Beek told me
+Wed Dec 13 15:45:58 1995:  imud_gossip: Descartes@IdeaExchange:oh well, then I gather it must be your intention to support it
+Wed Dec 13 15:46:30 1995:  imud_gossip: Descartes@IdeaExchange:either way, I don't much care :)
+Wed Dec 13 15:47:13 1995:  imud_gossip: Descartes@IdeaExchange:and I am thinking about users who by vast majority like colours
+Wed Dec 13 15:48:25 1995:  imud_gossip: Descartes@IdeaExchange:I see DB's point on that... he thinks that would become an impediment to Dikus and such joining
+Wed Dec 13 15:50:18 1995:  imud_gossip: Descartes@IdeaExchange:my argument is that prohibiting it does not further that cause
+Wed Dec 13 15:50:18 1995:  imud_gossip: Descartes@IdeaExchange:that is definitely true :)
+Wed Dec 13 15:52:24 1995:  imud_gossip: Descartes@IdeaExchange:also... if Dikus and MOOs and MUSH'es were beating down the door to join I3, I would be willing to reconsider my stance
+Wed Dec 13 15:52:54 1995:  imud_gossip: Descartes@IdeaExchange:but the fact is that I3 right now and for the forseeable future is mostly LP, specifically MudOS
+Wed Dec 13 15:54:11 1995:  imud_gossip: Descartes@IdeaExchange:I for one would be willig to help
+Wed Dec 13 15:59:20 1995:  imud_gossip: Descartes@IdeaExchange:actually, I agree... though you may have a hard time defining what a player is for some MUD systems
+Wed Dec 13 16:00:15 1995:  imud_gossip: Descartes@IdeaExchange:it depend son you rmudlib
+Wed Dec 13 16:00:25 1995:  imud_gossip: Descartes@IdeaExchange:yes it does
+Wed Dec 13 16:04:46 1995:  imud_gossip: Descartes@IdeaExchange:I think you think I argue about thinking you argue
+Wed Dec 13 16:06:14 1995:  imud_gossip: Descartes@IdeaExchange:no, he hates strawberry
+Wed Dec 13 16:06:22 1995:  imud_gossip: Descartes@IdeaExchange:with a viciously bigoted mind
+Wed Dec 13 16:11:02 1995:  imud_gossip: Descartes@IdeaExchange:#1 you should not specify a limb for monster wielding
+Wed Dec 13 16:11:18 1995:  imud_gossip: Descartes@IdeaExchange:keep in mind also some monster races may not even have wielding limbs.
+Wed Dec 13 16:11:48 1995:  imud_gossip: Descartes@IdeaExchange:can a player wear the thing?
+Wed Dec 13 16:14:13 1995:  imud_gossip: Descartes@IdeaExchange:that would indicate something about your monster is not right then
+Wed Dec 13 16:15:13 1995:  imud_gossip: Descartes@IdeaExchange:I do not understand what exactly is ot working...
+Wed Dec 13 16:17:40 1995:  imud_gossip: Descartes@IdeaExchange:right...
+Wed Dec 13 16:17:54 1995:  imud_gossip: Descartes@IdeaExchange:and when does it not work?
+Wed Dec 13 16:23:26 1995:  imud_gossip: Descartes@IdeaExchange:chocolate is the solution to all problems
+Wed Dec 13 16:23:30 1995:  imud_gossip: Descartes@IdeaExchange:hello
+Wed Dec 13 16:23:54 1995:  imud_gossip: Descartes@IdeaExchange:I do not know tmi-2
+Wed Dec 13 16:41:17 1995:  imud_gossip: Descartes@IdeaExchange:lars pensji C
+Wed Dec 13 16:49:10 1995:  imud_gossip: Descartes@IdeaExchange:SetWander(x) randomly chooses a path
+Wed Dec 13 18:15:02 1995:  imud_gossip: Descartes@IdeaExchange:here
+Wed Dec 13 18:15:24 1995:  imud_gossip: Descartes@IdeaExchange:you are welcome to be one :)
+Wed Dec 13 18:15:40 1995:  imud_gossip: Descartes@IdeaExchange:IE is not a mudlib support site
+Wed Dec 13 18:19:29 1995:  imud_gossip: Descartes@IdeaExchange:if you want to teach, just let me know what sortof structure you need
+Wed Dec 13 18:39:37 1995:  imud_gossip: Descartes@IdeaExchange:why?
+Wed Dec 13 18:39:45 1995:  imud_gossip: Descartes@IdeaExchange:so you can be an ass on one?
+Wed Dec 13 18:39:59 1995:  imud_gossip: Descartes@IdeaExchange:you figure if you just put up a dummy mud you can be a fuckwit?
+Wed Dec 13 18:57:03 1995:  imud_gossip: Descartes@IdeaExchange:argument 1 to fp
+Wed Dec 13 19:42:26 1995:  imud_gossip: Descartes@IdeaExchange:who let out all these assholes?
+Wed Dec 13 19:57:37 1995:  imud_gossip: Descartes@IdeaExchange:in the room doc
+Wed Dec 13 20:03:57 1995:  imud_gossip: Descartes@IdeaExchange:RTFN
+Wed Dec 13 20:04:01 1995:  imud_gossip: Descartes@IdeaExchange:err RTFM
+Wed Dec 13 20:55:55 1995:  imud_gossip: Descartes@IdeaExchange:Misery, you are such a fuckhead
+Wed Dec 13 20:56:05 1995:  imud_gossip: Descartes@IdeaExchange:the problem is not whether they make hb static
+Wed Dec 13 20:56:13 1995:  imud_gossip: Descartes@IdeaExchange:the problem is assholes like you who just cause trouble
+Wed Dec 13 20:56:52 1995:  imud_gossip: Descartes@IdeaExchange:I don't drink coffee, I am naturally this fun to be with
+Wed Dec 13 20:58:20 1995:  imud_gossip: Descartes@IdeaExchange:whee!!! got who and finger gatewats back up for NM and IE :)(
+Wed Dec 13 20:58:56 1995:  imud_gossip: Descartes@IdeaExchange:ayuh
+Wed Dec 13 21:06:33 1995:  imud_gossip: Descartes@IdeaExchange:I know, they give me a woody too
+Wed Dec 13 21:10:30 1995:  imud_code: Descartes@IdeaExchange:that would be what nomask means
+Wed Dec 13 21:11:14 1995:  imud_code: Descartes@IdeaExchange:well, I would not think it beyond credibility that you simply don;t know what you are doing
+Wed Dec 13 21:42:18 1995:  imud_gossip: Descartes@IdeaExchange:supposed to be this weekend
+Wed Dec 13 21:42:31 1995:  imud_gossip: Descartes@IdeaExchange:maybe the weekend after though
+Wed Dec 13 21:42:59 1995:  imud_gossip: Descartes@IdeaExchange:I can put it off for those
+Wed Dec 13 21:43:15 1995:  imud_gossip: Descartes@IdeaExchange:I want to try to make this the last release with feature additions
+Wed Dec 13 22:02:21 1995:  imud_gossip: Descartes@IdeaExchange:there is no reaosn on earth for it
+Wed Dec 13 22:03:06 1995:  imud_gossip: Descartes@IdeaExchange:yeah, it works, but again, there is no reason to do it
+Wed Dec 13 22:03:16 1995:  imud_gossip: Descartes@IdeaExchange:use CreRemote
+Wed Dec 13 23:00:47 1995:  imud_gossip: Descartes@IdeaExchange:IMHO, you are talking about some rather big differences there, I don't think you can find a BEST, justa best for you
+Wed Dec 13 23:01:21 1995:  imud_gossip: Descartes@IdeaExchange:although, I would be interested in hearing how you evaluate each strength's and weaknesses
+Wed Dec 13 23:01:27 1995:  imud_gossip: Descartes@IdeaExchange:just cres
+Wed Dec 13 23:02:42 1995:  imud_gossip: Descartes@IdeaExchange:any thoughts right now?
+Wed Dec 13 23:07:31 1995:  imud_gossip: Descartes@IdeaExchange:what would you is Lima's strongest point?
+Wed Dec 13 23:11:41 1995:  imud_gossip: Descartes@IdeaExchange:deal with it people
+Wed Dec 13 23:12:19 1995:  imud_gossip: Descartes@IdeaExchange:sounds like a personal problem
+Wed Dec 13 23:16:42 1995:  imud_gossip: Descartes@IdeaExchange:I plan to do something for menuing and administration
+Wed Dec 13 23:16:58 1995:  imud_gossip: Descartes@IdeaExchange:but that will probably come with NM VI, which is intended to be a heavy UI release
+Wed Dec 13 23:17:26 1995:  imud_gossip: Descartes@IdeaExchange:UI == user interface
+Wed Dec 13 23:18:37 1995:  imud_gossip: Descartes@IdeaExchange:NM does too
+Wed Dec 13 23:19:09 1995:  imud_gossip: Descartes@IdeaExchange:admittedly, NM VI probably will not come out til next summer though
+Wed Dec 13 23:19:19 1995:  imud_gossip: Descartes@IdeaExchange:and no one on this line should much care about NM VI :)
+Wed Dec 13 23:19:39 1995:  imud_gossip: Descartes@IdeaExchange:anyone on this line using NM should stop worrying about upgrades once NM V is released
+Wed Dec 13 23:19:51 1995:  imud_gossip: Descartes@IdeaExchange:which mudlist? the mudlist command?
+Wed Dec 13 23:21:42 1995:  imud_gossip: Descartes@IdeaExchange:the mudlist commands automatically removes and adds muds as they disconnect and connect from the I3
+Thu Dec 14 07:25:32 1995:  imud_gossip: Descartes@IdeaExchange:you mean undirected messages?
+Thu Dec 14 07:27:03 1995:  imud_gossip: Descartes@IdeaExchange:not using the any of the mudos messaging schemes, no... NM does messaging OO... ob->Pritn()
+Thu Dec 14 07:27:15 1995:  imud_gossip: Descartes@IdeaExchange:so you would intercept that
+Thu Dec 14 07:27:47 1995:  imud_gossip: Descartes@IdeaExchange:but catch_tell() is called only in things that are 'living'
+Thu Dec 14 07:28:11 1995:  imud_gossip: Descartes@IdeaExchange:the actual method is eventPrint() on NM
+Thu Dec 14 07:34:05 1995:  imud_gossip: Descartes@IdeaExchange:by the way, NM may be switching ip #'s
+Thu Dec 14 07:34:25 1995:  imud_gossip: Descartes@IdeaExchange:this should improve its routing, as winternet seems to be having problems with the 199.* group
+Thu Dec 14 07:34:29 1995:  imud_gossip: Descartes@IdeaExchange:no :) not yet
+Thu Dec 14 07:34:53 1995:  imud_gossip: Descartes@IdeaExchange:this is important to know, however, for router purposes
+Thu Dec 14 07:35:39 1995:  imud_gossip: Descartes@IdeaExchange:at that point it would e too late anyways :)
+Thu Dec 14 07:36:36 1995:  imud_gossip: Descartes@IdeaExchange:ahh
+Thu Dec 14 07:56:50 1995:  imud_gossip: Descartes@IdeaExchange:anyone put any thoght into intermud mail?
+Thu Dec 14 07:59:39 1995:  imud_gossip: Descartes@IdeaExchange:is a full protocol on the i3 spec?
+Thu Dec 14 07:59:57 1995:  imud_gossip: Descartes@IdeaExchange:is mail OOB?
+Sun Dec 17 22:11:23 1995:  imud_gossip: Descartes@IdeaExchange:and your point is Rot?
+Sun Dec 17 22:12:48 1995:  imud_gossip: Descartes@IdeaExchange:the next release is another alpha for NM V
+Sun Dec 17 22:13:00 1995:  imud_gossip: Descartes@IdeaExchange:the release number is IVr2.3
+Sun Dec 17 22:13:44 1995:  imud_gossip: Descartes@IdeaExchange:login to Nightmare and see :)
+Sun Dec 17 22:15:14 1995:  imud_gossip: Descartes@IdeaExchange:it depend son the driver situation
+Sun Dec 17 22:15:52 1995:  imud_gossip: Descartes@IdeaExchange:actually, probably, you will have to get the whole download :)
+Sun Dec 17 22:16:37 1995:  imud_gossip: Descartes@IdeaExchange:because I don't keep track of those :)
+Sun Dec 17 22:17:31 1995:  imud_gossip: Descartes@IdeaExchange:whats.news?
+Sun Dec 17 22:19:28 1995:  imud_gossip: Descartes@IdeaExchange:well, I would bet I did not hear your question
+Sun Dec 17 22:19:40 1995:  imud_gossip: Descartes@IdeaExchange:in general, Rust is right, I do not listen to this channel even
+Sun Dec 17 22:20:42 1995:  imud_gossip: Descartes@IdeaExchange:NMSU? no idea, it is easy to change
+Sun Dec 17 22:21:06 1995:  imud_gossip: Descartes@IdeaExchange:and no, I do not keep a changelog
+Sun Dec 17 22:21:32 1995:  imud_gossip: Descartes@IdeaExchange:because it does not fit my style of development
+Sun Dec 17 22:24:29 1995:  imud_gossip: Descartes@IdeaExchange:trust me, it is hard
+Sun Dec 17 22:24:45 1995:  imud_gossip: Descartes@IdeaExchange:there are 3 ative mudlib developer sincluding myself all editing source
+Sun Dec 17 22:26:00 1995:  imud_gossip: Descartes@IdeaExchange:the point is that you are not supposed to make mudlib level changes until after NM V :)
+Sun Dec 17 22:26:48 1995:  imud_gossip: Descartes@IdeaExchange:if I can think of a way to do changelogs or patch versions, I will do them
+Sun Dec 17 22:26:54 1995:  imud_gossip: Descartes@IdeaExchange:NM V is mid-jan
+Sun Dec 17 22:30:37 1995:  imud_gossip: Descartes@IdeaExchange:next weekend, I think
+Sun Dec 17 22:31:21 1995:  imud_gossip: Descartes@IdeaExchange:mid-jan... it is part of NM V
+Sun Dec 17 22:37:41 1995:  imud_gossip: Descartes@IdeaExchange:what do you mean with a rela one?
+Sun Dec 17 23:24:14 1995:  imud_code: Descartes@Nightmare:no :(
+Sun Dec 17 23:33:19 1995:  imud_code: Descartes@Nightmare:not sure what you are asking
+Sun Dec 17 23:35:42 1995:  imud_code: Descartes@Nightmare:in the event you are changing just the wander path at some point
+Sun Dec 17 23:36:48 1995:  imud_code: Descartes@Nightmare:in create(), you always are gonna use SetWander()
+Sun Dec 17 23:37:22 1995:  imud_code: Descartes@Nightmare:no
+Sun Dec 17 23:37:46 1995:  imud_code: Descartes@Nightmare:SetWanderPath() only sets the path
+Sun Dec 17 23:38:07 1995:  imud_code: Descartes@Nightmare:like if later you want to change the path but no other settings
+Sun Dec 17 23:38:27 1995:  imud_code: Descartes@Nightmare:for example, you write a room that re-doirects wandering monster
+Sun Dec 17 23:38:41 1995:  imud_code: Descartes@Nightmare:you do not want to muck with their wander chance, etc
+Mon Jan 15 22:56:57 1996:  imud_gossip: Descartes@IdeaExchange:but I do not understand what you are asking for MogwI
+Mon Jan 15 22:58:13 1996:  imud_gossip: Descartes@IdeaExchange:okie :)
+Tue Jan 16 07:54:33 1996:  imud_code: Descartes@IdeaExchange:I am not releasing it until I take care of a couple of bugs
+Tue Jan 16 07:54:43 1996:  imud_code: Descartes@IdeaExchange:which probably means tonight
+Tue Jan 16 07:54:51 1996:  imud_code: Descartes@IdeaExchange:but I will wait til this weekend if I have to
+Tue Jan 16 08:01:17 1996:  imud_code: Descartes@IdeaExchange:not yet
+Sat Jan 20 19:28:41 1996:  imud_gossip: Descartes@IdeaExchange:no idea, that's not what I do here :)
+Sat Jan 20 19:31:24 1996:  imud_gossip: Descartes@Nightmare:well, then like the docs say, don't try until there are docs with NM V :)
+Sat Jan 20 22:30:59 1996:  imud_gossip: Descartes@IdeaExchange:if you don;t change that mud name, pretty soon no one will see it
+Sat Jan 20 22:38:05 1996:  imud_gossip: Descartes@IdeaExchange:PhoenixMud
+Sat Jan 20 22:38:21 1996:  imud_gossip: Descartes@IdeaExchange:though you should change really quick yourself :)
+Sat Jan 20 23:25:59 1996:  imud_gossip: Descartes@IdeaExchange:huh?
+Sat Jan 20 23:31:07 1996:  imud_gossip: Descartes@IdeaExchange:you are here :)
+Sat Jan 20 23:32:09 1996:  imud_gossip: Descartes@IdeaExchange:update /daemon/verbs.c
+Sat Jan 20 23:32:33 1996:  imud_gossip: Descartes@IdeaExchange:I probably used a preload.cfg from NM IVr2.1 on accident, and it is not preloading verbs.c
+Sat Jan 20 23:56:35 1996:  imud_gossip: Descartes@Nightmare:why is that?
+Sat Jan 20 23:57:23 1996:  imud_gossip: Descartes@Nightmare:the verbs work fibne
+Sat Jan 20 23:59:26 1996:  imud_gossip: Descartes@Nightmare:you must have done something bizarre then
+Sat Jan 20 23:59:44 1996:  imud_gossip: Descartes@Nightmare:or you are expecting it to do something it is not supposed to do
+Sun Jan 21 00:02:13 1996:  imud_gossip: Descartes@Nightmare:one thing though, given that there are no rooms other than the start room with the mudlib, you can;t go much of anywhere
+Sun Jan 21 01:54:20 1996:  imud_gossip: Descartes@Nightmare:grep SetTown /lib/*.c
+Sun Jan 21 02:21:53 1996:  imud_gossip: Descartes@Nightmare:then change it
+Sun Jan 21 02:24:25 1996:  imud_gossip: Descartes@IdeaExchange:I told you to grep SetTown /lib/*.c
+Sun Jan 21 02:24:39 1996:  imud_gossip: Descartes@Nightmare:better yet, grep for Praxis
+Sun Jan 21 10:35:01 1996:  imud_gossip: Descartes@IdeaExchange:yeah :)
+Sun Jan 21 11:08:37 1996:  imud_gossip: Descartes@Nightmare:oops wrong line :)
+Sun Jan 21 11:35:05 1996:  imud_gossip: Descartes@Nightmare:no gas!
+Sun Jan 21 13:37:09 1996:  imud_code: Descartes@Nightmare:this is where I point out that the concept of a combat object is flawed :)
+Sun Jan 21 13:37:39 1996:  imud_code: Descartes@Nightmare:Nippe I am just making things up right now, to give a real answer, you have to look at the error causing it
+Sun Jan 21 13:38:01 1996:  imud_code: Descartes@Nightmare:heart beats stop because an erro roccurred while they were executing
+Sun Jan 21 13:38:35 1996:  imud_code: Descartes@Nightmare:/log/runtime is all runtime errors
+Sun Jan 21 13:41:58 1996:  imud_code: Descartes@IdeaExchange:that really does not fit the object model
+Sun Jan 21 13:42:34 1996:  imud_code: Descartes@IdeaExchange:you should use a test char to test the game
+Sun Jan 21 13:43:59 1996:  imud_code: Descartes@IdeaExchange:i don;t understand what you are saying Raven
+Sun Jan 21 14:08:46 1996:  imud_code: Descartes@IdeaExchange:call fo->SetStat("whatever", stat_level, class) where class is a number between 1 anf 5, 1 being good 5 being bad
+Sun Jan 21 14:12:46 1996:  imud_code: Descartes@IdeaExchange:several are involved
+Sun Jan 21 14:14:04 1996:  imud_gossip: Descartes@Nightmare:there will be a full domain with NM V
+Sun Jan 21 14:14:12 1996:  imud_code: Descartes@Nightmare:strength, coordination, agility
+Sun Jan 21 18:34:12 1996:  imud_gossip: Descartes@Nightmare:that would be impossible, since the lib has only been out a few months
+Sun Jan 21 18:34:46 1996:  imud_gossip: Descartes@Nightmare:not NM IV
+Sun Jan 21 18:35:00 1996:  imud_gossip: Descartes@Nightmare:the current lib is a new mudlib from scratch
+Sun Jan 21 18:37:47 1996:  imud_gossip: Descartes@IdeaExchange:use the one that most closeley matches what you are trying to do
+Sun Jan 21 18:39:40 1996:  imud_gossip: Descartes@IdeaExchange:well, NM has that shit, dunno about others
+Sun Jan 21 18:40:32 1996:  imud_gossip: Descartes@IdeaExchange:nope... guild skills and spells differ no more than class spells and skills
+Sun Jan 21 18:42:05 1996:  imud_gossip: Descartes@IdeaExchange:/lib/classes.c and /verbs/spells/*.c
+Sun Jan 21 18:42:55 1996:  imud_gossip: Descartes@Nightmare:depend son what you do with them
+Sun Jan 21 19:41:14 1996:  imud_gossip: Descartes@IdeaExchange:you guys are gonna get your site banned from I3
+Sun Jan 21 19:41:51 1996:  imud_gossip: Descartes@IdeaExchange:this would be the first threat
+Sun Jan 21 19:42:01 1996:  imud_gossip: Descartes@IdeaExchange:but yes, it is a threat
+Sun Jan 21 19:42:17 1996:  imud_gossip: Descartes@IdeaExchange:ayuh
+Sun Jan 21 19:42:43 1996:  imud_gossip: Descartes@IdeaExchange:if you are asking, then you are too stupid to understand the problem
+Sun Jan 21 19:43:25 1996:  imud_gossip: Descartes@IdeaExchange:I don;t care what you think :)
+Sun Jan 21 19:44:55 1996:  imud_gossip: Descartes@IdeaExchange:so how about it? shut down the mud now or don't get on I3 under any name?
+Sun Jan 21 19:45:38 1996:  imud_gossip: Descartes@IdeaExchange:so be it
+Sun Jan 21 19:49:55 1996:  imud_gossip: Descartes@IdeaExchange:takes a second to get rid of you
+Sun Jan 21 19:54:55 1996:  imud_gossip: Descartes@IdeaExchange:huh?
+Sun Jan 21 19:55:43 1996:  imud_gossip: Descartes@IdeaExchange:like normal
+Sun Jan 21 19:55:55 1996:  imud_gossip: Descartes@IdeaExchange:NM muds and Lima muds at least allow you to enter the name
+Sun Jan 21 19:56:10 1996:  imud_gossip: Descartes@IdeaExchange:like: 'tell memnoch@realms of the shaded boo'
+Sun Jan 21 19:57:56 1996:  imud_gossip: Descartes@IdeaExchange:at any rate, those dorks are off of here
+Sun Jan 21 20:01:11 1996:  imud_code: Descartes@IdeaExchange:to_int()
+Sun Jan 21 20:01:39 1996:  imud_code: Descartes@IdeaExchange:no, 1 + "";
+Sun Jan 21 20:02:48 1996:  imud_code: Descartes@IdeaExchange:right
+Sun Jan 21 20:08:42 1996:  imud_code: Descartes@IdeaExchange:right :)
+Sun Jan 21 20:41:31 1996:  imud_code: Descartes@IdeaExchange:/lib/classes.c
+Sun Jan 21 20:43:00 1996:  imud_code: Descartes@Nightmare:could be anythng... probably did not set a valid race
+Sun Jan 21 20:43:14 1996:  imud_code: Descartes@Nightmare:you really need to look at the error in the error log
+Sun Jan 21 22:02:31 1996:  imud_gossip: Descartes@IdeaExchange:there is to start the technical aspect that two muds cannot have the same name on I3
+Sun Jan 21 22:02:47 1996:  imud_gossip: Descartes@IdeaExchange:then beyond that, as Skylight saidm it is rude
+Sun Jan 21 22:02:59 1996:  imud_gossip: Descartes@IdeaExchange:given that the original phoenix has been around 5 years
+Sun Jan 21 22:03:13 1996:  imud_gossip: Descartes@IdeaExchange:Phoenix has built up a certain name capital
+Sun Jan 21 22:03:39 1996:  imud_gossip: Descartes@IdeaExchange:originally, it waas an accident
+Sun Jan 21 22:03:57 1996:  imud_gossip: Descartes@IdeaExchange:but when someone else pointed it out to them, they took the attitude of so what
+Sun Jan 21 22:04:30 1996:  imud_gossip: Descartes@IdeaExchange:some dude named Iam
+Sun Jan 21 22:04:48 1996:  imud_gossip: Descartes@IdeaExchange:no, he died 300 years ago
+Sun Jan 21 22:05:54 1996:  imud_gossip: Descartes@IdeaExchange:they were not faced with the shut down or be banned until after they basically  turned their noses to the fact their were using someone else's mud name
+Sun Jan 21 22:07:16 1996:  imud_gossip: Descartes@IdeaExchange:that is one of the pre-requisites... that names do not condlict
+Sun Jan 21 22:09:45 1996:  imud_gossip: Descartes@IdeaExchange:just grab the files off of IE
+Sun Jan 21 22:10:01 1996:  imud_gossip: Descartes@IdeaExchange:those are more up to date than the I3 dist... I have not updated that to req-3
+Sun Jan 21 22:10:16 1996:  imud_gossip: Descartes@IdeaExchange:intermud.c services.c and services/*.c
+Sun Jan 21 22:11:40 1996:  imud_gossip: Descartes@IdeaExchange:ok... debugmalloc and check_memory are defined... why don;t I have a check_memory() efun :(
+Sun Jan 21 22:17:18 1996:  imud_gossip: Descartes@IdeaExchange:you don;t compile IVr2.3 :)
+Sun Jan 21 22:19:00 1996:  imud_gossip: Descartes@IdeaExchange:well, if you are having a problem compiling the driver you should mail those problems to mudos-bgs@imagianry.com
+Sun Jan 21 22:19:52 1996:  imud_gossip: Descartes@IdeaExchange:how many points for a free pizza?
+Sun Jan 21 22:22:09 1996:  imud_gossip: Descartes@IdeaExchange:you must have v21.5 or later
+Mon Jan 22 18:11:08 1996:  imud_code: Descartes@IdeaExchange:NOTICE: I3 will *probably* be going down for a short time tomorrow night while imaginary.com upgrades its server
+Mon Jan 22 21:35:57 1996:  imud_code: Descartes@IdeaExchange:sentients, not npc;s
+Mon Jan 22 22:01:09 1996:  imud_gossip: Descartes@IdeaExchange:one sec
+Mon Jan 22 22:05:41 1996:  imud_code: Descartes@IdeaExchange:you can't :)
+Mon Jan 22 22:05:55 1996:  imud_code: Descartes@IdeaExchange:started at v22a18
+Mon Jan 22 22:06:05 1996:  imud_code: Descartes@IdeaExchange:it is a bug
+Mon Jan 22 22:06:27 1996:  imud_gossip: Descartes@IdeaExchange:none would
+Mon Jan 22 22:06:41 1996:  imud_gossip: Descartes@IdeaExchange:gotta dbx the core
+Mon Jan 22 22:06:55 1996:  imud_code: Descartes@IdeaExchange:yes
+Mon Jan 22 22:19:57 1996:  imud_gossip: Descartes@IdeaExchange:which version of mudos?
+Mon Jan 22 22:30:42 1996:  imud_code: Descartes@IdeaExchange:LIB_SENTIENT
+Mon Jan 22 22:31:33 1996:  imud_code: Descartes@IdeaExchange:sentient inherits npc
+Mon Jan 22 23:13:39 1996:  imud_gossip: Descartes@Nightmare:well, those bugs are fixed in v22a18
+Mon Jan 22 23:13:47 1996:  imud_gossip: Descartes@Nightmare:but that is what IVr2.3 is for :)
+Tue Jan 23 19:49:37 1996:  imud_gossip: Descartes@IdeaExchange:no downtime tonight :) we are upgrading saturday :)
+Tue Jan 23 19:51:44 1996:  imud_gossip: Descartes@IdeaExchange:a sparc 5 upgrade board
+Tue Jan 23 20:54:25 1996:  imud_gossip: Descartes@IdeaExchange:v22a18 slightly modified for solaris... added the D to help Beek tell the difference in bug reports
+Wed Jan 24 21:00:47 1996:  imud_gossip: Descartes@IdeaExchange:vmstat

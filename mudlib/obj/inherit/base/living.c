@@ -9,7 +9,6 @@
 // 10/16/95     Tim:  started adding support for DEATH >evil grin<
 
 #pragma save_binary
-#pragma no_clone
 
 #include <mudlib.h>
 #include <object_types.h>
@@ -23,7 +22,7 @@ inherit OBJECT;
 private string name = "";              // our name
 private int *coins;                    // our money
 private int hit_points, spell_points;  // our HP/SP
-private int sex;                       // 1=male -1=female 0=neutral
+private int gender;                    // 1=male -1=female 0=neutral (gender.h)
 
 // Function Prototypes
 void create();
@@ -38,8 +37,8 @@ void die();
 // Query functions
 string query_name() { return name; }
 string query_cap_name() { return capitalize(name); }
-int *  query_money() { return coins; }
-int query_sex() { return sex; }
+int *  query_money() { return copy(coins); }
+int query_gender() { return gender; }
 
 int
 query_stat(string stat)
@@ -90,8 +89,7 @@ create()
     coins[i] = 0;
 
   enable_commands();         // living object; Tim 9/14/95
-  set_heart_beat(1);         // enable heart beat
-
+  set_heart_beat(1);
   combat::create();
 
   hit_points = 100;       // temporary! for testing death
@@ -109,9 +107,9 @@ set_name(string namestr)
 
 nomask
 void
-set_sex(int s)
+set_gender(int s)
 {
-  sex = s;
+  gender = s;
 }
 
 // add money to living -- returns 1 if the money was received successfully

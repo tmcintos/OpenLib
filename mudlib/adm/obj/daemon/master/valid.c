@@ -180,3 +180,8 @@ valid_compile_to_c(string file)
 {
   return 1;
 }
+int
+valid_asm(string file)
+{
+  return 1;
+}

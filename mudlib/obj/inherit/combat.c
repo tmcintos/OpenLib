@@ -126,8 +126,8 @@ varargs int do_unwield(object weapon, int make_noise)
   set_free_hands(hands_info);
   set_weapon_info(weapon_info);
   weapon->set_wielded(0);
-  this_object()->write("You unwield "+weapon->short()+".\n");
-  this_object()->say(this_object()->query_cap_name()+" unwields "+ weapon->short()+".\n");
+    tell_object(this_object(), "You unwield "+weapon->short()+".\n");
+    tell_room(environment(this_object()), this_object()->query_cap_name()+" unwields "+ weapon->short()+".\n", ({this_object()}));
   return 1;
 }
  
@@ -146,13 +146,11 @@ varargs int do_wield(object weapon, int hands_used, int make_noise)
       i = max_hands;
     }
   }
-  this_weapon_info = this_object()->query_unarmed(j,1);
   weapon_info = weapon->query_weapon_info();
-  this_weapon_info[0] += weapon_info[0] + 
-    this_object()->query_skill(WEAPON_TYPE[weapon_info[12]])/2;
+  this_weapon_info = this_object()->query_unarmed(j,WEAPON_TYPE[weapon_info[12]]);
+  this_weapon_info[0] += weapon_info[0];
   this_weapon_info[1] = weapon_info[1];
-  this_weapon_info[2] += weapon_info[2]+ 
-    this_object()->query_skill(WEAPON_TYPE[weapon_info[12]]) * 2;
+  this_weapon_info[2] += weapon_info[2];
   this_weapon_info[3] = weapon_info[3];
   this_weapon_info[4] = weapon_info[4];
   this_weapon_info[5] = weapon_info[5];
@@ -172,8 +170,8 @@ varargs int do_wield(object weapon, int hands_used, int make_noise)
  
   if(make_noise)
   {
-    this_object()->write("You wield "+weapon->short()+".\n");
-    this_object()->say(this_object()->query_cap_name()+" wields "+weapon->short()+".\n");
+    tell_object(this_object(), "You wield "+weapon->short()+".\n");
+    tell_room(environment(this_object()), "You wield "+weapon->short()+".\n", ({this_object()}));
   }
   weapon->set_wielded(1);
   weapon->set_wield_info(this_weapon_info);
@@ -207,8 +205,8 @@ varargs int do_wear(object armour, int make_noise)
   armour->set_worn(j,this_object()->query_armour_locations()[i]);
   if(make_noise)
   {
-    this_object()->write("You wear "+armour->short(1)+".\n");
-    this_object()->say(this_object()->query_cap_name()+" wears "+armour->short(1)+".\n");
+    tell_object(this_object(), "You wear "+armour->short(1)+".\n");
+    tell_room(environment(this_player()), this_object()->query_cap_name()+" wears "+armour->short(1)+".\n", ({this_object()}));
   }
   return 1;
 }
@@ -227,7 +225,7 @@ void do_remove(object armour, int make_noise)
   armour->set_worn(0,"");
   if(make_noise)
   {
-  this_object()->write("You remove "+ armour->short()+".\n");
-  this_object()->say(this_object()->query_cap_name()+" removes "+armour->short()+".\n");
+    tell_object(this_object(), "You remove "+ armour->short()+".\n");
+    tell_room(environment(this_object()), this_object()->query_cap_name()+" removes "+armour->short()+".\n", ({this_object()}));
   }
 }

@@ -1,0 +1,22 @@
+<PRE>
+-mudlib security
+-player bodies, shells, shell interfaces (set cmd for env variables)
+-prompt changing
+-hit/spell points, damage
+-max weight funcs for races
+-monsters etc.
+-bulletin board
+-put command
+-dest command: options for file argument, and dest all instances...
+-help daemon
+-mail system: daemon, mailbox, command (partially done)
+-emote/feelings daemon/commands (rewrite)
+-leveling system
+-guild system
+-races (work on them) (languages??)
+-parties (prolly after more of the basics are in place)
+-fix the wildcard expansion stuff in user.c:189 so it works when spaces are
+ entered on a blank line.  Ultimately remove this stuff from user.c and place
+ elsewhere (in wizard body).
+-move /data/user directory to /adm/etc/user
+</PRE>

@@ -1,0 +1,7 @@
+Make sure to make equip go to the zombie if one is created.  Copy the stuff
+from die.c into the corpse.c should do it....
+
+Might want to put printf()'s into the generic shop to make it look pretier.
+
+Spec's for RACES...
+

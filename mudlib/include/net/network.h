@@ -1,7 +1,8 @@
+/*  -*- LPC -*-  */
 #ifndef __NETWORK_H 
 #define __NETWORK_H 
  
-#include <net/socket.h> 
+#include <net/socket_errors.h> 
 #include <net/config.h>
  
 #define MUD                       0 
@@ -15,10 +16,6 @@
 #define PORT_OOB                  (query_host_port() + 5)
 #define PORT_RCP                  (query_host_port() - 10)
 #define PORT_UDP                  (query_host_port() + 8) 
-
-// #define INTERMUD_SERVICES          ([ "channel" : 1, "finger" : 1, "tell" : 1, "locate" : 1, "who" : 1, "rcp" : PORT_RCP, "http" : PORT_HTTP, "ftp" : PORT_FTP ])
-
-#define INTERMUD_SERVICES          ([ "finger" : 1, "tell" : 1, "who" : 1, "ftp" : PORT_FTP ])
 
 #define SERVER_ADDR               "199.199.122.10" 
 #define SERVER_PORT               7898 
@@ -46,7 +43,7 @@
 #define SERVICE_UDP_WARNING       "warning" 
 #define SERVICE_UDP_TELL          "gtell" 
  
-#define INTERMUD_CHANNELS         ({ "intercre" }) 
+#define INTERMUD_CHANNELS         ({ "intercre", "intergossip" }) 
 #define INTERCHANNELS             ([ "CREATOR": "intercre" ]) 
  
 #define TCP_SERVICES              ({}) 

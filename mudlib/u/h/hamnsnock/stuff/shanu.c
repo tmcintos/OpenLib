@@ -2,6 +2,7 @@
 
 inherit MONSTER "/human";
 object ob;
+object sign;
 
 reset(arg)
 {
@@ -12,6 +13,7 @@ reset(arg)
 init(){
     add_action("do_conjure" , "conjure");
     add_action("do_read" , "read");
+;
 }
 
 long(){
@@ -32,6 +34,10 @@ id(str) {
    return str == "shanu";
 }
 
+
+sex(){
+   return -1;
+}
 do_read(string str){
 if(!str){
     write("Read what?\n");
@@ -60,4 +66,5 @@ if(num == "1"){
 write("Shanu says:  Perhapes you should read my sign?\n");
 return 1;
 }
+
 

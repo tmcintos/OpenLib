@@ -14,20 +14,28 @@
 #define status int          // for backwards compat
 #define char int            // for read-ability
 #define boolean int         // for read-ability
+#define NULL     0          // for clarity
 
 #define mud_name() __MUD_NAME__
+#define mud_port() __MUD_PORT__
 #define mudlib() "UltraLib"
 #define mudlib_version() "0.1"
 #define version() __VERSION__
-#define MUD_STATUS "alpha development"
+#define MUD_STATUS "pre-alpha development"
 #define ADMIN_EMAIL "mud@knapp38.res.iastate.edu"
 
 // Crap for quick n dirty compatibility with the Intermud3 stuff
 
 #define convert_name(x) lower_case(replace_string(x, " ", ""))
 #define identify(x) typeof(x)
+#define unguarded(x) evaluate(x)
 
 // (Tim) put in to make it easier to change later...
+
+#define user_exists(x) \
+  file_exists("/data/user/connection/"+ x[0..0] + "/" + x + ".o")
+
+#define member_group(uid, group) GROUP_D->is_member(group, uid)
 
 #define RESOLVE_PATH(x) this_player()->path_resolve(x)
 

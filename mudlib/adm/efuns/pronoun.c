@@ -1,22 +1,29 @@
+#include <gender.h>
+
 varargs
 string
 pronoun(object ob, int possessive)
 {
-  int sex = ob->query_sex();
+  int sex = ob->query_gender();
 
   if(possessive) {
-    if(!sex)
+    switch(sex) {
+    case GENDER_NEUTRAL:
       return "its";
-    else if(sex == -1)
+    case GENDER_FEMALE:
       return "her";
-    else
+    case GENDER_MALE:
       return "his";
+    }
   } else {
-    if(!sex)
+    switch(sex) {
+    case GENDER_NEUTRAL:
       return "it";
-    else if(sex == -1)
+    case GENDER_FEMALE:
       return "she";
-    else
+    case GENDER_MALE:
       return "he";
+    }
   }
+
 }

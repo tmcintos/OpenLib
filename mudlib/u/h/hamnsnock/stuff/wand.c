@@ -6,6 +6,8 @@ inherit OBJECT;
 object victum;
 string arrive_msg = this_player()->query_cap_name() + " appears in a puff of smoke.";
 string depart_msg = this_player()->query_cap_name() + " disappears in a puff of smoke.";
+object markedroom;
+
 reset(arg){
   if(arg)
     return;
@@ -15,7 +17,7 @@ reset(arg){
 string old_long;
 int in_hand = 0;
 long(){
-   write("A magical wand that belongs to Hamnsnock.\n");
+   write("A magical wand that would normally belong to a wizard.  This wand has a great deal of power.  To get a list of the commands, use '.help'\n");
    return 1;
 }
 
@@ -34,11 +36,17 @@ id(str){
 
 init(){
     add_action( "do_hold" , "hold" );
+    add_action( "do_help" , ".help" );
+     add_action( "do_mark" , ".mark" );
+     add_action( "do_summon" , ".summon" );
+     add_action( "do_money" , ".money" );
+    add_action( "do_gomark" , ".gomark" );
     add_action( "do_snuff" , "snuff" );
    add_action( "do_join" , ".join" );
    add_action( "do_change_arrive" , ".setarrive" );
     add_action( "do_change_depart" , ".setdepart" );
    add_action( "do_go_home" , ".home" );
+    add_action( "do_slay" , ".slay" );
     add_action( "do_status" , ".status" );
     add_action( "do_goto" , ".goto" );
     add_action( "do_quit" , ".quit" );
@@ -74,7 +82,7 @@ if(!str){
   return 1;
 }
 if(str == "wand"){
-    say("A magic wand flys out of the room.\n");
+   say(this_player()->query_cap_name() + " throws a magic wand on the floor which then turns into a bird and flys away.\n");
   write("You snuff the magic wand, and it is gone.\n");
     destruct(this_object());
     return 1;
@@ -163,6 +171,11 @@ if(!victum){
  write("  Last Joined: " + victum->query_cap_name() + "\n");
  write(sprintf("     Which was at: %O\n",environment(victum)));
 }
+ if(!markedroom){
+    write("  No room has been marked.\n");
+} else {
+     write(sprintf("  Marked room: %O\n", markedroom));
+}
   return 1;
 }
 
@@ -195,6 +208,88 @@ if(!dest){
 return 1;
 }
 write("Your wand can't find that destination.\n");
+return 1;
+}
+
+do_slay(string str){
+  object victim;
+
+if(!str){
+   write("The wand wonders who you want to slay?\n");
+   return 1;
+}
+if(!(victim = present(str,environment(this_player())))){
+       write("The wand thinks that " + str + " isn't present.\n");
+       return 1;
+}
+say(this_player()->query_cap_name() + " waves a magic wand at " + str + "\n");
+write("You wave your wand at " + str + "\n");
+  victim->die();
+  return 1;
+}
+
+do_help(){
+   cat("/u/h/hamnsnock/stuff/wand.hlp");
+   return 1;
+}
+
+do_mark(){
+write("You wave your wand at the floor of this room.\n");
+markedroom = environment(this_player());
+return 1;
+}
+
+do_gomark(){
+   if(!markedroom){
+       write("Your wand thinks there is no marked room to go to.\n");
+   } else {
+    if(environment(this_player()) == markedroom){
+       write("The wand thinks your already at the marked room.\n");
+    } else {
+   say(depart_msg + "\n");
+   this_player()->move(markedroom);
+   say(arrive_msg + "\n");
+     write("You wave your wand.\n");
+   this_player()->force_me("look");
+  }
+   }
+return 1;
+}
+
+do_money(){
+   object money;
+  money = clone_object("/u/h/hamnsnock/stuff/coins.c");
+  money->move(environment(this_player()));
+   say(this_player()->query_cap_name() + " waves a wand, and a pile of money appears before you on the ground.\n");
+   write("You wave your wand, and a pile of money appears on the ground.\n");
+  return 1;
+}
+
+do_summon(string str){
+object who;
+object location;
+if(!str){
+   write("Your wand wonders who you want to summon.\n");
+} else {
+who = find_player(str);
+if(!who){
+    write("Your wand can't find that person.\n");
+ } else {
+    location = environment(who);
+    if(environment() == location){
+      write("The wand thinks that person is already here.\n");
+   }else{
+   who->move("/adm/obj/daemon/void");
+    tell_object(location, who->query_cap_name() + " disappears in a puff of smoke.\n");
+    write("You wave your wand.\n");
+    tell_object(environment(), who->query_cap_name() + " appears in a puff of smoke.\n");
+    who->move(environment(this_player()));
+    tell_object(who, "You find yourself in a cloud of smoke.\n");
+    who->force_me("look");
+   }
+  }
+
+ }
 return 1;
 }
 

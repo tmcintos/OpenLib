@@ -10,6 +10,7 @@ create()
   object weap;
 
   ::create();
+  set_undead();
   set_name("zombie");
   set_short("Zombie");
   set_long("A badly decayed corpse that has, somehow, come back to life\n");

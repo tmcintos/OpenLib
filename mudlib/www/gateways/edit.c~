@@ -1,0 +1,6 @@
+varargs
+string
+gateway(string str)
+{
+  return sprintf("You send:\n\n%s",str);
+}

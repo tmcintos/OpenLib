@@ -121,6 +121,7 @@ preload(string file)
 int
 error_handler(mapping error)
 {
+  string name, home;
   string line;
   mapping *trace = error["trace"];
 
@@ -130,38 +131,58 @@ error_handler(mapping error)
 		 "  prgm: %s\n",
 		 error["error"], error["object"],
 		 error["file"], error["line"], error["program"]);
+
   if(sizeof(trace)) {
     line += sprintf("  func: %s\n"
 		    "  args: ( ", 
 		    trace[sizeof(trace)-1]["function"]);
 
-    if(arrayp(trace[sizeof(trace)-1]["arguments"]))
-      line += sprintf("%@O, ", trace[sizeof(trace)-1]["arguments"]);
-    else
+    if(arrayp(trace[sizeof(trace)-1]["arguments"])) {
+      foreach(mixed arg in trace[sizeof(trace)-1]["arguments"]) {
+	line += sprintf("%O, ", arg);
+      }
+    } else {
       line += sprintf("%O", trace[sizeof(trace)-1]["arguments"]);
+    }
     line += ")\n";
   }
 
-  tell_object(this_player(1),
-	      sprintf("error: file: %s:%d;  %s",
-		      error["file"], error["line"], error["error"]));
-  log_file("rterrors", line);
+  if(this_player(1)) {
+    tell_object(this_player(1),
+		sprintf("runtime: file: %s:%d;  %s",
+			error["file"], error["line"], error["error"]));
+  }
+   
+  name = file_owner(error["file"]);
+  if (name) {
+    home = user_cwd(name);
+  } else {
+    home = LOG_DIR;
+  }
+  home = home + "/errors";
+  if(directory_exists(home))
+    write_file(home+"/runtime", line);
+
   return 1;
 }
 
 void
 log_error(string file, string message)
 {
-   string name, home;
+  string name, home;
    
-	name = file_owner(file);
-	if (name) {
-		home = user_path(name);
-	} else {
-		home = LOG_DIR;
-	}
-        tell_object(this_player(1),"\n"+message);
-        tell_object(this_player(1),message);
+  name = file_owner(file);
+  if (name) {
+    home = user_cwd(name);
+  } else {
+    home = LOG_DIR;
+  }
+  home = home + "/errors";
+
+  tell_object(this_player(1),"\ncompile: "+message);
+
+  if(directory_exists(home))
+    write_file(home+"/compile", message);
 }
 
 // save_ed_setup and restore_ed_setup are called by the ed to maintain

@@ -5,6 +5,10 @@
  */
 
 #include "write.c"
+#include "printf.c"
+#include "break_string.c"
+#include "wrap.c"
+#include "wizardp.c"
 #include "termcap.c"
 #include "cat.c"
 #include "say.c"

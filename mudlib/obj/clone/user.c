@@ -24,28 +24,39 @@ inherit LIVING;
 private string title;                  // our title
 private string current_dir;            // current working directory
 private string term;                   // terminal type
-private mapping aliases = ([]);         // our aliases
+private mapping aliases;               // our aliases
 private function Hook;
-private static object connection;              // user's connection object
+private static object connection;      // user's connection object
+private string* channels;              // subscribed channels
 
 // search path, take out later
-private string path = "/cmd/player:/adm/cmd/wiz:/adm/cmd/adm:"
-                      "/cmd/wiz:/adm/cmd/player:/cmd/adm";
+private string* search_path = ({ "/cmd/player",
+				 "/adm/cmd/wiz",
+				 "/cmd/wiz",
+				 "/adm/cmd/adm",
+				 "/adm/cmd/player",
+				 "/cmd/adm"
+			      });
 
 #include "user/more.c"
 
 string query_cwd() { return current_dir; }
 string query_term() { return term; }
 object query_connection() { return connection; }
+string* query_path() { return copy(search_path); }
+string* query_channels() { return copy(channels); }
 
 // Overload of living::create()
 
 void
 create()
 {
+  string path;
+
   living::create();
   living::set_object_class(query_object_class() | OBJECT_PLAYER);
   seteuid(0);                       // so logind can export_uid() to us
+  channels = ({ });
   aliases = (["n"   :  "north",
 	      "s"   :  "south",
 	      "e"   :  "east",
@@ -58,6 +69,12 @@ create()
 	      "l"   :  "look",
 	      "sc"  :  "score",
 	      ]);
+
+  foreach(path in search_path) {
+    if(!CMD_D->hashed_path(path) && !CMD_D->hash_path(path))
+      search_path -= ({ path });
+  }
+
 }
 
 // Overload of living::short()
@@ -70,10 +87,15 @@ short() { return query_cap_name() + " " + title; }
 void
 remove()
 {
-  CHAT_D->eventRemoveMember(({ "mud", "intercre", "intergossip",
-				 "foundation", "chat" }));
-  if(connection)
+  foreach(string chan in channels) {
+    CHAT_D->remove_member(chan, this_player());
+  }
+
+  if(connection) {
+    connection->save_connection(query_name());
     efun::destruct(connection);
+  }
+
   living::remove();
 }
 
@@ -127,6 +149,23 @@ set_connection(object ob)
   ob->set_active();       // so it won't be destructed so easily
   connection = ob;
   return 1;
+}
+
+// Set the list of channels
+
+void
+set_channels(string* chans)
+{
+  channels = chans;
+}
+
+boolean
+is_subscribed_chan(string chan)
+{
+  if( member_array(chan, channels) == -1 )
+    return FALSE;
+  else
+    return TRUE;
 }
 
 // path_resolve: (Tim) resolve_path is an efun;  This is player specific...
@@ -227,7 +266,9 @@ save_player()
   if(file_size(dir) != -2) mkdir(dir);
 
   file = dir + "/" + username;
-  return save_object(file, 1);
+
+  connection->save_connection(username);
+  return save_object(file);
 }
 
 //  Restore from playerfile
@@ -257,10 +298,16 @@ setup(string username)
   set_name(username);
   restore_player();
 
-  current_dir = user_cwd(username);
   add_action("commandHook", "", 1);
-  CHAT_D->eventRegisterMember(({ "mud", "intercre", "intergossip",
-				 "foundation", "chat" }));
+
+  if(!channels) {
+    channels = ({ });
+  } else {
+    foreach(string chan in channels) {
+      CHAT_D->add_member(chan, this_player());
+    }
+  }
+
   if(!title) title = "the utter mudlib hacker";
 }
 
@@ -278,21 +325,23 @@ force_me(string command)
 int
 commandHook(string arg)
 {
-    string *cmd_paths;
-    string verb = query_verb();
-    int i, j;
-    object cobj;
-    string aliastmp1;
-  string emote_file;
-  string tmp_emote = arg;
+  string verb = query_verb();
+  object cobj;
+  string aliastmp1;
+  string tmp_emote;
 
     if(arg == "") arg = 0;
 
 //  Get this out of the player....LATER!!!  (Tim)
     switch(verb) {
     case "path":
-      if(!arg) { write(path +"\n"); return 1; }
-      path = arg;
+      if(!arg) { write(implode(search_path, ":") +"\n"); return 1; }
+      if(CMD_D->hashed_path(arg) || CMD_D->hash_path(arg)) {
+	if(member_array(arg, search_path) == -1) {
+	  search_path += ({ arg });
+	  write("Path added.\n");
+	}
+      }
       return 1;
     case "term":
       if(!arg) { write(term +"\n"); return 1; }
@@ -306,28 +355,18 @@ commandHook(string arg)
 	if(member_array(arg, keys(aliases)) != -1)
 	  map_delete(aliases, arg);
       }
-
       return 1;
     }
 
-// path expansion
-    cmd_paths = explode(path, ":");
-    for(i=0;i < sizeof(cmd_paths);i++) {
-      cmd_paths[i] += "/" + verb;
-      if(file_size(cmd_paths[i] + ".c") >= 0)
-	cobj = load_object(cmd_paths[i]);
-    }
-
-    if (cobj) {
-      return (int)cobj->main(arg);
+    if(cobj = CMD_D->find_cmd(verb)) {
+      return (int) cobj->main(arg);
     } else {
-    emote_file="/cmd/emotes/"+verb;
-    if(file_size(emote_file)>0) {
-      tmp_emote="emote "+verb;
-      if(arg) { tmp_emote += " " + arg; }
-      this_player()->force_me(tmp_emote);
-    return 1;
-    }
+      tmp_emote = verb;
+
+      if(arg)
+	tmp_emote += " " + arg;
+
+      return (int) EMOTE_D->emote_search(verb, tmp_emote);
     }
 }
 
@@ -352,6 +391,7 @@ void
 receive_message(string msgClass, string msg)
 {
 	// the meaning of 'msgClass' is at the mudlib's discretion
+//	receive(wrap(termcap_format_line(msg, query_term())));
 	receive(termcap_format_line(msg, query_term()));
 }
 
@@ -364,9 +404,11 @@ net_dead()
   set_heart_beat(0);
 
 #ifndef __HAS_ED__
-  ed_cmd(".");
-  ed_cmd("w "+ connection->query_home_dir() +"/ed_crash_file");
-  ed_cmd("Q");
+  if(in_edit()) {
+    ed_cmd(".");
+    ed_cmd("w "+ connection->query_home_dir() +"/ed_crash_file");
+    ed_cmd("Q");
+  }
 #endif
 
   tell_room(environment(), query_cap_name() + " is link-dead.\n");

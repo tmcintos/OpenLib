@@ -3,25 +3,16 @@
 #include <cmdline.h>
 
 int
-_main(string file, int argc, string *argv, string *flags)
+_main(string *argv, string *argv2)
 {
-  int i, verbose;
-  string *filez, path;
+  int verbose;
 
-  if(!file)
+  if(!sizeof(argv2))
     return notify_fail("usage: rm [-v] <file1 ... >\n");
 
-  verbose = flag(flags, "v");
+  verbose = flag("v");
 
-// take out verb and flags from list of words
-  filez = filter_array(argv - ({ argv[0] }),
-		       function(string word) {
-			 if(word[0] == '-') return 0;
-			 else return 1;
-		       }
-);
-
-  foreach(file in filez) {
+  foreach(string file in argv2) {
     file = RESOLVE_PATH(file);
     
     switch(file_size(file)) {

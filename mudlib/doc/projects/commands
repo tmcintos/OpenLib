@@ -1,0 +1,16 @@
+Port over from TMI-2 or code fresh:
+trace (Finds all active copies of an object and optionaly destructs them)
+ss (scans an object inventory and returns it's contents, filenames & oids)
+sc (like ss, but it works with the deep inventory)
+
+Possible idea:
+Create a 'command pre-processor' inherent in all commands that allows
+for the command syntax:
+command <arg>[, <arg>[, <arg>...]] [except <arg>[, <arg>...]]
+and possibly allow for counts of and/or pluarls of objects so the
+following commands could be possible:
+sell all except wielded weapons, worn armours
+get 3 daggers, 2 short swords
+put dagger except gold dagger in pouch
+---
+I do have an idea how this could be done.  Casper

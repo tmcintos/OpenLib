@@ -7,5 +7,6 @@
 #define NETWORK_D            DAEMON_DIR "/net/network"
 #define SERVICES_D           DAEMON_DIR "/net/services"
 #define FTP_D                DAEMON_DIR "/net/ftpd"
+#define AUTH_D               DAEMON_DIR "/net/authd"
 
 #endif /* _NET_DAEMONS_H */

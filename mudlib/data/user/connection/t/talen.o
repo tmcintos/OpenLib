@@ -1,0 +1,10 @@
+#obj/clone/connection.c
+name "talen"
+password "kgVM934UPtz72"
+real_name "Stuart Lamble"
+email_addr "lamble@yoyo.cc.monash.edu.au"
+home_dir "/u/t/talen"
+body "/obj/clone/user/human"
+login_time 822546171
+login_from "130.194.1.90"
+active 0

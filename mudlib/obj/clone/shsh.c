@@ -119,17 +119,15 @@ static string prompt, time, dir, *BUFFER, *TMP_BUFFER;
 static int Status, scheck, vis, busy, HOME, help;
 
 // Temp patch --Tim
-varargs mixed * exclude_array(mixed *arr...)
+varargs mixed * exclude_array(mixed* arr, int* positions ... )
 {
-  mixed* theArray = arr[0];
-  mixed item;
+  mixed* new_array = copy(arr);
 
-  arr -= arr[0];
-  foreach(item in arr) {
-    theArray -= ({ item });
+  foreach(int i in positions) {
+    new_array -= ({ arr[i] });
   }
 
-  return theArray;
+  return new_array;
 }
 
 create() {
@@ -1882,8 +1880,8 @@ int disconnect_window(string str) {
    ret = socket_close(socket[0][pos]);
  
    if(ret != EESUCCESS) {
-   printf("Unable to disconnect: %s.\n", query_socket_error(ret));
-   return 1; }
+     printf("Unable to disconnect: %s.\n", query_socket_error(ret));
+   }
 
    //	Remove socket designation from window system
  

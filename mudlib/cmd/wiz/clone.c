@@ -2,19 +2,21 @@
 #include <command.h>
 #include <cmdline.h>
 
+#define USAGE "usage: clone [-n] <filename>\n"
+
 int
-_main(string file, int argc, string *argv, string *flags)
+_main(string *argv, string *argv2)
 {
   object ob;
-  string tmp;
+  string file, tmp;
   int err;
-  boolean optn = flag(flags, "n");
+  boolean optn = flag("n");
 
-  if (!file) {
-    return notify_fail("usage: clone <filename>\n");
+  if (!sizeof(argv2)) {
+    return notify_fail(USAGE);
+  } else {
+    file = RESOLVE_PATH(argv2[0]);
   }
-
-  file = RESOLVE_PATH(file);
   
   if((file_size(file) < 0) && (file_size(file+".c") < 0))
     return notify_fail("clone: file does not exist.\n");
@@ -40,4 +42,24 @@ _main(string file, int argc, string *argv, string *flags)
 	      tmp));
 
   return 1;
+}
+
+string
+help_desc()
+{
+  return "Clone a copy of an object from a file.";
+}
+
+string
+help()
+{
+  return USAGE + @ENDHELP
+
+Make a clone of the object described in <filename>.  If the object will not
+load, check the files in /log/errors or the files in ~/errors.
+
+Options:
+  -n          No move to inventory.  Normally object is moved to player's 
+              inventory if get() in the object returns 1.
+ENDHELP;
 }

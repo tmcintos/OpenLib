@@ -1,0 +1,79 @@
+Here's my new idea for the global editor. (not to replace ed.) This
+would be the default editor for bulletin boards and the mail reader.
+
+Pretend this is a real editor, and you're trying to type something.
+
+[lib_name] System Editor
+Enter your text, and press ** to conclude.
+Type ~h for commands.
+
+1 >> ~h
+System Editor Commands
+----------------------
+~h	this help
+~q	abort editing
+~i	insert a file at this position (wizards only)
+\\	at the end of a line, aborts the line
+~d	delete last line
+~v	list out text so far
+**	done
+
+1 >> This is a test of this editor and this line will be ignored.\\
+(ignored)
+1 >> This is a test of this editor and I don't want to use this line.
+2 >> ~d
+(deleted line 1)
+1 >> This is a test of this editor.
+2 >> ~v
+(listing text)
+This is a test of this editor.
+2 >> ~i ~/test.c
+(inserting ~/test.c)
+(16 lines added)
+17 >> ~v
+(listing text)
+This is a test of this editor.
+// test.c
+ 
+create() {
+	test();
+	test();
+
+[ and on and on ]
+
+}
+17 >> ~q
+Really abort? (y=Yes n=No): n
+17 >> **
+ 
+A call back would occur here to the provided function. This editor
+would be called such that:
+
+EDITOR_D->edit(output_filename, calling_function)
+e.g. EDITOR_D->edit("/u/e/evergreen/test", (: OBJECT, "function" :))
+
+then:
+
+void function(int edit_return_status) {
+	if (edit_return_status)
+		write("Successful!\n");
+	else
+		write("Couldn't write file!\n");
+}
+
+Comments?
+Evergreen
+
+AMENDED:
+ 
+EDITOR_D->edit(function call_back)
+e.g. EDITOR_D->edit((: OBJECT, "function" :))
+ 
+then:
+ 
+void function(string *buffer) {
+	// buffer contains the lines edited
+	int i, j;
+ 
+	for (i=0, j=sizeof(buffer); i<j, i++) write(buffer[i]+"\n");
+	}

@@ -1,0 +1,15 @@
+#obj/clone/shsh.c
+window ({1,3,0,0,4,24,})
+GAG ({})
+HILITE ({})
+ASSIGN ({({}),({}),})
+ALARM ({"Fuck You Go To BED!!!",})
+PAGE ({})
+cursor ({"default","-",})
+divider ({"default","-",})
+hilight ({"default","-",})
+snoop ({"red","0;31",})
+buff ({"yellow","1;33",})
+MAX 24
+rcflag 1
+fcflag 1

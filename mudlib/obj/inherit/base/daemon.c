@@ -3,17 +3,15 @@
 // inherited by daemons (go figure) and commands
 // 
 #pragma save_binary
-
-private int no_clean;       // 1 if we don't want cleaned up
+#include "daemon.h"
 
 void
 create()
 {
   seteuid(getuid(this_object()));
-  no_clean = 0;
 }
 
-void
+int
 remove()
 {
 // code to be done on destruct() here
@@ -37,16 +35,8 @@ query_prevent_shadow()
   return 1;
 }
 
-void
-clean_up(int inh)
-{
-  if(no_clean) return 0;         // i.e. never call clean_up again
-  remove();
-}
-
 nomask
 void
 SetNoClean(int i)
 {
-  no_clean = i;
 }

@@ -13,7 +13,7 @@ create()
   set_name("beavis");
   set_short("Beavis");
   set_long("A scrawny, stupid looking high school kid.\n");
-  set_sex(MALE);
+//set_sex(MALE); //commented out by Casper
   set_move_around(15);
   set_talk(5, ({"This sucks!",
 	     "Hey Butthead!  You suck!",
@@ -24,5 +24,5 @@ create()
 	   }));
   weap = new("/obj/examples/weapon");
   weap->move(this_object());
-  do_wield(weap, 1, 1);
+  do_wield(weap, 1, 0);
 }

@@ -10,6 +10,7 @@ main(string arg)
   name = (string)me->query_cap_name();
   say(name + " leaves this reality.\n");
   write("Saving " + name +"....\n");
+  me->query_connection()->set_logout_time(time());
   me->save_player();
   write("Bye.\n");
   destruct(me);

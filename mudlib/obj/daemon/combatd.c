@@ -143,11 +143,11 @@ void continue_all_attacks()
   string *keylist = keys(combatants);
   int i = sizeof(keylist), j,k,m;
  
-  if (clean_up_all_attackers())
-    call_out("continue_all_attacks",2);
-  else
+  if (!clean_up_all_attackers())
   //No combat occuring?  aw, lets close down then.
     return;
+  call_out("combat_crash",1); //time of 1 less than time 
+                              //between attacks.
   while(i--)
   {
     k = num_attacks[keylist[i]];
@@ -171,6 +171,20 @@ void continue_all_attacks()
       }
     }
   }
+  //Place this here so if we 'bomb' somewhere above, we don't 
+  //repetitivly 'bomb'.  Casper
+  call_out("continue_all_attacks",2);
+  //For announcing the death of the daemon
+  remove_call_out("combat_crash");
+}
+ 
+void combat_crash()
+{
+  shout("Combat Daemon shouts: Damn!\n");
+  shout("Combat Daemon tells you: I've bombed.\n");
+  log_file("combatd", "Combat daemon crashed on: " + ctime(time()) +
+    ", by not completeing 'execute_all_attacks()'\n");
+  destruct(this_object());
 }
  
  
@@ -243,16 +257,19 @@ varargs void execute_attack(object victim, object attacker,
 void execute_bow_attack(object victim, object attacker, mixed *weapon_info)
 {
   mixed *new_weapon_info;
-  object arrow = weapon_info[10]->first_inventory();
+  int j;
+  object arrow;
  
-  if(!arrow)
+  if(!(j = weapon_info[10]->do_arm_bow()))
   {
     execute_attack(victim,attacker,attacker->query_unarmed(weapon_info[11]),
      -100, -10);
     return;
   }
-  if(!weapon_info[10]->do_arm_bow())
+  if(j != -1) //-1 = ready to fire
     return;
+  arrow = weapon_info[10]->query_arrow();
+  weapon_info[10]->bow_fired();//Reset all info, dest the arrow, etc.
   new_weapon_info = arrow->query_weapon_info();
   new_weapon_info[0] += weapon_info[0];
   new_weapon_info[1] += weapon_info[1];
@@ -269,7 +286,7 @@ void init_combat(object a, object b)
   string *keylist = keys(combatants), name = sprintf("%i",getoid(a));
  
   a->set_combating(1);
-
+ 
   if(member_array(name, keylist)==-1)
   {
     combatants[name] = ({a,b});
@@ -329,13 +346,15 @@ int kill_ob(object attacker, object victim)
  
 //These allow wield, wear, & stuff to update this info.  
 //Auctual updates are handled in the combat body.  Casper 10/14/95
+//Use only if fighting (query_combating() !=0) because no checks 
+//here are made.
  
-int update_ac(object tp, int *new_ac)
+void update_ac(object tp, int *new_ac)
 {
   ac[sprintf("%i",getoid(tp))]=new_ac;
 }
  
-int update_wc(object tp, mixed *new_wc)
+void update_wc(object tp, mixed *new_wc)
 {
   weapon_info[sprintf("%i",getoid(tp))]=new_wc;
 }

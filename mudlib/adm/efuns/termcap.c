@@ -10,6 +10,9 @@
  *
  * 10/12/95     Tim: Changed %^END%^ to %^RESET%^ to comply with the standard
  *              in the mud community.
+ * 11/14/95     Tim: further Dysfunctional-ized by making the ranges [x..y]
+ *              compliant with the new MudOS standards
+ * 01/22/96     Tim: added string* query_supported_termtypes()
  */
 
 /*
@@ -77,6 +80,44 @@ mapping termcap_entries =
     "RESET":"[m",		/* turn off all attributes */
     "TAB":"	",		/* move cursor to next hardware tab stop */
     "UNDERLINE":"[4m",	/* underline character overstrikes */
+    "ESC":ESC,		/* Our escape character (so we can quote it) */
+    ]),
+  "vt102":  /* Tim--I'm not sure about this but it seems to work */
+  ([
+    "BELL":"",		/* audible signal (bell) */
+    "CLS":"[;H[2J",		/* clear screen and home cursor */
+    "BOLD":"[1m",		/* turn on bold (extra bright) attribute */
+    "INVERSE":"[7m",		/* turn on reverse-video attribute */
+    "BLINK":"[5m",		/* turn on blinking attribute */
+    "RESET":"[m",		/* turn off all attributes */
+    "TAB":"	",		/* move cursor to next hardware tab stop */
+    "UNDERLINE":"[4m",	/* underline character overstrikes */
+    "BLACK":"[30m",
+    "RED":"[31m",
+    "GREEN":"[32m",
+    "YELLOW":"[33m",
+    "BLUE":"[34m",
+    "MAGENTA":"[35m",
+    "CYAN":"[36m",
+    "GREY":"[37m",
+    "WHITE":"[37m",
+
+    "L_RED":"[1;31m",
+    "L_GREEN":"[1;32m",
+    "L_YELLOW":"[1;33m",
+    "L_BLUE":"[1;34m",
+    "L_MAGENTA":"[1;35m",
+    "L_CYAN":"[1;36m",
+
+    "B_BLACK":"[40m",
+    "B_RED":"[41m",
+    "B_GREEN":"[42m",
+    "B_YELLOW":"[43m",
+    "B_BLUE":"[44m",
+    "B_MAGENTA":"[45m",
+    "B_CYAN":"[46m",
+    "B_GREY":"[47m",
+    "B_WHITE":"[47m",
     "ESC":ESC,		/* Our escape character (so we can quote it) */
     ]),
   "ansi" :
@@ -254,6 +295,13 @@ query_termcap(string what) /* Added by Kniggit 930115 */
 	return termcap_entries[what];
 }
 
+mixed*
+query_supported_termtypes() /* Added by Tim 960122 */
+{
+  if(termcap_entries)
+    return keys(termcap_entries);
+}
+
 mixed
 termcap_capability(string entry, string capability)
 {
@@ -323,20 +371,19 @@ termcap_format_line(string line, string ttype)
     if (mapp(tce) && stringp(ttype))
     {
 	string w, end = tce["RESET"];
-	int nl, ef, el = -strlen(tce["RESET"])-1;
-	while (i < sizeof(words))
-	{
-	    words[i] = tce[words[i]];
-	    i += 2;
+	int nl, ef, el = strlen(tce["RESET"])+1;
+	while (i < sizeof(words)) {
+	  words[i] = tce[words[i]];
+	  i += 2;
 	}
 	w = implode(words, "");
-	if (w[el..-1] == end) {
-	    w = w[0..el-1];
+	if (w[<el..<1] == end) {
+	    w = w[0..<el+1];
 	    ef = 1;
 	}
-	if (w[-1..-1] == "\n") {
+	if (w[<1..<1] == "\n") {
 	    nl = 1;
-	    w = w[0..-2];
+	    w = w[0..<2];
 	}
 	ef && w += end;
 	nl && w += "\n";
@@ -396,8 +443,8 @@ format_color(string mesg, string type, object player) {
 	}
 	if (!map[cl])
 	    
-	if (mesg[-1..-1] == "\n")
-	    return cl + mesg[0..-2] + "%^RESET%^";
+	if (mesg[<1..<1] == "\n")
+	    return cl + mesg[0..<2] + "%^RESET%^";
 	return cl + mesg + "%^RESET%^";
     }
     return mesg;

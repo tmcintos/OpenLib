@@ -1,0 +1,15 @@
+/*  -*- LPC -*-  */
+#ifndef _COMMAND_H
+#define _COMMAND_H
+// command.h   File included by all commands
+//
+//   This ensures that command objects are destructed after being idle, and
+// the euid gets set right.
+
+#include <mudlib.h>
+#pragma save_binary
+
+inherit DAEMON;
+inherit CLEAN_UP;
+
+#endif /* _COMMAND_H */

@@ -34,7 +34,7 @@ static string long_desc;                 /* long description */
 // Prototypes (someone fill in the rest sometime)
 int query_weight();
 int query_object_class();
-int set_object_class(int obj_class);
+void set_object_class(int obj_class);
 void set_prevent_get(boolean pg);
 void set_prevent_drop(boolean pd);
 
@@ -236,7 +236,7 @@ query_value()
      (!value[0] && !value[1]))
     return 0;
   else
-    return value;
+    return copy(value);
 }
 
 nomask

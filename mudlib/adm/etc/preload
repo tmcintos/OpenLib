@@ -1,7 +1,13 @@
 /adm/obj/daemon/void
 /adm/obj/daemon/groupd
 /adm/obj/daemon/logind
+/adm/obj/daemon/cmdd
+/adm/obj/daemon/maild
+/adm/obj/daemon/fingerd
 /obj/daemon/net/services
-/obj/daemon/net/ftpd
 /obj/daemon/net/intermud
-
+/obj/daemon/net/authd
+/obj/daemon/net/ftpd
+/obj/daemon/net/httpd
+/obj/daemon/net/remote
+/obj/daemon/chatd

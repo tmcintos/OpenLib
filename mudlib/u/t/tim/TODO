@@ -1,13 +1,32 @@
--security
--player bodies, shells, shell interfaces
+<PRE>
+-mudlib security
+-player bodies, shells, shell interfaces (set cmd for env variables)
+-prompt changing
 -hit/spell points, damage
--max weight funcs
+-max weight funcs for races
 -monsters etc.
--put
+-bulletin board
+-put command
 -dest command: options for file argument, and dest all instances...
--command daemon
--help daemon
--mail daemon
--emote daemon
+-help command/system uses help() and help_desc() in the command obj.
+ help on commands get from object, topics from /doc/help/{player,wiz..}
+ Search by keyword with -k flag (uses help_desc() to search commands)
+-mail system: daemon, mailbox, command (partially done) (intermud part left)
+-emote/feelings daemon/commands (rewrite)
 -leveling system
--chat daemon
+-guild system
+-races (work on them) (languages??)
+-parties (prolly after more of the basics are in place)
+-fix the wildcard expansion stuff in user.c:189 so it works when spaces are
+ entered on a blank line.  Ultimately remove this stuff from user.c and place
+ elsewhere (in wizard body).
+-move /data/user directory to /adm/data/user
+-wording in combat--fix something about unwielding a weapon
+-flags in objects...store as string array(?)
+-define funcs for storing screen length/width(?) and change /obj/clone/user/more
+-bug,idea commands log to /log/BUGS /log/IDEAS
+ also log to wizards' home dirs if files belong to them
+ Could these commands take an object as a possible argument for reference?
+-who command: spruce up a bit...some may have to wait for levels etc.
+-exa command: merge in with 'look'
+</PRE>

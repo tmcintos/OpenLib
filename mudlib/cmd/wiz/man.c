@@ -3,22 +3,25 @@
 
 #undef DEBUG
 #define MANPATH "/doc/man"
-#define USAGE "usage:  man [-k] <page>\n        man [-kf] <section> <page>"
+#define USAGE "usage:  man <page>\n"\
+              "        man <section> <page>\n"\
+              "        man -[kf] <keyword>\n"
 
 int
-_main(string arg, int argc, string *argv, string *flags)
+_main(string *argv, string *argv2)
 {
-  int section, i, k;
-  int curr_line;
-  string page;
-  string tmpfile;
-  string line;
-  string *manpaths;
-  int flag_k, flag_f;
+  int section, curr_line;
+  string arg, line, page;
+  string* manpaths;
+  string* morelines = ({});
+  int i, k;
+  boolean flag_k = flag("k"), flag_f = flag("f");
 
-  if(!arg)
-    return notify_fail(USAGE +"\n");
+  if(!sizeof(argv2))
+    return notify_fail(USAGE);
 
+  arg = implode(argv2, " ");
+    
   if(sscanf(arg, "%d %s", section, page) != 2)
     page = arg;
 
@@ -27,8 +30,6 @@ _main(string arg, int argc, string *argv, string *flags)
 #endif
 
   manpaths = explode(MANPATH, ":");
-  flag_k = flag(flags, "k");
-  flag_f = flag(flags, "f");
 
 #ifdef DEBUG
   write(dump_variable(manpaths));
@@ -36,28 +37,36 @@ _main(string arg, int argc, string *argv, string *flags)
 
 //  Flags k (apropos) and f (whatis)
   if(flag_k || flag_f) {
-    tmpfile = TMP_DIR +"/mantmp"+random(9999)+".tmp";     // temporary file
-    rm(tmpfile);
     for(k=0;k < sizeof(manpaths);k++) {
       curr_line = 1;
+
       if(manpaths[k][strlen(manpaths[k])-1] != '/')
 	manpaths[k] += "/";
-      while(line = read_file(manpaths[k]+"whatis", curr_line++, 1)) {
+
+      while(line = read_file(manpaths[k] + "whatis", curr_line++, 1)) {
 	if(flag_k && strsrch(line, page) != -1)
-	  write_file(tmpfile, line);
+	  morelines += ({ line[0..<2] });
 	if(flag_f && strsrch(line, page+" ") != -1)
-	  write_file(tmpfile, line);
+	  morelines += ({ line[0..<2] });
       }
     }
-    this_player()->more(tmpfile);
+
+    if(!sizeof(morelines))
+      printf("%s: nothing appropriate.\n", page);
+    else
+      this_player()->more(morelines);
+
     return 1;
   }
 
   if(section) {
     if(section < 10) {
+
       for(k=0;k < sizeof(manpaths);k++) {
+
 	if(manpaths[k][strlen(manpaths[k])-1] != '/')
 	  manpaths[k] += "/";
+
 	if(file_size(manpaths[k]+"man"+section+"/"+page+"."+section) >= 0) {
 	  this_player()->more(manpaths[k] +"man"+ section
 			      +"/"+ page +"."+ section);
@@ -66,20 +75,47 @@ _main(string arg, int argc, string *argv, string *flags)
       }
       return notify_fail("No entry for " + page
 			 + " in section " + section + " of the manual\n");
-    } else {
+    } else
       return notify_fail("Valid sections are 1 through 10.\n");
-    }
+
   } else {
     for(k=0;k < sizeof(manpaths);k++) {
+
       if(manpaths[k][strlen(manpaths[k])-1] != '/')
 	manpaths[k] += "/";
+
       for(i=0;i < 10;i++) {
+
 	if(file_size(manpaths[k] + "man" + i +"/"+ page +"."+ i) >= 0) {
 	  this_player()->more(manpaths[k] + "man" + i + "/" + page + "." + i);
 	  return 1;
 	}
+
       }
     }
+
     return notify_fail("No manual entry for " + page +"\n");
   }
+}
+
+string
+help_desc()
+{
+  return "display manual pages for MudOS and mudlib defined functions";
+}
+
+string
+help()
+{
+  return USAGE + @ENDHELP
+
+The man command displays manual pages for the MudOS driver and mudlib
+defined functions.
+
+Options:
+
+  -k          Search for function descriptions containing <keyword>.
+  -f          Same as -k except keyword must appear by itself in the
+              description of the function.
+ENDHELP;
 }
