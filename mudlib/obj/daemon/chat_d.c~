@@ -4,6 +4,8 @@
 // 03/08/96  Tim  :fixed emote to work with I3; documented code somewhat;
 //                 took out query_channel_info() and replaced with
 //                 is_qualified() (empty right now) for checking eligibility
+// 09/03/96  Tim  :took out the colon in the chat syntax.
+
 #include <mudlib.h>
 #include <daemons.h>
 #include <net/daemons.h>
@@ -25,7 +27,7 @@ create()
 
   channels = ([]);
   chanmap = ({});
-  restore_object(SAVE_CHATD, 1);
+  restore_object(SAVE_CHAT_D, 1);
 
   foreach(string chan in keys(channels)) {
     ((class channel_info) channels[chan])->userlist = ({});
@@ -69,7 +71,7 @@ set_alias(string localname, string remotename)
   // more validity checks to do here
 
   chanmap += ({ localname, remotename });
-  save_object(SAVE_CHATD);
+  save_object(SAVE_CHAT_D);
 }
 
 // pre: true
@@ -91,7 +93,7 @@ add_channel(string name, string desc, int level, string guild)
 
   channels += ([ name : newchan ]);
 
-  save_object(SAVE_CHATD);
+  save_object(SAVE_CHAT_D);
   return 1;
 }
 
@@ -107,7 +109,7 @@ remove_channel(string name)
 
   map_delete(channels, name);
 
-  save_object(SAVE_CHATD);
+  save_object(SAVE_CHAT_D);
   return 1;
 }
 
@@ -245,8 +247,10 @@ chat(string str)
   string rchan;
   int emote;
 
-  if( sscanf(str, "%s %s: %s", type, chan, mess) == 3 ) {
-    switch(type) {
+  if( sscanf(str, "%s %s %s", type, chan, mess) == 3 )
+  {
+    switch( type )
+    {
     case "emote":
       emote = 1;
       mess = sprintf("$N %s", mess);
@@ -256,10 +260,12 @@ chat(string str)
 //      mess = FEELING_D->get_feeling(mess);
       break;
     default:
+      mess = chan + " " + mess;
+      chan = type;
     }
-  } else if( sscanf(str, "%s: %s", chan, mess) != 2 ) {
-    return 0;    
   }
+  else if( sscanf(str, "%s %s", chan, mess) != 2 )
+    return 0;
 
   if(chan == "list") {
     string ch, mud;
@@ -294,14 +300,13 @@ chat(string str)
     return 1;
   }
 
-  if( !(int) this_player()->is_subscribed_chan(chan) )
-    return notify_fail("You can't chat on a channel to which "
-		       "you aren't subscribed!\n");
-
   if( !channel_exists(chan) )
     return notify_fail("Channel does not exist.\n");
   if( ((class channel_info) channels[chan])->min_lvl == -1 )
     return notify_fail("Channel is info only.\n");
+  if( !this_player()->is_subscribed_chan(chan) )
+    return notify_fail("You can't chat on a channel to which "
+		       "you aren't subscribed!\n");
 
   rchan = map_to_remote(chan);
 

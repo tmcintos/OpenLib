@@ -487,3 +487,363 @@ Fri Aug 30 00:24:42 1996: bozzio.cc.utexas.edu
 Fri Aug 30 00:24:42 1996: ttype: vt100
 Fri Aug 30 00:27:33 1996: curly.cc.utexas.edu
 Fri Aug 30 00:27:33 1996: ttype: xterm
+Fri Aug 30 00:35:54 1996: knapp38.res.iastate.edu
+Fri Aug 30 00:35:54 1996: ttype: screen
+Fri Aug 30 04:08:18 1996: knapp38.res.iastate.edu
+Fri Aug 30 04:08:18 1996: ttype: screen
+Fri Aug 30 10:37:55 1996: jessica.cs.umn.edu
+Fri Aug 30 10:37:59 1996: ttype: xterm
+Fri Aug 30 13:55:52 1996: 205.215.64.13
+Fri Aug 30 13:55:54 1996: ttype: vt220
+Fri Aug 30 17:00:40 1996: curly.cc.utexas.edu
+Fri Aug 30 17:00:40 1996: ttype: xterm
+Fri Aug 30 17:25:58 1996: curly.cc.utexas.edu
+Fri Aug 30 17:25:58 1996: ttype: vt100
+Fri Aug 30 19:32:15 1996: curly.cc.utexas.edu
+Fri Aug 30 19:32:15 1996: ttype: vt100
+Fri Aug 30 23:02:14 1996: curly.cc.utexas.edu
+Fri Aug 30 23:02:14 1996: ttype: vt100
+Fri Aug 30 23:10:29 1996: knapp38.res.iastate.edu
+Fri Aug 30 23:10:29 1996: ttype: screen
+Sat Aug 31 13:34:06 1996: curly.cc.utexas.edu
+Sat Aug 31 13:34:08 1996: ttype: xterm
+Sat Aug 31 21:09:50 1996: axp.calumet.purdue.edu
+Sat Aug 31 21:09:50 1996: ttype: vt220
+Sat Aug 31 22:15:30 1996: faeryland.etsu.edu
+Sat Aug 31 22:15:30 1996: ttype: vt100
+Sun Sep  1 09:49:48 1996: ra2-18.tulsa.oklahoma.net
+Sun Sep  1 16:10:10 1996: 132.239.52.91
+Sun Sep  1 16:10:10 1996: ttype: vt220
+Mon Sep  2 02:47:16 1996: loopback
+Mon Sep  2 02:47:16 1996: ttype: screen
+Mon Sep  2 04:01:25 1996: knapp38.res.iastate.edu
+Mon Sep  2 04:01:25 1996: ttype: screen
+Mon Sep  2 12:16:05 1996: loopback
+Mon Sep  2 12:16:05 1996: ttype: cons25
+Mon Sep  2 12:33:20 1996: loopback
+Mon Sep  2 12:33:20 1996: ttype: cons25
+Mon Sep  2 12:36:33 1996: knapp38.res.iastate.edu
+Mon Sep  2 12:36:33 1996: ttype: cons25
+Mon Sep  2 12:44:05 1996: knapp38.res.iastate.edu
+Mon Sep  2 12:44:05 1996: ttype: cons25
+Mon Sep  2 12:51:34 1996: knapp38.res.iastate.edu
+Mon Sep  2 12:51:34 1996: ttype: screen
+Mon Sep  2 12:55:21 1996: knapp38.res.iastate.edu
+Mon Sep  2 12:55:21 1996: ttype: xterm
+Mon Sep  2 17:35:37 1996: knapp38.res.iastate.edu
+Mon Sep  2 17:35:37 1996: ttype: screen
+Mon Sep  2 18:45:14 1996: loopback
+Mon Sep  2 18:45:14 1996: ttype: cons25
+Mon Sep  2 18:52:48 1996: 198.111.45.183
+Mon Sep  2 18:52:50 1996: ttype: dec-vt100
+Mon Sep  2 23:49:15 1996: loopback
+Mon Sep  2 23:49:15 1996: ttype: cons25
+Mon Sep  2 23:56:24 1996: loopback
+Mon Sep  2 23:56:24 1996: ttype: cons25
+Tue Sep  3 00:02:40 1996: loopback
+Tue Sep  3 00:02:40 1996: ttype: cons25
+Tue Sep  3 00:04:38 1996: loopback
+Tue Sep  3 00:04:38 1996: ttype: cons25
+Tue Sep  3 00:40:56 1996: knapp38.res.iastate.edu
+Tue Sep  3 00:40:56 1996: ttype: screen
+Tue Sep  3 01:47:45 1996: curly.cc.utexas.edu
+Tue Sep  3 01:47:45 1996: ttype: xterm
+Tue Sep  3 14:00:57 1996: 129.186.89.13
+Tue Sep  3 14:00:57 1996: ttype: xterm
+Tue Sep  3 14:33:55 1996: knapp38.res.iastate.edu
+Tue Sep  3 14:33:55 1996: ttype: screen
+Tue Sep  3 16:39:40 1996: loopback
+Tue Sep  3 16:39:40 1996: ttype: cons25
+Tue Sep  3 17:22:55 1996: knapp38.res.iastate.edu
+Tue Sep  3 17:22:55 1996: ttype: screen
+Tue Sep  3 18:01:15 1996: knapp38.res.iastate.edu
+Tue Sep  3 18:01:15 1996: ttype: screen
+Tue Sep  3 18:24:47 1996: 129.186.85.38
+Tue Sep  3 18:24:47 1996: ttype: cons25
+Tue Sep  3 18:32:01 1996: 129.186.85.38
+Tue Sep  3 18:32:01 1996: ttype: cons25
+Tue Sep  3 18:34:22 1996: 129.186.85.38
+Tue Sep  3 18:34:22 1996: ttype: cons25
+Tue Sep  3 18:35:30 1996: 129.186.85.38
+Tue Sep  3 18:35:30 1996: ttype: cons25
+Tue Sep  3 19:08:29 1996: 129.186.85.38
+Tue Sep  3 19:08:29 1996: ttype: cons25
+Tue Sep  3 20:02:15 1996: knapp38.res.iastate.edu
+Tue Sep  3 20:02:15 1996: ttype: cons25
+Tue Sep  3 20:03:52 1996: 127.0.0.1
+Tue Sep  3 20:03:52 1996: ttype: cons25
+Tue Sep  3 20:14:15 1996: loopback
+Tue Sep  3 20:14:15 1996: ttype: cons25
+Tue Sep  3 20:14:27 1996: loopback
+Tue Sep  3 20:14:27 1996: ttype: cons25
+Tue Sep  3 20:14:35 1996: loopback
+Tue Sep  3 20:14:35 1996: ttype: cons25
+Tue Sep  3 20:14:43 1996: loopback
+Tue Sep  3 20:14:43 1996: ttype: cons25
+Tue Sep  3 20:14:51 1996: loopback
+Tue Sep  3 20:14:51 1996: ttype: cons25
+Tue Sep  3 20:15:10 1996: loopback
+Tue Sep  3 20:15:10 1996: ttype: cons25
+Tue Sep  3 20:15:18 1996: knapp38.res.iastate.edu
+Tue Sep  3 20:15:18 1996: ttype: cons25
+Tue Sep  3 20:20:41 1996: 127.0.0.1
+Tue Sep  3 20:20:41 1996: ttype: cons25
+Tue Sep  3 20:20:52 1996: 127.0.0.1
+Tue Sep  3 20:20:52 1996: ttype: cons25
+Tue Sep  3 20:29:12 1996: 127.0.0.1
+Tue Sep  3 20:29:12 1996: ttype: cons25
+Tue Sep  3 20:37:32 1996: loopback
+Tue Sep  3 20:37:32 1996: ttype: cons25
+Tue Sep  3 20:49:36 1996: loopback
+Tue Sep  3 20:49:36 1996: ttype: cons25
+Tue Sep  3 21:19:02 1996: 127.0.0.1
+Tue Sep  3 21:19:02 1996: ttype: cons25
+Tue Sep  3 21:19:27 1996: 127.0.0.1
+Tue Sep  3 21:19:27 1996: ttype: cons25
+Tue Sep  3 21:19:56 1996: loopback
+Tue Sep  3 21:19:56 1996: ttype: cons25
+Tue Sep  3 21:30:29 1996: loopback
+Tue Sep  3 21:30:29 1996: ttype: cons25
+Tue Sep  3 21:30:53 1996: loopback
+Tue Sep  3 21:30:53 1996: ttype: cons25
+Tue Sep  3 21:31:11 1996: loopback
+Tue Sep  3 21:31:11 1996: ttype: cons25
+Tue Sep  3 21:34:44 1996: loopback
+Tue Sep  3 21:34:44 1996: ttype: cons25
+Tue Sep  3 21:35:22 1996: loopback
+Tue Sep  3 21:35:22 1996: ttype: cons25
+Tue Sep  3 21:35:34 1996: loopback
+Tue Sep  3 21:35:34 1996: ttype: cons25
+Tue Sep  3 21:42:22 1996: loopback
+Tue Sep  3 21:42:22 1996: ttype: cons25
+Tue Sep  3 21:44:37 1996: loopback
+Tue Sep  3 21:44:37 1996: ttype: cons25
+Tue Sep  3 21:44:49 1996: loopback
+Tue Sep  3 21:44:49 1996: ttype: cons25
+Tue Sep  3 21:45:07 1996: loopback
+Tue Sep  3 21:45:07 1996: ttype: cons25
+Tue Sep  3 21:45:19 1996: loopback
+Tue Sep  3 21:45:19 1996: ttype: cons25
+Tue Sep  3 21:47:08 1996: loopback
+Tue Sep  3 21:47:08 1996: ttype: cons25
+Tue Sep  3 21:47:22 1996: loopback
+Tue Sep  3 21:47:22 1996: ttype: cons25
+Tue Sep  3 21:47:42 1996: loopback
+Tue Sep  3 21:47:42 1996: ttype: cons25
+Tue Sep  3 21:48:32 1996: loopback
+Tue Sep  3 21:48:32 1996: ttype: cons25
+Tue Sep  3 21:49:05 1996: loopback
+Tue Sep  3 21:49:05 1996: ttype: cons25
+Tue Sep  3 21:49:47 1996: loopback
+Tue Sep  3 21:49:47 1996: ttype: cons25
+Tue Sep  3 21:49:59 1996: loopback
+Tue Sep  3 21:49:59 1996: ttype: cons25
+Tue Sep  3 21:50:47 1996: loopback
+Tue Sep  3 21:50:47 1996: ttype: cons25
+Tue Sep  3 21:51:59 1996: 129.186.85.38
+Tue Sep  3 21:51:59 1996: ttype: cons25
+Tue Sep  3 21:53:16 1996: loopback
+Tue Sep  3 21:53:16 1996: ttype: cons25
+Tue Sep  3 21:53:28 1996: loopback
+Tue Sep  3 21:53:28 1996: ttype: cons25
+Tue Sep  3 21:53:32 1996: loopback
+Tue Sep  3 21:53:32 1996: ttype: cons25
+Tue Sep  3 21:54:40 1996: knapp38.res.iastate.edu
+Tue Sep  3 21:54:40 1996: ttype: cons25
+Tue Sep  3 22:01:28 1996: knapp38.res.iastate.edu
+Tue Sep  3 22:01:28 1996: ttype: cons25
+Tue Sep  3 22:18:13 1996: 128.83.134.67
+Tue Sep  3 22:18:15 1996: ttype: vt100
+Tue Sep  3 22:25:19 1996: loopback
+Tue Sep  3 22:25:19 1996: ttype: cons25
+Tue Sep  3 22:33:32 1996: knapp38.res.iastate.edu
+Tue Sep  3 22:33:32 1996: ttype: cons25
+Tue Sep  3 22:33:40 1996: loopback
+Tue Sep  3 22:33:40 1996: ttype: cons25
+Tue Sep  3 22:34:34 1996: knapp38.res.iastate.edu
+Tue Sep  3 22:34:34 1996: ttype: cons25
+Tue Sep  3 22:34:48 1996: loopback
+Tue Sep  3 22:34:48 1996: ttype: cons25
+Tue Sep  3 23:46:48 1996: 127.0.0.1
+Tue Sep  3 23:46:48 1996: ttype: cons25
+Wed Sep  4 02:03:22 1996: 198.166.248.75
+Wed Sep  4 02:03:22 1996: ttype: vt100
+Wed Sep  4 02:28:33 1996: 147.242.100.198
+Wed Sep  4 02:28:37 1996: ttype: vt100
+Wed Sep  4 02:47:41 1996: 198.166.248.75
+Wed Sep  4 02:47:43 1996: ttype: vt100
+Wed Sep  4 03:38:28 1996: 198.166.248.75
+Wed Sep  4 03:38:30 1996: ttype: vt100
+Wed Sep  4 03:41:45 1996: 205.215.64.13
+Wed Sep  4 03:41:45 1996: ttype: vt220
+Wed Sep  4 04:26:02 1996: 129.186.85.38
+Wed Sep  4 04:26:02 1996: ttype: screen
+Wed Sep  4 10:22:31 1996: 198.166.248.75
+Wed Sep  4 10:22:31 1996: ttype: vt100
+Wed Sep  4 11:02:05 1996: localhost
+Wed Sep  4 11:02:05 1996: ttype: cons25
+Wed Sep  4 11:44:43 1996: knapp38.res.iastate.edu
+Wed Sep  4 11:44:43 1996: ttype: screen
+Wed Sep  4 15:18:11 1996: localhost
+Wed Sep  4 15:18:11 1996: ttype: cons25
+Wed Sep  4 15:58:19 1996: localhost
+Wed Sep  4 15:58:19 1996: ttype: cons25
+Wed Sep  4 20:05:09 1996: localhost
+Wed Sep  4 20:05:09 1996: ttype: screen
+Wed Sep  4 23:02:26 1996: knapp38.res.iastate.edu
+Wed Sep  4 23:02:26 1996: ttype: screen
+Wed Sep  4 23:41:17 1996: localhost
+Wed Sep  4 23:41:17 1996: ttype: cons25
+Wed Sep  4 23:46:31 1996: localhost
+Wed Sep  4 23:46:31 1996: ttype: cons25
+Thu Sep  5 00:13:47 1996: knapp38.res.iastate.edu
+Thu Sep  5 00:13:47 1996: ttype: screen
+Thu Sep  5 01:08:37 1996: axp.calumet.purdue.edu
+Thu Sep  5 01:08:37 1996: ttype: vt220
+Thu Sep  5 03:13:03 1996: localhost
+Thu Sep  5 03:13:03 1996: ttype: screen
+Thu Sep  5 04:38:22 1996: 199.184.119.1
+Thu Sep  5 04:38:22 1996: ttype: screen
+Thu Sep  5 08:39:08 1996: knapp38.res.iastate.edu
+Thu Sep  5 08:39:08 1996: ttype: screen
+Thu Sep  5 14:23:05 1996: knapp38.res.iastate.edu
+Thu Sep  5 14:23:05 1996: ttype: screen
+Thu Sep  5 16:22:53 1996: localhost
+Thu Sep  5 16:22:53 1996: ttype: cons25
+Thu Sep  5 17:05:42 1996: localhost
+Thu Sep  5 17:05:42 1996: ttype: cons25
+Thu Sep  5 17:21:45 1996: localhost
+Thu Sep  5 17:21:45 1996: ttype: cons25
+Thu Sep  5 17:35:35 1996: localhost
+Thu Sep  5 17:35:35 1996: ttype: cons25
+Thu Sep  5 17:37:13 1996: localhost
+Thu Sep  5 17:37:13 1996: ttype: cons25
+Thu Sep  5 21:43:25 1996: localhost
+Thu Sep  5 21:43:25 1996: ttype: cons25
+Thu Sep  5 22:28:36 1996: localhost
+Thu Sep  5 22:28:36 1996: ttype: cons25
+Thu Sep  5 22:28:50 1996: localhost
+Thu Sep  5 22:28:50 1996: ttype: cons25
+Thu Sep  5 22:30:47 1996: localhost
+Thu Sep  5 22:30:47 1996: ttype: cons25
+Thu Sep  5 22:30:51 1996: localhost
+Thu Sep  5 22:30:51 1996: ttype: cons25
+Thu Sep  5 22:35:18 1996: 206.251.97.234
+Thu Sep  5 22:35:55 1996: ttype: dec-vt100
+Thu Sep  5 23:28:08 1996: localhost
+Thu Sep  5 23:28:08 1996: ttype: cons25
+Thu Sep  5 23:28:24 1996: localhost
+Thu Sep  5 23:28:24 1996: ttype: cons25
+Thu Sep  5 23:49:33 1996: localhost
+Thu Sep  5 23:49:33 1996: ttype: cons25
+Thu Sep  5 23:49:41 1996: localhost
+Thu Sep  5 23:49:41 1996: ttype: cons25
+Fri Sep  6 00:01:54 1996: localhost
+Fri Sep  6 00:01:54 1996: ttype: cons25
+Fri Sep  6 00:02:16 1996: localhost
+Fri Sep  6 00:02:16 1996: ttype: cons25
+Fri Sep  6 00:07:58 1996: localhost
+Fri Sep  6 00:07:58 1996: ttype: cons25
+Fri Sep  6 00:08:26 1996: localhost
+Fri Sep  6 00:08:26 1996: ttype: cons25
+Fri Sep  6 00:12:25 1996: localhost
+Fri Sep  6 00:12:25 1996: ttype: cons25
+Fri Sep  6 00:12:29 1996: localhost
+Fri Sep  6 00:12:29 1996: ttype: cons25
+Fri Sep  6 00:16:37 1996: localhost
+Fri Sep  6 00:16:37 1996: ttype: cons25
+Fri Sep  6 00:16:41 1996: localhost
+Fri Sep  6 00:16:41 1996: ttype: cons25
+Fri Sep  6 00:29:03 1996: localhost
+Fri Sep  6 00:29:03 1996: ttype: cons25
+Fri Sep  6 00:29:11 1996: localhost
+Fri Sep  6 00:29:11 1996: ttype: cons25
+Fri Sep  6 00:39:42 1996: localhost
+Fri Sep  6 00:39:42 1996: ttype: cons25
+Fri Sep  6 00:41:42 1996: localhost
+Fri Sep  6 00:41:42 1996: ttype: cons25
+Fri Sep  6 03:46:34 1996: localhost
+Fri Sep  6 03:46:34 1996: ttype: cons25
+Fri Sep  6 03:48:22 1996: localhost
+Fri Sep  6 03:48:22 1996: ttype: cons25
+Fri Sep  6 03:51:17 1996: localhost
+Fri Sep  6 03:51:17 1996: ttype: cons25
+Fri Sep  6 03:52:41 1996: localhost
+Fri Sep  6 03:52:41 1996: ttype: cons25
+Fri Sep  6 03:52:59 1996: localhost
+Fri Sep  6 03:52:59 1996: ttype: cons25
+Fri Sep  6 04:01:46 1996: localhost
+Fri Sep  6 04:01:46 1996: ttype: cons25
+Fri Sep  6 04:02:37 1996: localhost
+Fri Sep  6 04:02:37 1996: ttype: cons25
+Fri Sep  6 04:02:57 1996: localhost
+Fri Sep  6 04:02:57 1996: ttype: cons25
+Fri Sep  6 04:03:53 1996: localhost
+Fri Sep  6 04:03:53 1996: ttype: cons25
+Fri Sep  6 04:10:43 1996: 127.0.0.1
+Fri Sep  6 04:10:43 1996: ttype: cons25
+Fri Sep  6 04:12:02 1996: 127.0.0.1
+Fri Sep  6 04:12:02 1996: ttype: cons25
+Fri Sep  6 09:27:05 1996: 129.186.85.38
+Fri Sep  6 09:27:05 1996: ttype: screen
+Fri Sep  6 11:26:54 1996: loopback
+Fri Sep  6 11:26:54 1996: ttype: cons25
+Fri Sep  6 11:29:15 1996: loopback
+Fri Sep  6 11:29:15 1996: ttype: cons25
+Fri Sep  6 12:46:56 1996: loopback
+Fri Sep  6 12:46:56 1996: ttype: cons25
+Fri Sep  6 12:48:11 1996: loopback
+Fri Sep  6 12:48:11 1996: ttype: cons25
+Fri Sep  6 13:00:31 1996: 127.0.0.1
+Fri Sep  6 13:00:31 1996: ttype: cons25
+Fri Sep  6 13:05:19 1996: loopback
+Fri Sep  6 13:05:19 1996: ttype: cons25
+Fri Sep  6 13:05:33 1996: loopback
+Fri Sep  6 13:05:33 1996: ttype: cons25
+Fri Sep  6 13:06:45 1996: loopback
+Fri Sep  6 13:06:45 1996: ttype: cons25
+Fri Sep  6 13:07:17 1996: loopback
+Fri Sep  6 13:07:17 1996: ttype: cons25
+Fri Sep  6 13:07:35 1996: loopback
+Fri Sep  6 13:07:35 1996: ttype: cons25
+Fri Sep  6 13:11:33 1996: loopback
+Fri Sep  6 13:11:33 1996: ttype: cons25
+Fri Sep  6 20:35:13 1996: 129.186.85.38
+Fri Sep  6 20:35:13 1996: ttype: screen
+Fri Sep  6 22:23:22 1996: knapp38.res.iastate.edu
+Fri Sep  6 22:23:22 1996: ttype: screen
+Sat Sep  7 03:02:27 1996: knapp38.res.iastate.edu
+Sat Sep  7 03:02:27 1996: ttype: screen
+Sat Sep  7 05:17:29 1996: 199.184.119.1
+Sat Sep  7 05:17:29 1996: ttype: screen
+Sat Sep  7 08:05:16 1996: knapp38.res.iastate.edu
+Sat Sep  7 08:05:16 1996: ttype: screen
+Sat Sep  7 14:46:10 1996: 205.215.64.13
+Sat Sep  7 14:46:10 1996: ttype: vt220
+Sat Sep  7 16:23:49 1996: knapp38.res.iastate.edu
+Sat Sep  7 16:23:49 1996: ttype: screen
+Sat Sep  7 22:30:10 1996: knapp38.res.iastate.edu
+Sat Sep  7 22:30:10 1996: ttype: screen
+Sun Sep  8 19:27:00 1996: knapp38.res.iastate.edu
+Sun Sep  8 19:27:00 1996: ttype: screen
+Sun Sep  8 20:25:35 1996: 147.242.100.198
+Sun Sep  8 20:25:35 1996: ttype: vt100
+Sun Sep  8 20:56:12 1996: knapp38.res.iastate.edu
+Sun Sep  8 20:56:12 1996: ttype: screen
+Mon Sep  9 00:03:00 1996: 130.130.200.1
+Mon Sep  9 00:05:37 1996: knapp38.res.iastate.edu
+Mon Sep  9 00:05:37 1996: ttype: screen
+Mon Sep  9 00:39:39 1996: knapp38.res.iastate.edu
+Mon Sep  9 00:39:39 1996: ttype: screen
+Mon Sep  9 02:17:50 1996: knapp38.res.iastate.edu
+Mon Sep  9 02:17:50 1996: ttype: screen
+Mon Sep  9 02:40:57 1996: knapp38.res.iastate.edu
+Mon Sep  9 02:40:57 1996: ttype: screen
+Mon Sep  9 02:43:51 1996: knapp38.res.iastate.edu
+Mon Sep  9 02:43:51 1996: ttype: screen
+Mon Sep  9 05:06:52 1996: knapp38.res.iastate.edu
+Mon Sep  9 05:06:52 1996: ttype: screen
+Mon Sep  9 08:36:51 1996: knapp38.res.iastate.edu
+Mon Sep  9 08:36:51 1996: ttype: screen
+Mon Sep  9 14:15:28 1996: loopback
+Mon Sep  9 14:15:28 1996: ttype: cons25

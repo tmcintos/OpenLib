@@ -1,5 +1,6 @@
 /adm/obj/daemon/void
 /adm/obj/daemon/cmd_d
+/obj/daemon/race_d
 /adm/obj/daemon/login_d
 /adm/obj/daemon/mail_d
 /adm/obj/daemon/net/services

@@ -1,0 +1,2150 @@
+Fri Aug 30 00:55:56 1996: evRead(6, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Lima Bean",
+  1,
+  215876790
+}))
+Fri Aug 30 00:55:56 1996: evWrite(6, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  0,
+  0
+}))
+Fri Aug 30 00:55:56 1996: evRead(6, ({ /* sizeof() == 9 */
+  "mail",
+  16,
+  "tim",
+  ([ /* sizeof() == 1 */
+    "Dysfunctional Mud" : ({ /* sizeof() == 1 */
+        "tim"
+      }),
+  ]),
+  ([ /* sizeof() == 1 */
+    "Dysfunctional Mud" : ({ /* sizeof() == 1 */
+        "kyricc"
+      }),
+  ]),
+  ({ }),
+  841383366,
+  "Test Subject",
+  ({ /* sizeof() == 4 */
+    "Test body 1",
+    "Test body 2",
+    "Test body 3",
+    "goodbye,"
+  })
+}))
+Fri Aug 30 01:06:55 1996: Socket fd=(6) closed.
+Fri Aug 30 01:24:08 1996: evRead(6, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Lima Bean",
+  1,
+  425148570
+}))
+Fri Aug 30 01:24:08 1996: evWrite(6, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  0,
+  0
+}))
+Fri Aug 30 01:24:08 1996: evRead(6, ({ /* sizeof() == 9 */
+  "mail",
+  17,
+  "tim",
+  ([ /* sizeof() == 1 */
+    "Dysfunctional Mud" : ({ /* sizeof() == 1 */
+        "tim"
+      }),
+  ]),
+  ([ /* sizeof() == 1 */
+    "Dysfunctional Mud" : ({ /* sizeof() == 1 */
+        "kyricc"
+      }),
+  ]),
+  ({ }),
+  841383609,
+  "Test Subject",
+  ({ /* sizeof() == 4 */
+    "Test Body 1",
+    "Test Body 2",
+    "Test Body 3",
+    "goodbye,"
+  })
+}))
+Fri Aug 30 01:24:08 1996: evWrite(6, ({ /* sizeof() == 2 */
+  "mail-ack",
+  ([ /* sizeof() == 1 */
+    17 : ({ }),
+  ])
+}))
+Fri Aug 30 01:24:08 1996: evRead(6, ({ /* sizeof() == 9 */
+  "mail",
+  18,
+  "tim",
+  ([ /* sizeof() == 1 */
+    "Dysfunctional Mud" : ({ /* sizeof() == 1 */
+        "tim"
+      }),
+  ]),
+  ([ ]),
+  ({ }),
+  841385302,
+  "testing 3",
+  ({ /* sizeof() == 6 */
+    "Body line 1",
+    "body line 2",
+    "body line 3",
+    "later,",
+    "Tim",
+    ""
+  })
+}))
+Fri Aug 30 01:24:08 1996: evWrite(6, ({ /* sizeof() == 2 */
+  "mail-ack",
+  ([ /* sizeof() == 1 */
+    18 : ({ }),
+  ])
+}))
+Fri Aug 30 01:24:08 1996: evRead(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Lima Bean"
+}))
+Fri Aug 30 01:24:08 1996: evRcvOOBEnd(6, Lima Bean)(server)
+Fri Aug 30 01:24:08 1996: evSndPkts(6, Lima Bean)
+Fri Aug 30 01:24:08 1996: evWrite(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Fri Aug 30 01:24:08 1996: Socket fd=(6) closed.
+Fri Aug 30 01:38:11 1996: evRead(6, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Lima Bean",
+  1,
+  91697356
+}))
+Fri Aug 30 01:38:11 1996: evWrite(6, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  0,
+  0
+}))
+Fri Aug 30 01:38:11 1996: evRead(6, ({ /* sizeof() == 9 */
+  "mail",
+  16,
+  "tim",
+  ([ /* sizeof() == 1 */
+    "Dysfunctional Mud" : ({ /* sizeof() == 1 */
+        "tim"
+      }),
+  ]),
+  ([ /* sizeof() == 1 */
+    "Dysfunctional Mud" : ({ /* sizeof() == 1 */
+        "kyricc"
+      }),
+  ]),
+  ({ }),
+  841383366,
+  "Test Subject",
+  ({ /* sizeof() == 4 */
+    "Test body 1",
+    "Test body 2",
+    "Test body 3",
+    "goodbye,"
+  })
+}))
+Fri Aug 30 01:38:11 1996: evWrite(6, ({ /* sizeof() == 2 */
+  "mail-ack",
+  ([ /* sizeof() == 1 */
+    16 : ({ }),
+  ])
+}))
+Fri Aug 30 01:38:11 1996: evRead(6, ({ /* sizeof() == 9 */
+  "mail",
+  15,
+  "tim",
+  ([ /* sizeof() == 1 */
+    "Dysfunctional Mud" : ({ /* sizeof() == 1 */
+        "tim"
+      }),
+  ]),
+  ([ ]),
+  ({ }),
+  841378547,
+  "testing",
+  ({ /* sizeof() == 3 */
+    "This is a test",
+    "test, 1, 2, 3",
+    "later,"
+  })
+}))
+Fri Aug 30 01:38:11 1996: evWrite(6, ({ /* sizeof() == 2 */
+  "mail-ack",
+  ([ /* sizeof() == 1 */
+    15 : ({ }),
+  ])
+}))
+Fri Aug 30 01:38:11 1996: evRead(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Lima Bean"
+}))
+Fri Aug 30 01:38:11 1996: evRcvOOBEnd(6, Lima Bean)(server)
+Fri Aug 30 01:38:11 1996: evSndPkts(6, Lima Bean)
+Fri Aug 30 01:38:11 1996: evWrite(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Fri Aug 30 01:38:11 1996: Socket fd=(6) closed.
+Fri Aug 30 01:54:44 1996: evRead(6, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Lima Bean",
+  1,
+  1072677375
+}))
+Fri Aug 30 01:54:44 1996: evWrite(6, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  0,
+  0
+}))
+Fri Aug 30 01:54:44 1996: evRead(6, ({ /* sizeof() == 9 */
+  "mail",
+  19,
+  "tim",
+  ([ /* sizeof() == 1 */
+    "Dysfunctional Mud" : ({ /* sizeof() == 1 */
+        "tim"
+      }),
+  ]),
+  ([ /* sizeof() == 1 */
+    "Dysfunctional Mud" : ({ /* sizeof() == 1 */
+        "kyricc"
+      }),
+  ]),
+  ({ }),
+  841387137,
+  "testing-remote",
+  ({ /* sizeof() == 6 */
+    "Ok this is a test of I3 mail.",
+    "one",
+    "two",
+    "three",
+    "later,",
+    "Tim"
+  })
+}))
+Fri Aug 30 01:54:44 1996: evWrite(6, ({ /* sizeof() == 2 */
+  "mail-ack",
+  ([ /* sizeof() == 1 */
+    19 : ({ }),
+  ])
+}))
+Fri Aug 30 01:54:46 1996: evRead(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Lima Bean"
+}))
+Fri Aug 30 01:54:46 1996: evRcvOOBEnd(6, Lima Bean)(server)
+Fri Aug 30 01:54:46 1996: evSndPkts(6, Lima Bean)
+Fri Aug 30 01:54:46 1996: evWrite(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Fri Aug 30 01:54:46 1996: Socket fd=(6) closed.
+Fri Aug 30 02:05:17 1996: evRead(6, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Lima Bean",
+  1,
+  1194419940
+}))
+Fri Aug 30 02:05:17 1996: evWrite(6, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  0,
+  0
+}))
+Fri Aug 30 02:05:19 1996: evRead(6, ({ /* sizeof() == 9 */
+  "mail",
+  20,
+  "tim",
+  ([ /* sizeof() == 1 */
+    "Dysfunctional Mud" : ({ /* sizeof() == 1 */
+        "tim"
+      }),
+  ]),
+  ([ ]),
+  ({ }),
+  841387770,
+  "test-4",
+  ({ /* sizeof() == 3 */
+    "testing to see if this will work",
+    "later,",
+    "Tim"
+  })
+}))
+Fri Aug 30 02:05:19 1996: evWrite(6, ({ /* sizeof() == 2 */
+  "mail-ack",
+  ([ /* sizeof() == 1 */
+    20 : ({ }),
+  ])
+}))
+Fri Aug 30 02:05:19 1996: evRead(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Lima Bean"
+}))
+Fri Aug 30 02:05:19 1996: evRcvOOBEnd(6, Lima Bean)(server)
+Fri Aug 30 02:05:19 1996: evSndPkts(6, Lima Bean)
+Fri Aug 30 02:05:19 1996: evWrite(6, ({ /* sizeof() == 9 */
+  "mail",
+  0,
+  "Tim@Dysfunctional Mud",
+  ([ /* sizeof() == 1 */
+    "Lima Bean" : ({ /* sizeof() == 1 */
+        "tim"
+      }),
+  ]),
+  ([ ]),
+  ({ }),
+  841388618,
+  "test-remote-send-3",
+  ({ /* sizeof() == 6 */
+    "Testing I3 remote send",
+    "one",
+    "two",
+    "three",
+    "later,",
+    "Tim"
+  })
+}))
+Fri Aug 30 02:05:19 1996: evRead(6, ({ /* sizeof() == 2 */
+  "mail-ack",
+  ([ /* sizeof() == 1 */
+    0 : ({ }),
+  ])
+}))
+Fri Aug 30 02:05:21 1996: evSndPkts(6, Lima Bean)
+Fri Aug 30 02:05:21 1996: evWrite(6, ({ /* sizeof() == 9 */
+  "mail",
+  0,
+  "Kyricc@Dysfunctional Mud",
+  ([ /* sizeof() == 1 */
+    "Lima Bean" : ({ /* sizeof() == 1 */
+        "tim"
+      }),
+  ]),
+  ([ /* sizeof() == 1 */
+    "Dysfunctional Mud" : ({ /* sizeof() == 1 */
+        "tim"
+      }),
+  ]),
+  ({ }),
+  841388646,
+  "TESTING",
+  ({ /* sizeof() == 6 */
+    "Whoo...real fun...",
+    "Test",
+    "Test",
+    "Test",
+    " ",
+    "Hot For Teacher is on the Radio...GO VAN HALEN\!\!"
+  })
+}))
+Fri Aug 30 02:05:21 1996: evRead(6, ({ /* sizeof() == 2 */
+  "mail-ack",
+  ([ /* sizeof() == 1 */
+    0 : ({ }),
+  ])
+}))
+Fri Aug 30 02:05:23 1996: evSndPkts(6, Lima Bean)
+Fri Aug 30 02:05:23 1996: evWrite(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Fri Aug 30 02:05:23 1996: Socket fd=(6) closed.
+Fri Aug 30 02:07:43 1996: evRead(6, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Lima Bean",
+  1,
+  1114826058
+}))
+Fri Aug 30 02:07:43 1996: evWrite(6, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  0,
+  0
+}))
+Fri Aug 30 02:07:43 1996: evRead(6, ({ /* sizeof() == 9 */
+  "mail",
+  21,
+  "tim",
+  ([ /* sizeof() == 1 */
+    "Dysfunctional Mud" : ({ /* sizeof() == 1 */
+        "tim"
+      }),
+  ]),
+  ([ ]),
+  ({ }),
+  841387917,
+  "test-5",
+  ({ /* sizeof() == 3 */
+    "hope this works dude",
+    "later,",
+    "Tim"
+  })
+}))
+Fri Aug 30 02:07:43 1996: evWrite(6, ({ /* sizeof() == 2 */
+  "mail-ack",
+  ([ /* sizeof() == 1 */
+    21 : ({ }),
+  ])
+}))
+Fri Aug 30 02:07:43 1996: evRead(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Lima Bean"
+}))
+Fri Aug 30 02:07:43 1996: evRcvOOBEnd(6, Lima Bean)(server)
+Fri Aug 30 02:07:43 1996: evSndPkts(6, Lima Bean)
+Fri Aug 30 02:07:43 1996: evWrite(6, ({ /* sizeof() == 9 */
+  "mail",
+  0,
+  "Tim",
+  ([ /* sizeof() == 1 */
+    "Lima Bean" : ({ /* sizeof() == 1 */
+        "tim"
+      }),
+  ]),
+  ([ ]),
+  ({ }),
+  841388839,
+  "testing",
+  ({ /* sizeof() == 3 */
+    "one tow three",
+    "later,",
+    "dude"
+  })
+}))
+Fri Aug 30 02:07:43 1996: evRead(6, ({ /* sizeof() == 2 */
+  "mail-ack",
+  ([ /* sizeof() == 1 */
+    0 : ({ }),
+  ])
+}))
+Fri Aug 30 02:07:46 1996: evSndPkts(6, Lima Bean)
+Fri Aug 30 02:07:46 1996: evWrite(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Fri Aug 30 02:07:46 1996: Socket fd=(6) closed.
+Tue Sep  3 14:59:38 1996: OOBBegin: connecting: mud=Lima Bean
+Tue Sep  3 14:59:50 1996: evWrite(5, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  1,
+  48918389
+}))
+Tue Sep  3 14:59:50 1996: evRead(5, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Lima Bean",
+  0,
+  0
+}))
+Tue Sep  3 14:59:50 1996: evSndPkts(5, Lima Bean)
+Tue Sep  3 14:59:50 1996: evWrite(5, ({ /* sizeof() == 9 */
+  "mail",
+  0,
+  "Kyricc",
+  ([ /* sizeof() == 1 */
+    "Lima Bean" : ({ /* sizeof() == 1 */
+        "satan"
+      }),
+  ]),
+  ([ ]),
+  ({ }),
+  841780764,
+  "I3 protocol",
+  ({ /* sizeof() == 6 */
+    "Someone had responded to me saying to mail you about I3 protocol for",
+    "Circle MUD or any other diku-deriviants.  ",
+    " ",
+    "Can you help me out here...or where they blowing smoke up my butt?",
+    " ",
+    "Kyricc@Dysfunctional Mud"
+  })
+}))
+Tue Sep  3 14:59:50 1996: evRead(5, ({ /* sizeof() == 2 */
+  "mail-ack",
+  ([ /* sizeof() == 1 */
+    0 : ({ }),
+  ])
+}))
+Tue Sep  3 14:59:52 1996: evSndPkts(5, Lima Bean)
+Tue Sep  3 14:59:52 1996: evWrite(5, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Tue Sep  3 14:59:52 1996: evRead(5, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Lima Bean"
+}))
+Tue Sep  3 14:59:52 1996: evRcvOOBEnd(5, Lima Bean)(client)
+Tue Sep  3 14:59:52 1996: Socket fd=(5) closed.
+Tue Sep  3 16:49:03 1996: evRead(6, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Lima Bean",
+  1,
+  1009464640
+}))
+Tue Sep  3 16:49:03 1996: evWrite(6, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  0,
+  0
+}))
+Tue Sep  3 16:49:05 1996: evRead(6, ({ /* sizeof() == 9 */
+  "mail",
+  25,
+  "tim",
+  ([ /* sizeof() == 1 */
+    "Dysfunctional Mud" : ({ /* sizeof() == 1 */
+        "tim"
+      }),
+  ]),
+  ([ ]),
+  ({ }),
+  841786358,
+  "test mail",
+  "Testing buddy
+line 2
+later,
+Timothy."
+}))
+Tue Sep  3 16:49:05 1996: evWrite(6, ({ /* sizeof() == 2 */
+  "mail-ack",
+  ([ /* sizeof() == 1 */
+    25 : ({ }),
+  ])
+}))
+Tue Sep  3 16:49:05 1996: evRead(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Lima Bean"
+}))
+Tue Sep  3 16:49:05 1996: evRcvOOBEnd(6, Lima Bean)(server)
+Tue Sep  3 16:49:05 1996: evSndPkts(6, Lima Bean)
+Tue Sep  3 16:49:05 1996: evWrite(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Tue Sep  3 16:49:05 1996: Socket fd=(6) closed.
+Tue Sep  3 20:23:51 1996: OOBBegin: connecting: mud=IdeaExchange
+Tue Sep  3 20:26:52 1996: OOBBegin: connecting: mud=IdeaExchange
+Tue Sep  3 20:33:53 1996: evRead(6, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Lima Bean",
+  1,
+  290339323
+}))
+Tue Sep  3 20:33:53 1996: evWrite(6, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  0,
+  0
+}))
+Tue Sep  3 20:33:53 1996: evRead(6, ({ /* sizeof() == 9 */
+  "mail",
+  26,
+  "satan",
+  ([ /* sizeof() == 1 */
+    "Dysfunctional Mud" : ({ /* sizeof() == 1 */
+        "Kyricc"
+      }),
+  ]),
+  ([ ]),
+  ({ }),
+  841799874,
+  "Re: I3 protocol",
+  "On Tue Sep  3 12:59:24 1996 Kyricc@Dysfunctional Mud wrote:
+> Someone had responded to me saying to mail you about I3 protocol for
+> Circle MUD or any other diku-deriviants.  
+>  
+> Can you help me out here...or where they blowing smoke up my butt?
+>  
+> Kyricc@Dysfunctional Mud
+
+   Im the person that can help.  I currently have just the channels and
+mudlist code implemented for stock CircleMUD. If your desperate and can't
+wait, email me at  wilson@shark.cc.cc.ca.us  and I'll make it available
+for you, in the mean time Im hammering away at the code to get the rest
+of the I3 functions put into it.
+"
+}))
+Tue Sep  3 20:33:53 1996: evWrite(6, ({ /* sizeof() == 2 */
+  "mail-ack",
+  ([ /* sizeof() == 1 */
+    26 : ({ }),
+  ])
+}))
+Tue Sep  3 20:33:55 1996: evRead(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Lima Bean"
+}))
+Tue Sep  3 20:33:55 1996: evRcvOOBEnd(6, Lima Bean)(server)
+Tue Sep  3 20:33:55 1996: evSndPkts(6, Lima Bean)
+Tue Sep  3 20:33:55 1996: evWrite(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Tue Sep  3 20:33:55 1996: Socket fd=(6) closed.
+Tue Sep  3 22:16:13 1996: OOBBegin: connecting: mud=Lima Bean
+Tue Sep  3 22:16:15 1996: evWrite(5, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  1,
+  1088797054
+}))
+Tue Sep  3 22:16:15 1996: evRead(5, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Lima Bean",
+  0,
+  0
+}))
+Tue Sep  3 22:16:15 1996: evSndPkts(5, Lima Bean)
+Tue Sep  3 22:16:15 1996: evWrite(5, ({ /* sizeof() == 9 */
+  "mail",
+  0,
+  "Tim",
+  ([ /* sizeof() == 1 */
+    "Lima Bean" : ({ /* sizeof() == 1 */
+        "tim"
+      }),
+  ]),
+  ([ /* sizeof() == 1 */
+    "Dysfunctional Mud" : ({ /* sizeof() == 1 */
+        "tim"
+      }),
+  ]),
+  ({ }),
+  841806973,
+  "test of I3 mail",
+  "This is only a test.
+Do not be alarmed.
+Later,
+Tim.
+"
+}))
+Tue Sep  3 22:16:15 1996: evRead(5, ({ /* sizeof() == 2 */
+  "mail-ack",
+  ([ /* sizeof() == 1 */
+    0 : ({ }),
+  ])
+}))
+Tue Sep  3 22:16:17 1996: evSndPkts(5, Lima Bean)
+Tue Sep  3 22:16:17 1996: evWrite(5, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Tue Sep  3 22:16:17 1996: evRead(5, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Lima Bean"
+}))
+Tue Sep  3 22:16:17 1996: evRcvOOBEnd(5, Lima Bean)(client)
+Tue Sep  3 22:16:17 1996: Socket fd=(5) closed.
+Tue Sep  3 22:17:39 1996: evRead(6, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Lima Bean",
+  1,
+  3778828
+}))
+Tue Sep  3 22:17:39 1996: evWrite(6, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  0,
+  0
+}))
+Tue Sep  3 22:17:39 1996: evRead(6, ({ /* sizeof() == 9 */
+  "mail",
+  27,
+  "tim",
+  ([ /* sizeof() == 1 */
+    "Dysfunctional Mud" : ({ /* sizeof() == 1 */
+        "Tim"
+      }),
+  ]),
+  ([ ]),
+  ({ }),
+  841806098,
+  "Re: test of I3 mail",
+  "On Tue Sep  3 20:16:13 1996 Tim@Dysfunctional Mud wrote:
+> This is only a test.
+> Do not be alarmed.
+> Later,
+> Tim.
+Thanks for the mail DUDE!!
+I appreciate it!
+later,
+Tim"
+}))
+Tue Sep  3 22:17:39 1996: evWrite(6, ({ /* sizeof() == 2 */
+  "mail-ack",
+  ([ /* sizeof() == 1 */
+    27 : ({ }),
+  ])
+}))
+Tue Sep  3 22:17:39 1996: evRead(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Lima Bean"
+}))
+Tue Sep  3 22:17:39 1996: evRcvOOBEnd(6, Lima Bean)(server)
+Tue Sep  3 22:17:39 1996: evSndPkts(6, Lima Bean)
+Tue Sep  3 22:17:39 1996: evWrite(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Tue Sep  3 22:17:39 1996: Socket fd=(6) closed.
+Tue Sep  3 22:22:59 1996: evRead(6, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Lima Bean",
+  1,
+  264915924
+}))
+Tue Sep  3 22:22:59 1996: evWrite(6, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  0,
+  0
+}))
+Tue Sep  3 22:22:59 1996: evRead(6, ({ /* sizeof() == 9 */
+  "mail",
+  28,
+  "tim",
+  ([ /* sizeof() == 1 */
+    "Dysfunctional Mud" : ({ /* sizeof() == 1 */
+        "tim"
+      }),
+  ]),
+  ([ /* sizeof() == 1 */
+    "Dysfunctional Mud" : ({ /* sizeof() == 1 */
+        "kyricc"
+      }),
+  ]),
+  ({ }),
+  841806417,
+  "Test of I3 mail",
+  "This is only a test
+later,
+Tim."
+}))
+Tue Sep  3 22:22:59 1996: evWrite(6, ({ /* sizeof() == 2 */
+  "mail-ack",
+  ([ /* sizeof() == 1 */
+    28 : ({ }),
+  ])
+}))
+Tue Sep  3 22:23:01 1996: evRead(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Lima Bean"
+}))
+Tue Sep  3 22:23:01 1996: evRcvOOBEnd(6, Lima Bean)(server)
+Tue Sep  3 22:23:01 1996: evSndPkts(6, Lima Bean)
+Tue Sep  3 22:23:01 1996: evWrite(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Tue Sep  3 22:23:01 1996: Socket fd=(6) closed.
+Tue Sep  3 22:25:29 1996: evWrite(6, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  1,
+  210097851
+}))
+Tue Sep  3 22:25:29 1996: evRead(7, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  1,
+  210097851
+}))
+Tue Sep  3 22:25:29 1996: evWrite(7, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  0,
+  0
+}))
+Tue Sep  3 22:25:29 1996: evRead(6, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  0,
+  0
+}))
+Tue Sep  3 22:25:29 1996: evSndPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:25:29 1996: evWrite(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Tue Sep  3 22:25:29 1996: evRead(7, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Tue Sep  3 22:25:29 1996: evRcvOOBEnd(7, Dysfunctional Mud)(server)
+Tue Sep  3 22:25:29 1996: evSndPkts(7, Dysfunctional Mud)
+Tue Sep  3 22:25:29 1996: evWrite(7, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Tue Sep  3 22:25:29 1996: evRead(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Tue Sep  3 22:25:29 1996: evRcvOOBEnd(6, Dysfunctional Mud)(client)
+Tue Sep  3 22:25:31 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:25:33 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:25:35 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:25:37 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:25:39 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:25:41 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:25:44 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:25:46 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:25:48 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:25:50 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:25:52 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:25:54 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:25:56 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:25:58 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:26:00 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:26:02 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:26:04 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:26:04 1996: evSndPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:26:04 1996: evWrite(6, ({ /* sizeof() == 4 */
+  "file-list-req",
+  "Dysfunctional Mud",
+  "greg",
+  ""
+}))
+Tue Sep  3 22:26:04 1996: evRead(7, ({ /* sizeof() == 4 */
+  "file-list-req",
+  "Dysfunctional Mud",
+  "greg",
+  ""
+}))
+Tue Sep  3 22:26:04 1996: evWrite(7, ({ /* sizeof() == 3 */
+  "file-list-reply",
+  "greg",
+  ({ /* sizeof() == 5 */
+    ({ /* sizeof() == 3 */
+      ".",
+      -2,
+      836893535
+    }),
+    ({ /* sizeof() == 3 */
+      "..",
+      -2,
+      841801819
+    }),
+    ({ /* sizeof() == 3 */
+      ".message",
+      106,
+      835157398
+    }),
+    ({ /* sizeof() == 3 */
+      "incoming",
+      -2,
+      836893535
+    }),
+    ({ /* sizeof() == 3 */
+      "pub",
+      -2,
+      836893535
+    })
+  })
+}))
+Tue Sep  3 22:26:04 1996: evRead(6, ({ /* sizeof() == 3 */
+  "file-list-reply",
+  "greg",
+  ({ /* sizeof() == 5 */
+    ({ /* sizeof() == 3 */
+      ".",
+      -2,
+      836893535
+    }),
+    ({ /* sizeof() == 3 */
+      "..",
+      -2,
+      841801819
+    }),
+    ({ /* sizeof() == 3 */
+      ".message",
+      106,
+      835157398
+    }),
+    ({ /* sizeof() == 3 */
+      "incoming",
+      -2,
+      836893535
+    }),
+    ({ /* sizeof() == 3 */
+      "pub",
+      -2,
+      836893535
+    })
+  })
+}))
+Tue Sep  3 22:26:06 1996: evSndPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:26:06 1996: evWrite(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Tue Sep  3 22:26:06 1996: evRead(7, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Tue Sep  3 22:26:06 1996: evRcvOOBEnd(7, Dysfunctional Mud)(server)
+Tue Sep  3 22:26:06 1996: evSndPkts(7, Dysfunctional Mud)
+Tue Sep  3 22:26:06 1996: evWrite(7, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Tue Sep  3 22:26:06 1996: evRead(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Tue Sep  3 22:26:06 1996: evRcvOOBEnd(6, Dysfunctional Mud)(client)
+Tue Sep  3 22:26:08 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:26:10 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:26:10 1996: evSndPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:26:10 1996: evWrite(6, ({ /* sizeof() == 4 */
+  "file-list-req",
+  "Dysfunctional Mud",
+  "greg",
+  "pub"
+}))
+Tue Sep  3 22:26:10 1996: evRead(7, ({ /* sizeof() == 4 */
+  "file-list-req",
+  "Dysfunctional Mud",
+  "greg",
+  "pub"
+}))
+Tue Sep  3 22:26:10 1996: evWrite(7, ({ /* sizeof() == 3 */
+  "file-list-reply",
+  "greg",
+  ({ /* sizeof() == 9 */
+    ({ /* sizeof() == 3 */
+      ".",
+      -2,
+      836893535
+    }),
+    ({ /* sizeof() == 3 */
+      "..",
+      -2,
+      836893535
+    }),
+    ({ /* sizeof() == 3 */
+      "creremote",
+      6164,
+      818038446
+    }),
+    ({ /* sizeof() == 3 */
+      "generic.c",
+      542,
+      824407616
+    }),
+    ({ /* sizeof() == 3 */
+      "html-mode.el",
+      38128,
+      815205709
+    }),
+    ({ /* sizeof() == 3 */
+      "html-view.el",
+      4720,
+      815205713
+    }),
+    ({ /* sizeof() == 3 */
+      "lpc-mode.el",
+      35536,
+      814829342
+    }),
+    ({ /* sizeof() == 3 */
+      "lpc-mode.el.README",
+      232,
+      814829488
+    }),
+    ({ /* sizeof() == 3 */
+      "tmp",
+      -2,
+      841373043
+    })
+  })
+}))
+Tue Sep  3 22:26:10 1996: evRead(6, ({ /* sizeof() == 3 */
+  "file-list-reply",
+  "greg",
+  ({ /* sizeof() == 9 */
+    ({ /* sizeof() == 3 */
+      ".",
+      -2,
+      836893535
+    }),
+    ({ /* sizeof() == 3 */
+      "..",
+      -2,
+      836893535
+    }),
+    ({ /* sizeof() == 3 */
+      "creremote",
+      6164,
+      818038446
+    }),
+    ({ /* sizeof() == 3 */
+      "generic.c",
+      542,
+      824407616
+    }),
+    ({ /* sizeof() == 3 */
+      "html-mode.el",
+      38128,
+      815205709
+    }),
+    ({ /* sizeof() == 3 */
+      "html-view.el",
+      4720,
+      815205713
+    }),
+    ({ /* sizeof() == 3 */
+      "lpc-mode.el",
+      35536,
+      814829342
+    }),
+    ({ /* sizeof() == 3 */
+      "lpc-mode.el.README",
+      232,
+      814829488
+    }),
+    ({ /* sizeof() == 3 */
+      "tmp",
+      -2,
+      841373043
+    })
+  })
+}))
+Tue Sep  3 22:26:12 1996: evSndPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:26:12 1996: evWrite(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Tue Sep  3 22:26:12 1996: evRead(7, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Tue Sep  3 22:26:12 1996: evRcvOOBEnd(7, Dysfunctional Mud)(server)
+Tue Sep  3 22:26:12 1996: evSndPkts(7, Dysfunctional Mud)
+Tue Sep  3 22:26:12 1996: evWrite(7, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Tue Sep  3 22:26:12 1996: evRead(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Tue Sep  3 22:26:12 1996: evRcvOOBEnd(6, Dysfunctional Mud)(client)
+Tue Sep  3 22:26:14 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:26:14 1996: evSndPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:26:14 1996: evWrite(6, ({ /* sizeof() == 4 */
+  "file-list-req",
+  "Dysfunctional Mud",
+  "greg",
+  "pub/tmp"
+}))
+Tue Sep  3 22:26:14 1996: evRead(7, ({ /* sizeof() == 4 */
+  "file-list-req",
+  "Dysfunctional Mud",
+  "greg",
+  "pub/tmp"
+}))
+Tue Sep  3 22:26:14 1996: evWrite(7, ({ /* sizeof() == 3 */
+  "file-list-reply",
+  "greg",
+  ({ /* sizeof() == 2 */
+    ({ /* sizeof() == 3 */
+      ".",
+      -2,
+      841373043
+    }),
+    ({ /* sizeof() == 3 */
+      "..",
+      -2,
+      836893535
+    })
+  })
+}))
+Tue Sep  3 22:26:14 1996: evRead(6, ({ /* sizeof() == 3 */
+  "file-list-reply",
+  "greg",
+  ({ /* sizeof() == 2 */
+    ({ /* sizeof() == 3 */
+      ".",
+      -2,
+      841373043
+    }),
+    ({ /* sizeof() == 3 */
+      "..",
+      -2,
+      836893535
+    })
+  })
+}))
+Tue Sep  3 22:26:16 1996: evSndPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:26:16 1996: evWrite(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Tue Sep  3 22:26:16 1996: evRead(7, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Tue Sep  3 22:26:16 1996: evRcvOOBEnd(7, Dysfunctional Mud)(server)
+Tue Sep  3 22:26:16 1996: evSndPkts(7, Dysfunctional Mud)
+Tue Sep  3 22:26:16 1996: evWrite(7, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Tue Sep  3 22:26:16 1996: evRead(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Tue Sep  3 22:26:16 1996: evRcvOOBEnd(6, Dysfunctional Mud)(client)
+Tue Sep  3 22:26:18 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:26:20 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:26:22 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:26:24 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:26:24 1996: Socket fd=(6) closed.
+Tue Sep  3 22:26:24 1996: Socket fd=(7) closed.
+Tue Sep  3 22:26:28 1996: evWrite(5, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  1,
+  729722676
+}))
+Tue Sep  3 22:26:28 1996: evRead(5, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Lima Bean",
+  0,
+  0
+}))
+Tue Sep  3 22:26:28 1996: evSndPkts(5, Lima Bean)
+Tue Sep  3 22:26:28 1996: evWrite(5, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Tue Sep  3 22:26:28 1996: evRead(5, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Lima Bean"
+}))
+Tue Sep  3 22:26:28 1996: evRcvOOBEnd(5, Lima Bean)(client)
+Tue Sep  3 22:26:30 1996: evWaitPkts(5, Lima Bean)
+Tue Sep  3 22:26:32 1996: evWaitPkts(5, Lima Bean)
+Tue Sep  3 22:26:34 1996: evWaitPkts(5, Lima Bean)
+Tue Sep  3 22:26:36 1996: evWaitPkts(5, Lima Bean)
+Tue Sep  3 22:26:36 1996: evSndPkts(5, Lima Bean)
+Tue Sep  3 22:26:36 1996: evWrite(5, ({ /* sizeof() == 4 */
+  "file-list-req",
+  "Dysfunctional Mud",
+  "greg",
+  ""
+}))
+Tue Sep  3 22:26:36 1996: evRead(5, ({ /* sizeof() == 7 */
+  "error",
+  5,
+  "Lima Bean",
+  0,
+  "Dysfunctional Mud",
+  0,
+  ({ /* sizeof() == 3 */
+    "bad-proto",
+    "bad directory specified",
+    ({ /* sizeof() == 4 */
+      "file-list-req",
+      "Dysfunctional Mud",
+      "greg",
+      ""
+    })
+  })
+}))
+Tue Sep  3 22:26:38 1996: evSndPkts(5, Lima Bean)
+Tue Sep  3 22:26:38 1996: evWrite(5, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Tue Sep  3 22:26:38 1996: evRead(5, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Lima Bean"
+}))
+Tue Sep  3 22:26:38 1996: evRcvOOBEnd(5, Lima Bean)(client)
+Tue Sep  3 22:26:40 1996: evWaitPkts(5, Lima Bean)
+Tue Sep  3 22:26:42 1996: evWaitPkts(5, Lima Bean)
+Tue Sep  3 22:26:44 1996: evWaitPkts(5, Lima Bean)
+Tue Sep  3 22:26:46 1996: evWaitPkts(5, Lima Bean)
+Tue Sep  3 22:26:48 1996: evWaitPkts(5, Lima Bean)
+Tue Sep  3 22:26:50 1996: evWaitPkts(5, Lima Bean)
+Tue Sep  3 22:26:52 1996: evWaitPkts(5, Lima Bean)
+Tue Sep  3 22:26:54 1996: evWaitPkts(5, Lima Bean)
+Tue Sep  3 22:26:56 1996: evWaitPkts(5, Lima Bean)
+Tue Sep  3 22:26:56 1996: evSndPkts(5, Lima Bean)
+Tue Sep  3 22:26:56 1996: evWrite(5, ({ /* sizeof() == 4 */
+  "file-list-req",
+  "Dysfunctional Mud",
+  "greg",
+  ""
+}))
+Tue Sep  3 22:26:56 1996: evRead(5, ({ /* sizeof() == 7 */
+  "error",
+  5,
+  "Lima Bean",
+  0,
+  "Dysfunctional Mud",
+  0,
+  ({ /* sizeof() == 3 */
+    "bad-proto",
+    "bad directory specified",
+    ({ /* sizeof() == 4 */
+      "file-list-req",
+      "Dysfunctional Mud",
+      "greg",
+      ""
+    })
+  })
+}))
+Tue Sep  3 22:26:58 1996: evSndPkts(5, Lima Bean)
+Tue Sep  3 22:26:58 1996: evWrite(5, ({ /* sizeof() == 4 */
+  "file-list-req",
+  "Dysfunctional Mud",
+  "greg",
+  ""
+}))
+Tue Sep  3 22:26:58 1996: evRead(5, ({ /* sizeof() == 7 */
+  "error",
+  5,
+  "Lima Bean",
+  0,
+  "Dysfunctional Mud",
+  0,
+  ({ /* sizeof() == 3 */
+    "bad-proto",
+    "bad directory specified",
+    ({ /* sizeof() == 4 */
+      "file-list-req",
+      "Dysfunctional Mud",
+      "greg",
+      ""
+    })
+  })
+}))
+Tue Sep  3 22:27:00 1996: evSndPkts(5, Lima Bean)
+Tue Sep  3 22:27:00 1996: evWrite(5, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Tue Sep  3 22:27:00 1996: evRead(5, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Lima Bean"
+}))
+Tue Sep  3 22:27:00 1996: evRcvOOBEnd(5, Lima Bean)(client)
+Tue Sep  3 22:27:02 1996: evWaitPkts(5, Lima Bean)
+Tue Sep  3 22:27:04 1996: evWaitPkts(5, Lima Bean)
+Tue Sep  3 22:27:06 1996: evWaitPkts(5, Lima Bean)
+Tue Sep  3 22:27:08 1996: evWaitPkts(5, Lima Bean)
+Tue Sep  3 22:27:08 1996: Socket fd=(5) closed.
+Tue Sep  3 22:27:28 1996: evRead(6, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Lima Bean",
+  1,
+  1714122000
+}))
+Tue Sep  3 22:27:28 1996: evWrite(6, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  0,
+  0
+}))
+Tue Sep  3 22:27:28 1996: evRead(6, ({ /* sizeof() == 4 */
+  "file-list-req",
+  "Lima Bean",
+  "tim",
+  "/"
+}))
+Tue Sep  3 22:27:28 1996: evWrite(6, ({ /* sizeof() == 3 */
+  "file-list-reply",
+  "tim",
+  ({ /* sizeof() == 5 */
+    ({ /* sizeof() == 3 */
+      ".",
+      -2,
+      836893535
+    }),
+    ({ /* sizeof() == 3 */
+      "..",
+      -2,
+      841801819
+    }),
+    ({ /* sizeof() == 3 */
+      ".message",
+      106,
+      835157398
+    }),
+    ({ /* sizeof() == 3 */
+      "incoming",
+      -2,
+      836893535
+    }),
+    ({ /* sizeof() == 3 */
+      "pub",
+      -2,
+      836893535
+    })
+  })
+}))
+Tue Sep  3 22:27:30 1996: evRead(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Lima Bean"
+}))
+Tue Sep  3 22:27:30 1996: evRcvOOBEnd(6, Lima Bean)(server)
+Tue Sep  3 22:27:30 1996: evSndPkts(6, Lima Bean)
+Tue Sep  3 22:27:30 1996: evWrite(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Tue Sep  3 22:27:30 1996: Socket fd=(6) closed.
+Tue Sep  3 22:27:42 1996: evRead(6, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Lima Bean",
+  1,
+  53655978
+}))
+Tue Sep  3 22:27:42 1996: evWrite(6, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  0,
+  0
+}))
+Tue Sep  3 22:27:42 1996: evRead(6, ({ /* sizeof() == 4 */
+  "file-list-req",
+  "Lima Bean",
+  "tim",
+  "pub"
+}))
+Tue Sep  3 22:27:42 1996: evWrite(6, ({ /* sizeof() == 3 */
+  "file-list-reply",
+  "tim",
+  ({ /* sizeof() == 9 */
+    ({ /* sizeof() == 3 */
+      ".",
+      -2,
+      836893535
+    }),
+    ({ /* sizeof() == 3 */
+      "..",
+      -2,
+      836893535
+    }),
+    ({ /* sizeof() == 3 */
+      "creremote",
+      6164,
+      818038446
+    }),
+    ({ /* sizeof() == 3 */
+      "generic.c",
+      542,
+      824407616
+    }),
+    ({ /* sizeof() == 3 */
+      "html-mode.el",
+      38128,
+      815205709
+    }),
+    ({ /* sizeof() == 3 */
+      "html-view.el",
+      4720,
+      815205713
+    }),
+    ({ /* sizeof() == 3 */
+      "lpc-mode.el",
+      35536,
+      814829342
+    }),
+    ({ /* sizeof() == 3 */
+      "lpc-mode.el.README",
+      232,
+      814829488
+    }),
+    ({ /* sizeof() == 3 */
+      "tmp",
+      -2,
+      841373043
+    })
+  })
+}))
+Tue Sep  3 22:27:42 1996: evRead(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Lima Bean"
+}))
+Tue Sep  3 22:27:42 1996: evRcvOOBEnd(6, Lima Bean)(server)
+Tue Sep  3 22:27:42 1996: evSndPkts(6, Lima Bean)
+Tue Sep  3 22:27:42 1996: evWrite(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Tue Sep  3 22:27:42 1996: Socket fd=(6) closed.
+Tue Sep  3 22:28:20 1996: evRead(6, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Lima Bean",
+  1,
+  261309416
+}))
+Tue Sep  3 22:28:20 1996: evWrite(6, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  0,
+  0
+}))
+Tue Sep  3 22:28:20 1996: evRead(6, ({ /* sizeof() == 4 */
+  "file-list-req",
+  "Lima Bean",
+  "tim",
+  "pub"
+}))
+Tue Sep  3 22:28:20 1996: evWrite(6, ({ /* sizeof() == 3 */
+  "file-list-reply",
+  "tim",
+  ({ /* sizeof() == 9 */
+    ({ /* sizeof() == 3 */
+      ".",
+      -2,
+      836893535
+    }),
+    ({ /* sizeof() == 3 */
+      "..",
+      -2,
+      836893535
+    }),
+    ({ /* sizeof() == 3 */
+      "creremote",
+      6164,
+      818038446
+    }),
+    ({ /* sizeof() == 3 */
+      "generic.c",
+      542,
+      824407616
+    }),
+    ({ /* sizeof() == 3 */
+      "html-mode.el",
+      38128,
+      815205709
+    }),
+    ({ /* sizeof() == 3 */
+      "html-view.el",
+      4720,
+      815205713
+    }),
+    ({ /* sizeof() == 3 */
+      "lpc-mode.el",
+      35536,
+      814829342
+    }),
+    ({ /* sizeof() == 3 */
+      "lpc-mode.el.README",
+      232,
+      814829488
+    }),
+    ({ /* sizeof() == 3 */
+      "tmp",
+      -2,
+      841373043
+    })
+  })
+}))
+Tue Sep  3 22:28:20 1996: evRead(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Lima Bean"
+}))
+Tue Sep  3 22:28:20 1996: evRcvOOBEnd(6, Lima Bean)(server)
+Tue Sep  3 22:28:20 1996: evSndPkts(6, Lima Bean)
+Tue Sep  3 22:28:20 1996: evWrite(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Tue Sep  3 22:28:20 1996: Socket fd=(6) closed.
+Tue Sep  3 22:33:50 1996: evWrite(6, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  1,
+  196463926
+}))
+Tue Sep  3 22:33:50 1996: evRead(7, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  1,
+  196463926
+}))
+Tue Sep  3 22:33:50 1996: evWrite(7, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  0,
+  0
+}))
+Tue Sep  3 22:33:50 1996: evRead(6, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  0,
+  0
+}))
+Tue Sep  3 22:33:50 1996: evSndPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:33:50 1996: evWrite(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Tue Sep  3 22:33:50 1996: evRead(7, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Tue Sep  3 22:33:50 1996: evRcvOOBEnd(7, Dysfunctional Mud)(server)
+Tue Sep  3 22:33:50 1996: evSndPkts(7, Dysfunctional Mud)
+Tue Sep  3 22:33:50 1996: evWrite(7, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Tue Sep  3 22:33:50 1996: evRead(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Tue Sep  3 22:33:50 1996: evRcvOOBEnd(6, Dysfunctional Mud)(client)
+Tue Sep  3 22:33:52 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:33:54 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:33:56 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:33:58 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:34:00 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:34:02 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:34:04 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:34:06 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:34:08 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:34:10 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:34:12 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:34:14 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:34:16 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:34:18 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:34:20 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:34:20 1996: Socket fd=(6) closed.
+Tue Sep  3 22:34:20 1996: Socket fd=(7) closed.
+Tue Sep  3 22:34:58 1996: evWrite(6, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  1,
+  1434690973
+}))
+Tue Sep  3 22:34:58 1996: evRead(7, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  1,
+  1434690973
+}))
+Tue Sep  3 22:34:58 1996: evWrite(7, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  0,
+  0
+}))
+Tue Sep  3 22:34:58 1996: evRead(6, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  0,
+  0
+}))
+Tue Sep  3 22:34:58 1996: evSndPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:34:58 1996: evWrite(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Tue Sep  3 22:34:58 1996: evRead(7, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Tue Sep  3 22:34:58 1996: evRcvOOBEnd(7, Dysfunctional Mud)(server)
+Tue Sep  3 22:34:58 1996: evSndPkts(7, Dysfunctional Mud)
+Tue Sep  3 22:34:58 1996: evWrite(7, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Tue Sep  3 22:34:58 1996: evRead(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Tue Sep  3 22:34:58 1996: evRcvOOBEnd(6, Dysfunctional Mud)(client)
+Tue Sep  3 22:35:00 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:35:02 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:35:04 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:35:06 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:35:08 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:35:10 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:35:12 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:35:14 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:35:16 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:35:18 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:35:20 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:35:22 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:35:24 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:35:26 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:35:28 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:35:30 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:35:32 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:35:34 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:35:36 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:35:38 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:35:40 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:35:42 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:35:44 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:35:47 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:35:49 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:35:51 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:35:53 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:35:55 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:35:57 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:35:59 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:36:01 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:36:03 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:36:05 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:36:07 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:36:09 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:36:11 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:36:13 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:36:15 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:36:17 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:36:19 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:36:21 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:36:23 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:36:25 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:36:27 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:36:29 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:36:31 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:36:33 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:36:35 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:36:37 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:36:39 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:36:41 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:36:43 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:36:45 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:36:47 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:36:49 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:36:51 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:36:53 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:36:55 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:36:57 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:36:59 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:37:01 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:37:03 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:37:05 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:37:07 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:37:09 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:37:11 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:37:13 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:37:15 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:37:17 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:37:19 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:37:21 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:37:23 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:37:23 1996: evSndPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:37:23 1996: evWrite(6, ({ /* sizeof() == 4 */
+  "file-list-req",
+  "Dysfunctional Mud",
+  "greg",
+  ""
+}))
+Tue Sep  3 22:37:23 1996: evRead(7, ({ /* sizeof() == 4 */
+  "file-list-req",
+  "Dysfunctional Mud",
+  "greg",
+  ""
+}))
+Tue Sep  3 22:37:23 1996: evWrite(7, ({ /* sizeof() == 3 */
+  "file-list-reply",
+  "greg",
+  ({ /* sizeof() == 5 */
+    ({ /* sizeof() == 3 */
+      ".",
+      -2,
+      836893535
+    }),
+    ({ /* sizeof() == 3 */
+      "..",
+      -2,
+      841801819
+    }),
+    ({ /* sizeof() == 3 */
+      ".message",
+      106,
+      835157398
+    }),
+    ({ /* sizeof() == 3 */
+      "incoming",
+      -2,
+      836893535
+    }),
+    ({ /* sizeof() == 3 */
+      "pub",
+      -2,
+      836893535
+    })
+  })
+}))
+Tue Sep  3 22:37:23 1996: evRead(6, ({ /* sizeof() == 3 */
+  "file-list-reply",
+  "greg",
+  ({ /* sizeof() == 5 */
+    ({ /* sizeof() == 3 */
+      ".",
+      -2,
+      836893535
+    }),
+    ({ /* sizeof() == 3 */
+      "..",
+      -2,
+      841801819
+    }),
+    ({ /* sizeof() == 3 */
+      ".message",
+      106,
+      835157398
+    }),
+    ({ /* sizeof() == 3 */
+      "incoming",
+      -2,
+      836893535
+    }),
+    ({ /* sizeof() == 3 */
+      "pub",
+      -2,
+      836893535
+    })
+  })
+}))
+Tue Sep  3 22:37:25 1996: evSndPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:37:25 1996: evWrite(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Tue Sep  3 22:37:25 1996: evRead(7, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Tue Sep  3 22:37:25 1996: evRcvOOBEnd(7, Dysfunctional Mud)(server)
+Tue Sep  3 22:37:25 1996: evSndPkts(7, Dysfunctional Mud)
+Tue Sep  3 22:37:25 1996: evWrite(7, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Tue Sep  3 22:37:25 1996: evRead(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Tue Sep  3 22:37:25 1996: evRcvOOBEnd(6, Dysfunctional Mud)(client)
+Tue Sep  3 22:37:27 1996: evWaitPkts(6, Dysfunctional Mud)
+Tue Sep  3 22:37:27 1996: Socket fd=(6) closed.
+Tue Sep  3 22:37:27 1996: Socket fd=(7) closed.
+Tue Sep  3 22:57:33 1996: OOBBegin: connecting: mud=Lima Bean
+Tue Sep  3 22:57:35 1996: evWrite(5, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  1,
+  1426602707
+}))
+Tue Sep  3 22:57:35 1996: evRead(5, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Lima Bean",
+  0,
+  0
+}))
+Tue Sep  3 22:57:35 1996: evSndPkts(5, Lima Bean)
+Tue Sep  3 22:57:35 1996: evWrite(5, ({ /* sizeof() == 9 */
+  "mail",
+  0,
+  "Tim",
+  ([ /* sizeof() == 1 */
+    "Lima Bean" : ({ /* sizeof() == 1 */
+        "deathblade"
+      }),
+  ]),
+  ([ /* sizeof() == 1 */
+    "Lima Bean" : ({ /* sizeof() == 1 */
+        "tim"
+      }),
+  ]),
+  ({ }),
+  841809453,
+  "I3 OOB error packets",
+  "I'm getting error packets via OOB from Lima Bean with the following
+structure:
+({ "error",
+    5,
+    "Lima Bean",
+    0,
+    "Dysfunctional Mud",
+    0,
+    ({ "bad-proto",
+       "bad directory specified",
+       ({ packet here that I sent })
+    })
+})   (This was using the 'file' service)
+ 
+Now, do OOB error packets follow the same format as in band ones, or is
+this the preferred format.  My guess is this is unintentional, but
+wanted to check w/you first.  (You guys are about the only test site
+for my implementation since nobody else has really done this as far as I
+know)
+ 
+Thanks,
+Tim@Dysfunctional Mud
+"
+}))
+Tue Sep  3 22:57:35 1996: evRead(5, ({ /* sizeof() == 2 */
+  "mail-ack",
+  ([ /* sizeof() == 1 */
+    0 : ({ }),
+  ])
+}))
+Tue Sep  3 22:57:37 1996: evSndPkts(5, Lima Bean)
+Tue Sep  3 22:57:37 1996: evWrite(5, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Tue Sep  3 22:57:37 1996: evRead(5, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Lima Bean"
+}))
+Tue Sep  3 22:57:37 1996: evRcvOOBEnd(5, Lima Bean)(client)
+Tue Sep  3 22:57:37 1996: Socket fd=(5) closed.
+Wed Sep  4 04:30:14 1996: OOBBegin: connecting: mud=Lima Bean
+Wed Sep  4 04:30:16 1996: evWrite(5, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  1,
+  1143973005
+}))
+Wed Sep  4 04:30:16 1996: evRead(5, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Lima Bean",
+  0,
+  0
+}))
+Wed Sep  4 04:30:16 1996: evSndPkts(5, Lima Bean)
+Wed Sep  4 04:30:16 1996: evWrite(5, ({ /* sizeof() == 9 */
+  "mail",
+  0,
+  "Kyricc",
+  ([ /* sizeof() == 1 */
+    "Lima Bean" : ({ /* sizeof() == 1 */
+        "satan"
+      }),
+  ]),
+  ([ ]),
+  ({ }),
+  841829414,
+  "Re: Re: I3 protocol",
+  "Ok, great!  I can wait.  If there is anything I can do to help...let
+me know.  I look forward to hearing back from you.
+ 
+Kyricc@Dysfunctional Mud
+ 
+One quick question for ya though...now that I'm thinking about it.  Is
+the code you are/have written part of the driver itself or an externally
+running gateway?
+ 
+Thanks
+-K
+"
+}))
+Wed Sep  4 04:30:18 1996: evSndPkts(5, Lima Bean)
+Wed Sep  4 04:30:18 1996: evWrite(5, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Wed Sep  4 04:30:18 1996: evRead(5, ({ /* sizeof() == 2 */
+  "mail-ack",
+  ([ /* sizeof() == 1 */
+    0 : ({ }),
+  ])
+}))
+Wed Sep  4 04:30:18 1996: evRead(5, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Lima Bean"
+}))
+Wed Sep  4 04:30:18 1996: evRcvOOBEnd(5, Lima Bean)(client)
+Wed Sep  4 04:30:18 1996: Socket fd=(5) closed.
+Wed Sep  4 11:46:18 1996: evRead(6, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Lima Bean",
+  1,
+  566871843
+}))
+Wed Sep  4 11:46:18 1996: evWrite(6, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  0,
+  0
+}))
+Wed Sep  4 11:46:18 1996: evRead(6, ({ /* sizeof() == 9 */
+  "mail",
+  29,
+  "tim",
+  ([ /* sizeof() == 1 */
+    "Dysfunctional Mud" : ({ /* sizeof() == 1 */
+        "tim"
+      }),
+  ]),
+  ([ ]),
+  ({ }),
+  841854613,
+  "last test...",
+  "this is the last test for you dude!
+laterz,
+Tim"
+}))
+Wed Sep  4 11:46:18 1996: evWrite(6, ({ /* sizeof() == 2 */
+  "mail-ack",
+  ([ /* sizeof() == 1 */
+    29 : ({ }),
+  ])
+}))
+Wed Sep  4 11:46:18 1996: evRead(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Lima Bean"
+}))
+Wed Sep  4 11:46:18 1996: evRcvOOBEnd(6, Lima Bean)(server)
+Wed Sep  4 11:46:18 1996: evSndPkts(6, Lima Bean)
+Wed Sep  4 11:46:18 1996: evWrite(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Wed Sep  4 11:46:18 1996: Socket fd=(6) closed.
+Wed Sep  4 20:29:22 1996: evRead(6, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Lima Bean",
+  1,
+  311276488
+}))
+Wed Sep  4 20:29:22 1996: evWrite(6, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  0,
+  0
+}))
+Wed Sep  4 20:29:22 1996: evRead(6, ({ /* sizeof() == 9 */
+  "mail",
+  30,
+  "satan",
+  ([ /* sizeof() == 1 */
+    "Dysfunctional Mud" : ({ /* sizeof() == 1 */
+        "Kyricc"
+      }),
+  ]),
+  ([ ]),
+  ({ }),
+  841885992,
+  "Re: Re: Re: I3 protocol",
+  "On Wed Sep  4 02:30:14 1996 Kyricc@Dysfunctional Mud wrote:
+> Ok, great!  I can wait.  If there is anything I can do to help...let
+> me know.  I look forward to hearing back from you.
+>  
+> Kyricc@Dysfunctional Mud
+>  
+> One quick question for ya though...now that I'm thinking about it.  Is
+> the code you are/have written part of the driver itself or an externally
+> running gateway?
+>  
+> Thanks
+> -K
+   Its a patch for the driver itself. In the future I will be writting a
+router that will handle things in C rather than having to first convert
+the MudMode packets.  I've tested the code I have on my own personal
+i3 router, and it works great. I also understand how the CircleMUD driver
+works and I've tried the code in many different places and many different
+way to make sure the way Im doing things are the safest and most efficient.
+"
+}))
+Wed Sep  4 20:29:22 1996: evWrite(6, ({ /* sizeof() == 2 */
+  "mail-ack",
+  ([ /* sizeof() == 1 */
+    30 : ({ }),
+  ])
+}))
+Wed Sep  4 20:29:24 1996: evRead(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Lima Bean"
+}))
+Wed Sep  4 20:29:24 1996: evRcvOOBEnd(6, Lima Bean)(server)
+Wed Sep  4 20:29:24 1996: evSndPkts(6, Lima Bean)
+Wed Sep  4 20:29:24 1996: evWrite(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Wed Sep  4 20:29:24 1996: Socket fd=(6) closed.
+Wed Sep  4 20:31:01 1996: evRead(6, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Lima Bean",
+  1,
+  347490825
+}))
+Wed Sep  4 20:31:01 1996: evWrite(6, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  0,
+  0
+}))
+Wed Sep  4 20:31:01 1996: evRead(6, ({ /* sizeof() == 9 */
+  "mail",
+  31,
+  "satan",
+  ([ /* sizeof() == 1 */
+    "Dysfunctional Mud" : ({ /* sizeof() == 1 */
+        "Kyricc"
+      }),
+  ]),
+  ([ ]),
+  ({ }),
+  841886092,
+  "I3 for CircleMUD",
+  "    Acutally, if you want to help, you can put in the code that I have
+for the channels and mudlist. That will atleast put you on the Intermud
+for now, and you can also give me feedback.
+"
+}))
+Wed Sep  4 20:31:01 1996: evWrite(6, ({ /* sizeof() == 2 */
+  "mail-ack",
+  ([ /* sizeof() == 1 */
+    31 : ({ }),
+  ])
+}))
+Wed Sep  4 20:31:01 1996: evRead(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Lima Bean"
+}))
+Wed Sep  4 20:31:01 1996: evRcvOOBEnd(6, Lima Bean)(server)
+Wed Sep  4 20:31:01 1996: evSndPkts(6, Lima Bean)
+Wed Sep  4 20:31:01 1996: evWrite(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Wed Sep  4 20:31:01 1996: Socket fd=(6) closed.
+Wed Sep  4 23:06:01 1996: OOBBegin: connecting: mud=Lima Bean
+Wed Sep  4 23:06:03 1996: evWrite(5, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  1,
+  1968390802
+}))
+Wed Sep  4 23:06:03 1996: evRead(5, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Lima Bean",
+  0,
+  0
+}))
+Wed Sep  4 23:06:03 1996: evSndPkts(5, Lima Bean)
+Wed Sep  4 23:06:03 1996: evWrite(5, ({ /* sizeof() == 9 */
+  "mail",
+  0,
+  "Kyricc",
+  ([ /* sizeof() == 1 */
+    "Lima Bean" : ({ /* sizeof() == 1 */
+        "satan"
+      }),
+  ]),
+  ([ ]),
+  ({ }),
+  841896361,
+  "I3",
+  "Sure if will help out I can put it on my mud.  Send any needed code
+to kyricc@inetnebr.com and if you have any instructions for the pactch.
+I will be the first to admit that I am not a C genius.  However, I do
+alright and can figure it out usually.  
+ 
+-Kyricc
+"
+}))
+Wed Sep  4 23:06:03 1996: evRead(5, ({ /* sizeof() == 2 */
+  "mail-ack",
+  ([ /* sizeof() == 1 */
+    0 : ({ }),
+  ])
+}))
+Wed Sep  4 23:06:05 1996: evSndPkts(5, Lima Bean)
+Wed Sep  4 23:06:05 1996: evWrite(5, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Wed Sep  4 23:06:05 1996: evRead(5, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Lima Bean"
+}))
+Wed Sep  4 23:06:05 1996: evRcvOOBEnd(5, Lima Bean)(client)
+Wed Sep  4 23:06:05 1996: Socket fd=(5) closed.
+Mon Sep  9 06:22:07 1996: evRead(6, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Lima Bean",
+  1,
+  254671706
+}))
+Mon Sep  9 06:22:07 1996: evWrite(6, ({ /* sizeof() == 4 */
+  "oob-begin",
+  "Dysfunctional Mud",
+  0,
+  0
+}))
+Mon Sep  9 06:22:09 1996: evRead(6, ({ /* sizeof() == 9 */
+  "mail",
+  33,
+  "deathblade",
+  ([ /* sizeof() == 1 */
+    "Dysfunctional Mud" : ({ /* sizeof() == 1 */
+        "Tim"
+      }),
+  ]),
+  ([ ]),
+  ({ }),
+  842267122,
+  "Re: I3 OOB error packets",
+  "On Tue Sep  3 20:57:33 1996 Tim@Dysfunctional Mud wrote:
+> I'm getting error packets via OOB from Lima Bean with the following
+> structure:
+>...
+> Now, do OOB error packets follow the same format as in band ones, or is
+> this the preferred format.  My guess is this is unintentional, but
+> wanted to check w/you first.  (You guys are about the only test site
+> for my implementation since nobody else has really done this as far as I
+> know)
+>  
+> Thanks,
+> Tim@Dysfunctional Mud
+hrm. yes. that looks wrong. looks like an array wasn't added on
+properly, huh?
+
+(yes, the OOB error packets may as well be the same as in-band, no
+reason to alter them; not to mention packet-type specifies the
+format, and since the packet type is "error" it should be the same)
+
+I'll see about getting it fixed soon.
+
+thx
+-Deathblade
+
+p.s. I believe FotD implemented file transfers. just look at all
+  the muds' services to see who has file transfers."
+}))
+Mon Sep  9 06:22:09 1996: evWrite(6, ({ /* sizeof() == 2 */
+  "mail-ack",
+  ([ /* sizeof() == 1 */
+    33 : ({ }),
+  ])
+}))
+Mon Sep  9 06:22:09 1996: evRead(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Lima Bean"
+}))
+Mon Sep  9 06:22:09 1996: evRcvOOBEnd(6, Lima Bean)(server)
+Mon Sep  9 06:22:09 1996: evSndPkts(6, Lima Bean)
+Mon Sep  9 06:22:09 1996: evWrite(6, ({ /* sizeof() == 2 */
+  "oob-end",
+  "Dysfunctional Mud"
+}))
+Mon Sep  9 06:22:09 1996: Socket fd=(6) closed.

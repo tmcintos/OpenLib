@@ -108,3 +108,25 @@ query_bulk_capacity()
 {
   return bulk_capacity;
 }
+
+//
+// override of ::long()
+//
+string
+long()
+{
+  object* obs = all_inventory(this_object());
+  string ret;
+
+  if( living(this_object()) )
+    ret = sprintf("  %s is carrying ",  capitalize(pronoun(this_object(), 0)));
+  else
+    ret = "  It contains ";
+  
+  if( sizeof(obs) )
+    ret += list_obs(obs) + ".\n";
+  else
+    ret += "nothing.\n";
+
+  return ret;
+}

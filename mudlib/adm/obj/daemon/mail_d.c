@@ -53,19 +53,35 @@ check_mail(string username, int check_new)
 void
 cmd_mail_loop(object mbox)
 {
+  int start, count = mbox->get_mesg_count();
   open_boxes += ([ this_player()->query_name() : mbox ]);
 
   printf("MUD Mail v%s  Created by Tim@UltraLib.\n\n", VERSION);
-  printf("%d messages in mailbox.\n", mbox->get_mesg_count());
-  write("Type ? for help\n");
-  write(":");
-  input_to( (:cmd_mail_loop2:), 0, mbox, 1 );
+  printf("%i unread messages of %i in mailbox.\n",
+	 mbox->get_new_mesg_count(), count);
+  write("Type ? for help\n\n");
+
+  // Get to 1st unread message
+  for(start = 1; start < count; start++)
+    if( mbox->is_unread(start) ) break;
+  reenter_mail_loop(mbox, start, count);
 }
 
+// Use this as a callback for more()
 void
-cmd_mail_loop2(string input, object mbox, int curr)
+reenter_mail_loop(object mbox, int curr, int count)
 {
-  int count = mbox->get_mesg_count();
+  if( count )
+    printf("%i of %i >> ", curr, count);
+  else
+    write("No messages>> ");
+
+  input_to( (:cmd_mail_loop2:), 0, mbox, curr, count );
+}  
+
+void
+cmd_mail_loop2(string input, object mbox, int curr, int count)
+{
   string* args = explode(input, " ");
   string cmd;
   int i;
@@ -77,12 +93,8 @@ cmd_mail_loop2(string input, object mbox, int curr)
     args -= ({ cmd });
   }
 
-  if(!count && cmd != "q" && cmd != "Q" && cmd != "?") {
-    write("No messages.\n");
-    write(":");
-    input_to( (:cmd_mail_loop2:), 0, mbox, curr );
-    return;
-  }
+  if( !count && cmd != "q" && cmd != "Q" && cmd != "?" )
+    return reenter_mail_loop(mbox, curr, count);
       
   // This condition could exist if count==curr==3 and we deleted 3
   if(curr > count)
@@ -91,14 +103,21 @@ cmd_mail_loop2(string input, object mbox, int curr)
   switch(cmd) {
   // show help
   case "?":
-    print_help();
+    return print_help(mbox, curr, count);
+    
+  // save mailbox (commit changes)
+  case "s":
+    mbox->save_mailbox();
+    printf("Changes saved: %i messages deleted.\n",
+	   count - (count = mbox->get_mesg_count()));
+    curr = 1;
     break;
-
+    
   // save & quit
   case "q":
     mbox->save_mailbox();
-    write("Saving and ");
-
+    printf("Changes saved: %i messages deleted.\n",
+	   count -  mbox->get_mesg_count());
   // quit without saving
   case "Q":
     map_delete(open_boxes, this_player()->query_name());
@@ -108,19 +127,20 @@ cmd_mail_loop2(string input, object mbox, int curr)
 
   // print headers
   case "h":
-    print_headers(mbox, count, curr);
-    break;
+    return print_headers(mbox, curr, count);
 
-  // current message
+  // next unread message
   case "":
-    print_message(mbox, curr);
-    break;
+    for(;curr < count; curr++)
+      if( mbox->is_unread(curr) )
+	break;
+    return print_message(mbox, curr, count);
 
   // next message
   case "n":
     if(curr < count) {
       curr++;
-      print_message(mbox, curr);
+      return print_message(mbox, curr, count);
     } else {
       write("No next message.\n");
     }
@@ -130,7 +150,7 @@ cmd_mail_loop2(string input, object mbox, int curr)
   case "p":
     if(curr > 1) {
       curr--;
-      print_message(mbox, curr);
+      return print_message(mbox, curr, count);
     } else {
       write("No previous message.\n");
     }
@@ -151,17 +171,15 @@ cmd_mail_loop2(string input, object mbox, int curr)
     printf("Replying to %s...\n", mbox->get_from(curr));
     cmd_send_mesg2("Re: " + mbox->get_subj(curr),
 		   lower_case(mbox->get_from(curr)),
-		   (: cmd_mail_loop2, "donothing", mbox, curr :));
+		   (: reenter_mail_loop, mbox, curr, count :));
     return;
 
-  case "donothing":
-    break;
   // show message by number
   default:
     if(sscanf(cmd, "%d", i) == 1) {
       if(i > 0 && i <= count) {
 	curr = i;
-	print_message(mbox, curr);
+	return print_message(mbox, curr, count);
       } else {
 	write("Invalid message number.\n");
       }
@@ -169,41 +187,51 @@ cmd_mail_loop2(string input, object mbox, int curr)
       write("Unknown command.\n");
     }
   }
-
-  write(":");
-  input_to((: cmd_mail_loop2 :), 0, mbox, curr );
+  reenter_mail_loop(mbox, curr, count);
 }
 
 void
-print_message(object mbox, int num)
+print_message(object mbox, int curr, int count)
 {
-  write((string) mbox->get_mesg(num));
-  mbox->mark_read(num);                           // mark message as read
+  mbox->mark_read(curr);                      // mark message as read
+
+  this_player()->more(explode(mbox->get_mesg(curr), "\n"),
+		      (: reenter_mail_loop, mbox, curr, count :) );
 }
 
 void
-print_help()
+print_help(object mbox, int curr, int count)
 {
-  write("Help for Mail System:\n\n"
-	"?                Show this help message.\n"
-	"d [message #]    Delete current message if no argument.\n"
-	"h                Print message headers.\n"
-	"n                Show next message.\n"
-	"p                Show previous message.\n"
-	"q                Quit and save state of mailbox.\n"
-	"Q                Quit without saving changes to mailbox.\n"
-	"r                Reply to current message.\n"
-	"w [filename]     Append current message to file. (default: ~/mbox)\n"
-	"                 Appends to ~/mbox if no filename given.\n"
-	);
+  string text =
+@ENDTEXT
+Help for Mail System:
+
+?                Show this help message.
+d [message #]    Delete current message if no argument.
+h                Print message headers.
+n                Show next message.
+p                Show previous message.
+<enter>          Show next _unread_ message.
+<msg number>     Show message number given.
+s                Save mailbox. (Commit changes)
+q                Quit and save state of mailbox.
+Q                Quit without saving changes to mailbox.
+r                Reply to current message.
+w [filename]     Append current message to file. (default: ~/mbox)
+                 Appends to ~/mbox if no filename given.
+ENDTEXT;
+
+  this_player()->more(explode(text, "\n"),
+		      (: reenter_mail_loop, mbox, curr, count :));
 }
 
 void
-print_headers(object mbox, int count, int curr)
+print_headers(object mbox, int curr, int count)
 {
-  printf(" %-3s     %-20s     %7s\n", "Num", "From", "Subject");
-  printf("%-78'-'s\n", " ");
+  string* text = allocate(count + 1);
 
+  text[0] = "Headers:";
+  
   for(int i = 1; i <= count; i++) {
     string from = mbox->get_from(i);
     int idx;
@@ -212,13 +240,14 @@ print_headers(object mbox, int count, int curr)
     idx = strsrch(from, "@"+ mud_name());
     if( idx != -1 ) from = from[0..idx - 1];
       
-    write((i==curr ? ">" : " "));
-    printf("%-3d    %:1.1s%:-20s     %:-45s\n",
-	   i,
-	   (mbox->is_unread(i) ? "*" : " "),
-	   from,
-	   mbox->get_subj(i));
+    text[i] = sprintf("%c%c %-3i  %:-20s %:-48s",
+		      (i == curr ? '>' : ' '),
+		      (mbox->is_del(i) ? 'D' :
+		                         (mbox->is_unread(i) ? 'N' : 'R')),
+		      i, from, mbox->get_subj(i));
   }
+
+  this_player()->more(text, (: reenter_mail_loop, mbox, curr, count :));
 }
 
 void
@@ -228,8 +257,8 @@ delete_message(object mbox, int count, int curr, string* args)
 
   if(!sizeof(args)) {
     // case no args given--delete current message
-    mbox->del_mesg(curr);
-    write("Deleted message.\n");
+    mbox->mark_del(curr);
+    write("Message marked for deletion.\n");
   } else {
     // case there's an argument
     if(!sscanf(args[0], "%d", i)) {
@@ -238,8 +267,8 @@ delete_message(object mbox, int count, int curr, string* args)
     }
 
     if(i > 0 && i <= count) {
-      mbox->del_mesg(i);
-      printf("Deleted message %d\n", i);
+      mbox->mark_del(i);
+      printf("Marked message %d for deletion.\n", i);
     } else {
       write("Invalid message number.\n");
     }
@@ -279,14 +308,15 @@ cmd_send_mesg(string tolist, function call_func)
 void
 cmd_send_mesg2(string input, string tolist, function cf)
 {
-  EDITOR->edit((: cmd_send_mesg3, input, tolist, cf :));
+  EDITOR_D->edit((: cmd_send_mesg3, input, tolist, cf :));
 }
 
 void
 cmd_send_mesg3(string subject, string tolist, function cf, string* lines)
 {
-  if(!lines) {
+  if( !lines ) {
     write("Mail aborted.\n");
+    if( cf ) evaluate(cf);
   } else {
     write("CC:");
     input_to((: cmd_send_mesg4 :), 0, tolist, subject,
@@ -302,27 +332,25 @@ cmd_send_mesg4(string cclist, string tolist, string subject,
   string* tmp_tolist;
   string* tmp_cclist;
   string* userlist;
-  string from = this_player(1)->query_cap_name();
+  string from = this_interactive()->query_cap_name();
 
-  tmp_tolist = explode(tolist, ",");
-  tmp_cclist = explode(cclist, ",");
-  /*
-   * filter remote users from tolist and cclist and create mappings
-   */
-  to_list = filter_remote_users(tmp_tolist);
-  cc_list = filter_remote_users(tmp_cclist);
+  to_list = filter_remote_users(explode(tolist, ","));
+  cc_list = filter_remote_users(explode(cclist, ","));
 
-  from = sprintf("%s@%s", from, mud_name());
+  //  from = sprintf("%s@%s", from, mud_name());
+
   foreach(string mud in distinct_array(keys(cc_list) + keys(to_list))) {
-    userlist = (to_list[mud] ? to_list[mud] : ({})) +
-               (cc_list[mud] ? cc_list[mud] : ({}));
+    string* bcclist = ({});
+    
     if( mud == mud_name() )
-      send_mail(to_list, cc_list, userlist, from, time(), subject, contents);
-    else {
-      SERVICES_D->eventSendMail(from,
+      send_mail(to_list, cc_list, bcclist, from, time(), subject, contents);
+    else
+    {
+      SERVICES_D->eventSendMail(mud,
+				from,
 				to_list,
 				cc_list,
-				userlist,
+				bcclist,
 				time(), subject, contents);
       if( this_player() ) printf("Mail queued to %s\n", mud);
     }
@@ -330,34 +358,38 @@ cmd_send_mesg4(string cclist, string tolist, string subject,
   if( cf ) evaluate(cf);
 }
 
-/* You should pass 'arr' by reference to this (don't use copy()) */
+/* This puts a list of users in the form of ([ mud_name : ({ user list }) ]) */
 
 private mapping
 filter_remote_users(string* arr)
 {
   mapping ret = ([]);
-  
-  for(int i = 0; i < sizeof(arr); i++) {
-    if( strsrch(arr[i], '@') != -1 ) {
-      string user, host;
 
-      sscanf(arr[i], "%s@%s", user, host);
+  foreach(string addr in arr)
+  {
+    string user, host;
+    
+    if( sscanf(addr, "%s@%s", user, host) == 2)
+    {
       user = replace_string(user, " ", "");
       if( (host = INTERMUD_D->GetMudName(host)) ) {
 	if( !ret[host] )
 	  ret[host]  = ({ user });
 	else
 	  ret[host] += ({ user });
-      } else if( this_player() ) printf("%s: no such host.\n", host);
-      arr -= ({ arr[i] });
-    } else {
-      arr[i] = replace_string(arr[i], " ", "");
+      }
+      else if( this_player() )
+	printf("%s: no such host.\n", host);
+    }
+    else
+    {
       if( !ret[mud_name()] )
-	ret[mud_name()] = ({ arr[i] });
+	ret[mud_name()] = ({ addr });
       else
-	ret[mud_name()] += ({ arr[i] });
+	ret[mud_name()] += ({ addr });
     }
   }
+  
   return ret;
 }
 
@@ -367,6 +399,8 @@ send_mail(mapping to_list, mapping cc_list, string* bcc_list, string from,
 {
   string localmesg;
   object tmpmbox = new(MAILBOX);
+  string* userlist;
+
   function collapse = function(mapping x)
                       {
 			string ret = "";
@@ -376,18 +410,28 @@ send_mail(mapping to_list, mapping cc_list, string* bcc_list, string from,
 			return ret;
 		      };
 
+  if( !content || !to_list || !cc_list || !bcc_list || !from || !subject )
+    return;
+  
+  if( content[<1] != '\n' )
+    content += "\n";
+  
   localmesg = sprintf("To: %s\n"
 		      "From: %s\n"
 		      "Date: %s\n"
 		      "Subject: %s\n"
 		      "CC: %s\n"
-		      "-------\n%s",
+		      "-------\n"
+		      "%s",
 		      evaluate(collapse, to_list),
 		      from, ctime(time), subject,
 		      evaluate(collapse, cc_list),
 		      content);
 
-  foreach(string user in bcc_list) {
+  userlist = bcc_list + (cc_list[mud_name()] ? cc_list[mud_name()] : ({}))
+    + (to_list[mud_name()] ? to_list[mud_name()] : ({}));
+  
+  foreach(string user in userlist) {
     object ob = find_player(user);
     user = lower_case(user);
     /*

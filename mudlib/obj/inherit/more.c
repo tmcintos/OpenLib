@@ -3,10 +3,16 @@
 //
 // Created by Tim 31 Jul 1996
 //
+// 09.03.96  Tim@Dysfunctional Mud
+//         o Changed check for MORE_EXIT_END env to MORE_NO_EXIT_END.  Default
+//           behavior is now the opposite of before.
+//
 
 //
 // Global Variables
 //
+private string morestring; // displayed at end of each page
+
 private function callback; // function called when done paging
 private function redraw;   // function called to redraw screen
 
@@ -22,7 +28,7 @@ private int in_help;       // 1 if we are at the help screen
 // Notification messages
 //
 #define NOTIFY_END  "%^INVERSE%^(END)%^RESET%^ [hit 'q' to continue]"
-#define NOTIFY_MORE "%^INVERSE%^--MORE--%^RESET%^"
+#define NOTIFY_MORE "%%^INVERSE%%^--MORE--%%^RESET%%^"
 #define NOTIFY_INST " [<spacebar> for more, 'h' for help]"
 #define NOTIFY_CONT "%^INVERSE%^Hit any key to Continue%^RESET%^"
 
@@ -154,7 +160,7 @@ more_loop(string input)
   //
   if( (blanks = evaluate(redraw)) >= 0 )
   {
-    if( get_env("MORE_EXIT_END") )
+    if( !get_env("MORE_NO_EXIT_END") )
     {
       evaluate(callback);
       return;
@@ -169,8 +175,7 @@ more_loop(string input)
   }
   else
   {
-    display(sprintf("%s (%d%%) %s", NOTIFY_MORE,
-		    (start-1) * 100 / length, NOTIFY_INST));
+    display(sprintf(morestring, (start-1) * 100 / length, NOTIFY_INST));
   }
   get_char((: more_loop :), 1);
 }
@@ -198,11 +203,13 @@ more(mixed file_or_array, function callbk)
     file = map(file, (: $1 + "\n" :));   // add newlength
     length = sizeof(file);
     redraw = (: redraw_array :);
+    morestring = NOTIFY_MORE " (%d%%) %s";
   }
   else
   {
     length = file_length(file);
     redraw = (: redraw_file :);
+    morestring = (string) file + ": (%d%%) %s";
   }
 
   more_loop("");

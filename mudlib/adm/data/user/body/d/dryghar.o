@@ -1,15 +1,18 @@
-#obj/clone/user/human.c
-slen 80
-swid 80
-curr_line 1
-lines 35
-file ({"Welcome to Dysfunctional Mud!","-------------------------------------------------------------------------------","                D y s f u n c t i o n a l  M u d  N e w s","			last update: 06/17/96","-------------------------------------------------------------------------------","* Welcome to the new semi-premanent home for DysFunctionalMUD.  If you are","  reading this you prolly already know the site name, but just for your","  information it is:  canaan.de.msstate.edu 4444.","","* Any mail for the mud can be sent to the following addresses:","      rockford@novia.net, astasia@iastate.edu (Tim)","      kyricc@inetnebr.com (Kyricc)","      scott@de.msstate.edu (Quint)","","* I am working on a new FTP server for the mud.  Right now you should be able","  to get and put files in both ASCII and BINARY mode.  Try it out if you get","  a chance and report any bugs to me.  (port: 4443) --Tim","","* Check out my ~tim/TODO list for things that need to be done.  New items are","  usually added to the bottom of the list.","","*** SECURITY *** stuff is partially in.  valid_read/write should be working.","  I'll prepare a doc on how it works.  Quint, Ev and Tim should have global","  write access right now, and everyone else should not.  Mail me at my","  email address if you find bugs.  The files involved are listed in","  /security.files; please don't modify them without letting me know first.","  (I'm working with a local copy at home I'm keeping up to date).","","* I moved some directories around, mostly stuff got moved into /adm.","  There is a new include dir there, simul_efun stuff got moved into","  /adm/obj/daemon where it should be, as did the /obj/daemon/net directory.","  Save files got changed a little too.","","","You have mail.",})
+#/obj/clone/user/human.c
+morestring "%%^INVERSE%%^--MORE--%%^RESET%%^ (%d%%) %s"
 callback 
+redraw 
+s_length 80
+start 80
+prev 1
+length 40
+file ({"Welcome to Dysfunctional Mud!","-------------------------------------------------------------------------------","                D y s f u n c t i o n a l  M u d  N e w s","			last update: 09/03/96","-------------------------------------------------------------------------------","* Any mail for the mud can be sent to the following addresses:","      rockford@novia.net, astasia@iastate.edu (Tim)","      kyricc@inetnebr.com (Kyricc)","","* I am working on a new FTP server for the mud.  Right now you should be able","  to get and put files in both ASCII and BINARY mode.  Try it out if you get","  a chance and report any bugs to me.  (port: 4443) --Tim","","* Check out my ~tim/TODO list for things that need to be done.  New items are","  usually added to the bottom of the list.","","* SECURITY stuff is mostly in place.  I've noticed problem already having to","  do with callbacks from high privilege objects.  Quint, Ev and Tim should","  have priv 1 access and everyone else should not right now.  Use the command","  'lswiz' to get a list of wizards, and 'lsdom' for a list of domains.  Please","  report any bugs in the system to me (Tim).  DOCUMENTATION can be found in","  the file /doc/mudlib/systems/security--This is the original documentation","  on which the system is based.  Better documentation later hopefully. :)","","* CHAT command:  I changed the syntax...you don't need a ':' anymore. -Tim","","* Changed it so default for more() is to exit when done paging.  setenv","  MORE_NO_EXIT_END to change this.  (this is opposite of before) -Tim","","* TERMINAL TYPES: Once again supported properly..although few are supported.","  **hint, hint--project idea**  If your terminal type is unknown, it will","  default to \"default\" which does nothing.  If you set the environment variable","  DEFAULT_TERM to a value this will be used instead. -Tim","","* MAIL has been bumped up to v3.0  A few small things have changed like","  deletions which are now marked as deleted and aren't committed until the","  mailbox is saved.  See the online help in mail for more info.","","","",})
+in_help 0
 no_clean 0
 flags ({})
 coins ({0,0,})
 hit_points 100
 spell_points 0
-env_vars (["nmsh_alias":(["exa":"look at $*","i":"inventory","w":"west","n":"north","s":"south","se":"southeast","l":"look $*","sw":"southwest","bio":"biography","e":"east","d":"down","nw":"northwest","ne":"northeast","u":"up",]),"version":"Prototype Shell","SHELL":"/obj/clone/shells/protosh","nmsh_xverb":([":":"emote $*","'":"say $*",]),"PATH":"/adm/cmd/wiz:/cmd/wiz:/adm/cmd/player:/cmd/player","nmsh_nick":([]),"TERM":"vt100",])
+env_vars (["nmsh_alias":(["i":"inventory","ne":"northeast","me":"dryghar","bio":"biography","w":"west","s":"south","l":"look $*","exa":"look at $*","se":"southeast","d":"down","u":"up","n":"north","sw":"southwest","e":"east","nw":"northwest",]),"SHELL":"/obj/clone/shells/protosh","TERM":"vt100","nmsh_nick":([]),"nmsh_xverb":([":":"emote $*","'":"say $*",]),"version":"Prototype Shell","PATH":"/adm/cmd/wiz:/cmd/wiz:/adm/cmd/player:/cmd/player",])
 aliases ([])
 channels ({})

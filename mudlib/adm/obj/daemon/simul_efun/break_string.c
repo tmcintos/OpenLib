@@ -3,6 +3,7 @@ mixed break_string(string str, int width, mixed indent) {
     int indlen;
     
     if (!stringp(str)) return 0;
+    if (!sizeof(str)) return "";  // Tim 09.05.96
     if (intp(indent)) {
 	if (indent < 0) indent = 0;
 	indlen = indent;

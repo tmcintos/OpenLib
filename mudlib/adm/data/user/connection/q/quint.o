@@ -1,4 +1,4 @@
-#obj/clone/connection.c
+#/obj/clone/connection.c
 name "quint"
 cap_name 0
 password "smSFhBKrCmnWk"
@@ -7,6 +7,6 @@ email_addr "scott@de.msstate.edu"
 body "/obj/clone/user/human"
 login_shell "/obj/clone/shells/protosh"
 gender 0
-login_time 836801194
-logout_time 836801198
-login_from "localhost"
+login_time 841805399
+logout_time 841805447
+login_from "loopback"

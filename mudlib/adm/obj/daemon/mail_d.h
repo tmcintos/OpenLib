@@ -13,27 +13,36 @@
 //
 // 04.10.96  Tim@Dysfunctional Mud
 //         o Bumped version to 1.3 in light of Intermud3 integration (almost)
-//
+// 08.30.96  Tim@Dysfunctional Mud
+//         o Implemented I3 support; bumped version to 2.0 to reflect this.
+// 09.03.96  Tim@Dysfunctional Mud
+//         o Changed print_headers() and deletion strategy to reflect changes
+//           to mailbox object.
+//         o Changed to use more() when displaying things
+//         o Added 'save' command, changed behavior of pressing <enter>
+//         o Bumped version to 3.0 to reflect these changes.
+//          
 
+#include <mudlib.h>
 #include <daemons.h>
 
 // Major version number changes when new features are added; minor version
 // number changes with bug fixes and implementation changes.
-#define VERSION "1.3"
+#define VERSION "3.0"
 
-// Path to your mailbox object
-#define MAILBOX "/obj/clone/mailbox"
+// Path to your mailbox object (UltraLib defines this in mudlib.h)
+// #define MAILBOX "/adm/obj/clone/mailbox"
 
-// This should be a string representing the home directory of this_player()
+// This should be a string representing the home directory of object x
 // with no trailing slash.  i.e. "/u/t/tim"
-#define HOME_DIR(x) x->query_connection()->query_home_dir()
+#define HOME_DIR(x) user_cwd(x->query_name())
 
 // Define this if your mudlib doesn't already define RESOLVE_PATH()
 // It should resolve a path with respect to this_player()'s cwd.
 // #define RESOLVE_PATH(x) some_function(x)
 
-// Define this to be the filename of the editor object to use when entering
-// a message.
+// Define this to be the filename of the editor daemon to use when entering
+// a message.  (UltraLib defines this in daemons.h)
 // It should define a function as follows:
 //
 // varargs void edit(function call_back, string* input_buffer);
@@ -42,7 +51,7 @@
 // been entered, with an array (the lines of entered text) as the last argument
 // and any extra arguments should be included in the function pointer itself.
 // If the edit failed, the buffer will be 0.
-#define EDITOR EDITOR_D
+// #define EDITOR_D "/obj/clone/editor_d"
 
 // Turn on/off debugging info
 #undef DEBUG
@@ -67,9 +76,9 @@ void cmd_send_mesg(string tolist, function call_func);
 /*
  * This function distributes mail locally
  *
- * 'bcclist' is an array of usernames to send the message to.
+ * 'bcclist' is an array of usernames to send the message to blindly.
  *
- * 'tolist'  These two are for documentation only, they should be mappings
+ * 'tolist'  They should be mappings
  * 'cclist'  of the following format:
  *           ([ Mudname : ({ user-1, ... }), ... ])
  * 'time'    send time; an integer as returned by time()
@@ -83,12 +92,13 @@ void send_mail(mapping to_list, mapping cc_list, string* bcc_list, string from,
  * Private Functions
  */
 
-void print_message(object mbox, int num);
-void print_headers(object mbox, int count, int curr);
-void print_help();
+void print_message(object mbox, int curr, int count);
+void print_headers(object mbox, int curr, int count);
+void print_help(object mbox, int curr, int count);
 void delete_message(object mbox, int count, int curr, string* args);
 void save_message(object mbox, int curr, string* args);
-void cmd_mail_loop2(string input, object mbox, int curr);
+void reenter_mail_loop(object mbox, int curr, int count);
+void cmd_mail_loop2(string input, object mbox, int curr, int count);
 void cmd_send_mesg2(string input, string tolist, function cf);
 void cmd_send_mesg3(string* lines, string subject, string tolist, function cf);
 void cmd_send_mesg4(string cclist, string tolist, string subject,

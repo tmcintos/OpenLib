@@ -1,8 +1,67 @@
-www/gateways/mudlist.c line 60: parse error
-www/gateways/mudlist.c line 68: Illegal LHS
-www/gateways/mudlist.c line 68: Illegal LHS
-www/gateways/mudlist.c line 68: parse error
-www/gateways/mudlist.c line 72: Illegal LHS
-www/gateways/mudlist.c line 72: parse error
-adm/obj/daemon/net/ftp_d.c line 191: Undefined function requestNLST
-adm/obj/daemon/net/ftp_d.c line 749: Redeclaration of function requestNLST.
+obj/daemon/race_d.c line 29: Undefined variable 'arr1'
+obj/daemon/race_d.c line 29: Undefined variable 'arr2'
+obj/daemon/race_d.c line 111: Undefined variable 'WEAPON_FISTS'
+obj/daemon/race_d.c line 114: Illegal to use local variable in functional.
+obj/daemon/race_d.c line 116: Illegal to use local variable in functional.
+obj/inherit/modules/m_race.c line 33: Undefined variable 'raceinf'
+obj/inherit/modules/m_race.c line 42: Invalid argument types to '+' ( unknown
+vs int )
+obj/inherit/modules/m_race.c line 44: Invalid argument types to '+' ( unknown
+vs int )
+obj/inherit/living.c line 22: parse error
+obj/inherit/living.c line 22: parse error
+obj/inherit/living.c line 22: parse error
+obj/inherit/living.c line 29: No such inherited function m_combat::initialize
+obj/inherit/living.c line 36: No such inherited function m_combat::low_setup
+adm/tmp/tmp_eval_file.c line 8: Undefined function query_weapon_info
+adm/tmp/tmp_eval_file.c line 8: Undefined function query_base_ac
+obj/examples/monster.c line 13: Undefined function init_raceinfo
+obj/inherit/container.c line 35: Warning: receive_object() inherited from both
+/obj/inherit/modules/m_container.c and /obj/inherit/modules/m_move.c (via
+/obj/inherit/object.c); using the definition in
+/obj/inherit/modules/m_container.c.
+obj/inherit/container.c line 35: Warning: query_bulk() inherited from both
+/obj/inherit/modules/m_container.c and /obj/inherit/modules/m_dimensions.c (via
+/obj/inherit/object.c); using the definition in
+/obj/inherit/modules/m_container.c.
+obj/inherit/container.c line 35: Warning: query_weight() inherited from both
+/obj/inherit/modules/m_container.c and /obj/inherit/modules/m_dimensions.c (via
+/obj/inherit/object.c); using the definition in
+/obj/inherit/modules/m_container.c.
+adm/tmp/tmp_eval_file.c line 8: Undefined function lindeads
+adm/tmp/tmp_eval_file.c line 8: Left argument of -> is not a class
+obj/inherit/modules/m_container.c line 128: parse error
+obj/inherit/modules/m_container.c line 129: Illegal LHS
+obj/inherit/modules/m_living.c line 134: Undefined function prounoun
+obj/inherit/modules/m_living.c line 134: Bad argument 1 to efun capitalize()
+obj/inherit/modules/m_race.c line 108: Too many arguments to capitalize
+obj/inherit/modules/m_container.c line 128: parse error
+obj/inherit/modules/m_container.c line 129: Illegal LHS
+obj/inherit/container.c line 27: Warning: receive_object() inherited from both
+/obj/inherit/modules/m_container.c and /obj/inherit/modules/m_move.c (via
+/obj/inherit/object.c); using the definition in
+/obj/inherit/modules/m_container.c.
+obj/inherit/container.c line 27: Warning: query_bulk() inherited from both
+/obj/inherit/modules/m_container.c and /obj/inherit/modules/m_dimensions.c (via
+/obj/inherit/object.c); using the definition in
+/obj/inherit/modules/m_container.c.
+obj/inherit/container.c line 27: Warning: query_weight() inherited from both
+/obj/inherit/modules/m_container.c and /obj/inherit/modules/m_dimensions.c (via
+/obj/inherit/object.c); using the definition in
+/obj/inherit/modules/m_container.c.
+obj/inherit/container.c line 27: Warning: receive_object() inherited from both
+/obj/inherit/modules/m_container.c and /obj/inherit/modules/m_move.c (via
+/obj/inherit/object.c); using the definition in
+/obj/inherit/modules/m_container.c.
+obj/inherit/container.c line 27: Warning: query_bulk() inherited from both
+/obj/inherit/modules/m_container.c and /obj/inherit/modules/m_dimensions.c (via
+/obj/inherit/object.c); using the definition in
+/obj/inherit/modules/m_container.c.
+obj/inherit/container.c line 27: Warning: query_weight() inherited from both
+/obj/inherit/modules/m_container.c and /obj/inherit/modules/m_dimensions.c (via
+/obj/inherit/object.c); using the definition in
+/obj/inherit/modules/m_container.c.
+obj/clone/user.c line 537: Undefined variable 'conn'
+obj/clone/user.c line 539: "
+obj/clone/user.c line 539: "
+obj/clone/user.c line 540: "

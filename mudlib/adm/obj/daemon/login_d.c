@@ -20,6 +20,7 @@
 //    03/01/96                 Cleaned up some more
 //    04/16/96                 Support for setting window size automatically
 //    08/24/96                 Added mudlock feature to prevent new users.
+//    09/03/96                 Changed the way TERM is set.
 
 #include <mudlib.h>
 #include <daemons.h>    // for groupd
@@ -141,6 +142,12 @@ logon2(string username)
 
   username = lower_case(username);
 
+  if( !sizeof(username) )
+  {
+    display("Invalid username.\n");
+    return get_uname();
+  }
+  
   if(username == "quit") {
     dump_connection(conn);
     return;
@@ -350,6 +357,11 @@ player_enter_world(int new_char)
            "!!! Please notify an Admin.\n";
     body = new( DEFAULT_BODY );               // guaranteed to load *grin*
   }
+
+  // exp!!!
+  // setup races
+  body->init_race("/obj/daemon/race_d"->query_raceinfo("human"));
+  body->init_combat();
   
   // Get user's shell
   if( !conn->query_login_shell() )
@@ -387,9 +399,17 @@ player_enter_world(int new_char)
     mixed* tinfo = conn->query_term_info();
 
     if(member_array(tinfo[0], TERMCAP_D->query_supported_termtypes()) == -1)
-      buf += "login_d: "+ tinfo[0] +" is not a supported terminal type\n";
-    else
-      body->set_env("TERM", tinfo[0]);
+    {
+      string ttype = tinfo[0];
+      
+      if( !tinfo[0] = body->get_env("DEFAULT_TERM") )  // user set default
+	tinfo[0] = DEFAULT_TERM;                       // system default
+
+      buf += sprintf("login_d: '%s' is not a supported terminal type.\n"
+		     "         Using '%s' as default terminal type.\n",
+		     ttype, tinfo[0]);
+    }      
+    body->set_env("TERM", tinfo[0]);
 
     if( tinfo[1] ) body->set_env("WIDTH", tinfo[1]);
     if( tinfo[2] ) body->set_env("LENGTH", tinfo[2]);

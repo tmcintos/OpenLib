@@ -12,9 +12,9 @@ inherit DAEMON;
 //
 private string gen_header = @ENDHTML
 <HTML>
-<HEAD><TITLE> Finger Report </TITLE></HEAD>
+<HEAD><TITLE>Dysfunctional Mud Finger Lookup</TITLE></HEAD>
 <BODY bgcolor=##9370DB link=#00FFFF>
-<H1> Users Currently on Dysfunctional Mud: </H1>
+<H1>Users Currently on Dysfunctional Mud</H1>
 <HR>
 <UL>
 ENDHTML;
@@ -23,9 +23,9 @@ ENDHTML;
 //
 private string spec_header = @ENDHTML
 <HTML>
-<HEAD><TITLE> Finger Report </TITLE></HEAD>
+<HEAD><TITLE>User Information</TITLE></HEAD>
 <BODY bgcolor=##9370DB link=#00FFFF>
-<H1>Information for %s: </H1>
+<H1>Information for %s</H1>
 <HR>
 ENDHTML;
 //
@@ -33,14 +33,27 @@ ENDHTML;
 //
 private string footer = @ENDHTML
 <HR>
+<H1>Enter a Username Below for Detailed Information</H1>
+<FORM ACTION="/gateways/finger">
+  <P><INPUT TYPE=TEXT NAME=username MAXLENGTH=12>
+  <P><INPUT TYPE=RESET VALUE=Reset> <INPUT TYPE=SUBMIT VALUE=Submit>
+</FORM>
+<HR>
 <A HREF="/index.html">Back to Main Page</A>
 <ADDRESS>
 <I>Dysfunctional Mud</I> /
-<A HREF="mailto:mud@knapp38.res.iastate.edu">mud@knapp38.res.iastate.edu</A>
+<A HREF="mailto:%s">%s</A>
 </ADDRESS>
 </BODY>
 </HTML>
 ENDHTML;
+
+void
+create()
+{
+  footer = sprintf(footer, ADMIN_EMAIL, ADMIN_EMAIL);
+}
+
 //
 // PRE: 'args' can be specified as 0 for a general finger, a username, or
 //      "username=" + a username

@@ -3,6 +3,9 @@
 
 #include <dirs.h>
 
+// Default terminal type to use when we user's type is unsupported
+#define DEFAULT_TERM "default"
+
 #define PROMPT_LOGIN "login: "
 #define PROMPT_PASSWORD "Password: "
 

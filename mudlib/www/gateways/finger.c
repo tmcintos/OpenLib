@@ -36,17 +36,24 @@ private string footer = @ENDHTML
 <H1>Enter a Username Below for Detailed Information</H1>
 <FORM ACTION="/gateways/finger">
   <P><INPUT TYPE=TEXT NAME=username MAXLENGTH=12>
-  <P><INPUT TYPE=RESET VALUE=Reset> <INPUT TYPE=SUBMIT VALUE=Submit>
+  <P><INPUT TYPE=SUBMIT VALUE=Submit> <INPUT TYPE=RESET VALUE=Reset>
 </FORM>
 <HR>
 <A HREF="/index.html">Back to Main Page</A>
 <ADDRESS>
 <I>Dysfunctional Mud</I> /
-<A HREF="mailto:mud@knapp38.res.iastate.edu">mud@knapp38.res.iastate.edu</A>
+<A HREF="mailto:%s">%s</A>
 </ADDRESS>
 </BODY>
 </HTML>
 ENDHTML;
+
+void
+create()
+{
+  footer = sprintf(footer, ADMIN_EMAIL, ADMIN_EMAIL);
+}
+
 //
 // PRE: 'args' can be specified as 0 for a general finger, a username, or
 //      "username=" + a username

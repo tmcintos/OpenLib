@@ -1,5 +1,5 @@
 #/adm/obj/daemon/security_d.c
-write_protections (["/doc":"\"@mudlib\"","/u":"0","/adm/data":"0","/d":"\"@mudlib\"","/data":"\"@mudlib\"","/cmd":"\"@mudlib\"","/ftp/incoming":"0","/adm":"1","/":"1","/tmp":"0","/u/t/tim":"\"tim:\"","/u/g/greg":"\"greg:\"","/log":"\"@mudlib\"","/obj":"1","/include":"\"@mudlib\"","/ftp":"\"@mudlib\"",])
+write_protections (["/u/s/satch":"\"satch:\"","/adm/data":"0","/ftp/incoming":"0","/data":"\"@mudlib\"","/u/k/kyricc":"\"kyricc:\"","/u/t/tim":"\"tim:\"","/cmd":"\"@mudlib\"","/":"1","/u/e/evergreen":"\"evergreen:\"","/u/d/dryghar":"\"dryghar:\"","/tmp":"0","/u":"1","/u/t/talen":"\"talen:\"","/u/g/greg":"\"greg:\"","/log":"\"@mudlib\"","/d":"\"@mudlib\"","/u/q/quint":"\"quint:\"","/u/p/pel":"\"pel:\"","/include":"\"@mudlib\"","/ftp":"\"@mudlib\"","/u/h/hamnsnock":"\"hamnsnock:\"","/doc":"\"@mudlib\"",])
 read_protections ([])
-domains (["Admin":(["tim":2,"quint":2,"evergreen":2,]),])
-privs (["satch:":({}),"dryghar":({}),"tim":({}),"greg":({}),"dryghar:":({}),"talen":({}),"evergreen:":({}),"pel:":({}),"@mudlib":({"Admin",}),"evergreen":({}),"kyricc:":({}),"Admin:":({}),"tim:":({}),"quint":({}),"talen:":({}),"Admin":({"tim","quint","evergreen",}),"hamnsnock":({}),"pel":({}),"greg:":({}),"quint:":({}),1:({"Admin",}),0:({}),"satch":({}),"hamnsnock:":({}),"kyricc":({}),])
+domains (["Admin":(["evergreen":2,"tim":2,"quint":2,]),])
+privs (["hamnsnock":({}),"evergreen:":({}),"dryghar":({}),"pel":({}),"talen":({}),"hamnsnock:":({}),"satch":({}),"evergreen":({}),"kyricc":({}),"@mudlib":({"Admin",}),"Admin:":({}),"tim:":({}),"greg":({}),"Admin":({"tim","quint","evergreen",}),"talen:":({}),"pel:":({}),"kyricc:":({}),"satch:":({}),"greg:":({}),"tim":({}),0:({}),1:({"Admin",}),"quint:":({}),"quint":({}),"dryghar:":({}),])

@@ -2,10 +2,10 @@
 #include <command.h>
 #include <daemons.h>
 
-#define USAGE "usage: chat <chan>: <message>\n" \
-              "       chat emote <chan>: <message>\n" \
-              "       chat feeling <chan>: <feeling>\n"\
-              "       chat list: <chan>[@<mud>]\n"
+#define USAGE "usage: chat <chan> <message>\n" \
+              "       chat emote <chan> <message>\n" \
+              "       chat feeling <chan> <feeling>\n"\
+              "       chat list <chan>[@<mud>]\n"
 
 int
 main(string str)

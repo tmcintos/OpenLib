@@ -171,7 +171,7 @@ receive_message(string msgclass, string msg)
   string ttype = env_vars["TERM"];
   int width = env_vars["WIDTH"];
 
-  if(!ttype) ttype = "dumb";
+  if(!ttype) ttype = DEFAULT_TERM;
 
   if( !blocking )
   {

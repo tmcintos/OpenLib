@@ -5,16 +5,12 @@
 int
 main(string arg)
 {
-  int screen_wid = 80;
-  string line =
-"---------------------------------------------------------------------------"
-"----------------------------------";
   object user;
   int j;
 
   write("Players on " + mud_name() + " at " + ctime(time()) +
 	" (*edit, +input)\n");
-  write(line[0..screen_wid - 2] + "\n");
+  write(repeat_string("-", this_interactive()->get_env("WIDTH") - 1) + "\n");
 
   foreach(user in users()) {
     if(user->short())

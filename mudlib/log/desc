@@ -47,3 +47,478 @@ Thu Aug 29 20:15:18 1996: imud_gossip: Descartes@IdeaExchange:tchnicians are mea
 Thu Aug 29 20:15:42 1996: imud_gossip: Descartes@IdeaExchange:the orgs that make money use NT
 Thu Aug 29 20:15:52 1996: imud_gossip: Descartes@IdeaExchange:they do not use Win95
 Thu Aug 29 20:18:14 1996: imud_gossip: Descartes@IdeaExchange:I hate MS
+Fri Aug 30 21:28:46 1996: imud_code: Descartes@IdeaExchange:what is the question?
+Fri Aug 30 21:30:39 1996: imud_code: Descartes@IdeaExchange:SetRead((: func :));
+Fri Aug 30 21:30:55 1996: imud_code: Descartes@IdeaExchange:wel, actually, SetRead("step", (: func :));
+Fri Aug 30 21:32:19 1996: imud_code: Descartes@IdeaExchange:add_action() sucks
+Fri Aug 30 21:32:33 1996: imud_code: Descartes@IdeaExchange:more specifically, it leads to playing syntax games rather than mudding
+Fri Aug 30 21:32:47 1996: imud_code: Descartes@IdeaExchange:TMI-2 is filled with lots of old, outdated features
+Fri Aug 30 21:39:07 1996: imud_code: Descartes@IdeaExchange:how do you convert a FAT file system to NTFS?
+Fri Aug 30 21:40:40 1996: imud_code: Descartes@IdeaExchange:in Windows NT, I want to create my FAT drives to NTFS
+Sat Aug 31 12:32:30 1996: imud_gossip: Descartes@WinMud 95:woo woo!!! no more config file!
+Sat Aug 31 12:33:38 1996: imud_gossip: Descartes@WinMud 95:no more config file
+Sat Aug 31 12:34:21 1996: imud_gossip: Descartes@WinMud 95:config data now stored in windows registry
+Sat Aug 31 12:37:29 1996: imud_code: Descartes@IdeaExchange:anyone out there use MFC?
+Sat Aug 31 12:38:38 1996: imud_code: Descartes@WinMud 95:microsoft foundation classes
+Sat Aug 31 12:38:46 1996: imud_code: Descartes@WinMud 95:like a mudlib for C++
+Sat Aug 31 13:15:59 1996: imud_code: Descartes@IdeaExchange:you should not put punctuation or capitalization in items
+Sat Aug 31 13:16:43 1996: imud_code: Descartes@IdeaExchange:people are using it to identify things, you do not wat to make them have toworry about cae
+Sat Aug 31 13:16:51 1996: imud_code: Descartes@IdeaExchange:you should call it blahs step
+Sat Aug 31 13:17:11 1996: imud_code: Descartes@IdeaExchange:no idea :)
+Sat Aug 31 13:19:46 1996: imud_code: Descartes@IdeaExchange:anyone know how to add text to a CEditView window?
+Sat Aug 31 13:21:21 1996: imud_code: Descartes@IdeaExchange:use the SetWield() method
+Sat Aug 31 16:05:50 1996: imud_code: Descartes@IdeaExchange:not every conceivabkle thing on earth is done via SetShit()
+Sat Aug 31 16:06:22 1996: imud_code: Descartes@IdeaExchange:if you are using NM and you are using add_action(), you are doing it wrong
+Sat Aug 31 16:08:20 1996: imud_code: Descartes@IdeaExchange:hooks?
+Sat Aug 31 16:11:29 1996: imud_code: Descartes@IdeaExchange:functions
+Sat Aug 31 16:13:30 1996: imud_code: Descartes@IdeaExchange:have it respond to the drikn verb
+Sat Aug 31 16:13:54 1996: imud_code: Descartes@IdeaExchange:right, because you did not specify something to happen when people try to drink
+Sat Aug 31 16:15:53 1996: imud_code: Descartes@IdeaExchange:why would that make a difference? :)
+Sat Aug 31 16:16:07 1996: imud_code: Descartes@IdeaExchange:you can have any number of functions in an object named anything you like
+Sat Aug 31 16:16:21 1996: imud_code: Descartes@IdeaExchange:if nothing is told to call them, it is no good
+Sat Aug 31 16:17:05 1996: imud_code: Descartes@IdeaExchange:you don't override it, you make it respond to the drinking verb
+Sat Aug 31 16:17:25 1996: imud_code: Descartes@IdeaExchange:look at http://www.imaginary.com/LPC/Nightmare/Admins/Parser
+Sat Aug 31 16:27:54 1996: imud_code: Descartes@IdeaExchange:what do you mean?
+Sat Aug 31 16:31:11 1996: imud_code: Descartes@IdeaExchange:the room is the object
+Sat Aug 31 16:31:39 1996: imud_code: Descartes@IdeaExchange:your room simply needs respond to the drink verb
+Sat Aug 31 16:33:46 1996: imud_code: Descartes@IdeaExchange:anything will respond that way
+Sat Aug 31 16:34:06 1996: imud_code: Descartes@IdeaExchange:I did not say make it a real item, I said make the room repond like you want it to using the stuff on that web page
+Sat Aug 31 17:54:26 1996: imud_code: Descartes@IdeaExchange:yes
+Sat Aug 31 17:55:20 1996: imud_code: Descartes@IdeaExchange:make the room respond to the drink verb as outlined in gttp://www.imaginary.com/LPC/Nightmare/Admins/Parser
+Sat Aug 31 18:34:06 1996: imud_gossip: Descartes@IdeaExchange:quake.imaginary.com!
+Sat Aug 31 18:36:01 1996: imud_gossip: Descartes@IdeaExchange:ayup
+Sat Aug 31 18:46:22 1996: imud_gossip: Descartes@IdeaExchange:300 ms?
+Sat Aug 31 18:46:42 1996: imud_gossip: Descartes@IdeaExchange:hmm, where are you?
+Sat Aug 31 23:14:08 1996: imud_code: Descartes@IdeaExchange:well, on NM all players are virtual objects
+Sat Aug 31 23:16:37 1996: imud_code: Descartes@IdeaExchange:it reallay depends... it is more of a convenience thing at that level...
+Sat Aug 31 23:16:51 1996: imud_code: Descartes@IdeaExchange:at another level, however, it can allow you to create a meta scripting language
+Sat Aug 31 23:43:29 1996: imud_code: Descartes@IdeaExchange:anyone out there know how to start up netscape to open to a specific page?
+Sat Aug 31 23:43:37 1996: imud_code: Descartes@IdeaExchange:from the command line?
+Sat Aug 31 23:44:09 1996: imud_code: Descartes@IdeaExchange:anyone know anything about OLE?
+Sat Aug 31 23:45:09 1996: imud_code: Descartes@IdeaExchange:nope
+Sat Aug 31 23:45:33 1996: imud_code: Descartes@IdeaExchange:perhaps if you have it come up in the browser window by default
+Sat Aug 31 23:45:41 1996: imud_code: Descartes@IdeaExchange:not for me... I have it come up to mail
+Sat Aug 31 23:45:47 1996: imud_code: Descartes@IdeaExchange:windows
+Sun Sep  1 00:51:07 1996: imud_gossip: Descartes@IdeaExchange:why do you say that Satan?
+Sun Sep  1 00:51:41 1996: imud_code: Descartes@IdeaExchange:how do I allow a function in a .c file call a function in a .cpp file?
+Sun Sep  1 00:52:27 1996: imud_code: Descartes@IdeaExchange:I have the C++ function declared void __cdecl send_message(char *msg)
+Sun Sep  1 00:52:41 1996: imud_code: Descartes@IdeaExchange:and prototyped as extern in the C file
+Sun Sep  1 00:52:59 1996: imud_code: Descartes@IdeaExchange:but I get a bad link while linking
+Sun Sep  1 00:54:00 1996: imud_code: Descartes@IdeaExchange:this is the last thing stopping me from getting the new mudoswin out the door :(
+Sun Sep  1 00:55:14 1996: imud_code: Descartes@IdeaExchange:I have no clue... I have never done this before :)
+Sun Sep  1 00:57:33 1996: imud_code: Descartes@IdeaExchange:meaning?
+Sun Sep  1 00:59:27 1996: imud_code: Descartes@IdeaExchange:anyone have any idea how to call functions in C++ files from ones in C files??? :(
+Sun Sep  1 01:00:22 1996: imud_code: Descartes@IdeaExchange:okie :)
+Sun Sep  1 01:02:18 1996: imud_code: Descartes@IdeaExchange:no variation of that is correct
+Sun Sep  1 01:04:27 1996: imud_code: Descartes@IdeaExchange:VC++
+Sun Sep  1 01:05:23 1996: imud_code: Descartes@IdeaExchange:shyeah!
+Sun Sep  1 01:51:39 1996: imud_gossip: Descartes@IdeaExchange:anyone know in MVC++ how to associate an icon wih a window?
+Sun Sep  1 12:08:56 1996: imud_code: Descartes@IdeaExchange:no
+Sun Sep  1 12:09:30 1996: imud_code: Descartes@IdeaExchange:you don't use SetHealthPoints() to change a player's data... that exists only to initially set NPC HP's
+Sun Sep  1 12:13:31 1996: imud_code: Descartes@IdeaExchange:lessons on the parser?
+Sun Sep  1 12:14:49 1996: imud_code: Descartes@IdeaExchange:I am pretty darn certain such lessons are unlikely ;)
+Sun Sep  1 12:15:03 1996: imud_code: Descartes@IdeaExchange:for non-actual objects?
+Sun Sep  1 12:15:12 1996: imud_code: Descartes@IdeaExchange:everything on a mud is an object
+Sun Sep  1 12:17:00 1996: imud_code: Descartes@IdeaExchange:the room is the fountain
+Sun Sep  1 12:18:37 1996: imud_code: Descartes@IdeaExchange:I did not say create a separate fountain object
+Sun Sep  1 12:18:45 1996: imud_code: Descartes@IdeaExchange:I said the room is the fountain object
+Sun Sep  1 12:19:49 1996: imud_code: Descartes@IdeaExchange:why is treating the room as a fountain any different from creating a fountain>?
+Sun Sep  1 12:21:56 1996: imud_code: Descartes@IdeaExchange:some event involving damage
+Sun Sep  1 12:22:16 1996: imud_code: Descartes@IdeaExchange:I do not understand what is not working for you in a room that works in an object
+Sun Sep  1 12:27:41 1996: imud_code: Descartes@IdeaExchange:no, it is what is Blitz said which happens to be in the document
+Sun Sep  1 12:29:10 1996: imud_code: Descartes@IdeaExchange:what is hard about what blitz said? :)
+Sun Sep  1 12:30:10 1996: imud_code: Descartes@IdeaExchange:you aactually need a can_drink_obj_from_obj() and a direct_drink_obj_from_obj in the room, and the room hasd to have items for fountain and water
+Sun Sep  1 12:30:26 1996: imud_code: Descartes@IdeaExchange:and it also has to have indirect_drink_obj_from_obj()
+Sun Sep  1 12:30:58 1996: imud_code: Descartes@IdeaExchange:and Dragon, for the third time, it is an event like eventDanage() or something like that
+Sun Sep  1 12:31:20 1996: imud_code: Descartes@IdeaExchange:Angus: perhaps you should try before you dismiss it
+Sun Sep  1 12:31:39 1996: imud_code: Descartes@IdeaExchange:grep /lib/body.c for even and Damage
+Sun Sep  1 12:33:19 1996: imud_code: Descartes@IdeaExchange:not really
+Sun Sep  1 12:33:29 1996: imud_code: Descartes@IdeaExchange:they all follow a format
+Sun Sep  1 13:53:45 1996: imud_gossip: Descartes@Windows Mud:easier than installing netscape!
+Sun Sep  1 13:55:50 1996: imud_gossip: Descartes@Windows Mud:wonder about what?
+Sun Sep  1 13:57:12 1996: imud_gossip: Descartes@Windows Mud:newe release of mudos for windows
+Sun Sep  1 13:57:18 1996: imud_gossip: Descartes@Windows Mud:among other things
+Sun Sep  1 13:59:37 1996: imud_gossip: Descartes@Windows Mud:no
+Sun Sep  1 14:00:55 1996: imud_gossip: Descartes@Windows Mud:and this one offers a lot of win95 specific stuff
+Sun Sep  1 14:01:03 1996: imud_gossip: Descartes@Windows Mud:like a configuration dialog box
+Sun Sep  1 14:01:11 1996: imud_gossip: Descartes@Windows Mud:installshield installation
+Sun Sep  1 14:15:48 1996: imud_gossip: Descartes@IdeaExchange:you can now pick up an easy to install mudos+nightmare at ftp.imaginary.com for Windows NT and Windows 95 :)
+Sun Sep  1 14:16:48 1996: imud_code: Descartes@IdeaExchange:no
+Sun Sep  1 14:17:56 1996: imud_code: Descartes@IdeaExchange:Visual C++
+Sun Sep  1 16:45:51 1996: imud_gossip: Descartes@IdeaExchange:min for a mud is T1
+Sun Sep  1 16:46:45 1996: imud_gossip: Descartes@IdeaExchange:128k is not enough to shield you from one person surfing the web
+Sun Sep  1 16:47:07 1996: imud_gossip: Descartes@IdeaExchange:and a dedicated 128k is more expensive than a T1 in many cases
+Sun Sep  1 16:47:37 1996: imud_gossip: Descartes@IdeaExchange:$70 dedicated?
+Sun Sep  1 16:47:55 1996: imud_gossip: Descartes@IdeaExchange:and the ISP allows 2 B channel dedicated access?
+Sun Sep  1 16:48:41 1996: imud_gossip: Descartes@IdeaExchange:not true at all Anguys
+Sun Sep  1 16:49:20 1996: imud_gossip: Descartes@IdeaExchange:dedicated single channel access phone company plus ISP here is $380
+Sun Sep  1 16:49:46 1996: imud_gossip: Descartes@IdeaExchange:if I move to CA, I will get a T1 for $495
+Sun Sep  1 16:50:22 1996: imud_gossip: Descartes@IdeaExchange:ISP charges $200/month for single B channel ISDN dedicated service
+Sun Sep  1 16:50:54 1996: imud_gossip: Descartes@IdeaExchange:neither is a 28.8 angus
+Sun Sep  1 16:51:42 1996: imud_gossip: Descartes@IdeaExchange:and you can';t run a mud or a LAN off a 28.8
+Sun Sep  1 16:51:54 1996: imud_gossip: Descartes@IdeaExchange:most colleges link their dorms now
+Sun Sep  1 16:52:04 1996: imud_gossip: Descartes@IdeaExchange:not necessarily angus
+Sun Sep  1 16:52:16 1996: imud_gossip: Descartes@IdeaExchange:if the network is saturated, it is saturated for all users
+Sun Sep  1 16:52:29 1996: imud_gossip: Descartes@IdeaExchange:28.8 is not sufficient for a mud
+Sun Sep  1 16:52:59 1996: imud_gossip: Descartes@IdeaExchange:fun mud :)
+Sun Sep  1 16:53:51 1996: imud_gossip: Descartes@IdeaExchange:certainly not a fun mud
+Sun Sep  1 16:54:01 1996: imud_gossip: Descartes@IdeaExchange:28.8 is not enough to surf the web
+Sun Sep  1 16:54:09 1996: imud_gossip: Descartes@IdeaExchange:much less surf the web AND run a game
+Sun Sep  1 16:55:11 1996: imud_gossip: Descartes@IdeaExchange:what do you mean malloc does not work?
+Sun Sep  1 16:55:27 1996: imud_gossip: Descartes@IdeaExchange:you can run a mud on a 300 bps modem
+Sun Sep  1 16:55:47 1996: imud_gossip: Descartes@IdeaExchange:nothing hap[pens on any NM mud
+Sun Sep  1 16:57:16 1996: imud_gossip: Descartes@IdeaExchange:get the new release
+Sun Sep  1 16:57:22 1996: imud_gossip: Descartes@IdeaExchange:0.5.0
+Sun Sep  1 16:57:40 1996: imud_gossip: Descartes@IdeaExchange:does ls /lib work?
+Sun Sep  1 16:58:02 1996: imud_gossip: Descartes@IdeaExchange:oki, oh well, I will look into it later
+Sun Sep  1 16:58:20 1996: imud_gossip: Descartes@IdeaExchange:it is not bogus angus... this comes from a hell of a lot of experience running kuds on different networks
+Sun Sep  1 16:58:48 1996: imud_gossip: Descartes@IdeaExchange:oh well, I am gone :) see ya later :)
+Sun Sep  1 19:37:20 1996: imud_code: Descartes@IdeaExchange:it does not have the driver source with it
+Sun Sep  1 19:39:32 1996: imud_code: Descartes@IdeaExchange:not really
+Sun Sep  1 19:40:19 1996: imud_code: Descartes@IdeaExchange:well, I also wrote it to be easy to use
+Sun Sep  1 19:41:01 1996: imud_code: Descartes@IdeaExchange:sounds like a personal problem
+Sun Sep  1 19:41:21 1996: imud_code: Descartes@IdeaExchange:NM is the fastest lib out there
+Sun Sep  1 19:41:39 1996: imud_code: Descartes@IdeaExchange:dunno about in comparison to Lima actually, but Lima does not actually do much
+Sun Sep  1 19:42:03 1996: imud_code: Descartes@IdeaExchange:it is difficult...
+Sun Sep  1 19:42:09 1996: imud_code: Descartes@IdeaExchange:you gage similar tasks
+Sun Sep  1 19:42:29 1996: imud_code: Descartes@IdeaExchange:but even that can be deceiving, cause NM tends to be doing a lot more than say TMI-2
+Sun Sep  1 19:42:37 1996: imud_code: Descartes@IdeaExchange:NM still comes out faster anyways
+Sun Sep  1 19:43:28 1996: imud_code: Descartes@IdeaExchange:at any rate, most languages these days use mixed case
+Sun Sep  1 19:43:44 1996: imud_code: Descartes@IdeaExchange:as part of there naming conventions
+Sun Sep  1 19:43:56 1996: imud_code: Descartes@IdeaExchange:C++, Java, SmallTalk, Delphi, etc
+Sun Sep  1 19:44:20 1996: imud_code: Descartes@IdeaExchange:at any rate, the point is a consisteent, easy to read naming system
+Sun Sep  1 19:44:40 1996: imud_code: Descartes@IdeaExchange:something hard to come by in mudlibs
+Sun Sep  1 19:44:58 1996: imud_code: Descartes@IdeaExchange:whether that is mixed case or not makes no difference
+Sun Sep  1 19:46:35 1996: imud_code: Descartes@IdeaExchange:well, it is hard to cpmpare that among the various mudlibs
+Sun Sep  1 19:46:43 1996: imud_code: Descartes@IdeaExchange:except to say that Discworld is tremendously wasteful
+Sun Sep  1 19:46:53 1996: imud_code: Descartes@IdeaExchange:NM loads a lot of shit up front
+Sun Sep  1 19:47:13 1996: imud_code: Descartes@IdeaExchange:so its boot time and boot memory are going to be higher than other muds
+Sun Sep  1 19:47:41 1996: imud_code: Descartes@IdeaExchange:the theory is that a long time between reboots is better than a lot of intermittant lag the first 15 minutes
+Sun Sep  1 19:47:51 1996: imud_code: Descartes@IdeaExchange:but you could go the other way
+Sun Sep  1 19:48:03 1996: imud_code: Descartes@IdeaExchange:just not something useful for comparing
+Sun Sep  1 19:48:43 1996: imud_code: Descartes@IdeaExchange:the best way to phrase the question is: is NM using more reosurces than are really required for the functionality it is providing, and do I need that functionality?
+Sun Sep  1 20:07:33 1996: imud_code: Descartes@IdeaExchange:better for what?
+Sun Sep  1 20:08:07 1996: imud_code: Descartes@IdeaExchange:it really depends
+Sun Sep  1 20:10:00 1996: imud_code: Descartes@IdeaExchange:a class is useful when you have a finite, known association of data
+Sun Sep  1 20:10:20 1996: imud_code: Descartes@IdeaExchange:not nice memory-wise, but faster access
+Sun Sep  1 20:10:42 1996: imud_code: Descartes@IdeaExchange:the lookup time on a class attribute is much faster than an array element
+Sun Sep  1 20:10:56 1996: imud_code: Descartes@IdeaExchange:or a mapping element
+Sun Sep  1 20:11:12 1996: imud_code: Descartes@IdeaExchange:but if you do not know what your keys will be ahead of time, you cannot use a class
+Sun Sep  1 20:11:42 1996: imud_code: Descartes@IdeaExchange:and if you do not have key values, then you want to use an array
+Mon Sep  2 16:05:20 1996: imud_code: Descartes@IdeaExchange:do youy have intermud3???????
+Mon Sep  2 16:05:50 1996: imud_code: Descartes@IdeaExchange:might as well call me on the phone and ask if I have a telephone
+Mon Sep  2 16:06:04 1996: imud_code: Descartes@IdeaExchange:or ask if anuyone here has internet access :)
+Tue Sep  3 16:44:09 1996: imud_code: Descartes@IdeaExchange:encre
+Tue Sep  3 16:56:47 1996: imud_code: Descartes@IdeaExchange:note very hard to get mudos for win32 to work :)
+Tue Sep  3 16:57:27 1996: imud_code: Descartes@IdeaExchange:thanks :)
+Tue Sep  3 16:59:48 1996: imud_code: Descartes@IdeaExchange:I doubt it, that behaviour is intentional
+Tue Sep  3 17:00:38 1996: imud_code: Descartes@IdeaExchange:well, the speed is a very good reason
+Tue Sep  3 17:00:54 1996: imud_code: Descartes@IdeaExchange:but also, otherwise, MudOS has no way of knowing which are tokens and which are not
+Tue Sep  3 17:01:07 1996: imud_code: Descartes@IdeaExchange:you should not be sticking in codes that are not codes
+Tue Sep  3 17:02:17 1996: imud_code: Descartes@IdeaExchange:create a default entry
+Tue Sep  3 17:02:39 1996: imud_code: Descartes@IdeaExchange:NM does not support every term type under the sun... if it does not know it, it ignores all the codes
+Tue Sep  3 17:03:59 1996: imud_code: Descartes@IdeaExchange:you have something that interprets termcap into the mudos system
+Tue Sep  3 17:04:05 1996: imud_code: Descartes@IdeaExchange:that creates the default entries
+Tue Sep  3 17:04:48 1996: imud_code: Descartes@IdeaExchange:default_mapping + termcap_mapping = real_mapping
+Tue Sep  3 17:05:02 1996: imud_code: Descartes@IdeaExchange:some, but you would lose a lot more by doing it
+Tue Sep  3 17:07:43 1996: imud_code: Descartes@IdeaExchange:probably you do not have permission to edit that file
+Tue Sep  3 17:08:33 1996: imud_code: Descartes@IdeaExchange:/secure/cfg/read.cfg and /secure/cfg/write.cfg
+Tue Sep  3 17:11:30 1996: imud_code: Descartes@IdeaExchange:what happens when you try to shutdown?
+Tue Sep  3 17:12:38 1996: imud_code: Descartes@IdeaExchange:did you edit that file?
+Tue Sep  3 17:13:26 1996: imud_code: Descartes@IdeaExchange:one thing I do know, the shutdown command works :)
+Tue Sep  3 17:14:41 1996: imud_code: Descartes@IdeaExchange:is this NT or 95?
+Tue Sep  3 17:45:46 1996: imud_gossip: Descartes@IdeaExchange:quake.imaginary.com
+Tue Sep  3 17:58:36 1996: imud_code: Descartes@IdeaExchange:anyone familiar with microsoft foundation classes?
+Tue Sep  3 22:29:17 1996: imud_gossip: Descartes@IdeaExchange:nothing
+Wed Sep  4 08:21:33 1996: imud_code: Descartes@IdeaExchange:did you read the thng that came with the lib that says the docs are on the web?
+Wed Sep  4 12:21:34 1996: imud_code: Descartes@IdeaExchange:huh?
+Wed Sep  4 12:21:48 1996: imud_code: Descartes@IdeaExchange:(: call_other, ob, method :)
+Wed Sep  4 12:24:55 1996: imud_code: Descartes@IdeaExchange:no new set until v22
+Wed Sep  4 13:00:14 1996: imud_code: Descartes@IdeaExchange:this line is for code questions
+Wed Sep  4 13:02:29 1996: imud_code: Descartes@IdeaExchange:you are theonly one on this line
+Wed Sep  4 23:12:20 1996: imud_gossip: Descartes@Win95 Test:no more... it is now real...
+Wed Sep  4 23:12:33 1996: imud_gossip: Descartes@Win95 Test:this mud is compiled in C++
+Wed Sep  4 23:12:45 1996: imud_gossip: Descartes@Win95 Test:only a fraction so far is objects
+Wed Sep  4 23:13:01 1996: imud_gossip: Descartes@Win95 Test:but all of it runs as C++
+Wed Sep  4 23:13:07 1996: imud_gossip: Descartes@Win95 Test:fast?
+Wed Sep  4 23:13:25 1996: imud_gossip: Descartes@Win95 Test:converting MudOS to C++ was a pain in the ass
+Wed Sep  4 23:13:47 1996: imud_gossip: Descartes@Win95 Test:you would not believe the "try", "catch", and "new" variables for starters :)
+Wed Sep  4 23:14:01 1996: imud_gossip: Descartes@Win95 Test:I am not going to OO everything
+Wed Sep  4 23:14:11 1996: imud_gossip: Descartes@Win95 Test:just what is useful to me to have OO
+Wed Sep  4 23:14:23 1996: imud_gossip: Descartes@Win95 Test:plus I can't write a lexer
+Wed Sep  4 23:14:33 1996: imud_gossip: Descartes@Win95 Test:so I need that :)
+Wed Sep  4 23:14:51 1996: imud_gossip: Descartes@Win95 Test:if I start from scratch, it will be in Java
+Wed Sep  4 23:14:59 1996: imud_gossip: Descartes@Win95 Test:corrects himself to say "when"
+Wed Sep  4 23:15:23 1996: imud_gossip: Descartes@Win95 Test:of all the code in MudOS,, Blackthorn;s has to be the ugliest
+Wed Sep  4 23:15:35 1996: imud_gossip: Descartes@Win95 Test:no
+Wed Sep  4 23:15:54 1996: imud_gossip: Descartes@Win95 Test:all mudos is is an LPC language parser
+Wed Sep  4 23:16:00 1996: imud_gossip: Descartes@Win95 Test:java already has a Java parser
+Wed Sep  4 23:17:42 1996: imud_gossip: Descartes@Win95 Test:fails to see what is scarey about that...
+Wed Sep  4 23:19:49 1996: imud_gossip: Descartes@Win95 Test:what is wrong with Java? :)
+Thu Sep  5 01:42:23 1996: imud_gossip: Descartes@IdeaExchange:uh, we're like, closed or something
+Thu Sep  5 18:07:54 1996: imud_code: Descartes@IdeaExchange:Dead Souls
+Thu Sep  5 18:15:00 1996: imud_gossip: Descartes@IdeaExchange:which means you are whining about Zakk whining about someone whinng about it
+Thu Sep  5 18:18:38 1996: imud_gossip: Descartes@IdeaExchange:who stole what?
+Thu Sep  5 18:25:26 1996: imud_gossip: Descartes@IdeaExchange:stealing code is serious...
+Thu Sep  5 18:25:36 1996: imud_gossip: Descartes@IdeaExchange:unfortunately all we have is bizarre accusations so far
+Thu Sep  5 18:26:08 1996: imud_gossip: Descartes@IdeaExchange:it is very serious
+Thu Sep  5 18:26:20 1996: imud_gossip: Descartes@IdeaExchange:stealing is stealing
+Thu Sep  5 19:37:47 1996: imud_code: Descartes@IdeaExchange:anyone know how to initialize static attributesin C++?
+Thu Sep  5 19:38:15 1996: imud_code: Descartes@IdeaExchange:yes
+Thu Sep  5 19:39:02 1996: imud_code: Descartes@IdeaExchange:in java, you have a static constructor
+Thu Sep  5 19:39:06 1996: imud_code: Descartes@IdeaExchange:no clue what C++ has
+Thu Sep  5 19:40:32 1996: imud_code: Descartes@IdeaExchange:not that
+Thu Sep  5 19:40:50 1996: imud_code: Descartes@IdeaExchange:I want a static constructor so I can initialize my static vars before any method ever gets called
+Thu Sep  5 19:41:16 1996: imud_code: Descartes@IdeaExchange:no
+Thu Sep  5 19:41:22 1996: imud_code: Descartes@IdeaExchange:that is illegal in C++
+Thu Sep  5 19:41:46 1996: imud_code: Descartes@IdeaExchange:the normal constructor is an object constructor
+Thu Sep  5 19:42:07 1996: imud_code: Descartes@IdeaExchange:ahh... I see what you are saying Beek...
+Thu Sep  5 19:49:41 1996: imud_code: Descartes@IdeaExchange:nightmare.imaginary.com 1701
+Thu Sep  5 19:50:47 1996: imud_code: Descartes@IdeaExchange:what is in a state of fluc?
+Thu Sep  5 19:50:55 1996: imud_code: Descartes@IdeaExchange:nightmare.imaginary.com 1701
+Thu Sep  5 19:51:51 1996: imud_code: Descartes@IdeaExchange:NM is fine
+Thu Sep  5 19:52:12 1996: imud_code: Descartes@IdeaExchange:I always had the old domain :)
+Thu Sep  5 19:54:56 1996: imud_code: Descartes@IdeaExchange:I connect fine
+Thu Sep  5 19:57:19 1996: imud_code: Descartes@IdeaExchange:I killed it there
+Thu Sep  5 22:22:47 1996: imud_gossip: Descartes@IdeaExchange:what is the question?
+Thu Sep  5 22:25:41 1996: imud_gossip: Descartes@IdeaExchange:http://www.imaginary.com/LPC/lib/Nightmare
+Thu Sep  5 22:27:06 1996: imud_gossip: Descartes@IdeaExchange:remove the lib part
+Thu Sep  5 22:28:52 1996: imud_gossip: Descartes@IdeaExchange:help admin commands
+Thu Sep  5 22:31:03 1996: imud_gossip: Descartes@IdeaExchange:the help command is screwey for the windows release of NM
+Thu Sep  5 22:59:07 1996: imud_gossip: Descartes@IdeaExchange:MFC would not know a goddamn dependency if it mattered to their life
+Fri Sep  6 14:08:40 1996: imud_gossip: Descartes@IdeaExchange:do you have anything better to do than be a total rude jerk on this line?
+Fri Sep  6 14:10:14 1996: imud_gossip: Descartes@IdeaExchange:if you have such a hard time agreeing with me, why are you using my mudlib?
+Fri Sep  6 14:12:25 1996: imud_gossip: Descartes@IdeaExchange:using the mudlib means you clearly agree about something
+Fri Sep  6 14:14:11 1996: imud_gossip: Descartes@IdeaExchange:hating something has nothing to do with agreement
+Fri Sep  6 14:14:40 1996: imud_gossip: Descartes@IdeaExchange:that is not at all true :)
+Fri Sep  6 14:25:33 1996: imud_code: Descartes@IdeaExchange:anyone have any idea why a gethostbyaddr would keep throwing no data errors?
+Fri Sep  6 14:26:27 1996: imud_code: Descartes@IdeaExchange:which name map?
+Fri Sep  6 14:27:35 1996: imud_code: Descartes@IdeaExchange:that is a DNS thing
+Fri Sep  6 14:28:08 1996: imud_code: Descartes@IdeaExchange:I am asking gethostbyname("my_ip_num",4, PF_INET);
+Fri Sep  6 14:28:24 1996: imud_code: Descartes@IdeaExchange:returning null, and getting WSANO_DATA
+Fri Sep  6 14:31:39 1996: imud_code: Descartes@IdeaExchange:did you say anything...
+Fri Sep  6 14:31:39 1996: imud_code: Descartes@IdeaExchange:I just froze
+Fri Sep  6 14:32:11 1996: imud_code: Descartes@IdeaExchange:it always happens
+Fri Sep  6 14:32:13 1996: imud_code: Descartes@IdeaExchange:I never get a hostent back
+Fri Sep  6 14:33:51 1996: imud_code: Descartes@IdeaExchange:well, so far I have tried only a single machine
+Fri Sep  6 14:36:16 1996: imud_code: Descartes@IdeaExchange:the 4 means itis a 4 byte address
+Fri Sep  6 14:38:39 1996: imud_code: Descartes@IdeaExchange:does it for localhost too
+Fri Sep  6 14:39:23 1996: imud_code: Descartes@IdeaExchange:intercre "The length of the address, which must be 4 for PF_INET addresses.
+Fri Sep  6 14:45:11 1996: imud_code: Descartes@IdeaExchange:because the always correct MS documents say so :)
+Fri Sep  6 14:47:17 1996: imud_code: Descartes@IdeaExchange:tried gethostbyaddr("206.11.201.20", sizeof("206.11.201.20"), AF_INET)... still no work
+Fri Sep  6 14:47:55 1996: imud_code: Descartes@IdeaExchange:had no other thing to try...
+Fri Sep  6 14:48:10 1996: imud_code: Descartes@IdeaExchange:and explanations of WSANO_DATA re lacking
+Fri Sep  6 14:49:12 1996: imud_code: Descartes@IdeaExchange:no idea how to snoop a socket in win95
+Fri Sep  6 14:51:53 1996: imud_code: Descartes@IdeaExchange:it is there
+Fri Sep  6 14:52:21 1996: imud_code: Descartes@IdeaExchange:WSANO_DATA	Valid name, no data record of requested type.
+Fri Sep  6 14:53:35 1996: imud_code: Descartes@IdeaExchange:on what else?
+Fri Sep  6 14:53:57 1996: imud_code: Descartes@IdeaExchange:yup (it would not compile otherwise :))
+Fri Sep  6 15:00:25 1996: imud_code: Descartes@IdeaExchange:seems to happen on a UNIX machine too
+Fri Sep  6 15:04:57 1996: imud_code: Descartes@IdeaExchange:I would not be here if it were not :)
+Fri Sep  6 15:13:27 1996: imud_code: Descartes@IdeaExchange:yep
+Fri Sep  6 15:14:01 1996: imud_code: Descartes@IdeaExchange:fucking cool... got it to work
+Fri Sep  6 15:14:27 1996: imud_code: Descartes@IdeaExchange:actually, I am using threads in several places in the win32 driver
+Fri Sep  6 15:14:41 1996: imud_code: Descartes@IdeaExchange:the addr server construct is actually rather insane IMHO
+Fri Sep  6 15:15:02 1996: imud_code: Descartes@IdeaExchange:I understand the reasons behind it :) I just don;t like it
+Fri Sep  6 15:15:28 1996: imud_code: Descartes@Win95 Test:well, I just did it some other way :)
+Fri Sep  6 15:15:52 1996: imud_code: Descartes@Win95 Test:I actually care quite a bit, the addr server works for UNIX less than it does work
+Fri Sep  6 15:16:10 1996: imud_code: Descartes@Win95 Test:and additionally, the windows crowd won;t be able to deal with a addr sercer
+Fri Sep  6 15:16:46 1996: imud_code: Descartes@Win95 Test:under UNIX I do cause the addr server is always screwey :)
+Fri Sep  6 15:18:15 1996: imud_code: Descartes@Win95 Test:the cool thing about C++  is that you get reall arrays and mappings to code with
+Fri Sep  6 15:18:27 1996: imud_code: Descartes@Win95 Test:rather than bizarre linked lists and memory reallocation
+Fri Sep  6 15:54:25 1996: imud_code: Descartes@IdeaExchange:windows will become the ideal mud environment!
+Fri Sep  6 15:56:30 1996: imud_code: Descartes@IdeaExchange:hey, when you can configureusing a dialog box and get logging info to a main console...
+Fri Sep  6 15:56:54 1996: imud_code: Descartes@IdeaExchange:multi-threading, installshield...
+Fri Sep  6 16:02:00 1996: imud_code: Descartes@Win95 Test:heh hehh heh heh hehh
+Fri Sep  6 16:05:07 1996: imud_code: Descartes@IdeaExchange:windows works fine
+Fri Sep  6 22:53:33 1996: imud_gossip: Descartes@IdeaExchange:fucking lousy bastards allowing spam email
+Fri Sep  6 22:54:53 1996: imud_gossip: Descartes@IdeaExchange:yeah, like that free BMW and free home
+Fri Sep  6 22:55:09 1996: imud_gossip: Descartes@IdeaExchange:with free telephone access
+Sat Sep  7 15:03:43 1996: imud_code: Descartes@IdeaExchange:Gandhi is basically bullshitting you
+Sat Sep  7 15:03:47 1996: imud_code: Descartes@IdeaExchange:there is a C based ftpd
+Sat Sep  7 15:04:07 1996: imud_gossip: Descartes@IdeaExchange:anyone else receive junk email frominternet marketing about email worlks 3.1?
+Sat Sep  7 15:04:19 1996: imud_code: Descartes@IdeaExchange:same place you get anything else for NM
+Sat Sep  7 15:05:19 1996: imud_gossip: Descartes@IdeaExchange:oh well, if you do I put toegther a nice reverse spam email bomb package for them if anyone else wants to share in the fun ;)
+Sat Sep  7 18:55:20 1996: imud_gossip: Descartes@IdeaExchange:%%^^BOLD%%^^
+Sat Sep  7 18:55:58 1996: imud_gossip: Descartes@IdeaExchange:you said lpmuds, not LPMud
+Sat Sep  7 18:57:11 1996: imud_gossip: Descartes@IdeaExchange:don't fucking send ANSI over intermud
+Sat Sep  7 18:57:41 1996: imud_gossip: Descartes@IdeaExchange:you should never ever send raw ansi to users under ANY circumstances
+Sat Sep  7 18:59:57 1996: imud_gossip: Descartes@IdeaExchange:bah, testing on intergossip to see if it works for you is never a problem :)
+Sun Sep  8 00:55:52 1996: imud_gossip: Descartes@IdeaExchange:spam spam spam spam, spam spam spam spam
+Sun Sep  8 00:58:08 1996: imud_code: Descartes@IdeaExchange:use a wander function
+Sun Sep  8 00:58:26 1996: imud_code: Descartes@IdeaExchange:SetWander((: func :)) or something
+Sun Sep  8 00:59:01 1996: imud_code: Descartes@IdeaExchange:they are hppy
+Sun Sep  8 00:59:45 1996: imud_code: Descartes@IdeaExchange:well, in the function you test to see if they are moving to one of your rooms
+Sun Sep  8 00:59:53 1996: imud_code: Descartes@IdeaExchange:why does it have to be random?
+Sun Sep  8 01:00:29 1996: imud_code: Descartes@IdeaExchange:randomness in a confined area gets you nothing over a set path
+Sun Sep  8 01:01:41 1996: imud_code: Descartes@IdeaExchange:look silly to whom?
+Sun Sep  8 01:01:53 1996: imud_code: Descartes@IdeaExchange:a player who needs to get a life cause he is following the ducks around?
+Sun Sep  8 01:02:18 1996: imud_code: Descartes@IdeaExchange:really, no one would even notice that they were following a set path if you did it right
+Sun Sep  8 01:03:54 1996: imud_code: Descartes@IdeaExchange:randomly generate the path each tme a duck is loaded
+Sun Sep  8 01:04:40 1996: imud_code: Descartes@IdeaExchange:another possibility....
+Sun Sep  8 01:04:50 1996: imud_code: Descartes@IdeaExchange:make it so the only way out of the pond is to climb out or something...
+Sun Sep  8 01:04:58 1996: imud_code: Descartes@IdeaExchange:a NPC cannot randomly climb
+Sun Sep  8 01:05:16 1996: imud_code: Descartes@IdeaExchange:the advantage to letting the monster randomly wander is that it never enters unloaded rooms
+Sun Sep  8 01:05:45 1996: imud_code: Descartes@IdeaExchange:but it always uses room exits/enters to determine where to go
+Sun Sep  8 01:06:27 1996: imud_code: Descartes@IdeaExchange:did he say what I thought I heard him say? :)
+Sun Sep  8 01:06:55 1996: imud_code: Descartes@IdeaExchange:ok... I must be losing my eyesight
+Sun Sep  8 01:08:05 1996: imud_code: Descartes@IdeaExchange:Whizkid: never never never never never use add_action
+Sun Sep  8 01:08:47 1996: imud_code: Descartes@IdeaExchange:ok... anyone who mentions add_action and Nightmare or Lima in the same sentence
+Sun Sep  8 01:09:22 1996: imud_code: Descartes@IdeaExchange:Whizkid, use your verbs
+Sun Sep  8 01:09:42 1996: imud_code: Descartes@IdeaExchange:in this case, it is overkill to extend an event just for duck interception
+Sun Sep  8 01:10:20 1996: imud_code: Descartes@IdeaExchange:instead, just make the edge of the pond something you clinmb out of (i.e. something that responds to the climb verb)
+Sun Sep  8 01:10:56 1996: imud_code: Descartes@IdeaExchange:the only advantage of what I am saying over what Nippie suggests is that your ducks won't load any unloaded rooms
+Sun Sep  8 01:11:06 1996: imud_code: Descartes@IdeaExchange:saves ram, takes more coding
+Sun Sep  8 01:20:11 1996: imud_code: Descartes@IdeaExchange:that problem cannot exist
+Sun Sep  8 01:20:27 1996: imud_code: Descartes@IdeaExchange:in order for the player to get there, adjacent rooms have to have been loaded
+Sun Sep  8 01:21:03 1996: imud_code: Descartes@IdeaExchange:and SetCommand() works fine as far as I know
+Sun Sep  8 01:22:03 1996: imud_code: Descartes@IdeaExchange:well, that is something you need to consider... have them wimpy at a high percentage
+Sun Sep  8 01:22:07 1996: imud_code: Descartes@IdeaExchange:thanks :)
+Sun Sep  8 01:23:36 1996: imud_code: Descartes@IdeaExchange:and you too darklord :)
+Sun Sep  8 01:24:18 1996: imud_code: Descartes@IdeaExchange:I3 is basically ready...
+Sun Sep  8 01:24:34 1996: imud_code: Descartes@IdeaExchange:the  problem is I have to add all the races
+Sun Sep  8 01:24:56 1996: imud_code: Descartes@IdeaExchange:err r3
+Sun Sep  8 01:25:16 1996: imud_code: Descartes@IdeaExchange:adding the dozens of races (monster and player) is a tedious task
+Sun Sep  8 01:36:08 1996: imud_code: Descartes@IdeaExchange:they are not driver related
+Sun Sep  8 01:41:21 1996: imud_code: Descartes@IdeaExchange:I really do not know.. i forgot how climb.c works
+Sun Sep  8 01:42:26 1996: imud_code: Descartes@IdeaExchange:yes, you make them respond to the triggered events
+Sun Sep  8 02:11:08 1996: imud_code: Descartes@IdeaExchange:my beavis and butthead desktop theme says "You dumbass" when any C++ program fails to compile :)
+Sun Sep  8 02:22:19 1996: imud_code: Descartes@IdeaExchange:err, no, just heh heh heh heh
+Sun Sep  8 03:01:07 1996: imud_gossip: Descartes@IdeaExchange:Windows: the mud platform of the future
+Sun Sep  8 03:18:12 1996: imud_gossip: Descartes@IdeaExchange:you don't port mudlibs
+Sun Sep  8 03:37:28 1996: imud_code: Descartes@IdeaExchange:while() means evaluate what is in the loop, if true, execute the block then come back up to the while() thing and evaluate again
+Sun Sep  8 03:37:44 1996: imud_code: Descartes@IdeaExchange:x-- means return the value of x, then subtract 1
+Sun Sep  8 03:38:00 1996: imud_code: Descartes@IdeaExchange:whereas --x would mean subtract 1 from x then return the value
+Sun Sep  8 03:38:46 1996: imud_code: Descartes@IdeaExchange:huh?
+Sun Sep  8 03:40:27 1996: imud_code: Descartes@IdeaExchange:J'anus, that loop executes 1 time
+Sun Sep  8 03:43:54 1996: imud_code: Descartes@IdeaExchange:it is not better to pre-declare :)
+Sun Sep  8 03:44:08 1996: imud_code: Descartes@IdeaExchange:it makes no difference whatsoever :)
+Sun Sep  8 03:44:36 1996: imud_code: Descartes@IdeaExchange:this is LPC
+Sun Sep  8 03:44:58 1996: imud_code: Descartes@IdeaExchange:why apply a problem for C compilers to LPC?
+Sun Sep  8 03:45:28 1996: imud_code: Descartes@IdeaExchange:no, Java
+Sun Sep  8 03:47:47 1996: imud_code: Descartes@IdeaExchange:Java is a good language, but more important, it contains the potential to free us from Microsoft
+Sun Sep  8 03:48:15 1996: imud_code: Descartes@IdeaExchange:command to create a monster?
+Sun Sep  8 03:49:21 1996: imud_code: Descartes@IdeaExchange:completely portable, the OS no longer matters
+Sun Sep  8 03:50:16 1996: imud_code: Descartes@IdeaExchange:what do you mean you have heard that one before?
+Sun Sep  8 03:50:36 1996: imud_code: Descartes@IdeaExchange:it is binary portable, write once, compile once, run anywhere
+Sun Sep  8 03:50:50 1996: imud_code: Descartes@IdeaExchange:it is not C-like portability, it is LPC-like portability
+Sun Sep  8 03:51:02 1996: imud_code: Descartes@IdeaExchange:LPC runs on any machine with a driver
+Sun Sep  8 03:51:12 1996: imud_code: Descartes@IdeaExchange:similarly, Java runs on any machine with a driver
+Sun Sep  8 03:51:28 1996: imud_code: Descartes@IdeaExchange:cept Java calls the driver a virtual machine
+Sun Sep  8 03:52:06 1996: imud_code: Descartes@IdeaExchange:what'st that got to do with anything?
+Sun Sep  8 03:52:24 1996: imud_code: Descartes@IdeaExchange:text files are not binary portable
+Sun Sep  8 03:52:36 1996: imud_code: Descartes@IdeaExchange:since #1 text files are the opposite of binary
+Sun Sep  8 03:53:03 1996: imud_code: Descartes@IdeaExchange:and thus the contents mean different things on different machines
+Sun Sep  8 03:53:11 1996: imud_code: Descartes@IdeaExchange:ascii is text
+Sun Sep  8 03:54:51 1996: imud_code: Descartes@IdeaExchange:the point is, you write a java program once, and you only compile it once
+Sun Sep  8 03:55:05 1996: imud_code: Descartes@IdeaExchange:after that, it runs on any machine in the world
+Sun Sep  8 03:55:11 1996: imud_code: Descartes@IdeaExchange:who cares how far it is from the kernel?
+Sun Sep  8 03:55:35 1996: imud_code: Descartes@IdeaExchange:not really
+Sun Sep  8 03:55:43 1996: imud_code: Descartes@IdeaExchange:since in some cases Java is the kernel
+Sun Sep  8 03:55:55 1996: imud_code: Descartes@IdeaExchange:in fact, soon, in most cases
+Sun Sep  8 03:56:09 1996: imud_code: Descartes@IdeaExchange:nope
+Sun Sep  8 03:56:48 1996: imud_code: Descartes@IdeaExchange:Java is being built into all major operating systems
+Sun Sep  8 03:57:04 1996: imud_code: Descartes@IdeaExchange:in fact, in some cases, Java is the operating system
+Sun Sep  8 03:57:22 1996: imud_code: Descartes@IdeaExchange:a Java binary thus is executing right on top of the kernel
+Sun Sep  8 03:57:44 1996: imud_code: Descartes@IdeaExchange:no Dragon
+Sun Sep  8 03:57:56 1996: imud_code: Descartes@IdeaExchange:it is parrt of the next release of the OS, and part of NT 4
+Sun Sep  8 03:58:02 1996: imud_code: Descartes@IdeaExchange:and part of OS/2
+Sun Sep  8 04:00:25 1996: imud_code: Descartes@IdeaExchange:yes
+Sun Sep  8 04:01:31 1996: imud_code: Descartes@IdeaExchange:well, I am an IT person and I think it has the potential to be revolutionary
+Sun Sep  8 04:10:46 1996: imud_code: Descartes@IdeaExchange:the docs are right
+Sun Sep  8 04:11:30 1996: imud_code: Descartes@IdeaExchange:call_out((: func :), time, arg1, arg2)
+Sun Sep  8 04:11:42 1996: imud_code: Descartes@IdeaExchange:ahh, try this...
+Sun Sep  8 04:13:49 1996: imud_gossip: Descartes@IdeaExchange:night all :)
+Sun Sep  8 12:32:40 1996: imud_code: Descartes@IdeaExchange:yes, ansi gets wrapped with terminal_colour()
+Sun Sep  8 12:34:08 1996: imud_code: Descartes@IdeaExchange:use the eval command and see
+Sun Sep  8 12:52:40 1996: imud_code: Descartes@IdeaExchange:why would you change the chars terminal colour recognizes?
+Sun Sep  8 12:53:42 1996: imud_code: Descartes@IdeaExchange:replace_string(str, sprintf("%c", 13), "char")
+Sun Sep  8 12:53:56 1996: imud_code: Descartes@IdeaExchange:I was talking to Geldron, but thanks for your rudeness
+Sun Sep  8 12:54:32 1996: imud_code: Descartes@IdeaExchange:Geldron beeps? don't uyou have better things to do?
+Sun Sep  8 16:44:07 1996: imud_code: Descartes@IdeaExchange:any idea what this means in C++:
+Sun Sep  8 16:44:15 1996: imud_code: Descartes@IdeaExchange:'new' not accessible because 'Thread' uses 'public' to inherit from 'CObject'
+Sun Sep  8 16:44:39 1996: imud_code: Descartes@IdeaExchange:where I am compiling Driver which inherits Thread which inherits CObject
+Sun Sep  8 16:59:50 1996: imud_code: Descartes@IdeaExchange:huh?
+Sun Sep  8 17:00:24 1996: imud_code: Descartes@IdeaExchange:I have no idea what this message means
+Sun Sep  8 17:01:32 1996: imud_code: Descartes@IdeaExchange:the code is:
+Sun Sep  8 17:01:48 1996: imud_code: Descartes@IdeaExchange:ListenSocket *socket = new ListenSocket(telnet_port, PORT_TELNET);
+Sun Sep  8 17:02:57 1996: imud_code: Descartes@IdeaExchange:I am doing a new, and it is saying I cannot cause my inheritance is public
+Sun Sep  8 17:03:57 1996: imud_code: Descartes@IdeaExchange:err, I know what it is sorta.. :)
+Sun Sep  8 17:04:23 1996: imud_code: Descartes@IdeaExchange:on all muds new is clone_object
+Sun Sep  8 17:04:25 1996: imud_code: Descartes@IdeaExchange:with extra functionality related to classes
+Sun Sep  8 17:05:29 1996: imud_code: Descartes@IdeaExchange:ListenSocket was private inheriting Thread... for some reason i thought I had checked that it was publically inheriting it
+Sun Sep  8 17:09:55 1996: imud_code: Descartes@IdeaExchange:hmm... lost the error message
+Sun Sep  8 17:10:05 1996: imud_code: Descartes@IdeaExchange:go to modems in your control panel
+Sun Sep  8 17:13:00 1996: imud_code: Descartes@IdeaExchange:righ
+Sun Sep  8 17:22:04 1996: imud_gossip: Descartes@IdeaExchange:given that I am doign this for windows, I could give a damn about portability
+Sun Sep  8 17:22:18 1996: imud_gossip: Descartes@IdeaExchange:and C++ is not noticeably slower for things like muds
+Sun Sep  8 17:24:05 1996: imud_gossip: Descartes@IdeaExchange:C++ rocks C, but that is not hard
+Sun Sep  8 17:24:35 1996: imud_gossip: Descartes@IdeaExchange:using C++ is perfectly portable if you do it with a minumum of common sense
+Sun Sep  8 17:25:39 1996: imud_gossip: Descartes@IdeaExchange:not for the mud though
+Sun Sep  8 17:25:49 1996: imud_gossip: Descartes@IdeaExchange:a mud is an ideal application for objectification
+Sun Sep  8 21:25:49 1996: imud_code: Descartes@IdeaExchange:http://www.imaginary.com/LPC/Nightmare
+Sun Sep  8 21:25:57 1996: imud_code: Descartes@IdeaExchange:it is the best documented lib out there
+Sun Sep  8 21:29:12 1996: imud_code: Descartes@IdeaExchange:probably need to delete a single line from it
+Sun Sep  8 21:29:24 1996: imud_gossip: Descartes@IdeaExchange:the bug tracking system is offline
+Sun Sep  8 21:29:54 1996: imud_gossip: Descartes@IdeaExchange:the web one that is
+Sun Sep  8 21:30:04 1996: imud_code: Descartes@IdeaExchange:the rwho command
+Sun Sep  8 21:32:23 1996: imud_code: Descartes@IdeaExchange:I don't know which line, read the code and figure it out, it should be simple
+Sun Sep  8 23:39:37 1996: imud_code: Descartes@IdeaExchange:like what stuff?
+Sun Sep  8 23:40:27 1996: imud_code: Descartes@IdeaExchange:ok, just do not change the server name or the mudlib name
+Sun Sep  8 23:40:41 1996: imud_code: Descartes@IdeaExchange:just checking :)
+Sun Sep  8 23:41:52 1996: imud_code: Descartes@IdeaExchange:that's right
+Sun Sep  8 23:42:22 1996: imud_code: Descartes@IdeaExchange:the license simply require you accept no money, never change the mudlib name, and retain all headers
+Mon Sep  9 11:40:06 1996: imud_code: Descartes@IdeaExchange:people should not code on the mud
+Mon Sep  9 11:40:54 1996: imud_code: Descartes@IdeaExchange:code offline and ftp, use creremote, etc... type 'faq general' for more info
+Mon Sep  9 11:41:36 1996: imud_code: Descartes@IdeaExchange:ed sucks
+Mon Sep  9 11:42:02 1996: imud_code: Descartes@IdeaExchange:vi sucks too
+Mon Sep  9 11:42:24 1996: imud_code: Descartes@IdeaExchange:not really
+Mon Sep  9 11:42:34 1996: imud_code: Descartes@IdeaExchange:show vi to any non-computer person
+Mon Sep  9 11:42:49 1996: imud_code: Descartes@IdeaExchange:I am not suggesting emacs would be any better for a mud
+Mon Sep  9 11:43:25 1996: imud_code: Descartes@IdeaExchange:people should use whatever editor they are familiar with
+Mon Sep  9 11:44:15 1996: imud_code: Descartes@IdeaExchange:what is the magic of online?
+Mon Sep  9 11:44:43 1996: imud_code: Descartes@IdeaExchange:creremote allows you to test your programs
+Mon Sep  9 11:44:59 1996: imud_code: Descartes@IdeaExchange:yes\
+Mon Sep  9 11:45:01 1996: imud_code: Descartes@IdeaExchange:no
+Mon Sep  9 11:45:29 1996: imud_code: Descartes@IdeaExchange:in addition, with ange ftp or whetaver, you probably could be logged into the mud in one window and editing in another
+Mon Sep  9 11:45:35 1996: imud_code: Descartes@IdeaExchange:no differernce
+Mon Sep  9 11:45:43 1996: imud_code: Descartes@IdeaExchange:issue the command
+Mon Sep  9 11:46:00 1996: imud_code: Descartes@IdeaExchange:Leto, that is not online
+Mon Sep  9 11:46:10 1996: imud_code: Descartes@IdeaExchange:online is using the editor on the mud
+Mon Sep  9 11:46:32 1996: imud_code: Descartes@IdeaExchange:creremote is a special client designed for editing
+Mon Sep  9 11:47:10 1996: imud_code: Descartes@IdeaExchange:then why chose vi? why not let people use whatever editor they like?
+Mon Sep  9 11:47:58 1996: imud_code: Descartes@IdeaExchange:like I said, creremote and ange-ftp work just dandy
+Mon Sep  9 11:48:18 1996: imud_code: Descartes@IdeaExchange:and you do not give out XWindows
+Mon Sep  9 11:48:56 1996: imud_code: Descartes@IdeaExchange:faq general
+Mon Sep  9 11:49:23 1996: imud_code: Descartes@IdeaExchange:oops, faq lpmud
+Mon Sep  9 11:52:05 1996: imud_code: Descartes@IdeaExchange:why do you care?
+Mon Sep  9 11:52:46 1996: imud_code: Descartes@IdeaExchange:they are like database keys, they don't matter
+Mon Sep  9 11:52:46 1996: imud_code: Descartes@IdeaExchange:they are not for display
+Mon Sep  9 11:53:02 1996: imud_code: Descartes@IdeaExchange:they are the way they are, do with them what you will
+Mon Sep  9 11:53:28 1996: imud_code: Descartes@IdeaExchange:talk to the mud in charge of that channel
+Mon Sep  9 11:55:26 1996: imud_code: Descartes@IdeaExchange:the main two channels are imud_code and imud_gossip
+Mon Sep  9 11:56:55 1996: imud_code: Descartes@IdeaExchange:I do not have support for an imud_imud_code channel
+Mon Sep  9 11:57:13 1996: imud_code: Descartes@IdeaExchange:and I did not make up the channel names :)
+Mon Sep  9 11:57:19 1996: imud_code: Descartes@IdeaExchange:I just think they are unimportant
+Mon Sep  9 11:58:19 1996: imud_code: Descartes@IdeaExchange:this mud does not support any channel called imud_imud_anything
+Mon Sep  9 11:58:35 1996: imud_code: Descartes@IdeaExchange:start an interfrog channel :)
+Mon Sep  9 11:58:53 1996: imud_code: Descartes@IdeaExchange:Kaolin, you are doing something on your end then :)
+Mon Sep  9 12:04:27 1996: imud_code: Descartes@IdeaExchange:whoever is doing that crap from earth take it to imud_gossip please
+Mon Sep  9 12:04:59 1996: imud_code: Descartes@IdeaExchange:Whizkid: ftp.imaginary.com
+Mon Sep  9 12:48:26 1996: imud_code: Descartes@IdeaExchange:it tries to login whizkid yourpassword becauseit needs to login
+Mon Sep  9 12:49:39 1996: imud_code: Descartes@IdeaExchange:correct
+Mon Sep  9 12:49:59 1996: imud_code: Descartes@IdeaExchange:why are you trying to seocnd guess what the protocol is doing?
+Mon Sep  9 12:51:49 1996: imud_code: Descartes@IdeaExchange:well, you should not be telling it to login to the mud's telnet port
+Mon Sep  9 12:52:17 1996: imud_code: Descartes@IdeaExchange:you login to the RCP port
+Mon Sep  9 12:53:04 1996: imud_code: Descartes@IdeaExchange:I don't know, try mudlist dreamer's hideaway
+Mon Sep  9 12:53:30 1996: imud_code: Descartes@IdeaExchange:it does say in the doc that that is normally your mud port - 10 I think
+Mon Sep  9 12:58:19 1996: imud_code: Descartes@IdeaExchange:you have to create a remote object in your home directory, like it says in the document
+Mon Sep  9 12:59:52 1996: imud_code: Descartes@IdeaExchange:the one with creremote
+Mon Sep  9 13:00:00 1996: imud_code: Descartes@IdeaExchange:in the mudlib release
+Mon Sep  9 13:00:14 1996: imud_code: Descartes@IdeaExchange:there was one with the mudlib
+Mon Sep  9 13:13:10 1996: imud_code: Descartes@IdeaExchange:that is if you do not understand the concept of inheriting LIB_REMOTE in that file
+Mon Sep  9 13:14:08 1996: imud_code: Descartes@IdeaExchange:create a file, and stick the line inherit LIB_REMOTE;
+Mon Sep  9 13:14:36 1996: imud_code: Descartes@IdeaExchange:that's all
+Mon Sep  9 13:16:35 1996: imud_code: Descartes@IdeaExchange:not at the moment falchan
+Mon Sep  9 13:16:39 1996: imud_code: Descartes@IdeaExchange:yes dragon
+Mon Sep  9 13:23:02 1996: imud_code: Descartes@IdeaExchange:hack the mud... not too hard with tmi

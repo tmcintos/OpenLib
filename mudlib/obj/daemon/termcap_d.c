@@ -15,6 +15,7 @@
  * 01/22/96     Tim: added string* query_supported_termtypes()
  * 02/17/96     Tim: fixed to user copy(), changed to a daemon
  * 04/16/96     Tim: fixed to accomodate change to REVERSIBLE_EXPLODE_STRING
+ * 09/03/96     Tim: ripped out most of guts to switch to terminal_colour()
  */
 
 /*
@@ -71,10 +72,68 @@ mapping start_end =
 
 mapping termcap_entries =
 ([
-  "dumb":			/* Dumb terminal */
+  "default" :
+  /* Default Entry--Don't add anything w/out putting a blank entry here!!!! */
   ([
-    "CLS":"\n",
-    "RESET":""
+    /* Action */
+    "ESC" : ESC,   /* Our Escape Character */
+    "RESET" : "",
+    "HOME" : "",
+    "CLS" : "",
+    "BELL" : "",
+    "INITTERM" : "",
+    "TAB" : "",
+    "UNDERLINE" : "",
+    
+    /* Attributes */
+    "INVERSE" : "",
+    "BLINK" : "",
+    "FLASH" : "",    
+    "BOLD" : "",
+    
+    /* Color */
+    "BLACK" : "",
+    "BLUE" : "",
+    "B_BLACK" : "",
+    "B_BLUE" : "",
+    "B_CYAN" : "",
+    "B_GREEN" : "",
+    "B_GREY" : "",
+    "B_MAGENTA" : "",
+    "B_RED" : "",
+    "B_WHITE" : "",
+    "B_YELLOW" : "",
+    "CYAN" : "",
+    "GREEN" : "",
+    "GREY" : "",
+    "L_BLUE" : "",
+    "L_CYAN" : "",
+    "L_GREEN" : "",
+    "L_MAGENTA" : "",
+    "L_RED" : "",
+    "L_YELLOW" : "",
+    "MAGENTA" : "",
+    "RED" : "",
+    "WHITE" : "",
+    "YELLOW" : "",
+    "al" : "",
+    "dl" : "",
+    "is" : "",
+    "kb" : "",
+    "kd" : "",
+    "kl" : "",
+    "kr" : "",
+    "ku" : "",
+    "rc" : "",
+    "rs" : "",
+    "sc" : "",
+    "se" : "",
+    "sr" : "",
+    "up" : "",
+    "ve" : "",
+    "vi" : "",
+    "BG" : "",
+    "FG" : "",
     ]),
   "vt100":
   ([
@@ -165,6 +224,7 @@ mapping termcap_entries =
     ]),
   "debug" :
   ([
+    "BELL":"[BELL]",
     "BOLD":"[BOLD]",		/* turn on bold (extra bright) attribute */
     "INVERSE":"[INVERSE]",		/* turn on reverse-video attribute */
     "BLINK":"[BLINK]",		/* turn on blinking attribute */
@@ -245,7 +305,6 @@ mapping termcap_entries =
   ([
     "BELL":"",		/* audible signal (bell) */
     "CLS":"[;H[2J",		/* clear screen and home cursor */
-    "MOVE":"![%i%d;%dH",	/* screen-relative cursor motion to row m col n */
     "HOME":"[H",		/* home cursor */
     "INITTERM":"[1;24r[24;1H",/* terminal initialization string */
     "BOLD":"[1m",		/* turn on bold (extra bright) attribute */
@@ -293,8 +352,13 @@ query_all_termcap_entries()
 mapping
 query_termcap(string what) /* Added by Kniggit 930115 */
 {
-    if(termcap_entries && what)
-	return copy(termcap_entries[what]);
+  if(termcap_entries)
+    if( termcap_entries[what] )
+      return termcap_entries["default"] + termcap_entries[what];
+    else
+      return copy(termcap_entries["default"]);
+  else
+    return ([ "this should not happen" : "" ]);
 }
 
 mixed*
@@ -317,6 +381,7 @@ termcap_capability(string entry, string capability)
     return 0;
 }
 
+#if 0
 varargs string
 termcap(string message, string capability, object ob)
 {
@@ -363,7 +428,6 @@ clear_screen (object who) {
     return ESC "CLS" ESC;
 }
 
-#if 0
 string
 termcap_format_line(string line, string ttype)
 {

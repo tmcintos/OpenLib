@@ -8,11 +8,10 @@
 // using this module. (Normally inherit a race module)
 //
 #include <daemons.h> 
-#include <weapon_types.h>
+#include <weapon.h>
 #include <race.h>
 
-void initialize();
-void low_setup();
+void init_combat();   // initialize combat code--not called until race is setup
 void set_combating(int);
 int query_num_attacks();
 int query_combating();

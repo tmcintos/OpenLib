@@ -7,6 +7,6 @@ email_addr "satchriani@aol.com"
 body "/obj/clone/user/human"
 login_shell "/obj/clone/shells/nmsh"
 gender 1
-login_time 841001576
-logout_time 841001594
+login_time 842125574
+logout_time 842125592
 login_from "axp.calumet.purdue.edu"

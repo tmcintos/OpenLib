@@ -1,0 +1,126 @@
+/*  -*- LPC -*-  */
+mapping raceinfo;  // keyed by race names, values are mixed*
+
+void
+create()
+{
+  raceinfo = ([ ]);
+  call_out("setup", 2);
+}
+
+void
+load_arrays(string text, string* arr1, string* arr2)
+{
+  foreach(string set in explode(text, ","))
+  {
+    string type, loc;
+      
+      if( sscanf(set, "%s:%s", type, loc) != 2 )
+	continue;
+
+      while(type[0] == ' ') type = type[1..];
+      while(loc[<1] == ' ') loc = loc[0..<2];
+      
+      arr1 += ({ type });
+      arr2 += ({ loc });
+  }
+}
+
+void
+setup()
+{
+  string race, tmp;
+  int hands, weight, strength, agility;
+  string *hitverbs_act =({}),
+         *hitverbs_pas =({}),
+         *missverbs_act = ({}),
+         *missverbs_pas = ({}),
+         *weapon_names = ({}),
+         *armour_types = ({}),
+         *armour_locs = ({});
+
+  string text = read_file("/adm/etc/human.cfg");
+  text = implode(filter(explode(text, "\n"), (: $1[0] != '#' :)), "");
+
+  sscanf(text, "race=%s;", race);
+  sscanf(text, "hands=%d;", hands);
+  sscanf(text, "weight=%d;", weight);
+  sscanf(text, "strength=%d;", strength);
+  sscanf(text, "agility=%d;", agility);
+  if( sscanf(text, "armour_info=%s;", tmp) == 1 )
+    load_arrays(tmp, armour_types, armour_locs);
+  if( sscanf(text, "hitverbs=%s;", tmp) == 1 )
+    load_arrays(tmp, hitverbs_act, hitverbs_pass);
+  if( sscanf(text, "missverbs=%s;", tmp) == 1 )
+    load_arrays(tmp, missverbs_act, missverbs_pass);
+  if( sscanf(text, "weapon_names=%s;", tmp) == 1 )
+    foreach(string name in explode(tmp, ","))
+    {
+      while(name[0] == ' ') name = name[1..];
+      while(name[<1] == ' ') name = name[0..<2];
+      weapon_names += ({ name });			 
+    }
+
+  tell_object(find_player("tim"), dump_variable( ({ race_name,
+						    hands,
+						    weight,
+						    strength,
+						    agility,
+						    armour_types,
+						    armour_locs,
+						    hitverbs_act,
+						    hitverbs_pas,
+						    missverbs_act,
+						    missverbs_pas,
+						    weapon_names })));
+}  
+			 
+  
+#if 0
+// Later to read from file...
+void
+setup()
+{
+  raceinfo["human"] =
+    ({ 140,  // base wt.
+       2, // hands
+       ({"helm","ring","ring","bracers","body2","legs2","boots",
+	 "amulet","cloak"}), // armour types
+       ({"on the head","on the left hand","on the right hand",
+	 "on the arms","about the body","on the legs",
+	 "on the feet","around the neck","around the neck"}), // locations
+       (: ({
+	 2916473 /
+	   (3 * (26 - str) + (26 - agl) + 2 * (1001 - (wep_skill ? ws  : 0)) + 
+	    (1001 - (wep_skill ? cbt : 0))) - 949,
+	 // That was the damage bonus.  Worked to balance (somewhat) 
+	 // skills and the like.  Ask for an explination of why it 
+	 // is the way it is.  Casper
+	 (wep_skill && wep_skill == "unarmed" ? 5 + unr / 10 : 0),
+	 // damage range needed ONLY for unarmed combat.
+	 // May need balancing.
+	 7 * str + 21 * agl + (wep_skill ? 2 * cbt + ws : 0) + 136,
+	 // base to_hit
+	 // Again, ask for an explination of why it is the way it 
+	 // is.  Casper
+	 (wep_skill && wep_skill == "unarmed" ? 0 :
+	  str * 10 + 
+	  agl * 20 + 
+	  cbt * 10) +
+	    (wep_skill != "unarmed" && wep_skill ? ws * 10 : 0),
+	 //parry modifier.  Nill for unarmed combat (how DO you
+	 //parry with hands?) otherwize 2% per point of agil & 1%
+	 //per point of str + 1% per combat * weapon skill.
+	 ({"punch","sock","chop","jab"}),
+	 ({"punches","socks","chops","jabs"}),
+	 ({"miss","swing above", "jab beside", "swing short of"}),
+	 ({"misses","swings above", "jabs beside", "swings short of"}),
+	 ({"fists","balled hand", "hand", "fist"}),
+	 WEAPON_FISTS,
+	 this_object(),
+	 0
+	 })
+     }
+     });
+}
+#endif

@@ -33,13 +33,14 @@ main(string str)
 
   if( !name ) name = priv;
 
-  printf("priv=%s oid=%d coid=%d heart_b=%s domains=%s\n",
+  printf("%s: priv=%s oid=%d coid=%d hb=%s domains=%s\n",
+	 base_name(ob),
 	 priv,
 	 getoid(ob),
 	 (conn ? getoid(conn) : -1 ),
 	 (query_heart_beat(ob) ? "on" : "off"),
-	 implode((string *)SECURITY_D->get_domain_memberships(name),
-		 ","));
+	 implode((string *)SECURITY_D->get_domain_memberships(name), ","));
+  
   return 1;
 }
 

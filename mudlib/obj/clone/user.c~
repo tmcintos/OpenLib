@@ -171,13 +171,14 @@ receive_message(string msgclass, string msg)
   string ttype = env_vars["TERM"];
   int width = env_vars["WIDTH"];
 
-  if(!ttype) ttype = "dumb";
-
-  if(msgclass != "nofilter")
-    msg = terminal_colour(msg, TERMCAP_D->query_termcap(ttype), width);
+  if(!ttype) ttype = DEFAULT_TERM;
 
   if( !blocking )
+  {
+    if(msgclass != "nofilter")
+      msg = terminal_colour(msg, TERMCAP_D->query_termcap(ttype), width);
     receive(msg);
+  }
   else
   {
     int size = (env_vars["MSGBUF_SIZE"] ?

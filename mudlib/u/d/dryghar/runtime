@@ -1,0 +1,520 @@
+
+[ERROR] *Error in loading object '/adm/tmp/tmp_eval_file'
+  time   : Tue Sep  3 20:28:07 1996
+  file   : adm/cmd/wiz/eval.c:36
+  pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+  [TRACE]  size==6
+    file   : :0
+    pgm/obj: <function> (obj/clone/user/human#2)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:243
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#2)
+    func   : <function> (             "'mixed* tc =
+             values(TERMCAP_D->query_all_termcap_entries());
+             mapping ret = ([]); foreach(mapping t in tc)
+             ret += t; write_file("/tmp/tc",
+             dump_variable(ret));'", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/protosh.c:521
+    pgm/obj: obj/clone/shells/protosh.c (obj/clone/shells/protosh#3)
+    func   : cmd_hook (             "mixed* tc =
+             values(TERMCAP_D->query_all_termcap_entries());
+             mapping ret = ([]); foreach(mapping t in tc)
+             ret += t; write_file("/tmp/tc",
+             dump_variable(ret));", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:485
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#2)
+    func   : cmd_hook (             "mixed* tc =
+             values(TERMCAP_D->query_all_termcap_entries());
+             mapping ret = ([]); foreach(mapping t in tc)
+             ret += t; write_file("/tmp/tc",
+             dump_variable(ret));", )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (adm/cmd/wiz/eval)
+    func   : _main (             2139396, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/eval.c:36
+    pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+    func   : main (             2139396, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Error in loading object '/adm/tmp/tmp_eval_file'
+  time   : Tue Sep  3 20:40:11 1996
+  file   : adm/cmd/wiz/eval.c:49
+  pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+  [TRACE]  size==6
+    file   : :0
+    pgm/obj: <function> (obj/clone/user/human#2)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:243
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#2)
+    func   : <function> (             "'mapping* x =
+             values(TERMCAP_D->query_all_termcap_entries();
+             mapping ret = ([]); foreach(mapping tc in x)
+             ret += tx; write_file("/tmp/tc",
+             dump_variable(ret));'", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/protosh.c:521
+    pgm/obj: obj/clone/shells/protosh.c (obj/clone/shells/protosh#3)
+    func   : cmd_hook (             "mapping* x =
+             values(TERMCAP_D->query_all_termcap_entries();
+             mapping ret = ([]); foreach(mapping tc in x)
+             ret += tx; write_file("/tmp/tc",
+             dump_variable(ret));", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:485
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#2)
+    func   : cmd_hook (             "mapping* x =
+             values(TERMCAP_D->query_all_termcap_entries();
+             mapping ret = ([]); foreach(mapping tc in x)
+             ret += tx; write_file("/tmp/tc",
+             dump_variable(ret));", )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (adm/cmd/wiz/eval)
+    func   : _main (             2140420, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/eval.c:49
+    pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+    func   : main (             2140420, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Error in loading object '/obj/daemon/termcap_d'
+  time   : Tue Sep  3 21:19:04 1996
+  file   : adm/obj/daemon/login_d.c:389
+  pgm/obj: adm/obj/daemon/login_d.c (adm/obj/daemon/login_d)
+  [TRACE]  size==2
+    file   : adm/obj/daemon/login_d.c:200
+    pgm/obj: adm/obj/daemon/login_d.c (adm/obj/daemon/login_d)
+    func   : get_password (             1842628, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/login_d.c:389
+    pgm/obj: adm/obj/daemon/login_d.c (adm/obj/daemon/login_d)
+    func   : player_enter_world (             0, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Error in loading object '/obj/daemon/termcap_d'
+  time   : Tue Sep  3 21:19:29 1996
+  file   : adm/obj/daemon/login_d.c:389
+  pgm/obj: adm/obj/daemon/login_d.c (adm/obj/daemon/login_d)
+  [TRACE]  size==2
+    file   : adm/obj/daemon/login_d.c:200
+    pgm/obj: adm/obj/daemon/login_d.c (adm/obj/daemon/login_d)
+    func   : get_password (             1842628, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/login_d.c:389
+    pgm/obj: adm/obj/daemon/login_d.c (adm/obj/daemon/login_d)
+    func   : player_enter_world (             0, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  time   : Tue Sep  3 21:55:02 1996
+  file   : adm/obj/daemon/simul_efun/tell_object.c:3
+  pgm/obj: adm/obj/daemon/simul_efun.c (adm/obj/daemon/simul_efun)
+  [TRACE]  size==9
+    file   : :0
+    pgm/obj: <function> (obj/clone/user/human#136)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:243
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#136)
+    func   : <function> (             "wiz test", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/protosh.c:521
+    pgm/obj: obj/clone/shells/protosh.c (obj/clone/shells/protosh#137)
+    func   : cmd_hook (             "wiz test", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:485
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#136)
+    func   : cmd_hook (             "wiz test", )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (cmd/player/chat)
+    func   : _main (             2066628, )
+    ---------------------------------------------------------------------
+    file   : cmd/player/chat.c:18
+    pgm/obj: cmd/player/chat.c (cmd/player/chat)
+    func   : main (             2066628, )
+    ---------------------------------------------------------------------
+    file   : obj/daemon/chat_d.c:313
+    pgm/obj: obj/daemon/chat_d.c (obj/daemon/chat_d)
+    func   : chat (             "wiz test", )
+    ---------------------------------------------------------------------
+    file   : obj/daemon/chat_d.c:234
+    pgm/obj: obj/daemon/chat_d.c (obj/daemon/chat_d)
+    func   : broadcast_local (             "wiz", "Tim", "test", 0, 0, 0, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/simul_efun/tell_object.c:3
+    pgm/obj: adm/obj/daemon/simul_efun.c (adm/obj/daemon/simul_efun)
+    func   : tell_object (             0, 2111876, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  time   : Tue Sep  3 21:57:03 1996
+  file   : adm/obj/daemon/simul_efun/tell_object.c:3
+  pgm/obj: adm/obj/daemon/simul_efun.c (adm/obj/daemon/simul_efun)
+  [TRACE]  size==5
+    file   : adm/obj/inherit/client.c:61
+    pgm/obj: adm/obj/inherit/client.c (adm/obj/daemon/net/intermud)
+    func   : eventReadCallback (             4, ({ /* sizeof() == 9 */  "channel-m",  5, 
+             "Realms of Magic",  "dragon",  0,  0, 
+             "imud_code",  "Dragon",  "I'm starting to get a
+             passionate dislike to history.c :-)"}), )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/net/intermud.c:113
+    pgm/obj: adm/obj/daemon/net/intermud.c (adm/obj/daemon/net/intermud)
+    func   : eventRead (             ({ /* sizeof() == 9 */  "channel-m",  5, 
+             "Realms of Magic",  "dragon",  0,  0, 
+             "imud_code",  "Dragon",  "I'm starting to get a
+             passionate dislike to history.c :-)"}), )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/net/services/channel.c:72
+    pgm/obj: adm/obj/daemon/net/services.c (adm/obj/daemon/net/services)
+    func   : eventReceiveChannelMessage (             2524288, )
+    ---------------------------------------------------------------------
+    file   : obj/daemon/chat_d.c:234
+    pgm/obj: obj/daemon/chat_d.c (obj/daemon/chat_d)
+    func   : broadcast_local (             "icode", "Dragon@Realms of Magic", "I'm
+             starting to get a passionate dislike to
+             history.c :-)", 0, 0, 0, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/simul_efun/tell_object.c:3
+    pgm/obj: adm/obj/daemon/simul_efun.c (adm/obj/daemon/simul_efun)
+    func   : tell_object (             0, 2523652, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  time   : Tue Sep  3 21:57:47 1996
+  file   : adm/obj/daemon/simul_efun/tell_object.c:3
+  pgm/obj: adm/obj/daemon/simul_efun.c (adm/obj/daemon/simul_efun)
+  [TRACE]  size==5
+    file   : adm/obj/inherit/client.c:61
+    pgm/obj: adm/obj/inherit/client.c (adm/obj/daemon/net/intermud)
+    func   : eventReadCallback (             4, ({ /* sizeof() == 9 */  "channel-m",  5, 
+             "Ta'veren",  "gandhi",  0,  0,  "imud_code", 
+             "Gandhi",  "Those who don't know their
+             history.c are bound to repeat it.c"}), )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/net/intermud.c:113
+    pgm/obj: adm/obj/daemon/net/intermud.c (adm/obj/daemon/net/intermud)
+    func   : eventRead (             ({ /* sizeof() == 9 */  "channel-m",  5, 
+             "Ta'veren",  "gandhi",  0,  0,  "imud_code", 
+             "Gandhi",  "Those who don't know their
+             history.c are bound to repeat it.c"}), )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/net/services/channel.c:72
+    pgm/obj: adm/obj/daemon/net/services.c (adm/obj/daemon/net/services)
+    func   : eventReceiveChannelMessage (             2526848, )
+    ---------------------------------------------------------------------
+    file   : obj/daemon/chat_d.c:234
+    pgm/obj: obj/daemon/chat_d.c (obj/daemon/chat_d)
+    func   : broadcast_local (             "icode", "Gandhi@Ta'veren", "Those who don't
+             know their history.c are bound to repeat it.c",
+             0, 0, 0, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/simul_efun/tell_object.c:3
+    pgm/obj: adm/obj/daemon/simul_efun.c (adm/obj/daemon/simul_efun)
+    func   : tell_object (             0, 2532484, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  time   : Tue Sep  3 21:58:31 1996
+  file   : adm/obj/daemon/simul_efun/tell_object.c:3
+  pgm/obj: adm/obj/daemon/simul_efun.c (adm/obj/daemon/simul_efun)
+  [TRACE]  size==5
+    file   : adm/obj/inherit/client.c:61
+    pgm/obj: adm/obj/inherit/client.c (adm/obj/daemon/net/intermud)
+    func   : eventReadCallback (             4, ({ /* sizeof() == 9 */  "channel-m",  5, 
+             "MudX",  "servo",  0,  0,  "imud_code", 
+             "Servo",  "Heheh."}), )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/net/intermud.c:113
+    pgm/obj: adm/obj/daemon/net/intermud.c (adm/obj/daemon/net/intermud)
+    func   : eventRead (             ({ /* sizeof() == 9 */  "channel-m",  5, 
+             "MudX",  "servo",  0,  0,  "imud_code", 
+             "Servo",  "Heheh."}), )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/net/services/channel.c:72
+    pgm/obj: adm/obj/daemon/net/services.c (adm/obj/daemon/net/services)
+    func   : eventReceiveChannelMessage (             2532480, )
+    ---------------------------------------------------------------------
+    file   : obj/daemon/chat_d.c:234
+    pgm/obj: obj/daemon/chat_d.c (obj/daemon/chat_d)
+    func   : broadcast_local (             "icode", "Servo@MudX", "Heheh.", 0, 0, 0, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/simul_efun/tell_object.c:3
+    pgm/obj: adm/obj/daemon/simul_efun.c (adm/obj/daemon/simul_efun)
+    func   : tell_object (             0, 2059972, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Error in loading object '/adm/tmp/tmp_eval_file'
+  time   : Tue Sep  3 22:23:25 1996
+  file   : adm/cmd/wiz/eval.c:43
+  pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+  [TRACE]  size==7
+    file   : :0
+    pgm/obj: <function> (obj/clone/user/human#142)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:243
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#142)
+    func   : <function> (             "OOB_D->", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/protosh.c:521
+    pgm/obj: obj/clone/shells/protosh.c (obj/clone/shells/protosh#143)
+    func   : cmd_hook (             "OOB_D->", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:485
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#142)
+    func   : cmd_hook (             "OOB_D->", )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (adm/cmd/wiz/?)
+    func   : _main (             2582180, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/?.c:5
+    pgm/obj: adm/cmd/wiz/?.c (adm/cmd/wiz/?)
+    func   : main (             2582180, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/eval.c:43
+    pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+    func   : main (             2575364, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Array index out of bounds.
+  time   : Tue Sep  3 22:26:36 1996
+  file   : adm/obj/daemon/net/services/error.c:20
+  pgm/obj: adm/obj/daemon/net/services.c (adm/obj/daemon/net/services)
+  [TRACE]  size==4
+    file   : adm/obj/inherit/client.c:60
+    pgm/obj: adm/obj/inherit/client.c (adm/obj/inherit/client#163)
+    func   : eventReadCallback (             5, ({ /* sizeof() == 7 */  "error",  5,  "Lima
+             Bean",  0,  "Dysfunctional Mud",  0,  ({ /*
+             sizeof() == 3 */    "bad-proto",    "bad
+             directory specified",    ({ /* sizeof() == 4 */
+             "file-list-req",      "Dysfunctional Mud",     
+             "greg",      ""    })  })}), )
+    ---------------------------------------------------------------------
+    file   : :0
+    pgm/obj: <function> (adm/obj/daemon/net/oob_d)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/net/oob_d.c:212
+    pgm/obj: adm/obj/daemon/net/oob_d.c (adm/obj/daemon/net/oob_d)
+    func   : eventRead (             5, 2585408, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/net/services/error.c:20
+    pgm/obj: adm/obj/daemon/net/services.c (adm/obj/daemon/net/services)
+    func   : eventReceiveError (             ({ /* sizeof() == 7 */  "error",  5,  "Lima
+             Bean",  0,  "Dysfunctional Mud",  0,  ({ /*
+             sizeof() == 3 */    "bad-proto",    "bad
+             directory specified",    ({ /* sizeof() == 4 */
+             "file-list-req",      "Dysfunctional Mud",     
+             "greg",      ""    })  })}), )
+    ---------------------------------------------------------------------
+
+[ERROR] *Array index out of bounds.
+  time   : Tue Sep  3 22:26:56 1996
+  file   : adm/obj/daemon/net/services/error.c:20
+  pgm/obj: adm/obj/daemon/net/services.c (adm/obj/daemon/net/services)
+  [TRACE]  size==4
+    file   : adm/obj/inherit/client.c:60
+    pgm/obj: adm/obj/inherit/client.c (adm/obj/inherit/client#163)
+    func   : eventReadCallback (             5, ({ /* sizeof() == 7 */  "error",  5,  "Lima
+             Bean",  0,  "Dysfunctional Mud",  0,  ({ /*
+             sizeof() == 3 */    "bad-proto",    "bad
+             directory specified",    ({ /* sizeof() == 4 */
+             "file-list-req",      "Dysfunctional Mud",     
+             "greg",      ""    })  })}), )
+    ---------------------------------------------------------------------
+    file   : :0
+    pgm/obj: <function> (adm/obj/daemon/net/oob_d)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/net/oob_d.c:212
+    pgm/obj: adm/obj/daemon/net/oob_d.c (adm/obj/daemon/net/oob_d)
+    func   : eventRead (             5, 2585984, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/net/services/error.c:20
+    pgm/obj: adm/obj/daemon/net/services.c (adm/obj/daemon/net/services)
+    func   : eventReceiveError (             ({ /* sizeof() == 7 */  "error",  5,  "Lima
+             Bean",  0,  "Dysfunctional Mud",  0,  ({ /*
+             sizeof() == 3 */    "bad-proto",    "bad
+             directory specified",    ({ /* sizeof() == 4 */
+             "file-list-req",      "Dysfunctional Mud",     
+             "greg",      ""    })  })}), )
+    ---------------------------------------------------------------------
+
+[ERROR] *Array index out of bounds.
+  time   : Tue Sep  3 22:26:58 1996
+  file   : adm/obj/daemon/net/services/error.c:20
+  pgm/obj: adm/obj/daemon/net/services.c (adm/obj/daemon/net/services)
+  [TRACE]  size==4
+    file   : adm/obj/inherit/client.c:60
+    pgm/obj: adm/obj/inherit/client.c (adm/obj/inherit/client#163)
+    func   : eventReadCallback (             5, ({ /* sizeof() == 7 */  "error",  5,  "Lima
+             Bean",  0,  "Dysfunctional Mud",  0,  ({ /*
+             sizeof() == 3 */    "bad-proto",    "bad
+             directory specified",    ({ /* sizeof() == 4 */
+             "file-list-req",      "Dysfunctional Mud",     
+             "greg",      ""    })  })}), )
+    ---------------------------------------------------------------------
+    file   : :0
+    pgm/obj: <function> (adm/obj/daemon/net/oob_d)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/net/oob_d.c:212
+    pgm/obj: adm/obj/daemon/net/oob_d.c (adm/obj/daemon/net/oob_d)
+    func   : eventRead (             5, 2598592, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/net/services/error.c:20
+    pgm/obj: adm/obj/daemon/net/services.c (adm/obj/daemon/net/services)
+    func   : eventReceiveError (             ({ /* sizeof() == 7 */  "error",  5,  "Lima
+             Bean",  0,  "Dysfunctional Mud",  0,  ({ /*
+             sizeof() == 3 */    "bad-proto",    "bad
+             directory specified",    ({ /* sizeof() == 4 */
+             "file-list-req",      "Dysfunctional Mud",     
+             "greg",      ""    })  })}), )
+    ---------------------------------------------------------------------
+
+[ERROR] *Value being indexed is zero.
+  time   : Wed Sep  4 02:13:43 1996
+  file   : obj/inherit/room.c:173
+  pgm/obj: obj/inherit/room.c (d/base/start)
+  [TRACE]  size==7
+    file   : :0
+    pgm/obj: <function> (obj/clone/user/human#7)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:243
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#7)
+    func   : <function> (             "at me", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/nmsh.c:555
+    pgm/obj: obj/clone/shells/nmsh.c (obj/clone/shells/nmsh#8)
+    func   : cmd_hook (             "at me", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:485
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#7)
+    func   : cmd_hook (             "at me", )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (cmd/player/look)
+    func   : _main (             2287028, )
+    ---------------------------------------------------------------------
+    file   : cmd/player/look.c:36
+    pgm/obj: cmd/player/look.c (cmd/player/look)
+    func   : main (             "me", )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/room.c:173
+    pgm/obj: obj/inherit/room.c (d/base/start)
+    func   : exa_item (             2287156, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Value being indexed is zero.
+  time   : Wed Sep  4 02:13:59 1996
+  file   : obj/inherit/room.c:173
+  pgm/obj: obj/inherit/room.c (d/base/start)
+  [TRACE]  size==7
+    file   : :0
+    pgm/obj: <function> (obj/clone/user/human#7)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:243
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#7)
+    func   : <function> (             "at me", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/nmsh.c:555
+    pgm/obj: obj/clone/shells/nmsh.c (obj/clone/shells/nmsh#8)
+    func   : cmd_hook (             "at me", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:485
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#7)
+    func   : cmd_hook (             "at me", )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (cmd/player/look)
+    func   : _main (             2287572, )
+    ---------------------------------------------------------------------
+    file   : cmd/player/look.c:36
+    pgm/obj: cmd/player/look.c (cmd/player/look)
+    func   : main (             "me", )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/room.c:173
+    pgm/obj: obj/inherit/room.c (d/base/start)
+    func   : exa_item (             2287732, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Value being indexed is zero.
+  time   : Wed Sep  4 02:14:13 1996
+  file   : obj/inherit/room.c:173
+  pgm/obj: obj/inherit/room.c (d/base/start)
+  [TRACE]  size==7
+    file   : :0
+    pgm/obj: <function> (obj/clone/user/human#7)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:243
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#7)
+    func   : <function> (             "at me", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/nmsh.c:555
+    pgm/obj: obj/clone/shells/nmsh.c (obj/clone/shells/nmsh#8)
+    func   : cmd_hook (             "at me", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:485
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#7)
+    func   : cmd_hook (             "at me", )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (cmd/player/look)
+    func   : _main (             2285780, )
+    ---------------------------------------------------------------------
+    file   : cmd/player/look.c:36
+    pgm/obj: cmd/player/look.c (cmd/player/look)
+    func   : main (             "me", )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/room.c:173
+    pgm/obj: obj/inherit/room.c (d/base/start)
+    func   : exa_item (             2286964, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Error in loading object '/u/d/dryghar/workroom'
+  time   : Wed Sep  4 02:21:03 1996
+  file   : adm/cmd/wiz/clone.c:23
+  pgm/obj: adm/cmd/wiz/clone.c (adm/cmd/wiz/clone)
+  [TRACE]  size==6
+    file   : :0
+    pgm/obj: <function> (obj/clone/user/human#7)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:243
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#7)
+    func   : <function> (             "workroom.c", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/nmsh.c:555
+    pgm/obj: obj/clone/shells/nmsh.c (obj/clone/shells/nmsh#8)
+    func   : cmd_hook (             "workroom.c", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:485
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#7)
+    func   : cmd_hook (             "workroom.c", )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/cmdline.c:69
+    pgm/obj: obj/inherit/cmdline.c (adm/cmd/wiz/clone)
+    func   : _main (             "workroom.c", )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/clone.c:23
+    pgm/obj: adm/cmd/wiz/clone.c (adm/cmd/wiz/clone)
+    func   : main (             ({ /* sizeof() == 2 */  "clone", 
+             "workroom.c"}), ({ /* sizeof() == 1 */ 
+             "workroom.c"}), )
+    ---------------------------------------------------------------------

@@ -14,16 +14,12 @@ private static int *ac, armours, free_hands, combating;
 private static mixed *weapon_info; 
 
 void
-initialize()
-{
-  weapon_info = ({});
-}
-  
-void
-low_setup()
+init_combat()
 {
   int i = query_hands() / 2;
  
+  weapon_info = ({});
+
   set_ac(query_base_ac());
   set_armour(0);
 
@@ -63,10 +59,10 @@ set_ac(int *new_ac)
     COMBAT_D->update_ac(this_object(),ac);
 }
 
-nomask int
-*query_ac()
+nomask int*
+query_ac()
 {
-  return ac;
+  return copy(ac);
 }
 
 nomask void
@@ -96,7 +92,7 @@ query_free_hands()
 nomask mixed*
 query_weapon_info()
 {
-  return weapon_info;
+  return copy(weapon_info);
 }
 
 nomask void

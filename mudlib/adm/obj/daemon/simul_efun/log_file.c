@@ -3,5 +3,7 @@
 void
 log_file(string filename, string logMsg)
 {
-  write_file(LOG_DIR "/" + filename, ctime(time())+": " + logMsg);
+  filename = LOG_DIR "/" + filename;
+  
+  unguarded((: write_file($(filename), ctime(time())+": " + $(logMsg)) :), 1);
 }

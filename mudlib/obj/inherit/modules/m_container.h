@@ -26,5 +26,6 @@ int set_weight_capacity(int);
 int query_weight_capacity();
 int set_bulk_capacity(int);
 int query_bulk_capacity();
+string long();
 
 #endif /* _M_CONTAINER_H */

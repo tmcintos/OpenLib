@@ -19,10 +19,9 @@ string query_name();
 string query_cap_name();
 void set_gender(int s);
 int query_gender();
-int query_stat(string);
-int query_skill(string);
-int recieve_damage(int);
+int receive_damage(int);
 int id(string);
+string long();
 int receive_object(object);
 void die();
 

@@ -1,17 +1,17 @@
 #/obj/clone/user/human.c
-callback 
+callback 0
 redraw 
 s_length 24
-start 24
-prev 24
-length 32
-file ({"Welcome to Dysfunctional Mud!","-------------------------------------------------------------------------------","                D y s f u n c t i o n a l  M u d  N e w s","			last update: 06/17/96","-------------------------------------------------------------------------------","* Any mail for the mud can be sent to the following addresses:","      rockford@novia.net, astasia@iastate.edu (Tim)","      kyricc@inetnebr.com (Kyricc)","      scott@de.msstate.edu (Quint)","","* I am working on a new FTP server for the mud.  Right now you should be able","  to get and put files in both ASCII and BINARY mode.  Try it out if you get","  a chance and report any bugs to me.  (port: 4443) --Tim","","* Check out my ~tim/TODO list for things that need to be done.  New items are","  usually added to the bottom of the list.","","* I moved some directories around, mostly stuff got moved into /adm.","  There is a new include dir there, simul_efun stuff got moved into","  /adm/obj/daemon where it should be, as did the /obj/daemon/net directory.","  Save files got changed a little too.","","SECURITY stuff is mostly in place.  I've noticed problem already having to","do with callbacks from high privilege objects.  Quint, Ev and Tim should","have priv 1 access and everyone else should not right now.  Use the command","'lswiz' to get a list of wizards, and 'lsdom' for a list of domains.  Please","report any bugs in the system to me (Tim).  DOCUMENTATION can be found in","the file /doc/mudlib/systems/security--This is the original documentation","on which the system is based.  Better documentation later hopefully. :)","","","",})
+start 346
+prev 346
+length 361
+file "/obj/daemon/combat_d.c"
 in_help 0
 no_clean 0
 flags ({})
 coins ({0,0,})
 hit_points 100
 spell_points 0
-env_vars (["PATH":"/cmd/player:/adm/cmd/player:/cmd/wiz:/adm/cmd/wiz:/cmd/adm:/adm/cmd/adm","LENGTH":24,"TITLE":"is testing","WIDTH":80,"version":"Prototype Shell","PROMPT":"%//> ","SHELL":"/obj/clone/shells/protosh","TERM":"xterm",])
-aliases (["sc":"score","se":"southeast","w":"west","sw":"southwest","e":"east","ne":"northeast","i":"inventory","n":"north","l":"look","nw":"northwest","s":"south",])
+env_vars (["SHELL":"/obj/clone/shells/protosh","TITLE":"is testing","LENGTH":24,"WIDTH":80,"PATH":"/cmd/player:/adm/cmd/player:/cmd/wiz:/adm/cmd/wiz:/cmd/adm:/adm/cmd/adm","TERM":"xterm","PROMPT":"%//> ","version":"Prototype Shell",])
+aliases (["e":"east","i":"inventory","nw":"northwest","ne":"northeast","w":"west","s":"south","n":"north","sc":"score","l":"look","se":"southeast","sw":"southwest",])
 channels ({})

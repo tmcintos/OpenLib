@@ -66,42 +66,29 @@ set_gender(int s)
 }
 
 nomask int
-query_gender()
-{
-  return gender;
-}
-
-int
-query_stat(string stat)
-{
-  // put guts in here :)
-  return 5;
-}
-
-int
-query_skill(string skill)
-{
-  // put guts in here too :)
-  return 5;
-}
+query_gender() { return gender; }
 
 nomask int
-recieve_damage(int damage)
+receive_damage(int damage)
 {
-  write(sprintf("You took %i damage.\n",damage));
+  //debugging
+  message("combat", sprintf("You took %i damage.\n",damage), this_object());
 
-  if(!hit_points)
-    return 0;
+  // Temp debugging
+  // don't die if we're a player right now -- Tim
+  if( !userp(this_object()) )
+  {
+    if( damage > hit_points )
+    {
+      damage = hit_points;
+      hit_points = 0;
+    }
+    else
+      hit_points -= damage;
 
-  hit_points -= damage;
-
-  if(hit_points < 0)
-    hit_points = 0;
-
-// don't die if we're a player right now -- Tim
-  if( !userp(this_player()) )
-    if(!hit_points)
+    if( !hit_points )
       call_out((: die :), 2);
+  }
 
   return damage;
 }
@@ -111,6 +98,42 @@ id(string arg)
 {
   return arg == name;
 }
+
+string
+long()
+{
+  string ret;
+  
+  switch( hit_points )
+  {
+  case 0:
+    ret = " is in death's arms.\n";
+    break;
+  case 1..10:
+    ret = " is near death.\n";
+    break;
+  case 11..20:
+    ret = " is in very bad shape.\n";
+    break;
+  case 21..30:
+    ret = " is in bad shape.\n";
+    break;
+  case 31..40:
+    ret = " is injured.\n";
+    break;
+  case 51..70:
+    ret = " is slightly injured.\n";
+    break;
+  case 71..90:
+    ret = " is in good shape.\n";
+    break;
+  default:
+    ret = " is in very good shape.\n";
+  }
+
+  return capitalize(pronoun(this_object(), 0)) + ret;
+}
+
 
 int
 receive_object(object ob)

@@ -1,9 +1,15 @@
 /*  -*- LPC -*-  */
 // chatd.c
 // Originally written by Tim in fall 1995.
-// 03/08/96  Tim  :fixed emote to work with I3; documented code somewhat;
-//                 took out query_channel_info() and replaced with
-//                 is_qualified() (empty right now) for checking eligibility
+// 03/08/96   Tim@Dysfunctional Mud
+//          o fixed emote to work with I3; documented code somewhat;
+//          o took out query_channel_info() and replaced with
+//           is_qualified() (empty right now) for checking eligibility
+// 09/03/96   Tim@Dysfunctional Mud
+//          o took out the colon in the chat syntax.
+//          o put in new function clean_ulist() for taking out zombie entries
+//            in a channel's userlist
+
 #include <mudlib.h>
 #include <daemons.h>
 #include <net/daemons.h>
@@ -178,6 +184,12 @@ show_channels()
   }
 }
 
+void
+clean_ulist(class channel_info i)
+{
+  i->userlist = filter(i->userlist, (: $1 :));
+}
+
 varargs
 void
 broadcast_local(string ch, string who, string msg,
@@ -208,6 +220,8 @@ broadcast_local(string ch, string who, string msg,
       targetmsg = replace_string(targetmsg, "$O", target);
       msg = replace_string(msg, "$O", target);
 
+      clean_ulist(channels[ch]);   // clean up zombies in the userlist
+      
       foreach(user in ((class channel_info) channels[ch])->userlist) {
 	if(user == targetob) {
 	  mess += targetmsg + "\n";
@@ -219,6 +233,8 @@ broadcast_local(string ch, string who, string msg,
       return;
     } else {
       mess += msg + "\n";
+
+      clean_ulist(channels[ch]);   // clean up zombies in the userlist
 
       foreach(user in ((class channel_info) channels[ch])->userlist)
 	tell_object(user, mess);
@@ -245,8 +261,10 @@ chat(string str)
   string rchan;
   int emote;
 
-  if( sscanf(str, "%s %s: %s", type, chan, mess) == 3 ) {
-    switch(type) {
+  if( sscanf(str, "%s %s %s", type, chan, mess) == 3 )
+  {
+    switch( type )
+    {
     case "emote":
       emote = 1;
       mess = sprintf("$N %s", mess);
@@ -256,10 +274,12 @@ chat(string str)
 //      mess = FEELING_D->get_feeling(mess);
       break;
     default:
+      mess = chan + " " + mess;
+      chan = type;
     }
-  } else if( sscanf(str, "%s: %s", chan, mess) != 2 ) {
-    return 0;    
   }
+  else if( sscanf(str, "%s %s", chan, mess) != 2 )
+    return 0;
 
   if(chan == "list") {
     string ch, mud;
@@ -294,14 +314,13 @@ chat(string str)
     return 1;
   }
 
-  if( !(int) this_player()->is_subscribed_chan(chan) )
-    return notify_fail("You can't chat on a channel to which "
-		       "you aren't subscribed!\n");
-
   if( !channel_exists(chan) )
     return notify_fail("Channel does not exist.\n");
   if( ((class channel_info) channels[chan])->min_lvl == -1 )
     return notify_fail("Channel is info only.\n");
+  if( !this_player()->is_subscribed_chan(chan) )
+    return notify_fail("You can't chat on a channel to which "
+		       "you aren't subscribed!\n");
 
   rchan = map_to_remote(chan);
 

@@ -4,6 +4,7 @@
 //
 // 02/03/96  Tim  Optimized a bit
 // 02/19/96  Tim  Optimized a bit more :)
+// 09/05/96  Tim  Added necessary unguarded()'s
 
 #include <mudlib.h>
 #include <save.h>
@@ -20,7 +21,7 @@ void
 create()
 {
   cmdpathmap = ([]);
-  restore_object(SAVE_CMD_D, 1);
+  unguarded((: restore_object(SAVE_CMD_D, 1) :), 1);
 }
 
 void
@@ -32,7 +33,7 @@ reset()
   }
   // Assert: directories with no commands have been removed from mapping
 
-  save_object(SAVE_CMD_D);
+  unguarded((: save_object(SAVE_CMD_D) :), 1);
 }
 
 #ifdef DEBUG
@@ -139,6 +140,6 @@ hash_path(string path)
   // Assert:  cmdpathmap[path] now contains an array of all cmds
   //          in that dir (without the .c extension)
 
-  save_object(SAVE_CMD_D);
+  unguarded((: save_object(SAVE_CMD_D) :), 1);
   return 1;
 }

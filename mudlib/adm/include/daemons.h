@@ -9,7 +9,7 @@
 #define COMBAT_D             DAEMON_DIR        "/combat_d"
 #define EDITOR_D             DAEMON_DIR        "/editor_d"
 #define EMOTE_D              DAEMON_DIR        "/emote_d"
-#define FINGER_D             DAEMON_DIR        "/finger_d"
+#define FINGER_D             SECURE_DAEMON_DIR "/finger_d"
 // #define FOLDERS_D            SECURE_DAEMON_DIR "/folders"
 // #define LETTERS_D            SECURE_DAEMON_DIR "/letters"
 // #define LOCALPOST_D          SECURE_DAEMON_DIR "/localpost"

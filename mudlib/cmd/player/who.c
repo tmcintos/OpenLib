@@ -17,7 +17,7 @@ main(string arg)
       write((in_edit(user) ? "*" : " ") + (in_input(user) ? "+" : " ") +
 	    (string)user->short()+".\n");
     else
-      write("(no descrip -- this should not happen)\n");
+      write("(Someone)\n");
   }
 
   return 1;

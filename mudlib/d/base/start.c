@@ -6,6 +6,7 @@ inherit ROOM;
 void
 initialize()
 {
+  ::initialize();
   set_light(1);
   set_short("Center of the MUD\n");
   set_long(@end
@@ -15,5 +16,4 @@ end);
   set_exits((["east" : "/d/base/start2",
 	      "west" : "/d/base/start3",
 	      ]));
-  replace_program(ROOM);
 }

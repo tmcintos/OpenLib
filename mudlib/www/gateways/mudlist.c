@@ -32,11 +32,17 @@ string footer = @ENDHTML
 <A HREF="/index.html">Back to Main Page</A>
 <ADDRESS>
 Dysfunctional Mud /
-<A HREF="mailto:mud@knapp38.res.iastate.edu">mud@knapp38.res.iastate.edu</A>
+<A HREF="mailto:%s">%s</A>
 </ADDRESS>
 </BODY>
 </HTML>
 ENDHTML;
+
+void
+create()
+{
+  footer = sprintf(footer, ADMIN_EMAIL, ADMIN_EMAIL);
+}
 
 //
 // Now the gateway function: (no one said this would be pretty)
@@ -72,23 +78,23 @@ gateway()
     if( tmp = info[11]["http"] )
     {
       string href = sprintf("http://%s:%i/", info[1], tmp);
-      long += sprintf("<I>WWW:</I><A HREF=\"%s\">%s</A><BR>\n", href, href);
+      long += sprintf("<I>WWW: </I><A HREF=\"%s\">%s</A><BR>\n", href, href);
     }
 
     if( tmp = info[11]["ftp"] )
     {
       string href = sprintf("ftp://%s:%i/", info[1], tmp);
-      long += sprintf("<I>FTP:</I><A HREF=\"%s\">%s</A><BR>\n", href, href);
+      long += sprintf("<I>FTP: </I><A HREF=\"%s\">%s</A><BR>\n", href, href);
     }
 
     if( tmp = info[11]["smtp"] )
-      long += sprintf("<I>SMTP port:</I> %i<BR>", tmp);
+      long += sprintf("<I>SMTP port: </I>%i<BR>", tmp);
 
     if( tmp = info[11]["nntp"] )
-      long += sprintf("<I>NNTP port:</I> %i<BR>", tmp);
+      long += sprintf("<I>NNTP port: </I>%i<BR>", tmp);
 
     if( tmp = info[11]["rcp"] )
-      long += sprintf("<I>RCP port:</I> %i<BR>", tmp);
+      long += sprintf("<I>RCP port: </I>%i<BR>", tmp);
 
     if( tmp = info[11]["amcp"] )
       long += sprintf("AMCP version %s<BR>\n", tmp);

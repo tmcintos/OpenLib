@@ -1,3 +1,6 @@
-21/0196 : Exe
-	Changed emoted.c to remove the annoying s.es. messages seen in the room
-	This is a temp measure until we can rip out emoted and start again.
+Tue Sep  3 19:06:19 1996 (tmcintos@knapp38.res.iastate.edu (Tim))
+    * chat_d.c:  Changed syntax for chat channels, removing the ':'
+
+Tue Sep  3 22:04:03 1996 (tmcintos@knapp38.res.iastate.edu (Tim))
+    * chat_d.c: Put a check in for 0's in ch userlists.
+

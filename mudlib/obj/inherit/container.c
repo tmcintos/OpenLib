@@ -22,13 +22,5 @@ initialize()
 string
 long()
 {
-  string ret = ::long();
-  object* obs = all_inventory(this_object());
-
-  if( sizeof(obs) )
-    ret += break_string("  It contains " + list_obs(obs) + ".\n", 70);
-  else
-    ret += "  It contains nothing.\n";
-
-  return ret;
+  return object::long() + m_container::long();
 }

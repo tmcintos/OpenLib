@@ -37,4 +37,11 @@ more:   -checks env vars for LENGTH and WIDTH
 -created 'changelog' command to ease documentation
 :Jun-Aug
 -put in security for alpha testing
+-more.c: rewrite more() for better efficiency
+:Sept
+-mail: make it use more() and do the intermud part (Tim) (alpha testing)
+	-group expansion via domains
+ 	-when editor aborts while doing a reply, make it come back to the
+	command loop if possible.
+-Use forms for the www server for finger reports, etc.
 </PRE>

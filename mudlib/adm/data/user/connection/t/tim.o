@@ -3,10 +3,10 @@ name "tim"
 cap_name 0
 password "TKpXEwZ9LKfG2"
 real_name "Tim McIntosh"
-email_addr "tmcintos@knapp38.res.iastate.edu"
-body "/obj/clone/user/human"
+email_addr "tmcintos@dm.imaginary.com"
+body "/obj/clone/user"
 login_shell "/obj/clone/shells/protosh"
 gender 1
-login_time 841368280
-logout_time 841366684
+login_time 842296530
+logout_time 842033613
 login_from "loopback"

@@ -1,11 +1,10 @@
 -------------------------------------------------------------------------------
                 D y s f u n c t i o n a l  M u d  N e w s
-			last update: 06/17/96
+			last update: 09/05/96
 -------------------------------------------------------------------------------
 * Any mail for the mud can be sent to the following addresses:
       rockford@novia.net, astasia@iastate.edu (Tim)
       kyricc@inetnebr.com (Kyricc)
-      scott@de.msstate.edu (Quint)
 
 * I am working on a new FTP server for the mud.  Right now you should be able
   to get and put files in both ASCII and BINARY mode.  Try it out if you get
@@ -14,15 +13,29 @@
 * Check out my ~tim/TODO list for things that need to be done.  New items are
   usually added to the bottom of the list.
 
-* I moved some directories around, mostly stuff got moved into /adm.
-  There is a new include dir there, simul_efun stuff got moved into
-  /adm/obj/daemon where it should be, as did the /obj/daemon/net directory.
-  Save files got changed a little too.
+* SECURITY stuff is mostly in place.  I've noticed problem already having to
+  do with callbacks from high privilege objects.  Quint, Ev and Tim should
+  have priv 1 access and everyone else should not right now.  Use the command
+  'lswiz' to get a list of wizards, and 'lsdom' for a list of domains.  Please
+  report any bugs in the system to me (Tim).  DOCUMENTATION can be found in
+  the file /doc/mudlib/systems/security--This is the original documentation
+  on which the system is based.  Better documentation later hopefully. :)
 
-SECURITY stuff is mostly in place.  I've noticed problem already having to
-do with callbacks from high privilege objects.  Quint, Ev and Tim should
-have priv 1 access and everyone else should not right now.  Use the command
-'lswiz' to get a list of wizards, and 'lsdom' for a list of domains.  Please
-report any bugs in the system to me (Tim).  DOCUMENTATION can be found in
-the file /doc/mudlib/systems/security--This is the original documentation
-on which the system is based.  Better documentation later hopefully. :)
+* CHAT command:  I changed the syntax...you don't need a ':' anymore. -Tim
+
+* Changed it so default for more() is to exit when done paging.  setenv
+  MORE_NO_EXIT_END to change this.  (this is opposite of before) -Tim
+
+* TERMINAL TYPES: Once again supported properly..although few are supported.
+  **hint, hint--project idea**  If your terminal type is unknown, it will
+  default to "default" which does nothing.  If you set the environment variable
+  DEFAULT_TERM to a value this will be used instead. -Tim
+  "ansi" or "vt102" are probably the coolest if you support them. (setenv)
+
+* MAIL has been bumped up to v3.0  A few small things have changed like
+  deletions which are now marked as deleted and aren't committed until the
+  mailbox is saved.  See the online help in mail for more info.
+
+* PROBLEM:  How to let the players save their character (priv 0) while having
+  a write protection=1 on the /adm/data directory so as to prevent others from
+  modifying it.  Give me any ideas you\'ve got. --Tim

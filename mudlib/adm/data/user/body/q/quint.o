@@ -1,15 +1,18 @@
-#obj/clone/user/human.c
-slen 25
-swid 80
-curr_line 34
-lines 33
-file ({"login_d: cons25 is not a supported terminal type","Welcome to Dysfunctional Mud!","-------------------------------------------------------------------------------","                D y s f u n c t i o n a l  M u d  N e w s","			last update: 06/17/96","-------------------------------------------------------------------------------","* Any mail for the mud can be sent to the following addresses:","      rockford@novia.net, astasia@iastate.edu (Tim)","      kyricc@inetnebr.com (Kyricc)","      scott@de.msstate.edu (Quint)","","* I am working on a new FTP server for the mud.  Right now you should be able","  to get and put files in both ASCII and BINARY mode.  Try it out if you get","  a chance and report any bugs to me.  (port: 4443) --Tim","","* Check out my ~tim/TODO list for things that need to be done.  New items are","  usually added to the bottom of the list.","","* I moved some directories around, mostly stuff got moved into /adm.","  There is a new include dir there, simul_efun stuff got moved into","  /adm/obj/daemon where it should be, as did the /obj/daemon/net directory.","  Save files got changed a little too.","","SECURITY stuff is mostly in place.  I've noticed problem already having to","do with callbacks from high privilege objects.  Quint, Ev and Tim should","have priv 1 access and everyone else should not right now.  Use the command","'lswiz' to get a list of wizards, and 'lsdom' for a list of domains.  Please","report any bugs in the system to me (Tim).  DOCUMENTATION can be found in","the file /doc/mudlib/systems/security--This is the original documentation","on which the system is based.  Better documentation later hopefully. :)","","","",})
-callback 
+#/obj/clone/user/human.c
+morestring "%%^INVERSE%%^--MORE--%%^RESET%%^ (%d%%) %s"
+callback 0
+redraw 
+s_length 25
+start 25
+prev 1
+length 2
+file ({"Members of domain Admin: (total 3)  (+Domain Administrator)","+Evergreen, +Quint, +Tim.",})
+in_help 0
 no_clean 0
 flags ({})
 coins ({0,0,})
 hit_points 0
 spell_points 0
-env_vars (["TERM":"vt100","MORE_EXIT_END":1,"TITLE":"Bleh! says $N","nmsh_xverb":(["'":"say $*",":":"emote $*",]),"nmsh_alias":(["u":"up","sw":"southwest","i":"inventory","se":"southeast","nw":"northwest","l":"look $*","ne":"northeast","w":"west","s":"south","d":"down","n":"north","e":"east","exa":"look at $*","bio":"biography",]),"nmsh_nick":([]),"version":"Prototype Shell","PROMPT":"[%/]-> ","PATH":"/cmd/wiz:/cmd/player:/cmd/adm:/adm/cmd/player:/adm/cmd/wiz:/adm/cmd/adm","LENGTH":25,"SHELL":"/obj/clone/shells/protosh","WIDTH":80,])
-aliases (["sc":"score","sw":"southwest","i":"inventory","se":"southeast","nw":"northwest","l":"look","la":"look at","ne":"northeast","w":"west","s":"south","test":"say \"Check ${this} out???\"","n":"north","e":"east",])
+env_vars (["PATH":"/cmd/wiz:/cmd/player:/cmd/adm:/adm/cmd/player:/adm/cmd/wiz:/adm/cmd/adm","TERM":"default","MORE_EXIT_END":1,"PROMPT":"[%/]-> ","version":"Prototype Shell","SHELL":"/obj/clone/shells/protosh","nmsh_xverb":(["'":"say $*",":":"emote $*",]),"nmsh_alias":(["se":"southeast","i":"inventory","ne":"northeast","w":"west","sw":"southwest","d":"down","e":"east","n":"north","s":"south","l":"look $*","bio":"biography","u":"up","exa":"look at $*","nw":"northwest",]),"LENGTH":25,"TITLE":"Bleh! says $N","WIDTH":80,"nmsh_nick":([]),])
+aliases (["se":"southeast","i":"inventory","ne":"northeast","la":"look at","w":"west","sw":"southwest","e":"east","n":"north","s":"south","l":"look","sc":"score","nw":"northwest","test":"say \"Check ${this} out???\"",])
 channels ({})

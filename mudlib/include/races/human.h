@@ -82,8 +82,8 @@ varargs mixed *query_unarmed(int not_really_important,string wep_skill)
     //per point of str + 1% per combat * weapon skill.
     ({"punch","sock","chop","jab"}),
     ({"punches","socks","chops","jabs"}),
-    ({"miss","swing above", "jab beside", "swing short"}),
-    ({"misses","swings above", "jabs beside", "swings short"}),
+    ({"miss","swing above", "jab beside", "swing short of"}),
+    ({"misses","swings above", "jabs beside", "swings short of"}),
     ({"fists","balled hand", "hand", "fist"}),
     WEAPON_FISTS,
     this_object(),

@@ -10,36 +10,36 @@
 <HR>
 
 <H3>Dysfunctional Mailing List!!!</H3>
- <P>Subscribe to the dysfunctional mailing list today!!  Just send mail to
- <A HREF="mailto:majordomo@knapp38.res.iastate.edu">majordomo@knapp38.res.iastate.edu</A>.  Put 'subscribe dysfunctional' in the BODY of the letter.
+Subscribe to the dysfunctional mailing list today!!  Just send mail to
+ <A HREF="mailto:majordomo@dm.imaginary.com">majordomo@dm.imaginary.com</A>.  Put 'subscribe dysfunctional' in the BODY of the letter.
 
 <H3>Get Dysfunctionalized!!  Packages now available.</H3>
- <P>As the UltraLib mudlib develops, certain packages which should be easily
+As the UltraLib mudlib develops, certain packages which should be easily
  portable to other mudlibs are being made available to the general public.
  These packages may be found via anonymous FTP at
-<A HREF="ftp://knapp38.res.iastate.edu/pub/mud/UltraLib/packages">
- knapp38.res.iastate.edu</A>
+<A HREF="ftp://dm.imaginary.com/pub/mud/UltraLib/packages">
+dm.imaginary.com</A>
 
 <H3>Programmers Wanted!!</H3>
 <FONT color=turquoise>
 Dysfunctional Mud is currently the test site for a mudlib in pre-alpha
  development. Experienced LPC coders familiar with mudlib internals are
  always welcome to help out with the project. Please send email to <A
- HREF="mailto:mud@knapp38.res.iastate.edu">mud@knapp38.res.iastate.edu</A>
+ HREF="mailto:mud@dm.imaginary.com">mud@dm.imaginary.com</A>
  if you would like to help out.
 </FONT>
 
 <H2>Gimme Some Sugar, Sweet Cakes!!</H2>
 <UL>
-<LI> <A HREF="telnet://knapp38.res.iastate.edu:4444">Login to the Mud!</A>
+<LI> <A HREF="telnet://dm.imaginary.com:4444">Login to the Mud!</A>
 <LI> <A HREF="gateways/mudlist">Dysfunctional Mud's <I>swank</I> Dynamic Mudlist!!</A>
-<LI> <A HREF="gateways/finger">Users Currently on Dysfunctinal Mud</A>
-<LI> <A HREF="finger.html">Get information on a specific user</A>
+<LI> <A HREF="gateways/finger">Dysfunctinal Mud Finger Service</A>
+<LI> <A HREF="http://www.imaginary.com/">Center For Imaginary Environments</A>
 <LI> <A HREF="http://www.imaginary.com/LPC/MudOS">MudOS Homepage</A>
 <LI> <A HREF="http://www.imaginary.com/~beek/mudos/optimization.html">MudOS LPC
+Optimizations Page</A>
 <LI> <A HREF="~tim/TODO">Tim's TODO list</A>
 <LI> <A HREF="~tim/DONE">Tim's DONE list</A>
-Optimizations Page</A>
 </UL>
 
 <H2>Wizards Who Beat Each Other Up Here:</H2>
@@ -58,7 +58,7 @@ of this project is here.
 
 <ADDRESS>
 Dysfunctional Mud /
-<A HREF="mailto:mud@knapp38.res.iastate.edu">mud@knapp38.res.iastate.edu</A>
+<A HREF="mailto:mud@dm.imaginary.com">mud@dm.imaginary.com</A>
 </ADDRESS>
 
 </BODY>

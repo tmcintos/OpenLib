@@ -22,7 +22,7 @@
 #define status int          // for backwards compat don't use
 
 #define MUD_STATUS "pre-alpha development"
-#define ADMIN_EMAIL "mud@knapp38.res.iastate.edu"
+#define ADMIN_EMAIL "mud@dm.imaginary.com"
 
 #define mudlib_name() "UltraLib"
 #define mudlib_version() "0.1"

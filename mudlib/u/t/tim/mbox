@@ -1,0 +1,31 @@
+To: tim
+From: Kyricc
+Date: Thu Feb 22 04:58:33 1996
+Subject: 'all'
+CC: 
+BCC: 
+-------
+hey we need to figure out how to get the driver to recognize the
+word 'all'.  Like get 'all' and wear 'all'.  Any idea where we can
+do that at?
+To: evergreen@Dysfunctional Mud
+From: Tim@Dysfunctional Mud
+Date: Fri May 31 00:00:05 1996
+Subject: Bulletin Board idea
+CC: tim@Dysfunctional Mud
+-------
+I just had this idea and it is probably half-baked, but I'll let you
+know before I forget it.
+ 
+Maybe the bulletin boards should be the player's interface to a more
+global news system (each board being an interface to a newsgroup).
+Then wizards and the like could use newsreaders to interface to the
+system and access any newsgroup. (not every group would have a bboard
+for it of course)  The news would be handled by a daemon and could
+then also easily interface with the intermud stuff.  The implementation
+on IdeaExchange and other libs is very usenet-like...I think that is
+probably a good way to go.
+ 
+Well, let me know what you think about this.
+ 
+Tim

@@ -16,7 +16,7 @@
 #define LOGIN_D              SECURE_DAEMON_DIR "/login_d"
 #define GROUP_D              SECURE_DAEMON_DIR "/group_d"
 #define MAIL_D               SECURE_DAEMON_DIR "/mail_d"
-//#define NEWS_D               DAEMON_DIR        "/news"
+#define NEWS_D               DAEMON_DIR        "/readnews_d"
 #define NEWSSERVER           SECURE_DAEMON_DIR        "/news_d"
 // #define OPTIONS_D            SECURE_DAEMON_DIR "/options"
 #define SECURITY_D           SECURE_DAEMON_DIR "/security_d"

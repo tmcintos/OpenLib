@@ -5,10 +5,6 @@
 -bulletin boards (Evergreen) [this has been merged into a more general news
  system to which bulletin boards will be the player interface] (Tim -- I guess)
 -put command (Kyricc) (is this finished?)
--mail: make it use more() and do the intermud part (Tim) (alpha testing)
-	-group expansion via domains
- 	-when editor aborts while doing a reply, make it come back to the
-	command loop if possible.
 -Banished names.  Implement this probably as a daemon that maintains an array
 	of names.  Could be incorporated into logind?  Would require a
 	savefile. (Talen) (alpha testing)
@@ -59,7 +55,6 @@
  of I3 spec. (found on CIE homepage)
 -intermud.c: fix to use shutdown packet when shutting down (in remove()?)
 -finish mudlib programming style guide
--more.c: rewrite more() for better efficiency
 -object.c needs work... (outdated..I think)
 -room.c: make long() always ret a string array too... will have to change
  this standard for all objects. (also outdated)
@@ -68,9 +63,6 @@
  call interior() (or something) with 'look in' (not sure about this)
 -ls.c: add an flag to sort files by modification date
 -list idle time as hh:mm:ss or dd:hh:mm:ss in the general finger report.
--more():  Fix it so when exactly one screenful is displayed, it will exit
-  instead of saying (END) and prompting...This is when MORE_EXIT_END is defined
-  of course... (outdated??)
 -login_d: change it so any member of domain admin gets priv 1 (outdated??)
 -fix errors in net daemons caused by my change to server.c (outdated??)
 -fix security hole created by programs like changelog which use a callback
@@ -78,5 +70,8 @@
  Probably just means being careful when writing such commands...maybe more.
 -problem with CMD_D?  When path is garbage we get problems with security_d
  and too long eval...problem is prolly in get_file_protection
--Use forms for the www server for finger reports, etc.
+-termcap: refine daemon and build up a larger database
+-syslog: system logging facility, msg priorities etc.
+-get command:  fix so you can't steal stuff from people-not now at least
+-trans/summon:  create some commands to bring people/things to your environmt.
 </PRE>

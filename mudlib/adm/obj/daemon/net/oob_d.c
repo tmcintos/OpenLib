@@ -36,10 +36,12 @@ create()
   clients = ([]);
   connections = ([]);
   manual_end = ([]);
+#if 0
   /*
    * start outgoing queue
    */
   call_out("eventFlushQueue", TIME_TO_ADVANCE);
+#endif
 }
 
 int
@@ -51,7 +53,9 @@ remove()
 	       sprintf("remove: couldn't destruct client object %O.\n", c));
   }
 
+#if 0
   remove_call_out("eventFlushQueue");
+#endif
   remove_call_out("eventSendPackets");
   remove_call_out("ClientConnect");
   save_object(SAVE_OOB_D);
@@ -327,6 +331,9 @@ OOBQueuePacket(string mudname, mixed* packet)
   } else {
     elt->val += ({ packet });           // add to existing queue
   }
+
+  if( !IsConnected(mudname) )           // Connect if not connected
+    OOBBegin(mudname, 1, 0);    
 }
 
 void
@@ -354,6 +361,7 @@ IsConnected(string mud)
   return 0;
 }
 
+#if 0
 private void
 eventFlushQueue()
 {
@@ -366,6 +374,7 @@ eventFlushQueue()
    */
   call_out("eventFlushQueue", TIME_TO_ADVANCE);
 }
+#endif
 
 private void
 ClientConnect(string mud, string address, int port, function fail, int waiting)

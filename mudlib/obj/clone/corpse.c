@@ -13,17 +13,15 @@ inherit OBJECT;
 private static int timer;               // rotting timer
 
 void
-create()
+setup()
 {
-  ::create();
-
   timer = 0;
   set_heart_beat(1);                    // for rotting
 
   // must hold objects
   set_object_class(query_object_class() | OBJECT_CONTAINER);
 
-  set_ids(({ "corpse", "body" }));
+  add_ids(({ "corpse", "body" }));
 }
 
 void

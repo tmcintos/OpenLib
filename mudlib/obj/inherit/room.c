@@ -40,7 +40,7 @@ private static mapping exits;            /* hmm...who knows */
 private static mapping items;            /* sets mapping for items */
 
 void
-initizalize()
+initialize()
 {
   m_flags::initialize();
   m_container::initialize();

@@ -3,13 +3,16 @@
 #include <mudlib.h>
 #include <gender.h>
 
-inherit MONSTER "/human";
+inherit MONSTER;
 
 void
 setup()
 {
   object ob;
 
+  init_race("/obj/daemon/race_d"->query_raceinfo("human"));
+  init_combat();
+  
   set_name("beavis");
   add_ids(({ "kid" }));
   set_short("Beavis");

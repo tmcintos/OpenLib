@@ -24,5 +24,6 @@
 #define ARMOUR       INHERIT_DIR "/armour"
 #define USER         CLONE_DIR "/user"
 #define MONSTER      CLONE_DIR "/monster"
+#define MAILBOX      SECURE_CLONE_DIR "/mailbox"
 
 #endif /* _MUDLIB_H */

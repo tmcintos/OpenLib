@@ -23,8 +23,8 @@
 /*
  * Define this macro for debugging
  */
-// #define DEBUG(x) log_file("oob_d.debug", x)
-#undef DEBUG
+#define DEBUG(x) log_file("oob_d.debug", x)
+//#undef DEBUG
 
 // The only things you should call externally
 void OOBQueuePacket(string target_mudname, mixed *packet);  // for requests

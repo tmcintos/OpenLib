@@ -1,17 +1,21 @@
-#/obj/clone/user/human.c
+#/obj/clone/user.c
+morestring "/u/c/casper/room.c: (%d%%) %s"
 callback 0
 redraw 
 s_length 25
 start 49
 prev 25
-length 37
-file "/doc/man/man3/sort_array.3"
+length 139
+file "/u/c/casper/room.c"
 in_help 0
 no_clean 0
 flags ({})
 coins ({0,0,})
 hit_points 0
 spell_points 0
-env_vars (["PATH":"/cmd/wiz:/adm/cmd/wiz:/cmd/player:/adm/cmd/player:/adm/cmd/adm:/cmd/adm","history":100,"LENGTH":25,"BOB":0,"WIDTH":80,"version":"Prototype Shell","PROMPT":"[%^BOLD%^%~%^RESET%^]-> ","TERM":"ansi","SHELL":"/obj/clone/shells/protosh","TITLE":"is out to eat...","nmsh_nick":([]),"MORE_EXIT_END":1,"hey":1,])
-aliases (["sc":"score","ls":"ls -cF","prompt":"say \"$PROMPT\"","nod":"emote nod","er":"more /log/errors/runtime","unsub":"unsubscribe","la":"look at","ne":"northeast","sw":"southwest","se":"southeast","nw":"northwest","brb":"shout Be right back I\\'m going AFK!!!","w":"west","e":"east","n":"north","i":"inventory","l":"look","s":"south","sub":"subscribe","te":"tail /log/errors/compile",])
-channels ({"igossip",})
+str 0
+agil 0
+skills 0
+env_vars (["history":100,"PATH":"/cmd/wiz:/adm/cmd/wiz:/cmd/player:/adm/cmd/player:/adm/cmd/adm:/cmd/adm","BOB":0,"nmsh_alias":(["sw":"southwest","nw":"northwest","i":"inventory","ne":"northeast","u":"up","w":"west","d":"down","s":"south","l":"look $*","n":"north","bio":"biography","se":"southeast","exa":"look at $*","e":"east",]),"LENGTH":25,"version":"Prototype Shell","PROMPT":"[%^BOLD%^%~%^RESET%^]-> ","WIDTH":80,"hey":1,"SHELL":"/obj/clone/shells/protosh","nmsh_xverb":(["'":"say $*",":":"emote $*",]),"TERM":"vt102","nmsh_nick":([]),"TITLE":"is rockin the casbah","DEFAULT_TERM":"vt102",])
+aliases (["nod":"emote nod","te":"tail /log/errors/compile","ne":"northeast","sc":"score","ls":"ls -cF","l":"look","brb":"shout Be right back I\\'m going AFK!!!","prompt":"say \"$PROMPT\"","e":"east","sub":"subscribe","sw":"southwest","nw":"northwest","i":"inventory","la":"look at","w":"west","s":"south","n":"north","unsub":"unsubscribe","se":"southeast","er":"more /log/errors/runtime",])
+channels ({"icode","wiz",})

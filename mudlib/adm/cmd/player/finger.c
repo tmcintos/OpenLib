@@ -47,8 +47,8 @@ void remote_finger(object ob, string who, string mud) {
     int tc_flag, ud_flag, id;
 
     if( !(mud = (string)INTERMUD_D->GetMudName(mud)) ) {
-	return notify_fail( mud_name() + " is blissfully unaware of the MUD " 
-		"you seek.");
+	return write( mud_name() + " is blissfully unaware of the MUD " 
+		"you seek.\n");
     }
     SERVICES_D->eventSendFingerRequest(convert_name(who), mud);
     write("Remote finger sent to " + mud + ".\n");

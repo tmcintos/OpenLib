@@ -2452,3 +2452,642 @@ Fri Aug 30 00:21:31 1996: Ip 128.83.134.67 resloved to bozzio.cc.utexas.edu afte
 Fri Aug 30 00:24:08 1996: 128.83.134.67: CONNECTED (Fri Aug 30 00:24:08 1996)
 Fri Aug 30 00:24:08 1996: 128.83.134.67: GET /~hamnsnock/ HTTP/1.0 (Fri Aug 30 00:24:08 1996)
 Fri Aug 30 00:24:08 1996: Ip 128.83.134.67 resloved to bozzio.cc.utexas.edu after connection closed.
+Fri Aug 30 00:36:00 1996: 128.83.134.67: CONNECTED (Fri Aug 30 00:36:00 1996)
+Fri Aug 30 00:36:00 1996: 128.83.134.67: GET /~evergreen/ HTTP/1.0 (Fri Aug 30 00:36:00 1996)
+Fri Aug 30 00:36:00 1996: Ip 128.83.134.67 resloved to bozzio.cc.utexas.edu after connection closed.
+Fri Aug 30 00:36:06 1996: 128.83.134.67: CONNECTED (Fri Aug 30 00:36:06 1996)
+Fri Aug 30 00:36:06 1996: 128.83.134.67: GET /~kyricc/ HTTP/1.0 (Fri Aug 30 00:36:06 1996)
+Fri Aug 30 00:36:06 1996: Ip 128.83.134.67 resloved to bozzio.cc.utexas.edu after connection closed.
+Fri Aug 30 00:36:06 1996: bozzio.cc.utexas.edu: CONNECTED (Fri Aug 30 00:36:06 1996)
+Fri Aug 30 00:36:06 1996: bozzio.cc.utexas.edu: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Fri Aug 30 00:36:06 1996)
+Fri Aug 30 00:36:12 1996: 128.83.134.67: CONNECTED (Fri Aug 30 00:36:12 1996)
+Fri Aug 30 00:36:12 1996: 128.83.134.67: GET /~kyricc/porno.html HTTP/1.0 (Fri Aug 30 00:36:12 1996)
+Fri Aug 30 00:36:12 1996: 128.83.134.67: ERROR: Not Found (Fri Aug 30 00:36:12 1996)
+Fri Aug 30 00:36:12 1996: Ip 128.83.134.67 resloved to bozzio.cc.utexas.edu after connection closed.
+Fri Aug 30 00:36:14 1996: bozzio.cc.utexas.edu: CONNECTED (Fri Aug 30 00:36:14 1996)
+Fri Aug 30 00:36:14 1996: bozzio.cc.utexas.edu: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Fri Aug 30 00:36:14 1996)
+Fri Aug 30 00:36:16 1996: 128.83.134.67: CONNECTED (Fri Aug 30 00:36:16 1996)
+Fri Aug 30 00:36:16 1996: 128.83.134.67: GET /~kyricc/crys.html HTTP/1.0 (Fri Aug 30 00:36:16 1996)
+Fri Aug 30 00:36:16 1996: 128.83.134.67: ERROR: Not Found (Fri Aug 30 00:36:16 1996)
+Fri Aug 30 00:36:16 1996: Ip 128.83.134.67 resloved to bozzio.cc.utexas.edu after connection closed.
+Fri Aug 30 00:36:18 1996: bozzio.cc.utexas.edu: CONNECTED (Fri Aug 30 00:36:18 1996)
+Fri Aug 30 00:36:18 1996: bozzio.cc.utexas.edu: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Fri Aug 30 00:36:18 1996)
+Fri Aug 30 00:36:18 1996: 128.83.134.67: CONNECTED (Fri Aug 30 00:36:18 1996)
+Fri Aug 30 00:36:18 1996: 128.83.134.67: GET /~kyricc/races.html HTTP/1.0 (Fri Aug 30 00:36:18 1996)
+Fri Aug 30 00:36:18 1996: 128.83.134.67: ERROR: Not Found (Fri Aug 30 00:36:18 1996)
+Fri Aug 30 00:36:18 1996: Ip 128.83.134.67 resloved to bozzio.cc.utexas.edu after connection closed.
+Fri Aug 30 00:36:20 1996: bozzio.cc.utexas.edu: CONNECTED (Fri Aug 30 00:36:20 1996)
+Fri Aug 30 00:36:20 1996: bozzio.cc.utexas.edu: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Fri Aug 30 00:36:20 1996)
+Fri Aug 30 00:36:22 1996: 128.83.134.67: CONNECTED (Fri Aug 30 00:36:22 1996)
+Fri Aug 30 00:36:22 1996: 128.83.134.67: GET /~kyricc/shop.html HTTP/1.0 (Fri Aug 30 00:36:22 1996)
+Fri Aug 30 00:36:22 1996: 128.83.134.67: ERROR: Not Found (Fri Aug 30 00:36:22 1996)
+Fri Aug 30 00:36:22 1996: Ip 128.83.134.67 resloved to bozzio.cc.utexas.edu after connection closed.
+Fri Aug 30 00:36:22 1996: bozzio.cc.utexas.edu: CONNECTED (Fri Aug 30 00:36:22 1996)
+Fri Aug 30 00:36:22 1996: bozzio.cc.utexas.edu: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Fri Aug 30 00:36:22 1996)
+Fri Aug 30 00:36:24 1996: 128.83.134.67: CONNECTED (Fri Aug 30 00:36:24 1996)
+Fri Aug 30 00:36:24 1996: 128.83.134.67: GET /~kyricc/put.html HTTP/1.0 (Fri Aug 30 00:36:24 1996)
+Fri Aug 30 00:36:24 1996: 128.83.134.67: ERROR: Not Found (Fri Aug 30 00:36:24 1996)
+Fri Aug 30 00:36:24 1996: Ip 128.83.134.67 resloved to bozzio.cc.utexas.edu after connection closed.
+Fri Aug 30 00:36:26 1996: bozzio.cc.utexas.edu: CONNECTED (Fri Aug 30 00:36:26 1996)
+Fri Aug 30 00:36:26 1996: bozzio.cc.utexas.edu: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Fri Aug 30 00:36:26 1996)
+Fri Aug 30 00:36:26 1996: 128.83.134.67: CONNECTED (Fri Aug 30 00:36:26 1996)
+Fri Aug 30 00:36:26 1996: 128.83.134.67: GET /~kyricc/corpse.html HTTP/1.0 (Fri Aug 30 00:36:26 1996)
+Fri Aug 30 00:36:26 1996: Ip 128.83.134.67 resloved to bozzio.cc.utexas.edu after connection closed.
+Fri Aug 30 00:39:19 1996: bozzio.cc.utexas.edu: CONNECTED (Fri Aug 30 00:39:19 1996)
+Fri Aug 30 00:39:19 1996: bozzio.cc.utexas.edu: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Fri Aug 30 00:39:19 1996)
+Fri Aug 30 00:39:27 1996: 128.83.134.67: CONNECTED (Fri Aug 30 00:39:27 1996)
+Fri Aug 30 00:39:27 1996: 128.83.134.67: GET /~tim/ HTTP/1.0 (Fri Aug 30 00:39:27 1996)
+Fri Aug 30 00:39:27 1996: Ip 128.83.134.67 resloved to bozzio.cc.utexas.edu after connection closed.
+Fri Aug 30 00:42:28 1996: 128.83.134.67: CONNECTED (Fri Aug 30 00:42:28 1996)
+Fri Aug 30 00:42:28 1996: 128.83.134.67: GET /~quint/ HTTP/1.0 (Fri Aug 30 00:42:28 1996)
+Fri Aug 30 00:42:28 1996: 128.83.134.67: ERROR: Not Found (Fri Aug 30 00:42:28 1996)
+Fri Aug 30 00:42:28 1996: Ip 128.83.134.67 resloved to bozzio.cc.utexas.edu after connection closed.
+Fri Aug 30 00:42:32 1996: 128.83.134.67: CONNECTED (Fri Aug 30 00:42:32 1996)
+Fri Aug 30 00:42:32 1996: 128.83.134.67: GET /~satch/ HTTP/1.0 (Fri Aug 30 00:42:32 1996)
+Fri Aug 30 00:42:32 1996: 128.83.134.67: ERROR: Not Found (Fri Aug 30 00:42:32 1996)
+Fri Aug 30 00:42:32 1996: Ip 128.83.134.67 resloved to bozzio.cc.utexas.edu after connection closed.
+Fri Aug 30 00:42:36 1996: 128.83.134.67: CONNECTED (Fri Aug 30 00:42:36 1996)
+Fri Aug 30 00:42:36 1996: 128.83.134.67: GET /~talen/ HTTP/1.0 (Fri Aug 30 00:42:36 1996)
+Fri Aug 30 00:42:36 1996: 128.83.134.67: ERROR: Not Found (Fri Aug 30 00:42:36 1996)
+Fri Aug 30 00:42:36 1996: Ip 128.83.134.67 resloved to bozzio.cc.utexas.edu after connection closed.
+Fri Aug 30 00:45:23 1996: 199.184.119.1: CONNECTED (Fri Aug 30 00:45:23 1996)
+Fri Aug 30 00:45:23 1996: 199.184.119.1: GET / HTTP/1.0 (Fri Aug 30 00:45:23 1996)
+Fri Aug 30 00:45:23 1996: Ip 199.184.119.1 resloved to falcon.inetnebr.com after connection closed.
+Fri Aug 30 00:45:39 1996: falcon.inetnebr.com: CONNECTED (Fri Aug 30 00:45:37 1996)
+Fri Aug 30 00:45:39 1996: falcon.inetnebr.com: GET /gateways/mudlist HTTP/1.0 (Fri Aug 30 00:45:37 1996)
+Fri Aug 30 00:47:33 1996: loopback: CONNECTED (Fri Aug 30 00:47:33 1996)
+Fri Aug 30 00:47:33 1996: loopback: GET /gateways/mudlist HTTP/1.0 (Fri Aug 30 00:47:33 1996)
+Fri Aug 30 00:58:45 1996: 199.184.119.1: CONNECTED (Fri Aug 30 00:58:45 1996)
+Fri Aug 30 00:58:45 1996: 199.184.119.1: GET /gateways/finger HTTP/1.0 (Fri Aug 30 00:58:45 1996)
+Fri Aug 30 00:58:45 1996: Ip 199.184.119.1 resloved to falcon.inetnebr.com after connection closed.
+Fri Aug 30 00:59:07 1996: 199.184.119.1: CONNECTED (Fri Aug 30 00:59:07 1996)
+Fri Aug 30 00:59:07 1996: 199.184.119.1: GET /gateways/finger?username=tim HTTP/1.0 (Fri Aug 30 00:59:07 1996)
+Fri Aug 30 00:59:09 1996: Ip 199.184.119.1 resloved to falcon.inetnebr.com after connection closed.
+Fri Aug 30 01:54:50 1996: 194.154.198.3: CONNECTED (Fri Aug 30 01:54:50 1996)
+Fri Aug 30 01:54:50 1996: 194.154.198.3: GET / HTTP/1.0 (Fri Aug 30 01:54:50 1996)
+Fri Aug 30 01:54:50 1996: Ip 0 resloved to NOT RESOLVED after connection closed.
+Fri Aug 30 07:19:26 1996: 129.188.154.201: CONNECTED (Fri Aug 30 07:19:26 1996)
+Fri Aug 30 07:19:26 1996: 129.188.154.201: GET / HTTP/1.0 (Fri Aug 30 07:19:26 1996)
+Fri Aug 30 07:19:26 1996: Ip 129.188.154.201 resloved to webgate3.mot.com after connection closed.
+Fri Aug 30 10:14:36 1996: 128.101.229.13: CONNECTED (Fri Aug 30 10:14:36 1996)
+Fri Aug 30 10:14:36 1996: 128.101.229.13: GET / HTTP/1.0 (Fri Aug 30 10:14:36 1996)
+Fri Aug 30 10:14:36 1996: Ip 128.101.229.13 resloved to jessica.cs.umn.edu after connection closed.
+Fri Aug 30 10:16:10 1996: 128.101.229.13: CONNECTED (Fri Aug 30 10:16:10 1996)
+Fri Aug 30 10:16:10 1996: 128.101.229.13: GET /~evergreen/ HTTP/1.0 (Fri Aug 30 10:16:10 1996)
+Fri Aug 30 10:16:10 1996: Ip 128.101.229.13 resloved to jessica.cs.umn.edu after connection closed.
+Fri Aug 30 10:16:14 1996: 128.101.229.13: CONNECTED (Fri Aug 30 10:16:14 1996)
+Fri Aug 30 10:16:14 1996: 128.101.229.13: GET /~hamnsnock/ HTTP/1.0 (Fri Aug 30 10:16:14 1996)
+Fri Aug 30 10:16:14 1996: Ip 128.101.229.13 resloved to jessica.cs.umn.edu after connection closed.
+Fri Aug 30 10:35:02 1996: jessica.cs.umn.edu: CONNECTED (Fri Aug 30 10:35:02 1996)
+Fri Aug 30 10:35:02 1996: jessica.cs.umn.edu: GET /~tim/TODO HTTP/1.0 (Fri Aug 30 10:35:02 1996)
+Fri Aug 30 10:36:47 1996: jessica.cs.umn.edu: CONNECTED (Fri Aug 30 10:36:47 1996)
+Fri Aug 30 10:36:47 1996: jessica.cs.umn.edu: GET /~tim/DONE HTTP/1.0 (Fri Aug 30 10:36:47 1996)
+Fri Aug 30 10:38:19 1996: 128.101.229.13: CONNECTED (Fri Aug 30 10:38:19 1996)
+Fri Aug 30 10:38:19 1996: 128.101.229.13: GET /~tim/ HTTP/1.0 (Fri Aug 30 10:38:19 1996)
+Fri Aug 30 10:38:19 1996: Ip 128.101.229.13 resloved to jessica.cs.umn.edu after connection closed.
+Fri Aug 30 10:51:17 1996: 206.28.134.109: CONNECTED (Fri Aug 30 10:51:15 1996)
+Fri Aug 30 10:51:17 1996: 206.28.134.109: GET / HTTP/1.0 (Fri Aug 30 10:51:17 1996)
+Fri Aug 30 10:51:17 1996: Ip 206.28.134.109 resloved to mfd-dial3-13.cybercom.net after connection closed.
+Fri Aug 30 10:52:20 1996: 206.28.134.109: CONNECTED (Fri Aug 30 10:52:20 1996)
+Fri Aug 30 10:52:20 1996: 206.28.134.109: GET /~tim/TODO HTTP/1.0 (Fri Aug 30 10:52:20 1996)
+Fri Aug 30 10:52:20 1996: Ip 206.28.134.109 resloved to mfd-dial3-13.cybercom.net after connection closed.
+Fri Aug 30 10:53:42 1996: 206.28.134.109: CONNECTED (Fri Aug 30 10:53:42 1996)
+Fri Aug 30 10:53:42 1996: 206.28.134.109: GET /~tim/DONE HTTP/1.0 (Fri Aug 30 10:53:42 1996)
+Fri Aug 30 10:53:42 1996: Ip 206.28.134.109 resloved to mfd-dial3-13.cybercom.net after connection closed.
+Fri Aug 30 13:03:25 1996: socks1.raleigh.ibm.com: CONNECTED (Fri Aug 30 13:03:25 1996)
+Fri Aug 30 13:03:25 1996: socks1.raleigh.ibm.com: GET / HTTP/1.0 (Fri Aug 30 13:03:25 1996)
+Fri Aug 30 16:59:20 1996: 128.83.42.1: CONNECTED (Fri Aug 30 16:59:20 1996)
+Fri Aug 30 16:59:20 1996: 128.83.42.1: GET / HTTP/1.0 (Fri Aug 30 16:59:20 1996)
+Fri Aug 30 16:59:20 1996: Ip 128.83.42.1 resloved to curly.cc.utexas.edu after connection closed.
+Fri Aug 30 17:00:30 1996: 128.83.42.1: CONNECTED (Fri Aug 30 17:00:30 1996)
+Fri Aug 30 17:00:30 1996: 128.83.42.1: GET / HTTP/1.0 (Fri Aug 30 17:00:30 1996)
+Fri Aug 30 17:00:30 1996: Ip 128.83.42.1 resloved to curly.cc.utexas.edu after connection closed.
+Fri Aug 30 17:01:40 1996: 128.83.42.1: CONNECTED (Fri Aug 30 17:01:40 1996)
+Fri Aug 30 17:01:40 1996: 128.83.42.1: GET /~tim/DONE HTTP/1.0 (Fri Aug 30 17:01:40 1996)
+Fri Aug 30 17:01:40 1996: Ip 128.83.42.1 resloved to curly.cc.utexas.edu after connection closed.
+Fri Aug 30 17:01:50 1996: curly.cc.utexas.edu: CONNECTED (Fri Aug 30 17:01:46 1996)
+Fri Aug 30 17:01:50 1996: curly.cc.utexas.edu: GET /gateways/mudlist HTTP/1.0 (Fri Aug 30 17:01:46 1996)
+Fri Aug 30 17:02:09 1996: 128.83.42.1: CONNECTED (Fri Aug 30 17:02:09 1996)
+Fri Aug 30 17:02:09 1996: 128.83.42.1: GET /~tim/ HTTP/1.0 (Fri Aug 30 17:02:09 1996)
+Fri Aug 30 17:02:09 1996: Ip 128.83.42.1 resloved to curly.cc.utexas.edu after connection closed.
+Fri Aug 30 17:02:17 1996: 128.83.42.1: CONNECTED (Fri Aug 30 17:02:17 1996)
+Fri Aug 30 17:02:17 1996: 128.83.42.1: GET /gateways/finger?tim HTTP/1.0 (Fri Aug 30 17:02:17 1996)
+Fri Aug 30 17:02:17 1996: Ip 128.83.42.1 resloved to curly.cc.utexas.edu after connection closed.
+Fri Aug 30 17:37:13 1996: 132.147.193.91: CONNECTED (Fri Aug 30 17:37:13 1996)
+Fri Aug 30 17:37:13 1996: 132.147.193.91: GET / HTTP/1.0 (Fri Aug 30 17:37:13 1996)
+Fri Aug 30 17:37:13 1996: Ip 132.147.193.91 resloved to basil.pdev.sco.COM after connection closed.
+Sat Aug 31 00:44:27 1996: 205.164.92.109: CONNECTED (Sat Aug 31 00:44:27 1996)
+Sat Aug 31 00:44:27 1996: 205.164.92.109: GET / HTTP/1.0 (Sat Aug 31 00:44:27 1996)
+Sat Aug 31 00:44:27 1996: Ip 205.164.92.109 resloved to Dial-09.Roch.MillComm.COM after connection closed.
+Sat Aug 31 14:28:10 1996: Ip 0 resloved to NOT RESOLVED after connection closed.
+Sat Aug 31 14:28:10 1996: 198.70.204.44: CONNECTED (Sat Aug 31 14:28:10 1996)
+Sat Aug 31 14:28:10 1996: 198.70.204.44: GET / HTTP/1.0 (Sat Aug 31 14:28:10 1996)
+Sat Aug 31 14:29:01 1996: Ip 0 resloved to NOT RESOLVED after connection closed.
+Sat Aug 31 14:29:01 1996: 198.70.204.44: CONNECTED (Sat Aug 31 14:29:01 1996)
+Sat Aug 31 14:29:01 1996: 198.70.204.44: GET /~tim/TODO HTTP/1.0 (Sat Aug 31 14:29:01 1996)
+Sat Aug 31 14:29:59 1996: Ip 0 resloved to NOT RESOLVED after connection closed.
+Sat Aug 31 14:29:59 1996: 198.70.204.44: CONNECTED (Sat Aug 31 14:29:59 1996)
+Sat Aug 31 14:29:59 1996: 198.70.204.44: GET /~tim/DONE HTTP/1.0 (Sat Aug 31 14:29:59 1996)
+Sat Aug 31 14:30:45 1996: Ip 0 resloved to NOT RESOLVED after connection closed.
+Sat Aug 31 14:30:45 1996: 198.70.204.44: CONNECTED (Sat Aug 31 14:30:45 1996)
+Sat Aug 31 14:30:45 1996: 198.70.204.44: GET /~evergreen/ HTTP/1.0 (Sat Aug 31 14:30:45 1996)
+Sat Aug 31 14:30:49 1996: Ip 0 resloved to NOT RESOLVED after connection closed.
+Sat Aug 31 14:30:49 1996: 198.70.204.44: CONNECTED (Sat Aug 31 14:30:49 1996)
+Sat Aug 31 14:30:49 1996: 198.70.204.44: GET /~hamnsnock/ HTTP/1.0 (Sat Aug 31 14:30:49 1996)
+Sat Aug 31 14:31:03 1996: Ip 0 resloved to NOT RESOLVED after connection closed.
+Sat Aug 31 14:31:05 1996: 198.70.204.44: CONNECTED (Sat Aug 31 14:31:03 1996)
+Sat Aug 31 14:31:05 1996: 198.70.204.44: GET /~kyricc/ HTTP/1.0 (Sat Aug 31 14:31:05 1996)
+Sat Aug 31 14:31:15 1996: Ip 0 resloved to NOT RESOLVED after connection closed.
+Sat Aug 31 14:31:15 1996: 198.70.204.44: CONNECTED (Sat Aug 31 14:31:15 1996)
+Sat Aug 31 14:31:15 1996: 198.70.204.44: GET /~kyricc/corpse.html HTTP/1.0 (Sat Aug 31 14:31:15 1996)
+Sat Aug 31 14:32:22 1996: Ip 0 resloved to NOT RESOLVED after connection closed.
+Sat Aug 31 14:32:22 1996: 198.70.204.44: CONNECTED (Sat Aug 31 14:32:22 1996)
+Sat Aug 31 14:32:22 1996: 198.70.204.44: GET /~kyricc/porno.html HTTP/1.0 (Sat Aug 31 14:32:22 1996)
+Sat Aug 31 14:32:22 1996: 198.70.204.44: ERROR: Not Found (Sat Aug 31 14:32:22 1996)
+Sat Aug 31 22:07:14 1996: 207.146.138.123: CONNECTED (Sat Aug 31 22:07:14 1996)
+Sat Aug 31 22:07:14 1996: 207.146.138.123: GET / HTTP/1.0 (Sat Aug 31 22:07:14 1996)
+Sat Aug 31 22:07:14 1996: Ip 207.146.138.123 resloved to 123.bridgeton-061.mo.dial-access.att.net after connection closed.
+Sat Aug 31 22:14:04 1996: 165.95.92.27: CONNECTED (Sat Aug 31 22:14:02 1996)
+Sat Aug 31 22:14:04 1996: 165.95.92.27: GET / HTTP/1.0 (Sat Aug 31 22:14:04 1996)
+Sat Aug 31 22:14:04 1996: Ip 165.95.92.27 resloved to faeryland.etsu.edu after connection closed.
+Sat Aug 31 22:14:16 1996: faeryland.etsu.edu: CONNECTED (Sat Aug 31 22:14:16 1996)
+Sat Aug 31 22:14:16 1996: faeryland.etsu.edu: GET /~tim/DONE HTTP/1.0 (Sat Aug 31 22:14:16 1996)
+Sat Aug 31 22:14:32 1996: faeryland.etsu.edu: CONNECTED (Sat Aug 31 22:14:32 1996)
+Sat Aug 31 22:14:32 1996: faeryland.etsu.edu: GET /~tim/TODO HTTP/1.0 (Sat Aug 31 22:14:32 1996)
+Sun Sep  1 04:22:00 1996: 203.15.164.30: CONNECTED (Sun Sep  1 04:21:58 1996)
+Sun Sep  1 04:22:00 1996: 203.15.164.30: GET / HTTP/1.0 (Sun Sep  1 04:22:00 1996)
+Sun Sep  1 04:22:00 1996: Ip 203.15.164.30 resloved to slsyd1p14.ozemail.com.au after connection closed.
+Sun Sep  1 04:44:07 1996: slsyd1p14.ozemail.com.au: CONNECTED (Sun Sep  1 04:44:07 1996)
+Sun Sep  1 04:44:07 1996: slsyd1p14.ozemail.com.au: GET /~evergreen/ HTTP/1.0 (Sun Sep  1 04:44:07 1996)
+Sun Sep  1 04:44:13 1996: slsyd1p14.ozemail.com.au: CONNECTED (Sun Sep  1 04:44:13 1996)
+Sun Sep  1 04:44:13 1996: slsyd1p14.ozemail.com.au: GET /~hamnsnock/ HTTP/1.0 (Sun Sep  1 04:44:13 1996)
+Sun Sep  1 04:44:37 1996: slsyd1p14.ozemail.com.au: CONNECTED (Sun Sep  1 04:44:37 1996)
+Sun Sep  1 04:44:37 1996: slsyd1p14.ozemail.com.au: GET /~kyricc/ HTTP/1.0 (Sun Sep  1 04:44:37 1996)
+Sun Sep  1 04:44:41 1996: slsyd1p14.ozemail.com.au: CONNECTED (Sun Sep  1 04:44:39 1996)
+Sun Sep  1 04:44:41 1996: slsyd1p14.ozemail.com.au: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Sun Sep  1 04:44:41 1996)
+Sun Sep  1 04:44:49 1996: slsyd1p14.ozemail.com.au: CONNECTED (Sun Sep  1 04:44:49 1996)
+Sun Sep  1 04:44:49 1996: slsyd1p14.ozemail.com.au: GET /~kyricc/corpse.html HTTP/1.0 (Sun Sep  1 04:44:49 1996)
+Sun Sep  1 04:45:11 1996: slsyd1p14.ozemail.com.au: CONNECTED (Sun Sep  1 04:45:11 1996)
+Sun Sep  1 04:45:11 1996: slsyd1p14.ozemail.com.au: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Sun Sep  1 04:45:11 1996)
+Sun Sep  1 04:45:13 1996: slsyd1p14.ozemail.com.au: CONNECTED (Sun Sep  1 04:45:13 1996)
+Sun Sep  1 04:45:13 1996: slsyd1p14.ozemail.com.au: GET /~kyricc/corpse.html HTTP/1.0 (Sun Sep  1 04:45:13 1996)
+Sun Sep  1 04:45:17 1996: slsyd1p14.ozemail.com.au: CONNECTED (Sun Sep  1 04:45:15 1996)
+Sun Sep  1 04:45:17 1996: slsyd1p14.ozemail.com.au: GET /~kyricc/put.html HTTP/1.0 (Sun Sep  1 04:45:17 1996)
+Sun Sep  1 04:45:17 1996: slsyd1p14.ozemail.com.au: ERROR: Not Found (Sun Sep  1 04:45:17 1996)
+Sun Sep  1 04:45:23 1996: slsyd1p14.ozemail.com.au: CONNECTED (Sun Sep  1 04:45:23 1996)
+Sun Sep  1 04:45:23 1996: slsyd1p14.ozemail.com.au: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Sun Sep  1 04:45:23 1996)
+Sun Sep  1 04:45:25 1996: slsyd1p14.ozemail.com.au: CONNECTED (Sun Sep  1 04:45:25 1996)
+Sun Sep  1 04:45:25 1996: slsyd1p14.ozemail.com.au: GET /~kyricc/shop.html HTTP/1.0 (Sun Sep  1 04:45:25 1996)
+Sun Sep  1 04:45:25 1996: slsyd1p14.ozemail.com.au: ERROR: Not Found (Sun Sep  1 04:45:25 1996)
+Sun Sep  1 04:45:39 1996: slsyd1p14.ozemail.com.au: CONNECTED (Sun Sep  1 04:45:39 1996)
+Sun Sep  1 04:45:39 1996: slsyd1p14.ozemail.com.au: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Sun Sep  1 04:45:39 1996)
+Sun Sep  1 04:45:39 1996: slsyd1p14.ozemail.com.au: CONNECTED (Sun Sep  1 04:45:39 1996)
+Sun Sep  1 04:45:39 1996: slsyd1p14.ozemail.com.au: GET /~kyricc/corpse.html HTTP/1.0 (Sun Sep  1 04:45:39 1996)
+Sun Sep  1 04:45:43 1996: slsyd1p14.ozemail.com.au: CONNECTED (Sun Sep  1 04:45:43 1996)
+Sun Sep  1 04:45:43 1996: slsyd1p14.ozemail.com.au: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Sun Sep  1 04:45:43 1996)
+Sun Sep  1 04:45:45 1996: slsyd1p14.ozemail.com.au: CONNECTED (Sun Sep  1 04:45:45 1996)
+Sun Sep  1 04:45:45 1996: slsyd1p14.ozemail.com.au: GET /~kyricc/races.html HTTP/1.0 (Sun Sep  1 04:45:45 1996)
+Sun Sep  1 04:45:45 1996: slsyd1p14.ozemail.com.au: ERROR: Not Found (Sun Sep  1 04:45:45 1996)
+Sun Sep  1 04:45:51 1996: slsyd1p14.ozemail.com.au: CONNECTED (Sun Sep  1 04:45:51 1996)
+Sun Sep  1 04:45:51 1996: slsyd1p14.ozemail.com.au: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Sun Sep  1 04:45:51 1996)
+Sun Sep  1 04:45:53 1996: slsyd1p14.ozemail.com.au: CONNECTED (Sun Sep  1 04:45:51 1996)
+Sun Sep  1 04:45:53 1996: slsyd1p14.ozemail.com.au: GET /~kyricc/crys.html HTTP/1.0 (Sun Sep  1 04:45:53 1996)
+Sun Sep  1 04:45:53 1996: slsyd1p14.ozemail.com.au: ERROR: Not Found (Sun Sep  1 04:45:53 1996)
+Sun Sep  1 04:46:05 1996: slsyd1p14.ozemail.com.au: CONNECTED (Sun Sep  1 04:46:05 1996)
+Sun Sep  1 04:46:05 1996: slsyd1p14.ozemail.com.au: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Sun Sep  1 04:46:05 1996)
+Sun Sep  1 04:46:05 1996: slsyd1p14.ozemail.com.au: CONNECTED (Sun Sep  1 04:46:05 1996)
+Sun Sep  1 04:46:05 1996: slsyd1p14.ozemail.com.au: GET /~kyricc/porno.html HTTP/1.0 (Sun Sep  1 04:46:05 1996)
+Sun Sep  1 04:46:05 1996: slsyd1p14.ozemail.com.au: ERROR: Not Found (Sun Sep  1 04:46:05 1996)
+Sun Sep  1 04:46:11 1996: slsyd1p14.ozemail.com.au: CONNECTED (Sun Sep  1 04:46:11 1996)
+Sun Sep  1 04:46:11 1996: slsyd1p14.ozemail.com.au: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Sun Sep  1 04:46:11 1996)
+Sun Sep  1 04:49:00 1996: slsyd1p14.ozemail.com.au: CONNECTED (Sun Sep  1 04:49:00 1996)
+Sun Sep  1 04:49:00 1996: slsyd1p14.ozemail.com.au: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Sun Sep  1 04:49:00 1996)
+Sun Sep  1 04:49:10 1996: slsyd1p14.ozemail.com.au: CONNECTED (Sun Sep  1 04:49:10 1996)
+Sun Sep  1 04:49:10 1996: slsyd1p14.ozemail.com.au: GET /~quint/ HTTP/1.0 (Sun Sep  1 04:49:10 1996)
+Sun Sep  1 04:49:10 1996: slsyd1p14.ozemail.com.au: ERROR: Not Found (Sun Sep  1 04:49:10 1996)
+Sun Sep  1 04:49:16 1996: slsyd1p14.ozemail.com.au: CONNECTED (Sun Sep  1 04:49:16 1996)
+Sun Sep  1 04:49:16 1996: slsyd1p14.ozemail.com.au: GET /~satch/ HTTP/1.0 (Sun Sep  1 04:49:16 1996)
+Sun Sep  1 04:49:16 1996: slsyd1p14.ozemail.com.au: ERROR: Not Found (Sun Sep  1 04:49:16 1996)
+Sun Sep  1 04:49:22 1996: slsyd1p14.ozemail.com.au: CONNECTED (Sun Sep  1 04:49:22 1996)
+Sun Sep  1 04:49:22 1996: slsyd1p14.ozemail.com.au: GET /~talen/ HTTP/1.0 (Sun Sep  1 04:49:22 1996)
+Sun Sep  1 04:49:22 1996: slsyd1p14.ozemail.com.au: ERROR: Not Found (Sun Sep  1 04:49:22 1996)
+Sun Sep  1 04:49:28 1996: slsyd1p14.ozemail.com.au: CONNECTED (Sun Sep  1 04:49:28 1996)
+Sun Sep  1 04:49:28 1996: slsyd1p14.ozemail.com.au: GET /~tim/ HTTP/1.0 (Sun Sep  1 04:49:28 1996)
+Sun Sep  1 04:54:22 1996: slsyd1p14.ozemail.com.au: CONNECTED (Sun Sep  1 04:54:22 1996)
+Sun Sep  1 04:54:22 1996: slsyd1p14.ozemail.com.au: GET /gateways/finger?tim HTTP/1.0 (Sun Sep  1 04:54:22 1996)
+Sun Sep  1 04:54:58 1996: slsyd1p14.ozemail.com.au: CONNECTED (Sun Sep  1 04:54:58 1996)
+Sun Sep  1 04:54:58 1996: slsyd1p14.ozemail.com.au: GET /gateways/finger?username=ob HTTP/1.0 (Sun Sep  1 04:54:58 1996)
+Sun Sep  1 04:55:04 1996: slsyd1p14.ozemail.com.au: CONNECTED (Sun Sep  1 04:55:04 1996)
+Sun Sep  1 04:55:04 1996: slsyd1p14.ozemail.com.au: GET /gateways/finger?username=rob HTTP/1.0 (Sun Sep  1 04:55:04 1996)
+Sun Sep  1 04:55:42 1996: slsyd1p14.ozemail.com.au: CONNECTED (Sun Sep  1 04:55:20 1996)
+Sun Sep  1 04:55:42 1996: slsyd1p14.ozemail.com.au: GET /gateways/mudlist HTTP/1.0 (Sun Sep  1 04:55:20 1996)
+Sun Sep  1 09:46:33 1996: ra2-18.tulsa.oklahoma.net: CONNECTED (Sun Sep  1 09:46:33 1996)
+Sun Sep  1 09:46:33 1996: ra2-18.tulsa.oklahoma.net: GET / HTTP/1.0 (Sun Sep  1 09:46:33 1996)
+Sun Sep  1 11:09:00 1996: du89-02.cc.iastate.edu: CONNECTED (Sun Sep  1 11:09:00 1996)
+Sun Sep  1 11:09:00 1996: du89-02.cc.iastate.edu: GET / HTTP/1.0 (Sun Sep  1 11:09:00 1996)
+Sun Sep  1 11:09:40 1996: 129.186.89.2: CONNECTED (Sun Sep  1 11:09:40 1996)
+Sun Sep  1 11:09:40 1996: 129.186.89.2: GET /~tim/TODO HTTP/1.0 (Sun Sep  1 11:09:40 1996)
+Sun Sep  1 11:09:40 1996: Ip 129.186.89.2 resloved to du89-02.cc.iastate.edu after connection closed.
+Sun Sep  1 11:13:37 1996: 129.186.89.2: CONNECTED (Sun Sep  1 11:13:37 1996)
+Sun Sep  1 11:13:37 1996: 129.186.89.2: GET /~tim/DONE HTTP/1.0 (Sun Sep  1 11:13:37 1996)
+Sun Sep  1 11:13:37 1996: Ip 129.186.89.2 resloved to du89-02.cc.iastate.edu after connection closed.
+Sun Sep  1 11:14:05 1996: 129.186.89.2: CONNECTED (Sun Sep  1 11:14:05 1996)
+Sun Sep  1 11:14:05 1996: 129.186.89.2: GET /~evergreen/ HTTP/1.0 (Sun Sep  1 11:14:05 1996)
+Sun Sep  1 11:14:05 1996: Ip 129.186.89.2 resloved to du89-02.cc.iastate.edu after connection closed.
+Sun Sep  1 11:14:09 1996: 129.186.89.2: CONNECTED (Sun Sep  1 11:14:09 1996)
+Sun Sep  1 11:14:09 1996: 129.186.89.2: GET /~hamnsnock/ HTTP/1.0 (Sun Sep  1 11:14:09 1996)
+Sun Sep  1 11:14:09 1996: Ip 129.186.89.2 resloved to du89-02.cc.iastate.edu after connection closed.
+Sun Sep  1 11:19:41 1996: 129.186.89.2: CONNECTED (Sun Sep  1 11:19:41 1996)
+Sun Sep  1 11:19:41 1996: 129.186.89.2: GET /~kyricc/ HTTP/1.0 (Sun Sep  1 11:19:41 1996)
+Sun Sep  1 11:19:41 1996: Ip 129.186.89.2 resloved to du89-02.cc.iastate.edu after connection closed.
+Sun Sep  1 11:19:41 1996: du89-02.cc.iastate.edu: CONNECTED (Sun Sep  1 11:19:41 1996)
+Sun Sep  1 11:19:41 1996: du89-02.cc.iastate.edu: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Sun Sep  1 11:19:41 1996)
+Sun Sep  1 11:19:53 1996: 129.186.89.2: CONNECTED (Sun Sep  1 11:19:53 1996)
+Sun Sep  1 11:19:53 1996: 129.186.89.2: GET /~kyricc/corpse.html HTTP/1.0 (Sun Sep  1 11:19:53 1996)
+Sun Sep  1 11:19:53 1996: Ip 129.186.89.2 resloved to du89-02.cc.iastate.edu after connection closed.
+Sun Sep  1 11:39:37 1996: du89-02.cc.iastate.edu: CONNECTED (Sun Sep  1 11:39:37 1996)
+Sun Sep  1 11:39:37 1996: du89-02.cc.iastate.edu: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Sun Sep  1 11:39:37 1996)
+Sun Sep  1 11:39:39 1996: 129.186.89.2: CONNECTED (Sun Sep  1 11:39:39 1996)
+Sun Sep  1 11:39:39 1996: 129.186.89.2: GET /~kyricc/put.html HTTP/1.0 (Sun Sep  1 11:39:39 1996)
+Sun Sep  1 11:39:39 1996: 129.186.89.2: ERROR: Not Found (Sun Sep  1 11:39:39 1996)
+Sun Sep  1 11:39:39 1996: Ip 129.186.89.2 resloved to du89-02.cc.iastate.edu after connection closed.
+Sun Sep  1 11:39:41 1996: du89-02.cc.iastate.edu: CONNECTED (Sun Sep  1 11:39:41 1996)
+Sun Sep  1 11:39:41 1996: du89-02.cc.iastate.edu: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Sun Sep  1 11:39:41 1996)
+Sun Sep  1 11:39:43 1996: 129.186.89.2: CONNECTED (Sun Sep  1 11:39:43 1996)
+Sun Sep  1 11:39:43 1996: 129.186.89.2: GET /~kyricc/shop.html HTTP/1.0 (Sun Sep  1 11:39:43 1996)
+Sun Sep  1 11:39:43 1996: 129.186.89.2: ERROR: Not Found (Sun Sep  1 11:39:43 1996)
+Sun Sep  1 11:39:43 1996: Ip 129.186.89.2 resloved to du89-02.cc.iastate.edu after connection closed.
+Sun Sep  1 11:39:45 1996: du89-02.cc.iastate.edu: CONNECTED (Sun Sep  1 11:39:45 1996)
+Sun Sep  1 11:39:45 1996: du89-02.cc.iastate.edu: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Sun Sep  1 11:39:45 1996)
+Sun Sep  1 11:39:47 1996: 129.186.89.2: CONNECTED (Sun Sep  1 11:39:47 1996)
+Sun Sep  1 11:39:47 1996: 129.186.89.2: GET /~kyricc/races.html HTTP/1.0 (Sun Sep  1 11:39:47 1996)
+Sun Sep  1 11:39:47 1996: 129.186.89.2: ERROR: Not Found (Sun Sep  1 11:39:47 1996)
+Sun Sep  1 11:39:47 1996: Ip 129.186.89.2 resloved to du89-02.cc.iastate.edu after connection closed.
+Sun Sep  1 11:39:47 1996: du89-02.cc.iastate.edu: CONNECTED (Sun Sep  1 11:39:47 1996)
+Sun Sep  1 11:39:47 1996: du89-02.cc.iastate.edu: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Sun Sep  1 11:39:47 1996)
+Sun Sep  1 11:39:49 1996: 129.186.89.2: CONNECTED (Sun Sep  1 11:39:49 1996)
+Sun Sep  1 11:39:49 1996: 129.186.89.2: GET /~kyricc/crys.html HTTP/1.0 (Sun Sep  1 11:39:49 1996)
+Sun Sep  1 11:39:49 1996: 129.186.89.2: ERROR: Not Found (Sun Sep  1 11:39:49 1996)
+Sun Sep  1 11:39:49 1996: Ip 129.186.89.2 resloved to du89-02.cc.iastate.edu after connection closed.
+Sun Sep  1 11:39:51 1996: du89-02.cc.iastate.edu: CONNECTED (Sun Sep  1 11:39:51 1996)
+Sun Sep  1 11:39:51 1996: du89-02.cc.iastate.edu: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Sun Sep  1 11:39:51 1996)
+Sun Sep  1 11:39:53 1996: 129.186.89.2: CONNECTED (Sun Sep  1 11:39:53 1996)
+Sun Sep  1 11:39:53 1996: 129.186.89.2: GET /~kyricc/porno.html HTTP/1.0 (Sun Sep  1 11:39:53 1996)
+Sun Sep  1 11:39:53 1996: 129.186.89.2: ERROR: Not Found (Sun Sep  1 11:39:53 1996)
+Sun Sep  1 11:39:53 1996: Ip 129.186.89.2 resloved to du89-02.cc.iastate.edu after connection closed.
+Sun Sep  1 11:39:55 1996: du89-02.cc.iastate.edu: CONNECTED (Sun Sep  1 11:39:55 1996)
+Sun Sep  1 11:39:55 1996: du89-02.cc.iastate.edu: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Sun Sep  1 11:39:55 1996)
+Sun Sep  1 11:40:05 1996: 129.186.89.2: CONNECTED (Sun Sep  1 11:40:05 1996)
+Sun Sep  1 11:40:05 1996: 129.186.89.2: GET /~quint/ HTTP/1.0 (Sun Sep  1 11:40:05 1996)
+Sun Sep  1 11:40:05 1996: 129.186.89.2: ERROR: Not Found (Sun Sep  1 11:40:05 1996)
+Sun Sep  1 11:40:05 1996: Ip 129.186.89.2 resloved to du89-02.cc.iastate.edu after connection closed.
+Sun Sep  1 11:40:11 1996: 129.186.89.2: CONNECTED (Sun Sep  1 11:40:11 1996)
+Sun Sep  1 11:40:11 1996: 129.186.89.2: GET /~satch/ HTTP/1.0 (Sun Sep  1 11:40:11 1996)
+Sun Sep  1 11:40:11 1996: 129.186.89.2: ERROR: Not Found (Sun Sep  1 11:40:11 1996)
+Sun Sep  1 11:40:11 1996: Ip 129.186.89.2 resloved to du89-02.cc.iastate.edu after connection closed.
+Sun Sep  1 11:40:15 1996: 129.186.89.2: CONNECTED (Sun Sep  1 11:40:15 1996)
+Sun Sep  1 11:40:15 1996: 129.186.89.2: GET /~talen/ HTTP/1.0 (Sun Sep  1 11:40:15 1996)
+Sun Sep  1 11:40:15 1996: 129.186.89.2: ERROR: Not Found (Sun Sep  1 11:40:15 1996)
+Sun Sep  1 11:40:15 1996: Ip 129.186.89.2 resloved to du89-02.cc.iastate.edu after connection closed.
+Sun Sep  1 11:40:21 1996: 129.186.89.2: CONNECTED (Sun Sep  1 11:40:21 1996)
+Sun Sep  1 11:40:21 1996: 129.186.89.2: GET /~tim/ HTTP/1.0 (Sun Sep  1 11:40:21 1996)
+Sun Sep  1 11:40:21 1996: Ip 129.186.89.2 resloved to du89-02.cc.iastate.edu after connection closed.
+Sun Sep  1 11:58:18 1996: 129.186.89.2: CONNECTED (Sun Sep  1 11:58:18 1996)
+Sun Sep  1 11:58:18 1996: 129.186.89.2: GET /gateways/finger?tim HTTP/1.0 (Sun Sep  1 11:58:18 1996)
+Sun Sep  1 11:58:18 1996: Ip 129.186.89.2 resloved to du89-02.cc.iastate.edu after connection closed.
+Sun Sep  1 12:15:22 1996: 194.47.133.49: CONNECTED (Sun Sep  1 12:15:20 1996)
+Sun Sep  1 12:15:22 1996: 194.47.133.49: GET / HTTP/1.0 (Sun Sep  1 12:15:22 1996)
+Sun Sep  1 12:15:22 1996: Ip 194.47.133.49 resloved to bablefish.rby.hk-r.se after connection closed.
+Sun Sep  1 12:15:58 1996: 194.47.133.49: CONNECTED (Sun Sep  1 12:15:58 1996)
+Sun Sep  1 12:15:58 1996: 194.47.133.49: GET /~tim/TODO HTTP/1.0 (Sun Sep  1 12:15:58 1996)
+Sun Sep  1 12:15:58 1996: Ip 194.47.133.49 resloved to bablefish.rby.hk-r.se after connection closed.
+Sun Sep  1 12:16:26 1996: 194.47.133.49: CONNECTED (Sun Sep  1 12:16:26 1996)
+Sun Sep  1 12:16:26 1996: 194.47.133.49: GET /~tim/DONE HTTP/1.0 (Sun Sep  1 12:16:26 1996)
+Sun Sep  1 12:16:26 1996: Ip 194.47.133.49 resloved to bablefish.rby.hk-r.se after connection closed.
+Sun Sep  1 14:46:29 1996: 206.161.186.100: CONNECTED (Sun Sep  1 14:46:29 1996)
+Sun Sep  1 14:46:29 1996: 206.161.186.100: GET / HTTP/1.0 (Sun Sep  1 14:46:29 1996)
+Sun Sep  1 14:46:29 1996: Ip 206.161.186.100 resloved to as29s36.erols.com after connection closed.
+Sun Sep  1 19:12:36 1996: 137.110.30.85: CONNECTED (Sun Sep  1 19:12:36 1996)
+Sun Sep  1 19:12:36 1996: 137.110.30.85: GET / HTTP/1.0 (Sun Sep  1 19:12:36 1996)
+Sun Sep  1 19:12:36 1996: Ip 137.110.30.85 resloved to jwp5.extern.ucsd.edu after connection closed.
+Sun Sep  1 20:06:23 1996: 192.52.106.30: CONNECTED (Sun Sep  1 20:06:23 1996)
+Sun Sep  1 20:06:23 1996: 192.52.106.30: GET / HTTP/1.0 (Sun Sep  1 20:06:23 1996)
+Sun Sep  1 20:06:23 1996: Ip 192.52.106.30 resloved to harvest.ucar.edu after connection closed.
+Sun Sep  1 23:40:18 1996: 198.59.115.243: CONNECTED (Sun Sep  1 23:40:18 1996)
+Sun Sep  1 23:40:18 1996: 198.59.115.243: GET / HTTP/1.0 (Sun Sep  1 23:40:18 1996)
+Sun Sep  1 23:40:18 1996: Ip 0 resloved to NOT RESOLVED after connection closed.
+Sun Sep  1 23:42:13 1996: Ip 0 resloved to NOT RESOLVED after connection closed.
+Sun Sep  1 23:42:13 1996: 198.59.115.243: CONNECTED (Sun Sep  1 23:42:13 1996)
+Sun Sep  1 23:42:13 1996: 198.59.115.243: GET /~tim/DONE HTTP/1.0 (Sun Sep  1 23:42:13 1996)
+Mon Sep  2 00:08:01 1996: 146.84.1.5: CONNECTED (Mon Sep  2 00:08:01 1996)
+Mon Sep  2 00:08:01 1996: 146.84.1.5: GET / HTTP/1.0 (Mon Sep  2 00:08:01 1996)
+Mon Sep  2 00:08:01 1996: Ip 146.84.1.5 resloved to tivoli.tivoli.com after connection closed.
+Mon Sep  2 01:39:46 1996: 192.108.254.12: CONNECTED (Mon Sep  2 01:39:46 1996)
+Mon Sep  2 01:39:46 1996: 192.108.254.12: GET / HTTP/1.0 (Mon Sep  2 01:39:46 1996)
+Mon Sep  2 01:39:46 1996: Ip 192.108.254.12 resloved to linda.teleport.com after connection closed.
+Mon Sep  2 04:31:52 1996: 199.184.119.1: CONNECTED (Mon Sep  2 04:31:52 1996)
+Mon Sep  2 04:31:52 1996: 199.184.119.1: GET / HTTP/1.0 (Mon Sep  2 04:31:52 1996)
+Mon Sep  2 04:31:52 1996: Ip 199.184.119.1 resloved to falcon.inetnebr.com after connection closed.
+Mon Sep  2 04:32:14 1996: 199.184.119.1: CONNECTED (Mon Sep  2 04:32:14 1996)
+Mon Sep  2 04:32:14 1996: 199.184.119.1: GET /gateways/finger HTTP/1.0 (Mon Sep  2 04:32:14 1996)
+Mon Sep  2 04:32:14 1996: Ip 199.184.119.1 resloved to falcon.inetnebr.com after connection closed.
+Mon Sep  2 04:32:38 1996: 199.184.119.1: CONNECTED (Mon Sep  2 04:32:38 1996)
+Mon Sep  2 04:32:38 1996: 199.184.119.1: GET /~tim/TODO HTTP/1.0 (Mon Sep  2 04:32:38 1996)
+Mon Sep  2 04:32:38 1996: Ip 199.184.119.1 resloved to falcon.inetnebr.com after connection closed.
+Mon Sep  2 04:37:38 1996: falcon.inetnebr.com: CONNECTED (Mon Sep  2 04:37:38 1996)
+Mon Sep  2 04:37:38 1996: falcon.inetnebr.com: GET /~tim/DONE HTTP/1.0 (Mon Sep  2 04:37:38 1996)
+Mon Sep  2 04:38:44 1996: falcon.inetnebr.com: CONNECTED (Mon Sep  2 04:38:44 1996)
+Mon Sep  2 04:38:44 1996: falcon.inetnebr.com: GET /~evergreen/ HTTP/1.0 (Mon Sep  2 04:38:44 1996)
+Mon Sep  2 04:38:54 1996: 199.184.119.1: CONNECTED (Mon Sep  2 04:38:54 1996)
+Mon Sep  2 04:38:54 1996: 199.184.119.1: GET /~hamnsnock/ HTTP/1.0 (Mon Sep  2 04:38:54 1996)
+Mon Sep  2 04:38:54 1996: Ip 199.184.119.1 resloved to falcon.inetnebr.com after connection closed.
+Mon Sep  2 04:39:20 1996: 199.184.119.1: CONNECTED (Mon Sep  2 04:39:20 1996)
+Mon Sep  2 04:39:20 1996: 199.184.119.1: GET /~quint/ HTTP/1.0 (Mon Sep  2 04:39:20 1996)
+Mon Sep  2 04:39:20 1996: 199.184.119.1: ERROR: Not Found (Mon Sep  2 04:39:20 1996)
+Mon Sep  2 04:39:20 1996: Ip 199.184.119.1 resloved to falcon.inetnebr.com after connection closed.
+Mon Sep  2 04:39:32 1996: 199.184.119.1: CONNECTED (Mon Sep  2 04:39:32 1996)
+Mon Sep  2 04:39:32 1996: 199.184.119.1: GET /~satch/ HTTP/1.0 (Mon Sep  2 04:39:32 1996)
+Mon Sep  2 04:39:32 1996: 199.184.119.1: ERROR: Not Found (Mon Sep  2 04:39:32 1996)
+Mon Sep  2 04:39:32 1996: Ip 199.184.119.1 resloved to falcon.inetnebr.com after connection closed.
+Mon Sep  2 04:39:42 1996: 199.184.119.1: CONNECTED (Mon Sep  2 04:39:42 1996)
+Mon Sep  2 04:39:42 1996: 199.184.119.1: GET /~talen/ HTTP/1.0 (Mon Sep  2 04:39:42 1996)
+Mon Sep  2 04:39:42 1996: 199.184.119.1: ERROR: Not Found (Mon Sep  2 04:39:42 1996)
+Mon Sep  2 04:39:42 1996: Ip 199.184.119.1 resloved to falcon.inetnebr.com after connection closed.
+Mon Sep  2 04:39:54 1996: 199.184.119.1: CONNECTED (Mon Sep  2 04:39:54 1996)
+Mon Sep  2 04:39:54 1996: 199.184.119.1: GET /~tim/ HTTP/1.0 (Mon Sep  2 04:39:54 1996)
+Mon Sep  2 04:39:54 1996: Ip 199.184.119.1 resloved to falcon.inetnebr.com after connection closed.
+Mon Sep  2 04:45:34 1996: 199.184.119.1: CONNECTED (Mon Sep  2 04:45:34 1996)
+Mon Sep  2 04:45:34 1996: 199.184.119.1: GET /~kyricc/ HTTP/1.0 (Mon Sep  2 04:45:34 1996)
+Mon Sep  2 04:45:34 1996: Ip 199.184.119.1 resloved to falcon.inetnebr.com after connection closed.
+Mon Sep  2 04:45:56 1996: 199.184.119.1: CONNECTED (Mon Sep  2 04:45:56 1996)
+Mon Sep  2 04:45:56 1996: 199.184.119.1: GET /~kyricc/corpse.html HTTP/1.0 (Mon Sep  2 04:45:56 1996)
+Mon Sep  2 04:45:56 1996: Ip 199.184.119.1 resloved to falcon.inetnebr.com after connection closed.
+Mon Sep  2 04:46:50 1996: 199.184.119.1: CONNECTED (Mon Sep  2 04:46:50 1996)
+Mon Sep  2 04:46:50 1996: 199.184.119.1: GET /~kyricc/put.html HTTP/1.0 (Mon Sep  2 04:46:50 1996)
+Mon Sep  2 04:46:50 1996: 199.184.119.1: ERROR: Not Found (Mon Sep  2 04:46:50 1996)
+Mon Sep  2 04:46:50 1996: Ip 199.184.119.1 resloved to falcon.inetnebr.com after connection closed.
+Mon Sep  2 04:47:00 1996: 199.184.119.1: CONNECTED (Mon Sep  2 04:47:00 1996)
+Mon Sep  2 04:47:00 1996: 199.184.119.1: GET /~kyricc/shop.html HTTP/1.0 (Mon Sep  2 04:47:00 1996)
+Mon Sep  2 04:47:00 1996: 199.184.119.1: ERROR: Not Found (Mon Sep  2 04:47:00 1996)
+Mon Sep  2 04:47:00 1996: Ip 199.184.119.1 resloved to falcon.inetnebr.com after connection closed.
+Mon Sep  2 04:47:10 1996: falcon.inetnebr.com: CONNECTED (Mon Sep  2 04:47:10 1996)
+Mon Sep  2 04:47:10 1996: falcon.inetnebr.com: GET /~kyricc/races.html HTTP/1.0 (Mon Sep  2 04:47:10 1996)
+Mon Sep  2 04:47:10 1996: falcon.inetnebr.com: ERROR: Not Found (Mon Sep  2 04:47:10 1996)
+Mon Sep  2 04:47:20 1996: 199.184.119.1: CONNECTED (Mon Sep  2 04:47:20 1996)
+Mon Sep  2 04:47:20 1996: 199.184.119.1: GET /~kyricc/crys.html HTTP/1.0 (Mon Sep  2 04:47:20 1996)
+Mon Sep  2 04:47:20 1996: 199.184.119.1: ERROR: Not Found (Mon Sep  2 04:47:20 1996)
+Mon Sep  2 04:47:20 1996: Ip 199.184.119.1 resloved to falcon.inetnebr.com after connection closed.
+Mon Sep  2 04:47:45 1996: 199.184.119.1: CONNECTED (Mon Sep  2 04:47:45 1996)
+Mon Sep  2 04:47:45 1996: 199.184.119.1: GET /~kyricc/porno.html HTTP/1.0 (Mon Sep  2 04:47:45 1996)
+Mon Sep  2 04:47:45 1996: 199.184.119.1: ERROR: Not Found (Mon Sep  2 04:47:45 1996)
+Mon Sep  2 04:47:45 1996: Ip 199.184.119.1 resloved to falcon.inetnebr.com after connection closed.
+Mon Sep  2 04:58:26 1996: 127.0.0.1: CONNECTED (Mon Sep  2 04:58:26 1996)
+Mon Sep  2 04:58:26 1996: 127.0.0.1: GET / HTTP/1.0 (Mon Sep  2 04:58:26 1996)
+Mon Sep  2 04:58:26 1996: Ip 127.0.0.1 resloved to loopback after connection closed.
+Mon Sep  2 04:58:46 1996: 127.0.0.1: CONNECTED (Mon Sep  2 04:58:46 1996)
+Mon Sep  2 04:58:46 1996: 127.0.0.1: GET /~kyricc/ HTTP/1.0 (Mon Sep  2 04:58:46 1996)
+Mon Sep  2 04:58:46 1996: Ip 127.0.0.1 resloved to loopback after connection closed.
+Mon Sep  2 04:58:54 1996: 127.0.0.1: CONNECTED (Mon Sep  2 04:58:54 1996)
+Mon Sep  2 04:58:54 1996: 127.0.0.1: GET /~kyricc/put.html HTTP/1.0 (Mon Sep  2 04:58:54 1996)
+Mon Sep  2 04:58:54 1996: Ip 127.0.0.1 resloved to loopback after connection closed.
+Mon Sep  2 05:06:10 1996: 127.0.0.1: CONNECTED (Mon Sep  2 05:06:10 1996)
+Mon Sep  2 05:06:10 1996: 127.0.0.1: GET /~kyricc HTTP/1.0 (Mon Sep  2 05:06:10 1996)
+Mon Sep  2 05:06:10 1996: Ip 127.0.0.1 resloved to loopback after connection closed.
+Mon Sep  2 05:06:18 1996: 127.0.0.1: CONNECTED (Mon Sep  2 05:06:18 1996)
+Mon Sep  2 05:06:18 1996: 127.0.0.1: GET /shop.html HTTP/1.0 (Mon Sep  2 05:06:18 1996)
+Mon Sep  2 05:06:18 1996: 127.0.0.1: ERROR: Not Found (Mon Sep  2 05:06:18 1996)
+Mon Sep  2 05:06:18 1996: Ip 127.0.0.1 resloved to loopback after connection closed.
+Mon Sep  2 05:08:57 1996: 127.0.0.1: CONNECTED (Mon Sep  2 05:08:57 1996)
+Mon Sep  2 05:08:57 1996: 127.0.0.1: GET / HTTP/1.0 (Mon Sep  2 05:08:57 1996)
+Mon Sep  2 05:08:57 1996: Ip 127.0.0.1 resloved to loopback after connection closed.
+Mon Sep  2 05:09:15 1996: 127.0.0.1: CONNECTED (Mon Sep  2 05:09:15 1996)
+Mon Sep  2 05:09:15 1996: 127.0.0.1: GET /~kyricc/ HTTP/1.0 (Mon Sep  2 05:09:15 1996)
+Mon Sep  2 05:09:15 1996: Ip 127.0.0.1 resloved to loopback after connection closed.
+Mon Sep  2 05:09:25 1996: 127.0.0.1: CONNECTED (Mon Sep  2 05:09:25 1996)
+Mon Sep  2 05:09:25 1996: 127.0.0.1: GET /~kyricc/shop.html HTTP/1.0 (Mon Sep  2 05:09:25 1996)
+Mon Sep  2 05:09:25 1996: Ip 127.0.0.1 resloved to loopback after connection closed.
+Mon Sep  2 06:01:49 1996: 127.0.0.1: CONNECTED (Mon Sep  2 06:01:49 1996)
+Mon Sep  2 06:01:49 1996: 127.0.0.1: GET /~kyricc/put.html HTTP/1.0 (Mon Sep  2 06:01:49 1996)
+Mon Sep  2 06:01:49 1996: Ip 127.0.0.1 resloved to loopback after connection closed.
+Mon Sep  2 12:43:33 1996: 129.186.85.38: CONNECTED (Mon Sep  2 12:43:33 1996)
+Mon Sep  2 12:43:33 1996: 129.186.85.38: GET / HTTP/1.0 (Mon Sep  2 12:43:33 1996)
+Mon Sep  2 12:43:33 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Sep  2 12:44:09 1996: knapp38.res.iastate.edu: CONNECTED (Mon Sep  2 12:44:09 1996)
+Mon Sep  2 12:44:09 1996: knapp38.res.iastate.edu: GET /gateways/mudlist HTTP/1.0 (Mon Sep  2 12:44:09 1996)
+Mon Sep  2 12:44:19 1996: 129.186.85.38: CONNECTED (Mon Sep  2 12:44:17 1996)
+Mon Sep  2 12:44:19 1996: 129.186.85.38: GET /gateways/finger HTTP/1.0 (Mon Sep  2 12:44:19 1996)
+Mon Sep  2 12:44:19 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Sep  2 12:46:24 1996: 129.186.85.38: CONNECTED (Mon Sep  2 12:46:24 1996)
+Mon Sep  2 12:46:24 1996: 129.186.85.38: GET /gateways/finger HTTP/1.0 (Mon Sep  2 12:46:24 1996)
+Mon Sep  2 12:46:24 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Sep  2 12:47:28 1996: 129.186.85.38: CONNECTED (Mon Sep  2 12:47:28 1996)
+Mon Sep  2 12:47:28 1996: 129.186.85.38: GET / HTTP/1.0 (Mon Sep  2 12:47:28 1996)
+Mon Sep  2 12:47:28 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Sep  2 12:48:07 1996: 129.186.85.38: CONNECTED (Mon Sep  2 12:48:07 1996)
+Mon Sep  2 12:48:07 1996: 129.186.85.38: GET /~tim/TODO HTTP/1.0 (Mon Sep  2 12:48:07 1996)
+Mon Sep  2 12:48:07 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Sep  2 12:49:17 1996: knapp38.res.iastate.edu: CONNECTED (Mon Sep  2 12:49:17 1996)
+Mon Sep  2 12:49:17 1996: knapp38.res.iastate.edu: GET /gateways/mudlist HTTP/1.0 (Mon Sep  2 12:49:17 1996)
+Mon Sep  2 12:49:25 1996: knapp38.res.iastate.edu: CONNECTED (Mon Sep  2 12:49:25 1996)
+Mon Sep  2 12:49:25 1996: knapp38.res.iastate.edu: GET /gateways/mudlist HTTP/1.0 (Mon Sep  2 12:49:25 1996)
+Mon Sep  2 12:49:47 1996: 129.186.85.38: CONNECTED (Mon Sep  2 12:49:47 1996)
+Mon Sep  2 12:49:47 1996: 129.186.85.38: GET /gateways/mud@dm.imaginary.com HTTP/1.0 (Mon Sep  2 12:49:47 1996)
+Mon Sep  2 12:49:47 1996: 129.186.85.38: ERROR: Bad Gateway (Mon Sep  2 12:49:47 1996)
+Mon Sep  2 12:49:47 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Sep  2 12:50:37 1996: 129.186.85.38: CONNECTED (Mon Sep  2 12:50:37 1996)
+Mon Sep  2 12:50:37 1996: 129.186.85.38: GET / HTTP/1.0 (Mon Sep  2 12:50:37 1996)
+Mon Sep  2 12:50:37 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Sep  2 12:50:39 1996: knapp38.res.iastate.edu: CONNECTED (Mon Sep  2 12:50:39 1996)
+Mon Sep  2 12:50:39 1996: knapp38.res.iastate.edu: GET /gateways/mudlist HTTP/1.0 (Mon Sep  2 12:50:39 1996)
+Mon Sep  2 12:52:08 1996: knapp38.res.iastate.edu: CONNECTED (Mon Sep  2 12:52:08 1996)
+Mon Sep  2 12:52:08 1996: knapp38.res.iastate.edu: GET /gateways/mudlist HTTP/1.0 (Mon Sep  2 12:52:08 1996)
+Mon Sep  2 12:52:20 1996: knapp38.res.iastate.edu: CONNECTED (Mon Sep  2 12:52:20 1996)
+Mon Sep  2 12:52:20 1996: knapp38.res.iastate.edu: GET /gateways/mudlist HTTP/1.0 (Mon Sep  2 12:52:20 1996)
+Mon Sep  2 12:52:26 1996: 129.186.85.38: CONNECTED (Mon Sep  2 12:52:26 1996)
+Mon Sep  2 12:52:26 1996: 129.186.85.38: GET /index.html HTTP/1.0 (Mon Sep  2 12:52:26 1996)
+Mon Sep  2 12:52:26 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Sep  2 12:54:18 1996: 129.186.85.38: CONNECTED (Mon Sep  2 12:54:18 1996)
+Mon Sep  2 12:54:18 1996: 129.186.85.38: GET / HTTP/1.0 (Mon Sep  2 12:54:18 1996)
+Mon Sep  2 12:54:18 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Sep  2 12:54:18 1996: 129.186.85.38: CONNECTED (Mon Sep  2 12:54:18 1996)
+Mon Sep  2 12:54:18 1996: 129.186.85.38: GET / HTTP/1.0 (Mon Sep  2 12:54:18 1996)
+Mon Sep  2 12:54:18 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Sep  2 12:54:27 1996: knapp38.res.iastate.edu: CONNECTED (Mon Sep  2 12:54:27 1996)
+Mon Sep  2 12:54:27 1996: knapp38.res.iastate.edu: GET /gateways/mudlist HTTP/1.0 (Mon Sep  2 12:54:27 1996)
+Mon Sep  2 12:54:31 1996: knapp38.res.iastate.edu: CONNECTED (Mon Sep  2 12:54:27 1996)
+Mon Sep  2 12:54:31 1996: knapp38.res.iastate.edu: GET /gateways/mudlist HTTP/1.0 (Mon Sep  2 12:54:27 1996)
+Mon Sep  2 12:55:47 1996: 127.0.0.1: CONNECTED (Mon Sep  2 12:55:47 1996)
+Mon Sep  2 12:55:47 1996: 127.0.0.1: GET / HTTP/1.0 (Mon Sep  2 12:55:47 1996)
+Mon Sep  2 12:55:47 1996: Ip 127.0.0.1 resloved to loopback after connection closed.
+Mon Sep  2 12:57:58 1996: 129.186.85.38: CONNECTED (Mon Sep  2 12:57:58 1996)
+Mon Sep  2 12:57:58 1996: 129.186.85.38: GET /~kyricc/ HTTP/1.0 (Mon Sep  2 12:57:58 1996)
+Mon Sep  2 12:57:58 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Sep  2 12:57:58 1996: knapp38.res.iastate.edu: CONNECTED (Mon Sep  2 12:57:58 1996)
+Mon Sep  2 12:57:58 1996: knapp38.res.iastate.edu: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Mon Sep  2 12:57:58 1996)
+Mon Sep  2 12:58:00 1996: 129.186.85.38: CONNECTED (Mon Sep  2 12:58:00 1996)
+Mon Sep  2 12:58:00 1996: 129.186.85.38: GET /~kyricc/ HTTP/1.0 (Mon Sep  2 12:58:00 1996)
+Mon Sep  2 12:58:00 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Sep  2 12:58:00 1996: knapp38.res.iastate.edu: CONNECTED (Mon Sep  2 12:58:00 1996)
+Mon Sep  2 12:58:00 1996: knapp38.res.iastate.edu: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Mon Sep  2 12:58:00 1996)
+Mon Sep  2 12:58:22 1996: 127.0.0.1: CONNECTED (Mon Sep  2 12:58:22 1996)
+Mon Sep  2 12:58:22 1996: 127.0.0.1: GET / HTTP/1.0 (Mon Sep  2 12:58:22 1996)
+Mon Sep  2 12:58:22 1996: Ip 127.0.0.1 resloved to loopback after connection closed.
+Mon Sep  2 12:58:46 1996: 127.0.0.1: CONNECTED (Mon Sep  2 12:58:46 1996)
+Mon Sep  2 12:58:46 1996: 127.0.0.1: GET /gateways/finger HTTP/1.0 (Mon Sep  2 12:58:46 1996)
+Mon Sep  2 12:58:46 1996: Ip 127.0.0.1 resloved to loopback after connection closed.
+Mon Sep  2 12:59:26 1996: 127.0.0.1: CONNECTED (Mon Sep  2 12:59:26 1996)
+Mon Sep  2 12:59:26 1996: 127.0.0.1: GET /gateways/finger?username=kyricc HTTP/1.0 (Mon Sep  2 12:59:26 1996)
+Mon Sep  2 12:59:26 1996: Ip 127.0.0.1 resloved to loopback after connection closed.
+Mon Sep  2 13:00:26 1996: 127.0.0.1: CONNECTED (Mon Sep  2 13:00:26 1996)
+Mon Sep  2 13:00:26 1996: 127.0.0.1: GET /gateways/finger?username=tim HTTP/1.0 (Mon Sep  2 13:00:26 1996)
+Mon Sep  2 13:00:26 1996: Ip 127.0.0.1 resloved to loopback after connection closed.
+Mon Sep  2 13:02:03 1996: 129.186.85.38: CONNECTED (Mon Sep  2 13:02:03 1996)
+Mon Sep  2 13:02:03 1996: 129.186.85.38: GET /~kyricc/corpse.html HTTP/1.0 (Mon Sep  2 13:02:03 1996)
+Mon Sep  2 13:02:03 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Sep  2 13:02:49 1996: 127.0.0.1: CONNECTED (Mon Sep  2 13:02:49 1996)
+Mon Sep  2 13:02:49 1996: 127.0.0.1: GET / HTTP/1.0 (Mon Sep  2 13:02:49 1996)
+Mon Sep  2 13:02:49 1996: Ip 127.0.0.1 resloved to loopback after connection closed.
+Mon Sep  2 13:03:27 1996: 129.186.85.38: CONNECTED (Mon Sep  2 13:03:27 1996)
+Mon Sep  2 13:03:27 1996: 129.186.85.38: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Mon Sep  2 13:03:27 1996)
+Mon Sep  2 13:03:27 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Sep  2 13:03:29 1996: 129.186.85.38: CONNECTED (Mon Sep  2 13:03:29 1996)
+Mon Sep  2 13:03:29 1996: 129.186.85.38: GET /~kyricc/put.html HTTP/1.0 (Mon Sep  2 13:03:29 1996)
+Mon Sep  2 13:03:29 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Sep  2 13:03:43 1996: 127.0.0.1: CONNECTED (Mon Sep  2 13:03:43 1996)
+Mon Sep  2 13:03:43 1996: 127.0.0.1: GET /gateways/finger HTTP/1.0 (Mon Sep  2 13:03:43 1996)
+Mon Sep  2 13:03:43 1996: Ip 127.0.0.1 resloved to loopback after connection closed.
+Mon Sep  2 13:03:49 1996: 129.186.85.38: CONNECTED (Mon Sep  2 13:03:49 1996)
+Mon Sep  2 13:03:49 1996: 129.186.85.38: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Mon Sep  2 13:03:49 1996)
+Mon Sep  2 13:03:49 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Sep  2 13:03:53 1996: 129.186.85.38: CONNECTED (Mon Sep  2 13:03:51 1996)
+Mon Sep  2 13:03:53 1996: 129.186.85.38: GET /~kyricc/races.html HTTP/1.0 (Mon Sep  2 13:03:53 1996)
+Mon Sep  2 13:03:53 1996: 129.186.85.38: ERROR: Not Found (Mon Sep  2 13:03:53 1996)
+Mon Sep  2 13:03:53 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Sep  2 13:03:58 1996: knapp38.res.iastate.edu: CONNECTED (Mon Sep  2 13:03:58 1996)
+Mon Sep  2 13:03:58 1996: knapp38.res.iastate.edu: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Mon Sep  2 13:03:58 1996)
+Mon Sep  2 13:03:58 1996: 129.186.85.38: CONNECTED (Mon Sep  2 13:03:58 1996)
+Mon Sep  2 13:03:58 1996: 129.186.85.38: GET /~kyricc/crys.html HTTP/1.0 (Mon Sep  2 13:03:58 1996)
+Mon Sep  2 13:03:58 1996: 129.186.85.38: ERROR: Not Found (Mon Sep  2 13:03:58 1996)
+Mon Sep  2 13:03:58 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Sep  2 13:04:00 1996: 129.186.85.38: CONNECTED (Mon Sep  2 13:04:00 1996)
+Mon Sep  2 13:04:00 1996: 129.186.85.38: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Mon Sep  2 13:04:00 1996)
+Mon Sep  2 13:04:00 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Sep  2 13:04:02 1996: 129.186.85.38: CONNECTED (Mon Sep  2 13:04:02 1996)
+Mon Sep  2 13:04:02 1996: 129.186.85.38: GET /~kyricc/porno.html HTTP/1.0 (Mon Sep  2 13:04:02 1996)
+Mon Sep  2 13:04:02 1996: 129.186.85.38: ERROR: Not Found (Mon Sep  2 13:04:02 1996)
+Mon Sep  2 13:04:02 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Sep  2 13:04:04 1996: 129.186.85.38: CONNECTED (Mon Sep  2 13:04:04 1996)
+Mon Sep  2 13:04:04 1996: 129.186.85.38: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Mon Sep  2 13:04:04 1996)
+Mon Sep  2 13:04:04 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Sep  2 13:04:14 1996: knapp38.res.iastate.edu: CONNECTED (Mon Sep  2 13:04:14 1996)
+Mon Sep  2 13:04:14 1996: knapp38.res.iastate.edu: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Mon Sep  2 13:04:14 1996)
+Mon Sep  2 13:04:24 1996: 129.186.85.38: CONNECTED (Mon Sep  2 13:04:24 1996)
+Mon Sep  2 13:04:24 1996: 129.186.85.38: GET /gateways/finger HTTP/1.0 (Mon Sep  2 13:04:24 1996)
+Mon Sep  2 13:04:24 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Sep  2 13:06:00 1996: 129.186.85.38: CONNECTED (Mon Sep  2 13:06:00 1996)
+Mon Sep  2 13:06:00 1996: 129.186.85.38: GET /~satch/ HTTP/1.0 (Mon Sep  2 13:06:00 1996)
+Mon Sep  2 13:06:00 1996: 129.186.85.38: ERROR: Not Found (Mon Sep  2 13:06:00 1996)
+Mon Sep  2 13:06:00 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Sep  2 13:06:16 1996: 129.186.85.38: CONNECTED (Mon Sep  2 13:06:16 1996)
+Mon Sep  2 13:06:16 1996: 129.186.85.38: GET /~talen/ HTTP/1.0 (Mon Sep  2 13:06:16 1996)
+Mon Sep  2 13:06:16 1996: 129.186.85.38: ERROR: Not Found (Mon Sep  2 13:06:16 1996)
+Mon Sep  2 13:06:16 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Sep  2 13:06:22 1996: 129.186.85.38: CONNECTED (Mon Sep  2 13:06:22 1996)
+Mon Sep  2 13:06:22 1996: 129.186.85.38: GET /~tim/ HTTP/1.0 (Mon Sep  2 13:06:22 1996)
+Mon Sep  2 13:06:22 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Sep  2 13:06:22 1996: 129.186.85.38: CONNECTED (Mon Sep  2 13:06:22 1996)
+Mon Sep  2 13:06:22 1996: 129.186.85.38: GET /~tim/ HTTP/1.0 (Mon Sep  2 13:06:22 1996)
+Mon Sep  2 13:06:22 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Sep  2 13:07:23 1996: 129.186.85.38: CONNECTED (Mon Sep  2 13:07:23 1996)
+Mon Sep  2 13:07:23 1996: 129.186.85.38: GET /gateways/finger?tim HTTP/1.0 (Mon Sep  2 13:07:23 1996)
+Mon Sep  2 13:07:23 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Sep  2 13:07:25 1996: 129.186.85.38: CONNECTED (Mon Sep  2 13:07:25 1996)
+Mon Sep  2 13:07:25 1996: 129.186.85.38: GET /gateways/finger?tim HTTP/1.0 (Mon Sep  2 13:07:25 1996)
+Mon Sep  2 13:07:25 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Sep  2 13:07:55 1996: 129.186.85.38: CONNECTED (Mon Sep  2 13:07:55 1996)
+Mon Sep  2 13:07:55 1996: 129.186.85.38: GET /~evergreen/ HTTP/1.0 (Mon Sep  2 13:07:55 1996)
+Mon Sep  2 13:07:55 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Sep  2 13:09:31 1996: 127.0.0.1: CONNECTED (Mon Sep  2 13:09:31 1996)
+Mon Sep  2 13:09:31 1996: 127.0.0.1: GET /~kyricc/ HTTP/1.0 (Mon Sep  2 13:09:31 1996)
+Mon Sep  2 13:09:31 1996: Ip 127.0.0.1 resloved to loopback after connection closed.
+Mon Sep  2 18:51:52 1996: 198.111.45.183: CONNECTED (Mon Sep  2 18:51:52 1996)
+Mon Sep  2 18:51:52 1996: 198.111.45.183: GET / HTTP/1.0 (Mon Sep  2 18:51:52 1996)
+Mon Sep  2 18:51:52 1996: Ip 0 resloved to NOT RESOLVED after connection closed.
+Mon Sep  2 18:53:18 1996: Ip 0 resloved to NOT RESOLVED after connection closed.
+Mon Sep  2 18:53:18 1996: 198.111.45.183: CONNECTED (Mon Sep  2 18:53:18 1996)
+Mon Sep  2 18:53:18 1996: 198.111.45.183: GET /gateways/finger HTTP/1.0 (Mon Sep  2 18:53:18 1996)
+Mon Sep  2 19:03:17 1996: Ip 0 resloved to NOT RESOLVED after connection closed.
+Mon Sep  2 19:03:17 1996: 198.111.45.183: CONNECTED (Mon Sep  2 19:03:17 1996)
+Mon Sep  2 19:03:17 1996: 198.111.45.183: GET /~evergreen/ HTTP/1.0 (Mon Sep  2 19:03:17 1996)
+Mon Sep  2 19:03:21 1996: Ip 0 resloved to NOT RESOLVED after connection closed.
+Mon Sep  2 19:03:21 1996: 198.111.45.183: CONNECTED (Mon Sep  2 19:03:21 1996)
+Mon Sep  2 19:03:21 1996: 198.111.45.183: GET /~hamnsnock/ HTTP/1.0 (Mon Sep  2 19:03:21 1996)
+Mon Sep  2 19:03:35 1996: Ip 0 resloved to NOT RESOLVED after connection closed.
+Mon Sep  2 19:03:35 1996: 198.111.45.183: CONNECTED (Mon Sep  2 19:03:35 1996)
+Mon Sep  2 19:03:35 1996: 198.111.45.183: GET /~satch/ HTTP/1.0 (Mon Sep  2 19:03:35 1996)
+Mon Sep  2 19:03:35 1996: 198.111.45.183: ERROR: Not Found (Mon Sep  2 19:03:35 1996)
+Mon Sep  2 20:29:51 1996: 131.242.51.208: CONNECTED (Mon Sep  2 20:29:51 1996)
+Mon Sep  2 20:29:51 1996: 131.242.51.208: GET / HTTP/1.0 (Mon Sep  2 20:29:51 1996)
+Mon Sep  2 20:29:51 1996: Ip 131.242.51.208 resloved to dpi-gw.ind.dpi.qld.gov.au after connection closed.
+Mon Sep  2 22:55:33 1996: 131.185.2.4: CONNECTED (Mon Sep  2 22:55:31 1996)
+Mon Sep  2 22:55:33 1996: 131.185.2.4: GET / HTTP/1.0 (Mon Sep  2 22:55:33 1996)
+Mon Sep  2 22:55:33 1996: Ip 131.185.2.4 resloved to wilbur.dsto.defence.gov.au after connection closed.
+Tue Sep  3 01:47:07 1996: 128.83.42.1: CONNECTED (Tue Sep  3 01:47:07 1996)
+Tue Sep  3 01:47:07 1996: 128.83.42.1: GET / HTTP/1.0 (Tue Sep  3 01:47:07 1996)
+Tue Sep  3 01:47:07 1996: Ip 128.83.42.1 resloved to curly.cc.utexas.edu after connection closed.
+Wed Sep  4 08:45:52 1996: 206.251.98.37: CONNECTED (Wed Sep  4 08:45:52 1996)
+Wed Sep  4 08:45:52 1996: 206.251.98.37: GET / HTTP/1.0 (Wed Sep  4 08:45:52 1996)
+Wed Sep  4 08:45:52 1996: Ip 206.251.98.37 resloved to clw98037.gte.net after connection closed.
+Wed Sep  4 21:36:54 1996: 143.216.227.43: CONNECTED (Wed Sep  4 21:36:50 1996)
+Wed Sep  4 21:36:54 1996: 143.216.227.43: GET / HTTP/1.0 (Wed Sep  4 21:36:54 1996)
+Wed Sep  4 21:36:54 1996: Ip 0 resloved to NOT RESOLVED after connection closed.
+Wed Sep  4 21:40:05 1996: Ip 0 resloved to NOT RESOLVED after connection closed.
+Wed Sep  4 21:40:05 1996: 143.216.227.43: CONNECTED (Wed Sep  4 21:40:05 1996)
+Wed Sep  4 21:40:05 1996: 143.216.227.43: GET /~kyricc/ HTTP/1.0 (Wed Sep  4 21:40:05 1996)
+Wed Sep  4 21:40:07 1996: Ip 0 resloved to NOT RESOLVED after connection closed.
+Wed Sep  4 21:40:07 1996: 143.216.227.43: CONNECTED (Wed Sep  4 21:40:07 1996)
+Wed Sep  4 21:40:07 1996: 143.216.227.43: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Wed Sep  4 21:40:07 1996)
+Wed Sep  4 21:50:16 1996: 143.216.227.43: CONNECTED (Wed Sep  4 21:50:16 1996)
+Wed Sep  4 21:50:16 1996: 143.216.227.43: GET /~kyricc/corpse.html HTTP/1.0 (Wed Sep  4 21:50:16 1996)
+Wed Sep  4 21:50:16 1996: Ip 0 resloved to NOT RESOLVED after connection closed.
+Wed Sep  4 21:50:32 1996: Ip 0 resloved to NOT RESOLVED after connection closed.
+Wed Sep  4 21:50:32 1996: 143.216.227.43: CONNECTED (Wed Sep  4 21:50:32 1996)
+Wed Sep  4 21:50:32 1996: 143.216.227.43: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Wed Sep  4 21:50:32 1996)
+Wed Sep  4 21:50:34 1996: Ip 0 resloved to NOT RESOLVED after connection closed.
+Wed Sep  4 21:50:34 1996: 143.216.227.43: CONNECTED (Wed Sep  4 21:50:34 1996)
+Wed Sep  4 21:50:34 1996: 143.216.227.43: GET /~kyricc/porno.html HTTP/1.0 (Wed Sep  4 21:50:34 1996)
+Wed Sep  4 21:50:34 1996: 143.216.227.43: ERROR: Not Found (Wed Sep  4 21:50:34 1996)
+Wed Sep  4 21:50:38 1996: Ip 0 resloved to NOT RESOLVED after connection closed.
+Wed Sep  4 21:50:38 1996: 143.216.227.43: CONNECTED (Wed Sep  4 21:50:38 1996)
+Wed Sep  4 21:50:38 1996: 143.216.227.43: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Wed Sep  4 21:50:38 1996)
+Wed Sep  4 21:50:40 1996: 143.216.227.43: CONNECTED (Wed Sep  4 21:50:40 1996)
+Wed Sep  4 21:50:40 1996: 143.216.227.43: GET /~kyricc/crys.html HTTP/1.0 (Wed Sep  4 21:50:40 1996)
+Wed Sep  4 21:50:40 1996: 143.216.227.43: ERROR: Not Found (Wed Sep  4 21:50:40 1996)
+Wed Sep  4 21:50:40 1996: Ip 0 resloved to NOT RESOLVED after connection closed.
+Wed Sep  4 21:50:42 1996: Ip 0 resloved to NOT RESOLVED after connection closed.
+Wed Sep  4 21:50:42 1996: 143.216.227.43: CONNECTED (Wed Sep  4 21:50:42 1996)
+Wed Sep  4 21:50:42 1996: 143.216.227.43: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Wed Sep  4 21:50:42 1996)
+Wed Sep  4 21:50:46 1996: Ip 0 resloved to NOT RESOLVED after connection closed.
+Wed Sep  4 21:50:46 1996: 143.216.227.43: CONNECTED (Wed Sep  4 21:50:46 1996)
+Wed Sep  4 21:50:46 1996: 143.216.227.43: GET /~kyricc/races.html HTTP/1.0 (Wed Sep  4 21:50:46 1996)
+Wed Sep  4 21:50:46 1996: 143.216.227.43: ERROR: Not Found (Wed Sep  4 21:50:46 1996)
+Wed Sep  4 21:54:11 1996: Ip 0 resloved to NOT RESOLVED after connection closed.
+Wed Sep  4 21:54:11 1996: 143.216.227.43: CONNECTED (Wed Sep  4 21:54:11 1996)
+Wed Sep  4 21:54:11 1996: 143.216.227.43: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Wed Sep  4 21:54:11 1996)
+Sat Sep  7 21:54:36 1996: 192.52.106.30: CONNECTED (Sat Sep  7 21:54:36 1996)
+Sat Sep  7 21:54:36 1996: 192.52.106.30: GET / HTTP/1.0 (Sat Sep  7 21:54:36 1996)
+Sat Sep  7 21:54:36 1996: Ip 192.52.106.30 resloved to harvest.ucar.edu after connection closed.
+Sat Sep  7 22:10:32 1996: harvest.ucar.edu: CONNECTED (Sat Sep  7 22:10:32 1996)
+Sat Sep  7 22:10:32 1996: harvest.ucar.edu: GET / HTTP/1.0 (Sat Sep  7 22:10:32 1996)
+Sat Sep  7 22:12:19 1996: harvest.ucar.edu: CONNECTED (Sat Sep  7 22:12:19 1996)
+Sat Sep  7 22:12:19 1996: harvest.ucar.edu: GET / HTTP/1.0 (Sat Sep  7 22:12:19 1996)
+Sat Sep  7 22:14:23 1996: 192.203.230.19: CONNECTED (Sat Sep  7 22:14:23 1996)
+Sat Sep  7 22:14:23 1996: 192.203.230.19: GET /~satch/ HTTP/1.0 (Sat Sep  7 22:14:23 1996)
+Sat Sep  7 22:14:23 1996: 192.203.230.19: ERROR: Not Found (Sat Sep  7 22:14:23 1996)
+Sat Sep  7 22:14:23 1996: Ip 192.203.230.19 resloved to sv.cache.nlanr.net after connection closed.
+Sat Sep  7 23:12:25 1996: 192.52.106.30: CONNECTED (Sat Sep  7 23:12:25 1996)
+Sat Sep  7 23:12:25 1996: 192.52.106.30: GET / HTTP/1.0 (Sat Sep  7 23:12:25 1996)
+Sat Sep  7 23:12:25 1996: Ip 192.52.106.30 resloved to harvest.ucar.edu after connection closed.
+Mon Sep  9 02:09:23 1996: 204.112.20.11: CONNECTED (Mon Sep  9 02:09:18 1996)
+Mon Sep  9 02:09:23 1996: 204.112.20.11: GET / HTTP/1.0 (Mon Sep  9 02:09:23 1996)
+Mon Sep  9 02:09:23 1996: Ip 204.112.20.11 resloved to phoenix.common.net after connection closed.

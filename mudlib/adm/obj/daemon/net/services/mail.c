@@ -13,7 +13,7 @@ private mapping mail_ids;
 private int
 new_mail_id()
 {
-  int* ids = keys(mail_ids);
+  int* ids = keys((mail_ids ? mail_ids : mail_ids = ([])));
 
   if( sizeof(ids) )
     return ids[<1]++;
@@ -25,8 +25,8 @@ void
 eventReceiveMail(string mudname, mixed* packet)
 {
   if( file_name(previous_object()) != OOB_D ) return;
-  MAIL_D->send_mail(packet[3], packet[4], packet[5], packet[2], packet[6],
-		    packet[7], packet[8]);
+  MAIL_D->send_mail(packet[3], packet[4], packet[5], packet[2] +"@"+mudname,
+		    packet[6], packet[7], packet[8]);
   OOB_D->OOBSendPacket(mudname, ({ "mail-ack",
 				   ([ packet[1] : ({}) ]) }));
 }
@@ -54,5 +54,6 @@ eventSendMail(string target_mudname, string from, mapping to_list,
 					   bcc_list,
 					   time,
 					   subject,
-					   contents }));
+					   contents 
+					   }) );
 }
