@@ -1,0 +1,84 @@
+Sat Oct 14 23:28:28 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:22
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( )
+Sat Oct 14 23:29:02 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:22
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( )
+Sun Oct 15 00:13:16 1995:  
+[ERROR] *Error in loading object '/obj/inherit/base/living'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:109
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( )
+Sun Oct 15 00:13:34 1995:  
+[ERROR] *Error in loading object '/obj/inherit/combat'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:109
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( )
+Sun Oct 15 00:15:53 1995:  
+[ERROR] *Error in loading object '/obj/inherit/combat'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:109
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( )
+Sun Oct 15 00:16:31 1995:  
+[ERROR] *Error in loading object '/obj/inherit/combat'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:109
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( )
+Sun Oct 15 00:21:08 1995:  
+[ERROR] *Error in loading object '/obj/inherit/base/living'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:109
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( )
+Sun Oct 15 00:21:42 1995:  
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:22
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( )
+Sun Oct 15 00:24:33 1995:  
+[ERROR] *Error in loading object '/obj/inherit/base/living'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:109
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( )
+Sun Oct 15 00:27:11 1995:  
+[ERROR] *Error in loading object '/obj/inherit/base/living'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:109
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( )
+Sun Oct 15 00:30:52 1995:  
+[ERROR] *Error in loading object '/obj/inherit/base/living'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:109
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( )
+Sun Oct 15 00:45:42 1995:  
+[ERROR] *Error in loading object '/obj/inherit/combat'
+  obj : (cmd/wiz/update)
+  file: cmd/wiz/update.c:109
+  prgm: cmd/wiz/update.c
+  func: CATCH
+  args: ( )

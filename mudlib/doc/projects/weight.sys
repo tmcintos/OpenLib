@@ -1,0 +1,21 @@
+Weight is in pounds.
+
+All objects have 3 functions:
+	int query_weight();
+	void set_weight(int pounds);
+These functions can be used to set and find the weight of an object.
+query_weight() returns the total weight of the object which could be
+more than the value you set with set_weight() (if the object contains
+other objects with weight)
+
+LIVING OBJECTS & WEIGHT
+-----------------------
+  You can add weight to a living object by calling
+	boolean add_weight(int pounds);
+in that object.  IF this func. returns true, then the weight can be added
+to the player without problems.  If it returns false, then the weight
+could not be added to the player (i.e. you shouldn't move the object in
+question to the player either).
+  When an object is moved into or removed from the player, the function
+	void fix_weight();
+should be called to re-initialize the player's weight.

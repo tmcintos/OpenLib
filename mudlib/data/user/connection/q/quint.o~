@@ -1,0 +1,8 @@
+#obj/clone/connection.c
+name "quint"
+password "tF2.nJcr484ko"
+real_name "Scott Jackson"
+home_dir "/u/q/quint"
+body "/obj/clone/user"
+login_shell "none"
+login_time 812760420

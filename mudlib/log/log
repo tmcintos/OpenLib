@@ -1,0 +1,7 @@
+tmp/tmp_eval_file.c line 3: Bad argument 1 to efun this_player()
+obj/inherit/weapon.c line 76: Undefined function enviroment
+obj/inherit/weapon.c line 76: Undefined variable 'this_object'
+obj/inherit/weapon.c line 83: Undefined variable 'this_object'
+obj/inherit/weapon.c line 76: Undefined function enviroment
+obj/inherit/weapon.c line 76: Undefined function enviroment
+obj/inherit/armour.c line 85: Undefined function enviroment

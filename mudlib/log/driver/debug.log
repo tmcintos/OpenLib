@@ -1,0 +1,27 @@
+----------------------------------------------------------------------------
+Dysfunctional Mud (MudOS v21.7b1) starting up on Linux - Fri Oct 13 12:20:22 1995
+
+
+Can't find "driver", ignoring old binaries.
+Try invoking the driver using the full pathname.
+Connected to address server on localhost port 7374
+
+Loading preloaded files ...
+Initializations complete.
+
+Accepting connections on port 4444.
+Double call to remove_interactive()
+SIGPIPE received.
+System Error: flush_message: write:Broken pipe
+Broken connection during add_message.
+Double call to remove_interactive()
+Heart beat in obj/examples/monster turned off.
+Heart beat in obj/examples/monster turned off.
+SIGPIPE received.
+System Error: flush_message: write:Broken pipe
+Broken connection during add_message.
+Double call to remove_interactive()
+SIGPIPE received.
+System Error: flush_message: write:Broken pipe
+Broken connection during add_message.
+Double call to remove_interactive()

@@ -1,0 +1,8 @@
+catch_tell (4)       - provides an interface to interact with users
+exec() (3)           - switches a player (interactive) connection from one object to another
+interactive() (3)    - detects whether or not a given object is an interactive
+net_dead (4)         - called by the MudOS driver when an interactive object drops its connection
+query_idle() (3)     - determine how many seconds an interactive player has been idle
+query_snoop() (3)    - return the snooper of an interactive object
+snoop() (3)          - snoop an interactive user
+userp() (3)          - determine if a given object was once interactive

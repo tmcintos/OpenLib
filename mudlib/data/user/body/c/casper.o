@@ -1,0 +1,8 @@
+#obj/clone/user/human.c
+name "casper"
+coins ({0,0,})
+title "the utter mudlib hacker"
+current_dir "/obj"
+term "ansi"
+Hook 0
+path "/cmd/player:/adm/cmd/wiz:/adm/cmd/adm:/cmd/wiz:/adm/cmd/player:/cmd/adm"

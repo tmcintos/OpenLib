@@ -1,0 +1,9 @@
+#obj/clone/connection.c
+name "tim"
+password "vOUU9NyYXG.Qg"
+real_name "Tim McIntosh"
+email_addr "astasia@knapp38.res.iastate.edu"
+home_dir "/u/t/tim"
+body "/obj/clone/user/human"
+login_time 813730106
+login_from "localhost"

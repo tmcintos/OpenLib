@@ -1,0 +1,18 @@
+#include <command.h>
+
+int
+main()
+{
+  object *inv, ob;
+
+  inv = all_inventory(this_player());
+
+  write("You are carrying:\n");
+
+  foreach(ob in inv) {
+    string sh = ob->short();
+    if(sh)
+      write(capitalize(sh) + "\n");
+  }
+  return 1;
+}

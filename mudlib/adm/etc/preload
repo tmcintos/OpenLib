@@ -1,0 +1,7 @@
+/adm/obj/daemon/void
+/adm/obj/daemon/groupd
+/adm/obj/daemon/logind
+/obj/daemon/net/services
+/obj/daemon/net/ftpd
+/obj/daemon/net/intermud
+

@@ -1,0 +1,10 @@
+#obj/clone/connection.c
+name "tim"
+password "XqtHXPTP4rTc6"
+real_name "Tim McIntosh"
+email_addr 0
+home_dir "/u/t/tim"
+body "/obj/clone/user/human"
+login_shell "none"
+login_time 813613225
+login_from "localhost"

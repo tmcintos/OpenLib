@@ -1,0 +1,7 @@
+#obj/clone/user.c
+name "lol"
+title "the utter mudlib hacker"
+current_dir "/data/user"
+term 0
+Hook 0
+path "/cmd/player:/adm/cmd/wiz:/adm/cmd/adm:/cmd/wiz:/adm/cmd/player:/cmd/adm"

@@ -1,0 +1,5 @@
+debugmalloc() (3)    - dumps information on malloc'd memory to a file.
+dump_file_descriptors() (3) - dump the MudOS process file descriptor table
+dump_prog() (3)      - dump/disassemble an LPC object
+dump_socket_status() (3) - display the status of each LPC socket
+dumpallobj() (3)     - report various statistics on all objects that have been loaded

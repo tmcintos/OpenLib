@@ -1,0 +1,13 @@
+/: Root Directory.
+
+/adm		'secure' directory.  Subdirectory structure is similar to /.
+/cmd            command directory.
+/d              domain directory.
+/data           data directory, i.e. 'save' directory.
+/doc            documentation directory.
+/ftp            ftp public ('pub') directory.
+/include        header file directory.
+/log            log file directory.
+/obj            object directory; all objects are below this.
+/tmp            temporary directory; world writable
+/u              user directory; contains save files and home directories.

@@ -1,0 +1,7 @@
+#obj/clone/user/default.c
+name "kyricc"
+title "the utter mudlib hacker"
+current_dir "/u/k/kyricc"
+term "ansi"
+Hook 0
+path "/cmd/player:/adm/cmd/wiz:/adm/cmd/adm:/cmd/wiz:/adm/cmd/player:/cmd/adm"

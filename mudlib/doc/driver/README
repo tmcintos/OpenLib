@@ -1,0 +1,14 @@
+This is the MudOS driver documentation directory.
+
+It has the following contents:
+
+applies/	Files describing the local functions that 
+                the MudOS driver depends on being present in various objects
+                in your mudlib
+defines/        Descriptions of the #defines automagically available to LPC
+                objects.
+concepts/       Descriptions of several important fundamental topics
+driver/         Description of the inner workings of the MudOS/lpmud driver
+efuns/          System function documentation
+lpc/            Documentation on the language syntax itself
+platforms/      Tips for compiling MudOS on various platforms

@@ -1,0 +1,4 @@
+debug_info() (3)     - display debug information
+debugmalloc() (3)    - dumps information on malloc'd memory to a file.
+set_debug_level() (3) - sets the debug level used by the driver's debug() macro
+set_malloc_mask() (3) - sets the mask controlling display of malloc debug info

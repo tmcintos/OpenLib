@@ -1,0 +1,139 @@
+/*  -*- LPC -*-  */
+// fingerd.c:  Tim
+//
+//   This handles all finger requests; local and remote.
+//
+#include <mudlib.h>
+#include <daemons.h>
+#include <time.h>
+
+inherit DAEMON;
+
+string GetFinger(string username);
+
+void
+create()
+{
+  daemon::create();
+  SetNoClean(0);
+}
+
+string
+GetFinger(string username)
+// pre: call anytime; if username == 0, then finger for all users is returned
+// modifies: nothing
+// post:  returns a string with the finger information requested
+{
+  string line = "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
+                "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n";
+  string ret = "";
+  int idle, num_users;
+  object user, conn, *list;
+
+  // If no username is given, this part produces the string that contains
+  // finger info for all presently logged in users
+
+  if(!username) {
+    list = users();
+    num_users = sizeof(list);
+
+    ret += sprintf("%d users on %s at %s.\n"
+		   "upsince %s (%d days), load avg %s\n",
+		   num_users,
+		   mud_name(),
+		   get_date(time(), DATESTR_ALL),
+		   get_date(time() - uptime(), DATESTR_DATE),
+		   uptime() / 86400,
+		   query_load_average());
+
+    ret += line + sprintf("%-10s   %-20s  %6s  %-12s  %-20s\n",
+			  "Login", "Name", "Idle", "Login Time", "From Host")
+           + line;
+
+    foreach (user in list) {
+      conn = (object)user->query_connection();
+
+      idle = query_idle(user);
+      ret += sprintf("%-10s   %-20s  %6s  %-12s  %-20s\n",
+		     user->query_cap_name(),
+		     conn->query_real_name(),
+		     idle/60+":"+idle%60,
+		     get_date(conn->query_login_time(), DATESTR_SHORT),
+		     conn->query_login_from());
+    }
+    return ret;                                 // return the finger info
+  }
+
+  //   If a username is given, this part clones their connection object, and
+  // queries it for information pertaining to the player.
+  //   If the player is logged on, there are a few differences in the string
+  // that finger returns
+
+  conn = new(CONNECTION_OB);
+
+  if(conn->restore_connection(username)) {
+    ret += sprintf("Login: %-8s                    Name: %-20s\n"
+		   "Directory: %-20s    Body: %-20s\n"
+		   "Email: %-20s\n",
+		   username,
+		   conn->query_real_name(),
+		   conn->query_home_dir(),
+		   conn->query_body(),
+		   conn->query_email_addr());
+    //
+    // Do this if the player is logged on
+    //
+    if(user = find_player(username)) {
+      ret += sprintf("On since %s", ctime(conn->query_login_time()));
+      ret += sprintf(" from %s", conn->query_login_from());
+      //
+      // user must be interactive to call query_idle()
+      //
+      if(interactive(user)) {
+	idle = query_idle(user);
+	ret += ((idle) ? ", idle " + idle/60 + ":" + idle%60 + "\n" : ".\n");
+      } else {
+	ret += ", link-dead.\n";
+      }
+    } else {
+      ret += sprintf("Last login: %s", ctime(conn->query_login_time()));
+      ret += sprintf(" from %s\n", conn->query_login_from());
+    }
+    //
+    // For beauty only :) Fix later; Tim.
+    //
+    ret += "No Mail.\n";
+    ret += "No Plan.\n";
+  } else {
+    ret = sprintf("finger: %s: no such user.\n", username);  // no such user
+  }
+
+  destruct(conn);                            // destruct the conn we cloned
+  return ret;                                // return the finger info
+}
+
+mixed *GetRemoteFinger(string who)
+// pre: true
+// modifies: nothing
+// post: returns a finger packet for Intermud3
+{
+  string RealName, CapName, HomeDir, Email, Level;
+  int LoginTime;
+  mixed *tmp;
+  object conn;
+
+  conn = new(CONNECTION_OB);
+
+  if(conn->restore_connection(who)) {
+    RealName = conn->query_real_name();
+    CapName = capitalize(who);
+    HomeDir = conn->query_home_dir();
+    LoginTime = conn->query_login_time();
+    Email = conn->query_email_addr();
+    Level = 0;
+
+    tmp = ({ CapName, CapName, RealName, Email, ctime(LoginTime),
+	     "Not dealing here", Level, "\n" });
+    return tmp;
+  }
+}

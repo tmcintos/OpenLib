@@ -1,0 +1,22 @@
+This directory is to contain the objects implementing the commands that
+interactives can use (movement, building, communication, etc).
+
+Tim: (as of 5/8/95)
+--------------------
+#include <command.h> to create a command.  This file inherits the
+CMD_MODULE, which defines a function _main(string args), called by the player.
+_main() in turn calls main(), which you define in your command file.
+
+When the command module calls main() it calls it with 2 arguments.
+The first argument is the command line with flags removed;  The second
+argument is the original command line.
+
+The command module also makes available 3 global variables and a function:
+  string *argv;  an array of words passed to the command; 1st element is always
+                 the verb that was used to call the command.
+  int     argc;  the size of the array argv.
+
+  string *flags; an array containing the individual flags; not used directly.
+
+  int flag(string flg);  This takes a string of length 1 containing a flag;
+	  		 returns 1 if the flag is present; 0 otherwise.

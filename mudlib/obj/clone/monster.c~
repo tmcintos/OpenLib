@@ -1,0 +1,55 @@
+//  -*- LPC -*- 
+// monster.c  Tim, 10/95:   A very generic monster
+//
+
+#include <mudlib.h>
+
+inherit LIVING;
+
+private boolean move_around = 0;         // do we move around or not?
+private int move_period = 10;            // move after so many seconds
+private int last_move_at = 0;            // time of last move
+
+// Function Prototypes
+void heart_beat();
+int set_move_around(int period);
+void random_action();
+
+// Called by the driver every 2 seconds or so...
+
+void
+heart_beat()
+{
+// Random move stuff
+  if(move_around && (time() - last_move_at) > move_period) {
+    random_action();
+  }
+}
+
+// Call this to make the monster randomly move around and do things
+// pass the period as the argument (defualt is 10 sec)
+// Returns the period that was set.
+
+varargs
+int
+set_move_around(int period)
+{
+  if(period)
+    move_period = period;
+  move_around = TRUE;
+
+  return move_period;
+}
+
+// Take a random action...pick from all available actions to make it
+// look real :)
+
+void
+random_action()
+{
+  mixed *actions = commands();
+  int action = random(sizeof(actions));
+
+  last_move_at = time();
+  command(actions[action][0]);
+}
