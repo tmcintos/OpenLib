@@ -24,10 +24,10 @@ address server ip : localhost
 address server port : 7374
  
 # absolute pathname of mudlib
-mudlib directory : /home/mud/mudlib
+mudlib directory : /u2/mud/mudlib
  
 # absolute pathname of driver/config dir
-binary directory : /home/mud/MudOS/bin
+binary directory : /u2/mud/MudOS/bin
  
 # debug.log and author/domain stats are stored here
 log directory : /log
@@ -73,7 +73,7 @@ maximum bits in a bitfield : 1200
  
 # Maximum amount of "eval cost" per thread - execution is halted when 
 # it is exceeded.
-maximum evaluation cost : 200000
+maximum evaluation cost : 300000
  
 # This is the maximum array size allowed for one single array.
 maximum array size : 15000

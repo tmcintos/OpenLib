@@ -1,7 +1,7 @@
 #include <mudlib.h>
 #include <daemons.h>
 #include <net/daemons.h>
-#undef unguarded
 mixed eval() { 
   object me = this_player();
-  return shutdown(); }
+  unguarded((: set_privs(this_object(), query_privs(this_interactive())) :), 1);
+  return get_dir("/*"); }

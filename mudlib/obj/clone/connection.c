@@ -90,7 +90,7 @@ receive_message(string msgClass, string msg)
 }
 
 string query_name() { return name; }
-string query_cap_name() { return cap_name; }
+string query_cap_name() { return (cap_name ? cap_name : capitalize(name)); }
 string query_real_name() { return real_name; }
 string query_email_addr() { return email_addr; }
 string query_password() { return password; }

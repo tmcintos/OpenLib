@@ -363,6 +363,7 @@ clear_screen (object who) {
     return ESC "CLS" ESC;
 }
 
+#if 0
 string
 termcap_format_line(string line, string ttype)
 {
@@ -404,3 +405,4 @@ termcap_format_line(string line, string ttype)
 	return implode(new_words - ({ 0 }), "");
     }
 }
+#endif

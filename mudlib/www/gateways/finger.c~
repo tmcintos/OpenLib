@@ -1,0 +1,68 @@
+/*  -*- LPC -*-  */
+// finger.c:  finger gateway for WWW
+//   Hastily coded by Tim on 11/1/95
+//   Rewritten somewhat by Tim 29 Aug 1996
+#include <mudlib.h>
+#include <daemons.h>
+
+inherit DAEMON;
+
+//
+// header for generic finger
+//
+private string gen_header = @ENDHTML
+<HTML>
+<HEAD><TITLE> Finger Report </TITLE></HEAD>
+<BODY bgcolor=##9370DB link=#00FFFF>
+<H1> Users Currently on Dysfunctional Mud: </H1>
+<HR>
+<UL>
+ENDHTML;
+//
+// header for specific finger
+//
+private string spec_header = @ENDHTML
+<HTML>
+<HEAD><TITLE> Finger Report </TITLE></HEAD>
+<BODY bgcolor=##9370DB link=#00FFFF>
+<H1>Information for %s: </H1>
+<HR>
+ENDHTML;
+//
+// footer for all pages
+//
+private string footer = @ENDHTML
+<HR>
+<A HREF="/index.html">Back to Main Page</A>
+<ADDRESS>
+<I>Dysfunctional Mud</I> /
+<A HREF="mailto:mud@knapp38.res.iastate.edu">mud@knapp38.res.iastate.edu</A>
+</ADDRESS>
+</BODY>
+</HTML>
+ENDHTML;
+//
+// PRE: 'args' can be specified as 0 for a general finger, a username, or
+//      "username=" + a username
+varargs
+string
+gateway(string args)
+{
+  string who, ret = "";
+
+  if( !args )
+  {
+    object user;
+    foreach(user in users())
+      ret  += sprintf("<LI> %s\n", user->short());
+    return gen_header + ret + "</UL>\n" + footer;
+  }
+  else
+  {
+    if( sscanf(args, "username=%s", who) != 1 || !strlen(who) )
+      who = args;
+    who = lower_case(who);
+    return sprintf(spec_header + "<PRE>%s</PRE>\n" + footer, capitalize(who),
+		   FINGER_D->GetFinger(who));
+  }
+}

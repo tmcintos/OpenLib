@@ -1,4 +1,4 @@
-#obj/clone/connection.c
+#/obj/clone/connection.c
 name "greg"
 cap_name "GreG"
 password "xEb1eHLxfmE9U"
@@ -7,6 +7,6 @@ email_addr "astasia@iastate.edu"
 body "/obj/clone/user/human"
 login_shell "/obj/clone/shells/nmsh"
 gender 0
-login_time 836801337
-logout_time 836801345
-login_from "localhost"
+login_time 841001232
+logout_time 841001242
+login_from "knapp38.res.iastate.edu"

@@ -1,9 +1,17 @@
-#obj/clone/user/human.c
+#/obj/clone/user/human.c
+callback 
+redraw 
+s_length 24
+start 12
+prev 12
+length 33
+file ({"login_d: vt220 is not a supported terminal type","Welcome to Dysfunctional Mud!","-------------------------------------------------------------------------------","                D y s f u n c t i o n a l  M u d  N e w s","			last update: 06/17/96","-------------------------------------------------------------------------------","* Any mail for the mud can be sent to the following addresses:","      rockford@novia.net, astasia@iastate.edu (Tim)","      kyricc@inetnebr.com (Kyricc)","      scott@de.msstate.edu (Quint)","","* I am working on a new FTP server for the mud.  Right now you should be able","  to get and put files in both ASCII and BINARY mode.  Try it out if you get","  a chance and report any bugs to me.  (port: 4443) --Tim","","* Check out my ~tim/TODO list for things that need to be done.  New items are","  usually added to the bottom of the list.","","* I moved some directories around, mostly stuff got moved into /adm.","  There is a new include dir there, simul_efun stuff got moved into","  /adm/obj/daemon where it should be, as did the /obj/daemon/net directory.","  Save files got changed a little too.","","SECURITY stuff is mostly in place.  I've noticed problem already having to","do with callbacks from high privilege objects.  Quint, Ev and Tim should","have priv 1 access and everyone else should not right now.  Use the command","'lswiz' to get a list of wizards, and 'lsdom' for a list of domains.  Please","report any bugs in the system to me (Tim).  DOCUMENTATION can be found in","the file /doc/mudlib/systems/security--This is the original documentation","on which the system is based.  Better documentation later hopefully. :)","","","",})
+in_help 0
+no_clean 0
 flags ({})
 coins ({0,0,})
 hit_points 100
 spell_points 0
-gender 0
-env_vars (["PATH":"/cmd/player:/adm/cmd/player:/adm/cmd/wiz:/cmd/wiz:/adm/cmd/adm:/cmd/adm","TERM":"ansi",])
-aliases (["i":"inventory","e":"east","l":"look","nw":"northwest","n":"north","sw":"southwest","se":"southeast","ne":"northeast","s":"south","w":"west","sc":"score",])
+env_vars (["nmsh_alias":(["exa":"look at $*","s":"south","nw":"northwest","sw":"southwest","l":"look $*","u":"up","se":"southeast","w":"west","d":"down","n":"north","ne":"northeast","bio":"biography","e":"east","i":"inventory",]),"LENGTH":24,"WIDTH":80,"nmsh_xverb":(["'":"say $*",":":"emote $*",]),"nmsh_nick":([]),"TERM":"xterm","PATH":"/cmd/player:/adm/cmd/player:/adm/cmd/wiz:/cmd/wiz:/adm/cmd/adm:/cmd/adm",])
+aliases (["sc":"score","s":"south","nw":"northwest","l":"look","sw":"southwest","w":"west","se":"southeast","n":"north","ne":"northeast","e":"east","i":"inventory",])
 channels ({})

@@ -34,3 +34,6 @@ Tue Jul 30 23:46:39 1996 (tmcintos@knapp38.res.iastate.edu (Tim))
     * more.c:  Streamlined a little...still needs rewritten from scratch
       in my opinion.
 
+Thu Aug  1 00:24:00 1996 (tmcintos@knapp38.res.iastate.edu (Tim))
+    * more.c:  rewrote...better than it used to be
+

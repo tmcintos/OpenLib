@@ -32,7 +32,8 @@ private static string Prompt;
 private static string *Stack, *History; 
 private static object owner;
  
-static void initialize() { 
+object shell_init(object ob) { 
+    if(owner) return;
     Nicknames = ([]); 
     Aliases = ([ "l" : "look $*", "bio" : "biography", "i" : "inventory",
       "n" : "north", "s" : "south", "e" : "east", "w" : "west",
@@ -41,10 +42,7 @@ static void initialize() {
       "exa" : "look at $*",
     ]);
     Xverbs = ([ "'" : "say $*", ":" : "emote $*" ]); 
-} 
- 
-object shell_init(object ob) { 
-    if(owner) return;
+
     if(!(owner = shadow(ob))) return 0;
 
     reset_history();

@@ -7,7 +7,7 @@
  *    Fixed a bug which caused binary connections to fail. (Leto@Earth 060694)
  *    Added a check for EECALLBACK on socket_write() (Descartes of Borg 940620)
  *    Dysfunctional-ized by Tim 10/31/95
- 
+ *
  *  hacked by tim 4/26 due to reversible explode string...make more elegant
  *  approach later
  */
@@ -26,6 +26,7 @@ inherit DAEMON;
 
 static private int __SocketHTTP;
 static private mapping __Sockets, __Activity;
+
 
 void create() { 
     ::create();   
@@ -77,6 +78,7 @@ void write_callback(int fd) {
 void read_callback(int fd, string str) {
     string cmd, args;
 
+DEBUG("HTTPD:(read cb)"+str+"\n");
     if(!str || str == "") {
         http_error(fd, BAD_CMD);
         return;
@@ -186,16 +188,15 @@ static private void get_file(int fd, string file) {
 
     if(file_size(file) == -2) file = sprintf("%s/index.html", file);
 
-DEBUG("HTTPD:"+file);
+DEBUG("HTTPD:"+file+"\n");
 
     if(!strsrch(file, DIR_WWW_GATEWAYS)) {
       if(sscanf(file, DIR_WWW_GATEWAYS+"/%s?%s", id, args) != 2) {
 	args = 0;
 	sscanf(file, DIR_WWW_GATEWAYS+"/%s", id);
       }
-DEBUG("GATED TO:"+DIR_WWW_GATEWAYS+"/"+id+" , gateway, "+args);
-      if(catch(str=(string)call_other(DIR_WWW_GATEWAYS+"/"+id,
-				      "gateway",args))) {
+DEBUG("GATED TO:"+DIR_WWW_GATEWAYS+"/"+id+"->gateway("+args+")\n");
+      if(catch(str=(string)call_other(DIR_WWW_GATEWAYS "/"+id, "gateway", args))) {
 	http_error(fd, BAD_GATEWAY);
 	return;
       }
@@ -203,7 +204,7 @@ DEBUG("GATED TO:"+DIR_WWW_GATEWAYS+"/"+id+" , gateway, "+args);
       http_error(fd, NOT_FOUND);
       return;
     } else str = read_buffer(file);
-    
+
     if(socket_write(fd, str) != EECALLBACK)
       close_connection(fd);
   }

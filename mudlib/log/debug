@@ -1,0 +1,287 @@
+----------------------------------------------------------------------------
+Dysfunctional Mud (MudOS v22b13) starting up on FreeBSD - Thu Aug 29 20:24:25 1996
+
+
+Connected to address server on localhost port 7374
+
+Loading preloaded files ...
+Initializations complete.
+
+Accepting connections on port 4444.
+object /adm/obj/daemon/security_d: eval_cost too big 200000
+Error in error handler: *String index out of bounds.
+program: /adm/obj/daemon/simul_efun.c, object: /adm/obj/daemon/simul_efun, file: /adm/obj/daemon/simul_efun/break_string.c:18
+'     <function>' in '          <function>' ('obj/clone/user/human#2') 
+'     <function>' in '    obj/clone/user.c' ('obj/clone/user/human#2') /obj/clone/user.c:243
+arguments were (0)
+'       cmd_hook' in 'obj/clone/shells/protosh.c' ('obj/clone/shells/protosh#3') /obj/clone/shells/protosh.c:521
+arguments were ("")
+locals were: 2663672
+'       cmd_hook' in '    obj/clone/user.c' ('obj/clone/user/human#2') /obj/clone/user.c:485
+arguments were (0)
+locals were: 2663672,cmd/adm/lq
+'          _main' in 'obj/inherit/command.c' ('          cmd/adm/lq') /obj/inherit/command.c:20
+arguments were (0)
+'           main' in '        cmd/adm/lq.c' ('          cmd/adm/lq') /cmd/adm/lq.c:12
+arguments were ()
+locals were: 0,0
+'  error_handler' in 'adm/obj/daemon/master.c' ('adm/obj/daemon/master') /adm/obj/daemon/master.c:154
+arguments were (([ /* sizeof() == 6 */
+  "line" : 12,
+  "program" : "cmd/adm/lq.c",
+  "trace" : ({ /* sizeof() == 6 */
+      ([ /* sizeof() == 5 */
+        "line" : 0,
+        "program" : "<function>",
+        "file" : "",
+        "object" : obj/clone/user/human#2,
+        "function" : "<function>",
+      ]),
+      ([ /* sizeof() == 6 */
+        "line" : 243,
+        "program" : "obj/clone/user.c",
+        "arguments" : ({ /* sizeof() == 1 */
+            0
+          }),
+        "file" : "obj/clone/user.c",
+        "object" : obj/clone/user/human#2,
+        "function" : "<function>",
+      ]),
+      ([ /* sizeof() == 7 */
+        "line" : 521,
+        "program" : "obj/clone/shells/protosh.c",
+        "locals" : ({ /* sizeof() == 1 */
+            2663672
+          }),
+        "arguments" : ({ /* sizeof() == 1 */
+            ""
+          }),
+        "file" : "obj/clone/shells/protosh.c",
+        "object" : obj/clone/shells/protosh#3,
+        "function" : "cmd_hook",
+      ]),
+      ([ /* sizeof() == 7 */
+        "line" : 485,
+        "program" : "obj/clone/user.c",
+        "locals" : ({ /* sizeof() == 2 */
+            2663672,
+            cmd/adm/lq
+          }),
+        "arguments" : ({ /* sizeof() == 1 */
+            0
+          }),
+        "file" : "obj/clone/user.c",
+        "object" : obj/clone/user/human#2,
+        "function" : "cmd_hook",
+      ]),
+      ([ /* sizeof() == 6 */
+        "line" : 20,
+        "program" : "obj/inherit/command.c",
+        "arguments" : ({ /* sizeof() == 1 */
+            0
+          }),
+        "file" : "obj/inherit/command.c",
+        "object" : cmd/adm/lq,
+        "function" : "_main",
+      ]),
+      ([ /* sizeof() == 7 */
+        "line" : 12,
+        "program" : "cmd/adm/lq.c",
+        "locals" : ({ /* sizeof() == 2 */
+            0,
+            0
+          }),
+        "arguments" : ({ }),
+        "file" : "cmd/adm/lq.c",
+        "object" : cmd/adm/lq,
+        "function" : "main",
+      ])
+    }),
+  "error" : "*Bad argument 2 to foreach
+Expected: array Got: 0.
+",
+  "file" : "cmd/adm/lq.c",
+  "object" : cmd/adm/lq,
+]),0)
+locals were: 0,0,"
+[ERROR] *Bad argument 2 to foreach
+Expected: array Got: 0.
+  time   : Thu Aug 29 23:31:41 1996
+  file   : cmd/adm/lq.c:12
+  pgm/obj: cmd/adm/lq.c (cmd/adm/lq)
+  [TRACE]  size==6
+    file   : :0
+    pgm/obj: <function> (obj/clone/user/human#2)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:243
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#2)
+    func   : <function> (             0, )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/protosh.c:521
+    pgm/obj: obj/clone/shells/protosh.c (obj/clone/shells/protosh#3)
+    func   : cmd_hook (             "", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:485
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#2)
+    func   : cmd_hook (             0, )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (cmd/adm/lq)
+    func   : _main (             0, )
+    ---------------------------------------------------------------------
+    file   : cmd/adm/lq.c:12
+    pgm/obj: cmd/adm/lq.c (cmd/adm/lq)
+    func   : main (",([ /* sizeof() == 7 */
+  "line" : 12,
+  "program" : "cmd/adm/lq.c",
+  "locals" : ({ /* sizeof() == 2 */
+      0,
+      0
+    }),
+  "arguments" : ({ }),
+  "file" : "cmd/adm/lq.c",
+  "object" : cmd/adm/lq,
+  "function" : "main",
+]),"",0
+'   break_string' in 'adm/obj/daemon/simul_efun.c' ('adm/obj/daemon/simul_efun') /adm/obj/daemon/simul_efun/break_string.c:18
+arguments were ("",60,"             ")
+locals were: 13
+Error in error handler: *String index out of bounds.
+program: /adm/obj/daemon/simul_efun.c, object: /adm/obj/daemon/simul_efun, file: /adm/obj/daemon/simul_efun/break_string.c:18
+'     <function>' in '          <function>' ('obj/clone/user/human#2') 
+'     <function>' in '    obj/clone/user.c' ('obj/clone/user/human#2') /obj/clone/user.c:243
+arguments were (0)
+'       cmd_hook' in 'obj/clone/shells/protosh.c' ('obj/clone/shells/protosh#3') /obj/clone/shells/protosh.c:521
+arguments were ("")
+locals were: 2845176
+'       cmd_hook' in '    obj/clone/user.c' ('obj/clone/user/human#2') /obj/clone/user.c:485
+arguments were (0)
+locals were: 2845176,cmd/adm/lq
+'          _main' in 'obj/inherit/command.c' ('          cmd/adm/lq') /obj/inherit/command.c:20
+arguments were (0)
+'           main' in '        cmd/adm/lq.c' ('          cmd/adm/lq') /cmd/adm/lq.c:12
+arguments were ()
+locals were: 0,0
+'  error_handler' in 'adm/obj/daemon/master.c' ('adm/obj/daemon/master') /adm/obj/daemon/master.c:154
+arguments were (([ /* sizeof() == 6 */
+  "line" : 12,
+  "program" : "cmd/adm/lq.c",
+  "trace" : ({ /* sizeof() == 6 */
+      ([ /* sizeof() == 5 */
+        "line" : 0,
+        "program" : "<function>",
+        "file" : "",
+        "object" : obj/clone/user/human#2,
+        "function" : "<function>",
+      ]),
+      ([ /* sizeof() == 6 */
+        "line" : 243,
+        "program" : "obj/clone/user.c",
+        "arguments" : ({ /* sizeof() == 1 */
+            0
+          }),
+        "file" : "obj/clone/user.c",
+        "object" : obj/clone/user/human#2,
+        "function" : "<function>",
+      ]),
+      ([ /* sizeof() == 7 */
+        "line" : 521,
+        "locals" : ({ /* sizeof() == 1 */
+            2845176
+          }),
+        "program" : "obj/clone/shells/protosh.c",
+        "arguments" : ({ /* sizeof() == 1 */
+            ""
+          }),
+        "file" : "obj/clone/shells/protosh.c",
+        "object" : obj/clone/shells/protosh#3,
+        "function" : "cmd_hook",
+      ]),
+      ([ /* sizeof() == 7 */
+        "line" : 485,
+        "locals" : ({ /* sizeof() == 2 */
+            2845176,
+            cmd/adm/lq
+          }),
+        "program" : "obj/clone/user.c",
+        "arguments" : ({ /* sizeof() == 1 */
+            0
+          }),
+        "file" : "obj/clone/user.c",
+        "object" : obj/clone/user/human#2,
+        "function" : "cmd_hook",
+      ]),
+      ([ /* sizeof() == 6 */
+        "line" : 20,
+        "program" : "obj/inherit/command.c",
+        "arguments" : ({ /* sizeof() == 1 */
+            0
+          }),
+        "file" : "obj/inherit/command.c",
+        "object" : cmd/adm/lq,
+        "function" : "_main",
+      ]),
+      ([ /* sizeof() == 7 */
+        "line" : 12,
+        "locals" : ({ /* sizeof() == 2 */
+            0,
+            0
+          }),
+        "program" : "cmd/adm/lq.c",
+        "arguments" : ({ }),
+        "file" : "cmd/adm/lq.c",
+        "object" : cmd/adm/lq,
+        "function" : "main",
+      ])
+    }),
+  "error" : "*Bad argument 2 to foreach
+Expected: array Got: 0.
+",
+  "file" : "cmd/adm/lq.c",
+  "object" : cmd/adm/lq,
+]),0)
+locals were: 0,0,"
+[ERROR] *Bad argument 2 to foreach
+Expected: array Got: 0.
+  time   : Thu Aug 29 23:31:43 1996
+  file   : cmd/adm/lq.c:12
+  pgm/obj: cmd/adm/lq.c (cmd/adm/lq)
+  [TRACE]  size==6
+    file   : :0
+    pgm/obj: <function> (obj/clone/user/human#2)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:243
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#2)
+    func   : <function> (             0, )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/protosh.c:521
+    pgm/obj: obj/clone/shells/protosh.c (obj/clone/shells/protosh#3)
+    func   : cmd_hook (             "", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:485
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#2)
+    func   : cmd_hook (             0, )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (cmd/adm/lq)
+    func   : _main (             0, )
+    ---------------------------------------------------------------------
+    file   : cmd/adm/lq.c:12
+    pgm/obj: cmd/adm/lq.c (cmd/adm/lq)
+    func   : main (",([ /* sizeof() == 7 */
+  "line" : 12,
+  "locals" : ({ /* sizeof() == 2 */
+      0,
+      0
+    }),
+  "program" : "cmd/adm/lq.c",
+  "arguments" : ({ }),
+  "file" : "cmd/adm/lq.c",
+  "object" : cmd/adm/lq,
+  "function" : "main",
+]),"",0
+'   break_string' in 'adm/obj/daemon/simul_efun.c' ('adm/obj/daemon/simul_efun') /adm/obj/daemon/simul_efun/break_string.c:18
+arguments were ("",60,"             ")
+locals were: 13

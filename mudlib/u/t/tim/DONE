@@ -35,4 +35,6 @@ more:   -checks env vars for LENGTH and WIDTH
 -changed names of all daemons to daemonname_d.c
 -created 'iftp' command interface for the OOB file I3 service
 -created 'changelog' command to ease documentation
+:Jun-Aug
+-put in security for alpha testing
 </PRE>

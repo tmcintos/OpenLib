@@ -1,15 +1,17 @@
-#obj/clone/user/human.c
-slen 24
-swid 80
-curr_line 24
-lines 47
-file ({"login_d: vt220 is not a supported terminal type","Welcome to Dysfunctional Mud!","-------------------------------------------------------------------------------","                D y s f u n c t i o n a l  M u d  N e w s","			last update: 05/15/96","-------------------------------------------------------------------------------","* Welcome to the new semi-premanent home for DysFunctionalMUD.  If you are","  reading this you prolly already know the site name, but just for your","  information it is:  canaan.de.msstate.edu 4444.","","* Due to the fact that Tim will have VERY limited net access for a time, I,","  Kyricc, will assume duties of mud admin.  This is temporary till Tim gets","  access again.","","* I will (as much as possible) try to keep the mud up and running as much","  as possible.  There may be interruptions if there is a bug in the driver","  or any other MAJOR bug.  This is due to that fact that I am not as good","  at finding the bugs and fixing them as Tim is.","","* Any mail for the mud can be sent to the following addresses:","","     tim@canaan.de.msstate.edu","","     kyricc@inetnebr.com","","  I will respond as quickly as possible...","","* If i have left any improtatnt info outta this motd I am sorry."," ","* Tim has internet access now: mailto rockford@novia.net","  As usual mail to astasia@iastate.edu will also get there.","","* I am creating a new FTP server for the mud.  I have currently implemented","  enough stuff to be able to login and get a file in either ascii or binary","  mode.  I still need to do alot of work and clean up the code somewhat, but","  what's there should work.  Try it out if you get a chance and report any","  bugs to me.  (port is 4443)  --Tim","","* Implemented STOR for FTP daemon get/put should work in both modes. --Tim","","","","","You have NEW mail.","","","",})
+#/obj/clone/user/human.c
 callback 
+redraw 
+s_length 24
+start 24
+prev 24
+length 32
+file ({"Welcome to Dysfunctional Mud!","-------------------------------------------------------------------------------","                D y s f u n c t i o n a l  M u d  N e w s","			last update: 06/17/96","-------------------------------------------------------------------------------","* Any mail for the mud can be sent to the following addresses:","      rockford@novia.net, astasia@iastate.edu (Tim)","      kyricc@inetnebr.com (Kyricc)","      scott@de.msstate.edu (Quint)","","* I am working on a new FTP server for the mud.  Right now you should be able","  to get and put files in both ASCII and BINARY mode.  Try it out if you get","  a chance and report any bugs to me.  (port: 4443) --Tim","","* Check out my ~tim/TODO list for things that need to be done.  New items are","  usually added to the bottom of the list.","","* I moved some directories around, mostly stuff got moved into /adm.","  There is a new include dir there, simul_efun stuff got moved into","  /adm/obj/daemon where it should be, as did the /obj/daemon/net directory.","  Save files got changed a little too.","","SECURITY stuff is mostly in place.  I've noticed problem already having to","do with callbacks from high privilege objects.  Quint, Ev and Tim should","have priv 1 access and everyone else should not right now.  Use the command","'lswiz' to get a list of wizards, and 'lsdom' for a list of domains.  Please","report any bugs in the system to me (Tim).  DOCUMENTATION can be found in","the file /doc/mudlib/systems/security--This is the original documentation","on which the system is based.  Better documentation later hopefully. :)","","","",})
+in_help 0
 no_clean 0
 flags ({})
 coins ({0,0,})
 hit_points 100
 spell_points 0
-env_vars (["PROMPT":"%//> ","LENGTH":24,"WIDTH":80,"PATH":"/cmd/player:/adm/cmd/player:/cmd/wiz:/adm/cmd/wiz:/cmd/adm:/adm/cmd/adm","version":"Prototype Shell","TITLE":"is testing","TERM":"vt100","SHELL":"/obj/clone/shells/protosh",])
-aliases (["s":"south","ne":"northeast","n":"north","i":"inventory","se":"southeast","e":"east","l":"look","w":"west","sw":"southwest","nw":"northwest","sc":"score",])
+env_vars (["PATH":"/cmd/player:/adm/cmd/player:/cmd/wiz:/adm/cmd/wiz:/cmd/adm:/adm/cmd/adm","LENGTH":24,"TITLE":"is testing","WIDTH":80,"version":"Prototype Shell","PROMPT":"%//> ","SHELL":"/obj/clone/shells/protosh","TERM":"xterm",])
+aliases (["sc":"score","se":"southeast","w":"west","sw":"southwest","e":"east","ne":"northeast","i":"inventory","n":"north","l":"look","nw":"northwest","s":"south",])
 channels ({})

@@ -17,10 +17,10 @@
 #define LOG_HTTP "net/httpd"
 
 // WWW errors dir
-#define DIR_WWW_ERRORS DIR_WWW+"/errors"
+#define DIR_WWW_ERRORS DIR_WWW "/errors"
 
 // gateways dir
-#define DIR_WWW_GATEWAYS "/www/gateways"
+#define DIR_WWW_GATEWAYS DIR_WWW "/gateways"
 
 #define BAD_CMD ([ "error" : "Bad Command", "file": DIR_WWW_ERRORS+"/badcmd.html"])
 #define ACCESS_DENIED (["error":"Access Denied", "file":DIR_WWW_ERRORS+"/access.html"])

@@ -13,12 +13,14 @@
 
 #include <daemons.h>
 #include <net/network.h>
-#include <net/ftp.h>
 #include "ftp_d.h"
 
-#define FTP_VERSION "0.5"
+#define FTP_VERSION "0.6"
 
 inherit TCP_SERVER;
+
+// take out eventually
+#include <net/ftp.h>
 
 mapping connections;
 mapping resolve_map;
@@ -181,6 +183,14 @@ eventRead(int fd, mixed val)
       requestLIST(sock, instruction[1]);
     else
       requestLIST(sock, 0);
+    return;
+  case "NLST":
+    CHECK_INSTR(0,1);
+    CHECK_LOGGED_IN();
+    if( sizeof(instruction) > 1 )
+      requestNLST(sock, instruction[1]);
+    else
+      requestNLST(sock, 0);
     return;
   case "SYST":
     CHECK_INSTR(0,0);
@@ -664,7 +674,7 @@ requestLIST(class socket sock, string pathname)
     files = ({ get_dir(dir, -1) });
   }
 
-  if( files )
+  if( sizeof(files) )
   {
     files = map(files, (: long_list, (dir[<1] == '/' ? dir : dir+"/") :));
     sock->filename = implode(files, "");
@@ -675,6 +685,56 @@ requestLIST(class socket sock, string pathname)
   if( !eventOpenDataConn(sock, T_ASCII) ) return;
   eventSendData(sock);
 }  /* requestLIST() */
+
+static void
+requestNLST(class socket sock, string pathname)
+{
+  /**** Originally from the 'file' service implementation of I3 ****/
+  string* files;
+  string dir;
+
+  sock->file = "/bin/nlst";
+
+  if( pathname )
+  {
+#ifdef ANONYMOUS_FTP
+    if( sock->username == "anonymous" )
+      dir = PseudoRootPath(sock->cwd, pathname);
+    else
+#endif
+    dir = absolute_path("/", pathname);
+  }
+  else
+  {
+    dir = sock->cwd;
+  }
+
+  if( !unguarded((: master()->valid_read($(dir), 0, 0) :), sock->priv) )
+  {
+    eventWrite(sock->fd, PermDenied550(pathname));
+    return;
+  }
+
+  switch( file_size(dir) )
+  {
+  case -1:
+    files = 0;
+    break;
+  case -2:
+    files = get_dir(dir + (dir[<1] == '/' ? "" : "/"));
+    break;
+  default:
+    files = ({ get_dir(dir) });
+  }
+
+  if( sizeof(files) )
+    sock->filename = implode(files, "\n") + "\n";
+  else
+    sock->filename = "";
+
+  if( !eventOpenDataConn(sock, T_ASCII) ) return;
+  eventSendData(sock);
+}  /* requestNLST() */
 
 static void
 requestXPWD(class socket sock)

@@ -1,0 +1,8 @@
+www/gateways/mudlist.c line 60: parse error
+www/gateways/mudlist.c line 68: Illegal LHS
+www/gateways/mudlist.c line 68: Illegal LHS
+www/gateways/mudlist.c line 68: parse error
+www/gateways/mudlist.c line 72: Illegal LHS
+www/gateways/mudlist.c line 72: parse error
+adm/obj/daemon/net/ftp_d.c line 191: Undefined function requestNLST
+adm/obj/daemon/net/ftp_d.c line 749: Redeclaration of function requestNLST.

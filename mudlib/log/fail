@@ -9,3 +9,12 @@ Tue Jul 30 23:02:50 1996: v_r: file=/tmp, user=adm/obj/daemon/simul_efun, func=f
 Tue Jul 30 23:03:34 1996: v_r: file=/tmp, user=adm/obj/daemon/simul_efun, func=file_size
 Tue Jul 30 23:03:36 1996: v_r: file=/tmp, user=adm/cmd/wiz/ls, func=file_size
 Tue Jul 30 23:43:38 1996: v_w: file=/log/shutdown, user=adm/obj/daemon/simul_efun, func=write_file
+Tue Aug 20 17:06:59 1996: v_w: file=/log/shutdown, user=adm/obj/daemon/simul_efun, func=write_file
+Sat Aug 24 19:09:57 1996: v_w: file=/u/t/tim/DONE, user=tmp/tmp_eval_file, func=rename
+Sat Aug 24 19:12:12 1996: v_w: file=/u/t/tim/DONE, user=tmp/tmp_eval_file, func=move_file
+Sat Aug 24 19:13:50 1996: v_w: file=/u/t/tim/DONE, user=tmp/tmp_eval_file, func=write_file
+Sat Aug 24 19:14:12 1996: v_w: file=/u/t/tim/DONE, user=tmp/tmp_eval_file, func=write_file
+Sat Aug 24 19:15:13 1996: v_w: file=/u/t/tim/Test, user=tmp/tmp_eval_file, func=write_file
+Sat Aug 24 19:16:35 1996: v_w: file=/u/t/tim/DONE, user=tmp/tmp_eval_file, func=rename
+Sat Aug 24 19:53:00 1996: v_w: file=/u/t/tim/Done, user=adm/tmp/tmp_eval_file, func=rename
+Sat Aug 24 22:13:40 1996: v_w: file=/log/shutdown, user=adm/obj/daemon/simul_efun, func=write_file

@@ -1324,3 +1324,1131 @@ Wed Jul 10 21:56:46 1996: Ip 127.0.0.1 resloved to localhost after connection cl
 Wed Jul 10 21:57:45 1996: 127.0.0.1: CONNECTED (Wed Jul 10 21:57:45 1996)
 Wed Jul 10 21:57:45 1996: 127.0.0.1: GET /gateways/finger HTTP/1.0 (Wed Jul 10 21:57:45 1996)
 Wed Jul 10 21:57:45 1996: Ip 127.0.0.1 resloved to localhost after connection closed.
+Sat Aug 24 02:22:11 1996: falcon.inetnebr.com: CONNECTED (Sat Aug 24 02:22:11 1996)
+Sat Aug 24 02:22:11 1996: falcon.inetnebr.com: GET / HTTP/1.0 (Sat Aug 24 02:22:11 1996)
+Sat Aug 24 02:23:16 1996: 199.184.119.1: CONNECTED (Sat Aug 24 02:23:16 1996)
+Sat Aug 24 02:23:16 1996: 199.184.119.1: GET /~tim/TODO HTTP/1.0 (Sat Aug 24 02:23:16 1996)
+Sat Aug 24 02:23:16 1996: Ip 199.184.119.1 resloved to falcon.inetnebr.com after connection closed.
+Sat Aug 24 02:23:32 1996: 199.184.119.1: CONNECTED (Sat Aug 24 02:23:32 1996)
+Sat Aug 24 02:23:32 1996: 199.184.119.1: GET /~tim/DONE HTTP/1.0 (Sat Aug 24 02:23:32 1996)
+Sat Aug 24 02:23:32 1996: Ip 199.184.119.1 resloved to falcon.inetnebr.com after connection closed.
+Sat Aug 24 02:23:52 1996: 199.184.119.1: CONNECTED (Sat Aug 24 02:23:52 1996)
+Sat Aug 24 02:23:52 1996: 199.184.119.1: GET /gateways/finger HTTP/1.0 (Sat Aug 24 02:23:52 1996)
+Sat Aug 24 02:23:52 1996: Ip 199.184.119.1 resloved to falcon.inetnebr.com after connection closed.
+Sat Aug 24 02:24:24 1996: falcon.inetnebr.com: CONNECTED (Sat Aug 24 02:24:24 1996)
+Sat Aug 24 02:24:24 1996: falcon.inetnebr.com: GET /~kyricc/ HTTP/1.0 (Sat Aug 24 02:24:24 1996)
+Sat Aug 24 02:24:54 1996: 199.184.119.1: CONNECTED (Sat Aug 24 02:24:54 1996)
+Sat Aug 24 02:24:54 1996: 199.184.119.1: GET /~kyricc/corpse.html HTTP/1.0 (Sat Aug 24 02:24:54 1996)
+Sat Aug 24 02:24:54 1996: Ip 199.184.119.1 resloved to falcon.inetnebr.com after connection closed.
+Sat Aug 24 02:26:31 1996: 199.184.119.1: CONNECTED (Sat Aug 24 02:26:31 1996)
+Sat Aug 24 02:26:31 1996: 199.184.119.1: GET /~kyricc/porno.html HTTP/1.0 (Sat Aug 24 02:26:31 1996)
+Sat Aug 24 02:26:31 1996: 199.184.119.1: ERROR: Not Found (Sat Aug 24 02:26:31 1996)
+Sat Aug 24 02:26:31 1996: Ip 199.184.119.1 resloved to falcon.inetnebr.com after connection closed.
+Sat Aug 24 12:23:12 1996: 127.0.0.1: CONNECTED (Sat Aug 24 12:23:12 1996)
+Sat Aug 24 12:23:12 1996: 127.0.0.1: GET /gateways/finger HTTP/1.0 (Sat Aug 24 12:23:12 1996)
+Sat Aug 24 12:23:12 1996: Ip 127.0.0.1 resloved to loopback after connection closed.
+Mon Aug 26 01:10:03 1996: 129.186.85.38: CONNECTED (Mon Aug 26 01:10:03 1996)
+Mon Aug 26 01:10:03 1996: 129.186.85.38: GET / HTTP/1.0 (Mon Aug 26 01:10:03 1996)
+Mon Aug 26 01:10:03 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 01:15:37 1996: 129.186.85.38: CONNECTED (Mon Aug 26 01:15:37 1996)
+Mon Aug 26 01:15:37 1996: 129.186.85.38: GET / HTTP/1.0 (Mon Aug 26 01:15:37 1996)
+Mon Aug 26 01:15:37 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 01:22:12 1996: 129.186.85.38: CONNECTED (Mon Aug 26 01:22:12 1996)
+Mon Aug 26 01:22:12 1996: 129.186.85.38: GET / HTTP/1.0 (Mon Aug 26 01:22:12 1996)
+Mon Aug 26 01:22:12 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 02:16:27 1996: 129.186.85.38: CONNECTED (Mon Aug 26 02:16:27 1996)
+Mon Aug 26 02:16:27 1996: 129.186.85.38: GET / HTTP/1.0 (Mon Aug 26 02:16:27 1996)
+Mon Aug 26 02:16:27 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 02:16:33 1996: 129.186.85.38: CONNECTED (Mon Aug 26 02:16:33 1996)
+Mon Aug 26 02:16:33 1996: 129.186.85.38: GET /gateways/finger HTTP/1.0 (Mon Aug 26 02:16:33 1996)
+Mon Aug 26 02:16:33 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 02:47:28 1996: 199.184.119.1: CONNECTED (Mon Aug 26 02:47:28 1996)
+Mon Aug 26 02:47:28 1996: 199.184.119.1: GET / HTTP/1.0 (Mon Aug 26 02:47:28 1996)
+Mon Aug 26 02:47:28 1996: Ip 199.184.119.1 resloved to falcon.inetnebr.com after connection closed.
+Mon Aug 26 13:46:46 1996: 129.186.85.38: CONNECTED (Mon Aug 26 13:46:46 1996)
+Mon Aug 26 13:46:46 1996: 129.186.85.38: GET / HTTP/1.0 (Mon Aug 26 13:46:46 1996)
+Mon Aug 26 13:46:46 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 15:53:56 1996: 199.184.119.1: CONNECTED (Mon Aug 26 15:53:56 1996)
+Mon Aug 26 15:53:56 1996: 199.184.119.1: GET / HTTP/1.0 (Mon Aug 26 15:53:56 1996)
+Mon Aug 26 15:53:56 1996: Ip 199.184.119.1 resloved to falcon.inetnebr.com after connection closed.
+Mon Aug 26 19:03:38 1996: 132.239.52.91: CONNECTED (Mon Aug 26 19:03:38 1996)
+Mon Aug 26 19:03:38 1996: 132.239.52.91: GET / HTTP/1.0 (Mon Aug 26 19:03:38 1996)
+Mon Aug 26 19:03:38 1996: Ip 132.239.52.91 resloved to apm-b337-10.ucsd.edu after connection closed.
+Mon Aug 26 19:04:05 1996: 132.239.52.91: CONNECTED (Mon Aug 26 19:04:05 1996)
+Mon Aug 26 19:04:05 1996: 132.239.52.91: GET /~evergreen/ HTTP/1.0 (Mon Aug 26 19:04:05 1996)
+Mon Aug 26 19:04:05 1996: Ip 132.239.52.91 resloved to apm-b337-10.ucsd.edu after connection closed.
+Mon Aug 26 20:15:58 1996: 199.184.119.1: CONNECTED (Mon Aug 26 20:15:58 1996)
+Mon Aug 26 20:15:58 1996: 199.184.119.1: GET / HTTP/1.0 (Mon Aug 26 20:15:58 1996)
+Mon Aug 26 20:15:58 1996: Ip 199.184.119.1 resloved to falcon.inetnebr.com after connection closed.
+Mon Aug 26 20:16:20 1996: 199.184.119.1: CONNECTED (Mon Aug 26 20:16:20 1996)
+Mon Aug 26 20:16:20 1996: 199.184.119.1: GET /~talen/ HTTP/1.0 (Mon Aug 26 20:16:20 1996)
+Mon Aug 26 20:16:20 1996: 199.184.119.1: ERROR: Not Found (Mon Aug 26 20:16:20 1996)
+Mon Aug 26 20:16:20 1996: Ip 199.184.119.1 resloved to falcon.inetnebr.com after connection closed.
+Mon Aug 26 20:16:24 1996: 199.184.119.1: CONNECTED (Mon Aug 26 20:16:24 1996)
+Mon Aug 26 20:16:24 1996: 199.184.119.1: GET /~tim/ HTTP/1.0 (Mon Aug 26 20:16:24 1996)
+Mon Aug 26 20:16:24 1996: Ip 199.184.119.1 resloved to falcon.inetnebr.com after connection closed.
+Mon Aug 26 20:26:09 1996: falcon.inetnebr.com: CONNECTED (Mon Aug 26 20:26:09 1996)
+Mon Aug 26 20:26:09 1996: falcon.inetnebr.com: GET / HTTP/1.0 (Mon Aug 26 20:26:09 1996)
+Mon Aug 26 20:58:29 1996: 129.186.85.38: CONNECTED (Mon Aug 26 20:58:29 1996)
+Mon Aug 26 20:58:29 1996: 129.186.85.38: GET /finger HTTP/1.0 (Mon Aug 26 20:58:29 1996)
+Mon Aug 26 20:58:29 1996: 129.186.85.38: ERROR: Not Found (Mon Aug 26 20:58:29 1996)
+Mon Aug 26 20:58:29 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 20:58:33 1996: 129.186.85.38: CONNECTED (Mon Aug 26 20:58:33 1996)
+Mon Aug 26 20:58:33 1996: 129.186.85.38: GET /finger.html HTTP/1.0 (Mon Aug 26 20:58:33 1996)
+Mon Aug 26 20:58:33 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 20:58:33 1996: knapp38.res.iastate.edu: CONNECTED (Mon Aug 26 20:58:33 1996)
+Mon Aug 26 20:58:33 1996: knapp38.res.iastate.edu: GET /icons/surf_logo.gif HTTP/1.0 (Mon Aug 26 20:58:33 1996)
+Mon Aug 26 20:58:33 1996: knapp38.res.iastate.edu: ERROR: Not Found (Mon Aug 26 20:58:33 1996)
+Mon Aug 26 20:58:33 1996: 129.186.85.38: CONNECTED (Mon Aug 26 20:58:33 1996)
+Mon Aug 26 20:58:33 1996: 129.186.85.38: GET /icons/surf_searchH.gif HTTP/1.0 (Mon Aug 26 20:58:33 1996)
+Mon Aug 26 20:58:33 1996: 129.186.85.38: ERROR: Not Found (Mon Aug 26 20:58:33 1996)
+Mon Aug 26 20:58:33 1996: 129.186.85.38: CONNECTED (Mon Aug 26 20:58:33 1996)
+Mon Aug 26 20:58:33 1996: 129.186.85.38: GET /icons/surf_browse.gif HTTP/1.0 (Mon Aug 26 20:58:33 1996)
+Mon Aug 26 20:58:33 1996: 129.186.85.38: ERROR: Not Found (Mon Aug 26 20:58:33 1996)
+Mon Aug 26 20:58:33 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 20:58:33 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 20:58:33 1996: 129.186.85.38: CONNECTED (Mon Aug 26 20:58:33 1996)
+Mon Aug 26 20:58:33 1996: 129.186.85.38: GET /icons/surf_special.gif HTTP/1.0 (Mon Aug 26 20:58:33 1996)
+Mon Aug 26 20:58:33 1996: 129.186.85.38: ERROR: Not Found (Mon Aug 26 20:58:33 1996)
+Mon Aug 26 20:58:33 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 20:58:33 1996: 129.186.85.38: CONNECTED (Mon Aug 26 20:58:33 1996)
+Mon Aug 26 20:58:33 1996: 129.186.85.38: GET /icons/surf_addurl.gif HTTP/1.0 (Mon Aug 26 20:58:33 1996)
+Mon Aug 26 20:58:33 1996: 129.186.85.38: ERROR: Not Found (Mon Aug 26 20:58:33 1996)
+Mon Aug 26 20:58:33 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 20:58:33 1996: 129.186.85.38: CONNECTED (Mon Aug 26 20:58:33 1996)
+Mon Aug 26 20:58:33 1996: 129.186.85.38: GET /icons/SmallBadge.gif HTTP/1.0 (Mon Aug 26 20:58:33 1996)
+Mon Aug 26 20:58:33 1996: 129.186.85.38: ERROR: Not Found (Mon Aug 26 20:58:33 1996)
+Mon Aug 26 20:58:33 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 20:58:33 1996: 129.186.85.38: CONNECTED (Mon Aug 26 20:58:33 1996)
+Mon Aug 26 20:58:33 1996: 129.186.85.38: GET /icons/surf_help.gif HTTP/1.0 (Mon Aug 26 20:58:33 1996)
+Mon Aug 26 20:58:33 1996: 129.186.85.38: ERROR: Not Found (Mon Aug 26 20:58:33 1996)
+Mon Aug 26 20:58:33 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 20:58:33 1996: 129.186.85.38: CONNECTED (Mon Aug 26 20:58:33 1996)
+Mon Aug 26 20:58:33 1996: 129.186.85.38: GET /icons/WCSelect.gif HTTP/1.0 (Mon Aug 26 20:58:33 1996)
+Mon Aug 26 20:58:33 1996: 129.186.85.38: ERROR: Not Found (Mon Aug 26 20:58:33 1996)
+Mon Aug 26 20:58:33 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 20:59:25 1996: 129.186.85.38: CONNECTED (Mon Aug 26 20:59:25 1996)
+Mon Aug 26 20:59:25 1996: 129.186.85.38: ERROR: Bad Command (Mon Aug 26 20:59:25 1996)
+Mon Aug 26 20:59:25 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:03:22 1996: knapp38.res.iastate.edu: CONNECTED (Mon Aug 26 21:03:22 1996)
+Mon Aug 26 21:03:22 1996: knapp38.res.iastate.edu: GET /icons/surf_logo.gif HTTP/1.0 (Mon Aug 26 21:03:22 1996)
+Mon Aug 26 21:03:22 1996: knapp38.res.iastate.edu: ERROR: Not Found (Mon Aug 26 21:03:22 1996)
+Mon Aug 26 21:03:22 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:03:22 1996)
+Mon Aug 26 21:03:22 1996: 129.186.85.38: GET /icons/surf_searchH.gif HTTP/1.0 (Mon Aug 26 21:03:22 1996)
+Mon Aug 26 21:03:22 1996: 129.186.85.38: ERROR: Not Found (Mon Aug 26 21:03:22 1996)
+Mon Aug 26 21:03:22 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:03:22 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:03:22 1996)
+Mon Aug 26 21:03:22 1996: 129.186.85.38: GET /icons/surf_browse.gif HTTP/1.0 (Mon Aug 26 21:03:22 1996)
+Mon Aug 26 21:03:22 1996: 129.186.85.38: ERROR: Not Found (Mon Aug 26 21:03:22 1996)
+Mon Aug 26 21:03:22 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:03:22 1996)
+Mon Aug 26 21:03:22 1996: 129.186.85.38: GET /icons/surf_special.gif HTTP/1.0 (Mon Aug 26 21:03:22 1996)
+Mon Aug 26 21:03:22 1996: 129.186.85.38: ERROR: Not Found (Mon Aug 26 21:03:22 1996)
+Mon Aug 26 21:03:22 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:03:22 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:03:22 1996: knapp38.res.iastate.edu: CONNECTED (Mon Aug 26 21:03:22 1996)
+Mon Aug 26 21:03:22 1996: knapp38.res.iastate.edu: GET /icons/surf_addurl.gif HTTP/1.0 (Mon Aug 26 21:03:22 1996)
+Mon Aug 26 21:03:22 1996: knapp38.res.iastate.edu: ERROR: Not Found (Mon Aug 26 21:03:22 1996)
+Mon Aug 26 21:03:22 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:03:22 1996)
+Mon Aug 26 21:03:22 1996: 129.186.85.38: GET /icons/surf_help.gif HTTP/1.0 (Mon Aug 26 21:03:22 1996)
+Mon Aug 26 21:03:22 1996: 129.186.85.38: ERROR: Not Found (Mon Aug 26 21:03:22 1996)
+Mon Aug 26 21:03:22 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:03:22 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:03:22 1996)
+Mon Aug 26 21:03:22 1996: 129.186.85.38: GET /icons/WCSelect.gif HTTP/1.0 (Mon Aug 26 21:03:22 1996)
+Mon Aug 26 21:03:22 1996: 129.186.85.38: ERROR: Not Found (Mon Aug 26 21:03:22 1996)
+Mon Aug 26 21:03:22 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:03:22 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:03:22 1996)
+Mon Aug 26 21:03:22 1996: 129.186.85.38: GET /icons/SmallBadge.gif HTTP/1.0 (Mon Aug 26 21:03:22 1996)
+Mon Aug 26 21:03:22 1996: 129.186.85.38: ERROR: Not Found (Mon Aug 26 21:03:22 1996)
+Mon Aug 26 21:03:22 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:04:44 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:04:44 1996)
+Mon Aug 26 21:04:44 1996: 129.186.85.38: GET /icons/surf_logo.gif HTTP/1.0 (Mon Aug 26 21:04:44 1996)
+Mon Aug 26 21:04:44 1996: 129.186.85.38: ERROR: Not Found (Mon Aug 26 21:04:44 1996)
+Mon Aug 26 21:04:44 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:04:44 1996)
+Mon Aug 26 21:04:44 1996: 129.186.85.38: GET /icons/surf_searchH.gif HTTP/1.0 (Mon Aug 26 21:04:44 1996)
+Mon Aug 26 21:04:44 1996: 129.186.85.38: ERROR: Not Found (Mon Aug 26 21:04:44 1996)
+Mon Aug 26 21:04:44 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:04:44 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:04:44 1996: knapp38.res.iastate.edu: CONNECTED (Mon Aug 26 21:04:44 1996)
+Mon Aug 26 21:04:44 1996: knapp38.res.iastate.edu: GET /icons/surf_browse.gif HTTP/1.0 (Mon Aug 26 21:04:44 1996)
+Mon Aug 26 21:04:44 1996: knapp38.res.iastate.edu: ERROR: Not Found (Mon Aug 26 21:04:44 1996)
+Mon Aug 26 21:04:44 1996: knapp38.res.iastate.edu: CONNECTED (Mon Aug 26 21:04:44 1996)
+Mon Aug 26 21:04:44 1996: knapp38.res.iastate.edu: GET /icons/surf_special.gif HTTP/1.0 (Mon Aug 26 21:04:44 1996)
+Mon Aug 26 21:04:44 1996: knapp38.res.iastate.edu: ERROR: Not Found (Mon Aug 26 21:04:44 1996)
+Mon Aug 26 21:04:44 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:04:44 1996)
+Mon Aug 26 21:04:44 1996: 129.186.85.38: GET /icons/surf_addurl.gif HTTP/1.0 (Mon Aug 26 21:04:44 1996)
+Mon Aug 26 21:04:44 1996: 129.186.85.38: ERROR: Not Found (Mon Aug 26 21:04:44 1996)
+Mon Aug 26 21:04:44 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:04:44 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:04:44 1996)
+Mon Aug 26 21:04:44 1996: 129.186.85.38: GET /icons/SmallBadge.gif HTTP/1.0 (Mon Aug 26 21:04:44 1996)
+Mon Aug 26 21:04:44 1996: 129.186.85.38: ERROR: Not Found (Mon Aug 26 21:04:44 1996)
+Mon Aug 26 21:04:44 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:04:44 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:04:44 1996)
+Mon Aug 26 21:04:44 1996: 129.186.85.38: GET /icons/surf_help.gif HTTP/1.0 (Mon Aug 26 21:04:44 1996)
+Mon Aug 26 21:04:44 1996: 129.186.85.38: ERROR: Not Found (Mon Aug 26 21:04:44 1996)
+Mon Aug 26 21:04:44 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:04:44 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:04:44 1996)
+Mon Aug 26 21:04:44 1996: 129.186.85.38: GET /icons/WCSelect.gif HTTP/1.0 (Mon Aug 26 21:04:44 1996)
+Mon Aug 26 21:04:44 1996: 129.186.85.38: ERROR: Not Found (Mon Aug 26 21:04:44 1996)
+Mon Aug 26 21:04:44 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:06:31 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:06:31 1996)
+Mon Aug 26 21:06:31 1996: 129.186.85.38: ERROR: Bad Command (Mon Aug 26 21:06:31 1996)
+Mon Aug 26 21:06:31 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:07:07 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:07:07 1996)
+Mon Aug 26 21:07:07 1996: 129.186.85.38: GET /icons/surf_logo.gif HTTP/1.0 (Mon Aug 26 21:07:07 1996)
+Mon Aug 26 21:07:07 1996: 129.186.85.38: ERROR: Not Found (Mon Aug 26 21:07:07 1996)
+Mon Aug 26 21:07:07 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:07:07 1996)
+Mon Aug 26 21:07:07 1996: 129.186.85.38: GET /icons/surf_searchH.gif HTTP/1.0 (Mon Aug 26 21:07:07 1996)
+Mon Aug 26 21:07:07 1996: 129.186.85.38: ERROR: Not Found (Mon Aug 26 21:07:07 1996)
+Mon Aug 26 21:07:07 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:07:07 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:07:07 1996: knapp38.res.iastate.edu: CONNECTED (Mon Aug 26 21:07:07 1996)
+Mon Aug 26 21:07:07 1996: knapp38.res.iastate.edu: GET /icons/surf_browse.gif HTTP/1.0 (Mon Aug 26 21:07:07 1996)
+Mon Aug 26 21:07:07 1996: knapp38.res.iastate.edu: ERROR: Not Found (Mon Aug 26 21:07:07 1996)
+Mon Aug 26 21:07:07 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:07:07 1996)
+Mon Aug 26 21:07:07 1996: 129.186.85.38: GET /icons/surf_special.gif HTTP/1.0 (Mon Aug 26 21:07:07 1996)
+Mon Aug 26 21:07:07 1996: 129.186.85.38: ERROR: Not Found (Mon Aug 26 21:07:07 1996)
+Mon Aug 26 21:07:07 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:07:07 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:07:07 1996)
+Mon Aug 26 21:07:07 1996: 129.186.85.38: GET /icons/surf_addurl.gif HTTP/1.0 (Mon Aug 26 21:07:07 1996)
+Mon Aug 26 21:07:07 1996: 129.186.85.38: ERROR: Not Found (Mon Aug 26 21:07:07 1996)
+Mon Aug 26 21:07:07 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:07:07 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:07:07 1996)
+Mon Aug 26 21:07:07 1996: 129.186.85.38: GET /icons/SmallBadge.gif HTTP/1.0 (Mon Aug 26 21:07:07 1996)
+Mon Aug 26 21:07:07 1996: 129.186.85.38: ERROR: Not Found (Mon Aug 26 21:07:07 1996)
+Mon Aug 26 21:07:07 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:07:07 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:07:07 1996)
+Mon Aug 26 21:07:07 1996: 129.186.85.38: GET /icons/surf_help.gif HTTP/1.0 (Mon Aug 26 21:07:07 1996)
+Mon Aug 26 21:07:07 1996: 129.186.85.38: ERROR: Not Found (Mon Aug 26 21:07:07 1996)
+Mon Aug 26 21:07:07 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:07:07 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:07:07 1996)
+Mon Aug 26 21:07:07 1996: 129.186.85.38: GET /icons/WCSelect.gif HTTP/1.0 (Mon Aug 26 21:07:07 1996)
+Mon Aug 26 21:07:07 1996: 129.186.85.38: ERROR: Not Found (Mon Aug 26 21:07:07 1996)
+Mon Aug 26 21:07:07 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:07:15 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:07:15 1996)
+Mon Aug 26 21:07:15 1996: 129.186.85.38: ERROR: Bad Command (Mon Aug 26 21:07:15 1996)
+Mon Aug 26 21:07:15 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:11:14 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:11:14 1996)
+Mon Aug 26 21:11:14 1996: 129.186.85.38: GET /icons/surf_logo.gif HTTP/1.0 (Mon Aug 26 21:11:14 1996)
+Mon Aug 26 21:11:14 1996: 129.186.85.38: ERROR: Not Found (Mon Aug 26 21:11:14 1996)
+Mon Aug 26 21:11:14 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:11:14 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:11:14 1996)
+Mon Aug 26 21:11:14 1996: 129.186.85.38: GET /icons/surf_searchH.gif HTTP/1.0 (Mon Aug 26 21:11:14 1996)
+Mon Aug 26 21:11:14 1996: 129.186.85.38: ERROR: Not Found (Mon Aug 26 21:11:14 1996)
+Mon Aug 26 21:11:14 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:11:14 1996: knapp38.res.iastate.edu: CONNECTED (Mon Aug 26 21:11:14 1996)
+Mon Aug 26 21:11:14 1996: knapp38.res.iastate.edu: GET /icons/surf_browse.gif HTTP/1.0 (Mon Aug 26 21:11:14 1996)
+Mon Aug 26 21:11:14 1996: knapp38.res.iastate.edu: ERROR: Not Found (Mon Aug 26 21:11:14 1996)
+Mon Aug 26 21:11:14 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:11:14 1996)
+Mon Aug 26 21:11:14 1996: 129.186.85.38: GET /icons/surf_special.gif HTTP/1.0 (Mon Aug 26 21:11:14 1996)
+Mon Aug 26 21:11:14 1996: 129.186.85.38: ERROR: Not Found (Mon Aug 26 21:11:14 1996)
+Mon Aug 26 21:11:14 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:11:14 1996: knapp38.res.iastate.edu: CONNECTED (Mon Aug 26 21:11:14 1996)
+Mon Aug 26 21:11:14 1996: knapp38.res.iastate.edu: GET /icons/surf_addurl.gif HTTP/1.0 (Mon Aug 26 21:11:14 1996)
+Mon Aug 26 21:11:14 1996: knapp38.res.iastate.edu: ERROR: Not Found (Mon Aug 26 21:11:14 1996)
+Mon Aug 26 21:11:14 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:11:14 1996)
+Mon Aug 26 21:11:14 1996: 129.186.85.38: GET /icons/surf_help.gif HTTP/1.0 (Mon Aug 26 21:11:14 1996)
+Mon Aug 26 21:11:14 1996: 129.186.85.38: ERROR: Not Found (Mon Aug 26 21:11:14 1996)
+Mon Aug 26 21:11:14 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:11:14 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:11:14 1996)
+Mon Aug 26 21:11:14 1996: 129.186.85.38: GET /icons/WCSelect.gif HTTP/1.0 (Mon Aug 26 21:11:14 1996)
+Mon Aug 26 21:11:14 1996: 129.186.85.38: ERROR: Not Found (Mon Aug 26 21:11:14 1996)
+Mon Aug 26 21:11:14 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:11:14 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:11:14 1996)
+Mon Aug 26 21:11:14 1996: 129.186.85.38: GET /icons/SmallBadge.gif HTTP/1.0 (Mon Aug 26 21:11:14 1996)
+Mon Aug 26 21:11:14 1996: 129.186.85.38: ERROR: Not Found (Mon Aug 26 21:11:14 1996)
+Mon Aug 26 21:11:14 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:33:18 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:33:18 1996)
+Mon Aug 26 21:33:18 1996: 129.186.85.38: GET /test HTTP/1.0 (Mon Aug 26 21:33:18 1996)
+Mon Aug 26 21:33:18 1996: 129.186.85.38: ERROR: Not Found (Mon Aug 26 21:33:18 1996)
+Mon Aug 26 21:33:18 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:33:26 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:33:26 1996)
+Mon Aug 26 21:33:26 1996: 129.186.85.38: GET /test.html HTTP/1.0 (Mon Aug 26 21:33:26 1996)
+Mon Aug 26 21:33:26 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:34:29 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:34:29 1996)
+Mon Aug 26 21:34:29 1996: 129.186.85.38: GET /cgi-bin/class?Jport=1225&Qcourse=PHIL+301&Qtitle=BLAH&Qsection=ONE HTTP/1.0 (Mon Aug 26 21:34:29 1996)
+Mon Aug 26 21:34:29 1996: 129.186.85.38: ERROR: Not Found (Mon Aug 26 21:34:29 1996)
+Mon Aug 26 21:34:29 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:37:06 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:37:06 1996)
+Mon Aug 26 21:37:06 1996: 129.186.85.38: GET /test.html HTTP/1.0 (Mon Aug 26 21:37:06 1996)
+Mon Aug 26 21:37:06 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:37:22 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:37:22 1996)
+Mon Aug 26 21:37:22 1996: 129.186.85.38: GET /cgi-bin/class?Jport=1225&Qcourse=hey&Qtitle=you&Qsection=guys HTTP/1.0 (Mon Aug 26 21:37:22 1996)
+Mon Aug 26 21:37:22 1996: 129.186.85.38: ERROR: Not Found (Mon Aug 26 21:37:22 1996)
+Mon Aug 26 21:37:22 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:40:00 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:40:00 1996)
+Mon Aug 26 21:40:00 1996: 129.186.85.38: GET / HTTP/1.0 (Mon Aug 26 21:40:00 1996)
+Mon Aug 26 21:40:00 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:40:12 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:40:12 1996)
+Mon Aug 26 21:40:12 1996: 129.186.85.38: GET /~tim/ HTTP/1.0 (Mon Aug 26 21:40:12 1996)
+Mon Aug 26 21:40:12 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:41:03 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:41:03 1996)
+Mon Aug 26 21:41:03 1996: 129.186.85.38: GET /gateways/finger?tim HTTP/1.0 (Mon Aug 26 21:41:03 1996)
+Mon Aug 26 21:41:03 1996: 129.186.85.38: ERROR: Bad Gateway (Mon Aug 26 21:41:03 1996)
+Mon Aug 26 21:41:03 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:41:13 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:41:13 1996)
+Mon Aug 26 21:41:13 1996: 129.186.85.38: GET /gateways/finger/tim HTTP/1.0 (Mon Aug 26 21:41:13 1996)
+Mon Aug 26 21:41:13 1996: 129.186.85.38: ERROR: Bad Gateway (Mon Aug 26 21:41:13 1996)
+Mon Aug 26 21:41:13 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:41:23 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:41:23 1996)
+Mon Aug 26 21:41:23 1996: 129.186.85.38: GET /gateways/finger/tim HTTP/1.0 (Mon Aug 26 21:41:23 1996)
+Mon Aug 26 21:41:23 1996: 129.186.85.38: ERROR: Bad Gateway (Mon Aug 26 21:41:23 1996)
+Mon Aug 26 21:41:23 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:42:09 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:42:09 1996)
+Mon Aug 26 21:42:09 1996: 129.186.85.38: GET /gateways/finger/tim HTTP/1.0 (Mon Aug 26 21:42:09 1996)
+Mon Aug 26 21:42:09 1996: 129.186.85.38: ERROR: Bad Gateway (Mon Aug 26 21:42:09 1996)
+Mon Aug 26 21:42:09 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:42:25 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:42:25 1996)
+Mon Aug 26 21:42:25 1996: 129.186.85.38: GET /gateways/finger?tim HTTP/1.0 (Mon Aug 26 21:42:25 1996)
+Mon Aug 26 21:42:25 1996: 129.186.85.38: ERROR: Bad Gateway (Mon Aug 26 21:42:25 1996)
+Mon Aug 26 21:42:25 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:52:24 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:52:24 1996)
+Mon Aug 26 21:52:24 1996: 129.186.85.38: GET /gateways/finger?tim HTTP/1.0 (Mon Aug 26 21:52:24 1996)
+Mon Aug 26 21:52:24 1996: 129.186.85.38: ERROR: Bad Gateway (Mon Aug 26 21:52:24 1996)
+Mon Aug 26 21:52:24 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:52:38 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:52:38 1996)
+Mon Aug 26 21:52:38 1996: 129.186.85.38: GET /gateways/finger?tim&bob HTTP/1.0 (Mon Aug 26 21:52:38 1996)
+Mon Aug 26 21:52:38 1996: 129.186.85.38: ERROR: Bad Gateway (Mon Aug 26 21:52:38 1996)
+Mon Aug 26 21:52:38 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:53:51 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:53:51 1996)
+Mon Aug 26 21:53:51 1996: 129.186.85.38: GET /gateways/finger HTTP/1.0 (Mon Aug 26 21:53:51 1996)
+Mon Aug 26 21:53:51 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:54:01 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:54:01 1996)
+Mon Aug 26 21:54:01 1996: 129.186.85.38: GET /gateways/finger HTTP/1.0 (Mon Aug 26 21:54:01 1996)
+Mon Aug 26 21:54:01 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:54:13 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:54:13 1996)
+Mon Aug 26 21:54:13 1996: 129.186.85.38: GET /gateways/finger?tim&bob HTTP/1.0 (Mon Aug 26 21:54:13 1996)
+Mon Aug 26 21:54:13 1996: 129.186.85.38: ERROR: Bad Gateway (Mon Aug 26 21:54:13 1996)
+Mon Aug 26 21:54:13 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:54:35 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:54:35 1996)
+Mon Aug 26 21:54:35 1996: 129.186.85.38: GET /gateways/finger?tim&bob HTTP/1.0 (Mon Aug 26 21:54:35 1996)
+Mon Aug 26 21:54:35 1996: 129.186.85.38: ERROR: Bad Gateway (Mon Aug 26 21:54:35 1996)
+Mon Aug 26 21:54:35 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 21:54:43 1996: 129.186.85.38: CONNECTED (Mon Aug 26 21:54:43 1996)
+Mon Aug 26 21:54:43 1996: 129.186.85.38: GET /gateways/finger HTTP/1.0 (Mon Aug 26 21:54:43 1996)
+Mon Aug 26 21:54:43 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 22:00:49 1996: 129.186.85.38: CONNECTED (Mon Aug 26 22:00:49 1996)
+Mon Aug 26 22:00:49 1996: 129.186.85.38: GET /cgi-bin/class?Jport=1225&Qcourse=&Qtitle=&Qsection= HTTP/1.0 (Mon Aug 26 22:00:49 1996)
+Mon Aug 26 22:00:49 1996: 129.186.85.38: ERROR: Not Found (Mon Aug 26 22:00:49 1996)
+Mon Aug 26 22:00:49 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 22:03:50 1996: 129.186.85.38: CONNECTED (Mon Aug 26 22:03:50 1996)
+Mon Aug 26 22:03:50 1996: 129.186.85.38: GET /icons/surf_logo.gif HTTP/1.0 (Mon Aug 26 22:03:50 1996)
+Mon Aug 26 22:03:50 1996: 129.186.85.38: ERROR: Not Found (Mon Aug 26 22:03:50 1996)
+Mon Aug 26 22:03:50 1996: 129.186.85.38: CONNECTED (Mon Aug 26 22:03:50 1996)
+Mon Aug 26 22:03:50 1996: 129.186.85.38: GET /icons/surf_searchH.gif HTTP/1.0 (Mon Aug 26 22:03:50 1996)
+Mon Aug 26 22:03:50 1996: 129.186.85.38: ERROR: Not Found (Mon Aug 26 22:03:50 1996)
+Mon Aug 26 22:03:50 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 22:03:50 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 22:03:50 1996: knapp38.res.iastate.edu: CONNECTED (Mon Aug 26 22:03:50 1996)
+Mon Aug 26 22:03:50 1996: knapp38.res.iastate.edu: GET /icons/surf_browse.gif HTTP/1.0 (Mon Aug 26 22:03:50 1996)
+Mon Aug 26 22:03:50 1996: knapp38.res.iastate.edu: ERROR: Not Found (Mon Aug 26 22:03:50 1996)
+Mon Aug 26 22:03:50 1996: 129.186.85.38: CONNECTED (Mon Aug 26 22:03:50 1996)
+Mon Aug 26 22:03:50 1996: 129.186.85.38: GET /icons/surf_special.gif HTTP/1.0 (Mon Aug 26 22:03:50 1996)
+Mon Aug 26 22:03:50 1996: 129.186.85.38: ERROR: Not Found (Mon Aug 26 22:03:50 1996)
+Mon Aug 26 22:03:50 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 22:03:50 1996: 129.186.85.38: CONNECTED (Mon Aug 26 22:03:50 1996)
+Mon Aug 26 22:03:50 1996: 129.186.85.38: GET /icons/surf_addurl.gif HTTP/1.0 (Mon Aug 26 22:03:50 1996)
+Mon Aug 26 22:03:50 1996: 129.186.85.38: ERROR: Not Found (Mon Aug 26 22:03:50 1996)
+Mon Aug 26 22:03:50 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 22:03:50 1996: 129.186.85.38: CONNECTED (Mon Aug 26 22:03:50 1996)
+Mon Aug 26 22:03:50 1996: 129.186.85.38: GET /icons/SmallBadge.gif HTTP/1.0 (Mon Aug 26 22:03:50 1996)
+Mon Aug 26 22:03:50 1996: 129.186.85.38: ERROR: Not Found (Mon Aug 26 22:03:50 1996)
+Mon Aug 26 22:03:50 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 22:03:50 1996: 129.186.85.38: CONNECTED (Mon Aug 26 22:03:50 1996)
+Mon Aug 26 22:03:50 1996: 129.186.85.38: GET /icons/surf_help.gif HTTP/1.0 (Mon Aug 26 22:03:50 1996)
+Mon Aug 26 22:03:50 1996: 129.186.85.38: ERROR: Not Found (Mon Aug 26 22:03:50 1996)
+Mon Aug 26 22:03:50 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 22:03:50 1996: 129.186.85.38: CONNECTED (Mon Aug 26 22:03:50 1996)
+Mon Aug 26 22:03:50 1996: 129.186.85.38: GET /icons/WCSelect.gif HTTP/1.0 (Mon Aug 26 22:03:50 1996)
+Mon Aug 26 22:03:50 1996: 129.186.85.38: ERROR: Not Found (Mon Aug 26 22:03:50 1996)
+Mon Aug 26 22:03:50 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 22:03:54 1996: 129.186.85.38: CONNECTED (Mon Aug 26 22:03:54 1996)
+Mon Aug 26 22:03:54 1996: 129.186.85.38: GET /finger.html HTTP/1.0 (Mon Aug 26 22:03:54 1996)
+Mon Aug 26 22:03:54 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 22:03:58 1996: 129.186.85.38: CONNECTED (Mon Aug 26 22:03:58 1996)
+Mon Aug 26 22:03:58 1996: 129.186.85.38: GET /gateways/finger? HTTP/1.0 (Mon Aug 26 22:03:58 1996)
+Mon Aug 26 22:03:58 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 22:04:56 1996: 129.186.85.38: CONNECTED (Mon Aug 26 22:04:56 1996)
+Mon Aug 26 22:04:56 1996: 129.186.85.38: GET /finger.html HTTP/1.0 (Mon Aug 26 22:04:56 1996)
+Mon Aug 26 22:04:56 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 22:05:04 1996: knapp38.res.iastate.edu: CONNECTED (Mon Aug 26 22:05:04 1996)
+Mon Aug 26 22:05:04 1996: knapp38.res.iastate.edu: ERROR: Bad Command (Mon Aug 26 22:05:04 1996)
+Mon Aug 26 22:05:52 1996: 129.186.85.38: CONNECTED (Mon Aug 26 22:05:52 1996)
+Mon Aug 26 22:05:52 1996: 129.186.85.38: GET /finger.html HTTP/1.0 (Mon Aug 26 22:05:52 1996)
+Mon Aug 26 22:05:52 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 22:06:06 1996: 129.186.85.38: CONNECTED (Mon Aug 26 22:06:06 1996)
+Mon Aug 26 22:06:06 1996: 129.186.85.38: ERROR: Bad Command (Mon Aug 26 22:06:06 1996)
+Mon Aug 26 22:06:06 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 22:06:58 1996: 129.186.85.38: CONNECTED (Mon Aug 26 22:06:58 1996)
+Mon Aug 26 22:06:58 1996: 129.186.85.38: GET /finger.html HTTP/1.0 (Mon Aug 26 22:06:58 1996)
+Mon Aug 26 22:06:58 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 22:07:00 1996: 129.186.85.38: CONNECTED (Mon Aug 26 22:07:00 1996)
+Mon Aug 26 22:07:00 1996: 129.186.85.38: GET /gateways/finger?Timtest=kyricc HTTP/1.0 (Mon Aug 26 22:07:00 1996)
+Mon Aug 26 22:07:00 1996: 129.186.85.38: ERROR: Bad Gateway (Mon Aug 26 22:07:00 1996)
+Mon Aug 26 22:07:00 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 22:09:21 1996: 129.186.85.38: CONNECTED (Mon Aug 26 22:09:21 1996)
+Mon Aug 26 22:09:21 1996: 129.186.85.38: GET /gateways/finger?Timtest=kyricc HTTP/1.0 (Mon Aug 26 22:09:21 1996)
+Mon Aug 26 22:09:21 1996: 129.186.85.38: ERROR: Bad Gateway (Mon Aug 26 22:09:21 1996)
+Mon Aug 26 22:09:21 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 22:22:39 1996: 129.186.85.38: CONNECTED (Mon Aug 26 22:22:39 1996)
+Mon Aug 26 22:22:39 1996: 129.186.85.38: GET / HTTP/1.0 (Mon Aug 26 22:22:39 1996)
+Mon Aug 26 22:22:39 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 22:23:31 1996: 129.186.85.38: CONNECTED (Mon Aug 26 22:23:31 1996)
+Mon Aug 26 22:23:31 1996: 129.186.85.38: GET / HTTP/1.0 (Mon Aug 26 22:23:31 1996)
+Mon Aug 26 22:23:31 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 22:24:02 1996: 129.186.85.38: CONNECTED (Mon Aug 26 22:24:02 1996)
+Mon Aug 26 22:24:02 1996: 129.186.85.38: GET / HTTP/1.0 (Mon Aug 26 22:24:02 1996)
+Mon Aug 26 22:24:02 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 22:24:12 1996: 129.186.85.38: CONNECTED (Mon Aug 26 22:24:12 1996)
+Mon Aug 26 22:24:12 1996: 129.186.85.38: GET /~evergreen/ HTTP/1.0 (Mon Aug 26 22:24:12 1996)
+Mon Aug 26 22:24:12 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 22:24:24 1996: 129.186.85.38: CONNECTED (Mon Aug 26 22:24:24 1996)
+Mon Aug 26 22:24:24 1996: 129.186.85.38: GET /~kyricc/ HTTP/1.0 (Mon Aug 26 22:24:24 1996)
+Mon Aug 26 22:24:24 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 22:24:24 1996: knapp38.res.iastate.edu: CONNECTED (Mon Aug 26 22:24:24 1996)
+Mon Aug 26 22:24:24 1996: knapp38.res.iastate.edu: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Mon Aug 26 22:24:24 1996)
+Mon Aug 26 22:24:50 1996: 129.186.85.38: CONNECTED (Mon Aug 26 22:24:50 1996)
+Mon Aug 26 22:24:50 1996: 129.186.85.38: GET /~hamnsnock/ HTTP/1.0 (Mon Aug 26 22:24:50 1996)
+Mon Aug 26 22:24:50 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 22:26:42 1996: 129.186.85.38: CONNECTED (Mon Aug 26 22:26:42 1996)
+Mon Aug 26 22:26:42 1996: 129.186.85.38: GET / HTTP/1.0 (Mon Aug 26 22:26:42 1996)
+Mon Aug 26 22:26:42 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 22:26:52 1996: 129.186.85.38: CONNECTED (Mon Aug 26 22:26:52 1996)
+Mon Aug 26 22:26:52 1996: 129.186.85.38: GET / HTTP/1.0 (Mon Aug 26 22:26:52 1996)
+Mon Aug 26 22:26:52 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 22:27:04 1996: 129.186.85.38: CONNECTED (Mon Aug 26 22:27:04 1996)
+Mon Aug 26 22:27:04 1996: 129.186.85.38: GET / HTTP/1.0 (Mon Aug 26 22:27:04 1996)
+Mon Aug 26 22:27:04 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 22:27:19 1996: 129.186.85.38: CONNECTED (Mon Aug 26 22:27:19 1996)
+Mon Aug 26 22:27:19 1996: 129.186.85.38: GET / HTTP/1.0 (Mon Aug 26 22:27:19 1996)
+Mon Aug 26 22:27:21 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 23:43:07 1996: 129.186.85.38: CONNECTED (Mon Aug 26 23:43:07 1996)
+Mon Aug 26 23:43:07 1996: 129.186.85.38: GET / HTTP/1.0 (Mon Aug 26 23:43:07 1996)
+Mon Aug 26 23:43:07 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 23:43:15 1996: 129.186.85.38: CONNECTED (Mon Aug 26 23:43:15 1996)
+Mon Aug 26 23:43:15 1996: 129.186.85.38: GET /gateways/finger HTTP/1.0 (Mon Aug 26 23:43:15 1996)
+Mon Aug 26 23:43:15 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 23:43:21 1996: 129.186.85.38: CONNECTED (Mon Aug 26 23:43:21 1996)
+Mon Aug 26 23:43:21 1996: 129.186.85.38: GET /~tim/ HTTP/1.0 (Mon Aug 26 23:43:21 1996)
+Mon Aug 26 23:43:21 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 23:43:27 1996: 129.186.85.38: CONNECTED (Mon Aug 26 23:43:27 1996)
+Mon Aug 26 23:43:27 1996: 129.186.85.38: GET /gateways/finger?tim HTTP/1.0 (Mon Aug 26 23:43:27 1996)
+Mon Aug 26 23:43:27 1996: 129.186.85.38: ERROR: Bad Gateway (Mon Aug 26 23:43:27 1996)
+Mon Aug 26 23:43:27 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 23:44:48 1996: 129.186.85.38: CONNECTED (Mon Aug 26 23:44:48 1996)
+Mon Aug 26 23:44:48 1996: 129.186.85.38: GET /gateways/finger?Timtest=Tim HTTP/1.0 (Mon Aug 26 23:44:48 1996)
+Mon Aug 26 23:44:48 1996: 129.186.85.38: ERROR: Bad Gateway (Mon Aug 26 23:44:48 1996)
+Mon Aug 26 23:44:48 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 23:44:56 1996: 129.186.85.38: CONNECTED (Mon Aug 26 23:44:56 1996)
+Mon Aug 26 23:44:56 1996: 129.186.85.38: GET /gateways/finger?Timtest=Tim HTTP/1.0 (Mon Aug 26 23:44:56 1996)
+Mon Aug 26 23:44:56 1996: 129.186.85.38: ERROR: Bad Gateway (Mon Aug 26 23:44:56 1996)
+Mon Aug 26 23:44:56 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 23:45:28 1996: 129.186.85.38: CONNECTED (Mon Aug 26 23:45:28 1996)
+Mon Aug 26 23:45:28 1996: 129.186.85.38: GET /finger.html HTTP/1.0 (Mon Aug 26 23:45:28 1996)
+Mon Aug 26 23:45:28 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 23:45:30 1996: 129.186.85.38: CONNECTED (Mon Aug 26 23:45:30 1996)
+Mon Aug 26 23:45:30 1996: 129.186.85.38: GET /gateways/finger?username=Tim HTTP/1.0 (Mon Aug 26 23:45:30 1996)
+Mon Aug 26 23:45:30 1996: 129.186.85.38: ERROR: Bad Gateway (Mon Aug 26 23:45:30 1996)
+Mon Aug 26 23:45:30 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 23:46:08 1996: 129.186.85.38: CONNECTED (Mon Aug 26 23:46:08 1996)
+Mon Aug 26 23:46:08 1996: 129.186.85.38: GET /finger.html HTTP/1.0 (Mon Aug 26 23:46:08 1996)
+Mon Aug 26 23:46:08 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 23:52:24 1996: 129.186.85.38: CONNECTED (Mon Aug 26 23:52:24 1996)
+Mon Aug 26 23:52:24 1996: 129.186.85.38: GET /~tim/ HTTP/1.0 (Mon Aug 26 23:52:24 1996)
+Mon Aug 26 23:52:24 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 23:52:42 1996: 129.186.85.38: CONNECTED (Mon Aug 26 23:52:42 1996)
+Mon Aug 26 23:52:42 1996: 129.186.85.38: GET /gateways/finger?tim HTTP/1.0 (Mon Aug 26 23:52:42 1996)
+Mon Aug 26 23:52:42 1996: 129.186.85.38: ERROR: Bad Gateway (Mon Aug 26 23:52:42 1996)
+Mon Aug 26 23:52:42 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 23:54:15 1996: 129.186.85.38: CONNECTED (Mon Aug 26 23:54:15 1996)
+Mon Aug 26 23:54:15 1996: 129.186.85.38: GET /gateways/finger?tim HTTP/1.0 (Mon Aug 26 23:54:15 1996)
+Mon Aug 26 23:54:15 1996: 129.186.85.38: ERROR: Bad Gateway (Mon Aug 26 23:54:15 1996)
+Mon Aug 26 23:54:15 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 23:54:31 1996: 129.186.85.38: CONNECTED (Mon Aug 26 23:54:31 1996)
+Mon Aug 26 23:54:31 1996: 129.186.85.38: GET /gateways/finger?tim HTTP/1.0 (Mon Aug 26 23:54:31 1996)
+Mon Aug 26 23:54:31 1996: 129.186.85.38: ERROR: Bad Gateway (Mon Aug 26 23:54:31 1996)
+Mon Aug 26 23:54:31 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 23:54:47 1996: 129.186.85.38: CONNECTED (Mon Aug 26 23:54:47 1996)
+Mon Aug 26 23:54:47 1996: 129.186.85.38: GET /gateways/finger?tim HTTP/1.0 (Mon Aug 26 23:54:47 1996)
+Mon Aug 26 23:54:47 1996: 129.186.85.38: ERROR: Bad Gateway (Mon Aug 26 23:54:47 1996)
+Mon Aug 26 23:54:47 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Aug 26 23:56:09 1996: 129.186.85.38: CONNECTED (Mon Aug 26 23:56:09 1996)
+Mon Aug 26 23:56:09 1996: 129.186.85.38: GET /gateways/finger?tim HTTP/1.0 (Mon Aug 26 23:56:09 1996)
+Mon Aug 26 23:56:09 1996: 129.186.85.38: ERROR: Bad Gateway (Mon Aug 26 23:56:09 1996)
+Mon Aug 26 23:56:09 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:00:39 1996: Socket closed.
+Tue Aug 27 00:00:53 1996: loopback: CONNECTED (Tue Aug 27 00:00:29 1996)
+Tue Aug 27 00:01:08 1996: 127.0.0.1: CONNECTED (Tue Aug 27 00:01:08 1996)
+Tue Aug 27 00:01:08 1996: 127.0.0.1: GET / HTTP/1.0 (Tue Aug 27 00:01:08 1996)
+Tue Aug 27 00:01:08 1996: Ip 127.0.0.1 resloved to loopback after connection closed.
+Tue Aug 27 00:01:14 1996: 127.0.0.1: CONNECTED (Tue Aug 27 00:01:14 1996)
+Tue Aug 27 00:01:14 1996: 127.0.0.1: GET /~tim/ HTTP/1.0 (Tue Aug 27 00:01:14 1996)
+Tue Aug 27 00:01:16 1996: Ip 127.0.0.1 resloved to loopback after connection closed.
+Tue Aug 27 00:01:18 1996: 127.0.0.1: CONNECTED (Tue Aug 27 00:01:18 1996)
+Tue Aug 27 00:01:18 1996: 127.0.0.1: GET /gateways/finger?tim HTTP/1.0 (Tue Aug 27 00:01:18 1996)
+Tue Aug 27 00:01:18 1996: 127.0.0.1: ERROR: Bad Gateway (Tue Aug 27 00:01:18 1996)
+Tue Aug 27 00:01:18 1996: Ip 127.0.0.1 resloved to loopback after connection closed.
+Tue Aug 27 00:05:43 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:05:43 1996)
+Tue Aug 27 00:05:43 1996: 129.186.85.38: GET / HTTP/1.0 (Tue Aug 27 00:05:43 1996)
+Tue Aug 27 00:05:43 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:05:47 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:05:47 1996)
+Tue Aug 27 00:05:47 1996: 129.186.85.38: GET /gateways/finger HTTP/1.0 (Tue Aug 27 00:05:47 1996)
+Tue Aug 27 00:05:49 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:06:05 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:06:05 1996)
+Tue Aug 27 00:06:05 1996: 129.186.85.38: GET /gateways/finger HTTP/1.0 (Tue Aug 27 00:06:05 1996)
+Tue Aug 27 00:06:05 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:06:31 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:06:31 1996)
+Tue Aug 27 00:06:31 1996: 129.186.85.38: GET /gateways/finger/tim HTTP/1.0 (Tue Aug 27 00:06:31 1996)
+Tue Aug 27 00:06:31 1996: 129.186.85.38: ERROR: Bad Gateway (Tue Aug 27 00:06:31 1996)
+Tue Aug 27 00:06:31 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:06:43 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:06:43 1996)
+Tue Aug 27 00:06:43 1996: 129.186.85.38: GET /gateways/finger?tim HTTP/1.0 (Tue Aug 27 00:06:43 1996)
+Tue Aug 27 00:06:43 1996: 129.186.85.38: ERROR: Bad Gateway (Tue Aug 27 00:06:43 1996)
+Tue Aug 27 00:06:43 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:07:44 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:07:44 1996)
+Tue Aug 27 00:07:44 1996: 129.186.85.38: GET /gateways/finger?tim HTTP/1.0 (Tue Aug 27 00:07:44 1996)
+Tue Aug 27 00:07:44 1996: 129.186.85.38: ERROR: Bad Gateway (Tue Aug 27 00:07:44 1996)
+Tue Aug 27 00:07:44 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:09:04 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:09:04 1996)
+Tue Aug 27 00:09:04 1996: 129.186.85.38: GET /gateways/finger?tim HTTP/1.0 (Tue Aug 27 00:09:04 1996)
+Tue Aug 27 00:09:04 1996: 129.186.85.38: ERROR: Bad Gateway (Tue Aug 27 00:09:04 1996)
+Tue Aug 27 00:09:04 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:13:07 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:13:07 1996)
+Tue Aug 27 00:13:07 1996: 129.186.85.38: GET /gateways/finger?tim HTTP/1.0 (Tue Aug 27 00:13:07 1996)
+Tue Aug 27 00:13:07 1996: 129.186.85.38: ERROR: Bad Gateway (Tue Aug 27 00:13:07 1996)
+Tue Aug 27 00:13:07 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:14:06 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:14:06 1996)
+Tue Aug 27 00:14:06 1996: 129.186.85.38: GET /gateways/finger?tim HTTP/1.0 (Tue Aug 27 00:14:06 1996)
+Tue Aug 27 00:14:06 1996: 129.186.85.38: ERROR: Bad Gateway (Tue Aug 27 00:14:06 1996)
+Tue Aug 27 00:14:06 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:15:12 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:15:12 1996)
+Tue Aug 27 00:15:12 1996: 129.186.85.38: GET /gateways/finger?tim HTTP/1.0 (Tue Aug 27 00:15:12 1996)
+Tue Aug 27 00:15:12 1996: 129.186.85.38: ERROR: Bad Gateway (Tue Aug 27 00:15:12 1996)
+Tue Aug 27 00:15:12 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:15:46 1996: Socket closed.
+Tue Aug 27 00:15:48 1996: knapp38.res.iastate.edu: CONNECTED (Tue Aug 27 00:15:40 1996)
+Tue Aug 27 00:15:48 1996: knapp38.res.iastate.edu: GET /gateways/finger?tim HTTP/1.0 (Tue Aug 27 00:15:40 1996)
+Tue Aug 27 00:15:54 1996: Socket closed.
+Tue Aug 27 00:21:40 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:21:40 1996)
+Tue Aug 27 00:21:40 1996: 129.186.85.38: GET /gateways/finger?tim HTTP/1.0 (Tue Aug 27 00:21:40 1996)
+Tue Aug 27 00:21:40 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:25:49 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:25:49 1996)
+Tue Aug 27 00:25:49 1996: 129.186.85.38: GET / HTTP/1.0 (Tue Aug 27 00:25:49 1996)
+Tue Aug 27 00:25:49 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:25:53 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:25:53 1996)
+Tue Aug 27 00:25:53 1996: 129.186.85.38: GET / HTTP/1.0 (Tue Aug 27 00:25:53 1996)
+Tue Aug 27 00:25:53 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:25:59 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:25:59 1996)
+Tue Aug 27 00:25:59 1996: 129.186.85.38: GET /finger.html HTTP/1.0 (Tue Aug 27 00:25:59 1996)
+Tue Aug 27 00:25:59 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:26:05 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:26:05 1996)
+Tue Aug 27 00:26:05 1996: 129.186.85.38: GET /gateways/finger?username=Tim HTTP/1.0 (Tue Aug 27 00:26:05 1996)
+Tue Aug 27 00:26:05 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:26:11 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:26:11 1996)
+Tue Aug 27 00:26:11 1996: 129.186.85.38: GET /gateways/finger?username=Kyricc HTTP/1.0 (Tue Aug 27 00:26:11 1996)
+Tue Aug 27 00:26:11 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:26:23 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:26:23 1996)
+Tue Aug 27 00:26:23 1996: 129.186.85.38: GET /gateways/finger?username= HTTP/1.0 (Tue Aug 27 00:26:23 1996)
+Tue Aug 27 00:26:23 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:27:30 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:27:30 1996)
+Tue Aug 27 00:27:30 1996: 129.186.85.38: GET /gateways/finger?username= HTTP/1.0 (Tue Aug 27 00:27:30 1996)
+Tue Aug 27 00:27:30 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:28:54 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:28:54 1996)
+Tue Aug 27 00:28:54 1996: 129.186.85.38: GET /gateways/finger?username= HTTP/1.0 (Tue Aug 27 00:28:54 1996)
+Tue Aug 27 00:28:54 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:29:32 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:29:32 1996)
+Tue Aug 27 00:29:32 1996: 129.186.85.38: GET /finger.html HTTP/1.0 (Tue Aug 27 00:29:32 1996)
+Tue Aug 27 00:29:32 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:30:27 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:30:27 1996)
+Tue Aug 27 00:30:27 1996: 129.186.85.38: GET /finger.html HTTP/1.0 (Tue Aug 27 00:30:27 1996)
+Tue Aug 27 00:30:27 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:30:53 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:30:53 1996)
+Tue Aug 27 00:30:53 1996: 129.186.85.38: GET /finger.html HTTP/1.0 (Tue Aug 27 00:30:53 1996)
+Tue Aug 27 00:30:53 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:31:21 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:31:21 1996)
+Tue Aug 27 00:31:21 1996: 129.186.85.38: GET /finger.html HTTP/1.0 (Tue Aug 27 00:31:21 1996)
+Tue Aug 27 00:31:21 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:31:27 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:31:27 1996)
+Tue Aug 27 00:31:27 1996: 129.186.85.38: GET /gateways/finger?username=evergreen HTTP/1.0 (Tue Aug 27 00:31:27 1996)
+Tue Aug 27 00:31:27 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:33:31 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:33:31 1996)
+Tue Aug 27 00:33:31 1996: 129.186.85.38: GET / HTTP/1.0 (Tue Aug 27 00:33:31 1996)
+Tue Aug 27 00:33:31 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:33:39 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:33:39 1996)
+Tue Aug 27 00:33:39 1996: 129.186.85.38: GET /finger.html HTTP/1.0 (Tue Aug 27 00:33:39 1996)
+Tue Aug 27 00:33:39 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:33:54 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:33:54 1996)
+Tue Aug 27 00:33:54 1996: 129.186.85.38: GET /gateways/finger?username=Tim HTTP/1.0 (Tue Aug 27 00:33:54 1996)
+Tue Aug 27 00:33:54 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:35:30 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:35:30 1996)
+Tue Aug 27 00:35:30 1996: 129.186.85.38: GET / HTTP/1.0 (Tue Aug 27 00:35:30 1996)
+Tue Aug 27 00:35:30 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:35:52 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:35:52 1996)
+Tue Aug 27 00:35:52 1996: 129.186.85.38: GET / HTTP/1.0 (Tue Aug 27 00:35:52 1996)
+Tue Aug 27 00:35:52 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:35:58 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:35:58 1996)
+Tue Aug 27 00:35:58 1996: 129.186.85.38: GET /finger.html HTTP/1.0 (Tue Aug 27 00:35:58 1996)
+Tue Aug 27 00:35:58 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:36:00 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:36:00 1996)
+Tue Aug 27 00:36:00 1996: 129.186.85.38: GET /index.html HTTP/1.0 (Tue Aug 27 00:36:00 1996)
+Tue Aug 27 00:36:00 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:36:10 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:36:10 1996)
+Tue Aug 27 00:36:10 1996: 129.186.85.38: GET /gateways/finger?username=Tim HTTP/1.0 (Tue Aug 27 00:36:10 1996)
+Tue Aug 27 00:36:10 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:39:07 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:39:07 1996)
+Tue Aug 27 00:39:07 1996: 129.186.85.38: GET /gateways/finger?username=Tim HTTP/1.0 (Tue Aug 27 00:39:07 1996)
+Tue Aug 27 00:39:07 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:39:25 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:39:25 1996)
+Tue Aug 27 00:39:25 1996: 129.186.85.38: GET /gateways/finger?username=Kyricc HTTP/1.0 (Tue Aug 27 00:39:25 1996)
+Tue Aug 27 00:39:25 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:39:33 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:39:33 1996)
+Tue Aug 27 00:39:33 1996: 129.186.85.38: GET /gateways/finger?username=EVERgreen HTTP/1.0 (Tue Aug 27 00:39:33 1996)
+Tue Aug 27 00:39:33 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:39:57 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:39:57 1996)
+Tue Aug 27 00:39:57 1996: 129.186.85.38: GET /~damian/ HTTP/1.0 (Tue Aug 27 00:39:57 1996)
+Tue Aug 27 00:39:57 1996: 129.186.85.38: ERROR: Not Found (Tue Aug 27 00:39:57 1996)
+Tue Aug 27 00:39:57 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:40:01 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:40:01 1996)
+Tue Aug 27 00:40:01 1996: 129.186.85.38: GET /~hamnsnock/ HTTP/1.0 (Tue Aug 27 00:40:01 1996)
+Tue Aug 27 00:40:01 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:40:01 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:40:01 1996)
+Tue Aug 27 00:40:01 1996: 129.186.85.38: GET /~hamnsnock/ HTTP/1.0 (Tue Aug 27 00:40:01 1996)
+Tue Aug 27 00:40:01 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:43:08 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:43:08 1996)
+Tue Aug 27 00:43:08 1996: 129.186.85.38: GET /~casper/ HTTP/1.0 (Tue Aug 27 00:43:08 1996)
+Tue Aug 27 00:43:08 1996: 129.186.85.38: ERROR: Not Found (Tue Aug 27 00:43:08 1996)
+Tue Aug 27 00:43:08 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:43:10 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:43:10 1996)
+Tue Aug 27 00:43:10 1996: 129.186.85.38: GET /~casper/ HTTP/1.0 (Tue Aug 27 00:43:10 1996)
+Tue Aug 27 00:43:10 1996: 129.186.85.38: ERROR: Not Found (Tue Aug 27 00:43:10 1996)
+Tue Aug 27 00:43:10 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:43:53 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:43:53 1996)
+Tue Aug 27 00:43:53 1996: 129.186.85.38: GET / HTTP/1.0 (Tue Aug 27 00:43:53 1996)
+Tue Aug 27 00:43:53 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:44:41 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:44:41 1996)
+Tue Aug 27 00:44:41 1996: 129.186.85.38: GET / HTTP/1.0 (Tue Aug 27 00:44:41 1996)
+Tue Aug 27 00:44:41 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:44:51 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:44:51 1996)
+Tue Aug 27 00:44:51 1996: 129.186.85.38: GET / HTTP/1.0 (Tue Aug 27 00:44:51 1996)
+Tue Aug 27 00:44:51 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:45:17 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:45:17 1996)
+Tue Aug 27 00:45:17 1996: 129.186.85.38: GET / HTTP/1.0 (Tue Aug 27 00:45:17 1996)
+Tue Aug 27 00:45:17 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:45:27 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:45:27 1996)
+Tue Aug 27 00:45:27 1996: 129.186.85.38: GET /~kyricc/ HTTP/1.0 (Tue Aug 27 00:45:27 1996)
+Tue Aug 27 00:45:27 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:45:27 1996: knapp38.res.iastate.edu: CONNECTED (Tue Aug 27 00:45:27 1996)
+Tue Aug 27 00:45:27 1996: knapp38.res.iastate.edu: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Tue Aug 27 00:45:27 1996)
+Tue Aug 27 00:45:29 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:45:29 1996)
+Tue Aug 27 00:45:29 1996: 129.186.85.38: GET /~kyricc/ HTTP/1.0 (Tue Aug 27 00:45:29 1996)
+Tue Aug 27 00:45:29 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:45:29 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:45:29 1996)
+Tue Aug 27 00:45:29 1996: 129.186.85.38: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Tue Aug 27 00:45:29 1996)
+Tue Aug 27 00:45:29 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:45:35 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:45:35 1996)
+Tue Aug 27 00:45:35 1996: 129.186.85.38: GET /~quint/ HTTP/1.0 (Tue Aug 27 00:45:35 1996)
+Tue Aug 27 00:45:35 1996: 129.186.85.38: ERROR: Not Found (Tue Aug 27 00:45:35 1996)
+Tue Aug 27 00:45:35 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:45:39 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:45:39 1996)
+Tue Aug 27 00:45:39 1996: 129.186.85.38: GET /~satch/ HTTP/1.0 (Tue Aug 27 00:45:39 1996)
+Tue Aug 27 00:45:39 1996: 129.186.85.38: ERROR: Not Found (Tue Aug 27 00:45:39 1996)
+Tue Aug 27 00:45:39 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:45:47 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:45:47 1996)
+Tue Aug 27 00:45:47 1996: 129.186.85.38: GET /~talen/ HTTP/1.0 (Tue Aug 27 00:45:47 1996)
+Tue Aug 27 00:45:47 1996: 129.186.85.38: ERROR: Not Found (Tue Aug 27 00:45:47 1996)
+Tue Aug 27 00:45:47 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:45:53 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:45:53 1996)
+Tue Aug 27 00:45:53 1996: 129.186.85.38: GET /~tim/ HTTP/1.0 (Tue Aug 27 00:45:53 1996)
+Tue Aug 27 00:45:53 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:45:57 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:45:57 1996)
+Tue Aug 27 00:45:57 1996: 129.186.85.38: GET /gateways/finger?tim HTTP/1.0 (Tue Aug 27 00:45:57 1996)
+Tue Aug 27 00:45:57 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:45:57 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:45:57 1996)
+Tue Aug 27 00:45:57 1996: 129.186.85.38: GET /gateways/finger?tim HTTP/1.0 (Tue Aug 27 00:45:57 1996)
+Tue Aug 27 00:45:57 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:47:10 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:47:07 1996)
+Tue Aug 27 00:47:10 1996: 129.186.85.38: GET /~tim/TODO HTTP/1.0 (Tue Aug 27 00:47:10 1996)
+Tue Aug 27 00:47:10 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:47:12 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:47:10 1996)
+Tue Aug 27 00:47:12 1996: 129.186.85.38: GET /~tim/TODO HTTP/1.0 (Tue Aug 27 00:47:12 1996)
+Tue Aug 27 00:47:12 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:47:18 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:47:18 1996)
+Tue Aug 27 00:47:18 1996: 129.186.85.38: GET /~tim/DONE HTTP/1.0 (Tue Aug 27 00:47:18 1996)
+Tue Aug 27 00:47:18 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:47:20 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:47:20 1996)
+Tue Aug 27 00:47:20 1996: 129.186.85.38: GET /~tim/DONE HTTP/1.0 (Tue Aug 27 00:47:20 1996)
+Tue Aug 27 00:47:20 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:49:16 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:49:16 1996)
+Tue Aug 27 00:49:16 1996: 129.186.85.38: GET / HTTP/1.0 (Tue Aug 27 00:49:16 1996)
+Tue Aug 27 00:49:16 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:50:15 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:50:15 1996)
+Tue Aug 27 00:50:15 1996: 129.186.85.38: GET / HTTP/1.0 (Tue Aug 27 00:50:15 1996)
+Tue Aug 27 00:50:15 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:51:01 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:51:01 1996)
+Tue Aug 27 00:51:01 1996: 129.186.85.38: GET /~evergreen/ HTTP/1.0 (Tue Aug 27 00:51:01 1996)
+Tue Aug 27 00:51:01 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:51:03 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:51:03 1996)
+Tue Aug 27 00:51:03 1996: 129.186.85.38: GET /~evergreen/ HTTP/1.0 (Tue Aug 27 00:51:03 1996)
+Tue Aug 27 00:51:03 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 00:51:15 1996: 129.186.85.38: CONNECTED (Tue Aug 27 00:51:15 1996)
+Tue Aug 27 00:51:15 1996: 129.186.85.38: GET /gateways/finger HTTP/1.0 (Tue Aug 27 00:51:15 1996)
+Tue Aug 27 00:51:15 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Tue Aug 27 21:22:53 1996: 129.186.85.38: CONNECTED (Tue Aug 27 21:22:53 1996)
+Tue Aug 27 21:22:53 1996: 129.186.85.38: GET / HTTP/1.0 (Tue Aug 27 21:22:53 1996)
+Tue Aug 27 21:22:53 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Wed Aug 28 16:32:48 1996: 129.186.85.38: CONNECTED (Wed Aug 28 16:32:48 1996)
+Wed Aug 28 16:32:48 1996: 129.186.85.38: GET / HTTP/1.0 (Wed Aug 28 16:32:48 1996)
+Wed Aug 28 16:32:48 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Wed Aug 28 16:35:19 1996: 129.186.85.38: CONNECTED (Wed Aug 28 16:35:19 1996)
+Wed Aug 28 16:35:19 1996: 129.186.85.38: GET /finger.html HTTP/1.0 (Wed Aug 28 16:35:19 1996)
+Wed Aug 28 16:35:19 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Wed Aug 28 16:35:27 1996: 129.186.85.38: CONNECTED (Wed Aug 28 16:35:27 1996)
+Wed Aug 28 16:35:27 1996: 129.186.85.38: GET /gateways/finger?username=Tim HTTP/1.0 (Wed Aug 28 16:35:27 1996)
+Wed Aug 28 16:35:29 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Wed Aug 28 16:43:01 1996: 129.186.85.38: CONNECTED (Wed Aug 28 16:43:01 1996)
+Wed Aug 28 16:43:01 1996: 129.186.85.38: GET /gateways/finger HTTP/1.0 (Wed Aug 28 16:43:01 1996)
+Wed Aug 28 16:43:01 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Wed Aug 28 16:43:03 1996: 129.186.85.38: CONNECTED (Wed Aug 28 16:43:03 1996)
+Wed Aug 28 16:43:03 1996: 129.186.85.38: GET /gateways/finger HTTP/1.0 (Wed Aug 28 16:43:03 1996)
+Wed Aug 28 16:43:03 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Wed Aug 28 16:43:15 1996: 129.186.85.38: CONNECTED (Wed Aug 28 16:43:15 1996)
+Wed Aug 28 16:43:15 1996: 129.186.85.38: GET /gateways/finger?username=Tim HTTP/1.0 (Wed Aug 28 16:43:15 1996)
+Wed Aug 28 16:43:15 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Wed Aug 28 16:53:20 1996: 129.186.85.38: CONNECTED (Wed Aug 28 16:53:20 1996)
+Wed Aug 28 16:53:20 1996: 129.186.85.38: GET /index.html HTTP/1.0 (Wed Aug 28 16:53:20 1996)
+Wed Aug 28 16:53:20 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Wed Aug 28 16:56:03 1996: 199.184.119.1: CONNECTED (Wed Aug 28 16:56:03 1996)
+Wed Aug 28 16:56:03 1996: 199.184.119.1: GET / HTTP/1.0 (Wed Aug 28 16:56:03 1996)
+Wed Aug 28 16:56:03 1996: Ip 199.184.119.1 resloved to falcon.inetnebr.com after connection closed.
+Wed Aug 28 16:56:25 1996: 199.184.119.1: CONNECTED (Wed Aug 28 16:56:25 1996)
+Wed Aug 28 16:56:25 1996: 199.184.119.1: GET /gateways/finger HTTP/1.0 (Wed Aug 28 16:56:25 1996)
+Wed Aug 28 16:56:25 1996: Ip 199.184.119.1 resloved to falcon.inetnebr.com after connection closed.
+Wed Aug 28 16:56:29 1996: 129.186.85.38: CONNECTED (Wed Aug 28 16:56:29 1996)
+Wed Aug 28 16:56:29 1996: 129.186.85.38: GET /gateways/finger?username=Tim HTTP/1.0 (Wed Aug 28 16:56:29 1996)
+Wed Aug 28 16:56:29 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Wed Aug 28 16:56:39 1996: 199.184.119.1: CONNECTED (Wed Aug 28 16:56:39 1996)
+Wed Aug 28 16:56:39 1996: 199.184.119.1: GET /finger.html HTTP/1.0 (Wed Aug 28 16:56:39 1996)
+Wed Aug 28 16:56:39 1996: Ip 199.184.119.1 resloved to falcon.inetnebr.com after connection closed.
+Wed Aug 28 16:56:53 1996: 199.184.119.1: CONNECTED (Wed Aug 28 16:56:53 1996)
+Wed Aug 28 16:56:53 1996: 199.184.119.1: GET /gateways/finger?username=kyricc HTTP/1.0 (Wed Aug 28 16:56:53 1996)
+Wed Aug 28 16:56:53 1996: Ip 199.184.119.1 resloved to falcon.inetnebr.com after connection closed.
+Wed Aug 28 16:57:29 1996: 129.186.85.38: CONNECTED (Wed Aug 28 16:57:29 1996)
+Wed Aug 28 16:57:29 1996: 129.186.85.38: GET /gateways/finger?username=Tim HTTP/1.0 (Wed Aug 28 16:57:29 1996)
+Wed Aug 28 16:57:29 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Wed Aug 28 16:57:37 1996: 199.184.119.1: CONNECTED (Wed Aug 28 16:57:37 1996)
+Wed Aug 28 16:57:37 1996: 199.184.119.1: GET /~hamnsnock/ HTTP/1.0 (Wed Aug 28 16:57:37 1996)
+Wed Aug 28 16:57:37 1996: Ip 199.184.119.1 resloved to falcon.inetnebr.com after connection closed.
+Wed Aug 28 16:58:01 1996: 129.186.85.38: CONNECTED (Wed Aug 28 16:58:01 1996)
+Wed Aug 28 16:58:01 1996: 129.186.85.38: GET /gateways/finger?username=Tim HTTP/1.0 (Wed Aug 28 16:58:01 1996)
+Wed Aug 28 16:58:01 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Wed Aug 28 16:59:06 1996: 129.186.85.38: CONNECTED (Wed Aug 28 16:59:06 1996)
+Wed Aug 28 16:59:06 1996: 129.186.85.38: GET /finger.html HTTP/1.0 (Wed Aug 28 16:59:06 1996)
+Wed Aug 28 16:59:06 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Wed Aug 28 16:59:20 1996: 129.186.85.38: CONNECTED (Wed Aug 28 16:59:20 1996)
+Wed Aug 28 16:59:20 1996: 129.186.85.38: GET /gateways/finger HTTP/1.0 (Wed Aug 28 16:59:20 1996)
+Wed Aug 28 16:59:20 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 16:51:08 1996: 140.142.82.2: CONNECTED (Thu Aug 29 16:51:08 1996)
+Thu Aug 29 16:51:08 1996: 140.142.82.2: GET / HTTP/1.0 (Thu Aug 29 16:51:08 1996)
+Thu Aug 29 16:51:08 1996: Ip 140.142.82.2 resloved to saul7.u.washington.edu after connection closed.
+Thu Aug 29 16:51:22 1996: saul7.u.washington.edu: CONNECTED (Thu Aug 29 16:51:20 1996)
+Thu Aug 29 16:51:22 1996: saul7.u.washington.edu: GET /gateways/finger HTTP/1.0 (Thu Aug 29 16:51:22 1996)
+Thu Aug 29 16:51:26 1996: 140.142.82.2: CONNECTED (Thu Aug 29 16:51:26 1996)
+Thu Aug 29 16:51:26 1996: 140.142.82.2: GET /~tim/TODO HTTP/1.0 (Thu Aug 29 16:51:26 1996)
+Thu Aug 29 16:51:26 1996: Ip 140.142.82.2 resloved to saul7.u.washington.edu after connection closed.
+Thu Aug 29 16:52:39 1996: 140.142.82.2: CONNECTED (Thu Aug 29 16:52:39 1996)
+Thu Aug 29 16:52:39 1996: 140.142.82.2: GET /~tim/DONE HTTP/1.0 (Thu Aug 29 16:52:39 1996)
+Thu Aug 29 16:52:39 1996: Ip 140.142.82.2 resloved to saul7.u.washington.edu after connection closed.
+Thu Aug 29 16:52:55 1996: 140.142.82.2: CONNECTED (Thu Aug 29 16:52:55 1996)
+Thu Aug 29 16:52:55 1996: 140.142.82.2: GET /~tim/ HTTP/1.0 (Thu Aug 29 16:52:55 1996)
+Thu Aug 29 16:52:55 1996: Ip 140.142.82.2 resloved to saul7.u.washington.edu after connection closed.
+Thu Aug 29 17:20:15 1996: 194.207.0.2: CONNECTED (Thu Aug 29 17:20:15 1996)
+Thu Aug 29 17:20:15 1996: 194.207.0.2: GET / HTTP/1.0 (Thu Aug 29 17:20:15 1996)
+Thu Aug 29 17:20:15 1996: Ip 194.207.0.2 resloved to www.uk0.vbc.net after connection closed.
+Thu Aug 29 17:29:16 1996: 129.186.89.1: CONNECTED (Thu Aug 29 17:29:16 1996)
+Thu Aug 29 17:29:16 1996: 129.186.89.1: GET / HTTP/1.0 (Thu Aug 29 17:29:16 1996)
+Thu Aug 29 17:29:16 1996: Ip 129.186.89.1 resloved to du89-01.cc.iastate.edu after connection closed.
+Thu Aug 29 17:46:41 1996: 129.186.85.38: CONNECTED (Thu Aug 29 17:46:41 1996)
+Thu Aug 29 17:46:41 1996: 129.186.85.38: GET / HTTP/1.0 (Thu Aug 29 17:46:41 1996)
+Thu Aug 29 17:46:41 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 17:46:59 1996: 127.0.0.1: CONNECTED (Thu Aug 29 17:46:59 1996)
+Thu Aug 29 17:46:59 1996: 127.0.0.1: GET /gateways/edit?/README HTTP/1.0 (Thu Aug 29 17:46:59 1996)
+Thu Aug 29 17:46:59 1996: Ip 127.0.0.1 resloved to loopback after connection closed.
+Thu Aug 29 18:36:18 1996: saul7.u.washington.edu: CONNECTED (Thu Aug 29 18:36:18 1996)
+Thu Aug 29 18:36:18 1996: saul7.u.washington.edu: GET /gateways/finger?tim HTTP/1.0 (Thu Aug 29 18:36:18 1996)
+Thu Aug 29 19:03:10 1996: 127.0.0.1: CONNECTED (Thu Aug 29 19:03:10 1996)
+Thu Aug 29 19:03:10 1996: 127.0.0.1: GET /gateways/mudlist HTTP/1.0 (Thu Aug 29 19:03:10 1996)
+Thu Aug 29 19:03:10 1996: 127.0.0.1: ERROR: Bad Gateway (Thu Aug 29 19:03:10 1996)
+Thu Aug 29 19:03:10 1996: Ip 127.0.0.1 resloved to loopback after connection closed.
+Thu Aug 29 19:10:00 1996: loopback: CONNECTED (Thu Aug 29 19:09:58 1996)
+Thu Aug 29 19:10:00 1996: loopback: GET /gateways/mudlist HTTP/1.0 (Thu Aug 29 19:09:58 1996)
+Thu Aug 29 19:13:13 1996: 127.0.0.1: CONNECTED (Thu Aug 29 19:13:13 1996)
+Thu Aug 29 19:13:13 1996: 127.0.0.1: GET /gateways/mudlist HTTP/1.0 (Thu Aug 29 19:13:13 1996)
+Thu Aug 29 19:13:13 1996: Ip 127.0.0.1 resloved to loopback after connection closed.
+Thu Aug 29 19:13:17 1996: 127.0.0.1: CONNECTED (Thu Aug 29 19:13:17 1996)
+Thu Aug 29 19:13:17 1996: 127.0.0.1: GET /gateways/mudlist HTTP/1.0 (Thu Aug 29 19:13:17 1996)
+Thu Aug 29 19:13:17 1996: Ip 127.0.0.1 resloved to loopback after connection closed.
+Thu Aug 29 19:19:17 1996: 127.0.0.1: CONNECTED (Thu Aug 29 19:19:17 1996)
+Thu Aug 29 19:19:17 1996: 127.0.0.1: GET /gateways/mudlist HTTP/1.0 (Thu Aug 29 19:19:17 1996)
+Thu Aug 29 19:19:17 1996: Ip 127.0.0.1 resloved to loopback after connection closed.
+Thu Aug 29 19:19:27 1996: loopback: CONNECTED (Thu Aug 29 19:19:27 1996)
+Thu Aug 29 19:19:27 1996: loopback: GET /gateways/mudlist HTTP/1.0 (Thu Aug 29 19:19:27 1996)
+Thu Aug 29 19:20:05 1996: loopback: CONNECTED (Thu Aug 29 19:20:03 1996)
+Thu Aug 29 19:20:05 1996: loopback: GET /gateways/mudlist HTTP/1.0 (Thu Aug 29 19:20:03 1996)
+Thu Aug 29 19:41:56 1996: 127.0.0.1: CONNECTED (Thu Aug 29 19:41:56 1996)
+Thu Aug 29 19:41:56 1996: 127.0.0.1: GET /gateways/mudlist HTTP/1.0 (Thu Aug 29 19:41:56 1996)
+Thu Aug 29 19:41:56 1996: 127.0.0.1: ERROR: Bad Gateway (Thu Aug 29 19:41:56 1996)
+Thu Aug 29 19:41:56 1996: Ip 127.0.0.1 resloved to loopback after connection closed.
+Thu Aug 29 19:44:16 1996: loopback: CONNECTED (Thu Aug 29 19:44:16 1996)
+Thu Aug 29 19:44:16 1996: loopback: GET /gateways/mudlist HTTP/1.0 (Thu Aug 29 19:44:16 1996)
+Thu Aug 29 19:48:11 1996: loopback: CONNECTED (Thu Aug 29 19:48:09 1996)
+Thu Aug 29 19:48:11 1996: loopback: GET /gateways/mudlist HTTP/1.0 (Thu Aug 29 19:48:09 1996)
+Thu Aug 29 19:49:54 1996: loopback: CONNECTED (Thu Aug 29 19:49:54 1996)
+Thu Aug 29 19:49:54 1996: loopback: GET /gateways/mudlist HTTP/1.0 (Thu Aug 29 19:49:54 1996)
+Thu Aug 29 19:52:37 1996: loopback: CONNECTED (Thu Aug 29 19:52:37 1996)
+Thu Aug 29 19:52:37 1996: loopback: GET /gateways/mudlist HTTP/1.0 (Thu Aug 29 19:52:37 1996)
+Thu Aug 29 19:55:10 1996: loopback: CONNECTED (Thu Aug 29 19:55:10 1996)
+Thu Aug 29 19:55:10 1996: loopback: GET /gateways/mudlist HTTP/1.0 (Thu Aug 29 19:55:10 1996)
+Thu Aug 29 19:57:48 1996: loopback: CONNECTED (Thu Aug 29 19:57:48 1996)
+Thu Aug 29 19:57:48 1996: loopback: GET /gateways/mudlist HTTP/1.0 (Thu Aug 29 19:57:48 1996)
+Thu Aug 29 20:00:19 1996: 129.186.85.38: CONNECTED (Thu Aug 29 20:00:19 1996)
+Thu Aug 29 20:00:19 1996: 129.186.85.38: GET / HTTP/1.0 (Thu Aug 29 20:00:19 1996)
+Thu Aug 29 20:00:19 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 20:02:22 1996: knapp38.res.iastate.edu: CONNECTED (Thu Aug 29 20:02:22 1996)
+Thu Aug 29 20:02:22 1996: knapp38.res.iastate.edu: GET /gateways/mudlist HTTP/1.0 (Thu Aug 29 20:02:22 1996)
+Thu Aug 29 20:02:50 1996: 129.186.85.38: CONNECTED (Thu Aug 29 20:02:50 1996)
+Thu Aug 29 20:02:50 1996: 129.186.85.38: GET /index.html HTTP/1.0 (Thu Aug 29 20:02:50 1996)
+Thu Aug 29 20:02:50 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 20:03:24 1996: 129.186.85.38: CONNECTED (Thu Aug 29 20:03:24 1996)
+Thu Aug 29 20:03:24 1996: 129.186.85.38: GET / HTTP/1.0 (Thu Aug 29 20:03:24 1996)
+Thu Aug 29 20:03:24 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 20:20:15 1996: 129.186.85.38: CONNECTED (Thu Aug 29 20:20:15 1996)
+Thu Aug 29 20:20:15 1996: 129.186.85.38: GET /gateways/mudlist HTTP/1.0 (Thu Aug 29 20:20:15 1996)
+Thu Aug 29 20:20:15 1996: 129.186.85.38: ERROR: Bad Gateway (Thu Aug 29 20:20:15 1996)
+Thu Aug 29 20:20:15 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 20:20:39 1996: knapp38.res.iastate.edu: CONNECTED (Thu Aug 29 20:20:39 1996)
+Thu Aug 29 20:20:39 1996: knapp38.res.iastate.edu: GET /gateways/mudlist HTTP/1.0 (Thu Aug 29 20:20:39 1996)
+Thu Aug 29 20:27:27 1996: 129.186.85.38: CONNECTED (Thu Aug 29 20:27:27 1996)
+Thu Aug 29 20:27:27 1996: 129.186.85.38: GET / HTTP/1.0 (Thu Aug 29 20:27:27 1996)
+Thu Aug 29 20:27:27 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 20:27:31 1996: knapp38.res.iastate.edu: CONNECTED (Thu Aug 29 20:27:29 1996)
+Thu Aug 29 20:27:31 1996: knapp38.res.iastate.edu: GET /gateways/mudlist HTTP/1.0 (Thu Aug 29 20:27:29 1996)
+Thu Aug 29 20:27:31 1996: knapp38.res.iastate.edu: CONNECTED (Thu Aug 29 20:27:31 1996)
+Thu Aug 29 20:27:31 1996: knapp38.res.iastate.edu: GET /gateways/mudlist HTTP/1.0 (Thu Aug 29 20:27:31 1996)
+Thu Aug 29 20:29:52 1996: knapp38.res.iastate.edu: CONNECTED (Thu Aug 29 20:29:52 1996)
+Thu Aug 29 20:29:52 1996: knapp38.res.iastate.edu: GET /gateways/mudlist HTTP/1.0 (Thu Aug 29 20:29:52 1996)
+Thu Aug 29 20:30:10 1996: knapp38.res.iastate.edu: CONNECTED (Thu Aug 29 20:30:10 1996)
+Thu Aug 29 20:30:10 1996: knapp38.res.iastate.edu: GET /gateways/mudlist HTTP/1.0 (Thu Aug 29 20:30:10 1996)
+Thu Aug 29 20:30:38 1996: knapp38.res.iastate.edu: CONNECTED (Thu Aug 29 20:30:38 1996)
+Thu Aug 29 20:30:38 1996: knapp38.res.iastate.edu: GET /gateways/mudlist HTTP/1.0 (Thu Aug 29 20:30:38 1996)
+Thu Aug 29 20:33:35 1996: knapp38.res.iastate.edu: CONNECTED (Thu Aug 29 20:33:35 1996)
+Thu Aug 29 20:33:35 1996: knapp38.res.iastate.edu: GET /gateways/mudlist HTTP/1.0 (Thu Aug 29 20:33:35 1996)
+Thu Aug 29 20:33:47 1996: knapp38.res.iastate.edu: CONNECTED (Thu Aug 29 20:33:47 1996)
+Thu Aug 29 20:33:47 1996: knapp38.res.iastate.edu: GET /gateways/mudlist HTTP/1.0 (Thu Aug 29 20:33:47 1996)
+Thu Aug 29 20:35:18 1996: knapp38.res.iastate.edu: CONNECTED (Thu Aug 29 20:35:18 1996)
+Thu Aug 29 20:35:18 1996: knapp38.res.iastate.edu: GET /gateways/mudlist HTTP/1.0 (Thu Aug 29 20:35:18 1996)
+Thu Aug 29 20:36:34 1996: knapp38.res.iastate.edu: CONNECTED (Thu Aug 29 20:36:34 1996)
+Thu Aug 29 20:36:34 1996: knapp38.res.iastate.edu: GET /gateways/mudlist HTTP/1.0 (Thu Aug 29 20:36:34 1996)
+Thu Aug 29 20:38:34 1996: knapp38.res.iastate.edu: CONNECTED (Thu Aug 29 20:38:34 1996)
+Thu Aug 29 20:38:34 1996: knapp38.res.iastate.edu: GET /gateways/mudlist HTTP/1.0 (Thu Aug 29 20:38:34 1996)
+Thu Aug 29 20:43:16 1996: knapp38.res.iastate.edu: CONNECTED (Thu Aug 29 20:43:16 1996)
+Thu Aug 29 20:43:16 1996: knapp38.res.iastate.edu: GET /gateways/mudlist HTTP/1.0 (Thu Aug 29 20:43:16 1996)
+Thu Aug 29 20:43:50 1996: knapp38.res.iastate.edu: CONNECTED (Thu Aug 29 20:43:50 1996)
+Thu Aug 29 20:43:50 1996: knapp38.res.iastate.edu: GET /gateways/mudlist HTTP/1.0 (Thu Aug 29 20:43:50 1996)
+Thu Aug 29 20:45:16 1996: 129.186.85.38: CONNECTED (Thu Aug 29 20:45:16 1996)
+Thu Aug 29 20:45:16 1996: 129.186.85.38: GET / HTTP/1.0 (Thu Aug 29 20:45:16 1996)
+Thu Aug 29 20:45:16 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 20:45:18 1996: knapp38.res.iastate.edu: CONNECTED (Thu Aug 29 20:45:18 1996)
+Thu Aug 29 20:45:18 1996: knapp38.res.iastate.edu: GET /gateways/mudlist HTTP/1.0 (Thu Aug 29 20:45:18 1996)
+Thu Aug 29 20:45:23 1996: knapp38.res.iastate.edu: CONNECTED (Thu Aug 29 20:45:23 1996)
+Thu Aug 29 20:45:23 1996: knapp38.res.iastate.edu: GET /gateways/mudlist HTTP/1.0 (Thu Aug 29 20:45:23 1996)
+Thu Aug 29 20:46:47 1996: 129.186.85.38: CONNECTED (Thu Aug 29 20:46:47 1996)
+Thu Aug 29 20:46:47 1996: 129.186.85.38: GET /finger.html HTTP/1.0 (Thu Aug 29 20:46:47 1996)
+Thu Aug 29 20:46:47 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 20:47:07 1996: 129.186.85.38: CONNECTED (Thu Aug 29 20:47:07 1996)
+Thu Aug 29 20:47:07 1996: 129.186.85.38: GET /gateways/finger?username=tim@dysfun HTTP/1.0 (Thu Aug 29 20:47:07 1996)
+Thu Aug 29 20:47:07 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 20:47:23 1996: 129.186.85.38: CONNECTED (Thu Aug 29 20:47:23 1996)
+Thu Aug 29 20:47:23 1996: 129.186.85.38: GET /gateways/finger?username=evergreen HTTP/1.0 (Thu Aug 29 20:47:23 1996)
+Thu Aug 29 20:47:23 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 20:47:25 1996: 129.186.85.38: CONNECTED (Thu Aug 29 20:47:25 1996)
+Thu Aug 29 20:47:25 1996: 129.186.85.38: GET /gateways/finger?username=evergreen HTTP/1.0 (Thu Aug 29 20:47:25 1996)
+Thu Aug 29 20:47:25 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 20:52:59 1996: 129.186.85.38: CONNECTED (Thu Aug 29 20:52:59 1996)
+Thu Aug 29 20:52:59 1996: 129.186.85.38: GET /afg HTTP/1.0 (Thu Aug 29 20:52:59 1996)
+Thu Aug 29 20:52:59 1996: 129.186.85.38: ERROR: Not Found (Thu Aug 29 20:52:59 1996)
+Thu Aug 29 20:52:59 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 20:54:45 1996: 129.186.85.38: CONNECTED (Thu Aug 29 20:54:45 1996)
+Thu Aug 29 20:54:45 1996: 129.186.85.38: GET /afg HTTP/1.0 (Thu Aug 29 20:54:45 1996)
+Thu Aug 29 20:54:45 1996: 129.186.85.38: ERROR: Not Found (Thu Aug 29 20:54:45 1996)
+Thu Aug 29 20:54:45 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 20:54:47 1996: 129.186.85.38: CONNECTED (Thu Aug 29 20:54:47 1996)
+Thu Aug 29 20:54:47 1996: 129.186.85.38: GET /index.html HTTP/1.0 (Thu Aug 29 20:54:47 1996)
+Thu Aug 29 20:54:47 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 20:54:57 1996: 129.186.85.38: CONNECTED (Thu Aug 29 20:54:57 1996)
+Thu Aug 29 20:54:57 1996: 129.186.85.38: GET /gateways/bob HTTP/1.0 (Thu Aug 29 20:54:57 1996)
+Thu Aug 29 20:54:57 1996: 129.186.85.38: ERROR: Bad Gateway (Thu Aug 29 20:54:57 1996)
+Thu Aug 29 20:54:57 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 20:58:34 1996: 129.186.85.38: CONNECTED (Thu Aug 29 20:58:34 1996)
+Thu Aug 29 20:58:34 1996: 129.186.85.38: GET / HTTP/1.0 (Thu Aug 29 20:58:34 1996)
+Thu Aug 29 20:58:34 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 20:58:38 1996: 129.186.85.38: CONNECTED (Thu Aug 29 20:58:38 1996)
+Thu Aug 29 20:58:38 1996: 129.186.85.38: GET /gateways/finger HTTP/1.0 (Thu Aug 29 20:58:38 1996)
+Thu Aug 29 20:58:38 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 20:58:40 1996: 129.186.85.38: CONNECTED (Thu Aug 29 20:58:40 1996)
+Thu Aug 29 20:58:40 1996: 129.186.85.38: GET /gateways/finger HTTP/1.0 (Thu Aug 29 20:58:40 1996)
+Thu Aug 29 20:58:40 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 20:59:05 1996: 129.186.85.38: CONNECTED (Thu Aug 29 20:59:05 1996)
+Thu Aug 29 20:59:05 1996: 129.186.85.38: GET /gateways/finger HTTP/1.0 (Thu Aug 29 20:59:05 1996)
+Thu Aug 29 20:59:05 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 20:59:37 1996: 36.101.0.10: CONNECTED (Thu Aug 29 20:59:37 1996)
+Thu Aug 29 20:59:37 1996: 36.101.0.10: GET / HTTP/1.0 (Thu Aug 29 20:59:37 1996)
+Thu Aug 29 20:59:37 1996: Ip 36.101.0.10 resloved to pochacco.Stanford.EDU after connection closed.
+Thu Aug 29 21:00:07 1996: 36.101.0.10: CONNECTED (Thu Aug 29 21:00:07 1996)
+Thu Aug 29 21:00:07 1996: 36.101.0.10: GET /~kyricc/ HTTP/1.0 (Thu Aug 29 21:00:07 1996)
+Thu Aug 29 21:00:07 1996: Ip 36.101.0.10 resloved to pochacco.Stanford.EDU after connection closed.
+Thu Aug 29 21:00:09 1996: pochacco.Stanford.EDU: CONNECTED (Thu Aug 29 21:00:09 1996)
+Thu Aug 29 21:00:09 1996: pochacco.Stanford.EDU: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Thu Aug 29 21:00:09 1996)
+Thu Aug 29 21:00:15 1996: pochacco.Stanford.EDU: CONNECTED (Thu Aug 29 21:00:11 1996)
+Thu Aug 29 21:00:15 1996: pochacco.Stanford.EDU: GET /~hamnsnock/ HTTP/1.0 (Thu Aug 29 21:00:15 1996)
+Thu Aug 29 21:00:27 1996: 36.101.0.10: CONNECTED (Thu Aug 29 21:00:27 1996)
+Thu Aug 29 21:00:27 1996: 36.101.0.10: GET /~evergreen/ HTTP/1.0 (Thu Aug 29 21:00:27 1996)
+Thu Aug 29 21:00:29 1996: Ip 36.101.0.10 resloved to pochacco.Stanford.EDU after connection closed.
+Thu Aug 29 21:00:31 1996: 36.101.0.10: CONNECTED (Thu Aug 29 21:00:31 1996)
+Thu Aug 29 21:00:31 1996: 36.101.0.10: GET /~hamnsnock/ HTTP/1.0 (Thu Aug 29 21:00:31 1996)
+Thu Aug 29 21:00:31 1996: Ip 36.101.0.10 resloved to pochacco.Stanford.EDU after connection closed.
+Thu Aug 29 21:00:35 1996: 36.101.0.10: CONNECTED (Thu Aug 29 21:00:35 1996)
+Thu Aug 29 21:00:35 1996: 36.101.0.10: GET /~kyricc/ HTTP/1.0 (Thu Aug 29 21:00:35 1996)
+Thu Aug 29 21:00:35 1996: Ip 36.101.0.10 resloved to pochacco.Stanford.EDU after connection closed.
+Thu Aug 29 21:00:35 1996: 36.101.0.10: CONNECTED (Thu Aug 29 21:00:35 1996)
+Thu Aug 29 21:00:35 1996: 36.101.0.10: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Thu Aug 29 21:00:35 1996)
+Thu Aug 29 21:00:35 1996: Ip 36.101.0.10 resloved to pochacco.Stanford.EDU after connection closed.
+Thu Aug 29 21:00:41 1996: 129.186.85.38: CONNECTED (Thu Aug 29 21:00:41 1996)
+Thu Aug 29 21:00:41 1996: 129.186.85.38: GET /gateways/finger HTTP/1.0 (Thu Aug 29 21:00:41 1996)
+Thu Aug 29 21:00:41 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 21:00:43 1996: 36.101.0.10: CONNECTED (Thu Aug 29 21:00:43 1996)
+Thu Aug 29 21:00:43 1996: 36.101.0.10: GET /~kyricc/corpse.html HTTP/1.0 (Thu Aug 29 21:00:43 1996)
+Thu Aug 29 21:00:43 1996: Ip 36.101.0.10 resloved to pochacco.Stanford.EDU after connection closed.
+Thu Aug 29 21:01:03 1996: 36.101.0.10: CONNECTED (Thu Aug 29 21:01:03 1996)
+Thu Aug 29 21:01:03 1996: 36.101.0.10: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Thu Aug 29 21:01:03 1996)
+Thu Aug 29 21:01:03 1996: Ip 36.101.0.10 resloved to pochacco.Stanford.EDU after connection closed.
+Thu Aug 29 21:01:05 1996: 36.101.0.10: CONNECTED (Thu Aug 29 21:01:05 1996)
+Thu Aug 29 21:01:05 1996: 36.101.0.10: GET /~kyricc/put.html HTTP/1.0 (Thu Aug 29 21:01:05 1996)
+Thu Aug 29 21:01:05 1996: 36.101.0.10: ERROR: Not Found (Thu Aug 29 21:01:05 1996)
+Thu Aug 29 21:01:05 1996: Ip 36.101.0.10 resloved to pochacco.Stanford.EDU after connection closed.
+Thu Aug 29 21:01:07 1996: 36.101.0.10: CONNECTED (Thu Aug 29 21:01:07 1996)
+Thu Aug 29 21:01:07 1996: 36.101.0.10: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Thu Aug 29 21:01:07 1996)
+Thu Aug 29 21:01:07 1996: Ip 36.101.0.10 resloved to pochacco.Stanford.EDU after connection closed.
+Thu Aug 29 21:01:09 1996: 36.101.0.10: CONNECTED (Thu Aug 29 21:01:09 1996)
+Thu Aug 29 21:01:09 1996: 36.101.0.10: GET /~kyricc/shop.html HTTP/1.0 (Thu Aug 29 21:01:09 1996)
+Thu Aug 29 21:01:09 1996: 36.101.0.10: ERROR: Not Found (Thu Aug 29 21:01:09 1996)
+Thu Aug 29 21:01:09 1996: Ip 36.101.0.10 resloved to pochacco.Stanford.EDU after connection closed.
+Thu Aug 29 21:01:09 1996: 36.101.0.10: CONNECTED (Thu Aug 29 21:01:09 1996)
+Thu Aug 29 21:01:09 1996: 36.101.0.10: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Thu Aug 29 21:01:09 1996)
+Thu Aug 29 21:01:09 1996: Ip 36.101.0.10 resloved to pochacco.Stanford.EDU after connection closed.
+Thu Aug 29 21:01:11 1996: 36.101.0.10: CONNECTED (Thu Aug 29 21:01:11 1996)
+Thu Aug 29 21:01:11 1996: 36.101.0.10: GET /~kyricc/races.html HTTP/1.0 (Thu Aug 29 21:01:11 1996)
+Thu Aug 29 21:01:11 1996: 36.101.0.10: ERROR: Not Found (Thu Aug 29 21:01:11 1996)
+Thu Aug 29 21:01:11 1996: Ip 36.101.0.10 resloved to pochacco.Stanford.EDU after connection closed.
+Thu Aug 29 21:01:13 1996: 36.101.0.10: CONNECTED (Thu Aug 29 21:01:13 1996)
+Thu Aug 29 21:01:13 1996: 36.101.0.10: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Thu Aug 29 21:01:13 1996)
+Thu Aug 29 21:01:13 1996: Ip 36.101.0.10 resloved to pochacco.Stanford.EDU after connection closed.
+Thu Aug 29 21:01:13 1996: 36.101.0.10: CONNECTED (Thu Aug 29 21:01:13 1996)
+Thu Aug 29 21:01:13 1996: 36.101.0.10: GET /~kyricc/crys.html HTTP/1.0 (Thu Aug 29 21:01:13 1996)
+Thu Aug 29 21:01:13 1996: 36.101.0.10: ERROR: Not Found (Thu Aug 29 21:01:13 1996)
+Thu Aug 29 21:01:13 1996: Ip 36.101.0.10 resloved to pochacco.Stanford.EDU after connection closed.
+Thu Aug 29 21:01:15 1996: 36.101.0.10: CONNECTED (Thu Aug 29 21:01:15 1996)
+Thu Aug 29 21:01:15 1996: 36.101.0.10: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Thu Aug 29 21:01:15 1996)
+Thu Aug 29 21:01:15 1996: Ip 36.101.0.10 resloved to pochacco.Stanford.EDU after connection closed.
+Thu Aug 29 21:01:19 1996: 36.101.0.10: CONNECTED (Thu Aug 29 21:01:19 1996)
+Thu Aug 29 21:01:19 1996: 36.101.0.10: GET /~kyricc/porno.html HTTP/1.0 (Thu Aug 29 21:01:19 1996)
+Thu Aug 29 21:01:19 1996: 36.101.0.10: ERROR: Not Found (Thu Aug 29 21:01:19 1996)
+Thu Aug 29 21:01:19 1996: Ip 36.101.0.10 resloved to pochacco.Stanford.EDU after connection closed.
+Thu Aug 29 21:01:21 1996: 36.101.0.10: CONNECTED (Thu Aug 29 21:01:21 1996)
+Thu Aug 29 21:01:21 1996: 36.101.0.10: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Thu Aug 29 21:01:21 1996)
+Thu Aug 29 21:01:21 1996: Ip 36.101.0.10 resloved to pochacco.Stanford.EDU after connection closed.
+Thu Aug 29 21:02:16 1996: 36.101.0.10: CONNECTED (Thu Aug 29 21:02:16 1996)
+Thu Aug 29 21:02:16 1996: 36.101.0.10: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Thu Aug 29 21:02:16 1996)
+Thu Aug 29 21:02:16 1996: Ip 36.101.0.10 resloved to pochacco.Stanford.EDU after connection closed.
+Thu Aug 29 21:02:20 1996: 36.101.0.10: CONNECTED (Thu Aug 29 21:02:20 1996)
+Thu Aug 29 21:02:20 1996: 36.101.0.10: GET /~quint/ HTTP/1.0 (Thu Aug 29 21:02:20 1996)
+Thu Aug 29 21:02:20 1996: 36.101.0.10: ERROR: Not Found (Thu Aug 29 21:02:20 1996)
+Thu Aug 29 21:02:20 1996: Ip 36.101.0.10 resloved to pochacco.Stanford.EDU after connection closed.
+Thu Aug 29 21:02:22 1996: 36.101.0.10: CONNECTED (Thu Aug 29 21:02:22 1996)
+Thu Aug 29 21:02:22 1996: 36.101.0.10: GET /~satch/ HTTP/1.0 (Thu Aug 29 21:02:22 1996)
+Thu Aug 29 21:02:22 1996: 36.101.0.10: ERROR: Not Found (Thu Aug 29 21:02:22 1996)
+Thu Aug 29 21:02:22 1996: Ip 36.101.0.10 resloved to pochacco.Stanford.EDU after connection closed.
+Thu Aug 29 21:02:24 1996: 36.101.0.10: CONNECTED (Thu Aug 29 21:02:24 1996)
+Thu Aug 29 21:02:24 1996: 36.101.0.10: GET /~talen/ HTTP/1.0 (Thu Aug 29 21:02:24 1996)
+Thu Aug 29 21:02:24 1996: 36.101.0.10: ERROR: Not Found (Thu Aug 29 21:02:24 1996)
+Thu Aug 29 21:02:24 1996: Ip 36.101.0.10 resloved to pochacco.Stanford.EDU after connection closed.
+Thu Aug 29 21:02:28 1996: 36.101.0.10: CONNECTED (Thu Aug 29 21:02:28 1996)
+Thu Aug 29 21:02:28 1996: 36.101.0.10: GET /~tim/ HTTP/1.0 (Thu Aug 29 21:02:28 1996)
+Thu Aug 29 21:02:28 1996: Ip 36.101.0.10 resloved to pochacco.Stanford.EDU after connection closed.
+Thu Aug 29 21:04:02 1996: 129.186.85.38: CONNECTED (Thu Aug 29 21:04:02 1996)
+Thu Aug 29 21:04:02 1996: 129.186.85.38: GET /gateways/finger HTTP/1.0 (Thu Aug 29 21:04:02 1996)
+Thu Aug 29 21:04:02 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 21:04:40 1996: 129.186.85.38: CONNECTED (Thu Aug 29 21:04:40 1996)
+Thu Aug 29 21:04:40 1996: 129.186.85.38: GET /finger.html HTTP/1.0 (Thu Aug 29 21:04:40 1996)
+Thu Aug 29 21:04:40 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 21:04:42 1996: 129.186.85.38: CONNECTED (Thu Aug 29 21:04:42 1996)
+Thu Aug 29 21:04:42 1996: 129.186.85.38: GET /finger.html HTTP/1.0 (Thu Aug 29 21:04:42 1996)
+Thu Aug 29 21:04:42 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 21:05:04 1996: 129.186.85.38: CONNECTED (Thu Aug 29 21:05:04 1996)
+Thu Aug 29 21:05:04 1996: 129.186.85.38: GET /gateways/finger?username=Kyricc HTTP/1.0 (Thu Aug 29 21:05:04 1996)
+Thu Aug 29 21:05:04 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 21:05:04 1996: 129.186.85.38: CONNECTED (Thu Aug 29 21:05:04 1996)
+Thu Aug 29 21:05:04 1996: 129.186.85.38: GET /gateways/finger?username=Kyricc HTTP/1.0 (Thu Aug 29 21:05:04 1996)
+Thu Aug 29 21:05:04 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 21:05:39 1996: 129.186.85.38: CONNECTED (Thu Aug 29 21:05:39 1996)
+Thu Aug 29 21:05:39 1996: 129.186.85.38: GET /~tim/ HTTP/1.0 (Thu Aug 29 21:05:39 1996)
+Thu Aug 29 21:05:39 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 21:05:41 1996: 129.186.85.38: CONNECTED (Thu Aug 29 21:05:41 1996)
+Thu Aug 29 21:05:41 1996: 129.186.85.38: GET /~tim/ HTTP/1.0 (Thu Aug 29 21:05:41 1996)
+Thu Aug 29 21:05:41 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 21:05:55 1996: 129.186.85.38: CONNECTED (Thu Aug 29 21:05:55 1996)
+Thu Aug 29 21:05:55 1996: 129.186.85.38: GET /gateways/finger?tim HTTP/1.0 (Thu Aug 29 21:05:55 1996)
+Thu Aug 29 21:05:55 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 21:05:55 1996: 129.186.85.38: CONNECTED (Thu Aug 29 21:05:55 1996)
+Thu Aug 29 21:05:55 1996: 129.186.85.38: GET /gateways/finger?tim HTTP/1.0 (Thu Aug 29 21:05:55 1996)
+Thu Aug 29 21:05:55 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 21:07:43 1996: 129.186.85.38: CONNECTED (Thu Aug 29 21:07:43 1996)
+Thu Aug 29 21:07:43 1996: 129.186.85.38: GET /~tim/ HTTP/1.0 (Thu Aug 29 21:07:43 1996)
+Thu Aug 29 21:07:43 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 21:17:22 1996: 129.186.85.38: CONNECTED (Thu Aug 29 21:17:22 1996)
+Thu Aug 29 21:17:22 1996: 129.186.85.38: GET /~tim/ HTTP/1.0 (Thu Aug 29 21:17:22 1996)
+Thu Aug 29 21:17:22 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 21:22:48 1996: knapp38.res.iastate.edu: CONNECTED (Thu Aug 29 21:22:48 1996)
+Thu Aug 29 21:22:48 1996: knapp38.res.iastate.edu: GET /gateways/mudlist HTTP/1.0 (Thu Aug 29 21:22:48 1996)
+Thu Aug 29 21:29:42 1996: 129.186.85.38: CONNECTED (Thu Aug 29 21:29:42 1996)
+Thu Aug 29 21:29:42 1996: 129.186.85.38: GET / HTTP/1.0 (Thu Aug 29 21:29:42 1996)
+Thu Aug 29 21:29:42 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 21:29:44 1996: knapp38.res.iastate.edu: CONNECTED (Thu Aug 29 21:29:44 1996)
+Thu Aug 29 21:29:44 1996: knapp38.res.iastate.edu: GET /gateways/mudlist HTTP/1.0 (Thu Aug 29 21:29:44 1996)
+Thu Aug 29 21:35:10 1996: curly.cc.utexas.edu: CONNECTED (Thu Aug 29 21:35:10 1996)
+Thu Aug 29 21:35:10 1996: curly.cc.utexas.edu: GET / HTTP/1.0 (Thu Aug 29 21:35:10 1996)
+Thu Aug 29 21:35:56 1996: 128.83.42.1: CONNECTED (Thu Aug 29 21:35:56 1996)
+Thu Aug 29 21:35:56 1996: 128.83.42.1: GET /~tim/DONE HTTP/1.0 (Thu Aug 29 21:35:56 1996)
+Thu Aug 29 21:35:56 1996: Ip 128.83.42.1 resloved to curly.cc.utexas.edu after connection closed.
+Thu Aug 29 21:36:06 1996: 128.83.42.1: CONNECTED (Thu Aug 29 21:36:06 1996)
+Thu Aug 29 21:36:06 1996: 128.83.42.1: GET / HTTP/1.0 (Thu Aug 29 21:36:06 1996)
+Thu Aug 29 21:36:06 1996: Ip 128.83.42.1 resloved to curly.cc.utexas.edu after connection closed.
+Thu Aug 29 22:05:57 1996: 129.186.85.38: CONNECTED (Thu Aug 29 22:05:57 1996)
+Thu Aug 29 22:05:57 1996: 129.186.85.38: GET / HTTP/1.0 (Thu Aug 29 22:05:57 1996)
+Thu Aug 29 22:05:57 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 22:06:03 1996: 129.186.85.38: CONNECTED (Thu Aug 29 22:06:03 1996)
+Thu Aug 29 22:06:03 1996: 129.186.85.38: GET /~tim/TODO HTTP/1.0 (Thu Aug 29 22:06:03 1996)
+Thu Aug 29 22:06:05 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 22:09:24 1996: 129.186.85.38: CONNECTED (Thu Aug 29 22:09:24 1996)
+Thu Aug 29 22:09:24 1996: 129.186.85.38: GET / HTTP/1.0 (Thu Aug 29 22:09:24 1996)
+Thu Aug 29 22:09:24 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 22:10:06 1996: 129.186.85.38: CONNECTED (Thu Aug 29 22:10:06 1996)
+Thu Aug 29 22:10:06 1996: 129.186.85.38: GET / HTTP/1.0 (Thu Aug 29 22:10:06 1996)
+Thu Aug 29 22:10:06 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 22:13:01 1996: 129.186.85.38: CONNECTED (Thu Aug 29 22:13:01 1996)
+Thu Aug 29 22:13:01 1996: 129.186.85.38: GET / HTTP/1.0 (Thu Aug 29 22:13:01 1996)
+Thu Aug 29 22:13:01 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 22:14:07 1996: 129.186.85.38: CONNECTED (Thu Aug 29 22:14:07 1996)
+Thu Aug 29 22:14:07 1996: 129.186.85.38: GET / HTTP/1.0 (Thu Aug 29 22:14:07 1996)
+Thu Aug 29 22:14:07 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 22:17:04 1996: 129.186.85.38: CONNECTED (Thu Aug 29 22:17:04 1996)
+Thu Aug 29 22:17:04 1996: 129.186.85.38: GET / HTTP/1.0 (Thu Aug 29 22:17:04 1996)
+Thu Aug 29 22:17:04 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 22:20:45 1996: 129.186.85.38: CONNECTED (Thu Aug 29 22:20:45 1996)
+Thu Aug 29 22:20:45 1996: 129.186.85.38: GET / HTTP/1.0 (Thu Aug 29 22:20:45 1996)
+Thu Aug 29 22:20:45 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 22:21:03 1996: 129.186.85.38: CONNECTED (Thu Aug 29 22:21:03 1996)
+Thu Aug 29 22:21:03 1996: 129.186.85.38: GET / HTTP/1.0 (Thu Aug 29 22:21:03 1996)
+Thu Aug 29 22:21:03 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 22:23:46 1996: knapp38.res.iastate.edu: CONNECTED (Thu Aug 29 22:23:46 1996)
+Thu Aug 29 22:23:46 1996: knapp38.res.iastate.edu: GET /gateways/mudlist HTTP/1.0 (Thu Aug 29 22:23:46 1996)
+Thu Aug 29 22:32:59 1996: 129.186.85.38: CONNECTED (Thu Aug 29 22:32:59 1996)
+Thu Aug 29 22:32:59 1996: 129.186.85.38: GET /gateways/finger HTTP/1.0 (Thu Aug 29 22:32:59 1996)
+Thu Aug 29 22:32:59 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 22:34:11 1996: 129.186.85.38: CONNECTED (Thu Aug 29 22:34:11 1996)
+Thu Aug 29 22:34:11 1996: 129.186.85.38: GET /gateways/finger HTTP/1.0 (Thu Aug 29 22:34:11 1996)
+Thu Aug 29 22:34:11 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 22:34:19 1996: 129.186.85.38: CONNECTED (Thu Aug 29 22:34:19 1996)
+Thu Aug 29 22:34:19 1996: 129.186.85.38: GET /gateways/finger?username=tim HTTP/1.0 (Thu Aug 29 22:34:19 1996)
+Thu Aug 29 22:34:19 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 22:34:25 1996: 129.186.85.38: CONNECTED (Thu Aug 29 22:34:25 1996)
+Thu Aug 29 22:34:25 1996: 129.186.85.38: GET /gateways/finger?username=kyricc HTTP/1.0 (Thu Aug 29 22:34:25 1996)
+Thu Aug 29 22:34:25 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 22:35:36 1996: 129.186.85.38: CONNECTED (Thu Aug 29 22:35:36 1996)
+Thu Aug 29 22:35:36 1996: 129.186.85.38: GET /gateways/finger HTTP/1.0 (Thu Aug 29 22:35:36 1996)
+Thu Aug 29 22:35:36 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 22:37:44 1996: 129.186.85.38: CONNECTED (Thu Aug 29 22:37:44 1996)
+Thu Aug 29 22:37:44 1996: 129.186.85.38: GET /gateways/finger HTTP/1.0 (Thu Aug 29 22:37:44 1996)
+Thu Aug 29 22:37:44 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 22:37:50 1996: 129.186.85.38: CONNECTED (Thu Aug 29 22:37:50 1996)
+Thu Aug 29 22:37:50 1996: 129.186.85.38: GET /gateways/finger?username=Tim HTTP/1.0 (Thu Aug 29 22:37:50 1996)
+Thu Aug 29 22:37:50 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 22:39:21 1996: 129.186.85.38: CONNECTED (Thu Aug 29 22:39:21 1996)
+Thu Aug 29 22:39:21 1996: 129.186.85.38: GET / HTTP/1.0 (Thu Aug 29 22:39:21 1996)
+Thu Aug 29 22:39:21 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 22:39:27 1996: 129.186.85.38: CONNECTED (Thu Aug 29 22:39:27 1996)
+Thu Aug 29 22:39:27 1996: 129.186.85.38: GET /gateways/finger HTTP/1.0 (Thu Aug 29 22:39:27 1996)
+Thu Aug 29 22:39:27 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 22:40:31 1996: 129.186.85.38: CONNECTED (Thu Aug 29 22:40:31 1996)
+Thu Aug 29 22:40:31 1996: 129.186.85.38: GET /gateways/edit HTTP/1.0 (Thu Aug 29 22:40:31 1996)
+Thu Aug 29 22:40:31 1996: 129.186.85.38: ERROR: Bad Gateway (Thu Aug 29 22:40:31 1996)
+Thu Aug 29 22:40:31 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 22:41:09 1996: 129.186.85.38: CONNECTED (Thu Aug 29 22:41:09 1996)
+Thu Aug 29 22:41:09 1996: 129.186.85.38: GET /gateways/edit?/README HTTP/1.0 (Thu Aug 29 22:41:09 1996)
+Thu Aug 29 22:41:09 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 22:42:32 1996: 129.186.85.38: CONNECTED (Thu Aug 29 22:42:32 1996)
+Thu Aug 29 22:42:32 1996: 129.186.85.38: GET /gateways/edit HTTP/1.0 (Thu Aug 29 22:42:32 1996)
+Thu Aug 29 22:42:32 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 22:42:54 1996: 129.186.85.38: CONNECTED (Thu Aug 29 22:42:54 1996)
+Thu Aug 29 22:42:54 1996: 129.186.85.38: GET /gateways/edit HTTP/1.0 (Thu Aug 29 22:42:54 1996)
+Thu Aug 29 22:42:54 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 22:43:04 1996: Socket closed.
+Thu Aug 29 22:43:28 1996: knapp38.res.iastate.edu: CONNECTED (Thu Aug 29 22:43:00 1996)
+Thu Aug 29 22:43:28 1996: knapp38.res.iastate.edu: GET /gateways/edit? HTTP/1.0 (Thu Aug 29 22:43:00 1996)
+Thu Aug 29 22:43:40 1996: 129.186.85.38: CONNECTED (Thu Aug 29 22:43:40 1996)
+Thu Aug 29 22:43:40 1996: 129.186.85.38: GET /gateways/edit HTTP/1.0 (Thu Aug 29 22:43:40 1996)
+Thu Aug 29 22:43:40 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 22:44:22 1996: 129.186.85.38: CONNECTED (Thu Aug 29 22:44:22 1996)
+Thu Aug 29 22:44:22 1996: 129.186.85.38: GET /gateways/edit HTTP/1.0 (Thu Aug 29 22:44:22 1996)
+Thu Aug 29 22:44:22 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 22:46:55 1996: 129.186.85.38: CONNECTED (Thu Aug 29 22:46:55 1996)
+Thu Aug 29 22:46:55 1996: 129.186.85.38: GET /gateways/edit?/README HTTP/1.0 (Thu Aug 29 22:46:55 1996)
+Thu Aug 29 22:46:55 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 22:47:15 1996: 129.186.85.38: CONNECTED (Thu Aug 29 22:47:15 1996)
+Thu Aug 29 22:47:15 1996: 129.186.85.38: GET /gateways/edit?/adm/test HTTP/1.0 (Thu Aug 29 22:47:15 1996)
+Thu Aug 29 22:47:15 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 22:47:45 1996: 129.186.85.38: CONNECTED (Thu Aug 29 22:47:45 1996)
+Thu Aug 29 22:47:45 1996: 129.186.85.38: GET /gateways/edit?/README HTTP/1.0 (Thu Aug 29 22:47:45 1996)
+Thu Aug 29 22:47:45 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 22:47:49 1996: 129.186.85.38: CONNECTED (Thu Aug 29 22:47:49 1996)
+Thu Aug 29 22:47:49 1996: 129.186.85.38: GET /gateways/edit?/adm/test HTTP/1.0 (Thu Aug 29 22:47:49 1996)
+Thu Aug 29 22:47:49 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 22:49:12 1996: 129.186.85.38: CONNECTED (Thu Aug 29 22:49:12 1996)
+Thu Aug 29 22:49:12 1996: 129.186.85.38: GET /gateways/edit?/www/index.html HTTP/1.0 (Thu Aug 29 22:49:12 1996)
+Thu Aug 29 22:49:12 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 22:50:00 1996: 129.186.85.38: CONNECTED (Thu Aug 29 22:50:00 1996)
+Thu Aug 29 22:50:00 1996: 129.186.85.38: GET /gateways/edit?/www/gateways/finger.c HTTP/1.0 (Thu Aug 29 22:50:00 1996)
+Thu Aug 29 22:50:00 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 23:28:32 1996: 129.186.85.38: CONNECTED (Thu Aug 29 23:28:32 1996)
+Thu Aug 29 23:28:32 1996: 129.186.85.38: GET / HTTP/1.0 (Thu Aug 29 23:28:32 1996)
+Thu Aug 29 23:28:32 1996: Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Thu Aug 29 23:28:34 1996: knapp38.res.iastate.edu: CONNECTED (Thu Aug 29 23:28:34 1996)
+Thu Aug 29 23:28:34 1996: knapp38.res.iastate.edu: GET /gateways/mudlist HTTP/1.0 (Thu Aug 29 23:28:34 1996)
+Thu Aug 29 23:40:55 1996: 128.83.42.1: CONNECTED (Thu Aug 29 23:40:55 1996)
+Thu Aug 29 23:40:55 1996: 128.83.42.1: GET / HTTP/1.0 (Thu Aug 29 23:40:55 1996)
+Thu Aug 29 23:40:55 1996: Ip 128.83.42.1 resloved to curly.cc.utexas.edu after connection closed.
+Fri Aug 30 00:10:42 1996: curly.cc.utexas.edu: CONNECTED (Fri Aug 30 00:10:42 1996)
+Fri Aug 30 00:10:42 1996: curly.cc.utexas.edu: GET /gateways/mudlist HTTP/1.0 (Fri Aug 30 00:10:42 1996)
+Fri Aug 30 00:17:34 1996: 128.83.42.1: CONNECTED (Fri Aug 30 00:17:34 1996)
+Fri Aug 30 00:17:34 1996: 128.83.42.1: GET / HTTP/1.0 (Fri Aug 30 00:17:34 1996)
+Fri Aug 30 00:17:34 1996: Ip 128.83.42.1 resloved to curly.cc.utexas.edu after connection closed.
+Fri Aug 30 00:20:05 1996: 128.83.134.67: CONNECTED (Fri Aug 30 00:20:05 1996)
+Fri Aug 30 00:20:05 1996: 128.83.134.67: GET / HTTP/1.0 (Fri Aug 30 00:20:05 1996)
+Fri Aug 30 00:20:05 1996: Ip 128.83.134.67 resloved to bozzio.cc.utexas.edu after connection closed.
+Fri Aug 30 00:20:25 1996: 128.83.134.67: CONNECTED (Fri Aug 30 00:20:25 1996)
+Fri Aug 30 00:20:25 1996: 128.83.134.67: GET /~tim/DONE HTTP/1.0 (Fri Aug 30 00:20:25 1996)
+Fri Aug 30 00:20:25 1996: Ip 128.83.134.67 resloved to bozzio.cc.utexas.edu after connection closed.
+Fri Aug 30 00:21:31 1996: 128.83.134.67: CONNECTED (Fri Aug 30 00:21:31 1996)
+Fri Aug 30 00:21:31 1996: 128.83.134.67: GET /~tim/TODO HTTP/1.0 (Fri Aug 30 00:21:31 1996)
+Fri Aug 30 00:21:31 1996: Ip 128.83.134.67 resloved to bozzio.cc.utexas.edu after connection closed.
+Fri Aug 30 00:24:08 1996: 128.83.134.67: CONNECTED (Fri Aug 30 00:24:08 1996)
+Fri Aug 30 00:24:08 1996: 128.83.134.67: GET /~hamnsnock/ HTTP/1.0 (Fri Aug 30 00:24:08 1996)
+Fri Aug 30 00:24:08 1996: Ip 128.83.134.67 resloved to bozzio.cc.utexas.edu after connection closed.

@@ -81,6 +81,7 @@ static void requestRETR(class socket sock, string filename);
 static void requestSTOR(class socket sock, string filename);
 static void requestXCWD(class socket sock, string pathname);
 static void requestLIST(class socket sock, string pathname);
+static void requestNLST(class socket sock, string pathname);
 static void requestXPWD(class socket sock);
 #ifdef ANONYMOUS_FTP
 static string PseudoRootPath(string cur, string rel);

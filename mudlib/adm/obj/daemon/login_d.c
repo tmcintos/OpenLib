@@ -3,6 +3,12 @@
 //
 //  Orig written by Tim the regional LPC guru.
 //
+//  FEATURES:
+//    Checks for the existence of the following files to enable features:
+//      CONFIG_DIR "/adminlock"      Locks out all but admins.
+//      CONFIG_DIR "/wizlock"        Locks out all but wizards.
+//      CONFIG_DIR "/mudlock"        Prevents the autocreation of new users.
+//
 //  CHANGES:
 //    05/05/95  Tim McIntosh:  changed minor details
 //    05/06/95                 split into logon and logon2; put in name support
@@ -13,6 +19,7 @@
 //    01/20/96                 Fixed mud-locking by 'all' group feature
 //    03/01/96                 Cleaned up some more
 //    04/16/96                 Support for setting window size automatically
+//    08/24/96                 Added mudlock feature to prevent new users.
 
 #include <mudlib.h>
 #include <daemons.h>    // for groupd
@@ -147,13 +154,21 @@ logon2(string username)
     return get_uname();
   }
 
-  if( file_exists("/adm/etc/adminlock") && !admin_exists(username) ) {
+  if( file_exists(CONFIG_DIR "/adminlock") && !admin_exists(username) )
+  {
     display("Only administrators may login right now.\n");
     return get_uname();
   }
 
-  if( file_exists("/adm/etc/wizlock") && !wizard_exists(username) ) {
+  if( file_exists(CONFIG_DIR "/wizlock") && !wizard_exists(username) )
+  {
     display("Only wizards may login right now.\n");
+    return get_uname();
+  }
+
+  if( file_exists(CONFIG_DIR "/mudlock") && !user_exists(username) )
+  {
+    display("No new characters may be created right now.\n");
     return get_uname();
   }
 

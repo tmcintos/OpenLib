@@ -6,6 +6,9 @@
 // Originally written by Tim 2/16/96
 //
 // 22 Apr 96  Tim:  added receive_snoop()
+//  7 Jul 96  Tim:  added message blocking and buffering
+// 24 Aug 96  Tim:  changed to use terminal_colour()
+// 25 Aug 96  Tim:  added window_size() apply to dynamically change screen size
 
 #include <mudlib.h>
 #include <dirs.h>
@@ -14,6 +17,7 @@
 #include <daemons.h>
 #include <shells.h>
 
+#define MAX_MSGBUF_SIZE 100
 #define MSG_ED "ed"
 #define MSG_PROMPT "prompt"
 #define MSG_SYS "system"
@@ -36,6 +40,7 @@ private string* channels;           // list of subscribed channels
  */
 void   initialize();
 nomask void remove();
+void   window_size(int width, int height);
 void   write_prompt();
 void   write_ed_prompt(int mode);
 void   receive_message(string msgclass, string msg);
@@ -89,14 +94,20 @@ private int cmd_hook(string args);
  * Required shell functions:
  * shell_id()    // returns the id of the shell
  *
- * Shell (and only shell) calls these local functions:
- * set_env(), set_cwd(), get_aliases()
+ * Optional shell functions:
+ * shell_init()  // called by LOGIN_D to initialize shell; cannot use create()
+ *               // since it is 'nomask' in the user ob.
+ *
+ * Shell calls these local functions (ones that return mappings and arrays
+ * will return the actual handles if the shell is the caller, otherwise a
+ * copy of the array or mapping is returned):
+ * set_env(), set_cwd(), get_aliases(), get_environment()
  *
  * Required environment variables:
  * TITLE, PATH
  *
- * Currently used by shell and other things:
- * TERM, WIDTH, LENGTH
+ * Currently used by user ob, shell and other things:
+ * TERM, WIDTH, LENGTH, MSGBUF_SIZE
  * (predicted: MIN, MOUT, MMIN, MMOUT, MCLONE, MHOME, WKROOM, PATH,
  *             TERM (termtype:LENGTHxWIDTH) )
  */
@@ -133,6 +144,15 @@ remove()
   return ::remove();
 }
 
+// For resizing of user's window
+
+void
+window_size(int w, int h)
+{
+  env_vars["WIDTH"] = w;
+  env_vars["LENGTH"] = h;
+}
+
 void
 write_prompt()
 {
@@ -154,14 +174,16 @@ receive_message(string msgclass, string msg)
   if(!ttype) ttype = "dumb";
 
   if(msgclass != "nofilter")
-    msg = TERMCAP_D->termcap_format_line(msg, ttype);
+    msg = terminal_colour(msg, TERMCAP_D->query_termcap(ttype), width);
 
   if( !blocking )
     receive(msg);
   else
   {
+    int size = (env_vars["MSGBUF_SIZE"] ?
+		env_vars["MSGBUF_SIZE"]: MAX_MSGBUF_SIZE);
     msgbuf += ({ msg });
-    if( sizeof(msgbuf) > 100 )
+    if( sizeof(msgbuf) > size )
       msgbuf = msgbuf[1..];
   }
 }
@@ -270,9 +292,10 @@ set_blocking(int is_blocking)
 
   if( !is_blocking && sizeof(msgbuf) )
   {
-    message("system", "These messages were held for you:\n", this_object());
-    more(explode(implode(msgbuf, ""), "\n"));
+    string* tmp = copy(msgbuf);
     msgbuf = ({ });
+    message("system", "These messages were held for you:\n", this_object());
+    more(explode(implode(tmp, ""), "\n"));
   }
 }
 

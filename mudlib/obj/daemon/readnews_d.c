@@ -163,7 +163,7 @@ max_in_list(string list)
 
 // User cmd
 // Gets the user's newsrc and figures out how to read the specified group
-#if 0
+#if 1
 void
 read_group(string newsgroup, mapping newsrc)
 {

@@ -1,0 +1,1559 @@
+
+[ERROR] *Error in loading object '/obj/inherit/more'
+  time   : Wed Jul 31 23:28:06 1996
+  file   : adm/obj/daemon/login_d.c:332
+  pgm/obj: adm/obj/daemon/login_d.c (adm/obj/daemon/login_d)
+  [TRACE]  size==2
+    file   : adm/obj/daemon/login_d.c:185
+    pgm/obj: adm/obj/daemon/login_d.c (adm/obj/daemon/login_d)
+    func   : get_password (             1603252, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/login_d.c:332
+    pgm/obj: adm/obj/daemon/login_d.c (adm/obj/daemon/login_d)
+    func   : player_enter_world (             0, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Error in loading object '/obj/inherit/more'
+  time   : Wed Jul 31 23:29:12 1996
+  file   : adm/obj/daemon/login_d.c:332
+  pgm/obj: adm/obj/daemon/login_d.c (adm/obj/daemon/login_d)
+  [TRACE]  size==2
+    file   : adm/obj/daemon/login_d.c:185
+    pgm/obj: adm/obj/daemon/login_d.c (adm/obj/daemon/login_d)
+    func   : get_password (             1743668, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/login_d.c:332
+    pgm/obj: adm/obj/daemon/login_d.c (adm/obj/daemon/login_d)
+    func   : player_enter_world (             0, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Error in loading object '/obj/inherit/more'
+  time   : Wed Jul 31 23:30:05 1996
+  file   : adm/obj/daemon/login_d.c:332
+  pgm/obj: adm/obj/daemon/login_d.c (adm/obj/daemon/login_d)
+  [TRACE]  size==2
+    file   : adm/obj/daemon/login_d.c:185
+    pgm/obj: adm/obj/daemon/login_d.c (adm/obj/daemon/login_d)
+    func   : get_password (             1743460, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/login_d.c:332
+    pgm/obj: adm/obj/daemon/login_d.c (adm/obj/daemon/login_d)
+    func   : player_enter_world (             0, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  time   : Sat Aug 24 18:57:29 1996
+  file   : adm/cmd/wiz/eval.c:25
+  pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+  [TRACE]  size==7
+    file   : :0
+    pgm/obj: <function> (obj/clone/user/human#23)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:221
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#23)
+    func   : <function> (             "user_exists(\"satch\", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/protosh.c:521
+    pgm/obj: obj/clone/shells/protosh.c (obj/clone/shells/protosh#24)
+    func   : cmd_hook (             "user_exists("satch", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:462
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#23)
+    func   : cmd_hook (             "user_exists("satch", )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (adm/cmd/wiz/?)
+    func   : _main (             1564356, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/?.c:5
+    pgm/obj: adm/cmd/wiz/?.c (adm/cmd/wiz/?)
+    func   : main (             1564356, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/eval.c:25
+    pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+    func   : main (             1984772, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  time   : Sat Aug 24 19:11:51 1996
+  file   : adm/cmd/wiz/eval.c:25
+  pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+  [TRACE]  size==7
+    file   : :0
+    pgm/obj: <function> (obj/clone/user/human#32)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:221
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#32)
+    func   : <function> (             "cp(\"/u/t/tim/DONE\", \"/u/t/tim/DONE\", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/protosh.c:521
+    pgm/obj: obj/clone/shells/protosh.c (obj/clone/shells/protosh#33)
+    func   : cmd_hook (             "cp("/u/t/tim/DONE", "/u/t/tim/DONE", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:462
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#32)
+    func   : cmd_hook (             "cp("/u/t/tim/DONE", "/u/t/tim/DONE", )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (adm/cmd/wiz/?)
+    func   : _main (             1630596, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/?.c:5
+    pgm/obj: adm/cmd/wiz/?.c (adm/cmd/wiz/?)
+    func   : main (             1630596, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/eval.c:25
+    pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+    func   : main (             1781956, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  time   : Sat Aug 24 19:14:54 1996
+  file   : adm/cmd/wiz/eval.c:25
+  pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+  [TRACE]  size==7
+    file   : :0
+    pgm/obj: <function> (obj/clone/user/human#32)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:221
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#32)
+    func   : <function> (             "write_file(\"/u/t/tim/Test\", \"\", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/protosh.c:521
+    pgm/obj: obj/clone/shells/protosh.c (obj/clone/shells/protosh#33)
+    func   : cmd_hook (             "write_file("/u/t/tim/Test", "", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:462
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#32)
+    func   : cmd_hook (             "write_file("/u/t/tim/Test", "", )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (adm/cmd/wiz/?)
+    func   : _main (             1606148, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/?.c:5
+    pgm/obj: adm/cmd/wiz/?.c (adm/cmd/wiz/?)
+    func   : main (             1606148, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/eval.c:25
+    pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+    func   : main (             1985540, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  time   : Sat Aug 24 19:16:05 1996
+  file   : adm/cmd/wiz/eval.c:25
+  pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+  [TRACE]  size==7
+    file   : :0
+    pgm/obj: <function> (obj/clone/user/human#32)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:221
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#32)
+    func   : <function> (             "mv(\"/u/t/tim/DONE\", \"/u/t/tim/Test\")", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/protosh.c:521
+    pgm/obj: obj/clone/shells/protosh.c (obj/clone/shells/protosh#33)
+    func   : cmd_hook (             "mv("/u/t/tim/DONE", "/u/t/tim/Test")", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:462
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#32)
+    func   : cmd_hook (             "mv("/u/t/tim/DONE", "/u/t/tim/Test")", )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (adm/cmd/wiz/?)
+    func   : _main (             1756548, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/?.c:5
+    pgm/obj: adm/cmd/wiz/?.c (adm/cmd/wiz/?)
+    func   : main (             1756548, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/eval.c:25
+    pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+    func   : main (             1713540, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Value being indexed is zero.
+  time   : Sat Aug 24 20:19:58 1996
+  file   : obj/clone/shells/rsh.c:424
+  pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#52)
+  [TRACE]  size==2
+    file   : obj/clone/shells/rsh.c:328
+    pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#52)
+    func   : process_input (             2385252, )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/rsh.c:424
+    pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#52)
+    func   : do_alias (             "who", )
+    ---------------------------------------------------------------------
+
+[ERROR] *Value being indexed is zero.
+  time   : Sat Aug 24 20:20:14 1996
+  file   : obj/clone/shells/rsh.c:424
+  pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#52)
+  [TRACE]  size==2
+    file   : obj/clone/shells/rsh.c:328
+    pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#52)
+    func   : process_input (             716196, )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/rsh.c:424
+    pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#52)
+    func   : do_alias (             "who", )
+    ---------------------------------------------------------------------
+
+[ERROR] *Value being indexed is zero.
+  time   : Sat Aug 24 20:20:30 1996
+  file   : obj/clone/shells/rsh.c:424
+  pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#52)
+  [TRACE]  size==2
+    file   : obj/clone/shells/rsh.c:328
+    pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#52)
+    func   : process_input (             716132, )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/rsh.c:424
+    pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#52)
+    func   : do_alias (             "alias", )
+    ---------------------------------------------------------------------
+
+[ERROR] *Value being indexed is zero.
+  time   : Sat Aug 24 20:21:05 1996
+  file   : obj/clone/shells/rsh.c:424
+  pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#52)
+  [TRACE]  size==2
+    file   : obj/clone/shells/rsh.c:328
+    pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#52)
+    func   : process_input (             1842612, )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/rsh.c:424
+    pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#52)
+    func   : do_alias (             "quit", )
+    ---------------------------------------------------------------------
+
+[ERROR] *Value being indexed is zero.
+  time   : Sat Aug 24 20:21:29 1996
+  file   : obj/clone/shells/rsh.c:424
+  pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#52)
+  [TRACE]  size==2
+    file   : obj/clone/shells/rsh.c:328
+    pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#52)
+    func   : process_input (             2384260, )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/rsh.c:424
+    pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#52)
+    func   : do_alias (             "?", )
+    ---------------------------------------------------------------------
+
+[ERROR] *Value being indexed is zero.
+  time   : Sat Aug 24 20:21:31 1996
+  file   : obj/clone/shells/rsh.c:424
+  pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#52)
+  [TRACE]  size==2
+    file   : obj/clone/shells/rsh.c:328
+    pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#52)
+    func   : process_input (             2387268, )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/rsh.c:424
+    pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#52)
+    func   : do_alias (             "ls", )
+    ---------------------------------------------------------------------
+
+[ERROR] *Value being indexed is zero.
+  time   : Sat Aug 24 20:21:31 1996
+  file   : obj/clone/shells/rsh.c:424
+  pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#52)
+  [TRACE]  size==2
+    file   : obj/clone/shells/rsh.c:328
+    pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#52)
+    func   : process_input (             714228, )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/rsh.c:424
+    pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#52)
+    func   : do_alias (             "l", )
+    ---------------------------------------------------------------------
+
+[ERROR] *Value being indexed is zero.
+  time   : Sat Aug 24 20:21:33 1996
+  file   : obj/clone/shells/rsh.c:424
+  pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#52)
+  [TRACE]  size==2
+    file   : obj/clone/shells/rsh.c:328
+    pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#52)
+    func   : process_input (             2387284, )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/rsh.c:424
+    pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#52)
+    func   : do_alias (             "fj", )
+    ---------------------------------------------------------------------
+
+[ERROR] *Value being indexed is zero.
+  time   : Sat Aug 24 20:21:35 1996
+  file   : obj/clone/shells/rsh.c:424
+  pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#52)
+  [TRACE]  size==2
+    file   : obj/clone/shells/rsh.c:328
+    pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#52)
+    func   : process_input (             2387076, )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/rsh.c:424
+    pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#52)
+    func   : do_alias (             "help", )
+    ---------------------------------------------------------------------
+
+[ERROR] *Value being indexed is zero.
+  time   : Sat Aug 24 20:21:39 1996
+  file   : obj/clone/shells/rsh.c:424
+  pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#52)
+  [TRACE]  size==2
+    file   : obj/clone/shells/rsh.c:328
+    pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#52)
+    func   : process_input (             715524, )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/rsh.c:424
+    pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#52)
+    func   : do_alias (             "who", )
+    ---------------------------------------------------------------------
+
+[ERROR] *Value being indexed is zero.
+  time   : Sat Aug 24 20:21:43 1996
+  file   : obj/clone/shells/rsh.c:424
+  pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#52)
+  [TRACE]  size==2
+    file   : obj/clone/shells/rsh.c:328
+    pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#52)
+    func   : process_input (             715524, )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/rsh.c:424
+    pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#52)
+    func   : do_alias (             "history", )
+    ---------------------------------------------------------------------
+
+[ERROR] *Value being indexed is zero.
+  time   : Sat Aug 24 20:24:46 1996
+  file   : obj/clone/shells/rsh.c:424
+  pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#52)
+  [TRACE]  size==2
+    file   : obj/clone/shells/rsh.c:328
+    pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#52)
+    func   : process_input (             715620, )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/rsh.c:424
+    pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#52)
+    func   : do_alias (             "quit", )
+    ---------------------------------------------------------------------
+
+[ERROR] *Illegal to shadow 'nomask' function "clean_up".
+  time   : Sat Aug 24 20:25:44 1996
+  file   : obj/clone/shells/ssh.c:56
+  pgm/obj: obj/clone/shells/ssh.c (obj/clone/shells/ssh#63)
+  [TRACE]  size==3
+    file   : adm/obj/daemon/login_d.c:200
+    pgm/obj: adm/obj/daemon/login_d.c (adm/obj/daemon/login_d)
+    func   : get_password (             2490420, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/login_d.c:378
+    pgm/obj: adm/obj/daemon/login_d.c (adm/obj/daemon/login_d)
+    func   : player_enter_world (             0, )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/ssh.c:56
+    pgm/obj: obj/clone/shells/ssh.c (obj/clone/shells/ssh#63)
+    func   : shell_init (             2013696, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Value being indexed is zero.
+  time   : Sat Aug 24 20:28:43 1996
+  file   : obj/clone/shells/rsh.c:424
+  pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#72)
+  [TRACE]  size==2
+    file   : obj/clone/shells/rsh.c:328
+    pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#72)
+    func   : process_input (             2387620, )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/rsh.c:424
+    pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#72)
+    func   : do_alias (             "ls -l", )
+    ---------------------------------------------------------------------
+
+[ERROR] *Value being indexed is zero.
+  time   : Sat Aug 24 20:28:45 1996
+  file   : obj/clone/shells/rsh.c:424
+  pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#72)
+  [TRACE]  size==2
+    file   : obj/clone/shells/rsh.c:328
+    pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#72)
+    func   : process_input (             2387444, )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/rsh.c:424
+    pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#72)
+    func   : do_alias (             "who kf", )
+    ---------------------------------------------------------------------
+
+[ERROR] *Value being indexed is zero.
+  time   : Sat Aug 24 20:28:49 1996
+  file   : obj/clone/shells/rsh.c:424
+  pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#72)
+  [TRACE]  size==2
+    file   : obj/clone/shells/rsh.c:328
+    pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#72)
+    func   : process_input (             1775332, )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/rsh.c:424
+    pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#72)
+    func   : do_alias (             "fj sjd jd", )
+    ---------------------------------------------------------------------
+
+[ERROR] *Value being indexed is zero.
+  time   : Sat Aug 24 20:28:55 1996
+  file   : obj/clone/shells/rsh.c:424
+  pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#72)
+  [TRACE]  size==2
+    file   : obj/clone/shells/rsh.c:328
+    pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#72)
+    func   : process_input (             1613444, )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/rsh.c:424
+    pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#72)
+    func   : do_alias (             "say hey you guys", )
+    ---------------------------------------------------------------------
+
+[ERROR] *Bad argument 1 to keys()
+Expected: mapping Got: 0.
+  time   : Sat Aug 24 20:29:11 1996
+  file   : obj/clone/shells/rsh.c:78
+  pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#72)
+  [TRACE]  size==11
+    file   : :0
+    pgm/obj: <function> (obj/clone/user/human#32)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:221
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#32)
+    func   : <function> (             "satch alias", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/protosh.c:521
+    pgm/obj: obj/clone/shells/protosh.c (obj/clone/shells/protosh#33)
+    func   : cmd_hook (             "satch alias", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:462
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#32)
+    func   : cmd_hook (             "satch alias", )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (cmd/wiz/force)
+    func   : _main (             2465508, )
+    ---------------------------------------------------------------------
+    file   : cmd/wiz/force.c:21
+    pgm/obj: cmd/wiz/force.c (cmd/wiz/force)
+    func   : main (             2465508, )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:294
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#71)
+    func   : force_me (             2387060, )
+    ---------------------------------------------------------------------
+    file   : :0
+    pgm/obj: <function> (obj/clone/user/human#71)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:221
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#71)
+    func   : <function> (             0, )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/rsh.c:537
+    pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#72)
+    func   : cmd_hook (             0, )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/rsh.c:78
+    pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#72)
+    func   : cmd_alias (             0, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Value being indexed is zero.
+  time   : Sat Aug 24 20:29:19 1996
+  file   : obj/clone/shells/rsh.c:424
+  pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#72)
+  [TRACE]  size==2
+    file   : obj/clone/shells/rsh.c:328
+    pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#72)
+    func   : process_input (             2387060, )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/rsh.c:424
+    pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#72)
+    func   : do_alias (             "alias", )
+    ---------------------------------------------------------------------
+
+[ERROR] *Value being indexed is zero.
+  time   : Sat Aug 24 20:34:31 1996
+  file   : obj/clone/shells/rsh.c:424
+  pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#82)
+  [TRACE]  size==2
+    file   : obj/clone/shells/rsh.c:328
+    pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#82)
+    func   : process_input (             715668, )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/rsh.c:424
+    pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#82)
+    func   : do_alias (             "ls", )
+    ---------------------------------------------------------------------
+
+[ERROR] *Value being indexed is zero.
+  time   : Sat Aug 24 20:34:31 1996
+  file   : obj/clone/shells/rsh.c:424
+  pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#82)
+  [TRACE]  size==2
+    file   : obj/clone/shells/rsh.c:328
+    pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#82)
+    func   : process_input (             2387844, )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/rsh.c:424
+    pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#82)
+    func   : do_alias (             "who", )
+    ---------------------------------------------------------------------
+
+[ERROR] *Illegal to shadow 'nomask' function "create".
+  time   : Sat Aug 24 20:35:11 1996
+  file   : obj/clone/shells/rsh.c:48
+  pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#87)
+  [TRACE]  size==3
+    file   : adm/obj/daemon/login_d.c:200
+    pgm/obj: adm/obj/daemon/login_d.c (adm/obj/daemon/login_d)
+    func   : get_password (             715668, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/login_d.c:378
+    pgm/obj: adm/obj/daemon/login_d.c (adm/obj/daemon/login_d)
+    func   : player_enter_world (             0, )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/rsh.c:48
+    pgm/obj: obj/clone/shells/rsh.c (obj/clone/shells/rsh#87)
+    func   : shell_init (             2079744, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Too long evaluation. Execution aborted.
+  time   : Sat Aug 24 22:13:41 1996
+  file   : adm/obj/daemon/security_d.c:851
+  pgm/obj: adm/obj/daemon/security_d.c (adm/obj/daemon/security_d)
+  [TRACE]  size==4
+    file   : adm/obj/daemon/master.c:106
+    pgm/obj: adm/obj/daemon/master.c (adm/obj/daemon/master)
+    func   : preload (             "", )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/simul_efun/x_exists.c:15
+    pgm/obj: adm/obj/daemon/simul_efun.c (adm/obj/daemon/simul_efun)
+    func   : file_exists (             2035908, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/master/valid.c:83
+    pgm/obj: adm/obj/daemon/master.c (adm/obj/daemon/master)
+    func   : valid_read (             ".c", adm/obj/daemon/simul_efun, "file_size", )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/security_d.c:851
+    pgm/obj: adm/obj/daemon/security_d.c (adm/obj/daemon/security_d)
+    func   : get_file_protection (             "", 1, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Too long evaluation. Execution aborted.
+  time   : Sat Aug 24 23:12:57 1996
+  file   : adm/obj/daemon/security_d.c:851
+  pgm/obj: adm/obj/daemon/security_d.c (adm/obj/daemon/security_d)
+  [TRACE]  size==4
+    file   : adm/obj/daemon/master.c:106
+    pgm/obj: adm/obj/daemon/master.c (adm/obj/daemon/master)
+    func   : preload (             "", )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/simul_efun/x_exists.c:15
+    pgm/obj: adm/obj/daemon/simul_efun.c (adm/obj/daemon/simul_efun)
+    func   : file_exists (             2035940, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/master/valid.c:83
+    pgm/obj: adm/obj/daemon/master.c (adm/obj/daemon/master)
+    func   : valid_read (             ".c", adm/obj/daemon/simul_efun, "file_size", )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/security_d.c:851
+    pgm/obj: adm/obj/daemon/security_d.c (adm/obj/daemon/security_d)
+    func   : get_file_protection (             "", 1, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Too long evaluation. Execution aborted.
+  time   : Sat Aug 24 23:14:34 1996
+  file   : adm/obj/daemon/security_d.c:851
+  pgm/obj: adm/obj/daemon/security_d.c (adm/obj/daemon/security_d)
+  [TRACE]  size==4
+    file   : adm/obj/daemon/master.c:106
+    pgm/obj: adm/obj/daemon/master.c (adm/obj/daemon/master)
+    func   : preload (             "", )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/simul_efun/x_exists.c:15
+    pgm/obj: adm/obj/daemon/simul_efun.c (adm/obj/daemon/simul_efun)
+    func   : file_exists (             2035940, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/master/valid.c:83
+    pgm/obj: adm/obj/daemon/master.c (adm/obj/daemon/master)
+    func   : valid_read (             ".c", adm/obj/daemon/simul_efun, "file_size", )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/security_d.c:851
+    pgm/obj: adm/obj/daemon/security_d.c (adm/obj/daemon/security_d)
+    func   : get_file_protection (             "", 1, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Too long evaluation. Execution aborted.
+  time   : Sun Aug 25 13:04:35 1996
+  file   : adm/obj/daemon/security_d.c:850
+  pgm/obj: adm/obj/daemon/security_d.c (adm/obj/daemon/security_d)
+  [TRACE]  size==7
+    file   : adm/obj/daemon/login_d.c:200
+    pgm/obj: adm/obj/daemon/login_d.c (adm/obj/daemon/login_d)
+    func   : get_password (             2515348, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/login_d.c:377
+    pgm/obj: adm/obj/daemon/login_d.c (adm/obj/daemon/login_d)
+    func   : player_enter_world (             0, )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:252
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#67)
+    func   : init_player (             2515476, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/cmd_d.c:133
+    pgm/obj: adm/obj/daemon/cmd_d.c (adm/obj/daemon/cmd_d)
+    func   : hash_path (             "jlf/", )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/simul_efun/x_exists.c:26
+    pgm/obj: adm/obj/daemon/simul_efun.c (adm/obj/daemon/simul_efun)
+    func   : directory_exists (             2037636, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/master/valid.c:83
+    pgm/obj: adm/obj/daemon/master.c (adm/obj/daemon/master)
+    func   : valid_read (             "jlf/", adm/obj/daemon/simul_efun, "file_size",
+)
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/security_d.c:850
+    pgm/obj: adm/obj/daemon/security_d.c (adm/obj/daemon/security_d)
+    func   : get_file_protection (             "", 1, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Bad argument 1 to file_name()
+Expected: object Got: 0.
+  time   : Sun Aug 25 13:04:46 1996
+  file   : cmd/player/look.c:17
+  pgm/obj: cmd/player/look.c (cmd/player/look)
+  [TRACE]  size==5
+    file   : :0
+    pgm/obj: <function> (obj/clone/user/human#67)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:241
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#67)
+    func   : <function> (             0, )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:482
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#67)
+    func   : cmd_hook (             0, )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (cmd/player/look)
+    func   : _main (             0, )
+    ---------------------------------------------------------------------
+    file   : cmd/player/look.c:17
+    pgm/obj: cmd/player/look.c (cmd/player/look)
+    func   : main (             0, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Bad argument 1 to file_name()
+Expected: object Got: 0.
+  time   : Sun Aug 25 13:06:09 1996
+  file   : cmd/player/look.c:17
+  pgm/obj: cmd/player/look.c (cmd/player/look)
+  [TRACE]  size==5
+    file   : :0
+    pgm/obj: <function> (obj/clone/user/human#67)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:241
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#67)
+    func   : <function> (             0, )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:482
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#67)
+    func   : cmd_hook (             0, )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (cmd/player/look)
+    func   : _main (             0, )
+    ---------------------------------------------------------------------
+    file   : cmd/player/look.c:17
+    pgm/obj: cmd/player/look.c (cmd/player/look)
+    func   : main (             0, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Bad argument 1 to file_size()
+Expected: string Got: 0.
+  time   : Sun Aug 25 13:07:29 1996
+  file   : adm/cmd/wiz/ls.c:70
+  pgm/obj: adm/cmd/wiz/ls.c (adm/cmd/wiz/ls)
+  [TRACE]  size==7
+    file   : :0
+    pgm/obj: <function> (obj/clone/user/human#84)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:241
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#84)
+    func   : <function> (             0, )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/nmsh.c:555
+    pgm/obj: obj/clone/shells/nmsh.c (obj/clone/shells/nmsh#85)
+    func   : cmd_hook (             0, )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:482
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#84)
+    func   : cmd_hook (             0, )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/cmdline.c:69
+    pgm/obj: obj/inherit/cmdline.c (adm/cmd/wiz/ls)
+    func   : _main (             0, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/ls.c:46
+    pgm/obj: adm/cmd/wiz/ls.c (adm/cmd/wiz/ls)
+    func   : main (             ({ /* sizeof() == 1 */  "ls"}), ({ }), )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/ls.c:70
+    pgm/obj: adm/cmd/wiz/ls.c (adm/cmd/wiz/ls)
+    func   : do_ls (             0, 0, 0, 0, 0, 0, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Bad argument 1 to file_name()
+Expected: object Got: 0.
+  time   : Sun Aug 25 13:08:21 1996
+  file   : cmd/player/look.c:17
+  pgm/obj: cmd/player/look.c (cmd/player/look)
+  [TRACE]  size==5
+    file   : :0
+    pgm/obj: <function> (obj/clone/user/human#67)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:241
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#67)
+    func   : <function> (             0, )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:482
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#67)
+    func   : cmd_hook (             0, )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (cmd/player/look)
+    func   : _main (             0, )
+    ---------------------------------------------------------------------
+    file   : cmd/player/look.c:17
+    pgm/obj: cmd/player/look.c (cmd/player/look)
+    func   : main (             0, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Too long evaluation. Execution aborted.
+  time   : Sun Aug 25 13:12:22 1996
+  file   : adm/obj/daemon/security_d.c:842
+  pgm/obj: adm/obj/daemon/security_d.c (adm/obj/daemon/security_d)
+  [TRACE]  size==7
+    file   : adm/obj/daemon/login_d.c:200
+    pgm/obj: adm/obj/daemon/login_d.c (adm/obj/daemon/login_d)
+    func   : get_password (             2517492, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/login_d.c:377
+    pgm/obj: adm/obj/daemon/login_d.c (adm/obj/daemon/login_d)
+    func   : player_enter_world (             0, )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:252
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#107)
+    func   : init_player (             2518100, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/cmd_d.c:133
+    pgm/obj: adm/obj/daemon/cmd_d.c (adm/obj/daemon/cmd_d)
+    func   : hash_path (             "jlf/", )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/simul_efun/x_exists.c:26
+    pgm/obj: adm/obj/daemon/simul_efun.c (adm/obj/daemon/simul_efun)
+    func   : directory_exists (             1843060, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/master/valid.c:83
+    pgm/obj: adm/obj/daemon/master.c (adm/obj/daemon/master)
+    func   : valid_read (             "jlf/", adm/obj/daemon/simul_efun, "file_size",
+)
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/security_d.c:842
+    pgm/obj: adm/obj/daemon/security_d.c (adm/obj/daemon/security_d)
+    func   : get_file_protection (             "", 1, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Bad argument 1 to file_name()
+Expected: object Got: 0.
+  time   : Sun Aug 25 13:12:26 1996
+  file   : cmd/player/look.c:17
+  pgm/obj: cmd/player/look.c (cmd/player/look)
+  [TRACE]  size==5
+    file   : :0
+    pgm/obj: <function> (obj/clone/user/human#107)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:241
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#107)
+    func   : <function> (             0, )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:482
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#107)
+    func   : cmd_hook (             0, )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (cmd/player/look)
+    func   : _main (             0, )
+    ---------------------------------------------------------------------
+    file   : cmd/player/look.c:17
+    pgm/obj: cmd/player/look.c (cmd/player/look)
+    func   : main (             0, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Too long evaluation. Execution aborted.
+  time   : Sun Aug 25 13:13:07 1996
+  file   : adm/obj/daemon/security_d.c:842
+  pgm/obj: adm/obj/daemon/security_d.c (adm/obj/daemon/security_d)
+  [TRACE]  size==7
+    file   : adm/obj/daemon/login_d.c:200
+    pgm/obj: adm/obj/daemon/login_d.c (adm/obj/daemon/login_d)
+    func   : get_password (             2515940, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/login_d.c:377
+    pgm/obj: adm/obj/daemon/login_d.c (adm/obj/daemon/login_d)
+    func   : player_enter_world (             0, )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:252
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#114)
+    func   : init_player (             2518964, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/cmd_d.c:133
+    pgm/obj: adm/obj/daemon/cmd_d.c (adm/obj/daemon/cmd_d)
+    func   : hash_path (             "jlf/", )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/simul_efun/x_exists.c:26
+    pgm/obj: adm/obj/daemon/simul_efun.c (adm/obj/daemon/simul_efun)
+    func   : directory_exists (             2518596, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/master/valid.c:83
+    pgm/obj: adm/obj/daemon/master.c (adm/obj/daemon/master)
+    func   : valid_read (             "jlf/", adm/obj/daemon/simul_efun, "file_size",
+)
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/security_d.c:842
+    pgm/obj: adm/obj/daemon/security_d.c (adm/obj/daemon/security_d)
+    func   : get_file_protection (             "", 1, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Too long evaluation. Execution aborted.
+  time   : Sun Aug 25 13:14:31 1996
+  file   : adm/obj/daemon/security_d.c:842
+  pgm/obj: adm/obj/daemon/security_d.c (adm/obj/daemon/security_d)
+  [TRACE]  size==7
+    file   : adm/obj/daemon/login_d.c:200
+    pgm/obj: adm/obj/daemon/login_d.c (adm/obj/daemon/login_d)
+    func   : get_password (             2519012, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/login_d.c:377
+    pgm/obj: adm/obj/daemon/login_d.c (adm/obj/daemon/login_d)
+    func   : player_enter_world (             0, )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:252
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#123)
+    func   : init_player (             2601108, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/cmd_d.c:133
+    pgm/obj: adm/obj/daemon/cmd_d.c (adm/obj/daemon/cmd_d)
+    func   : hash_path (             "jlf/", )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/simul_efun/x_exists.c:26
+    pgm/obj: adm/obj/daemon/simul_efun.c (adm/obj/daemon/simul_efun)
+    func   : directory_exists (             2601348, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/master/valid.c:83
+    pgm/obj: adm/obj/daemon/master.c (adm/obj/daemon/master)
+    func   : valid_read (             "jlf/", adm/obj/daemon/simul_efun, "file_size",
+)
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/security_d.c:842
+    pgm/obj: adm/obj/daemon/security_d.c (adm/obj/daemon/security_d)
+    func   : get_file_protection (             "", 1, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Too long evaluation. Execution aborted.
+  time   : Sun Aug 25 13:16:30 1996
+  file   : adm/obj/daemon/security_d.c:842
+  pgm/obj: adm/obj/daemon/security_d.c (adm/obj/daemon/security_d)
+  [TRACE]  size==7
+    file   : adm/obj/daemon/login_d.c:200
+    pgm/obj: adm/obj/daemon/login_d.c (adm/obj/daemon/login_d)
+    func   : get_password (             2602228, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/login_d.c:377
+    pgm/obj: adm/obj/daemon/login_d.c (adm/obj/daemon/login_d)
+    func   : player_enter_world (             0, )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:252
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#127)
+    func   : init_player (             2602436, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/cmd_d.c:133
+    pgm/obj: adm/obj/daemon/cmd_d.c (adm/obj/daemon/cmd_d)
+    func   : hash_path (             "jlf/", )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/simul_efun/x_exists.c:26
+    pgm/obj: adm/obj/daemon/simul_efun.c (adm/obj/daemon/simul_efun)
+    func   : directory_exists (             2601620, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/master/valid.c:83
+    pgm/obj: adm/obj/daemon/master.c (adm/obj/daemon/master)
+    func   : valid_read (             "jlf/", adm/obj/daemon/simul_efun, "file_size",
+)
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/security_d.c:842
+    pgm/obj: adm/obj/daemon/security_d.c (adm/obj/daemon/security_d)
+    func   : get_file_protection (             "", 1, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Error in loading object '/adm/tmp/tmp_eval_file'
+  time   : Sun Aug 25 13:22:23 1996
+  file   : adm/cmd/wiz/eval.c:36
+  pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+  [TRACE]  size==7
+    file   : :0
+    pgm/obj: <function> (obj/clone/user/human#78)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:241
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#78)
+    func   : <function> (             "max(1,3)", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/protosh.c:521
+    pgm/obj: obj/clone/shells/protosh.c (obj/clone/shells/protosh#79)
+    func   : cmd_hook (             "max(1,3)", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:482
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#78)
+    func   : cmd_hook (             "max(1,3)", )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (adm/cmd/wiz/?)
+    func   : _main (             2527876, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/?.c:5
+    pgm/obj: adm/cmd/wiz/?.c (adm/cmd/wiz/?)
+    func   : main (             2527876, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/eval.c:36
+    pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+    func   : main (             2542276, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Error in loading object '/adm/tmp/tmp_eval_file'
+  time   : Sun Aug 25 14:11:07 1996
+  file   : adm/cmd/wiz/eval.c:36
+  pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+  [TRACE]  size==7
+    file   : :0
+    pgm/obj: <function> (obj/clone/user/human#37)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:243
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#37)
+    func   : <function> (             "dump_variable('({"hey","you","guys"})')", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/nmsh.c:555
+    pgm/obj: obj/clone/shells/nmsh.c (obj/clone/shells/nmsh#38)
+    func   : cmd_hook (             "dump_variable('({"hey","you","guys"})')", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:485
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#37)
+    func   : cmd_hook (             "dump_variable('({"hey","you","guys"})')", )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (adm/cmd/wiz/?)
+    func   : _main (             2392196, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/?.c:5
+    pgm/obj: adm/cmd/wiz/?.c (adm/cmd/wiz/?)
+    func   : main (             2392196, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/eval.c:36
+    pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+    func   : main (             2079748, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Error in loading object '/adm/tmp/tmp_eval_file'
+  time   : Mon Aug 26 21:44:40 1996
+  file   : adm/cmd/wiz/eval.c:36
+  pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+  [TRACE]  size==7
+    file   : :0
+    pgm/obj: <function> (obj/clone/user/human#2)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:243
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#2)
+    func   : <function> (             "({})...", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/protosh.c:521
+    pgm/obj: obj/clone/shells/protosh.c (obj/clone/shells/protosh#3)
+    func   : cmd_hook (             "({})...", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:485
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#2)
+    func   : cmd_hook (             "({})...", )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (adm/cmd/wiz/?)
+    func   : _main (             1967364, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/?.c:5
+    pgm/obj: adm/cmd/wiz/?.c (adm/cmd/wiz/?)
+    func   : main (             1967364, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/eval.c:36
+    pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+    func   : main (             1856260, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Error in loading object '/adm/tmp/tmp_eval_file'
+  time   : Mon Aug 26 21:44:54 1996
+  file   : adm/cmd/wiz/eval.c:36
+  pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+  [TRACE]  size==7
+    file   : :0
+    pgm/obj: <function> (obj/clone/user/human#2)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:243
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#2)
+    func   : <function> (             "...", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/protosh.c:521
+    pgm/obj: obj/clone/shells/protosh.c (obj/clone/shells/protosh#3)
+    func   : cmd_hook (             "...", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:485
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#2)
+    func   : cmd_hook (             "...", )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (adm/cmd/wiz/?)
+    func   : _main (             1968260, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/?.c:5
+    pgm/obj: adm/cmd/wiz/?.c (adm/cmd/wiz/?)
+    func   : main (             1968260, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/eval.c:36
+    pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+    func   : main (             2005860, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Error in loading object '/adm/tmp/tmp_eval_file'
+  time   : Mon Aug 26 21:47:15 1996
+  file   : adm/cmd/wiz/eval.c:36
+  pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+  [TRACE]  size==7
+    file   : :0
+    pgm/obj: <function> (obj/clone/user/human#2)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:243
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#2)
+    func   : <function> (             "call_other(\"/jsf\", ({})...)", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/protosh.c:521
+    pgm/obj: obj/clone/shells/protosh.c (obj/clone/shells/protosh#3)
+    func   : cmd_hook (             "call_other("/jsf", ({})...)", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:485
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#2)
+    func   : cmd_hook (             "call_other("/jsf", ({})...)", )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (adm/cmd/wiz/?)
+    func   : _main (             1836228, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/?.c:5
+    pgm/obj: adm/cmd/wiz/?.c (adm/cmd/wiz/?)
+    func   : main (             1836228, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/eval.c:36
+    pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+    func   : main (             2030724, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Error in loading object '/adm/tmp/tmp_eval_file'
+  time   : Mon Aug 26 21:47:33 1996
+  file   : adm/cmd/wiz/eval.c:36
+  pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+  [TRACE]  size==7
+    file   : :0
+    pgm/obj: <function> (obj/clone/user/human#2)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:243
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#2)
+    func   : <function> (             "call_other(\"/jsf\", ({})...)", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/protosh.c:521
+    pgm/obj: obj/clone/shells/protosh.c (obj/clone/shells/protosh#3)
+    func   : cmd_hook (             "call_other("/jsf", ({})...)", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:485
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#2)
+    func   : cmd_hook (             "call_other("/jsf", ({})...)", )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (adm/cmd/wiz/?)
+    func   : _main (             2384900, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/?.c:5
+    pgm/obj: adm/cmd/wiz/?.c (adm/cmd/wiz/?)
+    func   : main (             2384900, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/eval.c:36
+    pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+    func   : main (             2330500, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Error in loading object '/adm/tmp/tmp_eval_file'
+  time   : Mon Aug 26 21:48:05 1996
+  file   : adm/cmd/wiz/eval.c:36
+  pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+  [TRACE]  size==7
+    file   : :0
+    pgm/obj: <function> (obj/clone/user/human#2)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:243
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#2)
+    func   : <function> (             "call_other(\"/jsf\", (0 ? 0 : ({})...))", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/protosh.c:521
+    pgm/obj: obj/clone/shells/protosh.c (obj/clone/shells/protosh#3)
+    func   : cmd_hook (             "call_other("/jsf", (0 /u/t/tim/. 0 :
+             ({})...))", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:485
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#2)
+    func   : cmd_hook (             "call_other("/jsf", (0 /u/t/tim/. 0 :
+             ({})...))", )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (adm/cmd/wiz/?)
+    func   : _main (             1801284, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/?.c:5
+    pgm/obj: adm/cmd/wiz/?.c (adm/cmd/wiz/?)
+    func   : main (             1801284, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/eval.c:36
+    pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+    func   : main (             2328196, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Error in loading object '/adm/tmp/tmp_eval_file'
+  time   : Mon Aug 26 21:48:37 1996
+  file   : adm/cmd/wiz/eval.c:36
+  pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+  [TRACE]  size==7
+    file   : :0
+    pgm/obj: <function> (obj/clone/user/human#2)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:243
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#2)
+    func   : <function> (             "'call_other("/jsf", (0 ? 0 : ({})...))'", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/protosh.c:521
+    pgm/obj: obj/clone/shells/protosh.c (obj/clone/shells/protosh#3)
+    func   : cmd_hook (             "call_other("/jsf", (0 ? 0 : ({})...))", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:485
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#2)
+    func   : cmd_hook (             "call_other("/jsf", (0 ? 0 : ({})...))", )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (adm/cmd/wiz/?)
+    func   : _main (             2328196, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/?.c:5
+    pgm/obj: adm/cmd/wiz/?.c (adm/cmd/wiz/?)
+    func   : main (             2328196, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/eval.c:36
+    pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+    func   : main (             2329988, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Error in loading object '/adm/tmp/tmp_eval_file'
+  time   : Mon Aug 26 23:57:13 1996
+  file   : adm/cmd/wiz/eval.c:36
+  pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+  [TRACE]  size==7
+    file   : :0
+    pgm/obj: <function> (obj/clone/user/human#2)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:243
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#2)
+    func   : <function> (             "'call_other(DIR_WWW_GATEWAYS+"/"+id,
+             "gateway", args)'", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/protosh.c:521
+    pgm/obj: obj/clone/shells/protosh.c (obj/clone/shells/protosh#3)
+    func   : cmd_hook (             "call_other(DIR_WWW_GATEWAYS+"/"+id, "gateway",
+             args)", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:485
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#2)
+    func   : cmd_hook (             "call_other(DIR_WWW_GATEWAYS+"/"+id, "gateway",
+             args)", )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (adm/cmd/wiz/?)
+    func   : _main (             2418820, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/?.c:5
+    pgm/obj: adm/cmd/wiz/?.c (adm/cmd/wiz/?)
+    func   : main (             2418820, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/eval.c:36
+    pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+    func   : main (             1792132, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  time   : Tue Aug 27 00:00:29 1996
+  file   : adm/obj/daemon/simul_efun/tell_object.c:3
+  pgm/obj: adm/obj/daemon/simul_efun.c (adm/obj/daemon/simul_efun)
+  [TRACE]  size==2
+    file   : adm/obj/daemon/net/http_d.c:81
+    pgm/obj: adm/obj/daemon/net/http_d.c (adm/obj/daemon/net/http_d)
+    func   : read_callback (             5, "GET / HTTP/1.0Accept: */*Accept:
+             application/x-wais-sourceAccept:
+             application/htmlAccept: text/plainAccept:
+             text/htmlAccept: www/mimeAccept-Language: en;
+             q=1Accept-Language: *; q=0.1User-Agent: 
+             Lynx/2-4-2  libwww/2.14", )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/simul_efun/tell_object.c:3
+    pgm/obj: adm/obj/daemon/simul_efun.c (adm/obj/daemon/simul_efun)
+    func   : tell_object (             0, 2037764, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Error in loading object '/adm/tmp/tmp_eval_file'
+  time   : Tue Aug 27 00:11:07 1996
+  file   : adm/cmd/wiz/eval.c:36
+  pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+  [TRACE]  size==7
+    file   : :0
+    pgm/obj: <function> (obj/clone/user/human#16)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:243
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#16)
+    func   : <function> (             "call_other(0)", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/protosh.c:521
+    pgm/obj: obj/clone/shells/protosh.c (obj/clone/shells/protosh#17)
+    func   : cmd_hook (             "call_other(0)", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:485
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#16)
+    func   : cmd_hook (             "call_other(0)", )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (adm/cmd/wiz/?)
+    func   : _main (             1885892, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/?.c:5
+    pgm/obj: adm/cmd/wiz/?.c (adm/cmd/wiz/?)
+    func   : main (             1885892, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/eval.c:36
+    pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+    func   : main (             2024836, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Error in loading object '/adm/tmp/tmp_eval_file'
+  time   : Tue Aug 27 00:11:27 1996
+  file   : adm/cmd/wiz/eval.c:36
+  pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+  [TRACE]  size==7
+    file   : :0
+    pgm/obj: <function> (obj/clone/user/human#16)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:243
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#16)
+    func   : <function> (             "catch(call_other(0, \"hey\", 0)", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/protosh.c:521
+    pgm/obj: obj/clone/shells/protosh.c (obj/clone/shells/protosh#17)
+    func   : cmd_hook (             "catch(call_other(0, "hey", 0)", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:485
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#16)
+    func   : cmd_hook (             "catch(call_other(0, "hey", 0)", )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (adm/cmd/wiz/?)
+    func   : _main (             2063172, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/?.c:5
+    pgm/obj: adm/cmd/wiz/?.c (adm/cmd/wiz/?)
+    func   : main (             2063172, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/eval.c:36
+    pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+    func   : main (             2062852, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  time   : Tue Aug 27 00:15:40 1996
+  file   : obj/daemon/finger_d.c:31
+  pgm/obj: obj/daemon/finger_d.c (obj/daemon/finger_d)
+  [TRACE]  size==4
+    file   : adm/obj/daemon/net/http_d.c:89
+    pgm/obj: adm/obj/daemon/net/http_d.c (adm/obj/daemon/net/http_d)
+    func   : read_callback (             5, 2163012, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/net/http_d.c:202
+    pgm/obj: adm/obj/daemon/net/http_d.c (adm/obj/daemon/net/http_d)
+    func   : get_file (             5, "/www/gateways/finger?tim", )
+    ---------------------------------------------------------------------
+    file   : www/gateways/finger.c:60
+    pgm/obj: www/gateways/finger.c (www/gateways/finger)
+    func   : gateway (             "tim", )
+    ---------------------------------------------------------------------
+    file   : obj/daemon/finger_d.c:31
+    pgm/obj: obj/daemon/finger_d.c (obj/daemon/finger_d)
+    func   : GetFinger (             "tim", )
+    ---------------------------------------------------------------------
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  time   : Tue Aug 27 00:15:52 1996
+  file   : obj/daemon/finger_d.c:31
+  pgm/obj: obj/daemon/finger_d.c (obj/daemon/finger_d)
+  [TRACE]  size==4
+    file   : adm/obj/daemon/net/http_d.c:89
+    pgm/obj: adm/obj/daemon/net/http_d.c (adm/obj/daemon/net/http_d)
+    func   : read_callback (             5, 2164868, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/net/http_d.c:202
+    pgm/obj: adm/obj/daemon/net/http_d.c (adm/obj/daemon/net/http_d)
+    func   : get_file (             5, "/www/gateways/finger?tim", )
+    ---------------------------------------------------------------------
+    file   : www/gateways/finger.c:60
+    pgm/obj: www/gateways/finger.c (www/gateways/finger)
+    func   : gateway (             "tim", )
+    ---------------------------------------------------------------------
+    file   : obj/daemon/finger_d.c:31
+    pgm/obj: obj/daemon/finger_d.c (obj/daemon/finger_d)
+    func   : GetFinger (             "tim", )
+    ---------------------------------------------------------------------
+
+[ERROR] *Error in loading object '/adm/tmp/tmp_eval_file'
+  time   : Thu Aug 29 18:51:36 1996
+  file   : adm/cmd/wiz/eval.c:36
+  pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+  [TRACE]  size==7
+    file   : :0
+    pgm/obj: <function> (obj/clone/user/human#16)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:243
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#16)
+    func   : <function> (             "sort()", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/protosh.c:521
+    pgm/obj: obj/clone/shells/protosh.c (obj/clone/shells/protosh#17)
+    func   : cmd_hook (             "sort()", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:485
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#16)
+    func   : cmd_hook (             "sort()", )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (adm/cmd/wiz/?)
+    func   : _main (             1839284, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/?.c:5
+    pgm/obj: adm/cmd/wiz/?.c (adm/cmd/wiz/?)
+    func   : main (             1839284, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/eval.c:36
+    pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+    func   : main (             2424580, )
+    ---------------------------------------------------------------------
+
+[ERROR] *(s)printf(): BUFF_SIZE overflowed... (arg: 0)
+  time   : Thu Aug 29 19:07:17 1996
+  file   : adm/obj/daemon/simul_efun/printf.c:8
+  pgm/obj: adm/obj/daemon/simul_efun.c (adm/obj/daemon/simul_efun)
+  [TRACE]  size==8
+    file   : :0
+    pgm/obj: <function> (obj/clone/user/human#16)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:243
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#16)
+    func   : <function> (             "'"/www/gateways/mudlist"->gateway()'", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/protosh.c:521
+    pgm/obj: obj/clone/shells/protosh.c (obj/clone/shells/protosh#17)
+    func   : cmd_hook (             ""/www/gateways/mudlist"->gateway()", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:485
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#16)
+    func   : cmd_hook (             ""/www/gateways/mudlist"->gateway()", )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (adm/cmd/wiz/?)
+    func   : _main (             2429700, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/?.c:5
+    pgm/obj: adm/cmd/wiz/?.c (adm/cmd/wiz/?)
+    func   : main (             2429700, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/eval.c:36
+    pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+    func   : main (             2429636, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/simul_efun/printf.c:8
+    pgm/obj: adm/obj/daemon/simul_efun.c (adm/obj/daemon/simul_efun)
+    func   : printf (             2062184, 1934528, )
+    ---------------------------------------------------------------------
+
+[ERROR] *(s)printf(): BUFF_SIZE overflowed... (arg: 0)
+  time   : Thu Aug 29 19:14:25 1996
+  file   : adm/obj/daemon/simul_efun/printf.c:8
+  pgm/obj: adm/obj/daemon/simul_efun.c (adm/obj/daemon/simul_efun)
+  [TRACE]  size==8
+    file   : :0
+    pgm/obj: <function> (obj/clone/user/human#16)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:243
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#16)
+    func   : <function> (             "INTERMUD_D->GetMudList()", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/protosh.c:521
+    pgm/obj: obj/clone/shells/protosh.c (obj/clone/shells/protosh#17)
+    func   : cmd_hook (             "INTERMUD_D->GetMudList()", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:485
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#16)
+    func   : cmd_hook (             "INTERMUD_D->GetMudList()", )
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (adm/cmd/wiz/?)
+    func   : _main (             2066884, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/?.c:5
+    pgm/obj: adm/cmd/wiz/?.c (adm/cmd/wiz/?)
+    func   : main (             2066884, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/eval.c:36
+    pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+    func   : main (             2465476, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/simul_efun/printf.c:8
+    pgm/obj: adm/obj/daemon/simul_efun.c (adm/obj/daemon/simul_efun)
+    func   : printf (             2062184, 1937056, )
+    ---------------------------------------------------------------------
+
+[ERROR] *(s)printf(): BUFF_SIZE overflowed... (arg: 0)
+  time   : Thu Aug 29 19:14:45 1996
+  file   : adm/obj/daemon/simul_efun/printf.c:8
+  pgm/obj: adm/obj/daemon/simul_efun.c (adm/obj/daemon/simul_efun)
+  [TRACE]  size==8
+    file   : :0
+    pgm/obj: <function> (obj/clone/user/human#16)
+    func   : <function> (void)
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:243
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#16)
+    func   : <function> (             "'"/adm/obj/daemon/net/intermud"->GetMudList()'
+             ", )
+    ---------------------------------------------------------------------
+    file   : obj/clone/shells/protosh.c:521
+    pgm/obj: obj/clone/shells/protosh.c (obj/clone/shells/protosh#17)
+    func   : cmd_hook (             ""/adm/obj/daemon/net/intermud"->GetMudList()",
+)
+    ---------------------------------------------------------------------
+    file   : obj/clone/user.c:485
+    pgm/obj: obj/clone/user.c (obj/clone/user/human#16)
+    func   : cmd_hook (             ""/adm/obj/daemon/net/intermud"->GetMudList()",
+)
+    ---------------------------------------------------------------------
+    file   : obj/inherit/command.c:20
+    pgm/obj: obj/inherit/command.c (adm/cmd/wiz/?)
+    func   : _main (             2441476, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/?.c:5
+    pgm/obj: adm/cmd/wiz/?.c (adm/cmd/wiz/?)
+    func   : main (             2441476, )
+    ---------------------------------------------------------------------
+    file   : adm/cmd/wiz/eval.c:36
+    pgm/obj: adm/cmd/wiz/eval.c (adm/cmd/wiz/eval)
+    func   : main (             2456580, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/simul_efun/printf.c:8
+    pgm/obj: adm/obj/daemon/simul_efun.c (adm/obj/daemon/simul_efun)
+    func   : printf (             2062184, 1937056, )
+    ---------------------------------------------------------------------
+
+[ERROR] *Can't catch eval cost too big error.
+  time   : Thu Aug 29 22:43:00 1996
+  file   : adm/obj/daemon/net/http_d.c:199
+  pgm/obj: adm/obj/daemon/net/http_d.c (adm/obj/daemon/net/http_d)
+  [TRACE]  size==2
+    file   : adm/obj/daemon/net/http_d.c:89
+    pgm/obj: adm/obj/daemon/net/http_d.c (adm/obj/daemon/net/http_d)
+    func   : read_callback (             5, 1739588, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/net/http_d.c:199
+    pgm/obj: adm/obj/daemon/net/http_d.c (adm/obj/daemon/net/http_d)
+    func   : get_file (             5, "/www/gateways/edit?", )
+    ---------------------------------------------------------------------
+
+[ERROR] *(s)printf(): Incorrect argument to type %s. (arg: 5)
+  time   : Thu Aug 29 23:31:35 1996
+  file   : adm/obj/daemon/mail_d.c:388
+  pgm/obj: adm/obj/daemon/mail_d.c (adm/obj/daemon/mail_d)
+  [TRACE]  size==4
+    file   : adm/obj/inherit/server.c:116
+    pgm/obj: adm/obj/inherit/server.c (adm/obj/daemon/net/oob_d)
+    func   : eventServerReadCallback (             6, ({ /* sizeof() == 9 */  "mail",  15,  "tim",
+             ([ /* sizeof() == 1 */    "Dysfunctional Mud" :
+             ({ /* sizeof() == 1 */        "tim"      }), 
+             ]),  ([ ]),  ({ }),  841378547,  "testing",  ({
+             /* sizeof() == 3 */    "This is a test",   
+             "test, 1, 2, 3",    "later,"  })}), )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/net/oob_d.c:172
+    pgm/obj: adm/obj/daemon/net/oob_d.c (adm/obj/daemon/net/oob_d)
+    func   : eventRead (             6, 2420992, )
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/net/services/mail.c:29
+    pgm/obj: adm/obj/daemon/net/services.c (adm/obj/daemon/net/services)
+    func   : eventReceiveMail (             "Lima Bean", ({ /* sizeof() == 9 */  "mail", 
+             15,  "tim",  ([ /* sizeof() == 1 */   
+             "Dysfunctional Mud" : ({ /* sizeof() == 1 */   
+             "tim"      }),  ]),  ([ ]),  ({ }),  841378547,
+             "testing",  ({ /* sizeof() == 3 */    "This is
+             a test",    "test, 1, 2, 3",    "later,"  })}),
+)
+    ---------------------------------------------------------------------
+    file   : adm/obj/daemon/mail_d.c:388
+    pgm/obj: adm/obj/daemon/mail_d.c (adm/obj/daemon/mail_d)
+    func   : send_mail (             2684928, 2724640, ({ }), "tim", 841378547,
+             "testing", 1912320, )
+    ---------------------------------------------------------------------

@@ -4,6 +4,8 @@
 //   This handles all finger requests; local and remote.
 //
 // 01.21.96  Tim McIntosh  Added support for mail checking
+// 08.24.96  Tim McIntosh  Changed to use repeat_string(); fixed to get
+//                         cap_name on remote finger
 
 #include <mudlib.h>
 #include <daemons.h>
@@ -26,8 +28,10 @@ GetFinger(string username)
 // modifies: nothing
 // post:  returns a string with the finger information requested
 {
-  string line = "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
-                "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n";
+  string line = repeat_string("-=",
+			      (this_interactive() ?
+			       this_interactive()->get_env("WIDTH") / 2 : 40)
+			      - 1) + "\n";
   string ret = "", tmp;
   int idle, num_users, mail_size;
   object user, conn, *list;
@@ -144,7 +148,7 @@ mixed *GetRemoteFinger(string who)
 
   if(conn->restore_connection(who)) {
     RealName = conn->query_real_name();
-    CapName = capitalize(who);
+    CapName = conn->query_cap_name();
     HomeDir = conn->query_home_dir();
     LoginTime = conn->query_login_time();
     Email = conn->query_email_addr();

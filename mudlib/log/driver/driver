@@ -1,0 +1,46 @@
+Driver came up: Wed Jul 31 23:27:14 CDT 1996
+Driver went down (exit code: 137): Wed Jul 31 23:27:55 CDT 1996
+Driver came up: Wed Jul 31 23:27:55 CDT 1996
+Driver went down (exit code: 255): Thu Aug  1 00:25:08 CDT 1996
+Driver exited with -1.  Halting.
+Driver came up: Mon Aug 19 17:27:50 CDT 1996
+Driver came up: Tue Aug 20 17:05:29 CDT 1996
+Driver went down (exit code: 0): Tue Aug 20 17:07:00 CDT 1996
+Driver came up: Tue Aug 20 17:07:00 CDT 1996
+Driver went down (exit code: 255): Tue Aug 20 17:07:21 CDT 1996
+Driver exited with -1.  Halting.
+Driver came up: Sat Aug 24 00:02:07 CDT 1996
+Driver went down (exit code: 255): Sat Aug 24 21:27:00 CDT 1996
+Driver exited with -1.  Halting.
+Driver came up: Sat Aug 24 21:27:15 CDT 1996
+Driver came up: Sat Aug 24 21:38:47 CDT 1996
+Driver came up: Sat Aug 24 21:41:15 CDT 1996
+Driver went down (exit code: 134): Sat Aug 24 21:50:31 CDT 1996
+Driver came up: Sat Aug 24 21:50:31 CDT 1996
+Driver came up: Sat Aug 24 21:50:56 CDT 1996
+Driver went down (exit code: 0): Sat Aug 24 22:13:40 CDT 1996
+Driver came up: Sat Aug 24 22:13:41 CDT 1996
+Driver came up: Sat Aug 24 23:12:56 CDT 1996
+Driver came up: Sat Aug 24 23:14:34 CDT 1996
+Driver came up: Sat Aug 24 23:17:03 CDT 1996
+Driver came up: Sat Aug 24 23:17:42 CDT 1996
+Driver came up: Sat Aug 24 23:20:35 CDT 1996
+Driver came up: Sat Aug 24 23:22:42 CDT 1996
+Driver came up: Sat Aug 24 23:28:14 CDT 1996
+Driver came up: Sat Aug 24 23:29:19 CDT 1996
+Driver went down (exit code: 255): Sat Aug 24 23:30:13 CDT 1996
+Driver exited with -1.  Halting.
+Driver came up: Sat Aug 24 23:34:53 CDT 1996
+Driver came up: Sat Aug 24 23:46:28 CDT 1996
+Driver came up: Sat Aug 24 23:49:06 CDT 1996
+Driver came up: Sun Aug 25 01:35:32 CDT 1996
+Driver went down (exit code: 134): Sun Aug 25 14:05:25 CDT 1996
+Driver came up: Sun Aug 25 14:05:26 CDT 1996
+Driver came up: Mon Aug 26 00:27:44 CDT 1996
+Driver came up: Mon Aug 26 19:16:59 CDT 1996
+Driver came up: Mon Aug 26 21:19:28 CDT 1996
+Driver came up: Mon Aug 26 23:59:53 CDT 1996
+Driver came up: Tue Aug 27 01:30:42 CDT 1996
+Driver came up: Wed Aug 28 00:18:12 CDT 1996
+Driver came up: Thu Aug 29 16:11:08 CDT 1996
+Driver came up: Thu Aug 29 20:24:24 CDT 1996

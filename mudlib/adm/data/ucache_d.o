@@ -1,2 +1,2 @@
-#adm/obj/daemon/net/ucache_d.c
-ucache_info (["Gateway II":(["icewolf":({"Icewolf",0,}),]),])
+#/adm/obj/daemon/net/ucache_d.c
+ucache_info (["Gateway II":(["icewolf":({"Icewolf",0,}),]),"Archon":(["narek":({"Narek",1,}),"pegasus":({"Pegasus",1,}),"tanis":({"Tanis",1,}),]),])

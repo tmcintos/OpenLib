@@ -73,15 +73,12 @@ mapping termcap_entries =
 ([
   "dumb":			/* Dumb terminal */
   ([
-    "CLL":"\n",                      /* Clears Line */
     "CLS":"\n",
     "RESET":""
     ]),
   "vt100":
   ([
     "BELL":"",		/* audible signal (bell) */
-    "CLL":                      /* Clears Line */
-    "[1K",
     "CLS":"[;H[2J",		/* clear screen and home cursor */
     "BOLD":"[1m",		/* turn on bold (extra bright) attribute */
     "INVERSE":"[7m",		/* turn on reverse-video attribute */
@@ -94,8 +91,6 @@ mapping termcap_entries =
   "vt102":  /* Tim--I'm not sure about this but it seems to work */
   ([
     "BELL":"",		/* audible signal (bell) */
-    "CLL":                      /* Clears Line */
-    "[1K",
     "CLS":"[;H[2J",		/* clear screen and home cursor */
     "BOLD":"[1m",		/* turn on bold (extra bright) attribute */
     "INVERSE":"[7m",		/* turn on reverse-video attribute */
@@ -133,8 +128,6 @@ mapping termcap_entries =
     ]),
   "ansi" :
   ([
-    "CLL":                      /* Clears Line */
-    "[1K",
     "CLS":"[;H[2J",		/* clear screen and home cursor */
     "BOLD":"[1m",		/* turn on bold (extra bright) attribute */
     "INVERSE":"[7m",		/* turn on reverse-video attribute */
@@ -209,8 +202,6 @@ mapping termcap_entries =
   "xterm":
   ([
     "BELL":"",		/* audible signal (bell) */
-    "CLL":                      /* Clears Line */
-    "[1K",
     "CLS":"[;H[2J",		/* clear screen and home cursor */
     "HOME":"[H",		/* home cursor */
     "BOLD":"[1m",		/* turn on bold (extra bright) attribute */
@@ -253,8 +244,6 @@ mapping termcap_entries =
   "colxterm":
   ([
     "BELL":"",		/* audible signal (bell) */
-    "CLL":                      /* Clears Line */
-    "[1K",
     "CLS":"[;H[2J",		/* clear screen and home cursor */
     "MOVE":"![%i%d;%dH",	/* screen-relative cursor motion to row m col n */
     "HOME":"[H",		/* home cursor */

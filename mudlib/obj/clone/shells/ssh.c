@@ -7,11 +7,6 @@
 object user;
 
 /*
- * Applies
- */
-int clean_up();
-
-/*
  * Required
  */
 string shell_id();                                 // returns shell id string

@@ -29,9 +29,6 @@ file_owner(string file)
 {
   string name, rest, dir;
 
-  if (file[0] != '/') {
-    file = "/" + file;
-  }
   if (sscanf(file, USER_DIR "/%s/%s/%s", dir, name, rest) == 3) {
     return name;
   }

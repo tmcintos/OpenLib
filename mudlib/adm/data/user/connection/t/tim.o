@@ -1,4 +1,4 @@
-#obj/clone/connection.c
+#/obj/clone/connection.c
 name "tim"
 cap_name 0
 password "TKpXEwZ9LKfG2"
@@ -7,6 +7,6 @@ email_addr "tmcintos@knapp38.res.iastate.edu"
 body "/obj/clone/user/human"
 login_shell "/obj/clone/shells/protosh"
 gender 1
-login_time 838788242
-logout_time 838788490
-login_from "localhost"
+login_time 841368280
+logout_time 841366684
+login_from "loopback"

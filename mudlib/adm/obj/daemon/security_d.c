@@ -306,7 +306,7 @@ check_privilege(mixed priv, int skip)
 //  message("none", dump_variable(stack), find_player("tim"));
 
   for(int i = skip + 1; i < sizeof(stack); i++) {
-    mixed ob_priv = query_privs(stack[i]);
+    mixed ob_priv;
     int stop;
 
     if( !stack[i] )
@@ -314,6 +314,8 @@ check_privilege(mixed priv, int skip)
 
     if( stack[i] == master() || stack[i] == simul_efun() )
       continue;
+
+    ob_priv = query_privs(stack[i]);
 
     if( stack[i] == this_object() ) {
       if( funcs[i] == "eval_unguarded" ) {
@@ -835,9 +837,6 @@ get_file_protection(string fname, int read)
   mapping protections = (read ? read_protections : write_protections);
   string prot;
 
-  if( fname[0] != '/' )
-    fname = "/" + fname;
-
   prot = protections[fname];
 
   while( !prot ) {
@@ -911,10 +910,10 @@ privs_file(string filename)
   mixed priv;
 
   // Security Daemon should always be 1
-  if( file_name(this_object()) == "/"+filename )
+  if( file_name(this_object()) == filename )
     return save_variable(1);
 
-  filename = "/" + explode(filename, "#")[0];
+  filename = explode(filename, "#")[0];
   priv = get_file_protection(filename, 0);
 
   return save_variable(priv);

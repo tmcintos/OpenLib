@@ -13,3 +13,11 @@ Sun Jun 23 23:18:29 1996 (tmcintos@knapp38.res.iastate.edu (Tim))
     banish_d.c:  New file.  Keeps track of banished names.
     login_d.c:  Updated to check for banished names and wizlock or adminlock.
 
+Sat Aug 24 18:58:31 1996 (tmcintos@knapp38.res.iastate.edu (Tim))
+    * login_d.c:  Added check for /adm/etc/mudlock to disallow new players.
+
+Sat Aug 24 22:13:59 1996 (tmcintos@knapp38.res.iastate.edu (Tim))
+    * security_d.c, master.c, simul_efun.c:
+      Took out stuff which compensated for MudOS's previous failure to
+      put leading slashes on filenames sometimes.
+

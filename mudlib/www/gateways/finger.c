@@ -1,64 +1,74 @@
 /*  -*- LPC -*-  */
 // finger.c:  finger gateway for WWW
 //   Hastily coded by Tim on 11/1/95
+//   Rewritten somewhat by Tim 29 Aug 1996
 #include <mudlib.h>
 #include <daemons.h>
 
 inherit DAEMON;
 
+//
 // header for generic finger
-string str1 = @ENDHTML
+//
+private string gen_header = @ENDHTML
 <HTML>
-<HEAD><TITLE> Finger Report </TITLE></HEAD>
+<HEAD><TITLE>Dysfunctional Mud Finger Lookup</TITLE></HEAD>
 <BODY bgcolor=##9370DB link=#00FFFF>
-
-<H1> Users Currently on Dysfunctional Mud: </H1>
-
+<H1>Users Currently on Dysfunctional Mud</H1>
 <HR>
-
 <UL>
 ENDHTML;
-
+//
 // header for specific finger
-string str3 = @ENDHTML
+//
+private string spec_header = @ENDHTML
 <HTML>
-<HEAD><TITLE> Finger Report </TITLE></HEAD>
+<HEAD><TITLE>User Information</TITLE></HEAD>
 <BODY bgcolor=##9370DB link=#00FFFF>
-
-<H1> Finger Report on User: </H1>
-
+<H1>Information for %s</H1>
 <HR>
-
-<PRE>
 ENDHTML;
-
+//
 // footer for all pages
-string str2 = @ENDHTML
+//
+private string footer = @ENDHTML
 <HR>
-
+<H1>Enter a Username Below for Detailed Information</H1>
+<FORM ACTION="/gateways/finger">
+  <P><INPUT TYPE=TEXT NAME=username MAXLENGTH=12>
+  <P><INPUT TYPE=RESET VALUE=Reset> <INPUT TYPE=SUBMIT VALUE=Submit>
+</FORM>
+<HR>
 <A HREF="/index.html">Back to Main Page</A>
- <P>
-<ADDRESS> <I>Dysfunctional Mud</I>
- / <I>mud@knapp38.res.iastate.edu</I> </ADDRESS>
+<ADDRESS>
+<I>Dysfunctional Mud</I> /
+<A HREF="mailto:mud@knapp38.res.iastate.edu">mud@knapp38.res.iastate.edu</A>
+</ADDRESS>
 </BODY>
 </HTML>
 ENDHTML;
-
+//
+// PRE: 'args' can be specified as 0 for a general finger, a username, or
+//      "username=" + a username
 varargs
 string
-gateway(string who)
+gateway(string args)
 {
-  string ret = "";
+  string who, ret = "";
 
-  if(!who) {
+  if( !args )
+  {
     object user;
     foreach(user in users())
-      ret  += sprintf("<LI> %s", user->short());
-    return  sprintf("%s%s</UL>%s", str1, ret, str2);
-  } else {  
-    ret = sprintf("%s\n%s\n</PRE>%s", str3,
-		  FINGER_D->GetFinger(who), str2);
-    return ret;
+      ret  += sprintf("<LI> %s\n", user->short());
+    return gen_header + ret + "</UL>\n" + footer;
   }
-  return "";
+  else
+  {
+    if( sscanf(args, "username=%s", who) != 1 || !strlen(who) )
+      who = args;
+    who = lower_case(who);
+    return sprintf(spec_header + "<PRE>%s</PRE>\n" + footer, capitalize(who),
+		   FINGER_D->GetFinger(who));
+  }
 }

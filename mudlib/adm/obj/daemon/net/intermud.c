@@ -61,7 +61,7 @@ static void Setup() {
     sscanf(Nameservers[0][1], "%s %d", ip, port);
     if( eventCreateSocket(ip, port) < 0 ) return;
     eventWrite( ({ "startup-req-3", 5, mud_name(), 0, Nameservers[0][0], 0,
-		   Password, MudList->ID, ChannelList->ID, 0 /* mud_port() */,
+		   Password, MudList->ID, ChannelList->ID, mud_port(),
 		   PORT_OOB, PORT_UDP, mudlib_name() + " " + mudlib_version(), 
 		   mudlib_name(), driver_version(), "LP", MUD_STATUS,
 		   ADMIN_EMAIL,

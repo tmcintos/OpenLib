@@ -77,7 +77,6 @@ main_loop(string input)
 	  groupinfo[0]++;
 	}
 
-	display("%^CLS%^");
 	if( !post )
 	{
 	  display("No unread messages.\n");
@@ -132,7 +131,6 @@ read_loop(string newsgroup, int* info, int current_post, string input)
   {
     mixed* post;
 
-    display("%^CLS%^");
     while( !post && current_post < info[2] )
     {
       post = NEWSSERVER->get_post(newsgroup, ++current_post);
@@ -154,7 +152,6 @@ read_loop(string newsgroup, int* info, int current_post, string input)
   {
     mixed* post;
 
-    display("%^CLS%^");
     while( !post && current_post > 1 )
     {
       post = NEWSSERVER->get_post(newsgroup, --current_post);

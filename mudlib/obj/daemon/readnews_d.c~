@@ -106,6 +106,24 @@ condense_list(string list)
   return implode(ranges + map(numbers, (: sprintf("%i", $1) :)), ",");
 }
 
+int*
+expand_list(string list)
+{
+  string* items = explode(list, ",");
+  string* ranges = filter(items, (: strsrch($1, '-') != -1 :));
+  int* numbers = map(items - ranges, (: to_int :));
+  
+  foreach(string range in ranges)
+  {
+    int start, end;
+    sscanf(range, "%d-%d", start, end);
+    for(int i = start; i <= end; i++)
+      numbers += ({ i });
+  }
+
+  return sort_array(numbers, 1);
+}
+
 int
 member_list(int number, string list)
 {
@@ -157,9 +175,11 @@ read_group(string newsgroup, mapping newsrc)
     return;
   }
 
+  // Get newsrc entry up-to-date
   if( info[0] != 1 )
-    newsrc[newsgroup] = condense_list(implode(explode(newsrc[newsgroup], ",") +
-				      ({ sprintf("1-%i", info[0]) }), ","));
+    newsrc[newsgroup] = condense_list("1-"+ info[0] +","+ newsrc[newsgroup]);
+
+  
 }
 
 void

@@ -1,11 +1,12 @@
-#obj/clone/connection.c
+#/obj/clone/connection.c
 name "testdude"
 cap_name "TestDude"
 password "XnOk7CZcbvNQ."
 real_name "Agent X"
 email_addr "testdude@NowhereMUD"
 body "/obj/clone/user/human"
-login_shell "/obj/clone/shells/ssh"
-login_time 825755768
-logout_time 825755762
-login_from "knapp38.res.iastate.edu"
+login_shell "/obj/clone/shells/rsh"
+gender 0
+login_time 840996811
+logout_time 840997124
+login_from "axp.calumet.purdue.edu"

@@ -11,6 +11,7 @@
 // 10.23.95  Tim:  - fixed so combat is visible to bystanders (2 lines)
 //                   amounted to putting in some tell_room()'s
 //                 - removed possessive() cause it's an efun now;
+// 08.26.96  Tim:  - changed a '&' that operated on boolean values to a '&&'
  
 #include <mudlib.h>
 #include <object_types.h>
@@ -335,7 +336,7 @@ int kill_ob(object attacker, object victim)
     return 3;
   if (environment(victim) != environment(attacker))
     return 4;
-  if((foo && userp(victim)) & (!interactive(victim)))
+  if((foo && userp(victim)) && (!interactive(victim)))
     return 3;
   init_combat(attacker,victim);
   init_combat(victim,attacker);

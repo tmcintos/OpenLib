@@ -33,6 +33,7 @@ static void create() {
 #include "services/auth.c"
 #include "services/file.c"
 #include "services/ucache.c"
+#include "services/mail.c"
 
 mapping GetServices() {
     return ([
