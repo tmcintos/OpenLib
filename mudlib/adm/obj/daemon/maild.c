@@ -201,15 +201,22 @@ print_help()
 void
 print_headers(object mbox, int count, int curr)
 {
-  printf(" %-3s     %-10s     %7s\n", "Num", "From", "Subject");
+  printf(" %-3s     %-20s     %7s\n", "Num", "From", "Subject");
   printf("%-78'-'s\n", " ");
 
   for(int i = 1; i <= count; i++) {
+    string from = mbox->get_from(i);
+    int idx;
+
+    // Remove @mud name if from this mud
+    idx = strsrch(from, "@"+ mud_name());
+    if( idx != -1 ) from = from[0..idx - 1];
+      
     write((i==curr ? ">" : " "));
-    printf("%-3d    %1.1s%-10.10s     %-55.55s\n",
+    printf("%-3d    %:1.1s%:-20s     %:-45s\n",
 	   i,
 	   (mbox->is_unread(i) ? "*" : " "),
-	   mbox->get_from(i),
+	   from,
 	   mbox->get_subj(i));
   }
 }

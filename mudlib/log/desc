@@ -1407,3 +1407,142 @@ Sat Apr  6 16:43:45 1996:  imud_gossip: Descartes@IdeaExchange:with 200 mails, t
 Sat Apr  6 16:45:00 1996:  imud_gossip: Descartes@IdeaExchange:people spam you a lot leto? :)
 Sat Apr  6 20:33:51 1996:  imud_code: Descartes@IdeaExchange:%^GREEN%^FUCK%^RED%^ YOU :)
 Sat Apr  6 20:35:23 1996:  imud_code: Descartes@IdeaExchange:whatever
+Mon Apr  8 00:11:13 1996:  imud_gossip: Descartes@IdeaExchange:any of you ever been to china?
+Mon Apr  8 00:13:02 1996:  imud_gossip: Descartes@IdeaExchange:I asked if anyone had been there, not who had not been there
+Mon Apr  8 00:13:38 1996:  imud_gossip: Descartes@IdeaExchange:you are singly endowed with the ability to syphon off bandwidth
+Mon Apr  8 00:15:00 1996:  imud_gossip: Descartes@IdeaExchange:why do you guys have to act like 12 year olds?
+Mon Apr  8 00:15:29 1996:  imud_code: Descartes@IdeaExchange:using more than one hand with a weapon
+Mon Apr  8 00:15:53 1996:  imud_gossip: Descartes@IdeaExchange:wkeep it to yourself
+Mon Apr  8 00:16:23 1996:  imud_code: Descartes@IdeaExchange:if it pleases you :)
+Mon Apr  8 00:17:19 1996:  imud_gossip: Descartes@IdeaExchange:this line is not for your hormones
+Mon Apr  8 00:17:43 1996:  imud_gossip: Descartes@IdeaExchange:grow up or take it to IRC, but leave it off here
+Mon Apr  8 00:18:09 1996:  imud_code: Descartes@IdeaExchange:mv
+Mon Apr  8 00:20:22 1996:  imud_gossip: Descartes@IdeaExchange:yeah, how do you shut Unverseman up?
+Mon Apr  8 00:21:10 1996:  imud_gossip: Descartes@IdeaExchange:not a major challenge :)
+Mon Apr  8 00:22:23 1996:  imud_gossip: Descartes@IdeaExchange:security with UID's is impossible :)
+Mon Apr  8 00:22:49 1996:  imud_gossip: Descartes@IdeaExchange:don't bother me son
+Mon Apr  8 00:23:11 1996:  imud_gossip: Descartes@IdeaExchange:I know, I did Rust, but that is a detail we don't need right now
+Mon Apr  8 00:23:33 1996:  imud_gossip: Descartes@IdeaExchange:privs == simplistic uid's
+Mon Apr  8 00:24:05 1996:  imud_gossip: Descartes@IdeaExchange:Universeman, SHUT THE FUCK UP
+Mon Apr  8 00:24:39 1996:  imud_gossip: Descartes@IdeaExchange:I don't give a damn if you are Jessu Christ
+Mon Apr  8 00:25:07 1996:  imud_gossip: Descartes@IdeaExchange:Zac, make Ellery a wiz
+Mon Apr  8 00:27:22 1996:  imud_gossip: Descartes@IdeaExchange:unless it is this_player(1) for logging shit :)
+Mon Apr  8 00:28:14 1996:  imud_gossip: Descartes@IdeaExchange:like, you need to know who your interactive is
+Mon Apr  8 00:28:35 1996:  imud_gossip: Descartes@IdeaExchange:in case you want to print out the error or say 'weird shit in space
+Mon Apr  8 00:28:47 1996:  imud_gossip: Descartes@IdeaExchange:your interactive culd be anywhere on the stack
+Mon Apr  8 00:28:55 1996:  imud_gossip: Descartes@IdeaExchange:and that is *not* a security hole
+Mon Apr  8 00:29:35 1996:  imud_gossip: Descartes@IdeaExchange:then why bother with the extra cpu to guess at who is interactive
+Mon Apr  8 00:29:53 1996:  imud_code: Descartes@IdeaExchange:no, the weapon has to be designed for 2 hands
+Mon Apr  8 00:31:52 1996:  imud_gossip: Descartes@IdeaExchange:simple to tell.. assume this_player() evaluates to an arch and it is not supposed to
+Mon Apr  8 00:31:58 1996:  imud_gossip: Descartes@IdeaExchange:if that is a problem, you have a whole
+Mon Apr  8 00:32:04 1996:  imud_gossip: Descartes@IdeaExchange:because anyone can make it happen
+Mon Apr  8 00:32:46 1996:  imud_gossip: Descartes@IdeaExchange:in other words, if your security relies on this_player() giving you a true value, you have an insecure system
+Mon Apr  8 00:33:50 1996:  imud_gossip: Descartes@IdeaExchange:this_player() can always be faked as an arch
+Mon Apr  8 00:34:12 1996:  imud_gossip: Descartes@IdeaExchange:so, if your implementation uses this_player() hoping it can't be faked, you have a hole
+Mon Apr  8 00:35:17 1996:  imud_gossip: Descartes@IdeaExchange:init() is a perennial favourite
+Mon Apr  8 00:35:49 1996:  imud_gossip: Descartes@IdeaExchange:trans you to my room, put code in init() that does stuff, and viola, you are this_playter()
+Mon Apr  8 00:36:07 1996:  imud_gossip: Descartes@IdeaExchange:how do you fix that?
+Mon Apr  8 00:37:03 1996:  imud_gossip: Descartes@IdeaExchange:well, I have no idea how that thing works
+Mon Apr  8 00:37:15 1996:  imud_gossip: Descartes@IdeaExchange:I don't due LPMud
+Mon Apr  8 00:37:19 1996:  imud_gossip: Descartes@IdeaExchange:err do
+Mon Apr  8 00:37:39 1996:  imud_gossip: Descartes@IdeaExchange:well, you should prevent cres from forcing admins
+Mon Apr  8 00:37:53 1996:  imud_gossip: Descartes@IdeaExchange:admins have no reason for even being forceable
+Mon Apr  8 00:38:13 1996:  imud_gossip: Descartes@IdeaExchange:then you have to make sure to check for that flag for every secure operation
+Mon Apr  8 00:38:23 1996:  imud_gossip: Descartes@IdeaExchange:massive potential for security holes
+Mon Apr  8 00:38:29 1996:  imud_gossip: Descartes@IdeaExchange:I honestly doubt you do
+Mon Apr  8 00:43:29 1996:  imud_gossip: Descartes@IdeaExchange:so I make it so you are previosus object as well
+Mon Apr  8 00:44:03 1996:  imud_gossip: Descartes@IdeaExchange:find a function that is seemingly innocuous in the player object
+Mon Apr  8 00:44:33 1996:  imud_gossip: Descartes@IdeaExchange:again, to protect against this, you have to pay attention to details that are too fine not to miss somewhere
+Mon Apr  8 00:47:38 1996:  imud_gossip: Descartes@IdeaExchange:you think LPMud security is apain, try securing a distributed mud
+Mon Apr  8 00:48:20 1996:  imud_code: Descartes@IdeaExchange:you don't with NM IV
+Mon Apr  8 00:48:49 1996:  imud_code: Descartes@IdeaExchange:NM IV uses verbs, which must be added centrally
+Mon Apr  8 00:48:57 1996:  imud_code: Descartes@IdeaExchange:you simply write objects which process verb events
+Mon Apr  8 00:49:41 1996:  imud_code: Descartes@IdeaExchange:well, NM has a press verb, just inherit LIB_PRESS or something like that
+Mon Apr  8 00:50:17 1996:  imud_code: Descartes@IdeaExchange:there are still legacy pieces using it
+Mon Apr  8 00:50:25 1996:  imud_code: Descartes@IdeaExchange:you should not be writing new pieces that use it
+Mon Apr  8 00:51:09 1996:  imud_code: Descartes@IdeaExchange:Rust would be much better at explaining it than I
+Mon Apr  8 00:51:21 1996:  imud_code: Descartes@IdeaExchange:he is the bsic author of the system I believe
+Mon Apr  8 00:52:02 1996:  imud_code: Descartes@IdeaExchange:allowing random creators to add commands with random syntaxes is utter chaos
+Mon Apr  8 00:52:22 1996:  imud_code: Descartes@IdeaExchange:and the number one thing people who choose against LPMud complain about
+Mon Apr  8 00:52:52 1996:  imud_gossip: Descartes@IdeaExchange:you ain;t lostening to intercre, are you Rust?
+Mon Apr  8 00:53:16 1996:  imud_gossip: Descartes@IdeaExchange:Zac just asked me why i removed add_action() from NM
+Mon Apr  8 00:53:32 1996:  imud_gossip: Descartes@IdeaExchange:I told him you could better explain than I since you are the system's primary architext
+Mon Apr  8 00:56:27 1996:  imud_code: Descartes@IdeaExchange:yes, but they also hate guessing at syntax when they do not know what it is
+Mon Apr  8 00:57:03 1996:  imud_code: Descartes@IdeaExchange:in other words... is it get apple from basker? get apple from old basket? get the apple from the old basket? get the fruit from the basket?
+Mon Apr  8 00:57:43 1996:  imud_code: Descartes@IdeaExchange:I do :)
+Mon Apr  8 00:58:01 1996:  imud_code: Descartes@IdeaExchange:on NM LPMud (not the mudlib) I require all verbs to go through the mudlib dept
+Mon Apr  8 00:58:26 1996:  imud_code: Descartes@IdeaExchange:the parsing system lets any object add a verb
+Mon Apr  8 00:58:46 1996:  imud_code: Descartes@IdeaExchange:I just like to enforce it with a plicy that states all verbs are centrally created
+Mon Apr  8 00:58:56 1996:  imud_code: Descartes@IdeaExchange:since there is no reason for unique creator verbs IMOHO
+Mon Apr  8 01:00:14 1996:  imud_code: Descartes@IdeaExchange:any number of ways
+Mon Apr  8 01:00:30 1996:  imud_code: Descartes@IdeaExchange:eventForce() or use the sentient.c methods
+Mon Apr  8 01:00:46 1996:  imud_code: Descartes@IdeaExchange:assuming I don't quit LPMuds, yes
+Mon Apr  8 01:02:01 1996:  imud_code: Descartes@IdeaExchange:so the answer is yes :)
+Mon Apr  8 01:02:11 1996:  imud_code: Descartes@IdeaExchange:it is due out with NM V
+Mon Apr  8 01:02:25 1996:  imud_code: Descartes@IdeaExchange:I might even do it next weekend
+Mon Apr  8 01:02:41 1996:  imud_code: Descartes@IdeaExchange:whenever MudOS v22 is released
+Mon Apr  8 01:06:20 1996:  imud_gossip: Descartes@IdeaExchange:woo woo, my Java mud is accepting connections
+Mon Apr  8 01:07:04 1996:  imud_gossip: Descartes@IdeaExchange:it would if it knew when you wanted to quit
+Mon Apr  8 01:08:49 1996:  imud_code: Descartes@IdeaExchange:anyone know how to issue SCCS commands from inside emacs?
+Mon Apr  8 01:10:49 1996:  imud_code: Descartes@IdeaExchange:it seems to load something else...
+Mon Apr  8 01:12:30 1996:  imud_code: Descartes@IdeaExchange:I have a bunch of vc- commands, but that is not one of them
+Mon Apr  8 01:12:52 1996:  imud_code: Descartes@IdeaExchange:vc-cancel-version, vc-diff, vc-create-snapshot, vc-directory, etc
+Mon Apr  8 01:13:44 1996:  imud_code: Descartes@IdeaExchange:well, I need to go to bed... I probably should buy the oreilly SCCS book some day and stop playing it by ear
+Mon Apr  8 07:22:46 1996:  imud_code: Descartes@IdeaExchange:that would strike me as a bad idea
+Mon Apr  8 07:23:16 1996:  imud_code: Descartes@IdeaExchange:no such thing
+Mon Apr  8 07:23:58 1996:  imud_code: Descartes@IdeaExchange:no such thing as a highest level
+Mon Apr  8 07:26:39 1996:  imud_code: Descartes@IdeaExchange:alpha versions by definitiona are undocumented
+Mon Apr  8 07:26:57 1996:  imud_code: Descartes@IdeaExchange:what variable?
+Mon Apr  8 07:27:19 1996:  imud_code: Descartes@IdeaExchange:and you set the class, and then set the spells you wish it to use
+Mon Apr  8 07:27:37 1996:  imud_code: Descartes@IdeaExchange:and I am outta here
+Mon Apr  8 07:27:43 1996:  imud_code: Descartes@IdeaExchange:be seeing you :)
+Mon Apr  8 07:28:23 1996:  imud_code: Descartes@IdeaExchange:for your in/out messages? or soul?
+Mon Apr  8 07:28:51 1996:  imud_code: Descartes@IdeaExchange:that makes no sense
+Mon Apr  8 07:29:06 1996:  imud_code: Descartes@IdeaExchange:oh, I see
+Mon Apr  8 07:29:10 1996:  imud_code: Descartes@IdeaExchange:no such thing
+Mon Apr  8 07:30:06 1996:  imud_code: Descartes@IdeaExchange:set the gender for a write command?
+Mon Apr  8 07:30:12 1996:  imud_code: Descartes@IdeaExchange:write is a method, it has no gender
+Mon Apr  8 07:30:56 1996:  imud_code: Descartes@IdeaExchange:there is nothing really to know about domain_stats()
+Mon Apr  8 07:31:14 1996:  imud_code: Descartes@IdeaExchange:and if that is something you are concerned about with a brand new mud, then your priorities are massively skewed
+Mon Apr  8 07:31:44 1996:  imud_code: Descartes@IdeaExchange:the sefun nominative()
+Mon Apr  8 07:32:29 1996:  imud_code: Descartes@IdeaExchange:and dmain_stats() was probably not compiled in with your version of the mudlib cause it won't be supported until IVr2.4
+Mon Apr  8 07:34:45 1996:  imud_code: Descartes@IdeaExchange:if you want FULLL examples write your own damn mudlib
+Mon Apr  8 07:36:24 1996:  imud_code: Descartes@IdeaExchange:gee, Raaza, I have made myself late for work answering your questions
+Mon Apr  8 07:36:28 1996:  imud_code: Descartes@IdeaExchange:so fuck you
+Mon Apr  8 07:40:13 1996:  imud_code: Descartes@IdeaExchange:dest it and clone another copy
+Mon Apr  8 07:41:33 1996:  imud_code: Descartes@IdeaExchange:I am... I just keep getting questions
+Tue Apr  9 07:56:55 1996:  imud_gossip: Descartes@IdeaExchange:sick people
+Tue Apr  9 07:57:03 1996:  imud_gossip: Descartes@IdeaExchange:NIN
+Tue Apr  9 07:57:35 1996:  imud_gossip: Descartes@IdeaExchange:fear
+Tue Apr  9 20:37:26 1996:  imud_gossip: Descartes@IdeaExchange:err, Caiaphus, I am flattered you spent all evening thinking about me
+Tue Apr  9 20:38:26 1996:  imud_gossip: Descartes@IdeaExchange:it is so rare someone just sits on line all night and talks about me
+Tue Apr  9 20:38:34 1996:  imud_gossip: Descartes@IdeaExchange:how could I feel other than flattered?
+Tue Apr  9 20:39:28 1996:  imud_gossip: Descartes@IdeaExchange:then why do you spend all evening talking trash about me?
+Tue Apr  9 20:41:11 1996:  imud_gossip: Descartes@IdeaExchange:whatever, Caiaphus, I have a log of it all :)
+Tue Apr  9 20:42:41 1996:  imud_code: Descartes@IdeaExchange:they are defined by /daemon/soul
+Tue Apr  9 20:44:02 1996:  imud_gossip: Descartes@IdeaExchange:come on Zakk, isn't it obvious???!!!??
+Tue Apr  9 20:44:50 1996:  imud_gossip: Descartes@IdeaExchange:ok, that would be an insult :)
+Tue Apr  9 20:46:38 1996:  imud_gossip: Descartes@IdeaExchange:we have more americans than any other country!
+Tue Apr  9 20:49:31 1996:  imud_gossip: Descartes@IdeaExchange:I would bet the US is technologically the most advanced
+Tue Apr  9 20:49:31 1996:  imud_gossip: Descartes@IdeaExchange:Japan is not known for creatinbg technology, they are known for marketing it
+Tue Apr  9 20:49:59 1996:  imud_gossip: Descartes@IdeaExchange:there is no such thing as 'better'
+Tue Apr  9 20:52:14 1996:  imud_gossip: Descartes@IdeaExchange:nukes? China only has a few of them
+Tue Apr  9 20:52:40 1996:  imud_gossip: Descartes@IdeaExchange:China only has 17 ICBM's
+Tue Apr  9 20:55:35 1996:  imud_gossip: Descartes@IdeaExchange:what a customs nightmare
+Tue Apr  9 21:06:52 1996:  imud_gossip: Descartes@IdeaExchange:to clarify... this line is for general conversation on any topic suitable for a general audience, intercre is for mud and code related questions
+Wed Apr 10 20:48:19 1996:  imud_gossip: Descartes@IdeaExchange:well, actually it will be
+Wed Apr 10 21:19:37 1996:  imud_gossip: Descartes@IdeaExchange:Caiaphus, could you please be civil to people?
+Wed Apr 10 21:22:44 1996:  imud_gossip: Descartes@IdeaExchange:everyone judges everyone
+Wed Apr 10 21:23:42 1996:  imud_gossip: Descartes@IdeaExchange:huh?  my total experience with you comes frm you railing against me after judging me
+Wed Apr 10 21:23:56 1996:  imud_gossip: Descartes@IdeaExchange:fiancee?
+Wed Apr 10 21:24:38 1996:  imud_gossip: Descartes@IdeaExchange:err, why would I have done that for no reaosn Caiaphus?
+Wed Apr 10 21:25:33 1996:  imud_gossip: Descartes@IdeaExchange:err, no
+Wed Apr 10 21:25:57 1996:  imud_gossip: Descartes@IdeaExchange:you tore into me because of a conversation I was having with someone else
+Wed Apr 10 21:26:59 1996:  imud_gossip: Descartes@IdeaExchange:no, that was after that
+Wed Apr 10 21:28:05 1996:  imud_gossip: Descartes@IdeaExchange:Caiaphus, I don't call people fuckheads out of the blue, and I remove the conversation
+Wed Apr 10 21:28:09 1996:  imud_gossip: Descartes@IdeaExchange:err remember
+Wed Apr 10 21:29:12 1996:  imud_gossip: Descartes@IdeaExchange:why bother?  this is a pointless conversation
+Wed Apr 10 23:02:36 1996:  imud_gossip: Descartes@IdeaExchange:no
+Wed Apr 10 23:02:45 1996:  imud_gossip: Descartes@IdeaExchange:IE has been up over a month!
+Wed Apr 10 23:03:21 1996:  imud_gossip: Descartes@IdeaExchange:IdeaExchange has been up for 4w 1d 4h 54m 4s.
+Wed Apr 10 23:03:59 1996:  imud_gossip: Descartes@IdeaExchange:Up since: Tue Mar 12 17:12:35 1996         Next reboot: Thu Aug  9 10:12:35 2007

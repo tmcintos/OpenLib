@@ -705,3 +705,56 @@ Sun Apr  7 22:00:45 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu 
 Sun Apr  7 22:00:52 1996:  129.186.85.38: CONNECTED (Sun Apr  7 22:00:52 1996)
 Sun Apr  7 22:00:52 1996:  129.186.85.38: GET /~evergreen/ HTTP/1.0 (Sun Apr  7 22:00:52 1996)
 Sun Apr  7 22:00:52 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Apr  8 01:30:03 1996:  129.186.85.38: CONNECTED (Mon Apr  8 01:30:01 1996)
+Mon Apr  8 01:30:03 1996:  129.186.85.38: GET / HTTP/1.0 (Mon Apr  8 01:30:03 1996)
+Mon Apr  8 01:30:03 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Mon Apr  8 04:14:39 1996:  206.48.177.2: CONNECTED (Mon Apr  8 04:14:39 1996)
+Mon Apr  8 04:14:39 1996:  206.48.177.2: GET /~kyricc HTTP/1.0 (Mon Apr  8 04:14:39 1996)
+Mon Apr  8 04:14:39 1996:  Ip 206.48.177.2 resloved to tethys.glo.be after connection closed.
+Mon Apr  8 04:14:41 1996:  206.48.177.2: CONNECTED (Mon Apr  8 04:14:41 1996)
+Mon Apr  8 04:14:41 1996:  206.48.177.2: GET /BUNNY-WA.GIF HTTP/1.0 (Mon Apr  8 04:14:41 1996)
+Mon Apr  8 04:14:41 1996:  206.48.177.2: ERROR: Not Found (Mon Apr  8 04:14:41 1996)
+Mon Apr  8 04:14:41 1996:  Ip 206.48.177.2 resloved to tethys.glo.be after connection closed.
+Mon Apr  8 04:14:49 1996:  206.48.177.2: CONNECTED (Mon Apr  8 04:14:49 1996)
+Mon Apr  8 04:14:49 1996:  206.48.177.2: GET /porno.html HTTP/1.0 (Mon Apr  8 04:14:49 1996)
+Mon Apr  8 04:14:49 1996:  206.48.177.2: ERROR: Not Found (Mon Apr  8 04:14:49 1996)
+Mon Apr  8 04:14:49 1996:  Ip 206.48.177.2 resloved to tethys.glo.be after connection closed.
+Tue Apr  9 05:04:45 1996:  160.45.10.80: CONNECTED (Tue Apr  9 05:04:39 1996)
+Tue Apr  9 05:04:45 1996:  160.45.10.80: GET /index.html HTTP/1.0 (Tue Apr  9 05:04:45 1996)
+Tue Apr  9 05:04:49 1996:  Ip 160.45.10.80 resloved to abzux.zedat.fu-berlin.de after connection closed.
+Tue Apr  9 05:06:42 1996:  160.45.10.80: CONNECTED (Tue Apr  9 05:06:42 1996)
+Tue Apr  9 05:06:42 1996:  160.45.10.80: GET /~casper/ HTTP/1.0 (Tue Apr  9 05:06:42 1996)
+Tue Apr  9 05:06:42 1996:  160.45.10.80: ERROR: Not Found (Tue Apr  9 05:06:42 1996)
+Tue Apr  9 05:06:44 1996:  Ip 160.45.10.80 resloved to abzux.zedat.fu-berlin.de after connection closed.
+Tue Apr  9 09:58:15 1996:  135.104.20.122: CONNECTED (Tue Apr  9 09:58:13 1996)
+Tue Apr  9 09:58:15 1996:  135.104.20.122: GET / HTTP/1.0 (Tue Apr  9 09:58:15 1996)
+Tue Apr  9 09:58:15 1996:  Ip 135.104.20.122 resloved to H_135_104_20_122.research.att.com after connection closed.
+Tue Apr  9 16:49:14 1996:  151.99.200.54: CONNECTED (Tue Apr  9 16:49:02 1996)
+Tue Apr  9 16:49:14 1996:  151.99.200.54: GET /index.html HTTP/1.0 (Tue Apr  9 16:49:14 1996)
+Tue Apr  9 16:49:14 1996:  Ip 151.99.200.54 resloved to slip4.sinet.it after connection closed.
+Tue Apr  9 16:49:14 1996:  slip4.sinet.it: CONNECTED (Tue Apr  9 16:49:14 1996)
+Tue Apr  9 16:49:14 1996:  slip4.sinet.it: GET /index.html HTTP/1.0 (Tue Apr  9 16:49:14 1996)
+Tue Apr  9 16:49:58 1996:  slip4.sinet.it: CONNECTED (Tue Apr  9 16:49:58 1996)
+Tue Apr  9 16:49:58 1996:  slip4.sinet.it: GET /~tim/DONE HTTP/1.0 (Tue Apr  9 16:49:58 1996)
+Tue Apr  9 16:50:42 1996:  slip4.sinet.it: CONNECTED (Tue Apr  9 16:50:42 1996)
+Tue Apr  9 16:50:42 1996:  slip4.sinet.it: GET /~tim/TODO HTTP/1.0 (Tue Apr  9 16:50:42 1996)
+Tue Apr  9 16:51:53 1996:  slip4.sinet.it: CONNECTED (Tue Apr  9 16:51:53 1996)
+Tue Apr  9 16:51:53 1996:  slip4.sinet.it: GET /gateways/finger HTTP/1.0 (Tue Apr  9 16:51:53 1996)
+Tue Apr  9 16:52:15 1996:  151.99.200.54: CONNECTED (Tue Apr  9 16:52:15 1996)
+Tue Apr  9 16:52:15 1996:  151.99.200.54: GET /~tim/ HTTP/1.0 (Tue Apr  9 16:52:15 1996)
+Tue Apr  9 16:52:15 1996:  Ip 151.99.200.54 resloved to slip4.sinet.it after connection closed.
+Tue Apr  9 20:11:46 1996:  Socket closed.
+Tue Apr  9 20:12:30 1996:  ts2-16.hfx.iSTAR.ca: CONNECTED (Tue Apr  9 20:11:18 1996)
+Tue Apr  9 20:12:54 1996:  ts2-16.hfx.iSTAR.ca: CONNECTED (Tue Apr  9 20:12:54 1996)
+Tue Apr  9 20:12:54 1996:  ts2-16.hfx.iSTAR.ca: GET /index.html HTTP/1.0 (Tue Apr  9 20:12:54 1996)
+Tue Apr  9 20:13:02 1996:  ts2-16.hfx.iSTAR.ca: CONNECTED (Tue Apr  9 20:13:02 1996)
+Tue Apr  9 20:13:02 1996:  ts2-16.hfx.iSTAR.ca: GET /gateways/finger HTTP/1.0 (Tue Apr  9 20:13:02 1996)
+Tue Apr  9 21:39:54 1996:  Socket closed.
+Tue Apr  9 21:40:02 1996:  ts2-16.hfx.iSTAR.ca: CONNECTED (Tue Apr  9 21:39:34 1996)
+Tue Apr  9 21:49:31 1996:  ts2-16.hfx.iSTAR.ca: CONNECTED (Tue Apr  9 21:49:31 1996)
+Tue Apr  9 21:49:31 1996:  ts2-16.hfx.iSTAR.ca: GET /~tim/TODO HTTP/1.0 (Tue Apr  9 21:49:31 1996)
+Wed Apr 10 16:10:21 1996:  homer-bbn.infoseek.com: CONNECTED (Wed Apr 10 16:10:19 1996)
+Wed Apr 10 16:10:21 1996:  homer-bbn.infoseek.com: GET /robots.txt HTTP/1.0 (Wed Apr 10 16:10:21 1996)
+Wed Apr 10 16:10:21 1996:  homer-bbn.infoseek.com: ERROR: Not Found (Wed Apr 10 16:10:21 1996)
+Wed Apr 10 16:10:23 1996:  homer-bbn.infoseek.com: CONNECTED (Wed Apr 10 16:10:23 1996)
+Wed Apr 10 16:10:23 1996:  homer-bbn.infoseek.com: GET /index.html HTTP/1.0 (Wed Apr 10 16:10:23 1996)

@@ -1297,3 +1297,21 @@ room/post.c line 37: Illegal LHS
 room/post.c line 39: parse error
 room/post.c line 39: Illegal LHS
 obj/inherit/weapon.c line 78: Illegal to redefine 'nomask' function "move"
+adm/cmd/wiz/set.c line 15: Undefined variable 'owner'
+adm/cmd/wiz/set.c line 28: Undefined variable 'CMD_D'
+obj/inherit/weapon.c line 78: Illegal to redefine 'nomask' function "move"
+obj/inherit/weapon.c line 78: Illegal to redefine 'nomask' function "move"
+obj/inherit/armour.c line 87: Illegal to redefine 'nomask' function "move"
+obj/inherit/weapon.c line 78: Illegal to redefine 'nomask' function "move"
+obj/inherit/weapon.c line 78: Illegal to redefine 'nomask' function "move"
+obj/inherit/weapon.c line 78: Illegal to redefine 'nomask' function "move"
+obj/daemon/combatd.c line 329: Undefined variable 'OBJECT_LIVING'
+obj/daemon/combatd.c line 333: Undefined variable 'OBJECT_NO_ATTACK'
+obj/daemon/combatd.c line 338: Undefined variable 'OBJECT_PLAYER'
+obj/daemon/combatd.c line 329: Undefined variable 'OBJECT_LIVING'
+obj/daemon/combatd.c line 333: Undefined variable 'OBJECT_NO_ATTACK'
+obj/daemon/combatd.c line 338: Undefined variable 'OBJECT_PLAYER'
+obj/daemon/combatd.c line 329: Undefined variable 'OBJECT_LIVING'
+obj/daemon/combatd.c line 333: Undefined variable 'OBJECT_NO_ATTACK'
+obj/daemon/combatd.c line 338: Undefined variable 'OBJECT_PLAYER'
+obj/clone/money.c line 74: Undefined variable 'OBJECT_LIVING'

@@ -260,11 +260,7 @@ set_env(string var, mixed val)
   if(query_shadowing(previous_object()) != this_object() &&
      getuid(previous_object()) != ROOT_UID) return 0;
 
-  if( !val )
-    map_delete(env_vars, var);
-  else
-    env_vars[var] = val;
-
+  env_vars[var] = val;
   return 1;
 }
 

@@ -4,6 +4,6 @@ coins ({0,0,})
 hit_points 100
 spell_points 0
 gender 0
-env_vars (["nmsh_nick":([]),"nmsh_alias":(["u":"up","sw":"southwest","nw":"northwest","n":"north","exa":"look at $*","bio":"biography","se":"southeast","e":"east","i":"inventory","w":"west","d":"down","s":"south","ne":"northeast","l":"look $*",]),"nmsh_xverb":(["'":"say $*",":":"emote $*",]),])
+env_vars (["nmsh_nick":([]),"TERM":"vt102","nmsh_alias":(["s":"south","l":"look $*","i":"inventory","u":"up","n":"north","exa":"look at $*","bio":"biography","ne":"northeast","nw":"northwest","sw":"southwest","w":"west","d":"down","se":"southeast","e":"east",]),"nmsh_xverb":([":":"emote $*","'":"say $*",]),])
 aliases ([])
 channels ({})

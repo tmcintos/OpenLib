@@ -1,6 +1,6 @@
 using config file: /home/mud/etc/config.dm
 ----------------------------------------------------------------------------
-Dysfunctional Mud (MudOS v22a25) starting up on FreeBSD - Wed Apr  3 23:28:53 1996
+Dysfunctional Mud (MudOS v22a25) starting up on FreeBSD - Tue Apr  9 00:52:51 1996
 
 
 Connected to address server on localhost port 7374
@@ -15,8 +15,21 @@ include/net/ftpdconf.h line 114: Warning: redefinition of #define FTP_DIR
 Initializations complete.
 
 Accepting connections on port 4444.
+SIGPIPE received.
+System Error: socket_write: send:Broken pipe
+get_user_data: read on fd 11
+System Error: get_user_data: read:Connection reset by peer
+flush_message: invalid target!
+get_user_data: read on fd 11
+System Error: get_user_data: read:Connection reset by peer
+flush_message: invalid target!
+Heart beat in obj/examples/monster turned off.
+get_user_data: read on fd 13
+System Error: get_user_data: read:Connection reset by peer
+flush_message: invalid target!
+get_user_data: read on fd 11
+System Error: get_user_data: read:Connection reset by peer
+flush_message: invalid target!
 ******** FATAL ERROR: Segmentation fault
 MudOS driver attempting to exit gracefully.
-(current object was /obj/daemon/net/intermud)
-'     <function>' in '          <function>' ('obj/clone/user/human#10') 
-Fatal error while shutting down.  Aborting.
+crash() in master called successfully.  Aborting.

@@ -5182,3 +5182,326 @@ Expected: string or array or object Got: 0.
   prgm: obj/daemon/emoted.c
   func: emote_parse
   args: ( 742448, )
+
+[ERROR] *String index out of bounds.
+  obj : (obj/daemon/emoted)
+  file: obj/daemon/emoted.c:44
+  prgm: obj/daemon/emoted.c
+  func: emote_parse
+  args: ( 1514040, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 746864, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 746948, )
+
+[ERROR] *Error in loading object '/adm/cmd/wiz/set'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (adm/obj/daemon/fingerd)
+  file: adm/obj/daemon/fingerd.c:62
+  prgm: adm/obj/daemon/fingerd.c
+  func: GetFinger
+  args: ( 0, )
+
+[ERROR] *Array index out of bounds.
+  obj : (obj/daemon/net/httpd)
+  file: obj/daemon/net/httpd.c:82
+  prgm: obj/daemon/net/httpd.c
+  func: read_callback
+  args: ( 5, 1559200, )
+
+[ERROR] *Error in loading object '/obj/inherit/weapon'
+  obj : (cmd/wiz/clone)
+  file: cmd/wiz/clone.c:23
+  prgm: cmd/wiz/clone.c
+  func: main
+  args: ( ({ /* sizeof() == 2 */
+  "clone",
+  "weapon"
+}), ({ /* sizeof() == 1 */
+  "weapon"
+}), )
+
+[ERROR] *Error in loading object '/obj/inherit/weapon'
+  obj : (cmd/wiz/clone)
+  file: cmd/wiz/clone.c:23
+  prgm: cmd/wiz/clone.c
+  func: main
+  args: ( ({ /* sizeof() == 2 */
+  "clone",
+  "weapon"
+}), ({ /* sizeof() == 1 */
+  "weapon"
+}), )
+
+[ERROR] *Error in loading object '/obj/inherit/armour'
+  obj : (cmd/wiz/clone)
+  file: cmd/wiz/clone.c:23
+  prgm: cmd/wiz/clone.c
+  func: main
+  args: ( ({ /* sizeof() == 2 */
+  "clone",
+  "armour"
+}), ({ /* sizeof() == 1 */
+  "armour"
+}), )
+
+[ERROR] *Error in loading object '/obj/inherit/weapon'
+  obj : (obj/examples/monster)
+  file: obj/examples/monster.c:26
+  prgm: obj/examples/monster.c
+  func: create
+  args: ( )
+
+[ERROR] *Error in loading object '/obj/inherit/weapon'
+  obj : (cmd/wiz/clone)
+  file: cmd/wiz/clone.c:23
+  prgm: cmd/wiz/clone.c
+  func: main
+  args: ( ({ /* sizeof() == 2 */
+  "clone",
+  "dagger"
+}), ({ /* sizeof() == 1 */
+  "dagger"
+}), )
+
+[ERROR] *Error in loading object '/obj/inherit/weapon'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Array index out of bounds.
+  obj : (obj/examples/monster)
+  file: obj/clone/monster.c:55
+  prgm: obj/clone/monster.c
+  func: random_action
+  args: ( )
+
+[ERROR] *Error in loading object '/obj/daemon/combatd'
+  obj : (cmd/player/kill)
+  file: cmd/player/kill.c:15
+  prgm: cmd/player/kill.c
+  func: main
+  args: ( "beavis", )
+
+[ERROR] *Error in loading object '/obj/daemon/combatd'
+  obj : (cmd/player/kill)
+  file: cmd/player/kill.c:15
+  prgm: cmd/player/kill.c
+  func: main
+  args: ( "beavis", )
+
+[ERROR] *Error in loading object '/obj/daemon/combatd'
+  obj : (cmd/player/kill)
+  file: cmd/player/kill.c:15
+  prgm: cmd/player/kill.c
+  func: main
+  args: ( "beavis", )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/wiz_hall)
+  file: room/wiz_hall.c:61
+  prgm: room/wiz_hall.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+  obj : (room/wiz_hall)
+  file: room/wiz_hall.c:61
+  prgm: room/wiz_hall.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 722772, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 722856, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 720788, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 884360, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1597628, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 736504, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 757184, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 757184, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 736504, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 736504, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )
+
+[ERROR] *(s)printf(): Expected presision not found. (arg: 3)
+  obj : (adm/simul_efun)
+  file: adm/efuns/printf.c:8
+  prgm: adm/simul_efun.c
+  func: printf
+  args: ( 861720, 767168, )
+
+[ERROR] *(s)printf(): Expected presision not found. (arg: 3)
+  obj : (adm/simul_efun)
+  file: adm/efuns/printf.c:8
+  prgm: adm/simul_efun.c
+  func: printf
+  args: ( 1613600, 864676, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 690636, )
+
+[ERROR] *Error in loading object '/obj/clone/money'
+  obj : (room/hump)
+  file: room/hump.c:24
+  prgm: room/hump.c
+  func: reset
+  args: ( 0, )

@@ -1,13 +1,13 @@
 /: Root Directory.
 
-/adm		'secure' directory.  Subdirectory structure is similar to /.
-/cmd            command directory.
+/adm            'secure' directory.  Subdirectory structure is similar to /.
+/cmd            'insecure' command directory.
 /d              domain directory.
-/data           data directory, i.e. 'save' directory.
+/data           'insecure' data directory, i.e. 'save' directory.
 /doc            documentation directory.
-/pub            public (ftp) directory.
+/ftp            FTP root directory.
 /include        header file directory.
 /log            log file directory.
 /obj            object directory; all objects are below this.
-/tmp            temporary directory; world writable
-/u              user directory; contains save files and home directories.
+/tmp            temporary directory; world writable.
+/u              contains user home directories.

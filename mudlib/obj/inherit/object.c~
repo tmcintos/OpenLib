@@ -97,7 +97,7 @@ clean_up(int inh)
   }
 }
 
-int
+nomask int
 move(mixed dest)
 {
   object from = environment(this_object());

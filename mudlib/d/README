@@ -1,2 +1,5 @@
-This is supposed to be the future Domain directory.
- --Tim
+/d:  Domain Directory
+     Domain home directories should be below this.  Each domain home directory
+     should contain all files related to that domain.
+
+./base		Base domain. (backbone of mudlib)

@@ -1,0 +1,11 @@
+#obj/clone/connection.c
+name "guest"
+cap_name "Guest"
+password "cuFac/HVtyX6s"
+real_name "Guest Acct"
+email_addr "mud@knapp38.res.iastate.edu"
+body "/obj/clone/user/human"
+login_shell "/obj/clone/shells/rsh"
+login_time 829180200
+logout_time 829195306
+login_from "ts7-08.hfx.iSTAR.ca"

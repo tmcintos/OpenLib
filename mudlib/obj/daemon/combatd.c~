@@ -326,7 +326,7 @@ int kill_ob(object attacker, object victim)
   // 4 for victim not present
   // 0 on success
  
-  if(!(foo && living(victim)))
+  if(!(foo & OBJECT_LIVING))
     return 1;
   if(victim == attacker)
     return 2;
@@ -335,7 +335,7 @@ int kill_ob(object attacker, object victim)
     return 3;
   if (environment(victim) != environment(attacker))
     return 4;
-  if((foo && userp(victim)) & (!interactive(victim)))
+  if((foo & OBJECT_PLAYER) & (!interactive(victim)))
     return 3;
   init_combat(attacker,victim);
   init_combat(victim,attacker);

@@ -1,0 +1,10 @@
+/doc:  Documentation Directory.
+
+./Copying       Copyright information on the mudlib and imported code
+./LPC           LPC manuals written by Descartes@Nightmare
+./driver        MudOS driver documentation
+./help          Help files for use with the 'help' command
+./man           MudOS and mudlib manual pages for use with 'man' command
+./mudlib        Misc. mudlib info; systems, style guide, etc.
+./projects      Development directory.  Serves as a first place to document
+                new project ideas for discussion before coding begins.

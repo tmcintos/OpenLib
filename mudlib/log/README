@@ -1,1 +1,6 @@
-This directory contains logfiles produced by the mudlib and the driver.
+/log:  Log Directory.
+       This directory contains logfiles produced by the mudlib and the driver.
+
+./errors        Compile, Runtime and other errors are below this.
+./driver        Driver logfiles are below this.
+./net           Network related logfiles are here.

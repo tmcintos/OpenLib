@@ -1,5 +1,6 @@
-This directory contains files that are included via the #include <file.h>
-preprocessor directive.
+/include:  Header file directory.
+           This directory contains files that are included via the
+           #include <file.h> preprocessor directive.
 
-net/		network related include files
-lib/		directory for .c files, so code can be kept out of .h files
+./net           network related include files
+./races         race-related include files

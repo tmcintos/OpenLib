@@ -2,10 +2,10 @@
 name "dryghar"
 cap_name "DrYgHaR"
 password "FjhtllD4hcC0I"
-real_name "Nicvk Young"
-email_addr "ae87@ccn.cs.dal.cq"
+real_name "Nick Young"
+email_addr "ae187@ccn.cs.dal.ca"
 body "/obj/clone/user/human"
-login_shell "/obj/clone/shells/rsh"
-login_time 828827586
-logout_time 828827594
-login_from "ts3-14.hfx.iSTAR.ca"
+login_shell "/obj/clone/shells/nmsh"
+login_time 829188025
+logout_time 829188035
+login_from "knapp38.res.iastate.edu"

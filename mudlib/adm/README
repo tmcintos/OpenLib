@@ -1,0 +1,11 @@
+/adm:  Administrative (SECURE) directory.
+       All objects below this directory have root access.
+
+./cmd		command directory.
+./data           data directory; contains player save files and mail.
+./efuns          simulated efuns directory;  see efuns/efuns.h to add efuns.
+./etc            configuration directory.
+./obj            object directory.  All root/secure objects are below this.
+./tmp            secure temporary directory.
+
+simul_efun.c     simulated efuns object.  Includes ./efuns/efuns.h

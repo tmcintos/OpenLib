@@ -11,12 +11,15 @@
 // It may be used and modified as long as this header remains intact.
 // The UltraLib mudlib is available via FTP at knapp38.res.iastate.edu
 //
+// 04.10.96  Tim@Dysfunctional Mud
+//         o Bumped version to 1.3 in light of Intermud3 integration (almost)
+//
 
 #include <daemons.h>
 
 // Major version number changes when new features are added; minor version
 // number changes with bug fixes and implementation changes.
-#define VERSION "1.2"
+#define VERSION "1.3"
 
 // Path to your mailbox object
 #define MAILBOX "/obj/clone/mailbox"
@@ -42,7 +45,7 @@
 #define EDITOR EDITOR_D
 
 // Turn on/off debugging info
-#define DEBUG
+#undef DEBUG
 
 /*
  * Function Prototypes

@@ -6,6 +6,6 @@ real_name "Andrew Hardin"
 email_addr "aha744@airmail.net"
 body "/obj/clone/user/human"
 login_shell "/obj/clone/shells/rsh"
-login_time 828932976
-logout_time 828868661
-login_from "dal07-08.ppp.iadfw.net"
+login_time 829123751
+logout_time 829123823
+login_from "dal04-22.ppp.iadfw.net"
