@@ -1,6 +1,7 @@
 /*  -*- LPC -*-  */
 // example monster...really just testing for Tim right now :)
 #include <mudlib.h>
+#include <gender.h>
 
 inherit MONSTER "/human";
 
@@ -13,7 +14,7 @@ create()
   set_name("beavis");
   set_short("Beavis");
   set_long("A scrawny, stupid looking high school kid.\n");
-//set_sex(MALE); //commented out by Casper
+  set_gender(GENDER_MALE);
   set_move_around(15);
   set_talk(5, ({"This sucks!",
 	     "Hey Butthead!  You suck!",

@@ -26,7 +26,7 @@
 "--------------------------------------------------------------------------\n"
 
 int
-_main(string* argv, string* argv2)
+main(string* argv, string* argv2)
 {
   int optw = flag("w"), optk = flag("k"), optt = flag("t");
   string header, helptext, str;

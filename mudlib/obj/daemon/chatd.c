@@ -11,14 +11,15 @@
 inherit DAEMON;
 
 private mapping channels;
+private string* chanmap;   // even idx is local name; odd idx is remote name
 
 void
 create()
 {
   daemon::create();
 
-  SetNoClean(1);
   channels = ([]);
+  chanmap = ({});
   restore_object(SAVE_CHATD, 1);
 
   foreach(string chan in keys(channels)) {
@@ -52,6 +53,16 @@ add_channel(string name, chan_i info)
 
   save_object(SAVE_CHATD);
   return 1;
+}
+
+void
+set_alias(string localname, string remotename)
+{
+  if(!archp(this_interactive())) return 0;
+  // more validity checks to do here
+
+  chanmap += ({ localname, remotename });
+  save_object(SAVE_CHATD);
 }
 
 int
@@ -258,13 +269,11 @@ chat(string str)
 string
 map_to_local(string ch)
 {
-  switch(ch) {
-  case "imud_code":
-    return "icode";
-  case "imud_gossip":
-    return "igossip";
+  int i = member_array(ch, chanmap);
+
+  if(i > 0 && i % 2) { /* Odd */
+    ch = chanmap[i-1];
   }
-  log_file("chatd.tmp", "maptolocal: "+ch+"\n");
 
   return ch;
 }
@@ -272,13 +281,11 @@ map_to_local(string ch)
 string
 map_to_remote(string ch)
 {
-  switch(ch) {
-  case "icode":
-    return "imud_code";
-  case "igossip":
-    return "imud_gossip";
+  int i = member_array(ch, chanmap);
+
+  if(i >= 0 && !(i % 2)) { /* Even */
+    ch = chanmap[i+1];
   }
-  log_file("chatd.tmp", "maptoremote: "+ch+"\n");
 
   return ch;
 }

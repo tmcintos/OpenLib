@@ -5,6 +5,8 @@
  *    created by Descartes of Borg 950428
  *
  *  10.23.95  Tim changed to fit this mudlib
+ *  02.05.96  Tim added CloseSocket()
+ *            added SetSocketClose(), Close variable & related code
  */
 
 #include <mudlib.h>
@@ -16,6 +18,7 @@ inherit DAEMON;
 private static int DestructOnClose, SocketType = -1;
 private static string LogFile;
 private static function Read;
+private static function Close;
 private static class client Socket;
 
 int eventCreateSocket(string host, int port) {
@@ -24,7 +27,7 @@ int eventCreateSocket(string host, int port) {
     Socket = new(class client);
     Socket->Blocking = 1;
     if( SocketType == -1 ) SocketType = STREAM;
-    x = socket_create(MUD, "eventReadCallback", "eventAbortCallback");
+    x = socket_create(SocketType, "eventReadCallback", "eventAbortCallback");
     if( x < 0 ) {
 	eventSocketError("Error in socket_create().", x);
 	return x;
@@ -67,6 +70,7 @@ static void eventWriteCallback(int fd) {
     while( Socket->Buffer && x == EESUCCESS ) {
 	switch( x = socket_write(Socket->Descriptor, Socket->Buffer[0]) ) {
             case EESUCCESS:
+
 	        break;
 	    case EECALLBACK:
 		Socket->Blocking = 1;
@@ -101,7 +105,10 @@ static void eventClose(class client sock) {
     if( !sock ) return;
     socket_close(sock->Descriptor);
     sock = 0;
-    eventSocketClose();
+    if(Close)
+      evaluate(Close);
+    else
+      eventSocketClose();
     if( DestructOnClose ) Destruct();
 }
 
@@ -119,6 +126,10 @@ static void eventSocketError(string str, int x) {
 
 function SetRead(function f) { return (Read = f); }
 
+function SetSocketClose(function f) { return (Close = f); }
+
 int SetSocketType(int type) { return (SocketType = type); }
 
 int SetDestructOnClose(int x) { return (DestructOnClose = x); }
+
+void CloseSocket() { eventClose(Socket); }

@@ -484,3 +484,288 @@ Tue Jan 23 19:49:37 1996:  imud_gossip: Descartes@IdeaExchange:no downtime tonig
 Tue Jan 23 19:51:44 1996:  imud_gossip: Descartes@IdeaExchange:a sparc 5 upgrade board
 Tue Jan 23 20:54:25 1996:  imud_gossip: Descartes@IdeaExchange:v22a18 slightly modified for solaris... added the D to help Beek tell the difference in bug reports
 Wed Jan 24 21:00:47 1996:  imud_gossip: Descartes@IdeaExchange:vmstat
+Thu Jan 25 22:49:19 1996:  imud_gossip: Descartes@IdeaExchange:no, they told you to shut up on intercre
+Thu Jan 25 22:50:10 1996:  imud_gossip: Descartes@IdeaExchange:you have to be pretty damn offensive to be told to shut up on here
+Thu Jan 25 22:51:32 1996:  imud_gossip: Descartes@IdeaExchange:heh
+Sat Jan 27 16:11:01 1996:  imud_gossip: Descartes@IdeaExchange:by the way, earth.imaginary.com should be right
+Sat Jan 27 16:12:37 1996:  imud_gossip: Descartes@IdeaExchange:imaginary.com is working fine :) plus I have access to the imaginary hosts fiel now
+Sat Jan 27 16:16:55 1996:  imud_gossip: Descartes@IdeaExchange:it does
+Sat Jan 27 16:17:07 1996:  imud_gossip: Descartes@IdeaExchange:your machine just has to recognize it
+Sat Jan 27 16:17:35 1996:  imud_gossip: Descartes@IdeaExchange:some machines cache host info, so it takes time to propogate changes
+Sat Jan 27 16:17:49 1996:  imud_gossip: Descartes@IdeaExchange:no idea
+Sat Jan 27 16:26:30 1996:  imud_gossip: Descartes@IdeaExchange:rebooting this machine, I3 will go down a sec
+Tue Jan 30 16:36:10 1996:  imud_gossip: Descartes@IdeaExchange:sorry about all the problems :(
+Tue Jan 30 16:37:39 1996:  imud_gossip: Descartes@IdeaExchange:we got an upgrade cpu
+Tue Jan 30 16:37:43 1996:  imud_gossip: Descartes@IdeaExchange:but it was bum
+Tue Jan 30 16:41:00 1996:  imud_code: Descartes@IdeaExchange:changeover?
+Tue Jan 30 16:41:12 1996:  imud_code: Descartes@IdeaExchange:ahh thje new ip # :) *nod*
+Wed Jan 31 19:24:02 1996:  imud_code: Descartes@IdeaExchange:yep
+Wed Jan 31 20:05:41 1996:  imud_gossip: Descartes@Nightmare:1.0 will not work with 2.3
+Wed Jan 31 20:05:45 1996:  imud_gossip: Descartes@Nightmare:you need 2.0
+Wed Jan 31 20:30:27 1996:  imud_code: Descartes@Nightmare:no it makes it primaruy
+Wed Jan 31 20:38:33 1996:  imud_code: Descartes@Nightmare:nope, it does not
+Wed Jan 31 20:38:39 1996:  imud_code: Descartes@Nightmare:and yes, NM 3 did use exp :)
+Wed Jan 31 20:39:49 1996:  imud_gossip: Descartes@Nightmare:Pinkfish has the first issue ready, Lassondra is reviewng it
+Wed Jan 31 20:42:38 1996:  imud_gossip: Descartes@Nightmare:I don';t know, perobably the new web server is messed up
+Wed Jan 31 20:43:34 1996:  imud_code: Descartes@Nightmare:faq general
+Wed Jan 31 20:52:01 1996:  imud_code: Descartes@Nightmare:right
+Wed Jan 31 20:59:17 1996:  imud_gossip: Descartes@DataMare:j'existe!
+Wed Jan 31 21:01:06 1996:  imud_gossip: Descartes@IdeaExchange:ftp is such a cool thing, DUDE!
+Wed Jan 31 21:02:26 1996:  imud_code: Descartes@IdeaExchange:you use the skills, and they go up
+Wed Jan 31 21:39:50 1996:  imud_code: Descartes@IdeaExchange:combat is slow for slow people
+Wed Jan 31 21:39:56 1996:  imud_code: Descartes@IdeaExchange:fast for fast people
+Wed Jan 31 21:40:08 1996:  imud_code: Descartes@IdeaExchange:the only way to make it fast for everyone is to make everyone fast
+Wed Jan 31 21:40:18 1996:  imud_code: Descartes@IdeaExchange:and while you are at it, give them all 10000 hp :)
+Wed Jan 31 21:41:40 1996:  imud_code: Descartes@Nightmare:yes, it is based on your stats
+Wed Jan 31 21:41:54 1996:  imud_code: Descartes@Nightmare:and it is sup[posed to be sliggish for slow people
+Wed Jan 31 21:42:36 1996:  imud_code: Descartes@Nightmare:basically
+Wed Jan 31 21:43:15 1996:  imud_code: Descartes@IdeaExchange:yes
+Wed Jan 31 21:45:09 1996:  imud_code: Descartes@Nightmare:i am saying that f yuor goal is to make everyone an awesome player when they login, go ahead and give everyone a heart beat of 2
+Wed Jan 31 21:47:28 1996:  imud_code: Descartes@Nightmare:I am telling you that you can do it, but that in doing so, you are messing with one of the ways in which people better themselves
+Wed Jan 31 21:47:54 1996:  imud_code: Descartes@Nightmare:its your mud, do what you want :)
+Wed Jan 31 21:49:57 1996:  imud_code: Descartes@Nightmare:the place that says set_heart_beat()
+Wed Jan 31 22:25:09 1996:  imud_gossip: Descartes@Nightmare:ueber alles
+Wed Jan 31 22:32:18 1996:  imud_gossip: Descartes@DataMare:hands out free cheese.
+Wed Jan 31 22:34:56 1996:  imud_gossip: Descartes@Nightmare:yes I can do that :)
+Wed Jan 31 22:37:53 1996:  imud_gossip: Descartes@IdeaExchange:minnesota is huge for fishing
+Wed Jan 31 22:42:00 1996:  imud_gossip: Descartes@IdeaExchange:minneapolis is probably 300-400k, the twin cities are over a mil
+Wed Jan 31 22:44:47 1996:  imud_gossip: Descartes@IdeaExchange:twin cities... minneapolis and st paul, plus about a few dozen smaller cities surrpunding them
+Wed Jan 31 22:46:06 1996:  imud_gossip: Descartes@IdeaExchange:cool
+Wed Jan 31 22:46:08 1996:  imud_gossip: Descartes@IdeaExchange:smokers suck
+Wed Jan 31 22:46:56 1996:  imud_gossip: Descartes@IdeaExchange:you are welcome to kill yourself, just don;t take me with you
+Wed Jan 31 22:47:56 1996:  imud_gossip: Descartes@IdeaExchange:believe i or not, thre is a difference between a by-rpoduct of our technology that keeps us running and sucking on smoke for the fun of it
+Wed Jan 31 22:49:37 1996:  imud_gossip: Descartes@IdeaExchange:when was the last time someone spitted chweing gum n your face?
+Wed Jan 31 22:50:21 1996:  imud_gossip: Descartes@IdeaExchange:ahh, so that makes smoking ok?
+Wed Jan 31 22:51:17 1996:  imud_gossip: Descartes@IdeaExchange:and I am saying that is kind of different, because people do not in the course of cheewing gum force it upon you
+Wed Jan 31 22:51:31 1996:  imud_gossip: Descartes@IdeaExchange:smokers by default force their smoking on others
+Wed Jan 31 22:52:20 1996:  imud_gossip: Descartes@IdeaExchange:loadly smacking gum never killed anyone
+Wed Jan 31 22:53:00 1996:  imud_gossip: Descartes@IdeaExchange:Dreldragon, you are a complete fool if you believe that :)
+Wed Jan 31 22:53:56 1996:  imud_gossip: Descartes@IdeaExchange:err, a puff in the face can kill, and certainly makes people physically sick
+Wed Jan 31 22:54:02 1996:  imud_gossip: Descartes@IdeaExchange:smaking gum is just plain annoying
+Wed Jan 31 22:55:28 1996:  imud_gossip: Descartes@IdeaExchange:happy cancer sticks to ya Drel :)
+Wed Jan 31 22:56:01 1996:  imud_gossip: Descartes@IdeaExchange:stik you, you shitting fuck sack?
+Wed Jan 31 22:56:55 1996:  imud_gossip: Descartes@IdeaExchange:sex is about the only habit I have that i can think of
+Thu Feb  1 18:45:46 1996:  imud_gossip: Descartes@DataMare:15000 watts of data!
+Thu Feb  1 18:53:53 1996:  imud_gossip: Descartes@IdeaExchange:the one that comes with the lib, though Kal has a new beta coming out this weekend I think
+Thu Feb  1 18:55:05 1996:  imud_gossip: Descartes@IdeaExchange:why not?
+Thu Feb  1 21:00:42 1996:  imud_gossip: Descartes@IdeaExchange:anyone have any idea what the coldest temperature measured on earth is?
+Thu Feb  1 21:01:06 1996:  imud_code: Descartes@IdeaExchange:trying to fix that bug in code is a bad idea
+Thu Feb  1 21:01:50 1996:  imud_gossip: Descartes@IdeaExchange:it has neveer gotten to absolute zero on earth
+Thu Feb  1 21:02:10 1996:  imud_gossip: Descartes@IdeaExchange:coldest air temperature
+Thu Feb  1 21:02:20 1996:  imud_gossip: Descartes@IdeaExchange:I mean the coldest known air temperature on earth
+Thu Feb  1 21:02:34 1996:  imud_gossip: Descartes@IdeaExchange:labs is menaingless
+Thu Feb  1 21:02:48 1996:  imud_gossip: Descartes@IdeaExchange:I ask a simple question and get a bunch o geek answers :)
+Thu Feb  1 21:08:19 1996:  imud_gossip: Descartes@IdeaExchange:I said nature!
+Fri Feb  2 12:32:31 1996:  imud_gossip: Descartes@IdeaExchange:have you worked with one before?
+Fri Feb  2 12:32:49 1996:  imud_gossip: Descartes@IdeaExchange:you might try crawling before you run
+Fri Feb  2 12:33:27 1996:  imud_gossip: Descartes@IdeaExchange:I mean you should code on one before you try starting one yourself
+Fri Feb  2 12:34:09 1996:  imud_gossip: Descartes@IdeaExchange:then do so on anothr mud like nightmare
+Fri Feb  2 12:34:15 1996:  imud_gossip: Descartes@IdeaExchange:we have no level requirement
+Fri Feb  2 12:34:41 1996:  imud_gossip: Descartes@IdeaExchange:nightmare.imaginary.com 1701 and ask lassondra
+Fri Feb  2 12:35:20 1996:  imud_gossip: Descartes@IdeaExchange:tell to lassondra until she zaps you
+Fri Feb  2 12:37:26 1996:  imud_gossip: Descartes@IdeaExchange:no, I jave not got intermud mail working yet :)
+Fri Feb  2 14:06:47 1996:  imud_gossip: Descartes@IdeaExchange:I2 was originally CD, yes
+Fri Feb  2 14:07:33 1996:  imud_gossip: Descartes@IdeaExchange:something in swedish
+Fri Feb  2 14:07:51 1996:  imud_gossip: Descartes@IdeaExchange:for charlmers computers club
+Sun Feb  4 12:01:47 1996:  imud_code: Descartes@IdeaExchange:on NM it is load_object()
+Sun Feb  4 12:02:09 1996:  imud_code: Descartes@IdeaExchange:as well as just about any other mudos mud
+Sun Feb  4 12:03:07 1996:  imud_code: Descartes@IdeaExchange:hio :)
+Sun Feb  4 12:17:48 1996:  imud_code: Descartes@IdeaExchange:who in particular?
+Sun Feb  4 12:22:29 1996:  imud_code: Descartes@IdeaExchange:well, I wrote virtual rooms for Nightmare IV, Pallando did them for 3
+Sun Feb  4 12:22:41 1996:  imud_code: Descartes@IdeaExchange:Pallando is around every now and then
+Sun Feb  4 13:18:23 1996:  imud_code: Descartes@Nightmare:no
+Mon Feb  5 08:05:29 1996:  imud_code: Descartes@Nightmare::
+Mon Feb  5 08:07:28 1996:  imud_code: Descartes@Nightmare:ok, cept I am off to work :(
+Mon Feb  5 11:35:54 1996:  imud_gossip: Descartes@IdeaExchange:they need a head start just to keep up with the rest of the world
+Mon Feb  5 11:42:30 1996:  imud_gossip: Descartes@IdeaExchange:everyone comes to watch me mud wrestle with famous supermodels
+Mon Feb  5 17:55:43 1996:  imud_gossip: Descartes@IdeaExchange:ever heard of the alias command Leto>?
+Mon Feb  5 17:58:30 1996:  imud_gossip: Descartes@IdeaExchange:NM has that stuff
+Mon Feb  5 17:58:42 1996:  imud_gossip: Descartes@IdeaExchange:NM just does not distribute its gateway objects
+Mon Feb  5 17:59:16 1996:  imud_gossip: Descartes@IdeaExchange:http://nightmare.imaginary.com:1696/gateways/who
+Mon Feb  5 18:00:23 1996:  imud_gossip: Descartes@IdeaExchange:http://nightmare.imaginary.com/:1696/gateways/mudlist
+Mon Feb  5 18:02:01 1996:  imud_gossip: Descartes@IdeaExchange:the mudlib ships with an http daemon
+Mon Feb  5 18:02:21 1996:  imud_gossip: Descartes@IdeaExchange:it does not ship with any pages, because I don't want a hundred other muds having pages that look just like NM LPMud
+Mon Feb  5 18:03:01 1996:  imud_gossip: Descartes@IdeaExchange:I know :)
+Mon Feb  5 18:03:42 1996:  imud_gossip: Descartes@IdeaExchange:there are cool pagees all over the net
+Mon Feb  5 21:25:00 1996:  imud_gossip: Descartes@IdeaExchange:skinny puppy anyone?
+Mon Feb  5 21:44:32 1996:  imud_gossip: Descartes@DataMare:who are you?
+Mon Feb  5 22:14:21 1996:  imud_code: Descartes@IdeaExchange:you guys know parse_sentence() would return huge numbers?
+Mon Feb  5 22:21:15 1996:  imud_code: Descartes@IdeaExchange:been round a long time
+Mon Feb  5 22:32:47 1996:  imud_code: Descartes@IdeaExchange:what about parse_sentence() returning nuinbers like 1234567
+Mon Feb  5 22:32:55 1996:  imud_code: Descartes@IdeaExchange:anyone experience that fun?
+Mon Feb  5 22:33:11 1996:  imud_code: Descartes@IdeaExchange:v22a22
+Mon Feb  5 22:46:07 1996:  imud_code: Descartes@IdeaExchange:dunno that he would have changed the data type
+Mon Feb  5 22:46:25 1996:  imud_code: Descartes@IdeaExchange:also, the numbers are not consistent, and thus not indicative of that kind of mistake
+Mon Feb  5 23:56:16 1996:  imud_code: Descartes@IdeaExchange:anyone out there played with v22a21 or later?
+Mon Feb  5 23:57:00 1996:  imud_code: Descartes@IdeaExchange:you use the NLP stuff?
+Mon Feb  5 23:57:59 1996:  imud_code: Descartes@IdeaExchange:parse_shit()
+Mon Feb  5 23:58:23 1996:  imud_code: Descartes@IdeaExchange:not that it is shit, it is cool :) just being mind numblingly cute
+Mon Feb  5 23:58:51 1996:  imud_code: Descartes@IdeaExchange:yeah, the changes I got... I am having a problem parsing a particular situaiton
+Mon Feb  5 23:59:41 1996:  imud_code: Descartes@IdeaExchange:well, lemme know how you end up handling this situation:
+Mon Feb  5 23:59:49 1996:  imud_code: Descartes@IdeaExchange:chest and bag in room
+Mon Feb  5 23:59:55 1996:  imud_code: Descartes@IdeaExchange:sword in bag, sword in chest
+Tue Feb  6 00:00:13 1996:  imud_code: Descartes@IdeaExchange:make "get sword from chest" get the sword from the chest, not return "which sword do you mean?"
+Tue Feb  6 08:00:27 1996:  imud_gossip: Descartes@IdeaExchange:ice on the road?
+Wed Feb  7 22:26:27 1996:  imud_gossip: Descartes@DataMare:the textbooks are being rewritten
+Wed Feb  7 22:27:32 1996:  imud_gossip: Descartes@DataMare:when the full rewrite is done, with the release of NM V
+Wed Feb  7 22:41:45 1996:  imud_gossip: Descartes@DataMare:actually, I think they started off very different, but Beek has had some taming effects on those differences :)
+Wed Feb  7 22:42:03 1996:  imud_gossip: Descartes@DataMare:also this MudOS parsing syste does force some design descisions on you
+Wed Feb  7 22:42:41 1996:  imud_gossip: Descartes@DataMare:who coded it for NM :)
+Wed Feb  7 22:44:07 1996:  imud_gossip: Descartes@DataMare:I3?
+Wed Feb  7 22:45:12 1996:  imud_gossip: Descartes@DataMare:I3 pre-dates Lima
+Wed Feb  7 22:45:34 1996:  imud_gossip: Descartes@DataMare:and the spec is not related to a mudlib
+Wed Feb  7 22:46:16 1996:  imud_gossip: Descartes@DataMare:no bragging necessary
+Wed Feb  7 22:46:44 1996:  imud_gossip: Descartes@DataMare:Rust I totally isagree with your view of I3 history
+Wed Feb  7 22:47:46 1996:  imud_gossip: Descartes@DataMare:Truilkan
+Wed Feb  7 22:49:07 1996:  imud_gossip: Descartes@DataMare:I1 was an insane piece of shit
+Wed Feb  7 22:49:35 1996:  imud_gossip: Descartes@DataMare:yes
+Wed Feb  7 22:52:42 1996:  imud_gossip: Descartes@DataMare:err, actually it did get to around 90, that is when it got really nasty
+Wed Feb  7 22:55:02 1996:  imud_gossip: Descartes@DataMare:it already existed, but no one used it
+Wed Feb  7 22:55:11 1996:  imud_gossip: Descartes@DataMare:and it turned out to be buggy anyways
+Wed Feb  7 23:04:09 1996:  imud_gossip: Descartes@DataMare:get a real mudlib?
+Wed Feb  7 23:06:06 1996:  imud_gossip: Descartes@DataMare:wenn ich die rechte antworte haette wurde ich das euch geben
+Wed Feb  7 23:06:56 1996:  imud_gossip: Descartes@DataMare:would you like me to make up an answer?
+Wed Feb  7 23:07:12 1996:  imud_gossip: Descartes@DataMare:cause I don't have a clue other than for you to get a real mudlib
+Wed Feb  7 23:07:40 1996:  imud_gossip: Descartes@DataMare:amo mangeare spaghetti
+Wed Feb  7 23:08:35 1996:  imud_gossip: Descartes@DataMare:I have been counting how many ways I know how to kill with just a touch
+Wed Feb  7 23:08:45 1996:  imud_gossip: Descartes@DataMare:I reached 57 when you entered
+Wed Feb  7 23:09:21 1996:  imud_gossip: Descartes@DataMare:briseann na fear cloiche ans an sraad
+Wed Feb  7 23:10:29 1996:  imud_gossip: Descartes@DataMare:janet
+Wed Feb  7 23:10:39 1996:  imud_gossip: Descartes@DataMare:piss off misery
+Wed Feb  7 23:13:10 1996:  imud_gossip: Descartes@DataMare:I based my life off of different strokes
+Wed Feb  7 23:14:12 1996:  imud_gossip: Descartes@DataMare:age, god help me if people think I am old
+Wed Feb  7 23:14:20 1996:  imud_gossip: Descartes@DataMare:my birthday is coming up though :)
+Wed Feb  7 23:14:28 1996:  imud_gossip: Descartes@DataMare:aquarians rock
+Wed Feb  7 23:16:53 1996:  imud_gossip: Descartes@DataMare:spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam
+Wed Feb  7 23:18:03 1996:  imud_gossip: Descartes@DataMare:it started off as the place to code the database stuff for LPC
+Wed Feb  7 23:18:15 1996:  imud_gossip: Descartes@DataMare:now it is also doing the NM verb conversion
+Wed Feb  7 23:20:10 1996:  imud_gossip: Descartes@DataMare:Do you guys see this gif?
+Wed Feb  7 23:20:50 1996:  imud_gossip: Descartes@DataMare:go ahead Molochai,
+Wed Feb  7 23:20:54 1996:  imud_gossip: Descartes@DataMare:make my day
+Wed Feb  7 23:32:04 1996:  imud_gossip: Descartes@DataMare:that would be one way from me t start filtering your mud from my muds
+Wed Feb  7 23:34:14 1996:  imud_gossip: Descartes@IdeaExchange:abortion abortion abortion abortion
+Thu Feb  8 14:42:00 1996:  imud_gossip: Descartes@IdeaExchange:rien de nouveau
+Thu Feb  8 14:43:46 1996:  imud_gossip: Descartes@IdeaExchange:with NM IV you don't, you use verbs
+Thu Feb  8 14:44:55 1996:  imud_gossip: Descartes@IdeaExchange:any verb is automatically added to everyone
+Thu Feb  8 14:45:03 1996:  imud_gossip: Descartes@IdeaExchange:there are no such things as command paths
+Thu Feb  8 14:46:17 1996:  imud_gossip: Descartes@IdeaExchange:ed is not a verb, it is a command
+Thu Feb  8 14:46:27 1996:  imud_gossip: Descartes@IdeaExchange:yes, all verbs are always available to everyone
+Thu Feb  8 15:12:15 1996:  imud_gossip: Descartes@IdeaExchange:abortion abortion abortion abortion
+Thu Feb  8 15:16:54 1996:  imud_code: Descartes@IdeaExchange:the abortion section is already deemed unconstitutional
+Thu Feb  8 15:17:24 1996:  imud_code: Descartes@IdeaExchange:outside of the few bizaare freedom of speech issues, the overall bill itself is extremely important
+Thu Feb  8 15:18:01 1996:  imud_code: Descartes@IdeaExchange:what on earth are you guys talking about with respect to wearing things?
+Thu Feb  8 15:19:49 1996:  imud_code: Descartes@IdeaExchange:wear isa verb also, not a command
+Thu Feb  8 15:20:03 1996:  imud_code: Descartes@IdeaExchange:don't take NM/MudOS advice from amylaar people
+Thu Feb  8 15:20:41 1996:  imud_code: Descartes@IdeaExchange:Nightmare does not use add_action()
+Thu Feb  8 15:21:14 1996:  imud_code: Descartes@IdeaExchange:the only reason support for it even exists is because NM LPmud has legacy areas
+Thu Feb  8 15:21:32 1996:  imud_code: Descartes@IdeaExchange:override the event call
+Thu Feb  8 15:22:26 1996:  imud_code: Descartes@IdeaExchange:no, override and extend it
+Thu Feb  8 15:22:36 1996:  imud_code: Descartes@IdeaExchange:as Beek said, you never copy code
+Thu Feb  8 15:22:50 1996:  imud_code: Descartes@IdeaExchange:if you are copying code, then you are failing miserably at code reuse
+Thu Feb  8 15:23:12 1996:  imud_code: Descartes@IdeaExchange:override means write your own eventWear(), extending it means calling ::eventWear()
+Thu Feb  8 22:55:19 1996:  imud_gossip: Descartes@IdeaExchange:there is no doc on building fishing spots yet
+Sat Feb 10 10:24:47 1996:  imud_gossip: Descartes@IdeaExchange:hi
+Sat Feb 10 10:26:20 1996:  imud_gossip: Descartes@IdeaExchange:banning names at the command line is not working yet
+Sat Feb 10 10:27:26 1996:  imud_gossip: Descartes@IdeaExchange:you need to use the call command to call the banish daemon
+Sat Feb 10 10:35:35 1996:  imud_gossip: Descartes@IdeaExchange:as a rule I never tell people to edit .o files
+Sat Feb 10 10:36:41 1996:  imud_gossip: Descartes@IdeaExchange:yep
+Sat Feb 10 10:45:54 1996:  imud_gossip: Descartes@IdeaExchange:at least on a logically distinct, could be physically the same room
+Sat Feb 10 10:48:06 1996:  imud_gossip: Descartes@Nightmare:not at the moment
+Sat Feb 10 10:48:17 1996:  imud_gossip: Descartes@Nightmare:they are part of the plan for the final release
+Sat Feb 10 10:49:49 1996:  imud_gossip: Descartes@Nightmare:err, you totally misunderstand
+Sat Feb 10 10:49:59 1996:  imud_gossip: Descartes@Nightmare:training centers are not for raising skills
+Sat Feb 10 10:50:11 1996:  imud_gossip: Descartes@Nightmare:the are a suppliment to get new players started
+Sat Feb 10 10:50:49 1996:  imud_gossip: Descartes@Nightmare:train skills
+Sat Feb 10 10:51:35 1996:  imud_gossip: Descartes@DataMare:nothing
+Sat Feb 10 10:52:04 1996:  imud_gossip: Descartes@DataMare:training rooms however are not designed to be where people train all the time
+Sat Feb 10 10:52:14 1996:  imud_gossip: Descartes@DataMare:they just get people started, let them customize a bit
+Sat Feb 10 10:52:22 1996:  imud_gossip: Descartes@DataMare:they are supposed to train skills by dong
+Sat Feb 10 10:52:26 1996:  imud_gossip: Descartes@DataMare:doing
+Sat Feb 10 10:53:18 1996:  imud_gossip: Descartes@Nightmare:yes, the faq
+Sat Feb 10 10:53:36 1996:  imud_gossip: Descartes@Nightmare:training rooms are for anyone with training points
+Sat Feb 10 10:54:42 1996:  imud_gossip: Descartes@Nightmare:training rooms are not needed
+Sat Feb 10 11:37:42 1996:  imud_gossip: Descartes@IdeaExchange:it is just no one in their right mind is using tmi-2 :)
+Sat Feb 10 11:38:28 1996:  imud_gossip: Descartes@IdeaExchange:probably the login object, but I certainly don;t know
+Sat Feb 10 15:36:40 1996:  imud_gossip: Descartes@IdeaExchange:if they are from my mud, I rid them
+Sat Feb 10 15:38:27 1996:  imud_gossip: Descartes@IdeaExchange:filter that mud
+Sat Feb 10 15:39:09 1996:  imud_gossip: Descartes@IdeaExchange:players should not have access to intermud chat lines
+Sat Feb 10 15:39:37 1996:  imud_gossip: Descartes@IdeaExchange:however, we give tell, rwho, mudlist, and finger support to plaers
+Sun Feb 11 23:32:11 1996:  imud_code: Descartes@Nightmare:nope
+Sun Feb 11 23:54:56 1996:  imud_code: Descartes@IdeaExchange:no, there is security to stop that
+Sun Feb 11 23:57:59 1996:  imud_code: Descartes@Nightmare:the grant commands
+Sun Feb 11 23:58:41 1996:  imud_code: Descartes@Nightmare:oh yeah, but I forgot
+Mon Feb 12 09:49:57 1996:  imud_gossip: Descartes@DataMare:eventPrint() is not buggy :)
+Mon Feb 12 09:50:27 1996:  imud_gossip: Descartes@IdeaExchange:no, I am replying to old channel talk
+Mon Feb 12 09:55:45 1996:  imud_gossip: Descartes@DataMare:it is being worked on
+Mon Feb 12 13:18:39 1996:  imud_gossip: Descartes@IdeaExchange:anyone out there using the parser stuff from v22a22?
+Mon Feb 12 14:28:54 1996:  imud_gossip: Descartes@IdeaExchange:and this surprises you?
+Mon Feb 12 20:42:07 1996:  imud_code: Descartes@Nightmare:eventReceiveDamage() or eventHealDamage()
+Mon Feb 12 20:42:41 1996:  imud_code: Descartes@Nightmare:look at /lib/body.c
+Mon Feb 12 20:42:49 1996:  imud_code: Descartes@Nightmare:it has all sorts of info
+Mon Feb 12 20:44:35 1996:  imud_gossip: Descartes@IdeaExchange:kill mother fucking depeche mode
+Mon Feb 12 20:46:02 1996:  imud_gossip: Descartes@IdeaExchange:yep
+Mon Feb 12 20:46:10 1996:  imud_gossip: Descartes@IdeaExchange:fuck that shit
+Mon Feb 12 20:47:14 1996:  imud_code: Descartes@Nightmare:the thing doing the damage
+Mon Feb 12 20:48:39 1996:  imud_code: Descartes@IdeaExchange:that is a bug in call
+Mon Feb 12 20:52:10 1996:  imud_code: Descartes@IdeaExchange:don't bother with the current specs
+Mon Feb 12 20:52:20 1996:  imud_code: Descartes@IdeaExchange:it is being redone in a more sane fashion
+Mon Feb 12 20:53:40 1996:  imud_code: Descartes@IdeaExchange:why would you think that?
+Mon Feb 12 21:08:19 1996:  imud_code: Descartes@Nightmare:no
+Mon Feb 12 21:10:28 1996:  imud_code: Descartes@IdeaExchange:anyone know where to find some useful java socket object examples?
+Mon Feb 12 23:32:05 1996:  imud_code: Descartes@IdeaExchange:that's what you get with an alpha :)
+Mon Feb 12 23:36:55 1996:  imud_code: Descartes@IdeaExchange:did you something bizarre to make yourself not an admin
+Mon Feb 12 23:38:41 1996:  imud_code: Descartes@IdeaExchange:insufficient information I guess :)
+Mon Feb 12 23:42:06 1996:  imud_code: Descartes@IdeaExchange:probably a security bug
+Mon Feb 12 23:42:48 1996:  imud_code: Descartes@IdeaExchange:no, there is nothing wrong with your secure dir
+Mon Feb 12 23:42:56 1996:  imud_code: Descartes@IdeaExchange:just with the addguest command
+Mon Feb 12 23:45:17 1996:  imud_code: Descartes@IdeaExchange:that means the object is loaded
+Tue Feb 13 00:09:50 1996:  imud_code: Descartes@Nightmare:the banish daemon I think
+Tue Feb 13 01:05:09 1996:  imud_gossip: Descartes@IdeaExchange:time for me to sleep
+Tue Feb 13 01:06:11 1996:  imud_gossip: Descartes@IdeaExchange:whatever Misery
+Tue Feb 13 01:06:51 1996:  imud_gossip: Descartes@IdeaExchange:I doubt you would know what the real problems are
+Tue Feb 13 01:07:23 1996:  imud_gossip: Descartes@IdeaExchange:the fact of the matter is you cannot get v22a22 to work with anything mroe than simple verbs
+Tue Feb 13 01:07:59 1996:  imud_gossip: Descartes@IdeaExchange:Misery is a moron Falcon
+Tue Feb 13 01:11:10 1996:  imud_gossip: Descartes@IdeaExchange:first, it takes days, not hours to get NM  verbs to properly fit the v22a22 verb paradigm
+Tue Feb 13 01:11:37 1996:  imud_gossip: Descartes@IdeaExchange:second even if you do it right, it is impossible for certain verbs ever to work right with v22a22
+Tue Feb 13 01:11:45 1996:  imud_gossip: Descartes@IdeaExchange:because of a couple of major bugs in it
+Tue Feb 13 01:12:13 1996:  imud_gossip: Descartes@IdeaExchange:and what were those bugs you got rid of?
+Tue Feb 13 01:12:23 1996:  imud_gossip: Descartes@IdeaExchange:that was smart
+Tue Feb 13 01:12:35 1996:  imud_gossip: Descartes@IdeaExchange:#1 that is not fixing them
+Tue Feb 13 01:12:53 1996:  imud_gossip: Descartes@IdeaExchange:#2 that is actually breaking them
+Tue Feb 13 01:13:09 1996:  imud_gossip: Descartes@IdeaExchange:but I actually could give a shit if you break your entire mud
+Tue Feb 13 01:13:41 1996:  imud_gossip: Descartes@IdeaExchange:whether something is used as a verb has no bearing on how often it is used
+Tue Feb 13 01:14:01 1996:  imud_gossip: Descartes@IdeaExchange:Ohara: it is fixing it with a BFH
+Tue Feb 13 01:14:27 1996:  imud_gossip: Descartes@IdeaExchange:I dunno Misery, ask the people on this line I have helped
+Tue Feb 13 01:14:48 1996:  imud_gossip: Descartes@IdeaExchange:I just with YOU would not use my lib
+Tue Feb 13 01:15:00 1996:  imud_gossip: Descartes@IdeaExchange:and I certainly don;t with you on the people at Lima either
+Tue Feb 13 01:15:32 1996:  imud_gossip: Descartes@IdeaExchange:err wish
+Tue Feb 13 01:16:44 1996:  imud_gossip: Descartes@IdeaExchange:may I ask what exactly the point of going through the hassle of upgrading to a driver that does not work was?
+Tue Feb 13 01:18:21 1996:  imud_gossip: Descartes@IdeaExchange:and yet you disabled those new features? and also thought the bug fixzes were good even though it introduced worse bugs?
+Tue Feb 13 01:18:31 1996:  imud_gossip: Descartes@IdeaExchange:the only new features are related to verbs
+Tue Feb 13 01:21:01 1996:  imud_gossip: Descartes@IdeaExchange:and OBS was that important you had to upgrade before you had a clue as to what you were doing?
+Tue Feb 13 01:22:04 1996:  imud_gossip: Descartes@IdeaExchange:Beek generally does not add even newer features before fixing the ones he has now
+Tue Feb 13 01:22:38 1996:  imud_gossip: Descartes@IdeaExchange:the disconnect in your rationalization process amazes me
+Tue Feb 13 01:25:51 1996:  imud_gossip: Descartes@IdeaExchange:ok, I am going to bed
+Wed Feb 14 10:31:18 1996:  imud_code: Descartes@IdeaExchange:what for?
+Wed Feb 14 10:32:17 1996:  imud_code: Descartes@Nightmare:that is a known bug in mudos v22a18
+Wed Feb 14 10:32:35 1996:  imud_code: Descartes@Nightmare:I am rewriting the bug tracking ystem with a real dbms backend
+Wed Feb 14 10:33:47 1996:  imud_code: Descartes@Nightmare:then you fucked up the master
+Wed Feb 14 10:34:41 1996:  imud_code: Descartes@Nightmare:define won't let is
+Wed Feb 14 10:35:02 1996:  imud_code: Descartes@Nightmare:you know, if you tell me 'X is broken' all I can tell you is 'X must be broken'
+Wed Feb 14 10:36:28 1996:  imud_code: Descartes@Nightmare:and I told you that you can't update the master object with mudos v22a18
+Wed Feb 14 10:41:58 1996:  imud_code: Descartes@Nightmare:I know, that happened when I upgraded to solaris
+Wed Feb 14 10:57:24 1996:  imud_gossip: Descartes@IdeaExchange:not here
+Wed Feb 14 10:58:19 1996:  imud_gossip: Descartes@IdeaExchange:I have way too many messages, you did not read the ones here
+Wed Feb 14 11:49:20 1996:  imud_gossip: Descartes@Nightmare:gossip total fear
+Wed Feb 14 11:50:36 1996:  imud_gossip: Descartes@Nightmare:netscape
+Wed Feb 14 11:51:10 1996:  imud_gossip: Descartes@Nightmare:what is wrong with it leto?
+Wed Feb 14 11:52:07 1996:  imud_gossip: Descartes@Nightmare:it tells you if you have email
+Wed Feb 14 11:52:35 1996:  imud_gossip: Descartes@Nightmare:tools of the geeks
+Wed Feb 14 11:53:43 1996:  imud_gossip: Descartes@Nightmare:la la la la la, whine bitch and moan
+Wed Feb 14 11:53:53 1996:  imud_gossip: Descartes@Nightmare:on your home pc netscape rocks
+Wed Feb 14 11:54:57 1996:  imud_gossip: Descartes@Nightmare:I bet you can write unreadable C code too, you are so cool
+Wed Feb 14 11:56:38 1996:  imud_gossip: Descartes@IdeaExchange:leane unix leto
+Wed Feb 14 11:56:44 1996:  imud_gossip: Descartes@IdeaExchange:err learn
+Wed Feb 14 12:20:43 1996:  imud_code: Descartes@Nightmare:no exist right now
+Wed Feb 14 16:32:43 1996:  imud_code: Descartes@IdeaExchange:depends on how you compile the driver
+Wed Feb 14 20:51:01 1996:  imud_code: Descartes@Nightmare:do not use v22a22

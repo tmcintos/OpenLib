@@ -36,4 +36,4 @@
 
 # If you want to LOCK the mud, define this list as the allowed users.
 # Otherwise this list should be empty.
-(all) {mudlib}, hamnsnock, craig, karrde, damian
+  (all) {mudlib}, hamnsnock, craig, damian, misery, warthog, testdude

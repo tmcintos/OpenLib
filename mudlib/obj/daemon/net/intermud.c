@@ -33,7 +33,7 @@ static void create() {
     Password = 0;
     Tries = 0;
     Banned = ([]);
-    Nameservers = ({ ({ "*gjs", "199.199.122.10 9000" }) });
+    Nameservers = ({ ({ "*gjs", "198.174.169.120 9000" }) });
     MudList = new(class list);
     ChannelList = new(class list);
     MudList->ID = -1;
@@ -60,10 +60,10 @@ static void Setup() {
     sscanf(Nameservers[0][1], "%s %d", ip, port);
     if( eventCreateSocket(ip, port) < 0 ) return;
     eventWrite( ({ "startup-req-2", 5, mud_name(), 0, Nameservers[0][0], 0,
-		   Password, MudList->ID, ChannelList->ID, query_host_port(),
-		   PORT_OOB, PORT_UDP, mudlib() + " " + mudlib_version(), 
-		   mudlib() + " " + mudlib_version(), version(), "LPMud",
-		   MUD_STATUS, ADMIN_EMAIL,
+		   Password, MudList->ID, ChannelList->ID, 0 /* mud_port() */,
+		   PORT_OOB, PORT_UDP, mudlib_name() + " " + mudlib_version(), 
+		   mudlib_name() + " " + mudlib_version(), driver_version(),
+		   "LP", MUD_STATUS, ADMIN_EMAIL,
 		   (mapping)SERVICES_D->GetServices(), ([]) }) );
 }
 
@@ -170,10 +170,10 @@ static void eventRead(mixed *packet) {
         case "file":
 	  break;
 	case "auth-mud-req":
-	  SERVICES_D->eventRecieveAuthRequest(packet);
+	  SERVICES_D->eventReceiveAuthRequest(packet);
 	  break;
 	case "auth-mud-reply":
-	  SERVICES_D->eventRecieveAuthReply(packet);
+	  SERVICES_D->eventReceiveAuthReply(packet);
 	  break;
         case "error":
 	  SERVICES_D->eventReceiveError(packet);

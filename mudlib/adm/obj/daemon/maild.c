@@ -1,73 +1,38 @@
 /*  -*- LPC -*-  */
-// maild.c:  mail daemon.  Works in conjunction with a mail command and a
-//           mailbox object.  The interface to both of these was designed
-//           so you may easily write your own versions if you wish.
-//
-// Written 12.10.95 by Tim (astasia@iastate.edu)
+// maild.c: mudlib mail daemon.  See maild.h for details.
 //
 // This file is part of the UltraLib distribution mudlib.
 // It may be used and modified as long as this header remains intact.
 // The UltraLib mudlib is available via FTP at knapp38.res.iastate.edu
 //
-// 01.21.96  Tim@UltraLib  Added features, fixed bugs.
-//
 
 #include <mudlib.h>
-
-// Major version number changes when new features are added; minor version
-// number changes with bug fixes.
-#define VERSION "1.0"
-
-// Path to your mailbox object
-#define MAILBOX "/obj/clone/mailbox"
-
-// This should be a string representing the home directory of this_player()
-// with no trailing slash.  i.e. "/u/t/tim"
-#define HOME_DIR(x) x->query_connection()->query_home_dir()
-
-// Define this if your mudlib doesn't already define RESOLVE_PATH()
-// It should resolve a path with respect to this_player()'s cwd.
-// #define RESOLVE_PATH(x) some_function(x)
-
-// Define this to be the filename of the editor object to use when entering
-// a message.
-// It should define a function as follows:
-//
-// void enter_text(function call_func, function abort_func, mixed* args ... );
-//
-// where 'call_func' is the function which will be called after the text has
-// been entered, with an array (the lines of entered text) as the 1st argument
-// and any extra arguments as specified by 'args'.  'abort_func' if not 0 is
-// the function to call if the user aborts the editing process.
-#define EDITOR "/obj/clone/editor"
-
-// Turn on/off debugging info
-#undef DEBUG
+#include "maild.h"
 
 inherit DAEMON;
 
-// Prototypes
-varargs int check_mail(string user, int check_new);
-void print_mesg(object mbox, int num);
-void print_help();
-void cmd_mail_loop(object mbox);
-void cmd_send_mesg(string tolist);
-void send_mail(string bcclist, string cclist, string from, string tolist, 
-	       int time, string subject, string mesg);
+mapping open_boxes;
 
-void cmd_mail_loop2(string input, object mbox, int curr);
-void cmd_send_mesg2(string input, string tolist);
-void cmd_send_mesg3(string* lines, string subject, string tolist);
+#ifdef DEBUG
+mapping
+dump_ob()
+{
+  return copy(open_boxes);
+}
+#endif
 
-// This function returns # of messages if the player 'username' has mail,
-// 0 if none.  If the flag 'check_new' is 1, it returns the number of
-// new messages the player has.
+void
+create()
+{
+  daemon::create();
+  open_boxes = ([]);
+}
 
 varargs
 int
 check_mail(string username, int check_new)
 {
-  object mbox = new("/obj/clone/mailbox");
+  object mbox = new(MAILBOX);
   int ret;
 
   mbox->restore_mailbox(username);
@@ -82,35 +47,13 @@ check_mail(string username, int check_new)
   return ret;
 }
 
-// show message and mark it as read
-
-void
-print_mesg(object mbox, int num) {
-  write((string) mbox->get_mesg(num));
-  mbox->mark_read(num);
-}
-
-void
-print_help()
-{
-  write("Help for Mail System:\n\n"
-	"?                       Show this help message.\n"
-	"q                       Quit and save state of mailbox.\n"
-	"Q                       Quit without saving changes to mailbox.\n"
-	"h                       Print message headers.\n"
-	"n                       Show next message.\n"
-	"p                       Show previous message.\n"
-	"d <message number>      Delete current message if no argument.\n"
-	"w [filename]            Append current message to file.\n"
-	"                        Appends to ~/mbox if no filename given.\n"
-	);
-}
-
-//  This sequence is started by the mail command to read mail
+/*--------------------------- Read Loop ------------------------------------*/
 
 void
 cmd_mail_loop(object mbox)
 {
+  open_boxes += ([ this_player()->query_name() : mbox ]);
+
   printf("MUD Mail v%s  Created by Tim@UltraLib.\n\n", VERSION);
   printf("%d messages in mailbox.\n", mbox->get_mesg_count());
   write("Type ? for help\n");
@@ -122,22 +65,16 @@ void
 cmd_mail_loop2(string input, object mbox, int curr)
 {
   int count = mbox->get_mesg_count();
-  string *words = explode(input, " ");
-  string cmd, savefile;
+  string* args = explode(input, " ");
+  string cmd;
   int i;
 
-  // 1st word is the command rest are a message list
-  if(sizeof(words)) {
-    cmd = words[0];
-    words = words - ({ cmd });
-  } else {
+  if(!sizeof(args)) {
     cmd = "";
+  } else {
+    cmd = args[0];
+    args -= ({ cmd });
   }
-
-#ifdef DEBUG
-  printf("cmd=%s\n", cmd);
-  write("words=" + dump_variable(words) + "\n");
-#endif
 
   if(!count && cmd != "q" && cmd != "Q" && cmd != "?") {
     write("No messages.\n");
@@ -146,39 +83,43 @@ cmd_mail_loop2(string input, object mbox, int curr)
     return;
   }
       
+  // This condition could exist if count==curr==3 and we deleted 3
+  if(curr > count)
+    curr = count;
+
   switch(cmd) {
+  // show help
+  case "?":
+    print_help();
+    break;
+
   // save & quit
   case "q":
     mbox->save_mailbox();
     write("Saving and ");
+
   // quit without saving
   case "Q":
+    map_delete(open_boxes, this_player()->query_name());
     destruct(mbox);
     write("Exiting.\n");
     return;
 
   // print headers
   case "h":
-    printf(" %-3s     %-10s     %7s\n", "Num", "From", "Subject");
-    printf("%-78'-'s\n", " ");
-
-    for(i=1; i <= count; i++) {
-      write((i==curr ? ">" : " "));
-      printf("%-3d     %-10.10s     %-55.55s\n",
-	     i, mbox->get_from(i), mbox->get_subj(i));
-    }
+    print_headers(mbox, count, curr);
     break;
 
   // current message
   case "":
-    print_mesg(mbox, curr);
+    print_message(mbox, curr);
     break;
 
   // next message
   case "n":
     if(curr < count) {
       curr++;
-      print_mesg(mbox, curr);
+      print_message(mbox, curr);
     } else {
       write("No next message.\n");
     }
@@ -188,7 +129,7 @@ cmd_mail_loop2(string input, object mbox, int curr)
   case "p":
     if(curr > 1) {
       curr--;
-      print_mesg(mbox, curr);
+      print_message(mbox, curr);
     } else {
       write("No previous message.\n");
     }
@@ -196,56 +137,30 @@ cmd_mail_loop2(string input, object mbox, int curr)
 
   // delete messages
   case "d":
-    if(!sizeof(words)) {
-      // case no args given--delete current message
-      mbox->del_mesg(curr);
-      write("Deleted message.\n");
-    } else {
-      // case there's an argument
-      sscanf(words[0], "%d", i);
-
-      if(i > 0 && i <= count) {
-	mbox->del_mesg(i);
-	printf("Deleted message %d\n", i);
-      } else {
-	write("Invalid message number.\n");
-      }
-    }
-
-    count = mbox->get_mesg_count();
-    if(curr < 1)
-      curr = 1;
-    else if(curr > count)
-      curr = count;
+    delete_message(mbox, count, curr, args);
     break;
 
   // save messages to file
   case "w":
-    if(!wizardp(this_player())) {
-      write("Not a player command.\n");
-      break;
-    }
-
-    if(!sizeof(words)) {
-      savefile = HOME_DIR(this_player()) + "/mbox";
-    } else {
-      savefile = RESOLVE_PATH(words[0]);
-    }
-    write_file(savefile, (string) mbox->get_mesg(curr));
-    printf("Appended message to %s.\n", savefile);
-    break;
-      
-  // show help
-  case "?":
-    print_help();
+    save_message(mbox, curr, args);
     break;
 
+  // reply to current
+  case "r":
+    printf("Replying to %s...\n", mbox->get_from(curr));
+    cmd_send_mesg2("Re: " + mbox->get_subj(curr),
+		   lower_case(mbox->get_from(curr)),
+		   (: cmd_mail_loop2, "donothing", mbox, curr :));
+    return;
+
+  case "donothing":
+    break;
   // show message by number
   default:
     if(sscanf(cmd, "%d", i) == 1) {
       if(i > 0 && i <= count) {
 	curr = i;
-	print_mesg(mbox, curr);
+	print_message(mbox, curr);
       } else {
 	write("Invalid message number.\n");
       }
@@ -258,43 +173,128 @@ cmd_mail_loop2(string input, object mbox, int curr)
   input_to((: cmd_mail_loop2 :), 0, mbox, curr );
 }
 
-// This sequence is started by the mail command to create and send a message
+void
+print_message(object mbox, int num)
+{
+  write((string) mbox->get_mesg(num));
+  mbox->mark_read(num);                           // mark message as read
+}
 
 void
-cmd_send_mesg(string tolist)
+print_help()
+{
+  write("Help for Mail System:\n\n"
+	"?                Show this help message.\n"
+	"d [message #]    Delete current message if no argument.\n"
+	"h                Print message headers.\n"
+	"n                Show next message.\n"
+	"p                Show previous message.\n"
+	"q                Quit and save state of mailbox.\n"
+	"Q                Quit without saving changes to mailbox.\n"
+	"r                Reply to current message.\n"
+	"w [filename]     Append current message to file. (default: ~/mbox)\n"
+	"                 Appends to ~/mbox if no filename given.\n"
+	);
+}
+
+void
+print_headers(object mbox, int count, int curr)
+{
+  printf(" %-3s     %-10s     %7s\n", "Num", "From", "Subject");
+  printf("%-78'-'s\n", " ");
+
+  for(int i = 1; i <= count; i++) {
+    write((i==curr ? ">" : " "));
+    printf("%-3d    %1.1s%-10.10s     %-55.55s\n",
+	   i,
+	   (mbox->is_unread(i) ? "*" : " "),
+	   mbox->get_from(i),
+	   mbox->get_subj(i));
+  }
+}
+
+void
+delete_message(object mbox, int count, int curr, string* args)
+{
+  int i;
+
+  if(!sizeof(args)) {
+    // case no args given--delete current message
+    mbox->del_mesg(curr);
+    write("Deleted message.\n");
+  } else {
+    // case there's an argument
+    if(!sscanf(args[0], "%d", i)) {
+      write("Must supply a numerical argument.\n");
+      return;
+    }
+
+    if(i > 0 && i <= count) {
+      mbox->del_mesg(i);
+      printf("Deleted message %d\n", i);
+    } else {
+      write("Invalid message number.\n");
+    }
+  }
+}
+
+void
+save_message(object mbox, int curr, string* args)
+{
+  string savefile;
+
+  if(!wizardp(this_player())) {
+    write("Not a player command.\n");
+    return;
+  }
+  
+  if(!sizeof(args)) {
+    savefile = HOME_DIR(this_player()) + "/mbox";
+  } else {
+    savefile = RESOLVE_PATH(args[0]);
+  }
+
+  write_file(savefile, (string) mbox->get_mesg(curr));
+
+  printf("Appended message to %s.\n", savefile);
+}
+
+/*-------------------------- Send Dialog -----------------------------------*/
+
+void
+cmd_send_mesg(string tolist, function call_func)
 {
   write("Subject: ");
-  input_to((: cmd_send_mesg2 :), 0, tolist );
+  input_to((: cmd_send_mesg2 :), 0, tolist, call_func);
 }
 
 void
-cmd_send_mesg2(string input, string tolist)
+cmd_send_mesg2(string input, string tolist, function cf)
 {
-  object editor = new(EDITOR);
-
-  editor->enter_text((: cmd_send_mesg3 :), 0, input, tolist );
+  EDITOR->edit((: cmd_send_mesg3, input, tolist, cf :));
 }
 
 void
-cmd_send_mesg3(string* lines, string subject, string tolist)
+cmd_send_mesg3(string subject, string tolist, function cf, string* lines)
 {
-  write("CC:");
-  input_to((: send_mail :), 0,
-	   "" , this_player()->query_cap_name(),
-	   tolist, time(), subject, implode(lines, "\n")+"\n");
+  if(!lines) {
+    write("Mail aborted.\n");
+  } else {
+    write("CC:");
+    input_to((: cmd_send_mesg4 :), 0, tolist, subject,
+	   implode(lines, "\n") + "\n", cf);
+  }
 }
 
-// This function distributes a mail message.
-// It will eventually be modified to handle remote mail as well as local mail.
-//
-// 'tolist' should be a comma separated list of users to send this mesg to
-// 'bcclist' should be a comma separated list of users to recieve carbon copies
-// 'cclist' is for documentation only.  Messages will not be sent to users
-//          in cclist.  This is for use with Intermud-3 for showing users who
-//          received a carbon copy on a remote mud.
-// 'time' is an integer as returned by time()
-//
-// The rest is self explanatory.
+void
+cmd_send_mesg4(string cclist, string tolist, string subject,
+	       string content, function cf)
+{
+  send_mail(cclist, "", this_player()->query_cap_name(), tolist, time(),
+	    subject, content);
+  if(cf)
+    evaluate(cf);
+}
 
 void
 send_mail(string bcclist, string cclist, string from, string tolist, 
@@ -337,9 +337,20 @@ send_mail(string bcclist, string cclist, string from, string tolist,
 
     } else /* local user */ {
 
+      // if user is in mail right now
+      if(open_boxes[user]) {
+	((object) open_boxes[user])->add_mesg(subject, from, localmesg);
+	printf("Mail %%^GREEN%%^sent%%^RESET%%^ to %s.\n", user);
+	
+	if(ob = find_player(user))
+	  tell_object(ob, "%^BELL%^You have %^GREEN%^NEW%^RESET%^ mail.\n");
+
+	continue;
+      }
+
       if(!tmpmbox->restore_mailbox(user)) {
 	log_file("maild", sprintf("error loading mbox for %s\n", user));
-
+	  
 	// Couldn't load an existing mailbox for this user.
 	// We need to do this if the box doesn't load so the messages in
 	// the previous box aren't still hanging around.
@@ -347,18 +358,17 @@ send_mail(string bcclist, string cclist, string from, string tolist,
       }
 
       tmpmbox->add_mesg(subject, from, localmesg);
-
+      
       if(!tmpmbox->save_mailbox()) {
 	log_file("maild", sprintf("error saving mbox for %s\n", user));
 	if(this_player())
 	  printf("%%^RED%%^Failed%%^RESET%%^ to send mail to %s.\n", user);
       } else if(this_player()) {
 	printf("Mail %%^GREEN%%^sent%%^RESET%%^ to %s.\n", user);
-
+	
 	if(ob = find_player(user))
 	  tell_object(ob, "%^BELL%^You have %^GREEN%^NEW%^RESET%^ mail.\n");
       }
-
     }
   }
 

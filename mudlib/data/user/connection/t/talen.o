@@ -5,6 +5,6 @@ real_name "Stuart Lamble"
 email_addr "lamble@yoyo.cc.monash.edu.au"
 home_dir "/u/t/talen"
 body "/obj/clone/user/human"
-login_time 822546171
-login_from "130.194.1.90"
-active 0
+login_time 824439380
+logout_time 823919823
+login_from "lindblat.cc.monash.edu.au"

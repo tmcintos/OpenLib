@@ -1,211 +1,248 @@
 /*  -*- LPC -*-  */
-// more.c
+// more.c by Tim
+//
+// CAVEATS:
+//   Hitting 'h' repeatedly scrolls back...need to keep track of prev_line
+//   as well as curr_line to do this right.
 
 // Temporary!!
-#define CHUNK 25
+#define CHUNK 24
 #define WIDTH 80
 
-/* Prototypes */
-int more(string filename);
-void more2(string input, string filename, int curr_line,
-	   int screen_len, int screen_wid);
-void more3(string input, string *lines, int curr_line, int size,
-	   int screen_len, int screen_wid);
+#define display(x) message("system", x, this_object())
 
+/*
+ * Prototypes
+ */
+varargs int more(string filename, function callback);
+void more_file(string input, string filename, int curr_line,
+	   int screen_len, function callback);
+void more_array(string input, string *lines, int curr_line, int size,
+	   int screen_len, int screen_wid, function callback);
+int more_show_help();
+
+/*
+ * more() call this with an argument that is either an array of lines
+ *        to be displayed to the user (not newline terminated), or a filename
+ *        of a file to display.  The optional callback function will be
+ *        called after the text is displayed.
+ */
+
+varargs
 int
-more(mixed fileORarray)
+more(mixed fileORarray, function callback)
 {
   int total;
 
   if(arrayp(fileORarray)) {
-    int i, size = sizeof(fileORarray);
-
-    for(i=0; i<size; i++)
+    for(int i = 0; i < sizeof(fileORarray); i++)
       fileORarray[i] += "\n";
-
-    more3("X", fileORarray, 1, size, CHUNK, WIDTH);
+    more_array("X", fileORarray, 1, sizeof(fileORarray), CHUNK,
+	       WIDTH, callback);
   } else {
-    more2("X", fileORarray, 1, CHUNK, WIDTH);
+    more_file("X", fileORarray, 1, CHUNK, callback);
   }
 
   return 1;
 }
 
-//
-// more2()
-//   curr_line is always the 1st line of the next page to print
-//
+/*
+ * more_file()
+ *   curr_line is always the 1st line of the next page to print
+ */
 
 void
-more2(string input, string filename, int curr_line,
-	   int screen_len, int screen_wid)
+more_file(string input, string filename, int curr_line, int sl, function cb)
 {
-  int i;
   int itmp, percent;
   string text;
 
   switch(input[0]) {
   case ' ' :                             // show NEXT page
-    tell_object(me, "\n");                         // need a newline
-    break;
+    display("\n");                       // need a newline
   case 'X' :                             // for starting; prints no newline
     break;
   case 'h' :                             // show HELP
-    tell_object(me, "\n");                         // need a newline
-    curr_line -= screen_len-1;             // back to top of this page
+    display("\n");                       // need a newline
+    curr_line -= sl - 1;         // back to top of this page
 
-    if(curr_line < 1)                         // we're on the 1st page already
+    if(curr_line < 1)                    // we're on the 1st page already
       curr_line = 1;
 
     itmp = this_object()->more_show_help() + 1;   // number of lines displayed
-    itmp = screen_len - itmp;                     // fill the user's screen
-    for(i=0;i < itmp;i++) tell_object(me, "\n");
+    itmp = sl - itmp;                     // fill the user's screen
+    for(int i = 0; i < itmp; i++) display("\n");
 
-    tell_object(me, "%^INVERSE%^Hit Spacebar to Continue%^RESET%^");
+    display("%^INVERSE%^Hit Spacebar to Continue%^RESET%^");
 
-    get_char("more2", 1, filename, curr_line, screen_len, screen_wid);
-    return;
-  case 'q' :
-    tell_object(me, "\n");                         // need a newline
+    get_char("more_file", 1, filename, curr_line, sl, cb);
     return;
   case 's' :                             // SKIP FORWARD one page
-    tell_object(me, "\n");                         // need a newline
-    tell_object(me, "Skipping 1 page...\n");
-    curr_line += screen_len-1;
+    display("\n");                       // need a newline
+    display("Skipping 1 page...\n");
+    curr_line += sl - 1;
     break;
   case 'u' :
   case 'b' :                             // BACK one page
-    tell_object(me, "\n");                         // need a newline
-    curr_line -= 2 * (screen_len-1);
+    display("\n");                       // need a newline
+    curr_line -= 2 * (sl-1);
 
-    if(curr_line < 1) {                  // we're on the 1st page already
+    if(curr_line < 1)                    // we're on the 1st page already
       curr_line = 1;
-      break;                             // we're done
-    }
+
     break;
+  case 'q' :                             // Only way out
+    display("\n");                       // need a newline
+    evaluate(cb);
+    return;
   default :
-    get_char("more2", 1, filename, curr_line, screen_len, screen_wid);
+    get_char("more_file", 1, filename, curr_line, sl, cb);
     return;
   }  /* switch(input) */
 
-// read the next screenfull
-  if(text = read_file(filename, curr_line, screen_len-1)) {
-    tell_object(me, text);
-    curr_line += screen_len - 1;
+  /*
+   * read the next screenfull
+   */
+  if(text = read_file(filename, curr_line, sl-1)) {
+    display(text);
+    curr_line += sl - 1;
   }
 
-// End of file encountered
-  if(!read_file(filename, curr_line, 1)) {
-    tell_object(me, "EOF\n");
-    return;
+  /*
+   * End of file encountered, but some text was read
+   */
+  if(text) {
+    if(!read_file(filename, curr_line, 1)) {
+      itmp = sl - sizeof(explode(text, "\n"));
+      for(int i = 1; i < itmp; i++)
+	display("~\n");
+      display("%^INVERSE%^(END)%^RESET%^");
+    } else {
+      display("%^INVERSE%^--More--(line: " + curr_line +
+	      ")%^RESET%^  [<spacebar> for more, 'h' for help] ");
+    }
+  } else {
+    // curr_line is past end of file, redraw screen
+    return
+      more_file("X", filename, curr_line - (sl - 1), sl, cb);
   }
 
-  tell_object(me, "%^INVERSE%^--More--(line: " + curr_line +
-	")%^RESET%^  [<spacebar> for more, 'h' for help] ");
-
-  get_char("more2", 1, filename, curr_line, screen_len, screen_wid);
-  return;
+  get_char("more_file", 1, filename, curr_line, sl, cb);
 }
+
+/*
+ * more_array()
+ */
+
+void
+more_array(string input, string *lines, int curr_line, int size,
+	   int sl, int sw, function cb)
+{
+  int itmp, percent, start_line;
+  string text;
+
+  start_line = curr_line;
+
+  switch(input[0]) {
+  case ' ' :                             // show NEXT page
+    display("\n");                       // need a newline
+  case 'X' :                             // for starting; prints no newline
+    break;
+  case 'h' :                             // show HELP
+    display("\n");                       // need a newline
+//    for(int i = 0; i < sl-1; i++) {  // back to top of this page
+//      string tmp;
+//      tmp = lines[--curr_line - 1];
+//      if(curr_line < 1) break;                // if we hit the top of page
+//      i += (strlen(tmp) - 1) / sw;    // account for wrap-around lines
+//    }
+//
+//    if(curr_line < 1)                        // we're on the 1st page already
+      curr_line = start_line;                     // top of this page
+
+    itmp = this_object()->more_show_help() + 1;   // number of lines displayed
+    itmp = sl - itmp;                     // fill the user's screen
+    for(int i = 0; i < itmp; i++) display("\n");
+
+    display("%^INVERSE%^Hit Spacebar to Continue%^RESET%^");
+
+    get_char("more_array", 1, lines, curr_line, size, sl, sw, cb);
+    return;
+  case 'q' :                             // only way out
+    display("\n");                       // need a newline
+    evaluate(cb);
+    return;
+  case 's' :                             // SKIP FORWARD one page
+    display("\n");                       // need a newline
+    display("Skipping 1 page...\n");
+    for(int i = 0; i < sl-1; i++) {
+      string tmp;
+      tmp = lines[curr_line++ - 1];
+      i += (strlen(tmp) - 1) / sw;   // account for wrap-around lines
+      if(curr_line == size+1) {              // end of array
+	curr_line = start_line;              // start where we were
+	break;
+      }
+    }
+    break;
+  case 'u' :
+  case 'b' :                                 // BACK one page
+    display("\n");                           // need a newline
+    for(int i = 0; i < 2*(sl-1); i++) { // back to top of previous page
+      string tmp;
+      if(curr_line < 2) break;               // if we hit the top of document
+      tmp = lines[--curr_line - 1];
+      i += (strlen(tmp) - 1) / sw;   // account for wrap-around lines
+    }
+
+    if(curr_line < 1)                        // we're on the 1st page already
+      curr_line = 1;
+    
+    break;
+  default :
+    get_char("more_array", 1, lines, curr_line, size, sl, sw, cb);
+    return;
+  }  /* switch(input) */
+
+  /*
+   * display next page
+   */
+  for(int i = 0; i < sl-1; i++) {
+    if(curr_line > size) {                   // past the end of array
+      display("~\n");
+    } else {
+      text = lines[curr_line++ - 1];
+      display(text);
+      i += (strlen(text) - 1) / sw;  // account for wrap-around lines
+    }
+  }
+
+  if(curr_line > size) {                     // past the end of array
+    curr_line = start_line;                  // reset curr_line
+    display("%^INVERSE%^(END)%^RESET%^");
+  } else {
+    display("%^INVERSE%^--More--(" + (100 * curr_line) / size +
+	    "%)%^RESET%^  [<spacebar> for more, 'h' for help] ");
+  }
+
+  get_char("more_array", 1, lines, curr_line, size, sl, sw, cb);
+}
+
+/*
+ *  Help for more
+ */
 
 int
 more_show_help()
 {
   int i;
 
-  tell_object(me, "Help for MORE:\n\n"
-	+"<spacebar>    Show next page\n"
-	+"u,b           Go back to the previous page\n"
-	+"h             Show this help\n"
-	+"s             Skip 1 page\n"
-	+"q             Quit\n");
+  display("Help for MORE:\n\n"
+	  +"<spacebar>    Show next page\n"
+	  +"u,b           Go back to the previous page\n"
+	  +"h             Show this help\n"
+	  +"s             Skip 1 page\n"
+	  +"q             Quit\n");
 
   return (7);         // number of lines displayed
-}
-
-void
-more3(string input, string *lines, int curr_line, int size,
-	   int screen_len, int screen_wid)
-{
-  int i;
-  int itmp, percent;
-  string text;
-
-  switch(input[0]) {
-  case ' ' :                             // show NEXT page
-    tell_object(me, "\n");                         // need a newline
-    break;
-  case 'X' :                             // for starting; prints no newline
-    break;
-  case 'h' :                             // show HELP
-    tell_object(me, "\n");                         // need a newline
-    for(i=0;i < screen_len-1;i++) {      // back to top of this page
-      string tmp;
-      tmp = lines[--curr_line - 1];
-      if(curr_line < 1) break;                // if we hit the top of document
-      i += (strlen(tmp) - 1) / screen_wid;    // account for wrap-around lines
-    }
-
-    if(curr_line < 1)                         // we're on the 1st page already
-      curr_line = 1;
-
-    itmp = this_object()->more_show_help() + 1;   // number of lines displayed
-    itmp = screen_len - itmp;                     // fill the user's screen
-    for(i=0;i < itmp;i++) tell_object(me, "\n");
-
-    tell_object(me, "%^INVERSE%^Hit Spacebar to Continue%^RESET%^");
-
-    get_char("more3", 1, lines, curr_line, size, screen_len, screen_wid);
-    return;
-  case 'q' :
-    tell_object(me, "\n");                         // need a newline
-    return;
-  case 's' :                             // SKIP FORWARD one page
-    tell_object(me, "\n");                         // need a newline
-    tell_object(me, "Skipping 1 page...\n");
-    for(i=0;i < screen_len-1;i++) {
-      string tmp;
-      tmp = lines[curr_line++ - 1];
-      i += (strlen(tmp) - 1) / screen_wid;    // account for wrap-around lines
-      if(curr_line == size+1) {
-	tell_object(me, "EOF\n");
-	return;                          // we're done
-      }
-    }
-    break;
-  case 'u' :
-  case 'b' :                             // BACK one page
-    tell_object(me, "\n");                         // need a newline
-    for(i=0;i < 2*(screen_len-1);i++) {  // back to top of previous page
-      string tmp;
-      if(curr_line < 2) break;           // if we hit the top of document
-      tmp = lines[--curr_line - 1];
-      i += (strlen(tmp) - 1) / screen_wid;    // account for wrap-around lines
-    }
-
-    if(curr_line < 1) {                 // we're on the 1st page already
-      curr_line = 1;
-      break;                             // we're done
-    }
-    break;
-  default :
-    get_char("more3", 1, lines, curr_line, size, screen_len, screen_wid);
-    return;
-  }  /* switch(input) */
-
-// display next page
-  for(i=0;i < screen_len-1;i++) {
-    text = lines[curr_line++ - 1];
-    tell_object(me, text);
-    i += (strlen(text) - 1) / screen_wid;    // account for wrap-around lines
-    if(curr_line == size+1) {
-      tell_object(me, "EOF\n");
-      return;                          // we're done
-    }
-  }
-
-  tell_object(me, "%^INVERSE%^--More--(" + (100 * curr_line) / size +
-	"%)%^RESET%^  [<spacebar> for more, 'h' for help] ");
-
-  get_char("more3", 1, lines, curr_line, size, screen_len, screen_wid);
-  return;
 }

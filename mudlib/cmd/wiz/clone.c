@@ -1,11 +1,10 @@
 /*  -*- LPC -*-  */
-#include <command.h>
 #include <cmdline.h>
 
 #define USAGE "usage: clone [-n] <filename>\n"
 
 int
-_main(string *argv, string *argv2)
+main(string *argv, string *argv2)
 {
   object ob;
   string file, tmp;

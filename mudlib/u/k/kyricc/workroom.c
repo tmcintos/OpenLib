@@ -24,5 +24,6 @@ create()
   set_exits((["start" : "/d/base/start.c",
               "crys" : "/u/k/kyricc/Crysanthium/town_square.c",
               "void" : "/adm/obj/daemon/void.c",
+              "porno" : "/u/k/kyricc/Porno/porno",
 	      ]));
 }

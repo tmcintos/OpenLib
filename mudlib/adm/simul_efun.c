@@ -1,7 +1,7 @@
 /*  -*- LPC -*-  */
 // Simulated Efuns file
 
-#include <mudlib.h>
+#include <dirs.h>
 #include <uid.h>
 #include "efuns/efuns.h"   // This file has all the efuns includes in it...
 

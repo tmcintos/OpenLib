@@ -1,4 +1,10 @@
 /*  -*- LPC -*-  */
+// cmdd.c:  Command Daemon
+// Written by Tim fall 1995
+//
+// 02/03/96  Tim  Optimized a bit
+// 02/19/96  Tim  Optimized a bit more :)
+
 #include <mudlib.h>
 
 #define DEBUG
@@ -21,10 +27,8 @@ create()
 void
 reset()
 {
-  string path;
-
-  foreach(path in keys(cmdpathmap)) {
-    if(cmdpathmap[path] == ({ }))
+  foreach(string path, string* cmdset in cmdpathmap) {
+    if( cmdset == ({}) )
       map_delete(cmdpathmap, path);
   }
   // Assert: directories with no commands have been removed from mapping
@@ -43,67 +47,75 @@ dump_cmdpathmap()
 varargs
 mixed
 find_cmd(string name, int flag)
-// pre: true
+// pre: if name is a path to a file it is already in absolute form
 // modifies: nothing
 // post: if !flag, returns the command object for the command 'name', else
 //       returns the full path to the command 'name'
 //       returns 0 if not found or failed to load
 {
+  string path;
   object ret;
-  string* paths;
-  string path = 0;
-  int i;
+  int found;
 
-  paths = (string *)this_player()->query_path();
-  
-  for(i = 0; i < sizeof(paths); i++) {
-    if(paths[i][<1] != '/')
-      paths[i] += "/";
+  // Check for an absolute path first
+  // User should resolve this path before calling this function
+  if(!strsrch(name, '/')) {
 
-    if(member_array(paths[i], keys(cmdpathmap)) == -1)
-      continue;
+    /* wiz check here */
 
-    if(member_array(name, cmdpathmap[paths[i]]) != -1) {
-      path = paths[i] + name;
-      break;
+    if(!file_exists(name + ".c")) return 0;
+
+    path = "";
+    found = 1;
+  } else {
+    string* paths = (string *)this_player()->query_path();
+
+    // Search each path of the user's path setting until we find
+    // (or don't find) the command
+    foreach(path in paths) {
+      if(path[<1] != '/')
+	path += "/";
+      // Assert:  path ends with '/'
+      
+      if(!cmdpathmap[path])
+	continue;
+
+      if(member_array(name, cmdpathmap[path]) != -1) {
+	found = 1;
+	break;
+      }
     }
   }
-  // Assert: path == 0 if not found, else
-  //         path == first full path found to command 'name'
-  //         paths[i] == directory 'name' is in
+  // Assert: found == 0 if not found, else
+  //         path' == first full path found to command 'name'
 
-  if(!strsrch(name, '/') || !strsrch(name, "./")) { // wiz check here
-    name = RESOLVE_PATH(name + ".c");
-    if(file_exists(name))
-      return name;
-    else
-      return 0;
-  }
-
-  if(!path) return 0;         // not found
-
-  if(catch(ret = load_object(path))) {
-    log_file("cmdd", sprintf("turned off %s\n", path));
-    cmdpathmap[paths[i]] -= ({ name });
+  if(!found) return 0;
+  
+  if( catch(ret = load_object(path + name)) ) {
+    log_file("cmdd", sprintf("turned off %s\n", path + name));
+    if(strlen(path)) cmdpathmap[path] -= ({ name });
     return 0;
   }
   // Assert: 'ret' is the commmand object.  load_object() finds it if it was
   //         already loaded.
 
   if(!flag)
-    return ret;                // returns command object
+    return ret;                        // returns command object
   else
-    return path +".c";         // returns full path
+    return path + name + ".c";         // returns full path
 }
 
 boolean
 hashed_path(string path)
+// pre: path != 0
+// modifies: nothing
+// post: returns true if path has been hashed
 {
   if(path[<1] != '/')
     path += "/";
   // Assert:  path ends with '/'
 
-  return member_array(path, keys(cmdpathmap)) != -1;
+  return cmdpathmap[path] != 0;
 }
 
 int
@@ -114,29 +126,19 @@ hash_path(string path)
 //       cmdpathmap[path] is an array of commands in that dir
 {
   string* files;
-  string file;
 
   if(path[<1] != '/')
     path += "/";
   // Assert:  path ends with '/'
 
-  if(!directory_exists(path))
-    return 0;                 // make sure dir exists
-
-  if(member_array(path, keys(cmdpathmap)) == -1)
-    cmdpathmap += ([ path : ({ }) ]);
-  else
-    cmdpathmap[path] = ({});
+  if(!directory_exists(path)) return 0;         // make sure dir exists
 
   files = get_dir(path);
 
-  foreach(file in files) {
-    string tmp;
-
-    if(sscanf(file, "%s.c", tmp) == 1)
-      cmdpathmap[path] += ({ tmp });
-  }
-  // Assert:  cmdpathmap[path] now contains an array of all cmds in that dir
+  cmdpathmap[path] = map(filter(files, (: $1[<2..<1] == ".c" :)),
+			 (: $1[0..<3] :));
+  // Assert:  cmdpathmap[path] now contains an array of all cmds
+  //          in that dir (without the .c extension)
 
   save_object(SAVE_COMD);
   return 1;

@@ -140,5 +140,8 @@ authenticate_mud(string mudname, int keyval)
 int
 get_session_key(string mudname)
 {
-  return ((keyset) keymap[mudname])->conn_there;
+  if(keymap[mudname])
+    return ((keyset) keymap[mudname])->conn_there;
+  else
+    return 0;
 }

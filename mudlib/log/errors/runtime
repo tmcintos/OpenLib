@@ -1,27 +1,33 @@
 
-[ERROR] *Destruct on vital object failed: new copy failed to reload.  obj : (adm/simul_efun)
-  file: adm/efuns/destruct.c:11
-  prgm: adm/simul_efun.c
-  func: destruct
-  args: ( 676092, )
+[ERROR] *Error in loading object '/obj/daemon/net/inetd'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:116
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
 
-[ERROR] *Destruct on vital object failed: new copy failed to reload.  obj : (adm/simul_efun)
-  file: adm/efuns/destruct.c:11
-  prgm: adm/simul_efun.c
-  func: destruct
-  args: ( 676092, )
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:25
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( 1347268, )
 
-[ERROR] *Destruct on vital object failed: new copy failed to reload.  obj : (adm/simul_efun)
-  file: adm/efuns/destruct.c:11
-  prgm: adm/simul_efun.c
-  func: destruct
-  args: ( 676092, )
+[ERROR] *Bad argument 1 to member_array()
+Expected: int Got: ({ }).
+  obj : (obj/daemon/chatd)
+  file: obj/daemon/chatd.c:283
+  prgm: obj/daemon/chatd.c
+  func: map_to_remote
+  args: ( "icode", )
 
-[ERROR] *Destruct on vital object failed: new copy failed to reload.  obj : (adm/simul_efun)
-  file: adm/efuns/destruct.c:11
-  prgm: adm/simul_efun.c
-  func: destruct
-  args: ( 676092, )
+[ERROR] *Bad argument 1 to file_size()
+Expected: string Got: 0.
+  obj : (cmd/wiz/ls)
+  file: cmd/wiz/ls.c:69
+  prgm: cmd/wiz/ls.c
+  func: do_ls
+  args: ( 0, 0, 0, 0, 0, )
 
 [ERROR] *Bad argument 3 to message()
 Expected: string or array or object Got: 0.
@@ -29,113 +35,2536 @@ Expected: string or array or object Got: 0.
   file: adm/efuns/tell_object.c:3
   prgm: adm/simul_efun.c
   func: tell_object
-  args: ( 0, 882460, )
+  args: ( 0, 779980, )
 
-[ERROR] *Destruct on vital object failed: new copy failed to reload.  obj : (adm/simul_efun)
-  file: adm/efuns/destruct.c:11
-  prgm: adm/simul_efun.c
-  func: destruct
-  args: ( 676092, )
+[ERROR] *Error in loading object '/u/t/talen/banish'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:116
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
 
-[ERROR] *Destruct on vital object failed: new copy failed to reload.  obj : (adm/simul_efun)
-  file: adm/efuns/destruct.c:11
-  prgm: adm/simul_efun.c
-  func: destruct
-  args: ( 786024, )
+[ERROR] *Bad argument 1 to capitalize()
+Expected: string Got: 0.
+  obj : (obj/clone/connection#56)
+  file: obj/clone/connection.c:70
+  prgm: obj/clone/connection.c
+  func: query_cap_name
+  args: ( )
+
+[ERROR] *Array index out of bounds.
+  obj : (obj/clone/user/human#60)
+  file: obj/clone/user.c:192
+  prgm: obj/clone/user.c
+  func: process_input
+  args: ( " ", )
+
+[ERROR] *Bad argument 1 to capitalize()
+Expected: string Got: 0.
+  obj : (obj/clone/connection#56)
+  file: obj/clone/connection.c:70
+  prgm: obj/clone/connection.c
+  func: query_cap_name
+  args: ( )
+
+[ERROR] *call_other() couldn't find object
+  obj : (obj/clone/user#76)
+  file: obj/inherit/base/object.c:85
+  prgm: obj/inherit/base/object.c
+  func: move
+  args: ( "/u/k/kyricc/Crysanthium/lookarvornint.c", )
+
+[ERROR] *call_other() couldn't find object
+  obj : (obj/clone/user#76)
+  file: obj/inherit/base/object.c:85
+  prgm: obj/inherit/base/object.c
+  func: move
+  args: ( "/u/k/kyricc/Crysanthium/lookarvoardint.c", )
+
+[ERROR] *call_other() couldn't find object
+  obj : (obj/clone/user#76)
+  file: obj/inherit/base/object.c:85
+  prgm: obj/inherit/base/object.c
+  func: move
+  args: ( "/u/k/kyricc/Crysanthium/mysosst2e.c", )
 
 [ERROR] *Bad argument 3 to message()
 Expected: string or array or object Got: 0.
   obj : (adm/simul_efun)
-  file: adm/efuns/printf.c:8
+  file: adm/efuns/tell_object.c:3
   prgm: adm/simul_efun.c
-  func: printf
-  args: ( 1061872, 1639164, )
+  func: tell_object
+  args: ( 0, 892440, )
+
+[ERROR] *Error in loading object '/cmd/adm/lsch'
+  obj : (adm/obj/daemon/cmdd)
+  file: adm/obj/daemon/cmdd.c:92
+  prgm: adm/obj/daemon/cmdd.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/cmd/adm/lsch'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:116
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
 
 [ERROR] *Bad argument 3 to message()
 Expected: string or array or object Got: 0.
   obj : (adm/simul_efun)
-  file: adm/efuns/printf.c:8
+  file: adm/efuns/tell_object.c:3
   prgm: adm/simul_efun.c
-  func: printf
-  args: ( 1061872, 1025396, )
+  func: tell_object
+  args: ( 0, 896440, )
 
 [ERROR] *Bad argument 3 to message()
 Expected: string or array or object Got: 0.
   obj : (adm/simul_efun)
-  file: adm/efuns/printf.c:8
+  file: adm/efuns/tell_object.c:3
   prgm: adm/simul_efun.c
-  func: printf
-  args: ( 1061872, 1050444, )
+  func: tell_object
+  args: ( 0, 777104, )
+
+[ERROR] *Error in loading object '/cmd/adm/lsch'
+  obj : (adm/obj/daemon/cmdd)
+  file: adm/obj/daemon/cmdd.c:92
+  prgm: adm/obj/daemon/cmdd.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/cmd/adm/ftpwho'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/cmd/adm/lc'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/cmd/adm/lq'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/cmd/adm/lsch'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/cmd/adm/pq'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/cmd/wiz/ls'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/cmd/wiz/ls'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/cmd/wiz/ls'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Bad type argument to +. Had string and array
+  obj : (cmd/wiz/ls)
+  file: cmd/wiz/ls.c:97
+  prgm: cmd/wiz/ls.c
+  func: do_ls
+  args: ( "/obj/daemon/", 0, 0, 1, 0, )
+
+[ERROR] *Error in loading object '/cmd/wiz/ls'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Bad type argument to +. Had string and array
+  obj : (cmd/wiz/ls)
+  file: cmd/wiz/ls.c:97
+  prgm: cmd/wiz/ls.c
+  func: do_ls
+  args: ( "/obj/daemon/", 0, 0, 1, 0, )
+
+[ERROR] *Bad type argument to +. Had string and array
+  obj : (cmd/wiz/ls)
+  file: cmd/wiz/ls.c:97
+  prgm: cmd/wiz/ls.c
+  func: do_ls
+  args: ( "/obj/daemon/", 0, 0, 1, 0, )
+
+[ERROR] *Error in loading object '/cmd/wiz/ls'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/cmd/wiz/ls'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/cmd/wiz/ls'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
 
 [ERROR] *Bad argument 3 to message()
 Expected: string or array or object Got: 0.
   obj : (adm/simul_efun)
-  file: adm/efuns/printf.c:8
+  file: adm/efuns/tell_object.c:3
   prgm: adm/simul_efun.c
-  func: printf
-  args: ( 1061872, 1647196, )
+  func: tell_object
+  args: ( 0, 889936, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 778820, )
 
 [ERROR] *Error in loading object '/tmp/tmp_eval_file'
   obj : (adm/cmd/wiz/eval)
-  file: adm/cmd/wiz/eval.c:23
+  file: adm/cmd/wiz/eval.c:25
   prgm: adm/cmd/wiz/eval.c
   func: main
-  args: ( 1648716, )
+  args: ( 1006092, )
 
-[ERROR] *Error in loading object '/obj/inherit/cmd_module'
-  obj : (cmd/wiz/update)
-  file: cmd/wiz/update.c:107
-  prgm: cmd/wiz/update.c
+[ERROR] *Error in loading object '/u/t/tim/test'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
   func: CATCH
   args: ( 0)
 
-[ERROR] *Error in loading object '/cmd/player/exa'
-  obj : (cmd/wiz/update)
-  file: cmd/wiz/update.c:107
-  prgm: cmd/wiz/update.c
+[ERROR] *Error in loading object '/u/t/tim/test'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
   func: CATCH
   args: ( 0)
 
-[ERROR] *Error in loading object '/cmd/player/help'
+[ERROR] *Error in loading object '/u/t/tim/test'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/u/t/tim/test'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 778700, )
+
+[ERROR] *Error in loading object '/u/t/tim/test'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/u/t/tim/test'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/u/t/tim/test'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Too long evaluation. Execution aborted.
+  obj : (adm/simul_efun)
+  file: adm/efuns/termcap.c:373
+  prgm: adm/simul_efun.c
+  func: termcap_format_line
+  args: ( "something else", 1017164, )
+
+[ERROR] *Can't catch eval cost too big error.
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: update_file
+  args: ( "/u/t/tim/test", 1, 0, )
+
+[ERROR] *Error in loading object '/u/t/tim/test'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/u/t/tim/test'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/u/t/tim/test'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/u/t/tim/test'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/u/t/tim/test'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/u/t/tim/test'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/u/t/tim/test'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 778772, )
+
+[ERROR] *Can't load objects when no effective user.
+  obj : (tmp/tmp_eval_file)
+  file: tmp/tmp_eval_file.c:6
+  prgm: tmp/tmp_eval_file.c
+  func: eval
+  args: ( )
+
+[ERROR] *Error in loading object '/u/t/tim/bin/test'
   obj : (adm/obj/daemon/cmdd)
-  file: adm/obj/daemon/cmdd.c:84
+  file: adm/obj/daemon/cmdd.c:92
   prgm: adm/obj/daemon/cmdd.c
   func: CATCH
   args: ( 0)
 
-[ERROR] *Error in loading object '/cmd/player/look'
-  obj : (adm/obj/daemon/cmdd)
-  file: adm/obj/daemon/cmdd.c:84
-  prgm: adm/obj/daemon/cmdd.c
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1030368, )
+
+[ERROR] *(s)printf(): Incorrect argument to type (s)printf(): Incorrect argument to type %s. (arg: 1)
+. (arg: 1)
+  obj : (adm/simul_efun)
+  file: adm/efuns/printf.c:8
+  prgm: adm/simul_efun.c
+  func: printf
+  args: ( 809484, 809620, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 895852, )
+
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:25
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( 1012008, )
+
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:25
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( 1007488, )
+
+[ERROR] *Error in loading object '/obj/clone/user/more'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
   func: CATCH
   args: ( 0)
 
-[ERROR] *(s)printf(): More arguments specified than passed. (arg: 2)
-  obj : (cmd/player/help)
-  file: cmd/player/help.c:59
-  prgm: cmd/player/help.c
-  func: _main
-  args: ( "tim", 3, ({ /* sizeof() == 3 */
-  "help",
-  "-t",
-  "tim"
-}), ({ /* sizeof() == 1 */
-  "tim"
-}), )
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:25
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( 1119812, )
 
-[ERROR] *Error in loading object '/cmd/player/help'
-  obj : (cmd/wiz/update)
-  file: cmd/wiz/update.c:107
-  prgm: cmd/wiz/update.c
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:25
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( 1115656, )
+
+[ERROR] *Error in loading object '/obj/clone/user'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/obj/clone/user'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Bad argument 1 to explode()
+Expected: string Got: 0.
+  obj : (obj/clone/user/human#37)
+  file: obj/clone/user/more.c:113
+  prgm: obj/clone/user.c
+  func: more_file
+  args: ( 987612, "/doc/projects/editor.sys", 93, 24, 0, )
+
+[ERROR] *Array index out of bounds.
+  obj : (obj/clone/user/human#37)
+  file: obj/clone/user.c:192
+  prgm: obj/clone/user.c
+  func: process_input
+  args: ( " ", )
+
+[ERROR] *Array index must be positive or zero.
+  obj : (obj/clone/user/human#78)
+  file: obj/clone/user/more.c:155
+  prgm: obj/clone/user.c
+  func: more_array
+  args: ( 1290304, ({ /* sizeof() == 1 */
+  "test
+"
+}), 0, 1, 24, 80, (: tell_object, obj/clone/user/human#78, "hey!!
+" :), )
+
+[ERROR] *Array index out of bounds.
+  obj : (obj/clone/user/human#78)
+  file: obj/clone/user.c:192
+  prgm: obj/clone/user.c
+  func: process_input
+  args: ( " ", )
+
+[ERROR] *(s)printf(): More arguments specified than passed. (arg: 1)
+  obj : (obj/clone/user/human#119)
+  file: obj/inherit/more.c:236
+  prgm: obj/inherit/more.c
+  func: more_array
+  args: ( 1325832, ({ /* sizeof() == 40 */
+  "Dysfunctional Mud recognizes thirty-eight mud(s) matching your query: 
+",
+  "
+",
+  "Beta E          LPMud      MudOS v22a5     Nightmare-Emera 155.100.235.174 8000
+",
+  "Callandor       LPMud      MudOS v21.7b14  Cocaine V2.0b   144.92.88.31 5317
+",
+  "Castalia        LPMud      MudOS v22a18D   Nightmare IVr2. 204.243.186.3 7000
+",
+  "CeltiQuest      LPMud      MudOS v21.6     Nightmare IVr1  204.157.201.239 7778
+",
+  "Crystal Towers  LPMud      MudOS v22a18D   Nightmare IVr2. 198.64.213.133 6969
+",
+  "Darkpowers      LPmud      MudOS v21.7a10  Tmi-2 1.3 pre2  198.213.104.14 6666
+",
+  "Discworld       LPMud      MudOS v21.7b4   Discworld 11.0a 198.174.169.120 4242
+",
+  "Dysfunctional M LPMud      MudOS v22a21    UltraLib 0.1    129.186.85.38 4444
+",
+  "Earth           LPmud      MudOS v22a21    Earthmudlib 1.2 129.186.104.9 2222
+",
+  "Eldritch        LPmud      MudOS v21       Tmi-2           204.181.176.6 5000
+",
+  "Empires2        LP         MudOS v22a18    Lima 0.9r10 (pr 128.138.225.10 6666
+",
+  "Enulal          CDlib      AD.04.02        CustomiseD      163.143.125.117 2222
+",
+  "Eodon           LPmud      MudOS v21.5     Tmi-2 1.3 pre1  131.174.124.32 5555
+",
+  "FotD            LPMud      LPMud 03.02.1@1 LPMud 2.04.05   204.118.244.4 3000
+",
+  "IdeaExchange    LPMud      MudOS v21.7b14  Foundation IIr1 198.174.169.120 7890
+",
+  "Image World     LPMud      MudOS v22a18D   Nightmare IVr2. 194.86.205.2 4000
+",
+  "Lima Bean       LP         MudOS v22a18    Lima 0.9r10 (pr 198.92.143.9 7878
+",
+  "Lost Wishes     LPmud      MudOS v22a21    LW 0.1          194.109.12.41 5555
+",
+  "Lost Wishes 2   LPmud      MudOS v22a21    LW 0.1          194.109.12.42 12345
+",
+  "Medievia        LPMud      MudOS v22a22    Nightmare IVr2. 198.59.148.37 4000
+",
+  "Mostly Harmless LPmud      MudOS v21.7a10  TMI/MH v1.3/.9  204.182.45.26 5555
+",
+  "Nameless Sorrow LPMud      MudOS v21.7b4   Discworld       128.238.1.20 4000
+",
+  "Nightmare       LPMud      MudOS v22a18db  Nightmare IVr2. 198.174.169.120 1701
+",
+  "Orion           LpMud      MudOS v22a16    OrionLib v0.5   205.218.118.5 2000
+",
+  "Private Idaho   LP         MudOS v22a18    Lima 0.9r10 (pr 204.132.120.1 8888
+",
+  "Prophecy        LPMud      MudOS v22a8     Nightmare IVr2. 128.138.142.65 1074
+",
+  "Random Slaughte LP         MudOS v22a18    Lima 0.9r10 (pr 149.84.33.5 6666
+",
+  "Realms of Magic LPMud      MudOS v22a18D   Nightmare IVr2. 206.151.132.8 6000
+",
+  "RoadKill        LPMud      MudOS v22a8     Nightmare IVr2. 156.46.216.2 4500
+",
+  "Shadow's Edge   LPMud      LPMud v03.02.1@ Shadow's Edge 3 128.6.110.38 4000
+",
+  "Shattered Empir LPMud      MudOS v22a18D   Nightmare IVr2. 204.71.144.66 3000
+",
+  "Sundevil        LP         MudOS v22a18    Lima 0.9r10 (pr 203.19.43.177 7878
+",
+  "Team-Aye        LPmud      MudOS v21.7a10  Tmi-2 1.3 pre3  130.89.226.53 5555
+",
+  "The Land of Thr LPMud      MudOS v21.5     Foundation IIr1 205.159.174.1 4000
+",
+  "The Shadows     LPMud      MudOS v22a18D   APGS 1.00       206.151.132.8 7000
+",
+  "Tsunami         LPMud      LPMud 03.02.1@1 Tsunami-Lib 99  204.141.0.40 23
+",
+  "WarHawks Reveng LPMud      MudOS v22a18D   Nightmare IVr2. 204.87.217.10 4000
+",
+  "ZorkMUD         LP         MudOS v22a18    Lima 0.9r9 (pre 198.92.143.9 7890
+"
+}), 24, 40, 24, 80, 0, )
+
+[ERROR] *(s)printf(): Error in format string. (arg: 0)
+  obj : (obj/clone/user/human#124)
+  file: obj/inherit/more.c:236
+  prgm: obj/inherit/more.c
+  func: more_array
+  args: ( 1325832, ({ /* sizeof() == 40 */
+  "Dysfunctional Mud recognizes thirty-eight mud(s) matching your query: 
+",
+  "
+",
+  "Beta E          LPMud      MudOS v22a5     Nightmare-Emera 155.100.235.174 8000
+",
+  "Callandor       LPMud      MudOS v21.7b14  Cocaine V2.0b   144.92.88.31 5317
+",
+  "Castalia        LPMud      MudOS v22a18D   Nightmare IVr2. 204.243.186.3 7000
+",
+  "CeltiQuest      LPMud      MudOS v21.6     Nightmare IVr1  204.157.201.239 7778
+",
+  "Crystal Towers  LPMud      MudOS v22a18D   Nightmare IVr2. 198.64.213.133 6969
+",
+  "Darkpowers      LPmud      MudOS v21.7a10  Tmi-2 1.3 pre2  198.213.104.14 6666
+",
+  "Discworld       LPMud      MudOS v21.7b4   Discworld 11.0a 198.174.169.120 4242
+",
+  "Dysfunctional M LPMud      MudOS v22a21    UltraLib 0.1    129.186.85.38 4444
+",
+  "Earth           LPmud      MudOS v22a21    Earthmudlib 1.2 129.186.104.9 2222
+",
+  "Eldritch        LPmud      MudOS v21       Tmi-2           204.181.176.6 5000
+",
+  "Empires2        LP         MudOS v22a18    Lima 0.9r10 (pr 128.138.225.10 6666
+",
+  "Enulal          CDlib      AD.04.02        CustomiseD      163.143.125.117 2222
+",
+  "Eodon           LPmud      MudOS v21.5     Tmi-2 1.3 pre1  131.174.124.32 5555
+",
+  "FotD            LPMud      LPMud 03.02.1@1 LPMud 2.04.05   204.118.244.4 3000
+",
+  "IdeaExchange    LPMud      MudOS v21.7b14  Foundation IIr1 198.174.169.120 7890
+",
+  "Image World     LPMud      MudOS v22a18D   Nightmare IVr2. 194.86.205.2 4000
+",
+  "Lima Bean       LP         MudOS v22a18    Lima 0.9r10 (pr 198.92.143.9 7878
+",
+  "Lost Wishes     LPmud      MudOS v22a21    LW 0.1          194.109.12.41 5555
+",
+  "Lost Wishes 2   LPmud      MudOS v22a21    LW 0.1          194.109.12.42 12345
+",
+  "Medievia        LPMud      MudOS v22a22    Nightmare IVr2. 198.59.148.37 4000
+",
+  "Mostly Harmless LPmud      MudOS v21.7a10  TMI/MH v1.3/.9  204.182.45.26 5555
+",
+  "Nameless Sorrow LPMud      MudOS v21.7b4   Discworld       128.238.1.20 4000
+",
+  "Nightmare       LPMud      MudOS v22a18db  Nightmare IVr2. 198.174.169.120 1701
+",
+  "Orion           LpMud      MudOS v22a16    OrionLib v0.5   205.218.118.5 2000
+",
+  "Private Idaho   LP         MudOS v22a18    Lima 0.9r10 (pr 204.132.120.1 8888
+",
+  "Prophecy        LPMud      MudOS v22a8     Nightmare IVr2. 128.138.142.65 1074
+",
+  "Random Slaughte LP         MudOS v22a18    Lima 0.9r10 (pr 149.84.33.5 6666
+",
+  "Realms of Magic LPMud      MudOS v22a18D   Nightmare IVr2. 206.151.132.8 6000
+",
+  "RoadKill        LPMud      MudOS v22a8     Nightmare IVr2. 156.46.216.2 4500
+",
+  "Shadow's Edge   LPMud      LPMud v03.02.1@ Shadow's Edge 3 128.6.110.38 4000
+",
+  "Shattered Empir LPMud      MudOS v22a18D   Nightmare IVr2. 204.71.144.66 3000
+",
+  "Sundevil        LP         MudOS v22a18    Lima 0.9r10 (pr 203.19.43.177 7878
+",
+  "Team-Aye        LPmud      MudOS v21.7a10  Tmi-2 1.3 pre3  130.89.226.53 5555
+",
+  "The Land of Thr LPMud      MudOS v21.5     Foundation IIr1 205.159.174.1 4000
+",
+  "The Shadows     LPMud      MudOS v22a18D   APGS 1.00       206.151.132.8 7000
+",
+  "Tsunami         LPMud      LPMud 03.02.1@1 Tsunami-Lib 99  204.141.0.40 23
+",
+  "WarHawks Reveng LPMud      MudOS v22a18D   Nightmare IVr2. 204.87.217.10 4000
+",
+  "ZorkMUD         LP         MudOS v22a18    Lima 0.9r9 (pre 198.92.143.9 7890
+"
+}), 24, 40, 24, 80, 0, )
+
+[ERROR] *Array index out of bounds.
+  obj : (obj/clone/user/human#124)
+  file: obj/clone/user.c:193
+  prgm: obj/clone/user.c
+  func: process_input
+  args: ( " ", )
+
+[ERROR] *(s)printf(): Error in format string. (arg: 0)
+  obj : (obj/clone/user/human#124)
+  file: obj/inherit/more.c:133
+  prgm: obj/inherit/more.c
+  func: more_file
+  args: ( 1325832, "/doc/man/man3/sprintf.3", 24, 24, 0, )
+
+[ERROR] *(s)printf(): Error in format string. (arg: 0)
+  obj : (obj/clone/user/human#124)
+  file: obj/inherit/more.c:133
+  prgm: obj/inherit/more.c
+  func: more_file
+  args: ( 1325832, "/doc/man/man3/sprintf.3", 24, 24, 0, )
+
+[ERROR] *Array index out of bounds.
+  obj : (obj/clone/user/human#124)
+  file: obj/clone/user.c:193
+  prgm: obj/clone/user.c
+  func: process_input
+  args: ( " ", )
+
+[ERROR] *Error in loading object '/adm/obj/daemon/logind'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900940, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777540, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 901044, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777712, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777796, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777864, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900940, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777540, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 901044, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777712, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777796, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777864, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900940, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777540, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 901044, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777712, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777796, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777864, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900940, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777540, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 901044, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777712, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777796, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777864, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900940, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777540, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 901044, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777712, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777796, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777864, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900940, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777540, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 901044, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777712, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777796, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777864, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900940, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777540, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 901044, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777712, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777796, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777864, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900940, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777540, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 901044, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777712, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777796, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777864, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900940, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777540, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 901044, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777712, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777796, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777864, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900940, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777540, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 901044, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777712, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777796, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777864, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900940, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777540, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 901044, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777712, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777796, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777864, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900940, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777540, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 901044, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777712, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777796, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777864, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900940, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777540, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 901044, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777712, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777796, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777864, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900932, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900764, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 782672, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900932, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900764, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 782672, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900932, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900764, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 782672, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900932, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900764, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 782672, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900932, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900764, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 782672, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900932, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900764, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 782672, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900932, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900764, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 782672, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900932, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900764, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 782672, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900932, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900764, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 782672, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900932, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900764, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 782672, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900932, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900764, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 782672, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900932, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900764, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 782672, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900932, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900764, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 782672, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900932, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900764, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 782672, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900932, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900764, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 782672, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900932, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900764, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 782672, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900932, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900764, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 782672, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900932, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900932, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900932, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900932, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900932, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900932, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 900932, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 895180, )
+
+[ERROR] *Error in loading object '/adm/obj/daemon/logind'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
   func: CATCH
   args: ( 0)
 
 [ERROR] *Error in loading object '/adm/obj/daemon/logind'
-  obj : (cmd/wiz/update)
-  file: cmd/wiz/update.c:107
-  prgm: cmd/wiz/update.c
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
   func: CATCH
   args: ( 0)
+
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:25
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( 1317056, )
+
+[ERROR] *Error in loading object '/adm/obj/daemon/logind'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/obj/inherit/more'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Array index out of bounds.
+  obj : (obj/clone/user/human#22)
+  file: obj/clone/user.c:193
+  prgm: obj/clone/user.c
+  func: process_input
+  args: ( " ", )
+
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:25
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( 839240, )
+
+[ERROR] *Array index out of bounds.
+  obj : (obj/clone/user/human#22)
+  file: obj/clone/user.c:193
+  prgm: obj/clone/user.c
+  func: process_input
+  args: ( " ", )
+
+[ERROR] *Array index out of bounds.
+  obj : (obj/clone/user/human#22)
+  file: obj/clone/user.c:193
+  prgm: obj/clone/user.c
+  func: process_input
+  args: ( " ", )
+
+[ERROR] *Array index out of bounds.
+  obj : (obj/clone/user/human#22)
+  file: obj/clone/user.c:193
+  prgm: obj/clone/user.c
+  func: process_input
+  args: ( " ", )
+
+[ERROR] this sucks  obj : (tmp/tmp_eval_file)
+  file: tmp/tmp_eval_file.c:6
+  prgm: tmp/tmp_eval_file.c
+  func: eval
+  args: ( )
+
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:25
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( 996588, )
+
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:25
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( 1319820, )
+
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:25
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( 955856, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 776092, )
+
+[ERROR] *Error in loading object '/adm/simul_efun'
+  obj : (adm/simul_efun)
+  file: adm/efuns/destruct.c:11
+  prgm: adm/simul_efun.c
+  func: destruct
+  args: ( 1028136, )
+
+[ERROR] *Array index out of bounds.
+  obj : (adm/simul_efun)
+  file: adm/efuns/resolve_path.c:99
+  prgm: adm/simul_efun.c
+  func: glob
+  args: ( "", ({ }), )
+
+[ERROR] *Error in loading object '/adm/simul_efun'
+  obj : (adm/simul_efun)
+  file: adm/efuns/destruct.c:11
+  prgm: adm/simul_efun.c
+  func: destruct
+  args: ( 680188, )
+
+[ERROR] *Error in loading object '/obj/clone/user'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/obj/clone/user'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Array index out of bounds.
+  obj : (obj/clone/user/human#11)
+  file: obj/clone/user.c:187
+  prgm: obj/clone/user.c
+  func: process_input
+  args: ( " ", )
+
+[ERROR] *Array index out of bounds.
+  obj : (obj/clone/user/human#11)
+  file: obj/clone/user.c:187
+  prgm: obj/clone/user.c
+  func: process_input
+  args: ( "", )
+
+[ERROR] *Array index out of bounds.
+  obj : (obj/clone/user/human#11)
+  file: obj/clone/user.c:187
+  prgm: obj/clone/user.c
+  func: process_input
+  args: ( "", )
+
+[ERROR] *Array index out of bounds.
+  obj : (obj/clone/user/human#11)
+  file: obj/clone/user.c:187
+  prgm: obj/clone/user.c
+  func: process_input
+  args: ( "", )
+
+[ERROR] *Array index out of bounds.
+  obj : (obj/clone/user/human#11)
+  file: obj/clone/user.c:187
+  prgm: obj/clone/user.c
+  func: process_input
+  args: ( "", )
+
+[ERROR] *Error in loading object '/obj/clone/user'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/obj/clone/user'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/obj/clone/user'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Bad argument 1 to file_size()
+Expected: string Got: 0.
+  obj : (cmd/wiz/ls)
+  file: cmd/wiz/ls.c:68
+  prgm: cmd/wiz/ls.c
+  func: do_ls
+  args: ( 0, 0, 0, 0, 0, )
+
+[ERROR] *Bad argument 1 to implode()
+Expected: array Got: 0.
+  obj : (obj/clone/user/human#67)
+  file: obj/clone/user.c:215
+  prgm: obj/clone/user.c
+  func: process_input
+  args: ( "cd ~/ad*", )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777600, )
+
+[ERROR] *call_other() couldn't find object
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/u/k/kyricc/Porno/porno'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/u/k/kyricc/Porno/porno'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *call_other() couldn't find object
+  obj : (obj/clone/user/human#33)
+  file: obj/inherit/object.c:85
+  prgm: obj/inherit/object.c
+  func: move
+  args: ( "/u/k/kyricc/Porno/anal_alley1.c", )
+
+[ERROR] *Error in loading object '/u/k/kyricc/Porno/ROOMS/anal_alley1'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *call_other() couldn't find object
+  obj : (obj/clone/user/human#38)
+  file: obj/inherit/object.c:85
+  prgm: obj/inherit/object.c
+  func: move
+  args: ( "/u/k/kyricc/Porno/ROOMS/anal_alley2.c", )
+
+[ERROR] *call_other() couldn't find object
+  obj : (obj/clone/user/human#38)
+  file: obj/inherit/object.c:85
+  prgm: obj/inherit/object.c
+  func: move
+  args: ( "/u/k/kyricc/Porno/ROOMS/lewed_lane1n.c", )
+
+[ERROR] *call_other() couldn't find object
+  obj : (obj/clone/user/human#38)
+  file: obj/inherit/object.c:85
+  prgm: obj/inherit/object.c
+  func: move
+  args: ( "/u/k/kyricc/Porno/ROOMS/lewed_lane1n.c", )
+
+[ERROR] *Error in loading object '/u/w/warthog/generic'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/u/w/warthog/generic'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/u/w/warthog/generic'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *call_other() couldn't find object
+  obj : (obj/clone/user#111)
+  file: obj/inherit/object.c:85
+  prgm: obj/inherit/object.c
+  func: move
+  args: ( "/u/d/base/start.c", )
+
+[ERROR] *call_other() couldn't find object
+  obj : (obj/clone/user#111)
+  file: obj/inherit/object.c:85
+  prgm: obj/inherit/object.c
+  func: move
+  args: ( "/u/d/base/start.c", )
+
+[ERROR] *call_other() couldn't find object
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *call_other() couldn't find object
+  obj : (obj/clone/user#126)
+  file: obj/inherit/object.c:85
+  prgm: obj/inherit/object.c
+  func: move
+  args: ( "/u/w/warthog/volusia2.c", )
+
+[ERROR] *call_other() couldn't find object
+  obj : (obj/clone/user#126)
+  file: obj/inherit/object.c:85
+  prgm: obj/inherit/object.c
+  func: move
+  args: ( "/u/w/warthog/pizzahut.c", )
+
+[ERROR] *call_other() couldn't find object
+  obj : (obj/clone/user#126)
+  file: obj/inherit/object.c:85
+  prgm: obj/inherit/object.c
+  func: move
+  args: ( "/u/w/warthog/kennel.c", )
+
+[ERROR] *Error in loading object '/obj/clone/tcsh'
+  obj : (cmd/wiz/clone)
+  file: cmd/wiz/clone.c:23
+  prgm: cmd/wiz/clone.c
+  func: main
+  args: ( ({ /* sizeof() == 2 */
+  "clone",
+  "tcsh"
+}), ({ /* sizeof() == 1 */
+  "tcsh"
+}), )
+
+[ERROR] *Error in loading object '/obj/clone/tcsh'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/obj/clone/tcsh'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:25
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( 1323572, )
+
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:25
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( 1317384, )
+
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:25
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( 1323572, )
+
+[ERROR] *Error in loading object '/obj/clone/tcsh'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/obj/clone/tcsh'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/obj/clone/tcsh'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/obj/clone/tcsh'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:25
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( 1322912, )
+
+[ERROR] *Error in loading object '/obj/clone/test'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:25
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( 1876512, )
+
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:25
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( 1327024, )
+
+[ERROR] *Bad argument 1 to sscanf
+Expected: string Got: 0.
+  obj : (obj/clone/tcsh#178)
+  file: obj/clone/tcsh.c:109
+  prgm: obj/clone/tcsh.c
+  func: get_player
+  args: ( "ti", )
+
+[ERROR] *Bad argument 1 to sscanf
+Expected: string Got: 0.
+  obj : (obj/clone/tcsh#178)
+  file: obj/clone/tcsh.c:109
+  prgm: obj/clone/tcsh.c
+  func: get_player
+  args: ( "ti", )
+
+[ERROR] *Error in loading object '/obj/clone/tcsh'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_room.c:4
+  prgm: adm/simul_efun.c
+  func: tell_room
+  args: ( 0, "Misery is link-dead.
+", 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 766076, )
+
+[ERROR] *Error in loading object '/adm/obj/daemon/logind'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/adm/simul_efun'
+  obj : (adm/simul_efun)
+  file: adm/efuns/destruct.c:11
+  prgm: adm/simul_efun.c
+  func: destruct
+  args: ( 680188, )
+
+[ERROR] *nested *?+
+  obj : (tmp/tmp_eval_file)
+  file: tmp/tmp_eval_file.c:6
+  prgm: tmp/tmp_eval_file.c
+  func: eval
+  args: ( )
+
+[ERROR] *Function is no longer a simul_efun.
+  obj : (obj/clone/user/human#30)
+  file: obj/clone/user.c:177
+  prgm: obj/clone/user.c
+  func: path_resolve
+  args: ( 1301128, )
+
+[ERROR] *Function is no longer a simul_efun.
+  obj : (obj/clone/user/human#30)
+  file: obj/clone/user.c:177
+  prgm: obj/clone/user.c
+  func: path_resolve
+  args: ( 1323112, )
+
+[ERROR] *Function is no longer a simul_efun.
+  obj : (obj/clone/user/human#30)
+  file: obj/clone/user.c:177
+  prgm: obj/clone/user.c
+  func: path_resolve
+  args: ( 1015200, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 895164, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1116780, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1116964, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1117040, )
+
+[ERROR] *Error in loading object '/obj/daemon/net/httpd'
+  obj : (adm/obj/daemon/master)
+  file: adm/obj/daemon/master.c:109
+  prgm: adm/obj/daemon/master.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/obj/clone/user'
+  obj : (adm/obj/daemon/logind)
+  file: adm/obj/daemon/logind.c:236
+  prgm: adm/obj/daemon/logind.c
+  func: player_enter_world
+  args: ( 0, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1030460, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1095144, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1095328, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1095404, )
+
+[ERROR] *Error in loading object '/obj/daemon/net/httpd'
+  obj : (adm/obj/daemon/master)
+  file: adm/obj/daemon/master.c:109
+  prgm: adm/obj/daemon/master.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 895048, )
+
+[ERROR] *call_other() couldn't find object
+  obj : (obj/clone/user/human#7)
+  file: obj/inherit/object.c:85
+  prgm: obj/inherit/object.c
+  func: move
+  args: ( "/u/k/kyricc/Porno/ROOMS/lewed_lane1n.c", )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 894920, )
+
+[ERROR] *ed_start() called while an ed session is already started.
+  obj : (obj/clone/user/human#33)
+  file: obj/clone/user.c:431
+  prgm: obj/clone/user.c
+  func: start_ed
+  args: ( 1298348, 0, )
+
+[ERROR] *ed_cmd() called with no ed session active.
+  obj : (obj/clone/user/human#58)
+  file: obj/clone/user.c:442
+  prgm: obj/clone/user.c
+  func: process_ed_input
+  args: ( 987928, )
+
+[ERROR] hey  obj : (tmp/tmp_eval_file)
+  file: tmp/tmp_eval_file.c:6
+  prgm: tmp/tmp_eval_file.c
+  func: eval
+  args: ( )
+
+[ERROR] *Error in loading object '/u/t/tim/newuser'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/u/t/tim/newuser'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 891916, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 891908, )
+
+[ERROR] *Bad argument 1 to explode()
+Expected: string Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/termcap.c:367
+  prgm: adm/simul_efun.c
+  func: termcap_format_line
+  args: ( 0, 0, )
+
+[ERROR] *Function is no longer a simul_efun.
+  obj : (obj/clone/user/human#2)
+  file: obj/clone/user.c:364
+  prgm: obj/clone/user.c
+  func: receive_message
+  args: ( "system", 965728, )
+
+[ERROR] *Function is no longer a simul_efun.
+  obj : (obj/clone/user/human#2)
+  file: obj/clone/user.c:364
+  prgm: obj/clone/user.c
+  func: receive_message
+  args: ( "tell_room", 1091972, )
+
+[ERROR] *Bad argument 2 to present()
+Expected: object Got: 0.
+  obj : (cmd/wiz/dest)
+  file: cmd/wiz/dest.c:16
+  prgm: cmd/wiz/dest.c
+  func: main
+  args: ( "tim", )
+
+[ERROR] *Bad argument 1 to file_name()
+Expected: object Got: 0.
+  obj : (cmd/player/look)
+  file: cmd/player/look.c:19
+  prgm: cmd/player/look.c
+  func: main
+  args: ( 0, )
+
+[ERROR] *Function is no longer a simul_efun.
+  obj : (obj/clone/user/human#2)
+  file: obj/clone/user.c:364
+  prgm: obj/clone/user.c
+  func: receive_message
+  args: ( "system", 965728, )
+
+[ERROR] *Function is no longer a simul_efun.
+  obj : (obj/clone/user/human#2)
+  file: obj/clone/user.c:364
+  prgm: obj/clone/user.c
+  func: receive_message
+  args: ( "tell_room", 1091972, )
+
+[ERROR] *Bad argument 1 to file_name()
+Expected: object Got: 0.
+  obj : (cmd/player/look)
+  file: cmd/player/look.c:19
+  prgm: cmd/player/look.c
+  func: main
+  args: ( 0, )
+
+[ERROR] *Bad argument 1 to file_name()
+Expected: object Got: 0.
+  obj : (cmd/player/look)
+  file: cmd/player/look.c:19
+  prgm: cmd/player/look.c
+  func: main
+  args: ( 0, )
 
 [ERROR] *Bad argument 3 to message()
 Expected: string or array or object Got: 0.
@@ -143,45 +2572,25 @@ Expected: string or array or object Got: 0.
   file: adm/efuns/tell_room.c:6
   prgm: adm/simul_efun.c
   func: tell_room
-  args: ( 0, "Beavis unwields a long sword.
+  args: ( 0, "Quint hears his mother calling and runs home to mommy!
 ", ({ /* sizeof() == 1 */
-  u/k/kyricc/MONSTERS/monster
+  obj/clone/user/human#15
 }), )
 
-[ERROR] *Error in loading object '/cmd/player/exa'
-  obj : (adm/obj/daemon/cmdd)
-  file: adm/obj/daemon/cmdd.c:84
-  prgm: adm/obj/daemon/cmdd.c
-  func: CATCH
-  args: ( 0)
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 896656, )
 
-[ERROR] *Error in loading object '/u/e/evergreen/editord'
-  obj : (cmd/wiz/update)
-  file: cmd/wiz/update.c:107
-  prgm: cmd/wiz/update.c
-  func: CATCH
-  args: ( 0)
-
-[ERROR] *Error in loading object '/u/e/evergreen/editord'
-  obj : (cmd/wiz/update)
-  file: cmd/wiz/update.c:107
-  prgm: cmd/wiz/update.c
-  func: CATCH
-  args: ( 0)
-
-[ERROR] *Error in loading object '/u/e/evergreen/editord'
-  obj : (cmd/wiz/update)
-  file: cmd/wiz/update.c:107
-  prgm: cmd/wiz/update.c
-  func: CATCH
-  args: ( 0)
-
-[ERROR] *Error in loading object '/u/e/evergreen/editord'
-  obj : (cmd/wiz/update)
-  file: cmd/wiz/update.c:107
-  prgm: cmd/wiz/update.c
-  func: CATCH
-  args: ( 0)
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:25
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( 851528, )
 
 [ERROR] *Bad argument 3 to message()
 Expected: string or array or object Got: 0.
@@ -189,382 +2598,39 @@ Expected: string or array or object Got: 0.
   file: adm/efuns/tell_object.c:3
   prgm: adm/simul_efun.c
   func: tell_object
-  args: ( 0, 739568, )
-
-[ERROR] *Array index out of bounds.
-  obj : (u/k/kyricc/MONSTERS/butthead)
-  file: obj/clone/monster.c:55
-  prgm: obj/clone/monster.c
-  func: random_action
-  args: ( )
-
-[ERROR] *Array index out of bounds.
-  obj : (u/k/kyricc/MONSTERS/beavis)
-  file: obj/clone/monster.c:55
-  prgm: obj/clone/monster.c
-  func: random_action
-  args: ( )
+  args: ( 0, 897188, )
 
 [ERROR] *Error in loading object '/tmp/tmp_eval_file'
   obj : (adm/cmd/wiz/eval)
-  file: adm/cmd/wiz/eval.c:23
+  file: adm/cmd/wiz/eval.c:25
   prgm: adm/cmd/wiz/eval.c
   func: main
-  args: ( 817600, )
-
-[ERROR] *Bad argument 3 to message()
-Expected: string or array or object Got: 0.
-  obj : (adm/simul_efun)
-  file: adm/efuns/tell_object.c:3
-  prgm: adm/simul_efun.c
-  func: tell_object
-  args: ( 0, 739292, )
-
-[ERROR] *Bad argument 3 to message()
-Expected: string or array or object Got: 0.
-  obj : (adm/simul_efun)
-  file: adm/efuns/tell_object.c:3
-  prgm: adm/simul_efun.c
-  func: tell_object
-  args: ( 0, 739480, )
-
-[ERROR] *Bad argument 3 to message()
-Expected: string or array or object Got: 0.
-  obj : (adm/simul_efun)
-  file: adm/efuns/tell_object.c:3
-  prgm: adm/simul_efun.c
-  func: tell_object
-  args: ( 0, 883116, )
-
-[ERROR] *Error in loading object '/tmp/tmp_eval_file'
-  obj : (adm/cmd/wiz/eval)
-  file: adm/cmd/wiz/eval.c:23
-  prgm: adm/cmd/wiz/eval.c
-  func: main
-  args: ( 800908, )
-
-[ERROR] *Error in loading object '/tmp/tmp_eval_file'
-  obj : (adm/cmd/wiz/eval)
-  file: adm/cmd/wiz/eval.c:23
-  prgm: adm/cmd/wiz/eval.c
-  func: main
-  args: ( 1101032, )
-
-[ERROR] *Error in loading object '/tmp/tmp_eval_file'
-  obj : (adm/cmd/wiz/eval)
-  file: adm/cmd/wiz/eval.c:23
-  prgm: adm/cmd/wiz/eval.c
-  func: main
-  args: ( 1099476, )
-
-[ERROR] *Bad argument 1 to lower_case()
-Expected: string Got: 0.
-  obj : (obj/daemon/net/httpd)
-  file: obj/daemon/net/httpd.c:84
-  prgm: obj/daemon/net/httpd.c
-  func: read_callback
-  args: ( 4, 1053160, )
-
-[ERROR] *Array index out of bounds.
-  obj : (obj/daemon/net/httpd)
-  file: obj/daemon/net/httpd.c:82
-  prgm: obj/daemon/net/httpd.c
-  func: read_callback
-  args: ( 4, 954524, )
-
-[ERROR] *Array index out of bounds.
-  obj : (obj/daemon/net/httpd)
-  file: obj/daemon/net/httpd.c:82
-  prgm: obj/daemon/net/httpd.c
-  func: read_callback
-  args: ( 4, 1034240, )
-
-[ERROR] *Array index out of bounds.
-  obj : (obj/daemon/net/httpd)
-  file: obj/daemon/net/httpd.c:82
-  prgm: obj/daemon/net/httpd.c
-  func: read_callback
-  args: ( 4, 954524, )
-
-[ERROR] *Array index out of bounds.
-  obj : (obj/daemon/net/httpd)
-  file: obj/daemon/net/httpd.c:82
-  prgm: obj/daemon/net/httpd.c
-  func: read_callback
-  args: ( 4, 1034240, )
-
-[ERROR] *Error in loading object '/cmd/wiz/update'
-  obj : (adm/obj/daemon/cmdd)
-  file: adm/obj/daemon/cmdd.c:85
-  prgm: adm/obj/daemon/cmdd.c
-  func: CATCH
-  args: ( 0)
-
-[ERROR] *Error in loading object '/obj/inherit/cmd_module'
-  obj : (cmd/wiz/update)
-  file: cmd/wiz/update.c:107
-  prgm: cmd/wiz/update.c
-  func: CATCH
-  args: ( 0)
-
-[ERROR] *Error in loading object '/cmd/wiz/update'
-  obj : (adm/obj/daemon/cmdd)
-  file: adm/obj/daemon/cmdd.c:85
-  prgm: adm/obj/daemon/cmdd.c
-  func: CATCH
-  args: ( 0)
-
-[ERROR] *Error in loading object '/cmd/player/help'
-  obj : (adm/obj/daemon/cmdd)
-  file: adm/obj/daemon/cmdd.c:85
-  prgm: adm/obj/daemon/cmdd.c
-  func: CATCH
-  args: ( 0)
-
-[ERROR] *Array index out of bounds.
-  obj : (obj/daemon/net/httpd)
-  file: obj/daemon/net/httpd.c:82
-  prgm: obj/daemon/net/httpd.c
-  func: read_callback
-  args: ( 4, 947020, )
-
-[ERROR] *Array index out of bounds.
-  obj : (obj/daemon/net/httpd)
-  file: obj/daemon/net/httpd.c:82
-  prgm: obj/daemon/net/httpd.c
-  func: read_callback
-  args: ( 4, 1054588, )
-
-[ERROR] *Bad argument 1 to lower_case()
-Expected: string Got: 0.
-  obj : (obj/daemon/net/httpd)
-  file: obj/daemon/net/httpd.c:84
-  prgm: obj/daemon/net/httpd.c
-  func: read_callback
-  args: ( 4, 1054588, )
-
-[ERROR] *Array index out of bounds.
-  obj : (obj/daemon/net/httpd)
-  file: obj/daemon/net/httpd.c:82
-  prgm: obj/daemon/net/httpd.c
-  func: read_callback
-  args: ( 5, 947020, )
-
-[ERROR] *Array index out of bounds.
-  obj : (obj/daemon/net/httpd)
-  file: obj/daemon/net/httpd.c:82
-  prgm: obj/daemon/net/httpd.c
-  func: read_callback
-  args: ( 4, 1054588, )
-
-[ERROR] *Array index out of bounds.
-  obj : (obj/daemon/net/httpd)
-  file: obj/daemon/net/httpd.c:82
-  prgm: obj/daemon/net/httpd.c
-  func: read_callback
-  args: ( 5, 947020, )
-
-[ERROR] *Array index out of bounds.
-  obj : (obj/daemon/net/httpd)
-  file: obj/daemon/net/httpd.c:82
-  prgm: obj/daemon/net/httpd.c
-  func: read_callback
-  args: ( 4, 1054588, )
-
-[ERROR] *Array index out of bounds.
-  obj : (obj/daemon/net/httpd)
-  file: obj/daemon/net/httpd.c:82
-  prgm: obj/daemon/net/httpd.c
-  func: read_callback
-  args: ( 5, 947020, )
-
-[ERROR] *Array index out of bounds.
-  obj : (obj/daemon/net/httpd)
-  file: obj/daemon/net/httpd.c:82
-  prgm: obj/daemon/net/httpd.c
-  func: read_callback
-  args: ( 4, 1054588, )
-
-[ERROR] *Array index out of bounds.
-  obj : (obj/daemon/net/httpd)
-  file: obj/daemon/net/httpd.c:82
-  prgm: obj/daemon/net/httpd.c
-  func: read_callback
-  args: ( 5, 947020, )
-
-[ERROR] *Array index out of bounds.
-  obj : (obj/daemon/net/httpd)
-  file: obj/daemon/net/httpd.c:82
-  prgm: obj/daemon/net/httpd.c
-  func: read_callback
-  args: ( 4, 1054588, )
-
-[ERROR] *Array index out of bounds.
-  obj : (obj/daemon/net/httpd)
-  file: obj/daemon/net/httpd.c:82
-  prgm: obj/daemon/net/httpd.c
-  func: read_callback
-  args: ( 5, 947020, )
-
-[ERROR] *Array index out of bounds.
-  obj : (obj/daemon/net/httpd)
-  file: obj/daemon/net/httpd.c:82
-  prgm: obj/daemon/net/httpd.c
-  func: read_callback
-  args: ( 4, 1054588, )
-
-[ERROR] *Array index out of bounds.
-  obj : (obj/daemon/net/httpd)
-  file: obj/daemon/net/httpd.c:82
-  prgm: obj/daemon/net/httpd.c
-  func: read_callback
-  args: ( 5, 947020, )
-
-[ERROR] *Error in loading object '/cmd/wiz/clone'
-  obj : (adm/obj/daemon/cmdd)
-  file: adm/obj/daemon/cmdd.c:85
-  prgm: adm/obj/daemon/cmdd.c
-  func: CATCH
-  args: ( 0)
-
-[ERROR] *Array index out of bounds.
-  obj : (obj/daemon/net/httpd)
-  file: obj/daemon/net/httpd.c:82
-  prgm: obj/daemon/net/httpd.c
-  func: read_callback
-  args: ( 4, 1048084, )
-
-[ERROR] *Array index out of bounds.
-  obj : (obj/daemon/net/httpd)
-  file: obj/daemon/net/httpd.c:82
-  prgm: obj/daemon/net/httpd.c
-  func: read_callback
-  args: ( 4, 986872, )
-
-[ERROR] *Array index out of bounds.
-  obj : (obj/daemon/net/httpd)
-  file: obj/daemon/net/httpd.c:82
-  prgm: obj/daemon/net/httpd.c
-  func: read_callback
-  args: ( 4, 1044428, )
-
-[ERROR] *Bad argument 1 to lower_case()
-Expected: string Got: 0.
-  obj : (obj/daemon/net/httpd)
-  file: obj/daemon/net/httpd.c:84
-  prgm: obj/daemon/net/httpd.c
-  func: read_callback
-  args: ( 4, 954464, )
-
-[ERROR] *Array index out of bounds.
-  obj : (obj/daemon/net/httpd)
-  file: obj/daemon/net/httpd.c:82
-  prgm: obj/daemon/net/httpd.c
-  func: read_callback
-  args: ( 4, 1044428, )
-
-[ERROR] *Error in loading object '/cmd/wiz/man'
-  obj : (adm/obj/daemon/cmdd)
-  file: adm/obj/daemon/cmdd.c:85
-  prgm: adm/obj/daemon/cmdd.c
-  func: CATCH
-  args: ( 0)
-
-[ERROR] *Array index out of bounds.
-  obj : (obj/daemon/net/httpd)
-  file: obj/daemon/net/httpd.c:82
-  prgm: obj/daemon/net/httpd.c
-  func: read_callback
-  args: ( 4, 1048904, )
-
-[ERROR] *Array index out of bounds.
-  obj : (obj/daemon/net/httpd)
-  file: obj/daemon/net/httpd.c:82
-  prgm: obj/daemon/net/httpd.c
-  func: read_callback
-  args: ( 4, 1048084, )
-
-[ERROR] *Array index out of bounds.
-  obj : (obj/daemon/net/httpd)
-  file: obj/daemon/net/httpd.c:82
-  prgm: obj/daemon/net/httpd.c
-  func: read_callback
-  args: ( 4, 1033764, )
-
-[ERROR] *Error in loading object '/tmp/tmp_eval_file'
-  obj : (adm/cmd/wiz/eval)
-  file: adm/cmd/wiz/eval.c:23
-  prgm: adm/cmd/wiz/eval.c
-  func: main
-  args: ( 1052676, )
-
-[ERROR] *Error in loading object '/tmp/tmp_eval_file'
-  obj : (adm/cmd/wiz/eval)
-  file: adm/cmd/wiz/eval.c:23
-  prgm: adm/cmd/wiz/eval.c
-  func: main
-  args: ( 1337592, )
+  args: ( 986544, )
 
 [ERROR] *Error in loading object '/cmd/wiz/ls'
   obj : (adm/obj/daemon/cmdd)
-  file: adm/obj/daemon/cmdd.c:85
+  file: adm/obj/daemon/cmdd.c:92
   prgm: adm/obj/daemon/cmdd.c
-  func: CATCH
-  args: ( 0)
-
-[ERROR] *Bad argument 1 to call_other()
-Expected: string or array or object Got: 0.
-  obj : (adm/obj/daemon/fingerd)
-  file: adm/obj/daemon/fingerd.c:61
-  prgm: adm/obj/daemon/fingerd.c
-  func: GetFinger
-  args: ( 0, )
-
-[ERROR] *Error in loading object '/cmd/wiz/ls'
-  obj : (cmd/wiz/update)
-  file: cmd/wiz/update.c:111
-  prgm: cmd/wiz/update.c
   func: CATCH
   args: ( 0)
 
 [ERROR] *Error in loading object '/tmp/tmp_eval_file'
   obj : (adm/cmd/wiz/eval)
-  file: adm/cmd/wiz/eval.c:23
+  file: adm/cmd/wiz/eval.c:25
   prgm: adm/cmd/wiz/eval.c
   func: main
-  args: ( 1369180, )
+  args: ( 885968, )
 
-[ERROR] *String index out of bounds.
-  obj : (adm/simul_efun)
-  file: adm/efuns/wrap.c:5
-  prgm: adm/simul_efun.c
-  func: wrap
-  args: ( 1050684, )
+[ERROR] *Error in loading object '/tmp/tmp_eval_file'
+  obj : (adm/cmd/wiz/eval)
+  file: adm/cmd/wiz/eval.c:25
+  prgm: adm/cmd/wiz/eval.c
+  func: main
+  args: ( 807156, )
 
-[ERROR] *String index out of bounds.
-  obj : (adm/simul_efun)
-  file: adm/efuns/wrap.c:5
-  prgm: adm/simul_efun.c
-  func: wrap
-  args: ( 986320, )
-
-[ERROR] *ed_start() called while an ed session is already started.
-  obj : (obj/clone/user/human#129)
-  file: obj/clone/user.c:456
-  prgm: obj/clone/user.c
-  func: start_ed
-  args: ( 1053220, 0, )
-
-[ERROR] *String index out of bounds.
-  obj : (adm/simul_efun)
-  file: adm/efuns/wrap.c:5
-  prgm: adm/simul_efun.c
-  func: wrap
-  args: ( 1050684, )
-
-[ERROR] *String index out of bounds.
+[ERROR] *Bad argument to get_config()
   obj : (tmp/tmp_eval_file)
-  file: tmp/tmp_eval_file.c:5
+  file: tmp/tmp_eval_file.c:6
   prgm: tmp/tmp_eval_file.c
   func: eval
   args: ( )
@@ -575,304 +2641,2302 @@ Expected: string or array or object Got: 0.
   file: adm/efuns/tell_object.c:3
   prgm: adm/simul_efun.c
   func: tell_object
-  args: ( 0, 894792, )
+  args: ( 0, 828120, )
 
-[ERROR] *Error in loading object '/cmd/wiz/last'
-  obj : (adm/obj/daemon/cmdd)
-  file: adm/obj/daemon/cmdd.c:85
-  prgm: adm/obj/daemon/cmdd.c
-  func: CATCH
-  args: ( 0)
-
-[ERROR] *Bad argument 1 to file_size()
-Expected: string Got: 0.
-  obj : (obj/clone/user#34)
-  file: obj/clone/user.c:451
-  prgm: obj/clone/user.c
-  func: start_ed
-  args: ( 0, 0, )
-
-[ERROR] *(s)printf(): Error in format string. (arg: 0)
-  obj : (tmp/tmp_eval_file)
-  file: tmp/tmp_eval_file.c:5
-  prgm: tmp/tmp_eval_file.c
-  func: eval
-  args: ( )
-
-[ERROR] *Error in loading object '/tmp/tmp_eval_file'
-  obj : (adm/cmd/wiz/eval)
-  file: adm/cmd/wiz/eval.c:23
-  prgm: adm/cmd/wiz/eval.c
-  func: main
-  args: ( 1127344, )
-
-[ERROR] *Error in loading object '/tmp/tmp_eval_file'
-  obj : (adm/cmd/wiz/eval)
-  file: adm/cmd/wiz/eval.c:23
-  prgm: adm/cmd/wiz/eval.c
-  func: main
-  args: ( 719632, )
-
-[ERROR] *Bad argument 1 to call_other()
-Expected: string or array or object Got: 0.
-  obj : (cmd/player/quit)
-  file: cmd/player/quit.c:13
-  prgm: cmd/player/quit.c
-  func: main
-  args: ( 0, )
-
-[ERROR] *Error in loading object '/obj/clone/connection'
-  obj : (cmd/wiz/update)
-  file: cmd/wiz/update.c:111
-  prgm: cmd/wiz/update.c
-  func: CATCH
-  args: ( 0)
-
-[ERROR] *Bad argument 3 to message()
-Expected: string or array or object Got: 0.
-  obj : (adm/simul_efun)
-  file: adm/efuns/tell_object.c:3
-  prgm: adm/simul_efun.c
-  func: tell_object
-  args: ( 0, 732660, )
-
-[ERROR] *Error in loading object '/obj/clone/connection'
+[ERROR] *Error in loading object '/adm/obj/daemon/logind'
   obj : (adm/obj/daemon/master)
-  file: adm/obj/daemon/master.c:16
+  file: adm/obj/daemon/master.c:109
   prgm: adm/obj/daemon/master.c
   func: CATCH
   args: ( 0)
 
-[ERROR] *Bad argument 1 to lower_case()
-Expected: string Got: 0.
-  obj : (obj/daemon/net/httpd)
-  file: obj/daemon/net/httpd.c:84
-  prgm: obj/daemon/net/httpd.c
-  func: read_callback
-  args: ( 5, 960088, )
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 897444, )
 
-[ERROR] *Array index out of bounds.
-  obj : (obj/daemon/net/httpd)
-  file: obj/daemon/net/httpd.c:82
-  prgm: obj/daemon/net/httpd.c
-  func: read_callback
-  args: ( 5, 1049808, )
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 897636, )
 
-[ERROR] *Bad argument 1 to file_size()
-Expected: string Got: 0.
-  obj : (cmd/wiz/ls)
-  file: cmd/wiz/ls.c:63
-  prgm: cmd/wiz/ls.c
-  func: do_ls
-  args: ( 0, 0, 0, 0, 0, )
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 897720, )
 
-[ERROR] *restore_object(): Illegal file format.
-  obj : (obj/clone/connection#104)
-  file: obj/clone/connection.c:57
-  prgm: obj/clone/connection.c
-  func: restore_connection
-  args: ( 1044164, )
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 897804, )
 
-[ERROR] *Error in loading object '/adm/cmd/wiz/rm'
+[ERROR] *Error in loading object '/obj/daemon/net/services'
+  obj : (adm/obj/daemon/master)
+  file: adm/obj/daemon/master.c:109
+  prgm: adm/obj/daemon/master.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 898196, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 898012, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 898012, )
+
+[ERROR] *Error in loading object '/obj/daemon/net/intermud'
+  obj : (adm/obj/daemon/master)
+  file: adm/obj/daemon/master.c:109
+  prgm: adm/obj/daemon/master.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 780148, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 784640, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 784828, )
+
+[ERROR] *Error in loading object '/obj/daemon/net/ftpd'
+  obj : (adm/obj/daemon/master)
+  file: adm/obj/daemon/master.c:109
+  prgm: adm/obj/daemon/master.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 778768, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 778960, )
+
+[ERROR] *Error in loading object '/obj/daemon/net/httpd'
+  obj : (adm/obj/daemon/master)
+  file: adm/obj/daemon/master.c:109
+  prgm: adm/obj/daemon/master.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 898416, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 892612, )
+
+[ERROR] *Error in loading object '/obj/daemon/net/remote'
+  obj : (adm/obj/daemon/master)
+  file: adm/obj/daemon/master.c:109
+  prgm: adm/obj/daemon/master.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 828120, )
+
+[ERROR] *Error in loading object '/adm/obj/daemon/logind'
+  obj : (adm/obj/daemon/master)
+  file: adm/obj/daemon/master.c:109
+  prgm: adm/obj/daemon/master.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 891784, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 828120, )
+
+[ERROR] *Error in loading object '/adm/obj/daemon/logind'
+  obj : (adm/obj/daemon/master)
+  file: adm/obj/daemon/master.c:109
+  prgm: adm/obj/daemon/master.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 891784, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 825792, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 826392, )
+
+[ERROR] *Error in loading object '/obj/daemon/net/intermud'
+  obj : (adm/obj/daemon/master)
+  file: adm/obj/daemon/master.c:109
+  prgm: adm/obj/daemon/master.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 822232, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 896380, )
+
+[ERROR] *Error in loading object '/adm/cmd/player/mudlist'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/adm/cmd/player/mudlist'
   obj : (adm/obj/daemon/cmdd)
-  file: adm/obj/daemon/cmdd.c:85
+  file: adm/obj/daemon/cmdd.c:92
   prgm: adm/obj/daemon/cmdd.c
   func: CATCH
   args: ( 0)
 
-[ERROR] *Error in loading object '/tmp/tmp_eval_file'
-  obj : (adm/cmd/wiz/eval)
-  file: adm/cmd/wiz/eval.c:23
-  prgm: adm/cmd/wiz/eval.c
+[ERROR] *(s)printf(): Incorrect argument to type (s)printf(): Incorrect argument to type %s. (arg: 5)
+. (arg: 5)
+  obj : (adm/cmd/player/mudlist)
+  file: adm/cmd/player/mudlist.c:114
+  prgm: adm/cmd/player/mudlist.c
   func: main
-  args: ( 895580, )
+  args: ( 0, )
 
-[ERROR] *Bad argument 1 to destruct()
-Expected: object Got: 0.
-  obj : (tmp/tmp_eval_file)
-  file: tmp/tmp_eval_file.c:5
-  prgm: tmp/tmp_eval_file.c
-  func: eval
-  args: ( )
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/printf.c:8
+  prgm: adm/simul_efun.c
+  func: printf
+  args: ( 810752, 1324928, )
 
-[ERROR] *Error in loading object '/tmp/tmp_eval_file'
-  obj : (adm/cmd/wiz/eval)
-  file: adm/cmd/wiz/eval.c:23
-  prgm: adm/cmd/wiz/eval.c
-  func: main
-  args: ( 881188, )
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 772204, )
 
-[ERROR] *restore_object(): Illegal file format.
-  obj : (obj/clone/connection#107)
-  file: obj/clone/connection.c:57
-  prgm: obj/clone/connection.c
-  func: restore_connection
-  args: ( 956680, )
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 772788, )
 
-[ERROR] *Error in loading object '/tmp/tmp_eval_file'
-  obj : (adm/cmd/wiz/eval)
-  file: adm/cmd/wiz/eval.c:23
-  prgm: adm/cmd/wiz/eval.c
-  func: main
-  args: ( 992548, )
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 772204, )
 
-[ERROR] *Error in loading object '/tmp/tmp_eval_file'
-  obj : (adm/cmd/wiz/eval)
-  file: adm/cmd/wiz/eval.c:23
-  prgm: adm/cmd/wiz/eval.c
-  func: main
-  args: ( 1370452, )
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 772204, )
 
-[ERROR] *Error in loading object '/adm/cmd/wiz/cp'
-  obj : (adm/obj/daemon/cmdd)
-  file: adm/obj/daemon/cmdd.c:85
-  prgm: adm/obj/daemon/cmdd.c
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 763236, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 772204, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1102444, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 853452, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 772204, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 772044, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 849136, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 807956, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 749736, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 759504, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 772204, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 807956, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 759504, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 772204, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 849136, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 772204, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 749736, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 759504, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 757580, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 759504, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 757740, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1071592, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1071592, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1071592, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1071908, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1071804, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1071884, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1072116, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1072116, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1118908, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1072116, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1118988, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1119068, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1119380, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1119680, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1119380, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1073832, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1119380, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 776548, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 776628, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 776848, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 776848, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1119380, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777132, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777132, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1119380, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1080404, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 777424, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1080404, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1080404, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1080724, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1080724, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1080872, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1080872, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1080952, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1081260, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1081260, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1081340, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 838852, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 838852, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 838956, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 839064, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 839064, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 839224, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 839224, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 839432, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 839432, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 839668, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 839668, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 839748, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 839828, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1054348, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 772676, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1054392, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1054644, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1054644, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1119680, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1055404, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1119680, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1095692, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1095692, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1095692, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 822132, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 822132, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1095852, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1095956, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1096088, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1096204, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1096516, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1096516, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1096516, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1096688, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 806552, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 806552, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 806552, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 807956, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1055228, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1054644, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1065708, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1065708, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1096516, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1065868, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1096516, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1137836, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1137916, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1065868, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1137996, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1138076, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1138248, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 755200, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1138076, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 755280, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 755476, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1138076, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1096804, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1138076, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1071024, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1096688, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1071104, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 756844, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1065868, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1066056, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1066056, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1066056, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1096960, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1092672, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1092916, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1138076, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1092996, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1093076, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1093280, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1093280, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1093360, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1093440, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1093652, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1066056, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1065868, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1093852, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1094224, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1065868, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1055308, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 760212, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 808036, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1055308, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 760372, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 821924, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 806808, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1055308, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 760852, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 760852, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 760852, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 761068, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 808036, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 761508, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1070392, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 806808, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 756520, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 756600, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1070392, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 762488, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1076552, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1138076, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1076552, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1076552, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1138076, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 762800, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 762800, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1138076, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1077164, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1077164, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1138076, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 806808, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1077404, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1138076, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 821924, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1077644, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1077888, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1136404, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 808036, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1078424, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 762800, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1138076, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1078504, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1138076, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1078820, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1138076, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 756316, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 761932, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 756316, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 761932, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 761932, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 762108, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1050572, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 762108, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1050652, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1050652, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1050732, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1066056, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1066056, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1051012, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1051328, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1066056, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1051012, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1051012, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 755980, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 755980, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 761764, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1052248, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1052248, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 761764, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1052472, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 761764, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1052660, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1052784, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1053068, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1052784, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1053148, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1053480, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1053456, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1053544, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1053624, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1053788, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1053964, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1066340, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1066432, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1066512, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1066592, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1066812, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1053788, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1067000, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1067080, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1067160, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1067240, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 772460, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 758672, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1087992, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1087992, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1053228, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 805540, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1087992, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 1087992, )
+
+[ERROR] *Error in loading object '/adm/obj/daemon/cmdd'
+  obj : (adm/cmd/wiz/update)
+  file: adm/cmd/wiz/update.c:115
+  prgm: adm/cmd/wiz/update.c
   func: CATCH
   args: ( 0)
 
-[ERROR] *Error in loading object '/tmp/tmp_eval_file'
-  obj : (adm/cmd/wiz/eval)
-  file: adm/cmd/wiz/eval.c:23
-  prgm: adm/cmd/wiz/eval.c
-  func: main
-  args: ( 732740, )
-
-[ERROR] *Error in loading object '/tmp/tmp_eval_file'
-  obj : (adm/cmd/wiz/eval)
-  file: adm/cmd/wiz/eval.c:23
-  prgm: adm/cmd/wiz/eval.c
-  func: main
-  args: ( 1034784, )
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 897044, )
 
 [ERROR] *Can't load objects when no effective user.
   obj : (tmp/tmp_eval_file)
-  file: tmp/tmp_eval_file.c:5
+  file: tmp/tmp_eval_file.c:6
   prgm: tmp/tmp_eval_file.c
   func: eval
   args: ( )
 
-[ERROR] *Error in loading object '/tmp/tmp_eval_file'
-  obj : (adm/cmd/wiz/eval)
-  file: adm/cmd/wiz/eval.c:23
-  prgm: adm/cmd/wiz/eval.c
-  func: main
-  args: ( 721696, )
-
-[ERROR] *Error in loading object '/u/d/damian/workroom1'
-  obj : (cmd/wiz/goto)
-  file: cmd/wiz/goto.c:23
-  prgm: cmd/wiz/goto.c
-  func: main
-  args: ( "workroom1", )
-
-[ERROR] *Error in loading object '/obj/clone/connection'
-  obj : (adm/cmd/wiz/update)
-  file: adm/cmd/wiz/update.c:115
-  prgm: adm/cmd/wiz/update.c
-  func: CATCH
-  args: ( 0)
-
-[ERROR] *Error in loading object '/u/d/damian/workroom1'
-  obj : (cmd/wiz/goto)
-  file: cmd/wiz/goto.c:23
-  prgm: cmd/wiz/goto.c
-  func: main
-  args: ( "workroom1", )
-
-[ERROR] *Error in loading object '/tmp/tmp_eval_file'
-  obj : (adm/cmd/wiz/eval)
-  file: adm/cmd/wiz/eval.c:23
-  prgm: adm/cmd/wiz/eval.c
-  func: main
-  args: ( 703468, )
-
-[ERROR] *restore_object(): Illegal file format.
-  obj : (obj/clone/connection#123)
-  file: obj/clone/connection.c:60
-  prgm: obj/clone/connection.c
-  func: restore_connection
-  args: ( 1372360, )
-
-[ERROR] *Bad argument 1 to destruct()
-Expected: object Got: "obj/clone/connection#123".
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
   obj : (adm/simul_efun)
-  file: adm/efuns/destruct.c:11
+  file: adm/efuns/printf.c:8
   prgm: adm/simul_efun.c
-  func: destruct
-  args: ( 721420, )
+  func: printf
+  args: ( 1311052, 1013596, )
 
-[ERROR] *Bad argument 1 to file_size()
-Expected: string Got: 0.
-  obj : (cmd/wiz/ls)
-  file: cmd/wiz/ls.c:63
-  prgm: cmd/wiz/ls.c
-  func: do_ls
-  args: ( 0, 0, 0, 0, 0, )
+[ERROR] *Can't load objects when no effective user.
+  obj : (obj/clone/user/human#7)
+  file: obj/clone/user.c:75
+  prgm: obj/clone/user.c
+  func: create
+  args: ( )
 
-[ERROR] *Bad argument 1 to file_size()
-Expected: string Got: 0.
-  obj : (cmd/wiz/ls)
-  file: cmd/wiz/ls.c:63
-  prgm: cmd/wiz/ls.c
-  func: do_ls
-  args: ( 0, 0, 0, 0, 0, )
+[ERROR] *Can't load objects when no effective user.
+  obj : (obj/clone/user/human#10)
+  file: obj/clone/user.c:75
+  prgm: obj/clone/user.c
+  func: create
+  args: ( )
 
-[ERROR] *Bad argument 1 to file_size()
-Expected: string Got: 0.
-  obj : (cmd/wiz/ls)
-  file: cmd/wiz/ls.c:63
-  prgm: cmd/wiz/ls.c
-  func: do_ls
-  args: ( 0, 0, 0, 0, 0, )
+[ERROR] *Can't load objects when no effective user.
+  obj : (obj/clone/user/human#13)
+  file: obj/clone/user.c:75
+  prgm: obj/clone/user.c
+  func: create
+  args: ( )
 
-[ERROR] *Error in loading object '/u/d/damian/workroom1'
-  obj : (cmd/wiz/goto)
-  file: cmd/wiz/goto.c:23
-  prgm: cmd/wiz/goto.c
-  func: main
-  args: ( "workroom1", )
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 896764, )
 
-[ERROR] *Error in loading object '/adm/cmd/player/chfn'
-  obj : (adm/cmd/wiz/update)
-  file: adm/cmd/wiz/update.c:115
-  prgm: adm/cmd/wiz/update.c
-  func: CATCH
-  args: ( 0)
-
-[ERROR] *Error in loading object '/adm/cmd/player/chfn'
-  obj : (adm/obj/daemon/cmdd)
-  file: adm/obj/daemon/cmdd.c:85
-  prgm: adm/obj/daemon/cmdd.c
-  func: CATCH
-  args: ( 0)
-
-[ERROR] *Error in loading object '/cmd/player/exa'
-  obj : (adm/cmd/wiz/update)
-  file: adm/cmd/wiz/update.c:115
-  prgm: adm/cmd/wiz/update.c
-  func: CATCH
-  args: ( 0)
-
-[ERROR] *Error in loading object '/cmd/player/put'
-  obj : (adm/cmd/wiz/update)
-  file: adm/cmd/wiz/update.c:115
-  prgm: adm/cmd/wiz/update.c
-  func: CATCH
-  args: ( 0)
-
-[ERROR] *Error in loading object '/cmd/player/put'
-  obj : (adm/obj/daemon/cmdd)
-  file: adm/obj/daemon/cmdd.c:85
-  prgm: adm/obj/daemon/cmdd.c
-  func: CATCH
-  args: ( 0)
-
-[ERROR] *Error in loading object '/cmd/player/exa'
-  obj : (adm/obj/daemon/cmdd)
-  file: adm/obj/daemon/cmdd.c:85
-  prgm: adm/obj/daemon/cmdd.c
-  func: CATCH
-  args: ( 0)
+[ERROR] *Error in loading object '/obj/clone/user'
+  obj : (adm/obj/daemon/logind)
+  file: adm/obj/daemon/logind.c:236
+  prgm: adm/obj/daemon/logind.c
+  func: player_enter_world
+  args: ( 0, )
 
 [ERROR] *Bad argument 3 to message()
 Expected: string or array or object Got: 0.
@@ -880,7 +4944,7 @@ Expected: string or array or object Got: 0.
   file: adm/efuns/printf.c:8
   prgm: adm/simul_efun.c
   func: printf
-  args: ( 1160368, 1647988, )
+  args: ( 1323576, 1024404, )
 
 [ERROR] *Bad argument 3 to message()
 Expected: string or array or object Got: 0.
@@ -888,4 +4952,42 @@ Expected: string or array or object Got: 0.
   file: adm/efuns/printf.c:8
   prgm: adm/simul_efun.c
   func: printf
-  args: ( 1160368, 982916, )
+  args: ( 1323576, 1013764, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/printf.c:8
+  prgm: adm/simul_efun.c
+  func: printf
+  args: ( 1323576, 1024404, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/printf.c:8
+  prgm: adm/simul_efun.c
+  func: printf
+  args: ( 1323576, 928348, )
+
+[ERROR] *Bad argument 3 to message()
+Expected: string or array or object Got: 0.
+  obj : (adm/simul_efun)
+  file: adm/efuns/tell_object.c:3
+  prgm: adm/simul_efun.c
+  func: tell_object
+  args: ( 0, 896168, )
+
+[ERROR] *Error in loading object '/u/t/tim/bin/test'
+  obj : (adm/obj/daemon/cmdd)
+  file: adm/obj/daemon/cmdd.c:94
+  prgm: adm/obj/daemon/cmdd.c
+  func: CATCH
+  args: ( 0)
+
+[ERROR] *Error in loading object '/u/t/tim/bin/test'
+  obj : (adm/obj/daemon/cmdd)
+  file: adm/obj/daemon/cmdd.c:94
+  prgm: adm/obj/daemon/cmdd.c
+  func: CATCH
+  args: ( 0)

@@ -1,0 +1,23 @@
+These are the skills which were decided on way back when. --Tim
+
+!!These have to be verified...I need to talk to Casper
+
+In living: query_skill(string skill)
+combat
+Unarmed
+Dagger
+Shortsword
+Longsword
+Clubs
+Staves
+Pole Arms
+Bow
+Cross Bow
+Shields
+Dodge\
+      >- uses best of 2
+Parry/
+
+In living: query_stat(string stat)
+strength
+agility

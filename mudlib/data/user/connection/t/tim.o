@@ -2,9 +2,9 @@
 name "tim"
 password "TKpXEwZ9LKfG2"
 real_name "Tim McIntosh"
-email_addr "tmcintos@novia.net"
+email_addr "tmcintos@knapp38.res.iastate.edu"
 home_dir "/u/t/tim"
 body "/obj/clone/user/human"
-login_time 822625002
-logout_time 822629812
-login_from "loopback"
+login_time 824789612
+logout_time 824791625
+login_from "knapp38.res.iastate.edu"

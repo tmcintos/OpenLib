@@ -33,7 +33,7 @@ void create() {
     call_out("clean_sockets", 180);
 }
 
-void clean_up() { return; } 
+void clean_up(int inh) { return; } 
 
 static void setup() {
     if((__SocketHTTP=socket_create(STREAM,"read_callback","close_callback"))<0){

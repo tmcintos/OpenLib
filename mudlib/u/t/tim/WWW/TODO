@@ -1,22 +1,64 @@
 <PRE>
--mudlib security
--player bodies, shells, shell interfaces (set cmd for env variables)
--prompt changing
--hit/spell points, damage
--max weight funcs for races
--monsters etc.
--bulletin board
--put command
+-bulletin boards (Exe)
+-put command (Kyricc)
+-mail system: daemon, mailbox, command [intermud part left] use more() (Tim)
+-Banished names.  Implement this probably as a daemon that maintains an array
+	of names.  Could be incorporated into logind?  Would require a
+	savefile. (Talen)
+-mudlib security (big one)
+-user bodies, shells, shell interfaces:
+	-redesign the way connection, body and shell are related.  All
+		environmental stuff should be in the connection, while all
+		game-play stuff in the body, and shell should affect look-
+		and-feel (no?)
+	-hit/spell points, damage funcs. in user.c
+	-environment variables (I think these should be in player and have
+		get_env() type funcs.)
+	-alias, var, wildcard and any other expansions done in shells
+	-revamp the way race and combat functions are included in the bodies
+	-prompt changing in shells
+	-make inheritable with wildcard expansion func in it (move out of user)
+-fix the wildcard expansion stuff in user.c:189 so it works when spaces are
+	entered on a blank line.  Ultimately remove this stuff from user.c and
+	place in an inheritable.
+-connection.c/more.c:
+	-define funcs for storing screen length/width(?) & modify more()
+		to uses these.
+	-rewrite more() for better efficiency and to take a func pointer
+		to call. (partially done) (TIM)
+-living funcs: query_drunk()
+-races (work on them) (languages??)
+-monsters etc:
+	-set_aggressive() in monsters plus related code
+	-any other needed stuff in monster.c
+	-max weight funcs for races
 -dest command: options for file argument, and dest all instances...
--help daemon
--mail system: daemon, mailbox, command (partially done)
+-help command/system uses help() and help_desc() in the command obj.
+	help on commands get from object, topics from /doc/help/{player,wiz..}
+	Search by keyword with -k flag (uses help_desc() to search commands)
 -emote/feelings daemon/commands (rewrite)
 -leveling system
 -guild system
--races (work on them) (languages??)
 -parties (prolly after more of the basics are in place)
--fix the wildcard expansion stuff in user.c:189 so it works when spaces are
- entered on a blank line.  Ultimately remove this stuff from user.c and place
- elsewhere (in wizard body).
--move /data/user directory to /adm/etc/user
+-move /data/user directory to /adm/data/user
+-bug,idea commands log to /log/BUGS /log/IDEAS
+	also log to wizards' home dirs if files belong to them
+	Could these commands take an object as a possible argument for
+	reference?
+-who command: spruce up a bit...some may have to wait for levels etc.
+-exa command: merge in with 'look'
+-fingerd: fix spacing of Body: field when username is >9 chars
+-phase out use of mud_name() and other things covered by #defines.
+	I know this shows up in a couple of places.  See config.h for details.
+-news daemon
+-finish mudlib programming style guide
+-double check all weight related funcs and money related funcs. Update docs.
+-(un)subscribe command:  make these take a list of channels
+-changelog command
+-WWW gateway for MUD Mail
+-command to add local->remote mappings via set_alias() in chatd
+ function itself needs to do checks for validity too.
+-implement error packets in inetd and rest of OOB services (Pending completion
+ of I3 spec. (found on CIE homepage)
+-more.c: eventually add environment variable to change behavior at the END
 </PRE>

@@ -21,3 +21,31 @@ Tue Jan 23 23:28:22 1996:  this_player: /obj/clone/user/human#139
 Tue Jan 23 23:28:22 1996:  this_object: /cmd/wiz/update
 Wed Jan 24 18:34:44 1996:  Dysfunctional Mud crashed on: Wed Jan 24 18:34:44 1996, error: Process interrupted
 Wed Jan 24 18:34:44 1996:  this_object: /obj/daemon/net/intermud
+Mon Feb  5 08:56:45 1996:  Dysfunctional Mud crashed on: Mon Feb  5 08:56:45 1996, error: Segmentation fault
+Thu Feb  8 21:58:41 1996:  Dysfunctional Mud crashed on: Thu Feb  8 21:58:41 1996, error: Process terminated
+Thu Feb  8 21:59:22 1996:  Dysfunctional Mud crashed on: Thu Feb  8 21:59:22 1996, error: Process terminated
+Mon Feb 12 19:44:55 1996:  Dysfunctional Mud crashed on: Mon Feb 12 19:44:55 1996, error: Segmentation fault
+Mon Feb 12 19:44:55 1996:  this_player: /obj/clone/user/human#2
+Mon Feb 12 19:44:55 1996:  this_object: /adm/cmd/wiz/update
+Mon Feb 12 19:45:15 1996:  Dysfunctional Mud crashed on: Mon Feb 12 19:45:15 1996, error: Segmentation fault
+Mon Feb 12 19:45:15 1996:  this_player: /obj/clone/user/human#2
+Mon Feb 12 19:45:15 1996:  this_object: /adm/obj/daemon/cmdd
+Mon Feb 12 19:54:45 1996:  Dysfunctional Mud crashed on: Mon Feb 12 19:54:45 1996, error: Segmentation fault
+Mon Feb 12 19:54:45 1996:  this_player: /obj/clone/user/human#2
+Mon Feb 12 19:54:45 1996:  this_object: /adm/cmd/wiz/update
+Mon Feb 12 20:08:00 1996:  Dysfunctional Mud crashed on: Mon Feb 12 20:08:00 1996, error: Segmentation fault
+Mon Feb 12 20:08:00 1996:  this_player: /obj/clone/user/human#2
+Mon Feb 12 20:08:00 1996:  this_object: /adm/obj/daemon/cmdd
+Tue Feb 13 15:42:25 1996:  Dysfunctional Mud crashed on: Tue Feb 13 15:42:25 1996, error: Segmentation fault
+Tue Feb 13 15:42:25 1996:  this_player: /obj/clone/user/human#129
+Tue Feb 13 15:42:25 1996:  this_object: /adm/cmd/wiz/update
+Tue Feb 13 21:59:41 1996:  Dysfunctional Mud crashed on: Tue Feb 13 21:59:41 1996, error: Segmentation fault
+Tue Feb 13 21:59:41 1996:  this_player: /obj/clone/user/human#22
+Tue Feb 13 21:59:41 1996:  this_object: /adm/simul_efun
+Fri Feb 16 23:24:28 1996:  Dysfunctional Mud crashed on: Fri Feb 16 23:24:28 1996, error: Process terminated
+Sun Feb 18 14:40:25 1996:  Dysfunctional Mud crashed on: Sun Feb 18 14:40:25 1996, error: Process interrupted
+Sun Feb 18 14:46:16 1996:  Dysfunctional Mud crashed on: Sun Feb 18 14:46:16 1996, error: Process terminated
+Sun Feb 18 14:48:55 1996:  Dysfunctional Mud crashed on: Sun Feb 18 14:48:55 1996, error: Process terminated
+Sun Feb 18 14:49:46 1996:  Dysfunctional Mud crashed on: Sun Feb 18 14:49:46 1996, error: Process terminated
+Mon Feb 19 19:31:43 1996:  Dysfunctional Mud crashed on: Mon Feb 19 19:31:43 1996, error: Process terminated
+Mon Feb 19 19:38:49 1996:  Dysfunctional Mud crashed on: Mon Feb 19 19:38:49 1996, error: Process terminated

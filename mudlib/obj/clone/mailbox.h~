@@ -20,6 +20,7 @@ class _mailmess {
 // Interface to mailbox object
 // NOTE: messages are numbered starting with number 1
 
+void reinit_mailbox(string username);  // initialize a mailbox to empty state
 int restore_mailbox(string username);  // restore mailbox state
 int save_mailbox();                    // save mailbox state
 

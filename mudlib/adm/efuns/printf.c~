@@ -1,7 +1,0 @@
-/*  -*- LPC -*-  */
-varargs
-void
-printf(string format, mixed* arr ... )
-{
-  return write( sprintf(format, arr ... ) );
-}

@@ -131,21 +131,27 @@ error_handler(mapping error)
 		 "  prgm: %s\n",
 		 error["error"], error["object"],
 		 error["file"], error["line"], error["program"]);
+
   if(sizeof(trace)) {
     line += sprintf("  func: %s\n"
 		    "  args: ( ", 
 		    trace[sizeof(trace)-1]["function"]);
 
-    if(arrayp(trace[sizeof(trace)-1]["arguments"]))
-      line += sprintf("%@O, ", trace[sizeof(trace)-1]["arguments"]);
-    else
+    if(arrayp(trace[sizeof(trace)-1]["arguments"])) {
+      foreach(mixed arg in trace[sizeof(trace)-1]["arguments"]) {
+	line += sprintf("%O, ", arg);
+      }
+    } else {
       line += sprintf("%O", trace[sizeof(trace)-1]["arguments"]);
+    }
     line += ")\n";
   }
 
-  tell_object(this_player(1),
-	      sprintf("runtime: file: %s:%d;  %s",
-		      error["file"], error["line"], error["error"]));
+  if(this_player(1)) {
+    tell_object(this_player(1),
+		sprintf("runtime: file: %s:%d;  %s",
+			error["file"], error["line"], error["error"]));
+  }
    
   name = file_owner(error["file"]);
   if (name) {

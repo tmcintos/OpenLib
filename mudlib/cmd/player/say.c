@@ -1,3 +1,4 @@
+/*  -*- LPC -*-  */
 #include <command.h>
 
 int
@@ -6,10 +7,11 @@ main(string arg)
   if(!arg)
     return notify_fail("usage:  say <text>\n");
 
-  say(capitalize(this_player()->query_name())
-      + " says, \""+capitalize(arg)+"\"\n");
+  say(sprintf("%s says: %s\n",
+	      this_player()->query_cap_name(),
+	      capitalize(arg)));
 
-  write("You say, \""+arg+"\"\n");
+  printf("You say: %s\n", arg);
 
   return 1;
 }

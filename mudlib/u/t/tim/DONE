@@ -1,7 +1,12 @@
 <PRE>
--revamp command.h and cmdline.h
--command daemon
--chat system
--finger daemon
--auth daemon (I3)
+-combat daemon (Casper)
+-revamp command.h and cmdline.h (Tim)
+-command daemon (Tim)
+-chat system (Tim)
+-finger daemon (Tim)
+-auth daemon (I3) (Tim)
+-global editor daemon (Evergreen)
+-wording in combat--fix something about unwielding a weapon (Tim:fixed I tHink)
+-flags in objects. (Tim) funcs:
+	set_flag(string flag); clear_flag(string flag); query_flag(string flag)
 </PRE>

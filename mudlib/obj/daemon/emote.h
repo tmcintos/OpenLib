@@ -24,4 +24,5 @@ howl:wildly
 scream:in fright
 gasp:
 wink:an eye
+wave:
 offer:

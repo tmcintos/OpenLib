@@ -8,7 +8,7 @@
               "        man -[kf] <keyword>\n"
 
 int
-_main(string *argv, string *argv2)
+main(string *argv, string *argv2)
 {
   int section, curr_line;
   string arg, line, page;

@@ -13,4 +13,5 @@ Have sticky posts (Can't be autoremoved at board owners discression)
 Enable players to reply to a specific post (Reply <#>) and the board could
  keep track of this fact and display posts sorted by topic order _or_ date
  order. (or by topic and within each topic by date) /* Tim */
+Should be threaded? (Talen)
 Use the global editor to get text from the player. /* Tim */

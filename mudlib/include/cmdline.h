@@ -1,8 +1,8 @@
 /*  -*- LPC -*-  */
-#ifndef _CMDLINE_H
-#define _CMDLINE_H
+#ifndef _COMMAND_H
+#define _COMMAND_H
 // cmdline.h:  A replacement for command.h which provides facilities for
-//             stripping flags from the command line. (see cmd_module.c)
+//             stripping flags from the command line. (see cmdline.c)
 //
 // written by: Tim McIntosh (astasia@iastate.edu)
 //
@@ -10,9 +10,9 @@
 // It may be used and modified as long as this header remains intact.
 // The UltraLib mudlib is available via FTP at knapp38.res.iastate.edu
 //
-// #include this and write _main() as declared below for your main function.
+// #include this and write main() as declared below for your main function.
 //
-// int _main(string *argv, string *argv2);
+// int main(string *argv, string *argv2);
 //
 // arguments passed:
 //          argv:  an array of all the words passed to the command with nothing
@@ -27,9 +27,12 @@
 // NOTE: --help is a special flag which will cause help info to be printed
 // as returned by help() in the command object.
 
-#include <command.h>
+#include <mudlib.h>
 #include <dirs.h>
 
-inherit INHERIT_DIR "/cmd_module";
+inherit DAEMON;
+inherit CLEAN_UP;
 
-#endif
+inherit INHERIT_DIR "/cmdline";
+
+#endif /* _COMMAND_H */

@@ -1,0 +1,16 @@
+#include <command.h>
+#include <element.h>
+
+int
+main()
+{
+  element* Q;
+  Q = "/obj/daemon/net/inetd"->dump_queue();
+
+  write("Queued:\n");
+  foreach(element mud in Q) {
+    printf("%s: %O\n", mud->key, mud->val);
+  }
+
+  return 1;
+}

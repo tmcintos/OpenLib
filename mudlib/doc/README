@@ -2,6 +2,8 @@
 Documentation Directory.
 
 Copying         Information about copyrights, copylefts etc.  
+LPC		LPC programming tutorials by Descartes@Nightmare
 driver		driver documentation
 man		manual directory
+mudlib		mudlib specific documents
 projects	project information directory

@@ -13,18 +13,21 @@
 //       10/30/95:  T.M   Broke into 2 funcs, now allows for unlimited command
 //                        line arguments.
 //       12.10.95:  T.M   Changed normal ls to use sprintf()
-//       12.17.85:  T.M   Made output a little prettier
+//       12.17.95:  T.M   Made output a little prettier
+//       02.12.96:  T.M   Broke do_ls() into short_format() and long_format()
 
-#include <command.h>
 #include <cmdline.h>
 
 // screen width
 #define WIDTH 80
 
 void do_ls(string dir, int optl, int opta, int optc, int optF);
+void long_format(string* files);
+void short_format(string* files, string dir, int optc, int optF);
+int catch_dots(mixed file);
 
 int
-_main(string *argv, string *argv2)
+main(string *argv, string *argv2)
 {
   int optc, optF, optl, opta;
   int i;
@@ -46,6 +49,7 @@ _main(string *argv, string *argv2)
     do_ls(argv2[i], optl, opta, optc, optF);
     write("\n");
   }
+
   do_ls(argv2[i], optl, opta, optc, optF);
 
   return 1;
@@ -53,18 +57,13 @@ _main(string *argv, string *argv2)
 
 void
 do_ls(string dir, int optl, int opta, int optc, int optF) {
-  string *files, printstr;
-  string spaces;
-  int max_fname_len, columns, col_len;
+  mixed* files;
   int is_dir;
-  int i, j;
-  spaces = "                                                                 ";
 
   if(!dir)
     dir = RESOLVE_PATH(".");
   else
     dir = RESOLVE_PATH(dir);
-
 
   if(file_size(dir) == -2) {                  //  directory so keep going
     printf("%s:\n", dir);
@@ -73,6 +72,7 @@ do_ls(string dir, int optl, int opta, int optc, int optF) {
     is_dir = 1;
   } else if(file_size(dir) >= 0) {            //  single file then we're done
     mixed *tmp;
+
     if(optl) {
       tmp = stat(dir);
       printf("   %24-s   %6-d   %30-s\n", dir, tmp[0], ctime(tmp[1]));
@@ -81,47 +81,44 @@ do_ls(string dir, int optl, int opta, int optc, int optF) {
     return;
   }
     
-/* ----------------------------- Long Format ------------------------------ */
-  if(optl) {
-    if(opta) {
-      files = get_dir(dir+"*", -1);
-    } else {
-      files = get_dir(dir, -1);
-      if(files) files = filter_array(files, "catch_dots2", this_object());
-    }
-    
-    if(!is_dir && sizeof(files) == 0)
-      return write("ls: no such file or directory.\n");
-
-    for(i=0;i < sizeof(files);i++) {
-      string tmp;
-      tmp = ((files[i][1] == -2) ? "<DIR>" : ""+files[i][1]);
-	
-      printf("   %18-s   %6-s   %30-s\n",
-	     files[i][0], tmp, ctime(files[i][2]));
-    }
-    return;
-  }   // END of Long Format
-
-
-/* --------------------- Regular Format ----------------------------------- */
-  printstr = "";
-    
-  if(!opta) {
-    files = get_dir(dir);
-    if(files) files = filter_array(files, "catch_dots", this_object());
+  if(opta) {
+    files = get_dir(dir + "*", (optl ? -1 : 0) );
   } else {
-    files = get_dir(dir+"*");
-  }    
+    files = get_dir(dir, (optl ? -1 : 0) );
+    if(files) files = filter(files, (: catch_dots :));
+  }
 
-  if(!is_dir && sizeof(files) == 0)
+  if(!is_dir && !sizeof(files))
     return write("ls: no such file or directory.\n");
 
+  if(optl)
+    long_format(files);
+  else
+    short_format(files, dir, optc, optF);
+}
+
+void
+long_format(mixed* files)
+{
+  foreach(mixed* file in files) {
+    string tmp = ( (file[1] == -2) ? "<DIR>" : "" + file[1] );
+    printf("   %18-s   %6-s   %30-s\n", file[0], tmp, ctime(file[2]) );
+  }
+}
+
+void
+short_format(string* files, string dir, int optc, int optF)
+{
+  int max_fname_len, columns, col_len;
+  string spaces;
+  string printstr = "";
+  spaces = "                                                                 ";
+    
   // get longest filename and setup columns
-  max_fname_len = 0;
-  for(i=0;i < sizeof(files);i++) {
-    int itmp;
-    if((itmp = 1 + strlen(files[i])) > max_fname_len)
+  for(int i = 0; i < sizeof(files); i++) {
+    int itmp = 1 + strlen( files[i] );
+
+    if(itmp > max_fname_len)
       max_fname_len = itmp;
   }
   max_fname_len += 2;
@@ -129,58 +126,59 @@ do_ls(string dir, int optl, int opta, int optc, int optF) {
   if(!(columns = ((WIDTH * 100) / max_fname_len) / 100)) columns = 1;
   col_len = to_int(ceil(to_float(sizeof(files)) / to_float(columns)));
 
-  for(i=0;i < col_len;i++) {                        // create columns
+  // create columns
+  for(int i = 0; i < col_len; i++) {
     printstr = "";
-    for(j=i;j < col_len * columns;j += col_len) {   // create each row
+
+    // create each row
+    for(int j = i; j < col_len * columns; j += col_len) {
       int len, tmp_is_dir = 0, tmp_is_loaded = 0;
 
       if(j >= sizeof(files)) continue;         // if past the end of array
 
       len = max_fname_len - strlen(files[j]);  // how many spaces we need
 
+      // Directory and loaded obj marking
       if(optF || optc) {
-	if(file_size(dir+files[j]) == -2)    // mark directories
+	if(file_size(dir + files[j]) == -2)    // mark directories
 	  tmp_is_dir = 1;
-	else if(find_object(dir+files[j]))   // mark loaded objs
+	else if(find_object(dir + files[j]))   // mark loaded objs
 	  tmp_is_loaded = 1;
-      }
 
-      if(optc) {                      // 'c' flag:  tack on the perty colors
-	if(tmp_is_dir)
-	  files[j] = "%^L_BLUE%^" + files[j] +"%^RESET%^";
-	else if(tmp_is_loaded)
-	  files[j] = "%^L_GREEN%^"+ files[j] +"%^RESET%^";
-	else if(files[j][<2..<1] == ".c")
-	  files[j] = "%^L_RED%^"+ files[j] +"%^RESET%^";
-      }
+	// 'c' flag:  tack on the perty colors
+	if(optc) {
+	  if(tmp_is_dir)
+	    files[j] = "%^L_BLUE%^" + files[j] +"%^RESET%^";
+	  else if(tmp_is_loaded)
+	    files[j] = "%^L_GREEN%^"+ files[j] +"%^RESET%^";
+	  else if(files[j][<2..<1] == ".c")
+	    files[j] = "%^L_RED%^"+ files[j] +"%^RESET%^";
+	}
 
-      if(optF) {                     // 'F' flag:  tack on symbols
-	if(tmp_is_dir)
-	  files[j] += "/";
-	else if(tmp_is_loaded)
-	  files[j] += "*";
-	else
-	  files[j] += " ";                         // this is a balance thing
-	len -= 1;                                  // so is this :)
+	// 'F' flag:  tack on symbols
+	if(optF) {
+	  if(tmp_is_dir)
+	    files[j] += "/";
+	  else if(tmp_is_loaded)
+	    files[j] += "*";
+	  else
+	    files[j] += " ";	                  // this is a balance thing
+	  len--;                                  // so is this
+	}
       }
-
       printstr = sprintf("%s%s%"+len+"' 's", printstr, files[j], "");
     }
     write(printstr +"\n");
   }
-  return;
 }
 
 int
-catch_dots(string file)
+catch_dots(mixed file)
 {
-  return file[0] != '.';
-}
-
-int
-catch_dots2(string *file)
-{
-  return file[0][0] != '.';
+  if(arrayp(file[0]))
+    return file[0][0] != '.';
+  else
+    return file[0] != '.';
 }
 
 string

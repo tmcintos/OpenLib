@@ -99,3 +99,504 @@ cmd/player/exa.c line 25: Type of returned value doesn't match function return t
 obj/clone/shsh.c line 61: Warning: redefinition of #define NULL
 
 obj/clone/shsh.c line 1619: Warning: Unknown \x char.
+cmd/wiz/qedit.c line 13: Undefined variable 'call_back'
+cmd/wiz/qedit.c line 13: parse error
+cmd/wiz/qedit.c line 14: Illegal LHS
+cmd/wiz/qedit.c line 14: parse error
+cmd/wiz/qedit.c line 13: Warning: Function pointer returning string constant is NOT a function call
+tmp/tmp_eval_file.c line 5: parse error
+tmp/tmp_eval_file.c line 5: parse error
+tmp/tmp_eval_file.c line 5: parse error
+tmp/tmp_eval_file.c line 5: Too few arguments to error
+tmp/tmp_eval_file.c line 5: Warning: A negative constant as the second element of arr[x..y] no longer means indexing from the end.  Use arr[x..<y]
+adm/obj/daemon/maild.c line 51: Undefined variable 'cmd'
+adm/obj/daemon/maild.c line 92: Undefined function print_message
+adm/obj/daemon/maild.c line 157: Redeclaration of function print_message.
+adm/obj/daemon/maild.c line 182: Undefined variable 'curr'
+adm/obj/daemon/maild.c line 200: parse error
+adm/obj/daemon/maild.c line 225: Illegal LHS
+adm/obj/daemon/maild.c line 183: Undefined variable 'curr'
+adm/obj/daemon/maild.c line 201: parse error
+adm/obj/daemon/maild.c line 226: Illegal LHS
+adm/obj/daemon/maild.c line 226: parse error
+adm/obj/daemon/maild.c line 228: Illegal LHS
+adm/obj/daemon/maild.c line 228: parse error
+adm/obj/daemon/maild.c line 88: Wrong number of arguments to print_headers
+    Expected: 2  Got: 3
+adm/obj/daemon/maild.c line 93: Wrong number of arguments to print_message
+    Expected: 3  Got: 2
+adm/obj/daemon/maild.c line 100: Wrong number of arguments to print_message
+    Expected: 3  Got: 2
+adm/obj/daemon/maild.c line 110: Wrong number of arguments to print_message
+    Expected: 3  Got: 2
+adm/obj/daemon/maild.c line 140: Wrong number of arguments to print_message
+    Expected: 3  Got: 2
+adm/obj/daemon/maild.c line 158: Number of arguments disagrees with previous definition.
+adm/obj/daemon/maild.c line 201: parse error
+adm/obj/daemon/maild.c line 226: Illegal LHS
+adm/obj/daemon/maild.c line 226: parse error
+adm/obj/daemon/maild.c line 228: Illegal LHS
+adm/obj/daemon/maild.c line 228: parse error
+adm/obj/daemon/maild.c line 248: Illegal LHS
+adm/obj/daemon/maild.c line 265: Undefined variable 'cclist'
+tmp/tmp_eval_file.c line 5: Bad argument 1 to efun children()
+tmp/tmp_eval_file.c line 5: parse error
+tmp/tmp_eval_file.c line 5: parse error
+tmp/tmp_eval_file.c line 5: parse error
+tmp/tmp_eval_file.c line 5: parse error
+tmp/tmp_eval_file.c line 5: parse error
+tmp/tmp_eval_file.c line 5: Undefined variable 'i'
+cmd/player/_asdf.c line 1: Illegal character constant
+cmd/player/_asdf.c line 1: parse error
+tmp/tmp_eval_file.c line 5: Undefined function arch
+tmp/tmp_eval_file.c line 5: Undefined variable 'malloc_status'
+include/race.h line 35: parse error
+obj/inherit/combat.c line 171: Undefined variable 'WEAPON_TYPE'
+cmd/wiz/netstat.c line 10: parse error
+tmp/tmp_eval_file.c line 5: Undefined variable 'memory_info'
+tmp/tmp_eval_file.c line 5: Reserved type name unexpected.
+tmp/tmp_eval_file.c line 5: parse error
+obj/clone/shsh.c line 61: Warning: redefinition of #define NULL
+
+obj/clone/shsh.c line 1619: Warning: Unknown \x char.
+include/type.h line 9: Warning: redefinition of #define OBJECT
+
+tmp/tmp_eval_file.c line 5: Undefined function dump_object
+tmp/tmp_eval_file.c line 5: Undefined function dump_prog
+tmp/tmp_eval_file.c line 5: Undefined function USERS
+tmp/tmp_eval_file.c line 5: Undefined variable 'unknown'
+tmp/tmp_eval_file.c line 5: parse error
+tmp/tmp_eval_file.c line 5: Undefined variable 'unknown'
+tmp/tmp_eval_file.c line 5: parse error
+obj/daemon/net/inetd.h line 7: Warning: Extra ';'. Ignored.
+obj/daemon/net/inetd.c line 45: Undefined variable 'eventSocketClosed'
+obj/daemon/net/inetd.c line 45: parse error
+obj/daemon/net/inetd.c line 103: Illegal LHS
+obj/daemon/net/inetd.c line 103: parse error
+obj/daemon/net/inetd.c line 118: Undefined variable 'packet'
+obj/daemon/net/inetd.c line 118: Illegal LHS
+obj/daemon/net/inetd.c line 272: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 273: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 272: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 273: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 277: Undefined variable 'nm'
+obj/daemon/net/inetd.c line 272: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 273: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 277: Undefined variable 'nm'
+tmp/tmp_eval_file.c line 5: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+tmp/tmp_eval_file.c line 5: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 272: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 273: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 277: Undefined variable 'nm'
+obj/daemon/net/inetd.c line 272: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 273: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 272: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 273: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 274: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 275: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 274: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 275: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 274: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 275: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 274: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 275: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 279: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 280: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 285: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 286: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+tmp/tmp_eval_file.c line 6: End of file in string
+tmp/tmp_eval_file.c line 6: parse error
+obj/daemon/net/inetd.c line 289: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 290: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 289: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 290: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 293: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 294: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 295: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 296: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 289: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 290: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 289: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 290: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 289: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 290: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 289: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 290: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 291: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 295: Illegal to use local variable in functional.
+obj/daemon/net/inetd.c line 289: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 290: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 291: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 295: parse error
+obj/daemon/net/inetd.c line 289: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 290: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 291: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 286: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 287: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 288: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 286: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 287: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 288: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 286: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 287: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 288: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+include/net/ftpdconf.h line 114: Warning: redefinition of #define FTP_DIR
+
+obj/daemon/net/inetd.c line 286: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 287: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 288: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 287: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 288: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 289: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 287: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 288: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 289: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 287: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 288: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 289: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 287: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 288: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 289: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 181: Undefined variable 'client_busy'
+obj/daemon/net/inetd.c line 274: Undefined variable 'client_busy'
+obj/daemon/net/inetd.c line 285: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 286: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 287: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 285: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 286: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 287: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 285: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 286: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 287: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 285: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 286: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 287: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 291: $var illegal outside of function pointer.
+obj/daemon/net/inetd.c line 285: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 286: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 287: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+adm/cmd/wiz/update.c line 54: Undefined function shallow_inherit_list
+adm/cmd/wiz/update.c line 54: Bad assignment ( unknown vs string * ).
+tmp/tmp_eval_file.c line 5: Left argument of -> is not a class
+obj/daemon/net/inetd.c line 285: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 286: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 287: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+tmp/tmp_eval_file.c line 5: parse error
+obj/daemon/net/inetd.c line 285: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 286: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 287: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 285: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 286: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 287: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 286: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 287: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 288: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+cmd/wiz/_invis.c line 5: parse error
+tmp/tmp_eval_file.c line 5: Undefined function call_function
+obj/daemon/net/inetd.c line 281: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 282: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 283: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 24: Illegal to redefine 'nomask' function "query_prevent_shadow"
+obj/daemon/net/inetd.c line 24: Illegal to redefine 'nomask' function "SetNoClean"
+obj/daemon/net/inetd.c line 104: Wrong number of arguments to CloseSocket
+    Expected: 0  Got: 1
+obj/daemon/net/inetd.c line 124: Wrong number of arguments to CloseSocket
+    Expected: 0  Got: 1
+obj/daemon/net/inetd.c line 282: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 283: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 284: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 24: Illegal to redefine 'nomask' function "query_prevent_shadow"
+obj/daemon/net/inetd.c line 24: Illegal to redefine 'nomask' function "SetNoClean"
+obj/daemon/net/inetd.c line 104: Wrong number of arguments to CloseSocket
+    Expected: 0  Got: 1
+obj/daemon/net/inetd.c line 124: Wrong number of arguments to CloseSocket
+    Expected: 0  Got: 1
+obj/daemon/net/inetd.c line 282: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 283: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 284: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 104: Wrong number of arguments to CloseSocket
+    Expected: 0  Got: 1
+obj/daemon/net/inetd.c line 124: Wrong number of arguments to CloseSocket
+    Expected: 0  Got: 1
+obj/daemon/net/inetd.c line 282: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 283: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 284: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 106: Wrong number of arguments to CloseSocket
+    Expected: 0  Got: 1
+obj/daemon/net/inetd.c line 126: Wrong number of arguments to CloseSocket
+    Expected: 0  Got: 1
+obj/daemon/net/inetd.c line 284: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 285: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 286: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 287: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 288: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 289: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 291: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 292: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 293: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 291: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 292: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 293: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 290: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 291: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 292: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 290: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 291: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 292: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 290: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 291: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 292: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 296: $var illegal outside of function pointer.
+obj/daemon/net/inetd.c line 290: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 291: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 292: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 294: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 295: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 296: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 294: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 295: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 296: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 300: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+tmp/tmp_eval_file.c line 5: Undefined variable 'blah'
+tmp/tmp_eval_file.c line 5: parse error
+obj/daemon/net/inetd.c line 22: parse error
+obj/daemon/net/inetd.c line 301: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 301: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 301: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 301: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 301: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 301: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 301: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 301: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 301: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 46: Undefined function SetSocketClose
+obj/daemon/net/inetd.c line 303: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+tmp/tmp_eval_file.c line 5: Undefined variable 'AUTH_D'
+obj/daemon/net/inetd.c line 303: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 304: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 304: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+tmp/tmp_eval_file.c line 5: Too few arguments to filter
+tmp/tmp_eval_file.c line 5: Illegal index to array constant.
+tmp/tmp_eval_file.c line 5: Illegal index to array constant.
+tmp/tmp_eval_file.c line 6: Undefined variable 'users'
+obj/daemon/net/inetd.c line 103: parse error
+obj/daemon/net/inetd.c line 120: Illegal LHS
+obj/daemon/net/inetd.c line 120: parse error
+obj/daemon/net/inetd.c line 131: Undefined variable 'packet'
+obj/daemon/net/inetd.c line 131: Illegal LHS
+obj/daemon/net/inetd.c line 131: parse error
+obj/daemon/net/inetd.c line 315: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 220: == always false because of incompatible types ( class _element vs string ).
+obj/daemon/net/inetd.c line 284: Bad assignment ( class _element vs class _element * ).
+obj/daemon/net/inetd.c line 315: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 354: Type of returned value doesn't match function return type ( class _element * vs mapping ).
+obj/daemon/net/inetd.c line 220: == always false because of incompatible types ( class _element vs string ).
+obj/daemon/net/inetd.c line 284: Bad assignment ( class _element vs class _element * ).
+obj/daemon/net/inetd.c line 315: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 354: Type of returned value doesn't match function return type ( class _element * vs mapping ).
+obj/daemon/net/inetd.c line 315: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 315: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 315: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 316: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 314: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+tmp/tmp_eval_file.c line 6: Too many arguments to call_out_info
+obj/daemon/net/inetd.c line 314: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 314: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+tmp/tmp_eval_file.c line 6: Undefined variable 'call_out_info'
+obj/daemon/net/inetd.c line 314: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/clone/shsh.c line 61: Warning: redefinition of #define NULL
+
+obj/clone/shsh.c line 1619: Warning: Unknown \x char.
+obj/daemon/net/inetd.c line 314: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd2.c line 314: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/client.c line 110: Undefined function Destruct
+obj/daemon/net/client.c line 117: No such inherited function daemon::Destruct
+obj/daemon/net/inetd_server.c line 24: No such inherited function daemon::create
+obj/daemon/net/inetd_server.c line 142: Undefined function Destruct
+obj/daemon/net/inetd_server.c line 24: No such inherited function daemon::create
+obj/daemon/net/inetd_server.c line 142: Undefined function Destruct
+obj/daemon/net/inetd_server.c line 141: Undefined function Destruct
+obj/daemon/net/inetd.c line 92: No such inherited function server::eventWrite
+obj/daemon/net/inetd.c line 311: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 311: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 353: Warning: SetDestructOnClose() inherited from both adm/obj/inherit/client.c and obj/daemon/net/inetd_server.c; using the definition in obj/daemon/net/inetd_server.c.
+obj/daemon/net/inetd.c line 353: Warning: SetRead() inherited from both adm/obj/inherit/client.c and obj/daemon/net/inetd_server.c; using the definition in obj/daemon/net/inetd_server.c.
+obj/daemon/net/inetd.c line 353: Warning: eventSocketError() inherited from both adm/obj/inherit/client.c and obj/daemon/net/inetd_server.c; using the definition in obj/daemon/net/inetd_server.c.
+obj/daemon/net/inetd.c line 353: Warning: eventDestruct() inherited from both adm/obj/inherit/client.c and obj/daemon/net/inetd_server.c; using the definition in obj/daemon/net/inetd_server.c.
+obj/daemon/net/inetd.c line 353: Warning: eventClose() inherited from both adm/obj/inherit/client.c and obj/daemon/net/inetd_server.c; using the definition in obj/daemon/net/inetd_server.c.
+obj/daemon/net/inetd.c line 353: Warning: eventCreateSocket() inherited from both adm/obj/inherit/client.c and obj/daemon/net/inetd_server.c; using the definition in obj/daemon/net/inetd_server.c.
+obj/daemon/net/inetd.c line 43: parse error
+obj/daemon/net/inetd.c line 312: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 312: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 312: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 308: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 310: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 310: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 53: Bad argument 1 to efun remove_call_out()
+obj/daemon/net/inetd.c line 54: Bad argument 1 to efun remove_call_out()
+obj/daemon/net/inetd.c line 344: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 344: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 345: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+tmp/tmp_eval_file.c line 6: Undefined function memory_status
+obj/daemon/net/inetd.c line 345: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+obj/daemon/net/inetd.c line 345: Warning: A negative constant in arr[x] no longer means indexing from the end.  Use arr[<x]
+cmd/adm/lsch.c line 10: Undefined variable 'INTERMUD_D'
+cmd/adm/lsch.c line 10: Undefined function spritf
+cmd/adm/lsch.c line 10: Bad assignment ( unknown vs string ).
+cmd/adm/lsch.c line 19: Number of arguments disagrees with previous definition.
+cmd/adm/ftpwho.c line 25: Number of arguments disagrees with previous definition.
+cmd/adm/lc.c line 14: Number of arguments disagrees with previous definition.
+cmd/adm/lq.c line 16: Number of arguments disagrees with previous definition.
+cmd/adm/lsch.c line 19: Number of arguments disagrees with previous definition.
+cmd/adm/pq.c line 9: Number of arguments disagrees with previous definition.
+cmd/wiz/ls.c line 135: == always false because of incompatible types ( string vs int ).
+cmd/wiz/ls.c line 136: Bad argument 1 to efun ctime()
+cmd/wiz/ls.c line 135: == always false because of incompatible types ( string vs int ).
+cmd/wiz/ls.c line 136: Bad argument 1 to efun ctime()
+cmd/wiz/ls.c line 135: == always false because of incompatible types ( string vs int ).
+cmd/wiz/ls.c line 136: Bad argument 1 to efun ctime()
+cmd/wiz/ls.c line 116: Undefined variable 'optF'
+cmd/wiz/ls.c line 116: Undefined variable 'optc'
+cmd/wiz/ls.c line 120: Undefined variable 'dir'
+cmd/wiz/ls.c line 163: Illegal to redeclare local name 'j'
+cmd/wiz/ls.c line 138: Undefined variable 'optF'
+cmd/wiz/ls.c line 138: Undefined variable 'optc'
+cmd/wiz/ls.c line 139: Illegal to redeclare local name 'tmp_is_dir'
+cmd/wiz/ls.c line 139: Illegal to redeclare local name 'tmp_is_loaded'
+cmd/wiz/ls.c line 141: Undefined variable 'dir'
+cmd/wiz/ls.c line 139: Illegal to redeclare local name 'tmp_is_dir'
+cmd/wiz/ls.c line 139: Illegal to redeclare local name 'tmp_is_loaded'
+cmd/wiz/ls.c line 141: Undefined variable 'dir'
+cmd/wiz/ls.c line 139: Undefined variable 'dir'
+cmd/wiz/ls.c line 175: Reserved type name unexpected.
+cmd/wiz/ls.c line 175: parse error
+cmd/wiz/ls.c line 175: Reserved type name unexpected.
+cmd/wiz/ls.c line 175: parse error
+tmp/tmp_eval_file.c line 7: parse error
+cmd/wiz/ls.c line 175: Reserved type name unexpected.
+cmd/wiz/ls.c line 175: parse error
+cmd/wiz/ls.c line 175: Reserved type name unexpected.
+cmd/wiz/ls.c line 175: parse error
+tmp/tmp_eval_file.c line 6: Undefined variable 'display'
+tmp/tmp_eval_file.c line 6: Undefined function display
+obj/clone/user/more.c line 36: Undefined variable 'size'
+obj/clone/user/more.c line 36: Undefined variable 'cb'
+tmp/tmp_eval_file.c line 6: Illegal to use local variable in functional.
+tmp/tmp_eval_file.c line 6: Undefined variable 'testing'
+obj/clone/user/more.c line 113: Too few arguments to explode
+obj/clone/user/more.c line 113: Too few arguments to explode
+adm/obj/daemon/logind.c line 189: parse error
+adm/obj/daemon/logind.c line 189: Illegal LHS
+adm/obj/daemon/logind.c line 217: Reserved type name unexpected.
+adm/obj/daemon/logind.c line 217: parse error
+adm/obj/daemon/logind.c line 218: Illegal LHS
+adm/obj/daemon/logind.c line 219: Undefined variable 'body'
+adm/obj/daemon/logind.c line 247: Reserved type name unexpected.
+adm/obj/daemon/logind.c line 247: parse error
+adm/obj/daemon/logind.c line 248: Undefined variable 'username'
+adm/obj/daemon/logind.c line 248: Illegal LHS
+adm/obj/daemon/logind.c line 250: Undefined variable 'body'
+adm/obj/daemon/logind.c line 250: Undefined variable 'buf'
+adm/obj/daemon/logind.c line 244: parse error
+adm/obj/daemon/logind.c line 245: Illegal LHS
+adm/obj/daemon/logind.c line 248: parse error
+adm/obj/daemon/logind.c line 250: Illegal LHS
+adm/obj/daemon/logind.c line 244: parse error
+adm/obj/daemon/logind.c line 245: Illegal LHS
+adm/obj/daemon/logind.c line 248: parse error
+adm/obj/daemon/logind.c line 250: Illegal LHS
+tmp/tmp_eval_file.c line 6: parse error
+adm/obj/daemon/logind.c line 248: parse error
+adm/obj/daemon/logind.c line 250: Illegal LHS
+tmp/tmp_eval_file.c line 6: Warning: Unknown \x char.
+obj/inherit/more.c line 126: Undefined variable 'show_next_screen'
+tmp/tmp_eval_file.c line 6: Warning: Unknown \x char.
+tmp/tmp_eval_file.c line 6: Warning: Unknown \x char.
+tmp/tmp_eval_file.c line 6: Undefined variable 'more'
+tmp/tmp_eval_file.c line 6: parse error
+tmp/tmp_eval_file.c line 6: parse error
+tmp/tmp_eval_file.c line 6: Undefined variable 'users'
+adm/efuns/resolve_path.c line 104: 'file' is not a local or a global variable.
+adm/efuns/resolve_path.c line 105: Undefined variable 'file'
+adm/efuns/tell_object.c line 1: Reserved type name unexpected.
+adm/efuns/tell_object.c line 1: parse error
+adm/efuns/resolve_path.c line 106: parse error
+adm/efuns/resolve_path.c line 107: Illegal LHS
+adm/efuns/resolve_path.c line 107: parse error
+adm/efuns/distinct_array.c line 9: Undefined variable 'item'
+adm/efuns/distinct_array.c line 9: Illegal LHS
+adm/efuns/distinct_array.c line 9: parse error
+adm/efuns/resolve_path.c line 137: Undefined variable 'j'
+obj/clone/user.c line 201: Illegal to redeclare local name 'i'
+obj/clone/user.c line 212: Undefined variable 'i'
+obj/clone/user.c line 201: Illegal to redeclare local name 'i'
+obj/clone/user.c line 212: Undefined variable 'i'
+obj/clone/user.c line 223: Undefined variable 'words'
+obj/clone/user.c line 223: Undefined variable 'words'
+obj/clone/user.c line 223: Undefined variable 'words'
+obj/clone/tcsh.c line 35: parse error
+obj/clone/tcsh.c line 35: parse error
+obj/clone/tcsh.c line 36: parse error
+tmp/tmp_eval_file.c line 6: Undefined function do_input
+tmp/tmp_eval_file.c line 6: Undefined function absolute_path
+tmp/tmp_eval_file.c line 6: Undefined function base_name
+obj/clone/tcsh.c line 10: parse error
+obj/clone/tcsh.c line 9: parse error
+obj/clone/tcsh.c line 37: parse error
+obj/clone/tcsh.c line 37: parse error
+tmp/tmp_eval_file.c line 6: Undefined function do_input
+obj/clone/test.c line 2: parse error
+tmp/tmp_eval_file.c line 6: parse error
+tmp/tmp_eval_file.c line 6: parse error
+obj/clone/tcsh.c line 86: Reserved type name unexpected.
+obj/clone/tcsh.c line 86: parse error
+obj/clone/tcsh.c line 88: Illegal LHS
+obj/clone/tcsh.c line 88: parse error
+obj/clone/tcsh.c line 91: Undefined variable 'size'
+obj/clone/tcsh.c line 91: Illegal LHS
+adm/obj/daemon/logind.c line 199: Undefined function display
+adm/efuns/x_exists.c line 35: parse error
+adm/efuns/distinct_array.c line 9: Undefined variable 'item'
+adm/efuns/distinct_array.c line 9: Illegal LHS
+adm/efuns/distinct_array.c line 10: Undefined variable 'arr'
+adm/efuns/distinct_array.c line 13: parse error
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+obj/clone/user.c line 177: Undefined function resolve_path
+obj/clone/user.c line 177: Type of returned value doesn't match function return type ( unknown vs string ).
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+include/mudlib.h line 15: Warning: redefinition of #define OBJECT
+
+tmp/tmp_eval_file.c line 6: Undefined function termcap_format_line
+tmp/tmp_eval_file.c line 6: Undefined variable '__BOB__'
+include/runtime_config.h line 59: Illegal to redefine predefined value.
+include/runtime_config.h line 60: Illegal to redefine predefined value.
+include/runtime_config.h line 59: Illegal to redefine predefined value.
+include/runtime_config.h line 60: Illegal to redefine predefined value.
+tmp/tmp_eval_file.c line 6: parse error
+adm/cmd/player/mudlist.c line 114: parse error
+adm/cmd/player/mudlist.c line 115: Illegal LHS
+adm/cmd/player/mudlist.c line 115: parse error
+adm/cmd/player/mudlist.c line 117: Illegal LHS
+adm/cmd/player/mudlist.c line 117: parse error
+adm/cmd/player/mudlist.c line 123: Undefined variable 'a'
+adm/cmd/player/mudlist.c line 114: parse error
+adm/cmd/player/mudlist.c line 115: Illegal LHS
+adm/cmd/player/mudlist.c line 115: parse error
+adm/cmd/player/mudlist.c line 117: Illegal LHS
+adm/cmd/player/mudlist.c line 117: parse error
+adm/cmd/player/mudlist.c line 123: Undefined variable 'a'
+obj/clone/shsh.c line 61: Warning: redefinition of #define NULL
+
+obj/clone/shsh.c line 1619: Warning: Unknown \x char.
+adm/obj/daemon/cmdd.c line 32: Illegal to redeclare local name 'path'
+adm/obj/daemon/cmdd.c line 32: 'cmdset' is not a local or a global variable.
+adm/obj/daemon/cmdd.c line 33: Undefined variable 'cmdset'
+adm/obj/daemon/cmdd.c line 70: Undefined variable 'path'
+adm/obj/daemon/cmdd.c line 77: 'path' is not a local or a global variable.
+adm/obj/daemon/cmdd.c line 78: Undefined variable 'path'
+obj/clone/user.c line 275: 'path' is not a local or a global variable.
+obj/clone/user.c line 276: Undefined variable 'path'

@@ -1,6 +1,3 @@
-#ifndef _MAILBOX_H
-#define _MAILBOX_H
-
 // Written by Tim in fall 1995
 //
 // This file is part of the UltraLib distribution mudlib.
@@ -33,5 +30,4 @@ string get_from(int num);    // return the mail addr of the sender of msg 'num'
 void add_mesg(string subj, string from, string mesg);  // add a new message
 void del_mesg(int num);      // delete message number 'num'
 void mark_read(int num);     // mark a message as read
-
-#endif /* _MAILBOX_H */
+int is_unread(int num);      // 1 if message 'num' is unread

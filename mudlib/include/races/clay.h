@@ -1,13 +1,10 @@
-//object containing functions pretaining to the race 'clay'.
-//Malieable race, for all forms of animals and creatures
-//Orig by casper 11/95
- 
+// clay.h:  included by both users and monsters
+//
+// Functions pretaining to the race 'clay'.
+// Malieable race, for all forms of animals and creatures
+// Orig by casper 11/95
  
 #include <weapon_types.h>
- 
-//If things bug out, these next few functions need a return 
-//copy() scheme.  Casper (tryin to figger out EXACTLY how LPC 
-//handles pointers)
  
 string *armour_types, *armour_locations;
 int *base_ac, hands;

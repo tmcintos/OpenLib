@@ -1,2 +1,12 @@
 -Finger via intermud should return the player's title also
 -display idle time right in general finger
+-shell idea: enter history buffer and go into char mode--using arrow keys to
+ find and edit a command.  Then go back into line by line mode once return is
+ pressed.
+-inetd: make separate general purpose queue object & use.  Rewrite all that
+ queueing stuff. MAKE IT WORK!!! Everything is getting called except the
+ overload of eventRead() why the heck...
+-multiple clients for inetd.  Have an obj array and only clone clients as
+ needed. This can be done after the kinks are worked out w/1 client part.
+-mail: use more() for paging header output
+-rwho service: take out call to more() since it won't work with tp == 0

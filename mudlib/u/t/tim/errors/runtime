@@ -1,0 +1,40 @@
+
+[ERROR] *Bad argument 2 to foreach
+Expected: array Got: 0.
+  obj : (u/t/tim/newuser)
+  file: u/t/tim/newuser.c:87
+  prgm: u/t/tim/newuser.c
+  func: remove
+  args: ( )
+
+[ERROR] *Bad argument 2 to foreach
+Expected: array Got: 0.
+  obj : (u/t/tim/newuser)
+  file: u/t/tim/newuser.c:87
+  prgm: u/t/tim/newuser.c
+  func: remove
+  args: ( )
+
+[ERROR] *Bad argument 2 to foreach
+Expected: array Got: 0.
+  obj : (u/t/tim/newuser)
+  file: u/t/tim/newuser.c:87
+  prgm: u/t/tim/newuser.c
+  func: remove
+  args: ( )
+
+[ERROR] *Bad argument 2 to foreach
+Expected: array Got: 0.
+  obj : (u/t/tim/newuser)
+  file: u/t/tim/newuser.c:87
+  prgm: u/t/tim/newuser.c
+  func: remove
+  args: ( )
+
+[ERROR] *Bad argument 2 to foreach
+Expected: array Got: 0.
+  obj : (u/t/tim/newuser)
+  file: u/t/tim/newuser.c:87
+  prgm: u/t/tim/newuser.c
+  func: remove
+  args: ( )

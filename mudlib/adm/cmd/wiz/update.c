@@ -2,7 +2,6 @@
 // update.c:  -n option is for no-load (doesn't reload file)
 //            -d option is to update all files in a directory
 
-#include <command.h>
 #include <cmdline.h>
 
 #define USAGE "usage: update [-nArRs] [-nds] <filename>\n"
@@ -10,7 +9,7 @@
 varargs int update_file(string file, boolean reload, boolean silent);
 
 int
-_main(string *argv, string *argv2)
+main(string *argv, string *argv2)
 {
   string *files, file;
   int i, reload, size, hush;
@@ -51,7 +50,7 @@ _main(string *argv, string *argv2)
 			   "recursive update.\n");
 
       if(flag("r"))
-	files = shallow_inherit_list(find_object(file));
+	files = inherit_list(find_object(file));
       else
 	files = deep_inherit_list(find_object(file));
       
@@ -106,7 +105,8 @@ update_file(string file, boolean reload, boolean silent)
   if (obj = find_object(file)) {
     if(!silent && obj == this_object())      // For updating this command :)
       write("This command will be reloaded at next reference.\n");
-    efun::destruct(obj);                     // destruct the object first
+    if(!destruct(obj))
+      efun::destruct(obj);                     // destruct the object first
   } else if(!silent) {
     write("object not loaded...");
   }

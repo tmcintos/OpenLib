@@ -1,28 +1,41 @@
-//This file contains all functions pretaining to combat and 
-//related realms.
-//Orig by Casper 9/95
- 
-#include <mudlib.h>
+/*  -*- LPC -*-  */
+// combat.c:  combat funcs inherited by user.c
+//
+// This file contains all functions pretaining to combat and 
+// related realms.
+// Orig by Casper 9/95
+//
+// 01.29.96  Tim  - Put prototypes in combat.h & included race.h protos
+//                - Cleaned up a bit, took out this_object()'s since race.h
+//                  now defines those functions
+//                - Took out some unnecessary includes
+//                - Changed create() to init_combat() so we don't need to
+//                - play all these funky games with functions that aren't
+//                  defined yet.  Just call this in the create func. of the
+//                  child object.
+
 #include <daemons.h> 
 #include <weapon_types.h>
- 
-void set_ac(int *new_ac);
-void set_armour(int new_armours);
+#include <race.h>
+#include "combat.h"
  
 private static int *ac,armours,free_hands, combating;
 private static mixed *weapon_info; 
  
-void create()
+void init_combat()
 {
-  int i = this_object()->query_hands()/2;
+  int i = query_hands()/2;
  
-  set_ac(this_object()->query_base_ac());
+  set_ac(query_base_ac());
   set_armour(0);
+
   weapon_info = ({});
   while(i--)
-    weapon_info += ({this_object()->query_unarmed(i)});
+    weapon_info += ({ query_unarmed(i) });
+
   combating = 0;
 }
+
 int query_num_attacks()
 {
 //This just patches combat so we CAN fight.  Fix over later.  Casper.
@@ -51,6 +64,7 @@ void set_ac(int *new_ac)
   if(combating)
     COMBAT_D->update_ac(this_object(),ac);
 }
+
 int *query_ac()
 {
   return ac;
@@ -96,13 +110,13 @@ void set_weapon_info(mixed *new_weapon_info)
  
 varargs int do_unwield(object weapon, int make_noise)
 {
-  int i,hands_info,j;
+  int i, j, hands_info;
   mixed *weapon_info, *this_weapon_info;
  
   hands_info = query_free_hands();
   this_weapon_info = weapon->query_weapon_info();
   weapon_info = query_weapon_info();
-  weapon_info -= ({this_weapon_info});
+  weapon_info -= ({ this_weapon_info });
   i = this_weapon_info[11]*2;
   if(weapon->query_hands()==2)
   {
@@ -119,25 +133,33 @@ varargs int do_unwield(object weapon, int make_noise)
                                    //'bookkeeping' error.  Casper
   {
     weapon_info = ({});  //Redundant, but provides a possibly 
-                         //nessisary 'clean up point'  Casper
-    for(i = 0,j = this_object()->query_hands()/2;i < j;i++)
-      weapon_info += ({this_object()->query_unarmed(i)});
+                         //necessary 'clean up point'  Casper
+    for(i = 0,j = query_hands()/2;i < j;i++)
+      weapon_info += ({ query_unarmed(i) });
   }
   set_free_hands(hands_info);
   set_weapon_info(weapon_info);
   weapon->set_wielded(0);
-    tell_object(this_object(), "You unwield "+weapon->short()+".\n");
-    tell_room(environment(this_object()), this_object()->query_cap_name()+" unwields "+ weapon->short()+".\n", ({this_object()}));
+
+  tell_object(this_object(),
+	      sprintf("You unwield %s.\n", weapon->short()));
+  say(sprintf("%s unwields %s.\n",
+	      this_object()->query_cap_name(),
+	      weapon->short()));
+
   return 1;
 }
  
 varargs int do_wield(object weapon, int hands_used, int make_noise)
 {
   mixed *weapon_info, *this_weapon_info;
-  int i,j,max_hands = this_object()->query_hands(), free_hands = query_free_hands();
-  int *foo;
-//Bit sloppy here, but passing these args would be ugly, so
-//I'll just derive them here.  Capser 10/9/95
+  int max_hands = query_hands();
+  int free_hands = query_free_hands();
+  int i,j;
+  int* foo;
+
+// Bit sloppy here, but passing these args would be ugly, so
+// I'll just derive them here.  Capser 10/9/95
   for(i = 0, j = 1; i < max_hands; j *= 2, i++)
   {
     if(hands_used & j)
@@ -147,7 +169,7 @@ varargs int do_wield(object weapon, int hands_used, int make_noise)
     }
   }
   weapon_info = weapon->query_weapon_info();
-  this_weapon_info = this_object()->query_unarmed(j,WEAPON_TYPE[weapon_info[12]]);
+  this_weapon_info = query_unarmed(j,WEAPON_TYPE[weapon_info[12]]);
   this_weapon_info[0] += weapon_info[0];
   this_weapon_info[1] = weapon_info[1];
   this_weapon_info[2] += weapon_info[2];
@@ -161,20 +183,24 @@ varargs int do_wield(object weapon, int hands_used, int make_noise)
   this_weapon_info[10] = weapon;
   this_weapon_info[11] = j; //hand pair used.
  
-  set_weapon_info((free_hands ? query_weapon_info() : 
-                         ({})) + ({this_weapon_info}));
+  set_weapon_info((free_hands ? query_weapon_info() : ({}))
+                  + ({ this_weapon_info }));
   set_free_hands(free_hands | hands_used);
  
   //Parry modifier.
-  set_ac(({(foo = query_ac())[0]+this_weapon_info[3],foo[1]}));
+  set_ac( ({ (foo = query_ac())[0] + this_weapon_info[3], foo[1] }) );
  
   if(make_noise)
   {
-    tell_object(this_object(), "You wield "+weapon->short()+".\n");
-    tell_room(environment(this_object()), "You wield "+weapon->short()+".\n", ({this_object()}));
+    tell_object(this_object(),
+		sprintf("You wield %s.\n", weapon->short()));
+    say(sprintf("%s wields %s.\n",
+		this_object()->query_cap_name(),
+		weapon->short()));
   }
   weapon->set_wielded(1);
   weapon->set_wield_info(this_weapon_info);
+
   return 1;
 }
  
@@ -184,17 +210,20 @@ varargs int do_wear(object armour, int make_noise)
   int i, j, armour_worn, *k,*m;
  
   i = member_array((armour_type=armour->query_type()), 
-                   (armour_types = this_object()->query_armour_types()));
+                   (armour_types = query_armour_types()));
   j = sizeof(armour_types);
   armour_worn = query_armour();
+
   while (i < j && (to_int(pow(2,i)) & armour_worn)
           && armour_types[i]==armour_type)
     i++;
+
   if((i == j) ? 1 : (armour_types[i]!=armour_type))
   {
     notify_fail("You have no place to wear "+armour->short()+".\n");
     return 0;
   }
+
   k = armour->query_ac();
   m = query_ac();
   m[0] += k[0];
@@ -202,12 +231,16 @@ varargs int do_wear(object armour, int make_noise)
   set_ac(m);
   j = pow(2,i);
   set_armour(armour_worn + j);
-  armour->set_worn(j,this_object()->query_armour_locations()[i]);
+  armour->set_worn(j, query_armour_locations()[i]);
   if(make_noise)
   {
-    tell_object(this_object(), "You wear "+armour->short(1)+".\n");
-    tell_room(environment(this_player()), this_object()->query_cap_name()+" wears "+armour->short(1)+".\n", ({this_object()}));
+    tell_object(this_object(),
+		sprintf("You wear %s.\n", armour->short(1)));
+    say(sprintf("%s wears %s.\n",
+		this_object()->query_cap_name(),
+		armour->short(1)));
   }
+
   return 1;
 }
  
@@ -225,7 +258,10 @@ void do_remove(object armour, int make_noise)
   armour->set_worn(0,"");
   if(make_noise)
   {
-    tell_object(this_object(), "You remove "+ armour->short()+".\n");
-    tell_room(environment(this_object()), this_object()->query_cap_name()+" removes "+armour->short()+".\n", ({this_object()}));
+    tell_object(this_object(),
+		sprintf("You remove %s.\n", armour->short()));
+    say(sprintf("%s removes %s.\n",
+		this_object()->query_cap_name(),
+		armour->short()));
   }
 }

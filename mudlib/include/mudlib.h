@@ -11,11 +11,11 @@
 #define MASTER_OB    SECURE_DAEMON_DIR "/master"
 #define VOID_OB      SECURE_DAEMON_DIR "/void"
 
-#define BASE         INHERIT_DIR "/base/object"    // ! take this out soon !
-#define OBJECT       INHERIT_DIR "/base/object"
-#define ROOM	     INHERIT_DIR "/base/room"
-#define LIVING       INHERIT_DIR "/base/living"
-#define DAEMON       INHERIT_DIR "/base/daemon"
+#define BASE         INHERIT_DIR "/object"    // ! take this out soon !
+#define OBJECT       INHERIT_DIR "/object"
+#define ROOM	     INHERIT_DIR "/room"
+#define LIVING       INHERIT_DIR "/living"
+#define DAEMON       INHERIT_DIR "/daemon"
 #define SHOP         INHERIT_DIR "/shop"
 #define WEAPON       INHERIT_DIR "/weapon"
 #define ARMOUR       INHERIT_DIR "/armour"

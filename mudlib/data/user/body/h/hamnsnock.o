@@ -1,10 +1,11 @@
 #obj/clone/user/human.c
+flags ({})
 name "hamnsnock"
 coins ({550,436,})
 hit_points 58
 title "the great magician of patagonia"
-current_dir "/u/h/hamnsnock/stuff"
+current_dir "/u/h/hamnsnock"
 term "ansi"
-aliases (["i":"inventory","nw":"northwest","se":"southeast","sc":"score","w":"west","s":"south","quit":".quit","f":"finger","join":".join","l":"look","goto":".goto","wand":"clone /u/h/hamnsnock/stuff/wand","e":"east","sw":"southwest","home":".home","n":"north","ne":"northeast",])
+aliases (["sc":"score","i":"inventory","se":"southeast","join":".join","f":"finger","wand":"clone /u/h/hamnsnock/stuff/wand","nw":"northwest","goto":".goto","sw":"southwest","s":"south","home":".home","quit":".quit","e":"east","w":"west","l":"look","ne":"northeast","n":"north",])
 channels ({"igossip","wiz","icode",})
 search_path ({"/cmd/player/","/adm/cmd/wiz/","/cmd/wiz/","/adm/cmd/adm/","/adm/cmd/player/","/cmd/adm/",})

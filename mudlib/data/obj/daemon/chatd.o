@@ -1,3 +1,3 @@
 #obj/daemon/chatd.c
-no_clean 1
-channels (["igossip":(/"Intermud Gossip Channel",0,0,({}),/),"wiz":(/"Wizard Coding Channel",0,0,({}),/),"info":(/"Dysfunctional Mud Information",-1,0,({}),/),"icode":(/"Intermud Coding Discussion Channel",0,0,({}),/),])
+channels (["rdmud":(/"mud channel at Red Dragon",0,0,({}),/),"info":(/"Dysfunctional Mud Information",-1,0,({}),/),"igossip":(/"Intermud Gossip Channel",0,0,({,}),/),"icode":(/"Intermud Coding Discussion Channel",0,0,({,}),/),"wiz":(/"Wizard Coding Channel",0,0,({}),/),])
+chanmap ({"icode","imud_code","igossip","imud_gossip","rdmud","mud",})

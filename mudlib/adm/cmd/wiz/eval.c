@@ -6,6 +6,7 @@
 int
 main(string arg)
 {
+  seteuid(getuid(this_player()));
   if(arg == "" || !arg)
     return notify_fail("usage: eval <lpc code>\n");
 
@@ -17,6 +18,7 @@ main(string arg)
 
   write_file(TFILE ".c", sprintf("#include <mudlib.h>\n"
 				 "#include <daemons.h>\n"
+				 "#include <net/daemons.h>\n"
 				 "mixed eval() { \n"
 				 "  object me = this_player();\n"
 				 "  %s; }\n", arg));

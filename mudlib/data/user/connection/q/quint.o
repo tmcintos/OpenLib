@@ -5,6 +5,6 @@ real_name "Scott Jackson"
 email_addr "scott@de.msstate.edu"
 home_dir "/u/q/quint"
 body "/obj/clone/user/human"
-login_time 822623645
-logout_time 822624727
-login_from "loopback"
+login_time 824597467
+logout_time 824597457
+login_from "knapp38.res.iastate.edu"

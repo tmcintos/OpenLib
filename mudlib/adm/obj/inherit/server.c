@@ -6,6 +6,7 @@
  *
  *  10.23.95  Tim modified for this mudlib
  *  12.08.95  Tim modified to support MUD mode sockets
+ *  02.05.96  Tim added SetSocketClosed(), Closed variable & related code
  */
 
 #include <mudlib.h>
@@ -16,6 +17,7 @@ inherit DAEMON;
 
 private static int DestructOnClose;
 private static function Read;
+private static function Closed;
 private static class server Listen;
 private static mapping Sockets;
 
@@ -133,7 +135,10 @@ static void eventClose(class server sock) {
     if( !sock ) return;
     if( Sockets[sock->Descriptor] ) map_delete(Sockets, sock->Descriptor);
     socket_close(sock->Descriptor);
-    eventSocketClosed(sock->Descriptor);
+    if(Closed)
+      evaluate(Closed, sock->Descriptor);
+    else
+      eventSocketClosed(sock->Descriptor);
     sock = 0;
     if( DestructOnClose && sock == Listen ) Destruct();
 }
@@ -154,5 +159,7 @@ static void eventNewConnection(int fd) {
 static void eventSocketError(string str, int x) { }
 
 function SetRead(function f) { return (Read = f); }
+
+function SetSocketClosed(function f) { return (Closed = f); }
 
 int SetDestructOnClose(int x) { return (DestructOnClose = x); }

@@ -155,7 +155,7 @@ static private void get_file(int fd, string file) {
     if(file[0] != '/') 
       file = sprintf("/%s", file);
 
-    parts = explode(file = resolve_path("/", file), "/");
+    parts = explode(file = absolute_path("/", file), "/");
 
     if(!sizeof(parts)) {
       file = sprintf("%s/index.html", DIR_WWW);

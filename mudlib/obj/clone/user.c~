@@ -13,13 +13,16 @@
 //                    quick 'hack' for inheriting 'human' functions into
 //                    user.c
 //  10/03/95 Tim:  Moved some stuff to living.c, cleaned up some... 
+//  02/13/96 Tim:  inherits more() funcs now instead of include
 
 #include <mudlib.h>
+#include <dirs.h>
 #include <uid.h>
 #include <daemons.h>
 #include <object_types.h>
 
 inherit LIVING;
+inherit INHERIT_DIR "/more";
 
 private string title;                  // our title
 private string current_dir;            // current working directory
@@ -37,8 +40,6 @@ private string* search_path = ({ "/cmd/player",
 				 "/adm/cmd/player",
 				 "/cmd/adm"
 			      });
-
-#include "user/more.c"
 
 string query_cwd() { return current_dir; }
 string query_term() { return term; }
@@ -69,11 +70,6 @@ create()
 	      "l"   :  "look",
 	      "sc"  :  "score",
 	      ]);
-
-  foreach(path in search_path) {
-    if(!CMD_D->hashed_path(path) && !CMD_D->hash_path(path))
-      search_path -= ({ path });
-  }
 
 }
 
@@ -173,7 +169,7 @@ is_subscribed_chan(string chan)
 string
 path_resolve(string path)
 {
-  return resolve_path(query_cwd(), path);
+  return absolute_path(query_cwd(), path);
 }
 
 // possible to modify player input here before driver parses it.
@@ -181,77 +177,45 @@ path_resolve(string path)
 string
 process_input(string arg)
 {
-  mixed* words;
-  int i;
+  if(arg[0] != '\\') {
+    mixed words = explode(arg, " ");
 
-  if(!arg || arg == "") return 0;
-  if(arg[0] == '\\') return arg[1..];
+    if(!sizeof(words)) return;
 
-  words = explode(arg, " ");
+    if(member_array(words[0], keys(aliases)) != -1) {
+      words[0] = aliases[words[0]];
+    }
 
-  if(member_array(words[0], keys(aliases)) != -1) {
-    words[0] = aliases[words[0]];
-  }
+    for(int j = 0; j < sizeof(words); j++) {
+      string path = words[j];
 
-  if(strsrch(arg, '*') != -1) {
-    boolean fail;
-
-    for(i=1; i < sizeof(words); i++) {
-
-      if(words[i] == "*") {
-	string tmp;
-	if((tmp = query_cwd()) == "/")
-	  words[i] = implode(get_dir(tmp), " ");
-	else
-	  words[i] = implode(get_dir(tmp + "/"), " ");
-
-      } else if(strsrch(words[i], '*') != -1) {
-	int j, k;
-	string* path;
-	string prepath;
-
-	words[i] = path_resolve(words[i]);
-	path = explode(words[i], "/");
-
-	for(j=0; j < sizeof(path)-1; j++) {
-	  string *tmp;
-	  if(sizeof(tmp = get_dir("/"+implode(path[0..j], "/"))) == 1) {
-	    path[j] = tmp[0];
-	  } else {
-	    printf("Ambiguous: /%s\n", implode(path[0..j], "/"));
-	    fail = TRUE;
+      /*
+       * If there are no wildcards, don't even bother
+       */
+      if(strsrch(path, '*') != -1 || strsrch(path, '?') != -1) {
+	string root;
+	string* tmp = explode(path, "/");
+	
+	for(int i = 0; i < sizeof(tmp); i++) {
+	  /*
+	   * Only need to call glob on the part after the 1st wildcard
+	   * with the beginning as the starting directory.
+	   */
+	  if(strsrch(tmp[i], '*') != -1 || strsrch(tmp[i], '?') != -1) {
+	    root = implode(tmp[0..i-1], "/");
+	    tmp = tmp[i..];
 	    break;
 	  }
 	}
-
-	if(fail) break;
-
-	if(j) {
-	  prepath = "/" + implode(path[0..j-1], "/");
-	} else {
-	  prepath = "";
-	}
-
-	if(words[i][<1] == '/')
-	  words[i] = get_dir(prepath + "/" + path[j] + "/");
-	else
-	  words[i] = get_dir(prepath + "/" + path[j]);
-
-	if(!sizeof(words[i])) {
-	  printf("%s: no match.\n", arg);
-	  fail = TRUE;
-	  break;
-	}
-
-	for(k = 0; k < sizeof(words[i]); k++)
-	  words[i][k] = prepath +"/"+ words[i][k];
-
-	words[i] = implode(words[i], " ");
+	words[j] = implode(glob(root, tmp), " ");
       }
-    } 
+    }
+    return implode(words, " ");
+  } else {
+    if(strlen(arg) > 1)
+      arg = arg[1..];
+    return arg;
   }
-
-  return implode(words, " ");
 }
 
 //  Save the values to the playerfile
@@ -266,6 +230,8 @@ save_player()
   if(file_size(dir) != -2) mkdir(dir);
 
   file = dir + "/" + username;
+
+  connection->save_connection(username);
   return save_object(file);
 }
 
@@ -304,6 +270,11 @@ setup(string username)
     foreach(string chan in channels) {
       CHAT_D->add_member(chan, this_player());
     }
+  }
+
+  foreach(path in search_path) {
+    if(!CMD_D->hashed_path(path) && !CMD_D->hash_path(path))
+      search_path -= ({ path });
   }
 
   if(!title) title = "the utter mudlib hacker";
@@ -354,10 +325,12 @@ commandHook(string arg)
 	  map_delete(aliases, arg);
       }
       return 1;
+    case "eval":
+      return (int) "/adm/cmd/wiz/eval"->main(arg);
     }
 
     if(cobj = CMD_D->find_cmd(verb)) {
-      return (int) cobj->main(arg);
+      return (int) cobj->_main(arg);
     } else {
       tmp_emote = verb;
 
@@ -390,7 +363,7 @@ receive_message(string msgClass, string msg)
 {
 	// the meaning of 'msgClass' is at the mudlib's discretion
 //	receive(wrap(termcap_format_line(msg, query_term())));
-	receive(termcap_format_line(msg, query_term()));
+	receive(TERMCAP_D->termcap_format_line(msg, query_term()));
 }
 
 // net_dead: called by the gamedriver when an interactive player loses

@@ -1,11 +1,11 @@
 #obj/clone/user/human.c
-name "tim"
+flags ({})
 coins ({0,2000,})
-hit_points 100
+hit_points 15
 gender 1
 title "the 'loose cannon' of mudding"
 current_dir "/u/t/tim"
 term "ansi"
-aliases (["'":"say","w":"west","sw":"southwest","nw":"northwest","i":"inventory","ne":"northeast","sc":"score","se":"southeast","n":"north","e":"east","l":"look","s":"south","la":"look at",])
-channels ({"icode","igossip",})
-search_path ({"/cmd/player","/adm/cmd/wiz","/cmd/wiz","/adm/cmd/adm","/adm/cmd/player","/cmd/adm",})
+aliases (["n":"north","e":"east","ne":"northeast","'":"say","sc":"score","nw":"northwest","l":"look","i":"inventory","er":"more /log/errors/runtime","s":"south","w":"west","se":"southeast","sw":"southwest","la":"look at","md":"more /log/inetd",])
+channels ({"rdmud","icode",})
+search_path ({"/cmd/player","/adm/cmd/wiz","/cmd/wiz","/adm/cmd/adm","/adm/cmd/player","/cmd/adm","/u/t/tim/bin",})

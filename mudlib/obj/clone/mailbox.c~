@@ -28,6 +28,18 @@ create()
   msgs = ({});
 }
 
+void
+reinit_mailbox(string username)
+{
+  mailfile = MAIL_SAVE_DIR + "/" + username[0..0] + "/" + username;
+
+#ifdef DEBUG
+  log_file(DEBUG, sprintf("resinit: %s\n", mailfile));
+#endif
+
+  msgs = ({});
+}
+
 int
 restore_mailbox(string username)
 {

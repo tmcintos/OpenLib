@@ -1,9 +1,8 @@
 /*  -*- LPC -*-  */
-#include <command.h>
 #include <cmdline.h>
 
 int
-_main(string *argv, string *argv2)
+main(string *argv, string *argv2)
 {
   int verbose;
 

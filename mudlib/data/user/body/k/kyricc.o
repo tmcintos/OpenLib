@@ -1,10 +1,11 @@
 #obj/clone/user/human.c
+flags ({})
 name "kyricc"
 coins ({30,10,})
 hit_points 100
-title "the utter idiot"
-current_dir "/cmd/player"
+title "thinks fuck the moral majority"
+current_dir "/u/k/kyricc/Porno/ROOMS"
 term "ansi"
-aliases (["n":"north","ne":"northeast","nw":"northwest","se":"southeast","i":"inventory","l":"look","sc":"score","s":"south","e":"east","sw":"southwest","w":"west",])
+aliases (["nw":"northwest","e":"east","ne":"northeast","s":"south","sw":"southwest","w":"west","l":"look","n":"north","sc":"score","i":"inventory","se":"southeast",])
 channels ({})
 search_path ({"/cmd/player","/adm/cmd/wiz","/cmd/wiz","/adm/cmd/adm","/adm/cmd/player","/cmd/adm",})

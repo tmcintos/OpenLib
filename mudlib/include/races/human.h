@@ -1,30 +1,33 @@
-//object containing functions pretaining to the race 'human'.
-//Also example for others
-//Orig by casper 9/95
+// human.h:  This file is used for both users and monsters
+//
+// Functions pretaining to the race 'human'.
+// Also example for others
+// Orig by casper 9/95
  
 #include <weapon_types.h>
- 
-//If things bug out, these next few functions need a return 
-//copy() scheme.  Casper (tryin to figger out EXACTLY how LPC 
-//handles pointers)
+
+int query_base_weight()
+{
+  return 140;  // in lbs.
+}
  
 string *query_armour_types()  //The 'ID' of armours that can be worn.
 {
-  return ({"helm","ring","ring","bracers","body2","legs2","boots",
-           "amulet","cloak"});
+  return copy(({"helm","ring","ring","bracers","body2","legs2","boots",
+           "amulet","cloak"}));
 }
  
 string *query_armour_locations()  //Where the armours are worn
                                   //Parralel to above array
 {
-  return ({"on the head","on the left hand","on the right hand",
+  return copy(({"on the head","on the left hand","on the right hand",
           "on the arms","about the body","on the legs",
-          "on the feet","around the neck","around the neck"});
+          "on the feet","around the neck","around the neck"}));
 }
  
 int *query_base_ac()
 {
-  return({0,0}); //({chance to hit mod(10 = 1%),damage mod})
+  return copy(({0,0})); // ({ chance to hit mod(10 = 1%), damage mod })
 }
  
 int query_hands()  //The number of hands and therefore(?)
@@ -41,7 +44,7 @@ int query_hands()  //The number of hands and therefore(?)
 varargs mixed *query_unarmed(int not_really_important,string wep_skill)
 {
   //**DO NOT CHANGE THIS WITHOUT INFORMING ME, CASPER**
-  return ({
+  return copy(({
     2916473 / (3 * (26 - this_object()->query_stat("strength")) + 
       (26 - this_object()->query_stat("agility")) + 2 * (1001 - 
       (wep_skill ? this_object()->query_skill(wep_skill) : 0)) + 
@@ -76,5 +79,5 @@ varargs mixed *query_unarmed(int not_really_important,string wep_skill)
     ({"fists","balled hand", "hand", "fist"}),
     WEAPON_FISTS,
     this_object(),
-    0});
+    0}));
 }

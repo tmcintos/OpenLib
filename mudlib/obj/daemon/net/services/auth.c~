@@ -7,7 +7,7 @@
 #include <daemons.h>
 #include <net/daemons.h>
 
-#define SERVICE_AUTH;
+#define SERVICE_AUTH
 
 void
 eventRecieveAuthRequest(mixed *packet)

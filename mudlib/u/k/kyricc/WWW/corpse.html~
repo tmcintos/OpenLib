@@ -1,0 +1,100 @@
+<HEAD><TITLE>corpse.c</TITLE></HEAD>
+
+<H1>Oh NO!  It's the living corpse!</H1>
+
+<HR>
+
+ <P>Well, here it is.  The modified UltraLib corpse.c.  The principal here is
+ to make things interesting.  There is a one in twenty chance that any corpse
+ (except corpses of things already undead) can come back as a zombie.  The
+ code is not finished yet, however, it does work in its current form.
+.
+<P>// corpse.c:  Orig. by Tim 10/16/95
+<P>//   Object cloned when a living dies.
+<P>// Updated amount of time for corpse decay -> 10/23/95 Kyricc
+<P>// Updated: Now a corpse randomly becomes a Zombie -> Kyricc 10/24/95
+<P>//
+<P>
+<P>#include <mudlib.h>
+<P>#include <object_types.h>
+<P>
+<P>inherit OBJECT;
+<P>
+<P>private static int timer;               // rotting timer
+<P>
+<P>void
+<P>create()
+<P>{
+<P>  ::create();
+<P>
+<P>  timer = 0;
+<P>  set_heart_beat(1);                    // for rotting
+<P>
+<P>  // must hold objects
+<P>  set_object_class(query_object_class() | OBJECT_CONTAINER);
+<P>
+<P>  set_ids(({ "corpse", "body" }));
+<P>}
+<P>
+<P>void
+<P>heart_beat()
+<P>{
+<P>  object zombie;
+<P>  int num;
+<P>
+<P>  if(timer > 180) {
+<P>    num = random(21);
+<P>    if(num != 20) destruct(this_object());
+<P>      else {zombie = clone_object("/obj/clone/reinzombie.c");
+<P>            zombie->move(environment());
+<P>            destruct(this_object());}
+<P>  }
+<P>  else
+<P>  timer++;
+<P>}
+<P>
+<P>string
+<P>short()
+<P>{
+<P>  switch(timer) {
+<P>  case 0..60:
+<P>    return sprintf("the corpse of %s", short_desc);
+<P>  case 61..120:
+<P>    return sprintf("the slightly stiff corpse of %s", short_desc);
+<P>  case 121..180:
+<P>    return "a rotting corpse";
+<P>  default:
+<P>    return "a decayed corpse";
+<P>  }
+<P>}
+<P>
+<P>varargs
+<P>mixed
+<P>long(int flag)
+<P>{
+<P>  switch(timer) {
+<P>  case 0..60:
+<P>    long_desc = @ENDLONG
+<P>This corpse looks as though it were living only moments ago.
+<P>ENDLONG;
+<P>    break;
+<P>  case 61..120:
+<P>    long_desc = @ENDLONG
+<P>A corpse that has been deceased for a considerable amount of time.
+<P>ENDLONG;
+<P>    break;
+<P>  case 121..180:
+<P>    long_desc = @ENDLONG
+<P>A stinking, rotting corpse.
+<P>ENDLONG;
+<P>    break;
+<P>  default:
+<P>    long_desc = @ENDLONG
+<P>A decayed corpse that is beyond recognition.
+<P>ENDLONG;
+<P>  }
+<P>
+<P>  return object::long(flag);
+<P>}
+<P>
+<P>int get() { return 0; }

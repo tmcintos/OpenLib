@@ -15,14 +15,22 @@ main(string str) {
 	string ret;
 
 	ret = (string)FINGER_D->GetFinger(0);
-	if( !ret ) return notify_fail("General finger appears broken.");
+	if( !ret ) return notify_fail("General finger appears broken.\n");
 	message("system", ret, this_player());
 	return 1;
     }
     else if(sscanf(str, "%s@%s", wer, wo)) { 
-        if( wer == "" ) 
-          return notify_fail("Intermud 3 does not support this operation.");
-         remote_finger(this_player(), (wer ? wer : ""), wo);
+        if( wer == "" ) {
+	  if( !(wo = (string)INTERMUD_D->GetMudName(wo)) )
+	    return notify_fail(mud_name() +
+			       " is not aware of such a place.\n");
+	  SERVICES_D->eventSendWhoRequest(wo);
+	  message("system", "Remote who query sent to " + wo + ".\n",
+		  this_player());
+	  return 1;
+	}
+	else
+	  remote_finger(this_player(), (wer ? wer : ""), wo);
     }
     else {
 	string ret;

@@ -17,7 +17,10 @@ static void eventClose(class client sock);
 static void eventSocketClose();
 int eventDestruct();
 static void eventSocketError(string str, int x);
+
 function SetRead(function f);
+function SetSocketClose(function f);
+
 int SetSocketType(int x);
 int SetDestructOnClose(int x);
 

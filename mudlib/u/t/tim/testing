@@ -1,0 +1,14 @@
+To: tim
+From: Evergreen
+Date: Fri Jan 26 18:08:04 1996
+Subject: done!
+CC: 
+BCC: 
+-------
+I totally rewrote the editor's mechanics, and the qedit command works. The
+code is now made 100% portable ... if I read it right, it should even
+compile just fine under 0.9 (boggle that, eh? ;-) The qedit command demos
+it. Try editing your workroom with it and see what yout think of it.
+ 
+Evergreen
+p.s. anyone doing a shell or interface? I'll volunteer ...

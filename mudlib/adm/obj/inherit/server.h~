@@ -23,6 +23,5 @@ static void eventSocketError(string str, int x);
 
 function SetRead(function f);
 int SetDestructOnClose(int x);
-void CloseSocket(int fd);
 
 #endif /* __SERVER_H__ */

@@ -1,13 +1,12 @@
 /*  -*- LPC -*-  */
 // mv.c:  move a file;  Tim McIntosh (astasia@iastate.edu)
 
-#include <command.h>
 #include <cmdline.h>
 
 #define USAGE "mv [-o] <filepath> <destination>"
 
 int
-_main(string *argv, string *argv2)
+main(string *argv, string *argv2)
 {
   string source, dest, *tmp;
   int opto = flag("o");

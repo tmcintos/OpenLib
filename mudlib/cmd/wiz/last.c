@@ -6,7 +6,7 @@
  last [-<number>] [-h <hostname>] [-i <address>] [name...]\n"
 
 int
-_main(string *argv, string *argv2)
+main(string *argv, string *argv2)
 {
   string* names = ({});  // list of usernames
   string hostname;       // hostname to match

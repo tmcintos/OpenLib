@@ -6,15 +6,15 @@
 //   This ensures that command objects are destructed after being idle, and
 // the euid gets set right.
 //
-// NOTE: use write() with all commands to insure proper message class passed
-//       to player. (write is redef'd here)
+
+#pragma save_binary
 
 #include <mudlib.h>
-#pragma save_binary
+#include <dirs.h>
 
 inherit DAEMON;
 inherit CLEAN_UP;
 
-#define write(x) message("system", x + "", this_player())
+inherit INHERIT_DIR "/command";
 
 #endif /* _COMMAND_H */

@@ -1,14 +1,16 @@
 #include <command.h>
+#include <element.h>
 
 int
 main()
 {
-  mapping Q;
+  element* Q;
   Q = "/obj/daemon/net/inetd"->dump_queue();
 
   write("Queued:\n");
-  foreach(string mud, mixed *packet in Q) {
-    printf("%s: %O\n", mud, packet);
+  foreach(mixed mud in Q) {
+    printf("%s: %O\n", ((element) mud)->key, ((element) mud)->val);
   }
+
   return 1;
 }

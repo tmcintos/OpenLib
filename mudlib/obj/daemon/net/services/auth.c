@@ -10,7 +10,7 @@
 #define SERVICE_AUTH
 
 void
-eventRecieveAuthRequest(mixed *packet)
+eventReceiveAuthRequest(mixed *packet)
 {
   int key;
 
@@ -30,7 +30,7 @@ eventRecieveAuthRequest(mixed *packet)
 }
 
 void
-eventRecieveAuthReply(mixed *packet)
+eventReceiveAuthReply(mixed *packet)
 {
   if( file_name(previous_object()) != INTERMUD_D )
     return;

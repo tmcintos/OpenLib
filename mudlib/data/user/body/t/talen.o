@@ -1,9 +1,10 @@
 #obj/clone/user/human.c
+flags ({})
 name "talen"
 coins ({0,0,})
 hit_points 100
 title "the utter mudlib hacker"
-current_dir "/doc/projects"
-aliases (["i":"inventory","ne":"northeast","w":"west","sw":"southwest","se":"southeast","sc":"score","s":"south","e":"east","l":"look","nw":"northwest","n":"north",])
+current_dir "/u/t/tim"
+aliases (["w":"west","sc":"score","se":"southeast","l":"look","ne":"northeast","nw":"northwest","n":"north","s":"south","sw":"southwest","i":"inventory","e":"east",])
 channels ({})
 search_path ({"/cmd/player","/adm/cmd/wiz","/cmd/wiz","/adm/cmd/adm","/adm/cmd/player","/cmd/adm",})

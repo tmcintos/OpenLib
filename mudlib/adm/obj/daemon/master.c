@@ -237,7 +237,7 @@ destruct_environment_of(object ob)
 string
 make_path_absolute(string file)
 {
-	file = resolve_path((string)this_player()->query_cwd(), file);
+	file = absolute_path((string)this_player()->query_cwd(), file);
 	return file;
 }
 

@@ -1,0 +1,24 @@
+Ok - an outline of a banish daemon. This system has to cater for two types
+of people: those who have voluntarily banished themselves for a period of
+time (if, for example, they have university exams on, and wish to enforce
+some self control :-) ), and those that have been permanently banished by
+the gods for whatever reason.
+
+Functions:
+BANISHD->banish(name, time)
+- banishes the name. If time is given, the person is banished until that
+time rolls around again (as given by time()). If not, they are assumed to
+be banished _permanently_. (ie, if time = 0)
+
+BANISHD->unban(name)
+- what do you think this does? :-)
+
+BANISHD->query_banished(name)
+- returns -1 for a permanently banished character name, +ve number giving
+the time that the character can return. If that time has since passed, tho,
+it'll return 0. 0 = not banished.
+
+Anybody think of anything else? I've put a preliminary version in the file
+/u/t/talen/banish.c
+
+-- Talen.

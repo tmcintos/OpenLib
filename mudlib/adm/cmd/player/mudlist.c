@@ -70,6 +70,17 @@ main(string str) {
 	msg = "\nDetailed information on %^GREEN%^" + mud + "%^RESET%^:\n";
 	msg += sprintf("MUD Type: %:-15s Server: %:-15s Library: %s\n",
 		       borg[mud][8], borg[mud][7], borg[mud][5]);
+	msg += "State: ";
+	switch(borg[mud][0]) {
+	case -1:
+	  msg += "UP\n";
+	  break;
+	case 0:
+	  msg += "DOWN\n";
+	  break;
+	default:
+	  msg += sprintf("DOWN for %i minutes.\n", borg[mud][0] / 60);
+	}
 	msg += "Status: " + borg[mud][9] + "\n"
 	       "Admin Email: "+ borg[mud][10] + "\n";
 	msg += "Services: ";
@@ -83,7 +94,8 @@ main(string str) {
 	    }
 	}
 	msg += "\nHost: " + borg[mud][1] + "\n";
-	msg += "Telnet port: " + borg[mud][2] + "\n";
+	msg += "Telnet port: " +
+	       (borg[mud][2] ? borg[mud][2] : "Private/Closed") +"\n";
 	if( borg[mud][11]["amcp"] )
 	  msg += "AMCP version: " + borg[mud][11]["amcp"] + "\n";
 	if( borg[mud][11]["http"] ) 
@@ -97,8 +109,9 @@ main(string str) {
     }
     list = ({});
     foreach(mud, info in borg)
-      list += ({ sprintf("%:-15s %:-10s %:-15s %:-15s %s %d",
-			 mud, info[8], info[7], info[5], info[1], info[2]) });
+      list += ({ sprintf("%:-15s %:-10s %:-15s %:-15s %:-15s %s",
+			 mud, info[8], info[7], info[5], info[1],
+			 (info[2] ? "" + info[2] : "N/A")) });
     list = sort_array(list, 1);
     list = ({ mud_name() + " recognizes " + int_to_word(sizeof(borg)) +
 		" mud(s) matching your query: ", "" }) + list;
@@ -112,8 +125,8 @@ int alphabet(string a, string b) {
     else return -1;
 }
 
-void help() {
-    message("help", "Syntax: <mudlist>\n"
+string help() {
+    return( "Syntax: <mudlist>\n"
 	    "        <mudlist -dmn [arg]>\n\n"
 	    "Without any arguments, it gives a full listing of all muds "
 	    "with which this mud is capable of communication through "
@@ -127,5 +140,5 @@ void help() {
 	    "\t mudlist -n idea\n"
 	    "will list IdeaExchange as well as any other mud whose name "
 	    "begins with the string \"idea\".\n\n"
-	    "See also: finger, mail, rwho, tell\n", this_player());
+	    "See also: finger, mail, rwho, tell\n" );
 }
