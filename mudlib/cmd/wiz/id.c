@@ -33,7 +33,7 @@ main(string str)
 	 getoid(ob),
 	 (conn ? getoid(conn) : -1 ),
 	 (query_heart_beat(ob) ? "on" : "off"),
-	 implode((string *)GROUP_D->query_groups(getuid(ob)), ","));
+	 implode((string *)GROUP_D->query_groups(ob->query_name()), ","));
   return 1;
 }
 

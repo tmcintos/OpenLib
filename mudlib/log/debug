@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------
-Dysfunctional Mud (MudOS v22a26) starting up on FreeBSD - Mon May  6 15:54:20 1996
+Dysfunctional Mud (MudOS v22a26) starting up on FreeBSD - Tue May  7 17:12:12 1996
 
 
 Connected to address server on localhost port 7374
@@ -17,3 +17,7 @@ obj/daemon/net/ftp_d.c line 425: Undefined function geteuid
 Initializations complete.
 
 Accepting connections on port 4444.
+get_user_data: read on fd 11
+System Error: get_user_data: read:Connection reset by peer
+get_user_data: read on fd 10
+System Error: get_user_data: read:Connection reset by peer

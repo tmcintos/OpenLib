@@ -1,0 +1,7 @@
+cmd/wiz/id.c line 36: Undefined function getuid
+room/hump.c line 24: parse error
+room/vill_track.c line 10: parse error
+obj/clone/money.c line 23: Undefined function set_ids
+obj/clone/money.c line 24: Illegal to redefine 'nomask' function "create"
+obj/clone/money.c line 74: Undefined variable 'OBJECT_LIVING'
+cmd/wiz/id.c line 36: Undefined function getuid

@@ -1,15 +1,15 @@
 #obj/clone/user/human.c
 slen 25
 swid 80
-curr_line 34
-lines 33
-file ({"login_d: cons25 is not a supported terminal type","Welcome to Dysfunctional Mud!","-------------------------------------------------------------------------------","                D y s f u n c t i o n a l  M u d  N e w s","			last update: 04/23/96","-------------------------------------------------------------------------------","* Please send mail to Tim if you want to become a developer.  Additionally,","  all developers should join the mailing list by sending mail to","  majordomo@knapp38.res.iastate.edu with the string 'subscribe dysfunctional'","  in the body of the letter.","","* If you want to take on a project or have any new project ideas, send mail","  to Tim.","","* There is now a 'changelog' command which appends an entry to the ChangeLog","  file in the current working directory.","","* Changed set_ids() to add_ids() in OBJECT. Make changes accordingly.","","* Going through a major revision.  Modularizing inheritable objects, anything","  derived from BASE will find out that create() is declared 'nomask'.  You","  should use initialize() in place of create() in derived objects.  See BASE","  for the code as it stands right now.","    Basically have 3 functions, initialize(), low_setup(), and setup().","  The setup() funcs are for initializing cloned objects (as opposed to the","  master copy without the # in its name).  low_setup is used in the mudlib","  and setup() is reserved for the end user (that way you don't have to call","  ::setup() all the time).","    Note that this is subject to change, so don't make your fixes yet unless","  you don't mind doing it again.","","","You have mail.",})
-callback 
+curr_line 49
+lines 25
+file "/doc/man/man4/privs_file.4"
+callback 0
 no_clean 0
 flags ({})
 coins ({0,0,})
 hit_points 0
 spell_points 0
-env_vars (["BOB":0,"PATH":"/cmd/wiz:/adm/cmd/wiz:/cmd/player:/adm/cmd/player:/adm/cmd/adm:/cmd/adm","hey":1,"nmsh_xverb":(["'":"say $*",":":"emote $*",]),"PROMPT":"[%^BOLD%^%~%^RESET%^]-> ","nmsh_alias":(["i":"inventory","w":"west","ne":"northeast","d":"down","n":"north","sw":"southwest","s":"south","l":"look $*","u":"up","bio":"biography","se":"southeast","e":"east","nw":"northwest","exa":"look at $*",]),"LENGTH":25,"nmsh_nick":([]),"version":"Prototype Shell","WIDTH":80,"SHELL":"/obj/clone/shells/protosh","TERM":"ansi","MORE_EXIT_END":1,"history":100,"TITLE":"is sweet talkin' the mudlib",])
-aliases (["sub":"subscribe","i":"inventory","prompt":"say \"$PROMPT\"","la":"look at","w":"west","n":"north","sw":"southwest","nod":"emote nod","unsub":"unsubscribe","l":"look","nw":"northwest","brb":"shout Be right back I\\'m going AFK!!!","sc":"score","ne":"northeast","ls":"ls -c","er":"more /log/errors/runtime","s":"south","e":"east","se":"southeast",])
-channels ({"wiz","gossip","interchat",})
+env_vars (["PROMPT":"[%^BOLD%^%~%^RESET%^]-> ","PATH":"/cmd/wiz:/adm/cmd/wiz:/cmd/player:/adm/cmd/player:/adm/cmd/adm:/cmd/adm","hey":1,"MORE_EXIT_END":1,"nmsh_xverb":([":":"emote $*","'":"say $*",]),"BOB":0,"nmsh_alias":(["s":"south","e":"east","se":"southeast","l":"look $*","nw":"northwest","bio":"biography","w":"west","d":"down","i":"inventory","n":"north","u":"up","sw":"southwest","exa":"look at $*","ne":"northeast",]),"TITLE":"is sweet talkin' the mudlib","nmsh_nick":([]),"LENGTH":25,"SHELL":"/obj/clone/shells/protosh","WIDTH":80,"history":100,"TERM":"ansi","version":"Prototype Shell",])
+aliases (["s":"south","se":"southeast","e":"east","nw":"northwest","la":"look at","w":"west","i":"inventory","unsub":"unsubscribe","n":"north","er":"more /log/errors/runtime","sub":"subscribe","l":"look","prompt":"say \"$PROMPT\"","brb":"shout Be right back I\\'m going AFK!!!","sc":"score","nod":"emote nod","sw":"southwest","ls":"ls -c","ne":"northeast",])
+channels ({"wiz","gossip","interchat","igossip","icode",})

@@ -238,8 +238,7 @@ make_path_absolute(string file)
 string
 privs_file(string str)
 {
-  return "bob";
-//  return (string)call_other(SIMUL_EFUN, "privs_file", str);
+  return (string)call_other(SIMUL_EFUN, "privs_file", str);
 }
 
 string

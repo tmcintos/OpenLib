@@ -7,6 +7,6 @@ email_addr "kyricc@knapp38.res.iastate.edu"
 body "/obj/clone/user/human"
 login_shell "/obj/clone/shells/protosh"
 gender 0
-login_time 831443646
-logout_time 831443672
+login_time 831624894
+logout_time 831625009
 login_from "knapp38.res.iastate.edu"

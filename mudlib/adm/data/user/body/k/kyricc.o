@@ -10,6 +10,6 @@ flags ({})
 coins ({30,10,})
 hit_points 0
 spell_points 0
-env_vars (["PATH":"/cmd/player:/adm/cmd/player:/cmd/wiz:/adm/cmd/wiz:/cmd/adm:/adm/cmd/adm","PROMPT":"[%~]->","LENGTH":24,"WIDTH":80,"version":"Prototype Shell","SHELL":"/obj/clone/shells/protosh","noglob":1,"TERM":"vt100","TITLE":"is raping the MudLib!","MORE_EXIT_END":1,])
-aliases (["la":"look at","grin":"emote grins evilly","i":"inventory","w":"west","n":"north","sw":"southwest","l":"look","cgoss":"chat igossip:","nw":"northwest","nod":"emote nods quietly","brb":"shout Be right back...I\\'m going AFK!!!","ahh":"emote ahhs","bbb":"shout I\\'m baaaaaaaaack!!!","ww":"shout WOOOOOOO WOOOOOOO","c":"clone","sc":"score","news":"more /adm/etc/motd","ne":"northeast","|":"more","s":"south","e":"east","se":"southeast",])
+env_vars (["PATH":"/cmd/player:/adm/cmd/player:/cmd/wiz:/adm/cmd/wiz:/cmd/adm:/adm/cmd/adm","PROMPT":"[%~]->","MORE_EXIT_END":1,"LENGTH":24,"noglob":1,"TITLE":"is raping the MudLib!","WIDTH":80,"SHELL":"/obj/clone/shells/protosh","TERM":"vt100","version":"Prototype Shell",])
+aliases (["s":"south","e":"east","se":"southeast","c":"clone","nw":"northwest","la":"look at","w":"west","i":"inventory","n":"north","bbb":"shout I\\'m baaaaaaaaack!!!","ww":"shout WOOOOOOO WOOOOOOO","cgoss":"chat igossip:","l":"look","news":"more /adm/etc/motd","grin":"emote grins evilly","brb":"shout Be right back...I\\'m going AFK!!!","sc":"score","nod":"emote nods quietly","sw":"southwest","|":"more","ahh":"emote ahhs","ne":"northeast",])
 channels ({"igossip","interchat",})

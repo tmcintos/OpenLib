@@ -1122,3 +1122,70 @@ Fri May  3 14:30:58 1996:  Ip 169.197.8.38 resloved to usr7ip38.azstarnet.com af
 Fri May  3 21:29:03 1996:  128.196.159.87: CONNECTED (Fri May  3 21:29:01 1996)
 Fri May  3 21:29:03 1996:  128.196.159.87: GET / HTTP/1.0 (Fri May  3 21:29:03 1996)
 Fri May  3 21:29:03 1996:  Ip 128.196.159.87 resloved to aorta.Medicine.Arizona.EDU after connection closed.
+Tue May  7 01:22:00 1996:  206.171.21.2: CONNECTED (Tue May  7 01:21:58 1996)
+Tue May  7 01:22:00 1996:  206.171.21.2: GET /robots.txt HTTP/1.0 (Tue May  7 01:22:00 1996)
+Tue May  7 01:22:00 1996:  206.171.21.2: ERROR: Not Found (Tue May  7 01:22:00 1996)
+Tue May  7 01:22:02 1996:  Ip 206.171.21.2 resloved to i0.inktomi.com after connection closed.
+Tue May  7 01:34:43 1996:  128.196.51.104: CONNECTED (Tue May  7 01:34:43 1996)
+Tue May  7 01:34:43 1996:  128.196.51.104: GET / HTTP/1.0 (Tue May  7 01:34:43 1996)
+Tue May  7 01:34:43 1996:  Ip 128.196.51.104 resloved to mn-pub04.library.Arizona.EDU after connection closed.
+Tue May  7 01:42:08 1996:  128.196.51.104: CONNECTED (Tue May  7 01:42:06 1996)
+Tue May  7 01:42:08 1996:  128.196.51.104: GET / HTTP/1.0 (Tue May  7 01:42:08 1996)
+Tue May  7 01:42:08 1996:  Ip 128.196.51.104 resloved to mn-pub04.library.Arizona.EDU after connection closed.
+Tue May  7 01:42:14 1996:  128.196.51.104: CONNECTED (Tue May  7 01:42:14 1996)
+Tue May  7 01:42:14 1996:  128.196.51.104: GET /~kyricc/ HTTP/1.0 (Tue May  7 01:42:14 1996)
+Tue May  7 01:42:14 1996:  Ip 128.196.51.104 resloved to mn-pub04.library.Arizona.EDU after connection closed.
+Tue May  7 01:42:16 1996:  128.196.51.104: CONNECTED (Tue May  7 01:42:16 1996)
+Tue May  7 01:42:16 1996:  128.196.51.104: GET /~kyricc/corpse.html HTTP/1.0 (Tue May  7 01:42:16 1996)
+Tue May  7 01:42:16 1996:  Ip 128.196.51.104 resloved to mn-pub04.library.Arizona.EDU after connection closed.
+Tue May  7 01:42:20 1996:  128.196.51.104: CONNECTED (Tue May  7 01:42:20 1996)
+Tue May  7 01:42:20 1996:  128.196.51.104: GET /~kyricc/BUNNY-WA.GIF HTTP/1.0 (Tue May  7 01:42:20 1996)
+Tue May  7 01:42:24 1996:  128.196.51.104: CONNECTED (Tue May  7 01:42:24 1996)
+Tue May  7 01:42:24 1996:  128.196.51.104: GET /~hamnsnock/ HTTP/1.0 (Tue May  7 01:42:24 1996)
+Tue May  7 01:45:25 1996:  mn-pub04.library.Arizona.EDU: CONNECTED (Tue May  7 01:42:20 1996)
+Tue May  7 01:47:06 1996:  128.196.51.104: CONNECTED (Tue May  7 01:47:06 1996)
+Tue May  7 01:47:06 1996:  128.196.51.104: GET / HTTP/1.0 (Tue May  7 01:47:06 1996)
+Tue May  7 01:47:06 1996:  Ip 128.196.51.104 resloved to mn-pub04.library.Arizona.EDU after connection closed.
+Tue May  7 01:47:16 1996:  mn-pub04.library.Arizona.EDU: CONNECTED (Tue May  7 01:47:14 1996)
+Tue May  7 01:47:16 1996:  mn-pub04.library.Arizona.EDU: GET /~hamnsnock/ HTTP/1.0 (Tue May  7 01:47:16 1996)
+Tue May  7 01:54:52 1996:  128.196.51.104: CONNECTED (Tue May  7 01:54:52 1996)
+Tue May  7 01:54:52 1996:  128.196.51.104: GET / HTTP/1.0 (Tue May  7 01:54:52 1996)
+Tue May  7 01:54:52 1996:  Ip 128.196.51.104 resloved to mn-pub04.library.Arizona.EDU after connection closed.
+Tue May  7 01:55:02 1996:  128.196.51.104: CONNECTED (Tue May  7 01:55:02 1996)
+Tue May  7 01:55:02 1996:  128.196.51.104: GET /~tim/ HTTP/1.0 (Tue May  7 01:55:02 1996)
+Tue May  7 01:55:02 1996:  Ip 128.196.51.104 resloved to mn-pub04.library.Arizona.EDU after connection closed.
+Tue May  7 21:52:36 1996:  i0.inktomi.com: CONNECTED (Tue May  7 21:52:34 1996)
+Tue May  7 21:52:36 1996:  i0.inktomi.com: GET / HTTP/1.0 (Tue May  7 21:52:36 1996)
+Wed May  8 10:50:50 1996:  206.171.21.2: CONNECTED (Wed May  8 10:50:50 1996)
+Wed May  8 10:50:50 1996:  206.171.21.2: GET /~misery HTTP/1.0 (Wed May  8 10:50:50 1996)
+Wed May  8 10:50:50 1996:  206.171.21.2: ERROR: Not Found (Wed May  8 10:50:50 1996)
+Wed May  8 10:50:50 1996:  Ip 206.171.21.2 resloved to i0.inktomi.com after connection closed.
+Wed May  8 10:53:25 1996:  i0.inktomi.com: CONNECTED (Wed May  8 10:53:23 1996)
+Wed May  8 10:53:25 1996:  i0.inktomi.com: GET /~talen/ HTTP/1.0 (Wed May  8 10:53:25 1996)
+Wed May  8 10:53:25 1996:  i0.inktomi.com: ERROR: Not Found (Wed May  8 10:53:25 1996)
+Wed May  8 10:54:09 1996:  i0.inktomi.com: CONNECTED (Wed May  8 10:54:09 1996)
+Wed May  8 10:54:09 1996:  i0.inktomi.com: GET /~hamnsnock/ HTTP/1.0 (Wed May  8 10:54:09 1996)
+Wed May  8 10:57:38 1996:  i0.inktomi.com: CONNECTED (Wed May  8 10:57:38 1996)
+Wed May  8 10:57:38 1996:  i0.inktomi.com: GET /~kyricc/ HTTP/1.0 (Wed May  8 10:57:38 1996)
+Wed May  8 10:58:52 1996:  i0.inktomi.com: CONNECTED (Wed May  8 10:58:50 1996)
+Wed May  8 10:58:52 1996:  i0.inktomi.com: GET /~tim/ HTTP/1.0 (Wed May  8 10:58:52 1996)
+Wed May  8 11:07:03 1996:  i0.inktomi.com: CONNECTED (Wed May  8 11:07:03 1996)
+Wed May  8 11:07:03 1996:  i0.inktomi.com: GET /~casper/ HTTP/1.0 (Wed May  8 11:07:03 1996)
+Wed May  8 11:07:03 1996:  i0.inktomi.com: ERROR: Not Found (Wed May  8 11:07:03 1996)
+Wed May  8 11:12:12 1996:  206.171.21.2: CONNECTED (Wed May  8 11:12:12 1996)
+Wed May  8 11:12:12 1996:  206.171.21.2: GET /~evergreen/ HTTP/1.0 (Wed May  8 11:12:12 1996)
+Wed May  8 11:12:12 1996:  Ip 206.171.21.2 resloved to i0.inktomi.com after connection closed.
+Wed May  8 11:14:39 1996:  i0.inktomi.com: CONNECTED (Wed May  8 11:14:39 1996)
+Wed May  8 11:14:39 1996:  i0.inktomi.com: GET /~tim/DONE HTTP/1.0 (Wed May  8 11:14:39 1996)
+Wed May  8 14:41:06 1996:  129.186.85.38: CONNECTED (Wed May  8 14:41:06 1996)
+Wed May  8 14:41:06 1996:  129.186.85.38: GET / HTTP/1.0 (Wed May  8 14:41:06 1996)
+Wed May  8 14:41:06 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Wed May  8 14:41:38 1996:  129.186.85.38: CONNECTED (Wed May  8 14:41:38 1996)
+Wed May  8 14:41:38 1996:  129.186.85.38: GET /~hamnsnock/ HTTP/1.0 (Wed May  8 14:41:38 1996)
+Wed May  8 14:41:38 1996:  Ip 129.186.85.38 resloved to knapp38.res.iastate.edu after connection closed.
+Wed May  8 18:03:30 1996:  homer.infoseek.com: CONNECTED (Wed May  8 18:03:30 1996)
+Wed May  8 18:03:30 1996:  homer.infoseek.com: GET /robots.txt HTTP/1.0 (Wed May  8 18:03:30 1996)
+Wed May  8 18:03:30 1996:  homer.infoseek.com: ERROR: Not Found (Wed May  8 18:03:30 1996)
+Thu May  9 00:31:31 1996:  206.26.42.253: CONNECTED (Thu May  9 00:31:31 1996)
+Thu May  9 00:31:31 1996:  206.26.42.253: GET / HTTP/1.0 (Thu May  9 00:31:31 1996)
+Thu May  9 00:31:31 1996:  Ip 206.26.42.253 resloved to pm1-29.starlink.com after connection closed.

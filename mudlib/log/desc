@@ -2227,3 +2227,60 @@ Mon May  6 18:20:38 1996:  imud_gossip: Descartes@IdeaExchange:I KNow what they 
 Mon May  6 18:20:46 1996:  imud_gossip: Descartes@IdeaExchange:I am just curious what about them is lagging the mud
 Mon May  6 18:20:56 1996:  imud_gossip: Descartes@IdeaExchange:reproduction?
 Mon May  6 18:21:35 1996:  imud_gossip: Descartes@IdeaExchange:that will do it
+Tue May  7 07:54:30 1996:  imud_gossip: Descartes@IdeaExchange:if you know of any place, they should be removing their NM versions... I pulled the old versions for a reason
+Tue May  7 22:26:46 1996:  imud_gossip: Descartes@IdeaExchange:I am on
+Tue May  7 22:28:55 1996:  imud_gossip: Descartes@IdeaExchange:I think that depends on how close you were
+Tue May  7 22:29:09 1996:  imud_gossip: Descartes@IdeaExchange:or more important, are
+Tue May  7 22:33:48 1996:  imud_gossip: Descartes@IdeaExchange:isn't that a result of constipation?
+Wed May  8 18:14:01 1996:  imud_gossip: Descartes@IdeaExchange:ca va?
+Wed May  8 19:04:29 1996:  imud_code: Descartes@IdeaExchange:it si recommended people should not be adding to or modifying vebs on NM alpha releases
+Wed May  8 19:05:38 1996:  imud_code: Descartes@IdeaExchange:yes, that's what the documentation says :)
+Wed May  8 19:06:48 1996:  imud_code: Descartes@IdeaExchange:because alpha is not released for people to recode
+Wed May  8 19:09:43 1996:  imud_code: Descartes@IdeaExchange:the documentation states everywhere that it is al[pha
+Wed May  8 19:09:49 1996:  imud_code: Descartes@IdeaExchange:and even what alpha means
+Wed May  8 19:10:03 1996:  imud_code: Descartes@IdeaExchange:encre
+Wed May  8 19:10:19 1996:  imud_code: Descartes@IdeaExchange:from player to cre that is
+Wed May  8 19:10:33 1996:  imud_code: Descartes@IdeaExchange:to make an arch, add them to /secure/cfg/groups.cfg
+Wed May  8 19:11:17 1996:  imud_code: Descartes@IdeaExchange:specifically why I say not to touch the verbs is because they are the most ephemeral of all things
+Wed May  8 19:11:52 1996:  imud_code: Descartes@IdeaExchange:they are 90% of why NM is alpha right now
+Wed May  8 19:12:34 1996:  imud_code: Descartes@IdeaExchange:that requires knowledge of the parser that is rather difficult to gain right now
+Wed May  8 19:12:52 1996:  imud_code: Descartes@IdeaExchange:since there is no documentation and only a couple of people really know enough to code to it
+Wed May  8 19:13:46 1996:  imud_code: Descartes@IdeaExchange:*I* don't think NM is a good starting point since there is nothing to help people deal with the parser
+Wed May  8 19:14:34 1996:  imud_code: Descartes@IdeaExchange:that is exactly what I mean Luinil
+Wed May  8 19:14:49 1996:  imud_code: Descartes@IdeaExchange:NM is a great starting point for learning right now
+Wed May  8 19:15:11 1996:  imud_code: Descartes@IdeaExchange:anything you wrote right now, would break totally with the current release of MudOS
+Wed May  8 19:16:21 1996:  imud_code: Descartes@IdeaExchange:because it is a crash prone alpha of mudos
+Wed May  8 19:16:35 1996:  imud_code: Descartes@IdeaExchange:neither the mdulib nor the driver you are using are intended to be used heavily
+Wed May  8 19:16:45 1996:  imud_code: Descartes@IdeaExchange:Landra; add them to /secure/cfg/groups.cfg
+Wed May  8 19:17:41 1996:  imud_code: Descartes@IdeaExchange:it says it in there
+Wed May  8 19:17:55 1996:  imud_code: Descartes@IdeaExchange:every single doc says IVr2.3 and IVr2.4 are alphas
+Wed May  8 19:18:16 1996:  imud_code: Descartes@IdeaExchange:like README.txt
+Wed May  8 19:18:28 1996:  imud_code: Descartes@IdeaExchange:http://www.imaginary.com/LPC/Nightmare
+Wed May  8 19:18:40 1996:  imud_code: Descartes@IdeaExchange:where else can it say it?
+Wed May  8 19:20:12 1996:  imud_code: Descartes@IdeaExchange:yep, that would be the current alpha since NM has no stable version
+Wed May  8 19:20:52 1996:  imud_code: Descartes@IdeaExchange:did you do a dir?
+Wed May  8 19:21:33 1996:  imud_code: Descartes@IdeaExchange:it says Nightmare.tar.gz is the latest most stable version... that makes no promises about the stability of that latest version
+Wed May  8 19:22:05 1996:  imud_code: Descartes@IdeaExchange:and both files point to -> Nightmare-IVr2.4.tar.gz
+Wed May  8 19:22:31 1996:  imud_code: Descartes@IdeaExchange:Nightmare's version numbering scheme is plainly labeled and described
+Wed May  8 19:22:45 1996:  imud_code: Descartes@IdeaExchange:I cannot do anything other than suggest you read the documenbtation
+Wed May  8 19:24:31 1996:  imud_code: Descartes@IdeaExchange:i am not copping an attitude with you making changes to it
+Wed May  8 19:24:50 1996:  imud_code: Descartes@IdeaExchange:I am explaining that making changes to it is not what it is either designed for nor is it a good idea
+Wed May  8 19:26:06 1996:  imud_code: Descartes@IdeaExchange:and multiple days in the same day
+Wed May  8 19:26:22 1996:  imud_code: Descartes@IdeaExchange:nope
+Wed May  8 19:26:32 1996:  imud_code: Descartes@IdeaExchange:but verbs are a nasty compat buster
+Wed May  8 19:26:50 1996:  imud_code: Descartes@IdeaExchange:or verb targets
+Wed May  8 19:26:58 1996:  imud_code: Descartes@IdeaExchange:which essentially means /lib and /verbs
+Wed May  8 19:27:58 1996:  imud_code: Descartes@IdeaExchange:because they handle decisions about how they are involved in a given parse
+Wed May  8 19:30:47 1996:  imud_code: Descartes@IdeaExchange:verb targets handle verb parsing
+Wed May  8 19:31:01 1996:  imud_code: Descartes@IdeaExchange:and that is where a large number of changes have occurred in the last 13 releases
+Wed May  8 19:33:10 1996:  imud_gossip: Descartes@IdeaExchange:it's a beach party vietnam
+Wed May  8 19:35:17 1996:  imud_code: Descartes@IdeaExchange:that's why I don't suggest people muck with that stuff... it is actually much more complicated than that
+Wed May  8 19:35:59 1996:  imud_gossip: Descartes@IdeaExchange:shiver me timbers
+Wed May  8 19:37:45 1996:  imud_gossip: Descartes@IdeaExchange:anyone heard the new cure album>?
+Wed May  8 19:38:30 1996:  imud_gossip: Descartes@IdeaExchange:I think it is too poppy, like Kiss Me, Kiss Me, Kiss Me
+Wed May  8 19:42:09 1996:  imud_gossip: Descartes@IdeaExchange:yes, like total pop
+Wed May  8 19:42:33 1996:  imud_gossip: Descartes@IdeaExchange:my least favourite side of the cure :)
+Wed May  8 21:14:13 1996:  imud_code: Descartes@IdeaExchange:the same way hands wield :)
+Wed May  8 21:32:38 1996:  imud_gossip: Descartes@IdeaExchange:are you ok?
+Wed May  8 22:05:26 1996:  imud_code: Descartes@IdeaExchange:you did not include rmour_types.h
+Wed May  8 22:05:30 1996:  imud_code: Descartes@IdeaExchange:armour
