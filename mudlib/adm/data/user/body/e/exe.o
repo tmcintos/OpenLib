@@ -1,21 +1,0 @@
-#/obj/clone/user/human.c
-morestring "%%^INVERSE%%^--MORE--%%^RESET%%^ (%d%%) %s"
-callback 0
-redraw 
-s_length 80
-start 80
-prev 1
-length 11
-file ({"--------------------------------------------------------------------------","Player Help                                                 (General Help)","--------------------------------------------------------------------------","","This is the Player general help file","","Type 'help help' for details on using help.  Look at the look and help","commands for examples on how to add the help funcs to commands.","","--------------------------------------------------------------------------","",})
-in_help 0
-no_clean 0
-flags ([])
-coins ({0,0,})
-hit_points 100
-spell_points 0
-str 0
-agil 0
-skills 0
-env_vars (["TERM":"default","nmsh_alias":(["u":"up","bio":"biography","l":"look $*","exa":"look at $*","se":"southeast","w":"west","d":"down","e":"east","s":"south","i":"inventory","n":"north","nw":"northwest","ne":"northeast","sw":"southwest",]),"nmsh_xverb":(["'":"say $*",":":"emote $*",]),"nmsh_nick":([]),])
-aliases (["l":"look","se":"southeast","w":"west","z":"update","s":"south","e":"east","sc":"score","i":"inventory","n":"north","ne":"northeast","nw":"northwest","sw":"southwest",])
-channels ({})

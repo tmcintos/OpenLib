@@ -1,6 +1,29 @@
-/* -*- LPC -*- */
+// -*- LPC -*-
+// path_utils.c:  Routines for working with file paths
+//
+// Copyright (C) 1996 Tim McIntosh (tmcintos@dm.imaginary.com)
+//
+// This program is part of the OpenLib Mudlib distribution; it
+// is free software; you can redistribute it and/or modify it
+// under the terms of the GNU General Public License as published
+// by the Free Software Foundation; either version 2 of the License,
+// or (at your option) any later version.
+// 
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+// 
+// If you acquired this program as part of the OpenLib Mudlib
+// distribution, you should have received a copy of the GNU
+// General Public License in the file /doc/GPL; if not,
+// write to the Free Software Foundation, Inc., 675 Mass Ave,
+// Cambridge, MA 02139, USA.
+//
 #include <mudlib.h>
 #include <dirs.h>
+
+// Get the filename of an object without the object number (with no .c)
 
 string
 base_name(object ob)
@@ -12,12 +35,16 @@ base_name(object ob)
   else return str[0..idx-1];
 }
 
+// Returns the path to the home directory of a user with username 'name'
+
 string
 user_cwd(string name)
 {
   if(!name) return "";
   return sprintf(USER_DIR "/%c/%s", name[0], name);
 }
+
+// Same as above but tacks on a trailing /
 
 string user_path(string name)
 {
@@ -30,8 +57,6 @@ string user_path(string name)
  *   Rewrite by Symmetry 5/4/95
  *
  * 09/16/95  Tim McIntosh:  Fixed this so it actually works right :)
- * 10/24/95  Tim:  Added the @ prefix to get the path of an object in the
- *                 room or inventory.
  */
 
 string absolute_path(string current, string relative) {
@@ -102,7 +127,8 @@ string absolute_path(string current, string relative) {
  * 'root'    the starting directory (no wildcards in this part).
  * 'pattern' is an array with the glob pattern to match at each level of the
  *           directory tree. i.e. pattern[0] is the pattern to match at the
- *           starting level.
+ *           starting level.  Probaby get this by explode(somepath, "/");
+ *           where the full path was (root + somepath)
  */
 
 string*

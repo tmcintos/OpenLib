@@ -5,3 +5,4 @@
 ./adm           Administrative commands.
 ./player        Player commands.
 ./wiz           Wizard commands. (cmds which write files should go under /adm)
+./verbs         Verb handlers for the MudOS command parser

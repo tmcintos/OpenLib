@@ -269,11 +269,6 @@ init_player(string username)
     else
       channels -= ({ chan });   // channel no longer exists, delete
   }
-  
-  if( get_env("PATH") ) {
-    foreach(string path in explode(get_env("PATH"), ":"))
-      if( !CMD_D->hashed_path(path) ) CMD_D->hash_path(path);
-  }
 }
 
 /*

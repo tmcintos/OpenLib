@@ -1,21 +1,0 @@
-#/adm/obj/clone/user.c
-morestring "%%^INVERSE%%^--MORE--%%^RESET%%^ (%d%%) %s"
-callback 
-redraw 
-s_length 24
-start 47
-prev 24
-length 42
-file ({"Welcome to Dysfunctional Mud!","-------------------------------------------------------------------------------","                D y s f u n c t i o n a l  M u d  N e w s","			last update: 10/09/96","-------------------------------------------------------------------------------","* Any mail for the mud can be sent to the following addresses:","      mud@dm.imaginary.com (primary address)","      rockford@novia.net (Tim), astasia@iastate.edu (Tim during school)","      kyricc@inetnebr.com (Kyricc)","","* I am working on a new FTP server for the mud.  Right now you should be able","  to get and put files in both ASCII and BINARY mode.  Try it out if you get","  a chance and report any bugs to me.  (port: 4443) --Tim","  NOTE: this project may be abandoned in favor of an external ftpd process","        due to efficiency--this would have to interface w/the mudlib though.","","* Check out my ~tim/TODO list for things that need to be done.  New items are","  usually added to the bottom of the list.","","* SECURITY stuff is mostly in place.  I've noticed problem already having to","  do with callbacks from high privilege objects.  Quint, Ev and Tim should","  have priv 1 access and everyone else should not right now.  Use the command","  'lswiz' to get a list of wizards, and 'lsdom' for a list of domains.  Please","  report any bugs in the system to me (Tim).  DOCUMENTATION can be found in","  the file /doc/mudlib/systems/security--This is the original documentation","  on which the system is based.  Better documentation later hopefully. :)","","* Changed it so default for more() is to exit when done paging.  setenv","  MORE_NO_EXIT_END to change this.  (this is opposite of before) -Tim","","* TERMINAL TYPES: Once again supported properly..although few are supported.","  **hint, hint--project idea**  If your terminal type is unknown, it will","  default to \"default\" which does nothing.  If you set the environment variable","  DEFAULT_TERM to a value this will be used instead. -Tim","  \"ansi\" or \"vt102\" are probably the coolest if you support them. (setenv)","","* MAIL has been bumped up to v3.0  A few small things have changed like","  deletions which are now marked as deleted and aren't committed until the","  mailbox is saved.  See the online help in mail for more info.","","","",})
-in_help 0
-no_clean 0
-flags ({})
-coins ({0,0,})
-hit_points 0
-spell_points 0
-str 0
-agil 0
-skills 0
-env_vars (["nmsh_alias":(["u":"up","d":"down","i":"inventory","n":"north","l":"look $*","ne":"northeast","s":"south","se":"southeast","bio":"biography","exa":"look at $*","e":"east","sw":"southwest","nw":"northwest","w":"west",]),"WIDTH":80,"TITLE":"Let $N tell you how to win friends and influence people","BOB":0,"TERM":"xterm","hey":1,"nmsh_nick":([]),"nmsh_xverb":(["'":"say $*",":":"emote $*",]),"DEFAULT_TERM":"vt102","history":100,"PATH":"/cmd/wiz:/adm/cmd/wiz:/cmd/player:/adm/cmd/player:/adm/cmd/adm:/cmd/adm","PROMPT":"[%^BOLD%^%~%^RESET%^]-> ","version":"Prototype Shell","LENGTH":24,"SHELL":"/adm/obj/clone/shells/protosh",])
-aliases (["i":"inventory","tr":"tail /log/errors/runtime","la":"look at","ls":"ls -cF","e":"east","nod":"emote nod","po5":"say Hey. Hey. So, yer 5 hours late\\? Yeah, so\\? So whats up with that\\? I\\'ve got stuff to do alright\\? Alright\\! So, uh, what\\'s goin on\\? Nothin--What are you doin\\? I dunno, hangin out. Oh.","sw":"southwest","cls":"say %^CLS%^","er":"more /log/errors/runtime","w":"west","brb":"shout Be right back I\\'m going AFK!!!","n":"north","l":"look","ne":"northeast","s":"south","sc":"score","se":"southeast","nw":"northwest","te":"tail /log/errors/compile","prompt":"say \"$PROMPT\"","unsub":"unsubscribe","sub":"subscribe",])
-channels ({"itmi","ispam","iichat","icode","wiz",})

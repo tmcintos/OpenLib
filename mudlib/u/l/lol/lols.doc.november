@@ -1,9 +1,0 @@
-11/03/95  Am working on revamping the emotes var's, so user.c has changed and
-          will return an error.  i'm off to work and i plan to have this
-          working by Saturday.
-11/04/95  There.  The Emote is now a daemon that the emote.c and user.c will
-          call when necissary.  In addition, emote verbs and their statements
-          are kept in /obj/daemon/emote.h and i cleaned up unnecissary stuff.
-          Also i added the emit.c command for the more classical emote form.
-          It will tell_room() exactly what the player types in.  It is in my
-          home dir and is waiting approval.

@@ -3,7 +3,7 @@
 
 // This is for bootstrapping only really.
 // These provide some default values for the mudlib.
-#define ROOT_PRIV "tim"
+#define ROOT_PRIV "root"
 #define ADMIN_DOMAIN "Admin"
 #define MUDLIB_PRIV "@mudlib"
 

@@ -1,18 +1,0 @@
-#/obj/clone/user/human.c
-morestring "%%^INVERSE%%^--MORE--%%^RESET%%^ (%d%%) %s"
-callback 
-redraw 
-s_length 25
-start 1
-prev 1
-length 3
-file ({"Headers:",">R 1    TestDude             you suck                                        "," R 2    TestDude             you _really_ suck                               ",})
-in_help 0
-no_clean 0
-flags ({})
-coins ({0,0,})
-hit_points 100
-spell_points 0
-env_vars (["PATH":"/cmd/player:/adm/cmd/player:/adm/cmd/wiz:/cmd/wiz:/adm/cmd/adm:/cmd/adm","TERM":"xterm","nmsh_xverb":(["'":"say $*",":":"emote $*",]),"nmsh_nick":([]),"LENGTH":25,"WIDTH":80,"nmsh_alias":(["i":"inventory","sw":"southwest","w":"west","nw":"northwest","d":"down","u":"up","e":"east","n":"north","l":"look $*","s":"south","se":"southeast","bio":"biography","ne":"northeast","exa":"look at $*",]),])
-aliases (["i":"inventory","sw":"southwest","w":"west","nw":"northwest","sc":"score","e":"east","n":"north","l":"look","s":"south","se":"southeast","ne":"northeast",])
-channels ({})

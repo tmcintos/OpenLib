@@ -1,5 +1,0 @@
-#/adm/obj/daemon/security_d.c
-write_protections (["/log":"\"@mudlib\"","/u":"1","/u/p/pel":"\"pel:\"","/ftp/incoming":"0","/data":"\"@mudlib\"","/u/d/dryghar":"\"dryghar:\"","/u/c/craig":"\"craig:\"","/u/t/talen":"\"talen:\"","/tmp":"0","/u/s/satch":"\"satch:\"","/u/t/tim":"\"tim:\"","/ftp":"\"@mudlib\"","/u/k/kyricc":"\"kyricc:\"","/include":"\"@mudlib\"","/cmd":"\"@mudlib\"","/doc":"\"@mudlib\"","/u/g/greg":"\"greg:\"","/d":"\"@mudlib\"","/u/h/hamnsnock":"\"hamnsnock:\"","/u/q/quint":"\"quint:\"","/":"1","/u/e/evergreen":"\"evergreen:\"","/u/f/fudge":"\"fudge:\"",])
-read_protections (["/adm/data":"1",])
-domains (["Admin":(["tim":2,"kyricc":2,"evergreen":2,"quint":1,]),])
-privs (["Admin:":({}),"pel":({}),"@mudlib":({"Admin",}),"exe:":({}),"evergreen":({}),"tim":({}),"talen":({}),"exe":({}),"dryghar":({}),"tim:":({}),"satch:":({}),"hamnsnock":({}),"quint:":({}),"fudge:":({}),"evergreen:":({}),"Admin":({"tim","evergreen","kyricc",}),"greg":({}),"hamnsnock:":({}),"quint":({}),"dryghar:":({}),"fudge":({}),"craig:":({}),"kyricc:":({}),"talen:":({}),0:({}),1:({"Admin",}),"greg:":({}),"craig":({}),"kyricc":({}),"pel:":({}),"satch":({}),])

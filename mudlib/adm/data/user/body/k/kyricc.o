@@ -1,21 +1,0 @@
-#/adm/obj/clone/user.c
-morestring "%%^INVERSE%%^--MORE--%%^RESET%%^ (%d%%) %s"
-callback 
-redraw 
-s_length 24
-start 24
-prev 1
-length 7
-file ({"alt.wiz.advocacy: 1-1","mudlib.devel.announce: 1-2","mudlib.devel.ideas: 1-2","mudlib.devel.changes: 1-1","alt.kyricc.is.cool.cool.cool: 1-1","mudlib.devel.todo: 1-1","",})
-in_help 0
-no_clean 0
-flags ({})
-coins ({30,10,})
-hit_points 0
-spell_points 0
-str 0
-agil 0
-skills 0
-env_vars (["version":"Prototype Shell","PATH":"/cmd/player:/adm/cmd/player:/cmd/wiz:/adm/cmd/wiz:/cmd/adm:/adm/cmd/adm","PROMPT":"[%~]->","LENGTH":24,"MORE_EXIT_END":1,"WIDTH":80,"SHELL":"/obj/clone/shells/protosh","nmsh_nick":([]),"TERM":"default","nmsh_alias":(["l":"look $*","e":"east","exa":"look at $*","sw":"southwest","w":"west","d":"down","u":"up","i":"inventory","n":"north","nw":"northwest","se":"southeast","bio":"biography","s":"south","ne":"northeast",]),"TITLE":"is raping the MudLib!","nmsh_xverb":(["'":"say $*",":":"emote $*",]),"noglob":1,])
-aliases (["c":"clone","la":"look at","i":"inventory","nod":"emote nods quietly","se":"southeast","cgoss":"chat igossip","sc":"score","grin":"emote grins evilly","l":"look","e":"east","bbb":"shout I\\'m baaaaaaaaack!!!","brb":"shout Be right back...I\\'m going AFK!!!","w":"west","sw":"southwest","n":"north","|":"more","nw":"northwest","s":"south","ww":"shout WOOOOOOO WOOOOOOO","ahh":"emote ahhs","ne":"northeast","news":"more /adm/etc/motd",])
-channels ({"igossip",})

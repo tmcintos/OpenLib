@@ -1,7 +1,0 @@
-Thu Jul 18 23:43:38 1996  MuD Admin Acct  <mud@deathstar.galaxy.net>
-
-	* new commands:
-	 . du:  Display disk usage statistics (in Kb)
-	 . aliasch: create local aliases for intermud chat channels
-	
-

@@ -1,15 +1,0 @@
-#obj/clone/user/human.c
-slen 80
-swid 80
-curr_line 1
-lines 35
-file ({"Welcome to Dysfunctional Mud!","-------------------------------------------------------------------------------","                D y s f u n c t i o n a l  M u d  N e w s","			last update: 06/17/96","-------------------------------------------------------------------------------","* Welcome to the new semi-premanent home for DysFunctionalMUD.  If you are","  reading this you prolly already know the site name, but just for your","  information it is:  canaan.de.msstate.edu 4444.","","* Any mail for the mud can be sent to the following addresses:","      rockford@novia.net, astasia@iastate.edu (Tim)","      kyricc@inetnebr.com (Kyricc)","      scott@de.msstate.edu (Quint)","","* I am working on a new FTP server for the mud.  Right now you should be able","  to get and put files in both ASCII and BINARY mode.  Try it out if you get","  a chance and report any bugs to me.  (port: 4443) --Tim","","* Check out my ~tim/TODO list for things that need to be done.  New items are","  usually added to the bottom of the list.","","*** SECURITY *** stuff is partially in.  valid_read/write should be working.","  I'll prepare a doc on how it works.  Quint, Ev and Tim should have global","  write access right now, and everyone else should not.  Mail me at my","  email address if you find bugs.  The files involved are listed in","  /security.files; please don't modify them without letting me know first.","  (I'm working with a local copy at home I'm keeping up to date).","","* I moved some directories around, mostly stuff got moved into /adm.","  There is a new include dir there, simul_efun stuff got moved into","  /adm/obj/daemon where it should be, as did the /obj/daemon/net directory.","  Save files got changed a little too.","","","",})
-callback 
-no_clean 0
-flags ({})
-coins ({0,0,})
-hit_points 100
-spell_points 0
-env_vars (["nmsh_alias":(["w":"west","exa":"look at $*","i":"inventory","n":"north","s":"south","se":"southeast","l":"look $*","sw":"southwest","e":"east","d":"down","nw":"northwest","bio":"biography","ne":"northeast","u":"up",]),"nmsh_nick":([]),"nmsh_xverb":([":":"emote $*","'":"say $*",]),"TERM":"vt100",])
-aliases ([])
-channels ({})

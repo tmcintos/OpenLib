@@ -109,17 +109,18 @@ create()
 			CMD_DIR    : save_variable(MUDLIB_PRIV),
 			DOMAIN_DIR : save_variable(MUDLIB_PRIV),
 			DATA_DIR   : save_variable(MUDLIB_PRIV),
-			SECURE_DATA_DIR   : save_variable(0), // temporary!
+			SECURE_DATA_DIR   : save_variable(1),
 			DOC_DIR    : save_variable(MUDLIB_PRIV),
 			FTP_DIR    : save_variable(MUDLIB_PRIV),
 			INCLUDE_DIR: save_variable(MUDLIB_PRIV),
 			LOG_DIR    : save_variable(MUDLIB_PRIV),
-//			OBJECT_DIR : save_variable(MUDLIB_PRIV),
-			OBJECT_DIR : save_variable(1),      // temporary!
-//			USER_DIR   : save_variable(MUDLIB_PRIV),
-			USER_DIR   : save_variable(0),      // temporary!
+			OBJECT_DIR : save_variable(MUDLIB_PRIV),
+			USER_DIR   : save_variable(1),
 		      ]);
-  read_protections = ([]);
+  read_protections = ([
+		       USER_DIR    : save_variable(1),
+		       SECURE_DATA_DIR   : save_variable(1)
+		       ]);
   unguarded_ob = 0;
   unguarded_priv = 0;
 
@@ -340,7 +341,8 @@ check_privilege(mixed priv, int skip)
 	continue;
     }
 
-    if( !is_greater(ob_priv, priv) && !is_opened(priv, ob_priv) )
+  if( priv != ob_priv &&
+      !is_greater(ob_priv, priv) && !is_opened(priv, ob_priv) )
       return 0;      // Failure
 
     if( stop )
@@ -555,7 +557,9 @@ nomask string
 create_wizard(string name)
 {
   object wiz;
-
+  string path;
+  string* paths;
+  
   name = lower_case(name);
 
   if( !user_exists(name) )
@@ -576,6 +580,26 @@ create_wizard(string name)
   if( wiz = find_player(name) )
     unguarded((: set_privs($(wiz), $(name)) :), 1);
 
+  // Create wizard directory
+  path = user_cwd(name);
+  paths = explode(path[1..], "/");   // no leading or trailing '/'
+  for(int i = 0; i < sizeof(paths); i++)
+  {
+    string dir = "/" + implode(paths[0..i], "/");
+    
+    if( !directory_exists(dir) )
+      mkdir(dir);
+  }
+  mkdir( path + "/errors");
+  mkdir( path + "/open");
+  mkdir( path + "/WWW");
+  if( file_exists("/obj/clone/workroom.c") )
+    cp("/obj/clone/workroom.c", path + "/workroom.c");
+  
+  read_protections +=  ([ path : save_variable(name+":") ]);
+  read_protections +=  ([ path+"/open" : save_variable(0) ]);
+  write_protections += ([ path : save_variable(name+":") ]);
+			
   save_me();
   return name;
 }

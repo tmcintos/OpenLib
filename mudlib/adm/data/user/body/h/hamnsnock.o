@@ -1,21 +1,0 @@
-#/obj/clone/user.c
-morestring "%%^INVERSE%%^--MORE--%%^RESET%%^ (%d%%) %s"
-callback 0
-redraw 
-s_length 24
-start 27
-prev 4
-length 26
-file ({"wand        clone /u/h/hamnsnock/stuff/wand.c","ige         chat emote igossip: $*","ls          ls -c $*","u           up","i           inventory","ne          northeast","l           look $*","se          southeast","summon      .summon $*","join        .join $*","nw          northwest","quit        .quit","home        .home","ig          chat igossip: $*","bio         biography","w           west","d           down","s           south","ic          chat icode: $*","n           north","e           east","exa         look at $*","goto        .goto $*","sw          southwest","$'           say $*","$:           emote $*",})
-in_help 0
-no_clean 0
-flags ({})
-coins ({550,436,})
-hit_points 58
-spell_points 0
-str 0
-agil 0
-skills 0
-env_vars (["nmsh_xverb":(["'":"say $*",":":"emote $*",]),"MORE_EXIT_END":1,"PATH":"/cmd/wiz:/adm/cmd/wiz:/cmd/player:/adm/cmd/player","the":"dark and evil lord of Patagonia","GENDER":1,"nmsh_alias":(["wand":"clone /u/h/hamnsnock/stuff/wand.c","ige":"chat emote igossip: $*","ls":"ls -c $*","u":"up","i":"inventory","ne":"northeast","l":"look $*","se":"southeast","summon":".summon $*","join":".join $*","nw":"northwest","quit":".quit","home":".home","ig":"chat igossip: $*","bio":"biography","w":"west","d":"down","s":"south","ic":"chat icode: $*","n":"north","e":"east","exa":"look at $*","goto":".goto $*","sw":"southwest",]),"version":"Prototype Shell","LENGTH":24,"WIDTH":80,"SHELL":"/obj/clone/shells/protosh","nmsh_nick":([]),"TERM":"vt102","TITLE":"The evil $N, lord of Patagonia",])
-aliases (["wand":"clone /u/h/hamnsnock/stuff/wand","f":"finger","i":"inventory","ne":"northeast","l":"look","se":"southeast","join":".join","nw":"northwest","quit":".quit","home":".home","w":"west","s":"south","n":"north","sc":"score","e":"east","goto":".goto","sw":"southwest",])
-channels ({"wiz","igossip","icode",})

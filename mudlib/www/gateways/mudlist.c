@@ -31,9 +31,9 @@
 //
 string header = @ENDHTML
 <HTML>
-<HEAD><TITLE>Dysfunctional Mud's Dynamic MUDlist</TITLE></HEAD>
+<HEAD><TITLE>%s's Dynamic MUDlist</TITLE></HEAD>
 <BODY bgcolor=#D9D919>
-<H1>Running I3 MUDs Known to Dysfunctional Mud:</H1>
+<H1>Running I3 MUDs Known to %s:</H1>
 <HR>
 <H2>INDEX:</H2>
 ENDHTML;
@@ -51,7 +51,7 @@ string footer = @ENDHTML
 <HR>
 <A HREF="/index.html">Back to Main Page</A>
 <ADDRESS>
-Dysfunctional Mud /
+%s /
 <A HREF="mailto:%s">%s</A>
 </ADDRESS>
 </BODY>
@@ -61,7 +61,10 @@ ENDHTML;
 void
 create()
 {
-  footer = sprintf(footer, ADMIN_EMAIL, ADMIN_EMAIL);
+  string mud = mud_name();
+  
+  header = sprintf(header, mud, mud);
+  footer = sprintf(footer, mud, ADMIN_EMAIL, ADMIN_EMAIL);
 }
 
 //

@@ -63,7 +63,7 @@ static void Setup() {
     eventWrite( ({ "startup-req-3", 5, mud_name(), 0, Nameservers[0][0], 0,
 		   Password, MudList->ID, ChannelList->ID, mud_port(),
 		   PORT_OOB, PORT_UDP, mudlib_name() + " " + mudlib_version(), 
-		   mudlib_name(), driver_version(), "LP", MUD_STATUS,
+		   base_mudlib_name(), driver_version(), "LP", MUD_STATUS,
 		   ADMIN_EMAIL,
 		   (mapping)SERVICES_D->GetServices(), ([]) }) );
 }

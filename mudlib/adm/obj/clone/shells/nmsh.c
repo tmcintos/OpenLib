@@ -31,7 +31,7 @@ private static string *Stack, *History;
 private static object owner;
  
 object shell_init(object ob) { 
-    if(owner) return;
+    if(owner) return 0;
 
     Nicknames = ([]); 
     Aliases = ([ "l" : "look $*", "bio" : "biography", "i" : "inventory",
@@ -564,5 +564,5 @@ string* query_path() {
   if(Env["PATH"])
     return explode(Env["PATH"], ":");
   else
-    return DEFAULT_PATHS;
+    return DEFAULT_PATHS + WIZARD_PATHS;
 }

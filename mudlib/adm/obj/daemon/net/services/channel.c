@@ -66,8 +66,6 @@ void eventReceiveChannelUserRequest(mixed *packet) {
 void eventReceiveChannelMessage(mixed *packet) {
     if( file_name(previous_object()) != INTERMUD_D ) return;
     if( packet[2] == mud_name() ) return;
-    if(lower_case(packet[7]) == "descartes")
-      log_file("desc", packet[6]+": "+ packet[7] +"@"+ packet[2] +":"+ packet[8]+"\n");
     CHAT_D->broadcast_local(packet[6], packet[7] + "@" + packet[2],
 			     packet[8]);
 }

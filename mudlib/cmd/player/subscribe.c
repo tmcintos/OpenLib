@@ -9,7 +9,7 @@ main(string str)
 {
   if( !str ) {
     write("Subscribed to:\n");
-    write(wrap(implode((string *)this_player()->query_channels(), ", ")+"\n"));
+    write(implode((string *)this_player()->query_channels(), ", ")+"\n");
     return 1;
   }
 

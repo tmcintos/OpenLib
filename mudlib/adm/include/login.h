@@ -3,10 +3,8 @@
 
 #include <dirs.h>
 
-//#define PROMPT_LOGIN    "login: "
-//#define PROMPT_PASSWORD "Password: "
-#define PROMPT_LOGIN    "Shutup and enter your username! "
-#define PROMPT_PASSWORD "Now what about the password, wiseguy? "
+#define PROMPT_LOGIN    "login: "
+#define PROMPT_PASSWORD "Password: "
 
 #define MAX_USERNAME_LENGTH 12
 #define MIN_USERNAME_LENGTH 3

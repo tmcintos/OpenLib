@@ -1,5 +1,0 @@
-; Edit the following line for the path to the lpc-mode.el file and
-; add it to your ~/.emacs file to load LPC-Mode on startup
-; Then do M-x lpc-mode in emacs to change to lpc-mode
-
-(load-file "/usr/lib/emacs/site-lisp/lpc-mode.el")

@@ -1,9 +1,0 @@
-#obj/clone/user/human.c
-flags ({})
-coins ({0,0,})
-hit_points 100
-spell_points 0
-gender -1
-env_vars (["nmsh_xverb":([":":"emote $*","'":"say $*",]),"nmsh_alias":(["exa":"look at $*","sw":"southwest","d":"down","nw":"northwest","ne":"northeast","s":"south","se":"southeast","bio":"biography","w":"west","n":"north","l":"look $*","e":"east","u":"up","i":"inventory",]),"nmsh_nick":([]),"TERM":"vt100",])
-aliases ([])
-channels ({})

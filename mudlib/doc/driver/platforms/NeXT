@@ -1,5 +1,0 @@
-MudOS hints for the NeXT:
-
-Don't use bsdmalloc or smalloc.
-
-In the Makefile, comment out RESOLV.
